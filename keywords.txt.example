@@ -1,0 +1,16 @@
+# 关键词配置文件示例
+# 每行一个关键词，空行和以 # 开头的行会被忽略
+
+# AI 相关
+Large Language Models
+Agentic Workflow
+Transformer Architecture
+
+# 计算机视觉
+Computer Vision
+Object Detection
+
+# 其他领域
+# Reinforcement Learning
+# Natural Language Processing
+
