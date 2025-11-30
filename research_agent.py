@@ -185,14 +185,14 @@ def save_paper(paper: Dict, summary: str, keyword: str, sent: bool = False):
     conn.commit()
     conn.close()
 
-def fetch_papers(keyword: str, days: int = 2, max_results: int = None) -> List[Dict]:
+def fetch_papers(keyword: str, days: int = 30, max_results: int = None) -> List[Dict]:
     """从 arXiv 获取最新论文，自动过滤已存在的论文
     
     Args:
         keyword: 搜索关键词
             - 用逗号分隔：使用 OR 逻辑（例如："chain-of-thought, PDDL planning"）
             - 用空格分隔：使用 AND 逻辑（例如："LLM reasoning"）
-        days: 搜索过去多少天的论文（默认2天）
+        days: 搜索过去多少天的论文（默认30天）
         max_results: 最大返回结果数（默认使用全局 MAX_RESULTS）
     """
     if max_results is None:
@@ -419,8 +419,8 @@ def main():
     seen_paper_ids: Set[str] = set()  # 用于跨关键词去重
     
     for keyword in keywords:
-        # 默认搜索最近2天的论文（定时任务）
-        papers = fetch_papers(keyword, days=2)
+        # 默认搜索最近30天的论文（定时任务）
+        papers = fetch_papers(keyword, days=30)
         if not papers:
             continue
             
