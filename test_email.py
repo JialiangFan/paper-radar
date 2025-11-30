@@ -1,38 +1,58 @@
 """测试邮件发送功能"""
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
+import os
+import sys
 
-EMAIL_SENDER = "REDACTED_EMAIL"
-EMAIL_PASSWORD = "REDACTED_GMAIL_APP_PASSWORD"  # 应用专用密码，去掉空格
-EMAIL_RECEIVER = "REDACTED_EMAIL"
+# 添加项目路径以导入配置加载函数
+sys.path.insert(0, os.path.dirname(__file__))
+from research_agent import (
+    load_env_file, send_email,
+    EMAIL_SENDER, EMAIL_RECEIVER,
+    USE_MAILGUN_API, MAILGUN_API_KEY, MAILGUN_DOMAIN,
+    SMTP_SERVER, SMTP_PORT
+)
+
+# 加载环境变量
+load_env_file()
 
 def test_email():
     """测试邮件发送"""
-    msg = MIMEText("这是一封测试邮件，用于验证邮件配置是否正确。", 'plain', 'utf-8')
-    msg['From'] = Header("Research Agent Test", 'utf-8')
-    msg['To'] = Header(EMAIL_RECEIVER, 'utf-8')
-    msg['Subject'] = Header("测试邮件", 'utf-8')
-
+    print("=" * 60)
+    print("邮件发送测试")
+    print("=" * 60)
+    
+    if USE_MAILGUN_API:
+        print(f"使用 Mailgun API")
+        print(f"  - Domain: {MAILGUN_DOMAIN}")
+        print(f"  - API Key: {'已设置' if MAILGUN_API_KEY else '未设置'}")
+    else:
+        print(f"使用 SMTP")
+        print(f"  - 服务器: {SMTP_SERVER}:{SMTP_PORT}")
+    
+    print(f"  - 发件人: {EMAIL_SENDER}")
+    print(f"  - 收件人: {EMAIL_RECEIVER}")
+    print("=" * 60)
+    
     try:
-        print("正在连接 Gmail SMTP 服务器...")
-        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        print("正在登录...")
-        server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-        print("正在发送邮件...")
-        server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
-        server.quit()
-        print("✅ 邮件发送成功！请检查收件箱。")
+        # 使用统一的send_email函数
+        test_content = """
+        <h1>测试邮件</h1>
+        <p>这是一封测试邮件，用于验证邮件配置是否正确。</p>
+        <p>如果您收到这封邮件，说明配置成功！</p>
+        """
+        
+        print("\n正在发送测试邮件...")
+        send_email(test_content)
+        print("\n✅ 邮件发送成功！请检查收件箱（包括垃圾邮件文件夹）。")
         return True
-    except smtplib.SMTPAuthenticationError as e:
-        print(f"❌ 邮件认证失败: {e}")
-        print("请检查：")
-        print("1. 应用专用密码是否正确（已去掉空格）")
-        print("2. 是否已开启两步验证")
-        print("3. 是否已生成应用专用密码")
-        return False
     except Exception as e:
-        print(f"❌ 邮件发送失败: {e}")
+        print(f"\n❌ 邮件发送失败: {e}")
+        print("\n请检查配置：")
+        if USE_MAILGUN_API:
+            print("  - MAILGUN_API_KEY 是否正确")
+            print("  - MAILGUN_DOMAIN 是否正确")
+        else:
+            print("  - SMTP服务器地址和端口")
+            print("  - SMTP用户名和密码")
         return False
 
 if __name__ == "__main__":

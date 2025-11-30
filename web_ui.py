@@ -9,9 +9,14 @@ from datetime import datetime
 from research_agent import (
     load_keywords, fetch_papers, summarize_paper, 
     init_database, is_paper_exists, get_cached_summary, save_paper,
-    send_email, EMAIL_SENDER, EMAIL_PASSWORD
+    send_email, EMAIL_SENDER, EMAIL_PASSWORD,
+    SMTP_SERVER, SMTP_PORT, SMTP_USE_SSL, SMTP_USE_TLS, EMAIL_SENDER_NAME
 )
 import html as html_escape
+
+# 从环境变量读取邮件配置（与 research_agent.py 保持一致）
+EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 
 app = Flask(__name__)
 KEYWORDS_FILE = "keywords.txt"
@@ -185,20 +190,18 @@ def search_papers():
                     <br>
                     """
                 
-                # 发送邮件
-                from email.mime.text import MIMEText
-                from email.header import Header
-                import smtplib
+                # 发送邮件 - 使用统一的send_email函数
+                # 临时设置接收邮箱为备份邮箱
+                original_receiver = EMAIL_RECEIVER
+                import research_agent
+                research_agent.EMAIL_RECEIVER = backup_email
                 
-                msg = MIMEText(report_html, 'html', 'utf-8')
-                msg['From'] = Header("Research Agent", 'utf-8')
-                msg['To'] = Header(backup_email, 'utf-8')
-                msg['Subject'] = Header(f"论文搜索结果 - {keyword} ({datetime.now().strftime('%Y-%m-%d')})", 'utf-8')
-                
-                server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-                server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-                server.sendmail(EMAIL_SENDER, [backup_email], msg.as_string())
-                server.quit()
+                try:
+                    email_subject = f"论文搜索结果 - {keyword} ({datetime.now().strftime('%Y-%m-%d')})"
+                    send_email(report_html, subject=email_subject)
+                finally:
+                    # 恢复原始接收邮箱
+                    research_agent.EMAIL_RECEIVER = original_receiver
                 
                 email_sent = True
             except Exception as e:
@@ -278,12 +281,17 @@ if __name__ == '__main__':
     # 确保数据库已初始化
     init_database()
     
+    # 从环境变量读取配置，生产环境默认关闭 debug
+    debug_mode = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
+    port = int(os.getenv('FLASK_PORT', '5001'))
+    
     print("=" * 60)
     print("🌐 启动 Web UI 服务器...")
     print("=" * 60)
-    print("📱 访问地址: http://localhost:5001")
+    print(f"📱 访问地址: http://localhost:{port}")
+    print(f"🔧 Debug 模式: {'开启' if debug_mode else '关闭'}")
     print("按 Ctrl+C 停止服务器")
     print("=" * 60)
     
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=debug_mode, host='0.0.0.0', port=port)
 

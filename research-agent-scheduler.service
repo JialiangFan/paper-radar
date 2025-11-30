@@ -1,0 +1,37 @@
+[Unit]
+Description=Research Agent Scheduler Service - Daily Email Reports
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/research_agent
+Environment="PATH=/home/ubuntu/miniconda3/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="CONDA_DEFAULT_ENV=paper_agent"
+Environment="CONDA_PREFIX=/home/ubuntu/miniconda3/envs/paper_agent"
+
+# 加载环境变量文件
+EnvironmentFile=/home/ubuntu/research_agent/.env
+
+# 使用 conda run 来运行定时任务
+ExecStart=/home/ubuntu/miniconda3/bin/conda run -n paper_agent python /home/ubuntu/research_agent/research_agent.py schedule
+
+# 如果 conda run 不可用，使用以下方式（备选）
+# ExecStart=/bin/bash -c 'source /home/ubuntu/miniconda3/etc/profile.d/conda.sh && conda activate paper_agent && cd /home/ubuntu/research_agent && python research_agent.py schedule'
+
+# 如果使用 base 环境，使用以下方式
+# ExecStart=/home/ubuntu/miniconda3/bin/python /home/ubuntu/research_agent/research_agent.py schedule
+
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=research-agent-scheduler
+
+# 安全设置
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

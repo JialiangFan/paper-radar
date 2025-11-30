@@ -22,33 +22,75 @@ pip install -r requirements.txt
 
 ### 1. 设置环境变量
 
+#### 方法一：使用配置脚本（推荐）
+
 ```bash
-export OPENAI_API_KEY="your_openai_api_key"
-export EMAIL_SENDER="your_email@gmail.com"
-export EMAIL_PASSWORD="your_app_password"  # 注意：不是普通密码！
-export EMAIL_RECEIVER="recipient@example.com"  # 可选
+cd /home/ubuntu/research_agent
+./configure_email.sh
 ```
 
-### 2. Gmail 应用专用密码设置
+#### 方法二：手动配置
 
-**重要：不能直接使用 Google 账户的普通密码！**
+创建 `.env` 文件或设置环境变量：
 
-Gmail 需要通过"应用专用密码"（App Password）来登录 SMTP。设置步骤：
+```bash
+# OpenAI API 配置
+export OPENAI_API_KEY="your_openai_api_key"
 
-1. **开启两步验证**（如果还没开启）：
-   - 访问 [Google 账户安全设置](https://myaccount.google.com/security)
-   - 开启"两步验证"
+# 邮件配置 - SMTP服务器
+export EMAIL_SENDER="sender@yourdomain.com"
+export EMAIL_PASSWORD="your_smtp_password"  # 如果SMTP服务器需要认证
+export EMAIL_RECEIVER="recipient@example.com"
 
-2. **生成应用专用密码**：
-   - 在安全设置页面，找到"应用专用密码"
-   - 选择"邮件"和"其他（自定义名称）"
-   - 输入名称（如"Research Agent"）
-   - 点击"生成"
-   - **复制生成的 16 位密码**（格式类似：`abcd efgh ijkl mnop`）
+# SMTP服务器配置
+export SMTP_SERVER="localhost"  # 或你的SMTP服务器地址
+export SMTP_PORT="25"  # 25(标准), 587(TLS), 465(SSL)
+export SMTP_USE_SSL="false"  # true 或 false
+export SMTP_USE_TLS="true"  # true 或 false
+export EMAIL_SENDER_NAME="Research Agent"
+```
 
-3. **使用应用专用密码**：
-   - 将生成的 16 位密码（去掉空格）设置为 `EMAIL_PASSWORD` 环境变量
-   - 例如：`export EMAIL_PASSWORD="abcdefghijklmnop"`
+### 2. SMTP服务器配置说明
+
+#### 常见配置示例
+
+**本地SMTP服务器（Postfix/Sendmail）**：
+```bash
+SMTP_SERVER=localhost
+SMTP_PORT=25
+SMTP_USE_SSL=false
+SMTP_USE_TLS=false
+EMAIL_PASSWORD=  # 留空，本地服务器通常不需要认证
+```
+
+**标准SMTP服务器（端口25，TLS）**：
+```bash
+SMTP_SERVER=mail.yourdomain.com
+SMTP_PORT=25
+SMTP_USE_SSL=false
+SMTP_USE_TLS=true
+EMAIL_PASSWORD=your_password
+```
+
+**安全SMTP服务器（端口587，TLS）**：
+```bash
+SMTP_SERVER=mail.yourdomain.com
+SMTP_PORT=587
+SMTP_USE_SSL=false
+SMTP_USE_TLS=true
+EMAIL_PASSWORD=your_password
+```
+
+**安全SMTP服务器（端口465，SSL）**：
+```bash
+SMTP_SERVER=mail.yourdomain.com
+SMTP_PORT=465
+SMTP_USE_SSL=true
+SMTP_USE_TLS=false
+EMAIL_PASSWORD=your_password
+```
+
+详细配置说明请参考 [EMAIL_CONFIG.md](EMAIL_CONFIG.md)
 
 ### 3. 配置关键词（推荐）
 
@@ -114,7 +156,9 @@ python research_agent.py schedule
 ./run_scheduler.sh
 ```
 
-定时任务会在每天 **10:00** 自动运行。程序会持续运行，按 `Ctrl+C` 退出。
+定时任务会在每天 **美东时间 09:00** 自动运行。程序会持续运行，按 `Ctrl+C` 退出。
+
+**注意**：定时任务会自动处理美东时间的夏令时（EST/EDT）切换。
 
 ### 方式四：使用系统 cron（Linux/Mac）
 
@@ -152,10 +196,11 @@ crontab -e
 ## 注意事项
 
 - 确保 OpenAI API 有足够的额度
-- Gmail 应用专用密码只能看到一次，请妥善保存
-- 如果邮件发送失败，检查应用专用密码是否正确
+- 确保SMTP服务器配置正确，测试邮件发送：`python3 test_email.py`
+- 如果邮件发送失败，检查SMTP服务器地址、端口和认证信息
 - 数据库文件 `papers.db` 会自动创建
 - 已抓取的论文不会重复处理，已缓存的总结不会重复调用 API
+- 生产环境建议使用TLS（端口587）或SSL（端口465）加密连接
 
 ## 文件说明
 

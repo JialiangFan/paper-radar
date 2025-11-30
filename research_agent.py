@@ -10,10 +10,45 @@ import time
 import sqlite3
 import schedule
 from typing import List, Dict, Set, Optional
+import requests
+try:
+    from zoneinfo import ZoneInfo  # Python 3.9+
+except ImportError:
+    try:
+        from backports.zoneinfo import ZoneInfo  # Python 3.8 with backports
+    except ImportError:
+        import pytz
+        ZoneInfo = None
 
 # --- 配置部分 ---
 KEYWORDS_FILE = "keywords.txt"  # 关键词文件路径
 MAX_RESULTS = 5  # 每次每个关键词抓几篇
+ENV_FILE = ".env"  # 环境变量文件路径
+
+def load_env_file(env_path: str = ENV_FILE):
+    """从 .env 文件加载环境变量"""
+    env_file = os.path.join(os.path.dirname(__file__), env_path)
+    if os.path.exists(env_file):
+        with open(env_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                # 跳过空行和注释
+                if not line or line.startswith('#'):
+                    continue
+                # 解析 KEY=VALUE 格式
+                if '=' in line:
+                    key, value = line.split('=', 1)
+                    key = key.strip()
+                    value = value.strip().strip('"').strip("'")
+                    # 只设置未存在的环境变量（环境变量优先级更高）
+                    if key and value and key not in os.environ:
+                        os.environ[key] = value
+        print(f"✅ 已加载环境变量文件: {env_file}")
+    else:
+        print(f"⚠️  环境变量文件不存在: {env_file}，使用系统环境变量")
+
+# 加载 .env 文件
+load_env_file()
 
 def load_keywords() -> List[str]:
     """从文件读取关键词，每行一个关键词"""
@@ -42,18 +77,29 @@ def load_keywords() -> List[str]:
     except Exception as e:
         print(f"❌ 读取关键词文件失败: {e}，使用默认关键词")
         return default_keywords
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY") or "REDACTED_OPENAI_API_KEY" # 从环境变量获取，如果没有则使用默认值
-EMAIL_SENDER = "REDACTED_EMAIL"
-EMAIL_PASSWORD = "REDACTED_GMAIL_APP_PASSWORD"  # 应用专用密码，去掉空格
-EMAIL_RECEIVER = "REDACTED_EMAIL"
+# 从环境变量读取配置（优先级：系统环境变量 > .env 文件 > 默认值）
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
+EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER", "")
+# SMTP服务器配置（如果使用SMTP）
+SMTP_SERVER = os.environ.get("SMTP_SERVER", "localhost")
+SMTP_PORT = int(os.environ.get("SMTP_PORT", "25"))
+SMTP_USE_SSL = os.environ.get("SMTP_USE_SSL", "false").lower() == "true"
+SMTP_USE_TLS = os.environ.get("SMTP_USE_TLS", "true").lower() == "true"
+EMAIL_SENDER_NAME = os.environ.get("EMAIL_SENDER_NAME", "Research Agent")
+
+# Mailgun API配置
+MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY", "")
+MAILGUN_DOMAIN = os.environ.get("MAILGUN_DOMAIN", "")
+USE_MAILGUN_API = os.environ.get("USE_MAILGUN_API", "false").lower() == "true"
 
 # 验证必要的配置
 if not OPENAI_API_KEY:
     raise ValueError("请设置环境变量 OPENAI_API_KEY")
 if not EMAIL_SENDER:
     raise ValueError("请设置环境变量 EMAIL_SENDER")
-if not EMAIL_PASSWORD:
-    raise ValueError("请设置环境变量 EMAIL_PASSWORD")
+# EMAIL_PASSWORD 是可选的（本地SMTP服务器通常不需要认证）
 
 # 初始化 OpenAI
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
@@ -268,26 +314,92 @@ def summarize_paper(paper: Dict, keyword: str = "", max_retries: int = 3) -> str
                 save_paper(paper, error_summary, keyword, sent=False)
                 return error_summary
 
-def send_email(content_html: str):
-    """发送邮件"""
-    msg = MIMEText(content_html, 'html', 'utf-8')
-    msg['From'] = Header("Research Agent", 'utf-8')
-    msg['To'] = Header(EMAIL_RECEIVER, 'utf-8')
-    msg['Subject'] = Header(f"今日论文日报 - {datetime.now().strftime('%Y-%m-%d')}", 'utf-8')
-
+def send_email(content_html: str, subject: str = None):
+    """发送邮件 - 支持Mailgun API和SMTP两种方式
+    
+    Args:
+        content_html: HTML格式的邮件内容
+        subject: 邮件主题（可选，默认使用今日论文日报）
+    """
+    if subject is None:
+        subject = f"今日论文日报 - {datetime.now().strftime('%Y-%m-%d')}"
+    
+    # 如果配置了使用Mailgun API，优先使用Mailgun
+    if USE_MAILGUN_API and MAILGUN_API_KEY and MAILGUN_DOMAIN:
+        try:
+            return send_email_via_mailgun(content_html, subject)
+        except Exception as e:
+            print(f"Mailgun API发送失败，尝试使用SMTP: {e}")
+            # 如果Mailgun失败，fallback到SMTP
+    
+    # 使用SMTP发送
     try:
-        # Gmail SMTP 配置说明：
-        # 1. 不能使用普通密码，必须使用"应用专用密码"（App Password）
-        # 2. 获取方法：Google 账户 -> 安全性 -> 两步验证 -> 应用专用密码
-        # 3. 如果没有开启两步验证，需要先开启
-        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-        server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
-        server.quit()
-        print("邮件发送成功")
+        return send_email_via_smtp(content_html, subject)
     except Exception as e:
         print(f"邮件发送失败: {e}")
         raise
+
+def send_email_via_mailgun(content_html: str, subject: str):
+    """使用Mailgun API发送邮件"""
+    if not MAILGUN_API_KEY:
+        raise ValueError("MAILGUN_API_KEY 未设置")
+    if not MAILGUN_DOMAIN:
+        raise ValueError("MAILGUN_DOMAIN 未设置")
+    
+    # Mailgun API endpoint
+    url = f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages"
+    
+    # 准备请求数据
+    data = {
+        "from": f"{EMAIL_SENDER_NAME} <{EMAIL_SENDER}>",
+        "to": EMAIL_RECEIVER,  # Mailgun API expects a string, not a list
+        "subject": subject,
+        "html": content_html
+    }
+    
+    # 发送请求
+    response = requests.post(
+        url,
+        auth=("api", MAILGUN_API_KEY),
+        data=data,
+        timeout=30
+    )
+    
+    # 检查响应
+    if response.status_code == 200:
+        result = response.json()
+        print(f"邮件发送成功 (Mailgun API: {MAILGUN_DOMAIN}, Message ID: {result.get('id', 'N/A')})")
+        return True
+    else:
+        error_msg = f"Mailgun API错误: {response.status_code} - {response.text}"
+        print(error_msg)
+        raise Exception(error_msg)
+
+def send_email_via_smtp(content_html: str, subject: str):
+    """使用SMTP发送邮件"""
+    msg = MIMEText(content_html, 'html', 'utf-8')
+    msg['From'] = Header(f"{EMAIL_SENDER_NAME} <{EMAIL_SENDER}>", 'utf-8')
+    msg['To'] = Header(EMAIL_RECEIVER, 'utf-8')
+    msg['Subject'] = Header(subject, 'utf-8')
+
+    # 根据配置选择SMTP连接方式
+    if SMTP_USE_SSL:
+        # 使用SSL连接（通常端口465）
+        server = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
+    else:
+        # 使用普通连接，然后可能启用TLS（通常端口25或587）
+        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        if SMTP_USE_TLS:
+            server.starttls()
+    
+    # 如果需要认证，则登录
+    if EMAIL_PASSWORD:
+        server.login(EMAIL_SENDER, EMAIL_PASSWORD)
+    
+    server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
+    server.quit()
+    print(f"邮件发送成功 (SMTP: {SMTP_SERVER}:{SMTP_PORT})")
+    return True
 
 def main():
     """主函数：抓取论文、生成总结、发送邮件"""
@@ -357,20 +469,65 @@ def run_scheduled_task():
         import traceback
         traceback.print_exc()
 
+def get_eastern_time():
+    """获取美东时间（自动处理EST/EDT）"""
+    if ZoneInfo:
+        eastern = ZoneInfo("America/New_York")
+        return datetime.now(eastern)
+    else:
+        eastern = pytz.timezone("America/New_York")
+        return datetime.now(eastern)
+
+def schedule_at_eastern_time(hour: int, minute: int = 0):
+    """在美东时间指定时间执行任务（自动处理EST/EDT切换）"""
+    def job():
+        run_scheduled_task()
+        # 任务执行后，重新调度下一次（处理EST/EDT切换）
+        schedule_at_eastern_time(hour, minute)
+    
+    # 获取时区对象
+    if ZoneInfo:
+        eastern = ZoneInfo("America/New_York")
+        utc = ZoneInfo("UTC")
+    else:
+        eastern = pytz.timezone("America/New_York")
+        utc = pytz.UTC
+    
+    # 计算下一次执行时间（美东时间）
+    now_eastern = get_eastern_time()
+    target_eastern = now_eastern.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    
+    # 如果目标时间已过，设置为明天
+    if target_eastern <= now_eastern:
+        target_eastern += timedelta(days=1)
+    
+    # 转换为UTC时间
+    target_utc = target_eastern.astimezone(utc)
+    
+    # 使用schedule的at方法（基于UTC时间）
+    utc_hour = target_utc.hour
+    utc_minute = target_utc.minute
+    
+    schedule.every().day.at(f"{utc_hour:02d}:{utc_minute:02d}").do(job).tag('daily_email')
+    
+    # 显示下次执行时间
+    print(f"📅 下次执行时间（美东时间）: {target_eastern.strftime('%Y-%m-%d %H:%M:%S %Z')}")
+    print(f"📅 下次执行时间（UTC时间）: {target_utc.strftime('%Y-%m-%d %H:%M:%S %Z')}")
+
 if __name__ == "__main__":
     import sys
     
     # 如果传入 'schedule' 参数，启动定时任务
     if len(sys.argv) > 1 and sys.argv[1] == 'schedule':
         print("⏰ 启动定时任务模式...")
-        print("📅 每天 10:00 自动运行")
+        print("📅 每天美东时间 09:00 自动运行")
         print("按 Ctrl+C 退出\n")
         
-        # 设置定时任务：每天10:00运行
-        schedule.every().day.at("10:00").do(run_scheduled_task)
+        # 设置定时任务：每天美东时间9:00运行
+        schedule_at_eastern_time(9, 0)
         
         # 立即运行一次（可选）
-        print("🚀 立即运行一次...")
+        print("\n🚀 立即运行一次...")
         run_scheduled_task()
         
         # 保持运行
