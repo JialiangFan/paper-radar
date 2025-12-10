@@ -8,17 +8,8 @@ import os
 import html
 import time
 import sqlite3
-import schedule
 from typing import List, Dict, Set, Optional
 import requests
-try:
-    from zoneinfo import ZoneInfo  # Python 3.9+
-except ImportError:
-    try:
-        from backports.zoneinfo import ZoneInfo  # Python 3.8 with backports
-    except ImportError:
-        import pytz
-        ZoneInfo = None
 
 # --- 配置部分 ---
 KEYWORDS_FILE = "keywords.txt"  # 关键词文件路径
@@ -77,6 +68,30 @@ def load_keywords() -> List[str]:
     except Exception as e:
         print(f"❌ 读取关键词文件失败: {e}，使用默认关键词")
         return default_keywords
+def _normalize_env(value: str, default: str) -> str:
+    """轻量工具，确保环境名称统一为小写并带默认值"""
+    normalized = (value or default).strip().lower()
+    return normalized or default
+
+
+# 运行环境（production/dev/test...）
+APP_ENV = _normalize_env(os.environ.get("APP_ENV", "production"), "production")
+
+# 数据库路径：可通过 DATABASE_PATH 覆盖，否则根据环境自动切换
+DB_PATH = os.environ.get("DATABASE_PATH")
+if not DB_PATH:
+    DEFAULT_DB_MAP = {
+        "production": "papers.db",
+        "prod": "papers.db",
+        "development": "papers.dev.db",
+        "dev": "papers.dev.db",
+        "test": "papers.test.db",
+    }
+    DB_PATH = DEFAULT_DB_MAP.get(APP_ENV, "papers.db")
+
+# 输出一次，方便区分不同环境使用的数据库
+print(f"💾 当前运行环境: {APP_ENV}，数据库: {DB_PATH}")
+
 # 从环境变量读取配置（优先级：系统环境变量 > .env 文件 > 默认值）
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
@@ -103,9 +118,6 @@ if not EMAIL_SENDER:
 
 # 初始化 OpenAI
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
-
-# 数据库文件路径
-DB_PATH = "papers.db"
 
 def init_database():
     """初始化数据库，创建表结构"""
@@ -268,6 +280,58 @@ def fetch_papers(keyword: str, days: int = 30, max_results: int = None) -> List[
         return papers
     except Exception as e:
         print(f"❌ 获取论文失败 ({keyword}): {e}")
+        return []
+
+def fetch_papers_by_author(author: str, days: int = 30, max_results: int = None) -> List[Dict]:
+    """按作者从 arXiv 获取最新论文，自动过滤已存在的论文
+    
+    Args:
+        author: 作者姓名（英文），例如 "Yann LeCun"
+        days: 搜索过去多少天的论文（默认30天）
+        max_results: 最大返回结果数（默认使用全局 MAX_RESULTS）
+    """
+    if max_results is None:
+        max_results = MAX_RESULTS
+    
+    # 使用 arXiv 的作者查询语法 au:"Name"
+    query = f'au:"{author}"'
+    print(f"🔍 按作者搜索: {author} (query: {query}, 过去 {days} 天, 最多 {max_results} 篇)...")
+    
+    try:
+        client_arxiv = arxiv.Client()
+        search = arxiv.Search(
+            query=query,
+            max_results=max_results,
+            sort_by=arxiv.SortCriterion.SubmittedDate
+        )
+        
+        papers = []
+        new_count = 0
+        cutoff_date = datetime.now().date() - timedelta(days=days)
+        
+        for result in client_arxiv.results(search):
+            if result.published.date() >= cutoff_date:
+                paper_id = result.entry_id
+                
+                # 检查是否已存在
+                if is_paper_exists(paper_id):
+                    print(f"  ⏭️  跳过已存在的论文: {result.title[:50]}...")
+                    continue
+                
+                papers.append({
+                    "title": result.title,
+                    "url": result.entry_id,
+                    "abstract": result.summary,
+                    "authors": ", ".join([a.name for a in result.authors]),
+                    "date": result.published.strftime("%Y-%m-%d"),
+                    "id": paper_id
+                })
+                new_count += 1
+        
+        print(f"  ✅ 找到 {new_count} 篇作者相关的新论文")
+        return papers
+    except Exception as e:
+        print(f"❌ 获取作者论文失败 ({author}): {e}")
         return []
 
 def summarize_paper(paper: Dict, keyword: str = "", max_retries: int = 3) -> str:
@@ -460,80 +524,6 @@ def main():
     else:
         print("\nℹ️  今天没有发现符合条件的新论文。")
 
-def run_scheduled_task():
-    """定时任务入口"""
-    try:
-        main()
-    except Exception as e:
-        print(f"❌ 任务执行失败: {e}")
-        import traceback
-        traceback.print_exc()
-
-def get_eastern_time():
-    """获取美东时间（自动处理EST/EDT）"""
-    if ZoneInfo:
-        eastern = ZoneInfo("America/New_York")
-        return datetime.now(eastern)
-    else:
-        eastern = pytz.timezone("America/New_York")
-        return datetime.now(eastern)
-
-def schedule_at_eastern_time(hour: int, minute: int = 0):
-    """在美东时间指定时间执行任务（自动处理EST/EDT切换）"""
-    def job():
-        run_scheduled_task()
-        # 任务执行后，重新调度下一次（处理EST/EDT切换）
-        schedule_at_eastern_time(hour, minute)
-    
-    # 获取时区对象
-    if ZoneInfo:
-        eastern = ZoneInfo("America/New_York")
-        utc = ZoneInfo("UTC")
-    else:
-        eastern = pytz.timezone("America/New_York")
-        utc = pytz.UTC
-    
-    # 计算下一次执行时间（美东时间）
-    now_eastern = get_eastern_time()
-    target_eastern = now_eastern.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    
-    # 如果目标时间已过，设置为明天
-    if target_eastern <= now_eastern:
-        target_eastern += timedelta(days=1)
-    
-    # 转换为UTC时间
-    target_utc = target_eastern.astimezone(utc)
-    
-    # 使用schedule的at方法（基于UTC时间）
-    utc_hour = target_utc.hour
-    utc_minute = target_utc.minute
-    
-    schedule.every().day.at(f"{utc_hour:02d}:{utc_minute:02d}").do(job).tag('daily_email')
-    
-    # 显示下次执行时间
-    print(f"📅 下次执行时间（美东时间）: {target_eastern.strftime('%Y-%m-%d %H:%M:%S %Z')}")
-    print(f"📅 下次执行时间（UTC时间）: {target_utc.strftime('%Y-%m-%d %H:%M:%S %Z')}")
-
 if __name__ == "__main__":
-    import sys
-    
-    # 如果传入 'schedule' 参数，启动定时任务
-    if len(sys.argv) > 1 and sys.argv[1] == 'schedule':
-        print("⏰ 启动定时任务模式...")
-        print("📅 每天美东时间 09:00 自动运行")
-        print("按 Ctrl+C 退出\n")
-        
-        # 设置定时任务：每天美东时间9:00运行
-        schedule_at_eastern_time(9, 0)
-        
-        # 立即运行一次（可选）
-        print("\n🚀 立即运行一次...")
-        run_scheduled_task()
-        
-        # 保持运行
-        while True:
-            schedule.run_pending()
-            time.sleep(60)  # 每分钟检查一次
-    else:
-        # 直接运行一次
-        main()
+    # 直接运行一次，不再在脚本内部处理定时任务
+    main()

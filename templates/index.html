@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Agent - 论文搜索管理</title>
+    <title>Research Agent - AI科研助理</title>
     <style>
         * {
             margin: 0;
@@ -405,7 +405,7 @@
         <div class="header">
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <div>
-                    <h1>🔬 Research Agent - 论文搜索管理</h1>
+                    <h1>🔬 Research Agent - AI科研助理</h1>
                     <p>管理关键词，搜索和查看 ArXiv 论文</p>
                 </div>
                 <button class="btn btn-primary" onclick="showDatabasePapers()" style="margin-top: 10px;">
@@ -446,7 +446,7 @@
             </div>
         </div>
         
-        <!-- 主动搜索 -->
+        <!-- 主动搜索（按关键词） -->
         <div class="section">
             <h2>🔍 主动搜索</h2>
             <div class="search-section">
@@ -464,9 +464,32 @@
                     <option value="50">最多 50 篇</option>
                 </select>
                 <input type="email" id="backupEmail" placeholder="可选：输入邮箱备份..." class="email-input" />
-                <button class="btn btn-success" onclick="searchPapers()">搜索论文</button>
+                <button class="btn btn-success" id="searchButton" onclick="searchPapers()">搜索论文</button>
+                <button class="btn" id="cancelSearchButton" style="background:#e2e8f0;color:#4a5568;display:none;" onclick="cancelSearch()">停止搜索</button>
             </div>
             <div id="searchResults"></div>
+        </div>
+
+        <!-- 按作者搜索 -->
+        <div class="section">
+            <h2>👤 按作者搜索</h2>
+            <div class="search-section">
+                <input type="text" id="authorName" placeholder="输入作者姓名（英文，例如：Yann LeCun）..." />
+                <select id="authorDays" class="time-range-select">
+                    <option value="7">过去 7 天</option>
+                    <option value="30" selected>过去 1 个月</option>
+                    <option value="90">过去 3 个月</option>
+                    <option value="180">过去 6 个月</option>
+                </select>
+                <select id="authorMaxResults" class="max-results-select">
+                    <option value="5">最多 5 篇</option>
+                    <option value="10" selected>最多 10 篇</option>
+                    <option value="20">最多 20 篇</option>
+                    <option value="50">最多 50 篇</option>
+                </select>
+                <button class="btn btn-success" onclick="searchByAuthor()">搜索作者论文</button>
+            </div>
+            <div id="authorSearchResults"></div>
         </div>
         
         <!-- 已保存的论文 -->
@@ -479,6 +502,9 @@
     </div>
     
     <script>
+        // 当前关键词搜索的 AbortController
+        let currentSearchAbortController = null;
+
         // 加载关键词列表
         async function loadKeywords() {
             try {
@@ -563,7 +589,7 @@
             }
         }
         
-        // 搜索论文
+        // 搜索论文（按关键词）
         async function searchPapers() {
             const keyword = document.getElementById('searchKeyword').value.trim();
             const timeRange = document.getElementById('timeRange').value;
@@ -580,7 +606,23 @@
                 alert('请输入有效的邮箱地址');
                 return;
             }
-            
+
+            // 如果已有进行中的搜索，先取消
+            if (currentSearchAbortController) {
+                try {
+                    currentSearchAbortController.abort();
+                } catch (e) {}
+            }
+
+            currentSearchAbortController = new AbortController();
+            const signal = currentSearchAbortController.signal;
+
+            // 更新按钮状态
+            const searchBtn = document.getElementById('searchButton');
+            const cancelBtn = document.getElementById('cancelSearchButton');
+            searchBtn.disabled = true;
+            cancelBtn.style.display = 'inline-block';
+
             const resultsDiv = document.getElementById('searchResults');
             resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div><div class="loading-text">正在搜索...</div></div>';
             
@@ -600,7 +642,8 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(requestBody)
+                    body: JSON.stringify(requestBody),
+                    signal
                 });
                 
                 const data = await response.json();
@@ -613,9 +656,101 @@
                     resultsDiv.innerHTML = `<div class="message message-error">${data.message}</div>`;
                 }
             } catch (error) {
-                console.error('搜索失败:', error);
-                resultsDiv.innerHTML = '<div class="message message-error">搜索失败，请稍后重试</div>';
+                if (error.name === 'AbortError') {
+                    resultsDiv.innerHTML = '<div class="message message-error">搜索已终止</div>';
+                } else {
+                    console.error('搜索失败:', error);
+                    resultsDiv.innerHTML = '<div class="message message-error">搜索失败，请稍后重试</div>';
+                }
+            } finally {
+                // 重置状态
+                currentSearchAbortController = null;
+                searchBtn.disabled = false;
+                cancelBtn.style.display = 'none';
             }
+        }
+
+        // 终止当前关键词搜索
+        function cancelSearch() {
+            if (currentSearchAbortController) {
+                try {
+                    currentSearchAbortController.abort();
+                } catch (e) {}
+            }
+        }
+
+        // 按作者搜索论文
+        async function searchByAuthor() {
+            const author = document.getElementById('authorName').value.trim();
+            const days = parseInt(document.getElementById('authorDays').value, 10);
+            const maxResults = parseInt(document.getElementById('authorMaxResults').value, 10);
+
+            if (!author) {
+                alert('请输入作者姓名');
+                return;
+            }
+
+            const resultsDiv = document.getElementById('authorSearchResults');
+            resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div><div class="loading-text">正在按作者搜索...</div></div>';
+
+            try {
+                const response = await fetch('/api/search_by_author', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        author,
+                        days,
+                        max_results: maxResults
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayAuthorSearchResults(data.papers, data.message, author);
+                } else {
+                    resultsDiv.innerHTML = `<div class="message message-error">${data.message || '搜索失败'}</div>`;
+                }
+            } catch (error) {
+                console.error('按作者搜索失败:', error);
+                resultsDiv.innerHTML = '<div class="message message-error">按作者搜索失败，请稍后重试</div>';
+            }
+        }
+
+        // 显示作者搜索结果
+        function displayAuthorSearchResults(papers, message, author) {
+            const resultsDiv = document.getElementById('authorSearchResults');
+
+            if (!papers || papers.length === 0) {
+                resultsDiv.innerHTML = `<div class="message message-success">${message}</div>`;
+                return;
+            }
+
+            let html = `<div class="message message-success">${message}</div>`;
+            html += '<div class="paper-list">';
+
+            papers.forEach(paper => {
+                const highlightedTitle = highlightKeywords(paper.title, author);
+                const highlightedAbstract = highlightKeywords(paper.abstract, author);
+
+                html += `
+                    <div class="paper-card">
+                        <div class="paper-title">
+                            <a href="${paper.url}" target="_blank">${highlightedTitle}</a>
+                        </div>
+                        <div class="paper-meta">
+                            <strong>作者:</strong> ${paper.authors} | 
+                            <strong>日期:</strong> ${paper.date}
+                        </div>
+                        <div class="paper-abstract">${highlightedAbstract}</div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            resultsDiv.innerHTML = html;
         }
         
         // 高亮关键词
@@ -859,6 +994,13 @@
             document.getElementById('searchKeyword').addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     searchPapers();
+                }
+            });
+
+            // 作者搜索支持回车键
+            document.getElementById('authorName').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchByAuthor();
                 }
             });
         };

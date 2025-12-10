@@ -193,6 +193,13 @@ crontab -e
 - `created_at`: 创建时间
 - `sent_at`: 发送时间
 
+### 区分生产 / 开发数据库
+
+- 默认情况下（`APP_ENV=production`），程序仍然使用 `papers.db`
+- 本地开发时可以在 `.env` 中设置 `APP_ENV=development`，自动使用 `papers.dev.db`
+- 如果想自定义路径（例如放在其他目录或使用测试数据库），设置 `DATABASE_PATH=/absolute/path/to/your.db`
+- Web UI 与命令行程序共用同一套配置，因此只需修改一次环境变量即可
+
 ## 注意事项
 
 - 确保 OpenAI API 有足够的额度
