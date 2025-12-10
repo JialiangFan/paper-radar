@@ -1,3 +1,6 @@
 safe reinforcement learning
 adversarial attack
 LLM planning
+reinforcement learning reasoning
+signal temperal logic
+quantaum computing
