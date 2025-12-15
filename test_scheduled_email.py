@@ -4,6 +4,9 @@
 import sys
 import os
 
+# 测试运行切换到开发数据库
+os.environ.setdefault("APP_ENV", "development")
+
 # 添加项目路径
 sys.path.insert(0, os.path.dirname(__file__))
 

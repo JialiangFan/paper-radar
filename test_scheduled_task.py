@@ -4,6 +4,9 @@
 import sys
 import os
 
+# 确保测试任务使用开发数据库
+os.environ.setdefault("APP_ENV", "development")
+
 # 添加项目路径
 sys.path.insert(0, os.path.dirname(__file__))
 

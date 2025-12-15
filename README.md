@@ -137,6 +137,7 @@ python web_ui.py
 **Web UI 功能**：
 - 📋 **关键词管理**：查看、添加、删除关键词
 - 🔍 **主动搜索**：输入关键词立即搜索论文
+- 👤 **作者检索**：输入作者姓名，查看 TA 最近的 ArXiv 论文
 - 📚 **论文展示**：查看已保存的论文和 AI 总结
 - 💾 **自动保存**：搜索结果自动保存到数据库
 
@@ -199,6 +200,13 @@ crontab -e
 - 本地开发时可以在 `.env` 中设置 `APP_ENV=development`，自动使用 `papers.dev.db`
 - 如果想自定义路径（例如放在其他目录或使用测试数据库），设置 `DATABASE_PATH=/absolute/path/to/your.db`
 - Web UI 与命令行程序共用同一套配置，因此只需修改一次环境变量即可
+
+### 测试/开发环境隔离
+
+- 运行 `pytest` 时会自动切换到 `test` 环境，读写 `papers.test.db`
+- 直接运行 `python test_*.py` 时默认使用 `papers.dev.db`
+- 如果仍需强制指定数据库，可通过 `APP_ENV` 或 `DATABASE_PATH` 覆盖
+- 这样可以在本地随意测试，而不会污染生产库 `papers.db`
 
 ## 注意事项
 

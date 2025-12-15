@@ -5,6 +5,7 @@ from email.mime.text import MIMEText
 from email.header import Header
 from datetime import datetime, timedelta
 import os
+import sys
 import html
 import time
 import sqlite3
@@ -74,8 +75,39 @@ def _normalize_env(value: str, default: str) -> str:
     return normalized or default
 
 
+def _detect_test_env_hint() -> Optional[str]:
+    """检测是否处于测试场景（pytest 或 test_*.py 脚本）"""
+    if os.environ.get("PYTEST_CURRENT_TEST"):
+        return "test"
+
+    argv = [os.path.basename(arg or "") for arg in sys.argv]
+    if argv and argv[0] and argv[0].startswith("pytest"):
+        return "test"
+    if any(arg.startswith("pytest") for arg in argv[1:]):
+        return "test"
+
+    script_name = argv[0] if argv else ""
+    if script_name.startswith("test_"):
+        return "development"
+    return None
+
+
+def _resolve_app_env() -> str:
+    """根据环境变量和运行场景推断 APP_ENV"""
+    env_value = os.environ.get("APP_ENV", "production")
+    normalized = _normalize_env(env_value, "production")
+    hint = _detect_test_env_hint()
+
+    if hint and normalized in {"production", "prod"}:
+        print(f"🧪 检测到测试环境，自动使用 {hint} 数据库")
+        normalized = hint
+        os.environ["APP_ENV"] = normalized
+
+    return normalized
+
+
 # 运行环境（production/dev/test...）
-APP_ENV = _normalize_env(os.environ.get("APP_ENV", "production"), "production")
+APP_ENV = _resolve_app_env()
 
 # 数据库路径：可通过 DATABASE_PATH 覆盖，否则根据环境自动切换
 DB_PATH = os.environ.get("DATABASE_PATH")
@@ -282,13 +314,19 @@ def fetch_papers(keyword: str, days: int = 30, max_results: int = None) -> List[
         print(f"❌ 获取论文失败 ({keyword}): {e}")
         return []
 
-def fetch_papers_by_author(author: str, days: int = 30, max_results: int = None) -> List[Dict]:
+def fetch_papers_by_author(
+    author: str,
+    days: int = 30,
+    max_results: int = None,
+    deduplicate: bool = True,
+) -> List[Dict]:
     """按作者从 arXiv 获取最新论文，自动过滤已存在的论文
     
     Args:
         author: 作者姓名（英文），例如 "Yann LeCun"
         days: 搜索过去多少天的论文（默认30天）
         max_results: 最大返回结果数（默认使用全局 MAX_RESULTS）
+        deduplicate: 是否跳过数据库中已存在的论文
     """
     if max_results is None:
         max_results = MAX_RESULTS
@@ -309,12 +347,18 @@ def fetch_papers_by_author(author: str, days: int = 30, max_results: int = None)
         new_count = 0
         cutoff_date = datetime.now().date() - timedelta(days=days)
         
+        seen_ids: Set[str] = set()
+
         for result in client_arxiv.results(search):
             if result.published.date() >= cutoff_date:
                 paper_id = result.entry_id
                 
+                if paper_id in seen_ids:
+                    continue
+                seen_ids.add(paper_id)
+
                 # 检查是否已存在
-                if is_paper_exists(paper_id):
+                if deduplicate and is_paper_exists(paper_id):
                     print(f"  ⏭️  跳过已存在的论文: {result.title[:50]}...")
                     continue
                 

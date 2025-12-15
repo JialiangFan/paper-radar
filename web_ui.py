@@ -279,7 +279,12 @@ def search_papers_by_author(payload: AuthorSearchRequest):
 
     try:
         # 直接调用按作者查询的封装函数，真正按作者字段筛选
-        papers = fetch_papers_by_author(author, days=days, max_results=max_results)
+        papers = fetch_papers_by_author(
+            author,
+            days=days,
+            max_results=max_results,
+            deduplicate=False,  # Web 搜索展示所有结果，不影响数据库
+        )
 
         if not papers:
             return {

@@ -2,6 +2,9 @@
 import os
 import sys
 
+# 本地/测试运行默认使用开发数据库，避免污染生产数据
+os.environ.setdefault("APP_ENV", "development")
+
 # 添加项目路径以导入配置加载函数
 sys.path.insert(0, os.path.dirname(__file__))
 from research_agent import (
@@ -57,4 +60,3 @@ def test_email():
 
 if __name__ == "__main__":
     test_email()
-
