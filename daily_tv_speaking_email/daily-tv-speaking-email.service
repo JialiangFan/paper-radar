@@ -1,0 +1,24 @@
+[Unit]
+Description=Daily TV Speaking Email Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/research_agent/daily_tv_speaking_email
+Environment="PATH=/usr/bin:/usr/local/bin:/home/ubuntu/miniconda3/bin"
+# Load environment variables from .env file if it exists
+EnvironmentFile=-/home/ubuntu/research_agent/daily_tv_speaking_email/.env
+# OpenSubtitles API credentials (set these in .env or systemd override)
+Environment="OS_API_KEY="
+Environment="OS_USERNAME="
+Environment="OS_PASSWORD="
+# Email configuration can be set via environment variables or config.yaml
+ExecStart=/home/ubuntu/miniconda3/bin/python3 -m daily_tv_speaking_email run --config /home/ubuntu/research_agent/daily_tv_speaking_email/config.yaml
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=daily-tv-speaking-email
+
+[Install]
+WantedBy=multi-user.target
