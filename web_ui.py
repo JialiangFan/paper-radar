@@ -2,15 +2,19 @@
 Web UI for Research Agent
 提供关键词管理和论文搜索的 Web 界面（基于 FastAPI）
 """
+import csv
+import io
 import os
+import re
 import sqlite3
+import secrets
 from datetime import datetime
 from typing import List, Optional
 
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 import html as html_escape
 
 from research_agent import (
@@ -50,6 +54,11 @@ class AuthorSearchRequest(BaseModel):
     author: str
     days: int = 30
     max_results: int = 10
+
+
+class SubscribeRequest(BaseModel):
+    email: EmailStr
+    lang: str = "zh"
 
 def save_keywords(keywords: List[str]):
     """保存关键词到文件"""
@@ -354,26 +363,232 @@ def get_all_papers():
     }
 
 
+@app.get("/api/papers/export/csv")
+def export_papers_csv():
+    """导出所有论文为 CSV 文件"""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT id, title, authors, date, keyword, url, abstract, summary, created_at, sent_at
+        FROM papers
+        ORDER BY created_at DESC
+    """)
+
+    rows = cursor.fetchall()
+    conn.close()
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["ID", "Title", "Authors", "Date", "Keyword", "URL", "Abstract", "Summary", "Created At", "Sent At"])
+    for row in rows:
+        writer.writerow([row["id"], row["title"], row["authors"], row["date"], row["keyword"],
+                         row["url"], row["abstract"] or "", row["summary"] or "",
+                         row["created_at"], row["sent_at"] or ""])
+
+    output.seek(0)
+    # Add BOM for Excel compatibility with Chinese characters
+    bom = "\ufeff"
+    csv_content = bom + output.getvalue()
+
+    filename = f"papers_{datetime.now().strftime('%Y%m%d')}.csv"
+    return StreamingResponse(
+        iter([csv_content]),
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
 @app.get("/api/papers/{paper_id}")
 def get_paper_detail(paper_id: str):
     """获取论文详情"""
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
-    
+
     cursor.execute("""
         SELECT id, title, url, abstract, authors, date, summary, keyword, sent_at, created_at
         FROM papers
         WHERE id = ?
     """, (paper_id,))
-    
+
     row = cursor.fetchone()
     conn.close()
-    
+
     if row:
         return {"paper": dict(row)}
     else:
         raise HTTPException(status_code=404, detail="论文不存在")
+
+
+@app.post("/api/subscribe")
+def subscribe(payload: SubscribeRequest):
+    """订阅邮件列表"""
+    email = payload.email.strip().lower()
+    lang = payload.lang if payload.lang in ("zh", "en") else "zh"
+
+    # 验证邮箱格式
+    if not re.match(r"^[^\s@]+@[^\s@]+\.[^\s@]+$", email):
+        raise HTTPException(status_code=400, detail="Invalid email format")
+
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    # 检查是否已存在
+    cursor.execute("SELECT id, status FROM subscribers WHERE email = ?", (email,))
+    existing = cursor.fetchone()
+
+    if existing:
+        sub_id, status = existing
+        if status == "active":
+            conn.close()
+            return {
+                "success": True,
+                "message": "Already subscribed" if lang == "en" else "您已订阅",
+            }
+        else:
+            # 重新激活
+            token = secrets.token_urlsafe(32)
+            cursor.execute(
+                """
+                UPDATE subscribers
+                SET status = 'active', lang = ?, token = ?, unsubscribed_at = NULL
+                WHERE id = ?
+                """,
+                (lang, token, sub_id),
+            )
+            conn.commit()
+            conn.close()
+            return {
+                "success": True,
+                "message": "Subscription reactivated" if lang == "en" else "订阅已重新激活",
+            }
+
+    # 新订阅
+    token = secrets.token_urlsafe(32)
+    try:
+        cursor.execute(
+            """
+            INSERT INTO subscribers (email, lang, status, token)
+            VALUES (?, ?, 'active', ?)
+            """,
+            (email, lang, token),
+        )
+        conn.commit()
+    except sqlite3.IntegrityError:
+        conn.close()
+        raise HTTPException(status_code=400, detail="Email already exists")
+
+    conn.close()
+    return {
+        "success": True,
+        "message": "Subscription successful" if lang == "en" else "订阅成功",
+    }
+
+
+@app.post("/api/unsubscribe")
+def unsubscribe_by_email(payload: SubscribeRequest):
+    """通过邮箱取消订阅"""
+    email = payload.email.strip().lower()
+    lang = payload.lang if payload.lang in ("zh", "en") else "zh"
+
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT id, status FROM subscribers WHERE email = ?", (email,))
+    row = cursor.fetchone()
+
+    if not row:
+        conn.close()
+        return {
+            "success": False,
+            "message": "Email not found" if lang == "en" else "该邮箱未订阅",
+        }
+
+    sub_id, status = row
+
+    if status == "unsubscribed":
+        conn.close()
+        return {
+            "success": True,
+            "message": "Already unsubscribed" if lang == "en" else "已取消订阅",
+        }
+
+    cursor.execute(
+        """
+        UPDATE subscribers
+        SET status = 'unsubscribed', unsubscribed_at = ?
+        WHERE id = ?
+        """,
+        (datetime.now().isoformat(), sub_id),
+    )
+    conn.commit()
+    conn.close()
+
+    return {
+        "success": True,
+        "message": "Unsubscribed successfully" if lang == "en" else "取消订阅成功",
+    }
+
+
+@app.get("/api/unsubscribe/{token}", response_class=HTMLResponse)
+def unsubscribe(token: str, request: Request):
+    """取消订阅（返回确认页面）"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT id, email, lang FROM subscribers WHERE token = ?", (token,))
+    row = cursor.fetchone()
+
+    if not row:
+        conn.close()
+        return HTMLResponse(
+            content="""
+            <!DOCTYPE html>
+            <html><head><meta charset="UTF-8"><title>Unsubscribe</title>
+            <style>body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#f5f5f5;}
+            .box{background:white;padding:40px;border-radius:10px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.1);}</style>
+            </head><body><div class="box"><h2>Invalid Link</h2><p>The unsubscribe link is invalid or expired.</p></div></body></html>
+            """,
+            status_code=404,
+        )
+
+    sub_id, email, lang = row
+
+    # 更新状态
+    cursor.execute(
+        """
+        UPDATE subscribers
+        SET status = 'unsubscribed', unsubscribed_at = ?
+        WHERE id = ?
+        """,
+        (datetime.now().isoformat(), sub_id),
+    )
+    conn.commit()
+    conn.close()
+
+    # 根据语言返回不同内容
+    if lang == "en":
+        title = "Unsubscribed"
+        message = f"You have been unsubscribed from paper updates."
+        note = f"Email: {email}"
+    else:
+        title = "取消订阅成功"
+        message = "您已成功取消论文更新订阅。"
+        note = f"邮箱: {email}"
+
+    return HTMLResponse(
+        content=f"""
+        <!DOCTYPE html>
+        <html><head><meta charset="UTF-8"><title>{title}</title>
+        <style>body{{font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);}}
+        .box{{background:white;padding:40px 60px;border-radius:10px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.2);}}
+        h2{{color:#333;margin-bottom:15px;}}p{{color:#666;}}
+        </style></head><body><div class="box"><h2>{title}</h2><p>{message}</p><p style="font-size:12px;color:#999;">{note}</p></div></body></html>
+        """,
+        status_code=200,
+    )
 
 
 if __name__ == "__main__":

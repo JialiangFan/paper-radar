@@ -180,7 +180,28 @@ def init_database():
     cursor.execute("""
         CREATE INDEX IF NOT EXISTS idx_paper_date ON papers(date)
     """)
-    
+
+    # 创建订阅者表
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS subscribers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            email TEXT NOT NULL UNIQUE,
+            lang TEXT DEFAULT 'zh',
+            status TEXT DEFAULT 'active',
+            token TEXT NOT NULL UNIQUE,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            unsubscribed_at TIMESTAMP
+        )
+    """)
+
+    # 创建订阅者索引
+    cursor.execute("""
+        CREATE INDEX IF NOT EXISTS idx_subscriber_email ON subscribers(email)
+    """)
+    cursor.execute("""
+        CREATE INDEX IF NOT EXISTS idx_subscriber_token ON subscribers(token)
+    """)
+
     conn.commit()
     conn.close()
     print(f"✅ 数据库初始化完成: {DB_PATH}")
@@ -202,6 +223,38 @@ def get_cached_summary(paper_id: str) -> Optional[str]:
     result = cursor.fetchone()
     conn.close()
     return result[0] if result and result[0] else None
+
+def get_recent_papers_from_db(days: int = 7, limit: int = 10) -> List[Dict]:
+    """从数据库获取最近N天内已发送的论文（用于回顾）"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cutoff_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+
+    cursor.execute("""
+        SELECT id, title, url, abstract, authors, date, summary, keyword
+        FROM papers
+        WHERE sent_at IS NOT NULL
+        AND date >= ?
+        ORDER BY date DESC
+        LIMIT ?
+    """, (cutoff_date, limit))
+
+    papers = []
+    for row in cursor.fetchall():
+        papers.append({
+            'id': row[0],
+            'title': row[1],
+            'url': row[2],
+            'abstract': row[3],
+            'authors': row[4],
+            'date': row[5],
+            'summary': row[6],
+            'keyword': row[7]
+        })
+
+    conn.close()
+    return papers
 
 def save_paper(paper: Dict, summary: str, keyword: str, sent: bool = False):
     """保存论文到数据库"""
@@ -566,7 +619,38 @@ def main():
         send_email(report_html)
         print("✅ 任务完成！")
     else:
-        print("\nℹ️  今天没有发现符合条件的新论文。")
+        print("\nℹ️  今天没有发现新论文，尝试发送论文回顾...")
+
+        # 逐步扩大搜索范围
+        review_papers = []
+        for days in [7, 30, 90]:
+            review_papers = get_recent_papers_from_db(days=days, limit=5)
+            if review_papers:
+                print(f"  📚 找到过去 {days} 天内的 {len(review_papers)} 篇论文")
+                break
+
+        if review_papers:
+            review_html = f"<h1>📚 论文回顾 - {datetime.now().strftime('%Y-%m-%d')}</h1>"
+            review_html += "<p><i>今日无新论文，为您回顾近期的精选论文：</i></p><hr>"
+
+            for paper in review_papers:
+                title_escaped = html.escape(paper['title'])
+                authors_escaped = html.escape(paper['authors'])
+                summary_escaped = html.escape(paper['summary'] or '').replace('\n', '<br>')
+
+                review_html += f"""
+                <h3><a href="{paper['url']}">{title_escaped}</a></h3>
+                <p><b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}</p>
+                <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+                    {summary_escaped}
+                </div>
+                <br>
+                """
+
+            send_email(review_html, subject=f"论文回顾 - {datetime.now().strftime('%Y-%m-%d')}")
+            print("✅ 论文回顾邮件已发送！")
+        else:
+            print("⚠️  数据库中也没有可回顾的论文。")
 
 if __name__ == "__main__":
     # 直接运行一次，不再在脚本内部处理定时任务
