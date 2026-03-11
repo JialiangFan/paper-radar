@@ -183,6 +183,10 @@ research_agent/
 - [Systemd Service Guide](systemd_service_guide.md)
 - [Nginx Setup Guide](nginx_setup_guide.md)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=JFan5/research_agent&type=Date)](https://star-history.com/#JFan5/research_agent&Date)
+
 ---
 
 <a name="中文版"></a>
@@ -331,3 +335,7 @@ research_agent/
 - [每日邮件服务配置](DAILY_EMAIL_SETUP.md)
 - [Systemd 服务指南](systemd_service_guide.md)
 - [Nginx 配置指南](nginx_setup_guide.md)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=JFan5/research_agent&type=Date)](https://star-history.com/#JFan5/research_agent&Date)
