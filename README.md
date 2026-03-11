@@ -1,231 +1,333 @@
-# Research Agent - ArXiv 论文日报
+# Research Agent
 
-自动从 ArXiv 抓取最新论文，使用 AI 总结，并发送邮件日报。
+> **[中文版](#中文版) | English**
 
-## 功能特性
+An AI-powered academic paper tracking system that automatically fetches papers from ArXiv, generates summaries using OpenAI, and delivers daily email digests. Includes a modern Web UI and subscriber management.
 
-- 🔍 根据关键词自动搜索 ArXiv 最新论文
-- 🤖 使用 OpenAI API 生成中文总结
-- 📧 自动发送 HTML 格式的邮件日报
-- 🛡️ 包含错误处理、重试机制和去重功能
-- 💾 **SQLite 数据库存储已抓取的论文**
-- 🔄 **OpenAI 总结缓存，避免重复调用 API**
-- ⏰ **定时任务：每天 10:00 自动运行**
+## Features
 
-## 安装
+- **ArXiv Search**: Keyword and author-based paper discovery with smart deduplication
+- **AI Summarization**: Structured summaries via OpenAI with caching to reduce API costs
+- **Email Delivery**: Automated daily digests via Mailgun API or SMTP fallback
+- **Web UI**: FastAPI-based interface for keyword management, search, and paper browsing
+- **Subscriber System**: Email subscription with one-click unsubscribe
+- **Data Export**: Export papers to CSV
+- **Scheduling**: Built-in scheduler (daily 9:00 AM ET) or systemd/cron integration
+
+## Quick Start
+
+### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 配置
-
-### 1. 设置环境变量
-
-#### 方法一：使用配置脚本（推荐）
+### 2. Configure environment
 
 ```bash
-cd /home/ubuntu/research_agent
-./configure_email.sh
+cp env.example .env
+# Edit .env with your API keys and email settings
 ```
 
-#### 方法二：手动配置
+**Required environment variables:**
 
-创建 `.env` 文件或设置环境变量：
+| Variable | Description |
+|----------|-------------|
+| `OPENAI_API_KEY` | OpenAI API key for paper summarization |
+| `EMAIL_SENDER` | Sender email address |
+| `EMAIL_RECEIVER` | Default recipient email address |
 
-```bash
-# OpenAI API 配置
-export OPENAI_API_KEY="your_openai_api_key"
+**Optional (Mailgun — recommended):**
 
-# 邮件配置 - SMTP服务器
-export EMAIL_SENDER="sender@yourdomain.com"
-export EMAIL_PASSWORD="your_smtp_password"  # 如果SMTP服务器需要认证
-export EMAIL_RECEIVER="recipient@example.com"
+| Variable | Description |
+|----------|-------------|
+| `USE_MAILGUN_API` | Set to `true` to enable Mailgun |
+| `MAILGUN_API_KEY` | Your Mailgun API key |
+| `MAILGUN_DOMAIN` | Your Mailgun domain |
 
-# SMTP服务器配置
-export SMTP_SERVER="localhost"  # 或你的SMTP服务器地址
-export SMTP_PORT="25"  # 25(标准), 587(TLS), 465(SSL)
-export SMTP_USE_SSL="false"  # true 或 false
-export SMTP_USE_TLS="true"  # true 或 false
-export EMAIL_SENDER_NAME="Research Agent"
+**Optional (SMTP fallback):**
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `SMTP_SERVER` | `localhost` | SMTP server address |
+| `SMTP_PORT` | `25` | Port (25/587/465) |
+| `SMTP_USE_SSL` | `false` | Enable SSL (port 465) |
+| `SMTP_USE_TLS` | `true` | Enable TLS (port 587) |
+| `EMAIL_PASSWORD` | — | SMTP password |
+
+### 3. Configure keywords
+
+Edit `keywords.txt` (one keyword per line, `#` for comments):
+
 ```
-
-### 2. SMTP服务器配置说明
-
-#### 常见配置示例
-
-**本地SMTP服务器（Postfix/Sendmail）**：
-```bash
-SMTP_SERVER=localhost
-SMTP_PORT=25
-SMTP_USE_SSL=false
-SMTP_USE_TLS=false
-EMAIL_PASSWORD=  # 留空，本地服务器通常不需要认证
-```
-
-**标准SMTP服务器（端口25，TLS）**：
-```bash
-SMTP_SERVER=mail.yourdomain.com
-SMTP_PORT=25
-SMTP_USE_SSL=false
-SMTP_USE_TLS=true
-EMAIL_PASSWORD=your_password
-```
-
-**安全SMTP服务器（端口587，TLS）**：
-```bash
-SMTP_SERVER=mail.yourdomain.com
-SMTP_PORT=587
-SMTP_USE_SSL=false
-SMTP_USE_TLS=true
-EMAIL_PASSWORD=your_password
-```
-
-**安全SMTP服务器（端口465，SSL）**：
-```bash
-SMTP_SERVER=mail.yourdomain.com
-SMTP_PORT=465
-SMTP_USE_SSL=true
-SMTP_USE_TLS=false
-EMAIL_PASSWORD=your_password
-```
-
-详细配置说明请参考 [EMAIL_CONFIG.md](EMAIL_CONFIG.md)
-
-### 3. 配置关键词（推荐）
-
-编辑 `keywords.txt` 文件，每行一个关键词：
-
-```txt
 Large Language Models
 Agentic Workflow
-Transformer Architecture
+# comments are ignored
 ```
 
-**说明**：
-- 每行一个关键词
-- 空行会被自动忽略
-- 以 `#` 开头的行会被视为注释，自动忽略
-- 如果 `keywords.txt` 文件不存在或为空，程序会使用默认关键词
-
-**示例 keywords.txt**：
-```txt
-# 这是我的关键词列表
-Large Language Models
-Agentic Workflow
-
-# 也可以添加其他关键词
-Computer Vision
-```
-
-## 使用方法
-
-### 方式一：Web UI 界面（推荐）✨
-
-启动 Web UI 服务器：
+### 4. Run
 
 ```bash
-# 使用 Python 直接运行
+# One-time execution
+python research_agent.py
+
+# Start Web UI (http://localhost:5001)
 python web_ui.py
 
-# 或使用提供的脚本
-./start_web_ui.sh
-```
-
-然后在浏览器中访问：**http://localhost:5001**
-
-**Web UI 功能**：
-- 📋 **关键词管理**：查看、添加、删除关键词
-- 🔍 **主动搜索**：输入关键词立即搜索论文
-- 👤 **作者检索**：输入作者姓名，查看 TA 最近的 ArXiv 论文
-- 📚 **论文展示**：查看已保存的论文和 AI 总结
-- 💾 **自动保存**：搜索结果自动保存到数据库
-
-### 方式二：手动运行一次
-
-```bash
-python research_agent.py
-```
-
-### 方式三：启动定时任务
-
-```bash
-# 使用 Python 直接运行
+# Start daily scheduler (9:00 AM ET)
 python research_agent.py schedule
-
-# 或使用提供的脚本
-./run_scheduler.sh
 ```
 
-定时任务会在每天 **美东时间 09:00** 自动运行。程序会持续运行，按 `Ctrl+C` 退出。
+## Web UI
 
-**注意**：定时任务会自动处理美东时间的夏令时（EST/EDT）切换。
+Start with `python web_ui.py`, then open **http://localhost:5001**.
 
-### 方式四：使用系统 cron（Linux/Mac）
+**Capabilities:**
+- Manage keywords (add/delete)
+- Search papers by keyword or author
+- Browse saved papers with AI summaries
+- Export to CSV
+- Manage email subscriptions
 
-编辑 crontab：
+### API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/keywords` | List keywords |
+| `POST` | `/api/keywords` | Add keyword |
+| `DELETE` | `/api/keywords/{index}` | Delete keyword |
+| `POST` | `/api/search` | Search by keyword |
+| `POST` | `/api/search_by_author` | Search by author |
+| `GET` | `/api/papers` | Get saved papers |
+| `GET` | `/api/papers/all` | Get all papers with stats |
+| `GET` | `/api/papers/export/csv` | Export CSV |
+| `POST` | `/api/subscribe` | Subscribe to mailing list |
+| `POST` | `/api/unsubscribe` | Unsubscribe |
+| `GET` | `/api/unsubscribe/{token}` | Token-based unsubscribe |
+
+## Database
+
+Uses SQLite (`papers.db`) with automatic environment-based separation:
+
+| `APP_ENV` | Database File |
+|-----------|--------------|
+| `production` (default) | `papers.db` |
+| `development` | `papers.dev.db` |
+| `test` | `papers.test.db` |
+
+Set `DATABASE_PATH` to override with a custom path.
+
+## Production Deployment
+
+### Systemd service
+
+```bash
+./setup_systemd_service.sh
+```
+
+### Nginx reverse proxy
+
+```bash
+./setup_nginx.sh
+```
+
+### Cron job
 
 ```bash
 crontab -e
+# Add: 0 10 * * * cd /path/to/research_agent && python research_agent.py
 ```
 
-添加以下行（每天 10:00 运行）：
+## Supplementary Services
+
+### Daily News Email (`daily_news_email/`)
+
+Fetches articles from NewsAPI and sends daily news digests. Requires `NEWS_API_KEY`.
 
 ```bash
-0 10 * * * cd /path/to/paper_agent && conda activate paper_agent && python research_agent.py
+pip install -r daily_news_email/requirements.txt
+cp daily_news_email/config.example.yaml daily_news_email/config.yaml
+python -m daily_news_email
 ```
+
+### Daily TV Speaking Email (`daily_tv_speaking_email/`)
+
+Extracts TV dialogue snippets for English speaking practice. Requires `OS_API_KEY` (OpenSubtitles).
+
+```bash
+pip install -r daily_tv_speaking_email/requirements.txt
+cp daily_tv_speaking_email/config.example.yaml daily_tv_speaking_email/config.yaml
+python -m daily_tv_speaking_email
+```
+
+## Project Structure
+
+```
+research_agent/
+├── research_agent.py          # Core: fetching, summarization, email
+├── web_ui.py                  # FastAPI web server
+├── templates/index.html       # Web UI frontend
+├── keywords.txt               # Search keywords
+├── requirements.txt           # Python dependencies
+├── .env                       # Environment config (not tracked)
+├── daily_news_email/          # News digest service
+└── daily_tv_speaking_email/   # TV speaking practice service
+```
+
+## Documentation
+
+- [Email Configuration Guide](EMAIL_CONFIG.md)
+- [Mailgun Setup Guide](MAILGUN_CONFIG.md)
+- [Web UI Guide](WEB_UI_GUIDE.md)
+- [Daily Email Services Setup](DAILY_EMAIL_SETUP.md)
+- [Systemd Service Guide](systemd_service_guide.md)
+- [Nginx Setup Guide](nginx_setup_guide.md)
+
+---
+
+<a name="中文版"></a>
+
+# Research Agent - ArXiv 论文日报
+
+> **中文 | [English](#research-agent)**
+
+自动从 ArXiv 抓取最新论文，使用 AI 总结，并发送邮件日报。
+
+## 功能特性
+
+- **ArXiv 搜索**：根据关键词或作者自动搜索，智能去重
+- **AI 总结**：通过 OpenAI 生成结构化摘要，带缓存减少 API 开销
+- **邮件推送**：通过 Mailgun API 或 SMTP 自动发送每日邮件
+- **Web UI**：基于 FastAPI 的界面，支持关键词管理、搜索和论文浏览
+- **订阅系统**：邮件订阅，一键退订
+- **数据导出**：导出论文为 CSV
+- **定时任务**：内置调度器（每天美东时间 9:00）或 systemd/cron 集成
+
+## 快速开始
+
+### 1. 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. 配置环境变量
+
+```bash
+cp env.example .env
+# 编辑 .env 填入 API 密钥和邮件配置
+```
+
+**必需环境变量：**
+
+| 变量 | 说明 |
+|------|------|
+| `OPENAI_API_KEY` | OpenAI API 密钥 |
+| `EMAIL_SENDER` | 发件人邮箱 |
+| `EMAIL_RECEIVER` | 默认收件人邮箱 |
+
+**可选（Mailgun，推荐）：**
+
+| 变量 | 说明 |
+|------|------|
+| `USE_MAILGUN_API` | 设为 `true` 启用 Mailgun |
+| `MAILGUN_API_KEY` | Mailgun API 密钥 |
+| `MAILGUN_DOMAIN` | Mailgun 域名 |
+
+**可选（SMTP 备选）：**
+
+| 变量 | 默认值 | 说明 |
+|------|--------|------|
+| `SMTP_SERVER` | `localhost` | SMTP 服务器地址 |
+| `SMTP_PORT` | `25` | 端口 (25/587/465) |
+| `SMTP_USE_SSL` | `false` | 启用 SSL (465) |
+| `SMTP_USE_TLS` | `true` | 启用 TLS (587) |
+| `EMAIL_PASSWORD` | — | SMTP 密码 |
+
+### 3. 配置关键词
+
+编辑 `keywords.txt`（每行一个关键词，`#` 为注释）：
+
+```
+Large Language Models
+Agentic Workflow
+# 注释会被忽略
+```
+
+### 4. 运行
+
+```bash
+# 手动运行一次
+python research_agent.py
+
+# 启动 Web UI（http://localhost:5001）
+python web_ui.py
+
+# 启动定时任务（美东时间 9:00）
+python research_agent.py schedule
+```
+
+## Web UI
+
+运行 `python web_ui.py` 后访问 **http://localhost:5001**。
+
+**功能：**
+- 管理关键词（添加/删除）
+- 按关键词或作者搜索论文
+- 浏览已保存论文及 AI 总结
+- 导出 CSV
+- 管理邮件订阅
 
 ## 数据库
 
-程序使用 SQLite 数据库 `papers.db` 存储：
+使用 SQLite（`papers.db`），按环境自动切换：
 
-- **已抓取的论文**：避免重复处理
-- **OpenAI 总结缓存**：避免重复调用 API，节省成本
+| `APP_ENV` | 数据库文件 |
+|-----------|-----------|
+| `production`（默认） | `papers.db` |
+| `development` | `papers.dev.db` |
+| `test` | `papers.test.db` |
 
-数据库表结构：
-- `id`: 论文唯一标识（arXiv URL）
-- `title`: 论文标题
-- `url`: 论文链接
-- `abstract`: 论文摘要
-- `authors`: 作者列表
-- `date`: 发布日期
-- `summary`: OpenAI 生成的总结（缓存）
-- `keyword`: 搜索关键词
-- `created_at`: 创建时间
-- `sent_at`: 发送时间
+设置 `DATABASE_PATH` 可自定义路径。
 
-### 区分生产 / 开发数据库
+## 生产部署
 
-- 默认情况下（`APP_ENV=production`），程序仍然使用 `papers.db`
-- 本地开发时可以在 `.env` 中设置 `APP_ENV=development`，自动使用 `papers.dev.db`
-- 如果想自定义路径（例如放在其他目录或使用测试数据库），设置 `DATABASE_PATH=/absolute/path/to/your.db`
-- Web UI 与命令行程序共用同一套配置，因此只需修改一次环境变量即可
+```bash
+# Systemd 服务
+./setup_systemd_service.sh
 
-### 测试/开发环境隔离
+# Nginx 反向代理
+./setup_nginx.sh
 
-- 运行 `pytest` 时会自动切换到 `test` 环境，读写 `papers.test.db`
-- 直接运行 `python test_*.py` 时默认使用 `papers.dev.db`
-- 如果仍需强制指定数据库，可通过 `APP_ENV` 或 `DATABASE_PATH` 覆盖
-- 这样可以在本地随意测试，而不会污染生产库 `papers.db`
+# Cron 定时任务
+crontab -e
+# 添加: 0 10 * * * cd /path/to/research_agent && python research_agent.py
+```
 
-## 注意事项
+## 附加服务
 
-- 确保 OpenAI API 有足够的额度
-- 确保SMTP服务器配置正确，测试邮件发送：`python3 test_email.py`
-- 如果邮件发送失败，检查SMTP服务器地址、端口和认证信息
-- 数据库文件 `papers.db` 会自动创建
-- 已抓取的论文不会重复处理，已缓存的总结不会重复调用 API
-- 生产环境建议使用TLS（端口587）或SSL（端口465）加密连接
+- **`daily_news_email/`**：每日新闻摘要邮件（需要 `NEWS_API_KEY`）
+- **`daily_tv_speaking_email/`**：英语口语练习邮件（需要 `OS_API_KEY`）
 
 ## 文件说明
 
-- `research_agent.py`: 主程序（命令行版本）
-- `web_ui.py`: Web UI 服务器
-- `templates/index.html`: Web UI 前端页面
-- `keywords.txt`: 关键词配置文件
-- `papers.db`: SQLite 数据库（自动创建）
-- `requirements.txt`: Python 依赖
-- `start_web_ui.sh`: Web UI 启动脚本
-- `run_scheduler.sh`: 定时任务启动脚本
-- `test_email.py`: 邮件测试脚本
-- `test_fetch.py`: 论文抓取测试脚本
+```
+research_agent/
+├── research_agent.py          # 核心：抓取、总结、邮件
+├── web_ui.py                  # FastAPI Web 服务器
+├── templates/index.html       # Web UI 前端
+├── keywords.txt               # 搜索关键词
+├── requirements.txt           # Python 依赖
+├── .env                       # 环境配置（不跟踪）
+├── daily_news_email/          # 新闻摘要服务
+└── daily_tv_speaking_email/   # 口语练习服务
+```
+
+## 相关文档
+
+- [邮件配置指南](EMAIL_CONFIG.md)
+- [Mailgun 配置指南](MAILGUN_CONFIG.md)
+- [Web UI 使用指南](WEB_UI_GUIDE.md)
+- [每日邮件服务配置](DAILY_EMAIL_SETUP.md)
+- [Systemd 服务指南](systemd_service_guide.md)
+- [Nginx 配置指南](nginx_setup_guide.md)
