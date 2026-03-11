@@ -4,6 +4,12 @@
 
 An AI-powered academic paper tracking system that automatically fetches papers from ArXiv, generates summaries using OpenAI, and delivers daily email digests. Includes a modern Web UI and subscriber management.
 
+## Live Demo
+
+**[zhatgpt.com](https://zhatgpt.com)**
+
+[![Website Preview](https://api.microlink.io/?url=https%3A%2F%2Fzhatgpt.com&screenshot=true&meta=false&embed=screenshot.url)](https://zhatgpt.com)
+
 ## Features
 
 - **ArXiv Search**: Keyword and author-based paper discovery with smart deduplication
@@ -196,6 +202,12 @@ research_agent/
 > **中文 | [English](#research-agent)**
 
 自动从 ArXiv 抓取最新论文，使用 AI 总结，并发送邮件日报。
+
+## 在线演示
+
+**[zhatgpt.com](https://zhatgpt.com)**
+
+[![网站预览](https://api.microlink.io/?url=https%3A%2F%2Fzhatgpt.com&screenshot=true&meta=false&embed=screenshot.url)](https://zhatgpt.com)
 
 ## 功能特性
 
