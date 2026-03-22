@@ -13,7 +13,7 @@
 ### 2. 如何获取 Mailgun 配置信息
 
 1. **登录 Mailgun 控制台**：https://app.mailgun.com/
-2. **选择你的域名**：`zhatgpt.com`（如果没有添加，需要先添加域名）
+2. **选择你的域名**：`yourdomain.com`（如果没有添加，需要先添加域名）
 3. **进入域名设置**：点击域名 → "Sending" → "SMTP credentials"
 4. **获取 SMTP 信息**：
    - SMTP Username: 通常是 `REDACTED_SMTP_USER`
@@ -23,7 +23,7 @@
 
 ### 3. 域名验证（如果还没完成）
 
-如果域名 `zhatgpt.com` 还没在 Mailgun 中验证，需要：
+如果域名 `yourdomain.com` 还没在 Mailgun 中验证，需要：
 1. 添加域名到 Mailgun
 2. 添加 DNS 记录（MX, TXT, CNAME）
 3. 等待验证完成
@@ -32,13 +32,13 @@
 
 配置完成后，运行：
 ```bash
-cd /home/ubuntu/research_agent
+cd /path/to/research_agent
 ./configure_email.sh
 ```
 
 或者直接编辑 `.env` 文件：
 ```bash
-EMAIL_SENDER=noreply@zhatgpt.com
+EMAIL_SENDER=noreply@yourdomain.com
 EMAIL_PASSWORD=your_mailgun_smtp_password
 EMAIL_RECEIVER=REDACTED_EMAIL
 

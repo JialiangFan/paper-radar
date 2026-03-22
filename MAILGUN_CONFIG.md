@@ -9,7 +9,7 @@ Research Agent 现在支持使用 Mailgun Python API 发送邮件，这是推荐
 要使用 Mailgun API，你需要提供以下信息：
 
 1. **MAILGUN_API_KEY**: Mailgun API密钥
-2. **MAILGUN_DOMAIN**: Mailgun域名（例如：`mg.zhatgpt.com` 或 `zhatgpt.com`）
+2. **MAILGUN_DOMAIN**: Mailgun域名（例如：`mg.yourdomain.com` 或 `yourdomain.com`）
 
 ## 如何获取 Mailgun 配置信息
 
@@ -23,7 +23,7 @@ Research Agent 现在支持使用 Mailgun Python API 发送邮件，这是推荐
 
 ### 3. 获取 Domain
 1. 在 Mailgun 控制台中，进入 **Sending** → **Domains**
-2. 找到你的域名（例如：`mg.zhatgpt.com` 或 `zhatgpt.com`）
+2. 找到你的域名（例如：`mg.yourdomain.com` 或 `yourdomain.com`）
 3. 复制域名名称
 
 **注意**：
@@ -35,36 +35,36 @@ Research Agent 现在支持使用 Mailgun Python API 发送邮件，这是推荐
 ### 方法 1: 使用配置脚本（推荐）
 
 ```bash
-cd /home/ubuntu/research_agent
+cd /path/to/research_agent
 ./configure_email.sh
 ```
 
 ### 方法 2: 手动编辑 .env 文件
 
-编辑 `/home/ubuntu/research_agent/.env` 文件，添加以下配置：
+编辑 `/path/to/research_agent/.env` 文件，添加以下配置：
 
 ```bash
 # 邮件配置
-EMAIL_SENDER=noreply@zhatgpt.com
+EMAIL_SENDER=noreply@yourdomain.com
 EMAIL_RECEIVER=REDACTED_EMAIL
 EMAIL_SENDER_NAME=Research Agent
 
 # Mailgun API 配置
 USE_MAILGUN_API=true
 MAILGUN_API_KEY=your_mailgun_api_key_here
-MAILGUN_DOMAIN=mg.zhatgpt.com
+MAILGUN_DOMAIN=mg.yourdomain.com
 ```
 
 **重要**：
 - 设置 `USE_MAILGUN_API=true` 来启用 Mailgun API
-- `MAILGUN_DOMAIN` 应该是你在 Mailgun 中配置的域名（例如：`mg.zhatgpt.com`）
+- `MAILGUN_DOMAIN` 应该是你在 Mailgun 中配置的域名（例如：`mg.yourdomain.com`）
 
 ## 测试配置
 
 配置完成后，运行测试脚本：
 
 ```bash
-cd /home/ubuntu/research_agent
+cd /path/to/research_agent
 python3 test_email.py
 ```
 
@@ -78,7 +78,7 @@ python3 test_email.py
 检查当前配置：
 
 ```bash
-cd /home/ubuntu/research_agent
+cd /path/to/research_agent
 python3 -c "
 from research_agent import load_env_file, USE_MAILGUN_API, MAILGUN_DOMAIN, EMAIL_SENDER, EMAIL_RECEIVER
 load_env_file()
@@ -108,7 +108,7 @@ print(f'收件人: {EMAIL_RECEIVER}')
 
 2. **检查域名**：
    - 确保域名在 Mailgun 中已验证
-   - 确保域名格式正确（例如：`mg.zhatgpt.com`）
+   - 确保域名格式正确（例如：`mg.yourdomain.com`）
 
 3. **查看错误信息**：
    - 运行 `python3 test_email.py` 查看详细错误信息
@@ -122,6 +122,6 @@ print(f'收件人: {EMAIL_RECEIVER}')
 
 ## 相关文件
 
-- `/home/ubuntu/research_agent/.env` - 环境变量配置文件
-- `/home/ubuntu/research_agent/research_agent.py` - 主程序（包含Mailgun API实现）
-- `/home/ubuntu/research_agent/test_email.py` - 邮件测试脚本
+- `/path/to/research_agent/.env` - 环境变量配置文件
+- `/path/to/research_agent/research_agent.py` - 主程序（包含Mailgun API实现）
+- `/path/to/research_agent/test_email.py` - 邮件测试脚本

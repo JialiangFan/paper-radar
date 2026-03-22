@@ -6,9 +6,7 @@ An AI-powered academic paper tracking system that automatically fetches papers f
 
 ## Live Demo
 
-**[zhatgpt.com](https://zhatgpt.com)**
-
-[![Website Preview](https://api.microlink.io/?url=https%3A%2F%2Fzhatgpt.com&screenshot=true&meta=false&embed=screenshot.url)](https://zhatgpt.com)
+Deploy your own instance and access it at your configured domain.
 
 ## Features
 
@@ -144,28 +142,6 @@ crontab -e
 # Add: 0 10 * * * cd /path/to/research_agent && python research_agent.py
 ```
 
-## Supplementary Services
-
-### Daily News Email (`daily_news_email/`)
-
-Fetches articles from NewsAPI and sends daily news digests. Requires `NEWS_API_KEY`.
-
-```bash
-pip install -r daily_news_email/requirements.txt
-cp daily_news_email/config.example.yaml daily_news_email/config.yaml
-python -m daily_news_email
-```
-
-### Daily TV Speaking Email (`daily_tv_speaking_email/`)
-
-Extracts TV dialogue snippets for English speaking practice. Requires `OS_API_KEY` (OpenSubtitles).
-
-```bash
-pip install -r daily_tv_speaking_email/requirements.txt
-cp daily_tv_speaking_email/config.example.yaml daily_tv_speaking_email/config.yaml
-python -m daily_tv_speaking_email
-```
-
 ## Project Structure
 
 ```
@@ -175,9 +151,7 @@ research_agent/
 ├── templates/index.html       # Web UI frontend
 ├── keywords.txt               # Search keywords
 ├── requirements.txt           # Python dependencies
-├── .env                       # Environment config (not tracked)
-├── daily_news_email/          # News digest service
-└── daily_tv_speaking_email/   # TV speaking practice service
+└── .env                       # Environment config (not tracked)
 ```
 
 ## Documentation
@@ -185,7 +159,6 @@ research_agent/
 - [Email Configuration Guide](EMAIL_CONFIG.md)
 - [Mailgun Setup Guide](MAILGUN_CONFIG.md)
 - [Web UI Guide](WEB_UI_GUIDE.md)
-- [Daily Email Services Setup](DAILY_EMAIL_SETUP.md)
 - [Systemd Service Guide](systemd_service_guide.md)
 - [Nginx Setup Guide](nginx_setup_guide.md)
 
@@ -205,9 +178,7 @@ research_agent/
 
 ## 在线演示
 
-**[zhatgpt.com](https://zhatgpt.com)**
-
-[![网站预览](https://api.microlink.io/?url=https%3A%2F%2Fzhatgpt.com&screenshot=true&meta=false&embed=screenshot.url)](https://zhatgpt.com)
+部署你自己的实例，通过配置的域名访问。
 
 ## 功能特性
 
@@ -320,11 +291,6 @@ crontab -e
 # 添加: 0 10 * * * cd /path/to/research_agent && python research_agent.py
 ```
 
-## 附加服务
-
-- **`daily_news_email/`**：每日新闻摘要邮件（需要 `NEWS_API_KEY`）
-- **`daily_tv_speaking_email/`**：英语口语练习邮件（需要 `OS_API_KEY`）
-
 ## 文件说明
 
 ```
@@ -334,9 +300,7 @@ research_agent/
 ├── templates/index.html       # Web UI 前端
 ├── keywords.txt               # 搜索关键词
 ├── requirements.txt           # Python 依赖
-├── .env                       # 环境配置（不跟踪）
-├── daily_news_email/          # 新闻摘要服务
-└── daily_tv_speaking_email/   # 口语练习服务
+└── .env                       # 环境配置（不跟踪）
 ```
 
 ## 相关文档
@@ -344,7 +308,6 @@ research_agent/
 - [邮件配置指南](EMAIL_CONFIG.md)
 - [Mailgun 配置指南](MAILGUN_CONFIG.md)
 - [Web UI 使用指南](WEB_UI_GUIDE.md)
-- [每日邮件服务配置](DAILY_EMAIL_SETUP.md)
 - [Systemd 服务指南](systemd_service_guide.md)
 - [Nginx 配置指南](nginx_setup_guide.md)
 
