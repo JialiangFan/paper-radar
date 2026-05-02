@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Agent - 管理后台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+        .toast {
+            animation: slideIn 0.3s ease-out, fadeOut 0.3s ease-in 2.7s forwards;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: #e0e7ff;
+            color: #3730a3;
+            margin: 2px;
+        }
+        .tag button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            font-size: 10px;
+            line-height: 1;
+            cursor: pointer;
+            background: transparent;
+            color: #6366f1;
+            border: none;
+        }
+        .tag button:hover { background: #c7d2fe; }
+        .modal-backdrop {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<!-- Toast Container -->
+<div id="toast-container" class="fixed top-4 right-4 z-[100] flex flex-col gap-2"></div>
+
+<!-- Login Screen -->
+<div id="login-screen" class="min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mb-4">
+                <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
+            </div>
+            <h1 class="text-2xl font-bold text-gray-900">Research Agent</h1>
+            <p class="text-gray-500 mt-1">管理后台登录</p>
+        </div>
+        <form id="login-form" onsubmit="handleLogin(event)">
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">管理员密码</label>
+                <input type="password" id="login-password"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+                       placeholder="请输入管理员密码" required>
+            </div>
+            <button type="submit" id="login-btn"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                登录
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Dashboard (hidden by default) -->
+<div id="dashboard-screen" class="hidden">
+    <!-- Top Nav -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h1 class="text-lg font-bold text-gray-900">Research Agent 管理后台</h1>
+                </div>
+                <button onclick="handleLogout()"
+                        class="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                    </svg>
+                    退出登录
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tabs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="flex gap-1 bg-gray-100 rounded-lg p-1 w-fit">
+            <button onclick="switchTab('dashboard')" data-tab="dashboard"
+                    class="tab-btn px-5 py-2 rounded-md text-sm font-medium transition">
+                仪表盘
+            </button>
+            <button onclick="switchTab('users')" data-tab="users"
+                    class="tab-btn px-5 py-2 rounded-md text-sm font-medium transition">
+                用户管理
+            </button>
+            <button onclick="switchTab('papers')" data-tab="papers"
+                    class="tab-btn px-5 py-2 rounded-md text-sm font-medium transition">
+                论文管理
+            </button>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Dashboard Tab -->
+        <div id="tab-dashboard" class="tab-content">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">活跃用户</p>
+                            <p class="text-2xl font-bold text-gray-900" id="stat-active-users">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">总用户数</p>
+                            <p class="text-2xl font-bold text-gray-900" id="stat-total-users">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">总论文数</p>
+                            <p class="text-2xl font-bold text-gray-900" id="stat-total-papers">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">总关键词数</p>
+                            <p class="text-2xl font-bold text-gray-900" id="stat-total-keywords">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users Tab -->
+        <div id="tab-users" class="tab-content hidden">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h2 class="text-lg font-semibold text-gray-900">用户列表</h2>
+                    <button onclick="loadUsers()" class="text-sm text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        刷新
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">ID</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">邮箱</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">姓名</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">状态</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">频率</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">关键词</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">创建时间</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-table-body" class="divide-y divide-gray-100">
+                            <tr><td colspan="8" class="px-4 py-8 text-center text-gray-400">加载中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Papers Tab -->
+        <div id="tab-papers" class="tab-content hidden">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                    <h2 class="text-lg font-semibold text-gray-900">论文列表</h2>
+                    <div class="flex items-center gap-3">
+                        <input type="text" id="papers-search" placeholder="搜索论文标题..."
+                               oninput="filterPapers()"
+                               class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none w-64">
+                        <button onclick="loadPapers()" class="text-sm text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            刷新
+                        </button>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">标题</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">作者</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">日期</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">关键词</th>
+                                <th class="px-4 py-3 text-left font-medium text-gray-500">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="papers-table-body" class="divide-y divide-gray-100">
+                            <tr><td colspan="5" class="px-4 py-8 text-center text-gray-400">加载中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit User Modal -->
+<div id="edit-user-modal" class="modal-backdrop hidden">
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 p-6">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg font-semibold text-gray-900">编辑用户</h3>
+            <button onclick="closeEditModal()" class="text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <form onsubmit="handleEditUser(event)">
+            <input type="hidden" id="edit-user-id">
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">姓名</label>
+                    <input type="text" id="edit-user-name"
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">语言</label>
+                    <select id="edit-user-lang"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">推送频率</label>
+                    <select id="edit-user-frequency"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+                        <option value="daily">每日</option>
+                        <option value="weekly">每周</option>
+                        <option value="biweekly">每两周</option>
+                        <option value="monthly">每月</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex gap-3 mt-6">
+                <button type="button" onclick="closeEditModal()"
+                        class="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition">
+                    取消
+                </button>
+                <button type="submit"
+                        class="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+                    保存
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+// --- State ---
+let allPapers = [];
+
+// --- Utility ---
+function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? decodeURIComponent(match[2]) : null;
+}
+
+function setCookie(name, value, days = 7) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Strict`;
+}
+
+function deleteCookie(name) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+}
+
+function showToast(message, type = 'success') {
+    const container = document.getElementById('toast-container');
+    const colors = {
+        success: 'bg-green-500',
+        error: 'bg-red-500',
+        info: 'bg-indigo-500'
+    };
+    const div = document.createElement('div');
+    div.className = `toast ${colors[type] || colors.info} text-white px-5 py-3 rounded-lg shadow-lg text-sm font-medium`;
+    div.textContent = message;
+    container.appendChild(div);
+    setTimeout(() => div.remove(), 3000);
+}
+
+async function apiFetch(url, options = {}) {
+    try {
+        const res = await fetch(url, {
+            credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json', ...options.headers },
+            ...options
+        });
+        if (res.status === 401 || res.status === 403) {
+            showToast('登录已过期，请重新登录', 'error');
+            handleLogout();
+            throw new Error('Unauthorized');
+        }
+        if (!res.ok) {
+            const errData = await res.json().catch(() => ({}));
+            throw new Error(errData.detail || errData.message || `请求失败 (${res.status})`);
+        }
+        return await res.json();
+    } catch (err) {
+        if (err.message !== 'Unauthorized') {
+            showToast(err.message, 'error');
+        }
+        throw err;
+    }
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+// --- Auth ---
+async function handleLogin(e) {
+    e.preventDefault();
+    const btn = document.getElementById('login-btn');
+    const password = document.getElementById('login-password').value;
+    btn.disabled = true;
+    btn.textContent = '登录中...';
+    try {
+        const data = await apiFetch('/api/admin/login', {
+            method: 'POST',
+            body: JSON.stringify({ password })
+        });
+        setCookie('admin_token', data.token);
+        showDashboard();
+        showToast('登录成功');
+    } catch (err) {
+        // already shown via toast
+    } finally {
+        btn.disabled = false;
+        btn.textContent = '登录';
+    }
+}
+
+function handleLogout() {
+    deleteCookie('admin_token');
+    document.getElementById('login-screen').classList.remove('hidden');
+    document.getElementById('dashboard-screen').classList.add('hidden');
+    document.getElementById('login-password').value = '';
+}
+
+function showDashboard() {
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('dashboard-screen').classList.remove('hidden');
+    switchTab('dashboard');
+}
+
+// --- Tabs ---
+function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        if (btn.dataset.tab === tab) {
+            btn.classList.add('bg-white', 'text-indigo-700', 'shadow-sm');
+            btn.classList.remove('text-gray-600');
+        } else {
+            btn.classList.remove('bg-white', 'text-indigo-700', 'shadow-sm');
+            btn.classList.add('text-gray-600');
+        }
+    });
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.getElementById('tab-' + tab).classList.remove('hidden');
+
+    if (tab === 'dashboard') loadDashboard();
+    else if (tab === 'users') loadUsers();
+    else if (tab === 'papers') loadPapers();
+}
+
+// --- Dashboard ---
+async function loadDashboard() {
+    try {
+        const data = await apiFetch('/api/admin/dashboard');
+        document.getElementById('stat-active-users').textContent = data.active_users ?? '-';
+        document.getElementById('stat-total-users').textContent = data.total_users ?? '-';
+        document.getElementById('stat-total-papers').textContent = data.total_papers ?? '-';
+        document.getElementById('stat-total-keywords').textContent = data.total_keywords ?? '-';
+    } catch (err) { /* handled */ }
+}
+
+// --- Users ---
+async function loadUsers() {
+    try {
+        const data = await apiFetch('/api/admin/users');
+        const users = Array.isArray(data) ? data : (data.users || []);
+        renderUsers(users);
+    } catch (err) { /* handled */ }
+}
+
+function renderUsers(users) {
+    const tbody = document.getElementById('users-table-body');
+    if (!users.length) {
+        tbody.innerHTML = '<tr><td colspan="8" class="px-4 py-8 text-center text-gray-400">暂无用户</td></tr>';
+        return;
+    }
+    tbody.innerHTML = users.map(u => {
+        const statusColors = {
+            active: 'bg-green-100 text-green-700',
+            inactive: 'bg-gray-100 text-gray-600',
+            unsubscribed: 'bg-red-100 text-red-700'
+        };
+        const statusLabels = {
+            active: '活跃',
+            inactive: '未激活',
+            unsubscribed: '已退订'
+        };
+        const statusClass = statusColors[u.status] || 'bg-gray-100 text-gray-600';
+        const statusLabel = statusLabels[u.status] || u.status;
+        const keywords = u.keywords || [];
+        const keywordTags = keywords.map(kw =>
+            `<span class="tag">${escapeHtml(kw)}<button onclick="deleteKeyword(${u.id}, '${escapeHtml(kw)}')" title="删除">&times;</button></span>`
+        ).join('');
+        const created = u.created_at ? new Date(u.created_at).toLocaleDateString('zh-CN') : '-';
+
+        return `<tr class="hover:bg-gray-50">
+            <td class="px-4 py-3 text-gray-900 font-mono text-xs">${u.id}</td>
+            <td class="px-4 py-3 text-gray-900">${escapeHtml(u.email)}</td>
+            <td class="px-4 py-3 text-gray-700">${escapeHtml(u.name) || '-'}</td>
+            <td class="px-4 py-3">
+                <select onchange="toggleStatus(${u.id}, this.value)"
+                        class="text-xs px-2 py-1 rounded-full border-0 font-medium ${statusClass} cursor-pointer">
+                    <option value="active" ${u.status === 'active' ? 'selected' : ''}>活跃</option>
+                    <option value="inactive" ${u.status === 'inactive' ? 'selected' : ''}>未激活</option>
+                    <option value="unsubscribed" ${u.status === 'unsubscribed' ? 'selected' : ''}>已退订</option>
+                </select>
+            </td>
+            <td class="px-4 py-3 text-gray-700 text-xs">${escapeHtml(u.frequency) || '-'}</td>
+            <td class="px-4 py-3">
+                <div class="flex flex-wrap items-center gap-1 max-w-xs">
+                    ${keywordTags}
+                    <button onclick="promptAddKeyword(${u.id})"
+                            class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-indigo-50 text-indigo-600 hover:bg-indigo-100 text-xs font-bold" title="添加关键词">+</button>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-gray-500 text-xs whitespace-nowrap">${created}</td>
+            <td class="px-4 py-3">
+                <div class="flex items-center gap-2">
+                    <button onclick='openEditModal(${JSON.stringify(u).replace(/'/g, "&#39;")})'
+                            class="text-indigo-600 hover:text-indigo-800 text-xs font-medium">编辑</button>
+                    <button onclick="deleteUser(${u.id})"
+                            class="text-red-500 hover:text-red-700 text-xs font-medium">删除</button>
+                </div>
+            </td>
+        </tr>`;
+    }).join('');
+}
+
+async function toggleStatus(userId, newStatus) {
+    try {
+        await apiFetch(`/api/admin/users/${userId}`, {
+            method: 'PUT',
+            body: JSON.stringify({ status: newStatus })
+        });
+        showToast('用户状态已更新');
+    } catch (err) {
+        loadUsers(); // revert
+    }
+}
+
+async function deleteUser(userId) {
+    if (!confirm('确定要删除该用户吗？此操作不可撤销。')) return;
+    try {
+        await apiFetch(`/api/admin/users/${userId}`, { method: 'DELETE' });
+        showToast('用户已删除');
+        loadUsers();
+    } catch (err) { /* handled */ }
+}
+
+async function promptAddKeyword(userId) {
+    const keyword = prompt('请输入要添加的关键词:');
+    if (!keyword || !keyword.trim()) return;
+    try {
+        await apiFetch(`/api/admin/users/${userId}/keywords`, {
+            method: 'POST',
+            body: JSON.stringify({ keyword: keyword.trim() })
+        });
+        showToast('关键词已添加');
+        loadUsers();
+    } catch (err) { /* handled */ }
+}
+
+async function deleteKeyword(userId, keyword) {
+    if (!confirm(`确定要删除关键词 "${keyword}" 吗？`)) return;
+    try {
+        await apiFetch(`/api/admin/users/${userId}/keywords/${encodeURIComponent(keyword)}`, {
+            method: 'DELETE'
+        });
+        showToast('关键词已删除');
+        loadUsers();
+    } catch (err) { /* handled */ }
+}
+
+// --- Edit User Modal ---
+function openEditModal(user) {
+    document.getElementById('edit-user-id').value = user.id;
+    document.getElementById('edit-user-name').value = user.name || '';
+    document.getElementById('edit-user-lang').value = user.lang || user.language || 'zh';
+    document.getElementById('edit-user-frequency').value = user.frequency || 'daily';
+    document.getElementById('edit-user-modal').classList.remove('hidden');
+}
+
+function closeEditModal() {
+    document.getElementById('edit-user-modal').classList.add('hidden');
+}
+
+async function handleEditUser(e) {
+    e.preventDefault();
+    const userId = document.getElementById('edit-user-id').value;
+    const payload = {
+        name: document.getElementById('edit-user-name').value,
+        lang: document.getElementById('edit-user-lang').value,
+        frequency: document.getElementById('edit-user-frequency').value
+    };
+    try {
+        await apiFetch(`/api/admin/users/${userId}`, {
+            method: 'PUT',
+            body: JSON.stringify(payload)
+        });
+        showToast('用户信息已更新');
+        closeEditModal();
+        loadUsers();
+    } catch (err) { /* handled */ }
+}
+
+// --- Papers ---
+async function loadPapers() {
+    try {
+        const data = await apiFetch('/api/admin/papers');
+        allPapers = Array.isArray(data) ? data : (data.papers || []);
+        renderPapers(allPapers);
+    } catch (err) { /* handled */ }
+}
+
+function filterPapers() {
+    const q = document.getElementById('papers-search').value.toLowerCase().trim();
+    if (!q) {
+        renderPapers(allPapers);
+        return;
+    }
+    const filtered = allPapers.filter(p =>
+        (p.title || '').toLowerCase().includes(q) ||
+        (p.keyword || '').toLowerCase().includes(q) ||
+        ((p.authors || []).join(' ')).toLowerCase().includes(q)
+    );
+    renderPapers(filtered);
+}
+
+function renderPapers(papers) {
+    const tbody = document.getElementById('papers-table-body');
+    if (!papers.length) {
+        tbody.innerHTML = '<tr><td colspan="5" class="px-4 py-8 text-center text-gray-400">暂无论文</td></tr>';
+        return;
+    }
+    tbody.innerHTML = papers.map(p => {
+        const authors = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '-');
+        const date = p.published ? new Date(p.published).toLocaleDateString('zh-CN') : (p.date || '-');
+        const paperId = p.paper_id || p.id || '';
+        return `<tr class="hover:bg-gray-50">
+            <td class="px-4 py-3 text-gray-900 max-w-md">
+                <div class="line-clamp-2" title="${escapeHtml(p.title)}">${escapeHtml(p.title)}</div>
+            </td>
+            <td class="px-4 py-3 text-gray-600 text-xs max-w-xs">
+                <div class="line-clamp-1">${escapeHtml(authors)}</div>
+            </td>
+            <td class="px-4 py-3 text-gray-500 text-xs whitespace-nowrap">${escapeHtml(date)}</td>
+            <td class="px-4 py-3">
+                ${p.keyword ? `<span class="tag">${escapeHtml(p.keyword)}</span>` : '-'}
+            </td>
+            <td class="px-4 py-3">
+                <button onclick="deletePaper('${escapeHtml(paperId)}')"
+                        class="text-red-500 hover:text-red-700 text-xs font-medium">删除</button>
+            </td>
+        </tr>`;
+    }).join('');
+}
+
+async function deletePaper(paperId) {
+    if (!confirm('确定要删除该论文吗？')) return;
+    try {
+        await apiFetch(`/api/admin/papers/${encodeURIComponent(paperId)}`, { method: 'DELETE' });
+        showToast('论文已删除');
+        loadPapers();
+    } catch (err) { /* handled */ }
+}
+
+// --- Init ---
+document.addEventListener('DOMContentLoaded', () => {
+    if (getCookie('admin_token')) {
+        showDashboard();
+    }
+});
+</script>
+</body>
+</html>

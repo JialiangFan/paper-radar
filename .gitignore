@@ -1,5 +1,29 @@
+# Environment & secrets
 .env
-__pycache__/
-.DS_Store
 config.yaml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Database
 *.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Skills sync (local)
+skills-sync/

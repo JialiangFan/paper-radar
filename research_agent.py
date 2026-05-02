@@ -152,10 +152,10 @@ if not EMAIL_SENDER:
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 def init_database():
-    """初始化数据库，创建表结构"""
+    """初始化数据库，创建表结构（含 subscribers→users 迁移）"""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
+
     # 创建论文表
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS papers (
@@ -172,7 +172,7 @@ def init_database():
             UNIQUE(id)
         )
     """)
-    
+
     # 创建索引以提高查询速度
     cursor.execute("""
         CREATE INDEX IF NOT EXISTS idx_paper_id ON papers(id)
@@ -181,30 +181,135 @@ def init_database():
         CREATE INDEX IF NOT EXISTS idx_paper_date ON papers(date)
     """)
 
-    # 创建订阅者表
+    # --- 迁移 subscribers → users ---
+    # 检查旧表是否存在
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='subscribers'")
+    has_subscribers = cursor.fetchone() is not None
+
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='users'")
+    has_users = cursor.fetchone() is not None
+
+    if has_subscribers and not has_users:
+        print("🔄 迁移 subscribers 表到 users 表...")
+        cursor.execute("""
+            CREATE TABLE users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT NOT NULL UNIQUE,
+                name TEXT DEFAULT '',
+                lang TEXT DEFAULT 'zh',
+                status TEXT DEFAULT 'active',
+                token TEXT NOT NULL UNIQUE,
+                email_frequency TEXT DEFAULT 'daily',
+                last_sent_at TIMESTAMP,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                unsubscribed_at TIMESTAMP
+            )
+        """)
+        cursor.execute("""
+            INSERT INTO users (id, email, name, lang, status, token, email_frequency, created_at, unsubscribed_at)
+            SELECT id, email, '', lang, status, token, 'daily', created_at, unsubscribed_at
+            FROM subscribers
+        """)
+        cursor.execute("DROP TABLE subscribers")
+        print("✅ 迁移完成")
+
+    if not has_users and not has_subscribers:
+        # 全新安装
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT NOT NULL UNIQUE,
+                name TEXT DEFAULT '',
+                lang TEXT DEFAULT 'zh',
+                status TEXT DEFAULT 'active',
+                token TEXT NOT NULL UNIQUE,
+                email_frequency TEXT DEFAULT 'daily',
+                last_sent_at TIMESTAMP,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                unsubscribed_at TIMESTAMP
+            )
+        """)
+
+    # 创建 user_keywords 表
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS subscribers (
+        CREATE TABLE IF NOT EXISTS user_keywords (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            email TEXT NOT NULL UNIQUE,
-            lang TEXT DEFAULT 'zh',
-            status TEXT DEFAULT 'active',
-            token TEXT NOT NULL UNIQUE,
+            user_id INTEGER NOT NULL,
+            keyword TEXT NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            unsubscribed_at TIMESTAMP
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+            UNIQUE(user_id, keyword)
         )
     """)
 
-    # 创建订阅者索引
-    cursor.execute("""
-        CREATE INDEX IF NOT EXISTS idx_subscriber_email ON subscribers(email)
-    """)
-    cursor.execute("""
-        CREATE INDEX IF NOT EXISTS idx_subscriber_token ON subscribers(token)
-    """)
+    # 创建索引
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_user_email ON users(email)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_user_token ON users(token)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_user_keywords_user_id ON user_keywords(user_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_paper_keyword ON papers(keyword)")
 
     conn.commit()
     conn.close()
     print(f"✅ 数据库初始化完成: {DB_PATH}")
+
+
+# --- 用户相关辅助函数 ---
+
+def get_active_users() -> List[Dict]:
+    """获取所有活跃用户"""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM users WHERE status = 'active'")
+    users = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return users
+
+
+def get_user_keywords(user_id: int) -> List[str]:
+    """获取用户的关键词列表"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT keyword FROM user_keywords WHERE user_id = ? ORDER BY id", (user_id,))
+    keywords = [row[0] for row in cursor.fetchall()]
+    conn.close()
+    return keywords
+
+
+def should_send_to_user(user: Dict, now: datetime) -> bool:
+    """根据用户的邮件频率判断是否应该发送"""
+    frequency = user.get('email_frequency', 'daily')
+    last_sent = user.get('last_sent_at')
+
+    if not last_sent:
+        return True  # 从未发送过，立即发送
+
+    if isinstance(last_sent, str):
+        try:
+            last_sent = datetime.fromisoformat(last_sent)
+        except ValueError:
+            return True
+
+    delta = now - last_sent
+    if frequency == 'daily':
+        return delta.total_seconds() >= 20 * 3600  # 20小时（容忍时间漂移）
+    elif frequency == 'every_3_days':
+        return delta.days >= 3
+    elif frequency == 'weekly':
+        return delta.days >= 7
+    return True
+
+
+def update_user_last_sent(user_id: int):
+    """更新用户的最后发送时间"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(
+        "UPDATE users SET last_sent_at = ? WHERE id = ?",
+        (datetime.now().isoformat(), user_id)
+    )
+    conn.commit()
+    conn.close()
 
 def is_paper_exists(paper_id: str) -> bool:
     """检查论文是否已存在于数据库中"""
@@ -475,182 +580,265 @@ def summarize_paper(paper: Dict, keyword: str = "", max_retries: int = 3) -> str
                 save_paper(paper, error_summary, keyword, sent=False)
                 return error_summary
 
-def send_email(content_html: str, subject: str = None):
+def send_email(content_html: str, subject: str = None, to: str = None):
     """发送邮件 - 支持Mailgun API和SMTP两种方式
-    
+
     Args:
         content_html: HTML格式的邮件内容
         subject: 邮件主题（可选，默认使用今日论文日报）
+        to: 收件人邮箱（可选，默认使用 EMAIL_RECEIVER）
     """
     if subject is None:
         subject = f"今日论文日报 - {datetime.now().strftime('%Y-%m-%d')}"
-    
+    if to is None:
+        to = EMAIL_RECEIVER
+
     # 如果配置了使用Mailgun API，优先使用Mailgun
     if USE_MAILGUN_API and MAILGUN_API_KEY and MAILGUN_DOMAIN:
         try:
-            return send_email_via_mailgun(content_html, subject)
+            return send_email_via_mailgun(content_html, subject, to=to)
         except Exception as e:
             print(f"Mailgun API发送失败，尝试使用SMTP: {e}")
-            # 如果Mailgun失败，fallback到SMTP
-    
+
     # 使用SMTP发送
     try:
-        return send_email_via_smtp(content_html, subject)
+        return send_email_via_smtp(content_html, subject, to=to)
     except Exception as e:
         print(f"邮件发送失败: {e}")
         raise
 
-def send_email_via_mailgun(content_html: str, subject: str):
+def send_email_via_mailgun(content_html: str, subject: str, to: str = None):
     """使用Mailgun API发送邮件"""
     if not MAILGUN_API_KEY:
         raise ValueError("MAILGUN_API_KEY 未设置")
     if not MAILGUN_DOMAIN:
         raise ValueError("MAILGUN_DOMAIN 未设置")
-    
-    # Mailgun API endpoint
+    if to is None:
+        to = EMAIL_RECEIVER
+
     url = f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages"
-    
-    # 准备请求数据
+
     data = {
         "from": f"{EMAIL_SENDER_NAME} <{EMAIL_SENDER}>",
-        "to": EMAIL_RECEIVER,  # Mailgun API expects a string, not a list
+        "to": to,
         "subject": subject,
         "html": content_html
     }
-    
-    # 发送请求
+
     response = requests.post(
         url,
         auth=("api", MAILGUN_API_KEY),
         data=data,
         timeout=30
     )
-    
-    # 检查响应
+
     if response.status_code == 200:
         result = response.json()
-        print(f"邮件发送成功 (Mailgun API: {MAILGUN_DOMAIN}, Message ID: {result.get('id', 'N/A')})")
+        print(f"邮件发送成功 (Mailgun → {to}, Message ID: {result.get('id', 'N/A')})")
         return True
     else:
         error_msg = f"Mailgun API错误: {response.status_code} - {response.text}"
         print(error_msg)
         raise Exception(error_msg)
 
-def send_email_via_smtp(content_html: str, subject: str):
+def send_email_via_smtp(content_html: str, subject: str, to: str = None):
     """使用SMTP发送邮件"""
+    if to is None:
+        to = EMAIL_RECEIVER
+
     msg = MIMEText(content_html, 'html', 'utf-8')
     msg['From'] = Header(f"{EMAIL_SENDER_NAME} <{EMAIL_SENDER}>", 'utf-8')
-    msg['To'] = Header(EMAIL_RECEIVER, 'utf-8')
+    msg['To'] = Header(to, 'utf-8')
     msg['Subject'] = Header(subject, 'utf-8')
 
-    # 根据配置选择SMTP连接方式
     if SMTP_USE_SSL:
-        # 使用SSL连接（通常端口465）
         server = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
     else:
-        # 使用普通连接，然后可能启用TLS（通常端口25或587）
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         if SMTP_USE_TLS:
             server.starttls()
-    
-    # 如果需要认证，则登录
+
     if EMAIL_PASSWORD:
         server.login(EMAIL_SENDER, EMAIL_PASSWORD)
-    
-    server.sendmail(EMAIL_SENDER, [EMAIL_RECEIVER], msg.as_string())
+
+    server.sendmail(EMAIL_SENDER, [to], msg.as_string())
     server.quit()
-    print(f"邮件发送成功 (SMTP: {SMTP_SERVER}:{SMTP_PORT})")
+    print(f"邮件发送成功 (SMTP → {to})")
     return True
 
-def main():
-    """主函数：抓取论文、生成总结、发送邮件"""
-    print("=" * 60)
-    print(f"🚀 开始运行论文日报任务 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("=" * 60)
-    
-    # 初始化数据库
-    init_database()
-    
-    # 从文件读取关键词
-    keywords = load_keywords()
-    print(f"📋 关键词列表: {', '.join(keywords)}\n")
-    
+def _build_paper_html(paper: Dict, summary: str) -> str:
+    """生成单篇论文的 HTML 片段"""
+    title_escaped = html.escape(paper['title'])
+    authors_escaped = html.escape(paper.get('authors', ''))
+    summary_escaped = html.escape(summary or '').replace('\n', '<br>')
+    return f"""
+    <h3><a href="{paper['url']}">{title_escaped}</a></h3>
+    <p><b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}</p>
+    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+        {summary_escaped}
+    </div>
+    <br>
+    """
+
+
+def _send_for_user(user: Dict, keywords: List[str]):
+    """为单个用户搜索论文并发送邮件"""
+    user_email = user['email']
+    user_name = user.get('name', '')
+    print(f"\n👤 处理用户: {user_name or user_email}")
+
+    if not keywords:
+        print(f"  ⚠️  用户没有关键词，跳过")
+        return
+
+    print(f"  📋 关键词: {', '.join(keywords)}")
+
     report_html = "<h1>今日 ArXiv 论文速递</h1>"
     has_updates = False
-    seen_paper_ids: Set[str] = set()  # 用于跨关键词去重
-    
+    seen_paper_ids: Set[str] = set()
+
     for keyword in keywords:
-        # 默认搜索最近30天的论文（定时任务）
         papers = fetch_papers(keyword, days=30)
         if not papers:
             continue
-            
+
         report_html += f"<h2>关键词: {html.escape(keyword)}</h2><hr>"
-        
+
         for paper in papers:
-            # 跨关键词去重：如果这篇论文已经处理过，跳过
             if paper['id'] in seen_paper_ids:
                 continue
             seen_paper_ids.add(paper['id'])
-            
+
             has_updates = True
             print(f"  📄 处理论文: {paper['title'][:60]}...")
             summary = summarize_paper(paper, keyword)
-            
-            # HTML 转义防止 XSS，拼接 HTML
-            title_escaped = html.escape(paper['title'])
-            authors_escaped = html.escape(paper['authors'])
-            summary_escaped = html.escape(summary).replace('\n', '<br>')
-            
-            report_html += f"""
-            <h3><a href="{paper['url']}">{title_escaped}</a></h3>
-            <p><b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}</p>
-            <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
-                {summary_escaped}
-            </div>
-            <br>
-            """
-            
-            # 保存论文到数据库（标记为已发送）
+            report_html += _build_paper_html(paper, summary)
             save_paper(paper, summary, keyword, sent=True)
 
     if has_updates:
-        print(f"\n📧 发现 {len(seen_paper_ids)} 篇新论文，正在发送邮件...")
-        send_email(report_html)
-        print("✅ 任务完成！")
+        print(f"  📧 发现 {len(seen_paper_ids)} 篇新论文，发送邮件到 {user_email}")
+        send_email(report_html, to=user_email)
+        update_user_last_sent(user['id'])
     else:
-        print("\nℹ️  今天没有发现新论文，尝试发送论文回顾...")
-
-        # 逐步扩大搜索范围
+        print(f"  ℹ️  无新论文，尝试发送回顾...")
         review_papers = []
         for days in [7, 30, 90]:
             review_papers = get_recent_papers_from_db(days=days, limit=5)
             if review_papers:
-                print(f"  📚 找到过去 {days} 天内的 {len(review_papers)} 篇论文")
                 break
 
         if review_papers:
             review_html = f"<h1>📚 论文回顾 - {datetime.now().strftime('%Y-%m-%d')}</h1>"
             review_html += "<p><i>今日无新论文，为您回顾近期的精选论文：</i></p><hr>"
-
             for paper in review_papers:
-                title_escaped = html.escape(paper['title'])
-                authors_escaped = html.escape(paper['authors'])
-                summary_escaped = html.escape(paper['summary'] or '').replace('\n', '<br>')
-
-                review_html += f"""
-                <h3><a href="{paper['url']}">{title_escaped}</a></h3>
-                <p><b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}</p>
-                <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
-                    {summary_escaped}
-                </div>
-                <br>
-                """
-
-            send_email(review_html, subject=f"论文回顾 - {datetime.now().strftime('%Y-%m-%d')}")
-            print("✅ 论文回顾邮件已发送！")
+                review_html += _build_paper_html(paper, paper.get('summary', ''))
+            send_email(review_html, subject=f"论文回顾 - {datetime.now().strftime('%Y-%m-%d')}", to=user_email)
+            update_user_last_sent(user['id'])
+            print(f"  ✅ 论文回顾已发送到 {user_email}")
         else:
-            print("⚠️  数据库中也没有可回顾的论文。")
+            print(f"  ⚠️  无可回顾的论文")
+
+
+def get_papers_by_keywords(keywords: List[str], limit: int = 20, offset: int = 0) -> Dict:
+    """根据关键词列表查询论文，支持分页"""
+    if not keywords:
+        return {"papers": [], "total": 0}
+
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    placeholders = ",".join("?" for _ in keywords)
+
+    # 获取总数
+    cursor.execute(
+        f"SELECT COUNT(*) FROM papers WHERE keyword IN ({placeholders})",
+        keywords,
+    )
+    total = cursor.fetchone()[0]
+
+    # 获取分页数据
+    cursor.execute(
+        f"""SELECT id, title, url, abstract, authors, date, summary, keyword, created_at
+            FROM papers WHERE keyword IN ({placeholders})
+            ORDER BY created_at DESC LIMIT ? OFFSET ?""",
+        keywords + [limit, offset],
+    )
+    papers = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+
+    return {"papers": papers, "total": total}
+
+
+def main():
+    """主函数：按用户遍历，抓取论文、生成总结、发送邮件"""
+    print("=" * 60)
+    print(f"🚀 开始运行论文日报任务 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 60)
+
+    init_database()
+
+    now = datetime.now()
+    users = get_active_users()
+
+    if users:
+        print(f"👥 共有 {len(users)} 个活跃用户")
+        for user in users:
+            if not should_send_to_user(user, now):
+                freq = user.get('email_frequency', 'daily')
+                print(f"\n⏭️  跳过用户 {user['email']}（频率: {freq}，未到发送时间）")
+                continue
+            keywords = get_user_keywords(user['id'])
+            _send_for_user(user, keywords)
+    else:
+        # 向后兼容：无用户时回退到 keywords.txt + EMAIL_RECEIVER
+        print("ℹ️  无注册用户，回退到 keywords.txt + EMAIL_RECEIVER 模式")
+        keywords = load_keywords()
+        print(f"📋 关键词列表: {', '.join(keywords)}\n")
+
+        report_html = "<h1>今日 ArXiv 论文速递</h1>"
+        has_updates = False
+        seen_paper_ids: Set[str] = set()
+
+        for keyword in keywords:
+            papers = fetch_papers(keyword, days=30)
+            if not papers:
+                continue
+            report_html += f"<h2>关键词: {html.escape(keyword)}</h2><hr>"
+            for paper in papers:
+                if paper['id'] in seen_paper_ids:
+                    continue
+                seen_paper_ids.add(paper['id'])
+                has_updates = True
+                print(f"  📄 处理论文: {paper['title'][:60]}...")
+                summary = summarize_paper(paper, keyword)
+                report_html += _build_paper_html(paper, summary)
+                save_paper(paper, summary, keyword, sent=True)
+
+        if has_updates:
+            print(f"\n📧 发现 {len(seen_paper_ids)} 篇新论文，正在发送邮件...")
+            send_email(report_html)
+            print("✅ 任务完成！")
+        else:
+            print("\nℹ️  今天没有发现新论文，尝试发送论文回顾...")
+            review_papers = []
+            for days in [7, 30, 90]:
+                review_papers = get_recent_papers_from_db(days=days, limit=5)
+                if review_papers:
+                    break
+            if review_papers:
+                review_html = f"<h1>📚 论文回顾 - {datetime.now().strftime('%Y-%m-%d')}</h1>"
+                review_html += "<p><i>今日无新论文，为您回顾近期的精选论文：</i></p><hr>"
+                for paper in review_papers:
+                    review_html += _build_paper_html(paper, paper.get('summary', ''))
+                send_email(review_html, subject=f"论文回顾 - {datetime.now().strftime('%Y-%m-%d')}")
+                print("✅ 论文回顾邮件已发送！")
+            else:
+                print("⚠️  数据库中也没有可回顾的论文。")
+
+    print("\n" + "=" * 60)
+    print("🏁 所有任务完成")
+    print("=" * 60)
 
 if __name__ == "__main__":
     # 直接运行一次，不再在脚本内部处理定时任务
