@@ -1,20 +1,29 @@
 import arxiv
-import openai
 import smtplib
+import subprocess
 from email.mime.text import MIMEText
 from email.header import Header
 from datetime import datetime, timedelta
 import os
 import sys
 import html
+import json
 import time
 import sqlite3
 from typing import List, Dict, Set, Optional
 import requests
 
+from recommender import build_arxiv_query, recommend
+
 # --- 配置部分 ---
 KEYWORDS_FILE = "keywords.txt"  # 关键词文件路径
-MAX_RESULTS = 5  # 每次每个关键词抓几篇
+MAX_RESULTS = 5  # 每次每个关键词抓几篇（旧路径，仍用于全局/向后兼容）
+# 推荐流程候选池大小：从 arXiv 拉多少篇候选送给打分器
+CANDIDATE_POOL_SIZE = int(os.environ.get("CANDIDATE_POOL_SIZE", "25"))
+# 每个用户每次推送 Top-K（覆盖所有关键词后的总数）
+RECOMMEND_TOP_K = int(os.environ.get("RECOMMEND_TOP_K", "10"))
+# 同一第一作者最多保留多少篇
+MAX_PER_FIRST_AUTHOR = int(os.environ.get("MAX_PER_FIRST_AUTHOR", "2"))
 ENV_FILE = ".env"  # 环境变量文件路径
 
 def load_env_file(env_path: str = ENV_FILE):
@@ -124,8 +133,11 @@ if not DB_PATH:
 # 输出一次，方便区分不同环境使用的数据库
 print(f"💾 当前运行环境: {APP_ENV}，数据库: {DB_PATH}")
 
+# Claude CLI 配置：用 `claude -p` 替代 OpenAI 来做论文总结
+CLAUDE_CLI_PATH = os.environ.get("CLAUDE_CLI_PATH", "/home/ubuntu/.local/bin/claude")
+CLAUDE_CLI_TIMEOUT = int(os.environ.get("CLAUDE_CLI_TIMEOUT", "180"))
+
 # 从环境变量读取配置（优先级：系统环境变量 > .env 文件 > 默认值）
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER", "")
@@ -142,14 +154,9 @@ MAILGUN_DOMAIN = os.environ.get("MAILGUN_DOMAIN", "")
 USE_MAILGUN_API = os.environ.get("USE_MAILGUN_API", "false").lower() == "true"
 
 # 验证必要的配置
-if not OPENAI_API_KEY:
-    raise ValueError("请设置环境变量 OPENAI_API_KEY")
 if not EMAIL_SENDER:
     raise ValueError("请设置环境变量 EMAIL_SENDER")
 # EMAIL_PASSWORD 是可选的（本地SMTP服务器通常不需要认证）
-
-# 初始化 OpenAI
-client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 def init_database():
     """初始化数据库，创建表结构（含 subscribers→users 迁移）"""
@@ -180,6 +187,14 @@ def init_database():
     cursor.execute("""
         CREATE INDEX IF NOT EXISTS idx_paper_date ON papers(date)
     """)
+
+    # 推荐打分字段迁移（旧库无此列时补上）
+    cursor.execute("PRAGMA table_info(papers)")
+    paper_cols = {row[1] for row in cursor.fetchall()}
+    if "score" not in paper_cols:
+        cursor.execute("ALTER TABLE papers ADD COLUMN score REAL")
+    if "matched_keywords" not in paper_cols:
+        cursor.execute("ALTER TABLE papers ADD COLUMN matched_keywords TEXT")
 
     # --- 迁移 subscribers → users ---
     # 检查旧表是否存在
@@ -361,17 +376,25 @@ def get_recent_papers_from_db(days: int = 7, limit: int = 10) -> List[Dict]:
     conn.close()
     return papers
 
-def save_paper(paper: Dict, summary: str, keyword: str, sent: bool = False):
-    """保存论文到数据库"""
+def save_paper(
+    paper: Dict,
+    summary: str,
+    keyword: str,
+    sent: bool = False,
+    score: Optional[float] = None,
+    matched_keywords: Optional[List[str]] = None,
+):
+    """保存论文到数据库，可选附带推荐打分和命中关键词。"""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
+
     sent_at = datetime.now().isoformat() if sent else None
-    
+    matched_json = json.dumps(matched_keywords) if matched_keywords else None
+
     cursor.execute("""
-        INSERT OR REPLACE INTO papers 
-        (id, title, url, abstract, authors, date, summary, keyword, sent_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR REPLACE INTO papers
+        (id, title, url, abstract, authors, date, summary, keyword, sent_at, score, matched_keywords)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         paper['id'],
         paper['title'],
@@ -381,96 +404,130 @@ def save_paper(paper: Dict, summary: str, keyword: str, sent: bool = False):
         paper['date'],
         summary,
         keyword,
-        sent_at
+        sent_at,
+        score,
+        matched_json,
     ))
-    
+
     conn.commit()
     conn.close()
 
-def fetch_papers(keyword: str, days: int = 30, max_results: int = None) -> List[Dict]:
-    """从 arXiv 获取最新论文，自动过滤已存在的论文
-    
+def fetch_papers(
+    keyword: str,
+    days: int = 30,
+    max_results: int = None,
+    deduplicate: bool = True,
+) -> List[Dict]:
+    """从 arXiv 获取最新论文。
+
     Args:
         keyword: 搜索关键词
-            - 用逗号分隔：使用 OR 逻辑（例如："chain-of-thought, PDDL planning"）
-            - 用空格分隔：使用 AND 逻辑（例如："LLM reasoning"）
-        days: 搜索过去多少天的论文（默认30天）
-        max_results: 最大返回结果数（默认使用全局 MAX_RESULTS）
+            - 用逗号分隔：OR 逻辑（"chain-of-thought, PDDL planning"）
+            - 多词无逗号：短语匹配 ti:"..." OR abs:"..."（避免命中过宽）
+        days: 搜索过去多少天的论文
+        max_results: 最大返回结果数；默认 MAX_RESULTS（旧路径）
+        deduplicate: 是否跳过数据库中已存在的论文（推荐流程会自己去重，故可关掉）
     """
     if max_results is None:
         max_results = MAX_RESULTS
-    
-    # 检查是否包含逗号（OR 逻辑）
-    if ',' in keyword:
-        # 用逗号分隔：使用 OR 逻辑
-        # 例如："chain-of-thought, PDDL planning" → (chain-of-thought) OR (PDDL AND planning)
-        parts = [part.strip() for part in keyword.split(',') if part.strip()]
-        
-        if len(parts) > 1:
-            # 对每个部分，如果包含空格，则用 AND 连接
-            or_queries = []
-            for part in parts:
-                keywords_in_part = part.split()
-                if len(keywords_in_part) > 1:
-                    # 这部分内部用 AND 连接
-                    or_queries.append("(" + " AND ".join(keywords_in_part) + ")")
-                else:
-                    or_queries.append(part)
-            
-            query = " OR ".join(or_queries)
-            print(f"🔍 搜索关键词: {keyword} (OR 模式: {query}, 过去 {days} 天, 最多 {max_results} 篇)...")
-        else:
-            query = keyword
-            print(f"🔍 搜索关键词: {keyword} (过去 {days} 天, 最多 {max_results} 篇)...")
-    else:
-        # 没有逗号：用空格分隔，使用 AND 逻辑
-        keywords_list = keyword.strip().split()
-        if len(keywords_list) > 1:
-            # 多个关键词：使用 AND 连接，确保所有关键词都出现
-            query = " AND ".join(keywords_list)
-            print(f"🔍 搜索关键词: {keyword} (AND 模式: {query}, 过去 {days} 天, 最多 {max_results} 篇)...")
-        else:
-            query = keyword
-            print(f"🔍 搜索关键词: {keyword} (过去 {days} 天, 最多 {max_results} 篇)...")
-    
+
+    query = build_arxiv_query(keyword)
+    print(f"🔍 搜索关键词: {keyword} (query: {query}, 过去 {days} 天, 最多 {max_results} 篇)...")
+
     try:
-        # 使用新的 Client API
         client_arxiv = arxiv.Client()
         search = arxiv.Search(
             query=query,
             max_results=max_results,
-            sort_by=arxiv.SortCriterion.SubmittedDate # 按提交时间排序
+            sort_by=arxiv.SortCriterion.SubmittedDate,
         )
-        
+
         papers = []
         new_count = 0
         cutoff_date = datetime.now().date() - timedelta(days=days)
-        
+
         for result in client_arxiv.results(search):
-            # 根据指定的天数过滤论文
             if result.published.date() >= cutoff_date:
                 paper_id = result.entry_id
-                
-                # 检查是否已存在
-                if is_paper_exists(paper_id):
+
+                if deduplicate and is_paper_exists(paper_id):
                     print(f"  ⏭️  跳过已存在的论文: {result.title[:50]}...")
                     continue
-                
+
                 papers.append({
                     "title": result.title,
                     "url": result.entry_id,
                     "abstract": result.summary,
                     "authors": ", ".join([a.name for a in result.authors]),
                     "date": result.published.strftime("%Y-%m-%d"),
-                    "id": paper_id
+                    "id": paper_id,
                 })
                 new_count += 1
-        
-        print(f"  ✅ 找到 {new_count} 篇新论文")
+
+        print(f"  ✅ 找到 {new_count} 篇候选论文")
         return papers
     except Exception as e:
         print(f"❌ 获取论文失败 ({keyword}): {e}")
         return []
+
+
+def recommend_for_user(
+    user_keywords: List[str],
+    days: int = 30,
+    candidate_pool_size: Optional[int] = None,
+    top_k: Optional[int] = None,
+    skip_existing: bool = True,
+) -> List[Dict]:
+    """为单个用户跨关键词聚合候选并打分排序，返回 Top-K 推荐。
+
+    流程：
+      1. 对每个用户关键词从 arXiv 拉 candidate_pool_size 篇候选
+      2. 跨关键词去重（按 paper id）
+      3. 用 recommender 联合打分（命中多关键词加权 + 新近度）
+      4. 同一第一作者最多 MAX_PER_FIRST_AUTHOR 篇
+      5. 取 Top-K
+    """
+    if candidate_pool_size is None:
+        candidate_pool_size = CANDIDATE_POOL_SIZE
+    if top_k is None:
+        top_k = RECOMMEND_TOP_K
+    if not user_keywords:
+        return []
+
+    pool: List[Dict] = []
+    seen_ids: Set[str] = set()
+    for kw in user_keywords:
+        # 候选阶段我们手动去重已发送的（避免重复推送），但同一关键词内不让 fetch_papers 自己做去重
+        # 这样可以让 score 评估完整候选（即使 DB 中已有但未发过的也能参与）
+        candidates = fetch_papers(kw, days=days, max_results=candidate_pool_size, deduplicate=False)
+        for p in candidates:
+            if p["id"] in seen_ids:
+                continue
+            if skip_existing and is_paper_sent(p["id"]):
+                continue
+            seen_ids.add(p["id"])
+            pool.append(p)
+
+    if not pool:
+        return []
+
+    ranked = recommend(
+        pool,
+        user_keywords,
+        top_k=top_k,
+        max_per_first_author=MAX_PER_FIRST_AUTHOR,
+    )
+    return ranked
+
+
+def is_paper_sent(paper_id: str) -> bool:
+    """检查论文是否已发送过（sent_at 非空）"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT 1 FROM papers WHERE id = ? AND sent_at IS NOT NULL", (paper_id,))
+    sent = cursor.fetchone() is not None
+    conn.close()
+    return sent
 
 def fetch_papers_by_author(
     author: str,
@@ -536,47 +593,61 @@ def fetch_papers_by_author(
         print(f"❌ 获取作者论文失败 ({author}): {e}")
         return []
 
+def _call_claude_cli(prompt: str, timeout: int = CLAUDE_CLI_TIMEOUT) -> str:
+    """调用 `claude -p` 子进程生成响应。stdin 传 prompt，stdout 拿纯文本。
+
+    失败抛 RuntimeError，调用方负责重试。
+    """
+    result = subprocess.run(
+        [CLAUDE_CLI_PATH, "-p"],
+        input=prompt,
+        capture_output=True,
+        text=True,
+        timeout=timeout,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"claude -p exited {result.returncode}: {(result.stderr or '').strip()[:500]}"
+        )
+    out = (result.stdout or "").strip()
+    if not out:
+        raise RuntimeError("claude -p returned empty output")
+    return out
+
+
 def summarize_paper(paper: Dict, keyword: str = "", max_retries: int = 3) -> str:
-    """调用 LLM 进行中文总结，带缓存和重试机制"""
-    # 先检查缓存
+    """调用 `claude -p` 进行中文总结，带缓存和重试机制"""
     cached_summary = get_cached_summary(paper['id'])
     if cached_summary:
         print(f"  💾 使用缓存的总结")
         return cached_summary
-    
-    # 缓存中没有，调用 API
-    print(f"  🤖 调用 OpenAI API 生成总结...")
-    prompt = f"""
-    请阅读以下论文的标题和摘要，用中文简要总结。
-    
-    格式要求：
-    1. **核心创新点**：一句话概括。
-    2. **主要方法**：简述用了什么技术/模型。
-    3. **结论/性能**：取得了什么效果。
-    
-    Title: {paper['title']}
-    Abstract: {paper['abstract']}
-    """
-    
+
+    print(f"  🤖 调用 Claude CLI 生成总结...")
+    prompt = f"""请阅读以下论文的标题和摘要，用中文简要总结。
+
+格式要求：
+1. **核心创新点**：一句话概括。
+2. **主要方法**：简述用了什么技术/模型。
+3. **结论/性能**：取得了什么效果。
+
+Title: {paper['title']}
+Abstract: {paper['abstract']}
+"""
+
     for attempt in range(max_retries):
         try:
-            response = client.chat.completions.create(
-                model="gpt-5-nano-2025-08-07", # 使用指定的模型
-                messages=[{"role": "user", "content": prompt}]
-            )
-            summary = response.choices[0].message.content
-            # 保存到数据库（但不标记为已发送）
+            summary = _call_claude_cli(prompt)
             save_paper(paper, summary, keyword, sent=False)
             return summary
-        except Exception as e:
+        except (subprocess.TimeoutExpired, RuntimeError, OSError) as e:
             if attempt < max_retries - 1:
-                wait_time = 2 ** attempt  # 指数退避
-                print(f"  ⚠️  API 调用失败，{wait_time}秒后重试... ({e})")
+                wait_time = 2 ** attempt
+                print(f"  ⚠️  Claude CLI 调用失败，{wait_time}秒后重试... ({e})")
                 time.sleep(wait_time)
             else:
                 print(f"  ❌ 总结论文失败 ({paper['title']}): {e}")
                 error_summary = "总结生成失败，请查看原文。"
-                # 即使失败也保存，避免重复尝试
                 save_paper(paper, error_summary, keyword, sent=False)
                 return error_summary
 
@@ -667,13 +738,35 @@ def send_email_via_smtp(content_html: str, subject: str, to: str = None):
     return True
 
 def _build_paper_html(paper: Dict, summary: str) -> str:
-    """生成单篇论文的 HTML 片段"""
+    """生成单篇论文的 HTML 片段，含推荐评分与匹配关键词徽标。"""
     title_escaped = html.escape(paper['title'])
     authors_escaped = html.escape(paper.get('authors', ''))
     summary_escaped = html.escape(summary or '').replace('\n', '<br>')
+
+    badges = ""
+    score = paper.get("score")
+    matched = paper.get("matched_keywords") or []
+    if score is not None:
+        badges += (
+            f'<span style="display:inline-block;background:#4f46e5;color:#fff;'
+            f'padding:2px 8px;border-radius:10px;font-size:12px;margin-right:6px;">'
+            f'相关度 {float(score):.2f}</span>'
+        )
+    for kw in matched[:4]:
+        kw_esc = html.escape(kw)
+        badges += (
+            f'<span style="display:inline-block;background:#e0e7ff;color:#3730a3;'
+            f'padding:2px 8px;border-radius:10px;font-size:12px;margin-right:6px;">'
+            f'#{kw_esc}</span>'
+        )
+
+    meta_line = f"<b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}"
+    badge_block = f'<p style="margin:6px 0;">{badges}</p>' if badges else ''
+
     return f"""
     <h3><a href="{paper['url']}">{title_escaped}</a></h3>
-    <p><b>作者:</b> {authors_escaped} | <b>日期:</b> {paper['date']}</p>
+    <p style="margin:6px 0;">{meta_line}</p>
+    {badge_block}
     <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
         {summary_escaped}
     </div>
@@ -682,7 +775,7 @@ def _build_paper_html(paper: Dict, summary: str) -> str:
 
 
 def _send_for_user(user: Dict, keywords: List[str]):
-    """为单个用户搜索论文并发送邮件"""
+    """为单个用户搜索论文并发送邮件（推荐流程：多关键词联合打分 + Top-K）"""
     user_email = user['email']
     user_name = user.get('name', '')
     print(f"\n👤 处理用户: {user_name or user_email}")
@@ -692,31 +785,31 @@ def _send_for_user(user: Dict, keywords: List[str]):
         return
 
     print(f"  📋 关键词: {', '.join(keywords)}")
+    print(f"  ⚙️  候选池/关键词={CANDIDATE_POOL_SIZE}, Top-K={RECOMMEND_TOP_K}, 同作者上限={MAX_PER_FIRST_AUTHOR}")
 
-    report_html = "<h1>今日 ArXiv 论文速递</h1>"
-    has_updates = False
-    seen_paper_ids: Set[str] = set()
-
-    for keyword in keywords:
-        papers = fetch_papers(keyword, days=30)
-        if not papers:
-            continue
-
-        report_html += f"<h2>关键词: {html.escape(keyword)}</h2><hr>"
-
-        for paper in papers:
-            if paper['id'] in seen_paper_ids:
-                continue
-            seen_paper_ids.add(paper['id'])
-
-            has_updates = True
-            print(f"  📄 处理论文: {paper['title'][:60]}...")
-            summary = summarize_paper(paper, keyword)
-            report_html += _build_paper_html(paper, summary)
-            save_paper(paper, summary, keyword, sent=True)
+    recommended = recommend_for_user(keywords, days=30)
+    has_updates = bool(recommended)
 
     if has_updates:
-        print(f"  📧 发现 {len(seen_paper_ids)} 篇新论文，发送邮件到 {user_email}")
+        report_html = (
+            f"<h1>今日 ArXiv 论文推荐（Top {len(recommended)}）</h1>"
+            f"<p><i>已根据您的关键词跨候选池联合打分排序。</i></p><hr>"
+        )
+        for paper in recommended:
+            print(f"  📄 [score={paper['score']:.3f}] {paper['title'][:60]}...")
+            primary_kw = paper["matched_keywords"][0] if paper.get("matched_keywords") else keywords[0]
+            summary = summarize_paper(paper, primary_kw)
+            report_html += _build_paper_html(paper, summary)
+            save_paper(
+                paper,
+                summary,
+                primary_kw,
+                sent=True,
+                score=paper.get("score"),
+                matched_keywords=paper.get("matched_keywords"),
+            )
+
+        print(f"  📧 推荐 {len(recommended)} 篇论文，发送邮件到 {user_email}")
         send_email(report_html, to=user_email)
         update_user_last_sent(user['id'])
     else:
@@ -740,7 +833,11 @@ def _send_for_user(user: Dict, keywords: List[str]):
 
 
 def get_papers_by_keywords(keywords: List[str], limit: int = 20, offset: int = 0) -> Dict:
-    """根据关键词列表查询论文，支持分页"""
+    """根据关键词列表查询论文，支持分页。
+
+    排序策略：有评分的优先按 score 降序，其次按 created_at 降序。这样推荐流程
+    入库的论文会排在前面，旧的（无评分）按时间倒序兜底。
+    """
     if not keywords:
         return {"papers": [], "total": 0}
 
@@ -750,21 +847,31 @@ def get_papers_by_keywords(keywords: List[str], limit: int = 20, offset: int = 0
 
     placeholders = ",".join("?" for _ in keywords)
 
-    # 获取总数
     cursor.execute(
         f"SELECT COUNT(*) FROM papers WHERE keyword IN ({placeholders})",
         keywords,
     )
     total = cursor.fetchone()[0]
 
-    # 获取分页数据
     cursor.execute(
-        f"""SELECT id, title, url, abstract, authors, date, summary, keyword, created_at
+        f"""SELECT id, title, url, abstract, authors, date, summary, keyword, created_at,
+                   score, matched_keywords
             FROM papers WHERE keyword IN ({placeholders})
-            ORDER BY created_at DESC LIMIT ? OFFSET ?""",
+            ORDER BY (score IS NULL), score DESC, created_at DESC
+            LIMIT ? OFFSET ?""",
         keywords + [limit, offset],
     )
-    papers = [dict(row) for row in cursor.fetchall()]
+    papers = []
+    for row in cursor.fetchall():
+        d = dict(row)
+        if d.get("matched_keywords"):
+            try:
+                d["matched_keywords"] = json.loads(d["matched_keywords"])
+            except (TypeError, ValueError):
+                d["matched_keywords"] = []
+        else:
+            d["matched_keywords"] = []
+        papers.append(d)
     conn.close()
 
     return {"papers": papers, "total": total}
@@ -796,27 +903,29 @@ def main():
         keywords = load_keywords()
         print(f"📋 关键词列表: {', '.join(keywords)}\n")
 
-        report_html = "<h1>今日 ArXiv 论文速递</h1>"
-        has_updates = False
-        seen_paper_ids: Set[str] = set()
-
-        for keyword in keywords:
-            papers = fetch_papers(keyword, days=30)
-            if not papers:
-                continue
-            report_html += f"<h2>关键词: {html.escape(keyword)}</h2><hr>"
-            for paper in papers:
-                if paper['id'] in seen_paper_ids:
-                    continue
-                seen_paper_ids.add(paper['id'])
-                has_updates = True
-                print(f"  📄 处理论文: {paper['title'][:60]}...")
-                summary = summarize_paper(paper, keyword)
-                report_html += _build_paper_html(paper, summary)
-                save_paper(paper, summary, keyword, sent=True)
+        recommended = recommend_for_user(keywords, days=30)
+        has_updates = bool(recommended)
 
         if has_updates:
-            print(f"\n📧 发现 {len(seen_paper_ids)} 篇新论文，正在发送邮件...")
+            report_html = (
+                f"<h1>今日 ArXiv 论文推荐（Top {len(recommended)}）</h1>"
+                f"<p><i>已根据关键词跨候选池联合打分排序。</i></p><hr>"
+            )
+            for paper in recommended:
+                print(f"  📄 [score={paper['score']:.3f}] {paper['title'][:60]}...")
+                primary_kw = paper["matched_keywords"][0] if paper.get("matched_keywords") else keywords[0]
+                summary = summarize_paper(paper, primary_kw)
+                report_html += _build_paper_html(paper, summary)
+                save_paper(
+                    paper,
+                    summary,
+                    primary_kw,
+                    sent=True,
+                    score=paper.get("score"),
+                    matched_keywords=paper.get("matched_keywords"),
+                )
+
+            print(f"\n📧 推荐 {len(recommended)} 篇论文，正在发送邮件...")
             send_email(report_html)
             print("✅ 任务完成！")
         else:

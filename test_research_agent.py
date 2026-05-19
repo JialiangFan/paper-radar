@@ -1,6 +1,9 @@
 """research_agent.py 单元测试"""
+import json
 import os
 import sqlite3
+from unittest.mock import patch
+
 import pytest
 
 os.environ["APP_ENV"] = "test"
@@ -10,6 +13,7 @@ from research_agent import (
     init_database,
     save_paper,
     is_paper_exists,
+    is_paper_sent,
     get_cached_summary,
     get_active_users,
     get_user_keywords,
@@ -18,6 +22,7 @@ from research_agent import (
     should_send_to_user,
     update_user_last_sent,
     load_keywords,
+    recommend_for_user,
     DB_PATH,
 )
 from datetime import datetime, timedelta
@@ -261,6 +266,152 @@ class TestGetRecentPapers:
 # ============================================================
 # load_keywords
 # ============================================================
+
+class TestSavePaperWithScore:
+    def test_save_with_score_and_matched(self):
+        paper = {
+            "id": "scored_paper",
+            "title": "Chain of Thought",
+            "url": "http://example.com",
+            "abstract": "We study CoT.",
+            "authors": "Alice",
+            "date": "2026-05-17",
+        }
+        save_paper(paper, "Summary", "LLM", sent=True, score=0.95, matched_keywords=["LLM", "CoT"])
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute("SELECT score, matched_keywords FROM papers WHERE id = ?", ("scored_paper",))
+        score, matched_json = cursor.fetchone()
+        conn.close()
+        assert score == 0.95
+        assert json.loads(matched_json) == ["LLM", "CoT"]
+
+    def test_save_without_score_keeps_null(self):
+        paper = {
+            "id": "unscored",
+            "title": "Title",
+            "url": "http://example.com",
+            "abstract": "Abs",
+            "authors": "Bob",
+            "date": "2026-05-17",
+        }
+        save_paper(paper, "Summary", "KW")
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute("SELECT score, matched_keywords FROM papers WHERE id = ?", ("unscored",))
+        score, matched = cursor.fetchone()
+        conn.close()
+        assert score is None
+        assert matched is None
+
+
+class TestIsPaperSent:
+    def test_unsent_paper(self):
+        paper = {
+            "id": "unsent_s",
+            "title": "t",
+            "url": "u",
+            "abstract": "a",
+            "authors": "x",
+            "date": "2026-05-17",
+        }
+        save_paper(paper, "s", "k", sent=False)
+        assert is_paper_sent("unsent_s") is False
+
+    def test_sent_paper(self):
+        paper = {
+            "id": "sent_s",
+            "title": "t",
+            "url": "u",
+            "abstract": "a",
+            "authors": "x",
+            "date": "2026-05-17",
+        }
+        save_paper(paper, "s", "k", sent=True)
+        assert is_paper_sent("sent_s") is True
+
+
+class TestRecommendForUser:
+    def test_pipeline_filters_and_ranks(self):
+        """跨关键词候选池 → 推荐器打分 → Top-K"""
+        fake_candidates = {
+            "LLM": [
+                {"id": "p1", "title": "LLM survey", "abstract": "LLMs are great", "authors": "A", "date": "2026-05-17", "url": "u1"},
+                {"id": "p2", "title": "Quantum gravity", "abstract": "physics", "authors": "B", "date": "2026-05-17", "url": "u2"},
+            ],
+            "chain of thought": [
+                {"id": "p3", "title": "Chain of Thought Reasoning", "abstract": "CoT", "authors": "C", "date": "2026-05-17", "url": "u3"},
+                {"id": "p1", "title": "LLM survey", "abstract": "LLMs are great", "authors": "A", "date": "2026-05-17", "url": "u1"},  # 跨关键词重复
+            ],
+        }
+
+        def fake_fetch(keyword, days=30, max_results=None, deduplicate=True):
+            return fake_candidates.get(keyword, [])
+
+        with patch("research_agent.fetch_papers", side_effect=fake_fetch):
+            out = recommend_for_user(["LLM", "chain of thought"], top_k=10)
+
+        ids = [p["id"] for p in out]
+        # 不相关的 p2 应被过滤
+        assert "p2" not in ids
+        # p1 和 p3 都应在
+        assert "p1" in ids
+        assert "p3" in ids
+        # 全部都有 score 和 matched_keywords
+        for p in out:
+            assert "score" in p and p["score"] > 0
+            assert isinstance(p["matched_keywords"], list) and p["matched_keywords"]
+
+    def test_skips_already_sent(self):
+        # 已发送的论文不应被推荐（避免重复）
+        sent_paper = {
+            "id": "already_sent",
+            "title": "LLM survey",
+            "url": "u",
+            "abstract": "abs",
+            "authors": "A",
+            "date": "2026-05-17",
+        }
+        save_paper(sent_paper, "Summary", "LLM", sent=True)
+
+        fake_cand = [sent_paper, {
+            "id": "new_one", "title": "LLM new", "abstract": "abs", "authors": "B", "date": "2026-05-17", "url": "u2"
+        }]
+        with patch("research_agent.fetch_papers", return_value=fake_cand):
+            out = recommend_for_user(["LLM"], top_k=10)
+
+        ids = [p["id"] for p in out]
+        assert "already_sent" not in ids
+        assert "new_one" in ids
+
+    def test_empty_keywords(self):
+        assert recommend_for_user([]) == []
+
+
+class TestGetPapersByKeywordsOrdering:
+    def test_scored_papers_rank_first(self):
+        """有 score 的论文应排在无 score 的论文之前。"""
+        scored = {
+            "id": "scored1", "title": "T1", "url": "u1", "abstract": "a",
+            "authors": "x", "date": "2026-05-17",
+        }
+        unscored = {
+            "id": "unscored1", "title": "T2", "url": "u2", "abstract": "a",
+            "authors": "x", "date": "2026-05-17",
+        }
+        # 先存 unscored（更晚 created_at），后存 scored（更早 created_at 但有 score）
+        save_paper(unscored, "s", "KW")
+        save_paper(scored, "s", "KW", score=0.9, matched_keywords=["KW"])
+
+        result = get_papers_by_keywords(["KW"], limit=10)
+        ids = [p["id"] for p in result["papers"]]
+        # scored 应排第一
+        assert ids[0] == "scored1"
+        # matched_keywords 反序列化为 list
+        scored_paper = result["papers"][0]
+        assert scored_paper["matched_keywords"] == ["KW"]
+        assert result["papers"][1]["matched_keywords"] == []
+
 
 class TestLoadKeywords:
     def test_loads_from_file(self, tmp_path, monkeypatch):
