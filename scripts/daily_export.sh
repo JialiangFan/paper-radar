@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-git pull --rebase --quiet
+git pull --rebase --autostash --quiet
 
 for db in papers.db papers.dev.db; do
   [ -f "$db" ] && python3 scripts/export_papers.py --db "$db"
