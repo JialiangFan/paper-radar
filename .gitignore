@@ -31,3 +31,4 @@ skills-sync/
 # Built dashboard (rebuilt by GitHub Action)
 site/
 logs/
+PDFs/
