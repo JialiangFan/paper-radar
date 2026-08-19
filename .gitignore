@@ -27,3 +27,7 @@ Thumbs.db
 
 # Skills sync (local)
 skills-sync/
+
+# Built dashboard (rebuilt by GitHub Action)
+site/
+logs/
