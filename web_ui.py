@@ -423,6 +423,8 @@ def login(payload: LoginRequest, request: Request):
 @app.post("/api/subscribe")
 def subscribe(payload: SubscribeRequest, request: Request):
     """订阅 - 创建待验证用户，发送验证邮件"""
+    # 2026-08: 机器人垃圾注册泛滥，公开注册已关闭（管理员可在后台直接建用户）
+    raise HTTPException(status_code=403, detail="注册已关闭 / Registration is closed")
     email = payload.email.strip().lower()
     name = payload.name.strip()
     lang = payload.lang if payload.lang in ("zh", "en") else "zh"
