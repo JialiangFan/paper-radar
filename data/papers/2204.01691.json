@@ -29,5 +29,9 @@
  "code": "",
  "project": "https://say-can.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "llm-planning",
+  "llm-agents"
+ ]
 }

@@ -28,5 +28,10 @@
  "code": "https://github.com/ARISE-Initiative/robosuite",
  "project": "https://robosuite.ai/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "sim-to-real",
+  "embodied-benchmarks",
+  "robot-manipulation"
+ ]
 }
