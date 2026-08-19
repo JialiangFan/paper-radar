@@ -10,6 +10,9 @@ for db in papers.db papers.dev.db; do
   [ -f "$db" ] && python3 scripts/export_papers.py --db "$db"
 done
 
+# 给新论文打主题标签（失败不阻塞导出，漏掉的下次续跑）
+python3 scripts/tag_papers.py || echo "⚠️ 打标失败，跳过"
+
 git add data/papers
 if ! git diff --cached --quiet; then
   git commit -q -m "data: daily paper export $(date -u +%F)"
