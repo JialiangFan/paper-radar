@@ -1,0 +1,27 @@
+{
+ "id": "pi0-6-recap-a-vla-that-learns-from-experience",
+ "title": "Pi0.6 RECAP: A VLA That Learns From Experience",
+ "authors": "Ali Amin, Raichelle Aniceto, Ashwin Balakrishna, Kevin Black, Ken Conley, Grace Connors, ... Sergey Levine, Chelsea Finn, Karol Hausman, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "VLA模型通过大规模模仿学习（预训练+SFT）获得了灵活的任务执行能力，但要在真实世界中达到实用级别的鲁棒性和速度，仅靠离线演示是不够的。就像人类需要通过反复练习才能精通一项技能，VLA也需要从自主部署的经验中持续学习。然而，将RL应用于大规模flow matching VLA面临三大挑战：(1) 如何设计适用于flow-based模型的可扩展离线RL...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2511.14759)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/Pi0.6 RECAP - A VLA That Learns From Experience.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

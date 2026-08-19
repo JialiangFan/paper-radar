@@ -1,0 +1,13 @@
+{
+ "id": "2603.16848",
+ "title": "Mediocrity is the key for LLM as a Judge Anchor Selection",
+ "authors": "Shachar Don-Yehiya, Asaf Yehudai, Leshem Choshen, Omri Abend",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16848v1",
+ "abstract": "The ``LLM-as-a-judge'' paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we systematically investigate the effect of anchor selection by evaluating 22 different anchors on the Arena-Hard-v2.0 dataset. We find that the choice of anchor is critical: a poor anchor can dramatically reduce correlation with human rankings. We identify that common anchor choices (best-performing and worst-performing models) make poor anchors. Because these extreme anchors are consistently better or worse than all other models, they are seldom indicative of the relative ranking of the models. We further quantify the effect size of anchor selection, showing it is comparable to the selection of a judge model. We conclude with actionable recommendations. First, we conduct a power analysis, and compute sufficient benchmark sizes for anchor-based evaluation, finding that standard benchmark sizes are insufficient for pairwise evaluation and fail to distinguish between competitive models reliably. Second, we provide guidelines for selecting informative anchors to ensure reliable and efficient evaluation practices.",
+ "summary": "- 核心创新点：系统性研究锚点（anchor）选择对 LLM 作为评测者的影响，发现极端锚点往往与人类排序相关性低，提出信息性锚点的选取原则及功效分析方法。\n- 主要方法：在 Arena-Hard-v2.0 数据集上，对 22 个不同锚点进行实验，比较锚点基于单模型对比的分数与人类排序的相关性，并结合统计功效分析估算所需样本量，给出选取信息性锚点的可操作指南。\n- 结论/性能：锚点选择对评测结果影响显著，常用的最佳/最差锚点往往不代表相对排序，锚点效应的效应量与评测模型选择的效应量相当；标准基准规模不足以可靠区分竞争模型，论文提供提高评测可靠性与效率的锚点选取与样本量建议。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-18 13:00:57"
+}

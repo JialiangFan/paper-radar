@@ -1,0 +1,13 @@
+{
+ "id": "2608.16354",
+ "title": "DriveCache: Action-Aware Caching for Driving World Model Inference",
+ "authors": "Jianchun Yang, Jian Liang, Xianda Guo, Pinhan Fu, Yanlun Peng, Conglang Zhang, Wenke Huang, Mang Ye",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16354v1",
+ "abstract": "Driving video generation models support autonomous-driving development by predicting controllable future scenes for simulation, planning evaluation, and offline data generation. Diffusion-based driving generators repeatedly evaluate large backbones across denoising steps, which limits generation throughput. Existing diffusion acceleration methods reduce this cost, but general-purpose designs omit driving signals available before generation, such as ego speed and planned trajectories. Experiments across driving motions show that cache tolerance varies with ego translation and rotation, denoising progress, and consecutive reuse length. We propose DriveCache, a training-free, action-aware controller that uses planned motion to allocate reuse across scenes and dynamic programming to place it across denoising steps under a calibrated response budget. A causal drift check refreshes features and replans the remaining schedule when generation departs from calibration. Across three generator configurations, DriveCache improves the overall fidelity-efficiency trade-off over evaluated cache methods. Our code will be publicly available.",
+ "summary": "## DriveCache: 面向驾驶世界模型推理的动作感知缓存\n\n**1. 核心创新点**\n利用自动驾驶场景中生成前即已知的动作信号（自车速度、规划轨迹）来指导扩散模型的特征缓存复用，实现免训练的推理加速。\n\n**2. 主要方法**\n- 通过实验发现：缓存容忍度随自车平移/旋转幅度、去噪进程阶段、连续复用长度而变化。\n- 提出训练无关的动作感知控制器：用规划运动信息在**空间维度**（场景内）分配复用量，用**动态规划**在**去噪步骤维度**上排布复用位置，并受一个标定过的响应预算约束。\n- 增加因果漂移检测（causal drift check）：当生成过程偏离标定假设时，刷新特征并对剩余调度重新规划。\n\n**3. 结论/性能**\n在三种生成器配置下，DriveCache 相比已有缓存加速方法取得了更优的整体保真度—效率权衡；代码将开源。\n\n> 一句话点评：本质是把\"通用扩散缓存\"升级为\"条件先验驱动的自适应缓存调度\"，卖点在于利用了驾驶任务特有的先验信息，且无需重训练。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-18 13:03:39"
+}

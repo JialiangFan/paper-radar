@@ -1,0 +1,13 @@
+{
+ "id": "2607.28624",
+ "title": "PhiZero: A World Model Built Around Physical Language",
+ "authors": "Shuyao Shang, Yuqi Wang, Ruopeng Gao, Xu Chen, Tieniu Tan, Lue Fan, Zhaoxiang Zhang",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28624v1",
+ "abstract": "We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future videos directly in pixel space, leaving the underlying world dynamics implicit within high-dimensional visual predictors. Motivated by humans' ability to abstract predictive structure from visual experience and organize it in natural language for explicit reasoning, we learn physical language from in-the-wild videos through self-supervision and use it to explicitly reason about how the physical world evolves. Accordingly, PhiZero adopts a reason-then-render paradigm: it first infers future world evolution as a physical-language sequence and then renders the inferred transitions into videos. Extensive experiments across generation and understanding benchmarks validate the ability of PhiZero to model physically coherent world evolution. We further show its potential for realistic and interactive world modeling, fine-grained action-conditioned simulation, and zero-shot motion transfer.",
+ "summary": "## PhiZero: A World Model Built Around Physical Language\n\n**1. 核心创新点**\n提出\"物理语言\"（physical language）——一种描述世界状态转移的紧凑离散表示，让世界模型先用它显式推理物理演化、再渲染成视频，而非像现有方法那样直接在像素空间隐式建模动力学。\n\n**2. 主要方法**\n- 从**野外视频**（in-the-wild videos）中以**自监督**方式学习物理语言表示，无需人工标注；\n- 采用 **reason-then-render（先推理、后渲染）** 两阶段范式：第一阶段将未来的世界演化推断为一段物理语言序列，第二阶段把推断出的状态转移渲染为视频；\n- 灵感来自人类从视觉经验中抽象出预测结构、并用自然语言组织以进行显式推理的能力。\n\n**3. 结论/性能**\n在**生成**与**理解**两类基准上的大量实验表明，PhiZero 能够建模物理上连贯的世界演化；并进一步展示了三方面潜力：真实感的交互式世界建模、细粒度的动作条件仿真（action-conditioned simulation），以及零样本运动迁移（zero-shot motion transfer）。\n\n---\n\n补充一句判断：该工作的关键价值在于把世界动力学从高维视觉预测器中**解耦出来变成可读、可推理的中间表示**，这既提升了可解释性，也是它能做零样本运动迁移和动作条件仿真的原因。摘要未给出具体数值指标和对比基线，实际性能强弱需看正文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-31 13:03:15"
+}

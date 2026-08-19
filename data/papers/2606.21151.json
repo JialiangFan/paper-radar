@@ -1,0 +1,13 @@
+{
+ "id": "2606.21151",
+ "title": "Context-Aware Generative AI for Automated Telecom Test Script Generation",
+ "authors": "Gautam Prasad, Chandramohan T. N., Joy Bose",
+ "date": "2026-06-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.21151v1",
+ "abstract": "Automated test generation for telecom software systems and networks has advanced significantly with the adoption of machine learning and rule-based approaches. However, most existing solutions generate static test suites against a snapshot of the system; as code, configurations, topologies, and key performance indicators (KPIs) evolve, these tests quickly become outdated or misaligned with the live system. There is currently no widely adopted solution that continuously detects fine-grained changes and selectively adapts only the affected tests without regenerating entire test suites. This paper presents a context-aware generative AI framework for automated telecom test script generation that treats testing as a continuously adapting process driven by the current state of the system rather than a static artifact. The central contribution is delta-conditioned test generation over a live knowledge graph: our approach employs a continuously updated knowledge graph (KG) as a single source of truth, a delta engine for fine-grained change detection, and a KG-guided generative AI agent, operating via the Model Context Protocol (MCP), to create, update, or retire test cases automatically. We further integrate Retrieval-Augmented Generation (RAG) to enrich reasoning with telecom-domain knowledge and historical artifacts. We demonstrate applicability across software-system and telecom-network use cases, including a Python-based KPI monitoring application managed in GitLab, and show how the framework reduces manual effort, improves test relevance, and accelerates test cycles.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-24 13:00:56"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.19924",
+ "title": "RoHIL: Robust Human-in-the-Loop Robotic Reinforcement Learning Against Illumination Variations",
+ "authors": "Shuoqin Zhang, Yixin Xiong, Xiru Gao, Kai Liu, Ke Wang, Xichuan Zhou, Zhe Hu",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19924v1",
+ "abstract": "Human-in-the-loop reinforcement learning systems achieve near-perfect success on the workstation where they are trained, but collapse when the same robot is moved to a workstation a few meters away due to shifts in the visual input distribution caused by new lamp positions and window light. Re-collecting demonstrations and re-running HIL on every workstation is incompatible with deployment, and naively fine-tuning on shifted-light data triggers catastrophic forgetting of the source workstation. To close this cross-domain gap, we present RoHIL, an offline fine-tuning framework that uses no extra real-robot interaction. RoHIL combines (i) a world-model-based image relighter that re-synthesises the visual stream of source-workstation trajectories under multiple virtual HDRI environments, leaving actions and rewards real; (ii) Illumination-Retention Replay (IRR), a data-level anti-forgetting mechanism that interleaves relit adaptation transitions with original-light retention transitions to preserve source-workstation Bellman coverage; and (iii) an anchored Bellman-actor regulariser that constrains representation and policy drift from the original source-workstation policy. Across four real-robot manipulation tasks under significant cross-workstation illumination variations, RoHIL substantially improves shifted-light performance where standard HIL-RL collapses, while preserving source-workstation performance, eliminating the need to re-collect data and retrain for every new workstation and environment. Project page: https://anonymous4365.github.io/RoHIL/",
+ "summary": "# RoHIL 论文总结\n\n1. **核心创新点**：提出一种离线微调框架 RoHIL，使人在回路强化学习（HIL-RL）训练的机器人策略能够鲁棒应对跨工作站的光照变化，无需在新工作站重新采集数据。\n\n2. **主要方法**：\n   - **世界模型图像重光照器**：利用多种虚拟 HDRI 环境对源工作站轨迹的视觉流进行重新合成，保留真实的动作与奖励；\n   - **光照保持回放（IRR）**：在数据层面交错使用重光照过渡样本与原始光照保留样本，缓解灾难性遗忘；\n   - **锚定 Bellman-Actor 正则项**：约束表征和策略相对于源工作站原策略的漂移。\n\n3. **结论/性能**：在四个真实机器人操作任务、显著跨工作站光照变化条件下，RoHIL 在标准 HIL-RL 完全失效的偏移光照场景下显著提升性能，同时保留源工作站性能，免去为每个新工作站重新采集数据和训练的成本。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-24 13:03:55"
+}

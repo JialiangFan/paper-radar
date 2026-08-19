@@ -1,0 +1,27 @@
+{
+ "id": "towards-safe-robot-foundation-models",
+ "title": "Towards Safe Robot Foundation Models",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "Robot Foundation Models (RFMs)如Octo、OpenVLA通过behavior cloning在大规模数据上训练，具有跨任务和环境的泛化能力。然而，当前研究聚焦泛化能力，忽视了安全这一真实部署的关键需求。BC策略可能因distribution shift在安全关键任务中产生灾难性动作。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Towards Safe Robot Foundation Models.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

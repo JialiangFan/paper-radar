@@ -1,0 +1,13 @@
+{
+ "id": "2606.08962",
+ "title": "C$^3$ache: Accelerating World Action Models with Cross Inference Chunk Cache",
+ "authors": "Weisen Zhao, Lam Nguyen, Zhicong Lu, Yuzhang Shang",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08962v1",
+ "abstract": "World Action Models (WAMs) generalize better than standard Vision-Language-Action (VLA) policies to novel motions and environments, because a video-modeling objective lets them learn from abundant unlabeled video rather than scarce labeled robot demonstrations. This generalization is computationally expensive. To complete a task, a WAM runs over multiple inference chunks, and each chunk requires a costly denoising process. Existing acceleration methods reduce this cost by caching and reusing computation within a single chunk's denoising trajectory. Our empirical analysis reveals a substantial source of redundancy they overlook: redundancy across chunks. When a robot executes a smooth behavior, the residuals computed at a given denoising step are strongly correlated from one chunk to the next. We introduce C$^3$ache, a training-free method that caches and reuses these residuals across inference chunks at the same denoising step. Experiments on benchmarks with a Fast-WAM backbone show that C$^3$ache achieves up to a $2.5\\times$ speedup in total wall-clock inference time, with negligible degradation in task success rate.",
+ "summary": "# 论文总结：C³ache\n\n1. **核心创新点**：发现并利用了 World Action Models (WAMs) 在**跨推理块（cross-chunk）之间**存在的去噪残差冗余，提出一种免训练的缓存复用方法来加速推理。\n\n2. **主要方法**：基于实证观察——机器人执行平滑动作时，相邻推理块在同一去噪步骤上的残差高度相关。C³ache 在相同的去噪步骤上跨推理块缓存并复用这些残差，区别于以往只在单个块内部去噪轨迹中做缓存的方法。\n\n3. **结论/性能**：在 Fast-WAM 主干网络上实验，相比现有方法最高获得 **2.5× 的端到端推理墙钟时间加速**，且任务成功率几乎无损。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-09 13:02:22"
+}

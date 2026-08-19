@@ -1,0 +1,13 @@
+{
+ "id": "2605.16867",
+ "title": "GoodServe: Towards High-Goodput Serving of Agentic LLM Inferences over Heterogeneous Resources",
+ "authors": "Boxiao Du, Boning Huangfu, Yizhou Luo, Chen Chen, Zijun Li, Minchen Yu, Xiaoyi Fan, Minyi Guo",
+ "date": "2026-05-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.16867v1",
+ "abstract": "Large Language Models (LLMs) play a critical role in emerging agentic applications, where the timely completion of each entire inference is critical. Meanwhile, agentic LLM inferences are increasingly served on heterogeneous GPUs in operator's resource pools. Therefore, it is crucial to route incoming inference requests to appropriate GPUs so that their end-to-end latency requirements are satisfied whenever possible, thereby achieving high goodput. In this paper, we propose GoodServe, a goodput-optimized serving system for agentic inferences over heterogeneous resources. GoodServe performs inference routing in a predict-and-rectify manner. It estimates the request output lengths as well as the GPU serving status in an accurate and also practical manner. Based on information from both the demand and resource sides, it then makes high-quality routing decisions using a just-enough instance selection heuristic. It also periodically monitors SLO-violation risks of active requests and triggers runtime request migrations to address unexpected dynamics. Our evaluations show that GoodServe improves goodput by up to 27.4% over existing routing methods.",
+ "summary": "- 核心创新点：在异构GPU资源上，提出一个预测-纠偏的路由与动态迁移系统 GoodServe，通过对请求输出长度与GPU状态的联合估算，并使用就够实例选择的启发式路由，显著提升 agentic LLM 推理的 goodput。\n- 主要方法：构建一个面向代理型LLM推理的服务系统，采用预测阶段估算请求的输出长度和GPU当前 serving 状态，结合需求与资源信息进行高质量路由决策；并周期性监控活跃请求的 SLO 违约风险，触发运行时请求迁移以应对动态变化。\n- 结论/性能：在异构资源环境下，相较于现有路由方法，GoodServe 的 goodput 最多提升约27.4%。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-05-19 12:33:01"
+}

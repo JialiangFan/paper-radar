@@ -1,0 +1,13 @@
+{
+ "id": "2605.28588",
+ "title": "Technical Report: Exploring the Emerging Threats of the Agent Skill Ecosystem",
+ "authors": "Luca Beurer-Kellner, Aleksei Kudrinskii, Marco Milanta, Kristian Bonde Nielsen, Hemang Sarkar, Liran Tal",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28588v1",
+ "abstract": "We analyzed 3,984 AI agent skills from major marketplaces and found 76 confirmed malicious payloads, including credential theft, backdoor installation, and data exfiltration. 13.4% of all skills contain at least one critical-level security issue and at least 8 manually confirmed malicious skills remain publicly available on clawhub.ai as of the date of publication. This report documents our methodology, presents a threat taxonomy based on real-world samples, and details the attack patterns we observed. As skill marketplaces grow rapidly and AI agents gain access to sensitive credentials and systems, automated security analysis is no longer optional.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-28 13:01:18"
+}

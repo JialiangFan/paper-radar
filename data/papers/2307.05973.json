@@ -1,0 +1,32 @@
+{
+ "id": "2307.05973",
+ "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+ "authors": "Huang, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2307.05973",
+ "abstract": "",
+ "summary": "VoxPoser turns language and visual grounding into 3D value maps that guide closed-loop robot trajectories.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "3d-value-maps",
+  "constraint-grounding",
+  "language-grounding",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "spatial-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2023_Huang_VoxPoser.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2023_Huang_VoxPoser.pdf",
+ "code": "https://github.com/huangwl18/VoxPoser",
+ "project": "https://voxposer.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

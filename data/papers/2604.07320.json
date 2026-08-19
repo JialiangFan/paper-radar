@@ -1,0 +1,13 @@
+{
+ "id": "2604.07320",
+ "title": "Evaluating In-Context Translation with Synchronous Context-Free Grammar Transduction",
+ "authors": "Jackson Petty, Jaulie Goe, Tal Linzen",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07320v1",
+ "abstract": "Low-resource languages pose a challenge for machine translation with large language models (LLMs), which require large amounts of training data. One potential way to circumvent this data dependence is to rely on LLMs' ability to use in-context descriptions of languages, like textbooks and dictionaries. To do so, LLMs must be able to infer the link between the languages' grammatical descriptions and the sentences in question. Here we isolate this skill using a formal analogue of the task: string transduction based on a formal grammar provided in-context. We construct synchronous context-free grammars which define pairs of formal languages designed to model particular aspects of natural language grammar, morphology, and written representation. Using these grammars, we measure how well LLMs can translate sentences from one formal language into another when given both the grammar and the source-language sentence. We vary the size of the grammar, the lengths of the sentences, the syntactic and morphological properties of the languages, and their written script. We note three key findings. First, LLMs' translation accuracy decreases markedly as a function of grammar size and sentence length. Second, differences in morphology and written representation between the source and target languages can strongly diminish model performance. Third, we examine the types of errors committed by models and find they are most prone to recall the wrong words from the target language vocabulary, hallucinate new words, or leave source-language words untranslated.",
+ "summary": "- 核心创新点：提出以同步上下文无关文法（SCFG）构建的形式任务，评估在给定语言语法描述时，LLMs 的就地翻译能力，并系统分析文法规模、句子长度及形态/书写差异对性能的影响与错误模式。\n\n- 主要方法：使用 SCFG 构造一对形式语言，模仿自然语言的语法、形态和书写表示的差异；在给出源语言句子和对应的语法描述后，测量 LLMs 的翻译效果；通过改变文法规模、句子长度、语言的形态与书写系统等变量，进行对比分析并对错误类型进行分类（如记错目标词、生成新词、未翻译源词等）。\n\n- 结论/性能：1) 翻译准确度随着文法规模和句子长度显著下降；2) 源/目标语言在形态与书写表示的差异会显著降低模型性能；3) 常见错误包括从目标词汇中回忆错词、幻词生成以及未翻译源语言词汇。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-09 13:01:10"
+}

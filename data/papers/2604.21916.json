@@ -1,0 +1,13 @@
+{
+ "id": "2604.21916",
+ "title": "MathDuels: Evaluating LLMs as Problem Posers and Solvers",
+ "authors": "Zhiqiu Xu, Shibo Jin, Shreya Arya, Mayur Naik",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21916v1",
+ "abstract": "As frontier language models attain near-ceiling performance on static mathematical benchmarks, existing evaluations are increasingly unable to differentiate model capabilities, largely because they cast models solely as solvers of fixed problem sets. We introduce MathDuels, a self-play benchmark in which models occupy dual roles: each authors math problems under adversarial prompting and solves problems authored by every other participant. Problems are produced through a three-stage generation pipeline (meta-prompting, problem generation, and difficulty amplification), and validated by an independent verifier that excludes ill-posed questions. A Rasch model (Rasch, 1993) jointly estimates solver abilities and problem difficulties; author quality is derived from the difficulties of each model's authored problems. Experiments across 19 frontier models reveal that authoring and solving capabilities are partially decoupled, and that dual-role evaluation reveals capability separations invisible in single-role benchmarks. As newer models enter the arena, they produce problems that defeat previously dominant solvers, so the benchmark's difficulty co-evolves with participant strength rather than saturating at a fixed ceiling. We host a public leaderboard that updates as new models are released.",
+ "summary": "- 核心创新点：提出 MathDuels 的自对弈评测框架，让模型同时担任题目作者与解题者，通过对抗性提示、三阶段题目生成与独立验证器筛选，结合 Rasch 模型对难度和能力进行联合估计，形成一个随参与者强度共同进化的动态评测体系。\n\n- 主要方法：采用自对弈框架；题目生成分为三阶段（元提示、题目生成、难度放大）；独立验证器排除不良或病态题目；使用 Rasch 模型同时估计解题能力与题目难度，并据此推定作者质量；在 19 个前沿模型上进行实验并提供公开排行榜。\n\n- 结论/性能：发现作者能力与解题能力部分解耦，双角色评测揭示单角色基准看不到的能力差异；新模型能生成击败以往主导解题者的题目，难度随参与者强度共同进化，排行榜将持续更新。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-24 13:00:37"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.06825",
+ "title": "AEGPO: Adaptive Entropy-Guided Policy Optimization for Diffusion Models",
+ "authors": "Yuming Li, Qingyu Li, Chengyu Bai, Xiangyang Luo, Zeyue Xue, Wenyu Qin, Meng Wang, Yikai Wang, Shanghang Zhang",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06825v1",
+ "abstract": "Reinforcement learning from human feedback (RLHF) shows promise for aligning diffusion and flow models, yet policy optimization methods such as GRPO suffer from inefficient and static sampling strategies. These methods treat all prompts and denoising steps uniformly, ignoring substantial variations in sample learning value as well as the dynamic nature of critical exploration moments.\n  To address this issue, we conduct a detailed analysis of the internal attention dynamics during GRPO training and uncover a key insight: attention entropy can serve as a powerful dual-signal proxy. First, across different samples, the relative change in attention entropy (ΔEntropy), which reflects the divergence between the current policy and the base policy, acts as a robust indicator of sample learning value. Second, during the denoising process, the peaks of absolute attention entropy (Entropy(t)), which quantify attention dispersion, effectively identify critical timesteps where high-value exploration occurs.\n  Building on this observation, we propose Adaptive Entropy-Guided Policy Optimization (AEGPO), a novel dual-signal, dual-level adaptive optimization strategy. At the global level, AEGPO uses ΔEntropy to dynamically allocate rollout budgets, prioritizing prompts with higher learning value. At the local level, it exploits the peaks of Entropy(t) to guide exploration selectively at critical high-dispersion timesteps rather than uniformly across all denoising steps.\n  By focusing computation on the most informative samples and the most critical moments, AEGPO enables more efficient and effective policy optimization. Experiments on text-to-image generation tasks demonstrate that AEGPO significantly accelerates convergence and achieves superior alignment performance compared to standard GRPO variants.",
+ "summary": "- 核心创新点：提出基于注意力熵的双信号自适应策略 AEGPO，通过 ΔEntropy 和 Entropy(t) 两个信号实现全局 rollout 预算分配与局部高信息性探索，从而提升扩散模型的策略优化效率与对齐效果。\n\n- 主要方法：在 GRPO 训练中发现注意力熵的两种作用：ΔEntropy（相对变化的注意力熵）作为样本学习价值的鲁棒指标，Entropy(t) 峰值揭示 denoising 过程中的关键时间步。基于此，AEGPO 在全局层面用 ΔEntropy 动态分配 rollout 预算，在局部层面在 denoise 的 Entropy(t) 峰值处进行有选择的探索，而非对所有步骤均匀探索。\n\n- 结论/性能：在文本到图像生成任务中，AEGPO 显著加速收敛并实现优于标准 GRPO 变体的对齐性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-09 14:03:32"
+}

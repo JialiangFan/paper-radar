@@ -1,0 +1,13 @@
+{
+ "id": "2604.25602",
+ "title": "OxyGent: Making Multi-Agent Systems Modular, Observable, and Evolvable via Oxy Abstraction",
+ "authors": "Junxing Hu, Tianlong Li, Lei Yu, Ai Han",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25602v1",
+ "abstract": "Deploying production-ready multi-agent systems (MAS) in complex industrial environments remains challenging due to limitations in scalability, observability, and autonomous evolution. We present OxyGent, an open-source framework that enables modular, observable, and evolvable MAS via a unified Oxy abstraction, in which agents, tools, LLMs, and reasoning flows are encapsulated as pluggable atomic components. This Lego-like assembly paradigm supports scalable system composition and non-intrusive monitoring. To enhance observability, OxyGent introduces permission-driven dynamic planning that replaces rigid workflows with execution graphs generated at runtime, which provide adaptive visualizations. To support continuous evolution, the framework integrates OxyBank, an AI asset management platform that supports automated data backflow, annotation, and joint evolution. Empirical evaluations and real-world case studies show that OxyGent provides a robust and scalable foundation for MAS. OxyGent is publicly available at https://oxygent.jd.com/.",
+ "summary": "- 核心创新点：提出一个统一的 OxyAbstraction 框架，将代理、工具、LLMs 和推理流封装为可插拔的原子组件，实现多智能体系统（MAS）的模块化、可观测性与可进化性。\n\n- 主要方法：\n  - 采用 Lego 式的模块化组装和插件化设计，实现系统的可伸缩组合与非侵入式监控；\n  - 引入权限驱动的动态规划，用运行时生成的执行图替代刚性工作流，提供自适应可视化；\n  - 集成 OxyBank AI 资产管理平台，支持自动化数据回流、标注与联合进化；\n  - 通过实证评估和真实场景案例来验证框架的有效性。\n\n- 结论/性能：提供鲁棒且可扩展的 MAS 基础设施，适用于大规模系统组合、具备良好的观测能力与进化能力；实证评估与案例研究显示其在鲁棒性和可扩展性方面表现良好，且框架开源可用。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-29 13:02:16"
+}

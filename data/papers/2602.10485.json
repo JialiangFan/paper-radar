@@ -1,0 +1,13 @@
+{
+ "id": "2602.10485",
+ "title": "Abstraction Generation for Generalized Planning with Pretrained Large Language Models",
+ "authors": "Zhenhe Cui, Huaxiang Xia, Hangjun Shen, Kailun Luo, Yong He, Wei Liang",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.10485v1",
+ "abstract": "Qualitative Numerical Planning (QNP) serves as an important abstraction model for generalized planning (GP), which aims to compute general plans that solve multiple instances at once. Recent works show that large language models (LLMs) can function as generalized planners. This work investigates whether LLMs can serve as QNP abstraction generators for GP problems and how to fix abstractions via automated debugging. We propose a prompt protocol: input a GP domain and training tasks to LLMs, prompting them to generate abstract features and further abstract the initial state, action set, and goal into QNP problems. An automated debugging method is designed to detect abstraction errors, guiding LLMs to fix abstractions. Experiments demonstrate that under properly guided by automated debugging, some LLMs can generate useful QNP abstractions.",
+ "summary": "- 核心创新点：将预训练大型语言模型作为通用规划的定性数值规划（QNP）抽象生成器，并通过自动化调试纠错来提升抽象质量与泛化规划能力。\n\n- 主要方法：提出一个提示协议，将GP领域和训练任务输入给LLMs，促使其生成抽象特征并进一步将初始状态、动作集和目标抽象化为QNP问题；同时设计自动化调试方法检测抽象错误并引导LLMs修正抽象。\n\n- 结论/性能：实验表明在有自动化调试引导下，部分LLMs能够生成有用的QNP抽象，验证了该方法的可行性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-12 14:03:27"
+}

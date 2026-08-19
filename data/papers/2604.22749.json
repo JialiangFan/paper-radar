@@ -1,0 +1,13 @@
+{
+ "id": "2604.22749",
+ "title": "Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities",
+ "authors": "Ilana Nguyen, Harini Suresh, Thema Monroe-White, Evan Shieh",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22749v1",
+ "abstract": "Large language models (LLMs) are increasingly used for text generation tasks from everyday use to high-stakes enterprise and government applications, including simulated interviews with asylum seekers. While many works highlight the new potential applications of LLMs, there are risks of LLMs encoding and perpetuating harmful biases about non-dominant communities across the globe. To better evaluate and mitigate such harms, more research examining how LLMs portray diverse individuals is needed. In this work, we study how national origin identities are portrayed by widely-adopted LLMs in response to open-ended narrative generation prompts. Our findings demonstrate the presence of persistent representational harms by national origin, including harmful stereotypes, erasure, and one-dimensional portrayals of Global Majority identities. Minoritized national identities are simultaneously underrepresented in power-neutral stories and overrepresented in subordinated character portrayals, which are over fifty times more likely to appear than dominant portrayals. The degree of harm is amplified when US nationality cues (e.g., ``American'') are present in input prompts. Notably, we find that the harms we identify cannot be explained away via sycophancy, as US-centric biases persist even when replacing US nationality cues with non-US national identities in the prompts. Based on our findings, we call for further exploration of cultural harms in LLMs through methodologies that center Global Majority perspectives and challenge the uncritical adoption of US-based LLMs for the classification, surveillance, and misrepresentation of the majority of our planet.",
+ "summary": "- 核心创新点：首次系统性揭示并量化大型语言模型在开放式叙事中对全球多数民族（Global Majority）国别身份的代表性伤害，并证明此类偏见与US国家线索相关且难以通过替换国别线索消除。\n\n- 主要方法：在广泛使用的LLMs上通过开放式叙事生成提示，分析输出中对国别身份的呈现，结合定性编码与定量统计，评估刻板印象、消隐、单一化等代表性伤害，比较含US线索与用非-US线索替换的影响。\n\n- 结论/性能：发现全球多数身份在非权力中性故事中被低度表示、在从属角色中被过度呈现，且这种偏见的发生概率比 dominant 角色高出约50倍以上；US线索会显著放大伤害，即使将US线索替换为非-US身份后，偏见仍然存在；呼吁以Global Majority视角为中心的方法论来研究并缓解LLMs的文化伤害。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-27 13:01:10"
+}

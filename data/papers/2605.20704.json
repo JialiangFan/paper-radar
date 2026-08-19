@@ -1,0 +1,13 @@
+{
+ "id": "2605.20704",
+ "title": "Heartbeat-Bound Hierarchical Credentials: Cryptographic Revocation for AI Agent Swarms",
+ "authors": "Saurabh Deochake",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.20704v1",
+ "abstract": "Autonomous AI agents that spawn sub-agent swarms create a safety gap: existing credential revocation mechanisms, OAuth~2.0 introspection, OCSP, and W3C Status Lists, require network connectivity to a central authority, leaving ``zombie agents'' executing privileged operations for minutes to hours after operator shutdown. We present Heartbeat-Bound Hierarchical Credentials (HBHC), a cryptographic protocol that binds credential validity to periodic parent liveness proofs. Verifiers enforce freshness using only a cached public key and local clock; no network round-trip is required. When heartbeat generation ceases, all descendant credentials become unusable within a deterministically bounded window $W_z \\le W_{\\max} + Δ_h + ε$, conditional on bounded clock skew and parent keys held in secure enclaves. Evaluation at the protocol layer and with real LLM-backed agent swarms (GPT-4o-mini) demonstrates a 90$\\times$ reduction in the zombie window over OAuth~2.0, 0.26~ms full authentication in Rust, 18,000+ verifications per second under concurrent HTTP load, and stable per-verification latency from 10 to 10,000 agents. Real-agent experiments show 0.71\\% end-to-end overhead on tool calls, zero post-revocation tool calls under prompt injection that bypasses application-layer guardrails, and cascading revocation across a 49-agent four-level hierarchy within the theoretical bound.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：提出心跳绑定的分层凭证（HBHC）协议，通过密码学手段实现 AI 智能体集群的离线即时撤销，消除\"僵尸智能体\"安全隐患。\n\n**2. 主要方法**：将子智能体凭证有效性绑定到父智能体周期性发布的\"心跳活性证明\"，验证方仅需本地缓存的公钥和本地时钟即可校验新鲜度，无需联网到中心授权方；父密钥保存在安全飞地（secure enclave）中，依赖有界时钟偏差保证撤销窗口 $W_z \\le W_{\\max} + Δ_h + ε$。\n\n**3. 结论/性能**：\n- 相比 OAuth 2.0，僵尸窗口缩小 **90 倍**；\n- Rust 实现单次完整认证仅 **0.26 ms**，并发 HTTP 下达 **18,000+ 次验证/秒**；\n- 智能体规模从 10 扩展到 10,000 时单次验证延迟稳定；\n- 真实 GPT-4o-mini 智能体集群端到端工具调用开销仅 **0.71%**；\n- 在绕过应用层防护的提示注入攻击下实现零撤销后工具调用；\n- 49 个智能体的四层级联撤销在理论界限内完成。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-21 13:00:44"
+}

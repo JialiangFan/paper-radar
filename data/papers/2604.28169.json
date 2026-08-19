@@ -1,0 +1,13 @@
+{
+ "id": "2604.28169",
+ "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+ "authors": "Sriram Narayanan, Ziyu Jiang, Srinivasa Narasimhan, Manmohan Chandraker",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28169v1",
+ "abstract": "Modern video diffusion models excel at appearance synthesis but still struggle with physical consistency: objects drift, collisions lack realistic rebound, and material responses seldom match their underlying properties. We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation. Our approach integrates three key components: (i) a large-scale dataset of over 100K photorealistic simulation videos where friction, restitution, deformation, and force are systematically varied across diverse scenarios; (ii) physics-supervised fine-tuning of a pretrained diffusion model using a ControlNet conditioned on pixel-aligned physical property maps; and (iii) VLM-guided reward optimization, where a fine-tuned vision-language model evaluates generated videos with targeted physics queries and provides differentiable feedback. This combination enables a generative model to produce physically consistent and controllable outputs through variations in physical attributes-without any simulator or geometry reconstruction at inference. On the Physics-IQ benchmark, PhyCo significantly improves physical realism over strong baselines, and human studies confirm clearer and more faithful control over physical attributes. Our results demonstrate a scalable path toward physically consistent, controllable generative video models that generalize beyond synthetic training environments.",
+ "summary": "核心创新点（一句话概括）：\n通过物理属性地图、物理监督微调的扩散模型和VLM引导的可微分奖励，打造一个可控且物理一致的生成视频框架 PhyCo。\n\n主要方法：\n- 构建包含超过10万条仿真视频的数据集，系统变动摩擦、恢复、变形与受力等物理属性。\n- 以预训练扩散模型为基础，使用 ControlNet 将像素对齐的物理属性地图作为条件进行物理监督微调。\n- 引入VLM引导的奖励优化，利用微调后的视觉-语言模型对生成视频进行目标物理查询评估并提供可微分反馈，用以优化生成。\n- 推理阶段无需仿真器或几何重建，仍能通过物理属性的变化实现物理一致的输出。\n\n结论/性能：\n- 在 Physics-IQ 基准上，PhyCo 显著提升物理真实感，相较强基线有明显改进。\n- 人类评测表明对物理属性的控制更清晰、更加可信。\n- 证明了一个可扩展的路径，使生成视频模型具备物理一致性和可控性并具更好的泛化能力。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-05-02 13:02:31"
+}

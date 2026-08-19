@@ -1,0 +1,13 @@
+{
+ "id": "2602.11633",
+ "title": "TIP: Resisting Gradient Inversion via Targeted Interpretable Perturbation in Federated Learning",
+ "authors": "Jianhua Wang, Yinlin Su",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11633v1",
+ "abstract": "Federated Learning (FL) facilitates collaborative model training while preserving data locality; however, the exchange of gradients renders the system vulnerable to Gradient Inversion Attacks (GIAs), allowing adversaries to reconstruct private training data with high fidelity. Existing defenses, such as Differential Privacy (DP), typically employ indiscriminate noise injection across all parameters, which severely degrades model utility and convergence stability. To address those limitation, we proposes Targeted Interpretable Perturbation (TIP), a novel defense framework that integrates model interpretability with frequency domain analysis. Unlike conventional methods that treat parameters uniformly, TIP introduces a dual-targeting strategy. First, leveraging Gradient-weighted Class Activation Mapping (Grad-CAM) to quantify channel sensitivity, we dynamically identify critical convolution channels that encode primary semantic features. Second, we transform these selected kernels into the frequency domain via the Discrete Fourier Transform and selectively inject calibrated perturbations into the high-frequency spectrum. By selectively perturbing high-frequency components, TIP effectively destroys the fine-grained details necessary for image reconstruction while preserving the low-frequency information crucial for model accuracy. Extensive experiments on benchmark datasets demonstrate that TIP renders reconstructed images visually unrecognizable against state-of-the-art GIAs, while maintaining global model accuracy comparable to non-private baselines, significantly outperforming existing DP-based defenses in the privacy-utility trade-off and interpretability. Code is available in https://github.com/2766733506/asldkfjssdf_arxiv",
+ "summary": "- 核心创新点：提出 TIP，在联邦学习中通过 Grad-CAM 指导的通道敏感性分析选出关键卷积通道，并对其高频分量进行定向扰动，从而在抵抗梯度反演攻击的同时尽量保持模型精度。\n\n- 主要方法：结合模型可解释性与频域分析的双目标策略。先用 Grad-CAM 量化通道敏感性，动态识别编码主要语义特征的关键卷积通道；再将选中的卷积核变换到频域（离散傅里叶变换），只对高频分量注入经过标定的扰动，以破坏图像重建所需的细粒度信息，同时保留低频信息以维持模型准确性。\n\n- 结论/性能：实验表明 TIP 能使基于梯度反演的重建图像在视觉上不可辨识，而全局模型精度与非私有基线相当；在隐私-实用性权衡和可解释性方面显著优于现有基于差分隐私的防护，并给出代码实现。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-13 14:02:08"
+}

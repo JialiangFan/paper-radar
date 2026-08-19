@@ -1,0 +1,13 @@
+{
+ "id": "2512.01958",
+ "title": "Learned-Rule-Augmented Large Language Model Evaluators",
+ "authors": "Jie Meng, Jin Mao",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01958v1",
+ "abstract": "Large language models (LLMs) are predominantly used as evaluators for natural language generation (NLG) tasks, but their application to broader evaluation scenarios remains limited. In this work, we explore the potential of LLMs as general evaluators across diverse tasks. Although LLM-based evaluators have made progress in different areas, existing methods struggle to generalize due to their reliance on costly, human-designed evaluation principles, which are often misaligned with both annotated data and LLMs' understanding.To address these challenges, we propose a rule-augmented evaluation paradigm. First, we introduce a rule distillation method that automatically extracts scoring rules from data using an LLM-assisted Monte Carlo Tree Search (MCTS), alleviating scalability issues and improving alignment with data. Second, to enable LLMs to effectively apply the learned rules, we propose two strategies: (1) Chain-of-Rule (CoR), which guides LLM to follow distilled rules, and (2) training a rule-augmented LLM evaluator (RuAE) via reinforcement learning, further bridging the gap between rules and LLMs' reasoning. Extensive experiments on diverse tasks demonstrate the effectiveness and generalizability of our approach across various evaluation scenarios.",
+ "summary": "1) 核心创新点（一句话）\n提出一种规则增强调评范式：通过LLM辅助的蒙特卡洛树搜索从数据中蒸馏可迁移的评分规则，并结合 Chain-of-Rule 引导和强化学习训练的规则增强型评估器（RuAE），实现跨多任务的对齐性与泛化能力提升。\n\n2) 主要方法（简述）\n- 规则蒸馏：用LLM辅助的蒙特卡洛树搜索从数据中自动提取可用于评分的规则，提升规则的可扩展性和对数据的对齐度。\n- Chain-of-Rule（CoR）：设计路径让LLM在评估时遵循蒸馏出的规则，提高规则的实际应用性。\n- 规则增强的LLM评估器（RuAE）：通过强化学习对评估模型进行训练，使其更好地嵌入并执行所学规则。\n\n3) 结论/性能（取得的效果）\n在多样化评估任务上进行的广泛实验表明，该规则增强调评框架具有良好的泛化能力和对齐性，能够有效提升不同评估场景下的表现与一致性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:03:37"
+}

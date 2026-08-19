@@ -1,0 +1,13 @@
+{
+ "id": "2604.18085",
+ "title": "Predicting LLM Compression Degradation from Spectral Statistics",
+ "authors": "Mingxue Xu",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18085v1",
+ "abstract": "Matrix-level low-rank compression is a promising way to reduce the cost of large language models, but running compression and evaluating the resulting models on language tasks can be prohibitively expensive. Can compression-induced degradation be predicted before committing to this compute? We systematically analyze the Qwen3 and Gemma3 model families across four representative low-rank compression methods: vanilla SVD, two ASVD variants, and SVD-LLM. We find that stable rank and information density, measured in bits per parameter, dominate performance degradation. The interaction term $γ\\cdot \\barρ_s$, defined as compression ratio times stable rank, is a robust predictor of accuracy degradation, achieving leave-one-out cross-validation Pearson correlations of $0.890$ for attention layers and $0.839$ for MLP layers. We provide theoretical intuition for why this predictor succeeds by connecting it to standard SVD truncation bounds and error composition mechanisms in transformer layers. These findings enable a predict-then-compress workflow: compute $γ\\cdot \\barρ_s$ from weights, estimate degradation, and invest compute only in desirable configurations.",
+ "summary": "- 核心创新点：提出基于谱统计的预测框架，通过计算权重的稳定秩、信息密度以及压缩比之间的交互项 γ · \\barρ_s，来在实际压缩前预测LLM低秩压缩的性能下降，从而实现“predict-then-compress”工作流。\n\n- 主要方法：在 Qwen3 与 Gemma3 模型家族上对四种低秩压缩方法（vanilla SVD、两种 ASVD 变体、SVD-LLM）进行系统分析，利用稳定秩和每参数信息密度等谱统计量解释降级，提出 γ · \\barρ_s（压缩比 × 稳定秩）作为鲁棒的降级预测指标，并给出与 SVD 截断界及 Transformer 层误差分布的理论直觉；实现可执行流程：从权重计算 γ · \\barρ_s、估算降级、仅在可接受配置上投入计算资源。\n\n- 结论/性能：在留一交叉验证中，γ · \\barρ_s 对注意力层的预测相关性达到约 0.890，对 MLP 层约为 0.839，显示能够稳健地在压缩前估算降级，从而显著降低评估成本并推动可控的压缩配置筛选。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-21 13:04:58"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.10080",
+ "title": "Amnesia: Adversarial Semantic Layer Specific Activation Steering in Large Language Models",
+ "authors": "Ali Raza, Gurang Gupta, Nikolay Matyunin, Jibesh Patra",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10080v1",
+ "abstract": "Warning: This article includes red-teaming experiments, which contain examples of compromised LLM responses that may be offensive or upsetting.\n  Large Language Models (LLMs) have the potential to create harmful content, such as generating sophisticated phishing emails and assisting in writing code of harmful computer viruses. Thus, it is crucial to ensure their safe and responsible response generation. To reduce the risk of generating harmful or irresponsible content, researchers have developed techniques such as reinforcement learning with human feedback to align LLM's outputs with human values and preferences. However, it is still undetermined whether such measures are sufficient to prevent LLMs from generating interesting responses. In this study, we propose Amnesia, a lightweight activation-space adversarial attack that manipulates internal transformer states to bypass existing safety mechanisms in open-weight LLMs. Through experimental analysis on state-of-the-art, open-weight LLMs, we demonstrate that our attack effectively circumvents existing safeguards, enabling the generation of harmful content without the need for any fine-tuning or additional training. Our experiments on benchmark datasets show that the proposed attack can induce various antisocial behaviors in LLMs. These findings highlight the urgent need for more robust security measures in open-weight LLMs and underscore the importance of continued research to prevent their potential misuse.",
+ "summary": "1) 核心创新点：\n- 提出 Amnesia，一种在激活空间进行的轻量级对抗攻击，通过定向操控 Transformer 内部激活状态来绕过现有开源大语言模型的安全机制，且无需对模型进行微调或再训练。\n\n2) 主要方法：\n- 基于对抗攻击的思路，在模型的激活空间进行层特定的激活引导（activation steering），对 Transformer 的中间层状态进行定向干预，以绕过安全过滤。\n- 目标是针对开源权重的 LLM，做到不修改模型参数即可触发有害输出。\n\n3) 结论/性能：\n- 实验表明该攻击能够有效绕过现有安全防护，允许在不进行微调的情况下生成有害内容，并能诱发多种反社会行为，凸显对开源 LLM 安全性提升的迫切需求。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:01:08"
+}

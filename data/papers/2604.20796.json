@@ -1,0 +1,13 @@
+{
+ "id": "2604.20796",
+ "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+ "authors": "Inclusion AI, Tiwei Bie, Haoxing Chen, Tieyuan Chen, Zhenglin Cheng, Long Cui, Kai Gan, Zhicheng Huang, Zhenzhong Lan, Haoquan Li, Jianguo Li, Tao Lin, Qi Qin, Hongjun Wang, Xiaomei Wang, Haoyuan Wu, Yi Xin, Junbo Zhao",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20796v1",
+ "abstract": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
+ "summary": "- **核心创新点**：提出一个统一的离散扩散大语言模型（LLaDA2.0-Uni），通过完全语义离散标记器、MoE-based dLLM骨干和扩散解码器，将文本与视觉输入原生整合在同一框架内进行理解与生成；并以 SigLIP-VQ 将视觉输入离散化，实现块级掩码扩散和高保真图像重建，提升推理效率。\n\n- **主要方法**：采用一个完全语义离散的标记器、一个基于专家路由的MoE dLLM骨干、以及一个扩散解码器；通过 SigLIP-VQ 将连续的视觉输入离散化以便在骨干中进行文本与视觉输入的块级掩码扩散，同时解码端将视觉标记重建为高保真图像；通过前缀感知优化和少步蒸馏提升推理效率，并依托多阶段训练数据与定制化训练管线实现联合训练。\n\n- **结论/性能**：在多模态理解上达到与专用VLM相当的水平，在图像生成与编辑方面表现出色；具备原生的文本-视觉交错生成与推理能力，推理效率优于传统并行解码，并提供代码与模型对外公开。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-23 13:03:21"
+}

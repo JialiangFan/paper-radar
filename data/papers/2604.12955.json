@@ -1,0 +1,13 @@
+{
+ "id": "2604.12955",
+ "title": "Modeling Co-Pilots for Text-to-Model Translation",
+ "authors": "Serdar Kadioglu, Karthik Uppuluri, Akash Singirikonda",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12955v1",
+ "abstract": "There is growing interest in leveraging large language models (LLMs) for text-to-model translation and optimization tasks. This paper aims to advance this line of research by introducing \\textsc{Text2Model} and \\textsc{Text2Zinc}. \\textsc{Text2Model} is a suite of co-pilots based on several LLM strategies with varying complexity, along with an online leaderboard. \\textsc{Text2Zinc} is a cross-domain dataset for capturing optimization and satisfaction problems specified in natural language, along with an interactive editor with built-in AI assistant. While there is an emerging literature on using LLMs for translating combinatorial problems into formal models, our work is the first attempt to integrate \\textit{both} satisfaction and optimization problems within a \\textit{unified architecture} and \\textit{dataset}. Moreover, our approach is \\textit{solver-agnostic} unlike existing work that focuses on translation to a solver-specific model. To achieve this, we leverage \\textsc{MiniZinc}'s solver-and-paradigm-agnostic modeling capabilities to formulate combinatorial problems. We conduct comprehensive experiments to compare execution and solution accuracy across several single- and multi-call strategies, including; zero-shot prompting, chain-of-thought reasoning, intermediate representations via knowledge-graphs, grammar-based syntax encoding, and agentic approaches that decompose the model into sequential sub-tasks. Our co-pilot strategies are competitive, and in parts improve, recent research in this domain. Our findings indicate that while LLMs are promising they are not yet a push-button technology for combinatorial modeling. We contribute \\textsc{Text2Model} co-pilots and leaderboard, and \\textsc{Text2Zinc} and interactive editor to open-source to support closing this performance gap.",
+ "summary": "以下是对论文标题与摘要的中文要点总结：\n\n1) 核心创新点\n- 首次在一个统一架构和数据集(Text2Model/Text2Zinc)中，将自然语言表达的约束满足与优化问题转译为 solver-无关的 MiniZinc 模型，并提供开源的排行榜与交互式编辑器来比较与提升多策略LLM协助（co-pilots）的性能。\n\n2) 主要方法\n- 构建 Text2Model 作为一套基于多种LLM策略的协助系统（co-pilots），涵盖零-shot、链式推理、通过知识图建立中间表示、基于语法的编码、以及将任务分解成子任务的代理式方法，并对比其在执行与解的准确性上的表现。\n- 设计 Text2Zinc 作为跨领域的数据集，用于捕捉用自然语言描述的约束满足和优化问题，附带带内置AI助手的互动编辑器。\n- 采用 MiniZinc 的求解器无关建模能力，将问题形式化成通用的模型，支持 solver-agnostic 的翻译与求解。\n\n3) 结论/性能\n- 实验表明各类协助策略具备竞争力，在某些情形甚至优于近期相关研究，但LLMs 目前尚未达到“一键即用”的理想状态来直接实现高质量的组合建模。\n- 研究同时将 Text2Model、Text2Zinc 及互动编辑器开源，以推动缩小性能差距并推动该领域发展。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-15 13:10:11"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "2510.10274",
+ "title": "X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model",
+ "authors": "Jinliang Zheng et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2510.10274",
+ "abstract": "",
+ "summary": "Important cross-embodiment VLA foundation model.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "ICLR 2026",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "cross-embodiment",
+  "safe-vla",
+  "soft-prompts",
+  "supplemental-recent",
+  "vla-foundation-model"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2025_X_VLA.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2025_X_VLA.pdf",
+ "code": "",
+ "project": "https://thu-air-dream.github.io/X-VLA/",
+ "is_core": false,
+ "is_supplemental": true
+}

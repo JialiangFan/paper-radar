@@ -1,0 +1,13 @@
+{
+ "id": "2512.11359",
+ "title": "Attacking and Securing Community Detection: A Game-Theoretic Framework",
+ "authors": "Yifan Niu, Aochuan Chen, Tingyang Xu, Jia Li",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11359v1",
+ "abstract": "It has been demonstrated that adversarial graphs, i.e., graphs with imperceptible perturbations, can cause deep graph models to fail on classification tasks. In this work, we extend the concept of adversarial graphs to the community detection problem, which is more challenging. We propose novel attack and defense techniques for community detection problem, with the objective of hiding targeted individuals from detection models and enhancing the robustness of community detection models, respectively. These techniques have many applications in real-world scenarios, for example, protecting personal privacy in social networks and understanding camouflage patterns in transaction networks. To simulate interactive attack and defense behaviors, we further propose a game-theoretic framework, called CD-GAME. One player is a graph attacker, while the other player is a Rayleigh Quotient defender. The CD-GAME models the mutual influence and feedback mechanisms between the attacker and the defender, revealing the dynamic evolutionary process of the game. Both players dynamically update their strategies until they reach the Nash equilibrium. Extensive experiments demonstrate the effectiveness of our proposed attack and defense methods, and both outperform existing baselines by a significant margin. Furthermore, CD-GAME provides valuable insights for understanding interactive attack and defense scenarios in community detection problems. We found that in traditional single-step attack or defense, attacker tends to employ strategies that are most effective, but are easily detected and countered by defender. When the interactive game reaches a Nash equilibrium, attacker adopts more imperceptible strategies that can still achieve satisfactory attack effectiveness even after defense.",
+ "summary": "1) 核心创新点\n\n- 提出一个名为 CD-GAME 的博弈框架，将社区检测的对抗攻击与防御嵌入同一互动过程中：攻击者与基于 Rayleigh Quotient 的防守者在动态策略更新中演化至纳什均衡，揭示互动环境下的攻击/防御隐蔽性与鲁棒性权衡。\n\n2) 主要方法\n\n- 设计对抗图（包含不可感知扰动）用于攻击社区检测，并提出针对性的防御策略以提升鲁棒性。\n- 构建 CD-GAME 博弈：一名图攻击者对抗一名 Rayleigh Quotient Defender，两方通过互相影响与反馈不断更新策略。\n- 通过迭代直到纳什均衡，分析在单步攻击/防守与长期博弈中的策略特征与演化。\n\n3) 结论/性能\n\n- 实验结果表明所提的攻击与防御方法显著优于现有基线方法。\n- 在单步情形下，攻击者通常采用最有效但易被检测的策略；在纳什均衡下，攻击者转而使用更隐蔽但仍具有效性的策略，揭示了互动环境对攻击/防守策略的影响与启示。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-15 14:02:11"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.18916",
+ "title": "Agentic Business Process Management: A Research Manifesto",
+ "authors": "Diego Calvanese, Angelo Casciani, Giuseppe De Giacomo, Marlon Dumas, Fabiana Fournier, Timotheus Kampik, Emanuele La Malfa, Lior Limonad, Andrea Marrella, Andreas Metzger, Marco Montali, Daniel Amyot, Peter Fettke, Artem Polyvyanyy, Stefanie Rinderle-Ma, Sebastian Sardiña, Niek Tax, Barbara Weber",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18916v1",
+ "abstract": "This paper presents a manifesto that articulates the conceptual foundations of Agentic Business Process Management (APM), an extension of Business Process Management (BPM) for governing autonomous agents executing processes in organizations. From a management perspective, APM represents a paradigm shift from the traditional process view of the business process, driven by the realization of process awareness and an agent-oriented abstraction, where software and human agents act as primary functional entities that perceive, reason, and act within explicit process frames. This perspective marks a shift from traditional, automation-oriented BPM toward systems in which autonomy is constrained, aligned, and made operational through process awareness.\n  We introduce the core abstractions and architectural elements required to realize APM systems and elaborate on four key capabilities that such APM agents must support: framed autonomy, explainability, conversational actionability, and self-modification. These capabilities jointly ensure that agents' goals are aligned with organizational goals and that agents behave in a framed yet proactive manner in pursuing those goals. We discuss the extent to which the capabilities can be realized and identify research challenges whose resolution requires further advances in BPM, AI, and multi-agent systems. The manifesto thus serves as a roadmap for bridging these communities and for guiding the development of APM systems in practice.",
+ "summary": "1. 核心创新点：提出“面向自治代理的业务过程管理”（APM）这一新范式，以过程感知和代理导向来取代传统自动化BPM，并提出框架化自治、可解释性、对话式可操作性与自我修改等四大关键能力以实现与组织目标的对齐。\n\n2. 主要方法：建立APM的核心抽象与体系结构要素，围绕四项能力构建理论框架，讨论其实现路径与技术挑战；将BPM、人工智能和多代理系统融合，形成一份 bridging 这些领域的研究路线图与实践指南，用以指导APM系统的设计与实现。\n\n3. 结论/性能：提供了一个理论框架和实际路线图，明确APM能力的实现边界与研究挑战，作为桥接BPM、AI与多代理系统的指南，推动APM系统在实践中的开发与应用。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-20 13:04:32"
+}

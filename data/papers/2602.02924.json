@@ -1,0 +1,13 @@
+{
+ "id": "2602.02924",
+ "title": "How Does the Lagrangian Guide Safe Reinforcement Learning through Diffusion Models?",
+ "authors": "Xiaoyuan Cheng, Wenxuan Yuan, Boyang Li, Yuanchao Xu, Yiming Yang, Hao Liang, Bei Peng, Robert Loftin, Zhuo Sun, Yukun Hu",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02924v1",
+ "abstract": "Diffusion policy sampling enables reinforcement learning (RL) to represent multimodal action distributions beyond suboptimal unimodal Gaussian policies. However, existing diffusion-based RL methods primarily focus on offline settings for reward maximization, with limited consideration of safety in online settings. To address this gap, we propose Augmented Lagrangian-Guided Diffusion (ALGD), a novel algorithm for off-policy safe RL. By revisiting optimization theory and energy-based model, we show that the instability of primal-dual methods arises from the non-convex Lagrangian landscape. In diffusion-based safe RL, the Lagrangian can be interpreted as an energy function guiding the denoising dynamics. Counterintuitively, direct usage destabilizes both policy generation and training. ALGD resolves this issue by introducing an augmented Lagrangian that locally convexifies the energy landscape, yielding a stabilized policy generation and training process without altering the distribution of the optimal policy. Theoretical analysis and extensive experiments demonstrate that ALGD is both theoretically grounded and empirically effective, achieving strong and stable performance across diverse environments.",
+ "summary": "- 核心创新点：提出 ALGD（增广拉格朗日引导的扩散），通过对能量景观进行局部凸化来稳定扩散引导的策略生成与训练，从而实现安全的离策略强化学习，且不改变最优策略的分布。\n\n- 主要方法：基于扩散模型的策略采样来构建多模态动作分布；将拉格朗日项视为引导去噪动力的能量函数；引入增广拉格朗日以局部凸化该能量景观，从而稳定地进行策略生成与训练（离策略/离线安全 RL），并给出理论分析与在多种环境中的广泛实验。\n\n- 结论/性能：理论上有保障，实验显示 ALGD 能在多样化环境中实现强且稳定的安全性能和训练稳定性，优于或更稳健于现有方法。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-04 14:00:41"
+}

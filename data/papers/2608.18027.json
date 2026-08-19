@@ -1,0 +1,13 @@
+{
+ "id": "2608.18027",
+ "title": "Chain-of-Experience for Continual LLM Improvement",
+ "authors": "Haoqin Tu, Yunhao Fang, Yizhong Wang, Cihang Xie, Shen Yan",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18027v1",
+ "abstract": "Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study how LLMs learn from iterative experience at test time, a setting we refer to as Chain-of-Experience (CoE), where models accumulate experiential traces through iterative interactions with self or environmental feedback to form a continual improvement loop beyond zero-shot inference. We instantiate CoE with diverse feedback mechanisms, including model self-feedback and environmental signals such as correctness or public coding test pass rates, and evaluate across math, coding, and knowledge domains using 8 LLMs, including GPT-5, Gemini-2.5 Pro, Claude-4.5 Sonnet. Our study shows that leveraging iterative experience consistently outperforms feedback-free baselines, achieving substantial gains with self feedback alone, alongside a 5.6% overall improvement and 19% lower API cost across tasks and models. We further show that combining complementary feedback channels (e.g., model and correctness signals) yields additional gains, and that CoE delivers higher accuracy per token than existing test-time strategies. We observe a positive correlation between LLM base ability and improvement capacity, and show that models remain robust under weak or spurious feedback, with different feedback contributing to distinct improvement aspects and most gains emerging early in the iterations.",
+ "summary": "## 论文总结：Chain-of-Experience for Continual LLM Improvement\n\n**1. 核心创新点**\n提出\"经验链\"（Chain-of-Experience, CoE）范式——让 LLM 在推理阶段通过反复交互累积\"经验轨迹\"，形成超越零样本推理的持续自我改进闭环，并据此重新审视了忽略这一能力的传统评测方式。\n\n**2. 主要方法**\n- 设计多种反馈机制驱动迭代：模型**自反馈**（self-feedback）与**环境信号**（答案正确性、公开编程测试用例通过率等）。\n- 将历史交互经验作为轨迹持续注入后续迭代，构成改进循环。\n- 在数学、代码、知识三类任务上，使用 8 个主流大模型（GPT-5、Gemini-2.5 Pro、Claude-4.5 Sonnet 等）进行系统评估，并验证多路互补反馈通道的组合效果。\n\n**3. 结论/性能**\n- 迭代经验持续优于无反馈基线；**仅靠自反馈**即可获得可观提升，整体准确率提升 **5.6%**，同时 API 成本降低 **19%**。\n- 组合互补反馈（如模型反馈 + 正确性信号）可带来额外增益；相比现有测试时策略，CoE 的**单位 token 准确率更高**。\n- 三点观察：模型基础能力越强，其改进潜力越大（正相关）；在弱反馈甚至虚假反馈下仍保持鲁棒；不同反馈作用于不同改进维度，且**大部分增益集中在早期迭代**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-19 13:01:54"
+}

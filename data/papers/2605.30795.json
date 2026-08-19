@@ -1,0 +1,13 @@
+{
+ "id": "2605.30795",
+ "title": "Feat2Go: Visual Feature-Grounded Value Estimation for Embodied Reinforcement Learning",
+ "authors": "Junyang Shu, Zhiwei Lin, Bingqing Wei, Yongtao Wang",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30795v1",
+ "abstract": "Reinforcement learning is a promising approach for improving the capabilities of vision-language-action (VLA) models while avoiding the heavy data requirements of imitation learning. However, its effectiveness for VLA models is often constrained by sparse supervision and the difficulty of designing informative reward signals for long-horizon manipulation. In this work, we present Feat2Go, a fine-grained value estimation framework for embodied reinforcement learning. Specifically, Feat2Go first derives a continuous progress target from a pretrained visual world model by measuring patch-level similarity to subgoal states and partitioning episodes into semantic stages with trend-based clustering. We then train an embodied value model to predict this structural progress from the current observation and task instruction, and use the predicted value to reshape terminal rewards during policy optimization. The proposed framework is compatible with existing VLA policy reinforcement learning pipelines, including PPO and GRPO, and does not rely on manual reward engineering. Extensive experiments on ManiSkill3 and RoboTwin 2.0 demonstrate that Feat2Go consistently improves the performance of existing VLA models under both single-arm and bimanual manipulation settings. More specifically, on ManiSkill3, Feat2Go improves OpenVLAOFT from 17.5% to 82.9% average out-of-distribution success while retaining 96.9% in-distribution performance. On RoboTwin 2.0, Feat2Go achieves an average success rate of 88.8% in domain-randomized task settings, outperforming prior reinforcement learning methods.",
+ "summary": "# Feat2Go 论文总结\n\n1. **核心创新点**：提出 Feat2Go 框架，通过预训练视觉世界模型生成细粒度的连续进度信号，作为具身强化学习中的稠密价值监督，解决 VLA 模型在长程操作任务中奖励稀疏的问题。\n\n2. **主要方法**：利用预训练视觉世界模型计算当前观测与子目标状态之间的 patch 级相似度，得到连续进度目标；通过基于趋势的聚类将 episode 划分为语义阶段；训练一个具身价值模型，根据当前观测和任务指令预测结构化进度，并用预测值对终端奖励进行 reshape，兼容 PPO、GRPO 等主流策略优化算法，无需人工设计奖励。\n\n3. **结论/性能**：在 ManiSkill3 上将 OpenVLA-OFT 的平均 OOD 成功率从 17.5% 提升至 82.9%，同时保持 96.9% 的分布内性能；在 RoboTwin 2.0 域随机化任务中达到 88.8% 平均成功率，在单臂和双臂操作场景下均一致优于现有强化学习方法。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-01 13:08:19"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.24989",
+ "title": "Learning Rollout from Sampling:An R1-Style Tokenized Traffic Simulation Model",
+ "authors": "Ziyan Wang, Peng Chen, Ding Li, Chiwei Li, Qichao Zhang, Zhongpu Xia, Guizhen Yu",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24989v1",
+ "abstract": "Learning diverse and high-fidelity traffic simulations from human driving demonstrations is crucial for autonomous driving evaluation. The recent next-token prediction (NTP) paradigm, widely adopted in large language models (LLMs), has been applied to traffic simulation and achieves iterative improvements via supervised fine-tuning (SFT). However, such methods limit active exploration of potentially valuable motion tokens, particularly in suboptimal regions. Entropy patterns provide a promising perspective for enabling exploration driven by motion token uncertainty. Motivated by this insight, we propose a novel tokenized traffic simulation policy, R1Sim, which represents an initial attempt to explore reinforcement learning based on motion token entropy patterns, and systematically analyzes the impact of different motion tokens on simulation outcomes. Specifically, we introduce an entropy-guided adaptive sampling mechanism that focuses on previously overlooked motion tokens with high uncertainty yet high potential. We further optimize motion behaviors using Group Relative Policy Optimization (GRPO), guided by a safety-aware reward design. Overall, these components enable a balanced exploration-exploitation trade-off through diverse high-uncertainty sampling and group-wise comparative estimation, resulting in realistic, safe, and diverse multi-agent behaviors. Extensive experiments on the Waymo Sim Agent benchmark demonstrate that R1Sim achieves competitive performance compared to state-of-the-art methods.",
+ "summary": "- 核心创新点：提出基于运动令牌熵的自适应采样结合组相对策略优化的铁路式交通仿真模型R1Sim，通过高不确定性但潜力巨大的令牌进行探索-开发平衡，实现更真实、多样且安全的多主体交通仿真。\n\n- 主要方法：\n  - 以 tokenized 交通仿真策略R1Sim为核心，结合NTP范式的序列建模与强化学习思想。\n  - 引入熵导向的自适应采样机制，重点关注高不确定性但具有潜在价值的运动令牌。\n  - 采用Group Relative Policy Optimization (GRPO)进行行为优化，并设计安全感知奖励以引导安全性。\n  - 通过组内对比估计实现探索与利用的平衡，提升多智能体行为的现实性与多样性。\n\n- 结论/性能：在Waymo Sim Agent基准上，R1Sim展现出与前沿方法相竞争的性能，生成现实、安全且多样的多智能体交通行为。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-28 13:01:49"
+}

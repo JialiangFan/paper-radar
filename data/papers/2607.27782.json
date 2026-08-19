@@ -1,0 +1,13 @@
+{
+ "id": "2607.27782",
+ "title": "RedFlow: Redirect Failure into Action-Level Corrections for Flow-matching VLA Policy",
+ "authors": "Zhengyang Yan, Junhao Li, Fangqi Zhu, Zijun Wang, Quanxin Shou, Yikun Miao, Xiaoyi Pang, Zicong Hong, Song Guo",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27782v1",
+ "abstract": "Flow-matching Vision-Language-Action (VLA) policies have shown strong potential for robotic manipulation but often suffer from compounding errors caused by distribution shifts during deployment. While offline reinforcement learning (RL) provides a practical way to improve deployed policies using rollout data, existing methods either ignore failure data or exploit it only at the trajectory level, resulting in low learning efficiency and persistent errors. We propose **RedFlow**, a fine-grained offline RL framework that redirects failure experiences into action-level corrective supervision for flow-matching VLA policies. RedFlow consists of two key components: (1) a **Context-Aware Corrective Matching** mechanism that identifies failure-inducing actions and retrieves successful alternatives from similar contexts as corrective targets, and (2) an **Adaptive Redirection Objective** that jointly reinforces successful actions, suppresses undesirable ones, and redirects recoverable failures toward corrective targets. By converting both successful and failed experiences into dense supervision, RedFlow enables robust recovery learning from mixed-quality data. Experiments on the LIBERO benchmark and three real-world manipulation tasks show that RedFlow consistently outperforms state-of-the-art offline RL baselines, improving the real-world success rate from 56.7% to 74.7%. It also matches strong on-policy methods (PPO, GRPO, and DDPO) while requiring roughly an order of magnitude fewer training samples.",
+ "summary": "## RedFlow 论文摘要总结\n\n**1. 核心创新点**\n提出 RedFlow —— 一个细粒度离线强化学习框架，把失败经验\"重定向\"为**动作级**的纠正监督信号，用于改进 flow-matching 视觉-语言-动作（VLA）机器人策略。\n\n**2. 主要方法**\n针对 flow-matching VLA 策略在部署时因分布偏移导致的误差累积问题，设计两个核心组件：\n- **上下文感知纠正匹配（Context-Aware Corrective Matching）**：定位导致失败的具体动作，并从相似上下文的成功轨迹中检索可替代的成功动作，作为纠正目标；\n- **自适应重定向目标（Adaptive Redirection Objective）**：联合优化三件事——强化成功动作、抑制不良动作、把可挽救的失败动作朝纠正目标重定向。\n\n由此将成功与失败数据都转化为稠密监督，实现从混合质量数据中学习恢复能力。\n\n**3. 结论/性能**\n在 LIBERO 基准和 3 个真实机器人操作任务上均超越当前最优离线 RL 基线：真实场景成功率从 **56.7% → 74.7%**；性能可比肩 PPO、GRPO、DDPO 等强在线（on-policy）方法，而所需训练样本量约少**一个数量级**。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-01 13:04:40"
+}

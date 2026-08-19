@@ -1,0 +1,13 @@
+{
+ "id": "2603.23448",
+ "title": "Code Review Agent Benchmark",
+ "authors": "Yuntong Zhang, Zhiyuan Pan, Imam Nur Bani Yusuf, Haifeng Ruan, Ridwan Shariffdeen, Abhik Roychoudhury",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23448v1",
+ "abstract": "Software engineering agents have shown significant promise in writing code. As AI agents permeate code writing, and generate huge volumes of code automatically -- the matter of code quality comes front and centre. As the automatically generated code gets integrated into huge code-bases -- the issue of code review and broadly quality assurance becomes important. In this paper, we take a fresh look at the problem and curate a code review dataset for AI agents to work with. Our dataset called c-CRAB (pronounced see-crab) can evaluate agents for code review tasks. Specifically given a pull-request (which could be coming from code generation agents or humans), if a code review agent produces a review, our evaluation framework can asses the reviewing capability of the code review agents. Our evaluation framework is used to evaluate the state of the art today -- the open-source PR-agent, as well as commercial code review agents from Devin, Claude Code, and Codex.\n  Our c-CRAB dataset is systematically constructed from human reviews -- given a human review of a pull request instance we generate corresponding tests to evaluate the code review agent generated reviews. Such a benchmark construction gives us several insights. Firstly, the existing review agents taken together can solve only around 40% of the c-CRAB tasks, indicating the potential to close this gap by future research. Secondly, we observe that the agent reviews often consider different aspects from the human reviews -- indicating the potential for human-agent collaboration for code review that could be deployed in future software teams. Last but not the least, the agent generated tests from our data-set act as a held out test-suite and hence quality gate for agent generated reviews. What this will mean for future collaboration of code generation agents, test generation agents and code review agents -- remains to be investigated.",
+ "summary": "- 核心创新点（1句话）：\n  首次构建并公开 c-CRAB 基准，利用人类审查作为基线并从相应审查中自动生成测试，用以系统评测 AI 代码审查代理的能力与潜力。\n\n- 主要方法：\n  - 以人类对 Pull Request 的审查为来源，构建 c-CRAB 数据集，并从中生成对应的测试用例，形成对代理审查结果的评估测试套件。\n  - 设计并应用一个评估框架，对现有的开源 PR-agent 及商业代理（Devin、Claude Code、Codex）进行对比评测。\n  - 将代理生成的审查与人类审查进行对比，分析两者关注点差异并探讨人机协作的可能性。\n\n- 结论/性能：\n  - 目前的代码审查代理合在一起仅能解决约 40% 的 c-CRAB 任务，存在明显改进空间。\n  - 代理审查往往聚焦于与人类审查不同的方面，提示未来在代码审查中存在人机协作的潜力。\n  - 数据集中的代理生成测试可作为 Held-out 测试套件与质量门槛，推动代码生成、测试生成与代码审查代理的协同研究与应用。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-25 13:01:58"
+}

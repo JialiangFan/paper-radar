@@ -1,0 +1,13 @@
+{
+ "id": "2602.02164",
+ "title": "Co-RedTeam: Orchestrated Security Discovery and Exploitation with LLM Agents",
+ "authors": "Pengfei He, Ash Fox, Lesly Miculicich, Stefan Friedli, Daniel Fabian, Burak Gokturk, Jiliang Tang, Chen-Yu Lee, Tomas Pfister, Long T. Le",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02164v1",
+ "abstract": "Large language models (LLMs) have shown promise in assisting cybersecurity tasks, yet existing approaches struggle with automatic vulnerability discovery and exploitation due to limited interaction, weak execution grounding, and a lack of experience reuse. We propose Co-RedTeam, a security-aware multi-agent framework designed to mirror real-world red-teaming workflows by integrating security-domain knowledge, code-aware analysis, execution-grounded iterative reasoning, and long-term memory. Co-RedTeam decomposes vulnerability analysis into coordinated discovery and exploitation stages, enabling agents to plan, execute, validate, and refine actions based on real execution feedback while learning from prior trajectories. Extensive evaluations on challenging security benchmarks demonstrate that Co-RedTeam consistently outperforms strong baselines across diverse backbone models, achieving over 60% success rate in vulnerability exploitation and over 10% absolute improvement in vulnerability detection. Ablation and iteration studies further confirm the critical role of execution feedback, structured interaction, and memory for building robust and generalizable cybersecurity agents.",
+ "summary": "- 核心创新点：提出安全感知的多智能体框架 Co-RedTeam，能够在执行反馈、结构化交互与长期记忆的支撑下，仿真真实红队工作流，协同完成漏洞的发现与利用。\n\n- 主要方法：构建一个多智能体协作框架，结合安全领域知识、代码感知分析、面向执行的迭代推理和长期记忆；将漏洞分析分解为发现和利用两个阶段，代理实现规划-执行-验证- refinement 的循环，并通过对既往轨迹的学习提升跨任务泛化能力。\n\n- 结论/性能：在挑战性安全基准上显著优于强基线，漏洞利用成功率超过60%，漏洞检测的绝对提升超过10个百分点；消融与迭代研究证实执行反馈、结构化交互和记忆对模型的鲁棒性和泛化能力至关重要。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:04:15"
+}

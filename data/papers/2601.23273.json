@@ -1,0 +1,13 @@
+{
+ "id": "2601.23273",
+ "title": "UPA: Unsupervised Prompt Agent via Tree-Based Search and Selection",
+ "authors": "Siran Peng, Weisong Zhao, Tianyu Fu, Chenxu Zhao, Tianshuo Zhang, Haoyuan Zhang, Xiangyu Zhu, Minghui Wu, Zhen Lei",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.23273v1",
+ "abstract": "Prompt agents have recently emerged as a promising paradigm for automated prompt optimization, framing refinement as a sequential decision-making problem over a structured prompt space. While this formulation enables the use of advanced planning algorithms, these methods typically assume access to supervised reward signals, which are often unavailable in practical scenarios. In this work, we propose UPA, an Unsupervised Prompt Agent that realizes structured search and selection without relying on supervised feedback. Specifically, during search, UPA iteratively constructs an evolving tree structure to navigate the prompt space, guided by fine-grained and order-invariant pairwise comparisons from Large Language Models (LLMs). Crucially, as these local comparisons do not inherently yield a consistent global scale, we decouple systematic prompt exploration from final selection, introducing a two-stage framework grounded in the Bradley-Terry-Luce (BTL) model. This framework first performs path-wise Bayesian aggregation of local comparisons to filter candidates under uncertainty, followed by global tournament-style comparisons to infer latent prompt quality and identify the optimal prompt. Experiments across multiple tasks demonstrate that UPA consistently outperforms existing prompt optimization methods, showing that agent-style optimization remains highly effective even in fully unsupervised settings.",
+ "summary": "- 核心创新点：提出无监督提示代理（UPA），在不依赖有监督奖励信号的情况下通过树状搜索与选择实现对提示的结构化优化。\n\n- 主要方法：在搜索阶段构建演进中的树来导航提示空间，利用大语言模型给出的细粒度且无序的成对比较；为解决局部比较缺乏全局尺度的问题，采用两阶段的 Bradley-Terry-Luce (BTL) 框架：第一阶段基于路径的贝叶斯聚合在不确定性下筛选候选提示，第二阶段进行全局淘汰赛式比较以推断潜在提示质量并确定最优提示。\n\n- 结论/性能：在多个任务上持续优于现有提示优化方法，证明完全无监督设置下的代理式优化仍然高效有效。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-02 14:03:00"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.19472",
+ "title": "Multi-Layer Confidence Scoring for Detection of Out-of-Distribution Samples, Adversarial Attacks, and In-Distribution Misclassifications",
+ "authors": "Lorenzo Capelli, Leandro de Souza Rosa, Gianluca Setti, Mauro Mangia, Riccardo Rovatti",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19472v1",
+ "abstract": "The recent explosive growth in Deep Neural Networks applications raises concerns about the black-box usage of such models, with limited trasparency and trustworthiness in high-stakes domains, which have been crystallized as regulatory requirements such as the European Union Artificial Intelligence Act. While models with embedded confidence metrics have been proposed, such approaches cannot be applied to already existing models without retraining, limiting their broad application. On the other hand, post-hoc methods, which evaluate pre-trained models, focus on solving problems related to improving the confidence in the model's predictions, and detecting Out-Of-Distribution or Adversarial Attacks samples as independent applications. To tackle the limited applicability of already existing methods, we introduce Multi-Layer Analysis for Confidence Scoring (MACS), a unified post-hoc framework that analyzes intermediate activations to produce classification-maps. From the classification-maps, we derive a score applicable for confidence estimation, detecting distributional shifts and adversarial attacks, unifying the three problems in a common framework, and achieving performances that surpass the state-of-the-art approaches in our experiments with the VGG16 and ViTb16 models with a fraction of their computational overhead.",
+ "summary": "- 核心创新点：提出一个统一的后验分析框架 MACS，通过多层中间激活分析生成分类映射，从中导出用于置信估计的分数，能够同时检测 Out-of-Distribution、对抗攻击和分布内错分类，且计算开销低于现有方法。\n\n- 主要方法：采用 Multi-Layer Analysis for Confidence Scoring (MACS) 的后验框架，分析预训练模型的中间激活产生分类映射（classification-maps），据此推导一个统一的置信分数，用于三类问题的检测与置信估计；无需重新训练，适用于如 VGG16、ViTb16 等模型。\n\n- 结论/性能：在 VGG16 和 ViTb16 模型上实验，性能超越了当前的状态-of-the-art 方法，同时具有更低的计算开销。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-23 03:55:19"
+}

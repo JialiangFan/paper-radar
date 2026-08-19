@@ -1,0 +1,13 @@
+{
+ "id": "2605.29562",
+ "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models",
+ "authors": "Shengyu Si, Yuanzhuo Lu, Ruimeng Yang, Ziyi Ye, Zuxuan Wu, Yu-Gang Jiang",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29562v1",
+ "abstract": "Vision-Language-Action~(VLA) models have shown strong potential for general-purpose robotic manipulation, yet they still struggle to generalize to unseen tasks that necessitate transferring relevant experience across objects, scenes, and action patterns. This paper proposes VLA-Pro, a plug-and-play framework designed to enhance cross-task generalization by storing task-relevant procedural memories at training time and transferring these memories during inference. Specifically, VLA-Pro stores task-specific LoRA adapters as parameterized procedural memories during training. At inference time, VLA-Pro retrieves relevant procedural memories based on the current multi-modal context and dynamically fuses these memories for generating the current action chunk. Experiments on RoboTwin, RLBench, and real-world manipulation tasks show that VLA-Pro consistently improves cross-task generalization across multiple backbones, achieving up to a 207% relative improvement in simulation and increasing real-world success rate from 5.8% to 65.0%. These results suggest that procedural memory retrieval and adaptation provide an effective mechanism for transferring manipulation experience to novel tasks while preserving modularity and execution stability.",
+ "summary": "# VLA-Pro 论文总结\n\n## 1. 核心创新点\n提出一种**即插即用的程序性记忆迁移框架**，通过存储和检索任务相关的 LoRA 适配器作为\"程序性记忆\"，显著提升视觉-语言-动作（VLA）模型在未见任务上的跨任务泛化能力。\n\n## 2. 主要方法\n- **训练阶段**：将每个任务的经验编码为**任务专属的 LoRA 适配器**，作为参数化的程序性记忆进行存储。\n- **推理阶段**：基于当前的多模态上下文**检索相关的程序性记忆**，并**动态融合**这些 LoRA 适配器，用于生成当前的动作片段（action chunk）。\n- 框架与具体 VLA 主干模型解耦，可作为插件应用于多种 backbone。\n\n## 3. 结论/性能\n在 **RoboTwin、RLBench 及真实世界操作任务**上验证有效：\n- 仿真环境中跨任务泛化相对提升最高达 **207%**；\n- 真实机器人任务成功率从 **5.8% 大幅提升至 65.0%**；\n- 在保持模块化和执行稳定性的同时，证明了程序性记忆检索与自适应融合是迁移操作经验到新任务的有效机制。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-31 13:03:32"
+}

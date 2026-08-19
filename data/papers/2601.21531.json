@@ -1,0 +1,13 @@
+{
+ "id": "2601.21531",
+ "title": "On the Adversarial Robustness of Large Vision-Language Models under Visual Token Compression",
+ "authors": "Xinwei Zhang, Hangcheng Liu, Li Bai, Hao Wang, Qingqing Ye, Tianwei Zhang, Haibo Hu",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21531v1",
+ "abstract": "Visual token compression is widely used to accelerate large vision-language models (LVLMs) by pruning or merging visual tokens, yet its adversarial robustness remains unexplored. We show that existing encoder-based attacks can substantially overestimate the robustness of compressed LVLMs, due to an optimization-inference mismatch: perturbations are optimized on the full-token representation, while inference is performed through a token-compression bottleneck. To address this gap, we propose the Compression-AliGnEd attack (CAGE), which aligns perturbation optimization with compression inference without assuming access to the deployed compression mechanism or its token budget. CAGE combines (i) expected feature disruption, which concentrates distortion on tokens likely to survive across plausible budgets, and (ii) rank distortion alignment, which actively aligns token distortions with rank scores to promote the retention of highly distorted evidence. Across diverse representative plug-and-play compression mechanisms and datasets, our results show that CAGE consistently achieves lower robust accuracy than the baseline. This work highlights that robustness assessments ignoring compression can be overly optimistic, calling for compression-aware security evaluation and defenses for efficient LVLMs.",
+ "summary": "1) 核心创新点\n- 在不知晓部署的视觉令牌压缩机制及预算的前提下，提出 Compression-AliGnEd (CAGE) 攻击，通过在压缩推理下对扰动进行优化对齐，显著降低压缩下的 LVLM 鲁棒性评估的可信度。\n\n2) 主要方法\n- 提出 CAGE 攻击，专门对准压缩推理过程进行扰动优化，无需访问具体的压缩机制或其令牌预算。\n- 技术要点包括：\n  - 期望特征扰动（expected feature disruption）：将扰动聚焦在在多种潜在预算下更可能保留的令牌上，以提高对 compression bottleneck 的影响。\n  - 排序扰动对齐（rank distortion alignment）：使扰动与令牌的 rank 分数对齐，促使对高度被破坏的证据仍然被保留以误导推理。\n- 该方法可与多种可插拔的压缩机制兼容，在不同数据集上进行测试。\n\n3) 结论/性能\n- 实验结果表明，CAGE 相比基线攻击在多种代表性压缩机制和数据集上始终获得更低的鲁棒性准确率，攻击更有效。\n- 结论指出忽略压缩因素的鲁棒性评估可能过于乐观，呼吁进行压缩感知的安全评估与对高效 LVLM 的防御研究。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-30 14:01:56"
+}

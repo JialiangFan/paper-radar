@@ -1,0 +1,13 @@
+{
+ "id": "2602.08934",
+ "title": "StealthRL: Reinforcement Learning Paraphrase Attacks for Multi-Detector Evasion of AI-Text Detectors",
+ "authors": "Suraj Ranganath, Atharv Ramesh",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08934v1",
+ "abstract": "AI-text detectors face a critical robustness challenge: adversarial paraphrasing attacks that preserve semantics while evading detection. We introduce StealthRL, a reinforcement learning framework that stress-tests detector robustness under realistic adversarial conditions. StealthRL trains a paraphrase policy against a multi-detector ensemble using Group Relative Policy Optimization (GRPO) with LoRA adapters on Qwen3-4B, optimizing a composite reward that balances detector evasion with semantic preservation. We evaluate six attack settings (M0-M5) against three detector families (RoBERTa, FastDetectGPT, and Binoculars) at the security-relevant 1% false positive rate operating point. StealthRL achieves near-zero detection (0.001 mean TPR@1%FPR), reduces mean AUROC from 0.74 to 0.27, and attains a 99.9% attack success rate. Critically, attacks transfer to a held-out detector family not seen during training, revealing shared architectural vulnerabilities rather than detector-specific brittleness. We additionally conduct LLM-based quality evaluation via Likert scoring, analyze detector score distributions to explain why evasion succeeds, and provide per-detector AUROC with bootstrap confidence intervals. Our results expose significant robustness gaps in current AI-text detection and establish StealthRL as a principled adversarial evaluation protocol. Code and evaluation pipeline are publicly available at https://github.com/suraj-ranganath/StealthRL.",
+ "summary": "- **核心创新点**：提出 StealthRL，一种基于强化学习的对抗性文本改写框架，能够在多检测器集合上学习语义保持的改写策略，并通过 GRPO+LoRA 在大型语言模型上进行训练，从而实现对 AI 文本检测器的跨模型鲁棒性评估与迁移性攻击。\n\n- **主要方法**：利用 StealthRL 框架训练一个 paraphrase policy，对多检测器集成进行对抗性攻击；采用 Group Relative Policy Optimization (GRPO) + LoRA 适配器在 Qwen3-4B 上进行端到端训练，构建一个优化包含“逃避检测”和“保留语义”的复合奖励；在六种攻击设置（M0–M5）下对三大检测器家族（RoBERTa、FastDetectGPT、Binoculars）进行评估。\n\n- **结论/性能**：StealthRL 实现近零检测水平（平均 TPR@1%FPR = 0.001）、将平均 AUROC 从 0.74 降至 0.27、攻击成功率达到 99.9%；攻击能够跨未见的检测器家族迁移，揭示了共享的体系结构脆弱性；并结合 LLM 质量评估、检测分布分析和每个检测器的 AUROC（含自举置信区间）提供全面的对抗评估证据，代码与评测管线公开。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-10 14:02:52"
+}

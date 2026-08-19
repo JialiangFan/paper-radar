@@ -1,0 +1,13 @@
+{
+ "id": "2604.05716",
+ "title": "Can Large Language Models Reinvent Foundational Algorithms?",
+ "authors": "Jian Zhao, Haoren Luo, Yu Wang, Yuhan Cao, Pingyue Sheng, Tianxing He",
+ "date": "2026-04-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.05716v1",
+ "abstract": "LLMs have shown strong potential to advance scientific discovery. Whether they possess the capacity for foundational innovation, however, remains an open question. In this work, we focus on a prerequisite for foundational innovation: can LLMs reinvent foundational algorithms in computer science? Our \\textit{Unlearn-and-Reinvent} pipeline applies LLM unlearning to remove a specific foundational algorithm, such as Dijkstra's or Euclid's algorithm, from an LLM's pretrained knowledge, and then tests whether the model can reinvent it in a controlled environment. To enable effective unlearning, we adopt a GRPO-based, on-policy unlearning method. Across 10 target algorithms, 3 strong open-weight models, and 3 hint levels, our experiments demonstrate that (1) the strongest model Qwen3-4B-Thinking-2507 successfully reinvents 50% of the algorithms with no hint, 70% at hint level 1, and 90% at hint level 2; (2) a few high-level hints can enhance the reinvention success rate, but even step-by-step hints fail for those complicated algorithms; and (3) test-time reinforcement learning enables successful reinvention for the Strassen algorithm at hint level 2. Through analyses of output trajectories and ablation studies, we find that generative verifier in the reinvention phase plays a critical role in sustaining models' reasoning strength, helping to avoid the ``thought collapse'' phenomenon. These findings offer insights into both the potential and current limits of LLMs' innovative thinking.",
+ "summary": "- 核心创新点：提出“Unlearn-and-Reinvent”管线，通过对LLM进行遗忘式学习以移除特定基础算法的知识，再在受控环境中评估其重新发明能力，以探究LLM在基础算法创新方面的潜力。\n\n- 主要方法：采用基于GRPO的在策略unlearning方法来实现对特定基础算法的知识卸载；在重新发明阶段引入生成式验证器以维持模型的推理强度并避免“思维崩溃”；实验覆盖10种目标算法、3个开源大模型、3个提示级别，并结合测试时强化学习等策略进行评估。\n\n- 结论/性能：最强模型Qwen3-4B-Thinking-2507在无提示下可重新发明50%算法，提示等级1提升至70%，提示等级2提升至90%；对一些复杂算法，高层次提示仍可能失败，且在Strassen算法上通过测试时强化学习在提示等级2下可实现成功；生成式验证器在reinvention阶段对维持推理能力、避免思维崩溃具有关键作用，揭示了LLM在基础算法创新方面的潜力与当前局限。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-08 13:08:32"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.04599",
+ "title": "Malicious Image Analysis via Vision-Language Segmentation Fusion: Detection, Element, and Location in One-shot",
+ "authors": "Sheng Hang, Chaoxiang He, Hongsheng Hu, Hanqing Hu, Bin Benjamin Zhu, Shi-Feng Sun, Dawu Gu, Shuo Wang",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04599v1",
+ "abstract": "Detecting illicit visual content demands more than image-level NSFW flags; moderators must also know what objects make an image illegal and where those objects occur. We introduce a zero-shot pipeline that simultaneously (i) detects if an image contains harmful content, (ii) identifies each critical element involved, and (iii) localizes those elements with pixel-accurate masks - all in one pass. The system first applies foundation segmentation model (SAM) to generate candidate object masks and refines them into larger independent regions. Each region is scored for malicious relevance by a vision-language model using open-vocabulary prompts; these scores weight a fusion step that produces a consolidated malicious object map. An ensemble across multiple segmenters hardens the pipeline against adaptive attacks that target any single segmentation method. Evaluated on a newly-annotated 790-image dataset spanning drug, sexual, violent and extremist content, our method attains 85.8% element-level recall, 78.1% precision and a 92.1% segment-success rate - exceeding direct zero-shot VLM localization by 27.4% recall at comparable precision. Against PGD adversarial perturbations crafted to break SAM and VLM, our method's precision and recall decreased by no more than 10%, demonstrating high robustness against attacks. The full pipeline processes an image in seconds, plugs seamlessly into existing VLM workflows, and constitutes the first practical tool for fine-grained, explainable malicious-image moderation.",
+ "summary": "- 核心创新点：提出一个零-shot、一体化的 Vision-Language 分割融合管线，在一次前向中实现有害图像的检测、元素识别与像素级定位，并通过多分割器集成提升鲁棒性。\n\n- 主要方法：\n  - 以 SAM 为基础分割模型生成候选掩模，并将其细化为更大且相互独立的区域；\n  - 对每个区域使用开词汇表（open-vocabulary）提示的视觉-语言模型进行恶意相关性评分；\n  - 将区域得分进行融合，得到一个统一的恶意对象图；\n  - 通过对多种分割器进行集成，提升对抗性攻击的鲁棒性；\n  - 面向零-shot设置，实现检测、元素识别与像素级定位的一体化流程。\n\n- 结论/性能：\n  - 在新标注的 790 图像数据集上，实现元素级召回 85.8%、精度 78.1%、分割成功率 92.1%；\n  - 相较于直接的零-shot VLM 定位，在同等精度下召回提高 27.4%；\n  - 对抗 PGD 攻击下，方法的精度与召回下降不超过 10%，具备较强鲁棒性；\n  - 全流程仅需数秒即可处理一张图，易于嵌入现有 VLM 工作流，成为可解释的细粒度有害图像审查的首个实用工具。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-05 14:01:16"
+}

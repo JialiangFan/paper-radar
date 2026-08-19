@@ -1,0 +1,13 @@
+{
+ "id": "2607.09600",
+ "title": "Agora: Enhancing LLM Agent Reasoning Via Auction-Based Task Allocation",
+ "authors": "Kaiji Zhou, Ales Leonardis, Yue Feng",
+ "date": "2026-07-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.09600v1",
+ "abstract": "Enhancing the reasoning capabilities of large language model (LLM) agents requires effective orchestration of diverse expert models and tools. However, existing frameworks typically call APIs based on coarse-grained matching between tasks and the functions of expert models or tools, while overlooking critical factors such as performance variability and cost efficiency among functionally similar alternatives. To address this, we propose Agora, a framework that introduces an incentive-compatible auction mechanism for dynamically allocating tasks to expert models and tools. By treating reasoning steps as tradeable items, Agora enables agents to bid based on their rectified competence-ensuring that critical logic is routed to the most capable solver rather than the most overconfident one. Evaluations across five benchmarks show that Agora improves over matched single-model, routing, and cascade baselines under comparable candidate pools, while exposing a controllable cost-quality trade-off through a single auction parameter.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-13 13:01:29"
+}

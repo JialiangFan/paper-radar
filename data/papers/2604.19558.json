@@ -1,0 +1,13 @@
+{
+ "id": "2604.19558",
+ "title": "On Reasoning-Centric LLM-based Automated Theorem Proving",
+ "authors": "Yican Sun, Chengwei Shi, Hangzhou Lyu, Yingfei Xiong",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19558v1",
+ "abstract": "Automated theorem proving is fundamental to formal methods, and the recent trend is to integrate large language models (LLMs) and proof assistants to form effective proof agents. While existing proof agents show promising performance, they inadequately leverage reasoning capabilities of modern LLMs in high-level planning and self-critique. We argue that proof agents should not merely generate tactics but also reason strategically about proof plans and critically evaluate their own proposals.\n  This paper introduces ReCent-Prover, a reasoning-centric LLM-based proof agent for Rocq that addresses two critical limitations in current systems. First, we present validation with reflection, enabling LLMs to scrutinize their generated tactics and synthesize failure summaries when reflection identifies potential errors, filtering out potentially misapplied tactics earlier. Second, we propose retrieval with planning, which conditions retrieval on LLM-generated proof plans rather than subgoal similarity, retrieving lemmas and proofs that align with the anticipated proof strategy. Both techniques increase the number of invocations of LLMs. However, when evaluated on the CoqStoq benchmark, even under the same budget of LLM invocations, ReCent-Prover achieves a 22.58% relative improvement in the number of proved theorems over the previous state-of-the-art, demonstrating that our reasoning-centric design significantly enhances automated theorem proving capabilities.",
+ "summary": "- 核心创新点：将推理作为核心的自动定理证明代理，通过反思式自评和基于证明计划的检索来提升大语言模型在高层次证明规划和自我纠错中的能力，从而显著提高证明效果。\n\n- 主要方法：\n  - 引入 ReCent-Prover，融合两大技术：1) validation with reflection，让LLM审查自生成的证明策略并给出潜在错误的失败摘要，以筛除可能被错误应用的 tactic；2) retrieval with planning，基于LLM生成的证明计划进行检索，而非仅以子目标相似性为条件，检索与预期证明策略相匹配的引理和证明。\n  - 该设计故意增加LLM调用次数，以提升推理和计划的质量。\n\n- 结论/性能：在 CoqStoq 基准上，即使在相同的LLM调用预算下，ReCent-Prover相对于前一状态的最先进方法实现了22.58%的相对提升的已证明定理数量。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-22 13:04:15"
+}

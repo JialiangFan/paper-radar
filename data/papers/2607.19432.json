@@ -1,0 +1,13 @@
+{
+ "id": "2607.19432",
+ "title": "ChainWatch: A Kill Chain-Aligned Sequential Detection Framework for Multi-Step Attacks in MCP-Based AI Agent Systems",
+ "authors": "Om Narayan, Rashmi Jyoti, Ramkinker Singh",
+ "date": "2026-07-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.19432v1",
+ "abstract": "The Model Context Protocol (MCP) is an open-source standard that allows AI agents to connect to external tools, databases, and services. While this connectivity enables powerful agent capabilities, it also introduces multi-step attacks that existing per-call defenses cannot reliably detect. Attackers can compose individually benign tool invocations into malicious sequences that evade isolated inspection. This paper presents ChainWatch, a sequential detection framework for identifying multi-step attacks in MCP-based AI agent systems. ChainWatch models attack progression using a six-stage kill chain and applies a Hidden Markov Model (HMM) to classify tool-call sequences. Detection rules are triggered when a session exhibits suspicious progression across multiple stages. The framework is supported by a structured threat model covering direct sequential attacks, indirect prompt injection chains, and hybrid multi-stage attacks. A 20-dimensional feature extraction schema captures behavioral signals from tool interactions. We demonstrate the approach using five representative attack scenarios from the security literature, showing how ChainWatch detects attack chains that evade traditional per-call security mechanisms.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-23 13:00:55"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.11881",
+ "title": "Bielik-Minitron-7B: Compressing Large Language Models via Structured Pruning and Knowledge Distillation for the Polish Language",
+ "authors": "Remigiusz Kinas, Paweł Kiszczak, Sergio P. Perez, Krzysztof Ociepa, Łukasz Flis, Krzysztof Wróbel, Adrian Gwoździej",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11881v1",
+ "abstract": "This report details the creation of Bielik-Minitron-7B, a compressed 7.35B parameter version of the Bielik-11B-v3.0 model, specifically optimized for European languages. By leveraging a two-stage compression methodology inspired by the NVIDIA Minitron approach, we combined structured hybrid pruning and knowledge distillation to reduce the model's parameter count by 33.4%, from 11.04B to 7.35B. We utilized the NVIDIA Model Optimizer for structural pruning and the NVIDIA NeMo Framework for logit-based distillation for quality recovery. Following distillation, the model underwent a rigorous alignment pipeline consisting of Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO-P), and Reinforcement Learning (GRPO). Our final model successfully recovered approximately 90% of the baseline model's performance while providing up to 50% inference speedup. This approach demonstrates an efficient pathway to create language models for less-represented languages, preserving the original model quality while reducing inference deployment costs.",
+ "summary": "- 核心创新点：通过以结构化混合裁剪与知识蒸馏为核心的两阶段压缩框架，将 Bielik-11B-v3.0 压缩为 7.35B 参数的 Bielik-Minitron-7B，同时保持接近原模型性能并实现显著的推理加速，面向欧洲语言/低资源语言场景。\n\n- 主要方法：\n  - 采用受 NVIDIA Minitron 启发的两阶段压缩：结构化混合裁剪 + 基于对数输出的知识蒸馏。\n  - 使用 NVIDIA Model Optimizer 进行结构裁剪，NVIDIA NeMo 框架执行基于 logit 的蒸馏以恢复质量。\n  - 蒸馏后经过对齐流程：SFT（有监督微调）、DPO-P、GRPO（强化学习）等步骤。\n\n- 结论/性能：\n  - 参数量从 11.04B 降至 7.35B，降幅约 33.4%。\n  - 最终模型达到约原基线性能的 90%，并实现最高约 50% 的推理加速。\n  - 展示了一条高效路径，用于为较少表示语言构建高质量、低成本推理的语言模型。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-13 13:02:49"
+}

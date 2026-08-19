@@ -1,0 +1,13 @@
+{
+ "id": "2512.18659",
+ "title": "Measuring the Impact of Student Gaming Behaviors on Learner Modeling",
+ "authors": "Qinyi Liu, Lin Li, Valdemar Švábenský, Conrad Borchers, Mohammad Khalil",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18659v1",
+ "abstract": "The expansion of large-scale online education platforms has made vast amounts of student interaction data available for knowledge tracing (KT). KT models estimate students' concept mastery from interaction data, but their performance is sensitive to input data quality. Gaming behaviors, such as excessive hint use, may misrepresent students' knowledge and undermine model reliability. However, systematic investigations of how different types of gaming behaviors affect KT remain scarce, and existing studies rely on costly manual analysis that does not capture behavioral diversity. In this study, we conceptualize gaming behaviors as a form of data poisoning, defined as the deliberate submission of incorrect or misleading interaction data to corrupt a model's learning process. We design Data Poisoning Attacks (DPAs) to simulate diverse gaming patterns and systematically evaluate their impact on KT model performance. Moreover, drawing on advances in DPA detection, we explore unsupervised approaches to enhance the generalizability of gaming behavior detection. We find that KT models' performance tends to decrease especially in response to random guess behaviors. Our findings provide insights into the vulnerabilities of KT models and highlight the potential of adversarial methods for improving the robustness of learning analytics systems.",
+ "summary": "1. 核心创新点：将学生的游戏行为视为数据投毒，提出数据投毒攻击（DPAs）用于系统化评估知识追踪（KT）模型的鲁棒性，并结合无监督检测提升对投毒行为的泛化检测能力。\n\n2. 主要方法：设计并应用 DPAs 来模拟多样化的游戏行为模式以污染交互数据并评估 KT 模型性能；结合无监督检测方法来识别和捕捉这些游戏行为以提升检测的泛化性。\n\n3. 结论/性能：KT 模型的性能在投毒情形下显著下降，尤其是对随机猜测类投毒最为脆弱；研究揭示 KT 模型的脆弱性，并指出通过对抗性/无监督手段提升学习分析系统鲁棒性的潜在途径。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-23 02:55:23"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.07779",
+ "title": "The Capability Ladder: A Curriculum-Modernization Framework for Workforce Readiness in the AI Era",
+ "authors": "Majid Memari, George Rudolph",
+ "date": "2026-08-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.07779v1",
+ "abstract": "Artificial intelligence is changing the task composition of computing work faster than curricula and training typically adapt. This is a curriculum-framework paper, grounded in a structured narrative review of labor-market and software-engineering evidence and illustrated through an exploratory pilot course: the review supports the framework, and the pilot illustrates it rather than serving as primary evidence. The central claim is that near-term change is task reallocation rather than full replacement: routine implementation is increasingly automated while verification, systems thinking, security, and the ability to supervise and orchestrate AI (keeping a human in the loop) gain value. We organize the response as a capability-assurance framework anchored by a Capability Ladder: a five-level progression (trigger, automation, workflow, AI agent, agent team) that classifies the operational autonomy of AI-augmented work and the human supervision it requires. We map the ladder to course-level updates, workload-aware assessment, and stackable workforce credentials, and illustrate it through a two-semester pilot of a team-based, no-code course enrolling computing and business students. We argue for targeted modernization around durable capabilities rather than wholesale curriculum replacement, and we are explicit about evidence limits: labor signals are confounded by non-AI forces, industry reports are directional, and the pilot is exploratory.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出\"能力阶梯\"（Capability Ladder）框架——用五级 AI 自主性分级来指导计算机课程的定向现代化，主张 AI 带来的是\"任务再分配\"而非\"岗位替代\"。\n\n**2. 主要方法**\n- **结构化叙述性文献综述**：梳理劳动力市场数据与软件工程领域证据，作为框架的支撑依据。\n- **能力阶梯模型**：将 AI 增强型工作按运行自主性划分为五级——触发器（trigger）→ 自动化（automation）→ 工作流（workflow）→ AI 智能体（AI agent）→ 智能体团队（agent team），每一级对应不同程度的人类监督需求。\n- **落地映射**：把阶梯对应到课程级更新、考虑学生负荷的评估设计（workload-aware assessment）和可叠加的职业资格认证（stackable credentials）。\n- **试点课程**：一门为期两学期、面向计算机与商科学生的团队制无代码（no-code）课程，作为框架的示例说明。\n\n**3. 结论/性能**\n论文论证：常规编码实现正被自动化，而验证、系统思维、安全以及\"监督与编排 AI（保持 human-in-the-loop）\"的能力价值上升；因此应围绕这些**持久能力**做定向课程改造，而非推倒重建整套课程。\n\n作者对证据局限性非常坦诚：这是一篇**框架性论文**而非实证研究——劳动力市场信号受非 AI 因素干扰，产业报告仅具方向性参考价值，试点课程属探索性质，仅用于**说明**框架而非作为主要证据。因此论文未给出量化性能指标。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-11 13:02:30"
+}

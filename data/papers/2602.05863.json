@@ -1,0 +1,13 @@
+{
+ "id": "2602.05863",
+ "title": "Constrained Group Relative Policy Optimization",
+ "authors": "Roger Girgis, Rodrigue de Schaetzen, Luke Rowe, Azalée Robitaille, Christopher Pal, Liam Paull",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05863v1",
+ "abstract": "While Group Relative Policy Optimization (GRPO) has emerged as a scalable framework for critic-free policy learning, extending it to settings with explicit behavioral constraints remains underexplored. We introduce Constrained GRPO, a Lagrangian-based extension of GRPO for constrained policy optimization. Constraints are specified via indicator cost functions, enabling direct optimization of violation rates through a Lagrangian relaxation. We show that a naive multi-component treatment in advantage estimation can break constrained learning: mismatched component-wise standard deviations distort the relative importance of the different objective terms, which in turn corrupts the Lagrangian signal and prevents meaningful constraint enforcement. We formally derive this effect to motivate our scalarized advantage construction that preserves the intended trade-off between reward and constraint terms. Experiments in a toy gridworld confirm the predicted optimization pathology and demonstrate that scalarizing advantages restores stable constraint control. In addition, we evaluate Constrained GRPO on robotics tasks, where it improves constraint satisfaction while increasing task success, establishing a simple and effective recipe for constrained policy optimization in embodied AI domains that increasingly rely on large multimodal foundation models.",
+ "summary": "1) 核心创新点：在 GRPO 的基础上引入基于拉格朗日松弛的带约束策略优化框架（Constrained GRPO），通过对优势进行标量化来避免多分量估计导致的拉格朗日信号失真，从而直接优化违反率并实现稳定的约束控制。\n\n2) 主要方法：将约束以指示成本函数形式引入，使用拉格朗日松弛进行约束优化；揭示并解决多分量优势估计带来的 std 偏差与权重错配问题，提出标量化的优势以保持奖励与约束项之间的真实权衡；在 toy gridworld 与机器人任务中进行验证。\n\n3) 结论/性能：在 toy gridworld 中验证了因多分量估计引发的优化病态，并证明标量化优势能恢复稳定的约束控制；在机器人任务上提升了约束满足率和任务成功率，给出在具身AI领域简单而有效的带约束策略优化方法。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-06 14:03:47"
+}

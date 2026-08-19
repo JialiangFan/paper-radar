@@ -1,0 +1,13 @@
+{
+ "id": "2512.04072",
+ "title": "SkillFactory: Self-Distillation For Learning Cognitive Behaviors",
+ "authors": "Zayne Sprague, Jack Lu, Manya Wadhwa, Sedrick Keh, Mengye Ren, Greg Durrett",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04072v1",
+ "abstract": "Reasoning models leveraging long chains of thought employ various cognitive skills, such as verification of their answers, backtracking, retrying by an alternate method, and more. Previous work has shown that when a base language model exhibits these skills, training that model further with reinforcement learning (RL) can learn to leverage them. How can we get models to leverage skills that aren't exhibited by base models? Our work, SkillFactory, is a method for fine-tuning models to roughly learn these skills during a supervised fine-tuning (SFT) stage prior to RL. Our approach does not rely on distillation from a stronger model, but instead uses samples from the model itself, rearranged to provide training data in the format of those skills. These \"silver\" SFT traces may be imperfect, but are nevertheless effective for priming a model to acquire skills during RL. Our evaluation shows that (1) starting from SkillFactory SFT initialization helps a model to generalize to harder variants of a task post-RL, despite lower performance pre-RL; (2) cognitive skills are indeed used by the model; (3) RLed SkillFactory models are more robust to regression on out-of-domain tasks than RLed base models. Our work suggests that inductive biases learned prior to RL help models learn robust cognitive skill use.",
+ "summary": "1) 核心创新点（一句话概括）\n在无需来自更强模型的蒸馏的前提下，提出 SkillFactory，通过自生成的“银数据”在监督微调阶段引导模型学习并具备可在强化学习阶段利用的认知技能，从而提升对更难任务的泛化与鲁棒性。\n\n2) 主要方法（技术/模型）\n- 使用模型自身输出的样本，重新排列并整理成适合体现特定认知技能（如验证、回溯、用替代方法重试等）的训练数据形式，形成银数据（silver SFT traces）。\n- 通过这种自蒸馏的银数据对模型进行监督微调（SFT），为后续的强化学习微调（RL）提供初始化。\n- 训练流程不依赖于从更强模型蒸馏得到的数据，强调在 SFT 阶段注入对认知技能的偏好，然后再进行 RL 以强化技能的实际应用。\n\n3) 结论/性能（取得的效果）\n- 以 SkillFactory 的 SFT 初始化在 RL 后能提高模型对更难变体任务的泛化能力，尽管 RL 之前的性能可能较低。\n- 实验证明模型确实在使用这些认知技能。\n- 与基线的 RL 模型相比，RL 后的 SkillFactory 模型对离域任务的回归具有更强的鲁棒性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:04:19"
+}

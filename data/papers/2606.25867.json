@@ -1,0 +1,13 @@
+{
+ "id": "2606.25867",
+ "title": "LLM-Based Discovery of Latent Requirements from Stakeholder Conversations: Preliminary Results from Industry",
+ "authors": "Mithila Sivakumar, Martin Lochner, Shiva Nejati, Mehrdad Sabetzadeh",
+ "date": "2026-06-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.25867v1",
+ "abstract": "Stakeholder interviews are an important source of information for requirements elicitation, yet many relevant requirements remain implicit in such conversations. Stakeholders frequently describe workflows, challenges, and operational practices without explicitly articulating the software capabilities that could address them. Recent work has considered the use of LLMs to analyze conversational data and extract requirements from stakeholder interviews. Existing approaches, however, primarily focus on identifying explicitly stated requirements, leaving implicit opportunities largely unexplored. In this paper, we present LENS (LLM-Enabled Needs Discovery from Stakeholder Interviews), an approach that analyzes stakeholder interview transcripts to both extract explicit requirements and infer additional latent requirements. LENS performs this inference by reasoning over stakeholder statements together with contextual information about organizational tools and infrastructure. Both extracted and inferred requirements are represented as user stories and linked to transcript excerpts to ensure traceability. We conduct a preliminary evaluation of LENS using twelve stakeholder interview transcripts collected in an industrial setting involving cybersecurity operations. We show that LENS achieves an average F1-score of 84.4% for extracting explicit requirements, while, on average, 75% of the latent requirements identified by LENS were perceived as providing useful automation or time-saving potential by domain experts.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-25 13:02:28"
+}

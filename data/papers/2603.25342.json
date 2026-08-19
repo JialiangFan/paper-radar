@@ -1,0 +1,13 @@
+{
+ "id": "2603.25342",
+ "title": "From Intent to Evidence: A Categorical Approach for Structural Evaluation of Deep Research Agents",
+ "authors": "Shuoling Liu, Zhiquan Tan, Kun Yi, Hui Wu, Yihan Li, Jiangpeng Yan, Liyuan Chen, Kai Chen, Qiang Yang",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25342v1",
+ "abstract": "Although deep research agents (DRAs) have emerged as a promising paradigm for complex information synthesis, their evaluation remains constrained by ad hoc empirical benchmarks. These heuristic approaches do not rigorously model agent behavior or adequately stress-test long-horizon synthesis and ambiguity resolution. To bridge this gap, we formalize DRA behavior through the lens of category theory, modeling deep research workflow as a composition of structure-preserving maps (functors). Grounded in this theoretical framework, we introduce a novel mechanism-aware benchmark with 296 questions designed to stress-test agents along four interpretable axes: traversing sequential connectivity chains, verifying intersections within V-structure pullbacks, imposing topological ordering on retrieved substructures, and performing ontological falsification via the Yoneda Probe. Our rigorous evaluation of 11 leading models establishes a persistently low baseline, with the state-of-the-art achieving only a 19.9\\% average accuracy, exposing the difficulty of formal structural stress-testing. Furthermore, our findings reveal a stark dichotomy in the current AI capabilities. While advanced deep research pipelines successfully redefine dynamic topological re-ordering and exhibit robust ontological verification -- matching pure reasoning models in falsifying hallucinated premises -- they almost universally collapse on multi-hop structural synthesis. Crucially, massive performance variance across tasks exposes a lingering reliance on brittle heuristics rather than a systemic understanding. Ultimately, this work demonstrates that while top-tier autonomous agents can now organically unify search and reasoning, achieving a generalized mastery over complex structural information remains a formidable open challenge.\\footnote{Our implementation will be available at https://github.com/tzq1999/CDR.",
+ "summary": "- 核心创新点：将深度研究代理的行为用范畴论中的结构保持映射（函子）进行形式化建模，并基于此提出一套机制感知的结构性压力测试基准，用以系统评估多步结构合成与本体论推理能力。\n\n- 主要方法：以范畴理论作为理论框架，将深度研究工作流看作结构保持映射的组合；设计了包含296道题的机制感知基准，围绕四条评测轴构建：连续连接链的遍历、V-结构下的交集拉回（pullback）验证、检索子结构的拓扑排序、以及通过Yoneda探针进行本体论的虚假断言检验；在11个主流模型上进行评测。\n\n- 结论/性能：最优模型仅实现约19.9%的平均准确率，显示在此类结构性压力测试上的难度很大；高端研究管线在动态拓扑重排序和本体验证方面表现较好，能与纯推理模型在揭穿虚假前提方面相当，但在多跳结构合成上几乎普遍崩溃，且不同任务之间性能差异显著，表明仍依赖脆弱的启发式而非系统性理解，全面掌握复杂结构信息仍是一个待攻克的挑战。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:43"
+}

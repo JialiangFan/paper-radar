@@ -1,0 +1,13 @@
+{
+ "id": "2604.23488",
+ "title": "Do Synthetic Trajectories Reflect Real Reward Hacking? A Systematic Study on Monitoring In-the-Wild Hacking in Code Generation",
+ "authors": "Lichen Li, Hengguang Zhou, Yijun Liang, Tianyi Zhou, Cho-Jui Hsieh",
+ "date": "2026-04-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.23488v1",
+ "abstract": "Reward hacking in code generation, where models exploit evaluation loopholes to obtain full reward without correctly solving the tasks, poses a critical challenge for Reinforcement Learning (RL) and the deployment of reasoning models. Existing studies have been conducted primarily on synthetic hacking trajectories. However, whether these synthetic behaviors faithfully represent naturally emerging hacking in the wild remains unclear. In this work, we present a systematic analysis of the synthetic vs. in-the-wild discrepancy in reward hacking. We examine to what extent hacking behaviors induced by prompting resemble those emerging during RL training, and whether monitors trained on synthetic trajectories generalize to naturally arising but previously unseen hacking. To scale up the curation of in-the-wild reward hacking trajectories, we modified Group Relative Policy Optimization (GRPO) by injecting conflicting unit tests as tracers and applying a \"resampling-until-hack\" mechanism. Through controlled comparisons between monitors trained on synthetic versus in-the-wild data, we find that (1) synthetic-data-trained monitors fail to generalize to \"in-the-wild\" hacking, and (2) monitors trained on our \"in-the-wild\" trajectories demonstrate stronger generalizability to unseen hacking types. Our results indicate that synthetic reward hacking data may not fully reflect natural reward hacking behaviors, and that relying solely on synthetic data can lead to misleading conclusions. The codebase is available at https://github.com/LichenLillc/CoTMonitoring.git",
+ "summary": "- 核心创新点：系统揭示合成奖励欺骗数据与真实野外行为存在显著差异，并提出在 GRPO 框架中通过引入冲突单元测试与“重采样直到欺骗”机制来扩展野外数据的监控，从而提升对未见欺骗的泛化能力。\n- 主要方法：改造 Group Relative Policy Optimization (GRPO)，在监控数据中注入冲突单元测试作为 tracers，并应用“resampling-until-hack”机制以更高效地收集野外欺骗轨迹；对比在合成数据与野外数据上训练的监控模型的泛化性。\n- 结论/性能：合成数据训练的监控器难以泛化到野外的奖励欺骗；在野外数据上训练的监控器对未见的欺骗类型具有更强的泛化性；强调仅依赖合成数据可能产生误导，并给出可复现实验的代码库。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-28 13:08:02"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.21889",
+ "title": "TingIS: Real-time Risk Event Discovery from Noisy Customer Incidents at Enterprise Scale",
+ "authors": "Jun Wang, Ziyin Zhang, Rui Wang, Hang Yu, Peng Di, Rui Wang",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21889v1",
+ "abstract": "Real-time detection and mitigation of technical anomalies are critical for large-scale cloud-native services, where even minutes of downtime can result in massive financial losses and diminished user trust. While customer incidents serve as a vital signal for discovering risks missed by monitoring, extracting actionable intelligence from this data remains challenging due to extreme noise, high throughput, and semantic complexity of diverse business lines. In this paper, we present TingIS, an end-to-end system designed for enterprise-grade incident discovery. At the core of TingIS is a multi-stage event linking engine that synergizes efficient indexing techniques with Large Language Models (LLMs) to make informed decisions on event merging, enabling the stable extraction of actionable incidents from just a handful of diverse user descriptions. This engine is complemented by a cascaded routing mechanism for precise business attribution and a multi-dimensional noise reduction pipeline that integrates domain knowledge, statistical patterns, and behavioral filtering. Deployed in a production environment handling a peak throughput of over 2,000 messages per minute and 300,000 messages per day, TingIS achieves a P90 alert latency of 3.5 minutes and a 95\\% discovery rate for high-priority incidents. Benchmarks constructed from real-world data demonstrate that TingIS significantly outperforms baseline methods in routing accuracy, clustering quality, and Signal-to-Noise Ratio.",
+ "summary": "1. 核心创新点：在企业级大规模场景中，提出一个多阶段事件链接引擎，将高效索引技术与大语言模型（LLMs）结合，实现对多源、高噪声的客户事件的稳定合并与高效的风险事件发现。\n\n2. 主要方法：\n- 多阶段事件链接引擎：利用高效索引与LLMs做出事件合并决策，提升稳定性和可行动性。\n- 级联路由机制：用于精准的业务归因，确保事件能够被正确定向到相关领域。\n- 多维度噪声抑制管线：融合领域知识、统计模式和行为过滤等技术，降低干扰、提升信号质量。\n- 端到端企业级部署：在实际生产环境中实现高吞吐与低延迟的实时处理。\n\n3. 结论/性能：\n- 生产部署吞吐量达到峰值超过2000条/分钟、每日约30万条消息。\n- P90告警时延为3.5分钟，面向高优先级告警的发现率达95%。\n- 基准评估显示在路由准确性、聚类质量和信噪比等方面显著优于基线方法。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-24 13:01:10"
+}

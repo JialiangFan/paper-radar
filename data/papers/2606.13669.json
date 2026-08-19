@@ -1,0 +1,13 @@
+{
+ "id": "2606.13669",
+ "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+ "authors": "Zongsheng Cao, Bihao Zhan, Jinxin Shi, Jiong Wang, Fangchen Yu, Zhijie Zhong, Zijie Guo, Tianshuo Peng, Zhuo Liu, Yi Xie, Xiang Zhuang, Yue Fan, Runmin Ma, Shiyang Feng, Xiangchao Yan, Anran Liu, Peng Ye, Wenlong Zhang, Shufei Zhang, Chunfeng Song, Fenghua Ling, Jie Zhou, Liang He, Bo Zhang, Lei Bai",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13669v1",
+ "abstract": "Current LLM-based research agents have advanced through agent orchestration, yet largely overlook scientific knowledge orchestration. Existing works often reduce papers to abstracts, surface mentions, and flat \\texttt{cites} edges, omitting key entities, claims, evidence, mechanisms, and method lineages essential for scientific reasoning. To this end, we introduce \\textbf{Agents-K1}, an end-to-end knowledge orchestration pipeline that converts raw documents into agent-native scientific knowledge graphs. Agents-K1 integrates three components under a unifying theoretical foundation: a multimodal parser whose five-module schema captures entities, multimodal evidence, citations, and typed inter-entity relations across the full paper rather than abstracts alone; a 4B information-extraction backbone trained with GRPO under a rule-based reward; and a graphanything CLI, a tri-source agent interface that unifies web search, multimodal graph retrieval, and cross-document traversal. On top of this, we process 2.46 million scientific papers across six subjects to produce \\textbf{Scholar-KG}, of which we release a one-million-paper subset, and the full Scholar-KG is accessible via the SCP link below. The same pipeline can be extended to general-domain corpora and to schema-conformant data synthesis. Extensive experiments demonstrate that Agents-K1 achieves superior performance in scientific information extraction, knowledge graph construction, and multi-hop scientific reasoning.",
+ "summary": "# Agents-K1 论文总结\n\n1. **核心创新点**：提出端到端的\"知识编排\"流水线，将原始科研文献转化为面向智能体（agent-native）的科学知识图谱，弥补现有研究只把论文简化为摘要、表面提及和扁平引用关系的不足。\n\n2. **主要方法**：\n   - **多模态解析器**：采用五模块 schema，从全文（而非仅摘要）抽取实体、多模态证据、引用及实体间的带类型关系；\n   - **抽取主干模型**：一个 4B 参数的信息抽取模型，用基于规则奖励的 GRPO 强化学习训练；\n   - **graphanything CLI**：三源智能体接口，统一了网络搜索、多模态图检索和跨文档遍历。\n\n3. **结论/性能**：基于该流水线处理了六大学科共 **246 万篇论文**，构建出 **Scholar-KG**（开源其中 100 万篇子集，全量可经 SCP 链接访问）。实验表明 Agents-K1 在科学信息抽取、知识图谱构建和多跳科学推理三方面均取得领先性能，且该流水线可扩展到通用领域语料和 schema 兼容的数据合成。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-13 13:01:38"
+}

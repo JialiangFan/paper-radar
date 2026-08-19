@@ -1,0 +1,13 @@
+{
+ "id": "2512.18265",
+ "title": "Intelligent Human-Machine Partnership for Manufacturing: Enhancing Warehouse Planning through Simulation-Driven Knowledge Graphs and LLM Collaboration",
+ "authors": "Himabindu Thogaru, Saisubramaniam Gopalakrishnan, Zishan Ahmad, Anirudh Deodhar",
+ "date": "2025-12-20",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18265v1",
+ "abstract": "Manufacturing planners face complex operational challenges that require seamless collaboration between human expertise and intelligent systems to achieve optimal performance in modern production environments. Traditional approaches to analyzing simulation-based manufacturing data often create barriers between human decision-makers and critical operational insights, limiting effective partnership in manufacturing planning. Our framework establishes a collaborative intelligence system integrating Knowledge Graphs and Large Language Model-based agents to bridge this gap, empowering manufacturing professionals through natural language interfaces for complex operational analysis. The system transforms simulation data into semantically rich representations, enabling planners to interact naturally with operational insights without specialized expertise. A collaborative LLM agent works alongside human decision-makers, employing iterative reasoning that mirrors human analytical thinking while generating precise queries for knowledge extraction and providing transparent validation. This partnership approach to manufacturing bottleneck identification, validated through operational scenarios, demonstrates enhanced performance while maintaining human oversight and decision authority. For operational inquiries, the system achieves near-perfect accuracy through natural language interaction. For investigative scenarios requiring collaborative analysis, we demonstrate the framework's effectiveness in supporting human experts to uncover interconnected operational issues that enhance understanding and decision-making. This work advances collaborative manufacturing by creating intuitive methods for actionable insights, reducing cognitive load while amplifying human analytical capabilities in evolving manufacturing ecosystems.",
+ "summary": "1) 核心创新点：提出一个以知识图谱驱动的仿真数据语义化表示结合大语言模型（LLM）代理的协同人机框架，实现自然语言界面的仓储规划分析与瓶颈识别。\n\n2) 主要方法：将仿真数据转化为语义丰富的知识图谱；引入协同的 LLM 代理与人类决策者共同进行迭代推理、生成精确查询并提供可验证的结果；提供无专门技能的自然语言接口，覆盖操作性查询与调查性分析。\n\n3) 结论/性能：在运营场景中实现对操作性查询的近乎完美准确性；在需要协同分析的调查场景中帮助专家发现相互关联的运营问题、提升理解与决策能力；整体提升性能、降低认知负担，并保持人类监督与决策权。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:48:31"
+}

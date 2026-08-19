@@ -1,0 +1,13 @@
+{
+ "id": "2603.12226",
+ "title": "Sparking Scientific Creativity via LLM-Driven Interdisciplinary Inspiration",
+ "authors": "Priyanka Kargupta, Shuhaib Mehri, Dilek Hakkani-Tur, Jiawei Han",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12226v1",
+ "abstract": "Despite interdisciplinary research leading to larger and longer-term impact, most work remains confined to single-domain academic silos. Recent AI-based approaches to scientific discovery show promise for interdisciplinary research, but many prioritize rapidly designing experiments and solutions, bypassing the exploratory, collaborative reasoning processes that drive creative interdisciplinary breakthroughs. As a result, prior efforts largely prioritize automating scientific discovery rather than augmenting the reasoning processes that underlie scientific disruption. We present Idea-Catalyst, a novel framework that systematically identifies interdisciplinary insights to support creative reasoning in both humans and large language models. Starting from an abstract research goal, Idea-Catalyst is designed to assist the brainstorming stage, explicitly avoiding premature anchoring on specific solutions. The framework embodies key metacognitive features of interdisciplinary reasoning: (a) defining and assessing research goals, (b) awareness of a domain's opportunities and unresolved challenges, and (c) strategic exploration of interdisciplinary ideas based on impact potential. Concretely, Idea-Catalyst decomposes an abstract goal (e.g., improving human-AI collaboration) into core target-domain research questions that guide the analysis of progress and open challenges within that domain. These challenges are reformulated as domain-agnostic conceptual problems, enabling retrieval from external disciplines (e.g., Psychology, Sociology) that address analogous issues. By synthesizing and recontextualizing insights from these domains back into the target domain, Idea-Catalyst ranks source domains by their interdisciplinary potential. Empirically, this targeted integration improves average novelty by 21% and insightfulness by 16%, while remaining grounded in the original research problem.",
+ "summary": "- 核心创新点：提出 Idea-Catalyst 框架，systematically 通过跨学科洞见检索与再情境化，促进人和大语言模型在创意思维中的跨学科推理与灵感生成，避免过早锚定具体方案。\n\n- 主要方法：  \n  - 以抽象研究目标为起点，将其分解为核心的目标领域研究问题  \n  - 将领域内的挑战转化为领域无关的概念性问题，进而从外部学科（如心理学、社会学）检索类似问题  \n  - 将检索得到的洞见综合再情境化回目标领域，并按跨学科潜力对源学科进行排序  \n  - 结合大语言模型驱动的脑力风暴，强调元认知能力的目标设定、机会识别、挑战评估与策略性探索  \n  - 保持对原始研究问题的 grounding，避免过早锚定具体解决方案\n\n- 结论/性能：在实证分析中，跨学科信息整合的目标性提高，平均新颖性提升约 21%，洞察力提升约 16%，且结果仍然紧密围绕原始研究问题。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-15 13:01:15"
+}

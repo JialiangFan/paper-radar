@@ -1,0 +1,13 @@
+{
+ "id": "2604.15236",
+ "title": "Agentic Microphysics: A Manifesto for Generative AI Safety",
+ "authors": "Federico Pierucci, Matteo Prandi, Marcantonio Bracale Syrnikov, Marcello Galisai, Piercosma Bisconti",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15236v1",
+ "abstract": "This paper advances a methodological proposal for safety research in agentic AI. As systems acquire planning, memory, tool use, persistent identity, and sustained interaction, safety can no longer be analysed primarily at the level of the isolated model. Population-level risks arise from structured interaction among agents, through processes of communication, observation, and mutual influence that shape collective behaviour over time. As the object of analysis shifts, a methodological gap emerges. Approaches focused either on single agents or on aggregate outcomes do not identify the interaction-level mechanisms that generate collective risks or the design variables that control them. A framework is required that links local interaction structure to population-level dynamics in a causally explicit way, allowing both explanation and intervention. We introduce two linked concepts. Agentic microphysics defines the level of analysis: local interaction dynamics where one agent's output becomes another's input under specific protocol conditions. Generative safety defines the methodology: growing phenomena and elicit risks from micro-level conditions to identify sufficient mechanisms, detect thresholds, and design effective interventions.",
+ "summary": "- 核心创新点：提出“agentic microphysics”与“generative safety”两联结框架，将安全研究从单个代理或聚合结果扩展到代理之间的局部交互如何形塑群体层面的风险，并给出可因果解释与干预的路径。\n\n- 主要方法：提出概念性框架与分析思路，定义局部交互动态（agentic microphysics）以及从微观条件出发的风险识别与干预（generative safety），强调建立局部交互结构与人口级动力学之间的因果联系，同时运用因果分析、结构化建模与潜在的仿真/设计变量分析来识别充分机制、阈值并设计干预。\n\n- 结论/性能：属于理论性/方法论贡献，目前尚无实证结果；为在具备计划、记忆、工具使用、持续身份和长期互动的生成式AI系统中实现解释与干预提供可操作的框架与方向。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-17 13:02:08"
+}

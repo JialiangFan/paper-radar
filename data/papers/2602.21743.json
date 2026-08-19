@@ -1,0 +1,13 @@
+{
+ "id": "2602.21743",
+ "title": "Enhancing Multi-Modal LLMs Reasoning via Difficulty-Aware Group Normalization",
+ "authors": "Jinghan Li, Junfeng Fang, Jinda Lu, Yuan Wang, Xiaoyan Guo, Tianyu Zhang, Xiang Wang, Xiangnan He",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21743v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) and Group Relative Policy Optimization (GRPO) have significantly advanced the reasoning capabilities of large language models. Extending these methods to multimodal settings, however, faces a critical challenge: the instability of std-based normalization, which is easily distorted by extreme samples with nearly positive or negative rewards. Unlike pure-text LLMs, multimodal models are particularly sensitive to such distortions, as both perceptual and reasoning errors influence their responses. To address this, we characterize each sample by its difficulty, defined through perceptual complexity (measured via visual entropy) and reasoning uncertainty (captured by model confidence). Building on this characterization, we propose difficulty-aware group normalization (Durian), which re-groups samples by difficulty levels and shares the std within each group. Our approach preserves GRPO's intra-group distinctions while eliminating sensitivity to extreme cases, yielding significant performance gains across multiple multimodal reasoning benchmarks.",
+ "summary": "1) 核心创新点（Essence in one sentence）\n提出难度感知的分组归一化Durian，通过按视觉熵和模型置信度定义的难度对样本分组并在组内共享标准差，显著降低极端样本对规范化的影响，从而提升多模态LLM推理的稳定性和性能。\n\n2) 主要方法\n- 将样本按难度（感知复杂度：视觉熵；推理不确定度：模型置信度）进行分组。\n- 在每个难度组内共享标准差，实施难度感知分组归一化（Durian）。\n- 将Durian与强化学习奖励方法RLVR和GRPO结合，应用于多模态推理任务，保持组内区分性的同时减少对极端样本的敏感性。\n\n3) 结论/性能\n在多个多模态推理基准上实现显著性能提升，提升了GRPO在多模态场景中的稳定性与效果，显著缓解极端样本对归一化的负面影响。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-26 14:03:33"
+}

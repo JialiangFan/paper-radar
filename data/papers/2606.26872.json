@@ -1,0 +1,13 @@
+{
+ "id": "2606.26872",
+ "title": "SpatialFlow-GRPO: Where Spatial Credit Drives Image Editing",
+ "authors": "Yankai Yang, Yancheng Long, Wei Chen, Xingyu Lu, Hongyang Wei, Bin Wen, Fan Yang, Tingting Gao, Han Li, Shuo Yang",
+ "date": "2026-06-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.26872v1",
+ "abstract": "Recent online reinforcement learning has substantially improved image editing quality. However, existing Flow-GRPO-style methods usually rely on a single whole-image reward, which makes fine-grained editing optimization difficult. We observe that a key obstacle in image editing is this spatial uniformity assumption: a whole-image reward cannot distinguish how different spatial regions contribute to image quality. To address this issue, we propose SpatialFlow-GRPO, a training framework that introduces spatially fine-grained reward feedback. The framework converts region-aware rewards into semantic-region-level optimization signals and aligns region advantages with the corresponding latent positions during policy updates. We also train a region-aware reward model, SFReward, construct SFReward-14K with region-annotated editing samples, and introduce MultiEditBench to evaluate multi-region editing ability. On OmniGen2 and FLUX.2-klein-4B, SpatialFlow-GRPO outperforms Flow-GRPO on GEdit-Bench, ImgEdit-Bench, and MultiEditBench. The results show that SpatialFlow-GRPO converts local feedback into spatially aligned update signals and improves editing quality.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-27 13:01:09"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.23719",
+ "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+ "authors": "Wenzhe Zhao, Yang Zhao, Ganchao Liu, Zhiyu Jiang, Dandan Ma, Zihao Li, Xuelong Li",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23719v1",
+ "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains.",
+ "summary": "1) 核心创新点：提出一个无需在线训练的两层式无人机决策框架 SAGE-LLM，将大语言模型的高层安全规划与低层的精确控制结合起来，并辅以模糊型控制障碍函数（fuzzy-CBF）验证与星形层级图检索生成，实现可证明的安全性、场景自适应性与强泛化能力。\n\n2) 主要方法：\n- 两层结构：使用 LLM 进行高层安全规划，结合可执行的低层精确控制。\n- 模糊-CBF 验证机制：对带语义的动作进行安全性认证，提供安全性证明。\n- 星形层级图检索生成系统：基于图结构的知识检索与生成，提升场景适应性、效率与可解释性。\n- 训练模式：无在线训练，在追逐-规避场景、未知障碍与新威胁下进行系统性验证。\n\n3) 结论/性能：\n- 在 pursuit-evasion 场景中，SAGE-LLM 在保持任务性能的同时显著提升了安全性与泛化能力，且无需在线训练，具备良好的可扩展性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-02 14:02:07"
+}

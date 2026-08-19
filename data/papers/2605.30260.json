@@ -1,0 +1,13 @@
+{
+ "id": "2605.30260",
+ "title": "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning",
+ "authors": "Ziwen Xu, Haiwen Hong, Linsong Yu, Benglei Cui, Longtao Huang, Hui Xue, Ningyu Zhang",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30260v1",
+ "abstract": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n首次将 LoRA 作为可控的\"记忆容量探针\"，提出了一个量化 LLM 参数化记忆能力的**参数化记忆律**（Parametric Memory Law），揭示了损失下降与有效参数量、序列长度之间的幂律关系。\n\n**2. 主要方法**\n- 利用 LoRA 在隐空间中系统性地度量精确参数记忆的容量上限。\n- 在 token 层面进行细粒度分析，发现一个确定性的**相变现象**：当预测概率 p > 0.5 时，贪心解码下即可实现逐字复现（verbatim recall）。\n- 基于上述洞察提出 **MemFT**——一种阈值引导的优化策略，将训练预算动态地重新分配到尚未越过阈值的 sub-threshold tokens 上。\n\n**3. 结论/性能**\n实证结果表明，MemFT 能够同时提升记忆的**保真度（fidelity）和效率（efficiency）**，为 LLM 持续学习与知识更新提供了可量化的理论依据和实用的优化方法。代码将在 GitHub（zjunlp/ParametricMemoryLaw）开源。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:00:44"
+}

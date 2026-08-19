@@ -1,0 +1,13 @@
+{
+ "id": "2604.20842",
+ "title": "SpeechParaling-Bench: A Comprehensive Benchmark for Paralinguistic-Aware Speech Generation",
+ "authors": "Ruohan Liu, Shukang Yin, Tao Wang, Dong Zhang, Weiji Zhuang, Shuhuai Ren, Ran He, Caifeng Shan, Chaoyou Fu",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20842v1",
+ "abstract": "Paralinguistic cues are essential for natural human-computer interaction, yet their evaluation in Large Audio-Language Models (LALMs) remains limited by coarse feature coverage and the inherent subjectivity of assessment. To address these challenges, we introduce SpeechParaling-Bench, a comprehensive benchmark for paralinguistic-aware speech generation. It expands existing coverage from fewer than 50 to over 100 fine-grained features, supported by more than 1,000 English-Chinese parallel speech queries, and is organized into three progressively challenging tasks: fine-grained control, intra-utterance variation, and context-aware adaptation. To enable reliable evaluation, we further develop a pairwise comparison pipeline, in which candidate responses are evaluated against a fixed baseline by an LALM-based judge. By framing evaluation as relative preference rather than absolute scoring, this approach mitigates subjectivity and yields more stable and scalable assessments without costly human annotation. Extensive experiments reveal substantial limitations in current LALMs. Even leading proprietary models struggle with comprehensive static control and dynamic modulation of paralinguistic features, while failure to correctly interpret paralinguistic cues accounts for 43.3% of errors in situational dialogue. These findings underscore the need for more robust paralinguistic modeling toward human-aligned voice assistants.",
+ "summary": "- 核心创新点：提出 SpeechParaling-Bench，一套覆盖超100个细粒度副语言特征的综合基准，并结合超过1000条英中平行语音查询，通过基于对比的评测管线实现客观、可扩展的副语言生成评估。\n\n- 主要方法：构建三阶段挑战任务（细粒度控制、话语内变体、上下文感知自适应），开发基于大模型评判的成对比较评测流程，将候选回答相对于固定基线进行偏好比较；以相对评价替代绝对分数，降低主观性并避免大量人工标注。\n\n- 结论/性能：揭示当前大型音频-语言模型在副语言特征的静态控制与动态调制方面存在显著局限；在情景对话中，因对副语言线索解读不当而导致的错误占比高达43.3%，指出需要更鲁棒的副语言建模以实现更接近人类的语音助手。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-23 13:02:55"
+}

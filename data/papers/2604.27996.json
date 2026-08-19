@@ -1,0 +1,13 @@
+{
+ "id": "2604.27996",
+ "title": "Exploring Interaction Paradigms for LLM Agents in Scientific Visualization",
+ "authors": "Jackson Vonderhorst, Kuangshi Ai, Haichao Miao, Shusen Liu, Chaoli Wang",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.27996v1",
+ "abstract": "This paper examines how different types of large language model (LLM) agents perform on scientific visualization (SciVis) tasks, where users generate visualization workflows from natural-language instructions. We compare three primary interaction paradigms, including domain-specific agents with structured tool use, computer-use agents, and general-purpose coding agents, by evaluating eight representative agents across 15 benchmark tasks and measuring visualization quality, efficiency, robustness, and computational cost. We further analyze interaction modalities, including code scripts and model context protocol (MCP) or API calls for structured tool use, as well as command-line interfaces (CLI) and graphical user interfaces (GUI) for more general interaction, while additionally studying the effect of persistent memory in selected agents. The results reveal clear tradeoffs across paradigms and modalities. General-purpose coding agents achieve the highest task success rates but are computationally expensive, while domain-specific agents are more efficient and stable but less flexible. Computer-use agents perform well on individual steps but struggle with longer multi-step workflows, indicating that long-horizon planning is their primary limitation. Across both CLI- and GUI-based settings, persistent memory improves performance over repeated trials, although its benefits depend on the underlying interaction mode and the quality of feedback. These findings suggest that no single approach is sufficient, and future SciVis systems should combine structured tool use, interactive capabilities, and adaptive memory mechanisms to balance performance, robustness, and flexibility.",
+ "summary": "- 核心创新点：通过对三类 LLM 代理在科学可视化任务中的系统比较，揭示不同交互范式、工具使用方式与记忆机制的权衡，以提出面向 SciVis 的综合代理设计思路。\n\n- 主要方法：比较域特定的结构化工具使用代理、计算机使用代理和通用编码代理在 15 个基准任务中的表现，评估 8 种代理，量化可视化质量、效率、鲁棒性与计算成本；分析不同交互模态（代码脚本、模型上下文协议 MCP/API 调用、CLI/GUI）以及持久记忆对性能的影响。\n\n- 结论/性能：通用编码代理在任务成功率上最高但成本高；域特定代理更高效、稳定但灵活性不足；计算机代理在单步任务表现好但在长流程上受限；持久记忆在 CLI/GUI 场景提升性能，效果依赖交互模式与反馈质量。总体而言，单一方法不足以覆盖需求，未来应融合结构化工具、交互能力与自适应记忆以平衡性能、鲁棒性与灵活性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-05-02 13:03:02"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.08875",
+ "title": "Can the Environment Speak for Itself? $T^{2}$-GRPO: A Turn-Trajectory Group Relative Policy Optimization for Caregiver Agents",
+ "authors": "Yutong Song, Jiang Wu, Pengfei Zhang, Wenjun Huang, Honghui Xu, Nikil Dutt, Amir M. Rahmani",
+ "date": "2026-06-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08875v1",
+ "abstract": "Optimizing large language models (LLMs) for long-horizon caregiver agents requires balancing delayed task objectives with immediate environment dynamics, such as patient distress and resistance. In dementia care, this balance is especially difficult: trajectory level rewards are too sparse for turn level credit assignment, while external LLM-based evaluators are costly and can misread fragmented or indirect patient responses. To address this issue, we propose \\textbf{T}urn-\\textbf{T}rajectory \\textbf{G}roup \\textbf{R}elative \\textbf{P}olicy \\textbf{O}ptimization (\\textbf{T$^{2}$-GRPO}), a framework that decouples caregiver RL into two normalized reward horizons and enforces safety through a binary hard veto. $T^2$-GRPO derives dense turn-level rewards directly from environment state transitions, measuring changes in patient distress and resistance from a frozen dementia patient simulator. These environment-grounded rewards are combined with trajectory-level evaluations through independent centered-rank normalization, which preserves heterogeneous reward signals and mitigates reward collapse. Extensive experiments on dementia caregivers show that T $^{2}$-GRPO outperforms competitive baselines, indicating a substantial improvement for emotionally sensitive caregiver scenarios that effectively handles immediate patient feedback, long-term care outcomes, and safety constraints.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：提出 T²-GRPO 框架，将照护智能体的强化学习解耦为\"回合级\"与\"轨迹级\"两个归一化奖励视角，让环境状态变化直接为每一回合提供密集奖励信号，并通过二元硬否决机制强制安全约束。\n\n**2. 主要方法**：\n- 基于 GRPO（Group Relative Policy Optimization）扩展为 **Turn-Trajectory** 双时间尺度。\n- 回合级奖励：从一个冻结的\"痴呆患者模拟器\"中读取患者痛苦（distress）与抗拒（resistance）状态的转移变化，作为环境内生的密集 reward。\n- 轨迹级奖励：保留长程任务目标评估。\n- 两类奖励通过**独立的中心化排名归一化（centered-rank normalization）**融合，避免奖励坍缩并保留异质信号。\n- 通过 binary hard veto 强制安全边界。\n\n**3. 结论/性能**：在痴呆患者照护场景的大量实验中，T²-GRPO 显著优于多个有竞争力的基线，能同时处理即时患者反馈、长期照护效果与安全约束，特别适用于情感敏感的照护任务。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-09 13:00:58"
+}

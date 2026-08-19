@@ -1,0 +1,13 @@
+{
+ "id": "2607.13818",
+ "title": "Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning",
+ "authors": "Xiaopeng Zhang, Yueyang Weng, Qi Liu, Yongjin Mu, Yanjie Li",
+ "date": "2026-07-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.13818v1",
+ "abstract": "Robotic manipulation poses fundamental challenges due to uncertainty, long-horizon execution, and compounding errors, which can easily destabilize execution and lead to task failure. Although recent vision-language-action (VLA) models exhibit strong generalization, they typically lack explicit mechanisms to assess execution stability and to recover when execution deviates from its nominal behavior. In this paper, we propose: (1) two complementary metrics to assess execution quality at runtime, and (2) an agentic reinforcement learning framework that learns to restore effective execution through high-level decision-making rather than directly learning low-level actions. In this framework, an agentic policy reasons over recent execution history and selects among a small set of execution modes to regulate the execution process. Under execution degradation, it triggers appropriate recovery mechanisms to restore the robot to previously visited nominal states, enabling the task to continue. We evaluate the proposed method on the LIBERO benchmark, achieving up to a 13.7% improvement in success rate under standard settings and up to a 39.2% improvement under disturbance settings, demonstrating substantially enhanced execution robustness.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-19 13:05:31"
+}

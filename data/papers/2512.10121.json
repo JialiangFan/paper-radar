@@ -1,0 +1,13 @@
+{
+ "id": "2512.10121",
+ "title": "Workflow is All You Need: Escaping the \"Statistical Smoothing Trap\" via High-Entropy Information Foraging and Adversarial Pacing",
+ "authors": "Zhongjie Jiang",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10121v1",
+ "abstract": "Central to long-form text generation in vertical domains is the \"impossible trinity\" confronting current large language models (LLMs): the simultaneous achievement of low hallucination, deep logical coherence, and personalized expression. This study establishes that this bottleneck arises from existing generative paradigms succumbing to the Statistical Smoothing Trap, a phenomenon that overlooks the high-entropy information acquisition and structured cognitive processes integral to expert-level writing. To address this limitation, we propose the DeepNews Framework, an agentic workflow that explicitly models the implicit cognitive processes of seasoned financial journalists. The framework integrates three core modules: first, a dual-granularity retrieval mechanism grounded in information foraging theory, which enforces a 10:1 saturated information input ratio to mitigate hallucinatory outputs; second, schema-guided strategic planning, a process leveraging domain expert knowledge bases (narrative schemas) and Atomic Blocks to forge a robust logical skeleton; third, adversarial constraint prompting, a technique deploying tactics including Rhythm Break and Logic Fog to disrupt the probabilistic smoothness inherent in model-generated text. Experiments delineate a salient Knowledge Cliff in deep financial reporting: content truthfulness collapses when retrieved context falls below 15,000 characters, while a high-redundancy input exceeding 30,000 characters stabilizes the Hallucination-Free Rate (HFR) above 85%. In an ecological validity blind test conducted with a top-tier Chinese technology media outlet, the DeepNews system--built on a previous-generation model (DeepSeek-V3-0324)-achieved a 25% submission acceptance rate, significantly outperforming the 0% acceptance rate of zero-shot generation by a state-of-the-art (SOTA) model (GPT-5).",
+ "summary": "- 核心创新点：提出 DeepNews 代理工作流，通过信息获取、计划化写作与对抗性提示三模组的结合，打破统计平滑陷阱，显著提升长篇财经报道的真实性、逻辑性与个性化表达。\n\n- 主要方法：\n  - 双粒度检索机制，基于信息利用理论，实行 10:1 的饱和信息输入比以抑制幻觉输出；\n  - 以领域专家知识库（叙事范式）和 Atomic Blocks 构建的模式化计划，形成稳健的逻辑骨架；\n  - 对抗性约束提示，运用 Rhythm Break、Logic Fog 等策略打破模型文本的概率平滑性，降低随笔化倾向。\n\n- 结论/性能：\n  - 关键阈值：检索上下文低于 15,000 字符时内容真实性显著崩塌；输入冗余超过 30,000 字符时，幻觉无显著改善，HFR 稳定在 >85%；\n  - 实证结果：在与顶级中国科技媒体的生态有效性盲测中，基于 DeepSeek-V3-0324 的 DeepNews 系统达到 25% 的投稿接受率，显著高于零-shot 生成的 SOTA 模型 GPT-5 的 0% 接受率。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:03:38"
+}

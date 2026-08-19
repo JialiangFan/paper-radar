@@ -1,0 +1,13 @@
+{
+ "id": "2602.15817",
+ "title": "Solving Parameter-Robust Avoid Problems with Unknown Feasibility using Reinforcement Learning",
+ "authors": "Oswin So, Eric Yang Yu, Songyuan Zhang, Matthew Cleaveland, Mitchell Black, Chuchu Fan",
+ "date": "2026-02-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.15817v1",
+ "abstract": "Recent advances in deep reinforcement learning (RL) have achieved strong results on high-dimensional control tasks, but applying RL to reachability problems raises a fundamental mismatch: reachability seeks to maximize the set of states from which a system remains safe indefinitely, while RL optimizes expected returns over a user-specified distribution. This mismatch can result in policies that perform poorly on low-probability states that are still within the safe set. A natural alternative is to frame the problem as a robust optimization over a set of initial conditions that specify the initial state, dynamics and safe set, but whether this problem has a solution depends on the feasibility of the specified set, which is unknown a priori. We propose Feasibility-Guided Exploration (FGE), a method that simultaneously identifies a subset of feasible initial conditions under which a safe policy exists, and learns a policy to solve the reachability problem over this set of initial conditions. Empirical results demonstrate that FGE learns policies with over 50% more coverage than the best existing method for challenging initial conditions across tasks in the MuJoCo simulator and the Kinetix simulator with pixel observations.",
+ "summary": "以下是对论文标题与摘要的中文要点总结：\n\n- 核心创新点：提出 Feasibility-Guided Exploration（FGE）框架，在未知初始条件可行性的情况下，边识别可行的初始条件子集、边学习该子集上的安全到达策略，从而解决鲁棒优化与可行性未知之间的矛盾。\n\n- 主要方法：将问题建模为对初始条件的鲁棒优化；设计 FGE，在探索过程中估计并筛选出可行的初始条件子集，并在该子集上使用强化学习训练策略来实现可达性目标，适用于高维/像素观测任务，在 MuJoCo 与 Kinetix 模拟器中进行验证。\n\n- 结论/性能：与现有最好方法相比，FGE 在具有挑战性的初始条件下的覆盖率提升超过 50%，并在跨任务的像素观测场景中取得显著改进。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:00:54"
+}

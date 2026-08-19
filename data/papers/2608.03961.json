@@ -1,0 +1,13 @@
+{
+ "id": "2608.03961",
+ "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
+ "authors": "Mobina Kashaniyan, Ali Jannesari",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03961v1",
+ "abstract": "Test-time scaling improves LLM reasoning by generating and aggregating multiple candidate answers, yet many pipelines use fixed per-query budgets that spend the same compute on easy and difficult prompts. These fixed budgets are also difficult to inspect because they do not explain why a given prompt receives a particular number of samples. We propose adaptive} test-time scaling with a lightweight fuzzy controller that maps interpretable signals, including estimated prompt complexity and model confidence, to a per-query sampling budget. The controller assigns fewer samples to easier or more confident prompts and more samples to harder or less certain prompts, making inference-time compute inspectable rather than fixed or opaque. We evaluate under a fair-alignment protocol with matched decoding settings and controlled answer selection, and compare against best-of-$N$, compute-aware scaling, and self-certainty-based baselines on question-answering and mathematical reasoning tasks. Across models and datasets, adaptive fuzzy control improves over several standard baselines and remains close to a selector-matched full-budget control while reducing the average number of samples. These findings suggest that interpretable adaptive sampling is a practical direction for more efficient test-time reasoning in large language models.",
+ "summary": "## 论文总结\n\n**标题**：Interpretable Adaptive Sampling for LLM Test-Time Scaling（面向大模型测试时扩展的可解释自适应采样）\n\n### 1. 核心创新点\n用一个轻量级**模糊控制器**根据\"提示复杂度\"和\"模型置信度\"等可解释信号，为每个查询动态分配采样预算，使测试时的推理算力分配既自适应又可被人检视。\n\n### 2. 主要方法\n- **问题背景**：现有 test-time scaling 流程（生成多个候选答案再聚合）大多使用**固定的 per-query 预算**，对简单题和难题花费同样算力，且无法解释\"为什么这个提示要采样 N 次\"。\n- **技术方案**：引入模糊控制器（fuzzy controller），输入为估计的提示复杂度与模型置信度，输出为该查询的采样数量——简单/高置信的提示少采样，困难/低置信的提示多采样。\n- **实验设置**：采用**公平对齐协议**（匹配的解码参数 + 受控的答案选择策略），在问答与数学推理任务上，对比 best-of-$N$、compute-aware scaling 以及基于 self-certainty 的基线。\n\n### 3. 结论/性能\n在多个模型与数据集上，自适应模糊控制**优于若干标准基线**，并且在**显著降低平均采样次数**的同时，性能接近\"选择器对齐的满预算\"对照组。作者据此认为，可解释的自适应采样是提升 LLM 测试时推理效率的一个实用方向。\n\n---\n\n**一点补充观察**：摘要中未给出具体的数值增益（准确率提升百分比、采样数削减比例），也未说明模糊规则库是如何设计/调参的——这两点是评估该工作实际价值时值得重点关注的地方。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-05 13:02:19"
+}

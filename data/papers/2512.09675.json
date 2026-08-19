@@ -1,0 +1,13 @@
+{
+ "id": "2512.09675",
+ "title": "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models",
+ "authors": "Leyi Pan, Shuchang Tao, Yunpeng Zhai, Zheyu Fu, Liancheng Fang, Minghua He, Lingzhe Zhang, Zhaoyang Liu, Bolin Ding, Aiwei Liu, Lijie Wen",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09675v1",
+ "abstract": "Reliable reinforcement learning (RL) for diffusion large language models (dLLMs) requires both accurate advantage estimation and precise estimation of prediction probabilities. Existing RL methods for dLLMs fall short in both aspects: they rely on coarse or unverifiable reward signals, and they estimate prediction probabilities without accounting for the bias relative to the true, unbiased expected prediction probability that properly integrates over all possible decoding orders. To mitigate these issues, we propose \\emph{d}-TreeRPO, a reliable RL framework for dLLMs that leverages tree-structured rollouts and bottom-up advantage computation based on verifiable outcome rewards to provide fine-grained and verifiable step-wise reward signals. When estimating the conditional transition probability from a parent node to a child node, we theoretically analyze the estimation error between the unbiased expected prediction probability and the estimate obtained via a single forward pass, and find that higher prediction confidence leads to lower estimation error. Guided by this analysis, we introduce a time-scheduled self-distillation loss during training that enhances prediction confidence in later training stages, thereby enabling more accurate probability estimation and improved convergence. Experiments show that \\emph{d}-TreeRPO outperforms existing baselines and achieves significant gains on multiple reasoning benchmarks, including +86.2 on Sudoku, +51.6 on Countdown, +4.5 on GSM8K, and +5.3 on Math500. Ablation studies and computational cost analyses further demonstrate the effectiveness and practicality of our design choices.",
+ "summary": "- 核心创新点：提出 d-TreeRPO 框架，通过树状回滚与可验证结果奖励实现更可靠的策略优化，并结合对预测概率的无偏估计分析与时间分段自蒸馏来提升后期预测置信度与估计精度。\n\n- 主要方法：采用树结构的回滚（tree-structured rollouts）与自底向上的优势估计，基于可验证的结果奖励提供逐步且可验证的奖励信号；对父节点到子节点的条件转移概率进行无偏估计误差的理论分析，发现高预测置信度可降低估计误差；在训练中引入时间分段的自蒸馏损失以提升后期预测置信度，从而实现更准确的概率估计与更好收敛，应用于 diffusion Large Language Models 的强化学习框架。\n\n- 结论/性能：实验结果显示相较于基线，d-TreeRPO 在多种推理基准上取得显著提升，具体如 Sudoku +86.2、Countdown +51.6、GSM8K +4.5、Math500 +5.3；并通过消融研究与成本分析证明设计的有效性与实用性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-11 14:04:55"
+}

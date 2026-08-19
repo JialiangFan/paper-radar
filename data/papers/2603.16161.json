@@ -1,0 +1,13 @@
+{
+ "id": "2603.16161",
+ "title": "SQL-ASTRA: Alleviating Sparse Feedback in Agentic SQL via Column-Set Matching and Trajectory Aggregation",
+ "authors": "Long Li, Zhijian Zhou, Jiangxuan Long, Peiyang Liu, Weidi Xu, Zhe Wang, Shirui Pan, Chao Qu",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16161v1",
+ "abstract": "Agentic Reinforcement Learning (RL) shows promise for complex tasks, but Text-to-SQL remains mostly restricted to single-turn paradigms. A primary bottleneck is the credit assignment problem. In traditional paradigms, rewards are determined solely by the final-turn feedback, which ignores the intermediate process and leads to ambiguous credit evaluation. To address this, we propose Agentic SQL, a framework featuring a universal two-tiered reward mechanism designed to provide effective trajectory-level evaluation and dense step-level signals. First, we introduce Aggregated Trajectory Reward (ATR) to resolve multi-turn credit assignment. Using an asymmetric transition matrix, ATR aggregates process-oriented scores to incentivize continuous improvement. Leveraging Lyapunov stability theory, we prove ATR acts as an energy dissipation operator, guaranteeing a cycle-free policy and monotonic convergence. Second, Column-Set Matching Reward (CSMR) provides immediate step-level rewards to mitigate sparsity. By executing queries at each turn, CSMR converts binary (0/1) feedback into dense [0, 1] signals based on partial correctness. Evaluations on BIRD show a 5% gain over binary-reward GRPO. Notably, our approach outperforms SOTA Arctic-Text2SQL-R1-7B on BIRD and Spider 2.0 using identical models, propelling Text-to-SQL toward a robust multi-turn agent paradigm.",
+ "summary": "- 核心创新点：提出 Agentic SQL 框架，设计两层奖励机制以解决多轮信用分配和奖励稀疏性，从而将 Text-to-SQL 推进到多轮代理学习范式。\n\n- 主要方法：引入 Aggregated Trajectory Reward（ATR，使用不对称转移矩阵对过程分数进行聚合，并基于 Lyapunov 稳定性理论证明其为能量耗散算子、实现无环且单调收敛）以及 Column-Set Matching Reward（CSMR，在每一轮执行查询后将二值反馈转化为密集的 [0,1] 信号，缓解稀疏性）；构建一个普适的两层奖励机制来覆盖轨迹级和步级信号。\n\n- 结论/性能：在 BIRD 上相较于二值奖励 GRPO 提升约 5%，并且在相同模型下超越 SOTA Arctic-Text2SQL-R1-7B，在 BIRD 与 Spider 2.0 上均显示更强的多轮文本到SQL表现。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-18 13:03:21"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.15078",
+ "title": "Where are the Humans? A Scoping Review of Fairness in Multi-agent AI Systems",
+ "authors": "Simeon Allmendinger, Luca Deck, Lucas Mueller",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15078v1",
+ "abstract": "Rapid advances in Generative AI are giving rise to increasingly sophisticated Multi-Agent AI (MAAI) systems. While AI fairness has been extensively studied in traditional predictive scenarios, its examination in MAAI remains nascent and fragmented. This scoping review critically synthesizes existing research on fairness in MAAI systems. Through a qualitative content analysis of 23 selected studies, we identify five archetypal approaches. Our findings reveal that fairness in MAAI systems is often addressed superficially, lacks robust normative foundations, and frequently overlooks the complex dynamics introduced by agent autonomy and system-level interactions. We argue that fairness must be embedded structurally throughout the development lifecycle of MAAI, rather than appended as a post-hoc consideration. Meaningful evaluation requires explicit human oversight, normative clarity, and a precise articulation of fairness objectives and beneficiaries. This review provides a foundation for advancing fairness research in MAAI systems by highlighting critical gaps, exposing prevailing limitations, and suggesting pathways.",
+ "summary": "- **核心创新点**：首次对多代理AI系统中的公平性进行系统性梳理，提出五类原型方法，并主张在开发生命周期中结构性嵌入公平性以明确受益者和规范性框架。\n\n- **主要方法**：采用范围综述（scoping review）并对23项相关研究进行定性内容分析，归纳和比较五种原型方法，评估当前研究的不足。\n\n- **结论/性能**：揭示当前研究普遍存在的表面化、缺乏规范性基础以及对代理自主性与系统级交互的忽视，强调需要在全生命周期中嵌入公平性、实现目标和受益者的明确性，并提出未来研究的路径与建设性建议。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-17 13:02:50"
+}

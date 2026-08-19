@@ -1,0 +1,13 @@
+{
+ "id": "2604.12147",
+ "title": "From Plan to Action: How Well Do Agents Follow the Plan?",
+ "authors": "Shuyang Liu, Saman Dehghan, Jatin Ganhotra, Martin Hirzel, Reyhaneh Jabbarvand",
+ "date": "2026-04-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12147v1",
+ "abstract": "Agents aspire to eliminate the need for task-specific prompt crafting through autonomous reason-act-observe loops. Still, they are commonly instructed to follow a task-specific plan for guidance, e.g., to resolve software issues following phases for navigation, reproduction, patch, and validation. Unfortunately, it is unknown to what extent agents actually follow such instructed plans. Without such an analysis, determining the extent agents comply with a given plan, it is impossible to assess whether a solution was reached through correct strategic reasoning or through other means, e.g., data contamination or overfitting to a benchmark. This paper presents the first extensive, systematic analysis of plan compliance in programming agents, examining 16,991 trajectories from SWE-agent across four LLMs on SWE-bench Verified and SWE-bench Pro under eight plan variations. Without an explicit plan, agents fall back on workflows internalized during training, which are often incomplete, overfit, or inconsistently applied. Providing the standard plan improves issue resolution, and we observe that periodic plan reminders can mitigate plan violations and improve task success. A subpar plan hurts performance even more than no plan at all. Surprisingly, augmenting a plan with additional task-relevant phases in the early stage can degrade performance, particularly when these phases do not align with the model's internal problem-solving strategy. These findings highlight a research gap: fine-tuning paradigms that teach models to follow instructed plans, rather than encoding task-specific plans in them. This requires teaching models to reason and act adaptively, rather than memorizing workflows.",
+ "summary": "1. 核心创新点：首次对编程代理在执行计划过程中的遵循性进行大规模、系统性的分析，揭示计划对解决问题的作用及对模型内部推理策略的依赖，强调需要通过专门的微调让模型具备自适应推理与行动能力，而非记忆化任务流程。\n\n2. 主要方法：以 SWE-agent 为研究对象，在 SWE-bench Verified 与 SWE-bench Pro 上对来自四个大型语言模型的 16,991 条轨迹进行了八种计划变体的对比分析，评估有无显式计划、标准计划、计划提醒以及早期附加阶段等对问题解决率和任务成功的影响，揭示没有显式计划时模型往往依赖训练中内化的工作流，且不同计划设计对性能有显著影响。\n\n3. 结论/性能：提供标准计划能提升问题解决率，周期性计划提醒能缓解计划违规、提高任务成功；劣质计划比没有计划更差；在早期阶段加入与任务相关的额外阶段若与模型内部问题解决策略不对齐，反而降低性能。总体指出需通过微调教会模型遵循指令性计划、以实现自适应推理与行动，而非将计划记忆化在模型中。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-15 13:08:49"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.21172",
+ "title": "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning",
+ "authors": "Ishaan Rawal, Shubh Gupta, Yihan Hu, Wei Zhan",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21172v1",
+ "abstract": "Vision-Language-Action (VLA) models are advancing autonomous driving by replacing modular pipelines with unified end-to-end architectures. However, current VLAs face two expensive requirements: (1) massive dataset collection, and (2) dense reasoning annotations. In this work, we address both challenges with \\modelname (\\textbf{No} \\textbf{R}easoning for \\textbf{D}riving). Compared to existing VLAs, \\modelname achieves competitive performance while being fine-tuned on $<$60\\% of the data and no reasoning annotations, resulting in 3$\\times$ fewer tokens. We identify that standard Group Relative Policy Optimization (GRPO) fails to yield significant improvements when applied to policies trained on such small, reasoning-free datasets. We show that this limitation stems from difficulty bias, which disproportionately penalizes reward signals from scenarios that produce high-variance rollouts within GRPO. \\modelname overcomes this by incorporating Dr.~GRPO, a recent algorithm designed to mitigate difficulty bias in LLMs. As a result, \\modelname achieves competitive performance on Waymo and NAVSIM with a fraction of the training data and no reasoning overhead, enabling more efficient autonomous systems.",
+ "summary": "- 核心创新点：提出 NoRD（No Reasoning for Driving），在不需要推理注释的前提下，通过引入 Dr. GRPO 解决小数据情境中的训练难题，从而实现数据更高效的 Vision-Language-Action 驾驶模型。\n\n- 主要方法：在 Vision-Language-Action 框架下进行微调，使用少于 60% 的数据且无推理注释；将 GRPO 替换为 Dr. GRPO 以缓解难度偏差，降低推理开销并显著减少输入 token 数量（约为原来的三分之一）。\n\n- 结论/性能：在 Waymo 与 NAVSIM 数据集上实现与使用更大数据量的模型相近的性能，同时显著降低数据需求与推理开销，训练时的 token 数量约为原来的三分之一。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-25 14:03:49"
+}

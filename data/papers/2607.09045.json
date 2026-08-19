@@ -1,0 +1,13 @@
+{
+ "id": "2607.09045",
+ "title": "Can the Cloud Drive? Infrastructure Feasibility of Offloading Autonomous Driving Across 5G and 6G",
+ "authors": "Pouya Parsa, Kawon Han, Seongjin Choi",
+ "date": "2026-07-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.09045v1",
+ "abstract": "Frontier autonomous-driving models -- especially vision-language-action (VLA) models, whose forward pass approaches $\\sim$60~TFLOPs -- are outgrowing economical onboard deployment, since peak hardware sits idle most of the day. Cloud inference can instead share GPUs across active vehicles, but the vehicle must upload through a capacity-limited uplink, reach a GPU without queueing, and return a decision within the closed-loop budget. This paper asks: can the cloud drive? We answer with an analytical framework coupling communication limits, a roofline GPU service model, stochastic latency, and utilization-aware cost across three model classes, three offloading strategies, and three communication generations, applied to New York City. Separating a reactive 100~ms budget from a 300~ms deliberative tier (presuming an onboard reactive fallback), we find three \\emph{nested} binding regimes. Communication binds first in dense cells: 5G fails early, 5G-Advanced is the practical threshold for feature-level offloading, and 6G adds headroom. Compute binds next under the reactive budget: near-term VLA is latency-infeasible regardless of bandwidth, because autoregressive FP16 decode is memory-bandwidth-bound (~114 ms on 2025 hardware). Its floor clears 100 ms around 2027; 6G then admits feature-level VLA by ~2028, 5G-Advanced only at light loading and not the dense corridor, and the deliberative tier from 2026. Cost binds last: once admissible, utilization-pooled cloud GPUs undercut onboard hardware for VLA, whose baseline (up to \\$8,500 per vehicle-year) is expensive and idle; feature-level offloading (S2) is where the VLA cost crossover concentrates. Latency decides which model is admissible in which year; cost decides whether it is economical.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-13 13:05:02"
+}

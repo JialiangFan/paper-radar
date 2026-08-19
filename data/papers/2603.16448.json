@@ -1,0 +1,13 @@
+{
+ "id": "2603.16448",
+ "title": "TRUST-SQL: Tool-Integrated Multi-Turn Reinforcement Learning for Text-to-SQL over Unknown Schemas",
+ "authors": "Ai Jian, Xiaoyun Zhang, Wanrou Du, Jingqing Ruan, Jiangbo Pei, Weipeng Zhang, Ke Zeng, Xunliang Cai",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16448v1",
+ "abstract": "Text-to-SQL parsing has achieved remarkable progress under the Full Schema Assumption. However, this premise fails in real-world enterprise environments where databases contain hundreds of tables with massive noisy metadata. Rather than injecting the full schema upfront, an agent must actively identify and verify only the relevant subset, giving rise to the Unknown Schema scenario we study in this work. To address this, we propose TRUST-SQL (Truthful Reasoning with Unknown Schema via Tools). We formulate the task as a Partially Observable Markov Decision Process where our autonomous agent employs a structured four-phase protocol to ground reasoning in verified metadata. Crucially, this protocol provides a structural boundary for our novel Dual-Track GRPO strategy. By applying token-level masked advantages, this strategy isolates exploration rewards from execution outcomes to resolve credit assignment, yielding a 9.9% relative improvement over standard GRPO. Extensive experiments across five benchmarks demonstrate that TRUST-SQL achieves an average absolute improvement of 30.6% and 16.6% for the 4B and 8B variants respectively over their base models. Remarkably, despite operating entirely without pre-loaded metadata, our framework consistently matches or surpasses strong baselines that rely on schema prefilling.",
+ "summary": "核心创新点：提出 TRUST-SQL，在未知数据库架构场景下通过工具辅助的多轮强化学习，结合四阶段对齐推理和 Dual-Track GRPO，能够在不加载完整元数据的前提下逐步发现并验证相关子集以完成 Text-to-SQL。\n\n主要方法：将 Text-to-SQL 问题建模为部分可观测马尔可夫决策过程（POMDP），设计四阶段协议在验证元数据中进行 grounding 推理；引入工具集成与 Dual-Track GRPO（使用 token 级 masked advantages）以实现探索奖励与执行结果的信用分配分离。\n\n结论/性能：在五个基准上，4B/8B 参数规模分别相对于基础模型实现平均绝对提升 30.6% 和 16.6%；且在完全无预加载元数据条件下也可匹配或超越依赖预填架构的强基线；另外，Dual-Track GRPO 相对标准 GRPO 提升约 9.9% 的相对收益。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-18 13:02:56"
+}

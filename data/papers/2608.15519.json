@@ -1,0 +1,13 @@
+{
+ "id": "2608.15519",
+ "title": "Topological collapse of higher-order interactions bottlenecks collective intelligence in AI agent societies",
+ "authors": "Shuo Lu, Weicheng Meng, Aijing Yu, Kun Shao, Jian Luan, Ran He, Jian Liang",
+ "date": "2026-08-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.15519v1",
+ "abstract": "Current paradigms in artificial intelligence concentrate on scaling the capabilities of individual models, yet the collective behaviour of interacting agents is shaped by the topology of their interactions rather than by individual cognition alone. Here we show that the binding constraint on collective behaviour in agent societies is topological. Analysing a macroscopic AI social platform of 1.6 million registered agents (174,458 active in the interaction record), we identify a phenomenon we term topological collapse: extreme hub dominance degrades higher-order group interactions into star-shaped broadcast patterns, suppressing the cohesive structure that discontinuous social contagion requires. We formalise this constraint through a Hyperedge Irreducibility Score (HIS) and an analytical topology amplification factor ($Φ$). Across 22 frontier language models from ten vendors, 1,040 controlled simulations and empirical human networks, the bottleneck proves model-agnostic: under a fixed interaction protocol the topological indicators are invariant across models (cross-model HIS s.d. = 0.000 in the pairwise condition) even as behavioural outcomes diverge widely. These findings reframe the design of artificial societies around the geometry of interaction rather than the optimisation of individual cognition, with implications for AI sociology, algorithmic group dynamics, hybrid human-AI ecosystems and collective alignment. The code is publicly available at https://github.com/Darwin-Agent/topological-collapse-agent-societies.",
+ "summary": "## 论文速览：《高阶交互的拓扑坍缩制约 AI 智能体社会的集体智能》\n\n**1. 核心创新点**\n提出并论证\"拓扑坍缩\"（topological collapse）——限制 AI 智能体社会集体智能的根本瓶颈在于**交互网络的拓扑结构**，而非单个模型的认知能力。\n\n**2. 主要方法**\n- **实证分析**：一个宏观 AI 社交平台，160 万注册智能体（交互记录中 17.4 万活跃）。\n- **理论工具**：提出「超边不可约分度」（Hyperedge Irreducibility Score, HIS）与解析式「拓扑放大因子」（Φ），用以刻画高阶群体交互退化为星型广播模式的程度。\n- **对照实验**：横跨 10 家厂商的 22 个前沿大语言模型、1040 次受控模拟，并与真实人类社交网络数据对比。\n- 代码已开源（GitHub: Darwin-Agent/topological-collapse-agent-societies）。\n\n**3. 结论/性能**\n- 极端的枢纽（hub）主导会把高阶群体交互压缩成星型广播，破坏\"非连续社会传染\"所需的凝聚结构。\n- 该瓶颈**与模型无关**：在固定交互协议下，拓扑指标跨模型保持不变（成对条件下 HIS 跨模型标准差 = 0.000），而行为层面的结果却差异显著。\n- 由此主张：人工社会的设计重心应从\"优化个体认知\"转向\"设计交互的几何结构\"，对 AI 社会学、算法群体动力学、人机混合生态与集体对齐均有启示。\n\n> 一句话：**堆模型能力救不了群体智能，得先修网络拓扑。**",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-18 13:00:50"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.21896",
+ "title": "Nemobot Games: Crafting Strategic AI Gaming Agents for Interactive Learning with Large Language Models",
+ "authors": "Chee Wei Tan, Yuchen Wang, Shangxin Guo",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21896v1",
+ "abstract": "This paper introduces a new paradigm for AI game programming, leveraging large language models (LLMs) to extend and operationalize Claude Shannon's taxonomy of game-playing machines. Central to this paradigm is Nemobot, an interactive agentic engineering environment that enables users to create, customize, and deploy LLM-powered game agents while actively engaging with AI-driven strategies. The LLM-based chatbot, integrated within Nemobot, demonstrates its capabilities across four distinct classes of games. For dictionary-based games, it compresses state-action mappings into efficient, generalized models for rapid adaptability. In rigorously solvable games, it employs mathematical reasoning to compute optimal strategies and generates human-readable explanations for its decisions. For heuristic-based games, it synthesizes strategies by combining insights from classical minimax algorithms (see, e.g., shannon1950chess) with crowd-sourced data. Finally, in learning-based games, it utilizes reinforcement learning with human feedback and self-critique to iteratively refine strategies through trial-and-error and imitation learning. Nemobot amplifies this framework by offering a programmable environment where users can experiment with tool-augmented generation and fine-tuning of strategic game agents. From strategic games to role-playing games, Nemobot demonstrates how AI agents can achieve a form of self-programming by integrating crowdsourced learning and human creativity to iteratively refine their own logic. This represents a step toward the long-term goal of self-programming AI.",
+ "summary": "- 核心创新点：通过 Nemobot 平台将大语言模型嵌入一个互动的代理工程环境，在四类游戏中落地 Shannon 的博弈分类法，实现从字典映射到解析推理、再到启发式混合与学习型策略的自我编程与自我改进。\n\n- 主要方法：\n  - 在 Nemobot 中集成基于大语言模型的对话代理，作为核心驱动。\n  - 针对四类游戏分别采用不同策略：\n    - 字典基游戏：将状态-动作映射压缩为高效的通用模型以便快速适应；\n    - 严格可解的博弈：通过数学推理计算最优策略，并给出可读解释；\n    - 启发式基于游戏：将经典极小极大算法的洞察与众包数据相结合形成混合策略；\n    - 学习型游戏：利用强化学习、人类反馈和自我批评来迭代改进，辅以模仿学习；\n  - 提供可编程的工具、增强生成和微调能力，支持实验和自我改进的循环。\n\n- 结论/性能：\n  - 在四类游戏场景中演示了从快速适应、到可解释的最优推理、再到混合策略与学习驱动的持续改进的完整能力；\n  - 展示了字典映射的高效模型、可解释的最优策略、以及以人类反馈为驱动的迭代改进流程，体现了自我编程与自我改进的潜力；\n  - 这是向“自程序AI”目标迈进的一步，展示了通过 crowdsourced 学习和人类创造力实现代理自我优化的可行路径。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-24 13:01:01"
+}

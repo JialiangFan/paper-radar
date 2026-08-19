@@ -1,0 +1,13 @@
+{
+ "id": "2603.17826",
+ "title": "FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair",
+ "authors": "Ruize Ma, Yilei Jiang, Shilin Zhang, Zheng Ma, Yi Feng, Vincent Ng, Zhi Wang, Xiangyu Yue, Chuanyi Li, Lewei Lu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17826v1",
+ "abstract": "Multimodal Automated Program Repair (MAPR) extends traditional program repair by requiring models to jointly reason over source code, textual issue descriptions, and visual artifacts such as GUI screenshots. While recent LLM-based repair systems have shown promising results, existing approaches face several limitations: rigid workflow pipelines restrict exploration during debugging, visual reasoning is often performed over full-page screenshots without localized grounding, and failed repair attempts are rarely transformed into reusable knowledge. To address these challenges, we propose FailureMem, a multimodal repair framework that integrates three key mechanisms: a hybrid workflow-agent architecture that balances structured localization with flexible reasoning, active perception tools that enable region-level visual grounding, and a Failure Memory Bank that converts past repair attempts into reusable guidance. Experiments on SWE-bench Multimodal demonstrate FailureMem improves the resolved rate over GUIRepair by 3.7%.",
+ "summary": "核心创新点：提出一个失效感知的多模态自动修复框架 FailureMem，通过混合工作流-代理、区域级视觉定位与失败记忆库实现更高效且可复用的修复探索。\n\n主要方法：\n- 基于多模态自动程序修复（MAPR），整合源代码、文本 issue 描述和 GUI 截图等信息。\n- 三大技术组件：1) 混合工作流-代理架构，兼顾结构化定位与灵活推理；2) 主动感知工具，实现 GUI 截图的区域级视觉定位/地面化（region-level grounding）；3) 失败记忆库，把以往的修复尝试转化为可重复使用的指导知识。\n\n结论/性能：在 SWE-bench Multimodal 实验中，FailureMem 相比 GUIRepair 的解决率提升了 3.7%。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-19 13:06:13"
+}

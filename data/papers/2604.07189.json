@@ -1,0 +1,13 @@
+{
+ "id": "2604.07189",
+ "title": "Agent-Driven Corpus Linguistics: A Framework for Autonomous Linguistic Discovery",
+ "authors": "Jia Yu, Weiwei Yu, Pengfei Xiao, Fukun Xing",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07189v1",
+ "abstract": "Corpus linguistics has traditionally relied on human researchers to formulate hypotheses, construct queries, and interpret results - a process demanding specialized technical skills and considerable time. We propose Agent-Driven Corpus Linguistics, an approach in which a large language model (LLM), connected to a corpus query engine via a structured tool-use interface, takes over the investigative cycle: generating hypotheses, querying the corpus, interpreting results, and refining analysis across multiple rounds. The human researcher sets direction and evaluates final output. Unlike unconstrained LLM generation, every finding is anchored in verifiable corpus evidence. We treat this not as a replacement for the corpus-based/corpus-driven distinction but as a complementary dimension: it concerns who conducts the inquiry, not the epistemological relationship between theory and data. We demonstrate the framework by linking an LLM agent to a CQP-indexed Gutenberg corpus (5 million tokens) via the Model Context Protocol (MCP). Given only \"investigate English intensifiers,\" the agent identified a diachronic relay chain (so+ADJ > very > really), three pathways of semantic change (delexicalization, polarity fixation, metaphorical constraint), and register-sensitive distributions. A controlled baseline experiment shows that corpus grounding contributes quantification and falsifiability that the model cannot produce from training data alone. To test external validity, the agent replicated two published studies on the CLMET corpus (40 million tokens) - Claridge (2025) and De Smet (2013) - with close quantitative agreement. Agent-driven corpus research can thus produce empirically grounded findings at machine speed, lowering the technical barrier for a broader range of researchers.",
+ "summary": "- 核心创新点（1 句话）\n将大型语言模型（LLM）作为自主代理，通过结构化工具接口连接语料查询引擎，自动完成假设生成、查询、结果解释与分析迭代，并以可验证的语料证据支撑发现，实现以机器速度进行的自主语料语言学探索。\n\n- 主要方法\n  - 构建 Agent-Driven Corpus Linguistics 框架：LLM 代理通过模型上下文协议（Model Context Protocol，MCP）与 CQP 索引的 Gutenberg 语料（约 500 万标记）连接。\n  - 在“研究英语程度副词”的任务中，代理进行多轮循环：提出假设—执行查询—解释结果—修正分析。\n  - 进行对照基线实验，评估语料 grounding 对量化性与可证伪性的贡献。\n  - 进行外部有效性测试，复现实验 CLMET（约 4000 万标记）中的两项研究（Claridge 2025 与 De Smet 2013），并达到接近的定量一致性。\n\n- 结论/性能\n  - 实现了基于证据的、以机器速度进行的发现过程，降低技术门槛、提升可重复性与可证伪性。\n  - 通过语料 grounding 提供量化结果与可证伪性，超越仅依赖模型训练数据的能力。\n  - 在外部数据集上呈现强外部效度，能较好复现已有研究的定量结论。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-09 13:05:08"
+}

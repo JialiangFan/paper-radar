@@ -1,0 +1,13 @@
+{
+ "id": "2608.13049",
+ "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+ "authors": "Dingyi Rong, Yue Shi, Chaofan Ma, Jiezhang Cao, Zongrui Wang, Zeyu Zhang, Yao Mu, Guangtao Zhai, Ning Liu",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13049v1",
+ "abstract": "Large-scale manipulation data is essential for robot learning, yet collecting robot demonstrations remains expensive and difficult to scale. Meanwhile, abundant egocentric human manipulation videos provide rich behavioral experiences, but transferring them across embodiments remains challenging due to differences between human hands and robotic end-effectors. Recent advances in video world models offer a promising pathway to synthesize robot-centric manipulation videos from human observations, while their cross-embodiment transfer capability remains largely unexplored. Therefore, we introduce H2R-Bench, a benchmark for evaluating cross-embodiment human-to-robot manipulation video generation, where models transform egocentric human demonstrations into robot manipulation videos under specified embodiments. Each benchmark instance contains a human demonstration video, target embodiment constraints, and source-grounded annotations covering task goals, action events, functional contacts, and object responses. H2R-Bench evaluates generated videos through five dimensions, including goal-state completion, action-event completion, functional contact transfer, embodiment correctness, and general video quality. We benchmark eleven state-of-the-art video generation models across six manipulation families and two robot embodiments. Our evaluation reveals that current video world models remain limited in human-to-robot manipulation transfer: even leading models often fail in embodiment consistency, functional interaction, and task execution. H2R-Bench provides a systematic diagnostic framework for evaluating whether video world models can bridge the human-to-robot embodiment gap and convert human manipulation observations into robot-centric training resources.",
+ "summary": "## H2R-Bench：人类到机器人操作视频生成基准\n\n**1. 核心创新点**\n首个系统评测\"视频世界模型能否把第一人称人类操作视频转换为指定机器人本体的操作视频\"的跨本体基准。\n\n**2. 主要方法**\n每个测试样例包含：人类第一视角演示视频 + 目标机器人本体约束 + 源视频对齐标注（任务目标、动作事件、功能性接触、物体响应）。评测沿五个维度展开——目标状态完成度、动作事件完成度、功能性接触迁移、本体正确性、通用视频质量。覆盖 11 个 SOTA 视频生成模型、6 类操作任务族、2 种机器人本体。\n\n**3. 结论/性能**\n当前视频世界模型在人→机器人迁移上能力有限：即便是领先模型也常在本体一致性、功能性交互和任务执行上失败。该基准为\"视频世界模型能否弥合人机本体差距、把人类演示转化为机器人训练数据\"提供了系统化诊断框架。\n\n> 补充说明：动机是机器人真机演示数据昂贵难扩展，而第一人称人类操作视频海量易得，但人手与机械末端执行器的形态差异使跨本体迁移困难。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-16 13:04:45"
+}

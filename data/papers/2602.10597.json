@@ -1,0 +1,13 @@
+{
+ "id": "2602.10597",
+ "title": "Llama-Polya: Instruction Tuning for Large Language Model based on Polya's Problem-solving",
+ "authors": "Unggi Lee, Yeil Jeong, Chohui Lee, Gyuri Byun, Yunseo Lee, Minji Kang, Minji Jeon",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.10597v1",
+ "abstract": "This paper introduces Llama-Polya, an instruction-tuned large language model that integrates Polya's four-step problem-solving framework into its dialogue structure to support mathematical reasoning. Mathematical problem-solving is central to students' success in mathematics education, yet many learners struggle to plan, justify, and verify their solutions. Although large language models (LLMs) show promise as intelligent tutors, they often lack structured pedagogical alignment grounded in established learning theories.\n  To address this gap, we operationalize Polya's problem-solving framework within an instruction-tuned LLM to promote metacognitive engagement and examine the effects of pedagogy-aligned fine-tuning compared to domain-only and general-purpose instruction tuning. Built on the Llama-3.1-8B architecture, Llama-Polya was fine-tuned on synthetic math problem-solving data derived from GSM8K, structured according to Polya's four stages. We developed and evaluated multiple variants-general-purpose instruct, math-domain metamath, pedagogy-aligned polya-v2, and sequential metamath+polya-v2-using both quantitative accuracy metrics and qualitative pedagogical assessments.\n  Results indicate that models tuned with Polya's framework and domain-specific data produced more balanced reasoning-stage distributions and fewer premature answers. Expert evaluators also observed improved pedagogical coherence and metacognitive prompting, although limitations in personalization and mathematical rigor remained. These findings suggest that pedagogy-grounded instruction tuning can enhance educational alignment and reasoning transparency in LLM-based tutoring systems.",
+ "summary": "- 核心创新点：将波利亚四步解题框架嵌入到指令微调的大语言模型中，以提升数学推理的教育对齐和元认知参与。\n\n- 主要方法：在 Llama-3.1-8B 上，利用来自 GSM8K 的合成数学题解数据，按波利亚四阶段结构进行标注和微调；比较多种微调变体（通用指令、数学领域 metamath、以波利亚为导向的 pedagogy-aligned polya-v2，以及顺序式 metamath+polya-v2），并通过量化准确性与定性教学评估进行综合评估。\n\n- 结论/性能：采用波利亚框架与领域数据的微调模型呈现更均衡的推理阶段分布、较少的“过早给出答案”现象；专家评估显示在教学连贯性和元认知提示方面有所提升，但在个性化与数学严谨性方面仍存在局限，表明 pedagogy-grounded instruction tuning 能提升教育对齐与推理透明度。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-12 14:03:00"
+}

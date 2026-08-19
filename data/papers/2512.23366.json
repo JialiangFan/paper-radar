@@ -1,0 +1,13 @@
+{
+ "id": "2512.23366",
+ "title": "AGRO-SQL: Agentic Group-Relative Optimization with High-Fidelity Data Synthesis",
+ "authors": "Cehua Yang, Dongyu Xiao, Junming Lin, Yuyang Song, Hanxu Yan, Shawn Guo, Wei Zhang, Jian Yang, Mingjie Tang, Bryan Dai",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23366v1",
+ "abstract": "The advancement of Text-to-SQL systems is currently hindered by the scarcity of high-quality training data and the limited reasoning capabilities of models in complex scenarios. In this paper, we propose a holistic framework that addresses these issues through a dual-centric approach. From a Data-Centric perspective, we construct an iterative data factory that synthesizes RL-ready data characterized by high correctness and precise semantic-logic alignment, ensured by strict verification. From a Model-Centric perspective, we introduce a novel Agentic Reinforcement Learning framework. This framework employs a Diversity-Aware Cold Start stage to initialize a robust policy, followed by Group Relative Policy Optimization (GRPO) to refine the agent's reasoning via environmental feedback. Extensive experiments on BIRD and Spider benchmarks demonstrate that our synergistic approach achieves state-of-the-art performance among single-model methods.",
+ "summary": "- 核心创新点：提出一个数据-模型双中心的 AGRO-SQL 框架，通过高保真数据工厂进行鲁棒的数据合成并结合代理式强化学习来提升文本到 SQL 的推理能力，解决数据稀缺与复杂场景推理不足的问题。\n\n- 主要方法：\n  - 数据侧：构建迭代式数据工厂，合成具高正确性和严格语义-逻辑对齐的 RL-ready 数据，确保数据质量可验证。\n  - 模型侧：提出 Agentic Reinforcement Learning 框架，包括 Diversity-Aware Cold Start 初始化鲁棒策略，以及 Group Relative Policy Optimization（GRPO）通过环境反馈逐步优化推理能力。\n\n- 结论/性能：在 BIRD 与 Spider 基准上，该方法实现了单模型方法中的 SOTA 性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 03:29:44"
+}

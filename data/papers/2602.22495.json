@@ -1,0 +1,13 @@
+{
+ "id": "2602.22495",
+ "title": "Reinforcement-aware Knowledge Distillation for LLM Reasoning",
+ "authors": "Zhaoyang Zhang, Shuli Jiang, Yantao Shen, Yuting Zhang, Dhananjay Ram, Shuo Yang, Zhuowen Tu, Wei Xia, Stefano Soatto",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22495v1",
+ "abstract": "Reinforcement learning (RL) post-training has recently driven major gains in long chain-of-thought reasoning large language models (LLMs), but the high inference cost of such models motivates distillation into smaller students. Most existing knowledge distillation (KD) methods are designed for supervised fine-tuning (SFT), relying on fixed teacher traces or teacher-student Kullback-Leibler (KL) divergence-based regularization. When combined with RL, these approaches often suffer from distribution mismatch and objective interference: teacher supervision may not align with the student's evolving rollout distribution, and the KL regularizer can compete with reward maximization and require careful loss balancing. To address these issues, we propose RL-aware distillation (RLAD), which performs selective imitation during RL -- guiding the student toward the teacher only when it improves the current policy update. Our core component, Trust Region Ratio Distillation (TRRD), replaces the teacher-student KL regularizer with a PPO/GRPO-style likelihood-ratio objective anchored to a teacher--old-policy mixture, yielding advantage-aware, trust-region-bounded distillation on student rollouts and naturally balancing exploration, exploitation, and imitation. Across diverse logic reasoning and math benchmarks, RLAD consistently outperforms offline distillation, standard GRPO, and KL-based on-policy teacher-student knowledge distillation.",
+ "summary": "- 核心创新点：在强化学习（RL）后训练的LLM蒸馏中，提出 RL-aware distillation（RLAD）进行有选择性的教师模仿，并以基于信赖域的 TRRD 作为蒸馏目标，从而在策略更新中实现优势感知的、受约束的模仿学习，避免 KL 正则的干扰。\n\n- 主要方法：  \n  - RLAD：在 RL 过程中仅在有利于当前策略更新时才让学生模仿教师，实现“选择性 imitation”。  \n  - TRRD（Trust Region Ratio Distillation）：用 PPO/GRPO 风格的似然比目标，锚定于教师-旧策略混合，而非传统的教师-学生 KL 正则，实现对比率的优势导向和信赖域约束的蒸馏。  \n  - 结合逻辑推理与数学推理等任务的 RL 后训练，蒸馏到较小的学生模型，同时在探索/开发/模仿之间取得平衡。\n\n- 结论/性能：在多种逻辑推理和数学基准上，RLAD 相比离线蒸馏、标准 GRPO，以及基于 KL 的在策略教师-学生知识蒸馏，表现出一致且显著的性能提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-27 14:03:03"
+}

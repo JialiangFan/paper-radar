@@ -1,0 +1,13 @@
+{
+ "id": "2602.20813",
+ "title": "Pressure Reveals Character: Behavioural Alignment Evaluation at Depth",
+ "authors": "Nora Petrova, John Burden",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20813v1",
+ "abstract": "Evaluating alignment in language models requires testing how they behave under realistic pressure, not just what they claim they would do. While alignment failures increasingly cause real-world harm, comprehensive evaluation frameworks with realistic multi-turn scenarios remain lacking. We introduce an alignment benchmark spanning 904 scenarios across six categories -- Honesty, Safety, Non-Manipulation, Robustness, Corrigibility, and Scheming -- validated as realistic by human raters. Our scenarios place models under conflicting instructions, simulated tool access, and multi-turn escalation to reveal behavioural tendencies that single-turn evaluations miss. Evaluating 24 frontier models using LLM judges validated against human annotations, we find that even top-performing models exhibit gaps in specific categories, while the majority of models show consistent weaknesses across the board. Factor analysis reveals that alignment behaves as a unified construct (analogous to the g-factor in cognitive research) with models scoring high on one category tending to score high on others. We publicly release the benchmark and an interactive leaderboard to support ongoing evaluation, with plans to expand scenarios in areas where we observe persistent weaknesses and to add new models as they are released.",
+ "summary": "核心创新点：在真实压力下的多轮情景对齐评估基准（904场景，覆盖六大类）揭示模型在不同维度的行为倾向，超越传统单轮测试。\n\n主要方法：\n- 构建并验证覆盖 Honesty、Safety、Non-Manipulation、Robustness、Corrigibility、Scheming 六大类的904个场景。\n- 通过人类评审验证场景的现实性，设定冲突指令、模拟工具访问与多轮升级等情境。\n- 使用被人类注释验证过的LLM评估者对24个前沿模型进行评分，评估过程依赖LLM judges并校验准确性。\n- 进行因子分析，探讨对齐是否构成一个统一结构（类似g-factor）。\n- 公共发布基准与互动排行榜，便于持续评估与扩展。\n\n结论/性能：\n- 即便是顶尖模型也在某些类别存在明显不足，大多数模型在多维度上表现出普遍的弱点。\n- 对齐表现呈现统一结构，某类别高分往往伴随其他类别高分，呈现“g-factor”式特征。\n- 研究推动持续评估并公开基准与排行榜，计划扩展场景与加入新模型。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-25 14:03:30"
+}

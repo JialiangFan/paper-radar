@@ -1,0 +1,13 @@
+{
+ "id": "2604.06066",
+ "title": "From Hallucination to Structure Snowballing: The Alignment Tax of Constrained Decoding in LLM Reflection",
+ "authors": "Hongxu Zhou",
+ "date": "2026-04-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06066v1",
+ "abstract": "Intrinsic self-correction in Large Language Models (LLMs) frequently fails in open-ended reasoning tasks due to ``hallucination snowballing,'' a phenomenon in which models recursively justify early errors during free-text reflection. While structured feedback can mitigate this issue, existing approaches often rely on externally trained critics or symbolic tools, reducing agent autonomy. This study investigates whether enforcing structured reflection purely through Outlines-based constrained decoding can disrupt error propagation without additional training. Evaluating an 8-billion-parameter model (Qwen3-8B), we show that simply imposing structural constraints does not improve self-correction performance. Instead, it triggers a new failure mode termed ``structure snowballing.'' We find that the cognitive load required to satisfy strict formatting rules pushes the model into formatting traps. This observation helps explain why the agent achieves near-perfect superficial syntactic alignment yet fails to detect or resolve deeper semantic errors. These findings expose an ``alignment tax'' inherent to constrained decoding, highlighting a tension between structural granularity and internal model capacity in autonomous workflows. Code and raw logs are available in the GitHub repository: https://github.com/hongxuzhou/agentic_llm_structured_self_critique.",
+ "summary": "1) 核心创新点：仅通过Outline-based受限解码来强制自我反思的结构化，并评估其对自我纠错的效果，结果揭示此类约束会引发结构雪崩与对齐税。\n\n2) 主要方法：在无额外训练的前提下，使用Outline-based constrained decoding 强制输出结构化的自我反思；在8B参数的Qwen3-8B模型上评估并对比无约束情形，相关代码和原始日志公开在GitHub。\n\n3) 结论/性能：结构约束未提升自我纠错，反而出现结构雪崩；为满足严格格式需求带来认知负荷，导致格式化陷阱，解释了表层语法对齐良好却难以发现/解决深层语义错误的现象，并揭示了受限解码中的“对齐税”等结构粒度与模型容量之间的矛盾。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-08 13:09:27"
+}

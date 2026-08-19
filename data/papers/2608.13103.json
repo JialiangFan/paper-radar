@@ -1,0 +1,13 @@
+{
+ "id": "2608.13103",
+ "title": "S2-HWM: Sparse Event-Structured Hierarchical World Model for Long-Horizon Surgical Robot Manipulation",
+ "authors": "Shuzhe Zhang, Xin Zhu, Yinling Qian, Qiong Wang",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13103v1",
+ "abstract": "Long-horizon surgical robot manipulation is challenging because task rewards are sparse, while meaningful interaction changes occur at irregular intervals. Existing world-model agents typically imagine at primitive-step resolution, leaving variable-duration task progress implicit. Manually specified stages can provide intermediate structure, but their task specific boundaries are difficult to align with state-dependent interaction transitions. We propose S2-HWM, a Sparse Event-Structured Hierarchical World Model that learns sparse event evidence from primitive latent trajectories to coordinate an event-level manager and a primitive-step worker. The event evidence schedules manager goal updates, and each selected latent goal conditions the worker's primitive actions until the next update. The learned event evidence also forms variable-duration segments for an Event Transition Model (ETM), which predicts the next?boundary stochastic state, segment duration, and accumulated segment reward. Chaining these event-level predictions provides a variable-duration continuation beyond the primitive imagination horizon for manager learning, while the worker retains primitive-step actor-critic learning. On a SurRoL-based PegTransfer task, S2-HWM achieves a success rate of 98.7%, outperforming the flat GAS DreamerV3 baseline by 22.7 percentage points.",
+ "summary": "## S2-HWM 论文摘要总结\n\n**1. 核心创新点**\n提出 S2-HWM——一种从潜在轨迹中**自动学习\"稀疏事件\"边界**的分层世界模型，用状态相关的事件转换替代人工设定的固定阶段划分，从而解决长时程手术机器人操作中奖励稀疏、关键交互间隔不规律的问题。\n\n**2. 主要方法**\n- **双层结构**：事件级 manager + 基元步（primitive-step）worker。模型从基元潜在轨迹中学习稀疏事件证据（event evidence），由该证据决定 manager 何时更新目标；每个选定的潜在目标（latent goal）持续调控 worker 的动作，直到下一次事件触发更新。\n- **事件转换模型（ETM）**：利用学到的事件证据把轨迹切成**变长片段**，预测下一个边界处的随机状态、片段时长以及片段累计奖励。\n- **想象延展**：将 ETM 的事件级预测串联起来，为 manager 提供超出基元想象视界的变长\"续推\"，而 worker 仍保持基元步的 actor-critic 学习。\n\n**3. 结论/性能**\n在基于 SurRoL 仿真平台的 PegTransfer（转移钉子）任务上，成功率达 **98.7%**，比扁平结构的 GAS DreamerV3 基线高出 **22.7 个百分点**（即基线约 76%）。\n\n> 补充观察：实验仅在单一任务上验证，跨任务泛化性与事件证据学习的稳定性在摘要中未提及，是评估该方法时值得关注的点。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-14 13:04:12"
+}

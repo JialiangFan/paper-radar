@@ -1,0 +1,13 @@
+{
+ "id": "2602.17645",
+ "title": "Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grained Detail Targeting",
+ "authors": "Xiaohan Zhao, Zhaoyi Li, Yaxin Luo, Jiacheng Cui, Zhiqiang Shen",
+ "date": "2026-02-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.17645v1",
+ "abstract": "Black-box adversarial attacks on Large Vision-Language Models (LVLMs) are challenging due to missing gradients and complex multimodal boundaries. While prior state-of-the-art transfer-based approaches like M-Attack perform well using local crop-level matching between source and target images, we find this induces high-variance, nearly orthogonal gradients across iterations, violating coherent local alignment and destabilizing optimization. We attribute this to (i) ViT translation sensitivity that yields spike-like gradients and (ii) structural asymmetry between source and target crops. We reformulate local matching as an asymmetric expectation over source transformations and target semantics, and build a gradient-denoising upgrade to M-Attack. On the source side, Multi-Crop Alignment (MCA) averages gradients from multiple independently sampled local views per iteration to reduce variance. On the target side, Auxiliary Target Alignment (ATA) replaces aggressive target augmentation with a small auxiliary set from a semantically correlated distribution, producing a smoother, lower-variance target manifold. We further reinterpret momentum as Patch Momentum, replaying historical crop gradients; combined with a refined patch-size ensemble (PE+), this strengthens transferable directions. Together these modules form M-Attack-V2, a simple, modular enhancement over M-Attack that substantially improves transfer-based black-box attacks on frontier LVLMs: boosting success rates on Claude-4.0 from 8% to 30%, Gemini-2.5-Pro from 83% to 97%, and GPT-5 from 98% to 100%, outperforming prior black-box LVLM attacks. Code and data are publicly available at: https://github.com/vila-lab/M-Attack-V2.",
+ "summary": "- 核心创新点（1句话）\n  提出 M-Attack-V2，通过多裁剪对齐、辅助目标对齐，以及 Patch Momentum/PE+ 等模块，显著降低黑盒 LVLM 对抗中的梯度方差与不稳定性，从而大幅提升跨模型转移攻击性能。\n\n- 主要方法\n  - 将本地匹配从对称裁剪改为在源变换和目标语义上的非对称期望，并进行梯度去噪升级。  \n  - Multi-Crop Alignment（MCA）：在每次迭代中对来自多种局部视图的梯度进行平均，降低方差。  \n  - Auxiliary Target Alignment（ATA）：用来自语义相关分布的小型辅助集替代强力目标增强，得到更平滑、低方差的目标流形。  \n  - Patch Momentum：将动量重新解释为 Patch Momentum，重放历史裁剪梯度。  \n  - Patch-size Ensemble（PE+）：对裁剪尺寸进行更细粒度的组合，提高鲁棒性。  \n  - 将上述模块整合为 M-Attack-V2，作为对原始 M-Attack 的简单、模块化强化。\n\n- 结论/性能\n  - 在前沿 LVLM 的黑盒转移攻击中取得显著提升：Claude-4.0 从 8% 提升至 30%，Gemini-2.5-Pro 从 83% 提升至 97%，GPT-5 从 98% 提升至 100%。  \n  - 结果超越此前的黑盒 LVLM 攻击方法；代码与数据公开发布。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-20 14:00:34"
+}

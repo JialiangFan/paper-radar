@@ -1,0 +1,27 @@
+{
+ "id": "safe-rlhf-v-safe-reinforcement-learning-from-multi-modal-human-feedback",
+ "title": "Safe RLHF-V: Safe Reinforcement Learning from Multi-modal Human Feedback",
+ "authors": "PKU-Alignment team",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "多模态 LLM (VLM) 缺乏安全对齐方法。文本域的 Safe RLHF 不能直接迁移到视觉+语言。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Safe-RLHF-V.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

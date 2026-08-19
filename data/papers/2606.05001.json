@@ -1,0 +1,13 @@
+{
+ "id": "2606.05001",
+ "title": "TeleSWEBench: A Commit-Driven Benchmark for Evaluating LLM-Powered Software Engineering in Telecommunications",
+ "authors": "Pranshav Gajjar, Ali Mamaghani, Dinesh Bharadia, Vijay K Shah",
+ "date": "2026-06-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05001v1",
+ "abstract": "With the telecommunications field embracing zero touch management alongside novel O-RAN and AI-RAN frameworks, contemporary telecom networks now function as immensely intricate and heavily softwareized codebases. While automated software engineering (ASE) tools and Software Engineering (SWE) Agents hold the potential to alleviate the critical code generation bottleneck in this domain, their ability to navigate and modify specialized, mathematically rigorous wireless stacks like srsRAN 5G remains unverified. General-purpose coding benchmarks fail to capture the stateful logic and strict requirements of telecommunications, leaving a critical evaluation gap. In this paper, we introduce TeleSWEBench, the first commit-driven benchmark specifically designed to measure an agent's performance in the telecom domain. We mine real developer commits from the srsRAN 5G repository and distill them into structured test cases across three difficulty tiers (Easy, Medium, and Difficult). Our benchmark consists of 734 questions that are accompanied by executable unit tests. To avoid the rigidity of test cases, we further propose a hierarchical LLM as a Judge framework called TeleJudge that scores agent outputs at the file level and aggregates verdicts holistically. This follows an evaluation based on context and semantic similarity in parallel to a standard unit test-based evaluation. Using this benchmark, we evaluate AIDER, OpenHands, and the ClaudeCode frameworks, powered by state-of-the-art reasoning LLMs, including Qwen3, GPT OSS, Gemma 4, Kimi, and Qwencoder 2.5. Our two-stage evaluation reveals that models suffer from a lack of both localization accuracy and functional correctness, with the strongest ASE tools achieving up to 25% of shippable changes.",
+ "summary": "# TeleSWEBench 论文总结\n\n**1. 核心创新点**\n首个面向电信领域（srsRAN 5G）的提交驱动型基准测试，用于评估 LLM 驱动的软件工程代理在专业化无线协议栈中的代码修改能力。\n\n**2. 主要方法**\n- 从 srsRAN 5G 仓库挖掘真实开发者 commit，蒸馏为 734 道带可执行单元测试的结构化题目，分为 Easy/Medium/Difficult 三档难度。\n- 提出分层 \"LLM as a Judge\" 框架 **TeleJudge**，在文件级评分并整体聚合，结合上下文与语义相似度评估，缓解纯单元测试的刚性问题。\n- 在 AIDER、OpenHands、ClaudeCode 三种代理框架上，搭配 Qwen3、GPT-OSS、Gemma 4、Kimi、Qwencoder 2.5 等推理模型进行两阶段评估。\n\n**3. 结论 / 性能**\n现有模型在缺陷定位准确性与功能正确性两方面均表现不足，最强的 ASE 工具也仅能产出约 **25% 可交付（shippable）的代码修改**，揭示了通用代码基准与电信领域真实需求之间的显著评估鸿沟。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-04 13:01:16"
+}

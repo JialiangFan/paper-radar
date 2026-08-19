@@ -1,0 +1,13 @@
+{
+ "id": "2603.21289",
+ "title": "When Models Judge Themselves: Unsupervised Self-Evolution for Multimodal Reasoning",
+ "authors": "Zhengxian Wu, Kai Shi, Chuanrui Zhang, Zirui Liao, Jun Yang, Ni Yang, Qiuying Peng, Luyuan Zhang, Hangrui Xu, Tianhuang Su, Zhenyu Yang, Haonan Lu, Haoqian Wang",
+ "date": "2026-03-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.21289v1",
+ "abstract": "Recent progress in multimodal large language models has led to strong performance on reasoning tasks, but these improvements largely rely on high-quality annotated data or teacher-model distillation, both of which are costly and difficult to scale.To address this, we propose an unsupervised self-evolution training framework for multimodal reasoning that achieves stable performance improvements without using human-annotated answers or external reward models. For each input, we sample multiple reasoning trajectories and jointly model their within group structure.We use the Actor's self-consistency signal as a training prior, and introduce a bounded Judge based modulation to continuously reweight trajectories of different quality.We further model the modulated scores as a group level distribution and convert absolute scores into relative advantages within each group, enabling more robust policy updates. Trained with Group Relative Policy Optimization (GRPO) on unlabeled data, our method consistently improves reasoning performance and generalization on five mathematical reasoning benchmarks, offering a scalable path toward self-evolving multimodal models.The code are available at https://dingwu1021.github.io/SelfJudge/.",
+ "summary": "1) 核心创新点（一句话）\n- 提出一个无监督自进化框架，通过对输入的多条推理轨迹进行自我评估、分组建模与组内相对评分来自我提升多模态推理能力，无需人工标注答案或外部奖励模型。\n\n2) 主要方法\n- 对每个输入采样多条推理轨迹，并在组内同时建模其结构关系。\n- 以 Actor 的自一致性信号作为训练先验，引入 bounded Judge 来动态重新加权不同质量的轨迹。\n- 将调制后的分数建模为组级分布，并将绝对分数转化为组内相对优势，促进鲁棒的策略更新。\n- 使用 Group Relative Policy Optimization (GRPO) 在无标注数据上进行训练，实现自我进化的提升。\n\n3) 结论/性能\n- 在五个数学推理基准上，方法实现稳定的推理性能提升和更好的泛化能力，展现出可扩展的无标注自进化多模态模型潜力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-24 13:05:10"
+}

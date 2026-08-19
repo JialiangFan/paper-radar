@@ -1,0 +1,13 @@
+{
+ "id": "2603.12254",
+ "title": "Attend Before Attention: Efficient and Scalable Video Understanding via Autoregressive Gazing",
+ "authors": "Baifeng Shi, Stephanie Fu, Long Lian, Hanrong Ye, David Eigen, Aaron Reite, Boyi Li, Jan Kautz, Song Han, David M. Chan, Pavlo Molchanov, Trevor Darrell, Hongxu Yin",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12254v1",
+ "abstract": "Multi-modal large language models (MLLMs) have advanced general-purpose video understanding but struggle with long, high-resolution videos -- they process every pixel equally in their vision transformers (ViTs) or LLMs despite significant spatiotemporal redundancy. We introduce AutoGaze, a lightweight module that removes redundant patches before processed by a ViT or an MLLM. Trained with next-token prediction and reinforcement learning, AutoGaze autoregressively selects a minimal set of multi-scale patches that can reconstruct the video within a user-specified error threshold, eliminating redundancy while preserving information. Empirically, AutoGaze reduces visual tokens by 4x-100x and accelerates ViTs and MLLMs by up to 19x, enabling scaling MLLMs to 1K-frame 4K-resolution videos and achieving superior results on video benchmarks (e.g., 67.0% on VideoMME). Furthermore, we introduce HLVid: the first high-resolution, long-form video QA benchmark with 5-minute 4K-resolution videos, where an MLLM scaled with AutoGaze improves over the baseline by 10.1% and outperforms the previous best MLLM by 4.5%. Project page: https://autogaze.github.io/.",
+ "summary": "以下为按要求的中文摘要：\n\n1) 核心创新点（一句话概括）\n提出 AutoGaze，一种自回归的轻量级补丁筛选模块，在进入 ViT/MLLM 之前主动去除冗余视频 Patch，基于多尺度补丁进行自回归选择以在指定误差阈值内重建视频，从而显著降低计算并提升可扩展性。\n\n2) 主要方法（简述使用的技术/模型）\n- AutoGaze 模块：在进入主模型（ViT/MLLM）前对视觉 Patch 进行冗余削减。\n- 自回归 patch 选择：基于多尺度 Patch，逐步选择最小集以重建视频。\n- 训练方式：结合下一token预测和强化学习进行训练。\n- 目标与效果：在指定误差阈值内实现视频重建，显著减少视觉令牌并加速推理。\n\n3) 结论/性能（取得的效果）\n- 视觉令牌减少4x-100x，ViT/MLLM 推理加速最多可达19x。\n- 使 MLLMs 能处理1K帧、4K分辨率的视频，提升规模与性能。\n- 在视频基准上获得优异结果（如 VideoMME 达到 67.0%）。\n- 引入高分辨率长时视频问答基准 HLVid；使用 AutoGaze 的 MLLM 相较基线提升10.1%，并超过此前最佳4.5%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-15 13:00:31"
+}

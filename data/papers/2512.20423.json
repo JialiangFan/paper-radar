@@ -1,0 +1,13 @@
+{
+ "id": "2512.20423",
+ "title": "Evasion-Resilient Detection of DNS-over-HTTPS Data Exfiltration: A Practical Evaluation and Toolkit",
+ "authors": "Adam Elaoumari",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20423v1",
+ "abstract": "The purpose of this project is to assess how well defenders can detect DNS-over-HTTPS (DoH) file exfiltration, and which evasion strategies can be used by attackers. While providing a reproducible toolkit to generate, intercept and analyze DoH exfiltration, and comparing Machine Learning vs threshold-based detection under adversarial scenarios. The originality of this project is the introduction of an end-to-end, containerized pipeline that generates configurable file exfiltration over DoH using several parameters (e.g., chunking, encoding, padding, resolver rotation). It allows for file reconstruction at the resolver side, while extracting flow-level features using a fork of DoHLyzer. The pipeline contains a prediction side, which allows the training of machine learning models based on public labelled datasets and then evaluates them side-by-side with threshold-based detection methods against malicious and evasive DNS-Over-HTTPS traffic. We train Random Forest, Gradient Boosting and Logistic Regression classifiers on a public DoH dataset and benchmark them against evasive DoH exfiltration scenarios. The toolkit orchestrates traffic generation, file capture, feature extraction, model training and analysis. The toolkit is then encapsulated into several Docker containers for easy setup and full reproducibility regardless of the platform it is run on. Future research regarding this project is directed at validating the results on mixed enterprise traffic, extending the protocol coverage to HTTP/3/QUIC request, adding a benign traffic generation, and working on real-time traffic evaluation. A key objective is to quantify when stealth constraints make DoH exfiltration uneconomical and unworthy for the attacker.",
+ "summary": "- 核心创新点：提出一个端到端、容器化的 DoH 数据外渗检测评估与生成分析工具箱，在对抗性场景下对机器学习与阈值检测进行比较评估，并实现实验流程的完全可重复性。\n\n- 主要方法：\n  - 构建端到端、容器化的流水线，涵盖流量生成、拦截/捕获、特征提取、模型训练与分析，具备可重复运行的 Docker 化环境。\n  - 设计可配置的 DoH 外渗数据生成器，支持分块、编码、填充、解析器轮换等参数，并实现外渗数据在解析端的文件重构。\n  - 使用基于 DoHLyzer 的派生工具进行流量级特征提取。\n  - 在公开标注数据集上训练并比较三种机器学习模型（随机森林、梯度提升、逻辑回归）与阈值检测方法，进行对抗性 DoH 外渗场景的评估。\n  - 提供用于 traffic generation、file capture、特征提取、模型训练与分析的一体化工具链，并以 Docker 容器形式封装，便于跨平台复现。\n\n- 结论/性能：\n  - 提供了一个可重复的对抗性评估框架，能够对比机器学习与阈值检测在不同 evasive 场景下的检测性能，并评估 DoH 外渗的可检测性。\n  - 证明了从流量生成到模型评估的端到端流程可有效运行，并揭示在不同条件下的检测能力差异，明确了在隐蔽性约束下外渗行为对攻击者的成本/收益边界。\n  - 未来工作包括在混合企业流量中验证、扩展对 HTTP/3/QUIC 的协议覆盖、增加良性流量生成以及实现实时流量评估。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-24 02:59:54"
+}

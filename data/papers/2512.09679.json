@@ -1,0 +1,13 @@
+{
+ "id": "2512.09679",
+ "title": "Understanding Chain-of-Thought Effectiveness in Code Generation: An Empirical and Information-Theoretic Analysis",
+ "authors": "Naizhu Jin, Zhong Li, Guang Yang, Tian Zhang, Qingkai Zeng",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09679v1",
+ "abstract": "Large language models (LLMs) achieve strong performance on code generation, but the mechanisms by which Chain-of-Thought (CoT) prompting helps remain unclear. We present a systematic empirical and information-theoretic study of CoT effectiveness in neural code generation, evaluating five paradigms (Zero-Shot, Zero-Shot CoT, Self-Planning, Structured CoT, Reasoning-CoT) across six Python benchmarks, a multilingual benchmark with 12 programming languages, and six models from 7B to 480B parameters, using conditional mutual information $I(Y;C|X)$ as a conceptual lens. Our results show that externally guided CoT consistently outperforms direct generation, with structured methods improving Pass@1 by 5--12\\% on average while using substantially fewer tokens than reflective reasoning, and that CoT benefits depend on language type systems and model capacity. We further find that reasoning \\emph{quality} is critical: high-quality structured CoT from strong generators yields significantly higher accuracy than lightweight alternatives with the same template, whereas naive Zero-Shot CoT can even degrade performance. These findings provide practical guidance for choosing CoT strategies based on model capacity, language characteristics, and task complexity.",
+ "summary": "- 核心创新点：通过信息论视角系统评估多种 CoT 策略在代码生成中的有效性，揭示外部引导的结构化 CoT 在多语言与大模型场景下的优势，以及对模板和模型容量的依赖。\n- 主要方法：对 Zero-Shot、Zero-Shot CoT、Self-Planning、Structured CoT、Reasoning-CoT 等五种 CoT 范式，在六个 Python 基准、一个覆盖 12 种语言的多语言基准，以及六种规模（7B–480B 参数）模型上进行实验；以条件互信息 I(Y; C|X) 为分析工具，比较外部引导的 CoT、结构化 CoT 与直生成的效果，评估 Pass@1、Token 使用量和推理质量等指标。\n- 结论/性能：外部引导的 CoT Overall 优于直接生成，结构化 CoT 在平均 Pass@1 提升约 5–12%，且所需令牌显著少于反思推理；CoT 的收益取决于语言的类型系统和模型容量；高质量的结构化 CoT（来自强模型）能显著提升准确性，而简单的 Zero-Shot CoT 可能无益甚至降低性能，因此应基于模型容量、语言特性与任务复杂度来选择 CoT 策略。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-11 14:03:08"
+}

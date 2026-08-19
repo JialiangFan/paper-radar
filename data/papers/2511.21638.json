@@ -1,0 +1,13 @@
+{
+ "id": "2511.21638",
+ "title": "Aligning LLMs Toward Multi-Turn Conversational Outcomes Using Iterative PPO",
+ "authors": "Daniel R. Jiang, Jalaj Bhandari, Yukai Yang, Rémi Munos, Tyler Lu",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21638v1",
+ "abstract": "Optimizing large language models (LLMs) for multi-turn conversational outcomes remains a significant challenge, especially in goal-oriented settings like AI marketing or sales agents who facilitate transactions via messaging platforms. The difficulty stems from sparse, long-horizon rewards and the discrepancy between response-level planning and token-level generation. In this technical note, we propose a formal reduction of the multi-turn RL problem into a sequence of single-turn RLHF-style problems. This is achieved by setting a learned multi-turn Q-function as the reward model for the single-turn problem. We demonstrate and prove a key insight: solving this single-turn RL problem with standard token-level PPO is equivalent to a policy improvement step within the multi-turn problem. This insight naturally leads to Iterative PPO, a batch online policy iteration algorithm that alternates between fitting Q-functions from logged conversation trajectories and improving the policy. A major practical advantage is that Iterative PPO directly leverages stable, off-the-shelf single-turn RLHF tools, making it straightforward to implement. Our method occupies a middle ground between fully online and fully offline approaches, retaining the adaptability of online updates while gaining the stability benefits of offline training.",
+ "summary": "1) 核心创新点\n- 将多轮对话的强化学习问题转化为一系列单轮 RLHF 风格的问题，并通过学习得到的多轮 Q 函数作为奖励，提出 Iterative PPO 的批量在线策略迭代框架。\n\n2) 主要方法\n- 将多轮 RL 问题分解为序列的单轮 RLHF 风格问题；用一个学习得到的多轮 Q 函数作为单轮问题的回报。\n- 证明在单轮 token-level PPO 上的求解等价于多轮问题中的策略改进。\n- 提出 Iterative PPO：一个批量在线策略迭代算法，交替从对话轨迹拟合 Q 函数和据此改进策略。\n- 实践层面可直接使用稳定的现成单轮 RLHF 工具，实现在线更新与离线训练的结合。\n\n3) 结论/性能\n- 给出理论证明并提供可操作的框架，表明单轮 PPO 可以在多轮目标对齐任务中实现策略改进。\n- Iterative PPO 在保持离线稳定性的同时，保留在线更新的灵活性，便于直接利用现有单轮 RLHF 工具来对多轮对话进行目标对齐。",
+ "keyword": "PDDL planning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:10:35"
+}

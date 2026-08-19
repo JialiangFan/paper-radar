@@ -1,0 +1,13 @@
+{
+ "id": "2602.02457",
+ "title": "MetaCLASS: Metacognitive Coaching for Learning with Adaptive Self-regulation Support",
+ "authors": "Naiming Liu, Richard Baraniuk, Shashank Sonkar",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02457v1",
+ "abstract": "Large language models can generate fluent explanations, but effective tutoring requires supporting the learner's thought process, not just delivering content. Metacognitive tutoring targets this gap by prompting planning, monitoring, debugging, and evaluation, and crucially, deciding when to be active versus minimally present, based on learner signals and trajectory. We introduce MetaCLASS, a learning-science grounded framework that formulates metacognitive tutoring as move selection over 11 interpretable actions aligned to self-regulated learning processes. MetaCLASS uses a two-phase framework that first plans a pedagogical trajectory conditioned on learner profiles (calibration, help-seeking) and then generates natural dialogue consistent with that plan. This yields a dataset of 1,015 conversations (7,711 turns) annotated with turn-level metacognitive labels, and validated for pedagogical contingency and trajectory adherence. We benchmark nine LLMs on predicting the next coach move given the problem and dialogue context. The best model achieves only 43.2\\% accuracy, and models exhibit compulsive intervention bias: in turns where effective metacognitive tutoring requires silent (41.7\\% of cases), models predict `no intervention' only 4.2\\% of the time, while severely over-predicting high-intervention moves. These results show that traditional content-based tutoring ability does not translate to metacognitive tutoring competence, positioning MetaCLASS as a testbed for developing intelligent tutors that promote self-regulated learning.",
+ "summary": "- 核心创新点：将元认知辅导形式化为11种可解释的行动并进行移动选择，结合基于学习者画像的两阶段规划与对话生成，构建以自我调节学习为导向的元认知教学框架 MetaCLASS。\n\n- 主要方法：采用两阶段框架：阶段1基于学习者画像（如校准、求助倾向）规划教学轨迹；阶段2生成与该计划一致的自然对话。将元认知 tutoring 限定为11种解释性行动，并构建/标注了1,015段对话（7,711轮）及轮级元认知标签，同时评估9个大型语言模型在预测下一步 coach move 的能力。\n\n- 结论/性能：最佳模型准确率43.2%；存在干预偏差：在需要沉默的情形（约41.7%）中，模型仅4.2%预测为“不干预”，并且显著倾向于高强度干预，显示以内容为导向的 tutoring 能力并不足以支撑元认知 tutoring；因此 MetaCLASS 成为用于发展促进自我调节学习的智能辅导系统的有力测试床。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:04:06"
+}

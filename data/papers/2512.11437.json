@@ -1,0 +1,13 @@
+{
+ "id": "2512.11437",
+ "title": "CLINIC: Evaluating Multilingual Trustworthiness in Language Models for Healthcare",
+ "authors": "Akash Ghosh, Srivarshinee Sridhar, Raghav Kaushik Ravi, Muhsin Muhsin, Sriparna Saha, Chirag Agarwal",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11437v1",
+ "abstract": "Integrating language models (LMs) in healthcare systems holds great promise for improving medical workflows and decision-making. However, a critical barrier to their real-world adoption is the lack of reliable evaluation of their trustworthiness, especially in multilingual healthcare settings. Existing LMs are predominantly trained in high-resource languages, making them ill-equipped to handle the complexity and diversity of healthcare queries in mid- and low-resource languages, posing significant challenges for deploying them in global healthcare contexts where linguistic diversity is key. In this work, we present CLINIC, a Comprehensive Multilingual Benchmark to evaluate the trustworthiness of language models in healthcare. CLINIC systematically benchmarks LMs across five key dimensions of trustworthiness: truthfulness, fairness, safety, robustness, and privacy, operationalized through 18 diverse tasks, spanning 15 languages (covering all the major continents), and encompassing a wide array of critical healthcare topics like disease conditions, preventive actions, diagnostic tests, treatments, surgeries, and medications. Our extensive evaluation reveals that LMs struggle with factual correctness, demonstrate bias across demographic and linguistic groups, and are susceptible to privacy breaches and adversarial attacks. By highlighting these shortcomings, CLINIC lays the foundation for enhancing the global reach and safety of LMs in healthcare across diverse languages.",
+ "summary": "1) 核心创新点：提出名为 CLINIC 的综合多语言医疗信任基准，系统评估语言模型在真相性、公平性、安全性、鲁棒性和隐私性五维信任性，覆盖18项任务与15种语言，面向全球医疗场景。\n\n2) 主要方法：构建并应用 CLINIC 基准对现有医疗相关语言模型进行评测，任务覆盖疾病、预防、诊断测试、治疗、手术、药物等主题，跨越15种语言，通过定量分析评估五个信任维度并揭示偏见、隐私风险及对抗鲁棒性等问题。\n\n3) 结论/性能：实验表明当前语言模型在事实正确性方面存在明显不足，对不同人口和语言群体存在偏见，且易受隐私泄露和对抗性攻击影响；CLINIC 为提升全球范围内多语言医疗场景下LM的可信性与安全性提供了基线和方向。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-15 14:01:52"
+}

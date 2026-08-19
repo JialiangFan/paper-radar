@@ -1,0 +1,13 @@
+{
+ "id": "2604.20658",
+ "title": "Cooperative Profiles Predict Multi-Agent LLM Team Performance in AI for Science Workflows",
+ "authors": "Shivani Kumar, Adarsh Bharathwaj, David Jurgens",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20658v1",
+ "abstract": "Multi-agent systems built from teams of large language models (LLMs) are increasingly deployed for collaborative scientific reasoning and problem-solving. These systems require agents to coordinate under shared constraints, such as GPUs or credit balances, where cooperative behavior matters. Behavioral economics provides a rich toolkit of games that isolate distinct cooperation mechanisms, yet it remains unknown whether a model's behavior in these stylized settings predicts its performance in realistic collaborative tasks. Here, we benchmark 35 open-weight LLMs across six behavioral economics games and show that game-derived cooperative profiles robustly predict downstream performance in AI-for-Science tasks, where teams of LLM agents collaboratively analyze data, build models, and produce scientific reports under shared budget constraints. Models that effectively coordinate games and invest in multiplicative team production (rather than greedy strategies) produce better scientific reports across three outcomes, accuracy, quality, and completion. These associations hold after controlling for multiple factors, indicating that cooperative disposition is a distinct, measurable property of LLMs not reducible to general ability. Our behavioral games framework thus offers a fast and inexpensive diagnostic for screening cooperative fitness before costly multi-agent deployment.",
+ "summary": "- 核心创新点：将行为经济博弈得到的合作画像用于预测多代理LLM团队在AI-for-Science任务中的协作表现，提供一个快速、低成本的协作能力筛查框架。\n\n- 主要方法：对35个公开权重的LLM在六种行为经济博弈中进行基准测试以提取合作画像；在AI-for-Science场景下让LLM团队在共享预算约束下协同分析数据、建模并产出科学报告；评估报告的准确性、质量与完成度，并比较“协调/乘法性团队产出”与贪婪策略的影响，同时控制多种因素。\n\n- 结论/性能：博弈-derived的合作画像能稳健预测下游任务中的团队表现；在协调能力强且投入到乘法型团队产出的模型中，科学报告的准确性、质量与完成度均更好；该关系在多因素控制后仍成立，表明合作倾向是一个独立且可测的特性，可作为部署前的快速协作诊断工具。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-23 13:01:56"
+}

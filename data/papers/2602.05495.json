@@ -1,0 +1,13 @@
+{
+ "id": "2602.05495",
+ "title": "Transport and Merge: Cross-Architecture Merging for Large Language Models",
+ "authors": "Chenhang Cui, Binyun Yang, Fei Shen, Yuxin Chen, Jingnan Zheng, Xiang Wang, An Zhang, Tat-Seng Chua",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05495v1",
+ "abstract": "Large language models (LLMs) achieve strong capabilities by scaling model capacity and training data, yet many real-world deployments rely on smaller models trained or adapted from low-resource data. This gap motivates the need for mechanisms to transfer knowledge from large, high-resource models to smaller, low-resource targets. While model merging provides an effective transfer mechanism, most existing approaches assume architecture-compatible models and therefore cannot directly transfer knowledge from large high-resource LLMs to heterogeneous low-resource targets. In this work, we propose a cross-architecture merging framework based on optimal transport (OT) that aligns activations to infer cross-neuron correspondences between heterogeneous models. The resulting transport plans are then used to guide direct weight-space fusion, enabling effective high-resource to low-resource transfer using only a small set of inputs. Extensive experiments across low-resource languages and specialized domains demonstrate consistent improvements over target models.",
+ "summary": "- 核心创新点：提出一个基于最优传输（OT）的跨架构合并框架，通过对齐激活在异构模型间推断跨神经元对应，再用传输计划引导权重空间融合，以实现高资源大模型向低资源目标的知识迁移。\n\n- 主要方法：利用最优传输对齐不同架构模型的激活，推断跨神经元的对应关系；将得到的传输计划用于指导直接在权重空间的融合（weight-space fusion），实现跨架构的知识迁移，且仅需少量输入集就可完成迁移，并在多种场景（低资源语言、专业领域）进行评估。\n\n- 结论/性能：在大量低资源语言和专业领域的实验中，目标模型相对于基线显示出一致且显著的性能提升。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:03:00"
+}

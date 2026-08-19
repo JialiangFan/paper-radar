@@ -1,0 +1,13 @@
+{
+ "id": "2512.24684",
+ "title": "R-Debater: Retrieval-Augmented Debate Generation through Argumentative Memory",
+ "authors": "Maoyuan Li, Zhongsheng Wang, Haoyuan Li, Jiamou Liu",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24684v1",
+ "abstract": "We present R-Debater, an agentic framework for generating multi-turn debates built on argumentative memory. Grounded in rhetoric and memory studies, the system views debate as a process of recalling and adapting prior arguments to maintain stance consistency, respond to opponents, and support claims with evidence. Specifically, R-Debater integrates a debate knowledge base for retrieving case-like evidence and prior debate moves with a role-based agent that composes coherent utterances across turns. We evaluate on standardized ORCHID debates, constructing a 1,000-item retrieval corpus and a held-out set of 32 debates across seven domains. Two tasks are evaluated: next-utterance generation, assessed by InspireScore (subjective, logical, and factual), and adversarial multi-turn simulations, judged by Debatrix (argument, source, language, and overall). Compared with strong LLM baselines, R-Debater achieves higher single-turn and multi-turn scores. Human evaluation with 20 experienced debaters further confirms its consistency and evidence use, showing that combining retrieval grounding with structured planning yields more faithful, stance-aligned, and coherent debates across turns.",
+ "summary": "1) 核心创新点：提出基于 argumentative memory 的检索增强辩论生成框架 R-Debater，通过检索证据与历史论点来保持立场一致并跨轮回应。\n\n2) 主要方法：构建辩论知识库用于检索案例证据与先前辩论动作，使用基于角色的代理跨轮编排连贯话语，将检索 grounding 与结构化规划相结合；在 ORCHID 数据集上构建 1000 项检索语料和一个包含七个领域的 held-out 辩论集，评估任务包括下一轮话语生成（InspireScore）和对抗性多轮仿真（Debatrix）。\n\n3) 结论/性能：相较强大 LLM 基线，在单轮和多轮任务上获得更高分；20 名有经验辩手的人工评估也证实其一致性和证据使用，表明检索 grounding + 结构化规划能使辩论更忠实、立场对齐、跨轮更连贯。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:26:57"
+}

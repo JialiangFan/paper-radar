@@ -1,0 +1,13 @@
+{
+ "id": "2604.25886",
+ "title": "MarkIt: Training-Free Visual Markers for Precise Video Temporal Grounding",
+ "authors": "Pengcheng Fang, Yuxia Chen, Xiaohao Cai",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25886v1",
+ "abstract": "Video temporal grounding (VTG) aims to localize the start and end timestamps of the event described by a given query within an untrimmed video. Despite the strong open-world video understanding and recognition ability of video language large models (Vid-LLMs), outputting precise temporal grounding information remains challenging, since explicit temporal cues are scarce in untrimmed videos, and query-relevant entities are hard to track consistently across the video timeline. In this paper, we present \\MarkIt{}, a training-free framework that transforms an input video into a query-conditioned marked video, which empowers Vid-LLMs to generate more reliable temporal localization predictions. The core component of \\MarkIt{} is an annotation-free query-to-mask grounding bridge (Q2M-Bridge). Given a natural-language query, it automatically derives a compact set of canonical subject tags through linguistic parsing and normalization, then maps these tags to query-conditioned instance masks using text-conditioned open-vocabulary segmentation. The bridge also embeds lightweight semantic instance markers and a persistent frame index into each frame, effectively transforming long-range temporal reasoning into explicit visual cues for Vid-LLMs. \\MarkIt{} adopts an inference-time plug-and-play design, needs no modifications to Vid-LLM weights, and is fully compatible with supervised fine-tuning. Experiments conducted on multiple mainstream moment retrieval and highlight detection benchmarks demonstrate that \\MarkIt {} achieves state-of-the-art results, delivering consistent temporal grounding improvements across a wide range of existing models.",
+ "summary": "核心创新点：提出一个训练无关的视觉标记框架 MarkIt，通过查询到掩码的桥梁（Q2M-Bridge）将查询信息转化为帧内可观测的标记与实例掩码，从而让Vid-LLMs更可靠地进行视频时间定位。\n\n主要方法：\n- MarkIt 是一个训练-free 的框架，在推理阶段将输入视频转化为“查询条件化的标记视频”。\n- Q2M-Bridge（注释无标记的查询到掩码桥）先对自然语言查询进行语言解析与归一化，自动得到一组紧凑的典型主题标签，再将这些标签映射到基于文本的开放词汇分割得到的实例掩码。\n- 桥接器在每帧中嵌入轻量级的语义实例标记及一个持续的帧索引，将长时序推理转化为显式的视觉线索，便于Vid-LLMs进行时间定位。\n- 设计为推理时即可插入、无需修改Vid-LLM权重，且与有监督微调完全兼容。\n\n结论/性能：在多项主流的时刻检索（moment retrieval）与高光检测基准上达到SOTA水平，并对广泛的现有模型持续带来稳定的时间定位提升，展示了无训练成本的显著性能增益。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-29 13:01:24"
+}

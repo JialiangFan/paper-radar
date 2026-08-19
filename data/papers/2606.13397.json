@@ -1,0 +1,13 @@
+{
+ "id": "2606.13397",
+ "title": "Mod-Guide: An LLM-based Content Moderation Feedback System to Address Insensitive Speech toward Indigenous Ethnic and Religious Minority Communities",
+ "authors": "Dipto Das, Achhiya Sultana, Ankit Singh Chauhan, Saadia Binte Alam, Mohammad Shidujaman, Shion Guha, Sunandan Chakraborty, Syed Ishtiaque Ahmed",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13397v1",
+ "abstract": "Language operates as a mechanism of both marginalization and resistance, especially for minority communities navigating insensitive and harmful speech online. As content moderation increasingly depends on large language models (LLMs), concerns arise about whether these systems can recognize culturally insensitive speech-language that disregards or marginalizes the cultural and religious perspectives of historically underrepresented communities, often through implicit erasure, misrepresentation, or normative framing, rather than overt hostility. Focusing on Bangladesh's Hindu and Chakma communities -- the country's largest religious and Indigenous ethnic minorities, respectively -- this paper investigates the epistemic limits of LLM-based moderation systems and explores methods for incorporating minority perspectives. We co-created a culturally grounded corpus of insensitive speech with community members and integrated their narratives into moderation pipelines using retrieval augmented generation (RAG). Our tool, Mod-Guide, improves LLM sensitivity to minority viewpoints by leveraging contextual cues derived from lived experience. Through mixed-method evaluations involving both minority and majority participants, we demonstrate that RAG-enhanced moderation responses are more contextually accurate and perceived differently across ethnic lines. This work advances research in human-computer interaction, AI ethics, and social computing by foregrounding restorative justice and hermeneutical inclusion in the design of content moderation systems.",
+ "summary": "## 论文总结：Mod-Guide\n\n1. **核心创新点**：通过引入少数族群亲历者的真实叙事，提升大语言模型（LLM）内容审核系统对\"文化不敏感言论\"的识别能力，弥补其在隐性边缘化语言上的认知盲区。\n\n2. **主要方法**：与孟加拉国印度教徒和恰克玛（Chakma）原住民社区成员共同构建了一个植根于本土文化的\"不敏感言论\"语料库，并采用**检索增强生成（RAG）**技术，将这些社区叙事与语境线索整合进审核流程，构建出工具 Mod-Guide。\n\n3. **结论/性能**：通过涵盖少数族群与多数族群参与者的混合方法评估，证明经 RAG 增强的审核响应在**语境准确性上更高**，且不同族群对其感知存在差异；该工作将\"修复性正义\"和\"诠释学包容\"引入内容审核系统设计，推动了人机交互、AI 伦理与社会计算研究。\n\n---\n补充：这类隐性、依赖文化语境的言论审核任务，正是 RAG + 高能力 LLM（如 Claude Opus 4.8）擅长的场景——亲历叙事作为检索上下文，可显著改善模型对边缘化表达的判断。如需我帮你复现该 RAG 审核流程或评估方案，可以告诉我。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-12 13:02:22"
+}

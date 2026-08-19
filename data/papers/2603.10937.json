@@ -1,0 +1,13 @@
+{
+ "id": "2603.10937",
+ "title": "Quantifying Membership Disclosure Risk for Tabular Synthetic Data Using Kernel Density Estimators",
+ "authors": "Rajdeep Pathak, Sayantee Jana",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10937v1",
+ "abstract": "The use of synthetic data has become increasingly popular as a privacy-preserving alternative to sharing real datasets, especially in sensitive domains such as healthcare, finance, and demography. However, the privacy assurances of synthetic data are not absolute, and remain susceptible to membership inference attacks (MIAs), where adversaries aim to determine whether a specific individual was present in the dataset used to train the generator. In this work, we propose a practical and effective method to quantify membership disclosure risk in tabular synthetic datasets using kernel density estimators (KDEs). Our KDE-based approach models the distribution of nearest-neighbour distances between synthetic data and the training records, allowing probabilistic inference of membership and enabling robust evaluation via ROC curves. We propose two attack models: a 'True Distribution Attack', which assumes privileged access to training data, and a more realistic, implementable 'Realistic Attack' that uses auxiliary data without true membership labels. Empirical evaluations across four real-world datasets and six synthetic data generators demonstrate that our method consistently achieves higher F1 scores and sharper risk characterization than a prior baseline approach, without requiring computationally expensive shadow models. The proposed method provides a practical framework and metric for quantifying membership disclosure risk in synthetic data, which enables data custodians to conduct a post-generation risk assessment prior to releasing their synthetic datasets for downstream use. The datasets and codes for this study are available at https://github.com/PyCoder913/MIA-KDE.",
+ "summary": "- 核心创新点：通过核密度估计（KDE）对合成数据与训练数据之间最近邻距离的分布进行建模，从而定量化并推断表格型合成数据的成员披露风险，提出真实分布攻击与现实攻击两类模型，且无需阴影模型即可进行评估。\n\n- 主要方法：利用 KDE 建模最近邻距离分布以进行概率性成员推断；提出两种攻击模型（True Distribution Attack 和 Realistic Attack）；结合 ROC 曲线进行风险评估，与基线方法比较，强调无需使用计算成本高的阴影模型。\n\n- 结论/性能：在四个真实数据集和六个合成数据生成器的实验中，方法在 F1 分数和风险表征上均优于前人基线，提供一个实用且高效的后生成风险评估框架及度量，代码与数据可公开获取。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-12 13:02:00"
+}

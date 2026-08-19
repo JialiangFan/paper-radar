@@ -1,0 +1,13 @@
+{
+ "id": "2601.21985",
+ "title": "Elign: Equivariant Diffusion Model Alignment from Foundational Machine Learning Force Fields",
+ "authors": "Yunyang Li, Lin Huang, Luojia Xia, Wenhe Zhang, Mark Gerstein",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21985v1",
+ "abstract": "Generative models for 3D molecular conformations must respect Euclidean symmetries and concentrate probability mass on thermodynamically favorable, mechanically stable structures. However, E(3)-equivariant diffusion models often reproduce biases from semi-empirical training data rather than capturing the equilibrium distribution of a high-fidelity Hamiltonian. While physics-based guidance can correct this, it faces two computational bottlenecks: expensive quantum-chemical evaluations (e.g., DFT) and the need to repeat such queries at every sampling step. We present Elign, a post-training framework that amortizes both costs. First, we replace expensive DFT evaluations with a faster, pretrained foundational machine-learning force field (MLFF) to provide physical signals. Second, we eliminate repeated run-time queries by shifting physical steering to the training phase. To achieve the second amortization, we formulate reverse diffusion as a reinforcement learning problem and introduce Force--Energy Disentangled Group Relative Policy Optimization (FED-GRPO) to fine-tune the denoising policy. FED-GRPO includes a potential-based energy reward and a force-based stability reward, which are optimized and group-normalized independently. Experiments show that Elign generates conformations with lower gold-standard DFT energies and forces, while improving stability. Crucially, inference remains as fast as unguided sampling, since no energy evaluations are required during generation.",
+ "summary": "- 核心创新点：提出 Elign，在训练阶段摊销物理引导成本并用基础ML力场替代DFT，同时将反向扩散转为强化学习，提出 FED-GRPO 以能量和力双奖励优化，从而实现无需在线能量评估的高保真且高效的3D分子构象生成。\n\n- 主要方法：基于E(3)-等变扩散模型；使用预训练的 foundational ML 力场替代DFT以提供物理信号；将扩散的反向过程建模为强化学习，提出 Force–Energy Disentangled Group Relative Policy Optimization (FED-GRPO)，包含独立的潜在能量奖励和力稳定奖励并进行组归一化优化；属于后训练框架，训练阶段完成后推断不再需要能量评估。\n\n- 结论/性能：在实验中生成的构象具有更低的金标准DFT能量和力，稳定性更高；推断阶段保持与无引导采样同等速度，因为不在生成时进行能量评估。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-01-30 14:04:20"
+}

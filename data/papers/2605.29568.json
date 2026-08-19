@@ -1,0 +1,13 @@
+{
+ "id": "2605.29568",
+ "title": "DeepTool: Scaling Interleaved Deliberation in Tool-Integrated Reasoning via Process-Supervised Reinforcement Learning",
+ "authors": "Yang He, Xiao Ding, Bibo Cai, Yufei Zhang, Kai Xiong, Zhouhao Sun, Bing Qin, Ting Liu",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29568v1",
+ "abstract": "Tool-Integrated Reasoning (TIR) extends LLM capabilities by leveraging external environments. However, existing methods lack the deliberation during sequential tool invocation required for strategic planning and self-correction. While RL mitigates this, conventional approaches for Tool-Integrated Reasoning are hindered by sparse outcome-based rewards, failing to supervise intermediate reasoning steps and tool invocations. To address this, we propose DeepTool, a novel framework that scales deliberate thinking within the interleaved process of thinking, action, and observation at each turn. In DeepTool, we first introduce a synthesis pipeline that evolves extended thinking into interleaved trajectories, integrating adversarial perturbations to ensure robustness and self-correction. Secondly, we devise Process-Supervised Reinforcement Learning based on GRPO, which utilizes an Action-Centric Process Reward to reinforce intermediate interleaved thinking and enforce precise tool invocation at every turn. Extensive experiments demonstrate that DeepTool achieves superior performance, boosting Qwen2.5-7B significantly across six benchmarks (e.g., AIME24: 3.2% -> 40.4% and HMMT25: 0.0% -> 28.6%). Furthermore, the token cost-effectiveness analysis confirms the utility of interleaved thinking, demonstrating DeepTool's optimal balance between performance and token efficiency.",
+ "summary": "# DeepTool 论文总结\n\n**1. 核心创新点**\n提出 DeepTool 框架，通过过程监督强化学习在工具集成推理（TIR）的\"思考-行动-观察\"交错流程中扩展深度审慎思考，解决传统方法中间步骤缺乏监督的问题。\n\n**2. 主要方法**\n- **数据合成管道**：将扩展思考演化为交错轨迹，并引入对抗性扰动以增强鲁棒性和自我纠错能力。\n- **过程监督强化学习**：基于 GRPO 改进，设计 **Action-Centric Process Reward（以行动为中心的过程奖励）**，对每一轮的中间交错思考和精准工具调用进行强化。\n\n**3. 结论/性能**\n在六个基准测试上显著提升 Qwen2.5-7B 的表现，例如：\n- AIME24：**3.2% → 40.4%**\n- HMMT25：**0.0% → 28.6%**\n\n同时 token 成本效益分析表明，DeepTool 在性能与 token 效率之间取得了最佳平衡。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:00:31"
+}

@@ -1,0 +1,27 @@
+{
+ "id": "hy-embodied-0-5-embodied-foundation-models-for-real-world-agents",
+ "title": "HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents",
+ "authors": "Tencent Robotics X & HY Vision Team",
+ "date": null,
+ "year": 2026,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-Language Models (VLMs) 在通用视觉理解方面取得了显著进展，但要让智能体在真实物理环境中感知、推理并执行动作，现有VLM仍存在两大核心不足：(1) **细粒度视觉感知**——主流VLM在静态网页数据上训练，难以捕获具身任务所需的精细空间细节；(2) **具身预测、交互与规划**——缺少对物理世界动态预测、交互反馈和长期...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2604.07430)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/HY-Embodied-0.5 - Embodied Foundation Models for Real-World Agents.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

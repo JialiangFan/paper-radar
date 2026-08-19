@@ -1,0 +1,13 @@
+{
+ "id": "2606.18953",
+ "title": "Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement",
+ "authors": "Kinam Kim, Namiko Saito, Heecheol Kim, Katsushi Ikeuchi, Jaegul Choo, Yasuyuki Matsushita",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18953v1",
+ "abstract": "Vision-Language-Action (VLA) models can generalize across diverse manipulation tasks, but their imitation-learning-based policies remain brittle in precise physical interactions due to compounding execution errors; Can a reinforcement learning policy trained purely in simulation improve the robustness of real-world VLAs zero-shot? Residual RL, which learns a corrective policy on top of a frozen VLA, offers a natural framework, but existing approaches face a fundamental sim-to-real dilemma: privileged-state methods require lossy distillation for deployment; image-based methods suffer from the visual domain gap; and real-world RL is costly and unsafe. We propose an object-centric residual RL framework that refines VLA actions using object poses, enabling a compact observation space that transfers consistently between simulation and reality. To align the two domains, we additionally replay the same teleoperation demonstrations in simulation to train a sim counterpart of the real-world VLA. The residual RL policy is trained only in simulation with pose noise injection and dropout, and transfers zero-shot to the real robot. Across five manipulation tasks on a real Franka Research 3 (FR3) robot, our method improves the success rate from 42% to 76% zero-shot, and the improved rollouts can be further reused to retrain the base VLA for self-improvement without additional teleoperation. Project page: https://www.microsoft.com/en-us/research/articles/object-centric-residual-rl/",
+ "summary": "**核心创新点**：提出一种\"以物体为中心\"的残差强化学习框架，让纯仿真训练的纠正策略能够零样本（zero-shot）迁移到真实机器人，从而提升 VLA（视觉-语言-动作）模型在精细操作任务中的鲁棒性。\n\n**主要方法**：\n- 在冻结的 VLA 基础策略之上，学习一个**残差 RL 策略**进行动作纠正。\n- 关键设计是用**物体位姿（object poses）**作为紧凑观测空间，规避了特权状态法需蒸馏、图像法存在视觉域差距的问题，使观测在仿真与现实间一致。\n- 通过在仿真中**重放同一套遥操作演示**，训练出真实 VLA 的\"仿真孪生体\"以对齐两域。\n- 残差策略仅在仿真中训练，并注入**位姿噪声与 dropout**增强迁移性。\n\n**结论/性能**：在真实 Franka Research 3 机器人上的 5 项操作任务中，零样本将成功率从 **42% 提升到 76%**；且改进后的执行轨迹可反过来重新训练基础 VLA，实现无需额外遥操作的**自我提升**。\n\n---\n补充：如果你希望我用 `paper-review` 技能生成更完整的中英文综述并保存到 Obsidian，告诉我即可。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-18 13:05:18"
+}

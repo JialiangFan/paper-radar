@@ -1,0 +1,13 @@
+{
+ "id": "2607.02453",
+ "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+ "authors": "Xi Zhang, Papi Menon, Vivian Chu, Koray Cosguner",
+ "date": "2026-07-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.02453v1",
+ "abstract": "Since ChatGPT's launch in November 2022, open-source agentic frameworks have proliferated, making framework selection important for engineering teams while obscured by popularity signals such as GitHub stars. This paper analyzes 15 major open-source AI agent framework repositories from late 2022 to early 2026, using 808,042 stars, 73,997 pull requests, 86,241 commits, and 987,330 user profiles to assess ecosystem health across awareness, adoption, and retention. Three findings emerge. First, headline popularity is unreliable. Star counts reflect hype cycles and inorganic activity. AutoGPT gained 111,967 stars in one month but converted fewer than 9 contributors per 1,000 stars, defined as contributor density in this research, compared with LangChain's 41. Lower-profile frameworks such as Pydantic-AI show higher contributor density, indicating deeper adoption. Second, mapping awareness against adoption shows that visibility and engagement diverge. MetaGPT and LangFlow have contributor density ratios below 5 even with their high visibility. Openai-agents-python's limited contributor base suggests institutional backing alone does not ensure community depth. By analyzing cross-framework contribution, we discover that LangChain functions as a shared infrastructure, attracting 82.5% of cross-ecosystem contributors. Third, retention drops most steeply in the first 30 days of initial contribution and stabilizes near 90 days. Overall, ecosystem health is better measured by contributor density, cross-ecosystem engagement, and retention than by stars alone. These metrics offer teams a more robust basis for framework evaluation.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-03 13:01:36"
+}

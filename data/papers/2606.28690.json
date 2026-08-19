@@ -1,0 +1,13 @@
+{
+ "id": "2606.28690",
+ "title": "Formal Security Analysis of Agent Protocol Composition",
+ "authors": "Shenghan Zheng, Qifan Zhang, Zheng Zhang, Haonan Li, Christophe Hauser",
+ "date": "2026-06-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.28690v1",
+ "abstract": "AI agent protocols define how agents use tools, delegate work, and coordinate across software systems, but their security requirements remain incomplete and inconsistently enforced across deployments. We present AgentThread, a source-linked framework for security assurance analysis of agent protocols, from specification text to running SDKs. AgentThread contributes a layered security scope, protocol-derived checks formalized as TLA+ invariants, and a two-phase checker that compiles protocol specifications into model-checkable models and replays executable counterexamples against real SDKs through protocol adapters. For each finding, AgentThread records the source text behind the check and separates violated protocol requirements from missing recommendations, hardening gaps, and unassigned cross-protocol responsibilities.\n  Across five emerging agent protocols, AgentThread identifies 35 specification-level findings, supports them with 80 implementation tests against production SDKs and reference servers, and finds 30 additional failures that emerge only under protocol composition. We further show that only one protocol enforces a security-relevant control in practice and no protocol assigns enforcement for cross-protocol behavior. Insecurity in agent protocols is therefore not only a specification or implementation problem, but also a responsibility gap across protocols, SDKs, and deployments.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-30 13:02:43"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.22714",
+ "title": "AMEL: Accumulated Message Effects on LLM Judgments",
+ "authors": "Sid-ali Temkit",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22714v1",
+ "abstract": "Large language models are routinely used as automated evaluators: to review code, moderate content, or score outputs, often with many items passing through one conversation. We ask whether the polarity of prior conversation history biases subsequent judgments, an effect we call the accumulated message effect on LLM judgments (AMEL). Across 75,898 API calls to 11 models from 4 providers (OpenAI, Anthropic, Google, and four open-source models), we present identical test items in isolation or following histories saturated with predominantly positive or negative evaluations.\n  Models shift toward the conversation's prevailing polarity (d = -0.17, p < 10^-46). The effect concentrates on items where the model is genuinely uncertain at baseline (d = -0.34 for high-entropy items, vs d = -0.15 when the baseline is deterministic). Bias does not grow with context length: 5 prior turns and 50 produce the same shift (Spearman |r| < 0.01; OLS slope p = 0.80). And there is a negativity asymmetry: paired per item, negative histories induce 1.62x more bias than positive (t = 13.46, p < 10^-39, n = 2,481). Scaling helps but does not solve it (Anthropic: Haiku -0.22 to Opus -0.17; OpenAI: Nano -0.34 to GPT-5.2 -0.17).\n  Three follow-ups narrow the mechanism. The token probability distribution shifts continuously, not at a threshold. The negativity asymmetry has both token-level and semantic components, though attributing the balance is exploratory at our sample sizes. Position does not matter: five biased turns anywhere in a 50-turn history produce the same shift. The simplest fix for evaluation pipelines is a fresh context per item; when batching is unavoidable, balancing the history helps.",
+ "summary": "# 论文总结：AMEL: Accumulated Message Effects on LLM Judgments\n\n## 1. 核心创新点\n首次系统性地揭示并量化了\"累积消息效应\"（AMEL）——LLM 作为自动评估器时，会被先前对话历史的正负极性所污染，导致后续判断偏向于历史的主导极性。\n\n## 2. 主要方法\n- **大规模实验**：对 4 家厂商（OpenAI、Anthropic、Google 及 4 个开源模型）共 11 个模型发起 **75,898 次 API 调用**。\n- **对照设计**：将同一测试条目分别以\"独立呈现\"和\"前置充满正/负评价历史\"两种条件下输入模型，比较判断差异。\n- **机制分析**：追加三项后续研究，包括 token 概率分布的连续性分析、负向不对称的 token 级与语义级分解，以及偏置历史在上下文中的位置效应。\n\n## 3. 结论/性能\n- **存在显著偏置**：模型判断会朝对话主导极性偏移（d = -0.17，p < 10⁻⁴⁶）。\n- **不确定条目最受影响**：基线高熵条目偏置更大（d = -0.34 vs 确定性条目 d = -0.15）。\n- **偏置不随上下文长度增长**：5 轮与 50 轮历史产生相同偏移。\n- **负向不对称**：负面历史诱发的偏置是正面历史的 **1.62 倍**。\n- **模型规模有缓解但无法消除**：例如 Anthropic 从 Haiku 的 -0.22 改善到 Opus 的 -0.17。\n- **实用建议**：评估流水线应**每条目使用新上下文**；若必须批处理，则需平衡历史极性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:02:27"
+}

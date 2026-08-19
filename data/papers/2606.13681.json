@@ -1,0 +1,13 @@
+{
+ "id": "2606.13681",
+ "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+ "authors": "Jundong Xu, Qingchuan Li, Jiaying Wu, Yihuai Lan, Shuyue Stella Li, Huichi Zhou, Bowen Jiang, Lei Wang, Jun Wang, Anh Tuan Luu, Caiming Xiong, Hae Won Park, Bryan Hooi, Zhiyuan Hu",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13681v1",
+ "abstract": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+ "summary": "**EvoArena 论文总结**\n\n1. **核心创新点**：针对现实部署中环境持续变化的问题，提出动态环境评测基准 EvoArena 及基于\"补丁\"的记忆机制 EvoMem，让智能体能通过记忆的演化历史来推理环境变化。\n\n2. **主要方法**：\n   - **EvoArena**：将环境变化建模为终端（terminal）、软件（software）、社交偏好（social）三大领域上的一系列渐进式更新序列，构成基准测试套件。\n   - **EvoMem**：一种基于补丁（patch-based）的记忆范式，把记忆演化记录为结构化的\"更新历史\"，从而保留完整的环境演变状态。\n\n3. **结论/性能**：\n   - 现有智能体在 EvoArena 上表现不佳，三大领域平均准确率仅 **39.6%**，说明动态环境极具挑战性。\n   - EvoMem 带来稳定提升：EvoArena 上平均 **+1.5%**，链式（连续子任务）准确率 **+3.7%**；在标准基准 GAIA 和 LoCoMo 上分别提升 **+6.1%** 和 **+4.8%**。\n   - 机理分析表明 EvoMem 改善了记忆中的证据捕获能力，更好地保存了演化中的完整环境状态，凸显了在评测与记忆中对\"演化\"建模的重要性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-12 13:01:56"
+}

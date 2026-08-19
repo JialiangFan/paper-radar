@@ -1,0 +1,13 @@
+{
+ "id": "2512.15397",
+ "title": "ORACLE: Time-Dependent Recursive Summary Graphs for Foresight on News Data Using LLMs",
+ "authors": "Lev Kharlashkin, Eiaki Morooka, Yehor Tereshchenko, Mika Hämäläinen",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15397v1",
+ "abstract": "ORACLE turns daily news into week-over-week, decision-ready insights for one of the Finnish University of Applied Sciences. The platform crawls and versions news, applies University-specific relevance filtering, embeds content, classifies items into PESTEL dimensions and builds a concise Time-Dependent Recursive Summary Graph (TRSG): two clustering layers summarized by an LLM and recomputed weekly. A lightweight change detector highlights what is new, removed or changed, then groups differences into themes for PESTEL-aware analysis. We detail the pipeline, discuss concrete design choices that make the system stable in production and present a curriculum-intelligence use case with an evaluation plan.",
+ "summary": "- 核心创新点：提出 Time-Dependent Recursive Summary Graph (TRSG) 框架，通过每周重新聚类并用大语言模型（LLM）汇总，结合轻量级变更检测，实现对新闻的周度前瞻性分析与基于 PESTEL 的主题分组。\n\n- 主要方法：包括新闻抓取与版本化、大学相关性过滤、文本嵌入、按 PESTEL 分类；构建两层聚类的 TRSG 并由 LLM 进行汇总、按周重新计算；使用轻量级变更检测识别新增/删除/变更并将差异聚合成主题以支持 PESTEL 感知分析；并讨论适用于生产环境的设计要点，给出一个课程智能化用例及评估计划。\n\n- 结论/性能：系统能把日常新闻转化为周度、可决策的洞见，提供变更检测与主题聚合以促进 PESTEL 分析；文章重点在于管线设计的生产化稳定性与一个课程智能化用例及其评估计划，未给出具体量化指标。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-18 02:07:33"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.08561",
+ "title": "RetroAgent: From Solving to Evolving via Retrospective Dual Intrinsic Feedback",
+ "authors": "Xiaoying Zhang, Zichen Liu, Yipeng Zhang, Xia Hu, Wenqi Shao",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.08561v1",
+ "abstract": "Large language model (LLM)-based agents trained with reinforcement learning (RL) have shown strong potential on complex interactive tasks. However, standard RL paradigms favor static problem-solving over continuous adaptation: agents often converge to suboptimal strategies due to insufficient exploration, while learned knowledge remains implicit within parameters rather than explicitly retrievable, limiting effective experiential learning. To address these limitations, we introduce RetroAgent, an online RL framework that empowers agents to master complex interactive environments not just by solving, but by evolving. Concretely, RetroAgent features a hindsight self-reflection mechanism that produces dual intrinsic feedback: (1) intrinsic numerical feedback that that tracks incremental subtask completion relative to prior attempts, rewarding promising explorations, and (2) intrinsic language feedback that distills reusable lessons into a memory buffer, retrieved via our proposed Similarity & Utility-Aware Upper Confidence Bound (SimUtil-UCB) strategy balancing relevance, utility, and exploration to effectively leverage past experiences. Extensive experiments on two model families across four challenging agentic tasks demonstrate that RetroAgent significantly outperforms existing methods, achieving state-of-the-art results -- e.g., surpassing Group Relative Policy Optimization (GRPO)-trained agents by +18.3% on ALFWorld, +15.4% on WebShop, +27.1% on Sokoban, and +8.9% on MineSweeper -- while exhibiting strong test-time adaptation and generalization to out-of-distribution scenarios.",
+ "summary": "1. 核心创新点：提出一个基于回顾性自我反思的在线强化学习框架 RetroAgent，通过双内在反馈（数值性与语言性）结合 SimUtil-UCB 记忆检索实现从“解决”到“进化”的学习与经验复用。\n\n2. 主要方法：\n- 引入 hindsight self-reflection 机制，产生两类 intrinsic feedback：\n  - 内在数值反馈：跟踪相对于以往尝试的子任务完成的增量，奖励具有潜力的探索。\n  - 内在语言反馈：提炼可复用的经验教训并存入记忆缓冲区。\n- 记忆检索采用 SimUtil-UCB 策略，平衡相关性、实用性与探索度，以高效利用历史经验。\n- 在两种模型家族上进行在线 RL 实验，覆盖四个具有挑战性的智能体任务，方法对比基线 GRPO，取得显著提升。\n\n3. 结论/性能：\n- 取得 state-of-the-art 成果：相较 GRPO-training 的代理，分别在 ALFWorld、WebShop、Sokoban、MineSweeper 上提升约 18.3%、15.4%、27.1%、8.9%。\n- 展现出强的测试时适应性与对分布外情景的泛化能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-10 13:03:52"
+}

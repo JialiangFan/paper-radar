@@ -1,0 +1,13 @@
+{
+ "id": "2603.12230",
+ "title": "Security Considerations for Artificial Intelligence Agents",
+ "authors": "Ninghui Li, Kaiyuan Zhang, Kyle Polley, Jerry Ma",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12230v1",
+ "abstract": "This article, a lightly adapted version of Perplexity's response to NIST/CAISI Request for Information 2025-0035, details our observations and recommendations concerning the security of frontier AI agents. These insights are informed by Perplexity's experience operating general-purpose agentic systems used by millions of users and thousands of enterprises in both controlled and open-world environments. Agent architectures change core assumptions around code-data separation, authority boundaries, and execution predictability, creating new confidentiality, integrity, and availability failure modes. We map principal attack surfaces across tools, connectors, hosting boundaries, and multi-agent coordination, with particular emphasis on indirect prompt injection, confused-deputy behavior, and cascading failures in long-running workflows. We then assess current defenses as a layered stack: input-level and model-level mitigations, sandboxed execution, and deterministic policy enforcement for high-consequence actions. Finally, we identify standards and research gaps, including adaptive security benchmarks, policy models for delegation and privilege control, and guidance for secure multi-agent system design aligned with NIST risk management principles.",
+ "summary": "1) 核心创新点\n- 提出面向前沿AI代理的系统性安全框架，系统性映射攻击面并给出分层防御与对齐NIST风险管理原则的设计与研究路线。\n\n2) 主要方法\n- 基于大量实际运营经验，对代理系统的攻击面（工具、连接器、托管边界、多代理协调等）进行梳理；提出分层防御栈（输入层和模型层防护、沙箱执行、对高风险动作的确定性策略执行）；评估现有防御并指明标准化与研究差距。\n\n3) 结论/性能\n- 提供对当前防御的综合评估和可操作的改进建议，明确未来方向包括自适应安全基准、委派与权限控制的策略模型，以及与NIST风险管理原则对齐的安全多代理系统设计指南。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-15 13:01:26"
+}

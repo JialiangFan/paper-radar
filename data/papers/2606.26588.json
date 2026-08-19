@@ -1,0 +1,13 @@
+{
+ "id": "2606.26588",
+ "title": "Inference-Time Robot Behavior Steering through Physically-Aware Reconfiguration of Task-Structure",
+ "authors": "Yiyuan Pan, Hanjiang Hu, Shangtao Li, Xusheng Luo, Changliu Liu",
+ "date": "2026-06-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.26588v1",
+ "abstract": "A central challenge in deploying learned robot policies is inference-time behavior steering: redirecting a policy at test time to satisfy user preferences not anticipated during training, without retraining. Existing methods fail in two modes: end-to-end methods require fine-tuning or expert-level guidance, while neuro-symbolic methods rely on predefined symbols whose edits can result in logically reasonable but physically infeasible plans. To address this challenge, we propose ReStruct, which builds upon a neural automaton policy that decomposes a visuomotor policy into a high-level state-machine skeleton capturing task structure and a low-level continuous controller represented as a residual policy. Specifically, ReStruct adopts the automaton to represent the preference and incorporates it into the skeleton through a synchronous product, thereby reconfiguring the task structure. With the controller kept frozen, the action priors provided by the skeleton are updated accordingly to enable physically-aware control under a modified task structure. Extensive experiments from simulation and real-world show that ReStruct steers a wide range of preferences, from object-centric specifications to temporal-logic constraints, and after steering surpasses existing methods, exceeding VLA models in both task success and preference-following by up to 25%.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-28 13:03:31"
+}

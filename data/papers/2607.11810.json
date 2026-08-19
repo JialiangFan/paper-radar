@@ -1,0 +1,13 @@
+{
+ "id": "2607.11810",
+ "title": "Supporting Reflection in LLM-based Exploratory Search",
+ "authors": "Giulia Di Fede, Salvatore Andolina",
+ "date": "2026-07-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.11810v1",
+ "abstract": "Large Language Models (LLMs) can make exploratory search more efficient but may undermine the reflection and iterative sensemaking needed in unfamiliar domains. Existing LLM tools often prioritize rapid answers over supporting users in tracking how their understanding evolves and how well their strategies align with their goals. We present TrailLM, a system that helps users reconstruct and revisit their exploration paths to support reflection and metacognitive engagement during information seeking. By aligning LLM assistance with users' sensemaking workflows, TrailLM aims to preserve the benefits of LLM-based search while enhancing opportunities for critical reflection on one's own search process.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-14 13:02:25"
+}

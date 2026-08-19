@@ -1,0 +1,13 @@
+{
+ "id": "2604.19728",
+ "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+ "authors": "Jean Mercat, Sedrick Keh, Kushal Arora, Isabella Huang, Paarth Shah, Haruki Nishimura, Shun Iwase, Katherine Liu",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19728v1",
+ "abstract": "We present VLA Foundry, an open-source framework that unifies LLM, VLM, and VLA training in a single codebase. Most open-source VLA efforts specialize on the action training stage, often stitching together incompatible pretraining pipelines. VLA Foundry instead provides a shared training stack with end-to-end control, from language pretraining to action-expert fine-tuning. VLA Foundry supports both from-scratch training and pretrained backbones from Hugging Face. To demonstrate the utility of our framework, we train and release two types of models: the first trained fully from scratch through our LLM-->VLM-->VLA pipeline and the second built on the pretrained Qwen3-VL backbone. We evaluate closed-loop policy performance of both models on LBM Eval, an open-data, open-source simulator. We also contribute usability improvements to the simulator and the STEP analysis tools for easier public use. In the nominal evaluation setting, our fully-open from-scratch model is on par with our prior closed-source work and substituting in the Qwen3-VL backbone leads to a strong multi-task table top manipulation policy outperforming our baseline by a wide margin. The VLA Foundry codebase is available at https://github.com/TRI-ML/vla_foundry and all multi-task model weights are released on https://huggingface.co/collections/TRI-ML/vla-foundry. Additional qualitative videos are available on the project website https://tri-ml.github.io/vla_foundry.",
+ "summary": "- 核心创新点：提出一个统一的开源框架 VLA Foundry，将语言模型（LLM）、视觉-语言模型（VLM）和视觉-语言-行动模型（VLA）的训练整合在单一代码库中，支持端到端的从头训练到行动专家微调，并可使用 Hugging Face 的预训练骨干。\n\n- 主要方法：实现一个从语言预训练到 VLM 对齐再到 VLA 策略微调的一体化训练栈，提供从头训练和基于 Qwen3-VL 等预训练骨干的两种模型路径；在开源仿真平台 LBM Eval 上进行闭环策略评估；对仿真器和 STEP 分析工具进行了可用性改进；代码公开在 GitHub，权重公开在 Hugging Face。\n\n- 结论/性能：在常态评估中，完全从头训练的模型与此前的闭源工作相当；使用 Qwen3-VL 骨干后，模型在多任务桌面操控任务上显著优于基线，表现出强劲的多任务策略能力，且相关多任务模型权重已公开。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-22 13:00:46"
+}

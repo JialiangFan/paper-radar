@@ -1,0 +1,13 @@
+{
+ "id": "2606.17210",
+ "title": "Testing masking effectiveness using multi-line image cubes based on COSMOS2020 for [CII] line intensity mapping at $z_{[CII]} > 3.5$",
+ "authors": "J. Clarke, C. Karoumpis, A. Dev, D. Riechers, T. Oak, Y. Okada, K. Narita, F. Bertoldi",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.17210v1",
+ "abstract": "We created line intensity mapping intensity cubes for CO and [CII] emission lines using the COSMOS2020 galaxy catalogue, forming predictions based on empirical data, for observations from Prime-Cam mounted on the Fred Young Submm Telescope. We also included simulated noise including white and correlated components, and tested masking techniques to recover [CII] signal at $3.5<z<8.2$. We applied line luminosity models to the COSMOS2020 galaxy catalogue, spanning 1.44deg$^2$, to estimate the [CII] and CO J=1-0 emission, with other CO transitions derived using Spectral Line Energy Distribution templates. From these we made cubes for four 40 GHz bands in the EoR-Spec frequency range (205-420GHz), as well as a potential future upgrade to EoR-Spec including bands at 150 and 90GHz. Given the incompleteness of the empirical catalogue, these predictions are conservative lower limits, which we subsequently extrapolated from. We applied masks to recover the [CII] power spectra, using bright galaxies of COSMOS2020 as a foreground catalogue to target CO at low z (targeted masking), and matching bright voxels across frequency bands to eliminate those associated with CO emission (blind masking). Our CO intensity cube predictions are consistent with ALMA, VLA and NOEMA observations, indicating that this method gives realistic CO estimates for E-COSMOS. In ideal conditions, masking can recover [CII] above 300GHz, with targeted masking requiring a complete foreground catalogue of bright CO sources to prevent them from contributing to contaminant emission, and blind masking needing additional lower frequency ranges to be effective. However, noise will hinder [CII] recovery above 300 GHz until near the end of the currently planned 2000 hour observing period, as $S/N<5$ without extra observing time. Whilst CO can be recovered below 300GHz, [CII] will be unavailable without cross correlation techniques.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-22 13:04:39"
+}

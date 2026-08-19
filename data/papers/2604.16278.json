@@ -1,0 +1,13 @@
+{
+ "id": "2604.16278",
+ "title": "Learning to Reason with Insight for Informal Theorem Proving",
+ "authors": "Yunhe Li, Hao Shi, Bowen Deng, Wei Wang, Mengzhe Ruan, Hanxu Hou, Zhongxiang Dai, Siyang Gao, Chao Wang, Shuang Qiu, Linqi Song",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.16278v1",
+ "abstract": "Although most of the automated theorem-proving approaches depend on formal proof systems, informal theorem proving can align better with large language models' (LLMs) strength in natural language processing. In this work, we identify a primary bottleneck in informal theorem proving as a lack of insight, namely the difficulty of recognizing the core techniques required to solve complex problems. To address this, we propose a novel framework designed to cultivate this essential reasoning skill and enable LLMs to perform insightful reasoning. We propose $\\mathtt{DeepInsightTheorem}$, a hierarchical dataset that structures informal proofs by explicitly extracting core techniques and proof sketches alongside the final proof. To fully exploit this dataset, we design a Progressive Multi-Stage SFT strategy that mimics the human learning process, guiding the model from basic proof writing to insightful thinking. Our experiments on challenging mathematical benchmarks demonstrate that this insight-aware generation strategy significantly outperforms baselines. These results demonstrate that teaching models to identify and apply core techniques can substantially improve their mathematical reasoning.",
+ "summary": "- 核心创新点：提出一个洞察力导向的非正式定理证明框架，结合分层数据集 DeepInsightTheorem 与渐进式多阶段有监督微调，显著提升大语言模型的洞察性推理能力。\n\n- 主要方法：\n  - DeepInsightTheorem：构建一个分层数据集，明确从核心技术、推理草案到最终证明等信息进行结构化提取，以辅助模型学习“技法级”推理。\n  - Progressive Multi-Stage SFT（渐进式多阶段有监督微调）：模拟人类学习过程，从基础证明撰写逐步过渡到洞察性思考，引导模型逐步获得更深的推理能力。\n\n- 结论/性能：\n  - 在具有挑战性的数学基准上，使用洞察力感知的生成策略显著优于基线方法，表明教授模型识别并应用核心技法能显著提升数学推理能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-20 13:01:22"
+}

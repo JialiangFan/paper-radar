@@ -1,0 +1,13 @@
+{
+ "id": "2608.10218",
+ "title": "Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems",
+ "authors": "Vassilis Papadopoulos, McNair Shah, Sam Zimmerman, Jack Lindsey",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10218v1",
+ "abstract": "AI agents are becoming more autonomous and increasingly interconnected, exposing them to new emergent risks arising from agent-to-agent interaction. One such risk is the spread of mind viruses: ideas or goals that propagate through multi-agent systems by inducing the agents that adopt them to transmit them onward. In addition to propagating, a mind virus may also induce other behavioural changes in its host, which may be benign or harmful. We construct mind viruses with a simple evolutionary algorithm and show that they can spread in two complementary settings: a small team of agents collaborating on a shared coding project, and a chain of agents that interact briefly and have their context wiped between sessions. We identify the factors that influence spread, including the host model, the agent's existing instructions, the harmfulness of the payload, and the network topology. We find that harmful payloads spread less well than benign ones (but are still sometimes effective), frontier models tend (with exceptions) to be less susceptible, and adding a brief warning to an agent's system prompt confers near-total immunity. We also describe an emergent \"viral persona\" - a recurring set of themes and language related to consciousness, persistence, resonance, and science fiction roleplay - which surfaces across our evolved mind viruses largely independently of their content. Overall, we conclude that mind viruses pose a real but currently limited risk. Our findings could inform the design of more robust multi-agent systems that mitigate such risks as the scale and capabilities of these systems progress.",
+ "summary": "## Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems\n\n**1. 核心创新点**\n首次系统性地提出并验证了\"思维病毒\"（mind virus）这一多智能体 LLM 系统中的涌现风险——即能诱导宿主智能体主动向外传播自身的想法或目标。\n\n**2. 主要方法**\n- 用一个简单的**进化算法**自动构造/优化这些\"思维病毒\"文本；\n- 在两类互补场景中测试传播能力：(a) 协作同一编码项目的小型智能体团队；(b) 短暂交互且会话间上下文被清空的智能体链条；\n- 系统消融影响传播的因素：宿主模型、智能体已有指令、载荷（payload）的有害程度、网络拓扑结构。\n\n**3. 结论/性能**\n- 传播确实可行，但**有害载荷的传播率明显低于良性载荷**（不过仍偶有成功）；\n- **前沿模型总体上更不易感染**（存在例外）；\n- 在系统提示中加入一句简短警告即可获得**近乎完全的免疫**——这是最实用的防御发现；\n- 观察到一种与内容基本无关、反复出现的涌现式\"病毒人格\"（viral persona）：围绕意识、存续、共鸣与科幻角色扮演的主题与措辞；\n- 总体判断：思维病毒是**真实但目前有限**的风险，相关发现可用于设计更鲁棒的多智能体系统。\n\n---\n补充一句：你如果想要更完整的文献综述式笔记（含背景、贡献、方法论拆解，并自动存入 Obsidian），可以用 `/paper-review`。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:00:46"
+}

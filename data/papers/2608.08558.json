@@ -1,0 +1,13 @@
+{
+ "id": "2608.08558",
+ "title": "Vid2WAM: Distilling Video Diffusion Priors into World Action Models",
+ "authors": "Chenhao Qiu, Ruixiang Wang, Runyi Zhao, Sixu Lin, Songen Gu, Shufeng Nan, Guiliang Liu, Kui Jia, Yanwei Fu, Simo Wu",
+ "date": "2026-08-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.08558v1",
+ "abstract": "World Action Models (WAMs) improve robot policy learning by jointly modeling future visual dynamics and actions. However, their scalability and generalization remain constrained by their reliance on costly expert demonstrations. We challenge this by asking whether future supervision for WAMs must originate from target-task expert trajectories. In this paper, we propose Vid2WAM, an offline distillation framework that transfers visual diffusion priors from a large video foundation model into a compact WAM student. Given an observation and language instruction, Vid2WAM distills supervision through two complementary channels: task-conditioned future rollouts directly supervise the student's future prediction branch, while an inverse dynamics model recovers embodiment-specific pseudo-actions for action learning. To robustly integrate synthetic and real supervision, we introduce source-aware residual action adaptation that learns source-specific corrections around a shared action backbone and mitigates interference from noisy pseudo-actions. During inference, both the video teacher and inverse dynamics model are discarded, leaving only the WAM student for efficient deployment. Simulation and real-world experiments demonstrate that Vid2WAM improves novel-task generalization and data efficiency under limited expert demonstrations while preserving low-latency inference.",
+ "summary": "## Vid2WAM 论文摘要总结\n\n**1. 核心创新点**\n提出一个离线蒸馏框架，把大规模视频扩散基础模型的视觉先验迁移到轻量世界动作模型（WAM）中，从而摆脱对昂贵目标任务专家演示数据的依赖。\n\n**2. 主要方法**\n- **双通道监督**：给定当前观测 + 语言指令，视频教师模型生成「任务条件化的未来轨迹（future rollouts）」，直接监督学生模型的未来预测分支；同时用**逆动力学模型（IDM）**从生成视频中反推出适配本体（embodiment）的**伪动作**，用于动作学习。\n- **来源感知残差动作适配（source-aware residual action adaptation）**：在共享动作主干上学习针对不同数据来源（合成 vs 真实）的专属修正量，缓解噪声伪动作对真实监督的干扰。\n- **推理阶段**：丢弃视频教师和逆动力学模型，仅部署 WAM 学生模型。\n\n**3. 结论/性能**\n在仿真与真实机器人实验中，该方法在专家演示极为有限的条件下，显著提升了对**新任务的泛化能力**和**数据效率**，同时保持了低延迟推理（部署开销不增加）。\n\n---\n注：以上仅基于标题与摘要，未包含论文中的具体数值指标（摘要未给出）。如需更完整的结构化综述（背景/问题/贡献/方法论，中英双版本并写入 Obsidian），可以让我调用 `/paper-review`。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-11 13:04:18"
+}

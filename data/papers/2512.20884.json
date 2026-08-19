@@ -1,0 +1,13 @@
+{
+ "id": "2512.20884",
+ "title": "The Silent Scholar Problem: A Probabilistic Framework for Breaking Epistemic Asymmetry in LLM Agents",
+ "authors": "Zan-Kai Chong, Hiroyuki Ohsaki, Bryan Ng",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20884v1",
+ "abstract": "Autonomous agents powered by LLMs and Retrieval-Augmented Generation (RAG) are proficient consumers of digital content but remain unidirectional, a limitation we term epistemic asymmetry. This isolation leads to redundant reasoning and stagnates collective intelligence. Current self-reflection frameworks remain largely heuristic and private, lacking a probabilistic foundation to quantify certainty or justify external interaction.To bridge this gap, we propose a formal probabilistic framework that provides agents with a non-altruistic motive for bidirectional knowledge exchange. We model an agent's belief in a proposition using a Beta-Bernoulli distribution with a forgetting factor ($γ$). This allows us to isolate epistemic uncertainty as the variance of belief, establishing a dual drive for interaction: A homeostatic motive: The need to maintain certainty against the temporal decay introduced by $γ$. An optimal learning strategy: Targeting points of maximum ambiguity ($\\mathbb{E}[θ]=0.5$) to maximize information gain. Under this framework, public contribution is reframed as optimal active learning: sharing solutions to elicit feedback is the most efficient method for an agent to reduce its own uncertainty. To ensure scalability, we introduce epistemic caching, which leverages the forgetting factor to dynamically prioritize resources for the active head of non-stationary knowledge distributions. Finally, we demonstrate how these accumulated belief states serve as verifiable reward signals for Reinforcement Learning from Human Feedback (RLHF) and high-quality data filters for Supervised Fine-Tuning (SFT). Simulation results validate that this uncertainty-driven strategy significantly outperforms random baselines in heterogeneous (Zipfian) environments, maintaining high adaptability to concept drift.",
+ "summary": "核心创新点（简短一句话）\n- 提出一个基于 Beta-Bernoulli 信念模型并结合遗忘因子 γ 的概率框架，用以量化并驱动 LLM/RAG 代理的双向知识交换，从而打破 epistemic asymmetry。\n\n主要方法（技术与模型要点）\n- 信念建模：用 Beta-Bernoulli 分布描述对命题的信念，并引入遗忘因子 γ，将 epistemic 不确定性界定为信念方差。\n- 动机与学习目标：构建 homeostatic 与信息增益驱动的双重机制，优先在不确定性最高点（E[θ]=0.5）进行信息获取以最大化信息增益。\n- 公共贡献的新定位：将公开分享解答视为最优主动学习策略，通过 eliciting 反馈来高效降低自身不确定性。\n- 可扩展性设计：引入 epistemic caching，利用 γ 动态优先处理非平稳知识分布的前端资源。\n- 应用与数据处理：将累计信念状态转化为可验证的奖励信号用于 RLHF，并作为高质量数据筛选用于 SFT。\n\n结论/性能（取得的效果）\n- 仿真结果显示，该不确定性驱动策略在异质的 Zipfian 环境中显著优于随机基线，并且对概念漂移具有较强的适应性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:51:49"
+}

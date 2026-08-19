@@ -1,0 +1,13 @@
+{
+ "id": "2604.26694",
+ "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+ "authors": "Jun Guo, Qiwei Li, Peiyan Li, Zilong Chen, Nan Sun, Yifei Su, Heyun Wang, Yuan Zhang, Xinghang Li, Huaping Liu",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26694v2",
+ "abstract": "We propose X-WAM, a Unified 4D World Model that unifies real-time robotic action execution and high-fidelity 4D world synthesis (video + 3D reconstruction) in a single framework, addressing the critical limitations of prior unified world models (e.g., UWM) that only model 2D pixel-space and fail to balance action efficiency and world modeling quality. To leverage the strong visual priors of pretrained video diffusion models, X-WAM imagines the future world by predicting multi-view RGB-D videos, and obtains spatial information efficiently through a lightweight structural adaptation: replicating the final few blocks of the pretrained Diffusion Transformer into a dedicated depth prediction branch for the reconstruction of future spatial information. Moreover, we propose Asynchronous Noise Sampling (ANS) to jointly optimize generation quality and action decoding efficiency. ANS applies a specialized asynchronous denoising schedule during inference, which rapidly decodes actions with fewer steps to enable efficient real-time execution, while dedicating the full sequence of steps to generate high-fidelity video. Rather than entirely decoupling the timesteps during training, ANS samples from their joint distribution to align with the inference distribution. Pretrained on over 5,800 hours of robotic data, X-WAM achieves 79.2% and 90.7% average success rate on RoboCasa and RoboTwin 2.0 benchmarks, while producing high-fidelity 4D reconstruction and generation surpassing existing methods in both visual and geometric metrics.",
+ "summary": "## X-WAM 论文总结\n\n1. **核心创新点**：提出 X-WAM 统一 4D 世界模型，首次在单一框架内同时实现实时机器人动作执行与高保真 4D 世界合成（多视角视频 + 3D 重建），突破了 UWM 等先前方法仅建模 2D 像素空间、难以兼顾动作效率与世界建模质量的瓶颈。\n\n2. **主要方法**：\n   - 基于预训练视频 Diffusion Transformer，通过预测多视角 RGB-D 视频来\"想象\"未来世界；\n   - **轻量化结构适配**：复制 DiT 最后几个 block 形成专用深度预测分支，高效获取未来空间信息以支持 3D 重建；\n   - **异步噪声采样 (Asynchronous Noise Sampling, ANS)**：推理时为动作分支使用少步快速去噪以满足实时性，为视频分支保留完整去噪步数以保证生成质量；训练时不完全解耦时间步，而是从联合分布中采样以对齐推理分布。\n\n3. **结论/性能**：在 5800+ 小时机器人数据上预训练后，在 RoboCasa 与 RoboTwin 2.0 基准上分别取得 **79.2%** 和 **90.7%** 的平均成功率，同时在视觉与几何指标上的 4D 重建与生成质量均超越现有方法。\n\n> 注：由于当前环境未挂载 Obsidian MCP 工具，未执行 skill 中的 vault 写入步骤；如需归档到 Obsidian，请告知或启用对应 MCP。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-24 13:03:44"
+}

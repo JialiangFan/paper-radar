@@ -1,0 +1,13 @@
+{
+ "id": "2607.25912",
+ "title": "SAM3D-Guided Object-Centric Representation Alignment for Vision-Language-Action Models",
+ "authors": "Zonghe Liu, Shanyuan Jie, Xiaoquan Sun, Chen Cao, Zetian Xu, Zongsheng Liu, Jiayu Chen",
+ "date": "2026-07-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.25912v1",
+ "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general robot manipulation, but most existing models rely on 2D visual-language backbones and lack fine-grained 3D understanding of target objects, especially under occlusion, pose variation, scale changes, and precise spatial interaction. We propose an object-centric 3D representation alignment framework built upon $π_0$, using SAM3D as a frozen 3D teacher to provide target-object 3D priors during training. Specifically, we localize task-relevant objects with object recognition models, generate corresponding object masks, and use SAM3D to extract dense object-level 3D representations, which are aligned with intermediate visual features of $π_0$. This enables the policy to internalize target-object 3D information while preserving the original RGB-language-to-action inference pipeline without requiring depth, point clouds, masks, SAM3D, or additional 3D modules at test time. Simulation experiments show consistent improvements, achieving 99.1\\% on LIBERO and an average length of 4.11 on CALVIN. Real-world experiments further demonstrate that our method is particularly effective in long-horizon manipulation scenarios where the robot must focus on different target objects across multiple subtasks.",
+ "summary": "**SAM3D 引导的物体中心表征对齐（面向 VLA 模型）**\n\n1. **核心创新点**\n以 SAM3D 作为冻结的「3D 教师」，把目标物体级的 3D 先验蒸馏进 VLA 模型的视觉特征中，让策略在推理时仅靠 RGB+语言就具备 3D 理解能力。\n\n2. **主要方法**\n基于 π₀ 构建物体中心的 3D 表征对齐框架：先用物体识别模型定位任务相关物体并生成掩码，再由 SAM3D 提取稠密的物体级 3D 表征，与 π₀ 的中间视觉特征做对齐（训练期蒸馏）。测试阶段不需要深度图、点云、掩码、SAM3D 或任何额外 3D 模块，完全保留原有 RGB-语言→动作的推理管线。\n\n3. **结论/性能**\n仿真上稳定提升：LIBERO 达 99.1%，CALVIN 平均任务长度 4.11。真机实验表明，该方法在需要跨多个子任务切换关注不同目标物体的长时序操作场景中收益尤为明显。\n\n值得注意的是，摘要未给出 π₀ 基线的对应数值，因此「提升幅度」需查看正文才能判断。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-02 13:03:48"
+}

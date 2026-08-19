@@ -1,0 +1,13 @@
+{
+ "id": "2603.13134",
+ "title": "When Right Meets Wrong: Bilateral Context Conditioning with Reward-Confidence Correction for GRPO",
+ "authors": "Yu Li, Tian Lan, Zhengling Qi",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13134v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) has emerged as an effective method for training reasoning models. While it computes advantages based on group mean, GRPO treats each output as an independent sample during the optimization and overlooks a vital structural signal: the natural contrast between correct and incorrect solutions within the same group, thus ignoring the rich, comparative data that could be leveraged by explicitly pitting successful reasoning traces against failed ones. To capitalize on this, we present a contrastive reformulation of GRPO, showing that the GRPO objective implicitly maximizes the margin between the policy ratios of correct and incorrect samples. Building on this insight, we propose Bilateral Context Conditioning (BICC), a mechanism that allows the model to cross-reference successful and failed reasoning traces during the optimization, enabling a direct information flow across samples. We further introduce Reward-Confidence Correction (RCC) to stabilize training by dynamically adjusts the advantage baseline in GRPO using reward-confidence covariance derived from the first-order approximation of the variance-minimizing estimator. Both mechanisms require no additional sampling or auxiliary models and can be adapted to all GRPO variants. Experiments on mathematical reasoning benchmarks demonstrate consistent improvements across comprehensive models and algorithms. Code is available at \\href{https://github.com/Skylanding/BiCC}{https://github.com/Skylanding/BiCC}.",
+ "summary": "- 核心创新点：在 GRPO 框架中提出 Bilateral Context Conditioning（BICC）与 Reward-Confidence Correction（RCC），通过显式对比同组内的正确与错误推理并实现跨样本信息流动，从而提升推理模型的学习效果。\n\n- 主要方法：\n  - 将 GRPO 的目标以对比形式呈现，强调正确与错误样本之间的边际差；\n  - Bilateral Context Conditioning (BICC)：在优化过程中让模型跨样本对照成功与失败的推理轨迹，实现信息的直接流动和比较；\n  - Reward-Confidence Correction (RCC)：基于第一阶近似的方差最小化估计，利用奖励-置信度协方差动态调整优势基线，稳定训练；\n  - 该方法无需额外采样或辅助模型，且可适用于所有 GRPO 变体。\n\n- 结论/性能：在数学推理基准上对多种模型和算法均实现了一致且显著的性能提升，且代码已开源发布。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-16 13:02:25"
+}

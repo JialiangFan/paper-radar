@@ -1,0 +1,13 @@
+{
+ "id": "2606.01816",
+ "title": "Site4Drug: Predicting Drug-Binding Target Sites with an AI Agent",
+ "authors": "Taehan Kim, Sarrah Rose Mikhail Leung, Bharat Mekala, Jeongbin Park",
+ "date": "2026-06-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01816v1",
+ "abstract": "Selecting where to intervene on a protein (i.e., choosing a targetable site) is often a more ambiguous and failure-prone bottleneck than selecting what binds, especially for membrane proteins where accessibility, topology, and post-translational modifications (PTMs) constrain actionable regions. We present Site4Drug, a modality-aware site-finding agent that outputs a ranked list of targetable regions with explicit constraints, evidence summaries, risk flags, and a traceable decision log.\n  Rather than requiring users to specify the drug modality upfront, Site4Drug can recommend a binding modality (e.g., antibody/peptide-like vs small-molecule) from the same evidence used for site discovery, including topology, hydropathy, PTM propensity, disulfides, domain context, and sequence. Importantly, this evidence is applied consistently across modalities, including small-molecule pocket discovery, to avoid selecting chemically plausible but biologically occluded sites.",
+ "summary": "**核心创新点**：Site4Drug 提出了一个\"模态感知\"的 AI 智能体，将药物靶点研究从\"选择什么分子结合\"转向\"选择在蛋白质的哪个位点干预\"，并能基于同一证据自动推荐合适的药物模态（抗体/多肽 vs 小分子）。\n\n**主要方法**：构建了一个 AI Agent 系统，整合拓扑结构、疏水性、翻译后修饰（PTM）倾向、二硫键、结构域上下文和序列等多维证据，输出带有约束条件、证据摘要、风险标记和可追溯决策日志的可靶向区域排序列表；该证据框架在不同模态（包括小分子口袋发现）间一致应用。\n\n**结论/性能**：能针对膜蛋白等靶点选择难题，避免推荐\"化学上合理但生物学上被遮蔽\"的位点，从而缓解靶点选择这一比配体选择更模糊、更易失败的研发瓶颈（摘要中未给出具体量化指标）。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-02 13:00:44"
+}

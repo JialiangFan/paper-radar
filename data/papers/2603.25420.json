@@ -1,0 +1,13 @@
+{
+ "id": "2603.25420",
+ "title": "VideoWeaver: Multimodal Multi-View Video-to-Video Transfer for Embodied Agents",
+ "authors": "George Eskandar, Fengyi Shen, Mohammad Altillawi, Dong Chen, Yang Bai, Liudi Yang, Ziyuan Liu",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25420v1",
+ "abstract": "Recent progress in video-to-video (V2V) translation has enabled realistic resimulation of embodied AI demonstrations, a capability that allows pretrained robot policies to be transferable to new environments without additional data collection. However, prior works can only operate on a single view at a time, while embodied AI tasks are commonly captured from multiple synchronized cameras to support policy learning. Naively applying single-view models independently to each camera leads to inconsistent appearance across views, and standard transformer architectures do not scale to multi-view settings due to the quadratic cost of cross-view attention.\n  We present VideoWeaver, the first multimodal multi-view V2V translation framework. VideoWeaver is initially trained as a single-view flow-based V2V model. To achieve an extension to the multi-view regime, we propose to ground all views in a shared 4D latent space derived from a feed-forward spatial foundation model, namely, Pi3. This encourages view-consistent appearance even under wide baselines and dynamic camera motion. To scale beyond a fixed number of cameras, we train views at distinct diffusion timesteps, enabling the model to learn both joint and conditional view distributions. This in turn allows autoregressive synthesis of new viewpoints conditioned on existing ones.\n  Experiments show superior or similar performance to the state-of-the-art on the single-view translation benchmarks and, for the first time, physically and stylistically consistent multi-view translations, including challenging egocentric and heterogeneous-camera setups central to world randomization for robot learning.",
+ "summary": "1. 核心创新点：首次实现多模态多视角的视频到视频翻译，将多视图对齐到一个共享的4D潜在空间，并通过在不同扩散时间步训练来实现可扩展的多视角自回归合成，确保视图间的一致性。\n\n2. 主要方法：\n- 以单视图流式V2V模型为起点；基于Pi3这一前馈空间基础模型将所有视图投影到共同的4D潜在空间，促进视图间的一致性。\n- 将视图在不同扩散时间步进行训练，学习联合与条件的视图分布，支持跨视角的自回归合成。\n- 通过多模态、多视角的框架，达到对复杂摄像头布置（含egocentric与异质相机）的翻译能力。\n\n3. 结论/性能：\n- 在单视图基线上达到或优于现有SOTA；首次在多视角设置中实现物理与风格上一致的翻译，能够处理自我视角与异质摄像头场景，适用于机器人学习中的世界随机化任务。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-27 13:02:53"
+}

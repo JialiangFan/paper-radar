@@ -1,0 +1,13 @@
+{
+ "id": "2603.20180",
+ "title": "Adaptive Greedy Frame Selection for Long Video Understanding",
+ "authors": "Yuning Huang, Fengqing Zhu",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20180v1",
+ "abstract": "Large vision--language models (VLMs) are increasingly applied to long-video question answering, yet inference is often bottlenecked by the number of input frames and resulting visual tokens. Naive sparse sampling can miss decisive moments, while purely relevance-driven selection frequently collapses onto near-duplicate frames and sacrifices coverage of temporally distant evidence. We propose a question-adaptive greedy frame selection method that jointly optimizes query relevance and semantic representativeness under a fixed frame budget. Our approach constructs a 1~FPS candidate pool (capped at 1000) with exact timestamp alignment, embeds candidates in two complementary spaces (SigLIP for question relevance and DINOv2 for semantic similarity), and selects frames by greedily maximizing a weighted sum of a modular relevance term and a facility-location coverage term. This objective is normalized, monotone, and submodular, yielding a standard (1-1/e) greedy approximation guarantee. To account for question-dependent trade-offs between relevance and coverage, we introduce four preset strategies and a lightweight text-only question-type classifier that routes each query to its best-performing preset. Experiments on MLVU show consistent accuracy gains over uniform sampling and a strong recent baseline across frame budgets, with the largest improvements under tight budgets.",
+ "summary": "- 核心创新点：在固定帧预算下，提出一个问句自适应的贪心帧选择框架，联合优化查询相关性与语义覆盖以提升长视频理解的准确性和效率。\n\n- 主要方法：\n  - 构造一个1帧/秒的候选帧池（上限1000帧），并具备精确时间戳对齐；\n  - 将候选帧在两个表示空间中嵌入：SigLIP（用于问句相关性）和 DINOv2（用于语义相似性）；\n  - 通过贪心策略最大化加权和的目标：包含模块化相关性项和 facility-location 覆盖项，且该目标归一化、单调且子模，具备1-1/e的近似保证；\n  - 针对不同问句，提供四种预设策略，并引入一个轻量级的文本问句类型分类器，将问题路由到最优预设以平衡相关性与覆盖；\n  - 实验在MLVU数据集上对比均匀采样和强基线，显示在不同帧预算下的稳定提升，且在预算紧张时提升最显著。\n\n- 结论/性能：\n  - 相对于均匀采样和最近的强基线，在各帧预算下均获得稳定的准确性提升；\n  - 当预算有限时，提升幅度最大，展现出在长视频理解任务中的高效性与鲁棒性。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-23 13:07:03"
+}

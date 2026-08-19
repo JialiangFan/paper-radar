@@ -1,0 +1,13 @@
+{
+ "id": "2603.07460",
+ "title": "Where Do LLM-based Systems Break? A System-Level Security Framework for Risk Assessment and Treatment",
+ "authors": "Neha Nagaraja, Hayretdin Bahsi",
+ "date": "2026-03-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07460v1",
+ "abstract": "Large Language Models (LLMs) are increasingly integrated into safety-critical workflows, yet existing security analyses remain fragmented and often isolate model behavior from the broader system context. This work introduces a goal-driven risk assessment framework for LLM-powered systems that combines system modeling with Attack-Defense Trees (ADTrees) and Common Vulnerability Scoring System (CVSS)-based exploitability scoring to support structured, comparable analysis. We demonstrate the framework through a healthcare case study, modeling multi-step attack paths targeting intervention in medical procedures, leakage of electronic health record (EHR) data, and disruption of service availability. Our analysis indicates that threats spanning (i) conventional cyber, (ii) adversarial ML, and (iii) conversational attacks that manipulate prompts or context often consolidate into a small number of dominant paths and shared system choke points, enabling targeted defenses to yield meaningful reductions in path exploitability. By systematically comparing defense portfolios, we align these risks with established vulnerability management practices and provide a domain-agnostic workflow applicable to other LLM-enabled critical systems.",
+ "summary": "- 核心创新点：提出一个面向LLM驱动系统的目标驱动风险评估框架，将系统建模、攻击-防御树（ADTrees）和基于CVSS的可利用性评分融合，实现结构化、可比的跨域安全分析，并揭示主导攻击路径与关键瓶颈。\n\n- 主要方法：采用目标驱动的风险评估框架，结合系统建模、ADTrees和CVSS评分进行分析；在医疗场景进行案例验证，覆盖多步攻击路径（如干预医疗程序、EHR数据泄露、服务可用性中断），并通过比较不同防御组合输出域无关的工作流。\n\n- 结论/性能：发现威胁覆盖传统网络、对抗性ML与对话攻击等类型后汇聚为少数主导路径与共性瓶颈；有针对性的防御组合能显著降低路径可利用性；框架可与现有漏洞管理实践对齐，具备推广到其他LLM驱动关键系统的域无关性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-10 13:02:09"
+}

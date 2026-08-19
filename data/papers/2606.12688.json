@@ -1,0 +1,13 @@
+{
+ "id": "2606.12688",
+ "title": "M*: A Modular, Extensible, Serving System for Multimodal Models",
+ "authors": "Atindra Jha, Naomi Sagan, Keisuke Kamahori, Irmak Sivgin, Rohan Sanda, Steven Gao, Mark Horowitz, Luke Zettlemoyer, Olivia Hsu, Jure Leskovec, Baris Kasikci, Stephanie Wang",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12688v1",
+ "abstract": "We are entering a new era of composite model architectures that integrate diverse components such as vision encoders, language backbones, diffusion and flow heads, audio codecs, action generators, and world-model predictors. Such architectures underpin a broad class of multimodal models, including unified multimodal models, omni models, speech-language models, vision-language-action policies, and world models. However, existing model serving frameworks were built on narrow assumptions about model structure, making them ill-suited to accommodate this new architectural diversity. Here we present M*, a universal serving system for efficient serving of composite AI models. M* represents models as dataflow graphs, processing requests spanning diverse modalities and tasks as traversals over these graphs. The core insight is a modular abstraction that supports arbitrary composition of model components, flexible placement onto a physical cluster, and model-agnostic optimizations within a distributed runtime. We call this abstraction the Walk Graph and show how it can concisely capture composite models from a broad range of families. We instantiate M* on representative models and find that it achieves, on average, 20% lower end-to-end latency than vLLM-Omni for text-to-image workloads on BAGEL, while delivering up to 2.9x lower real-time factor and 2.7x higher throughput for text-to-speech workloads on Qwen3-Omni. M* also outperforms the V-JEPA 2-AC rollout baseline for robotic planning by up to 12.5x. Thus, our work paves the road towards more efficient serving of complex models with minimal developer effort.",
+ "summary": "# M*：面向多模态模型的模块化可扩展服务系统\n\n1. **核心创新点**：提出\"Walk Graph\"（行走图）抽象，把各种复合多模态模型统一表示为数据流图，从而用一套通用服务系统高效地服务结构各异的复合 AI 模型。\n\n2. **主要方法**：将模型表示为**数据流图**，把跨模态、跨任务的请求建模为对图的**遍历（traversal）**。其模块化抽象支持任意组合模型组件（视觉编码器、语言主干、扩散/流匹配头、音频编解码器、动作生成器、世界模型预测器等），并允许将组件灵活部署到物理集群上，在分布式运行时中实现与模型无关的优化。\n\n3. **结论/性能**：在多类代表性模型上验证有效——文本生图（BAGEL）端到端延迟平均比 vLLM-Omni 低 **20%**；文本转语音（Qwen3-Omni）实时因子最高降低 **2.9 倍**、吞吐量最高提升 **2.7 倍**；机器人规划任务相比 V-JEPA 2-AC rollout 基线最高快 **12.5 倍**。表明该系统能以极少的开发成本高效服务复杂复合模型。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-13 13:03:03"
+}

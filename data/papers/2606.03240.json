@@ -1,0 +1,13 @@
+{
+ "id": "2606.03240",
+ "title": "GeoAlign: Beyond Semantics with State-Guided Spatial Alignment in VLA Models",
+ "authors": "Yizhi Chen, Zhanxiang Cao, Xinyi Peng, Yixiao Zheng, Xiaxi Si, Yiheng Li, Liyun Yan, Keqi Zhu, Xueyun Chen, Shengcheng Fu, Tianyue Zhan, Yufei Jia, Jinming Yao, Yan Xie, Kun Wang, Cewu Lu, Yue Gao",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.03240v1",
+ "abstract": "Current Vision--Language--Action (VLA) models often optimize for semantic grounding, whereas executable manipulation requires geometry-aware spatial alignment and dynamic affordance selection. We introduce GeoAlign, a state-guided spatial alignment architecture for VLA policy learning. GeoAlign post-trains an RGB geometry branch with robot-domain RGB-D supervision, yielding RGB-derived Geometry-Enhanced Post-Trained (GEP) features for policy rollout. The robot's proprioceptive state queries the GEP feature grid, producing compact, phase-dependent geometry tokens for action prediction. GeoAlign achieves 99.0% on LIBERO, 85.3% across three SimplerEnv-Fractal tasks, and 78.8% on eight geometry-critical real-world ALOHA tasks, with ablations confirming the value of geometry post-training and proprioceptive-state-guided querying.",
+ "summary": "# GeoAlign 论文总结\n\n1. **核心创新点**：在 VLA 模型中引入\"状态引导的空间对齐\"机制，用机器人本体状态查询几何特征，弥补现有模型只关注语义对齐、缺乏几何感知的不足。\n\n2. **主要方法**：通过机器人领域的 RGB-D 数据对 RGB 几何分支进行后训练，得到几何增强（GEP）特征；再用机器人的本体感知状态（proprioceptive state）查询 GEP 特征网格，生成紧凑的、与任务阶段相关的几何 token，用于动作预测。\n\n3. **结论/性能**：在 LIBERO 上达到 99.0%，SimplerEnv-Fractal 三项任务平均 85.3%，真实 ALOHA 八项几何关键任务上 78.8%；消融实验验证了几何后训练和状态引导查询的有效性。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-04 13:06:58"
+}

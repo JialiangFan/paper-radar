@@ -1,0 +1,32 @@
+{
+ "id": "2307.15818",
+ "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+ "authors": "Brohan, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2307.15818",
+ "abstract": "",
+ "summary": "RT-2 popularized the VLA formulation by co-training web-scale vision-language models and robotic action prediction through action tokenization.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "action-tokenization",
+  "robot-foundation-model",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2023_Brohan_RT2.md",
+ "pdf_path": "PDFs/VLA_Models/2023_Brohan_RT2.pdf",
+ "code": "",
+ "project": "https://robotics-transformer2.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.18008",
+ "title": "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents",
+ "authors": "Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18008v1",
+ "abstract": "Combining large language models with reinforcement learning is increasingly explored, yet the theoretical status of LLM-derived reward signals is often left implicit. We formalize the hybrid LLM-planner and RL-controller architecture as a Goal-Augmented Markov Decision Process and show that when the LLM per-state progress score is used as a bounded potential function, the resulting shaping term preserves the optimal policy set even when the LLM scores are inaccurate. This guarantee is stronger than what general LLM-as-reward approaches provide. We verify the result numerically on a small MDP under four potential configurations, including an adversarial one scaled to twenty times the base reward magnitude.",
+ "summary": "## 论文总结\n\n**标题**：《基于 LLM 反馈的策略不变奖励塑形：混合强化学习智能体框架》\n\n---\n\n### 1. 核心创新点\n将 LLM 输出的\"每状态进展分数\"作为**有界势函数（potential function）**用于奖励塑形，从理论上证明即使 LLM 打分不准确，也不会改变原问题的最优策略集合。\n\n### 2. 主要方法\n- 把\"LLM 做规划器 + RL 做控制器\"的混合架构形式化为**目标增强的马尔可夫决策过程（Goal-Augmented MDP, GA-MDP）**。\n- 借助基于势函数的奖励塑形（PBRS）理论，将 LLM 的进展评分嵌入为势函数项，从而继承 PBRS 的策略不变性保证。\n- 在一个小规模 MDP 上做数值验证，测试了 **4 种势函数配置**，其中包含一个幅度放大到基础奖励 **20 倍**的对抗性（adversarial）配置。\n\n### 3. 结论 / 性能\n理论上证明了该塑形项**保持最优策略集不变**，这一保证强于一般\"LLM 即奖励函数（LLM-as-reward）\"方法所能提供的保证；数值实验在包括极端对抗性打分在内的所有配置下均验证了该结论——即 LLM 评分再差也不会把智能体带偏到错误的最优策略。\n\n---\n\n**一句话点评**：本文的贡献偏理论——它给\"用 LLM 打分来引导 RL\"这一常见做法提供了一个安全性护栏（打分错了最多拖慢收敛，不会改变最优解）。但验证仅在小型 MDP 上进行，尚未在复杂或高维任务中展示实际的样本效率增益。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-19 13:02:30"
+}

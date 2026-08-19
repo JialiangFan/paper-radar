@@ -1,0 +1,13 @@
+{
+ "id": "2606.01143",
+ "title": "Schedule-Level Shared-Prefix Reuse for LLM RL Training",
+ "authors": "Pengbo Li, Feiyuan Zhang, Guangming Sheng, Guangxin He, Di Chai, Ziniu Li, Taiqiang Wu, Binhang Yuan, Kai Chen",
+ "date": "2026-05-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01143v1",
+ "abstract": "GRPO- and PPO-style LLM post-training commonly sample multiple trajectories from the same prompt and then train on the resulting group. In long-context RL workloads, this shared prompt-side prefix can contain retrieved passages, visual tokens, tool schemas, system instructions, or task context, while the full rollout group is still too large to pack into one training microbatch. Standard dense trainers therefore recompute the same prefix forward and backward for every trajectory. We present a schedule-level reuse mechanism that decouples prefix and suffix computation. The schedule runs prefix forward once, executes suffixes as ordinary microbatches while reading prefix K/V and accumulating prefix-side gK/gV , and then runs prefix backward once on the accumulated gradient cache. This reordered schedule is equivalent to baseline training over real arithmetic and aligns numerically within finite-precision tolerance. Because only K/V and gK/gV are hot during suffix computation, the approach offloads dormant prefix activations, integrates with TP/EP/CP/PP and DP-style placement at the execution level, and preserves aux-loss-based MoE router semantics through logical prefix-token accounting. On dense Llama3-8B, Qwen3-8B, and MoE Qwen3-MoE-30B-A3B configurations, the schedule matches optimizer updates across TP/CP/PP/EP combinations, aligns on a 100-step real RL trace replay, reaches up to 4.395x speedup (2.930x under a conservative compile-on comparison) as prefix ratio and rollout group size grow, and reduces Phase-B peak HBM by up to 59.1%, extending the Llama3-8B capacity frontier from 17,920 to 29,696 total tokens.",
+ "summary": "# 论文摘要\n\n## 1. 核心创新点\n提出一种**调度级共享前缀复用机制**，在 LLM 强化学习（GRPO/PPO）训练中，将同一 prompt 多条 rollout 共享的前缀部分只计算一次前向和一次反向，避免冗余计算。\n\n## 2. 主要方法\n- **解耦前缀与后缀计算**：前缀只跑一次前向，缓存 K/V；后缀作为普通 microbatch 读取前缀 K/V 并累积前缀侧梯度 gK/gV；最后用累积梯度对前缀做一次反向。\n- 数学上等价于基线训练（有限精度下数值对齐）。\n- 后缀计算期间仅 K/V 与 gK/gV 处于活跃状态，可**卸载（offload）非活跃的前缀激活**。\n- 兼容 TP/EP/CP/PP/DP 等并行策略，并通过逻辑前缀 token 计数保持 MoE aux-loss 路由语义。\n\n## 3. 结论/性能\n在 Llama3-8B、Qwen3-8B 及 MoE Qwen3-MoE-30B-A3B 上验证：\n- 优化器更新与基线在各种并行组合下完全一致，100 步真实 RL trace 回放数值对齐。\n- 随前缀占比和 rollout 组规模增大，**最高加速 4.395×**（保守 compile-on 对比下 2.930×）。\n- **Phase-B 峰值 HBM 降低最多 59.1%**，将 Llama3-8B 的总 token 容量上限从 17,920 扩展到 29,696。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-02 13:01:39"
+}

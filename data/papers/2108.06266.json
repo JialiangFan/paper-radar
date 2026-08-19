@@ -1,0 +1,32 @@
+{
+ "id": "2108.06266",
+ "title": "Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning",
+ "authors": "Lukas Brunke, Melissa Greeff, Adam W. Hall, Zhaocong Yuan, Siqi Zhou, Jacopo Panerati, Angela P. Schoellig",
+ "date": null,
+ "year": 2021,
+ "url": "https://arxiv.org/abs/2108.06266",
+ "abstract": "",
+ "summary": "This survey unifies safe learning-based control and safe RL for robotics, emphasizing uncertainty-aware safety certification.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "Annual Review of Control, Robotics, and Autonomous Systems",
+ "category": "CBF Reachability",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "robotics",
+  "runtime-assurance",
+  "safe-learning",
+  "safe-vla",
+  "survey"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2021_Brunke_SafeLearningRobotics.md",
+ "pdf_path": "PDFs/CBF_Reachability/2021_Brunke_SafeLearningRobotics.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.01220",
+ "title": "Universal YOCO for Efficient Depth Scaling",
+ "authors": "Yutao Sun, Li Dong, Tianzhu Ye, Shaohan Huang, Jianyong Wang, Furu Wei",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01220v1",
+ "abstract": "The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.",
+ "summary": "- 核心创新点：将 YOCO 的解码器-解码器架构与递归计算结合，提出 Universal Self-Decoder，在浅层高效注意力中进行多轮迭代，以实现能力与推理效率的协同提升。\n\n- 主要方法：在 YOCO 框架上构建 YOCO-U，采用参数共享的 Universal Self-Decoder 执行多次迭代；将迭代限制在浅层、高效的注意力层，配合常量全局 KV 缓存和线性预填充，提高推理效率与可扩展性。\n\n- 结论/性能：在通用与长上下文基准上保持高度竞争，验证了高效注意力架构与递归计算的结合对可扩展大语言模型的潜力，提升了 token 效用与模型扩展能力，同时保持高效推理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-02 13:00:14"
+}

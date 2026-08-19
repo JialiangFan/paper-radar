@@ -1,0 +1,13 @@
+{
+ "id": "2602.12714",
+ "title": "ADEPT: RL-Aligned Agentic Decoding of Emotion via Evidence Probing Tools -- From Consensus Learning to Ambiguity-Driven Emotion Reasoning",
+ "authors": "Esther Sun, Bo-Hao Su, Abinay Reddy Naini, Shinji Watanabe, Carlos Busso",
+ "date": "2026-02-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.12714v1",
+ "abstract": "Speech Large Language Models (SLLMs) enable high-level emotion reasoning but often produce ungrounded, text-biased judgments without verifiable acoustic evidence. In contrast, self-supervised speech encoders such as WavLM provide strong acoustic representations yet remain opaque discriminative models with limited interpretability. To bridge this gap, we introduce ADEPT (Agentic Decoding of Emotion via Evidence Probing Tools), a framework that reframes emotion recognition as a multi-turn inquiry process rather than a single-pass prediction. ADEPT transforms an SLLM into an agent that maintains an evolving candidate emotion set and adaptively invokes dedicated semantic and acoustic probing tools within a structured pipeline of candidate generation, evidence collection, and adjudication. Crucially, ADEPT enables a paradigm shift from consensus learning to ambiguity-driven emotion reasoning. Since human affect exhibits inherent complexity and frequent co-occurrence of emotions, we treat minority annotations as informative perceptual signals rather than discarding them as noise. Finally, we integrate Group Relative Policy Optimization (GRPO) with an Evidence Trust Gate to explicitly couple tool-usage behaviors with prediction quality and enforce evidence-grounded reasoning. Experiments show that ADEPT improves primary emotion accuracy in most settings while substantially improving minor emotion characterization, producing explanations grounded in auditable acoustic and semantic evidence.",
+ "summary": "- 核心创新点：提出 ADEPT，将情感识别从单轮预测转化为多轮的代理人式证据驱动推理框架，结合语义与声学探测工具实现可证据化的情感推理，并通过证据门控与强化学习联合优化工具使用与预测质量。\n\n- 主要方法：将同传的 SLLMs 转换为能维护演化候选情感集合的代理人，自适应调用专门的语义和声学探测工具，形成候选生成—证据收集—裁决的多阶段管道；将 minority 注释视为有用信息，实现从共识学习向不确定性驱动的情感推理转变；结合 WavLM 提供声学表征，并引入 Group Relative Policy Optimization (GRPO) 和 Evidence Trust Gate，将工具使用行为直接绑定到预测质量，确保证据驱动的推理。\n\n- 结论/性能：实验表明 ADEPT 在大多数设置提升了主情感的准确性，同时显著提升对次要情感的表征能力，且输出的解释基于可审计的声学与语义证据。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-16 14:02:40"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.07204",
+ "title": "Designing for Accountable Agents: a Viewpoint",
+ "authors": "Stephen Cranefield, Nir Oren",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07204v1",
+ "abstract": "AI systems are becoming increasingly complex, ubiquitous and autonomous, leading to increasing concerns about their impacts on individuals and society. In response, researchers have begun investigating how to ensure that the methods underlying AI decision-making are transparent and their decisions are explainable to people and conformant to human values and ethical principles. As part of this research thrust, the need for accountability within AI systems has been noted, but this notion has proven elusive to define; we aim to address this issue in the current paper. Unlike much recent work, we do not address accountability within the human organisational processes of developing and deploying AI; rather we consider what it would it mean for the agents within a multi-agent system (MAS), potentially including human agents, to be accountable to other agents or to have others accountable to them.\n  In this work, we make the following contributions: we provide an in-depth survey of existing work on accountability in multiple disciplines, seeking to identify a coherent definition of the concept; we give a realistic example of a multi-agent system application domain that illustrates the benefits of enabling agents to follow accountability processes, and we identify a set of research challenges for the MAS community in building accountable agents, sketching out some initial solutions to these, thereby laying out a road-map for future research. Our focus is on laying the groundwork to enable autonomous elements within open socio-technical systems to take part in accountability processes.",
+ "summary": "- 核心创新点：提出在多代理系统中对“问责性”这一概念的统一定义，并给出面向自治代理的可问责框架与未来研究路线图，为开放社会技术系统中的代理参与问责奠定基础。\n\n- 主要方法：基于跨学科的文献综述，系统梳理问责相关研究；通过一个现实的多代理系统应用场景演示问责的收益；提出研究挑战、初步解决思路和未来研究路线图，构建一个面向 MAS 的概念框架。\n\n- 结论/性能：明确了在 MAS 中实现问责性的研究方向与要点，给出初步解决方案并绘制未来研究路径，强调让自治元素在开放系统中参与并受问责的可行性与价值。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-09 13:01:33"
+}

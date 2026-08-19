@@ -1,0 +1,13 @@
+{
+ "id": "2604.25846",
+ "title": "Towards Agentic Investigation of Security Alerts",
+ "authors": "Even Eilertsen, Vasileios Mavroeidis, Gudmund Grov",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25846v1",
+ "abstract": "Security analysts are overwhelmed by the volume of alerts and the low context provided by many detection systems. Early-stage investigations typically require manual correlation across multiple log sources, a task that is usually time-consuming. In this paper, we present an experimental, agentic workflow that leverages large language models (LLMs) augmented with predefined queries and constrained tool access (structured SQL over Suricata logs and grep-based text search) to automate the first stages of alert investigation. The proposed workflow integrates queries to provide an overview of the available data, and LLM components that selects which queries to use based on the overview results, extracts raw evidence from the query results, and delivers a final verdict of the alert. Our results demonstrate that the LLM-powered workflow can investigate log sources, plan an investigation, and produce a final verdict that has a significantly higher accuracy than a verdict produced by the same LLM without the proposed workflow. By recognizing the inherent limitations of directly applying LLMs to high-volume and unstructured data, we propose combining existing investigation practices of real-world analysts with a structured approach to leverage LLMs as virtual security analysts, thereby assisting and reducing the manual workload.",
+ "summary": "1. 核心创新点：通过将大语言模型（LLM）与预定义查询和受限工具访问（对 Suricata 日志的结构化 SQL 查询与基于 grep 的文本检索）结合，构建一个代理式的警报初步调查工作流，实现自动化的证据提取与最终判定。\n\n2. 主要方法：在受控的工具环境中运行，先用查询集对数据进行概览；再由 LLMS 基于概览结果选择后续查询、从查询结果中提取原始证据，最终输出警报判定；使用结构化日志（Suricata 日志的 SQL 查询）与文本检索相结合的方式，结合现实分析师的调查实践，将 LLM 作为虚拟安全分析员进行协作。\n\n3. 结论/性能：与在相同 LLM 下不使用该工作流的方案相比，LLM 驱动的代理工作流在调查日志源、规划调查以及给出最终判定方面具有显著更高的准确性，并有助于降低人工工作量。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-29 13:05:12"
+}

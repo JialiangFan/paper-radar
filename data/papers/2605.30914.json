@@ -1,0 +1,13 @@
+{
+ "id": "2605.30914",
+ "title": "Automating Formal Verification with Reinforcement Learning and Recursive Inference",
+ "authors": "Max Tan",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30914v1",
+ "abstract": "Automated formal verification remains challenging for large language models because data for proof assistants and verification-aware languages is scarce, and correctness depends on satisfying precise machine-checkable specifications rather than producing plausible code. This thesis studies how verifier environments can improve LLM generation of verified programs and proofs through reinforcement learning from verifiable rewards (RLVR) and verifier-guided inference-time search. First, we train open-source models in Dafny with RLVR using Group Relative Policy Optimization (GRPO) and related variants, assembling generated candidates into complete programs and scoring them with compiler and verifier outcomes. Initial experiments on an APPS-derived Dafny dataset increased verified reward from 2.2% to 58.1%, but revealed specification hacking, where models exploit weak formal specifications instead of implementing the intended solutions. After filtering underspecified and vulnerable tasks, multi-turn RLVR on the refined benchmark improves the verified pass rate from 9.7% to 31.1%. Second, we develop a verifier-guided inference scaffold in Lean that treats proof generation as structured search over decomposed subgoals, verifier feedback, diagnostics, and repair. With a fixed base model, the full scaffold with proof reviser improves pass rate on an initial VeriCoding pilot set from 46.2% under direct repair to 69.2%. On the larger VERINA dataset, whole-task decomposition plus proof reviser solves 7 of 42 previously unsolved tasks. We also introduce Dalek-Bench, a repository-scale Lean benchmark derived from the Rust $\\texttt{curve25519-dalek}$ verification project; preliminary results remain weak, indicating that stronger progress evaluation and task-specific tool-use policies are still needed.",
+ "summary": "**核心创新点**：通过可验证奖励强化学习（RLVR）与验证器引导的推理时递归搜索，提升大语言模型在 Dafny/Lean 中生成已验证程序与证明的能力。\n\n**主要方法**：\n- 在 Dafny 中使用 GRPO 及其变体进行 RLVR 训练，用编译器和验证器结果对候选程序打分；对存在\"规范作弊\"（specification hacking）的弱规范任务进行过滤后，再做多轮 RLVR。\n- 在 Lean 中构建验证器引导的推理脚手架：将证明生成视为对分解子目标、验证器反馈、诊断与修复的结构化搜索，并加入证明修订器（proof reviser）。\n- 提出 Dalek-Bench：基于 Rust `curve25519-dalek` 验证项目构建的仓库级 Lean 基准。\n\n**结论/性能**：\n- Dafny：APPS 衍生数据集上验证奖励从 2.2% 提升到 58.1%；过滤后基准上多轮 RLVR 将验证通过率从 9.7% 提升到 31.1%。\n- Lean：VeriCoding 试点集上完整脚手架将通过率从 46.2%（直接修复）提升到 69.2%；在 VERINA 上解决了 42 个原先无解任务中的 7 个。\n- Dalek-Bench 上结果仍较弱，表明仓库级验证仍需更强的进度评估与任务专用工具策略。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-01 13:02:14"
+}

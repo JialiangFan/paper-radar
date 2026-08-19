@@ -1,0 +1,13 @@
+{
+ "id": "2603.28385",
+ "title": "Critic-Free Deep Reinforcement Learning for Maritime Coverage Path Planning on Irregular Hexagonal Grids",
+ "authors": "Carlos S. Sepúlveda, Gonzalo A. Ruz",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28385v1",
+ "abstract": "Maritime surveillance missions, such as search and rescue and environmental monitoring, rely on the efficient allocation of sensing assets over vast and geometrically complex areas. Traditional Coverage Path Planning (CPP) approaches depend on decomposition techniques that struggle with irregular coastlines, islands, and exclusion zones, or require computationally expensive re-planning for every instance. We propose a Deep Reinforcement Learning (DRL) framework to solve CPP on hexagonal grid representations of irregular maritime areas. Unlike conventional methods, we formulate the problem as a neural combinatorial optimization task where a Transformer-based pointer policy autoregressively constructs coverage tours. To overcome the instability of value estimation in long-horizon routing problems, we implement a critic-free Group-Relative Policy Optimization (GRPO) scheme. This method estimates advantages through within-instance comparisons of sampled trajectories rather than relying on a value function. Experiments on 1,000 unseen synthetic maritime environments demonstrate that a trained policy achieves a 99.0% Hamiltonian success rate, more than double the best heuristic (46.0%), while producing paths 7% shorter and with 24% fewer heading changes than the closest baseline. All three inference modes (greedy, stochastic sampling, and sampling with 2-opt refinement) operate under 50~ms per instance on a laptop GPU, confirming feasibility for real-time on-board deployment.",
+ "summary": "- 核心创新点：提出一个无 critic 的深度强化学习框架，在不规则海域的六边形网格上通过 Transformer 指针策略进行覆盖路径的神经组合优化，并用 Group-Relative Policy Optimization (GRPO) 解决长时程路由的价值估计不稳定问题。\n\n- 主要方法：将覆盖路径规划建模为神经组合优化问题，使用 Transformer-based 指针策略自回归构建覆盖序列；采用 Critic-free 的 GRPO，在同一实例内对采样轨迹进行比较以估计优势，避免依赖价值函数。\n\n- 结论/性能：在1000个未见的合成海域上，训练得到的策略实现99.0%的 Hamiltonian 成功率，显著优于最佳启发式（46.0%），路径长度缩短约7%、转向次数减少约24%；三种推理模式（贪心、随机采样、带2-opt的采样）在笔记本GPU上每个实例低于50 ms，具备实时船载部署的可行性。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-31 13:08:50"
+}

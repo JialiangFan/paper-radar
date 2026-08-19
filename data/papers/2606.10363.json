@@ -1,0 +1,13 @@
+{
+ "id": "2606.10363",
+ "title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
+ "authors": "Xiaoquan Sun, Ruijian Zhang, Chen Cao, Yihan Sun, Jiahui Chen, Zetian Xu, Bo Chen, Haijier Chen, Zhen Yang, Jiarun Zhu, Yijun Hong, JingZhe Xu, Jingrui Pang, Mingqi Yuan, Jiayu Chen",
+ "date": "2026-06-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.10363v1",
+ "abstract": "World Action Models (WAMs) have emerged as a new powerful paradigm for embodied intelligence, learning action-relevant visual dynamics that significantly enhance generalization and robustness. However, existing WAMs still struggle with task-relevant memory in long-horizon robotic manipulation. To address this, we present HiMem-WAM, a Hierarchical Memory-Gated WAM that integrates motion-centric latent actions, high-level skill latents, and boundary-triggered memory updates. Specifically, we develop a hierarchical latent action framework that jointly learns low-level motion and high-level skill latents, providing structured temporal abstraction. Meanwhile, a boundary-aware memory gate writes compact task states at predicted skill transitions, enabling causal inference without test-time generation of future video or optical flow estimation. Evaluated on LIBERO, LIBERO-PLUS, RMBench and real-world tasks, HiMem-WAM shows that hierarchical latents improve robustness under deployment perturbations, and the memory module substantially benefits memory-dependent long-horizon manipulation.",
+ "summary": "# HiMem-WAM 论文摘要\n\n## 1. 核心创新点\n提出**分层记忆门控的世界动作模型（HiMem-WAM）**，通过分层潜在动作与边界触发的记忆更新机制，解决长时序机器人操作中的任务相关记忆难题。\n\n## 2. 主要方法\n- **分层潜在动作框架**：联合学习低层\"运动潜变量\"和高层\"技能潜变量\"，提供结构化的时间抽象。\n- **边界感知记忆门（boundary-aware memory gate）**：在预测的技能转换点写入紧凑的任务状态，实现因果推理，无需在测试时生成未来视频或估计光流。\n- **运动中心的潜在动作建模**，提升对部署扰动的鲁棒性。\n\n## 3. 结论/性能\n在 **LIBERO、LIBERO-PLUS、RMBench 及真实世界任务**上的实验表明：\n- 分层潜变量显著增强了在部署扰动下的鲁棒性；\n- 记忆模块对依赖记忆的**长时序操作任务**带来明显增益。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-10 13:03:17"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.24450",
+ "title": "On the Footprints of Reviewer Bots Feedback on Agentic Pull Requests in OSS GitHub Repositories",
+ "authors": "Syeda Kaneez Fatima, Yousuf Abrar, Abdul Rehman Tahir, Amelia Nawaz, Shamsa Abid, Abdul Ali Bangash",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24450v1",
+ "abstract": "Autonomous coding agents are reshaping software development by creating pull requests (PRs) on GitHub, referred to as agentic PRs. In parallel, the review process is also becoming autonomous, thereby making reviewer bots key actors in the assessment of these agentic PRs. However, their influence on PR acceptance and resolution remains unclear. This study empirically investigates the relationship between reviewer-bot feedback and PR outcomes by analyzing how Reviewer Bot Feedback Quality (relevance, clarity, conciseness) and Reviewer Bot Activity Volume (comment count) are associated with PR acceptance and resolution time. We analyze 7,416 reviewer-bot comments on 4,532 PRs from the AI_Dev dataset (a dataset that captured AI agents' PRs in GitHub projects). Our results show that reviewer-bot comments mainly focus on bug fixes, testing, and documentation, are civil in tone, and are prescriptive in nature. Reviewer bots generally produce clear and concise feedback, though the semantic relevance of comments to underlying code changes is moderate. We find that higher Reviewer Bot Activity volume is associated with longer PR resolution times and lower average feedback quality, showing that as bots generate more comments on a PR, the average pertinence of that feedback appears to degrade. At the same time, Reviewer Bot Feedback Quality shows no meaningful association with workflow outcomes. Our findings suggest that, in agentic PR workflows, reviewer bots should prioritize targeted high-relevance feedback over generating large numbers of comments.",
+ "summary": "- 核心创新点：首次在代理PR（agentic PR）工作流中系统量化评审机器人反馈的质量与活动量对PR结果的影响及其机制。\n\n- 主要方法：基于 AI_Dev 数据集，分析4,532个PR与7,416条 reviewer-bot 评论，构建反馈质量（相关性、清晰度、简洁性）与活动量（评论数）的度量，并通过统计分析评估它们与PR接受和解决时间的关联。\n\n- 结论/性能：\n  - 高活动量的评论与更长的PR解决时间以及较低的平均反馈质量显著相关；即评论数量越多，反馈的相关性平均越弱。\n  - 反馈质量与PR的工作流结果（如是否被接受）之间未呈现显著关联。\n  - 评论多聚焦于缺陷修复、测试和文档，语气文明、具有指示性；建议在 agentic PR 中优先提供高相关性、针对性的反馈，而非追求大量评论。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-28 13:06:37"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.15619",
+ "title": "Mixture-of-Depths Attention",
+ "authors": "Lianghui Zhu, Yuxin Fang, Bencheng Liao, Shijie Wang, Tianheng Cheng, Zilong Huang, Chen Chen, Lai Wei, Yutao Zeng, Ya Wang, Yi Lin, Yu Li, Xinggang Wang",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15619v1",
+ "abstract": "Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-efficient algorithm for MoDA that resolves non-contiguous memory-access patterns, achieving 97.3% of FlashAttention-2's efficiency at a sequence length of 64K. Experiments on 1.5B-parameter models demonstrate that MoDA consistently outperforms strong baselines. Notably, it improves average perplexity by 0.2 across 10 validation benchmarks and increases average performance by 2.11% on 10 downstream tasks, with a negligible 3.7% FLOPs computational overhead. We also find that combining MoDA with post-norm yields better performance than using it with pre-norm. These results suggest that MoDA is a promising primitive for depth scaling. Code is released at https://github.com/hustvl/MoDA .",
+ "summary": "1. 核心创新点：提出混合深度注意力（MoDA），让每个注意头在当前层对序列KV进行注意的同时，能够对前序层的深度KV进行注意，从而缓解深层信号衰减。\n\n2. 主要方法：提出 MoDA 机制，并给出一个硬件高效的实现算法，解决非连续内存访问问题，使在序列长度64K时达到约 FlashAttention-2 的97.3%效率；在1.5B参数模型上评估，MoDA 相比强基线在多项任务上提升明显，并比较了 post-norm 与 pre-norm 的组合效果。\n\n3. 结论/性能：平均 perplexity 降低约0.2（10个验证基准），10个下游任务的平均性能提升约2.11%，额外的 FLOPs 开销仅约3.7%；并且 MoDA 与 post-norm 的组合优于与 pre-norm 的组合；代码已开源。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-17 13:00:19"
+}

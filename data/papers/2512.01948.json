@@ -1,0 +1,13 @@
+{
+ "id": "2512.01948",
+ "title": "How Far Are We from Genuinely Useful Deep Research Agents?",
+ "authors": "Dingling Zhang, He Zhu, Jincheng Ren, Kangqi Song, Xinran Zhou, Boyu Feng, Shudong Liu, Jiabin Luo, Weihao Xie, Zhaohui Wang, Tianrui Qin, King Zhu, Yuqing Wang, Qianben Chen, Yuchen Eleanor Jiang, Wei Wang, Jiaheng Liu, Wangchunshu Zhou",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01948v1",
+ "abstract": "Deep Research Agents (DRAs) aim to automatically produce analyst-level reports through iterative information retrieval and synthesis. However, most existing DRAs were validated on question-answering benchmarks, while research on generating comprehensive reports remains overlooked. Worse, current benchmarks for report synthesis suffer from task complexity and subjective metrics -- this fails to reflect user demands and limits the practical utility of generated reports. To address these gaps, we present Fine-grained DEepResearch bench (FINDER), an enhanced benchmark consisting of 100 human-curated research tasks with 419 structured checklist items that standardize report structure, analytical depth, and factual grounding. Based on approximately 1,000 reports produced by mainstream DRAs, we further propose Deep rEsearch Failure Taxonomy (DEFT), the first failure taxonomy for deep research agents. DEFT contains 14 fine-grained failure modes across reasoning, retrieval, and generation, and is built upon grounded theory with human-LLM co-annotating and inter-annotator reliability validation. Our experimental findings reveal that current DRAs struggle not with task comprehension but with evidence integration, verification, and reasoning-resilient planning.",
+ "summary": "- 核心创新点：首次同时提出面向深度研究代理的细粒度基准FINDER，以及对应的失败分类DEFT，用于标准化研究报告的结构、分析深度和事实 grounding，并系统诊断DRAs的瓶颈。\n\n- 主要方法：\n  - 设计并构建 FINDER：包含100个人工-curated的研究任务和419项结构化检查清单，用以规范报告结构、分析深度与事实 grounding。\n  - 基于约1000份主流DRA生成的报告开展分析与评估。\n  - 构建DEFT：14种细粒度失败模式，覆盖推理、检索、生成三个维度；采用扎根理论、人机共同标注与互评性验证来建立和验证。\n\n- 结论/性能：\n  - 实验表明当前DRAs在任务理解上并非瓶颈，真正的挑战在于证据整合、核验与具备鲁棒性的推理规划。\n  - FINDER与DEFT提供了标准化的评测与诊断工具，有助于更准确地评估和改进DRAs的实际应用能力。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:02:12"
+}

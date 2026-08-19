@@ -1,0 +1,13 @@
+{
+ "id": "2606.01164",
+ "title": "Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends",
+ "authors": "Jiuming Liu, Chaojun Ni, Mengmeng Liu, Chensheng Peng, Fangjinhua Wang, Sitian Shen, Marc Pollefeys, Masayoshi Tomizuka, Ayush Tewari, Per Ola Kristensson",
+ "date": "2026-05-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01164v1",
+ "abstract": "With rapid development of large language models and diffusion-based content generation, world modeling has attracted increasing research attention, benefiting various downstream domains such as game engines, embodied AI, autonomous driving, etc. Through explicitly incorporating user actions into world state transition, recent literature empowers world modeling with interactivity in an action-conditioned video or 3D generation paradigm, further enhancing controllability over world evolutions and facilitating users to freely traverse, manipulate, navigate, and personalize the state evolution. In this paper, we aim to systematically review recent research trends, technical developments, evaluation benchmarks, and also propose future potential directions in interactive world modeling. Specifically, we first summarize recent efforts and trends in terms of application scenarios, world state evolution, and scene modality. Afterwards, we delve into three crucial technical challenges, including action-conditioned controllability, long-horizon interactions and memory, and action-following responsiveness for real-time interactivity. Furthermore, we also thoroughly compare existing benchmarks and metrics in four specific application fields: open-world exploration, game engine, autonomous driving, and robotics. Finally, we discuss several promising future directions in achieving next-generation interactive world modeling. The corresponding repository is publicly available at: https://github.com/liujiuming123/Awesome-Interactive-World-Model.",
+ "summary": "# 论文总结：交互式视频世界建模综述\n\n1. **核心创新点**：系统性综述\"交互式视频世界建模\"这一新兴方向，将用户动作显式融入世界状态转移，从可控性、长程交互、实时响应三大技术挑战切入梳理前沿进展。\n\n2. **主要方法**：以动作条件视频/3D 生成范式为主线，从应用场景、世界状态演化、场景模态三个维度归纳现有工作；并在开放世界探索、游戏引擎、自动驾驶、机器人四大领域横向对比基准与评测指标。\n\n3. **结论/性能**：作为综述类论文不报告具体性能，而是凝练出动作可控性、长时记忆、实时跟随等关键挑战，并提出下一代交互式世界模型的若干潜在研究方向；配套资源库已在 GitHub 公开。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-02 13:03:51"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.18578",
+ "title": "Bounded Ratio Reinforcement Learning",
+ "authors": "Yunke Ao, Le Chen, Bruce D. Lee, Assefa S. Wahd, Aline Czarnobai, Philipp Fürnstahl, Bernhard Schölkopf, Andreas Krause",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18578v1",
+ "abstract": "Proximal Policy Optimization (PPO) has become the predominant algorithm for on-policy reinforcement learning due to its scalability and empirical robustness across domains. However, there is a significant disconnect between the underlying foundations of trust region methods and the heuristic clipped objective used in PPO. In this paper, we bridge this gap by introducing the Bounded Ratio Reinforcement Learning (BRRL) framework. We formulate a novel regularized and constrained policy optimization problem and derive its analytical optimal solution. We prove that this solution ensures monotonic performance improvement. To handle parameterized policy classes, we develop a policy optimization algorithm called Bounded Policy Optimization (BPO) that minimizes an advantage-weighted divergence between the policy and the analytic optimal solution from BRRL. We further establish a lower bound on the expected performance of the resulting policy in terms of the BPO loss function. Notably, our framework also provides a new theoretical lens to interpret the success of the PPO loss, and connects trust region policy optimization and the Cross-Entropy Method (CEM). We additionally extend BPO to Group-relative BPO (GBPO) for LLM fine-tuning. Empirical evaluations of BPO across MuJoCo, Atari, and complex IsaacLab environments (e.g., Humanoid locomotion), and of GBPO for LLM fine-tuning tasks, demonstrate that BPO and GBPO generally match or outperform PPO and GRPO in stability and final performance.",
+ "summary": "- 核心创新点（一句话概括）：\n  提出带界限的比率强化学习（BRRL）框架，给出正则化约束下的解析最优解并证明单调性能提升，进一步衍生出基于该解的 Bounded Policy Optimization（BPO）及其分组扩展 GBPO，用以LLM微调，理论上统一解释PPO、信任区域优化与CEM之间的关系。\n\n- 主要方法：\n  - 将策略优化建模为带正则化与约束的优化问题，推导出解析的最优解并证明其能实现单调性能提升。\n  - 提出 Bounded Policy Optimization（BPO），通过最小化优势加权的策略间散度来接近 BRRL 的解析最优解，并给出对性能的下界约束。\n  - 将框架拓展到 Group-relative BPO（GBPO），用于大语言模型的分组微调。\n  - 提供理论视角，将信任区域策略优化、CEM 与 PPO 的关系联系起来。\n\n- 结论/性能：\n  - 在 MuJoCo、Atari、以及复杂的 IsaacLab 环境（如人形机器人行走）等任务中，BPO 在稳定性与最终性能上通常与 PPO/GRPO 相当或优于它们。\n  - GBPO 在LLM微调任务中亦显示出相似或更好的稳定性与性能提升。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-21 13:00:48"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.14125",
+ "title": "Traj-LeWM: Path-Aware World-Model Planning via Latent Trajectory Cost",
+ "authors": "Xiaodi Huang, Ziyi Ding, Jingtian Wan, Yuchen Liu, Yuan Zhang, Xiao-Ping Zhang, Jiayu Chen, Zhang Zhang, Tao Huang",
+ "date": "2026-08-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.14125v1",
+ "abstract": "LeWM is a lightweight visual world model that learns latent dynamics end-to-end from pixels and ranks candidate action sequences by the distance between their predicted endpoints and the goal. However, LeWM has two limitations. First, during training, it learns local next-step transitions without evaluating complete trajectories relative to the task goal. Second, during planning, it ranks candidates solely by predicted endpoint distance. Because model predictions may differ from actual execution outcomes, the candidate whose predicted endpoint is closest to the goal may not perform best when executed in the environment. The evolution of the complete predicted trajectory can therefore provide complementary information beyond endpoint distance. To address these limitations, we propose Traj-LeWM, which retains LeWM's local-dynamics objective and endpoint score while introducing a goal-conditioned latent trajectory cost (LTC) that aggregates trajectory-level information as a complementary signal. During training, LTC-based trajectory-preference supervision complements next-step prediction in shaping the shared representation. During planning, LTC is combined with endpoint distance to incorporate intermediate-path information into candidate ranking. With joint endpoint-plus-LTC scoring, Traj-LeWM outperforms LeWM on Push-T, OGBench-Cube, Reacher, and Two-Room by $3$, $14$, $7$, and $7$ percentage points, respectively. Controlled experiments and ablations further verify the complementary roles of trajectory-level representation shaping and path-aware candidate ranking.",
+ "summary": "## Traj-LeWM: 基于潜在轨迹代价的路径感知世界模型规划\n\n**1. 核心创新点**\n在轻量视觉世界模型 LeWM 的\"终点距离\"评分之外，引入目标条件化的**潜在轨迹代价（LTC）**，让训练和规划都利用完整预测轨迹的路径信息，而不只是终点。\n\n**2. 主要方法**\n- 保留 LeWM 从像素端到端学习潜在动力学的局部单步预测目标与终点评分；\n- **训练阶段**：用基于 LTC 的**轨迹偏好监督**作为补充信号，与next-step预测共同塑造共享表征；\n- **规划阶段**：将 LTC 与终点距离**联合打分**对候选动作序列排序，把中间路径演化纳入考量，缓解\"预测终点最近但实际执行未必最好\"的模型误差问题。\n\n**3. 结论/性能**\n在 Push-T、OGBench-Cube、Reacher、Two-Room 四个任务上分别比 LeWM 提升 **3、14、7、7 个百分点**；对照实验与消融进一步验证了\"轨迹级表征塑造\"与\"路径感知候选排序\"两者作用互补。\n\n> 补充一句判断：论文的两个改进点（训练端表征塑造、规划端排序）从摘要看是耦合提出的，其各自贡献主要靠消融支撑；不同任务增益差异较大（3 到 14 个百分点），说明收益可能与任务的路径约束强度相关，值得在正文中重点核对。\n\n如果需要按 `/paper-review` 的完整文献综述格式（含背景、问题定义、方法论细节，并输出中英双版到 Obsidian）来处理这篇，告诉我即可。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-17 13:03:43"
+}

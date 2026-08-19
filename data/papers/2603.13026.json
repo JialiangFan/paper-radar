@@ -1,0 +1,13 @@
+{
+ "id": "2603.13026",
+ "title": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+ "authors": "Chenlong Yin, Runpeng Geng, Yanting Wang, Jinyuan Jia",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13026v1",
+ "abstract": "Prompt injection poses serious security risks to real-world LLM applications, particularly autonomous agents. Although many defenses have been proposed, their robustness against adaptive attacks remains insufficiently evaluated, potentially creating a false sense of security. In this work, we propose PISmith, a reinforcement learning (RL)-based red-teaming framework that systematically assesses existing prompt-injection defenses by training an attack LLM to optimize injected prompts in a practical black-box setting, where the attacker can only query the defended LLM and observe its outputs. We find that directly applying standard GRPO to attack strong defenses leads to sub-optimal performance due to extreme reward sparsity -- most generated injected prompts are blocked by the defense, causing the policy's entropy to collapse before discovering effective attack strategies, while the rare successes cannot be learned effectively. In response, we introduce adaptive entropy regularization and dynamic advantage weighting to sustain exploration and amplify learning from scarce successes. Extensive evaluation on 13 benchmarks demonstrates that state-of-the-art prompt injection defenses remain vulnerable to adaptive attacks. We also compare PISmith with 7 baselines across static, search-based, and RL-based attack categories, showing that PISmith consistently achieves the highest attack success rates. Furthermore, PISmith achieves strong performance in agentic settings on InjecAgent and AgentDojo against both open-source and closed-source LLMs (e.g., GPT-4o-mini and GPT-5-nano). Our code is available at https://github.com/albert-y1n/PISmith.",
+ "summary": "- 核心创新点：提出基于强化学习的红队框架PISmith，在黑箱设定下训练攻击端LLM以优化提示注入，并通过自适应熵正则化和动态优势权重来解决奖励稀疏问题，从而系统性评估并暴露提示注入防御的薄弱环节。\n\n- 主要方法：在黑盒环境中使用RL进行红队攻击，训练攻击LLM优化注入提示；引入自适应熵正则化以维持探索、结合动态优势权重以在稀少的成功样本上强化学习；对13个基准进行广泛评估，與7个静态/搜索/RL攻击基线比较，验证其在多种模型（包括开放源代码与闭源LLM，如GPT-4o-mini、GPT-5-nano）的 agentic 设置下的有效性。\n\n- 结论/性能：实验证明当前最先进的提示注入防御仍然易被自适应攻击突破，PISmith在所有对比基线中获得最高的攻击成功率，并在多模型与代理情境下表现出色，代码亦开放获取。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-16 13:03:05"
+}

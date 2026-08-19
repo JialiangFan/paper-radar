@@ -1,0 +1,13 @@
+{
+ "id": "2604.20801",
+ "title": "Synthesizing Multi-Agent Harnesses for Vulnerability Discovery",
+ "authors": "Hanzhi Liu, Chaofan Shou, Xiaonan Liu, Hongbo Wen, Yanju Chen, Ryan Jingyang Fang, Yu Feng",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20801v1",
+ "abstract": "LLM agents have begun to find real security vulnerabilities that human auditors and automated fuzzers missed for decades, in source-available targets where the analyst can build and instrument the code. In practice the work is split among several agents, wired together by a harness: the program that fixes which roles exist, how they pass information, which tools each may call, and how retries are coordinated. When the language model is held fixed, changing only the harness can still change success rates by several-fold on public agent benchmarks, yet most harnesses are written by hand; recent harness optimizers each search only a narrow slice of the design space and rely on coarse pass/fail feedback that gives no diagnostic signal about why a trial failed. AgentFlow addresses both limitations with a typed graph DSL whose search space jointly covers agent roles, prompts, tools, communication topology, and coordination protocol, paired with a feedback-driven outer loop that reads runtime signals from the target program itself to diagnose which part of the harness caused the failure and rewrite it accordingly. We evaluate AgentFlow on TerminalBench-2 with Claude Opus 4.6 and on Google Chrome with Kimi K2.5. AgentFlow reaches 84.3% on TerminalBench-2, the highest score in the public leaderboard snapshot we evaluate against, and discovers ten previously unknown zero-day vulnerabilities in Google Chrome, including two Critical sandbox-escape vulnerabilities (CVE-2026-5280 and CVE-2026-6297).",
+ "summary": "- 核心创新点：提出一个带类型的图结构领域特定语言（DSL）来系统性合成多代理 Harness，并利用基于目标程序运行信号的反馈循环诊断并重写 Harness，从而显著提升漏洞发现的成功率。\n\n- 主要方法： \n  - 使用有类型的图 DSL 同时覆盖代理角色、提示、工具、通信拓扑和协调协议等设计空间。\n  - 引入一个反馈驱动的外层循环，读取目标程序的运行信号以诊断 Harness 的哪一部分导致失败并据此重写 Harness。\n  - 在 TerminalBench-2（使用 Claude Opus 4.6）和 Google Chrome（使用 Kimi K2.5）上进行评测。\n\n- 结论/性能：\n  - 在 TerminalBench-2 上达到 84.3%，为公开榜单中的最高分。\n  - 在 Google Chrome 中发现十个此前未知的零日漏洞，其中包含两处关键沙箱逃逸漏洞（CVE-2026-5280、CVE-2026-6297）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-23 13:01:08"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.26951",
+ "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+ "authors": "Gongbo Zhang, Wen Wang, Ye Tian, Li Yuan",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26951v1",
+ "abstract": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher's noise-dependent reliability; (2) CompDemo, which enriches the teacher's context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.",
+ "summary": "- 核心创新点（1句）：\n  提出首个跨架构的 diffusion 大语言模型蒸馏框架 TIDE，能够在教师与学生在架构、注意力机制和分词器均不同的情况下实现知识转移。\n\n- 主要方法：\n  - 三大模块组成：TIDAL、CompDemo、Reverse CALM。\n  - TIDAL：联合调控蒸馏强度，基于训练进展与扩散时间步来适应教师的噪声相关可靠性。\n  - CompDemo：通过互补掩码拆分来丰富教师上下文，在强掩码情形下提升预测性能。\n  - Reverse CALM：跨分词器的目标函数，反转分块级似然匹配，提供有界梯度与双端噪声过滤。\n  - 实践上将8B Dense和16B MoE教师通过两条异构管线蒸馏到0.6B学生，完成跨架构蒸馏并实现性能提升。\n\n- 结论/性能：\n  - 相较基线，在8个基准上平均提升约1.53点。\n  - 在代码生成方面有显著提升，HumanEval 分数达到48.78（对比 AR 基线的32.3）。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-30 13:04:29"
+}

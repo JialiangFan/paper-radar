@@ -1,0 +1,13 @@
+{
+ "id": "2608.05891",
+ "title": "AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents",
+ "authors": "Weikai Xu, Yunren Feng, Haoxiang Lei, Kun Huang, Yuxuan Liu, Kang Zhao, Xiaolin Hu, Shuo Shang, Bo An",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05891v1",
+ "abstract": "Mobile GUI agents can operate apps through pixel perception and touch actions, making them a promising interface for collecting and improving long-horizon mobile interaction policies. However, real trajectories are difficult to obtain for sensitive apps and privacy-critical operations. At the same time, existing simulated environments are costly to scale up, and GUI world models still suffer from unstable generation, limited modality coverage, and inconsistent action-transition logic. To address these limitations, we propose AppDeltaWorld, a transition-grounded delta code world model that predicts the next GUI as a reachable code update rather than as an unconstrained image or text description. AppDeltaWorld retrieves app-specific Level-1 HTML references under an action-transition constraint, generates Level-2 executable HTML conditioned on the current screen, action, predicted next-screen text, and retrieved structure, and inserts generated visual assets into image slots before browser rendering. As a world model, AppDeltaWorld achieves the highest fidelity on CMGUIBench-500 under Code2World evaluation, with clear gains in structural layout and UI element reconstruction over image-only and code-only baselines. As a training environment, AppDeltaWorld supports filtered closed-loop SFT data construction that, when combined with public supervision, enables AppDeltaAgent to achieve state-of-the-art performance on AndroidLens and consistent gains on MobileGym and MobileWorld. Moreover, world-model-based test-time reinforcement learning enables policy adaptation and shows further improvements without additional interaction with real apps.",
+ "summary": "## AppDeltaWorld 论文摘要总结\n\n**1. 核心创新点**\n提出\"转移约束下的增量代码世界模型\"，将 GUI 下一屏预测从生成图像/文本描述，转化为生成一次**可达的代码更新**（HTML 增量），从而保证动作—转移逻辑的一致性与生成稳定性。\n\n**2. 主要方法**\n- **检索**：在动作—转移约束下，检索特定 App 的 Level-1 HTML 结构参考；\n- **生成**：以当前屏幕、执行动作、预测的下一屏文本、检索到的结构为条件，生成 Level-2 可执行 HTML；\n- **渲染**：将生成的视觉素材填入图像插槽，再经浏览器渲染成完整界面；\n- **应用**：作为训练环境，构建经过筛选的闭环 SFT 数据训练 AppDeltaAgent，并支持基于世界模型的**测试时强化学习**（TTRL）。\n\n**3. 结论/性能**\n- 作为世界模型：在 CMGUIBench-500 的 Code2World 评测中保真度最高，结构布局与 UI 元素重建显著优于纯图像和纯代码基线；\n- 作为训练环境：AppDeltaAgent 在 AndroidLens 上达到 SOTA，在 MobileGym 与 MobileWorld 上稳定提升；\n- 测试时强化学习可在**不与真实 App 交互**的前提下进一步实现策略自适应与性能提升。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-07 13:03:49"
+}

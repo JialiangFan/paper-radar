@@ -1,0 +1,13 @@
+{
+ "id": "2601.21669",
+ "title": "Expected Return Causes Outcome-Level Mode Collapse in Reinforcement Learning and How to Fix It with Inverse Probability Scaling",
+ "authors": "Abhijeet Sinha, Sundari Elango, Dianbo Liu",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21669v1",
+ "abstract": "Many reinforcement learning (RL) problems admit multiple terminal solutions of comparable quality, where the goal is not to identify a single optimum but to represent a diverse set of high-quality outcomes. Nevertheless, policies trained by standard expected return maximization routinely collapse onto a small subset of outcomes, a phenomenon commonly attributed to insufficient exploration or weak regularization. We show that this explanation is incomplete: outcome level mode collapse is a structural consequence of the expected-return objective itself. Under idealized learning dynamics, the log-probability ratio between any two outcomes evolves linearly in their reward difference, implying exponential ratio divergence and inevitable collapse independent of the exploration strategy, entropy regularization, or optimization algorithm. We identify the source of this pathology as the probability multiplier inside the expectation and propose a minimal correction: inverse probability scaling, which removes outcome-frequency amplification from the learning signal, fundamentally changes the learning dynamics, and provably yields reward-proportional terminal distributions, preventing collapse in multimodal settings. We instantiate this principle in Group Relative Policy Optimization (GRPO) as a drop-in modification, IPS-GRPO, requiring no auxiliary models or architectural changes. Across different reasoning and molecular generation tasks, IPS-GRPO consistently reduces outcome-level mode collapse while matching or exceeding baseline performance, suggesting that correcting the objective rather than adding exploration heuristics is key to reliable multimodal policy optimization.",
+ "summary": "- 核心创新点：揭示“结果级别模式塌陷”是期望回报目标的结构性后果，并提出逆概率放缩（IPS）作为最小改动来消除结果频率放大，使学习产生与奖励成正比的终态分布，从而防止多峰场景中的崩塌。\n\n- 主要方法：将逆概率放缩引入 Group Relative Policy Optimization（GRPO），形成 IPS-GRPO，一种无需额外模型或架构修改的 drop-in 修正，通过调整学习信号的概率权重来改变学习动力学。\n\n- 结论/性能：在推理与分子生成等多任务场景中，IPS-GRPO 显著减少结果层面的模式塌陷，同时达到或超越基线性能，强调纠正目标比增加探索更关键。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-01-30 14:04:41"
+}

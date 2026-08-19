@@ -1,0 +1,13 @@
+{
+ "id": "2604.02279",
+ "title": "The Self Driving Portfolio: Agentic Architecture for Institutional Asset Management",
+ "authors": "Andrew Ang, Nazym Azimbayev, Andrey Kim",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02279v1",
+ "abstract": "Agentic AI shifts the investor's role from analytical execution to oversight. We present an agentic strategic asset allocation pipeline in which approximately 50 specialized agents produce capital market assumptions, construct portfolios using over 20 competing methods, and critique and vote on each other's output. A researcher agent proposes new portfolio construction methods not yet represented, and a meta-agent compares past forecasts against realized returns and rewrites agent code and prompts to improve future performance. The entire pipeline is governed by the Investment Policy Statement--the same document that guides human portfolio managers can now constrain and direct autonomous agents.",
+ "summary": "- 核心创新点：在投资管理中引入代理式自我监督治理框架，通过约50名专业代理协同生成市场假设、用20+种方法构建组合、互评投票并由元代理持续自我改进，在投资政策声明约束下实现自治投资决策。\n\n- 主要方法：构建一个分布式代理管线，50名专业代理负责产生资本市场假设；使用20+种竞争性组合构建方法来构建投资组合；代理之间进行批评、投票与筛选；研究者代理提出新的组合构建方法；元代理对过去预测与实际回报进行对比并重写代理代码和提示以提升未来绩效；整个系统受到投资政策声明的约束与引导。\n\n- 结论/性能：摘要未给出具体量化指标，但提出了可行的自治资产配置框架和治理机制，展示了多代理协作、自我改进与合规约束的潜在效用，需进一步实验验证实际性能提升。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-03 13:02:01"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.07973",
+ "title": "VORL-EXPLORE: A Hybrid Learning Planning Approach to Multi-Robot Exploration in Dynamic Environments",
+ "authors": "Ning Liu, Sen Shen, Zheng Li, Sheng Liu, Dongkun Han, Shangke Lyu, Thomas Braunl",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07973v1",
+ "abstract": "Hierarchical multi-robot exploration commonly decouples frontier allocation from local navigation, which can make the system brittle in dense and dynamic environments. Because the allocator lacks direct awareness of execution difficulty, robots may cluster at bottlenecks, trigger oscillatory replanning, and generate redundant coverage. We propose VORL-EXPLORE, a hybrid learning and planning framework that addresses this limitation through execution fidelity, a shared estimate of local navigability that couples task allocation with motion execution. This fidelity signal is incorporated into a fidelity-coupled Voronoi objective with inter-robot repulsion to reduce contention before it emerges. It also drives a risk-aware adaptive arbitration mechanism between global A* guidance and a reactive reinforcement learning policy, balancing long-range efficiency with safe interaction in confined spaces. The framework further supports online self-supervised recalibration of the fidelity model using pseudo-labels derived from recent progress and safety outcomes, enabling adaptation to non-stationary obstacles without manual risk tuning. We evaluate this capability separately in a dedicated severe-traffic ablation. Extensive experiments in randomized grids and a Gazebo factory scenario show high success rates, shorter path length, lower overlap, and robust collision avoidance. The source code will be made publicly available upon acceptance.",
+ "summary": "- 核心创新点（1 句话）\n  通过引入执行保真度的共享估计，将任务分配与运动执行耦合，并以保真度驱动的 Voronoi 目标与互斥/风险感知仲裁，实现多机器人在动态环境中的自适应协同探索与规划。\n\n- 主要方法\n  - 提出混合学习-规划框架，将全局 A* 指导与反应性强化学习策略在风险感知下进行自适应仲裁。\n  - 引入执行保真度（fidelity）作为共享可观测量，耦合任务分配与运动执行的本地导航难度。\n  - 以保真度为核心的 Voronoi 目标并结合机器人间的排斥，提前减少竞争/拥塞。\n  - 进行在线自监督重新标定（伪标签）保真度模型，基于最近的进展与安全结果实现对非静态障碍的自适应调整。\n\n- 结论/性能\n  - 在随机网格与 Gazebo 工厂场景中实现高成功率、路径更短、覆盖重叠更少、鲁棒的碰撞规避。\n  - 通过对“严重交通”情景的消融实验，验证了在高拥堵环境中的有效性与适应性。\n  - 研究结果表明该方法在动态环境下能更可靠地完成多机器人探索任务，且源代码将公开。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-10 13:00:49"
+}

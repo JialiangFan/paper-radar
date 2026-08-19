@@ -1,0 +1,13 @@
+{
+ "id": "2512.22069",
+ "title": "Scaling Adversarial Training via Data Selection",
+ "authors": "Youran Ye, Dejin Wang, Ajinkya Bhandare",
+ "date": "2025-12-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22069v1",
+ "abstract": "Projected Gradient Descent (PGD) is a strong and widely used first-order adversarial attack, yet its computational cost scales poorly, as all training samples undergo identical iterative inner-loop optimization despite contributing unequally to robustness. Motivated by this inefficiency, we propose \\emph{Selective Adversarial Training}, which perturbs only a subset of critical samples in each minibatch. Specifically, we introduce two principled selection criteria: (1) margin-based sampling, which prioritizes samples near the decision boundary, and (2) gradient-matching sampling, which selects samples whose gradients align with the dominant batch optimization direction. Adversarial examples are generated only for the selected subset, while the remaining samples are trained cleanly using a mixed objective. Experiments on MNIST and CIFAR-10 show that the proposed methods achieve robustness comparable to, or even exceeding, full PGD adversarial training, while reducing adversarial computation by up to $50\\%$, demonstrating that informed sample selection is sufficient for scalable adversarial robustness.",
+ "summary": "- 核心创新点：在每个小批量中仅对“关键样本”进行对抗扰动，通过有选择的对抗训练实现与全量 PGD 相当甚至更优的鲁棒性，同时显著降低计算成本。\n\n- 主要方法：提出 Selective Adversarial Training，采用两种样本选择标准对批内样本进行筛选：1) 边界距分析（margin-based sampling），优先处理接近决策边界的样本；2) 梯度匹配（gradient-matching sampling），选择梯度与当前批次最优方向一致的样本。对所选子集生成对抗样本，其余样本采用混合目标的清洁训练。\n\n- 结论/性能：在 MNIST 和 CIFAR-10 上实现与全量 PGD 训练相媲美甚至更优的鲁棒性，同时将对抗计算量降低最多约 50%，证明了信息化样本选择即可实现可扩展的对抗鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-29 02:29:37"
+}

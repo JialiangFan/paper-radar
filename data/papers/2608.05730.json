@@ -1,0 +1,13 @@
+{
+ "id": "2608.05730",
+ "title": "SpaceVLA: Spatially Grounded VLA for Robotic Manipulation with User-Authored Grasp and Place Anchors",
+ "authors": "Daniia Zinniatullina, Iaroslav Kolomiets, Mikhail Konenkov, Miguel Altamirano Cabrera, Dzmitry Tsetserukou",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05730v1",
+ "abstract": "Vision-language-action (VLA) models follow language commands but often lack explicit spatial intent for manipulation. We present Visual Intent Anchors, an XR pipeline that lets users specify grasp and placement regions and renders them as image-space overlays for VLA control. We collect 200 Unity pick-and-place demonstrations and fine-tune OpenVLA-7B with LoRA on temporally subsampled annotated observations. The policy predicts tokenized 7-DoF incremental actions from marked RGB observations and language. We evaluate the policy in closed-loop Unity trials, achieving a grasp success rate of 91.25% and mean grasp and placement errors of 0.5 cm and 0.7 cm, respectively.",
+ "summary": "## SpaceVLA 论文摘要总结\n\n**1. 核心创新点**\n提出\"视觉意图锚点\"（Visual Intent Anchors）——让用户通过 XR 界面直接在场景中标注抓取与放置区域，并将其渲染为图像空间的可视化叠加层，从而为 VLA 模型注入显式的空间意图。\n\n**2. 主要方法**\n- 用 Unity 采集 200 条 pick-and-place 演示数据；\n- 对观测帧做时序下采样并叠加锚点标注；\n- 在 OpenVLA-7B 上用 LoRA 微调；\n- 策略以\"带标记的 RGB 图像 + 语言指令\"为输入，输出 token 化的 7-DoF 增量动作。\n\n**3. 结论/性能**\n在 Unity 闭环实验中，抓取成功率达 **91.25%**，平均抓取误差 **0.5 cm**、放置误差 **0.7 cm**，表明显式空间锚点能有效弥补 VLA 模型在语言指令下空间意图模糊的问题。\n\n> 补充一点判断：结果全部来自 Unity 仿真闭环，未见真机验证，且数据规模仅 200 条演示，因此该精度能否迁移到真实机器人仍是开放问题。\n\n另外，如果你希望走 `paper-review` 技能的完整流程（生成中英双语文件并写入 Obsidian vault），告诉我一声，我可以按那个格式重做一份。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-08 13:05:52"
+}

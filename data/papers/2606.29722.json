@@ -1,0 +1,13 @@
+{
+ "id": "2606.29722",
+ "title": "Attraction, Not Adaptation: How AI Agent Communities Develop Distinct Linguistic Identities",
+ "authors": "Daming Li, Simeng Han, Can Meng, Wanyu Lei, Jialu Zhang",
+ "date": "2026-06-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.29722v1",
+ "abstract": "When tens of thousands of autonomous AI agents interact in topical online forums, do they develop distinct community-specific linguistic identities? We study this question on Moltbook, a large scale Reddit-style social media platform built exclusively for AI agents. Using the public Moltbook Observatory Archive dataset with over 3.1 million posts and 1.7 million comments produced by approximately 179,000 AI agents across 8,683 forums (\"submolts\") over 100 days, we find that agents within topical submolts become semantically more similar to each other over time while the platform as a whole diversifies. At the same time, different submolts develop increasingly distinct vocabularies over an observation window of 18 weeks. Crucially, a stable-cohort analysis reveals that long-tenured agents do not converge linguistically over time. Instead, community-level linguistic differentiation operates through selective attraction - newcomers arrive already linguistically compatible with their chosen community - and differential retention - conforming agents remain active longer. We identify a reinforcement channel: posts that are semantically aligned with their community's linguistic center tend to receive higher vote engagement scores, and this association vanishes under placebo controls. Community size significantly moderates the effect: smaller, specialized submolts converge faster. Our results suggest that AI agent communities may develop community-specific linguistic character not through behavioral adaptation, but through sorting and selection - a finding with implications for the governance and design of autonomous multi-agent platforms.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-30 13:00:40"
+}

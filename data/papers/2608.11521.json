@@ -1,0 +1,13 @@
+{
+ "id": "2608.11521",
+ "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models",
+ "authors": "Chushan Zhang, Jinguang Tong, Xuesong Li, Yikai Wang, Hongdong Li",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11521v1",
+ "abstract": "World action models (WAMs) condition robot actions on predicted futures, but iterative video rollout increases deployment latency. We ask whether action generation requires the evolving rollout trajectory or only its future representation. Across four WAMs on all 40 LIBERO tasks, paired closed-loop interventions show that masking or reassigning future-cache values changes execution and reduces success, indicating sensitivity to future values and their assigned positions. For Joint and Cosmos-2, however, replaying one fixed final-clean key/value (K/V) cache nearly preserves unmodified execution, with $1.7$ to $1.9$~cm end-effector average displacement error and $97.9\\%$ to $98.2\\%$ success. This separates cache consumption from production: these models can reuse a fixed cache but still require iterative rollout to construct it. We therefore propose RIFT (\\emph{Rollout-free Imagination via Future Tokens}), which uses learned anticipation tokens to construct a complete future K/V cache in one backbone pass while retaining the original future-read interface. On LIBERO, RIFT achieves $98.8\\%$ success, close to rollout-based Joint, IDM, and LingBot-VA at $98.4\\%$ to $98.6\\%$, while reducing action-chunk latency by $68.2\\%$ to $89.1\\%$. On RoboTwin~2.0, RIFT reaches $92.9/92.6\\%$ on clean/randomized scenes, the highest observed among the evaluated methods. These results support rollout-free future conditioning without iterative video generation at deployment.",
+ "summary": "## RIFT: 面向世界动作模型的免推演未来条件化\n\n**1. 核心创新点**\n提出 RIFT，用可学习的\"预期 token\"在单次骨干网络前向中直接构造完整的未来 K/V 缓存，从而在部署时彻底去掉逐帧视频推演（rollout），同时保留原有的\"读取未来\"接口。\n\n**2. 主要方法**\n- **先做机理分析**：在 4 个世界动作模型（WAM）× LIBERO 全部 40 个任务上做成对闭环干预实验——遮蔽或重新指派未来缓存的值，会改变执行轨迹并降低成功率，说明模型确实对未来表征的**数值及其位置**敏感。\n- **关键发现**：对 Joint 和 Cosmos-2，反复回放一份**固定的最终干净 K/V 缓存**几乎能复现原始执行（末端执行器平均位移误差 1.7–1.9 cm，成功率 97.9%–98.2%）。这把\"缓存的消费\"与\"缓存的生产\"解耦了：模型可以复用固定缓存，但仍需迭代推演去**构造**它。\n- **RIFT 的思路**：既然消费端不需要演化中的轨迹，就用 anticipation tokens 一次性\"生产\"出这份未来缓存，绕过迭代视频生成。\n\n**3. 结论/性能**\n- **LIBERO**：成功率 98.8%，与依赖 rollout 的 Joint / IDM / LingBot-VA（98.4%–98.6%）持平甚至略优，而动作块（action-chunk）延迟降低 **68.2%–89.1%**。\n- **RoboTwin 2.0**：干净场景 92.9%、随机化场景 92.6%，为所评估方法中最高。\n- **结论**：动作生成只需要未来的*表征*，不需要演化中的推演轨迹；部署时可以做到\"免推演的未来条件化\"。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-13 13:03:57"
+}

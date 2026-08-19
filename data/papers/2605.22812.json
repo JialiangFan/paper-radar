@@ -1,0 +1,13 @@
+{
+ "id": "2605.22812",
+ "title": "GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations",
+ "authors": "Wenxuan Guo, Ziyuan Li, Meng Zhang, Yichen Liu, Yimeng Dong, Chuxi Xu, Yunfei Wei, Ze Chen, Erjin Zhou, Jianjiang Feng",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22812v1",
+ "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To address this limitation, we introduce gesture as a parallel instruction modality and propose a Gesture-aware Vision-Language-Action model (GesVLA). Our approach encodes gesture features directly into the latent space, enabling them to participate in both high-level reasoning and low-level action generation, and adopts a dual-VLM architecture to achieve tight coupling between gesture representations and action policies. At the data level, we construct a scalable gesture data generation pipeline by rendering hand models onto real-world scene images. This reduces the sim-to-real visual gap while producing rich data with diverse motion patterns and corresponding pointing annotations. In addition, we employ a two-stage training strategy to equip the model with both gesture perception and action prediction capabilities. We evaluate our approach on multiple real-world robotic tasks, including a controlled block manipulation task for validation and more practical scenarios such as product and produce selection. Experimental results show that incorporating gesture consistently improves target grounding accuracy and human-robot interaction efficiency, especially in complex and cluttered environments. Project page: https://gwxuan.github.io/GesVLA/.",
+ "summary": "# GesVLA 论文总结\n\n1. **核心创新点**：将手势作为与文本并行的指令模态嵌入视觉-语言-动作（VLA）模型，以解决复杂场景中多相似物体带来的空间指代歧义问题。\n\n2. **主要方法**：\n   - 提出 **GesVLA** 模型，将手势特征直接编码进潜空间，使其同时参与高层推理与低层动作生成；\n   - 采用 **双 VLM 架构**，实现手势表征与动作策略的紧耦合；\n   - 构建可扩展的手势数据生成流水线，将手部模型渲染到真实场景图像上，缩小 sim-to-real 视觉差距，并自动生成指向标注；\n   - 使用 **两阶段训练策略**，分别培养模型的手势感知与动作预测能力。\n\n3. **结论/性能**：在多个真实机器人任务（受控积木抓取、商品/果蔬选取等）上的实验表明，引入手势可显著提升目标定位准确率与人机交互效率，尤其在复杂、杂乱环境中优势明显。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-25 13:11:38"
+}

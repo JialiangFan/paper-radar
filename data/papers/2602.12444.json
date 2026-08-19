@@ -1,0 +1,13 @@
+{
+ "id": "2602.12444",
+ "title": "Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models",
+ "authors": "Alexander W. Goodall, Francesco Belardinelli",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.12444v1",
+ "abstract": "Reinforcement learning (RL) is a powerful framework for optimal decision-making and control but often lacks provable guarantees for safety-critical applications. In this paper, we introduce a novel recovery-based shielding framework that enables safe RL with a provable safety lower bound for unknown and non-linear continuous dynamical systems. The proposed approach integrates a backup policy (shield) with the RL agent, leveraging Gaussian process (GP) based uncertainty quantification to predict potential violations of safety constraints, dynamically recovering to safe trajectories only when necessary. Experience gathered by the 'shielded' agent is used to construct the GP models, with policy optimization via internal model-based sampling - enabling unrestricted exploration and sample efficient learning, without compromising safety. Empirically our approach demonstrates strong performance and strict safety-compliance on a suite of continuous control environments.",
+ "summary": "1. 核心创新点：提出一个 recovery-based shielding 框架，结合高斯过程动力学模型，对未知非线性连续系统提供可证明的安全下界，并在必要时动态回退到安全轨迹，确保安全同时支持探索。 \n\n2. 主要方法：将 backup policy（shield）与强化学习代理集成；利用高斯过程对系统动力学进行不确定性量化，预测潜在的安全违规；仅在风险出现时进行恢复以回到安全轨迹；shield 收集的经验用于构建 GP 模型；通过内部基于模型的采样进行策略优化，从而实现无约束的探索与高效学习。\n\n3. 结论/性能：在一组连续控制环境中实现了强性能和严格的安全合规性，证明在未知非线性系统下也能获得可证明的安全下界并提高样本效率。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-16 14:00:34"
+}

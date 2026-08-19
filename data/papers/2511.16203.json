@@ -1,0 +1,32 @@
+{
+ "id": "2511.16203",
+ "title": "When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models",
+ "authors": "Wang, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2511.16203",
+ "abstract": "",
+ "summary": "VLA-Fool studies multimodal perturbations across text, vision, and grounding that cause unsafe or incorrect VLA behavior.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "adversarial-attacks",
+  "benchmarks-and-evaluation",
+  "multimodal-safety",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2025_Wang_VLAFool.md",
+ "pdf_path": "PDFs/VLA_Safety/2025_Wang_VLAFool.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

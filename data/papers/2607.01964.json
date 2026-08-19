@@ -1,0 +1,13 @@
+{
+ "id": "2607.01964",
+ "title": "Beyond Supervised Clarification: Input Rewriting with LLMs for Dialogue Discourse Parsing",
+ "authors": "Yiming Liu, Ziyue Zhang, Zhichao Xu, Xin Yu, Yingheng Tang, Tianyu Jiang, Jie Cao",
+ "date": "2026-07-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.01964v1",
+ "abstract": "Rewriting inputs to improve frozen downstream models has become a common strategy in modern NLP pipelines. Prior work on incremental dialogue discourse parsing (DDP) shows that supervised clarification models can rewrite fragmentary or underspecified utterances, such as resolving ellipsis or references, to improve parsing accuracy. In this work, we revisit this idea under realistic deployment conditions, where no clarification supervision is available and the clarifier must rely on zero-shot prompting or feedback from a frozen parser. Across three Segmented Discourse Representation Theory (SDRT) datasets and multiple parsers, we find that last-utterance clarification is far less reliable than suggested by supervised settings. Parser-agnostic rewriting often introduces more regressions than repairs, as edits that enable fixes also disrupt discourse cues relied upon by the parser. A best-of-8 rewriting analysis further reveals a practical ceiling: a large fraction of errors are not repairable through input rewriting alone. A parser-aware clarifier trained with GRPO reduces regressions by up to 37% by learning conservative abstention, yet still fails to produce selectivity-aware clarifications that consistently improve parsing. Together, these findings recast clarification as a selective intervention problem. We identify rewritability prediction, deciding whether an utterance is repairable before intervention, as the key missing capability for input-side optimization of frozen discourse parsers, and a critical direction for improving agentic pipelines more broadly.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-07-06 13:00:39"
+}

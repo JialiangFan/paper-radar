@@ -1,0 +1,13 @@
+{
+ "id": "2602.10006",
+ "title": "Answer First, Reason Later: Aligning Search Relevance via Mode-Balanced Reinforcement Learning",
+ "authors": "Shijie Zhang, Xiang Guo, Rujun Guo, Shaoyu Liu, Xiaozhao Wang, Guanjun Jiang, Kevin Zhang",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.10006v1",
+ "abstract": "Building a search relevance model that achieves both low latency and high performance is a long-standing challenge in the search industry. To satisfy the millisecond-level response requirements of online systems while retaining the interpretable reasoning traces of Large Language Models (LLMs), we propose a novel \\textbf{Answer-First, Reason Later (AFRL)} paradigm. This paradigm requires the model to output the definitive relevance score in the very first token, followed by a structured logical explanation. Inspired by the success of reasoning models, we adopt a \"Supervised Fine-Tuning (SFT) + Reinforcement Learning (RL)\" pipeline to achieve AFRL. However, directly applying existing RL training often leads to \\textbf{mode collapse} in the search relevance task, where the model forgets complex long-tail rules in pursuit of high rewards. From an information theory perspective: RL inherently minimizes the \\textbf{Reverse KL divergence}, which tends to seek probability peaks (mode-seeking) and is prone to \"reward hacking.\" On the other hand, SFT minimizes the \\textbf{Forward KL divergence}, forcing the model to cover the data distribution (mode-covering) and effectively anchoring expert rules. Based on this insight, we propose a \\textbf{Mode-Balanced Optimization} strategy, incorporating an SFT auxiliary loss into Stepwise-GRPO training to balance these two properties. Furthermore, we construct an automated instruction evolution system and a multi-stage curriculum to ensure expert-level data quality. Extensive experiments demonstrate that our 32B teacher model achieves state-of-the-art performance. Moreover, the AFRL architecture enables efficient knowledge distillation, successfully transferring expert-level logic to a 0.6B model, thereby reconciling reasoning depth with deployment latency.",
+ "summary": "- 核心创新点：提出 Answer-First, Reason Later (AFRL) 范式，在首个 token 就输出确定的相关性分数并随后给出结构化推理，同时通过 Mode-Balanced Optimization 在 SFT 与 RL 之间平衡分布覆盖与模式探测，解决 RL 在搜索相关任务中的模式塌陷，并实现高效知识蒸馏。  \n\n- 主要方法：结合 AFRL 框架与 SFT + RL 的训练流程，采用 Stepwise-GRPO 训练引入 Mode-Balanced Optimization，将 SFT 辅助损失加入以平衡正向/反向 KL；构建自动化的指令演化系统与多阶段课程以提升数据质量；实验使用 32B 的教师模型实现了最新性能，并通过该架构实现对低参数模型（0.6B）进行高效知识蒸馏，兼顾推理深度与部署延迟。  \n\n- 结论/性能：32B 教师模型达到业界领先水平；AFRL 架构实现对专家级逻辑的高效迁移到 0.6B 模型，在保持较深推理能力的同时满足毫秒级在线部署需求，并有效缓解模式塌陷问题。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-11 14:04:03"
+}

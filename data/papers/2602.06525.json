@@ -1,0 +1,13 @@
+{
+ "id": "2602.06525",
+ "title": "Progress Constraints for Reinforcement Learning in Behavior Trees",
+ "authors": "Finn Rietz, Mart Kartašev, Johannes A. Stork, Petter Ögren",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06525v1",
+ "abstract": "Behavior Trees (BTs) provide a structured and reactive framework for decision-making, commonly used to switch between sub-controllers based on environmental conditions. Reinforcement Learning (RL), on the other hand, can learn near-optimal controllers but sometimes struggles with sparse rewards, safe exploration, and long-horizon credit assignment. Combining BTs with RL has the potential for mutual benefit: a BT design encodes structured domain knowledge that can simplify RL training, while RL enables automatic learning of the controllers within BTs. However, naive integration of BTs and RL can lead to some controllers counteracting other controllers, possibly undoing previously achieved subgoals, thereby degrading the overall performance. To address this, we propose progress constraints, a novel mechanism where feasibility estimators constrain the allowed action set based on theoretical BT convergence results. Empirical evaluations in a 2D proof-of-concept and a high-fidelity warehouse environment demonstrate improved performance, sample efficiency, and constraint satisfaction, compared to prior methods of BT-RL integration.",
+ "summary": "- 核心创新点：提出进度约束机制，通过可行性估计器基于行为树的收敛性理论来约束 RL 的可选动作集合，从而避免 BT-RL 融合中子控制器相互抵消、提升性能与约束满足。\n\n- 主要方法：在行为树与强化学习的结合中引入可行性估计器和进度约束，依据行为树的理论收敛性结果限制 RL 的动作集合，提升训练效率与稳定性，并在二维证明与高保真仓库环境中进行评估。\n\n- 结论/性能：相较于以往的 BT-RL 集成方法，显示出更好的性能、更高的样本效率以及更好的约束满足度。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-09 14:00:39"
+}

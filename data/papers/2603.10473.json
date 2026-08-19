@@ -1,0 +1,13 @@
+{
+ "id": "2603.10473",
+ "title": "Aligning Large Language Models with Searcher Preferences",
+ "authors": "Wei Wu, Peilun Zhou, Liyi Chen, Qimeng Wang, Chengqiang Lu, Yan Gao, Yi Wu, Yao Hu, Hui Xiong",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10473v1",
+ "abstract": "The paradigm shift from item-centric ranking to answer-centric synthesis is redefining the role of search engines. While recent industrial progress has applied generative techniques to closed-set item ranking in e-commerce, research and deployment of open-ended generative search on large content platforms remain limited. This setting introduces challenges, including robustness to noisy retrieval, non-negotiable safety guarantees, and alignment with diverse user needs. In this work, we introduce SearchLLM, the first large language model (LLM) for open-ended generative search. We design a hierarchical, multi-dimensional reward system that separates bottom-line constraints, including factual grounding, basic answer quality and format compliance, from behavior optimization objectives that promote robustness to noisy retrieval and alignment with user needs. Concretely, our reward model evaluates responses conditioned on the user query, session history, and retrieved evidence set, combining rule-based checks with human-calibrated LLM judges to produce an interpretable score vector over these dimensions. We introduce a Gated Aggregation Strategy to derive the training reward for optimizing SearchLLM with Group Relative Policy Optimization (GRPO). We deploy SearchLLM in the AI search entry of RedNote. Offline evaluations and online A/B tests show improved generation quality and user engagement, increasing Valid Consumption Rate by 1.03% and reducing Re-search Rate by 2.81%, while upholding strict safety and reliability standards.",
+ "summary": "1) 核心创新点：提出面向开放式生成式搜索的首个大语言模型 SearchLLM，通过分层多维奖励与 Gated Aggregation 策略实现对回答的事实 grounding、基本质量、格式合规以及对用户需求的鲁棒对齐。\n\n2) 主要方法：  \n- 构建开放式生成搜索框架 SearchLLM；  \n- 设计分层的多维奖励系统，将底线约束（事实 grounding、回答质量、格式合规）与行为优化目标分离；  \n- 奖励模型在查询、会话历史和检索证据集条件下，对回答进行规则检查与人类校准的 LLM 评判，输出可解释的分数向量；  \n- 提出 Gated Aggregation Strategy，将多维分数汇聚用于通过 Group Relative Policy Optimization (GRPO) 进行训练；  \n- 将 SearchLLM 部署在 RedNote 的 AI 搜索入口，完成离线评估与在线 A/B 测试。\n\n3) 结论/性能：离线评估与在线 A/B 测试显示生成质量与用户参与度提升，有效消费率提升1.03%，再搜索率下降2.81%，同时保持严格的安全与可靠性标准。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-12 13:04:12"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.06481",
+ "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+ "authors": "Yushan Liu, Peibo Sun, Shoujie Li, Yifan Xie, Lingfeng Zhang, Xintao Chao, Shiyuan Dong, Fang Chen, Xiao-Ping Zhang, Wenbo Ding",
+ "date": "2026-05-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.06481v1",
+ "abstract": "World Action Models (WAMs) enhance Vision-Language-Action policies by jointly predicting scene evolution and robot actions, but existing methods usually represent the predicted world as holistic images, video tokens, or global latents. These representations are difficult for an action decoder to address when an instruction refers to a particular object, especially under scene shifts where object identity is entangled with context. We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. OA-WAM decomposes each frame into N+1 slot states, with one robot slot and N object slots. Each slot contains a persistent address vector and a time-varying content vector, and is fused with text, image, proprioception, and past-action tokens in a block-causal sequence. A world head predicts next-frame slot states, while a flow-matching action head decodes a 16-step continuous action chunk in the same forward pass. Addressability is enforced by routing cross-slot attention through address-only keys and resetting the address slice at every transformer layer, separating which object to act on from what that object currently is without adding extra tokens. OA-WAM matches strong VLA and WAM baselines on LIBERO (97.8%) and SimplerEnv (79.3%), reaches state-of-the-art performance on the most relevant LIBERO-Plus geometric axes, and remains competitive on the seven-axis aggregate. A causal slot-intervention test yields a swap-binding cosine of 0.87, versus at most 0.09 for holistic baselines. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations.",
+ "summary": "1. **核心创新点**：提出一种\"对象可寻址\"的世界-动作模型（OA-WAM），将场景显式分解为机器人槽位与多个对象槽位，把\"该作用于哪个对象\"与\"该对象当前状态如何\"解耦，从而提升 VLA 策略在场景扰动下的鲁棒性。\n\n2. **主要方法**：每帧被分解为 N+1 个槽位状态，每个槽位包含持久的地址向量（address）和时变的内容向量（content）；将其与文本、图像、本体感觉、历史动作 token 一起组成 block-causal 序列。世界头预测下一帧的槽位状态，流匹配（flow-matching）动作头在同一次前向中解码 16 步连续动作 chunk。通过仅用地址向量参与跨槽位注意力的 key 路由，并在每层 Transformer 重置地址切片，强制实现可寻址性，且不增加额外 token。\n\n3. **结论/性能**：在 LIBERO 达 97.8%，SimplerEnv 达 79.3%，与强 VLA/WAM 基线持平；在 LIBERO-Plus 最相关的几何扰动维度上达到 SOTA，七轴综合上保持竞争力。因果槽位干预测试中 swap-binding 余弦相似度为 0.87，而整体表示型基线最高仅 0.09，验证了可寻址对象状态对鲁棒世界-动作建模的有效性。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-22 13:04:06"
+}

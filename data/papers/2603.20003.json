@@ -1,0 +1,13 @@
+{
+ "id": "2603.20003",
+ "title": "An Agentic Approach to Generating XAI-Narratives",
+ "authors": "Yifan He, David Martens",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20003v1",
+ "abstract": "Explainable AI (XAI) research has experienced substantial growth in recent years. Existing XAI methods, however, have been criticized for being technical and expert-oriented, motivating the development of more interpretable and accessible explanations. In response, large language model (LLM)-generated XAI narratives have been proposed as a promising approach for translating post-hoc explanations into more accessible, natural-language explanations. In this work, we propose a multi-agent framework for XAI narrative generation and refinement. The framework comprises the Narrator, which generates and revises narratives based on feedback from multiple Critic Agents on faithfulness and coherence metrics, thereby enabling narrative improvement through iteration. We design five agentic systems (Basic Design, Critic Design, Critic-Rule Design, Coherent Design, and Coherent-Rule Design) and systematically evaluate their effectiveness across five LLMs on five tabular datasets. Results validate that the Basic Design, the Critic Design, and the Critic-Rule Design are effective in improving the faithfulness of narratives across all LLMs. Claude-4.5-Sonnet on Basic Design performs best, reducing the number of unfaithful narratives by 90% after three rounds of iteration. To address recurrent issues, we further introduce an ensemble strategy based on majority voting. This approach consistently enhances performance for four LLMs, except for DeepSeek-V3.2-Exp. These findings highlight the potential of agentic systems to produce faithful and coherent XAI narratives.",
+ "summary": "1) 核心创新点：提出一个由 Narrator 与多名 Critic Agent 组成的多代理框架，通过迭代生成与修订 XAI 叙事，以提升叙事的可信性（faithfulness）和连贯性（coherence）。\n\n2) 主要方法：基于五种大语言模型（LLMs）在五个表格数据集上的实验，设计并对比五种代理设计（Basic Design、Critic Design、Critic-Rule Design、Coherent Design、Coherent-Rule Design），让 Narrator 依据 Critic Agents 对信度与连贯性的评估进行迭代改写，并引入基于多数投票的集成策略以提升整体性能。\n\n3) 结论/性能：Basic Design、Critic Design、Critic-Rule Design 在所有 LLMs 上均能提升叙事的可信性；在 Basic Design 下，Claude-4.5-Sonnet 三轮迭代将不可信叙事数量减少约90%；多数投票集成策略在四个 LLM 上普遍提升性能，唯独 DeepSeek-V3.2-Exp 表现例外，强调该代理体系在生成更可信、更连贯的 XAI 叙事方面的潜力。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:08:32"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.08511",
+ "title": "Thinking with Images via Self-Calling Agent",
+ "authors": "Wenxi Yang, Yuzhong Zhao, Fang Wan, Qixiang Ye",
+ "date": "2025-12-09",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.08511v1",
+ "abstract": "Thinking-with-images paradigms have showcased remarkable visual reasoning capability by integrating visual information as dynamic elements into the Chain-of-Thought (CoT). However, optimizing interleaved multimodal CoT (iMCoT) through reinforcement learning remains challenging, as it relies on scarce high-quality reasoning data. In this study, we propose Self-Calling Chain-of-Thought (sCoT), a novel visual reasoning paradigm that reformulates iMCoT as a language-only CoT with self-calling. Specifically, a main agent decomposes the complex visual reasoning task to atomic subtasks and invokes its virtual replicas, i.e. parameter-sharing subagents, to solve them in isolated context. sCoT enjoys substantial training effectiveness and efficiency, as it requires no explicit interleaving between modalities. sCoT employs group-relative policy optimization to reinforce effective reasoning behavior to enhance optimization. Experiments on HR-Bench 4K show that sCoT improves the overall reasoning performance by up to $1.9\\%$ with $\\sim 75\\%$ fewer GPU hours compared to strong baseline approaches. Code is available at https://github.com/YWenxi/think-with-images-through-self-calling.",
+ "summary": "- 核心创新点：提出自调用链式思维 sCoT，将多模态的 iMCoT 转换为语言级推理，通过主代理分解任务并调用参数共享的虚拟子代理在独立上下文中解题，从而实现无显式跨模态交互的高效视觉推理。\n\n- 主要方法：将复杂视觉推理分解为原子子任务，由主代理调用参数共享的虚拟子代理在独立上下文中解决；整个过程为语言级的自调用 Chain-of-Thought，避免跨模态显式交互；采用 group-relative policy optimization 来强化推理行为以提升优化效果。\n\n- 结论/性能：在 HR-Bench 4K 上，sCoT 使整体推理性能提升最多约 1.9%，且训练所需的 GPU 小时约减少 75%（相较强基线）；代码公开可用。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-10 14:04:22"
+}

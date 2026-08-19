@@ -1,0 +1,13 @@
+{
+ "id": "2604.26880",
+ "title": "HealthNLP_Retrievers at ArchEHR-QA 2026: Cascaded LLM Pipeline for Grounded Clinical Question Answering",
+ "authors": "Md Biplob Hosen, Md Alomgeer Hussein, Md Akmol Masud, Omar Faruque, Tera L Reynolds, Lujie Karen Chen",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26880v1",
+ "abstract": "Patient portals now give individuals direct access to their electronic health records (EHRs), yet access alone does not ensure patients understand or act on the complex clinical information contained in these records. The ArchEHR-QA 2026 shared task addresses this challenge by focusing on grounded question answering over EHRs, and this paper presents the system developed by the HealthNLP_Retrievers team for this task. The proposed approach uses a multi-stage cascaded pipeline powered by the Gemini 2.5 Pro large language model to interpret patient-authored questions and retrieve relevant evidence from lengthy clinical notes. Our architecture comprises four integrated modules: (1) a few-shot query reformulation unit which summarizes verbose patient queries; (2) a heuristic-based evidence scorer which ranks clinical sentences to prioritize recall; (3) a grounded response generator which synthesizes professional-caliber answers restricted strictly to identified evidence; and (4) a high-precision many-to-many alignment framework which links generated answers to supporting clinical sentences. This cascaded approach achieved competitive results. Across the individual tracks, the system ranked 1st in question interpretation, 5th in answer generation, 7th in evidence identification, and 9th in answer-evidence alignment. These results show that integrating large language models within a structured multi-stage pipeline improves grounding, precision, and the professional quality of patient-oriented health communication. To support reproducibility, our source code is publicly available in our GitHub repository",
+ "summary": "- 核心创新点：提出一个四模块的级联管线，借助 Gemini 2.5 Pro 大语言模型将提问解释、证据检索、受证据约束的回答生成，以及回答与证据的高精度对齐整合在一起，以实现面向患者的 grounding 临床问答。\n\n- 主要方法：基于 Gemini 2.5 Pro 构建多阶段 cascaded pipeline，包含（1）少量示例的查询改写模块将冗长提问压缩；（2）基于启发式的证据评分器对临床句子进行排序以提高召回；（3）受证据约束的回答生成模块合成专业级答案；（4）高精度的多对多对齐框架将生成的答案与支持证据句对应起来，实现严格证据基底的回答。\n\n- 结论/性能：在 ArchEHR-QA 2026 的各子任务中取得竞争性结果，问句理解排名第一、答案生成排名第五、证据识别排名第七、答案-证据对齐排名第九，显示将大语言模型融入结构化多阶段管线可提升 grounding、精确度和面向患者的专业沟通质量；并且代码公开在 GitHub。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-30 13:01:18"
+}

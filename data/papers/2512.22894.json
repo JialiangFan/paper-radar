@@ -1,0 +1,13 @@
+{
+ "id": "2512.22894",
+ "title": "DECEPTICON: How Dark Patterns Manipulate Web Agents",
+ "authors": "Phil Cuvin, Hao Zhu, Diyi Yang",
+ "date": "2025-12-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22894v1",
+ "abstract": "Deceptive UI designs, widely instantiated across the web and commonly known as dark patterns, manipulate users into performing actions misaligned with their goals. In this paper, we show that dark patterns are highly effective in steering agent trajectories, posing a significant risk to agent robustness. To quantify this risk, we introduce DECEPTICON, an environment for testing individual dark patterns in isolation. DECEPTICON includes 700 web navigation tasks with dark patterns -- 600 generated tasks and 100 real-world tasks, designed to measure instruction-following success and dark pattern effectiveness. Across state-of-the-art agents, we find dark patterns successfully steer agent trajectories towards malicious outcomes in over 70% of tested generated and real-world tasks -- compared to a human average of 31%. Moreover, we find that dark pattern effectiveness correlates positively with model size and test-time reasoning, making larger, more capable models more susceptible. Leading countermeasures against adversarial attacks, including in-context prompting and guardrail models, fail to consistently reduce the success rate of dark pattern interventions. Our findings reveal dark patterns as a latent and unmitigated risk to web agents, highlighting the urgent need for robust defenses against manipulative designs.",
+ "summary": "- 核心创新点（一句话概括）\n  首次系统性地把暗模式作为可测试的对手环境，构建 DECEPTICON，在700个网页导航任务中量化暗模式对网页代理的操纵效果与鲁棒性风险。\n\n- 主要方法\n  - 设计并实现 DECEPTICON 环境，用以孤立测试单个暗模式的影响。\n  - 组建包含600个生成任务与100个真实场景任务的共700任务集，用于衡量指令遵循成功率和暗模式有效性。\n  - 在多种最先进的网页代理（state-of-the-art agents）上进行广泛评测，分析模型规模和测试时推理对易被操纵性的影响。\n  - 评估常用防御措施的有效性，包括在-context 提示与守护模型等方法。\n\n- 结论/性能\n  - 暗模式在超过70%的测试任务中能够将代理引向恶意结果，明显高于人类平均水平31%。\n  - 暗模式的有效性与模型规模及测试时推理能力正相关，模型越大越易受影响。\n  - 现有对抗防御（如在-context 提示、守护模型）未能稳定地降低成功率，暗模式构成对网页代理的严重且尚未缓解的风险。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-30 02:31:04"
+}

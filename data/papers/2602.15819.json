@@ -1,0 +1,13 @@
+{
+ "id": "2602.15819",
+ "title": "VideoSketcher: Video Models Prior Enable Versatile Sequential Sketch Generation",
+ "authors": "Hui Ren, Yuval Alaluf, Omer Bar Tal, Alexander Schwing, Antonio Torralba, Yael Vinker",
+ "date": "2026-02-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.15819v1",
+ "abstract": "Sketching is inherently a sequential process, in which strokes are drawn in a meaningful order to explore and refine ideas. However, most generative models treat sketches as static images, overlooking the temporal structure that underlies creative drawing. We present a data-efficient approach for sequential sketch generation that adapts pretrained text-to-video diffusion models to generate sketching processes. Our key insight is that large language models and video diffusion models offer complementary strengths for this task: LLMs provide semantic planning and stroke ordering, while video diffusion models serve as strong renderers that produce high-quality, temporally coherent visuals. We leverage this by representing sketches as short videos in which strokes are progressively drawn on a blank canvas, guided by text-specified ordering instructions. We introduce a two-stage fine-tuning strategy that decouples the learning of stroke ordering from the learning of sketch appearance. Stroke ordering is learned using synthetic shape compositions with controlled temporal structure, while visual appearance is distilled from as few as seven manually authored sketching processes that capture both global drawing order and the continuous formation of individual strokes. Despite the extremely limited amount of human-drawn sketch data, our method generates high-quality sequential sketches that closely follow text-specified orderings while exhibiting rich visual detail. We further demonstrate the flexibility of our approach through extensions such as brush style conditioning and autoregressive sketch generation, enabling additional controllability and interactive, collaborative drawing.",
+ "summary": "- **核心创新点（1 句话）**：通过把大语言模型用于笔画排序规划、将预训练文本到视频扩散模型用于逐帧渲染，将素描生成转化为文本指令驱动的短视频序列，并通过两阶段微调实现极少数据下的可控连续素描生成。\n\n- **主要方法**：\n  - 将素描表示为短视频，笔画在空白画布上按文本指定的顺序逐步绘制，作为可渲染的时间序列。\n  - 结合大语言模型进行语义规划与笔画排序，利用视频扩散模型作为高质量、时序一致的渲染器。\n  - 两阶段微调：阶段一使用具有受控时间结构的合成形状来学习笔画的时序结构；阶段二从极少量的人类绘画样本（如仅七个草图过程）中蒸馏出外观信息，学习画面整体风格和单笔形成过程，以实现外观与时序的耦合。\n  - 数据高效且具扩展性，支持如笔刷风格条件和自回归绘制等扩展，提升可控性与交互绘画能力。\n\n- **结论/性能**：\n  - 即使在极少的人类绘图数据下（仅七个样本），也能生成高质量、按文本顺序指引且具丰富细节的连续素描视频。\n  - 展现出良好的可控性与扩展性，包括笔刷风格条件和自回归生成，支持更具互动性的协作绘画。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:03:49"
+}

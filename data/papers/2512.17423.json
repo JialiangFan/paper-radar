@@ -1,0 +1,13 @@
+{
+ "id": "2512.17423",
+ "title": "SCAR: Semantic Cardiac Adversarial Representation via Spatiotemporal Manifold Optimization in ECG",
+ "authors": "Shunbo Jia, Caizhi Liao",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17423v1",
+ "abstract": "Deep learning models for Electrocardiogram (ECG) analysis have achieved expert-level performance but remain vulnerable to adversarial attacks. However, applying Universal Adversarial Perturbations (UAP) to ECG signals presents a unique challenge: standard imperceptible noise constraints (e.g., 10 uV) fail to generate effective universal attacks due to the high inter-subject variability of cardiac waveforms. Furthermore, traditional \"invisible\" attacks are easily dismissed by clinicians as technical artifacts, failing to compromise the human-in-the-loop diagnostic pipeline. In this study, we propose SCAR (Semantic Cardiac Adversarial Representation), a novel UAP framework tailored to bypass the clinical \"Human Firewall.\" Unlike traditional approaches, SCAR integrates spatiotemporal smoothing (W=25, approx. 50ms), spectral consistency (<15 Hz), and anatomical amplitude constraints (<0.2 mV) directly into the gradient optimization manifold.\n  Results: We benchmarked SCAR against a rigorous baseline (Standard Universal DeepFool with post-hoc physiological filtering). While the baseline suffers a performance collapse (~16% success rate on transfer tasks), SCAR maintains robust transferability (58.09% on ResNet) and achieves 82.46% success on the source model. Crucially, clinical analysis reveals an emergent targeted behavior: SCAR specifically converges to forging Myocardial Infarction features (90.2% misdiagnosis) by mathematically reconstructing pathological ST-segment elevations. Finally, we demonstrate that SCAR serves a dual purpose: it not only functions as a robust data augmentation strategy for Hybrid Adversarial Training, offering optimal clinical defense, but also provides effective educational samples for training clinicians to recognize low-cost, AI-targeted semantic forgeries.",
+ "summary": "**核心创新点**  \n提出 SCAR（一种面向 ECG 的通用对抗扰动框架），通过在梯度优化流形中嵌入时空平滑、频谱一致性和解剖幅度约束，绕过临床“人类防火墙”并对心肌梗死相关特征进行有针对性的伪造。\n\n**主要方法**  \n在通用对抗扰动（UAP）框架下，SCAR 将时空平滑（W=25，约50ms）、谱域一致性（<15 Hz）以及解剖幅度约束（<0.2 mV）直接纳入梯度优化过程；与标准的 Universal DeepFool 结合生理后处理的基线相比，评估跨模型传输性（对 ResNet 的攻击）和对源模型的攻击成功率，并揭示对 ST 段抬高等病理特征的有针对性伪造。\n\n**结论/性能**  \n- 跨模型传输性：SCAR 在 ResNet 上的传输成功率为 58.09%，显著高于基线 ~16% 的传输成功率；在源模型上的攻击成功率为 82.46%。  \n- 对比基线：标准 DeepFool 的传输效果明显下降，约为 16% 左右。  \n- 致病性分析：SCAR 能收敛出针对性伪造心肌梗死特征（ST 段抬高），误诊率达到 90.2%。  \n- 应用价值：可作为对抗训练的有效数据增强策略，提升临床防御能力；同时提供用于教育培训的低成本语义伪造样本，帮助医生识别 AI 目标的语义性伪造。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-22 02:46:57"
+}

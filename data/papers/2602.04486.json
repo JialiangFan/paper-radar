@@ -1,0 +1,13 @@
+{
+ "id": "2602.04486",
+ "title": "Beyond Unimodal Shortcuts: MLLMs as Cross-Modal Reasoners for Grounded Named Entity Recognition",
+ "authors": "Jinlong Ma, Yu Zhang, Xuefeng Bai, Kehai Chen, Yuwei Wang, Zeming Liu, Jun Yu, Min Zhang",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04486v1",
+ "abstract": "Grounded Multimodal Named Entity Recognition (GMNER) aims to extract text-based entities, assign them semantic categories, and ground them to corresponding visual regions. In this work, we explore the potential of Multimodal Large Language Models (MLLMs) to perform GMNER in an end-to-end manner, moving beyond their typical role as auxiliary tools within cascaded pipelines. Crucially, our investigation reveals a fundamental challenge: MLLMs exhibit $\\textbf{modality bias}$, including visual bias and textual bias, which stems from their tendency to take unimodal shortcuts rather than rigorous cross-modal verification. To address this, we propose Modality-aware Consistency Reasoning ($\\textbf{MCR}$), which enforces structured cross-modal reasoning through Multi-style Reasoning Schema Injection (MRSI) and Constraint-guided Verifiable Optimization (CVO). MRSI transforms abstract constraints into executable reasoning chains, while CVO empowers the model to dynamically align its reasoning trajectories with Group Relative Policy Optimization (GRPO). Experiments on GMNER and visual grounding tasks demonstrate that MCR effectively mitigates modality bias and achieves superior performance compared to existing baselines.",
+ "summary": "- 核心创新点（一句话概括）：提出 Modality-aware Consistency Reasoning（MCR）框架，通过 Multi-style Reasoning Schema Injection（MRSI）将跨模态约束转化为可执行推理链，并结合 Constraint-guided Verifiable Optimization（CVO）与 Group Relative Policy Optimization（GRPO）动态对齐推理轨迹，解决 MLLMs 在 GMNER 中的模态偏见，提升跨模态推理的一致性。\n\n- 主要方法：基于端到端的多模态大语言模型（MLLMs）进行 GMNER；揭示并缓解视觉与文本两类模态偏见；提出 MCR 框架，其中 MRSI 将抽象约束转化为可执行的跨模态推理链，CVO 实现可验证的优化并借助 GRPO 动态对齐推理轨迹。\n\n- 结论/性能：实验在 GMNER 与视覺定位任务上表明，MCR 能有效降低模态偏见，显著优于现有基线，提升相关任务的性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-05 14:05:17"
+}

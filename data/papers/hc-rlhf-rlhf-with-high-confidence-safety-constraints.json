@@ -1,0 +1,27 @@
+{
+ "id": "hc-rlhf-rlhf-with-high-confidence-safety-constraints",
+ "title": "HC-RLHF: RLHF with High-Confidence Safety Constraints",
+ "authors": "Extension of Safe RLHF",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Safe RLHF 的 CMDP 在实践中可能出现 \"safety compensation\" — 模型在某些场景过度安全、另一些场景不够安全，平均满足约束但分布不均。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/HC-RLHF.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

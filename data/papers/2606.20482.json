@@ -1,0 +1,13 @@
+{
+ "id": "2606.20482",
+ "title": "Your Mouse and Eyes Secretly Leak Your Preference: LLM Alignment using Implicit Feedback from Users",
+ "authors": "Haw-Shiuan Chang, Jeffrey Gomez, Mehul Patwari, Aryan Sajith, Hamed Zamani",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20482v1",
+ "abstract": "To align a Large Language Model (LLM), most existing methods collect explicit human feedback and train a reward model to predict the human preference based on the response text. These existing methods have two key limitations. First, the users rarely provide explicit feedback for LLM responses, which makes the high-quality preference annotation expensive to collect. Second, the methods do not leverage implicit human feedback, which has proven vital to the economic moats of Internet giants. To quantify the value of implicit feedback, we build a new dataset called IFLLM, which collects 1336 multi-turn questions from the 59 Mechanical Turk workers, their mouse trajectories, and eye gazing points to the LLMs' responses from their webcams. IFLLM shows that the users have very diverse types of gazing behavior and mouse trajectories. Our reward model based on the implicit user feedback boosts the accuracy of the text-based reward model from 55% to 64% and nearly triples the relative response quality improvements after applying the DPO to eight LLMs, demonstrating the value of implicit feedback in the wild. Our data collection website, dataset, and codes can be found at https://github.com/themehulpatwari/llm-implicit-feedback/.",
+ "summary": "基于标题和摘要，总结如下：\n\n## 《你的鼠标和眼睛悄悄泄露了你的偏好：利用用户隐式反馈对齐 LLM》\n\n**1. 核心创新点**\n首次提出利用用户的**隐式行为反馈**（鼠标轨迹 + 眼动注视点）替代昂贵稀缺的显式标注，来对齐大语言模型。\n\n**2. 主要方法**\n- 构建新数据集 **IFLLM**：采集 59 名 Mechanical Turk 工人对 LLM 回复的 1336 个多轮问题，同时通过网络摄像头记录其**鼠标轨迹**和**眼球注视点**。\n- 基于这些隐式信号训练**奖励模型**，并结合 **DPO（直接偏好优化）** 对 LLM 进行对齐。\n\n**3. 结论/性能**\n- 奖励模型准确率从纯文本基线的 **55% 提升到 64%**。\n- 在 8 个 LLM 上应用 DPO 后，相对回复质量的改进幅度**接近原来的 3 倍**，证明了真实场景中隐式反馈的价值。\n- 数据集、采集网站与代码已开源。\n\n---\n\n补充一点：摘要中提到隐式反馈是\"互联网巨头经济护城河\"的关键，这暗示该方法的商业意义——平台本就在被动收集这类行为数据，可低成本规模化用于模型对齐。\n\n注：以上仅基于标题和摘要推断。如需我用 `/paper-review` 做更深入的文献综述式精读（含背景、贡献、方法论的中英双语完整版并存入你的 Obsidian），告诉我即可。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-19 13:01:49"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.16287",
+ "title": "NaijaS2ST: A Multi-Accent Benchmark for Speech-to-Speech Translation in Low-Resource Nigerian Languages",
+ "authors": "Marie Maltais, Yejin Jeon, Min Ma, Shamsuddeen Hassan Muhammad, Idris Abdulmumin, Maryam Ibrahim Mukhtar, Daud Abolade, Joel Okepefi, Johnson Sewedo, David Ifeoluwa Adelani",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.16287v1",
+ "abstract": "Speech translation for low-resource languages remains fundamentally limited by the scarcity of high-quality, diverse parallel speech data, a challenge that is especially pronounced in African linguistic contexts. To address this, we introduce NaijaS2ST, a parallel speech translation dataset spanning Igbo, Hausa, Yorùbá, and Nigerian Pidgin paired with English. The dataset comprises approximately 50 hours of speech per language and captures substantial variation in speakers and accents, reflecting realistic multilingual and multi-accent conditions. With NaijaS2ST, we conduct a comprehensive benchmark of cascaded, end-to-end (E2E), and AudioLLM-based approaches across bidirectional translation settings. Our results show that audio LLMs with few-shot examples are more effective for speech-to-text translation than cascaded and end-to-end methods trained on fine-tuned data. However, for speech-to-speech translation, the cascaded and audio LLM paradigms yield comparable performance, indicating that there is still considerable room for improvement in developing targeted, task-specific models for this setting. By providing both a high-quality dataset and a systematic benchmark, we hope that NaijaS2ST will serve as a strong foundation for advancing research in low-resource, multilingual speech translation.",
+ "summary": "- 核心创新点：首次构建并公开一个覆盖 Igbo、Hausa、Yorùbá 与 Nigerian Pidgin（与英语并行）且具多口音变异的高质量语音翻译数据集NaijaS2ST，并对级联、端到端以及音频大模型在双向语音翻译任务上的系统基准比较。\n\n- 主要方法：构建并提供约每语言50小时的语音数据；对三类方法进行基准评测：1) 级联方案（ASR→MT→TTS），2) 端到端的S2ST模型，3) 基于音频大模型的方法并在少样本提示下测试；覆盖双向翻译。\n\n- 结论/性能：在语音到文本（S2T）任务中，带少样本提示的音频大模型在性能上优于经微调数据的级联与端到端方法；在语音到语音（S2S）任务中，级联与音频大模型的表现相当，仍需针对该任务开发更有针对性的模型以提升性能。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-20 13:00:33"
+}

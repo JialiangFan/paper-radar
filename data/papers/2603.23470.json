@@ -1,0 +1,13 @@
+{
+ "id": "2603.23470",
+ "title": "ConceptCoder: Improve Code Reasoning via Concept Learning",
+ "authors": "Md Mahbubur Rahman, Hengbo Tong, Wei Le",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23470v1",
+ "abstract": "Large language models (LLMs) have shown promising results for software engineering applications, but still struggle with code reasoning tasks such as vulnerability detection (VD). We introduce ConceptCoder, a fine-tuning method that simulates human code inspection: models are trained to first recognize code concepts and then perform reasoning on top of these concepts. In prior work, concepts are extracted by multimodal models or LLMs to explain vision and natural language models. Our work is the first to formulate concepts for code. We define code concepts as human-understandable semantic properties of code and train models to learn such concepts. Our evaluation shows that this approach significantly improves VD accuracy, from 66.32 to 72.15 F1 on average over 9 open-source LLMs. ConceptCoder achieves the best VD performance compared to state-of-the-art (SOTA) baselines, including fine-tuned SOTA open-source LLMs and prompted proprietary models such as GPT-5.2 and Claude-Opus-4.5. Our approach also scales: concepts defined from four types of vulnerabilities benefit general vulnerability datasets with 134 CWEs. We further demonstrate that concept-based fine-tuning generalizes beyond VD and improves branch prediction. We release our code and datasets at https://figshare.com/s/1decab8232c653b44f71.",
+ "summary": "- 核心创新点：首次为代码任务定义“代码概念”，并通过先识别概念再进行推理的微调方法 ConceptCoder，显著提升代码推理（尤其是漏洞检测）的能力。\n\n- 主要方法：提出 ConceptCoder 微调框架，训练过程分两步：先让模型识别代码的人类可理解语义概念，再在这些概念上进行推理；概念来自对四类漏洞的定义，覆盖至134个 CWE；在9个开源 LLMs 上评估，并与 SOTA 基线（包括微调的开源LLMs与提示式的 GPT-5.2、Claude-Opus-4.5）比较；并发布代码与数据集。\n\n- 结论/性能：在漏洞检测任务中，平均 F1 从 66.32 提升到 72.15，超越所有对比基线的最佳结果；概念化微调也在其他任务如分支预测上展现泛化能力，显示该方法具有良好的扩展性与适用性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-25 13:01:37"
+}

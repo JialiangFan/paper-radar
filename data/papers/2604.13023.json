@@ -1,0 +1,13 @@
+{
+ "id": "2604.13023",
+ "title": "SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding",
+ "authors": "Luoyi Sun, Xiao Zhou, Zeqian Li, Ya Zhang, Yanfeng Wang, Weidi Xie",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.13023v1",
+ "abstract": "Large Audio-Language Models (ALMs) have recently demonstrated remarkable capabilities in holistic audio understanding, yet they remain unreliable for temporal grounding, i.e., the task of pinpointing exactly when an event occurs within long-form audio. This limitation stems from two factors: training data dominated by clip-level supervision lacking precise timestamps, and benchmarks that fail to simulate real-world scenarios where short events are obscured by dense background sounds. In this paper, we introduce SpotSound, an audio language model designed for grounding audio events. SpotSound incorporates a novel training objective, specifically designed to suppress hallucinated timestamps for events absent from the input. Additionally, we present SpotSound-Bench, a challenging temporal grounding benchmark where target events occupy less than ~10\\% of each clip, creating a rigorous `needle-in-a-haystack' evaluation. Experiments demonstrate that SpotSound achieves state-of-the-art results on temporal grounding benchmarks while maintaining robust performance across general downstream audio-language tasks. Code, models and benchmark are released on https://loiesun.github.io/spotsound/",
+ "summary": "**核心创新点**：提出 SpotSound，通过专门的训练目标抑制对输入中不存在事件的幻觉时间戳，并引入极具挑战性的时序基准 SpotSound-Bench，从而提升长时音频中的细粒度事件定位可靠性。\n\n**主要方法**：基于大规模音频-语言模型，设计新颖的训练目标以约束输出的时间戳仅对应实际出现的事件，避免幻觉；同时提出 SpotSound-Bench，用于针尖式的时序定位评测（目标事件在每段音频中占比 <10%），以验证模型在低信号密度场景中的表现，并在多任务下保持鲁棒。\n\n**结论/性能**：实验结果显示 SpotSound 在时序定位基准上达到最新的SOTA水平，同时在一般的音频-语言任务上保持鲁棒性；论文还公开代码、模型与基准。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-15 13:07:01"
+}

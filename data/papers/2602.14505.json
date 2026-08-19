@@ -1,0 +1,13 @@
+{
+ "id": "2602.14505",
+ "title": "Formally Verifying and Explaining Sepsis Treatment Policies with COOL-MC",
+ "authors": "Dennis Gross",
+ "date": "2026-02-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.14505v1",
+ "abstract": "Safe and interpretable sequential decision-making is critical in healthcare, yet reinforcement learning (RL) policies for sepsis treatment optimization remain opaque and difficult to verify. Standard probabilistic model checkers operate on the full state space, which becomes infeasible for larger MDPs, and cannot explain why a learned policy makes particular decisions. COOL-MC wraps the model checker Storm but adds three key capabilities: it constructs only the reachable state space induced by a trained policy, yielding a smaller discrete-time Markov chain amenable to verification even when full-MDP analysis is intractable; it automatically labels states with clinically meaningful atomic propositions; and it integrates explainability methods with probabilistic computation tree logic (PCTL) queries to reveal which features drive decisions across treatment trajectories. We demonstrate COOL-MC's capabilities on the ICU-Sepsis MDP, a benchmark derived from approximately 17,000 sepsis patient records, which serves as a case study for applying COOL-MC to the formal analysis of sepsis treatment policies. Our analysis establishes hard bounds via full MDP verification, trains a safe RL policy that achieves optimal survival probability, and analyzes its behavior via PCTL verification and explainability on the induced DTMC. This reveals, for instance, that our trained policy relies predominantly on prior dosing history rather than the patient's evolving condition, a weakness that is invisible to standard evaluation but is exposed by COOL-MC's integration of formal verification and explainability. Our results illustrate how COOL-MC could serve as a tool for clinicians to investigate and debug sepsis treatment policies before deployment.",
+ "summary": "**核心创新点**：COOL-MC 通过仅构建策略可达的离散时间马尔可夫链、对状态自动打标签临床命题，并将解释性分析与PCTL查询结合，在不分析全 MDP 的情况下实现对治疗策略的形式化验证与解释。\n\n**主要方法**：基于 Storm 的模型检测框架扩展而来，COOL-MC 具备三大能力：1) 构建并利用训练策略诱导的可达状态空间形成 DTMC；2) 自动为状态打上临床可读的原子命题标签；3) 将解释性分析与概率计算时态逻辑（PCTL）查询整合，揭示跨治疗轨迹的决策驱动特征。并在 ICU-Sepsis MDP（约 17,000 份患者记录）上进行全 MDP 验证以获得硬边界，训练出安全且达到最优生存概率的 RL 策略，随后在所诱导的 DTMC 上进行 PCTL 验证与可解释性分析。\n\n**结论/性能**：能够给出全 MDP 的硬边界并验证所训练策略在生存率上的最优性，同时通过 PCTL 验证与解释性分析揭示该策略的决策偏向——如依赖历史给药而非患者实时病情变化。这一弱点在传统评估中不易发现，但通过 COOL-MC 的形式化验证与解释性分析得以暴露，表明该工具对临床策略的调查与部署前调试具有实际价值。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:01:22"
+}

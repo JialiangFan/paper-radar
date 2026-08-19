@@ -1,0 +1,13 @@
+{
+ "id": "2608.13428",
+ "title": "RAIL: An Automatic Classifier of the Artificial Intelligence Readiness Level",
+ "authors": "Juan Irving Vasquez, Juan Terven, Laura-Ivoone Garay-Jimenez",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13428v1",
+ "abstract": "Assessing the maturity of artificial intelligence technologies is essential for investment decisions, project management, and policy monitoring, yet the available readiness frameworks are heterogeneous and difficult to apply automatically: the adaptation of Technology Readiness Levels to AI lacks AI-specific gating criteria, the Machine Learning Technology Readiness Levels presuppose access to internal process artifacts, and AI/data readiness dimension models employ scales that resist direct comparison. This paper makes two contributions. First, we unify these three frameworks into the Unified AI Readiness Level (AIRL), a nine-level ordinal scale built on an environmental evidence ladder and complemented by dimensional caps (covering specification, data existence, data quality, data legality, expert knowledge, and algorithmic maturity) together with a generality-anchoring rule and explicit assignment disciplines, so that a readiness level becomes decidable from a natural-language description of the work alone. Second, we propose RAIL (Readiness Assessment via Independent LLM-experts), a panel-of-experts classifier that operationalizes the scale: one evidence agent and six independent dimension agents, each a large language model with a narrowly scoped mandate, deliver verdicts that a deterministic minimum rule aggregates and a chief expert reviews under asymmetric authority, confirming or lowering the panel's recommendation but never raising it above the caps. The method was tested in the analysis of several research works showing consistency and avoiding overestimation from monolithic LLM classifiers.",
+ "summary": "## RAIL：人工智能就绪度等级的自动分类器\n\n**1. 核心创新点**\n将三套互不兼容的 AI 就绪度评估框架统一为九级的 AIRL 量表，并提出 RAIL——一个\"专家小组式\"多 LLM 智能体分类器，仅凭自然语言描述即可自动判定 AI 技术的成熟度等级。\n\n**2. 主要方法**\n- **统一量表（AIRL）**：以\"环境证据阶梯\"为主轴构建九级序数量表，辅以六个维度上限（规范明确性、数据存在性、数据质量、数据合法性、专家知识、算法成熟度），再加上通用性锚定规则和明确的赋值纪律，使等级可从文字描述中判定。\n- **RAIL 分类器**：由 1 个证据智能体 + 6 个独立维度智能体组成，每个智能体是职责范围被严格限定的大模型；各自给出判断后，用确定性的\"取最小值\"规则聚合，最后由一位首席专家智能体在**非对称权限**下复核——只能确认或下调小组结论，绝不能超过维度上限上调。\n\n**3. 结论/性能**\n在若干研究工作的实测分析中，该方法表现出良好的一致性，并有效避免了单体式（monolithic）LLM 分类器常见的等级高估问题。\n\n> 说明：摘要仅给出定性结论（\"一致性好、不高估\"），未报告准确率、Kappa 等量化指标，也未说明评测样本规模，因此实际效果的可比性有限。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-15 13:01:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.23433",
+ "title": "Mecha-nudges for Machines",
+ "authors": "Giulio Frey, Kawin Ethayarajh",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23433v1",
+ "abstract": "Nudges are subtle changes to the way choices are presented to human decision-makers (e.g., opt-in vs. opt-out by default) that shift behavior without restricting options or changing incentives. As AI agents increasingly make decisions in the same environments as humans, the presentation of choices may be optimized for machines as well as people. We introduce mecha-nudges: changes to how choices are presented that systematically influence AI agents without degrading the decision environment for humans. To formalize mecha-nudges, we combine the Bayesian persuasion framework with V-usable information, a generalization of Shannon information that is observer-relative. This yields a common scale (bits of usable information) for comparing a wide range of interventions, contexts, and models. Applying our framework to product listings on Etsy -- a global marketplace for independent sellers -- we find that following ChatGPT's release, listings have significantly more machine-usable information about product selection, consistent with systematic mecha-nudging.",
+ "summary": "- 核心创新点（1句话）：\n  提出 mecha-nudges 的概念，即通过改变 AI 代理的选择呈现方式以系统性影响其决策，同时不损害人类决策环境；并将贝叶斯劝说框架与“V-可用信息”相结合，建立一个可比的机器可用信息尺度。\n\n- 主要方法：\n  将贝叶斯劝说与观察者相关的通用信息度量“V-usable information”结合，形成跨场景可比的“可用信息比特”尺度；在 Etsy 商品清单数据上应用该框架，量化机器可用信息的变化，并对比 ChatGPT 发布前后的情形，评估 mecha-nudges 的存在与效果。\n\n- 结论/性能：\n  结果显示在 ChatGPT 发布后，商品清单具备显著更多的机器可用信息，与系统性 mecha-nudging 的预期一致，提供了一个跨场景的量化尺度来评估对 AI 选择呈现的影响。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-25 13:02:05"
+}

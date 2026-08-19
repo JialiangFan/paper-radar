@@ -1,0 +1,13 @@
+{
+ "id": "2512.23515",
+ "title": "Alpha-R1: Alpha Screening with LLM Reasoning via Reinforcement Learning",
+ "authors": "Zuoyou Jiang, Li Zhao, Rui Sun, Ruohan Sun, Zhongjian Li, Jing Li, Daxin Jiang, Zuo Bai, Cheng Hua",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23515v1",
+ "abstract": "Signal decay and regime shifts pose recurring challenges for data-driven investment strategies in non-stationary markets. Conventional time-series and machine learning approaches, which rely primarily on historical correlations, often struggle to generalize when the economic environment changes. While large language models (LLMs) offer strong capabilities for processing unstructured information, their potential to support quantitative factor screening through explicit economic reasoning remains underexplored. Existing factor-based methods typically reduce alphas to numerical time series, overlooking the semantic rationale that determines when a factor is economically relevant. We propose Alpha-R1, an 8B-parameter reasoning model trained via reinforcement learning for context-aware alpha screening. Alpha-R1 reasons over factor logic and real-time news to evaluate alpha relevance under changing market conditions, selectively activating or deactivating factors based on contextual consistency. Empirical results across multiple asset pools show that Alpha-R1 consistently outperforms benchmark strategies and exhibits improved robustness to alpha decay. The full implementation and resources are available at https://github.com/FinStep-AI/Alpha-R1.",
+ "summary": "- 核心创新点（一句话概括）\n在非平稳市场中，利用经强化学习训练的8B参数推理型LLM对因子进行语义化、上下文感知的筛选，动态决定是否激活因子以提升α的鲁棒性。\n\n- 主要方法\n构建并训练一个8B参数的推理型LLM（Alpha-R1），通过强化学习使其能够结合因子逻辑与实时新闻进行情境化的α相关性评估；在市场情境的一致性下选择性地激活或禁用因子，实现上下文感知的因子筛选。\n\n- 结论/性能\n在多个资产池的实验中，Alpha-R1持续优于基准策略，并对α衰减展示更强的鲁棒性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 03:50:11"
+}

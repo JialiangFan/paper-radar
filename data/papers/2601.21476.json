@@ -1,0 +1,13 @@
+{
+ "id": "2601.21476",
+ "title": "SOUP: Token-level Single-sample Mix-policy Reinforcement Learning for Large Language Models",
+ "authors": "Lei Yang, Wei Bi, Chenxi Sun, Renren Jin, Deyi Xiong",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21476v1",
+ "abstract": "On-policy reinforcement learning (RL) methods widely used for language model post-training, like Group Relative Policy Optimization (GRPO), often suffer from limited exploration and early saturation due to low sampling diversity. While off-policy data can help, current approaches that mix entire trajectories cause significant policy mismatch and instability. In this work, we propose the $\\textbf{S}$ingle-sample Mix-p$\\textbf{O}$licy $\\textbf{U}$nified $\\textbf{P}$aradigm (SOUP), a framework that unifies off- and on-policy learning within individual samples at the token level. It confines off-policy influence to the prefix of a generated sequence sampled from historical policies, while the continuation is generated on-policy. Through token-level importance ratios, SOUP effectively leverages off-policy information while preserving training stability. Extensive experiments demonstrate that SOUP consistently outperforms standard on-policy training and existing off-policy extensions. Our further analysis clarifies how our fine-grained, single-sample mix-policy training can improve both exploration and final performance in LLM RL.",
+ "summary": "- 核心创新点（1句话）：\n  提出 SOUP 框架，在单样本内实现逐 token 的离线/在线混合策略，将 off-policy 的影响限定在历史策略采样所得前缀，后续 token 仍以 on-policy 进行生成，从而兼顾探索与训练稳定性。\n\n- 主要方法：\n  在大型语言模型的强化学习训练中，将离线数据与在线策略在同一个样本内进行融合，使用 token 级别的重要性比率来调控混合权重；具体做法是把历史策略采样得到的前缀作为离线信息持续影响，前缀之后的 token 继续本轮 on-policy 生成，形成“单样本的混合策略”（SOUP）的 token 级别混合机制。\n\n- 结论/性能：\n  大量实验表明 SOUP 在与标准 on-policy 训练和现有 off-policy 扩展的对比中具有更好的性能和稳定性，能提升探索能力并带来更高的最终性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-01-30 14:04:59"
+}

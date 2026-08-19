@@ -1,0 +1,13 @@
+{
+ "id": "2603.04913",
+ "title": "Beyond the Patch: Exploring Vulnerabilities of Visuomotor Policies via Viewpoint-Consistent 3D Adversarial Object",
+ "authors": "Chanmi Lee, Minsung Yoon, Woojae Kim, Sebin Lee, Sung-eui Yoon",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04913v1",
+ "abstract": "Neural network-based visuomotor policies enable robots to perform manipulation tasks but remain susceptible to perceptual attacks. For example, conventional 2D adversarial patches are effective under fixed-camera setups, where appearance is relatively consistent; however, their efficacy often diminishes under dynamic viewpoints from moving cameras, such as wrist-mounted setups, due to perspective distortions. To proactively investigate potential vulnerabilities beyond 2D patches, this work proposes a viewpoint-consistent adversarial texture optimization method for 3D objects through differentiable rendering. As optimization strategies, we employ Expectation over Transformation (EOT) with a Coarse-to-Fine (C2F) curriculum, exploiting distance-dependent frequency characteristics to induce textures effective across varying camera-object distances. We further integrate saliency-guided perturbations to redirect policy attention and design a targeted loss that persistently drives robots toward adversarial objects. Our comprehensive experiments show that the proposed method is effective under various environmental conditions, while confirming its black-box transferability and real-world applicability.",
+ "summary": "- 核心创新点：提出一种面向视点一致性的3D对抗纹理优化框架，通过可微分渲染实现对 visuomotor 策略在动态视角下的鲁棒对抗，克服2D贴片在透视变形中的局限。\n\n- 主要方法：\n  - 基于可微分渲染对3D对象纹理进行对抗优化；\n  - 采用期望化变换（EOT）并引入粗-细（C2F）课程，覆盖不同相机-对象距离；\n  以及利用距离相关的频率特征提升跨距离的有效性；\n  - 融入显著性导向扰动以转移策略注意力；\n  - 设计定向损失，持续驱动机器人靠近对抗对象；\n  - 实验验证方法在多环境条件下有效，具备黑箱转移性并适用于现实世界场景。\n\n- 结论/性能：\n  - 在多种环境条件下对视角变化保持有效，对抗纹理具备良好鲁棒性；\n  - 具备黑箱转移性，且能在现实世界中应用；\n  - 相较于传统2D贴片，能更稳定地引导机器人在动态视角下的行为。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-06 14:00:56"
+}

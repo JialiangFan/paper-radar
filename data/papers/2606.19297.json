@@ -1,0 +1,13 @@
+{
+ "id": "2606.19297",
+ "title": "Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models",
+ "authors": "Nikita Kachaev, Andrey Moskalenko, Matvey Skripkin, Nikita Kurlaev, Daria Pugacheva, Albina Burlova, Mikhail Kolosov, Denis Shepelev, Andrey Kuznetsov, Elena Tutubalina, Aleksandr I. Panov, Alexey K. Kovalev, Vlad Shakhuro",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19297v1",
+ "abstract": "Embodied Vision-Language-Action (VLA) models are typically obtained by fine-tuning powerful pretrained VLMs on robotics data, yet it is unclear how much commonsense and factual knowledge they retain after adaptation. Failures on knowledge-sensitive tasks are ambiguous, conflating missing knowledge with poor generalization of low-level control. We introduce Act2Answer, a lightweight protocol that adapts VLM knowledge benchmarks to VLA evaluation by requiring agents to answer through action. Each question becomes a short tabletop episode where the agent performs a single object-placement action to select among candidate answers, yielding an action-grounded success rate with reduced control confounds. We curate a test suite of such environments across diverse commonsense and world-knowledge categories and introduce layerwise intent probing to localize answer-relevant information across the VLM backbone and action head. In a large-scale study of 7 VLA models and 9 VLM baselines, we systematically rank models across categories, finding that VLAs show solid performance on simple concepts while exhibiting larger gaps on richer semantic categories relative to their source VLMs, that VQA co-training is associated with better knowledge retention, and that answer-relevant signals peak in middle VLA layers but attenuate in upper layers. Act2Answer is available at https://tttonyalpha.github.io/act2answer/.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 Act2Answer 协议——让 VLA 模型\"用动作回答问题\"，从而把常识/世界知识的评测与底层控制能力解耦，专门测量 VLA 模型在机器人微调后到底保留了多少预训练知识。\n\n**2. 主要方法**\n- 将现有 VLM 知识基准改造为桌面操作任务：每个问题变成一个短回合，智能体通过\"放置物体\"这一单一动作来选择候选答案，得到一个动作落地的成功率（control confound 更少）。\n- 构建覆盖多种常识与世界知识类别的测试环境套件。\n- 引入**逐层意图探测（layerwise intent probing）**，定位答案相关信息在 VLM 主干和动作头各层的分布。\n- 大规模评测 7 个 VLA 模型 + 9 个 VLM 基线。\n\n**3. 结论/性能**\n- VLA 在简单概念上表现良好，但在更丰富的语义类别上相比其源 VLM 出现明显退化（知识遗忘）。\n- 加入 **VQA 联合训练**有助于更好地保留知识。\n- 答案相关信号在 VLA 的**中间层达到峰值，但在高层衰减**。\n\n---\n\n补充：你有一个 `paper-review` 技能，能以文献综述专家视角生成更完整的中英双语总结并自动存入 Obsidian vault。如果需要更深入的版本或归档到笔记库，我可以调用它。要走那个流程吗？",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-18 13:04:18"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.04750",
+ "title": "HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel",
+ "authors": "The Viet Bui, Wenjun Li, Yong Liu",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04750v1",
+ "abstract": "Sequential LLM agents fail on long-horizon planning with hard constraints like budgets and diversity requirements. As planning progresses and context grows, these agents drift from global constraints. We propose HiMAP-Travel, a hierarchical multi-agent framework that splits planning into strategic coordination and parallel day-level execution. A Coordinator allocates resources across days, while Day Executors plan independently in parallel. Three key mechanisms enable this: a transactional monitor enforcing budget and uniqueness constraints across parallel agents, a bargaining protocol allowing agents to reject infeasible sub-goals and trigger re-planning, and a single policy trained with GRPO that powers all agents through role conditioning. On TravelPlanner, HiMAP-Travel with Qwen3-8B achieves 52.78% validation and 52.65% test Final Pass Rate (FPR). In a controlled comparison with identical model, training, and tools, it outperforms the sequential DeepTravel baseline by +8.67~pp. It also surpasses ATLAS by +17.65~pp and MTP by +10.0~pp. On FlexTravelBench multi-turn scenarios, it achieves 44.34% (2-turn) and 37.42% (3-turn) FPR while reducing latency 2.5x through parallelization.",
+ "summary": "- 核心创新点（1句）：将长时程且带硬约束的旅行规划分解为层级化的策略性协调与日级并行执行，并通过一个事务性监控器、一个用于再规划的议价协议，以及由GRPO训练的统一策略（通过角色条件驱动）来确保全局约束和高效并行。\n\n- 主要方法：\n  - 架构：HiMAP-Travel 采用分层的多代理框架，协调器负责跨日分配资源，日执行者在各自日内并行进行规划。\n  - 关键机制：\n    - 事务性监控器：在并行代理之间强制预算和唯一性等全局约束。\n    - 议价协议：代理可以拒绝不可行的子目标并触发重新规划。\n    - 统一策略：使用一个通过 GRPO 训练、通过角色条件驱动的单一策略来支撑所有代理。\n  - 技术实现要点：在 TravelPlanner 上采用基于大语言模型的 Qwen3-8B，进行层级协作与并行执行。\n\n- 结论/性能：\n  - TravelPlanner 评测：HiMAP-Travel（基于 Qwen3-8B）达到 52.78% 的验证集 FPR 和 52.65% 的测试集 FPR。\n  - 与同模型、同训练和同工具的对比：比顺序 DeepTravel 基线提升 +8.67 百分点；比 ATLAS 提升 +17.65 百分点；比 MTP 提升 +10.0 百分点。\n  - FlexTravelBench 多回合场景：2 回合达到 44.34% FPR，3 回合达到 37.42% FPR；通过并行化实现延迟下降约 2.5 倍。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-06 14:01:45"
+}

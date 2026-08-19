@@ -1,0 +1,13 @@
+{
+ "id": "2511.21402",
+ "title": "Text-to-SQL as Dual-State Reasoning: Integrating Adaptive Context and Progressive Generation",
+ "authors": "Zhifeng Hao, Qibin Song, Ruichu Cai, Boyan Xu",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21402v1",
+ "abstract": "Recent divide-and-conquer reasoning approaches, particularly those based on Chain-of-Thought (CoT), have substantially improved the Text-to-SQL capabilities of Large Language Models (LLMs). However, when applied to complex enterprise databases, such methods struggle to maintain coherent reasoning due to limited context capacity, unreliable schema linking, and weak grounding in database semantics. To overcome these issues, we introduce DSR-SQL, a \\textbf{D}ual-\\textbf{S}tate \\textbf{R}easoning framework that models Text-to-SQL as an interaction between an adaptive context state and a progressive generation state. The first constructs a compact, semantically faithful environment by refining large schemas and selecting relevant structures, while the second formalizes SQL synthesis as feedback-guided state transitions, enabling the model to self-correct and align with user intent. Without any post-training or in-context examples, DSR-SQL achieves competitive performance, reaching 35.28\\% execution accuracy on Spider 2.0-Snow and 68.32\\% on BIRD development set. Our implementation will be open-sourced at: https://github.com/DMIRLAB-Group/DSR-SQL.",
+ "summary": "1. 核心创新点：提出 DSR-SQL 的双态推理框架，将 Text-to-SQL 问题建模为自适应上下文状态与渐进生成状态的交互，在无需额外微调或示例的情况下提升复杂企业数据库中的推理一致性和执行正确性。\n\n2. 主要方法：通过两部分状态协同实现 Text-to-SQL 任务：\n- 自适应上下文状态：精炼大规模模式/模式结构、筛选相关语义结构，构建紧凑且语义保真的环境。\n- 渐进生成状态：将 SQL 合成形式化为反馈引导的状态转移，允许模型自我纠错并对用户意图进行对齐。\n- 结合大语言模型，强调无后训练/无示例条件下的可行性与鲁棒性。\n\n3. 结论/性能：在 Spider 2.0-Snow 上达到 35.28% 的执行准确率，在 BIRD 开发集上达到 68.32%，且未使用后训练或 in-context 示例，相关实现将开源。",
+ "keyword": "chain-of-thought, PDDL planning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:32:48"
+}

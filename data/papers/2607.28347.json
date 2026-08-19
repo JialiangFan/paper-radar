@@ -1,0 +1,13 @@
+{
+ "id": "2607.28347",
+ "title": "LLMs struggle to simulate human belief updates in controlled environments",
+ "authors": "Sebastian Pohl, Harsh Mehta, Pranav Mambayil, Abdul Ghafoor, Franziska Lesigang, Yufang Hou, Christian Hilbe",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28347v1",
+ "abstract": "LLMs are increasingly deployed as proxies for human study participants in social science experiments, yet the fidelity of this practice has rarely been tested directly. We test whether six LLMs can simulate individual human belief updates, comparing LLM outputs 1-to-1 against ground truth data from 391 UK participants on Prolific, who updated their stances on three discussion topics after reading Reddit comments. Each participant was simulated by an LLM conditioned on a persona derived from their demographic and personality trait data. We find that some LLMs (Qwen3-32B and GPT-5-Mini) can match the human post-stance distribution, but only when given participants' actual initial stances. All six models fail to simulate initial stances themselves and to produce faithful belief updates from self-generated stances. Three systematic biases emerge across all models: overrepresentation of neutral positions, more frequent but smaller belief shifts than humans, and a failure to rank comments by convincingness. Demographic and personality trait personas had no consistent effect on fidelity. LLM simulations of human belief dynamics are only reliable when grounded in realistic starting conditions, that current multi-round social media simulations rarely provide.",
+ "summary": "## 论文摘要总结\n\n**标题**：LLMs struggle to simulate human belief updates in controlled environments（大语言模型难以在受控环境中模拟人类的信念更新）\n\n### 1. 核心创新点\n首次以 1-to-1 的方式，将 LLM 模拟的\"个体信念更新\"与真实人类被试的实测数据直接对照，揭示了用 LLM 替代人类被试做社会科学实验这一做法的保真度缺陷。\n\n### 2. 主要方法\n- **真实数据基线**：招募 391 名英国 Prolific 被试，让其在阅读 Reddit 评论前后，就三个讨论话题给出立场（初始立场 → 更新后立场）。\n- **模拟设置**：用 6 个 LLM（文中点名的有 Qwen3-32B、GPT-5-Mini 等），为每位被试构建基于其人口统计学特征与人格特质的 persona，条件化生成对应的立场与更新。\n- **对照维度**：分别测试\"给定被试真实初始立场\"与\"让模型自行生成初始立场\"两种条件，并考察模型对评论说服力的排序能力。\n\n### 3. 结论 / 性能\n- **有条件的成功**：部分模型（Qwen3-32B、GPT-5-Mini）能匹配人类的**更新后立场分布**，但前提是必须喂给它们被试的**真实初始立场**。\n- **普遍失败**：6 个模型全都无法自行生成合理的初始立场；一旦基于自生成的立场进行更新，信念变化就不再忠实于人类数据。\n- **三类系统性偏差**（所有模型共有）：① 中立立场被显著高估；② 信念偏移\"更频繁但幅度更小\"；③ 无法按说服力对评论进行正确排序。\n- **persona 无效**：加入人口统计学与人格特质的 persona 对保真度没有一致的改善作用。\n- **实践启示**：LLM 对人类信念动态的模拟只有在锚定于真实起始状态时才可靠，而当前主流的多轮社交媒体模拟研究恰恰很少提供这一条件。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-02 13:02:06"
+}

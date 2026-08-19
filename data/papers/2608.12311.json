@@ -1,0 +1,13 @@
+{
+ "id": "2608.12311",
+ "title": "The Role Specialization Model (RSM): Coordinating LLM-Based Tools in Agentic Software Development - An Exploratory Case Study",
+ "authors": "Carlos Alberto Fernández-y-Fernández, Jorge R. Aguilar-Cisneros",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.12311v1",
+ "abstract": "The integration of large language models (LLMs) into software development workflows has given rise to a paradigm known as Agentic Software Engineering (SE 3.0), in which autonomous agents manage full development life cycles under human supervision. This paper presents an exploratory case study in which three LLM-based tools, Antigravity (an agentic IDE with a Gemini 2.5 backend), Gemini CLI, and Qwen Code (local execution via Ollama), are coordinated according to a role-distribution framework proposed in this work as the Role Specialization Model (RSM). Three research questions guide the study: (RQ1) how can LLM-based tools with distinct capabilities be coordinated through the RSM in a real development workflow; (RQ2) what deviations from the planned role distribution emerge during RSM execution and what factors explain them; and (RQ3) how does the resulting product compare against the ISO/IEC 25010 quality model. The objective was to propose the RSM with the incremental development of a Python desktop application for interactive climate-data visualization. The workflow, observed deviations, prompt-hardening techniques, and a qualitative quality assessment are documented. Results suggest that explicit role coordination can support development cycle organization and architectural quality, but requires deliberate coordination strategies, context management, and human verification of agent-generated outputs.",
+ "summary": "## 论文摘要总结\n\n**1. 核心创新点**\n提出\"角色专业化模型\"（Role Specialization Model, RSM）——一个在智能体软件工程（SE 3.0）范式下，为多个不同能力的 LLM 工具显式分配开发角色并加以协调的框架。\n\n**2. 主要方法**\n采用探索性案例研究，协同使用三种 LLM 工具：Antigravity（基于 Gemini 2.5 后端的智能体 IDE）、Gemini CLI，以及通过 Ollama 本地运行的 Qwen Code。以增量方式开发一个用于交互式气候数据可视化的 Python 桌面应用，过程中记录工作流、角色偏离现象与提示词加固（prompt-hardening）技术，并依据 ISO/IEC 25010 质量模型做定性质量评估。三个研究问题分别对应：如何协调（RQ1）、出现哪些角色偏离及成因（RQ2）、产物质量如何（RQ3）。\n\n**3. 结论/性能**\n结果表明，显式的角色协调有助于组织开发周期并提升架构质量；但前提是必须有刻意设计的协调策略、上下文管理，以及对智能体生成产物的人工验证。属定性探索性结论，未给出量化性能指标。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-13 13:02:28"
+}

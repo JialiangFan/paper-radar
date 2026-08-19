@@ -1,0 +1,13 @@
+{
+ "id": "2512.04445",
+ "title": "Automating Complex Document Workflows via Stepwise and Rollback-Enabled Operation Orchestration",
+ "authors": "Yanbin Zhang, Hanhui Ye, Yue Bai, Qiming Zhang, Liao Xiang, Wu Mianzhi, Renjun Hu",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04445v1",
+ "abstract": "Workflow automation promises substantial productivity gains in everyday document-related tasks. While prior agentic systems can execute isolated instructions, they struggle with automating multi-step, session-level workflows due to limited control over the operational process. To this end, we introduce AutoDW, a novel execution framework that enables stepwise, rollback-enabled operation orchestration. AutoDW incrementally plans API actions conditioned on user instructions, intent-filtered API candidates, and the evolving states of the document. It further employs robust rollback mechanisms at both the argument and API levels, enabling dynamic correction and fault tolerance. These designs together ensure that the execution trajectory of AutoDW remains aligned with user intent and document context across long-horizon workflows. To assess its effectiveness, we construct a comprehensive benchmark of 250 sessions and 1,708 human-annotated instructions, reflecting realistic document processing scenarios with interdependent instructions. AutoDW achieves 90% and 62% completion rates on instruction- and session-level tasks, respectively, outperforming strong baselines by 40% and 76%. Moreover, AutoDW also remains robust for the decision of backbone LLMs and on tasks with varying difficulty. Code and data will be open-sourced. Code: https://github.com/YJett/AutoDW",
+ "summary": "1) 核心创新点：在长时段文档工作流中，提出一个逐步、具回滚能力的操作编排框架 AutoDW，通过增量规划 API 动作并在参数与 API 两级实现回滚，以持续对齐用户意图和文档上下文。\n\n2) 主要方法：核心技术包括\n- 逐步、条件化的 API 动作规划：依据用户指令、意图筛选的 API 候选集合，以及文档状态的演变来决定下一步操作；\n- 参数级和 API 级的健壮回滚机制：支持动态纠错与容错，确保执行轨迹与目标保持一致；\n- 基准评估：构建包含 250 个会话和 1,708 条人工标注指令的现实场景基准，评估多路依赖任务中的执行效果。\n\n3) 结论/性能：AutoDW在指令级任务完成率达到 90%、会话级完成率达到 62%，相较强基线分别提升约 40%（指令级）和 76%（会话级），且对 backbone LLM 的决策以及难度变化具有鲁棒性；代码与数据将开源。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:02:39"
+}

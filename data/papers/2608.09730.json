@@ -1,0 +1,13 @@
+{
+ "id": "2608.09730",
+ "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling",
+ "authors": "Qu Tang, Benhui Zhuang, Bo Yuan, Xue Yu, Longteng Guo, Junlan Feng",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.09730v1",
+ "abstract": "Vision-language-action (VLA) models are a widely adopted paradigm for embodied policies. They excel at efficient closed-loop control but do not explicitly model how physical scenes evolve as a task unfolds. Recently emerging world-action models (WAMs) leverage pretrained video world models to capture spatiotemporal evolution, yet retaining future generation or a large video backbone in the control loop substantially increases inference cost. We introduce World Tokens, an embodied policy architecture built around a World Adapter that bridges visual-language understanding, world-dynamics modeling, and action generation. It uses world modeling during training to enhance the action policy while preserving efficient deployment. Specifically, the World Adapter transforms VLM features into a fixed set of world tokens, which condition a jointly fine-tuned future-video denoiser and simultaneously serve as the action expert's sole visual-language context. This shared conditioning allows gradients from future-video denoising to directly shape the representation used for action prediction, while exclusive routing prevents the policy from bypassing that representation. At deployment, the world-model branch is removed, leaving only the VLM, World Adapter, and action expert, with no online video-model inference. With a 2B backbone and no embodied action pretraining, World Tokens is highly competitive on LIBERO, attains the best reported averages on SIMPLER, substantially improves real-world R1 Pro success over a matched action-only baseline, and generates each action chunk at VLA-level latency.",
+ "summary": "## World Tokens: Enhancing Embodied Policies with Training-Time World Modeling\n\n**1. 核心创新点**\n把世界模型（world model）只用在训练阶段来塑造动作策略的视觉-语言表征，部署时直接砍掉世界模型分支，从而兼得 WAM 的时空建模能力与 VLA 的推理效率。\n\n**2. 主要方法**\n在 VLA 架构中引入一个 **World Adapter**：它把 VLM 特征压缩成一组固定数量的 \"world tokens\"。这组 token 有两个用途——一方面作为条件送入一个联合微调的**未来视频去噪器**（future-video denoiser），另一方面作为动作专家（action expert）**唯一**的视觉-语言上下文。这种共享条件让未来视频去噪的梯度直接反向传播、塑造用于动作预测的表征；而\"独占路由\"（exclusive routing）的设计则堵死了策略绕开该表征走捷径的可能。推理时移除世界模型分支，只保留 VLM + World Adapter + action expert，无需在线跑视频模型。骨干网络仅 2B，且未做具身动作预训练。\n\n**3. 结论/性能**\n- **LIBERO**：具备很强竞争力；\n- **SIMPLER**：取得已报告的最佳平均成绩；\n- **真机 R1 Pro**：相比同配置的纯动作基线，成功率显著提升；\n- **效率**：每个 action chunk 的生成延迟保持在 VLA 级别（未因世界建模而增加推理成本）。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-11 13:06:20"
+}

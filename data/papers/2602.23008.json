@@ -1,0 +1,13 @@
+{
+ "id": "2602.23008",
+ "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization",
+ "authors": "Zeyuan Liu, Jeonghye Kim, Xufang Luo, Dongsheng Li, Yuqing Yang",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23008v1",
+ "abstract": "Exploration remains the key bottleneck for large language model agents trained with reinforcement learning. While prior methods exploit pretrained knowledge, they fail in environments requiring the discovery of novel states. We propose Exploratory Memory-Augmented On- and Off-Policy Optimization (EMPO$^2$), a hybrid RL framework that leverages memory for exploration and combines on- and off-policy updates to make LLMs perform well with memory while also ensuring robustness without it. On ScienceWorld and WebShop, EMPO$^2$ achieves 128.6% and 11.3% improvements over GRPO, respectively. Moreover, in out-of-distribution tests, EMPO$^2$ demonstrates superior adaptability to new tasks, requiring only a few trials with memory and no parameter updates. These results highlight EMPO$^2$ as a promising framework for building more exploratory and generalizable LLM-based agents.",
+ "summary": "- 核心创新点：提出基于记忆增强的探索性多策略强化学习框架 EMPO^2，通过记忆驱动的探索和在/离策略更新的混合优化，提升带记忆的 LLM 代理的探索性与对新环境的泛化能力。\n\n- 主要方法：利用一个记忆模块存储探索信息以引导探索；采用在策略与离策略更新的混合优化来训练 LLM 代理，使其在有记忆时更擅长探索、在无记忆时也保持鲁棒性；与基线 GRPO 进行对比评估。\n\n- 结论/性能：在 ScienceWorld 和 WebShop 上分别实现相对于 GRPO 的 128.6% 和 11.3% 的提升；在分布外测试中，EMPO^2 对新任务表现出更强的适应性，且只需少量带记忆试验且无需参数更新即可适应。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-27 14:02:35"
+}

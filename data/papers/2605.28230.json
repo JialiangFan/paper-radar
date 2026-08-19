@@ -1,0 +1,13 @@
+{
+ "id": "2605.28230",
+ "title": "Proprio: Latent Self-Scoring and Inference-Time Refinement for Physically Plausible Video Generation",
+ "authors": "Mariam Hassan, Kaouther Messaoud, Wuyang Li, Alexandre Alahi",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28230v1",
+ "abstract": "Modern video generative models produce visually impressive results, yet frequently violate basic physical principles. We propose Proprio, a training-free framework that enables a frozen video generator to assess and improve the physical plausibility of its own outputs. Inspired by proprioception, the biological sense of one's own movement, Proprio treats the model's flow residual under controlled latent perturbations as a self-scoring signal. Samples that are better explained by the generator's learned dynamics induce smaller and more stable residuals. We aggregate this signal across timesteps and perturbations, focus it on motion-relevant regions with a dynamic spatiotemporal mask, and use it for best-of-N search, gradient-based self-refinement, or both. Across text-to-video and image-to-video benchmarks, Proprio consistently improves physical plausibility, outperforming VLM-based scoring, and external world-model baselines in several settings. With TurboWan2.2, Proprio improves Physics-IQ from 32.2 to 37.5 (+16.5%) and VideoPhy2-hard physical commonsense from 45.6 to 55.0 (+20.6%). Human evaluation further shows that raters prefer Proprio-selected or refined videos for physical plausibility in roughly two-thirds of comparisons. These results suggest that frozen video generators contain actionable internal signals for evaluating and improving the physical plausibility of their own outputs.",
+ "summary": "# Proprio 论文总结\n\n## 1. 核心创新点\n提出一种**免训练**框架，让冻结的视频生成模型利用自身内部信号（流残差）来自我评估并改进生成视频的物理合理性，灵感源于生物的\"本体感觉\"。\n\n## 2. 主要方法\n- **自评分信号**：在受控潜空间扰动下测量模型的 flow residual——符合模型学到的动力学的样本会产生更小、更稳定的残差。\n- **信号聚合**：跨时间步和扰动聚合信号，并通过动态时空掩码聚焦于运动相关区域。\n- **应用方式**：用于 best-of-N 采样搜索、基于梯度的自我精炼，或两者结合。\n\n## 3. 结论/性能\n- 在文生视频与图生视频基准上持续提升物理合理性，超越 VLM 评分和外部世界模型基线。\n- 搭配 TurboWan2.2：Physics-IQ 从 32.2 → 37.5（+16.5%），VideoPhy2-hard 物理常识从 45.6 → 55.0（+20.6%）。\n- 人类评测中，约**三分之二**的对比里评审者更偏好 Proprio 选出或精炼后的视频。\n- 表明冻结视频生成器内部已蕴含可用于自我评估与改进的有效信号。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-31 13:04:07"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.11126",
+ "title": "Enhancing Value Alignment of LLMs with Multi-agent system and Combinatorial Fusion",
+ "authors": "Yuanhong Wu, Djallel Bouneffouf, D. Frank Hsu",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11126v1",
+ "abstract": "Aligning large language models (LLMs) with human values is a central challenge for ensuring trustworthy and safe deployment. While existing methods such as Reinforcement Learning from Human Feedback (RLHF) and its variants have improved alignment, they often rely on a single evaluator or narrowly defined reward signals, limiting their ability to capture ethical pluralism. In this work, we propose the Value Alignment System using Combinatorial Fusion Analysis (VAS-CFA), a framework that operationalizes multi-agent fusion alignment. It instantiates multiple moral agents, each fine-tuned to represent a distinct normative perspective, and fuses their outputs using CFA with both rank- and score-based aggregation. This design leverages cognitive diversity, between agents, to mitigate conflicts and redundancies across multiple agents, producing responses that better reflect human values. Empirical evaluation demonstrates that VAS-CFA outperforms both single agent baselines and prior aggregation approaches on standard metrics, showing that multi-agent fusion provides a robust and effective mechanism for advancing value alignment in LLMs.",
+ "summary": "1. 核心创新点：提出 Value Alignment System using Combinatorial Fusion Analysis (VAS-CFA)，通过多道德代理的并行运行与组合融合分析（CFA）进行等级和分数式聚合，以实现对人类价值的更稳健对齐。\n\n2. 主要方法：构建若干个对不同规范视角进行微调的道德代理，并利用组合融合分析（CFA）对各代理的输出进行既有等级式又有分数式的聚合，借助代理间的认知多样性来缓解冲突与冗余。\n\n3. 结论/性能：实验结果显示，VAS-CFA在标准评测指标上优于单代理基线和以往的聚合方法，证明多代理融合在提升语言模型价值对齐方面具有更鲁棒的效果。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:00:22"
+}

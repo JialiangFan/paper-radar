@@ -1,0 +1,13 @@
+{
+ "id": "2512.07733",
+ "title": "SpatialDreamer: Incentivizing Spatial Reasoning via Active Mental Imagery",
+ "authors": "Meng Cao, Xingyu Li, Xue Liu, Ian Reid, Xiaodan Liang",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07733v1",
+ "abstract": "Despite advancements in Multi-modal Large Language Models (MLLMs) for scene understanding, their performance on complex spatial reasoning tasks requiring mental simulation remains significantly limited. Current methods often rely on passive observation of spatial data, failing to internalize an active mental imagery process. To bridge this gap, we propose SpatialDreamer, a reinforcement learning framework that enables spatial reasoning through a closedloop process of active exploration, visual imagination via a world model, and evidence-grounded reasoning. To address the lack of fine-grained reward supervision in longhorizontal reasoning tasks, we propose Geometric Policy Optimization (GeoPO), which introduces tree-structured sampling and step-level reward estimation with geometric consistency constraints. Extensive experiments demonstrate that SpatialDreamer delivers highly competitive results across multiple challenging benchmarks, signifying a critical advancement in human-like active spatial mental simulation for MLLMs.",
+ "summary": "- 核心创新点：提出 SpatialDreamer，一个在主动探索、世界模型的视觉想象和证据驱动推理之间形成闭环的强化学习框架，用于提升空间推理能力，并引入 GeoPO（Geometric Policy Optimization）以树状采样和几何一致性约束解决长时推理的奖励稀缺问题。\n\n- 主要方法：基于强化学习的闭环流程（主动探索、通过世界模型进行视觉化想象、证据驱动推理），并提出 GeoPO：具有树状采样、逐步奖励估计以及几何一致性约束的策略优化方法。\n\n- 结论/性能：在多项挑战性基准上展现出高度竞争的结果，标志着在多模态大模型中的主动空间心理模拟方面取得关键进展。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-09 14:04:50"
+}

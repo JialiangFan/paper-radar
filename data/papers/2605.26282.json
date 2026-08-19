@@ -1,0 +1,13 @@
+{
+ "id": "2605.26282",
+ "title": "Scaling World-Model Reinforcement Learning Through Diffusion Policy Optimization",
+ "authors": "Xiaoyuan Cheng, Wenxuan Yuan, Zhancun Mu, Yuanzhao Zhang, Yiming Yang, Hai Wang, Zhuo Sun, Che Liu",
+ "date": "2026-05-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.26282v1",
+ "abstract": "Model-based reinforcement learning (RL) can be effectively supported at scale through the use of world models. However, in practice, scaling such approaches remains fundamentally limited. A commonly recognized challenge is model bias and error compounding, which degrade long-horizon predictions. Beyond these issues, we identify a more critical yet underexplored bottleneck: a structural misalignment between search and value learning in existing world model approaches. In particular, policy improvement often relies on value functions induced by a separate, non-search policy, resulting in training inconsistency and ultimately suboptimal learning. To address this limitation, we propose Model-Based Diffusion Policy Optimization (MBDPO) in world models, a framework that unifies search and policy optimization through diffusion policy representations, thereby unlocking the potential of world models for scalable policy learning. Instead of constructing an explicit planner over a learned world model, we reformulate policy optimization as a diffusion process over searched trajectories in latent world models. In this view, we extract an implicit energy function from the collected dataset that anchors the policy, enabling MBDPO to refine the score field for policy optimization while mitigating misalignment. We evaluate MBDPO across a wide range of settings, including multi-task offline pretraining, online learning, and offline-to-online fine-tuning. In the offline regime, we further investigate its scaling behavior by pretraining on large-scale datasets, observing consistent and monotonic performance gains with increasing model capacity.",
+ "summary": "# 论文总结\n\n## 1. 核心创新点\n提出 **MBDPO（基于模型的扩散策略优化）**，通过扩散策略表示将\"搜索\"与\"价值学习\"统一在世界模型中，解决了现有方法中搜索策略与价值函数之间的结构性错位问题。\n\n## 2. 主要方法\n- **问题诊断**：指出现有世界模型 RL 的关键瓶颈不仅是模型偏差和误差累积，更在于策略改进依赖于由\"非搜索策略\"诱导的价值函数，导致训练不一致。\n- **技术路线**：不构建显式的规划器，而是将策略优化重新表述为**潜在世界模型中搜索轨迹上的扩散过程**。\n- **关键机制**：从收集的数据集中提取**隐式能量函数**作为策略锚点，通过精炼 score field（分数场）进行策略优化，从而缓解搜索与价值学习的错位。\n\n## 3. 结论/性能\n- 在**多任务离线预训练、在线学习、离线到在线微调**等多种场景下均有效。\n- 在离线大规模数据集预训练中表现出良好的**可扩展性**：性能随模型容量增加而**持续单调提升**，验证了该框架在世界模型 RL 可扩展性方面的潜力。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:04:02"
+}

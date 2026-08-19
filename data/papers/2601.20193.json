@@ -1,0 +1,13 @@
+{
+ "id": "2601.20193",
+ "title": "Meta-Cognitive Reinforcement Learning with Self-Doubt and Recovery",
+ "authors": "Zhipeng Zhang, Wenting Ma, Kai Li, Meng Guo, Lei Yang, Wei Yu, Hongji Cui, Yichen Zhang, Mo Zhang, Jinzhe Lin, Zhenjie Yao",
+ "date": "2026-01-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.20193v1",
+ "abstract": "Robust reinforcement learning methods typically focus on suppressing unreliable experiences or corrupted rewards, but they lack the ability to reason about the reliability of their own learning process. As a result, such methods often either overreact to noise by becoming overly conservative or fail catastrophically when uncertainty accumulates.\n  In this work, we propose a meta-cognitive reinforcement learning framework that enables an agent to assess, regulate, and recover its learning behavior based on internally estimated reliability signals. The proposed method introduces a meta-trust variable driven by Value Prediction Error Stability (VPES), which modulates learning dynamics via fail-safe regulation and gradual trust recovery.\n  Experiments on continuous-control benchmarks with reward corruption demonstrate that recovery-enabled meta-cognitive control achieves higher average returns and significantly reduces late-stage training failures compared to strong robustness baselines.",
+ "summary": "- 核心创新点：提出一个元认知强化学习框架，通过内部估计的可靠性信号自我评估、调控与恢复学习，引入由价值预测误差稳定性（VPES）驱动的元信任变量，对学习动态进行失效保护与渐进信任恢复。\n\n- 主要方法：利用 VPES 驱动的元信任变量来调节学习过程的动力学（如学习速率/更新方式），结合 fail-safe 规制和逐步信任恢复策略，在奖励污染的连续控制任务中进行实验。\n\n- 结论/性能：在奖励污染条件下，具备恢复能力的元认知控制实现更高的平均回报，并显著降低训练后期失败的概率，相较于强鲁棒性基线具有更好的稳定性和表现。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:22:02"
+}

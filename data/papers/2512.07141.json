@@ -1,0 +1,13 @@
+{
+ "id": "2512.07141",
+ "title": "Think-Reflect-Revise: A Policy-Guided Reflective Framework for Safety Alignment in Large Vision Language Models",
+ "authors": "Fenghua Weng, Chaochao Lu, Xia Hu, Wenqi Shao, Wenjie Wang",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07141v1",
+ "abstract": "As multimodal reasoning improves the overall capabilities of Large Vision Language Models (LVLMs), recent studies have begun to explore safety-oriented reasoning, aiming to enhance safety awareness by analyzing potential safety risks during the reasoning process before generating the final response. Although such approaches improve safety awareness and interpretability, this single-pass think-then-answer paradigm remains vulnerable to contextual or visual jailbreak attacks. This reveals a critical flaw: single-pass reasoning may overlook explicit harmful content in its own output. Our key insight is to exploit this wasted signal through reflection, which can effectively leverage the malicious content revealed in the first-pass reasoning to enable genuine self-correction and prevent unsafe generations. Motivated by this, we propose Think-Reflect-Revise (TRR), a three-stage training framework designed to enhance the safety alignment of LVLMs through policy-guided self-reflection. We first build a Reflective Safety Reasoning (ReSafe) dataset with 5,000 examples that follow a think-reflect-revise process. We then fine-tune the target model using the ReSafe dataset to initialize reflective behavior, and finally reinforce policy-guided reflection through reinforcement learning. Experimental results show that TRR substantially improves the safety performance of LVLMs across both safety-awareness benchmarks and jailbreak attack evaluations, increasing the overall safe response rate from 42.8% to 87.7% on Qwen2.5-VL-7B, while preserving stable performance on general benchmarks such as MMMU and MMStar. The project page is available at https://think-reflect-revise.github.io/.",
+ "summary": "- 核心创新点：提出 Think-Reflect-Revise（TRR）三阶段、政策引导的自我反思框架，通过在第一轮推理中暴露的有害信息进行自我反思与修正，以显著提升大型视觉语言模型的安全对齐，缓解单轮推理易被攻击的问题。\n\n- 主要方法：构建 Reflective Safety Reasoning（ReSafe）数据集（5,000 条，遵循 think–reflect–revise 流程），先对目标模型用 ReSafe 进行微调以初始化反思能力，再通过强化学习强化政策引导的反思，从而实现自我纠错。\n\n- 结论/性能：在安全评估和 jailbreak 攻击测试中显著提升安全性，Qwen2.5-VL-7B 的总体安全响应率由 42.8% 提升到 87.7%，同时在 MMMU、MMStar 等通用基准上保持稳定性能。项目页：https://think-reflect-revise.github.io/",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-09 14:01:40"
+}

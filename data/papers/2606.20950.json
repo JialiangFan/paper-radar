@@ -1,0 +1,13 @@
+{
+ "id": "2606.20950",
+ "title": "Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering",
+ "authors": "Sergei Trashchenkov",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20950v1",
+ "abstract": "Executable evaluation -- checking the consequences of an agent's actions with a program rather than grading its prose -- has become a prominent way to assess tool-using AI agents in software settings. Electric power engineering has not yet had an analogous benchmark: language-model use is still dominated by retrieval and text question answering, while agents acting on power-system artifacts remain mostly academic prototypes. We introduce the Power Systems Agent Benchmark, an executable benchmark for power-engineering agents. An agent receives a structured task and returns a structured solution; a deterministic evaluator recomputes the engineering quantities, checks operational constraints, and returns a feasibility flag, a normalized score, and explicit violations.\n  The benchmark contains 41 task families across eight areas of power engineering, from power flow and protection to stability, microgrids, reliability, power quality, and forecasting. Each task is grounded in a citable source, standard, or documented engineering formulation. To resist contamination, held-out cases are synthesized on demand by per-family generators from private seeds: the construction is inspectable, but the instances remain private. In a reference evaluation with three command-line agents, the strongest score near the compact tier's ceiling, a smaller open model trails, and public and held-out performance are broadly consistent; a separate public-split grid with OpenCode and Aider probes harness effects. The reference evaluation doubles as quality control: unanimous failures flag candidate task or evaluator defects, and it exposed a latent evaluator bug missed by self-consistency checks. The evaluators are compact deterministic surrogates, but the task contract allows their internals to be upgraded to simulator-backed checks without changing how tasks are posed or solved.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-24 13:02:45"
+}

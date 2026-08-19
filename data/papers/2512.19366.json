@@ -1,0 +1,13 @@
+{
+ "id": "2512.19366",
+ "title": "Learning General Policies with Policy Gradient Methods",
+ "authors": "Simon Ståhlberg, Blai Bonet, Hector Geffner",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19366v1",
+ "abstract": "While reinforcement learning methods have delivered remarkable results in a number of settings, generalization, i.e., the ability to produce policies that generalize in a reliable and systematic way, has remained a challenge. The problem of generalization has been addressed formally in classical planning where provable correct policies that generalize over all instances of a given domain have been learned using combinatorial methods. The aim of this work is to bring these two research threads together to illuminate the conditions under which (deep) reinforcement learning approaches, and in particular, policy optimization methods, can be used to learn policies that generalize like combinatorial methods do. We draw on lessons learned from previous combinatorial and deep learning approaches, and extend them in a convenient way. From the former, we model policies as state transition classifiers, as (ground) actions are not general and change from instance to instance. From the latter, we use graph neural networks (GNNs) adapted to deal with relational structures for representing value functions over planning states, and in our case, policies. With these ingredients in place, we find that actor-critic methods can be used to learn policies that generalize almost as well as those obtained using combinatorial approaches while avoiding the scalability bottleneck and the use of feature pools. Moreover, the limitations of the DRL methods on the benchmarks considered have little to do with deep learning or reinforcement learning algorithms, and result from the well-understood expressive limitations of GNNs, and the tradeoff between optimality and generalization (general policies cannot be optimal in some domains). Both of these limitations are addressed without changing the basic DRL methods by adding derived predicates and an alternative cost structure to optimize.",
+ "summary": "1. 核心创新点：将深度强化学习的策略学习与组合性规划的泛化能力结合起来，通过把策略建模为状态转移分类器，并利用面向关系结构的图神经网络与策略梯度方法，实现跨实例的通用策略，接近传统组合方法的泛化效果。\n\n2. 主要方法：\n- 将策略视为状态转移分类器，避免动作的普适化问题在不同实例中的不可泛化性；\n- 使用适配关系结构的图神经网络来表示规划状态的价值函数与策略；\n- 采用 actor-critic 的策略梯度学习来训练；\n- 为缓解深度强化学习的局限，加入派生谓词和替代的成本结构，以提升泛化与可扩展性（不改变核心 DRL 方法）。\n\n3. 结论/性能：\n- 学得的策略在泛化能力上几乎达到采用组合方法得到的泛化水平，同时避免了规模瓶颈和对特征池的依赖；\n- DRL 的局限性更多来自于图神经网络的表达能力和最优性-泛化之间的权衡；\n- 通过引入派生谓词和替代成本结构，可以在不改动核心 DRL 算法的前提下缓解这些问题。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 03:50:05"
+}

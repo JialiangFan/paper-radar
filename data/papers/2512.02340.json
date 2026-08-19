@@ -1,0 +1,13 @@
+{
+ "id": "2512.02340",
+ "title": "Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective",
+ "authors": "Qiyao Xue, Weichen Liu, Shiqi Wang, Haoming Wang, Yuyang Wu, Wei Gao",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02340v1",
+ "abstract": "Spatial reasoning is a core aspect of human intelligence that allows perception, inference and planning in 3D environments. However, current vision-language models (VLMs) struggle to maintain geometric coherence and cross-view consistency for spatial reasoning in multi-view settings. We attribute this gap to the lack of fine-grained benchmarks that isolate multi-view reasoning from single-view perception and temporal factors. To address this, we present ReMindView-Bench, a cognitively grounded benchmark for evaluating how VLMs construct, align and maintain spatial mental models across complementary viewpoints. ReMindView-Bench systematically varies viewpoint spatial pattern and query type to probe key factors of spatial cognition. Evaluations of 15 current VLMs reveals consistent failures in cross-view alignment and perspective-taking in multi-view spatial reasoning, motivating deeper analysis on the reasoning process. Explicit phase-wise analysis using LLM-as-a-judge and self-consistency prompting shows that VLMs perform well on in-frame perception but degrade sharply when integrating information across views. Implicit analysis, including linear probing and entropy dynamics, further show progressive loss of task-relevant information and uncertainty separation between correct and incorrect trajectories. These results provide a cognitively grounded diagnosis of VLM spatial reasoning and reveal how multi-view spatial mental models are formed, degraded and destabilized across reasoning phases. The ReMindView-Bench benchmark is available at https://huggingface.co/datasets/Xue0823/ReMindView-Bench, and the source codes of benchmark construction and VLM reasoning analysis are available at https://github.com/pittisl/ReMindView-Bench.",
+ "summary": "- 核心创新点：提出 ReMindView-Bench，这是一套从认知科学角度设计的多视角空间推理基准，用以评估视觉-语言模型在构建、对齐与维持跨视 viewpoints 的空间心理模型的能力。\n\n- 主要方法：\n  - 设计并系统化地变换视点空间模式与查询类型，以探查空间认知的关键因素。\n  - 对 15 种当前的视觉-语言模型（VLMs）进行评测，重点考察跨视角对齐与透视-taking 的能力。\n  - 进行显式阶段分析：使用大语言模型作为 judge、结合自洽性提示进行阶段性推理评估。\n  - 进行隐式分析：通过线性探测和熵动力学等方法，诊断信息保持与不确定性分离在推理过程中的演化。\n  - 基准及代码公开：基准在 HuggingFace 上可用，相关分析代码在 GitHub 开源。\n\n- 结论/性能：\n  - VLMs 在同框感知表现较好，但在跨视角的信息整合与跨视角透视推理方面普遍表现欠佳，存在明显的跨视角对齐失败。\n  - 通过显式与隐式分析，揭示在推理过程中任务相关信息逐步丧失、正确轨迹与错误轨迹之间的不确定性分离能力下降，给出对多视角空间推理过程的认知层诊断。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-03 14:02:32"
+}

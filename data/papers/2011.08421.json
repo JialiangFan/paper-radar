@@ -1,0 +1,33 @@
+{
+ "id": "2011.08421",
+ "title": "Reachability-based Trajectory Safeguard: A Safe and Fast Reinforcement Learning Safety Layer for Continuous Control",
+ "authors": "Shao, et al.",
+ "date": null,
+ "year": 2020,
+ "url": "https://arxiv.org/abs/2011.08421",
+ "abstract": "",
+ "summary": "RTS uses precomputed forward reachable sets to safeguard continuous-control trajectories selected by an RL policy.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-shielding",
+  "reachability",
+  "reachability-analysis",
+  "robotics",
+  "safe-rl",
+  "safe-vla",
+  "safety-layer",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2020_Shao_RTS.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2020_Shao_RTS.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

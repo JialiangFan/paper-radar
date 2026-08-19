@@ -1,0 +1,13 @@
+{
+ "id": "2602.11052",
+ "title": "GraphSeek: Next-Generation Graph Analytics with LLMs",
+ "authors": "Maciej Besta, Łukasz Jarmocik, Orest Hrycyna, Shachar Klaiman, Konrad Mączka, Robert Gerstenberger, Jürgen Müller, Piotr Nyczyk, Hubert Niewiadomski, Torsten Hoefler",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11052v1",
+ "abstract": "Graphs are foundational across domains but remain hard to use without deep expertise. LLMs promise accessible natural language (NL) graph analytics, yet they fail to process industry-scale property graphs effectively and efficiently: such datasets are large, highly heterogeneous, structurally complex, and evolve dynamically. To address this, we devise a novel abstraction for complex multi-query analytics over such graphs. Its key idea is to replace brittle generation of graph queries directly from NL with planning over a Semantic Catalog that describes both the graph schema and the graph operations. Concretely, this induces a clean separation between a Semantic Plane for LLM planning and broader reasoning, and an Execution Plane for deterministic, database-grade query execution over the full dataset and tool implementations. This design yields substantial gains in both token efficiency and task effectiveness even with small-context LLMs. We use this abstraction as the basis of the first LLM-enhanced graph analytics framework called GraphSeek. GraphSeek achieves substantially higher success rates (e.g., 86% over enhanced LangChain) and points toward the next generation of affordable and accessible graph analytics that unify LLM reasoning with database-grade execution over large and complex property graphs.",
+ "summary": "1) 核心创新点\n- 提出一个把从自然语言直接生成图查询的做法替换为基于“语义目录”的规划的新抽象，通过将语义平面（LLM规划与推理）与执行平面（数据库级的确定性执行）解耦，支持对大规模、异构、动态属性图的多查询分析。\n\n2) 主要方法\n- 设计并使用 Semantic Catalog，描述图的模式与可用操作；在 Semantic Plane 中由 LLM 进行任务规划和推理，而不是直接生成查询语句；在 Execution Plane 中执行确定性、数据库级的查询与工具实现，确保对完整数据集的高效执行，从而形成首个 LLM 增强的图分析框架 GraphSeek。\n\n3) 结论/性能\n- 相对于直接依赖 NL 生成查询的方法，实现了更高的令牌效率和任务效果，实验中对比增强的 LangChain，GraphSeek 达到约 86% 的成功率，指向可负担、可普及的面向大规模属性图的分析未来。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-12 14:02:35"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.21109",
+ "title": "Anomaly-Informed Confidence Calibration for Vision-Based Safety Prediction",
+ "authors": "Zhenjiang Mao, Jiawen Wu, Gabriel Wagner, Zhongzheng Zhang, Ivan Ruchkin",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21109v1",
+ "abstract": "Reliable confidence estimates are important for safely deploying vision-based controllers in autonomous racing, where safety predictions must be derived from camera images, yet modern predictors become dangerously overconfident under test-time distribution shifts. We identify a critical perception-dynamics gap in existing anomaly signals: widely used scores, such as autoencoder reconstruction error, capture visual corruptions but miss dynamics anomalies (e.g., actuation bias, latency), where images remain plausible while the trajectory degrades. To address this, we propose an Anomaly-Informed Online Calibration approach that, without retraining any model component, fuses two complementary anomaly scores extracted from a world model: a perceptual score from reconstruction error and a dynamics score from epistemic uncertainty and control-stream statistics. Based on these fused scores, a lightweight temperature-scaling calibrator leverages test-time augmentation to selectively reduce overconfidence under shift while preserving nominal-condition performance. Experiments on a physical DonkeyCar under four real-world anomaly protocols unseen during training (darkness, blur, actuation bias, processing latency) reduce average expected calibration error from 0.184 to 0.116, a 37% improvement over the best baseline, without modifying the base safety predictor.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出一种\"异常感知在线校准\"方法，通过融合感知与动力学两类异常信号来修正视觉安全预测器在分布偏移下的过度自信问题，且无需重训模型。\n\n**2. 主要方法**\n- 指出现有异常评分（如自编码器重构误差）存在\"感知-动力学鸿沟\"——只能捕获视觉污染，却忽略动力学异常（如执行器偏差、延迟）。\n- 从世界模型（world model）中提取两类互补异常分数：\n  - **感知分数**：基于重构误差；\n  - **动力学分数**：基于认知不确定性（epistemic uncertainty）与控制流统计。\n- 融合两类分数后，使用轻量级温度缩放校准器（temperature scaling）结合测试时增强（test-time augmentation），有选择地降低分布偏移下的过度自信，同时保留正常条件下的性能。\n\n**3. 结论/性能**\n在物理 DonkeyCar 平台上、面对四种训练未见的真实异常协议（黑暗、模糊、执行器偏差、处理延迟），将平均期望校准误差（ECE）从 0.184 降至 0.116，相比最佳基线提升 37%，且无需修改底层安全预测器。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-23 13:03:59"
+}

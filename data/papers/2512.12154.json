@@ -1,0 +1,13 @@
+{
+ "id": "2512.12154",
+ "title": "Keep the Lights On, Keep the Lengths in Check: Plug-In Adversarial Detection for Time-Series LLMs in Energy Forecasting",
+ "authors": "Hua Ma, Ruoxi Sun, Minhui Xue, Xingliang Yuan, Carsten Rudolph, Surya Nepal, Ling Liu",
+ "date": "2025-12-13",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12154v1",
+ "abstract": "Accurate time-series forecasting is increasingly critical for planning and operations in low-carbon power systems. Emerging time-series large language models (TS-LLMs) now deliver this capability at scale, requiring no task-specific retraining, and are quickly becoming essential components within the Internet-of-Energy (IoE) ecosystem. However, their real-world deployment is complicated by a critical vulnerability: adversarial examples (AEs). Detecting these AEs is challenging because (i) adversarial perturbations are optimized across the entire input sequence and exploit global temporal dependencies, which renders local detection methods ineffective, and (ii) unlike traditional forecasting models with fixed input dimensions, TS-LLMs accept sequences of variable length, increasing variability that complicates detection. To address these challenges, we propose a plug-in detection framework that capitalizes on the TS-LLM's own variable-length input capability. Our method uses sampling-induced divergence as a detection signal. Given an input sequence, we generate multiple shortened variants and detect AEs by measuring the consistency of their forecasts: Benign sequences tend to produce stable predictions under sampling, whereas adversarial sequences show low forecast similarity, because perturbations optimized for a full-length sequence do not transfer reliably to shorter, differently-structured subsamples. We evaluate our approach on three representative TS-LLMs (TimeGPT, TimesFM, and TimeLLM) across three energy datasets: ETTh2 (Electricity Transformer Temperature), NI (Hourly Energy Consumption), and Consumption (Hourly Electricity Consumption and Production). Empirical results confirm strong and robust detection performance across both black-box and white-box attack scenarios, highlighting its practicality as a reliable safeguard for TS-LLM forecasting in real-world energy systems.",
+ "summary": "- 核心创新点：提出一个可插拔的对抗检测框架，利用时间序列LLMs 的可变长度输入能力，通过对输入序列进行多次 shortened 变体并检测预测的一致性来识别对抗样本。\n\n- 主要方法：利用“采样引发的发散”作为检测信号，对给定输入生成多个缩短变体，比较它们的预测相似性；良性序列在多次采样下预测稳定，而对抗序列在不同子样本上难以传递初始扰动，导致预测相似性低。该方法在 TimeGPT、TimesFM、TimeLLM 等模型，以及 ETTh2、NI、Consumption 三个能源数据集上进行黑盒和白盒场景的评估。\n\n- 结论/性能：在多种攻击场景下表现出强健且鲁棒的检测性能，能作为现实能源系统中对 TS-LLMs 预测的可靠防护手段，具有实用性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 02:02:26"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.20374",
+ "title": "ARGUS: Production-Scale Tracing and Performance Diagnosis for over 10,000-GPU Clusters",
+ "authors": "Jiasheng Zhou, Longbin Zeng, Clavis Chen, Ruiming Lu, Qinwei Yang, Leyi Ye, Ray Ying, Key Zhang",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20374v1",
+ "abstract": "Large-scale LLM training requires always-on, fine-grained observability for effective performance diagnosis at scale. Coarse resource monitors alone cannot localize root causes, and fine-grained profilers incur prohibitive (5%-30%) overheads and massive trace volumes, making always-on deployment impractical in large production clusters.\n  We propose ARGUS, a low-overhead, fine-grained, always-on tracing and real-time analysis system for training workloads in 10,000+ GPU-scale production clusters. ARGUS decomposes observation along the training call hierarchy into CPU call stacks, framework semantics, and GPU kernel execution, with always-on collection under a combined overhead of less than 2%. It builds a unified data pipeline and compresses raw kernel events by approximately 3,700x from 10 MB to 2.7 KB per rank per step. Its progressive diagnosis framework automatically isolates anomalous windows, straggler ranks, and degraded kernels through iteration-time, phase-level, and kernel-level analysis. Deployed for over six months on a 10,000+ GPU production cluster, ARGUS has supported continuous fail-slow detection and performance optimization. Our case studies further demonstrate its effectiveness across representative anomalies, including compute stragglers, link degradation, pipeline-bubble amplification, FlashAttention JIT stalls, and compute stragglers masked by communication symptoms.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-21 13:02:43"
+}

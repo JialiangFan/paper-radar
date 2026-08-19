@@ -1,0 +1,13 @@
+{
+ "id": "2602.21604",
+ "title": "Towards Autonomous Graph Data Analytics with Analytics-Augmented Generation",
+ "authors": "Qiange Wang, Chaoyi Chen, Jingqi Gao, Zihan Wang, Yanfeng Zhang, Ge Yu",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21604v1",
+ "abstract": "This paper argues that reliable end-to-end graph data analytics cannot be achieved by retrieval- or code-generation-centric LLM agents alone. Although large language models (LLMs) provide strong reasoning capabilities, practical graph analytics for non-expert users requires explicit analytical grounding to support intent-to-execution translation, task-aware graph construction, and reliable execution across diverse graph algorithms. We envision Analytics-Augmented Generation (AAG) as a new paradigm that treats analytical computation as a first-class concern and positions LLMs as knowledge-grounded analytical coordinators. By integrating knowledge-driven task planning, algorithm-centric LLM-analytics interaction, and task-aware graph construction, AAG enables end-to-end graph analytics pipelines that translate natural-language user intent into automated execution and interpretable results.",
+ "summary": "1) 核心创新点：\n提出 Analytics-Augmented Generation (AAG) 新范式，将分析计算作为一等公民，通过知识驱动的任务规划、算法中心的 LLM-分析交互以及面向任务的图构建，实现从自然语言意图到自动执行与可解释结果的端到端图分析。\n\n2) 主要方法：\n- 知识驱动的任务规划：用外部知识源支撑任务分解与执行规划。\n- 算法中心的 LLM-Analytics 交互：让大模型作为知识 grounding 的分析协调者，协调不同图算法的执行。\n- 任务感知的图构建：根据具体分析任务有针对性地构造图数据结构。\n- 将以上整合成端到端管线：将自然语言用户意图转化为自动执行流程，并产出可解释的结果。\n\n3) 结论/性能：\n提出了一种新兴的框架性范式，能够将自然语言意图转化为自动执行的端到端图分析管线并输出可解释结果，强调实现端到端分析流程的可行性（当前以框架性描述为主，未给出具体实验数值）。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-26 14:02:32"
+}

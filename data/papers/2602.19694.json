@@ -1,0 +1,13 @@
+{
+ "id": "2602.19694",
+ "title": "All Cities are Equal: A Unified Human Mobility Generation Model Enabled by LLMs",
+ "authors": "Bo Liu, Tong Li, Zhu Xiao, Ruihui Li, Geyong Min, Zhuo Tang, Kenli Li",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19694v1",
+ "abstract": "Synthetic human mobility generation is gaining traction as an ethical and practical approach to supporting the data needs of intelligent urban systems. Existing methods perform well primarily in data-rich cities, while their effectiveness declines significantly in cities with limited data resources. However, the ability to generate reliable human mobility data should not depend on a city's size or available resources, all cities deserve equal consideration. To address this open issue, we propose UniMob, a unified human mobility generation model across cities. UniMob is composed of three main components: an LLM-powered travel planner that derives high-level, temporally-aware, and semantically meaningful travel plans; a unified spatial embedding module that projects the spatial regions of various cities into a shared representation space; and a diffusion-based mobility generator that captures the joint spatiotemporal characteristics of human movement, guided by the derived travel plans. We evaluate UniMob extensively using two real-world datasets covering five cities. Comprehensive experiments show that UniMob significantly outperforms state-of-the-art baselines, achieving improvements of over 30\\% across multiple evaluation metrics. Further analysis demonstrates UniMob's robustness in both zero- and few-shot scenarios, underlines the importance of LLM guidance, verifies its privacy-preserving nature, and showcases its applicability for downstream tasks.",
+ "summary": "- 核心创新点：提出跨城市统一的人类移动数据生成模型 UniMob，通过 LLM 规划、高度对齐的跨城市空间表示以及扩散生成，解决低资源城市数据不足的问题，实现“所有城市”在同一框架下的数据生成。\n\n- 主要方法：  \n  - LLM-powered travel planner：利用大语言模型提取高层次、具时序感和语义含义的出行计划。  \n  - Unified spatial embedding module：把不同城市的空间区域投影到共享表示空间。  \n  - Diffusion-based mobility generator：在生成阶段依据规划引导，捕捉联合的时空特征并生成移动轨迹。\n\n- 结论/性能：在覆盖五座城市的两组真实数据集上，UniMob 相较于最新基线提升超过 30%（多项评估指标）；在零-shot与 few-shot 场景表现鲁棒，证明了对隐私友好、可用于下游任务等特性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-24 14:02:40"
+}

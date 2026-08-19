@@ -1,0 +1,13 @@
+{
+ "id": "2605.22537",
+ "title": "F-TIS: Harnessing Diverse Models in Collaborative GRPO",
+ "authors": "Nikolay Blagoev, Oğuzhan Ersoy, Wendelin Boehmer, Lydia Yiyu Chen",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22537v1",
+ "abstract": "Reinforcement learning methods such as GRPO have seen great popularity in LLM post-training. In GRPO, models produce completions to a set of prompts, which are rewarded, and the policy is updated towards the relatively high reward completions. Due to the auto-regressive nature of models, the generation phase of such style of training can be extremely time consuming. As a solution, prior work has sought to distribute the inference step across many nodes, working parallel. These works assume primarily homogeneous models in the training in order to keep samples as close to on-policy as possible. This assumption may be impractical in decentralized systems, where parties with various computes and preferences may wish to collaborate on the same task. Thus, decentralized training requires an approach that can handle heterogeneous models - different models collaborating on the same tasks. However, this leads to highly off-policy samples presented during training, which prior work has identified that off-policy samples can hurt GRPO convergence. To enable heterogeneity, we propose Filtered Truncated Importance Sampling (F-TIS) - a GRPO-style training paradigm that can use off-policy samples to improve local model's learning. Our framework allows various models to collaborate in the same RL training run while being communication efficient. We extensively evaluate F-TIS in various heterogeneous setups and we show that it exhibits identical final model convergence to purely on-sample training. Furthermore, we observe in some setups better generalization on out-of-distribution tasks than on-policy training, increasing model's performance by up to 12\\%.",
+ "summary": "# F-TIS 论文总结\n\n## 1. 核心创新点\n提出 **Filtered Truncated Importance Sampling (F-TIS)**，让**异构模型**（不同架构/规模的模型）能够在去中心化环境下协作进行 GRPO 强化学习训练，解决了 off-policy 样本损害收敛的问题。\n\n## 2. 主要方法\n- 基于 **GRPO** 风格的强化学习后训练范式。\n- 采用**过滤式截断重要性采样**（Filtered Truncated Importance Sampling）机制，对来自其他异构模型的 off-policy 样本进行筛选和重要性权重截断，使其可被本地模型安全利用。\n- 框架具备**通信高效**特性，适合去中心化的多方协作训练场景。\n\n## 3. 结论/性能\n- 在多种异构模型配置下，F-TIS 的**最终收敛效果与纯 on-policy 训练一致**。\n- 在部分配置下，**对分布外（OOD）任务的泛化能力优于 on-policy 训练**，性能最高提升 **12%**。\n- 验证了异构模型协作 RL 训练的可行性，为去中心化 LLM 训练提供了实用方案。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-05-22 13:00:52"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.16651",
+ "title": "What if Pinocchio Were a Reinforcement Learning Agent: A Normative End-to-End Pipeline",
+ "authors": "Benoît Alcaraz",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16651v1",
+ "abstract": "In the past decade, artificial intelligence (AI) has developed quickly. With this rapid progression came the need for systems capable of complying with the rules and norms of our society so that they can be successfully and safely integrated into our daily lives. Inspired by the story of Pinocchio in ``Le avventure di Pinocchio - Storia di un burattino'', this thesis proposes a pipeline that addresses the problem of developing norm compliant and context-aware agents. Building on the AJAR, Jiminy, and NGRL architectures, the work introduces \\pino, a hybrid model in which reinforcement learning agents are supervised by argumentation-based normative advisors. In order to make this pipeline operational, this thesis also presents a novel algorithm for automatically extracting the arguments and relationships that underlie the advisors' decisions. Finally, this thesis investigates the phenomenon of \\textit{norm avoidance}, providing a definition and a mitigation strategy within the context of reinforcement learning agents. Each component of the pipeline is empirically evaluated. The thesis concludes with a discussion of related work, current limitations, and directions for future research.",
+ "summary": "1. 核心创新点：提出一个将强化学习代理与基于论证的规范性顾问相结合的混合模型 Pinocchio，通过自动提取论证结构与关系、并给出规范规避的定义与缓解策略，构建一个端到端的规范性与情境感知管线。\n\n2. 主要方法：在 AJAR、Jiminy、NGRL 等架构基础上，构建 \\pino（Pinocchio）混合模型，使强化学习代理在规范性顾问的监督下学习；提出一种自动提取顾问决策背后论证及其关系的算法；研究并给出规范规避的定义与缓解策略；对管线各组件进行实证评估。\n\n3. 结论/性能：通过对各组件的实证评估，验证该管线在实现规范性约束与情境感知方面的有效性，提升代理的规范性表现与解释性，并提出对规范规避的定义与缓解策略；讨论诸多局限性与未来研究方向。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-18 13:02:17"
+}

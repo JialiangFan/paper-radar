@@ -1,0 +1,13 @@
+{
+ "id": "2512.04416",
+ "title": "GovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows",
+ "authors": "Zhou Liu, Zhaoyang Han, Guochen Yan, Hao Liang, Bohan Zeng, Xing Chen, Yuanfeng Song, Wentao Zhang",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04416v1",
+ "abstract": "Data governance ensures data quality, security, and compliance through policies and standards, a critical foundation for scaling modern AI development. Recently, large language models (LLMs) have emerged as a promising solution for automating data governance by translating user intent into executable transformation code. However, existing benchmarks for automated data science often emphasize snippet-level coding or high-level analytics, failing to capture the unique challenge of data governance: ensuring the correctness and quality of the data itself. To bridge this gap, we introduce GovBench, a benchmark featuring 150 diverse tasks grounded in real-world scenarios, built on data from actual cases. GovBench employs a novel \"reversed-objective\" methodology to synthesize realistic noise and utilizes rigorous metrics to assess end-to-end pipeline reliability. Our analysis on GovBench reveals that current models struggle with complex, multi-step workflows and lack robust error-correction mechanisms. Consequently, we propose DataGovAgent, a framework utilizing a Planner-Executor-Evaluator architecture that integrates constraint-based planning, retrieval-augmented generation, and sandboxed feedback-driven debugging. Experimental results show that DataGovAgent significantly boosts the Average Task Score (ATS) on complex tasks from 39.7 to 54.9 and reduces debugging iterations by over 77.9 percent compared to general-purpose baselines.",
+ "summary": "- 核心创新点：提出面向真实世界数据治理工作的端到端基准 GovBench，并结合反向目标（reversed-objective）噪声合成与严格评测，进而提出以 Planner-Executor-Evaluator 架构的 DataGovAgent，以显著提升复杂工作流的鲁棒性与正确性。\n\n- 主要方法：使用 GovBench 的 150 个真实场景任务、来自实际案例的数据、以及反向目标噪声合成和端到端管线的可靠性评测；提出 DataGovAgent，采用约束规划（constraint-based planning）、检索增强生成（retrieval-augmented generation, RAG）以及沙盒化的反馈驱动调试（sandboxed feedback-driven debugging）的 Planner-Executor-Evaluator 架构。\n\n- 结论/性能：实验证明 DataGovAgent 在复杂任务上的平均任务分数（ATS）从 39.7 提升到 54.9，且调试迭代次数比基线减少超过 77.9%，并指出现有模型在多步骤工作流和错误纠正方面存在不足。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:02:52"
+}

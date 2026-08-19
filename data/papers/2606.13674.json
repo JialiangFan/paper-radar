@@ -1,0 +1,13 @@
+{
+ "id": "2606.13674",
+ "title": "RepWAM: World Action Modeling with Representation Visual-Action Tokenizers",
+ "authors": "Junke Wang, Qihang Zhang, Shuai Yang, Yiming Luo, Yujun Shen, Zuxuan Wu, Yu-Gang Jiang, Yinghao Xu",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13674v1",
+ "abstract": "This work presents RepWAM, a representation-centric world action model (WAM) built on representation visual-action tokenizers. Existing WAMs typically inherit reconstruction-oriented video tokenizers from pretrained video generation models. Although these tokenizers preserve visual fidelity, pixel reconstruction alone provides limited guidance for learning instruction-following dynamics that connect future prediction with robot control. To address this, we explore a semantic visual-action latent space for representation-centric world action modeling. Specifically, we train a representation visual-action tokenizer that maps visual inputs into aligned visual and latent action tokens. We then pretrain our WAM to jointly model future visual states and the latent actions that connect them under language instructions, followed by adaptation to real robot trajectories for closed-loop manipulation. Experiments on real-world manipulation tasks and simulation benchmarks show that RepWAM delivers strong performance across diverse manipulation settings, while ablations highlight the value of semantic visual-action tokenization over reconstruction-oriented alternatives. These results establish representation visual-action tokenization as a promising foundation for world action models and a step toward generalist robot policies. Code and weights will be available at https://github.com/wdrink/RepWAM.",
+ "summary": "# RepWAM 论文总结\n\n1. **核心创新点**：提出以\"表征\"为中心的世界动作模型（World Action Model），用语义化的视觉-动作 token 取代传统重建导向的视频 token，从而更好地连接\"未来预测\"与\"机器人控制\"。\n\n2. **主要方法**：训练一个**表征视觉-动作 tokenizer**，将视觉输入映射为对齐的视觉 token 和潜在动作（latent action）token；在此语义潜空间上预训练 WAM，在语言指令下联合建模未来视觉状态与连接这些状态的潜在动作，最后在真实机器人轨迹上微调，实现闭环操作（manipulation）。\n\n3. **结论/性能**：在真实世界操作任务和仿真基准上均取得强劲表现，覆盖多样化操作场景；消融实验证明语义视觉-动作 token 优于重建导向方案，验证了该方法作为世界动作模型基础、迈向通用机器人策略的潜力（代码与权重将开源）。\n\n---\n\n补充说明：我注意到有一个 `/paper-review` 技能，可以从文献综述专家视角更系统地分析论文（主题、背景、问题、贡献、方法论），并自动输出中英双语版本到你的 Obsidian vault。如果你需要更完整深入的审阅记录，告诉我即可调用。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-12 13:05:14"
+}

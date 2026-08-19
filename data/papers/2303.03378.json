@@ -1,0 +1,32 @@
+{
+ "id": "2303.03378",
+ "title": "PaLM-E: An Embodied Multimodal Language Model",
+ "authors": "Driess, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2303.03378",
+ "abstract": "",
+ "summary": "PaLM-E injects embodied visual and state observations into a large language model for multimodal embodied reasoning.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "embodied-ai",
+  "multimodal",
+  "robot-foundation-model",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2023_Driess_PaLME.md",
+ "pdf_path": "PDFs/VLA_Models/2023_Driess_PaLME.pdf",
+ "code": "",
+ "project": "https://palm-e.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

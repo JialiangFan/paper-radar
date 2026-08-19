@@ -1,0 +1,13 @@
+{
+ "id": "2604.04906",
+ "title": "How AI Aggregation Affects Knowledge",
+ "authors": "Daron Acemoglu, Tianyi Lin, Asuman Ozdaglar, James Siderius",
+ "date": "2026-04-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.04906v1",
+ "abstract": "Artificial intelligence (AI) changes social learning when aggregated outputs become training data for future predictions. To study this, we extend the DeGroot model by introducing an AI aggregator that trains on population beliefs and feeds synthesized signals back to agents. We define the learning gap as the deviation of long-run beliefs from the efficient benchmark, allowing us to capture how AI aggregation affects learning. Our main result identifies a threshold in the speed of updating: when the aggregator updates too quickly, there is no positive-measure set of training weights that robustly improves learning across a broad class of environments, whereas such weights exist when updating is sufficiently slow. We then compare global and local architectures. Local aggregators trained on proximate or topic-specific data robustly improve learning in all environments. Consequently, replacing specialized local aggregators with a single global aggregator worsens learning in at least one dimension of the state.",
+ "summary": "- 核心创新点：在 DeGroot 社会学习模型中引入以群体信念为训练数据、并回馈合成信号的 AI 聚合器，系统研究更新速度对长期学习的影响及局部与全局架构的鲁棒性。\n\n- 主要方法：在扩展的 DeGroot 模型中加入 AI 聚合器，该聚合器以人口信念为训练数据训练并向代理反馈合成信号；定义学习差距来衡量长期信念与有效基准的偏离；分析更新速度的阈值对能否在广泛环境中稳健提升学习的正测度训练权重的存在性；并比较全球聚合器与局部聚合器（基于近邻或主题数据）的性能。\n\n- 结论/性能：若更新过快，几乎不存在能在广泛环境中稳健提升学习的正测度权重集合；若更新足够慢，则存在这样的权重集合；局部聚合器在近邻或主题数据上能在所有环境下鲁棒提升学习；将局部聚合器替换为单一全球聚合器，在至少一个状态维度上会降低学习性能。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-07 13:01:55"
+}

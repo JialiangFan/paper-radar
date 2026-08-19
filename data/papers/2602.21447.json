@@ -1,0 +1,13 @@
+{
+ "id": "2602.21447",
+ "title": "Adversarial Intent is a Latent Variable: Stateful Trust Inference for Securing Multimodal Agentic RAG",
+ "authors": "Inderjeet Singh, Vikas Pahuja, Aishvariya Priya Rathina Sabapathy, Chiara Picardi, Amit Giloni, Roman Vainshtein, Andrés Murillo, Hisashi Kojima, Motoyoshi Sekiya, Yuki Unno, Junichi Suga",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21447v1",
+ "abstract": "Current stateless defences for multimodal agentic RAG fail to detect adversarial strategies that distribute malicious semantics across retrieval, planning, and generation components. We formulate this security challenge as a Partially Observable Markov Decision Process (POMDP), where adversarial intent is a latent variable inferred from noisy multi-stage observations. We introduce MMA-RAG^T, an inference-time control framework governed by a Modular Trust Agent (MTA) that maintains an approximate belief state via structured LLM reasoning. Operating as a model-agnostic overlay, MMA-RAGT mediates a configurable set of internal checkpoints to enforce stateful defence-in-depth. Extensive evaluation on 43,774 instances demonstrates a 6.50x average reduction factor in Attack Success Rate relative to undefended baselines, with negligible utility cost. Crucially, a factorial ablation validates our theoretical bounds: while statefulness and spatial coverage are individually necessary (26.4 pp and 13.6 pp gains respectively), stateless multi-point intervention can yield zero marginal benefit under homogeneous stateless filtering when checkpoint detections are perfectly correlated.",
+ "summary": "- 核心创新点：将对抗性意图视为隐变量并在POMDP框架下进行推断，提出一个模型无关的有状态多点防御框架MMA-RAG^T，通过模块化信任代理（MTA）维持近似信念状态，实现对多模态代理RAG的状态化防御深度。\n\n- 主要方法：在推理阶段引入MMA-RAG^T作为覆盖层，利用结构化LLM推理维护信念状态；通过模块化信任代理进行多内部检查点控制，作为对检索、规划、生成等阶段的有状态防御机制，且对系统模型无关。\n\n- 结论/性能：在43,774个实例上实现相较无防御基线的平均攻击成功率降低6.50倍，且几乎无额外效用成本；因子分析显示状态性（statefulness）与空间覆盖（spatial coverage）分别带来显著增益（约26.4个百分点和13.6个百分点），而在检测高度相关且无状态的情况下，纯无状态多点干预几乎无额外收益。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-26 14:02:55"
+}

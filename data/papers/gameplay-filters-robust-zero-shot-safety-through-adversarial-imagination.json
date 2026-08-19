@@ -1,0 +1,27 @@
+{
+ "id": "gameplay-filters-robust-zero-shot-safety-through-adversarial-imagination",
+ "title": "Gameplay Filters: Robust Zero-Shot Safety through Adversarial Imagination",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "自主机器人需要在不确定条件下可靠运行。安全滤波器原则上可以通过覆盖不安全动作来防止灾难性故障，但现有方法仅能系统性地计算5-6维状态空间的最小限制安全滤波器，远不够模拟足式机器人所需的30-50维。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Gameplay Filters - Robust Zero-Shot Safety.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.04451",
+ "title": "StreamEQA: Towards Streaming Video Understanding for Embodied Scenarios",
+ "authors": "Yifei Wang, Zhenkai Li, Tianwen Qian, Huanran Zheng, Zheng Wang, Yuqian Fu, Xiaoling Wang",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04451v1",
+ "abstract": "As embodied intelligence advances toward real-world deployment, the ability to continuously perceive and reason over streaming visual inputs becomes essential. In such settings, an agent must maintain situational awareness of its environment, comprehend the interactions with surrounding entities, and dynamically plan actions informed by past observations, current contexts, and anticipated future events. To facilitate progress in this direction, we introduce StreamEQA, the first benchmark designed for streaming video question answering in embodied scenarios. StreamEQA evaluates existing MLLMs along two orthogonal dimensions: Embodied and Streaming. Along the embodied dimension, we categorize the questions into three levels: perception, interaction, and planning, which progressively assess a model's ability to recognize fine-grained visual details, reason about agent-object interactions, and perform high-level goal-directed reasoning. For the streaming dimension, questions are divided into backward, real-time, and forward reasoning, with each mode relying on a distinct temporal context. Built upon 156 independent long videos, StreamEQA defines 42 tasks and generates approximately 21K question-answer pairs with precise timestamps through a hybrid pipeline combining automated generation and human refinement. Evaluations of 13 state-of-the-art video-LLMs reveal that, despite strong performance on conventional benchmarks, these models still struggle with streaming video understanding in embodied scenarios. We hope StreamEQA will catalyze research on streaming video understanding for embodied applications.",
+ "summary": "- 核心创新点：StreamEQA 首次提出面向带实体化场景的流式视频问答基准，沿 Embodied（感知/互动/规划）与 Streaming（回溯/实时/前瞻）两条正交维度评测模型，在156条长视频上构建42项任务、约2.1万条带时间戳的问答对。\n\n- 主要方法：通过混合自动生成与人工润色的管线生成带时间戳的问答对，并对13种前沿视频-LLMs进行系统评测，提出并采用该基准来评估流式视频理解能力。\n\n- 结论/性能：当前最先进的视频-LLMs 在传统基准上表现良好，但在 StreamEQA 的流式、 embodied 场景理解与时序推理上仍显不足，表明需要进一步研究以提升流式视频理解能力，StreamEQA 旨在推动该方向的发展。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:02:27"
+}

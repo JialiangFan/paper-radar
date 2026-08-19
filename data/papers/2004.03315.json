@@ -1,0 +1,32 @@
+{
+ "id": "2004.03315",
+ "title": "Learning Control Barrier Functions from Expert Demonstrations",
+ "authors": "Alexander Robey, Haimin Hu, Lars Lindemann, Hanwen Zhang, Dimos V. Dimarogonas, Stephen Tu, Nikolai Matni",
+ "date": null,
+ "year": 2020,
+ "url": "https://arxiv.org/abs/2004.03315",
+ "abstract": "",
+ "summary": "This paper learns CBFs from demonstrations, reducing the need to hand-design safe-set functions.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "constraint-grounding",
+  "control-barrier-functions",
+  "demonstrations",
+  "learning-constraints",
+  "robotics",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2020_Robey_LearningCBF.md",
+ "pdf_path": "PDFs/CBF_Reachability/2020_Robey_LearningCBF.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

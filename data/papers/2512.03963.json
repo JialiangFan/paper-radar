@@ -1,0 +1,13 @@
+{
+ "id": "2512.03963",
+ "title": "TempR1: Improving Temporal Understanding of MLLMs via Temporal-Aware Multi-Task Reinforcement Learning",
+ "authors": "Tao Wu, Li Yang, Gen Zhan, Yiting Liao, Junlin Li, Deliang Fu, Li Zhang, Limin Wang",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03963v1",
+ "abstract": "Enhancing the temporal understanding of Multimodal Large Language Models (MLLMs) is essential for advancing long-form video analysis, enabling tasks such as temporal localization, action detection, and time-sensitive question answering. While reinforcement learning (RL) has recently been explored for improving temporal reasoning, existing approaches are often confined to limited task types and data, restricting their generalization across diverse temporal understanding scenarios. To address this challenge, we present TempR1, a temporal-aware multi-task reinforcement learning framework that systematically strengthens MLLMs' temporal comprehension. We curate a multi-task corpus that exposes the model to diverse temporal structures and semantics, and build upon the Group Relative Policy Optimization (GRPO) algorithm to achieve stable and effective cross-task optimization. Specifically, we categorize temporal tasks into three correspondence types between predicted intervals and ground-truth instances, and design tailored localization rewards for each, enabling TempR1 to capture fine-grained temporal dependencies and adapt to different temporal patterns. Extensive experiments demonstrate that TempR1 attains state-of-the-art performance across multiple benchmarks. Moreover, its joint optimization over complementary tasks yields a strong synergistic effect, enhancing both generalization and single-task performance, establishing a scalable and principled paradigm for temporal reasoning in MLLMs.",
+ "summary": "- 核心创新点（1 句）\n  通过将多任务时序任务整合到一个基于组相对策略优化（GRPO）的强化学习框架 TempR1，并为不同类型的时间区间对齐设计定制化定位奖励，系统性提升多模态大语言模型的时序理解与跨任务泛化。\n\n- 主要方法\n  - 构建 TempR1 框架：一个面向时序理解的多任务强化学习框架，基于 GRPO 进行稳定有效的跨任务优化。\n  - 多任务语料库： curate 一个覆盖多种时序结构与语义的多任务数据集，提升模型对不同时间模式的感知。\n  - 三种对应关系类型及定制奖励：将预测区间与真实实例的关系分成三类，并为每类设计专门的定位奖励，以捕捉细粒度的时序依赖。\n  - 跨任务协同优化：联合优化互补任务，挖掘任务间的协同效应，提升泛化能力和单任务性能。\n\n- 结论/性能\n  - 在多个基准上达到当前的 state-of-the-art 性能。\n  - 通过对互补任务的联合优化，获得显著的协同增益，提升泛化能力和单任务表现，给时序推理提供了一个可扩展且 principled 的范式。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:04:44"
+}

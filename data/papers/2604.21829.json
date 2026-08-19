@@ -1,0 +1,13 @@
+{
+ "id": "2604.21829",
+ "title": "Black-Box Skill Stealing Attack from Proprietary LLM Agents: An Empirical Study",
+ "authors": "Zihan Wang, Rui Zhang, Yu Liu, Chi Liu, Qingchuan Zhao, Hongwei Li, Guowen Xu",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21829v1",
+ "abstract": "LLM agents increasingly rely on skills to encapsulate reusable capabilities via progressively disclosed instructions. High-quality skills inject expert knowledge into general-purpose models, improving performance on specialized tasks. This quality and ease of dissemination drive the emergence of a skill economy: free skill marketplaces already report 90368 published skills, while paid marketplaces report more than 2000 listings and over $100,000 in creator earnings. Yet this growing marketplace also creates a new attack surface, as adversaries can interact with public agent to extract hidden proprietary skill content. We present the first empirical study of black-box skill stealing against LLM agent systems. To study this threat, we first derive an attack taxonomy from prior prompt-stealing methods and build an automated stealing prompt generation agent. This agent starts from model-generated seed prompts, expands them through scenario rationalization and structure injection, and enforces diversity via embedding filtering. This process yields a reproducible pipeline for evaluating agent systems. We evaluate such attacks across 3 commercial agent architectures and 5 LLMs. Our results show that agent skills can be extracted with only 3 interactions, posing a serious copyright risk. To mitigate this threat, we design defenses across three stages of the agent pipeline: input, inference, and output. Although these defenses achieve strong results, the attack remains inexpensive and readily automatable, allowing an adversary to launch repeated attempts with different variants; only one successful attempt is sufficient to compromise the protected skill. Overall, our findings suggest that these copyright risks are largely overlooked across proprietary agent ecosystems. We therefore advocate for more robust defense strategies that provide stronger protection guarantees.",
+ "summary": "- 核心创新点：首次对黑盒技能盗取攻击对专有LLM代理系统进行实证研究，提出自动化的 stealing prompt 生成代理并建立可重复评估的攻击管线，覆盖多家商用代理与多种LLM。\n- 主要方法：基于对先前提示窃取方法的攻击分类，设计并实现自动化的 stealing prompt 生成代理；从种子提示出发，通过场景化推理、结构注入和嵌入过滤实现多样性，形成可复现的代理系统评估流程；并提出在输入、推理、输出三个阶段的防御策略来缓解该威胁。\n- 结论/性能：实验表明技能仅需3次交互即可被提取，存在严重的版权风险；虽然给出有效的输入/推理/输出防御，但攻击成本低、可自动化程度高，且只需一次成功尝试即可能导致技能泄露，强调需在专有代理生态中加强更强的保护措施。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-24 13:03:56"
+}

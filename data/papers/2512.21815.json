@@ -1,0 +1,13 @@
+{
+ "id": "2512.21815",
+ "title": "Few Tokens Matter: Entropy Guided Attacks on Vision-Language Models",
+ "authors": "Mengqi He, Xinyu Tian, Xin Shen, Jinhong Ni, Shu Zou, Zhaoyuan Yang, Jing Zhang",
+ "date": "2025-12-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21815v1",
+ "abstract": "Vision-language models (VLMs) achieve remarkable performance but remain vulnerable to adversarial attacks. Entropy, a measure of model uncertainty, is strongly correlated with the reliability of VLM. Prior entropy-based attacks maximize uncertainty at all decoding steps, implicitly assuming that every token contributes equally to generation instability. We show instead that a small fraction (about 20%) of high-entropy tokens, i.e., critical decision points in autoregressive generation, disproportionately governs output trajectories. By concentrating adversarial perturbations on these positions, we achieve semantic degradation comparable to global methods while using substantially smaller budgets. More importantly, across multiple representative VLMs, such selective attacks convert 35-49% of benign outputs into harmful ones, exposing a more critical safety risk. Remarkably, these vulnerable high-entropy forks recur across architecturally diverse VLMs, enabling feasible transferability (17-26% harmful rates on unseen targets). Motivated by these findings, we propose Entropy-bank Guided Adversarial attacks (EGA), which achieves competitive attack success rates (93-95%) alongside high harmful conversion, thereby revealing new weaknesses in current VLM safety mechanisms.",
+ "summary": "- 核心创新点（一句话）：提出只需针对自回归生成中的高熵分支点（约占20%的位置）施加对抗扰动，就能以较小预算实现与全局扰动相当的语义破坏，并提出基于熵的 Entropy-bank 指导对抗攻击（EGA），揭示高熵分叉点对VLM安全性的关键性与跨模型可转移性。\n\n- 主要方法：通过以熵作为模型不确定性的度量，识别输出序列中的高熵位置，并将扰动集中于这些关键点；与在所有解码步骤最大化不确定性的传统做法相比，EGA 框架实现更高效的对抗；在多种代表性VLM上评估攻击性和转移性。\n\n- 结论/性能：局部高熵攻击在多模型上将35-49% 的无害输出转变为有害输出，暴露重要的安全风险；高熵分叉点在不同架构间重复出现，具有17-26%的跨目标转移性；而 EGA 能实现93-95%的攻击成功率，并保持高有害转化率，揭示当前VLM安全机制的薄弱之处。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-29 02:29:51"
+}

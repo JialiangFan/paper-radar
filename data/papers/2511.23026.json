@@ -1,0 +1,13 @@
+{
+ "id": "2511.23026",
+ "title": "A Game-Theoretic Approach for Adversarial Information Fusion in Distributed Sensor Networks",
+ "authors": "Kassem Kallas",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23026v1",
+ "abstract": "Every day we share our personal information through digital systems which are constantly exposed to threats. For this reason, security-oriented disciplines of signal processing have received increasing attention in the last decades: multimedia forensics, digital watermarking, biometrics, network monitoring, steganography and steganalysis are just a few examples. Even though each of these fields has its own peculiarities, they all have to deal with a common problem: the presence of one or more adversaries aiming at making the system fail. Adversarial Signal Processing lays the basis of a general theory that takes into account the impact that the presence of an adversary has on the design of effective signal processing tools. By focusing on the application side of Adversarial Signal Processing, namely adversarial information fusion in distributed sensor networks, and adopting a game-theoretic approach, this thesis contributes to the above mission by addressing four issues. First, we address decision fusion in distributed sensor networks by developing a novel soft isolation defense scheme that protect the network from adversaries, specifically, Byzantines. Second, we develop an optimum decision fusion strategy in the presence of Byzantines. In the next step, we propose a technique to reduce the complexity of the optimum fusion by relying on a novel near-optimum message passing algorithm based on factor graphs. Finally, we introduce a defense mechanism to protect decentralized networks running consensus algorithm against data falsification attacks.",
+ "summary": "- 核心创新点：提出一个基于博弈论的对抗信息融合框架，覆盖拜占庭鲁棒的决策融合，包括软隔离防御、最优/近似融合策略，以及去中心化共识网络的防篡改机制。\n\n- 主要方法：将决策融合问题建模为博弈；提出软隔离防御以抵御拜占庭节点；给出在拜占庭存在下的最优决策融合策略；基于因子图的近似消息传递算法以降低融合复杂度；设计用于保护去中心化网络在共识算法中的数据伪造攻击的防御机制。\n\n- 结论/性能：在有拜占庭节点的场景下实现了最优的决策融合，并通过近似消息传递显著降低计算复杂度，同时提供了保护分布式网络在共识过程中的数据伪造攻击的防御方案。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-01 14:01:40"
+}

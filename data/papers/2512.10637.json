@@ -1,0 +1,13 @@
+{
+ "id": "2512.10637",
+ "title": "Adaptive Intrusion Detection System Leveraging Dynamic Neural Models with Adversarial Learning for 5G/6G Networks",
+ "authors": "Neha, Tarunpreet Bhatia",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10637v1",
+ "abstract": "Intrusion Detection Systems (IDS) are critical components in safeguarding 5G/6G networks from both internal and external cyber threats. While traditional IDS approaches rely heavily on signature-based methods, they struggle to detect novel and evolving attacks. This paper presents an advanced IDS framework that leverages adversarial training and dynamic neural networks in 5G/6G networks to enhance network security by providing robust, real-time threat detection and response capabilities. Unlike conventional models, which require costly retraining to update knowledge, the proposed framework integrates incremental learning algorithms, reducing the need for frequent retraining. Adversarial training is used to fortify the IDS against poisoned data. By using fewer features and incorporating statistical properties, the system can efficiently detect potential threats. Extensive evaluations using the NSL- KDD dataset demonstrate that the proposed approach provides better accuracy of 82.33% for multiclass classification of various network attacks while resisting dataset poisoning. This research highlights the potential of adversarial-trained, dynamic neural networks for building resilient IDS solutions.",
+ "summary": "- 核心创新点：将自适应动态神经网络与对抗训练相结合的入侵检测框架，支持增量学习、对抗鲁棒性，并在低维特征下高效检测网络攻击，适用于5G/6G场景。\n\n- 主要方法：采用动态神经网络与对抗训练相结合的框架，引入增量学习算法、使用较少的特征并结合统计特性以提升检测效率与鲁棒性。\n\n- 结论/性能：在 NSL-KDD 数据集上实现多类别网络攻击检测准确率为 82.33%，并对数据集污染具有抵抗能力，展示了对抗训练与动态神经网络在鲁棒、实时 IDS 方面的潜力。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-12 14:01:35"
+}

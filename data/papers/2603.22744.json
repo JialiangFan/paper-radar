@@ -1,0 +1,13 @@
+{
+ "id": "2603.22744",
+ "title": "Beyond Binary Correctness: Scaling Evaluation of Long-Horizon Agents on Subjective Enterprise Tasks",
+ "authors": "Abhishek Chandwani, Ishan Gupta",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22744v1",
+ "abstract": "Large language models excel on objectively verifiable tasks such as math and programming, where evaluation reduces to unit tests or a single correct answer. In contrast, real-world enterprise work is often subjective and context-dependent: success hinges on organizational goals, user intent, and the quality of intermediate artifacts produced across long, multi-tool workflows.\n  We introduce LH-Bench, a three-pillar evaluation design that moves beyond binary correctness to score autonomous, long-horizon execution on subjective enterprise tasks. The pillars are: (i) expert-grounded rubrics that give LLM judges the domain context needed to score subjective work, (ii) curated ground-truth artifacts that enable stepwise reward signals (e.g., chapter-level annotation for content tasks), and (iii) pairwise human preference evaluation for convergent validation. We show that domain-authored rubrics provide substantially more reliable evaluation signals than LLM-authored rubrics (kappa = 0.60 vs. 0.46), and that human preference judgments confirm the same top-tier separation (p < 0.05), evidence that expert-grounded evaluation can scale without sacrificing reliability. We release public datasets and report results on two environments: Figma-to-code (33 real .fig tasks against the Figma API via MCP) and Programmatic content (41 courses comprising 183 individually-evaluated chapters on a course platform serving 30+ daily users).",
+ "summary": "1) 核心创新点（一句话）\n提出 LH-Bench，一种面向主观、长时序企业任务的评估框架，通过专家驱动的评分、分步的真值产物与成对偏好验证，打破二元正确性约束且可扩展地评估长期自主执行。\n\n2) 主要方法\n- 三支柱评估设计：使用领域专家撰写的评估量表（rubrics）提供必要的领域情境；提供经过精心挑选的 ground-truth artifacts，以实现分步奖励信号（如按章节对内容任务打标注）；通过成对的人类偏好评估进行收敛性验证。\n- 比较与验证：对比领域专家编写的量表与由LLM自写的量表在可靠性上的差异，使用 kappa 指标评估信号稳定性，并通过人类偏好结果的显著性（p 值）进行验收。\n- 数据与任务环境：公布两类环境数据集——Figma-to-code（33 个真实 .fig 任务，通过 Figma API/MCP 实现）、Programmatic content（41 门课程、183 个章节的评估，服务于日活30+用户）。\n- 指标与评估方式：采用专家口径评分、分步奖励信号与人类偏好对比来形成多维评估信号，验证可伸缩性与可靠性。\n\n3) 结论/性能\n- 领域专家撰写的量表提供更可靠的评估信号（kappa = 0.60）高于LLM自写量表（kappa = 0.46）。\n- 人类偏好评估确认同样的高端差异性（p < 0.05），说明专家驱动评估的分层信号具有收敛性。\n- LH-Bench 数据集公开，评估在两种环境中实现可扩展且可靠的长时段主观任务评估。\n- 该框架表明在不牺牲可靠性的前提下，专家导向的评估可以规模化应用于真实的企业任务场景。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:27"
+}

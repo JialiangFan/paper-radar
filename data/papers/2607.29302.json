@@ -1,0 +1,13 @@
+{
+ "id": "2607.29302",
+ "title": "BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning",
+ "authors": "BWM Team",
+ "date": "2026-07-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.29302v1",
+ "abstract": "Reliable robot learning requires a world simulator that can predict action consequences before execution on physical hardware, including risky and failure-prone outcomes. Existing physics simulators require substantial asset construction and calibration and still face a sim-to-real gap, while video generators often lack precise control over their responses to fine-grained robot actions. In this paper, we present the Boundless World Model (BWM), an open-source, low-cost, high-fidelity world simulator for robot manipulation. BWM is an action-conditioned world model that combines initial-environment guidance, dynamic visual history, and temporally aligned robot-action conditioning for stateful autoregressive prediction of future observations. We construct action-aligned training clips through trajectory replay, overlapping clip sampling, and initial-observation enhancement. BWM serves as a data engine that augments imitation-learning data with action-aligned rollouts, and as a policy evaluator for closed-loop assessment, risk anticipation, and policy ranking. Experiments on the WorldArena benchmark and physical robots demonstrate improved simulator fidelity and functional utility across the data-engine and policy-evaluator settings. BWM ranks first overall in the WorldArena Challenge across Track 1 and its two Track 2 applications. We release the BWM open-source ecosystem, including model checkpoints, training and inference code, and interfaces for data generation and policy evaluation.",
+ "summary": "## BWM: 低成本高保真的机器人学习世界模拟器\n\n**1. 核心创新点**\n提出开源的 Boundless World Model (BWM)——一个动作条件化的世界模型，用视频式预测替代传统物理仿真，低成本实现对机器人操作后果（含危险与失败情形）的高保真预测。\n\n**2. 主要方法**\n- **模型侧**：融合三类条件信号——初始环境引导（initial-environment guidance）、动态视觉历史（dynamic visual history）、时间对齐的机器人动作条件（temporally aligned action conditioning），实现有状态的自回归未来观测预测。\n- **数据侧**：通过轨迹回放（trajectory replay）、重叠片段采样（overlapping clip sampling）和初始观测增强，构造动作对齐的训练片段。\n- **应用侧**：一是作**数据引擎**，用动作对齐的 rollout 扩增模仿学习数据；二是作**策略评估器**，支持闭环评估、风险预判和策略排序。\n\n**3. 结论/性能**\n在 WorldArena 基准和真实机器人上验证，模拟保真度与实用性均有提升；在 WorldArena Challenge 的 Track 1 及 Track 2 的两个应用任务上综合排名第一。同时开源了完整生态：模型权重、训练/推理代码，以及数据生成与策略评估接口。\n\n---\n\n一句话点评：本文的价值主张是「用可控的生成式世界模型绕开物理仿真的资产搭建与 sim-to-real 鸿沟」，关键在于动作与视频帧的时间对齐——这也是相比普通视频生成模型的主要区分点。摘要未给出具体数值指标，若需更细的性能对比，需要看正文实验部分。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-03 13:05:21"
+}

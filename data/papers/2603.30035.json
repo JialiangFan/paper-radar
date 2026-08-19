@@ -1,0 +1,13 @@
+{
+ "id": "2603.30035",
+ "title": "Reward-Based Online LLM Routing via NeuralUCB",
+ "authors": "Ming-Hua Tsai, Phat Tran",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30035v1",
+ "abstract": "This study investigates the use of NeuralUCB for cost-aware large language model (LLM) routing. Existing routing approaches can be broadly grouped into supervised routing methods and partial-feedback methods, each with different tradeoffs in efficiency and adaptivity. We implement a NeuralUCB-based routing policy and evaluate it on RouterBench under a simulated online setting. Experimental results show that the proposed method consistently outperforms random and min-cost baselines in utility reward. Compared with the max-quality reference, our method achieves substantially lower inference cost while maintaining competitive reward. These findings suggest that NeuralUCB is a promising approach for cost-aware LLM routing, while also highlighting remaining challenges in action discrimination and exploration.",
+ "summary": "1. 核心创新点\n- 将 NeuralUCB 引入在线成本感知的 LLM 路由任务，实现对不同路由动作的自适应探索与利用，优化效用与成本之间的权衡。\n\n2. 主要方法\n- 采用基于 NeuralUCB 的路由策略，对路由动作进行神经网络近似的置信上界估计，在模拟在线环境 RouterBench 中进行鲁棒决策；与随机、最小成本、最大质量等基线进行对比，聚焦成本感知的路由优化。\n\n3. 结论/性能\n- 在效用奖励（utility reward）方面持续超过随机和最小成本基线；相对最大质量参考，显著降低推理成本且保持竞争力的奖励水平；显示 NeuralUCB 在成本感知 LLM 路由方面具有潜力，但在动作辨别与探索方面仍存在挑战。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-01 13:00:33"
+}

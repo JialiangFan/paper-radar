@@ -1,0 +1,13 @@
+{
+ "id": "2607.03144",
+ "title": "DSGE as a Structured World Model:Benchmarking Counterfactual Generalization in Economic Worlds",
+ "authors": "Wenli Xu",
+ "date": "2026-07-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.03144v1",
+ "abstract": "Modern world models -- Dreamer, transformer world models (IRIS, Genie), and JEPA / next-latent architectures -- learn dynamics from observed trajectories but share a weakness: their transition map is disciplined only where data were seen, so it degrades under policy-induced distribution shift and on counterfactual states off the training path. We argue that a Dynamic Stochastic General Equilibrium (DSGE) model is a structured world model: its state is a belief state -- the very object a latent world model learns, but supplied with causal structure and hard cross-equation constraints. We introduce DSGE-Gym, a benchmark of eight DSGE environments with off-path counterfactual test sets, scaling to the ECB's 230-variable New Area-Wide Model. We find that (i)learned world models match the dynamics on-path but collapse off-path (5σ tail RMSE up to \\sim 40 the on-path level), and (ii)training the same architectures on data the DSGE generates across rare and counterfactual-policy states -- coverage only a structural model can synthesize -- roughly halves tail error and cuts policy-regime error 10--280 where the counterfactual rule shifts the ergodic support. Because such coverage cannot be sampled from any single history, this measures structure's ability to manufacture the missing distribution. DSGE-Gym and all code are released as a reproducible testbed for counterfactual generalization.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-07 13:05:00"
+}

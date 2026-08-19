@@ -1,0 +1,13 @@
+{
+ "id": "2603.11974",
+ "title": "Normative Common Ground Replication (NormCoRe): Replication-by-Translation for Studying Norms in Multi-agent AI",
+ "authors": "Luca Deck, Simeon Allmendinger, Lucas Müller, Niklas Kühl",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11974v1",
+ "abstract": "In the late 2010s, the fashion trend NormCore framed sameness as a signal of belonging, illustrating how norms emerge through collective coordination. Today, similar forms of normative coordination can be observed in systems based on Multi-agent Artificial Intelligence (MAAI), as AI-based agents deliberate, negotiate, and converge on shared decisions in fairness-sensitive domains. Yet, existing empirical approaches often treat norms as targets for alignment or replication, implicitly assuming equivalence between human subjects and AI agents and leaving collective normative dynamics insufficiently examined. To address this gap, we propose Normative Common Ground Replication (NormCoRe), a novel methodological framework to systematically translate the design of human subject experiments into MAAI environments. Building on behavioral science, replication research, and state-of-the-art MAAI architectures, NormCoRe maps the structural layers of human subject studies onto the design of AI agent studies, enabling systematic documentation of study design and analysis of norms in MAAI. We demonstrate the utility of NormCoRe by replicating a seminal experimental study on distributive justice, in which participants negotiate fairness principles under a \"veil of ignorance\". We show that normative judgments in AI agent studies can differ from human baselines and are sensitive to the choice of the foundation model and the language used to instantiate agent personas. Our work provides a principled pathway for analyzing norms in MAAI and helps to guide, reflect, and document design choices whenever AI agents are used to automate or support tasks formerly carried out by humans.",
+ "summary": "- 核心创新点：提出 NormCoRe 框架，将人类实验设计的结构逐层映射到多智能体 AI 环境，实现对规范在 MAIAI 中的系统复制与比较研究。\n\n- 主要方法：结合行为科学、复制研究与前沿的 MAIAI 架构，将人类研究的结构层映射到 AI 代理研究中，建立可文档化的研究设计并分析规范；通过在 AI 代理中复现实验“ veil of ignorance” 的分配正义研究，比较AI与人类基线，并考察基础模型选择与代理人设语言等因素的影响。\n\n- 结论/性能：证明 AI 代理的规范判断可能与人类基线不同，且对 foundation model 及代理人设语言高度敏感，提供一个系统化分析 MAIAI 中规范的路径，并指导相关设计与记录工作。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-15 13:01:46"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.22114",
+ "title": "Lemma Discovery in Agentic Program Verification",
+ "authors": "Huan Zhao, Haoxin Tu, Zhengyao Liu, Martin Rinard, Abhik Roychoudhury",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22114v1",
+ "abstract": "Deductive verification provides strong correctness guarantees for code by extracting verification conditions (VCs) and writing formal proofs for them. The expertise-intensive task of VC proving is the main bottleneck in this process, and has been partly automated owing to recent advances in Large Language Model (LLM) agents. However, existing proof agents are not able to discover helper lemmas - auxiliary lemmas that aid in proving - and thus fall short as programs grow in size and complexity.\n  In this paper, we argue that VC proving for program verification is more than a purely mathematical task, and benefits considerably from program comprehension. Our key insight is that human-proof engineers often discover and apply helper lemmas based on their understanding of the program semantics, which are not directly reflected in the VCs produced by VC generators. Inspired by this insight, we propose an LLM agent, LemmaNet, that discovers helper lemmas in two ways. Specifically, the agent first synthesizes lemmas offline by directly analyzing the source code and specifications, and then relating this semantic understanding to the mechanical, verbose encoding produced by VC generators. As the proof unfolds, LemmaNet then adapts existing helper lemmas online to accommodate evolving proof states, enabling the agent to effectively discharge complex VCs on-the-fly.\n  We evaluate LemmaNet on SV-COMP and established real-world subjects, including modules of the Linux kernel, Contiki OS, standard C++ library, and X.509 parser. Our experimental results demonstrate that LemmaNet significantly outperforms state-of-the-art approaches, highlighting the importance of program comprehension-aided lemma discovery in agentic program verification.",
+ "summary": "- 核心创新点：提出一个基于大语言模型的代理 LemmaNet，能够在程序验证中离线从源代码与规范合成辅助lemmas，并在证明过程中在线 adapting 以应对不断变化的证明状态，从而实现对复杂程序的 lemma 发现与应用。\n- 主要方法：使用两阶段的 lemma 发现策略：离线分析源代码与规范进行语义层面的 lemmas 合成；将语义理解与 VC 生成的机械化编码对应起来；在证明展开中动态改编已有 lemmas 以适配证明状态，整体由一个 LLM 代理驱动；在 SV-COMP 和真实系统（Linux 内核、Contiki OS、标准 C++ 库、X.509 解析器）上进行评估。\n- 结论/性能： LemmaNet 明显优于现有最先进方法，证明了“程序理解辅助的 lemma 发现”在代理性程序验证中的重要性，并在实际和基准任务上实现了显著性能提升。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:10:23"
+}

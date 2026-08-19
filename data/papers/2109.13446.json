@@ -1,0 +1,32 @@
+{
+ "id": "2109.13446",
+ "title": "Runtime Safety Assurance for Learning-enabled Control of Autonomous Driving Vehicles",
+ "authors": "Shengduo Chen, Yaowei Sun, Dachuan Li, Qiang Wang, Qi Hao, Joseph Sifakis",
+ "date": null,
+ "year": 2021,
+ "url": "https://arxiv.org/abs/2109.13446",
+ "abstract": "",
+ "summary": "Simplex-Drive applies a runtime assurance architecture with an advanced learned controller, verified baseline controller, and mode manager.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "action-shielding",
+  "learned-control",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "safe-vla",
+  "simplex"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2021_Chen_SimplexDrive.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2021_Chen_SimplexDrive.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

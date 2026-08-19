@@ -1,0 +1,13 @@
+{
+ "id": "2512.02414",
+ "title": "Characterizing Cyber Attacks against Space Infrastructures with Missing Data: Framework and Case Study",
+ "authors": "Ekzhin Ear, Jose Luis Castanon Remy, Caleb Chang, Qiren Que, Antonia Feffer, Shouhuai Xu",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02414v1",
+ "abstract": "Cybersecurity of space infrastructures is an emerging topic, despite space-related cybersecurity incidents occurring as early as 1977 (i.e., hijacking of a satellite transmission signal). There is no single dataset that documents cyber attacks against space infrastructures that have occurred in the past; instead, these incidents are often scattered in media reports while missing many details, which we dub the missing-data problem. Nevertheless, even ``low-quality'' datasets containing such reports would be extremely valuable because of the dearth of space cybersecurity data and the sensitivity of space infrastructures which are often restricted from disclosure by governments. This prompts a research question: How can we characterize real-world cyber attacks against space infrastructures? In this paper, we address the problem by proposing a framework, including metrics, while also addressing the missing-data problem by leveraging methodologies such as the Space Attack Research and Tactic Analysis (SPARTA) and the Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) to ``extrapolate'' the missing data in a principled fashion. We show how the extrapolated data can be used to reconstruct ``hypothetical but plausible'' space cyber kill chains and space cyber attack campaigns that have occurred in practice. To show the usefulness of the framework, we extract data for 108 cyber attacks against space infrastructures and show how to extrapolate this ``low-quality'' dataset containing missing information to derive 6,206 attack technique-level space cyber kill chains. Our findings include: cyber attacks against space infrastructures are getting increasingly sophisticated; successful protection of the link segment between the space and user segments could have thwarted nearly half of the 108 attacks. We will make our dataset available.",
+ "summary": "- 核心创新点：在缺失数据条件下，提出一个面向太空基础设施网络攻击的框架，通过整合 SPARTA 与 ATT&CK 进行数据外推，构建“假设但可信”的太空网络攻击链与攻击行动系列，并据此扩展出大规模的技术层级攻击链。\n\n- 主要方法：提出带有评估指标的框架；利用 SPARTA 和 ATT&CK 等方法对缺失数据进行 principled extrapolation；将推断结果用于重构太空网络攻击 kill chains 与攻击活动组合；以 108 起实际攻击为样本，推导出 6,206 条技术层级的攻击链。\n\n- 结论/性能：结果显示太空基础设施的攻击日益复杂；若能保护太空-用户链路段，几乎能阻断近一半的攻击；并计划公开所构建的数据集以供进一步研究。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-03 14:01:15"
+}

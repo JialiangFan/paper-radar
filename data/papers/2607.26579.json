@@ -1,0 +1,13 @@
+{
+ "id": "2607.26579",
+ "title": "ContactFlow: A video action conditioning that transfers across embodiments",
+ "authors": "Sami Azirar, Enrico Pallotta, Jan Nogga, Jürgen Gall, Sven Behnke, Hermann Blum",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.26579v1",
+ "abstract": "World models offer a promising route toward robot planning by enabling agents to imagine and verify the consequences of actions before execution. However, current video-based world models often struggle to capture the physical constraints that govern manipulation, particularly contact. Further, their action conditioning is often constrained to specific embodiments such as parallel grippers. We propose \\emph{Contact Flow}, an embodiment-agnostic action representation that encodes manipulation through the trajectory of 3D contact points between an actor and a target object. By discarding actor-specific appearance and kinematics, Contact Flow provides a shared conditioning signal for both human demonstrations and robotic execution. Therefore, we can train a large-scale video generative model on both human and robotic object interaction videos conditioned on Contact Flow, yielding a world model that predicts physically plausible manipulation outcomes. We integrate this model into a propose-imagine-verify-act pipeline, where generated rollouts are assessed by a vision-language model before execution. Experiments on the DROID dataset and real-world tabletop manipulation tasks demonstrate that Contact Flow enables transfer between human demonstrations and different robotic embodiments.",
+ "summary": "## ContactFlow 论文摘要总结\n\n**1. 核心创新点**\n提出 **Contact Flow**——一种与机器人本体无关（embodiment-agnostic）的动作表示，用\"执行体与目标物体之间 3D 接触点的运动轨迹\"来编码操作动作，使视频世界模型的动作条件能够在人类示范与不同机器人形态之间共享和迁移。\n\n**2. 主要方法**\n- **表示层**：刻意丢弃执行体自身的外观和运动学信息（如夹爪结构、手型），只保留接触点轨迹，从而为人手示范视频和机器人执行视频提供统一的条件信号。\n- **模型层**：以 Contact Flow 为条件，在**人类物体交互视频 + 机器人操作视频**的混合大规模数据上训练视频生成模型，得到可预测物理合理操作结果的世界模型。\n- **系统层**：将该模型嵌入 **propose–imagine–verify–act**（提议–想象–验证–执行）闭环流程，先生成候选未来 rollout，交由**视觉语言模型（VLM）**评估筛选，再在真机上执行。\n\n**3. 结论/性能**\n在 **DROID 数据集**和**真实桌面操作任务**上的实验表明，Contact Flow 能生成物理上更可信的操作预测，并成功实现人类示范 → 不同机器人本体之间的动作迁移。\n\n> 补充说明：摘要中只给出定性结论，未披露具体量化指标（如成功率、FVD 等），若需评估其实际提升幅度需查看正文实验部分。\n\n（另：本项目里有个 `/paper-review` 技能，会按文献综述格式生成中英双语笔记并写入 Obsidian vault。你这次的格式要求更简洁，所以我直接手写了；如果想存档到 vault，可以让我走那个技能。）",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-30 13:05:08"
+}

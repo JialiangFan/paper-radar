@@ -1,0 +1,13 @@
+{
+ "id": "2602.05833",
+ "title": "Synthesizing Realistic Test Data without Breaking Privacy",
+ "authors": "Laura Plein, Alexi Turcotte, Arina Hallemans, Andreas Zeller",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05833v1",
+ "abstract": "There is a need for synthetic training and test datasets that replicate statistical distributions of original datasets without compromising their confidentiality. A lot of research has been done in leveraging Generative Adversarial Networks (GANs) for synthetic data generation. However, the resulting models are either not accurate enough or are still vulnerable to membership inference attacks (MIA) or dataset reconstruction attacks since the original data has been leveraged in the training process. In this paper, we explore the feasibility of producing a synthetic test dataset with the same statistical properties as the original one, with only indirectly leveraging the original data in the generation process. The approach is inspired by GANs, with a generation step and a discrimination step. However, in our approach, we use a test generator (a fuzzer) to produce test data from an input specification, preserving constraints set by the original data; a discriminator model determines how close we are to the original data. By evolving samples and determining \"good samples\" with the discriminator, we can generate privacy-preserving data that follows the same statistical distributions are the original dataset, leading to a similar utility as the original data. We evaluated our approach on four datasets that have been used to evaluate the state-of-the-art techniques. Our experiments highlight the potential of our approach towards generating synthetic datasets that have high utility while preserving privacy.",
+ "summary": "- 核心创新点：提出一个隐私保护的合成测试数据生成框架，使用一个基于输入规范的 fuzzier（测试数据生成器）和对抗式的判别器来逼近原始数据的统计分布，而不直接使用原始数据进行训练，从而降低成员推断等攻击风险。\n\n- 主要方法：借鉴 GAN 的思路，但生成端由 fuzzer 从输入规范生成测试数据并保持与原始数据约束同态，判别器评估生成数据与原始数据在统计分布上的接近程度；通过对样本的迭代进化筛选“好样本”，得到既符合原始分布又具隐私保护属性的合成数据。\n\n- 结论/性能：在四个用于对比评估的数据集上进行验证，结果显示该方法能够生成具有与原始数据相近统计分布的高实用性（utility）的合成测试数据，同时具有隐私保护潜力，证明其在实现高保真度与隐私保护之间的可行性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-06 14:01:53"
+}

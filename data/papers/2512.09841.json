@@ -1,0 +1,13 @@
+{
+ "id": "2512.09841",
+ "title": "ChronusOmni: Improving Time Awareness of Omni Large Language Models",
+ "authors": "Yijing Chen, Yihan Wu, Kaisi Guan, Yuchen Ren, Yuyue Wang, Ruihua Song, Liyun Ru",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09841v1",
+ "abstract": "Time awareness is a fundamental ability of omni large language models, especially for understanding long videos and answering complex questions. Previous approaches mainly target vision-language scenarios and focus on the explicit temporal grounding questions, such as identifying when a visual event occurs or determining what event happens at aspecific time. However, they often make insufficient use of the audio modality, and overlook implicit temporal grounding across modalities--for example, identifying what is visually present when a character speaks, or determining what is said when a visual event occurs--despite such cross-modal temporal relations being prevalent in real-world scenarios. In this paper, we propose ChronusOmni, an omni large language model designed to enhance temporal awareness for both explicit and implicit audiovisual temporal grounding. First, we interleave text-based timestamp tokens with visual and audio representations at each time unit, enabling unified temporal modeling across modalities. Second, to enforce correct temporal ordering and strengthen fine-grained temporal reasoning, we incorporate reinforcement learning with specially designed reward functions. Moreover, we construct ChronusAV, a temporally-accurate, modality-complete, and cross-modal-aligned dataset to support the training and evaluation on audiovisual temporal grounding task. Experimental results demonstrate that ChronusOmni achieves state-of-the-art performance on ChronusAV with more than 30% improvement and top results on most metrics upon other temporal grounding benchmarks. This highlights the strong temporal awareness of our model across modalities, while preserving general video and audio understanding capabilities.",
+ "summary": "- 核心创新点：通过在每个时间单位将文本时间戳令牌与视觉、音频表示交错，实现跨模态的统一时间建模，以提升显式与隐式的音视频时间感知与推理能力。\n\n- 主要方法：在 ChronusOmni 中将文本时间戳与视觉和音频表示混合编码，建立统一的跨模态时序模型；使用带定制奖励函数的强化学习强化正确的时序排序与细粒度时间推理；并构建 ChronusAV 作为 temporally-accurate、 modality-complete、cross-modal-aligned 的数据集用于训练与评估。\n\n- 结论/性能：在 ChronusAV 上达到SOTA性能，提升超过30%，并在大多数其他时间 grounding 基准上获得领先结果，显示出强跨模态时间感知能力，同时保持对视频与音频的通用理解能力。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-11 14:04:26"
+}

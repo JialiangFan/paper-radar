@@ -1,0 +1,13 @@
+{
+ "id": "2602.21961",
+ "title": "Robustness in sparse artificial neural networks trained with adaptive topology",
+ "authors": "Bendegúz Sulyok, Gergely Palla, Filippo Radicchi, Santo Fortunato",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21961v1",
+ "abstract": "We investigate the robustness of sparse artificial neural networks trained with adaptive topology. We focus on a simple yet effective architecture consisting of three sparse layers with 99% sparsity followed by a dense layer, applied to image classification tasks such as MNIST and Fashion MNIST. By updating the topology of the sparse layers between each epoch, we achieve competitive accuracy despite the significantly reduced number of weights. Our primary contribution is a detailed analysis of the robustness of these networks, exploring their performance under various perturbations including random link removal, adversarial attack, and link weight shuffling. Through extensive experiments, we demonstrate that adaptive topology not only enhances efficiency but also maintains robustness. This work highlights the potential of adaptive sparse networks as a promising direction for developing efficient and reliable deep learning models.",
+ "summary": "- 核心创新点：通过在训练过程中对稀疏层的拓扑进行自适应更新（在每个训练轮之间重新安排拓扑），实现极高稀疏度下的高效与鲁棒性并存。\n\n- 主要方法：采用一个由三层稀疏层（各层稀疏度约99%）+ 一层密集层的架构，对稀疏层拓扑在每个 epoch 间进行更新；在 MNIST 和 Fashion-MNIST 的图像分类任务上训练，并对网络的鲁棒性进行系统分析，评估随机删除链接、对抗攻击和链接权重置换等扰动。\n\n- 结论/性能：在显著减少权重数量的同时实现具有竞争力的准确率，并且在多种扰动下保持良好鲁棒性，表明自适应拓扑稀疏网络具有提升效率与可靠性的潜力。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-26 14:01:21"
+}

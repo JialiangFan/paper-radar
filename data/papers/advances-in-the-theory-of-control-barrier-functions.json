@@ -1,0 +1,27 @@
+{
+ "id": "advances-in-the-theory-of-control-barrier-functions",
+ "title": "Advances in the Theory of Control Barrier Functions",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "Control Barrier Functions (CBFs) 已成为非线性约束控制系统验证和轨迹综合的核心工具。CBF通过约束barrier function沿系统轨迹的变化率（使用class K函数），确保constrained set的前向不变性，从而在给定动力学和控制输入约束下保证安全。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Advances in the Theory of Control Barrier Functions.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

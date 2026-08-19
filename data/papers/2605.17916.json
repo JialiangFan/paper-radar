@@ -1,0 +1,13 @@
+{
+ "id": "2605.17916",
+ "title": "PanoWorld: A Generative Spatial World Model for Consistent Whole-House Panorama Synthesis",
+ "authors": "Jinrang Jia, Zhenjia Li, Yijiang Hu, Yifeng Shi",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.17916v1",
+ "abstract": "Generating a consistent whole-house VR tour from a floorplan and style reference requires both photorealistic panoramas and cross-view spatial coherence. Pure 2D generators produce appealing single panoramas but re-imagine geometry and materials when the viewpoint changes, whereas monolithic 3D generation becomes expensive and loses fine texture at multi-room scale. We introduce PanoWorld, a generative spatial world model that treats whole-house synthesis as autoregressive generation of node-based 360-degree panoramas, matching the discrete navigation used by real VR tour products. PanoWorld uses a floorplan-derived 3D shell as a global geometric proxy and a dynamic 3D Gaussian Splatting cache as renderable spatial memory. A feed-forward panoramic LRM designed for metric-scale multi-room 360-degree inputs lifts generated panoramas into local 3DGS updates, while Room-aware Group Attention suppresses cross-room feature interference. A topology-aware progressive caching strategy fuses these local updates without repeatedly reconstructing the full history. By decoupling shell-based geometry guidance from cache-rendered visual memory, PanoWorld preserves high-frequency 2D synthesis quality while improving cross-node layout and material consistency. The project link is https://jjrcn.github.io/PanoWorld-project-home/",
+ "summary": "# PanoWorld 论文总结\n\n**核心创新点**：将整屋 VR 全景图合成建模为基于节点的自回归生成任务，通过解耦\"几何引导\"与\"视觉记忆\"，实现跨房间一致的全景图序列生成。\n\n**主要方法**：\n- 以户型图衍生的 **3D 外壳（shell）** 作为全局几何代理；\n- 使用 **动态 3D 高斯泼溅（3DGS）缓存** 作为可渲染的空间记忆；\n- 设计了面向米制多房间 360° 输入的 **前馈全景 LRM**，将生成的全景图提升为局部 3DGS 更新；\n- 引入 **房间感知组注意力（Room-aware Group Attention）** 抑制跨房间特征干扰；\n- 采用 **拓扑感知渐进式缓存策略** 融合局部更新，避免反复重建整段历史。\n\n**结论/性能**：在保留 2D 全景图高频纹理质量的同时，显著提升了跨节点的布局与材质一致性，使生成的整屋 VR 漫游与真实 VR 产品所采用的离散导航形式相匹配。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-19 13:25:48"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.12642",
+ "title": "Beyond Normalization: Rethinking the Partition Function as a Difficulty Scheduler for RLVR",
+ "authors": "Dohyung Kim, Minbeom Kim, Jeonghye Kim, Sangmook Lee, Sojeong Rhee, Kyomin Jung",
+ "date": "2026-02-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.12642v1",
+ "abstract": "Reward-maximizing RL methods enhance the reasoning performance of LLMs, but often reduce the diversity among outputs. Recent works address this issue by adopting GFlowNets, training LLMs to match a target distribution while jointly learning its partition function. In contrast to prior works that treat this partition function solely as a normalizer, we reinterpret it as a per-prompt expected-reward (i.e., online accuracy) signal, leveraging this unused information to improve sample efficiency. Specifically, we first establish a theoretical relationship between the partition function and per-prompt accuracy estimates. Building on this key insight, we propose Partition Function-Guided RL (PACED-RL), a post-training framework that leverages accuracy estimates to prioritize informative question prompts during training, and further improves sample efficiency through an accuracy estimate error-prioritized replay. Crucially, both components reuse information already produced during GFlowNet training, effectively amortizing the compute overhead into the existing optimization process. Extensive experiments across diverse benchmarks demonstrate strong performance improvements over GRPO and prior GFlowNet approaches, highlighting PACED-RL as a promising direction for a more sample efficient distribution-matching training for LLMs.",
+ "summary": "- 核心创新点：将 GFlowNets 的分区函数不仅作为归一化器使用，而是作为按提示的在线准确率信号来引导训练，从而提升样本效率。\n\n- 主要方法：提出 PACED-RL（Partition Function-Guided RL），一类后训练框架，利用按提示的准确率估计来优先选择信息量高的提示进行训练，并通过准确率估计误差的优先回放来进一步提高样本效率；两部分都复用 GFlowNet 训练阶段已有的信息，降低额外计算开销。\n\n- 结论/性能：在多项基准上对比 GRPO 和以往的 GFlowNet 方法，展现出显著的性能提升，证明 PACED-RL 能实现更高的样本效率的分布匹配训练。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-16 14:02:49"
+}

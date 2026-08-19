@@ -1,0 +1,13 @@
+{
+ "id": "2603.10689",
+ "title": "Contract And Conquer: How to Provably Compute Adversarial Examples for a Black-Box Model?",
+ "authors": "Anna Chistyakova, Mikhail Pautov",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10689v1",
+ "abstract": "Black-box adversarial attacks are widely used as tools to test the robustness of deep neural networks against malicious perturbations of input data aimed at a specific change in the output of the model. Such methods, although they remain empirically effective, usually do not guarantee that an adversarial example can be found for a particular model. In this paper, we propose Contract And Conquer (CAC), an approach to provably compute adversarial examples for neural networks in a black-box manner. The method is based on knowledge distillation of a black-box model on an expanding distillation dataset and precise contraction of the adversarial example search space. CAC is supported by the transferability guarantee: we prove that the method yields an adversarial example for the black-box model within a fixed number of algorithm iterations. Experimentally, we demonstrate that the proposed approach outperforms existing state-of-the-art black-box attack methods on ImageNet dataset for different target models, including vision transformers.",
+ "summary": "- 核心创新点：提出 CAC（Contract And Conquer）框架，在黑盒模型下通过可证明的方式构造对抗样本，结合对黑盒模型的蒸馏扩展数据集与对抗样本搜索空间的精确收缩，给出有限迭代内的可转移性保证。\n\n- 主要方法：使用对黑盒模型进行知识蒸馏，构建扩展的蒸馏数据集以得到代理模型；对抗样本搜索空间进行精确收缩（contraction）以提升搜索稳定性与效率；结合转移性保证，证明在固定迭代次数内能够产生对黑盒模型的对抗样本；在 ImageNet 上通过与现有黑盒攻击方法的对比验证其更优性能，且适用于包括 Vision Transformers 在内的多种目标模型。\n\n- 结论/性能：在 ImageNet 上实验结果显示 CAC 相较于现有最先进的黑盒攻击方法具有更优的攻击效果，能够在相同迭代次数内成功获取对黑盒模型的对抗样本，覆盖多种目标模型（含 Vision Transformers），并提供可证明的攻击保证。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-12 13:02:41"
+}

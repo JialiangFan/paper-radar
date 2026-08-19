@@ -1,0 +1,13 @@
+{
+ "id": "2603.25702",
+ "title": "S2D2: Fast Decoding for Diffusion LLMs via Training-Free Self-Speculation",
+ "authors": "Ligong Han, Hao Wang, Han Gao, Kai Xu, Akash Srivastava",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25702v1",
+ "abstract": "Block-diffusion language models offer a promising path toward faster-than-autoregressive generation by combining block-wise autoregressive decoding with within-block parallel denoising. However, in the few-step regime needed for practical acceleration, standard confidence-thresholded decoding is often brittle: aggressive thresholds hurt quality, while conservative thresholds require unnecessary denoising steps. Existing approaches that address this issue either require additional training or incur extra test-time compute. We present S2D2, a training-free self-speculative decoding framework for block-diffusion language models. Our key observation is that a block-diffusion model becomes autoregressive when the block size is reduced to one, allowing the same pretrained model to act as both drafter and verifier. S2D2 inserts a speculative verification step into standard block-diffusion decoding and uses lightweight routing policies to decide when verification is worth its cost. This yields a hybrid decoding trajectory in which diffusion proposes tokens in parallel, while the autoregressive mode acts as a local sequence-level critic. Across three mainstream block-diffusion families, S2D2 consistently improves the accuracy-speed tradeoff over strong confidence-thresholding baselines. On SDAR, we observe up to $4.7\\times$ speedup over autoregressive decoding, and up to $1.57\\times$ over a tuned dynamic decoding baseline while improving accuracy by up to $4.5$ points. On LLaDA2.1-Mini, S2D2 remains complementary to built-in self-correction, including a conservative setting where it is $4.4\\times$ faster than the static baseline with slightly higher accuracy.",
+ "summary": "- 核心创新点（1 句话）：在无需额外训练的前提下，提出训练无关的自推测解码 S2D2，通过在块扩散解码中引入自我验证（drafter 与 verifier 同模型），实现 diffusion 与自回归的混合解码，从而显著提升速度与准确性。 \n\n- 主要方法：简述使用的技术/模型\n  - 基于块扩散语言模型，将块大小为1时模型转变为自回归形态，同一模型同时充当发稿方（drafter）与验证方（verifier）。\n  - 插入 speculative verification 步骤，并设计轻量级路由策略来决定何时进行验证，形成 diffusion 提词并行、autoregressive 作为局部序列级评论的混合解码轨迹。\n  - 属于训练-free 的自推测解码框架，避免额外训练或显著的测试时开销。\n\n- 结论/性能：取得的效果\n  - 在三大主流块扩散家族上，普遍优于以置信度阈值为主的基线，在准确性-速度权衡上获得提升。\n  - 在 SDAR 上，最大实现约 4.7× 相对自回归解码的加速，且比经调优的动态解码基线快约 1.57×，同时准确率提升高达约 4.5 点。\n  - 在 LLaDA2.1-Mini 上，S2D2 仍与内置自纠机制互补（保守设置下比静态基线快约 4.4×，且略有准确性提升）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-27 13:00:45"
+}

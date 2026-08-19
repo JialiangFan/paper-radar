@@ -1,0 +1,13 @@
+{
+ "id": "2603.17965",
+ "title": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition",
+ "authors": "Vlad-Constantin Lungu-Stan, Ionut Mironica, Mariana-Iuliana Georgescu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17965v1",
+ "abstract": "Media design layer generation enables the creation of fully editable, layered design documents such as posters, flyers, and logos using only natural language prompts. Existing methods either restrict outputs to a fixed number of layers or require each layer to contain only spatially continuous regions, causing the layer count to scale linearly with design complexity. We propose LaDe (Layered Media Design), a latent diffusion framework that generates a flexible number of semantically meaningful layers. LaDe combines three components: an LLM-based prompt expander that transforms a short user intent into structured per-layer descriptions that guide the generation, a Latent Diffusion Transformer with a 4D RoPE positional encoding mechanism that jointly generates the full media design and its constituent RGBA layers, and an RGBA VAE that decodes each layer with full alpha-channel support. By conditioning on layer samples during training, our unified framework supports three tasks: text-to-image generation, text-to-layers media design generation, and media design decomposition. We compare LaDe to Qwen-Image-Layered on text-to-layers and image-to-layers tasks on the Crello test set. LaDe outperforms Qwen-Image-Layered in text-to-layers generation by improving text-to-layer alignment, as validated by two VLM-as-a-judge evaluators (GPT-4o mini and Qwen3-VL).",
+ "summary": "- 核心创新点：提出LaDe，一体化的潜在扩散框架，能够以灵活数量生成并分解具有RGBA通道的语义层，支持文本驱动的多层媒介设计与分解。\n\n- 主要方法：\n  - LLM-based prompt expander：将简短用户意图扩展为逐层的结构化描述，指引生成。\n  - Latent Diffusion Transformer（LDT）+ 4D RoPE位置编码：在潜在空间联合生成完整媒介设计及其RGBA各层。\n  - RGBA VAE：对每一层进行解码，提供完整的Alpha通道支持。\n  - 训练策略：通过在训练时对层采样进行条件化，使框架能够覆盖文本到图像、文本到层的媒介设计生成以及媒介设计分解等任务。\n\n- 结论/性能：在Crello测试集上的文本到层任务中，LaDe相较于Qwen-Image-Layered在文本到层对齐能力上实现提升，并由两位视觉-语言评测者（GPT-4o mini 和 Qwen3-VL）验证为更优。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-19 13:00:52"
+}

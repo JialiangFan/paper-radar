@@ -1,0 +1,13 @@
+{
+ "id": "2511.23143",
+ "title": "Automated Generation of MDPs Using Logic Programming and LLMs for Robotic Applications",
+ "authors": "Enrico Saccon, Davide De Martini, Matteo Saveriano, Edoardo Lamon, Luigi Palopoli, Marco Roveri",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23143v1",
+ "abstract": "We present a novel framework that integrates Large Language Models (LLMs) with automated planning and formal verification to streamline the creation and use of Markov Decision Processes (MDP). Our system leverages LLMs to extract structured knowledge in the form of a Prolog knowledge base from natural language (NL) descriptions. It then automatically constructs an MDP through reachability analysis, and synthesises optimal policies using the Storm model checker. The resulting policy is exported as a state-action table for execution. We validate the framework in three human-robot interaction scenarios, demonstrating its ability to produce executable policies with minimal manual effort. This work highlights the potential of combining language models with formal methods to enable more accessible and scalable probabilistic planning in robotics.",
+ "summary": "1) 核心创新点：将大型语言模型、自动规划与形式化验证结合，从自然语言出发构建 Prolog 知识库，再通过可达性分析自动生成 MDP，并利用 Storm 模型检查器合成最优策略，输出可执行的状态-动作表，显著降低人工工作量。\n\n2) 主要方法：\n- 使用大型语言模型将自然语言描述转换为 Prolog 知识库；\n- 基于可达性分析自动构建 MDP；\n- 采用 Storm 模型检查器进行最优策略合成；\n- 将策略导出为可执行的状态-动作表；\n- 在三个以人为机器人交互为场景的案例中进行验证。\n\n3) 结论/性能：\n- 能在最小人工干预下生成可执行的策略，并在三个人机交互场景中验证其有效性，体现了语言模型与形式化方法在机器人领域概率规划中的可访问性与可扩展性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:03:06"
+}

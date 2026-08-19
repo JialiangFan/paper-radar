@@ -1,0 +1,13 @@
+{
+ "id": "2605.30295",
+ "title": "MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings",
+ "authors": "Valentina Bui Muti, Eugénie Dulout, Ziquan Fu",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30295v1",
+ "abstract": "Large language models (LLMs) show promise for clinical reasoning and decision support, but evaluation in realistic, electronic health record-congruent settings remains limited. Existing benchmarks often rely on static datasets or unstructured inputs that do not reflect the structured, interoperable data formats used in clinical systems. We introduce a pipeline for generating clinically realistic HL7 FHIR R4 bundles from unstructured text, enabling controllable evaluation of clinical decision support systems. The pipeline combines staged LLM generation with terminology-grounded validation and repair to reduce hallucinated codes and enforce structural and semantic consistency. Applying this approach to MedCaseReasoning, we construct MedCase-Structured, a synthetic dataset aligned with clinician-authored diagnostic cases, achieving valid FHIR generation for 82.5% of cases. Evaluation on MedCase-Structured reveals consistently lower diagnostic accuracy for LLMs on structured FHIR inputs than with plain text, highlighting the importance of deployment-aligned benchmarking.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出一个将非结构化临床文本转换为符合 HL7 FHIR R4 标准的结构化数据集生成管道，构建了首个面向真实 EHR 场景的诊断推理基准 MedCase-Structured。\n\n**2. 主要方法**\n采用分阶段 LLM 生成 + 术语库锚定（terminology-grounded）的验证与修复机制，减少代码幻觉、强制结构与语义一致性；基于 MedCaseReasoning 数据集生成与临床医生编写病例对齐的合成 FHIR Bundle。\n\n**3. 结论/性能**\n该管道对 82.5% 的病例成功生成有效的 FHIR 数据；评测显示 LLM 在结构化 FHIR 输入上的诊断准确率持续低于纯文本输入，揭示了当前模型在真实 EHR 部署场景下的能力差距，凸显贴近部署环境进行基准测试的重要性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:01:34"
+}

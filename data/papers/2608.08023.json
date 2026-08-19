@@ -1,0 +1,13 @@
+{
+ "id": "2608.08023",
+ "title": "4D-WAM: Infusing Spatiotemporal Awareness into World Action Models through Trajectory Fields",
+ "authors": "Lishan Yang, Wenxuan Song, Xi Wang, Pingyue Sheng, Zheng Fang, Ziyang Zhou, Junjie He, Haodong Yan, Jiayi Chen, Nan Sun, Qiao Sun, Lingqiao Liu, Yan Wang, Yuxiang Gao, Feras Dayoub, Haoang Li",
+ "date": "2026-08-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.08023v1",
+ "abstract": "Building on recent advances in world models, World Action Models (WAMs) jointly model video prediction and action generation. However, they typically represent videos in 2D pixel space, creating a representation gap with 3D space in which robotic actions are executed. Recent 3D approaches introduce 3D information, but fail to fully exploit the dynamics of 3D structures. In this work, we propose 4D-WAM, a model-agnostic training strategy that injects spatiotemporal knowledge from 3D trajectory fields into WAMs through representation alignment. To this end, we introduce two complementary objectives: 1) motion alignment, which aligns temporal feature variations across adjacent frames and encourages the model to build local 4D awareness during training, and 2) destination alignment, which guides the model to infer the final destination from the source frame by minimizing the gap between their attention-like similarity distributions. Together, these objectives provide both local motion supervision and long-horizon goal guidance, enabling WAMs to learn trajectory-level spatiotemporal representations. Extensive in-distribution and out-of-distribution experiments across different base models demonstrate the model's improvements in spatial understanding, execution precision, robustness, generalization, and versatility.",
+ "summary": "## 4D-WAM 论文摘要总结\n\n**1. 核心创新点**\n提出 4D-WAM——一种模型无关的训练策略，通过表征对齐把 3D 轨迹场中的时空（4D）知识注入世界动作模型（WAM），弥合 2D 像素表征与机器人动作实际执行的 3D 空间之间的鸿沟。\n\n**2. 主要方法**\n在现有 WAM（联合建模视频预测与动作生成）训练中引入两个互补的对齐目标：\n- **运动对齐（motion alignment）**：对齐相邻帧之间的时序特征变化，促使模型建立局部 4D 感知能力；\n- **目标对齐（destination alignment）**：通过最小化源帧与终帧之间\"类注意力\"相似度分布的差距，引导模型从起始帧推断最终目标状态。\n\n两者分别提供**局部运动监督**与**长时程目标引导**，使模型学到轨迹级的时空表征。由于是训练策略而非新架构，可叠加到不同基座模型上。\n\n**3. 结论/性能**\n在多个基座模型上进行了分布内（in-distribution）与分布外（out-of-distribution）的大量实验，结果显示模型在**空间理解、执行精度、鲁棒性、泛化性和通用性**五个方面均有提升（摘要中未给出具体数值指标）。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-11 13:04:32"
+}

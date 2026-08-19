@@ -1,0 +1,13 @@
+{
+ "id": "2603.25645",
+ "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
+ "authors": "Abdullah Hamdi, Changchun Yang, Xin Gao",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25645v1",
+ "abstract": "Early screening via colonoscopy is critical for colon cancer prevention, yet developing robust AI systems for this domain is hindered by the lack of densely annotated, long-sequence video datasets. Existing datasets predominantly focus on single-class polyp detection and lack the rich spatial, temporal, and linguistic annotations required to evaluate modern Multimodal Large Language Models (MLLMs). To address this critical gap, we introduce Colon-Bench, generated via a novel multi-stage agentic workflow. Our pipeline seamlessly integrates temporal proposals, bounding-box tracking, AI-driven visual confirmation, and human-in-the-loop review to scalably annotate full-procedure videos. The resulting verified benchmark is unprecedented in scope, encompassing 528 videos, 14 distinct lesion categories (including polyps, ulcers, and bleeding), over 300,000 bounding boxes, 213,000 segmentation masks, and 133,000 words of clinical descriptions. We utilize Colon-Bench to rigorously evaluate state-of-the-art MLLMs across lesion classification, Open-Vocabulary Video Object Segmentation (OV-VOS), and video Visual Question Answering (VQA). The MLLM results demonstrate surprisingly high localization performance in medical domains compared to SAM-3. Finally, we analyze common VQA errors from MLLMs to introduce a novel \"colon-skill\" prompting strategy, improving zero-shot MLLM performance by up to 9.7% across most MLLMs. The dataset and the code are available at https://abdullahamdi.com/colon-bench .",
+ "summary": "- 核心创新点（1句）：提出 Colon-Bench 的多阶段代理式工作流，在全流程结肠镜视频中实现密集且丰富的标注，形成可用于评估多模态大模型的首个大规模基准数据集。\n\n- 主要方法：结合 temporal proposals、边界框跟踪、AI 驱动的视觉确认以及人工在环审核的协同流程，完成对 528 条视频、14 类病变、超过 30 万个边界框、21.3 万个分割掩码和 13.3 万字临床描述的标注；并用于系统评估对 lesion classification、Open-Vocabulary Video Object Segmentation（OV-VOS）以及 video VQA 的多模态大模型，同时提出“colon-skill”提示策略以提升零样本性能。\n\n- 结论/性能：该基准数据集在医学领域对 MLLMs 的定位能力表现出显著优势（高于 SAM-3），并且通过 colon-skill 提示在多数模型上实现了最高约 9.7% 的零-shot 提升；数据集和代码公开，便于进一步分析与评测。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-27 13:01:57"
+}

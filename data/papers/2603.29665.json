@@ -1,0 +1,13 @@
+{
+ "id": "2603.29665",
+ "title": "Near-Miss: Latent Policy Failure Detection in Agentic Workflows",
+ "authors": "Ella Rabinovich, David Boaz, Naama Zwerdling, Ateret Anaby-Tavor",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29665v1",
+ "abstract": "Agentic systems for business process automation often require compliance with policies governing conditional updates to the system state. Evaluation of policy adherence in LLM-based agentic workflows is typically performed by comparing the final system state against a predefined ground truth. While this approach detects explicit policy violations, it may overlook a more subtle class of issues in which agents bypass required policy checks, yet reach a correct outcome due to favorable circumstances. We refer to such cases as $\\textit{near-misses}$ or $\\textit{latent failures}$. In this work, we introduce a novel metric for detecting latent policy failures in agent conversations traces. Building on the ToolGuard framework, which converts natural-language policies into executable guard code, our method analyzes agent trajectories to determine whether agent's tool-calling decisions where sufficiently informed.\n  We evaluate our approach on the $τ^2$-verified Airlines benchmark across several contemporary open and proprietary LLMs acting as agents. Our results show that latent failures occur in 8-17% of trajectories involving mutating tool calls, even when the final outcome matches the expected ground-truth state. These findings reveal a blind spot in current evaluation methodologies and highlight the need for metrics that assess not only final outcomes but also the decision process leading to them.",
+ "summary": "- 核心创新点：提出一种用于在代理人对话轨迹中检测潜在策略失败（latent policy failures）的新指标，即使最终结果正确也可能存在近失效情形。\n\n- 主要方法：在 ToolGuard 框架的基础上，将自然语言策略转化为可执行的守卫代码；通过分析代理的工具调用轨迹，评估其决策是否在信息充分的情况下作出，并据此构建用于检测 latent failures 的度量，结合 τ^2-verified Airlines 基准对多种开源/专有LLM代理进行评估。\n\n- 结论/性能：在涉及会修改工具调用的轨迹中，潜在失败比例为 8-17%，即便最终状态符合 ground truth，揭示了现有仅评估最终结果的方法的盲点，强调需要评估决策过程的指标，而不仅仅是最终输出。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-01 13:04:12"
+}

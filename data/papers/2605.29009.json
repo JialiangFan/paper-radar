@@ -1,0 +1,13 @@
+{
+ "id": "2605.29009",
+ "title": "Label-Free Reinforcement Learning via Cross-Model Entropy",
+ "authors": "Matt Gorbett, Hossein Shirazi",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29009v1",
+ "abstract": "Post-training large language models with reinforcement learning is bottlenecked by the reward signal. Existing approaches require either ground-truth verifiable rewards, restricting training to domains with automatic correctness checks (e.g., mathematics, code execution), or human preference labels, which are expensive to collect and prone to reward hacking. Recent label-free methods replace ground-truth verifiers with self-referential signals like majority voting or token entropy over a model's own outputs, but risk reinforcing a model's own errors. In this work we propose Cross-Model Entropy (CME), the mean log-likelihood of a generator's response under a separate verifier model, as a label-free reward signal for RL post-training. CME is continuous, training-free, and grounded in the principle that responses a verifier finds unsurprising are likely correct or high quality. Because the verifier is independent of the generator, the signal cannot be gamed through self-consistency. We integrate CME into GRPO with no other changes to the training loop, extending label-free RL to open-ended instruction following -- a regime where self-referential signals are inapplicable or poorly suited. On open-ended instruction following (UltraFeedback prompts, evaluated on AlpacaEval 2.0), CME rewards beat the untrained base in head-to-head LLM-as-Judge comparisons across four model families (Qwen, Llama, Gemma, OLMo) and three training regimes (pretrained, SFT, and instruction-tuned), with tie-adjusted win rates ranging from 52.5% to 71.4%. Code will be released upon publication.",
+ "summary": "## 论文总结：Label-Free Reinforcement Learning via Cross-Model Entropy\n\n**1. 核心创新点**\n提出 **Cross-Model Entropy (CME)** —— 用一个独立验证模型对生成模型输出的对数似然作为无标签强化学习的奖励信号，避免了自指信号（如多数投票、token 熵）会强化模型自身错误的问题。\n\n**2. 主要方法**\n- 将 CME 定义为「生成器响应在独立验证模型下的平均对数似然」，验证器认为\"不意外\"的回答更可能正确或高质量。\n- 该信号连续、无需训练、且因验证器独立于生成器而无法通过自一致性被钻空子（reward hacking）。\n- 直接将 CME 集成进 **GRPO** 训练循环，无需其他改动，把无标签 RL 扩展到此前难以处理的开放式指令遵循任务。\n\n**3. 结论/性能**\n在 UltraFeedback 提示集上、用 AlpacaEval 2.0 评测：\n- 在 **4 个模型家族**（Qwen、Llama、Gemma、OLMo）和 **3 种训练阶段**（预训练、SFT、指令微调）下，CME 都击败了未训练基线；\n- LLM-as-Judge 头对头比较的**胜率（tie-adjusted）介于 52.5% – 71.4%**；\n- 代码将在发表后开源。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:01:06"
+}

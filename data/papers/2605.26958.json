@@ -1,0 +1,13 @@
+{
+ "id": "2605.26958",
+ "title": "Tournament-GRPO: Group-Wise Tournament Rewards for Reinforcement Learning in Open-Ended Long-Form Generation",
+ "authors": "Zixuan Yang, Yiqun Chen, Wei Yang, Erhan Zhang, Zihan Shen, Xiaochi Wei, Yan Gao, Yi Wu, Yao Hu, Jiaxin Mao",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.26958v1",
+ "abstract": "Reinforcement learning in open-ended long-form generation is challenging because reliable reference answers and automatic metrics are often unavailable. Existing rubric-based methods typically rely on pointwise LLM-as-a-judge scoring, but absolute scores are difficult to calibrate across complex responses, may provide weak discrimination among same-query rollouts, and can become saturated during optimization. We propose Tournament-GRPO, a group-wise reward framework that converts rubric-guided LLM judgments into relative rewards through repeated multi-round tournaments among same-query rollouts. Tournament-GRPO compares candidates within groups, accumulates tournament outcomes, and normalizes them into group-wise rewards for GRPO training. Experiments on Deep Research Bench show that Tournament-GRPO consistently outperforms existing reward-design baselines, achieving a 4.52-point overall-score improvement over the strongest baseline. Further analyses show that tournament rewards provide a favorable effectiveness--efficiency trade-off and that tournament design affects training dynamics. These results suggest that rubric-guided tournament comparison provides an effective reward signal for reinforcement learning in open-ended long-form generation.",
+ "summary": "# Tournament-GRPO 论文总结\n\n1. **核心创新点**：提出 Tournament-GRPO，通过\"组内多轮锦标赛比较\"将 LLM 评分由绝对打分转化为相对奖励，用于开放式长文本生成的强化学习训练。\n\n2. **主要方法**：在同一查询的多个 rollout 之间，利用 rubric 引导的 LLM-as-a-judge 进行多轮两两对战，累计锦标赛结果并归一化为组内奖励，再喂入 GRPO 进行训练，从而避免绝对评分难以校准、区分度弱、易饱和的问题。\n\n3. **结论/性能**：在 Deep Research Bench 上稳定优于现有奖励设计基线，整体得分比最强基线提升 **4.52 分**；进一步分析显示锦标赛奖励在效果与效率间取得良好折衷，且锦标赛设计会影响训练动态，证明 rubric 引导的锦标赛比较是开放式长文本生成 RL 的有效奖励信号。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-05-27 13:01:37"
+}

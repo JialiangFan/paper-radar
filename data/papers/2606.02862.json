@@ -1,0 +1,13 @@
+{
+ "id": "2606.02862",
+ "title": "Toward a Modular Architecture for Embedded AI Agent Systems at the Edge",
+ "authors": "Marcus Rüb, Michael Gerhards",
+ "date": "2026-06-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.02862v1",
+ "abstract": "The rise of Large Language Models (LLMs) has enabled agentic AI capable of complex reasoning and tool use; however, deploying such autonomy in pervasive computing environments remains challenging due to the strict memory and energy constraints of embedded microcontrollers. Existing frameworks typically assume server-class resources or continuous connectivity, leaving a gap for deeply embedded systems. This paper proposes a modular reference architecture for Embedded Agent Systems that bridges the divide between deterministic real-time control and agentic intelligence.\n  We introduce a tiered design that decouples On-Device Agents - executing highly compressed neural networks and rule-based logic for low-latency, privacy-critical tasks - from Cloud-Augmented Agents that leverage Small Language Models (SLMs) for higher-level reasoning and planning. A key contribution is the integration of a cross-cutting Governance Layer, ensuring observability, policy enforcement, and safety across distributed fleets of autonomous devices. Rather than presenting purely empirical benchmarks, we analyze architectural design principles and trade-offs regarding latency, energy, and reliable execution in resource-constrained environments.",
+ "summary": "# 论文摘要总结\n\n1. **核心创新点**：提出一种面向嵌入式边缘设备的模块化 AI Agent 参考架构，弥合实时确定性控制与智能体推理之间的鸿沟。\n\n2. **主要方法**：采用分层设计——设备端 Agent 运行高度压缩的神经网络和规则逻辑处理低延迟、隐私敏感任务；云端增强 Agent 借助小语言模型（SLM）进行高层推理与规划；并引入贯穿式的治理层（Governance Layer）实现可观测性、策略执行和安全保障。\n\n3. **结论/性能**：论文以架构设计原则和权衡分析为主（而非实证基准测试），重点讨论了资源受限环境下延迟、能耗与可靠执行之间的取舍，为深度嵌入式系统部署 Agentic AI 提供了参考蓝图。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-04 13:01:04"
+}

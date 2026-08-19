@@ -1,0 +1,13 @@
+{
+ "id": "2605.30218",
+ "title": "MarginGate: Sparse Margin-Triggered Verification for Batch-Invariant LLM Inference",
+ "authors": "Kexin Chu, Yang Zhou, Wei Zhang",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30218v1",
+ "abstract": "Temperature-zero BF16 LLM inference is often treated as reproducible, yet the same request can emit different tokens when decoded alone or inside a larger batch. Existing fixes use batch-invariant operators or LLM-42's per-token verification, incurring cost even when most steps are stable. We ask whether verification can be applied exclusively to flipped tokens. Across five models, batch-induced token flips are sparse on the flip-rate benchmarks: on MATH500, Llama-3.1-8B flips on $0.48\\%$ of synchronous decode steps, and all tested models stay within the 0.3-1.3% range on MATH500, GSM8K, and HumanEval. K/V perturbations remain flat before flips, while low top-1/top-2 logit margins expose much of the flip risk. MarginGate turns these observations into a verifier policy: it keeps BF16 decoding on high-margin steps, verifies only low-margin steps, and repairs confirmed mismatches by replacing the current K/V column. We evaluate on four datasets, calibrating on MATH500 and transferring to GSM8K, SharedGPT, and HumanEval. MarginGate restores 100% sequence-level deterministic decoding on Llama-3.1-8B and Qwen2.5-14B with 18.56%/15.05% verifier trigger rates, reducing LLM-42's latency increment by 2.23x/1.99x relative to always-on verification. On DSR1-Distill-Qwen-7B, the same policy reaches determinism in a harder regime at 49.50% triggers.",
+ "summary": "# MarginGate 论文总结\n\n**1. 核心创新点**\n通过 top-1/top-2 logit margin 识别\"易翻转\"的解码步骤，仅对低 margin 步骤进行验证，从而以稀疏触发的方式实现批次无关的确定性 LLM 推理。\n\n**2. 主要方法**\n- 观察发现：BF16 推理中批次引起的 token 翻转极为稀疏（MATH500/GSM8K/HumanEval 上仅 0.3%–1.3%），且翻转前 K/V 扰动平稳，但低 logit margin 能暴露大部分翻转风险。\n- MarginGate 策略：高 margin 步骤保持常规 BF16 解码；低 margin 步骤触发验证；确认不匹配后通过替换当前 K/V 列进行修复。\n- 在 MATH500 上校准，迁移到 GSM8K、SharedGPT、HumanEval。\n\n**3. 结论/性能**\n- 在 Llama-3.1-8B 和 Qwen2.5-14B 上实现 100% 序列级确定性解码，验证触发率仅 18.56% / 15.05%，相比 LLM-42 全程验证的延迟开销分别减少 2.23× / 1.99×。\n- 在更难的 DSR1-Distill-Qwen-7B 上同样达到确定性，触发率 49.50%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:01:19"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.20865",
+ "title": "Robustness Certificates for Neural Networks against Adversarial Attacks",
+ "authors": "Sara Taheri, Mahalakshmi Sabanayagam, Debarghya Ghoshdastidar, Majid Zamani",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20865v1",
+ "abstract": "The increasing use of machine learning in safety-critical domains amplifies the risk of adversarial threats, especially data poisoning attacks that corrupt training data to degrade performance or induce unsafe behavior. Most existing defenses lack formal guarantees or rely on restrictive assumptions about the model class, attack type, extent of poisoning, or point-wise certification, limiting their practical reliability. This paper introduces a principled formal robustness certification framework that models gradient-based training as a discrete-time dynamical system (dt-DS) and formulates poisoning robustness as a formal safety verification problem. By adapting the concept of barrier certificates (BCs) from control theory, we introduce sufficient conditions to certify a robust radius ensuring that the terminal model remains safe under worst-case ${\\ell}_p$-norm based poisoning. To make this practical, we parameterize BCs as neural networks trained on finite sets of poisoned trajectories. We further derive probably approximately correct (PAC) bounds by solving a scenario convex program (SCP), which yields a confidence lower bound on the certified robustness radius generalizing beyond the training set. Importantly, our framework also extends to certification against test-time attacks, making it the first unified framework to provide formal guarantees in both training and test-time attack settings. Experiments on MNIST, SVHN, and CIFAR-10 show that our approach certifies non-trivial perturbation budgets while being model-agnostic and requiring no prior knowledge of the attack or contamination level.",
+ "summary": "格式化简要总结如下：\n\n1) 核心创新点（1 句话）\n提出一个统一的鲁棒性认证框架，将神经网络的训练过程建模为离散时间动力系统，并引入障碍证书来对训练期和测试期的对抗性数据污染提供形式化的鲁棒性证明，不依赖具体攻击类型或污染水平。\n\n2) 主要方法\n- 将梯度基训练过程建模为离散时间动力系统（dt-DS）。\n- 将 poisoning 鲁棒性转化为安全性验证问题；引入 barrier certificates（BCs）来给出在最坏的 Lp 范数污染下仍能保持安全的鲁棒半径充要/充分条件。\n- 将 BCs 参数化为神经网络，并在有限的被污染轨迹上进行训练。\n- 通过求解场景凸规划（SCP）得到 PAC 边界，给出对鲁棒半径的置信下界，推广到训练集之外。\n- 框架同时扩展到测试时攻击，成为首个对训练和测试两端提供形式化保障的统一框架。\n\n3) 结论/性能\n- 在 MNIST、SVHN、CIFAR-10 上验证，能够对非平凡的扰动预算进行认证，且框架模型无关、无需事先知道攻击类型或污染水平。\n- 给出具有置信下界的鲁棒半径证据，实现训练期与测试期对抗攻击的统一形式化保证。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-25 02:05:09"
+}

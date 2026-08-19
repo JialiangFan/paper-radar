@@ -1,0 +1,13 @@
+{
+ "id": "2602.23668",
+ "title": "PseudoAct: Leveraging Pseudocode Synthesis for Flexible Planning and Action Control in Large Language Model Agents",
+ "authors": "Yihan, Wen, Xin Chen",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23668v1",
+ "abstract": "Large language model (LLM) agents typically rely on reactive decision-making paradigms such as ReAct, selecting actions conditioned on growing execution histories. While effective for short tasks, these approaches often lead to redundant tool usage, unstable reasoning, and high token consumption in complex long-horizon tasks involving branching, iteration, or multi-tool coordination. To address these limitations, this paper introduces PseudoAct, a novel framework for flexible planning and action control in LLM agents through pseudocode synthesis. Leveraging the ability of LLMs to express task-solving strategies as code, PseudoAct synthesizes a structured pseudocode plan that decomposes a task into subtasks and explicitly encodes control flow, including sequencing, conditionals, loops, parallel composition, and combinations of these logic primitives. Actions are then executed by following this global plan, making the decision logic explicit and temporally coherent. This design reduces redundant actions, prevents infinite loops, and avoids uninformative alternative exploration, enabling consistent and efficient long-horizon decision-making. Experiments on benchmark datasets show that our method significantly outperforms existing reactive agent approaches, achieving a 20.93% absolute gain in success rate on FEVER and setting a new state-of-the-art on HotpotQA.",
+ "summary": "- 核心创新点：通过将任务解决策略以伪代码形式合成的全局计划来实现灵活规划和行动控制，显式编码控制流，从而在长时程任务中提升一致性和效率。\n\n- 主要方法：利用大型语言模型将任务分解与解决策略转化为结构化的伪代码计划，计划包含序列、条件、循环、并行等逻辑原语；按该全局计划执行行动，减少冗余、避免无限循环和无信息探索，较传统的反应式代理（如 ReAct）实现更稳健的长期决策。\n\n- 结论/性能：实验显示显著优于现有反应式代理，在 FEVER 上实现绝对提升约 20.93% 的成功率，并在 HotpotQA 上达到新的 state-of-the-art。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-02 14:02:22"
+}

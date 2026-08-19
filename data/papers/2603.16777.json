@@ -1,0 +1,13 @@
+{
+ "id": "2603.16777",
+ "title": "Anticipatory Planning for Multimodal AI Agents",
+ "authors": "Yongyuan Liang, Shijie Zhou, Yu Gu, Hao Tan, Gang Wu, Franck Dernoncourt, Jihyung Kil, Ryan A. Rossi, Ruiyi Zhang",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16777v1",
+ "abstract": "Recent advances in multimodal agents have improved computer-use interaction and tool-usage, yet most existing systems remain reactive, optimizing actions in isolation without reasoning about future states or long-term goals. This limits planning coherence and prevents agents from reliably solving high-level, multi-step tasks. We introduce TraceR1, a two-stage reinforcement learning framework that explicitly trains anticipatory reasoning by forecasting short-horizon trajectories before execution. The first stage performs trajectory-level reinforcement learning with rewards that enforce global consistency across predicted action sequences. The second stage applies grounded reinforcement fine-tuning, using execution feedback from frozen tool agents to refine step-level accuracy and executability. TraceR1 is evaluated across seven benchmarks, covering online computer-use, offline computer-use benchmarks, and multimodal tool-use reasoning tasks, where it achieves substantial improvements in planning stability, execution robustness, and generalization over reactive and single-stage baselines. These results show that anticipatory trajectory reasoning is a key principle for building multimodal agents that can reason, plan, and act effectively in complex real-world environments.",
+ "summary": "- **核心创新点**：提出 TraceR1 的两阶段强化学习框架，通过在执行前预测短期轨迹并对行动序列施加全局一致性约束，实现前瞻性推理与规划。\n\n- **主要方法**：两阶段方法论：阶段1进行轨迹级强化学习，设计奖励以确保预测的行动序列在全局层面的一致性；阶段2进行扎根式强化微调，利用来自冻结工具代理的执行反馈，细化逐步层面的准确性与可执行性。\n\n- **结论/性能**：在七个基准上获得显著提升的规划稳定性、执行鲁棒性和对反应式/单阶段基线的泛化能力，验证前瞻性轨迹推理是构建能在复杂现实环境中推理、规划与行动的多模态代理的关键方法。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-18 13:01:42"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.08000",
+ "title": "SmartThinker: Progressive Chain-of-Thought Length Calibration for Efficient Large Language Model Reasoning",
+ "authors": "Chenzhi Hu, Qinzhe Hu, Yuhang Xu, Junyi Chen, Ruijie Wang, Shengzhong Liu, Jianxin Li, Fan Wu, Guihai Chen",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.08000v1",
+ "abstract": "Large reasoning models (LRMs) like OpenAI o1 and DeepSeek-R1 achieve high accuracy on complex tasks by adopting long chain-of-thought (CoT) reasoning paths. However, the inherent verbosity of these processes frequently results in redundancy and overthinking. To address this issue, existing works leverage Group Relative Policy Optimization (GRPO) to reduce LRM output length, but their static length reward design cannot dynamically adapt according to the relative problem difficulty and response length distribution, causing over-compression and compromised accuracy. Therefore, we propose SmartThinker, a novel GRPO-based efficient reasoning method with progressive CoT length calibration. SmartThinker makes a two-fold contribution: First, it dynamically estimates the optimal length with peak accuracy during training and guides overlong responses toward it to reduce response length while sustaining accuracy. Second, it dynamically modulates the length reward coefficient to avoid the unwarranted penalization of correct reasoning paths. Extensive experiment results show that SmartThinker achieves up to 52.5% average length compression with improved accuracy, and achieves up to 16.6% accuracy improvement on challenging benchmarks like AIME25. The source code can be found at https://github.com/SJTU-RTEAS/SmartThinker.",
+ "summary": "- 核心创新点：在基于分组相对策略优化（GRPO）的推理框架中，提出SmartThinker，通过渐进的CoT长度校准在训练阶段动态估计最佳长度并自适应调整长度奖励，从而在降低输出长度的同时维持甚至提升推理准确性。\n\n- 主要方法：使用GRPO为基础的高效推理模型，并引入两大技术：1) 动态估计达到峰值准确性的最优CoT长度并引导过长回答向该长度收敛；2) 动态调节长度奖励系数，避免对正确推理路径的过度惩罚，实现渐进的CoT长度校准。\n\n- 结论/性能：在多项基准上实现最高52.5%的平均长度压缩并提升准确性；在AIME25等挑战性任务上准确性提升可达16.6%；代码公开可获得。\n\n",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-10 13:04:16"
+}

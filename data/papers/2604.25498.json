@@ -1,0 +1,13 @@
+{
+ "id": "2604.25498",
+ "title": "SymphonyGen: 3D Hierarchical Orchestral Generation with Controllable Harmony Skeleton",
+ "authors": "Xuzheng He, Nan Nan, Zhilin Wang, Ziyue Kang, Zhuoru Mo, Ao Li, Yu Pan, Xiaobing Li, Feng Yu, Xiaohong Guan",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25498v1",
+ "abstract": "Generating symphonic music requires simultaneously managing high-level structural form and dense, multi-track orchestration. Existing symbolic models often struggle with a \"complexity-control imbalance\", in which scaling bottlenecks limit long-term granular steerability. We present SymphonyGen, a 3D hierarchical framework for contemporary cinematic orchestration. SymphonyGen employs a cascading decoder architecture that decomposes the Bar, Track, and Event axes, improving computational efficiency and scalability over conventional 1D or 2D models. We introduce \"short-score\" conditioning via a beat-quantized multi-voice harmony skeleton, enabling outline control while preserving textural diversity. The model is further refined using Group Relative Policy Optimization (GRPO) with a cross-modal audio-perceptual reward, aligning symbolic output with modern acoustic expectations. Additionally, we implement a dissonance-averse sampling algorithm to suppress unintended tonal clashes during inference. Objective evaluations show that both reinforcement learning and dissonance-averse sampling effectively enhance harmonic cleanliness while maintaining melodic expression. Subjective evaluations demonstrate that SymphonyGen outperforms baselines in musicality and preference for orchestral music generation. Demo page: https://symphonygen.github.io/",
+ "summary": "- 核心创新点：提出 SymphonyGen，一种三维层次化的管弦乐生成框架，通过 Bar/Track/Event 三轴分层解码结合 beat 量化的多声部和声骨架实现可控的结构轮廓与丰富纹理，并辅以 GRPO 与去离调冲突采样来提升音质与和声清晰度。\n\n- 主要方法：\n  - 使用级联解码器对 Bar、Track、Event 三个维度进行分解，提升计算效率与可扩展性。\n  - 引入“短谱”条件：基于 beat 量化的多声部和声骨架实现大纲控制，同时保持纹理多样性。\n  - 应用 Group Relative Policy Optimization (GRPO) 并结合跨模态音频感知奖励，以对齐符号输出与现代声学期望。\n  - 在推理阶段采用去离调冲突的采样算法，抑制不想要的音调冲突。\n\n- 结论/性能：\n  - 客观评估显示，通过强化学习和去离调采样能显著提升和声清洁度，同时保持旋律表达。\n  - 主观评估表明 SymphonyGen 在音乐性和对管弦乐生成的偏好方面优于基线方法。\n  - 提供演示页面供进一步体验。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-29 13:03:51"
+}

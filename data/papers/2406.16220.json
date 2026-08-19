@@ -1,0 +1,31 @@
+{
+ "id": "2406.16220",
+ "title": "Learning Run-time Safety Monitors for Machine Learning Components",
+ "authors": "Vardal, et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2406.16220",
+ "abstract": "",
+ "summary": "This paper proposes learning safety monitors for ML components when ground truth is unavailable at runtime.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "assurance",
+  "ml-safety",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2024_Vardal_LearningRuntimeMonitors.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2024_Vardal_LearningRuntimeMonitors.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

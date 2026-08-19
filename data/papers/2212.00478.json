@@ -1,0 +1,32 @@
+{
+ "id": "2212.00478",
+ "title": "Safe Learning-Based Control of Elastic Joint Robots via Control Barrier Functions",
+ "authors": "Lederer, et al.",
+ "date": null,
+ "year": 2022,
+ "url": "https://arxiv.org/abs/2212.00478",
+ "abstract": "",
+ "summary": "The paper shows how CBF safety can be robustified for elastic-joint robots with uncertain dynamics.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "control-barrier-functions",
+  "elastic-joint-robots",
+  "low-level-robot-safety",
+  "low-level-safety",
+  "robotics",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2022_Lederer_ElasticJointCBF.md",
+ "pdf_path": "PDFs/CBF_Reachability/2022_Lederer_ElasticJointCBF.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

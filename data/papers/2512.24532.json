@@ -1,0 +1,13 @@
+{
+ "id": "2512.24532",
+ "title": "From Building Blocks to Planning: Multi-Step Spatial Reasoning in LLMs with Reinforcement Learning",
+ "authors": "Amir Tahmasbi, Sadegh Majidi, Kazem Taram, Aniket Bera",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24532v1",
+ "abstract": "Spatial reasoning in large language models (LLMs) has gained increasing attention due to applications in navigation and planning. Despite strong general language capabilities, LLMs still struggle with spatial transformations and multi-step planning in structured environments. We propose a two-stage approach that decomposes spatial reasoning into atomic building blocks and their composition. First, we apply supervised fine-tuning on elementary spatial transformations, such as rotation, translation, and scaling, to equip the model with basic spatial physics. We then freeze this physics-aware model and train lightweight LoRA adapters within the GRPO framework to learn policies that compose these building blocks for multi-step planning in puzzle-based environments, in a closed-loop manner. To support this pipeline, we synthesize an ASCII-art dataset and construct a corresponding ASCII-based reinforcement learning environment. Our method consistently outperforms baselines, including the generic backbone, physics-aware model, and end-to-end RL models, under both Dynamic environments with explicit state updates and Static environments where the model must rely on its internal state across steps. In addition, the proposed approach converges faster and exhibits more stable training compared to end-to-end reinforcement learning from scratch. Finally, we analyze attention patterns to assess whether fine-tuning induces meaningful improvements in spatial understanding.",
+ "summary": "- 核心创新点（一句话概括）：将空间推理分解为可组成的基本建筑块，先对基本空间变换进行监督微调获得物理感知能力，再冻结该模块并在 GRPO 框架下用轻量 LoRA 适配器学习将这些建筑块组合成多步规划策略，实现面向拼图环境的高效空间推理。\n\n- 主要方法（技术/模型简述）：\n  - 两阶段训练流程：\n    1) 监督微调阶段：对基本空间变换（旋转、平移、缩放等）进行监督学习，使模型具备基础的空间物理认知。\n    2) 策略学习阶段：冻结上述物理感知模块，在 GRPO 框架内用轻量 LoRA 适配器学习将这些建筑块组合成多步规划策略，且以闭环方式执行。\n  - 数据与环境：合成并使用一个 ASCII-art 数据集，以及对应的 ASCII-based 强化学习环境。\n  - 对比与评估：与通用骨干、仅物理感知模型、端到端 RL 等基线进行对比。\n\n- 结论/性能（取得的效果）：\n  - 在动态环境（含显式状态更新）与静态环境（依赖内部状态的多步推进）中，方法持续优于全部基线（普遍骨干、单独的物理感知模型、端到端 RL 等）。\n  - 收敛速度更快、训练更稳定，相较从零开始的端到端强化学习表现更优。\n  - 还通过注意力分析评估微调是否带来更有意义的空间理解提升。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:27:24"
+}

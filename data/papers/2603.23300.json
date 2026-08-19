@@ -1,0 +1,13 @@
+{
+ "id": "2603.23300",
+ "title": "Designing Agentic AI-Based Screening for Portfolio Investment",
+ "authors": "Mehmet Caner, Agostino Capponi, Nathan Sun, Jonathan Y. Tan",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23300v1",
+ "abstract": "We introduce a new agentic artificial intelligence (AI) platform for portfolio management. Our architecture consists of three layers. First, two large language model (LLM) agents are assigned specialized tasks: one agent screens for firms with desirable fundamentals, while a sentiment analysis agent screens for firms with desirable news. Second, these agents deliberate to generate and agree upon buy and sell signals from a large portfolio, substantially narrowing the pool of candidate assets. Finally, we apply a high-dimensional precision matrix estimation procedure to determine optimal portfolio weights. A defining theoretical feature of our framework is that the number of assets in the portfolio is itself a random variable, realized through the screening process. We introduce the concept of sensible screening and establish that, under mild screening errors, the squared Sharpe ratio of the screened portfolio consistently estimates its target. Empirically, our method achieves superior Sharpe ratios relative to an unscreened baseline portfolio and to conventional screening approaches, evaluated on S&P 500 data over the period 2020--2024.",
+ "summary": "- 核心创新点（一句话）：\n  提出一个三层的 agentic AI 投资框架，通过两类专门化的 LLM 代理对资产进行筛选与共识信号生成，并用高维精度矩阵估计确定最优权重，且资产数量由筛选过程自适应随机化，同时给出在温和筛选误差下平方夏普比的一致估计性。\n\n- 主要方法（简述使用的技术/模型）：\n  - 两个专门化的 LLM 代理分别执行基本面筛选与新闻情感分析，并通过协同讨论达成买卖信号。  \n  - 从大规模资产池中筛选并收窄候选集，形成可执行的投资组合信号。  \n  - 应用高维精度矩阵估计来确定投资组合的最优权重。  \n  - 引入“可感知筛选（sensible screening）”的理论框架，并给出在筛选误差较小条件下的分析结论。\n\n- 结论/性能（取得的效果）：\n  - 实证结果显示，相较于未筛选基线和传统筛选方法，筛选后的组合在 S&P 500 数据（2020–2024）上具有更高的夏普比。  \n  - 理论方面证明，在温和的筛选误差条件下，筛选后组合的平方夏普比能一致地估计其目标值。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-25 13:08:21"
+}

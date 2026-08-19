@@ -1,0 +1,13 @@
+{
+ "id": "2607.19837",
+ "title": "Know Your Agent: Reconnaissance-Driven Pentesting of AI Agents",
+ "authors": "Or Zion Eliav, Eyal Lenga, Shir Bernstien, Yisroel Mirsky",
+ "date": "2026-07-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.19837v1",
+ "abstract": "Traditional pentesting uses reconnaissance at each step to uncover unseen weaknesses, build stronger attacks, and advance the objective; we argue that AI agents require the same treatment. We formalize agent reconnaissance by modeling the process and identifying the knowledge assets it seeks to extract: what they are, how they are used, and which agent weaknesses they exploit to give adversaries leverage in indirect prompt injection attacks. We instantiate these insights in Know Your Agent (KYA), a framework that automates black-box, reconnaissance-driven pentesting by probing agents, building target profiles, and using those profiles to craft stronger attacks. We evaluate KYA on agent-security benchmarks and a real-world coding agent, and release KYA, its benchmarks, and baseline implementations for reproducibility.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-23 13:01:59"
+}

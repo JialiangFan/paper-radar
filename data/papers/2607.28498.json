@@ -1,0 +1,13 @@
+{
+ "id": "2607.28498",
+ "title": "TCA-SIR: Learning Target-Conditioned Abstractions for Scientific Inspiration Retrieval",
+ "authors": "Yuto Suzuki, Farnoush Banaei-Kashani",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28498v1",
+ "abstract": "Scientific hypothesis generation for AI for Science typically involves Scientific Inspiration Retrieval (SIR) followed by hypothesis composition. Existing SIR methods rank papers by topical similarity and do not explicitly represent how a candidate inspiration transfers to a target problem. This is especially limiting for remote inspirations, whose value often lies in reusable problem-solving principles rather than topical overlap. Motivated by how humans abstract transferable aspects of a source and remap them to a new target, we reformulate SIR as target-conditioned abstraction (TCA). The retrieval object is a transferable abstract principle extracted from a candidate specifically for the target. We present TCA-SIR, which learns to generate target-conditioned abstractions and uses their representations to predict transferability. On ResearchBench, TCA-SIR outperforms prior SIR methods and direct LLM retrieval, improving HitRate@top4% over MOOSE-Chem by more than 10 percentage points. Learned abstractions also recover target-relevant mechanisms more clearly than an untrained TCA prompt, yielding both stronger retrieval and an interpretable rationale for scientific inspiration.",
+ "summary": "## TCA-SIR 论文摘要总结\n\n**1. 核心创新点**\n将「科学灵感检索」（SIR）从基于主题相似度的排序，重构为**目标条件化抽象**（Target-Conditioned Abstraction, TCA）——检索对象不再是论文本身，而是针对特定目标问题从候选文献中抽取出的**可迁移的抽象原理**。\n\n**2. 主要方法**\n受人类\"抽象源问题的可迁移要素 → 重映射到新目标\"这一认知过程启发，提出 TCA-SIR：训练模型**生成**目标条件化的抽象表述，再用这些抽象的表示（representation）去**预测可迁移性**（transferability），以此对候选灵感排序。这与仅靠主题重叠的检索形成对比，尤其适用于「远距离灵感」（remote inspirations）——其价值在于可复用的问题求解原理而非领域相近。\n\n**3. 结论/性能**\n在 **ResearchBench** 上，TCA-SIR 优于已有 SIR 方法及直接用 LLM 检索的基线；相较 **MOOSE-Chem**，**HitRate@top4% 提升超过 10 个百分点**。此外，经过学习的抽象比未训练的 TCA 提示（untrained TCA prompt）能更清晰地还原与目标相关的机制，因而同时带来更强的检索效果与**可解释的科学灵感理由**。\n\n---\n\n*补充说明：该方法处于「假设生成」流水线的前半段（SIR → 假设组合），改进检索质量可直接提升下游 AI for Science 假设生成的上限。*",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-02 13:00:45"
+}

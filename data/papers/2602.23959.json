@@ -1,0 +1,13 @@
+{
+ "id": "2602.23959",
+ "title": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought",
+ "authors": "Kesen Zhao, Beier Zhu, Junbao Zhou, Xingyu Zhu, Zhongqi Yue, Hanwang Zhang",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23959v1",
+ "abstract": "Recent multimodal large language models (MLLMs) increasingly rely on visual chain-of-thought to perform region-grounded reasoning over images. However, existing approaches ground regions via either textified coordinates-causing modality mismatch and semantic fragmentation or fixed-granularity patches that both limit precise region selection and often require non-trivial architectural changes. In this paper, we propose Numerical Visual Chain-of-Thought (NV-CoT), a framework that enables MLLMs to reason over images using continuous numerical coordinates. NV-CoT expands the MLLM action space from discrete vocabulary tokens to a continuous Euclidean space, allowing models to directly generate bounding-box coordinates as actions with only minimal architectural modification. The framework supports both supervised fine-tuning and reinforcement learning. In particular, we replace categorical token policies with a Gaussian (or Laplace) policy over coordinates and introduce stochasticity via reparameterized sampling, making NV-CoT fully compatible with GRPO-style policy optimization. Extensive experiments on three benchmarks against eight representative visual reasoning baselines demonstrate that NV-CoT significantly improves localization precision and final answer accuracy, while also accelerating training convergence, validating the effectiveness of continuous-action visual reasoning in MLLMs. The code is available in https://github.com/kesenzhao/NV-CoT.",
+ "summary": "- 核心创新点：提出 NV-CoT，将视觉推理的行动空间从离散文本 token 扩展为连续欧几里得坐标，直接输出边界框坐标作为行动，实现“连续行动”的视觉链式推理。\n\n- 主要方法：在多模态大模型框架中引入连续坐标策略，用高斯（或拉普拉斯）分布的坐标策略替代离散策略，并通过重参数化采样引入随机性，支持监督微调与 GRPO 风格的强化学习，且架构改动极小。\n\n- 结论/性能：在三个基准、对比八个方法的实验中，显著提升定位精度与最终答案准确性，并加速训练收敛，验证连续行动在视觉推理中的有效性，代码开放可用。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-02 14:02:46"
+}

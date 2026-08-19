@@ -1,0 +1,13 @@
+{
+ "id": "2602.09514",
+ "title": "EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies",
+ "authors": "Xavier Hu, Jinxiang Xia, Shengze Xu, Kangqi Song, Yishuo Yuan, Guibin Zhang, Jincheng Ren, Boyu Feng, Li Lu, Tieyong Zeng, Jiaheng Liu, Minghao Liu, Yuchen Elenor Jiang, Wei Wang, He Zhu, Wangchunshu Zhou",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09514v1",
+ "abstract": "Long-horizon planning is widely recognized as a core capability of autonomous LLM-based agents; however, current evaluation frameworks suffer from being largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics. We introduce EcoGym, a generalizable benchmark for continuous plan-and-execute decision making in interactive economies. EcoGym comprises three diverse environments: Vending, Freelance, and Operation, implemented in a unified decision-making process with standardized interfaces, and budgeted actions over an effectively unbounded horizon (1000+ steps if 365 day-loops for evaluation). The evaluation of EcoGym is based on business-relevant outcomes (e.g., net worth, income, and DAU), targeting long-term strategic coherence and robustness under partial observability and stochasticity. Experiments across eleven leading LLMs expose a systematic tension: no single model dominates across all three scenarios. Critically, we find that models exhibit significant suboptimality in either high-level strategies or efficient actions executions. EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability-utility trade-offs in realistic economic settings.",
+ "summary": "1) 核心创新点：提出 EcoGym 这一可泛化、可扩展的长时域计划-执行评测基准，用于在交互式经济环境中评估大语言模型的持续决策能力。\n\n2) 主要方法：设计并实现三种环境（Vending、Freelance、Operation），在统一的决策流程与标准化接口下进行预算化长期行动的评估（超过1000步），以净资产、收入、DAU 等商业指标衡量模型表现；对11种主流大模型进行对比分析，考察其在部分可观测性与随机性条件下的长期策略与执行效率。\n\n3) 结论/性能：没有任何单一模型在三种场景中全方位占优，不同环境表现差异显著且普遍存在高层策略与执行效率的子优化问题；EcoGym 作为开放测试平台，便于透明评估长时域代理并研究可控性-效用权衡在现实经济设置中的影响。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-11 14:03:32"
+}

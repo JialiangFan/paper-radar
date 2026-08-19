@@ -1,0 +1,13 @@
+{
+ "id": "2602.02486",
+ "title": "RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents",
+ "authors": "Jialiang Zhu, Gongrui Zhang, Xiaolong Ma, Lin Xu, Miaosen Zhang, Ruiqi Yang, Song Wang, Kai Qiu, Zhirong Wu, Qi Dai, Ruichun Ma, Bei Liu, Yifan Yang, Chong Luo, Zhengyuan Yang, Linjie Li, Lijuan Wang, Weizhu Chen, Xin Geng, Baining Guo",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02486v1",
+ "abstract": "LLM-based deep research agents are largely built on the ReAct framework. This linear design makes it difficult to revisit earlier states, branch into alternative search directions, or maintain global awareness under long contexts, often leading to local optima, redundant exploration, and inefficient search. We propose Re-TRAC, an agentic framework that performs cross-trajectory exploration by generating a structured state representation after each trajectory to summarize evidence, uncertainties, failures, and future plans, and conditioning subsequent trajectories on this state representation. This enables iterative reflection and globally informed planning, reframing research as a progressive process. Empirical results show that Re-TRAC consistently outperforms ReAct by 15-20% on BrowseComp with frontier LLMs. For smaller models, we introduce Re-TRAC-aware supervised fine-tuning, achieving state-of-the-art performance at comparable scales. Notably, Re-TRAC shows a monotonic reduction in tool calls and token usage across rounds, indicating progressively targeted exploration driven by cross-trajectory reflection rather than redundant search.",
+ "summary": "1) 核心创新点：提出 Re-TRAC，通过在每条轨迹结束后生成结构化状态表示来总结证据、不确定性、失败与未来计划，并以该表示对后续轨迹进行条件化，从而实现跨轨迹的反思式探索与全局规划。\n\n2) 主要方法：在每条轨迹后生成一个结构化状态表征（包含证据、不确定性、失败、未来计划），用于跨轨迹条件化后续轨迹并进行迭代反思；通过这种跨轨迹回顾实现全球信息整合与改进搜索；对较小模型还引入 Re-TRAC 感知的监督微调以达到同等规模的最佳性能。\n\n3) 结论/性能：在带前沿大模型的 BrowseComp 上，相比 ReAct 提升约 15–20%；对于较小模型，Re-TRAC 感知的监督微调达到同等规模的最新性能；并且在多轮中工具调用和 token 使用呈单调下降，表明探索逐步变得更聚焦且更高效。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:03:48"
+}

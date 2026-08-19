@@ -1,0 +1,13 @@
+{
+ "id": "2608.16739",
+ "title": "Le Critique: Privileged Value Functions for LLM Reinforcement Learning",
+ "authors": "Siddarth Venkatraman, Matthieu Dinot, Laurence Aitchison",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16739v1",
+ "abstract": "Reinforcement learning algorithms for Large Language Models (LLMs) are largely distinguished by their variance reduction strategy. Group-relative methods like GRPO reduce gradient variance by sampling multiple rollouts per prompt, but provide only sequence-level credit. Training is also blocked by straggler rollouts, reducing throughput and increasing off-policyness. Learned value functions theoretically address both problems, providing token-level advantages without requiring large groups. However, additional infrastructure engineering challenges combined with the practical success of critic-free methods have made it difficult to justify their inclusion in RL pipelines. We propose two complementary strategies to improve the performance of value function RL: 1) Privileged Value Functions (PVF) which provide an elegant mechanism to inject additional task-relevant token-level signal without biasing the policy objective; 2) TETHER, a baseline that adaptively interpolates between group-relative and value baselines depending on the value function accuracy. Across several reasoning tasks, both strategies consistently improve over the standard value function baseline, and are competitive with or outperform mean-baseline GRPO.",
+ "summary": "**Le Critique: Privileged Value Functions for LLM Reinforcement Learning**\n\n1. **核心创新点**\n通过\"特权价值函数（PVF）\"和自适应基线 TETHER，让带 critic 的价值函数强化学习在 LLM 训练中重新具备竞争力，兼顾 token 级信用分配与低方差。\n\n2. **主要方法**\n- **PVF（特权价值函数）**：训练 critic 时注入额外的、与任务相关的\"特权信息\"（策略本身看不到的信号），从而提供更精细的 token 级监督，同时在数学上不引入策略目标的偏差。\n- **TETHER**：一种自适应基线，根据价值函数当前的估计精度，在\"组相对基线\"（GRPO 式）与\"价值函数基线\"之间动态插值——critic 准时更多依赖 critic，不准时回退到组相对基线。\n- 动机层面针对 GRPO 的两个痛点：只能给序列级（sequence-level）信用，以及需要每个 prompt 采样多条 rollout 导致\"落后者（straggler）\"拖慢吞吐、加剧 off-policy 程度。\n\n3. **结论/性能**\n在多个推理（reasoning）任务上，两种策略均稳定优于标准价值函数基线，并且与均值基线版 GRPO 相比达到持平或更优的表现，说明在 LLM RL 流程中保留 critic 是有价值的。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-18 13:01:17"
+}

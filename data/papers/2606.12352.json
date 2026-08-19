@@ -1,0 +1,13 @@
+{
+ "id": "2606.12352",
+ "title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
+ "authors": "Ria Doshi, Tian Gao, Annie Chen, Chelsea Finn, Jeannette Bohg",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12352v1",
+ "abstract": "Multi-robot collaboration allows robots to efficiently take on a wide range of tasks, from moving a couch through a doorway to assembling structures on a construction site. However, achieving such coordination in mobile multi-robot settings remains challenging: centralized methods conditioned on the combined observations of a team scale poorly with team size, and decentralized methods that train one policy per robot often require explicit alignment procedures or information sharing at inference time to overcome partial observability. Our key insight is that the visuomotor priors of pretrained vision-language-action (VLA) models should enable reactive, decentralized collaboration from each robot's local observations alone, without these inference-time assumptions. We propose CHORUS, a framework that adapts a single VLA backbone to control diverse, multi-robot teams. At inference time, each robot runs an independent copy of CHORUS, conditioned only on its own observations and a robot-identifying prompt. In real-world experiments including mobile tape measurement, library book handovers, and laundry basket lifting, CHORUS achieves a 64% point improvement over decentralized, from-scratch models, improves reactivity to teammate behavior by 40% points, and outperforms centralized baselines. Together, these results show that a shared VLA backbone is capable of achieving decentralized multi-robot collaboration, without per-robot policies or inter-robot communication at inference.",
+ "summary": "## CHORUS 论文摘要总结\n\n**1. 核心创新点**\n用一个共享的视觉-语言-动作（VLA）模型，让多机器人仅凭各自的局部观测就能实现去中心化协作，无需推理时的机器人间通信或显式对齐。\n\n**2. 主要方法**\n基于预训练 VLA 模型的视觉运动先验，将单一 VLA 主干网络适配到控制多种异构机器人团队。推理时每个机器人独立运行一份 CHORUS 副本，仅以自身观测和一个\"机器人身份标识\"提示词（prompt）作为条件输入。\n\n**3. 结论/性能**\n在真实世界任务（移动卷尺测量、图书馆传书、抬洗衣篮）中，相比从零训练的去中心化模型提升 **64 个百分点**，对队友行为的反应性提升 **40 个百分点**，并优于中心化基线方法——证明共享 VLA 主干无需逐机器人专属策略或推理时通信即可实现去中心化多机协作。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-13 13:03:55"
+}

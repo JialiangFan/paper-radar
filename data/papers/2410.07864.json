@@ -1,0 +1,32 @@
+{
+ "id": "2410.07864",
+ "title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+ "authors": "Liu, et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.07864",
+ "abstract": "",
+ "summary": "RDT-1B scales diffusion-transformer robot policies to bimanual manipulation with a physically interpretable unified action space.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "bimanual-manipulation",
+  "diffusion-policy",
+  "low-level-robot-safety",
+  "robotics",
+  "safe-vla",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2024_Liu_RDT1B.md",
+ "pdf_path": "PDFs/VLA_Models/2024_Liu_RDT1B.pdf",
+ "code": "",
+ "project": "https://rdt-robotics.github.io/rdt-robotics/",
+ "is_core": true,
+ "is_supplemental": false
+}

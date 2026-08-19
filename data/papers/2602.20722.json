@@ -1,0 +1,13 @@
+{
+ "id": "2602.20722",
+ "title": "Buffer Matters: Unleashing the Power of Off-Policy Reinforcement Learning in Large Language Model Reasoning",
+ "authors": "Xu Wan, Yansheng Wang, Wenqi Huang, Mingyang Sun",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20722v1",
+ "abstract": "Traditional on-policy Reinforcement Learning with Verifiable Rewards (RLVR) frameworks suffer from experience waste and reward homogeneity, which directly hinders learning efficiency on difficult samples during large language models post-training. In this paper, we introduce Batch Adaptation Policy Optimization (BAPO), an off-policy RLVR framework to improve the data efficiency in large language models post-training. It dynamically selects training batches by re-evaluating historically difficult samples and reusing high-quality ones, while holding a lower bound guarantee for policy improvement. Extensive experiments further demonstrate that BAPO achieves an average 12.5% improvement over GRPO across mathematics, planning, and visual reasoning tasks. Crucially, BAPO successfully resolves 40.7% of problems that base models consistently fail to solve.",
+ "summary": "- 核心创新点：提出 Batch Adaptation Policy Optimization（BAPO），在大语言模型后训练阶段通过离策略 RLVR，结合历史难样本再评估与高质量样本重用，并对策略改进设定下界保障，从而显著提升数据利用效率。\n\n- 主要方法：提出 BAPO 框架，采用离策略强化学习与可验证奖励；通过动态筛选训练批次，重新评估历史上较困难的样本并重用高质量样本，同时对策略改进提供下界保障，提升对困难样本的学习效率。\n\n- 结论/性能：\n  - 在数学、规划和视觉推理等任务上，平均比 GRPO 提升约 12.5%。\n  - 能解决 base model 40.7% 仍然无法解决的问题。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-25 14:04:20"
+}

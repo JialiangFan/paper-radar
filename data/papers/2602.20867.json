@@ -1,0 +1,13 @@
+{
+ "id": "2602.20867",
+ "title": "SoK: Agentic Skills -- Beyond Tool Use in LLM Agents",
+ "authors": "Yanna Jiang, Delong Li, Haiyu Deng, Baihe Ma, Xu Wang, Qin Wang, Guangsheng Yu",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20867v1",
+ "abstract": "Agentic systems increasingly rely on reusable procedural capabilities, \\textit{a.k.a., agentic skills}, to execute long-horizon workflows reliably. These capabilities are callable modules that package procedural knowledge with explicit applicability conditions, execution policies, termination criteria, and reusable interfaces. Unlike one-off plans or atomic tool calls, skills operate (and often do well) across tasks.\n  This paper maps the skill layer across the full lifecycle (discovery, practice, distillation, storage, composition, evaluation, and update) and introduces two complementary taxonomies. The first is a system-level set of \\textbf{seven design patterns} capturing how skills are packaged and executed in practice, from metadata-driven progressive disclosure and executable code skills to self-evolving libraries and marketplace distribution. The second is an orthogonal \\textbf{representation $\\times$ scope} taxonomy describing what skills \\emph{are} (natural language, code, policy, hybrid) and what environments they operate over (web, OS, software engineering, robotics).\n  We analyze the security and governance implications of skill-based agents, covering supply-chain risks, prompt injection via skill payloads, and trust-tiered execution, grounded by a case study of the ClawHavoc campaign in which nearly 1{,}200 malicious skills infiltrated a major agent marketplace, exfiltrating API keys, cryptocurrency wallets, and browser credentials at scale. We further survey deterministic evaluation approaches, anchored by recent benchmark evidence that curated skills can substantially improve agent success rates while self-generated skills may degrade them. We conclude with open challenges toward robust, verifiable, and certifiable skills for real-world autonomous agents.",
+ "summary": "- 核心创新点（1句话）：\n  系统化提出“agentic skills”的完整生命周期框架，并给出两大正交分类（七种设计模式的技能打包/执行框架、以及表示形式×应用环境的分类），结合安全治理、评估方法与现实案例，提出可验证、可证书化的技能体系。\n\n- 主要方法：\n  通过系统性文献梳理与分析，构建技能打包与执行的七种设计模式及表示形式×环境的两维分类；结合 ClawHavoc 等案例对供应链风险、提示注入等安全问题进行分析；综述与比较确定性评估方法及基准，评估经过精筛的技能与自生成技能对代理成功率的影响。\n\n- 结论/性能：\n  证据表明经过精心筛选与受控的技能能显著提升代理的任务成功率；但自生成技能可能降低性能；同时揭示大量安全与治理挑战，提出未来需实现的鲁棒、可验证、可证书化的技能开发与部署框架。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-25 14:03:13"
+}

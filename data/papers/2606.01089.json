@@ -1,0 +1,13 @@
+{
+ "id": "2606.01089",
+ "title": "A literature-grounded scientific reasoning framework for defect-engineered TiO$_{2}$ photocatalysts",
+ "authors": "F. J. Dominguez-Gutierrez, E. Wierzbicka",
+ "date": "2026-05-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01089v1",
+ "abstract": "Defect-engineered TiO$_2$ photocatalysts are extensively investigated for photocatalytic hydrogen evolution; however, the highly heterogeneous nature of the literature, including inconsistent descriptors, diverse synthesis protocols, non-uniform activity metrics, and incomplete mechanistic reporting, limits the applicability of conventional machine-learning approaches based solely on statistical regression. Here, we present a literature-grounded large language model (LLM)-assisted scientific reasoning framework for defect-engineered TiO$_2$ photocatalysts integrating curated literature data, mechanistic rule extraction, and retrieval-augmented reasoning. A harmonized database was constructed from experimentally relevant publications specifically selected for hydrogen-evolution-related defect engineering in TiO$_2$, covering polymorph-dependent behavior, hydrogenation conditions, Ti$^{3+}$ defect states, oxygen vacancies, illumination conditions, and photocatalytic activity descriptors. In parallel, mechanistic evidence sentences and publications-defined scientific rules were encoded into a structured reasoning layer enabling explainable inference beyond black-box prediction. The resulting framework combines structured experimental descriptors, semantic literature retrieval, and mechanistic interpretation to generate confidence-aware recommendations for optimal defect-engineering conditions. For example, the AI agent identified a consistent optimal anatase hydrogenation window centered at ~500 $°$C under H$_2$-containing atmospheres for approximately 1 h, supported by mechanistic evidence linking balanced Ti$^{3+}$/oxygen-vacancy populations with enhanced photocatalytic hydrogen evolution.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出了一个基于文献的、由大语言模型（LLM）辅助的科学推理框架，用于解决缺陷工程 TiO₂ 光催化剂研究中文献异构性高、传统机器学习难以适用的问题。\n\n**2. 主要方法**\n- 从实验文献中构建了一个针对 TiO₂ 产氢缺陷工程的协调化数据库（涵盖晶型、氢化条件、Ti³⁺ 缺陷态、氧空位等描述符）；\n- 提取机理证据句和科学规则，构建结构化推理层；\n- 结合检索增强生成（RAG）与机理解释，实现可解释推理，而非黑箱预测；\n- 输出带置信度的缺陷工程条件优化建议。\n\n**3. 结论/性能**\n该 AI 智能体成功识别出锐钛矿型 TiO₂ 的最佳氢化条件窗口：约 500 °C、含 H₂ 气氛、处理约 1 小时；并通过机理证据将 Ti³⁺/氧空位的平衡分布与增强的光催化产氢活性相关联，实现了可解释的科学推理。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-02 13:01:04"
+}

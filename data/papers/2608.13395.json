@@ -1,0 +1,13 @@
+{
+ "id": "2608.13395",
+ "title": "FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving",
+ "authors": "Hao Dou",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13395v1",
+ "abstract": "Reinforcement learning improves autonomous-driving vision-language-action (VLA) models by evaluating trajectories sampled from the current policy. Group relative policy optimization (GRPO) learns from reward differences within each rollout group. When all sampled trajectories are poor, this relative signal can rank failures without identifying behavior outside the failed region. We introduce FIRE-VLA, a failure-informed self-evolution framework that converts such unresolved failures into privileged supervision for the next policy. Low-reward, low-diversity groups trigger self-distillation from a frozen round-start copy of the same model. Teacher and student have the same parameter scale, but only the teacher observes the hidden future trajectory. Supervision follows the student's generated prefix and is restricted to answer tokens, while GRPO remains active for every group. The updated policy supplies the teacher for the next round, allowing the routed failure distribution to change with the policy without requiring a larger external teacher. Starting from the same Qwen2.5-VL-3B SFT checkpoint, the comparison matches student rollout and policy-update counts. On 6,019 examples from 150 held-out nuScenes scenes, FIRE-VLA retains comparable single-sample planning, reduces G=4 mean L2 from 1.848 to 1.500 m, and lowers evaluation-persistent failure prevalence from 13.03% to 11.20%. The reduction in mean error arises mainly from rare severe rollouts rather than uniform improvement across ordinary trajectories.",
+ "summary": "## FIRE-VLA 论文摘要总结\n\n**1. 核心创新点**\n针对 GRPO 在「整组采样轨迹全都很差」时只能对失败排序、无法提供正确行为方向的缺陷，提出用**特权信息自蒸馏**把这些无解失败转化为可学习的监督信号，实现策略的失败驱动自进化。\n\n**2. 主要方法**\n- 基座为 Qwen2.5-VL-3B 的 SFT 检查点，主干仍是 GRPO 强化学习（对所有 rollout 组保持开启）。\n- 检测到**低奖励 + 低多样性**的 rollout 组时，触发自蒸馏：教师是本轮开始时**冻结的同一模型副本**（参数规模相同，非更大的外部教师），唯一区别是教师能看到被隐藏的**未来真实轨迹**（特权观测）。\n- 蒸馏监督接在学生已生成的前缀之后，且只作用于 answer token。\n- 每轮更新后的策略成为下一轮的教师，使被路由的失败分布随策略同步演化。\n- 对比实验严格对齐学生 rollout 次数与策略更新次数。\n\n**3. 结论/性能**\n在 nuScenes 150 个留出场景、6019 条样本上：单样本规划性能与基线相当；G=4 时平均 L2 误差从 **1.848 m 降至 1.500 m**；评估中持续出现的失败比例从 **13.03% 降到 11.20%**。作者指出误差下降主要来自**罕见的严重失败轨迹被修正**，而非普通轨迹的整体均匀提升。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-15 13:05:04"
+}

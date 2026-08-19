@@ -1,0 +1,13 @@
+{
+ "id": "2603.09326",
+ "title": "OddGridBench: Exposing the Lack of Fine-Grained Visual Discrepancy Sensitivity in Multimodal Large Language Models",
+ "authors": "Tengjin Weng, Wenhao Jiang, Jingyi Wang, Ming Li, Lin Ma, Zhong Ming",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09326v1",
+ "abstract": "Multimodal large language models (MLLMs) have achieved remarkable performance across a wide range of vision language tasks. However, their ability in low-level visual perception, particularly in detecting fine-grained visual discrepancies, remains underexplored and lacks systematic analysis. In this work, we introduce OddGridBench, a controllable benchmark for evaluating the visual discrepancy sensitivity of MLLMs. OddGridBench comprises over 1,400 grid-based images, where a single element differs from all others by one or multiple visual attributes such as color, size, rotation, or position. Experiments reveal that all evaluated MLLMs, including open-source families such as Qwen3-VL and InternVL3.5, and proprietary systems like Gemini-2.5-Pro and GPT-5, perform far below human levels in visual discrepancy detection. We further propose OddGrid-GRPO, a reinforcement learning framework that integrates curriculum learning and distance-aware reward. By progressively controlling the difficulty of training samples and incorporating spatial proximity constraints into the reward design, OddGrid-GRPO significantly enhances the model's fine-grained visual discrimination ability. We hope OddGridBench and OddGrid-GRPO will lay the groundwork for advancing perceptual grounding and visual discrepancy sensitivity in multimodal intelligence. Code and dataset are available at https://wwwtttjjj.github.io/OddGridBench/.",
+ "summary": "- 核心创新点：提出可控基准 OddGridBench 来评估多模态大模型对细粒度视觉差异的敏感性，并提出基于强化学习的 OddGrid-GRPO 框架以显著提升该能力。\n- 主要方法：OddGridBench 收集超过1,400张网格图像，其中一个元素在颜色、大小、旋转、位置等属性上与众不同；评估多家模型（如开源的 Qwen3-VL、InternVL3.5，及商用 Gemini-2.5-Pro、GPT-5），并通过 OddGrid-GRPO 将课程学习与距离感知奖励相结合，逐步控制训练难度并在奖励设计中引入空间近邻约束以提升细粒度视觉辨别能力。\n- 结论/性能：当前被评估的 MLLMs 在视觉差异检测上远低于人类水平；采用 OddGrid-GRPO 能显著提升模型的细粒度视觉辨别能力；代码与数据集公开获取。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-11 13:05:04"
+}

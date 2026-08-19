@@ -1,0 +1,13 @@
+{
+ "id": "2604.22678",
+ "title": "BERAG: Bayesian Ensemble Retrieval-Augmented Generation for Knowledge-based Visual Question Answering",
+ "authors": "Jinghong Chen, Jingbiao Mei, Guangyu Yang, Bill Byrne",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22678v1",
+ "abstract": "A common approach to question answering with retrieval-augmented generation (RAG) is to concatenate documents into a single context and pass it to a language model to generate an answer. While simple, this strategy can obscure the contribution of individual documents, making attribution difficult and contributing to the ``lost-in-the-middle'' effect, where relevant information in long contexts is overlooked. Concatenation also scales poorly: computational cost grows quadratically with context length, a problem that becomes especially severe when the context includes visual data, as in visual question answering. Attempts to mitigate these issues by limiting context length can further restrict performance by preventing models from benefiting from the improved recall offered by deeper retrieval. We propose Bayesian Ensemble Retrieval-Augmented Generation (BERAG), along with Bayesian Ensemble Fine-Tuning (BEFT), as a RAG framework in which language models are conditioned on individual retrieved documents rather than a single combined context. BERAG treats document posterior probabilities as ensemble weights and updates them token by token using Bayes' rule during generation. This approach enables probabilistic re-ranking, parallel memory usage, and clear attribution of document contribution, making it well-suited for large document collections. We evaluate BERAG and BEFT primarily on knowledge-based visual question answering tasks, where models must reason over long, imperfect retrieval lists. The results show substantial improvements over standard RAG, including strong gains on Document Visual Question Answering and multimodal needle-in-a-haystack benchmarks. We also demonstrate that BERAG mitigates the ``lost-in-the-middle'' effect. The document posterior can be used to detect insufficient grounding and trigger deflection, while document pruning enables faster decoding than standard RAG.",
+ "summary": "- 核心创新点：提出 BERAG/BEFT 框架，在生成阶段逐个条件化检索文档，并用贝叶斯规则在生成过程 token-by-token 更新文档后验，从而实现文档级别的概率再排序、清晰的文档贡献归因和高效并行推理。\n- 主要方法：使用贝叶斯集成的检索增强生成（BERAG）和贝叶斯集成微调（BEFT），将语言模型对每个检索文档分别进行条件化，文档后验作为集成权重进行更新，支持并行记忆、逐文档权重更新与归因、不足 grounding 的 deflection，以及通过文档剪枝实现更快解码。\n- 结论/性能：相较标准 RAG，在知识型视觉问答任务（如 Document VQA 和多模态 needle-in-a-haystack 基准）取得显著提升；缓解“lost-in-the-middle”问题；文档后验可用于检测 grounding 不充分并触发 deflection，剪枝进一步提高解码速度。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-27 13:03:45"
+}

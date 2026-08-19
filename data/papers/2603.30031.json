@@ -1,0 +1,13 @@
+{
+ "id": "2603.30031",
+ "title": "The Triadic Cognitive Architecture: Bounding Autonomous Action via Spatio-Temporal and Epistemic Friction",
+ "authors": "Davide Di Gioia",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30031v1",
+ "abstract": "Current autonomous AI agents, driven primarily by Large Language Models (LLMs), operate in a state of cognitive weightlessness: they process information without an intrinsic sense of network topology, temporal pacing, or epistemic limits. Consequently, heuristic agentic loops (e.g., ReAct) can exhibit failure modes in interactive environments, including excessive tool use under congestion, prolonged deliberation under time decay, and brittle behavior under ambiguous evidence. In this paper, we propose the Triadic Cognitive Architecture (TCA), a unified mathematical framework that grounds machine reasoning in continuous-time physics. By synthesizing nonlinear filtering theory, Riemannian routing geometry, and optimal control, we formally define the concept of Cognitive Friction. We map the agent's deliberation process to a coupled stochastic control problem where information acquisition is path-dependent and physically constrained. Rather than relying on arbitrary heuristic stop-tokens, the TCA uses an HJB-motivated stopping boundary and instantiates a rollout-based approximation of belief-dependent value-of-information with a net-utility halting condition. Through empirical validation in a simulated Emergency Medical Diagnostic Grid (EMDG), we demonstrate that while greedy baselines over-deliberate under latency and congestion costs, the triadic policy reduces time-to-action while improving patient viability without degrading diagnostic accuracy in this environment.",
+ "summary": "- 核心创新点：提出三元认知架构（TCA），以连续时间物理框架中的认知摩擦概念约束自主行动，将机器推理从“信息处理无边界”转为受物理与信息论约束的有界推理。\n\n- 主要方法：\n  - 将 deliberation 映射为耦合的随机控制问题，信息获取路径依赖且受物理约束。\n  - 结合非线性滤波理论、黎曼路由几何与最优控制，形式化定义 Cognitive Friction。\n  - 引入以 HJB（Hamilton–Jacobi–Bellman）为动机的停止边界，以及基于信念的信息价值的滚动近似与净效用停顿条件。\n  - 在仿真环境“Emergency Medical Diagnostic Grid（EMDG）”中进行 empirical validation。\n\n- 结论/性能：\n  - 相较贪婪基线，Triadic 策略在考虑延迟与拥塞成本时更快达成行动，缩短 time-to-action。\n  - 同时提升患者生存性（生存概率/健康结果）、且诊断准确性未降低。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-01 13:01:05"
+}

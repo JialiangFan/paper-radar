@@ -1,0 +1,13 @@
+{
+ "id": "2608.06020",
+ "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+ "authors": "Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, Dacheng Tao, Benyou Wang, Lin William Cong",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06020v1",
+ "abstract": "Economic World Models (EWMs) are generative economic models that simulate how economies evolve from within by modeling heterogeneous agents, their beliefs and actions, and the market and institutional mechanisms through which their interactions produce aggregate outcomes. This paper develops an implementation roadmap for building economic world models as generative engines in which heterogeneous agents act, interact, adapt, and co-evolve with markets and institutions, thereby producing economic dynamics from the inside. We organize EWM systems into a six-level capability ladder, from fixed rule-based agent worlds to adaptive and LLM-based agent worlds, self-evolving agents, evolving institutional worlds, and sim-to-real economic twins aligned with real observations. A systematic literature survey across these levels reveals that existing work remains concentrated in lower-level agent and simulation environments, while systems with self-evolving agents, endogenous institutions, persistent empirical alignment, and validated economic mechanisms remain rare. By translating the EWM agenda into an implementation blueprint, this paper aims to accelerate the development of the next generation of economic simulation environments that can serve as high-fidelity sandboxes for human decision-makers and as training, planning, evaluation, and safety substrates for AI agents. We release a curated paper list and related resources to support future research.",
+ "summary": "## 论文总结：《From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models》\n\n**1. 核心创新点**\n\n提出\"经济世界模型（Economic World Models, EWM）\"的系统实现蓝图，用一个六级能力阶梯把\"从内部生成经济动态\"的模拟系统从理念转化为可落地的工程路线图。\n\n**2. 主要方法**\n\n- **建模范式**：构建生成式经济模拟引擎，刻画异质性主体（heterogeneous agents）的信念与行动，以及市场与制度机制如何把个体交互聚合为宏观结果。\n- **六级能力阶梯**：从①固定规则型智能体世界 → ②自适应智能体 → ③基于大语言模型（LLM）的智能体世界 → ④自我演化智能体 → ⑤内生演化的制度性世界 → ⑥与真实观测数据对齐的\"sim-to-real 经济数字孪生\"。\n- **系统性文献综述**：按该阶梯对现有工作分级归类、盘点，并开源了一份精选论文列表与配套资源。\n\n**3. 结论/性能**\n\n这是一篇路线图/综述性论文，不含基准测试指标。主要结论是：现有研究高度集中在阶梯低层（规则型智能体与基础仿真环境），而**自我演化智能体、内生制度、持续的实证对齐、以及经过验证的经济机制**四类高层能力仍然稀缺，构成明确的研究空白。作者主张沿此蓝图推进下一代经济仿真环境，使其既能作为人类决策者的高保真沙盒，也能成为 AI 智能体训练、规划、评测与安全性研究的基础底座。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-08 13:02:11"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.18576",
+ "title": "Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs",
+ "authors": "Kevin Murphy",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18576v1",
+ "abstract": "We present BLF (Bayesian Linguistic Forecaster), an agentic system for binary forecasting that achieves state-of-the-art performance on the ForecastBench benchmark. The system is built on three ideas. (1) A Bayesian linguistic belief state: a semi-structured representation combining numerical probability estimates with natural-language evidence summaries, updated by the LLM at each step of an iterative tool-use loop. This contrasts with the common approach of appending all retrieved evidence to an ever-growing context. (2) Hierarchical multi-trial aggregation: running $K$ independent trials and combining them using logit-space shrinkage with a data-dependent prior. (3) Hierarchical calibration: Platt scaling with a hierarchical prior, which avoids over-shrinking extreme predictions for sources with skewed base rates.\n  On 400 backtesting questions from the ForecastBench leaderboard, BLF outperforms all the top public methods, including Cassi, GPT-5, Grok~4.20, and Foresight-32B. Ablation studies show that the structured belief state is as impactful as web search access, and that shrinkage aggregation and hierarchical calibration each provide significant additional gains.\n  In addition, we develop a robust back-testing framework with a leakage rate below 1.5\\%, and use rigorous statistical methodology to compare different methods while controlling for various sources of noise.",
+ "summary": "- 核心创新点（一句话）\n  提出一个 BLF（Bayesian Linguistic Forecaster）框架，结合贝叶斯语言信念态、分层多试验聚合及分层校准的设计，在每步迭代工具使用中动态更新证据与概率，从而在二元预测任务上实现最先进性能。\n\n- 主要方法\n  - 贝叶斯语言信念态：用半结构化表示综合数值概率与自然语言证据摘要，在每一步的工具循环中由 LLM 更新，而非简单把检索证据拼接到上下文中。\n  - 分层多试验聚合：进行 K 次独立试验，使用对数几率空间的收缩并结合数据相关先验进行聚合。\n  - 分层校准：采用带层次先验的 Platt 标定，避免对基数偏态源的极端预测过度收缩。\n  - 额外方法和评估：构建鲁棒回测框架（漏泄率<1.5%），并使用严格的统计方法比较不同方法。\n\n- 结论/性能\n  - 在 ForecastBench 的 400 道回测题上，BLF 超越所有顶尖公开方法（如 Cassi、GPT-5、Grok 4.20、Foresight-32B）。\n  - 消融研究表明：结构化信念态的效果与网络检索同样重要，收缩聚合与分层校准各自带来显著增益。\n  - 提供更可信的评估框架与统计比较方法，提升方法对噪声的鲁棒性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-21 13:01:03"
+}

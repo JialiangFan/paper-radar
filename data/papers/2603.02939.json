@@ -1,0 +1,13 @@
+{
+ "id": "2603.02939",
+ "title": "ShipTraj-R1: Reinforcing Ship Trajectory Prediction in Large Language Models via Group Relative Policy Optimization",
+ "authors": "Yang Zhan, Yunhao Li, Zhang Chao, Yuxu Lu, Yan Li",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02939v1",
+ "abstract": "Recent advancements in reinforcement fine-tuning have significantly improved the reasoning ability of large language models (LLMs). In particular, methods such as group relative policy optimization (GRPO) have demonstrated strong capabilities across various fields. However, applying LLMs to ship trajectory prediction remains largely unexplored. In this paper, we propose ShipTraj-R1, a novel LLM-based framework that reformulates ship trajectory prediction as a text-to-text generation problem. (1) We design a dynamic prompt containing trajectory information about conflicting ships to guide the model to achieve adaptive chain-of-thought (CoT) reasoning. (2) We introduce a comprehensive rule-based reward mechanism to incentivize the reasoning format and prediction accuracy of the model. (3) Our ShipTraj-R1 is reinforced through the GRPO mechanism guided by domain-specific prompts and rewards, and utilizes the Qwen3 as the model backbone. Extensive experimental results on two complex and real-world maritime datasets show that the proposed ShipTraj-R1 achieves the least error compared with state-of-the-art deep learning and LLM-based baselines.",
+ "summary": "- 核心创新点（一句话）\n把船舶轨迹预测转化为文本到文本生成任务，并通过动态提示、规则化奖励与GRPO强化，在LLM中提升推理与预测能力。\n\n- 主要方法\n1) 将冲突船舶的轨迹信息纳入动态提示，指导模型实现自适应链式推理（CoT）。  \n2) 引入基于规则的奖励机制，鼓励模型遵循特定推理格式并提升预测准确性。  \n3) 以GRPO（Group Relative Policy Optimization）对模型进行强化学习，结合域内提示与奖励进行微调。  \n4) 以Qwen3作为模型骨干，执行端到端的文本到文本船舶轨迹预测。\n\n- 结论/性能\n在两个复杂且真实的海事数据集上，ShipTraj-R1 的预测误差达到最小，相较于最先进的深度学习和LLM基线具有更优的性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-04 14:04:03"
+}

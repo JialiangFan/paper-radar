@@ -1,0 +1,13 @@
+{
+ "id": "2605.31003",
+ "title": "Graph-GRPO: Dependency-Aware Credit Assignment for Generative E-commerce Search Relevance",
+ "authors": "Jiarui Che, Yifei Chen, Zhixing Tian, Chenyang Wang, Ziguang Cheng",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.31003v1",
+ "abstract": "Search relevance modeling is a core task in e-commerce search systems, assessing how well a user query matches candidate products. Rather than relying on a single holistic matching signal, relevance judgment often requires structured reasoning over query understanding, product understanding, and facet-level matching. With large language models (LLMs), this process is increasingly formulated as chain-of-thought (CoT) reasoning and optimized with reinforcement learning (RL). However, existing RL methods mainly rely on outcome-level rewards and treat the entire reasoning chain as a single optimization unit. This makes it difficult to distinguish faulty reasoning steps from correct intermediate ones, leading to misaligned credit assignment. Although process-reward methods provide denser supervision, they often treat reasoning steps independently and ignore dependency-driven error propagation, making responsibility attribution difficult and limiting the optimization of structured relevance reasoning. We propose Graph-GRPO, a graph-structured extension of GRPO for multi-component relevance reasoning. Graph-GRPO constructs a relevance reasoning dependency graph, where CoT steps are modeled as nodes and their logical dependencies as edges. It propagates outcome-level rewards over the graph to derive step-level credit signals, enabling more accurate fine-grained credit assignment. We further introduce a main-loss-driven controller that adaptively adjusts edge-wise credit-propagation coefficients. Together with CoT random masking for supervised policy initialization and graph-node-based multi-head distillation, we build a trainable and deployable framework for generative relevance modeling. Extensive offline evaluations and online A/B tests on a leading e-commerce platform demonstrate that the Graph-GRPO-based framework improves relevance classification metrics and key engagement metrics.",
+ "summary": "## 论文总结：Graph-GRPO\n\n**1. 核心创新点**\n提出一种基于依赖图结构的 GRPO 强化学习方法，将思维链（CoT）推理步骤建模为图节点并通过依赖边传播奖励，实现细粒度的步骤级信用分配，解决电商搜索相关性建模中错误归因不准的问题。\n\n**2. 主要方法**\n- 构建**相关性推理依赖图**：CoT 步骤为节点，逻辑依赖为边；\n- 将结果级奖励沿图传播，得到步骤级信用信号；\n- 引入**主损失驱动的控制器**，自适应调节边上的信用传播系数；\n- 配合 **CoT 随机掩码**（用于监督式策略初始化）和**基于图节点的多头蒸馏**，构成可训练、可部署的生成式相关性建模框架。\n\n**3. 结论/性能**\n在某领先电商平台进行了大量离线评估和线上 A/B 测试，结果表明 Graph-GRPO 框架显著提升了相关性分类指标和关键用户参与度指标。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-01 13:01:44"
+}

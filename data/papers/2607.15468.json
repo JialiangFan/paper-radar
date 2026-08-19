@@ -1,0 +1,13 @@
+{
+ "id": "2607.15468",
+ "title": "A JWST, ALMA and VLA survey of the Ophiuchus-A star-forming region: Unveiling hidden dust mass and connecting infrared outflows to their radio origins",
+ "authors": "Isaac C. Radley, John D. Ilee, Gemma Busquet, Hauyu Baobab Liu, Klaus M. Pontoppidan, Alvaro Ribas, Marc Audard, Eleonora Bianchi, Tyler L. Bourke, Claudio Codella, Audrey Coutens, Josep M. Girart, Melvin G. Hoare, Izaskun Jiménez-Serra, Doug Johnstone, Laurent Loinard, Olja Panić, Jaime E. Pineda, Linda Podio, John J. Tobin, David J. Wilner",
+ "date": "2026-07-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.15468v1",
+ "abstract": "We present an infrared, millimetre, and radio survey of 20 Class 0-III young stellar objects in the Ophiuchus A L1688 star-forming cluster, combining high-resolution (7-25 au) VLA and JWST observations with archival ALMA data. We implement physically motivated models to derive dust and ionised gas properties, spectral behaviour and their relative contributions through the millimetre-centimetre radio spectral energy distribution. Our models reveal circumstellar dust disks that are, on average, tens to hundreds of times more massive than millimetre-only estimates (subject to uncertainties arising from the choice of dust opacity) and contain millimetre-sized grains even at the Class 0 stage. Owing to the VLA's high resolution we are able to connect outflows to their origins, detecting protostellar jet emission on scales of 10s-1000s au. Our results represent a homogeneous characterisation of the dust and ionised gas properties in Ophiuchus and present a potential solution to the long-standing 'missing disk mass' problem. However, our understanding is still limited by resolution and sensitivity at frequencies <40 GHz. Future facilities like the SKA and ngVLA are needed to provide the necessary capabilities to fully spatially resolve this emission (<0.18\") even in one of the closest star-forming regions.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-26 13:04:19"
+}

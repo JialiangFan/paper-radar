@@ -1,0 +1,13 @@
+{
+ "id": "2605.18476",
+ "title": "AI4BayesCode: From Natural Language Descriptions to Validated Modular Stateful Bayesian Samplers",
+ "authors": "Jungang Zou, Alex Ziyu Jiang, Qixuan Chen",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.18476v1",
+ "abstract": "Coding and computation remain major bottlenecks in Markov chain Monte Carlo (MCMC) workflows, especially as modern sampling algorithms have become increasingly complex and existing probabilistic programming systems remain limited in model support, extensibility, and composability. We introduce \\textbf{AI4BayesCode}, an extensible LLM-driven system that translates natural-language Bayesian model descriptions into runnable, validated MCMC samplers. To improve reliability, AI4BayesCode adopts a modular design that decomposes models into modular sampling blocks and maps each block to a built-in sampling component, reducing the need to implement complex sampling algorithms from scratch. Reliability is further improved through pre-generation validation of model specifications and post-generation validation of generated sampler code. AI4BayesCode also introduces a novel recursively stateful coding paradigm for MCMC, allowing modular sampling components, potentially developed by different contributors, to be composed coherently within larger MCMC procedures. We develop a benchmark suite to evaluate AI4BayesCode for sampler-generation. Experiments show that AI4BayesCode can implement a wide range of Bayesian models from natural-language descriptions alone. As an open-ended system, its capability can continue to expand with improvements in the underlying AI agent and the addition of new built-in blocks.",
+ "summary": "## 论文总结：AI4BayesCode\n\n1. **核心创新点**：提出一个由 LLM 驱动的可扩展系统，能将自然语言描述的贝叶斯模型自动翻译为可运行且经过验证的模块化 MCMC 采样器。\n\n2. **主要方法**：\n   - **模块化设计**：将模型分解为多个采样块（sampling blocks），并映射到内置采样组件，避免从零实现复杂采样算法。\n   - **双重验证机制**：在生成前对模型规范进行验证，生成后对采样器代码进行验证，以提高可靠性。\n   - **递归有状态编码范式**（recursively stateful coding paradigm）：使不同贡献者开发的模块化采样组件能够在更大的 MCMC 流程中连贯组合。\n   - 配套构建了用于评估采样器生成的基准测试套件（benchmark suite）。\n\n3. **结论/性能**：实验表明，AI4BayesCode 仅凭自然语言描述即可实现广泛的贝叶斯模型；作为开放式系统，其能力可随底层 AI 代理升级和新内置模块的加入持续扩展，有望缓解 MCMC 工作流中编码与计算的瓶颈问题。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-21 13:01:23"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.21241",
+ "title": "Improving the Convergence Rate of Ray Search Optimization for Query-Efficient Hard-Label Attacks",
+ "authors": "Xinjie Xu, Shuyu Cheng, Dongwei Xu, Qi Xuan, Chen Ma",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21241v1",
+ "abstract": "In hard-label black-box adversarial attacks, where only the top-1 predicted label is accessible, the prohibitive query complexity poses a major obstacle to practical deployment. In this paper, we focus on optimizing a representative class of attacks that search for the optimal ray direction yielding the minimum $\\ell_2$-norm perturbation required to move a benign image into the adversarial region. Inspired by Nesterov's Accelerated Gradient (NAG), we propose a momentum-based algorithm, ARS-OPT, which proactively estimates the gradient with respect to a future ray direction inferred from accumulated momentum. We provide a theoretical analysis of its convergence behavior, showing that ARS-OPT enables more accurate directional updates and achieves faster, more stable optimization. To further accelerate convergence, we incorporate surrogate-model priors into ARS-OPT's gradient estimation, resulting in PARS-OPT with enhanced performance. The superiority of our approach is supported by theoretical guarantees under standard assumptions. Extensive experiments on ImageNet and CIFAR-10 demonstrate that our method surpasses 13 state-of-the-art approaches in query efficiency.",
+ "summary": "- 核心创新点：通过引入基于动量的射线方向梯度估计（ARS-OPT）并结合代理模型先验的 PARS-OPT，在硬标签黑盒对抗攻击的射线搜索中显著提升收敛速度和稳定性。\n\n- 主要方法：\n  - 研究对象为从顶1预测标签决定的最小 l2 范数扰动的射线搜索框架。\n  - 提出 ARS-OPT，受 Nesterov 加速梯度启发，利用累积动量来预测未来的射线方向并进行梯度估计。\n  - 引入代理模型先验，形成 PARS-OPT，以进一步提升梯度估计质量和收敛性能。\n  - 给出在标准假设下的收敛性理论分析。\n\n- 结论/性能：\n  - 理论上给出收敛性保证；实验在 ImageNet 与 CIFAR-10 上显示该方法在查询效率上超过13种状态-艺术方法，表现更快且更稳定。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-25 02:04:50"
+}

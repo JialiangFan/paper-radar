@@ -1,0 +1,13 @@
+{
+ "id": "2603.25620",
+ "title": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consistency",
+ "authors": "Minseo Kim, Sujeong Im, Junseong Choi, Junhee Lee, Chaeeun Shim, Edward Choi",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25620v1",
+ "abstract": "Large language model (LLM)-based persona agents are rapidly being adopted as scalable proxies for human participants across diverse domains. Yet there is no systematic method for verifying whether a persona agent's responses remain free of contradictions and factual inaccuracies throughout an interaction. A principle from interrogation methodology offers a lens: no matter how elaborate a fabricated identity, systematic interrogation will expose its contradictions. We apply this principle to propose PICon, an evaluation framework that probes persona agents through logically chained multi-turn questioning. PICon evaluates consistency along three core dimensions: internal consistency (freedom from self-contradiction), external consistency (alignment with real-world facts), and retest consistency (stability under repetition). Evaluating seven groups of persona agents alongside 63 real human participants, we find that even systems previously reported as highly consistent fail to meet the human baseline across all three dimensions, revealing contradictions and evasive responses under chained questioning. This work provides both a conceptual foundation and a practical methodology for evaluating persona agents before trusting them as substitutes for human participants. We provide the source code and an interactive demo at: https://kaist-edlab.github.io/picon/",
+ "summary": "- 核心创新点：提出 PICon 框架，利用逻辑连锁的多轮问询系统性评估 persona agent 的内部一致性、外部一致性与再测试一致性，从而揭示潜在的矛盾与不一致。\n\n- 主要方法：通过设计逻辑链式的多轮问询，对 persona agents 进行三维度评测（内部一致性、外部一致性、再测试一致性），并与63名真实人类参与者进行对照比较，结合对抗/回避回答的分析，提供可重复的评估流程与工具。\n\n- 结论/性能：在七组 persona agents 与63名真实人类参与者的对比中，许多此前被报道为高度一致的系统在三项维度上均未达到人类基线，展现出自相矛盾、偏离事实和在重复提问时的不稳定性；同时提供了概念基础与实际方法论，并附带源码与交互演示以便后续评估。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-28 13:03:19"
+}

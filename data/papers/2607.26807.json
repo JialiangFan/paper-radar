@@ -1,0 +1,13 @@
+{
+ "id": "2607.26807",
+ "title": "Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA",
+ "authors": "Tianhang Yang, Yanze Zheng, Junjie Wang, Wei-Bin Kou, Ruotong Li, Yujiu Yang",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.26807v1",
+ "abstract": "While MoE augments VLA via expert specialization, router suffers from ineffective expert routing owing to the kinematic heterogeneity of actions across manipulation tasks and, even worse, the unavailability of the kinematic signals at inference time. In this work, we first observe that most semantically distinct manipulation tasks reduce to multiple kinematic archetypes. Motivated by this finding, we propose Kinematics-supervised explicit routing (KinRT), a new paradigm that shifts from implicit, observation-driven expert routing to explicit, kinematics-guided expert dispatching. Specifically, we perform kinematic clustering on action trajectories into multiple kinematically coherent groups, whose IDs serve as ground truth to supervise the training of the router; at inference time, the router dispatches experts only using visual-language observations, without any reliance on action kinematics. KinRT actually introduces an asymmetric bridging mechanism that distills the task kinematics from the action space in training into the observation space at inference. In addition, to assess KinRT's cross-platform generalization, we build an economical, Do-It-Yourself robot (DIYRobot) platform from scratch using 3D-print technology ($<$ 2,000USD). Extensive experiments demonstrate KinRT's superiority over both dense and MoE-featured VLAs by more than 23.26% on RoboTwin benchmark and 20.27% on our introduced DIYRobot platform. Our code and DIYRobot platform will be open-sourced.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 KinRT——将 MoE-VLA 的专家路由从\"隐式的观测驱动\"改为\"显式的运动学监督驱动\"，用动作轨迹的运动学聚类标签来监督路由器训练，从而在推理时仅凭视觉-语言观测就能完成运动学感知的专家分派。\n\n**2. 主要方法**\n- **关键观察**：语义上差异很大的操作任务，其实可归约为少数几种「运动学原型（kinematic archetypes）」。\n- **训练阶段**：对动作轨迹做运动学聚类，得到若干运动学一致的分组，以其簇 ID 作为 ground truth 监督路由器学习。\n- **推理阶段**：路由器只输入视觉-语言观测，不依赖任何动作运动学信号——作者称之为「非对称桥接机制（asymmetric bridging）」，即把训练时动作空间中的运动学知识蒸馏到推理时的观测空间。\n- **硬件贡献**：自建了一套 3D 打印的低成本 DIY 机器人平台（DIYRobot，成本 < 2000 美元），用于验证跨平台泛化能力。\n\n**3. 结论/性能**\n在 RoboTwin 基准上相比 dense VLA 和现有 MoE-VLA 提升超过 **23.26%**，在自建 DIYRobot 平台上提升 **20.27%**。代码与 DIYRobot 平台将开源。\n\n---\n\n补充一点观察：摘要中的百分比未说明是绝对提升还是相对提升，也未指明基线具体是哪些模型，这部分需查看正文确认。\n\n如果需要更完整的文献综述式解读（背景、问题定义、方法论细节、中英双语版本并写入 Obsidian），可以用 `/paper-review`。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-01 13:04:55"
+}

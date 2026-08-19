@@ -1,0 +1,33 @@
+{
+ "id": "1812.05506",
+ "title": "A predictive safety filter for learning-based control of constrained nonlinear dynamical systems",
+ "authors": "Kim P. Wabersich, Melanie N. Zeilinger",
+ "date": null,
+ "year": 2018,
+ "url": "https://arxiv.org/abs/1812.05506",
+ "abstract": "",
+ "summary": "Predictive safety filters turn an unsafe learning controller into a safe closed-loop system by modifying proposed inputs only when needed.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "Automatica",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-shielding",
+  "learning-based-control",
+  "mpc",
+  "robotics",
+  "runtime-assurance",
+  "safe-vla",
+  "safety-filter",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2018_Wabersich_PredictiveSafetyFilter.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2018_Wabersich_PredictiveSafetyFilter.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2607.00911",
+ "title": "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained",
+ "authors": "Haoyu Gao, Jai Lal Lulla, Hong Yi Lin, Sebastian Baltes, Christoph Treude, Mansooreh Zahedi",
+ "date": "2026-07-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.00911v1",
+ "abstract": "AI coding agents increasingly rely on skills: structured context bundles, typically a SKILL.md file with a YAML header and Markdown body, loaded on demand for domain knowledge, workflows, and scripts. Public registries such as skills.sh now host tens of thousands of skills, making them an emerging unit of reuse in agent-based software engineering. Yet skills have largely been viewed as agent capabilities rather than software artefacts whose content and evolution shape agent behaviour. We present the first empirical study of AI agent skills as engineered artefacts that are authored, reused, customised and maintained, across public registries and personal-use repositories. We mined 18,463 skills from skills.sh and 23,199 personal-use skills from 5,876 GitHub repositories, identifying 3,709 reuse links. LLM-based classification into SWEBOK knowledge areas (KAs) shows Software Construction dominates alongside a long tail of specialised areas. A thematic analysis of 180 skills identifies six content categories. Qualitative coding of 444 modifications reveals six themes, of which reworking operational specifications and adapting knowledge and resources are the primary target of change. Our findings show that reuse is largely a one-time copy operation: most reused skills remain near-verbatim, 53\\% are never modified after adoption, and subsequent local maintenance is overwhelmingly additive. Customisation primarily adapts skills to local environments, whereas evolution accretes new inline domain knowledge. Across both, a stable behavioural contract -- how a skill interacts with users, monitors runtime state, and recovers from failures -- remains almost untouched. These results suggest maintenance effort should focus on project-specific bindings, and that registries and tool support should enable consolidating the domain knowledge skills re-author in isolation.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-02 13:00:27"
+}

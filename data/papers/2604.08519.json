@@ -1,0 +1,13 @@
+{
+ "id": "2604.08519",
+ "title": "Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts",
+ "authors": "Jiayuan Ye, Vitaly Feldman, Kunal Talwar",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08519v1",
+ "abstract": "Large language models (LLMs) can struggle to memorize factual knowledge in their parameters, often leading to hallucinations and poor performance on knowledge-intensive tasks. In this paper, we formalize fact memorization from an information-theoretic perspective and study how training data distributions affect fact accuracy. We show that fact accuracy is suboptimal (below the capacity limit) whenever the amount of information contained in the training data facts exceeds model capacity. This is further exacerbated when the fact frequency distribution is skewed (e.g. a power law).\n  We propose data selection schemes based on the training loss alone that aim to limit the number of facts in the training data and flatten their frequency distribution. On semi-synthetic datasets containing high-entropy facts, our selection method effectively boosts fact accuracy to the capacity limit. When pretraining language models from scratch on an annotated Wikipedia corpus, our selection method enables a GPT2-Small model (110m parameters) to memorize 1.3X more entity facts compared to standard training, matching the performance of a 10X larger model (1.3B parameters) pretrained on the full dataset.",
+ "summary": "- 核心创新点：提出以信息论为基础的事实记忆框架，揭示当训练数据中的事实信息量超过模型容量时，记忆会受限，并给出基于训练损失的训练数据裁剪（数据选择）策略以平滑事实分布、提升记忆能力。\n\n- 主要方法：利用训练损失信号设计数据选择/裁剪方案，目标是在训练集中减少事实数量并拉平其出现频率分布；在半合成高熵事实数据集和从头对带注释的维基百科语料进行预训练的实验中验证该方法。\n\n- 结论/性能：在高熵事实场景下，将事实准确性提升至容量极限；在 GPT2-Small（110M 参数）上应用该选择方法，记忆的实体事实数量约提升1.3倍，并达到用全数据训练的1.3B参数模型的性能水平（效果相当于十倍规模差异的对比）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-10 13:00:52"
+}

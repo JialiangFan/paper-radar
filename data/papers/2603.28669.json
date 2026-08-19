@@ -1,0 +1,13 @@
+{
+ "id": "2603.28669",
+ "title": "Superintelligence and Law",
+ "authors": "Noam Kolt",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28669v1",
+ "abstract": "The prospect of artificial superintelligence -- AI agents that can generally outperform humans in cognitive tasks and economically valuable activities -- will transform the legal order as we know it. Operating autonomously or under only limited human oversight, AI agents will assume a growing range of roles in the legal system. First, in making consequential decisions and taking real-world actions, AI agents will become de facto subjects of law. Second, to cooperate and compete with other actors (human or non-human), AI agents will harness conventional legal instruments and institutions such as contracts and courts, becoming consumers of law. Third, to the extent AI agents perform the functions of writing, interpreting, and administering law, they will become producers and enforcers of law. These developments, whenever they ultimately occur, will call into question fundamental assumptions in legal theory and doctrine, especially to the extent they ground the legitimacy of legal institutions in their human origins. Attempts to align AI agents with extant human law will also face new challenges as AI agents will not only be a primary target of law, but a core user of law and contributor to law. To contend with the advent of superintelligence, lawmakers -- new and old -- will need to be clear-eyed, recognizing both the opportunity to shape legal institutions as society braces for superintelligence and the reality that, in the longer run, this may be a joint human-AI endeavor.",
+ "summary": "- 核心创新点：提出一个系统框架，认为超智能AI在法律系统中将扮演从法律主体、法律的消费者，到法律的生产者与执行者等多重角色，从而重新定义法律理论与制度。\n\n- 主要方法：采用理论分析、规范性论证和情景推演的法理学研究方法，讨论AI在立法、司法、执法等层面的潜在作用与挑战；未涉及具体技术实现，聚焦概念模型。\n\n- 结论/性能：指出超智能AI的崛起将促使法律体系改革以应对新角色与权力分布，强调机会与风险并存，呼吁立法者在塑造法律制度与承认人机协作现实之间取得平衡，未来可能形成“人类-AI共同构建法律体系”的格局。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-31 13:03:08"
+}

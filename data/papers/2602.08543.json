@@ -1,0 +1,13 @@
+{
+ "id": "2602.08543",
+ "title": "GISA: A Benchmark for General Information-Seeking Assistant",
+ "authors": "Yutao Zhu, Xingshuo Zhang, Maosen Zhang, Jiajie Jin, Liancheng Zhang, Xiaoshuai Song, Kangzhi Zhao, Wencong Zeng, Ruiming Tang, Han Li, Ji-Rong Wen, Zhicheng Dou",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08543v1",
+ "abstract": "The advancement of large language models (LLMs) has significantly accelerated the development of search agents capable of autonomously gathering information through multi-turn web interactions. Various benchmarks have been proposed to evaluate such agents. However, existing benchmarks often construct queries backward from answers, producing unnatural tasks misaligned with real-world needs. Moreover, these benchmarks tend to focus on either locating specific information or aggregating information from multiple sources, while relying on static answer sets prone to data contamination. To bridge these gaps, we introduce GISA, a benchmark for General Information-Seeking Assistants comprising 373 human-crafted queries that reflect authentic information-seeking scenarios. GISA features four structured answer formats (item, set, list, and table), enabling deterministic evaluation. It integrates both deep reasoning and broad information aggregation within unified tasks, and includes a live subset with periodically updated answers to resist memorization. Notably, GISA provides complete human search trajectories for every query, offering gold-standard references for process-level supervision and imitation learning. Experiments on mainstream LLMs and commercial search products reveal that even the best-performing model achieves only 19.30\\% exact match score, with performance notably degrading on tasks requiring complex planning and comprehensive information gathering. These findings highlight substantial room for future improvement.",
+ "summary": "- 核心创新点：提出 GISA 基准，用真实信息需求构造的 373 条人类编写查询，提供四种结构化回答格式并含实时更新子集以防止记忆化，同时给出完整的人类搜索轨迹作为过程级监督和模仿学习的 gold 标注，解决了以答案为导向的查询构造和静态数据集的局限。\n\n- 主要方法：构建包含人类可读查询与多样回答格式的基准（四种格式：item、set、list、table）、设立实时更新子集以抵抗记忆化、提供完整的搜索轨迹作为 gold-standard，用于过程级监督与模仿学习；在主流大模型和商业搜索产品上进行评测。\n\n- 结论/性能：现有模型表现有限，最佳模型也仅达到 19.30% 的精确匹配分数，且在需要复杂规划与广泛信息汇总的任务上表现明显下降，显示仍有较大改进空间。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:04:21"
+}

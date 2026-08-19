@@ -1,0 +1,13 @@
+{
+ "id": "2512.12387",
+ "title": "Anchoring Values in Temporal and Group Dimensions for Flow Matching Model Alignment",
+ "authors": "Yawen Shao, Jie Xiao, Kai Zhu, Yu Liu, Wei Zhai, Yang Cao, Zheng-Jun Zha",
+ "date": "2025-12-13",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12387v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) has proven highly effective in enhancing the alignment capabilities of Large Language Models (LLMs). However, current adaptations of GRPO for the flow matching-based image generation neglect a foundational conflict between its core principles and the distinct dynamics of the visual synthesis process. This mismatch leads to two key limitations: (i) Uniformly applying a sparse terminal reward across all timesteps impairs temporal credit assignment, ignoring the differing criticality of generation phases from early structure formation to late-stage tuning. (ii) Exclusive reliance on relative, intra-group rewards causes the optimization signal to fade as training converges, leading to the optimization stagnation when reward diversity is entirely depleted. To address these limitations, we propose Value-Anchored Group Policy Optimization (VGPO), a framework that redefines value estimation across both temporal and group dimensions. Specifically, VGPO transforms the sparse terminal reward into dense, process-aware value estimates, enabling precise credit assignment by modeling the expected cumulative reward at each generative stage. Furthermore, VGPO replaces standard group normalization with a novel process enhanced by absolute values to maintain a stable optimization signal even as reward diversity declines. Extensive experiments on three benchmarks demonstrate that VGPO achieves state-of-the-art image quality while simultaneously improving task-specific accuracy, effectively mitigating reward hacking. Project webpage: https://yawen-shao.github.io/VGPO/.",
+ "summary": "- 核心创新点：在时间维度和分组维度对价值进行锚定的 VGPO 框架，通过把稀疏终端奖励转化为各生成阶段的密集过程性价值估计，并引入带绝对值的分组归一化，解决时序信用分配和奖励多样性下降导致的信号衰退问题，从而提升流式匹配图像生成的对齐效果。\n\n- 主要方法：提出 Value-Anchored Group Policy Optimization (VGPO)，将稀疏的末端奖励转化为各生成阶段的期望累计奖励（密集价值估计），实现跨时间的精细信用分配；用带绝对值的分组归一化替代标准分组归一化以保持稳定的优化信号；应用于流式匹配型图像生成任务，改进 GRPO 的适配性与鲁棒性。\n\n- 结论/性能：在三个基准数据集上达到 SOTA 的图像质量并提升任务相关准确性，同时显著缓解奖励欺骗问题，且在奖励多样性下降时仍保持稳定训练。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-16 02:05:06"
+}

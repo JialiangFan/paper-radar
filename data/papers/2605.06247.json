@@ -1,0 +1,13 @@
+{
+ "id": "2605.06247",
+ "title": "CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models",
+ "authors": "Yuhua Jiang, Yijun Guo, Hongbing Yang, Guojun Lei, Nuo Chen, Yinuo Zhang, Shaoqiang Yan, Bo Lin, Feifei Gao, Biqing Qi",
+ "date": "2026-05-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.06247v1",
+ "abstract": "World action models (WAMs) provide a powerful generative framework for embodied control, yet transferring knowledge across heterogeneous WAMs remains challenging due to mismatched latent interfaces, high adaptation cost, and the rigidity of conventional distillation objectives. We propose \\textbf{CKT-WAM}, a parameter-efficient \\textbf{C}ontext \\textbf{K}nowledge \\textbf{T}ransfer framework that transfers teacher WAM's knowledge into a student WAM through a compact context in the text embedding space, rather than output imitation or dense hidden-state matching. Specifically, CKT-WAM extracts intermediate teacher hidden states, reduces the number of tokens via compressors' learnable-query cross attention (LQCA), and transforms them through an always-on generalized adapter, a lightweight router, and sparsely activated specialized adapters. The resulting context is then appended to the student's conditioning textual embeddings, thereby injecting the transferred knowledge into the student with minimal architectural modification. Experiments show that CKT-WAM consistently improves zero-shot generalization and achieves the best overall performance on LIBERO-Plus, reaching 86.1\\% total success rate with only 1.17\\% trainable parameters, while approaching full fine-tuning performance. Beyond simulation, CKT-WAM also demonstrates strong real-world long-horizon manipulation ability, achieving the best average success rate of 83.3\\% across four multi-step and long-horizon tasks. Code is available at https://github.com/YuhuaJiang2002/CKT-WAM.",
+ "summary": "# CKT-WAM 论文总结\n\n**1. 核心创新点**\n提出一种参数高效的上下文知识迁移框架（CKT-WAM），通过在文本嵌入空间中注入紧凑上下文，实现异构世界动作模型（WAM）之间的知识迁移，避免了传统输出模仿或稠密隐藏状态匹配的僵化问题。\n\n**2. 主要方法**\n- 提取教师 WAM 的中间隐藏状态；\n- 使用**可学习查询交叉注意力（LQCA）**压缩 token 数量；\n- 通过\"常开通用适配器 + 轻量路由器 + 稀疏激活的专用适配器\"组合转换特征；\n- 将生成的上下文拼接到学生模型的条件文本嵌入上，仅需极小的架构改动即可完成知识注入。\n\n**3. 结论/性能**\n- 在 **LIBERO-Plus** 仿真基准上取得 **86.1%** 总成功率（SOTA），仅训练 **1.17%** 参数，接近全量微调效果；\n- 在真实世界 4 个多步长时序操控任务上取得 **83.3%** 平均成功率（最佳）；\n- 显著提升零样本泛化能力。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-20 13:06:28"
+}

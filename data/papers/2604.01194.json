@@ -1,0 +1,13 @@
+{
+ "id": "2604.01194",
+ "title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+ "authors": "Yanting Wang, Wei Zou, Runpeng Geng, Jinyuan Jia",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01194v1",
+ "abstract": "Large language models (LLMs) and their applications, such as agents, are highly vulnerable to prompt injection attacks. State-of-the-art prompt injection detection methods have the following limitations: (1) their effectiveness degrades significantly as context length increases, and (2) they lack explicit rules that define what constitutes prompt injection, causing detection decisions to be implicit, opaque, and difficult to reason about. In this work, we propose AgentWatcher to address the above two limitations. To address the first limitation, AgentWatcher attributes the LLM's output (e.g., the action of an agent) to a small set of causally influential context segments. By focusing detection on a relatively short text, AgentWatcher can be scalable to long contexts. To address the second limitation, we define a set of rules specifying what does and does not constitute a prompt injection, and use a monitor LLM to reason over these rules based on the attributed text, making the detection decisions more explainable. We conduct a comprehensive evaluation on tool-use agent benchmarks and long-context understanding datasets. The experimental results demonstrate that AgentWatcher can effectively detect prompt injection and maintain utility without attacks. The code is available at https://github.com/wang-yanting/AgentWatcher.",
+ "summary": "1) 核心创新点：通过将输出归因于少量具因果关系的上下文片段并基于明确规则的监控实现可解释且对长上下文具有良好扩展性的提示注入检测。\n\n2) 主要方法：提出 AgentWatcher；先将 LLM 的输出与少量因果上下文分段绑定、聚焦短文本以实现对长上下文的可扩展性；再定义一组关于何为提示注入的规则，由一个监控型大模型在归因文本上对规则进行推理，给出可解释的检测决策。\n\n3) 结论/性能：在工具使用代理基准和长上下文理解数据集上评估，AgentWatcher 能有效检测提示注入并在没有攻击时维持良好工具性/性能。代码可在 GitHub 获取。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-02 13:03:30"
+}

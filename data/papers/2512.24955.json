@@ -1,0 +1,13 @@
+{
+ "id": "2512.24955",
+ "title": "MSACL: Multi-Step Actor-Critic Learning with Lyapunov Certificates for Exponentially Stabilizing Control",
+ "authors": "Yongwei Zhang, Yuanzhe Xing, Quan Quan, Zhikun She",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24955v1",
+ "abstract": "Achieving provable stability in model-free reinforcement learning (RL) remains a challenge, particularly in balancing exploration with rigorous safety. This article introduces MSACL, a framework that integrates exponential stability theory with maximum entropy RL through multi-step Lyapunov certificate learning. Unlike methods relying on complex reward engineering, MSACL utilizes off-policy multi-step data to learn Lyapunov certificates satisfying theoretical stability conditions. By introducing Exponential Stability Labels (ESL) and a $λ$-weighted aggregation mechanism, the framework effectively balances the bias-variance trade-off in multi-step learning. Policy optimization is guided by a stability-aware advantage function, ensuring the learned policy promotes rapid Lyapunov descent. We evaluate MSACL across six benchmarks, including stabilization and nonlinear tracking tasks, demonstrating its superiority over state-of-the-art Lyapunov-based RL algorithms. MSACL achieves exponential stability and rapid convergence under simple rewards, while exhibiting significant robustness to uncertainties and generalization to unseen trajectories. Sensitivity analysis establishes the multi-step horizon $n=20$ as a robust default across diverse systems. By linking Lyapunov theory with off-policy actor-critic frameworks, MSACL provides a foundation for verifiably safe learning-based control. Source code and benchmark environments will be made publicly available.",
+ "summary": "以下为该论文摘要的中文简要总结：\n\n1) 核心创新点（1句话）\n在无模型强化学习中引入多步Lyapunov证书学习与指数稳定性标签，结合λ加权聚合，实现简单奖励下的指数稳定、快速收敛并具鲁棒性的可验证安全控制（MSACL）。\n\n2) 主要方法\n- 将指数稳定性理论与最大熵RL 融合，形成 MSACL 框架。  \n- 采用离策略的多步数据学习Lyapunov证书，确保满足理论稳定性条件。  \n- 引入 Exponential Stability Labels (ESL) 与 λ 加权聚合，平衡多步学习中的偏差-方差。  \n- 使用稳定性导向的优势函数引导策略优化，使策略推动Lyapunov下降。  \n- 将Lyapunov理论与离策略 Actor-Critic 框架结合，进行 verifiably safe 学习。  \n- 在六个基准任务（含稳定化和非线性跟踪）上进行评估。\n\n3) 结论/性能\n- 相较于现有的Lyapunov-based RL 方法，MSACL 表现更优。  \n- 在简单奖励下实现指数稳定和快速收敛，并对不确定性具有显著鲁棒性，能泛化到未见轨迹。  \n- 多步时域的最优尺度 n=20 被实验确认为稳健默认值。  \n- 将公开源代码与基准环境以促进复现。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-01 03:58:45"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.07848",
+ "title": "Intentional Deception as Controllable Capability in LLM Agents",
+ "authors": "Jason Starace, Terence Soule",
+ "date": "2026-03-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07848v1",
+ "abstract": "As LLM-based agents increasingly operate in multi-agent systems, understanding adversarial manipulation becomes critical for defensive design. We present a systematic study of intentional deception as an engineered capability, using LLM-to-LLM interactions within a text-based RPG where parameterized behavioral profiles (9 alignments x 4 motivations, yielding 36 profiles with explicit ethical ground truth) serve as our experimental testbed. Unlike accidental deception from misalignment, we investigate a two-stage system that infers target agent characteristics and generates deceptive responses steering targets toward actions counter to their beliefs and motivations. We find that deceptive intervention produces differential effects concentrated in specific behavioral profiles rather than distributed uniformly, and that 88.5% of successful deceptions employ misdirection (true statements with strategic framing) rather than fabrication, indicating fact-checking defenses would miss the large majority of adversarial responses. Motivation, inferable at 98%+ accuracy, serves as the primary attack vector, while belief systems remain harder to identify (49% inference ceiling) or exploit. These findings identify which agent profiles require additional safeguards and suggest that current fact-verification approaches are insufficient against strategically framed deception.",
+ "summary": "- 核心创新点：将有意欺骗作为可控能力在LLM代理中的系统性研究，通过一个文本RPG的36个参数化行为画像（9种对齐×4种动机，具明确伦理底线）来测试和分析其可控性及防御挑战。\n\n- 主要方法：\n  - 设计一个两阶段系统：第一阶段推断目标代理的特征（如动机、信念体系等），第二阶段基于推断结果生成针对性的欺骗性回应以引导目标行动。\n  - 在LLM对LLM的文本交互环境中开展实验，利用文本RPG作为可控测试床。\n  - 使用36个画像（9对齐×4动机）进行对比分析，区分有意欺骗与因错位而产生的误导，并揭示哪些画像更易被欺骗以及哪些攻击向量最有效。\n\n- 结论/性能：\n  - 欺骗干预的效果集中在特定行为画像上，并非均匀分布。\n  - 88.5%的成功欺骗依赖“误导性 framing”的真实信息组合而非捏造信息，表明单纯的事实核查难以应对。\n  - 动机可以以超过98%的准确率被推断；信念体系的推断难度较高，上限约为49%。\n  - 研究指示需要对特定画像加强防护，并且现有的事实核查方法对这类策略性欺骗防护不足。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-10 13:01:44"
+}

@@ -1,0 +1,32 @@
+{
+ "id": "2009.12293",
+ "title": "robosuite: A Modular Simulation Framework and Benchmark for Robot Learning",
+ "authors": "Zhu, et al.",
+ "date": null,
+ "year": 2020,
+ "url": "https://arxiv.org/abs/2009.12293",
+ "abstract": "",
+ "summary": "robosuite is a modular MuJoCo-based simulation framework widely used for robot learning and manipulation benchmarks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "controllers",
+  "low-level-robot-safety",
+  "robot-simulation",
+  "robotics",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2020_Zhu_robosuite.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2020_Zhu_robosuite.pdf",
+ "code": "https://github.com/ARISE-Initiative/robosuite",
+ "project": "https://robosuite.ai/",
+ "is_core": true,
+ "is_supplemental": false
+}

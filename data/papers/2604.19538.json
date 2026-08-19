@@ -1,0 +1,13 @@
+{
+ "id": "2604.19538",
+ "title": "Integrating Anomaly Detection into Agentic AI for Proactive Risk Management in Human Activity",
+ "authors": "Farbod Zorriassatine, Ahmad Lotfi",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19538v1",
+ "abstract": "Agentic AI, with goal-directed, proactive, and autonomous decision-making capabilities, offers a compelling opportunity to address movement-related risks in human activity, including the persistent hazard of falls among elderly populations. Despite numerous approaches to fall mitigation through fall prediction and detection, existing systems have not yet functioned as universal solutions across care pathways and safety-critical environments. This is largely due to limitations in consistently handling real-world complexity, particularly poor context awareness, high false alarm rates, environmental noise, and data scarcity. We argue that fall detection and fall prediction can usefully be formulated as anomaly detection problems and more effectively addressed through an agentic AI system. More broadly, this perspective enables the early identification of subtle deviations in movement patterns associated with increased risk, whether arising from age-related decline, fatigue, or environmental factors. While technical requirements for immediate deployment are beyond the scope of this paper, we propose a conceptual framework that highlights potential value. This framework promotes a well-orchestrated approach to risk management by dynamically selecting relevant tools and integrating them into adaptive decision-making workflows, rather than relying on static configurations tailored to narrowly defined scenarios.",
+ "summary": "- 核心创新点：将跌倒检测与预测作为异常检测问题，结合具备目标导向、主动性与自治决策能力的 agentic AI，构建一个可在不同场景动态适应、跨护理路径进行风险管理的框架。\n\n- 主要方法：提出一个概念性框架，将跌倒相关任务转化为异常检测问题，并通过 agentic AI 架构实现动态工具选择与自适应决策工作流的整合，以应对现实世界的复杂性、环境噪声与数据稀缺等挑战。\n\n- 结论/性能：未给出具体的实现与量化性能指标，强调该框架的潜在价值与可行性，未来需要在真实场景中验证其对提前识别风险、降低误警等方面的效果。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-22 13:04:01"
+}

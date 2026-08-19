@@ -1,0 +1,13 @@
+{
+ "id": "2604.07148",
+ "title": "Multi-Turn Reasoning LLMs for Task Offloading in Mobile Edge Computing",
+ "authors": "Ning Yang, Chuangxin Cheng, Haijun Zhang",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07148v1",
+ "abstract": "Emerging computation-intensive applications impose stringent latency requirements on resource-constrained mobile devices. Mobile Edge Computing (MEC) addresses this challenge through task offloading. However, designing effective policies remains difficult due to dynamic task arrivals, time-varying channels, and the spatio-temporal coupling of server queues. Conventional heuristics lack adaptability, while Deep Reinforcement Learning (DRL) suffers from limited generalization and architectural rigidity, requiring retraining when network topology changes. Although Large Language Models (LLMs) offer semantic reasoning capabilities, standard Supervised Fine-Tuning (SFT) yields myopic policies that greedily minimize immediate latency without accounting for long-term system evolution. To address these limitations, we propose COMLLM, a generative framework that enables foresighted decision-making in MEC systems. COMLLM integrates Group Relative Policy Optimization (GRPO) with a Look-Ahead Collaborative Simulation (LACS) mechanism, which performs multi-step Monte Carlo rollouts while jointly modeling server queue dynamics. By incorporating these rollouts into the reward design, the framework captures the long-term impact of current decisions on future system states. Experimental results demonstrate that COMLLM achieves near-optimal latency and improved load-balancing fairness. Notably, it exhibits zero-shot topological scalability, allowing a model trained on small-scale networks to generalize to larger, unseen topologies without retraining, outperforming SFT, DRL, and heuristic baselines.",
+ "summary": "1. 核心创新点：通过将 GRPO 与 LACS 融合在一个生成式框架 COMLLM，使大语言模型具备前瞻性多步决策能力，并实现零-shot 跨拓扑泛化，从而在移动边缘计算的任务卸载中实现长期优化与负载均衡。\n\n2. 主要方法：在 LLM 框架中引入 Group Relative Policy Optimization (GRPO) 与 Look-Ahead Collaborative Simulation (LACS)，进行多步蒙特罗滚动并联合建模服务器队列动态，将滚动结果纳入奖励设计以捕捉长期影响，从而实现对小规模网络训练后对更大未见拓扑的无 retrain 泛化。\n\n3. 结论/性能：实验表明 COMLLM 达到接近最优的低延迟并改善负载均衡公平性，具备零-shot 拓扑可扩展性，能在仅用小规模网络训练的条件下泛化到更大、未见拓扑，优于 SFT、DRL 和启发式基线。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-09 13:02:46"
+}

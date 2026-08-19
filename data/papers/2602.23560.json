@@ -1,0 +1,13 @@
+{
+ "id": "2602.23560",
+ "title": "I've Seen This IP: A Practical Intersection Attack Against Tor Introduction Circuits and Hidden Services",
+ "authors": "Nicolas Constantinides",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23560v1",
+ "abstract": "Tor onion services rely on long-lived introduction circuits to support anonymous rendezvous between clients and services. Although Tor includes some defenses against traffic analysis, the introduction protocol retains deterministic routing structure that can be leveraged by an adversary. We describe a practical intersection attack on Tor introduction circuits that can, over repeated interactions, identify each hop from the introduction point toward the onion service while requiring observation at only one relay per stage. The attack issues repeated probes and intersects destination IP address sets observed within narrowly defined \\texttt{INTRODUCE1}--\\texttt{RENDEZVOUS2} time windows, without assuming global visibility or access to packet payloads. We evaluate feasibility with live-network experiments using a self-operated onion service and relays, and we follow data-minimization and ethical safeguards throughout. The results show reliable convergence in practice, with the rate affected by consensus weight, and time-varying background traffic. We also assess practicality under a partial-global adversary model and discuss implications in light of the geographic concentration of Tor relay weight across cooperating jurisdictions.",
+ "summary": "1) 核心创新点：在不依赖全局可观测和不读取载荷的前提下，通过对 INTRODUCE1—RENDEZVOUS2 的窄时窗内目标 IP 集进行反复探测并取交，利用单个阶段中继观测即可实现在引介点到 onion 服务的每一跳的实用 intersection 攻击。\n\n2) 主要方法：  \n- 采用交集攻击的思路，在多轮探测中对目标 IP 集进行交集分析。  \n- 只需在每个阶段观察一个中继的目标地址集合，无需全局可见性或数据包载荷。  \n- 通过对 INTRODUCE1 至 RENDEZVOUS2 时间窗内的观测进行窄窗口比对来逐跳推断路径。  \n- 使用自建 onion 服务和自控中继进行实时网络实验，并在数据最小化和伦理守则下评估。  \n- 还评估了部分全局对手模型的可行性以及对地理分布带来隐私风险的讨论。\n\n3) 结论/性能：  \n- 实验结果在实际环境中表现出可靠的收敛性，收敛速率受共识权重和背景流量的波动影响。  \n- 在部分全局对手模型下也对可行性进行了评估，显示该攻击在一定条件下仍具备实用性。  \n- 研究还讨论了 Tor 中继权重在地理分布上的集中性对隐私保护的潜在影响与风险。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-02 14:01:36"
+}

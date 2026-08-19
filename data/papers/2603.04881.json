@@ -1,0 +1,13 @@
+{
+ "id": "2603.04881",
+ "title": "Differential Privacy in Two-Layer Networks: How DP-SGD Harms Fairness and Robustness",
+ "authors": "Ruichen Xu, Kexin Chen",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04881v1",
+ "abstract": "Differentially private learning is essential for training models on sensitive data, but empirical studies consistently show that it can degrade performance, introduce fairness issues like disparate impact, and reduce adversarial robustness. The theoretical underpinnings of these phenomena in modern, non-convex neural networks remain largely unexplored. This paper introduces a unified feature-centric framework to analyze the feature learning dynamics of differentially private stochastic gradient descent (DP-SGD) in two-layer ReLU convolutional neural networks. Our analysis establishes test loss bounds governed by a crucial metric: the feature-to-noise ratio (FNR). We demonstrate that the noise required for privacy leads to suboptimal feature learning, and specifically show that: 1) imbalanced FNRs across classes and subpopulations cause disparate impact; 2) even in the same class, noise has a greater negative impact on semantically long-tailed data; and 3) noise injection exacerbates vulnerability to adversarial attacks. Furthermore, our analysis reveals that the popular paradigm of public pre-training and private fine-tuning does not guarantee improvement, particularly under significant feature distribution shifts between datasets. Experiments on synthetic and real-world data corroborate our theoretical findings.",
+ "summary": "- 核心创新点（一句话）：\n  提出一个以特征为中心的统一分析框架，结合特征-噪声比（FNR）度量，在两层 ReLU 卷积网络中揭示 DP-SGD 的噪声如何系统性地削弱特征学习，从而影响公平性与鲁棒性。\n\n- 主要方法：\n  - 构建并使用一个统一的特征中心分析框架来研究 DP-SGD 在两层 ReLU 卷积网络中的特征学习动力学。\n  - 引入并分析特征-噪声比（FNR）作为影响测试损失的核心指标，推导测试损失的界（理论上界）。\n  - 研究噪声对不同类别和子群体的不平衡 FNR 的影响，以及同一类中对语义长尾数据的敏感性；并分析噪声对对抗鲁棒性的强化作用。\n  - 评估公开预训练+私有微调在存在显著特征分布偏移时的效果，并通过合成数据与真实数据的实验予以验证。\n\n- 结论/性能：\n  - 理论上证明 DP 噪声导致特征学习不足，进而提高测试损失，且 FNR 不平衡带来 disparate impact。\n  - 同一类别内，语义上长尾的数据对噪声更为敏感，导致性能劣化更加显著；噪声还会降低对抗鲁棒性。\n  - 公共预训练加私有微调在存在显著分布偏移时不一定带来改善。\n  - 实验（合成与真实数据）与理论结论相符，验证了上述现象的普遍性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-06 14:01:09"
+}

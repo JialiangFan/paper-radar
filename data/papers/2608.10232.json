@@ -1,0 +1,13 @@
+{
+ "id": "2608.10232",
+ "title": "FACT: Failure-Aware Causal Training for World-Action Models",
+ "authors": "Quanquan Peng, Yutong Liang, Rui Yan, Nicklas Hansen, Xiaolong Wang",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10232v1",
+ "abstract": "Recent world-action models (WAMs) show that co-training policies with future prediction can provide physical priors for action generation. Building on the future-prediction ability of video models, many WAMs generate future videos and recover actions with inverse-dynamics models, or use these predicted videos as goal conditions for action generation. In both cases, the world model is trained mostly on successful demonstrations and has little reason to predict the consequences of bad actions. We introduce FACT, a causal World-Action Model that predicts future video and task progress conditioned on the executed action. This action-conditioned interface allows failure rollouts to supervise action consequences, turning bad actions into valid future targets rather than being discarded. Failure-aware training makes the progress predictor aware of both successful and failed action outcomes, which can optionally be used to score sampled action candidates at inference. Extensive experiments on simulation and real-world bimanual manipulation tasks show that FACT outperforms many existing baselines, improves as failure data are incorporated into training, and reduces success-biased future hallucination under bad actions. See more details at https://fact-wam.github.io/",
+ "summary": "## FACT: Failure-Aware Causal Training for World-Action Models\n\n**1. 核心创新点**\n提出 FACT——一种\"动作条件化\"的因果世界-动作模型，让失败数据也能作为有效的监督信号来教模型预测坏动作的后果，而不是像以往那样被直接丢弃。\n\n**2. 主要方法**\n- 现有 WAM 大多先用视频模型生成未来画面，再通过逆动力学模型（IDM）反推动作，或把预测视频当作目标条件——这类模型几乎只在成功演示上训练，因而没有动机去预测坏动作的结果。\n- FACT 改为**以已执行的动作为条件**，同时预测未来视频与任务进度（task progress）。这一动作条件化接口使失败轨迹（failure rollouts）成为合法的训练目标。\n- 失败感知训练让进度预测器同时了解成功与失败两类结果；推理阶段可选地用它对采样出的候选动作打分、择优执行。\n\n**3. 结论/性能**\n在仿真与真实双臂操作任务上的大量实验表明：FACT 优于多个现有基线；性能随失败数据的加入而持续提升；并显著减少了模型在坏动作下仍幻想出\"成功未来\"的成功偏置幻觉（success-biased hallucination）。\n\n> 项目主页：https://fact-wam.github.io/\n\n如需更完整的文献综述式解读（含研究背景、贡献拆解、方法论细节，并输出到 Obsidian），可以用 `/paper-review`。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-12 13:03:25"
+}

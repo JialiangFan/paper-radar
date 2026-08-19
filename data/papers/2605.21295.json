@@ -1,0 +1,13 @@
+{
+ "id": "2605.21295",
+ "title": "TimeSRL: Generalizable Time-Series Behavioral Modeling via Semantic RL-Tuned LLMs -- A Case Study in Mental Health",
+ "authors": "Yuang Fan, Lilin Xu, Millie Wu, Jingping Nie, Qingyu Chen, Yuzhe Yang, Zhuo Zhang, Xin Liu, Subigya Nepal, Xiaofan Jiang, Xuhai \"Orson\" Xu",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21295v1",
+ "abstract": "Longitudinal passive sensing enables continuous health prediction, yet models often fail under cross-dataset distribution shifts. Traditional ML overfits cohort-specific artifacts, while Large Language Models (LLMs) struggle to reason reliably over long, heterogeneous time-series. We introduce TimeSRL, a two-stage LLM framework that routes predictions through an explicit semantic bottleneck. The model first abstracts raw signals into high-level natural language, then predicts behavioral outcomes from these abstractions alone. This forces the model to reason over semantic concepts that we argue generalize better than raw numbers. We optimize this process end-to-end using Group Relative Policy Optimization (GRPO) with Reinforcement Learning from Verifiable Rewards (RLVR), learning outcome-aligned abstractions without gold intermediate annotations. Instantiated on mental-health prediction, TimeSRL achieves state-of-the-art performance on a benchmark designed to stress-test cross-cohort generalization under a rigorous leave-one-dataset-out (LOSO) protocol, reducing mean absolute error (MAE) over strong non-LLM ML and LLM baselines by 3.1--10.1% and 9.5--44.1% for anxiety, and 3.2--9.6% and 27.4--57.6% for depression (all $p$s<0.05). TimeSRL significantly outperforms prior methods in cross-benchmark transfer across different sensing pipelines, rivaling its own within-domain performance without target-domain fine-tuning. These results demonstrate that semantic abstractions are reusable and point to a new direction for generalizable behavior modeling via RL-tuned LLMs.",
+ "summary": "## TimeSRL 论文总结\n\n**核心创新点**：提出一种\"语义瓶颈\"两阶段 LLM 框架，先将原始传感信号抽象为自然语言概念再做预测，从而提升跨数据集的泛化能力。\n\n**主要方法**：两阶段 LLM 架构 —— 第一阶段把长时段、异构的被动传感时间序列抽象为高层自然语言描述，第二阶段仅基于这些语义抽象预测行为结果；采用 GRPO（Group Relative Policy Optimization）结合 RLVR（可验证奖励的强化学习）进行端到端优化，无需对中间抽象做人工标注。\n\n**结论/性能**：在心理健康预测（焦虑、抑郁）任务上，采用严格的 leave-one-dataset-out（LOSO）协议进行跨队列评测，相较强基线显著降低 MAE —— 焦虑任务比非 LLM ML 基线低 3.1–10.1%、比 LLM 基线低 9.5–44.1%；抑郁任务分别低 3.2–9.6% 和 27.4–57.6%（均 p<0.05）。在不同传感管线间的跨基准迁移中，无需目标域微调即可媲美域内性能，验证了语义抽象具有可复用性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-23 13:01:25"
+}

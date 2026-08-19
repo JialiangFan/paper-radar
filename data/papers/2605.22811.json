@@ -1,0 +1,13 @@
+{
+ "id": "2605.22811",
+ "title": "GS-QA: A Benchmark for Geospatial Question Answering",
+ "authors": "Majid Saeedan, Muhammad Shihab Rashid, Ahmed Eldawy, Vagelis Hristidis",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22811v1",
+ "abstract": "Recent advances in Large Language Models (LLMs) have led to dramatic improvements in question answering (QA). To address the challenge of evaluating QA systems, standardized benchmarks have been introduced. This work focuses on the problem of geospatial QA, where a large collection of geospatial data is available in the form of a spatial database or other forms. Existing work on geospatial QA benchmarks has various limitations, including a small number of questions, limited spatial predicates, narrow output types, and no multi-source reasoning. We present GS-QA, an extensible geospatial QA benchmark with 2,800 question-answer pairs across 28 templates on top of OpenStreetMap and Wikipedia data, covering a wide range of spatial objects, predicates (including directional and towards filtering), and answer types (entity names, locations, distances, directions, counts, and aggregated areas/lengths). A key feature of GS-QA is that some questions require combining information from multiple sources, e.g., geospatial information from OSM and factual information from Wikipedia. GS-QA includes a comprehensive evaluation methodology that combines text-based QA measures with geospatial-specific measures such as distance error and angular error. We implemented nine LLM-based geospatial QA baselines using three LLMs (GPT-4o, Claude Sonnet 4.6, and Ministral-3) with combinations of direct prompting, retrieval-augmented generation, and text-to-SQL. Our results show that existing solutions perform reasonably well on simple spatial predicates with entity name outputs, but accuracy degrades significantly for questions involving complex spatial predicates, numeric output types, and multi-source reasoning, demonstrating that geospatial QA remains a challenging open problem warranting further research.",
+ "summary": "# GS-QA 论文摘要\n\n**1. 核心创新点**\n提出 GS-QA——首个支持多源推理、覆盖丰富空间谓词与输出类型的可扩展地理空间问答基准，弥补现有基准在题量、谓词种类和跨源推理上的不足。\n\n**2. 主要方法**\n基于 OpenStreetMap 和 Wikipedia 构建 2,800 个问答对（28 个模板），涵盖方向性、趋向性等空间谓词及实体名、位置、距离、方向、计数、聚合面积/长度等多种答案类型；评测指标融合文本 QA 度量与距离误差、角度误差等地理空间专用度量；使用 GPT-4o、Claude Sonnet 4.6、Ministral-3 三款 LLM，结合直接提示、RAG 与 text-to-SQL 共构建 9 个基线。\n\n**3. 结论/性能**\n现有方案在简单空间谓词+实体名输出的问题上表现尚可，但在复杂空间谓词、数值型输出和多源推理任务上准确率显著下降，表明地理空间问答仍是一个有待深入研究的开放性挑战。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-23 13:02:20"
+}

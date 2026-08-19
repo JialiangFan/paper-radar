@@ -1,0 +1,13 @@
+{
+ "id": "2511.21050",
+ "title": "Breaking the Safety-Capability Tradeoff: Reinforcement Learning with Verifiable Rewards Maintains Safety Guardrails in LLMs",
+ "authors": "Dongkyu Derek Cho, Huan Song, Arijit Ghosh Chowdhury, Haotian An, Yawei Wang, Rohit Thekkanal, Negin Sokhandan, Sharlina Keshava, Hannah Marlowe",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21050v1",
+ "abstract": "Fine-tuning large language models (LLMs) for downstream tasks typically exhibit a fundamental safety-capability tradeoff, where improving task performance degrades safety alignment even on benign datasets. This degradation persists across standard approaches including supervised finetuning (SFT) and reinforcement learning from human feedback (RLHF). While reinforcement learning with verifiable rewards (RLVR) has emerged as a promising alternative that optimizes models on objectively measurable tasks, its safety implications remain unexplored. We present the first comprehensive theoretical and empirical analysis of safety properties in RLVR. Theoretically, we derive upper bounds on safety drift under KL-constrained optimization and prove conditions under which safety degradation is eliminated. Empirically, we conduct extensive experiments across five adversarial safety benchmarks, demonstrating that RLVR can simultaneously enhance reasoning capabilities while maintaining or improving safety guardrails. Our comprehensive ablation studies examine the effects of optimization algorithms, model scale, and task domains. Our findings challenge the prevailing assumption of an inevitable safety capability trade-off, and establish that a specific training methodology can achieve both objectives simultaneously, providing insights for the safe deployment of reasoning-capable LLMs.",
+ "summary": "- 核心创新点：首次在理论与实证层面证明，结合 RLVR（可验证奖励的强化学习）并施以 KL 约束，可以同时提升推理能力并维持或提升安全护栏，打破常见的安全-能力权衡。\n\n- 主要方法：采用 RLVR 对大语言模型进行微调，在训练中引入 KL 约束以限制分布漂移；进行五项对抗性安全基准的广泛实验，并做优化算法、模型规模与任务领域的消融分析。\n\n- 结论/性能：在多项基准上实现了推理能力提升的同时保持或改善安全性，挑战了“能力越强越不安全”的普遍假设，提供了可用于安全部署的有效训练方法。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:35:47"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.15605",
+ "title": "Autoregressive Language Models are Secretly Energy-Based Models: Insights into the Lookahead Capabilities of Next-Token Prediction",
+ "authors": "Mathieu Blondel, Michael E. Sander, Germain Vivier-Ardisson, Tianlin Liu, Vincent Roulet",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15605v1",
+ "abstract": "Autoregressive models (ARMs) currently constitute the dominant paradigm for large language models (LLMs). Energy-based models (EBMs) represent another class of models, which have historically been less prevalent in LLM development, yet naturally characterize the optimal policy in post-training alignment. In this paper, we provide a unified view of these two model classes. Taking the chain rule of probability as a starting point, we establish an explicit bijection between ARMs and EBMs in function space, which we show to correspond to a special case of the soft Bellman equation in maximum entropy reinforcement learning. Building upon this bijection, we derive the equivalence between supervised learning of ARMs and EBMs. Furthermore, we analyze the distillation of EBMs into ARMs by providing theoretical error bounds. Our results provide insights into the ability of ARMs to plan ahead, despite being based on the next-token prediction paradigm.",
+ "summary": "- 核心创新点：将自回归语言模型（ARM）与能量基模型（EBM）在函数空间上建立明确的双射，并将其映射到最大熵强化学习中的软贝尔曼方程，从而揭示ARM的看前规划能力本质上可由EBM框架解释。\n\n- 主要方法：基于概率链式法则建立ARM与EBM的函数空间等价关系，把监督学习的ARM与EBM的学习视为同质化过程，结合最大熵RL的软贝尔曼方程进行理论分析，并推导EBM蒸馏成ARM的误差界，给出相关理论推导与边界。\n\n- 结论/性能：提供了理论层面的洞见，解释尽管基于下一个词预测，ARM仍具备一定的前瞻性/规划能力；给出ARM与EBM之间的等价性及蒸馏误差的界限，为后训练对齐等应用提供统一的理论框架。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-18 02:07:17"
+}

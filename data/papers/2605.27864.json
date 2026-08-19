@@ -1,0 +1,13 @@
+{
+ "id": "2605.27864",
+ "title": "FundaPod: A Multi-Persona Agent Pod Platform with Knowledge Graph Memory for AI-Assisted Fundamental Investment Research",
+ "authors": "Di Zhu, Lei, Zheng, Zihan Chen",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27864v2",
+ "abstract": "Large language models (LLMs) are increasingly applied in finance, yet most existing work emphasizes trading signals or financial NLP tasks centered on prediction. Institutional fundamental research, by contrast, requires human analysts or AI agents to gather evidence, identify business drivers, compare competing viewpoints, and generate investment memos. Its broader goal is not merely to predict outcomes, but to produce investment plans that are transparent, reusable, and verifiable, while contributing to the cumulative development of investment knowledge. We present FundaPod, a multi-persona agent platform for AI-assisted fundamental investment research. We argue that fundamental research is a human-centric decision-support task that is qualitatively distinct from trading-signal generation, and is therefore better served by an independence-preserving architecture. In FundaPod, AI agents with different personas, such as value investors or macro strategists, conduct research independently under a shared provenance contract. Their disagreements are then surfaced post hoc for adjudication by the human portfolio manager (PM) through a knowledge-graph memory system. This paper contributes five design principles for human-AI hybrid systems supporting fundamental research, grounded in design-science practice and theories of cognitive isolation and human-machine coordination. It also describes four architectural mechanisms: a persona distillation pipeline that turns public investor materials into deployable agents; a declarative skill registry that lets the planner derive typed task graphs; a grounded evidence model that links memo claims to verifiable sources; and a knowledge-graph \"second brain\" that connects tickers, memos, analysts, and themes. We demonstrate the architecture through a complete case study and a persona-based memo comparison.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 FundaPod —— 一个面向基本面投资研究的多角色（multi-persona）AI 智能体平台，强调\"独立性保持\"架构，让不同投资人格的 AI 独立研究、事后由 PM 裁决分歧，区别于传统以交易信号预测为主的金融 AI。\n\n**2. 主要方法**\n- **五项设计原则**：基于设计科学和认知隔离/人机协同理论，指导人机混合系统设计。\n- **四大架构机制**：\n  - *角色蒸馏管道*：将公开投资资料转化为可部署的 AI 智能体（如价值投资者、宏观策略师）。\n  - *声明式技能注册表*：让规划器派生类型化任务图。\n  - *基于证据的接地模型*：将研究备忘录的论断链接到可验证来源。\n  - *知识图谱\"第二大脑\"*：连接股票代码、备忘录、分析师与投资主题，形成可复用的共享溯源契约。\n\n**3. 结论/性能**\n通过完整案例研究与多人格备忘录对比演示了架构有效性，产出透明、可复用、可验证的投资计划，并支持投资知识的累积发展（论文为设计科学型工作，未给出预测准确率类定量指标）。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-30 13:01:32"
+}

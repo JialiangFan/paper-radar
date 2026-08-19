@@ -1,0 +1,13 @@
+{
+ "id": "2606.03686",
+ "title": "The DeepSpeak-Agentic Dataset",
+ "authors": "Sarah Barrington, Maty Bohacek, Hany Farid",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.03686v1",
+ "abstract": "We present DeepSpeak-Agentic, a dataset of videos comprising over 37 hours of semi-structured conversations between a human and an embodied AI agent. We use this dataset to evaluate the automatic forensic identification (audio, video, or text) of AI agents, study the nature of human-agent interactions, and provide a benchmark for future advances in the large-language models and AI-generated voices and faces that power embodied AI agents. We also contribute a scalable data-capture system that creates agents, automatically pairs them with human crowd workers, records audiovisual conversations across specified scenarios, and identifies and separates the human and agent in the combined stream.",
+ "summary": "## DeepSpeak-Agentic 数据集\n\n1. **核心创新点**：构建了首个大规模\"人类-具身AI智能体\"对话视频数据集（37+小时），用于AI智能体的法证识别研究与人机交互分析。\n\n2. **主要方法**：搭建了一套可扩展的数据采集系统，自动创建AI智能体、与众包人类工作者配对、在指定场景下录制音视频对话，并自动识别和分离合成流中的人类与智能体。数据集涵盖音频、视频和文本三种模态。\n\n3. **结论/性能**：提供了用于评估AI智能体自动法证识别（区分人类与AI）的基准，可支持对驱动具身智能体的大语言模型、AI生成语音与人脸技术的后续研究，并揭示了人机交互的特性。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-04 13:02:13"
+}

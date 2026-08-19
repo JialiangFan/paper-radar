@@ -1,0 +1,13 @@
+{
+ "id": "2601.23135",
+ "title": "Why GRPO Needs Normalization: A Local-Curvature Perspective on Adaptive Gradients",
+ "authors": "Cheng Ge, Caitlyn Heqi Yin, Hao Liang, Jiawei Zhang",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.23135v1",
+ "abstract": "Reinforcement learning (RL) has become a key driver of language model reasoning. Among RL algorithms, Group Relative Policy Optimization (GRPO) is the de facto standard, avoiding the need for a critic by using per-prompt baselines and variance normalization. Yet why and when this normalization helps remains unclear. In this work, we provide an explanation through the lens of local curvature of the sequence-level policy gradient: standard deviation normalization implements an adaptive gradient. Theoretically, under mild conditions, GRPO enjoys a strictly improved convergence rate over unnormalized REINFORCE, with gains characterized by the average within-prompt reward standard deviation across prompts and iterations. Empirically, our analysis on GSM8K and MATH benchmarks reveals three distinct training phases governed by the interplay between feature orthogonality and reward variance: (I) an early acceleration phase where high variance and orthogonality favor adaptive scaling; (II) a relatively stable transition phase; and (III) a late-stage regime where the loss of orthogonality limits further gains. Together, these results provide a principled account of when std normalization helps in GRPO, and offer broader insights into the design of critic-free RL algorithms.",
+ "summary": "- 核心创新点：提出以局部曲率视角解释 GRPO 中标准差归一化的作用，显示其实现自适应梯度并提升收敛速度。\n\n- 主要方法：通过对 GRPO 的序列级策略梯度进行理论分析，聚焦每个 prompts 的基线与方差归一化，证明在 mild 条件下带来与平均 prompts 内奖励方差相关的收敛改进；并在 GSM8K 和 MATH 基准上进行经验验证，揭示训练过程中的三阶段动态（早期加速、过渡期稳定、后期因正交性下降收益受限）。\n\n- 结论/性能：理论上相比未归一化的 REINFORCE，GRPO 在一定条件下具备严格提升的收敛速率，提升幅度由 prompts 内奖励方差决定；实证结果在 GSM8K 和 MATH 上观察到三阶段训练模式，给出在无 critic 的 RL 设计中何时以及如何使用方差归一化的原理性解释与设计启示。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-02 14:04:51"
+}

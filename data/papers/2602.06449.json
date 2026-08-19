@@ -1,0 +1,13 @@
+{
+ "id": "2602.06449",
+ "title": "Evaluating an evidence-guided reinforcement learning framework in aligning light-parameter large language models with decision-making cognition in psychiatric clinical reasoning",
+ "authors": "Xinxin Lin, Guangxin Dai, Yi Zhong, Xiang Li, Xue Xiao, Yixin Zhang, Zhengdong Wu, Yongbo Zheng, Runchuan Zhu, Ming Zhao, Huizi Yu, Shuo Wu, Jun Zhao, Lingming Hu, Yumei Wang, Ping Yin, Joey W. Y. Chan, Ngan Yin Chan, Sijing Chen, Yun Kwok Wing, Lin Lu, Xin Ma, Lizhou Fan",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06449v1",
+ "abstract": "Large language models (LLMs) hold transformative potential for medical decision support yet their application in psychiatry remains constrained by hallucinations and superficial reasoning. This limitation is particularly acute in light-parameter LLMs which are essential for privacy-preserving and efficient clinical deployment. Existing training paradigms prioritize linguistic fluency over structured clinical logic and result in a fundamental misalignment with professional diagnostic cognition. Here we introduce ClinMPO, a reinforcement learning framework designed to align the internal reasoning of LLMs with professional psychiatric practice. The framework employs a specialized reward model trained independently on a dataset derived from 4,474 psychiatry journal articles and structured according to evidence-based medicine principles. We evaluated ClinMPO on a unseen subset of the benchmark designed to isolate reasoning capabilities from rote memorization. This test set comprises items where leading large-parameter LLMs consistently fail. We compared the ClinMPO-aligned light LLM performance against a cohort of 300 medical students. The ClinMPO-tuned Qwen3-8B model achieved a diagnostic accuracy of 31.4% and surpassed the human benchmark of 30.8% on these complex cases. These results demonstrate that medical evidence-guided optimization enables light-parameter LLMs to master complex reasoning tasks. Our findings suggest that explicit cognitive alignment offers a scalable pathway to reliable and safe psychiatric decision support.",
+ "summary": "核心创新点：通过证据驱动的强化学习框架 ClinMPO，将轻参数大语言模型的内部推理与专业精神科临床决策认知对齐，以提升复杂推理能力。\n\n主要方法：提出 ClinMPO 框架，使用一个独立训练的奖励模型，该模型基于 4,474 篇精神科期刊文章并按循证医学原则结构化；在 unseen 的评测集上评估，以区分推理能力与记忆；以 Qwen3-8B 作为基线轻参数模型，经过 ClinMPO 调优，与 300 名医学生的水平进行对比。\n\n结论/性能：ClinMPO 调优后的 Qwen3-8B 在这些复杂案例中的诊断准确率达到 31.4%，高于人类基准 30.8%，表明以证据为导向的优化能使轻参数 LLM 获得更强的复杂推理与安全性，具备作为可扩展的精神科决策支持的潜力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-09 14:00:50"
+}

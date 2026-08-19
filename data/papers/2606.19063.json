@@ -1,0 +1,13 @@
+{
+ "id": "2606.19063",
+ "title": "PYPILINE: Malicious PyPI Package Detection via Suspicious API Knowledge and Agent Workflow",
+ "authors": "Siyuan Pang, Zhengwei Jiang, Yepeng Yao, Zijing Fan, Haozhe Li, Baoxu Liu",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19063v1",
+ "abstract": "The detection of malicious PyPI packages is crucial for maintaining the security of the open source software supply chain. Existing methods, which primarily rely on rules or traditional machine learning, suffer from poor interpretability and difficulty in adapting to novel attacks. To address this, we propose PYPILINE, a novel detection method that combines a suspicious API knowledge base with an Agent workflow. PYPILINE first conducts static analysis on known malicious packages, extracting abstract syntax trees and generating API call graphs, from which it automatically extracts and constructs a structured suspicious API knowledge base. During the detection phase, this knowledge base is used to enhance reasoning capabilities. Through an Agent workflow, PYPILINE performs in depth semantic analysis of unknown packages and outputs a structured, interpretable maliciousness assessment report. The experimental results show that PYPILINE significantly outperforms existing state-of-the-art tools in precision of 96.7\\%, recall of 99.6\\%, and F1-score of 98.1\\%, with its precision surpassing baseline tools by 5.7 to 24.2 percentage points. Additionally, we conducted an empirical study on malicious packages, systematically revealing prevalent attack strategies, as well as the most commonly abused APIs. Equipped with tool-calling AI agent workflows for automated vector database retrieval of suspicious API knowledge and mail server delivery of analysis reports, PYPILINE delivers a practical, efficient, and convenient malicious package detection solution to strengthen open-source ecosystem security.",
+ "summary": "## PYPILINE 论文摘要总结\n\n1. **核心创新点**：将\"可疑 API 知识库\"与\"Agent 工作流\"相结合，实现可解释、可适应新型攻击的恶意 PyPI 包检测。\n\n2. **主要方法**：\n   - **知识库构建**：对已知恶意包做静态分析，提取抽象语法树（AST）并生成 API 调用图，自动抽取并构建结构化的\"可疑 API 知识库\"。\n   - **检测阶段**：用该知识库增强推理能力，通过 Agent 工作流对未知包做深度语义分析，输出结构化、可解释的恶意性评估报告。\n   - **工程化**：集成工具调用型 AI Agent，自动完成向量数据库检索（检索可疑 API 知识）与邮件服务器报告投递。\n\n3. **结论/性能**：显著超越现有 SOTA 工具——精确率 96.7%、召回率 99.6%、F1 98.1%，精确率比基线高 5.7~24.2 个百分点；并通过实证研究系统揭示了常见攻击策略和被滥用最多的 API。\n\n---\n补充：本仓库装有 `paper-review` 技能，可生成更完整的中英文综述并自动归档到 Obsidian。需要的话我可以调用它。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-18 13:01:27"
+}

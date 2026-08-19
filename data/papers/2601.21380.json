@@ -1,0 +1,13 @@
+{
+ "id": "2601.21380",
+ "title": "RerouteGuard: Understanding and Mitigating Adversarial Risks for LLM Routing",
+ "authors": "Wenhui Zhang, Huiyu Xu, Zhibo Wang, Zhichao Li, Zeqing He, Xuelin Wei, Kui Ren",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21380v1",
+ "abstract": "Recent advancements in multi-model AI systems have leveraged LLM routers to reduce computational cost while maintaining response quality by assigning queries to the most appropriate model. However, as classifiers, LLM routers are vulnerable to novel adversarial attacks in the form of LLM rerouting, where adversaries prepend specially crafted triggers to user queries to manipulate routing decisions. Such attacks can lead to increased computational cost, degraded response quality, and even bypass safety guardrails, yet their security implications remain largely underexplored. In this work, we bridge this gap by systematizing LLM rerouting threats based on the adversary's objectives (i.e., cost escalation, quality hijacking, and safety bypass) and knowledge. Based on the threat taxonomy, we conduct a measurement study of real-world LLM routing systems against existing LLM rerouting attacks. The results reveal that existing routing systems are vulnerable to rerouting attacks, especially in the cost escalation scenario. We then characterize existing rerouting attacks using interpretability techniques, revealing that they exploit router decision boundaries through confounder gadgets that prepend queries to force misrouting. To mitigate these risks, we introduce RerouteGuard, a flexible and scalable guardrail framework for LLM rerouting. RerouteGuard filters adversarial rerouting prompts via dynamic embedding-based detection and adaptive thresholding. Extensive evaluations in three attack settings and four benchmarks demonstrate that RerouteGuard achieves over 99% detection accuracy against state-of-the-art rerouting attacks, while maintaining negligible impact on legitimate queries. The experimental results indicate that RerouteGuard offers a principled and practical solution for safeguarding multi-model AI systems against adversarial rerouting.",
+ "summary": "- 核心创新点：提出可扩展的 RerouteGuard 防护框架，能够对 LLM 路由中的对抗性重新路由攻击实现高效检测与抑制。\n\n- 主要方法：基于威胁分类对对抗性重新路由攻击进行系统化分析，并利用可解释性方法揭示攻击通过路由边界的机制（如前置的混淆因子“confounder gadgets”），在此基础上提出动态嵌入向量检测与自适应阈值的防护框架 RerouteGuard，并在三种攻击场景、四个基准上进行评估。\n\n- 结论/性能：RerouteGuard 在对抗性重新路由攻击的检测中达到超过 99% 的准确率，对合法查询几乎无影响，提供了一个 principled、可扩展的实用解决方案来保护多模型 AI 系统。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-30 14:02:06"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.12855",
+ "title": "MPC-Guided Safe Reinforcement Learning and Lipschitz-Based Filtering for Structured Nonlinear Systems",
+ "authors": "Patrick Kostelac, Xuerui Wang, Anahita Jamshidnejad",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12855v1",
+ "abstract": "Modern engineering systems, such as autonomous vehicles, flexible robotics, and intelligent aerospace platforms, require controllers that are robust to uncertainties, adaptive to environmental changes, and safety-aware under real-time constraints. RL offers powerful data-driven adaptability for systems with nonlinear dynamics that interact with uncertain environments. RL, however, lacks built-in mechanisms for dynamic constraint satisfaction during exploration. MPC offers structured constraint handling and robustness, but its reliance on accurate models and computationally demanding online optimization may pose significant challenges. This paper proposes an integrated MPC-RL framework that combines stability and safety guarantees of MPC with the adaptability of RL. During training, MPC defines safe control bounds that guide the RL component and that enable constraint-aware policy learning. At deployment, the learned policy operates in real time with a lightweight safety filter based on Lipschitz continuity to ensure constraint satisfaction without heavy online optimizations. The approach, which is validated on a nonlinear aeroelastic wing system, demonstrates improved disturbance rejection, reduced actuator effort, and robust performance under turbulence. The architecture generalizes to other domains with structured nonlinearities and bounded disturbances, offering a scalable solution for safe artificial-intelligence-driven control in engineering applications.",
+ "summary": "- 核心创新点：提出一个将MPC引导的安全约束融入强化学习的框架，并在部署阶段使用基于Lipschitz连续性的轻量级安全滤波器，以在无需 heavy 在线优化的情况下保障约束满足。\n\n- 主要方法：\n  - 在训练阶段，使用MPC定义安全控制边界以引导RL，实现约束感知的策略学习。\n  - 将RL组件与MPC的鲁棒性与结构化约束相结合，提升对不确定性和扰动的适应性。\n  - 部署阶段，采用基于Lipschitz连续性的安全滤波器对实时输出进行约束校正，避免需要高成本的在线优化。\n  - 在具结构化非线性耦合的气动弹性机翼系统上进行验证。\n\n- 结论/性能：在扰动抑制、降低执行器功耗、以及在湍流下的鲁棒性方面表现更优，且该架构具备对其他具有结构化非线性和有界扰动领域的良好泛化与可扩展性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:02:25"
+}

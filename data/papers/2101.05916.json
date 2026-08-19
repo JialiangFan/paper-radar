@@ -1,0 +1,32 @@
+{
+ "id": "2101.05916",
+ "title": "Scalable Learning of Safety Guarantees for Autonomous Systems using Hamilton-Jacobi Reachability",
+ "authors": "Sylvia Herbert, Jason J. Choi, Suvansh Sanjeev, Marsalis Gibson, Koushil Sreenath, Claire J. Tomlin",
+ "date": null,
+ "year": 2021,
+ "url": "https://arxiv.org/abs/2101.05916",
+ "abstract": "",
+ "summary": "This paper learns approximations to Hamilton-Jacobi reachability to improve scalability of formal safety guarantees.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "neural-reachability",
+  "reachability",
+  "reachability-analysis",
+  "robotics",
+  "safe-control",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2021_Herbert_ScalableHJ.md",
+ "pdf_path": "PDFs/CBF_Reachability/2021_Herbert_ScalableHJ.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

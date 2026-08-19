@@ -1,0 +1,13 @@
+{
+ "id": "2603.02712",
+ "title": "From \"What\" to \"How\": Constrained Reasoning for Autoregressive Image Generation",
+ "authors": "Ruxue Yan, Xubo Liu, Wenya Guo, Zhengkun Zhang, Ying Zhang, Xiaojie Yuan",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02712v1",
+ "abstract": "Autoregressive image generation has seen recent improvements with the introduction of chain-of-thought and reinforcement learning. However, current methods merely specify \"What\" details to depict by rewriting the input prompt, yet fundamentally fail to reason about \"How\" to structure the overall image. This inherent limitation gives rise to persistent issues, such as spatial ambiguity directly causing unrealistic object overlaps. To bridge this gap, we propose CoR-Painter, a novel framework that pioneers a \"How-to-What\" paradigm by introducing Constrained Reasoning to guide the autoregressive generation. Specifically, it first deduces \"How to draw\" by deriving a set of visual constraints from the input prompt, which explicitly govern spatial relationships, key attributes, and compositional rules. These constraints steer the subsequent generation of a detailed description \"What to draw\", providing a structurally sound and coherent basis for accurate visual synthesis. Additionally, we introduce a Dual-Objective GRPO strategy that specifically optimizes the textual constrained reasoning and visual projection processes to ensure the coherence and quality of the entire generation pipeline. Extensive experiments on T2I-CompBench, GenEval, and WISE demonstrate that our method achieves state-of-the-art performance, with significant improvements in spatial metrics (e.g., +5.41% on T2I-CompBench).",
+ "summary": "1) 核心创新点：提出 CoR-Painter，建立“从如何绘画到要绘什么”的约束推理（How-to-What Constrained Reasoning）框架，解决仅描述细节而缺乏全局结构推理导致的空间关系问题。\n\n2) 主要方法：1) 从输入提示推导出一组视觉约束，覆盖空间关系、关键属性与构图规则；2) 以这些约束导向生成详细的“What to draw”描述，为视觉合成提供结构化基础；3) 引入双目标 GRPO 策略，联合优化文本层次的约束推理与视觉投射过程，确保生成管线的整体一致性与质量。\n\n3) 结论/性能：在 T2I-CompBench、GenEval、WISE 上达到更强的性能，尤其在空间指标方面显著提升，如在 T2I-CompBench 上提升约 5.41%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-04 14:04:23"
+}

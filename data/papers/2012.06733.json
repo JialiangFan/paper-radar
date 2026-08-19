@@ -1,0 +1,32 @@
+{
+ "id": "2012.06733",
+ "title": "Human-in-the-Loop Imitation Learning using Remote Teleoperation",
+ "authors": "Ajay Mandlekar, Danfei Xu, Roberto Martín-Martín, Yuke Zhu, Li Fei-Fei, Silvio Savarese",
+ "date": null,
+ "year": 2020,
+ "url": "https://arxiv.org/abs/2012.06733",
+ "abstract": "",
+ "summary": "This work uses remote human interventions to collect corrective demonstrations for safer and more efficient imitation learning.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Human in the Loop",
+ "tags": [
+  "human-in-the-loop",
+  "human-in-the-loop-safety",
+  "imitation-learning",
+  "intervention",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Human_in_the_Loop/2020_Mandlekar_HITLTeleoperation.md",
+ "pdf_path": "PDFs/Human_in_the_Loop/2020_Mandlekar_HITLTeleoperation.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

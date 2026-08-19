@@ -1,0 +1,13 @@
+{
+ "id": "2512.08300",
+ "title": "rSIM: Incentivizing Reasoning Capabilities of LLMs via Reinforced Strategy Injection",
+ "authors": "Sijia Chen, Baochun Li, Di Niu",
+ "date": "2025-12-09",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.08300v1",
+ "abstract": "Large language models (LLMs) are post-trained through reinforcement learning (RL) to evolve into Reasoning Language Models (RLMs), where the hallmark of this advanced reasoning is ``aha'' moments when they start to perform strategies, such as self-reflection and deep thinking, within chain of thoughts (CoTs). Motivated by this, this paper proposes a novel reinforced strategy injection mechanism (rSIM), that enables any LLM to become an RLM by employing a small planner to guide the LLM's CoT through the adaptive injection of reasoning strategies. To achieve this, the planner (leader agent) is jointly trained with an LLM (follower agent) using multi-agent RL (MARL), based on a leader-follower framework and straightforward rule-based rewards. Experimental results show that rSIM enables Qwen2.5-0.5B to become an RLM and significantly outperform Qwen2.5-14B. Moreover, the planner is generalizable: it only needs to be trained once and can be applied as a plug-in to substantially improve the reasoning capabilities of existing LLMs. In addition, the planner supports continual learning across various tasks, allowing its planning abilities to gradually improve and generalize to a wider range of problems.",
+ "summary": "1. 核心创新点：通过一个小型规划器在多代理强化学习框架中自适应注入推理策略，从而使任意LLM具备链式思考能力并成为RLM。\n\n2. 主要方法：采用领导-跟随的多代理强化学习（MARL）框架，规划器（领导者）和LLM（跟随者）共同训练，利用基于规则的奖励引导规划器在LLM的链式思考中注入适当的推理策略；规划器可作为插件泛化到其他模型，并具备跨任务的持续学习能力。\n\n3. 结论/性能：实验表明，rSIM 使 Qwen2.5-0.5B 成为RLM，并显著优于 Qwen2.5-14B；规划器一次训练即可作为插件提升现有LLM的推理能力，且能够在多任务场景中持续学习并提升规划能力的泛化性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-10 14:03:36"
+}

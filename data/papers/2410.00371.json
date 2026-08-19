@@ -1,0 +1,32 @@
+{
+ "id": "2410.00371",
+ "title": "AHA: A Vision-Language-Model for Detecting and Reasoning Over Failures in Robotic Manipulation",
+ "authors": "Jiafei Duan, Wilbert Pumacay, Nishanth Kumar, Yi Ru Wang, Shulin Tian, Wentao Yuan, Ranjay Krishna, Dieter Fox, Ajay Mandlekar, Yijie Guo",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.00371",
+ "abstract": "",
+ "summary": "AHA fine-tunes a VLM to detect and explain manipulation failures, turning failure recognition into a reusable monitor signal.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "failure-detection",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models",
+  "vlm"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2024_Duan_AHA.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2024_Duan_AHA.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

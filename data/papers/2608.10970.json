@@ -1,0 +1,13 @@
+{
+ "id": "2608.10970",
+ "title": "ReLTEx: Reliable LLM-based Taxonomy Expansion",
+ "authors": "Zeinab Ghamlouch, Mehwish Alam",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10970v1",
+ "abstract": "Recent advances in Large Language Models (LLMs) have demonstrated strong capabilities in generating semantically relevant concepts and relations, making them promising tools for taxonomy enrichment. However, directly relying on LLM-generated expansions often leads to noisy, redundant, or hierarchically inconsistent structures, limiting their reliability for automated taxonomy expansion. In this paper, we present ReLTEx, a framework for reliable LLM-based taxonomy expansion. ReLTEx combines LLM-driven candidate generation with structure-aware validation and recursive expansion control to improve the consistency and quality of generated taxonomies by reducing hallucinations. We evaluate the proposed framework using benchmark taxonomies under a masked taxonomy expansion setting and compare multiple validation strategies. Experimental results, supported by both adapted evaluation metrics and human evaluation, demonstrate that ReLTEx produces more reliable and semantically coherent taxonomy expansions.",
+ "summary": "**ReLTEx: 可靠的基于大模型的分类体系扩展**\n\n1. **核心创新点**\n   提出 ReLTEx 框架，通过在 LLM 生成候选概念之后加入结构感知的校验与递归扩展控制，解决直接用 LLM 扩展分类体系时产生的噪声、冗余与层级不一致（幻觉）问题。\n\n2. **主要方法**\n   - **LLM 驱动的候选生成**：利用大模型生成语义相关的概念与关系作为扩展候选。\n   - **结构感知校验（structure-aware validation）**：依据已有分类体系的层级结构过滤不一致或幻觉候选，论文中还对比了多种校验策略。\n   - **递归扩展控制（recursive expansion control）**：控制逐层递归扩展的过程，避免结构失控与冗余堆积。\n   - **评测设置**：在基准分类体系上采用 masked taxonomy expansion（遮蔽部分节点再让模型还原）的方式验证。\n\n3. **结论/性能**\n   在改造后的自动评价指标和人工评测两方面均表明，ReLTEx 生成的分类体系扩展比直接使用 LLM 更可靠、语义一致性更好。（摘要中只给出定性结论，未列出具体数值提升。）",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:02:48"
+}

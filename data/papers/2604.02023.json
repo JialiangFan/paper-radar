@@ -1,0 +1,13 @@
+{
+ "id": "2604.02023",
+ "title": "APEX: Agent Payment Execution with Policy for Autonomous Agent API Access",
+ "authors": "Mohd Safwan Uddin, Mohammed Mouzam, Mohammed Imran, Syed Badar Uddin Faizan",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02023v1",
+ "abstract": "Autonomous agents are moving beyond simple retrieval tasks to become economic actors that invoke APIs, sequence workflows, and make real-time decisions. As this shift accelerates, API providers need request-level monetization with programmatic spend governance. The HTTP 402 protocol addresses this by treating payment as a first-class protocol event, but most implementations rely on cryptocurrency rails. In many deployment contexts, especially countries with strong real-time fiat systems like UPI, this assumption is misaligned with regulatory and infrastructure realities. We present APEX, an implementation-complete research system that adapts HTTP 402-style payment gating to UPI-like fiat workflows while preserving policy-governed spend control, tokenized access verification, and replay resistance. We implement a challenge-settle-consume lifecycle with HMAC-signed short-lived tokens, idempotent settlement handling, and policy-aware payment approval. The system uses FastAPI, SQLite, and Python standard libraries, making it transparent, inspectable, and reproducible. We evaluate APEX across three baselines and six scenarios using sample sizes 2-4x larger than initial experiments (N=20-40 per scenario). Results show that policy enforcement reduces total spending by 27.3% while maintaining 52.8% success rate for legitimate requests. Security mechanisms achieve 100% block rate for both replay attacks and invalid tokens with low latency overhead (19.6ms average). Multiple trial runs show low variance across scenarios, demonstrating high reproducibility with 95% confidence intervals. The primary contribution is a controlled agent-payment infrastructure and reference architecture that demonstrates how agentic access monetization can be adapted to fiat systems without discarding security and policy guarantees.",
+ "summary": "- 核心创新点：将 HTTP 402 风格的支付门控迁移到真实货币/ fiat 流程（如 UPI），在保持策略治理、令牌化访问与防重放等安全机制的前提下，为自治代理的 API 访问实现付费执行与访问控制。\n\n- 主要方法：\n  - 引入挑战-结算-消耗（challenge-settle-consume）生命周期，配合 HMAC 签名的短时令牌、幂等结算和策略感知的支付审批。\n  - 技术实现使用 FastAPI、SQLite 和 Python 标准库，确保透明、可检验、可复现实验。\n  - 通过在 3 个基线、6 个场景中进行评估，样本量为每场景 20–40，比较策略执行对成本与成功率的影响。\n\n- 结论/性能：\n  - 策略执行将总支出降低 27.3%，仍维持合法请求的成功率 52.8%。\n  - 安全机制对回放攻击与无效令牌实现 100% 阻断，平均延迟约 19.6 ms。\n  - 多轮试验显示低方差、具备高可重复性（95% 置信区间覆盖）。\n  - 主要贡献：提供一个受控的代理支付基础设施与参考架构，展示在 fiat 系统中实现代理访问盈利化时仍能保留安全性与策略保障。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-03 13:04:47"
+}

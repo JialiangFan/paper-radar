@@ -1,0 +1,13 @@
+{
+ "id": "2608.11381",
+ "title": "From Numbers to Judgment: Specialist LLM Agents and Reinforcement Learning for European Listed Real Estate",
+ "authors": "Pardis Taghavi, Santosh Bhavani",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11381v1",
+ "abstract": "We study whether the localized numerical operations and integrative judgments of financial analysis benefit from the same form of LLM specialization. Larix maps a 16-lens European listed-real-estate analysis framework to eight lens-aligned specialists; we compare a frontier LLM under monolithic versus specialist-decomposed prompting while holding the model, source evidence, task instructions, output schema, and scoring fixed. Across 19 firms spanning seven regulatory wrappers, decomposition improves the numerical-task aggregate by 15.8 percentage points but does not reliably improve, and can reduce, performance on judgment tasks, a pattern stable across four frozen-template dispatches; a single-agent control given the complete framework does not reproduce the numerical gain. Post-training Qwen3.5-9B with GRPO using task-aligned structured rewards then raises the development-split score by 12.0 points and the judgment aggregate by 14.2 points, with gains on all four sub-ceiling tasks; the gains transfer to unseen firms (+15.2 points overall; +40.4 on covenant stress) and to unseen regulatory wrappers (+4.3), with positive transfer on all three anti-memorization splits. Prompt-level decomposition thus improves modular numerical execution, whereas targeted parameter adaptation improves integrative financial judgment.",
+ "summary": "## Larix：从数字到判断 —— 面向欧洲上市房地产的专业化 LLM 智能体与强化学习\n\n**1. 核心创新点**\n论文发现金融分析中的\"局部数值计算\"与\"整合性判断\"需要不同的专业化路径：提示层面的多智能体分解只能提升数值任务，而参数层面的强化学习微调才能真正改善综合判断能力。\n\n**2. 主要方法**\n- 构建 Larix 框架，将一套 16 维度（16-lens）的欧洲上市房地产分析体系映射为 8 个与维度对齐的专业智能体。\n- 在固定模型、证据源、任务指令、输出模式与评分标准的前提下，对比前沿 LLM 的\"单体式提示\" vs. \"专家分解式提示\"，并设置了\"单智能体+完整框架\"的对照组以排除信息量差异。\n- 用 GRPO（结合任务对齐的结构化奖励）对 Qwen3.5-9B 进行后训练，在 19 家公司、7 种监管框架（regulatory wrappers）上评测，并设计了三类抗记忆化（anti-memorization）划分来检验泛化。\n\n**3. 结论/性能**\n- 提示分解使**数值任务总分提升 15.8 个百分点**，且该结论在四种冻结模板调度下稳定；但对判断类任务无稳定提升，甚至可能下降。对照组未复现该数值增益，说明增益来自分解本身而非信息补充。\n- GRPO 后训练使开发集总分**+12.0 分**、判断类任务总分**+14.2 分**，四个未达上限的子任务全部改善。\n- 泛化良好：未见公司**+15.2 分**（其中债务契约压力测试 +40.4 分），未见监管框架 **+4.3 分**，三类抗记忆化划分均为正向迁移。\n- 总体结论：**提示分解 → 提升模块化数值执行；针对性参数适配 → 提升整合性金融判断。**",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-13 13:01:52"
+}

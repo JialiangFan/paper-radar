@@ -1,0 +1,13 @@
+{
+ "id": "2512.16532",
+ "title": "From Personalization to Prejudice: Bias and Discrimination in Memory-Enhanced AI Agents for Recruitment",
+ "authors": "Himanshu Gharat, Himanshi Agrawal, Gourab K. Patro",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16532v1",
+ "abstract": "Large Language Models (LLMs) have empowered AI agents with advanced capabilities for understanding, reasoning, and interacting across diverse tasks. The addition of memory further enhances them by enabling continuity across interactions, learning from past experiences, and improving the relevance of actions and responses over time; termed as memory-enhanced personalization. Although such personalization through memory offers clear benefits, it also introduces risks of bias. While several previous studies have highlighted bias in ML and LLMs, bias due to memory-enhanced personalized agents is largely unexplored. Using recruitment as an example use case, we simulate the behavior of a memory-enhanced personalized agent, and study whether and how bias is introduced and amplified in and across various stages of operation. Our experiments on agents using safety-trained LLMs reveal that bias is systematically introduced and reinforced through personalization, emphasizing the need for additional protective measures or agent guardrails in memory-enhanced LLM-based AI agents.",
+ "summary": "- 核心创新点：提出并系统研究在记忆增强的个性化AI代理中，偏见如何在招聘场景下被产生并在各阶段放大的机制，揭示记忆机制可能带来系统性偏见。\n\n- 主要方法：通过在招聘场景中对记忆增强的个性化代理进行仿真，使用安全训练的LLMs作为底层模型，评估并分析偏见在不同操作阶段（如记忆、推理、决策等）产生与强化的过程，进行相关实验与对比分析。\n\n- 结论/性能：实验结果显示偏见在个性化过程中被系统性地引入和强化，强调需要增加保护性措施或代理护栏来降低在记忆增强的LLM代理中的偏见风险。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-19 02:46:32"
+}

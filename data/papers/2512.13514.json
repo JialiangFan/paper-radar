@@ -1,0 +1,13 @@
+{
+ "id": "2512.13514",
+ "title": "Reinforcement Learning based 6-DoF Maneuvers for Microgravity Intravehicular Docking: A Simulation Study with Int-Ball2 in ISS-JEM",
+ "authors": "Aman Arora, Matteo El-Hariry, Miguel Olivares-Mendez",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13514v1",
+ "abstract": "Autonomous free-flyers play a critical role in intravehicular tasks aboard the International Space Station (ISS), where their precise docking under sensing noise, small actuation mismatches, and environmental variability remains a nontrivial challenge. This work presents a reinforcement learning (RL) framework for six-degree-of-freedom (6-DoF) docking of JAXA's Int-Ball2 robot inside a high-fidelity Isaac Sim model of the Japanese Experiment Module (JEM). Using Proximal Policy Optimization (PPO), we train and evaluate controllers under domain-randomized dynamics and bounded observation noise, while explicitly modeling propeller drag-torque effects and polarity structure. This enables a controlled study of how Int-Ball2's propulsion physics influence RL-based docking performance in constrained microgravity interiors. The learned policy achieves stable and reliable docking across varied conditions and lays the groundwork for future extensions pertaining to Int-Ball2 in collision-aware navigation, safe RL, propulsion-accurate sim-to-real transfer, and vision-based end-to-end docking.",
+ "summary": "- 核心创新点：在高保真 Isaac Sim 的 ISS-JEM 场景中，提出一种基于 PPO 的强化学习框架，结合域随机化的动力学与推进力学建模（包括拖力矩与极性结构），实现 Int-Ball2 的六自由度对接，并提供可控研究推进物理对 RL 对接性能影响的平台。\n\n- 主要方法：采用 Proximal Policy Optimization (PPO) 的强化学习框架进行 6-DoF 对接控制；在仿真中进行域随机化的动力学建模、引入有界观测噪声；显式建模推进器的拖力矩和极性结构，以评估推进物理对对接性能的影响，环境基于高保真 JEM 模型。\n\n- 结论/性能：学习得到的策略在多种条件下实现稳定且可靠的对接，对不同扰动和推进物理具鲁棒性；为未来在碰撞感知导航、安全 RL、推进物理精准的仿真到现实转移以及基于视觉的端到端对接等方向的扩展奠定基础。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:01:43"
+}

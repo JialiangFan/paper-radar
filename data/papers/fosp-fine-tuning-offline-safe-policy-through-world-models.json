@@ -1,0 +1,27 @@
+{
+ "id": "fosp-fine-tuning-offline-safe-policy-through-world-models",
+ "title": "FOSP: Fine-tuning Offline Safe Policy through World Models",
+ "authors": "Multiple",
+ "date": null,
+ "year": 2024,
+ "url": "",
+ "abstract": "",
+ "summary": "Offline pre-trained 策略在新环境中 fine-tuning 时，online 探索可能导致不安全行为。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/FOSP.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

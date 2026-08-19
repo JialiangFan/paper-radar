@@ -1,0 +1,33 @@
+{
+ "id": "2501.04823",
+ "title": "Learning Robot Safety from Sparse Human Feedback using Conformal Prediction",
+ "authors": "Bajcsy, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2501.04823",
+ "abstract": "",
+ "summary": "The paper uses sparse human feedback and conformal prediction to learn when robot behavior should be considered unsafe.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Human in the Loop",
+ "tags": [
+  "conformal-prediction",
+  "human-feedback",
+  "human-in-the-loop-safety",
+  "robot-safety",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Human_in_the_Loop/2025_Bajcsy_SparseHumanSafety.md",
+ "pdf_path": "PDFs/Human_in_the_Loop/2025_Bajcsy_SparseHumanSafety.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

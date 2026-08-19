@@ -1,0 +1,13 @@
+{
+ "id": "2605.29930",
+ "title": "Toward AI Systems That Understand Self and Others: A Multi-Phase Inference Framework for Human Cognitive Diversity and World-Model Alignment",
+ "authors": "Toru Takahashi",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29930v1",
+ "abstract": "Mutual misunderstanding in contemporary society does not arise merely because people hold different opinions or values. Even under the same observations, different subjects may form different inferential targets, state representations, prediction errors, and update priorities. This paper proposes a multi-phase inference framework and defines its core internal mechanism as the Multi-Phase Inference Mechanism (MIM). MIM formalizes how heterogeneous world models arise through a phase-formation space, a foregrounding field, subject-specific profile states, and alignment maps between state representations. On this basis, the paper reframes world-model alignment as the problem of making heterogeneous representations mutually processable, rather than forcing agreement or convergence to a single value system. It further connects this formalism to philosophical disagreements, cognitive typology, social fragmentation, and AI alignment. The aim is to provide a constructive vocabulary for AI systems that can help humans understand self and others by making differences in meaning, value, and prediction error visible, comparable, and transformable.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出\"多阶段推理机制\"（MIM），将世界模型对齐重新定义为让异质表征\"可相互处理\"，而非强制趋同到统一价值观。\n\n**2. 主要方法**\n构建多阶段推理框架，形式化四个核心组件：阶段形成空间（phase-formation space）、前景化场（foregrounding field）、主体特定的画像状态（subject-specific profile states），以及状态表征之间的对齐映射（alignment maps），用于刻画不同主体在相同观察下如何形成不同的推理目标、状态表征、预测误差和更新优先级。\n\n**3. 结论/性能**\n该框架并非实验性工作，而是一个理论/概念性贡献：为 AI 系统提供建设性的词汇体系，使意义、价值和预测误差上的差异变得\"可见、可比较、可转换\"，从而帮助人类理解自我与他人，并将其与哲学分歧、认知类型学、社会碎片化及 AI 对齐问题相连接。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:03:24"
+}

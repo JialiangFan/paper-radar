@@ -1,0 +1,13 @@
+{
+ "id": "2512.15143",
+ "title": "An Efficient Gradient-Based Inference Attack for Federated Learning",
+ "authors": "Pablo Montaña-Fernández, Ines Ortega-Fernandez",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15143v1",
+ "abstract": "Federated Learning is a machine learning setting that reduces direct data exposure, improving the privacy guarantees of machine learning models. Yet, the exchange of model updates between the participants and the aggregator can still leak sensitive information. In this work, we present a new gradient-based membership inference attack for federated learning scenarios that exploits the temporal evolution of last-layer gradients across multiple federated rounds. Our method uses the shadow technique to learn round-wise gradient patterns of the training records, requiring no access to the private dataset, and is designed to consider both semi-honest and malicious adversaries (aggregators or data owners). Beyond membership inference, we also provide a natural extension of the proposed attack to discrete attribute inference by contrasting gradient responses under alternative attribute hypotheses. The proposed attacks are model-agnostic, and therefore applicable to any gradient-based model and can be applied to both classification and regression settings. We evaluate the attack on CIFAR-100 and Purchase100 datasets for membership inference and on Breast Cancer Wisconsin for attribute inference. Our findings reveal strong attack performance and comparable computational and memory overhead in membership inference when compared to another attack from the literature. The obtained results emphasize that multi-round federated learning can increase the vulnerability to inference attacks, that aggregators pose a more substantial threat than data owners, and that attack performance is strongly influenced by the nature of the training dataset, with richer, high-dimensional data leading to stronger leakage than simpler tabular data.",
+ "summary": "1) 核心创新点\n提出一种利用多轮联邦学习中最后一层梯度随轮次的时间演化进行的高效梯度基成员资格推断攻击，并通过影子模型学习轮次梯度模式，无需访问私有数据即可对任意梯度模型进行攻击，且可扩展到离散属性推断。\n\n2) 主要方法\n基于梯度的成员资格推断，利用多轮联邦学习中梯度的时间演化特征；结合影子技术学习训练记录的轮次梯度模式，方法对半诚实和恶意对手（聚合方或数据拥有者）均适用；模型无关，适用于分类与回归；并扩展到离散属性推断，通过对比不同属性假设下的梯度响应实现。\n\n3) 结论/性能\n在成员资格推断方面表现较强，且计算与内存开销与文献中的另一攻击相近；多轮联邦学习提高了推断风险，聚合方威胁比数据拥有者更大；且数据集性质对攻击强度有显著影响——高维、信息更丰富的数据泄露更强；在 CIFAR-100、Purchase100（成员资格推断）以及 Breast Cancer Wisconsin（属性推断）等数据集上进行了评估。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-18 02:06:56"
+}

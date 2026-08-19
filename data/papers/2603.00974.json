@@ -1,0 +1,13 @@
+{
+ "id": "2603.00974",
+ "title": "Intent-Context Synergy Reinforcement Learning for Autonomous UAV Decision-Making in Air Combat",
+ "authors": "Jiahao Fu, Feng Yang",
+ "date": "2026-03-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.00974v1",
+ "abstract": "Autonomous UAV infiltration in dynamic contested environments remains a significant challenge due to the partially observable nature of threats and the conflicting objectives of mission efficiency versus survivability. Traditional Reinforcement Learning (RL) approaches often suffer from myopic decision-making and struggle to balance these trade-offs in real-time. To address these limitations, this paper proposes an Intent-Context Synergy Reinforcement Learning (ICS-RL) framework. The framework introduces two core innovations: (1) An LSTM-based Intent Prediction Module that forecasts the future trajectories of hostile units, transforming the decision paradigm from reactive avoidance to proactive planning via state augmentation; (2) A Context-Analysis Synergy Mechanism that decomposes the mission into hierarchical sub-tasks (safe cruise, stealth planning, and hostile breakthrough). We design a heterogeneous ensemble of Dueling DQN agents, each specialized in a specific tactical context. A dynamic switching controller based on Max-Advantage values seamlessly integrates these agents, allowing the UAV to adaptively select the optimal policy without hard-coded rules. Extensive simulations demonstrate that ICS-RL significantly outperforms baselines (Standard DDQN) and traditional methods (PSO, Game Theory). The proposed method achieves a mission success rate of 88\\% and reduces the average exposure frequency to 0.24 per episode, validating its superiority in ensuring robust and stealthy penetration in high-dynamic scenarios.",
+ "summary": "1. 核心创新点（一句话概括）\n通过将 LSTM 意图预测与层次化情境分析相结合的 ICS-RL 框架，利用异质 Dueling DQN 代理与基于最大优势值的动态切换实现自适应决策，从而在高动态空战环境中提升鲁棒性与隐蔽渗透能力。\n\n2. 主要方法（使用的技术/模型）\n- LSTM 基于意图预测模块，对敌方单位未来轨迹进行预测并进行状态增强，使决策从被动规避转向前瞻性规划；\n- Context-Analysis Synergy 机制，将任务分解为安全巡航、隐蔽规划、敌方突破等层次子任务；\n- 构建一组异质的 Dueling DQN 代理，每个代理专注于特定战术情境；\n- 基于最大优势值（Max-Advantage）的动态切换控制器，毫无硬编码规则地融合集成各代理以选择最优策略。\n\n3. 结论/性能（取得的效果）\n在大量仿真实验中，ICS-RL 显著优于基线的 Standard DDQN 以及传统方法 PSO 与博弈论，任务成功率达到 88%，平均暴露频率降至每回合 0.24 次，证明其在高动态场景下的鲁棒性与隐蔽穿透能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:00:49"
+}

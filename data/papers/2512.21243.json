@@ -1,0 +1,13 @@
+{
+ "id": "2512.21243",
+ "title": "LookPlanGraph: Embodied Instruction Following Method with VLM Graph Augmentation",
+ "authors": "Anatoly O. Onishchenko, Alexey K. Kovalev, Aleksandr I. Panov",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21243v1",
+ "abstract": "Methods that use Large Language Models (LLM) as planners for embodied instruction following tasks have become widespread. To successfully complete tasks, the LLM must be grounded in the environment in which the robot operates. One solution is to use a scene graph that contains all the necessary information. Modern methods rely on prebuilt scene graphs and assume that all task-relevant information is available at the start of planning. However, these approaches do not account for changes in the environment that may occur between the graph construction and the task execution. We propose LookPlanGraph - a method that leverages a scene graph composed of static assets and object priors. During plan execution, LookPlanGraph continuously updates the graph with relevant objects, either by verifying existing priors or discovering new entities. This is achieved by processing the agents egocentric camera view using a Vision Language Model. We conducted experiments with changed object positions VirtualHome and OmniGibson simulated environments, demonstrating that LookPlanGraph outperforms methods based on predefined static scene graphs. To demonstrate the practical applicability of our approach, we also conducted experiments in a real-world setting. Additionally, we introduce the GraSIF (Graph Scenes for Instruction Following) dataset with automated validation framework, comprising 514 tasks drawn from SayPlan Office, BEHAVIOR-1K, and VirtualHome RobotHow. Project page available at https://lookplangraph.github.io .",
+ "summary": "- 核心创新点：提出 LookPlanGraph，在任务执行阶段通过视觉-语言模型对场景图进行持续更新与扩充，使静态场景图能够动态反映环境变化，从而更好地支撑基于LLM的指令执行规划。\n- 主要方法：以LLM为规划核心，利用由静态资源与对象先验构成的场景图；在执行过程中通过处理代理的自视角相机图像，使用Vision-Language Model验证先验或发现新实体，增量更新场景图并据此完成任务；并引入 GraSIF数据集用于自动化验证。\n- 结论/性能：在对象位置变化的虚拟环境（VirtualHome、OmniGibson）中，LookPlanGraph优于基于静态场景图的方法；并在真实世界场景实现实验，证明其实际可用性，同时提供包含514个任务的GraSIF数据集。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:52:35"
+}

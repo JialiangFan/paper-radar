@@ -1,0 +1,13 @@
+{
+ "id": "2606.20041",
+ "title": "AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models",
+ "authors": "Masahiro Kato",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20041v1",
+ "abstract": "We propose a model-grounded RAG-based AI economist with an agentic framework for economic scenario analysis using large language models (LLMs) and knowledge graphs. While LLMs can generate fluent economic narratives, economists are often required to make economic claims grounded by economic theory and real-world data. Based on this motivation, this study proposes an RAG-based AI economist, which utilizes knowledge graphs including economic data and theory and LLM-based agents to plan the analysis, retrieve relevant evidence, select appropriate models, and generate reports. In our framework, we do not produce quantitative claims directly with the language model alone; instead, we generate narratives grounded in explicit model-based computations and linked to the retrieved evidence via AI agents. We refer to our framework as an AI economist agent. We evaluate the AI economist agent in two applications: economist report generation for U.S. inflation persistence and Federal Reserve policy, and bank stress-test narrative generation for U.S. commercial real estate refinancing stress. The results illustrate how grounding the generated reports improves their economic coherence and traceability.",
+ "summary": "## 论文摘要总结\n\n1. **核心创新点**：提出一个\"模型锚定\"（model-grounded）的 AI 经济学家智能体框架——让大语言模型生成的经济分析叙事不再凭空输出定量结论，而是建立在显式的经济模型计算和可追溯的真实证据之上。\n\n2. **主要方法**：结合**大语言模型（LLM）**、**知识图谱**（存储经济数据与经济理论）和**检索增强生成（RAG）**，通过多个 LLM 智能体（agents）分工协作完成：规划分析流程 → 检索相关证据 → 选择合适的经济模型 → 生成报告。关键在于定量结论由模型计算产出，而非语言模型直接生成，叙事则与检索到的证据相链接。\n\n3. **结论/性能**：在两个应用场景中验证——①美国通胀持续性与美联储政策的经济学报告生成；②美国商业地产再融资压力的银行压力测试叙事生成。结果表明，这种\"锚定\"方式显著提升了生成报告的**经济逻辑一致性（coherence）**和**可追溯性（traceability）**。\n\n---\n\n补充提示：项目里有一个 `paper-review` 技能，能以文献综述专家视角做更深入的中英文双语总结并自动输出到 Obsidian。如果需要更详尽的版本，告诉我即可。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-19 13:00:56"
+}

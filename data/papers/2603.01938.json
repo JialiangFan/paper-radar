@@ -1,0 +1,13 @@
+{
+ "id": "2603.01938",
+ "title": "Explanation-Guided Adversarial Training for Robust and Interpretable Models",
+ "authors": "Chao Chen, Yanhui Chen, Shanshan Lin, Dongsheng Hong, Shu Wu, Xiangwen Liao, Chuanyi Liu",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01938v1",
+ "abstract": "Deep neural networks (DNNs) have achieved remarkable performance in many tasks, yet they often behave as opaque black boxes. Explanation-guided learning (EGL) methods steer DNNs using human-provided explanations or supervision on model attributions. These approaches improve interpretability but typically assume benign inputs and incur heavy annotation costs. In contrast, both predictions and saliency maps of DNNs could dramatically alter facing imperceptible perturbations or unseen patterns. Adversarial training (AT) can substantially improve robustness, but it does not guarantee that model decisions rely on semantically meaningful features. In response, we propose Explanation-Guided Adversarial Training (EGAT), a unified framework that integrates the strength of AT and EGL to simultaneously improve prediction performance, robustness, and explanation quality. EGAT generates adversarial examples on the fly while imposing explanation-based constraints on the model. By jointly optimizing classification performance, adversarial robustness, and attributional stability, EGAT is not only more resistant to unexpected cases, including adversarial attacks and out-of-distribution (OOD) scenarios, but also offer human-interpretable justifications for the decisions. We further formalize EGAT within the Probably Approximately Correct learning framework, demonstrating theoretically that it yields more stable predictions under unexpected situations compared to standard AT. Empirical evaluations on OOD benchmark datasets show that EGAT consistently outperforms competitive baselines in both clean accuracy and adversarial accuracy +37% while producing more semantically meaningful explanations, and requiring only a limited increase +16% in training time.",
+ "summary": "**核心创新点**：将解释引导学习（EGL）与对抗训练（AT）统一为一个框架EGAT，通过在训练中动态生成对抗样本并施加归因约束，实现预测性能、对抗鲁棒性和解释性的一体化提升。\n\n**主要方法**：在训练中同时执行对抗样本的在线生成和解释性约束，构建一个联合优化目标，包含分类损失、对抗鲁棒性损失和归因稳定性损失；在理论上基于可能近似正确性（PAC）框架给出对比于标准AT的稳定性改进；并在OOD基准数据集上进行评估。\n\n**结论/性能**：在OOD基准数据集上，EGAT在干净精度和对抗精度上均优于竞争基线，对抗鲁棒性提升约37%，解释性更具语义意义；训练时间仅增加约16%。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-03 14:01:27"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.04166",
+ "title": "Enacting Constructive Conflicts with AI Agents to Enhance Reconsideration among Novice Interaction Designers",
+ "authors": "Howard Ziyu Han, Nikolas Martelaro",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04166v1",
+ "abstract": "Generative AI agents are increasingly used in interaction design to facilitate ideation and offer critique, often following their own internal reasoning. These interactions tend to add design ideas and expand the design space. Our work explores an antagonistic role for design agents, prompting designers to engage with stakeholder tension. We built an AI agent inspired by adversarial design theory that enacts constructive conflict. We examine the agent's influence in a between-subjects experiment with 45 design students across three conditions: Self Reflection (unsupported review of the design proposal), Stepwise Guidance (written prompts that walk designers through a constructive-conflict framework), and Interactive Engagement (an AI agent that enacts the constructive-conflict framework interactively by synthesizing stakeholder pushback). The latter two conditions share the framework but differ in whether it is self-enacted or agent-enacted. Results show that, compared with Self Reflection, both the Stepwise Guidance and Interactive Engagement groups reported significantly higher self-reconsideration and made more improvements to their design proposals. Compared with Stepwise Guidance, the antagonistic agent introduced more conflictual perspectives, and participants in the Interactive Engagement condition generated and discarded more ideas. These findings suggest that agent-enacted constructive conflict can turn reconsideration into concrete design actions and deepen engagement with divergent stakeholder perspectives.",
+ "summary": "## 论文摘要总结\n\n**1. 核心创新点**\n提出让 AI 设计智能体扮演\"对抗性\"角色，通过主动制造建设性冲突（而非一味扩展创意）来促使新手交互设计师重新审视自己的设计方案。\n\n**2. 主要方法**\n基于对抗性设计理论（adversarial design theory）构建了一个生成式 AI 智能体，能够综合并模拟出利益相关者的反对意见。研究采用被试间实验设计，招募 45 名设计专业学生，分为三个条件组：\n\n- **自我反思组**（无辅助地自行复审设计方案）\n- **分步引导组**（用书面提示引导设计师走完建设性冲突框架）\n- **交互参与组**（由 AI 智能体交互式地执行该框架）\n\n后两组共享同一框架，区别仅在于框架是\"自我执行\"还是\"由智能体执行\"。\n\n**3. 结论/性能**\n相比自我反思组，分步引导组和交互参与组的自我重新审视程度显著更高，对设计方案的改进也更多。相比分步引导组，对抗性智能体引入了更多冲突性视角，且交互参与组的参与者产生并舍弃了更多创意。结论表明：由智能体执行的建设性冲突能够把\"重新思考\"转化为具体的设计行动，并加深设计师与多元利益相关者视角的接触深度。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-06 13:00:50"
+}

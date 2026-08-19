@@ -1,0 +1,13 @@
+{
+ "id": "2605.29886",
+ "title": "CRITIC-R1: Learning Structured Critics for Retrieval-Augmented Generation",
+ "authors": "Wenhan Xiao, Ziwei Zhang, Chuanyue Yu, Xingcheng Fu, Qingyun Sun, Runhua Xu, Jianxin Li",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29886v1",
+ "abstract": "Retrieval-augmented generation (RAG) improves knowledge-intensive question answering by incorporating external evidence. However, existing RAG methods still suffer from hallucinations and subtle reasoning errors. Recent studies introduce external critics to refine RAG outputs, yet they often provide coarse-grained and weakly structured feedback, exhibit over-aggressive intervention, and lead to noisy and unreliable refinement, limiting their effectiveness for correction. To tackle these issues, we propose CRITIC-R1, a structured critic framework that formulates and learns RAG critique as an explicit error diagnosis problem using reinforcement learning (RL). Our framework categorizes common RAG errors into multiple diagnostic dimensions, including verdict, error location, reasoning analysis, and fix generation. To learn these capabilities, we design two reward functions: Conservative Judgement Alignment (CJA) first encourages calibrated high-level judgements while mitigating the over-aggressive phenomenon, whereas Diagnostic Quality Alignment (DQA) further improves fine-grained diagnostic feedback through gated rewards. We train the critic model using GRPO-based RL with process-level supervision collected from external LLM teacher models. Experiments across five QA benchmarks show that CRITIC-R1 consistently improves answer quality over strong RAG baselines.\n  Our source code is available at https://anonymous.4open.science/r/critic-r1-FCB0",
+ "summary": "# CRITIC-R1 论文总结\n\n## 1. 核心创新点\n提出 **CRITIC-R1**——一个基于强化学习的**结构化批判（critic）框架**，将 RAG 输出的批判过程显式建模为**错误诊断问题**，解决现有批判器反馈粗粒度、过度干预、噪声大的问题。\n\n## 2. 主要方法\n- **结构化诊断维度**：将 RAG 常见错误拆分为多个维度——判定（verdict）、错误定位、推理分析、修复生成。\n- **两个奖励函数**：\n  - **CJA（Conservative Judgement Alignment）**：校准高层判断，缓解\"过度干预\"现象。\n  - **DQA（Diagnostic Quality Alignment）**：通过门控奖励提升细粒度诊断质量。\n- **训练方式**：使用 **GRPO 强化学习**，并采用外部 LLM 教师模型提供过程级监督信号。\n\n## 3. 结论/性能\n在 **5 个问答基准**上的实验表明，CRITIC-R1 相比强 RAG 基线持续提升答案质量，验证了结构化批判与 RL 训练范式在减少幻觉、提升推理可靠性方面的有效性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:00:22"
+}

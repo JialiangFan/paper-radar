@@ -1,0 +1,13 @@
+{
+ "id": "2603.10512",
+ "title": "Resource-constrained Amazons chess decision framework integrating large language models and graph attention",
+ "authors": "Tianhao Qian, Zhuoxuan Li, Jinde Cao, Xinli Shi, Hanjie Liu, Leszek Rutkowski",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10512v1",
+ "abstract": "Artificial intelligence has advanced significantly through the development of intelligent game-playing systems, providing rigorous testbeds for decision-making, strategic planning, and adaptive learning. However, resource-constrained environments pose critical challenges, as conventional deep learning methods heavily rely on extensive datasets and computational resources. In this paper, we propose a lightweight hybrid framework for the Game of the Amazons, which explores the paradigm of weak-to-strong generalization by integrating the structural reasoning of graph-based learning with the generative capabilities of large language models. Specifically, we leverage a Graph Attention Autoencoder to inform a multi-step Monte Carlo Tree Search, utilize a Stochastic Graph Genetic Algorithm to optimize evaluation signals, and harness GPT-4o-mini to generate synthetic training data. Unlike traditional approaches that rely on expert demonstrations, our framework learns from noisy and imperfect supervision. We demonstrate that the Graph Attention mechanism effectively functions as a structural filter, denoising the LLM's outputs. Experiments on a 10$\\times$10 Amazons board show that our hybrid approach not only achieves a 15\\%--56\\% improvement in decision accuracy over baselines but also significantly outperforms its teacher model (GPT-4o-mini), achieving a competitive win rate of 45.0\\% at N=30 nodes and a decisive 66.5\\% at only N=50 nodes. These results verify the feasibility of evolving specialized, high-performance game AI from general-purpose foundation models under stringent computational constraints.",
+ "summary": "- 核心创新点（1句）：\n在资源受限条件下，提出一个将图注意力自编码器与大语言模型结合的轻量混合框架，通过多步蒙特卡洛树搜索、图遗传算法与LLM合成数据实现阿玛宗棋的弱到强泛化与高效推理。\n\n- 主要方法（简述技术/模型）：\n  - Graph Attention Autoencoder 作为结构信息的滤波器， informs 后续推理并对 LLM 输出进行去噪。\n  - 多步蒙特卡洛树搜索（MCTS），在图结构信息引导下进行决策搜索。\n  - Stochastic Graph Genetic Algorithm，优化评估信号以提升评估质量。\n  - GPT-4o-mini 生成合成训练数据，框架在噪声监督下学习。\n  - 将上述组件整合，展示从通用大模型到专用高性能AI的可行性，并强调图注意力的结构作用。 \n\n- 结论/性能（取得的效果）：\n  - 相比基线，决策准确性提升约 15%–56%。\n  - 相较教师模型 GPT-4o-mini，表现更优，在 N=30 节点时实现约 45.0% 的胜率，在 N=50 节点时达到约 66.5%。\n  - 证明在严格计算资源约束下，可以从通用 foundation 模型演化出高性能的专用游戏 AI。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:03:24"
+}

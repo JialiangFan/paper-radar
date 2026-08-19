@@ -1,0 +1,13 @@
+{
+ "id": "2606.12706",
+ "title": "VLADriveBench: Evaluating CoT-Action Relationship in VLA for Autonomous Driving",
+ "authors": "Thach Nguyen, Danhua Guo, Tom Lampo, Fei Wu, Burhan Yaman",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12706v1",
+ "abstract": "Vision-language-action (VLA) models generate chain-of-thought (CoT) reasoning alongside driving trajectories, but existing benchmarks evaluate only trajectory quality and do not assess whether the CoT is relevant, consistent, or causally connected to the driving action. We introduce VLADriveBench, a framework that combines observational metrics (mentioning, hallucination, contradiction, action alignment) with a CoT intervention protocol to provide complementary views of the CoT-action relationship. Applying VLADriveBench to three models across two architectures, we find that the two analyses can diverge sharply: ORION scores highest on observational alignment yet its CoT is epiphenomenal, while Alpamayo v1.5 scores lower yet its CoT is strongly causal, with visual salience gating the extent of CoT influence.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-14 13:03:04"
+}

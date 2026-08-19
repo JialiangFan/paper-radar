@@ -1,0 +1,13 @@
+{
+ "id": "2607.17149",
+ "title": "A Diagnostic Framework for AI Agent Behavior",
+ "authors": "Xichen Zhang, Yingjie Zhang, Tianshu Sun",
+ "date": "2026-07-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.17149v1",
+ "abstract": "AI agents increasingly act within the same clinical, political, scientific, and social systems that behavioral scientists study. Evaluating these systems requires source-level diagnosis: the same behavioral pattern may arise from an agent representational substrate or from the roles, objectives, interaction structures, and governance rules that shape its expression. This Perspective proposes a diagnostic framework for AI agent behavior: layer attribution. The foundational computational layer defines what behaviors are possible through architecture, memory, perception, attention, and representation. The behavioral modulation layer shapes how those capacities are expressed through identity, resources, objectives, social interaction, institutional constraints, and governance. The framework clarifies three consequences: surrogate validity is a model-task-layer relation, human-AI divergence provides diagnostic evidence, and governance requires source attribution before intervention. Treating AI agents as behavioral actors therefore requires evaluation methods that determine where behavior originates before deciding how to explain, validate, or govern it.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-21 13:00:42"
+}

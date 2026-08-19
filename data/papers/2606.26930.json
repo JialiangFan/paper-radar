@@ -1,0 +1,13 @@
+{
+ "id": "2606.26930",
+ "title": "PortraitGen: Exemplar-Driven GRPO with Dual-Reward Guidance for Photorealistic Portrait Generation",
+ "authors": "Xiaomin Li, Qian Liang, Yinan Li, Ying Zhang, Chen Li, Jing Lyu, Huchuan Lu, Xu Jia",
+ "date": "2026-06-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.26930v1",
+ "abstract": "Reinforcement Learning like Group Relative Policy Optimization (GRPO) has significantly advanced text-to-image post-training. However, current methods often favor superficial aesthetics, such as over-saturated colors, leaving critical flaws like AI artifacts and biological implausibilities unresolved. We attribute these limitations to two primary factors: (1) The absence of real images during post-training confines GRPO sampling to the original distribution, failing to break inherent generative boundaries; (2) the optimization process lacks specific rewards targeting fine-grained artifacts like overly oily skin and other AI artifacts. To address this, we propose PortraitGen, a novel framework tailored for photorealistic portrait generation. First, we break inherent generative boundaries by directly introducing real images into the GRPO sampling groups, where image inversion is employed to obtain their transition probabilities and latents. Second, to explicitly steer the model toward photorealism, we introduce a complementary dual-reward mechanism: OmniReward for general quality and AI-Portrait for human-centric fidelity. Furthermore, we curate PortraitBench, a comprehensive portrait-centric benchmark. Extensive experiments demonstrate that PortraitGen significantly outperforms existing baselines, effectively suppressing AI artifacts and achieving unprecedented photorealism.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-27 13:00:53"
+}

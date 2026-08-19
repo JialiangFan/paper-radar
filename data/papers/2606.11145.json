@@ -1,0 +1,13 @@
+{
+ "id": "2606.11145",
+ "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
+ "authors": "Haoling Zhou, Shixuan Zhao, Chao Wang, Zhiqiang Lin",
+ "date": "2026-06-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.11145v1",
+ "abstract": "Generative AI applications such as personal AI agents, image generators, and chat assistants offer advanced capabilities to improve user experience. Behind the scenes, Large Language Models (LLMs) that power these services require a massive amount of computation and are usually deployed in the cloud, available as APIs, meaning that a user's request has to be sent to a Cloud Inference Service (CIS) for processing. However, the strong capabilities of LLM also mean that user's requests now contain much more personal sensitive or enterprise confidential information, demanding equally strong protection in CIS. While early industry efforts such as Apple Private Cloud Compute (PCC) and Google Private AI Compute have emerged to show the potential of secure CIS, they are not adoptable for deployment by others due to their reliance on proprietary hardware and closed ecosystem. In addition, they all suffer from their own design glitches that can undermine the ambitious goal of bringing in true privacy protection to end users. In this paper, we present our analysis of the fundamental requirements of building a secure yet open CIS. We then present OpenPCC, a Confidential CIS framework that does not rely on proprietary hardware but instead uses commercially available TEEs. We implement an open-source prototype and characterize it end-to-end on a Llama-3 8B vLLM workload, separating OpenPCC's own cost from the underlying TEE hardware. Our analysis and evaluation demonstrated the feasibility and security of the system.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 OpenPCC——首个不依赖专有硬件、基于商用 TEE（可信执行环境）构建的开源机密大模型云推理框架，填补了 Apple PCC 和 Google Private AI Compute 等闭源方案的空白。\n\n**2. 主要方法**\n- 系统分析了构建安全云推理服务（CIS）的基本需求，并指出现有 Apple PCC / Google Private AI Compute 在设计上的隐私缺陷。\n- 基于商用 TEE 硬件设计 Confidential CIS 框架，避免对专有硬件和封闭生态的依赖。\n- 实现开源原型，并在 Llama-3 8B + vLLM 工作负载上进行端到端实测，将 OpenPCC 自身开销与底层 TEE 硬件开销分离评估。\n\n**3. 结论/性能**\n端到端评估证明了该系统在安全性和可行性上的有效性，证明使用商用 TEE 即可构建开放、可部署的机密 LLM 推理服务，无需依赖专有硬件生态。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-10 13:01:07"
+}

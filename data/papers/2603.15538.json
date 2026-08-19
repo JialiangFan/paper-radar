@@ -1,0 +1,13 @@
+{
+ "id": "2603.15538",
+ "title": "QiboAgent: a practitioner's guideline to open source assistants for Quantum Computing code development",
+ "authors": "Lorenzo Esposito, Andrea Papaluca, Stefano Carrazza",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15538v1",
+ "abstract": "We introduce QiboAgent, a reference implementation designed to serve as a practitioner's guideline for developing specialized coding assistants in Quantum Computing middleware. Addressing the limitations in scientific software development of general-purpose proprietary models, we explore how lightweight, open-source Large Language Models (LLMs) provided with a custom workflow architecture compare. In detail, we experiment with two complementary paradigms: a Retrieval-Augmented Generation pipeline for high-precision information retrieval, and an autonomous agentic workflow for complex software engineering tasks. We observe that this hybrid approach significantly reduces hallucination rates in code generation compared to a proprietary baseline, achieving a peak accuracy of 90.2% with relatively small open-source models of size up to 30B parameters. Furthermore, the agentic framework exhibits advanced coding capabilities, automating the resolution of maintenance issues and new features requests, or by prototyping larger-scale refactors of the codebase, such as producing a compiled Rust module with bindings of an original pure python package, Qibo in our case. The LLM workflows used for our analysis are integrated into a user interface and a Model Context Protocol server, providing an accessible tool for Qibo developers.",
+ "summary": "- 核心创新点：提出 QiboAgent，一种面向量子计算中间件的开源编码助手，通过混合检索增强生成与自治代理工作流，显著降低代码生成中的幻觉率，并支持自动化维护与大规模代码重构。\n\n- 主要方法：结合两种范式：1) 检索增强生成（RAG）用于高精度信息检索；2) 自治代理工作流用于复杂的软件工程任务；利用轻量级开源LLMs（≤30B 参数），并与用户界面及 Model Context Protocol 服务器集成，便于开发者使用；还能实现如将纯 Python 包 Qibo 重构为带绑定的 Rust 模块等更大规模的重构。\n\n- 结论/性能：该混合方法相比专有基线显著降低幻觉率，达到峰值准确度 90.2%（模型大小不超过 30B 参数）；代理框架具备先进的编码能力，能够自动化处理维护问题与新特性请求，并原型化更大规模的代码重构，提供可向量子计算开发者直接使用的工具链。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-17 13:04:07"
+}

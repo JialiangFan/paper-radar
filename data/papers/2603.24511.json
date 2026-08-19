@@ -1,0 +1,13 @@
+{
+ "id": "2603.24511",
+ "title": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms for LLMs",
+ "authors": "Alexander Panfilov, Peter Romov, Igor Shilov, Yves-Alexandre de Montjoye, Jonas Geiping, Maksym Andriushchenko",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24511v1",
+ "abstract": "LLM agents like Claude Code can not only write code but also be used for autonomous AI research and engineering \\citep{rank2026posttrainbench, novikov2025alphaevolve}. We show that an \\emph{autoresearch}-style pipeline \\citep{karpathy2026autoresearch} powered by Claude Code discovers novel white-box adversarial attack \\textit{algorithms} that \\textbf{significantly outperform all existing (30+) methods} in jailbreaking and prompt injection evaluations.\n  Starting from existing attack implementations, such as GCG~\\citep{zou2023universal}, the agent iterates to produce new algorithms achieving up to 40\\% attack success rate on CBRN queries against GPT-OSS-Safeguard-20B, compared to $\\leq$10\\% for existing algorithms (\\Cref{fig:teaser}, left).\n  The discovered algorithms generalize: attacks optimized on surrogate models transfer directly to held-out models, achieving \\textbf{100\\% ASR against Meta-SecAlign-70B} \\citep{chen2025secalign} versus 56\\% for the best baseline (\\Cref{fig:teaser}, middle). Extending the findings of~\\cite{carlini2025autoadvexbench}, our results are an early demonstration that incremental safety and security research can be automated using LLM agents. White-box adversarial red-teaming is particularly well-suited for this: existing methods provide strong starting points, and the optimization objective yields dense, quantitative feedback. We release all discovered attacks alongside baseline implementations and evaluation code at https://github.com/romovpa/claudini.",
+ "summary": "- 核心创新点：通过基于 Claude Code 的自我研究型流水线自动发现并优化对白盒对抗攻击算法，显著超越现有方法并具备跨模型泛化能力。\n\n- 主要方法：利用 autoresearch 风格的管线，由 LLM（Claude Code）从现有攻击实现（如 GCG）出发迭代生成新的对抗算法；在白盒设定下进行密集化的优化反馈；在替代模型上进行优化后直接迁移到真实模型评估，覆盖 CBRN 查询对 GPT-OSS-Safeguard-20B 的攻击与对 Meta-SecAlign-70B 的 ASR 测试，并公开全部攻击实现与评估代码。\n\n- 结论/性能：在 CBRN 查询上的攻击成功率达到约 40%（明显高于现有方法的 ≤10%），且对代理模型的优化具有良好跨模型泛化，在 Meta-SecAlign-70B 上实现 100% ASR（相比基线的 56%），显示自动化安全研究（白盒红队）具备强效与可扩展性。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-26 13:02:38"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.03625",
+ "title": "FeatureLens: A Highly Generalizable and Interpretable Framework for Detecting Adversarial Examples Based on Image Features",
+ "authors": "Zhigang Yang, Yuan Liu, Jiawei Zhang, Puning Zhang, Xinqiang Ma",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03625v1",
+ "abstract": "Although the remarkable performance of deep neural networks (DNNs) in image classification, their vulnerability to adversarial attacks remains a critical challenge. Most existing detection methods rely on complex and poorly interpretable architectures, which compromise interpretability and generalization. To address this, we propose FeatureLens, a lightweight framework that acts as a lens to scrutinize anomalies in image features. Comprising an Image Feature Extractor (IFE) and shallow classifiers (e.g., SVM, MLP, or XGBoost) with model sizes ranging from 1,000 to 30,000 parameters, FeatureLens achieves high detection accuracy ranging from 97.8% to 99.75% in closed-set evaluation and 86.17% to 99.6% in generalization evaluation across FGSM, PGD, CW, and DAmageNet attacks, using only 51 dimensional features. By combining strong detection performance with excellent generalization, interpretability, and computational efficiency, FeatureLens offers a practical pathway toward transparent and effective adversarial defense.",
+ "summary": "1) 核心创新点\n- 提出一个轻量、可解释且高泛化的对抗样本检测框架 FeatureLens，基于仅有的51维图像特征实现对抗样本检测，且兼具良好跨多种攻击的泛化能力。\n\n2) 主要方法\n- 组成：Image Feature Extractor (IFE) 提取图像特征，再使用浅层分类器（如 SVM、MLP、XGBoost）进行判别，模型规模约 1k–3万参数。\n- 技术要点：以“图像特征”为 lens 的异常检测思路，结合高效的浅层模型，强调可解释性、计算效率和良好泛化。\n\n3) 结论/性能\n- 在闭集评估中检测准确率为 97.8%–99.75%，在跨泛化评估中为 86.17%–99.6%，覆盖 FGSM、PGD、CW 和 DAmageNet 等攻击。总体表现为高检测性能、良好泛化性、可解释性与低计算成本的兼具。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-04 14:02:40"
+}

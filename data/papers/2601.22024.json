@@ -1,0 +1,13 @@
+{
+ "id": "2601.22024",
+ "title": "SymbXRL: Symbolic Explainable Deep Reinforcement Learning for Mobile Networks",
+ "authors": "Abhishek Duttagupta, MohammadErfan Jabbari, Claudio Fiandrino, Marco Fiore, Joerg Widmer",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22024v1",
+ "abstract": "The operation of future 6th-generation (6G) mobile networks will increasingly rely on the ability of deep reinforcement learning (DRL) to optimize network decisions in real-time. DRL yields demonstrated efficacy in various resource allocation problems, such as joint decisions on user scheduling and antenna allocation or simultaneous control of computing resources and modulation. However, trained DRL agents are closed-boxes and inherently difficult to explain, which hinders their adoption in production settings. In this paper, we make a step towards removing this critical barrier by presenting SymbXRL, a novel technique for explainable reinforcement learning (XRL) that synthesizes human-interpretable explanations for DRL agents. SymbXRL leverages symbolic AI to produce explanations where key concepts and their relationships are described via intuitive symbols and rules; coupling such a representation with logical reasoning exposes the decision process of DRL agents and offers more comprehensible descriptions of their behaviors compared to existing approaches. We validate SymbXRL in practical network management use cases supported by DRL, proving that it not only improves the semantics of the explanations but also paves the way for explicit agent control: for instance, it enables intent-based programmatic action steering that improves by 12% the median cumulative reward over a pure DRL solution.",
+ "summary": "- **核心创新点**：通过将符号AI引入深度强化学习，提出 SymbXRL，将DRL代理的决策过程以符号表示和规则推理的形式进行可解释化，并实现基于意图的行动引导，提升可解释性与可控性。\n\n- **主要方法**：提出 SymbXRL 框架，结合符号AI与逻辑推理，对 DRL 的决策进行人类可读的解释；使用直观的符号、规则和关系描述关键概念及其关系，并在移动网络管理的实际 DRL 用例中验证，支持意图驱动的程序化行动控制。\n\n- **结论/性能**：解释语义性更丰富，并为显式代理控制铺平道路；在网络管理任务中，使用意图驱动的动作引导相比纯 DRL 方案，中位累计奖励提高约12%。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:03:28"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.04428",
+ "title": "Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+ "authors": "Zheng Liu, Zeyu Guo, Zihan Liu, Anbang Wu, Han Zhao, Fangxin Liu, Zhezhi He, Yinhe Han, Jingwen Leng, Minyi Guo, Yiming Gan, Yu Feng",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04428v1",
+ "abstract": "Vision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\n  In this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.",
+ "summary": "**Deltoris 论文简要总结**\n\n1. **核心创新点**\n   通过\"位级稀疏 + 推测式推理\"的算法-硬件协同设计，让扩散式 VLA（视觉-语言-动作）模型在边缘设备上实现实时推理。\n\n2. **主要方法**\n   - **时序感知位稀疏（temporal-aware bit-sparsity）**：利用连续控制步输入的高度相似性，只计算相邻输入之间的**差值**，从而消除位级冗余运算。\n   - **推测式推理（speculative inference）**：针对上述算法带来的额外片外访存开销，把数据加载的代价**摊销到多个控制步**上。\n   - **专用加速器**：设计一维脉动阵列的位串行（bit-serial）PE 阵列，消除 PE 之间的负载不均衡问题。\n\n3. **结论/性能**\n   在精度基本不损失的前提下，相比移动端 GPU 最高加速 **34.2×**，相比已有加速器最高加速 **6.1×**，满足 50–200 Hz 高控制频率下的时延与能耗约束。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-09 13:04:22"
+}

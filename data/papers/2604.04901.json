@@ -1,0 +1,13 @@
+{
+ "id": "2604.04901",
+ "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
+ "authors": "Shuai Liu, Shulin Tian, Kairui Hu, Yuhao Dong, Zhe Yang, Bo Li, Jingkang Yang, Chen Change Loy, Ziwei Liu",
+ "date": "2026-04-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.04901v1",
+ "abstract": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as strict privacy barriers and the difficulty of jointly collecting multimodal real-world traces prevent scalable training and evaluation, and existing methods remain interaction-centric while overlooking dense behavioral traces in file-system operations; to address this gap, we propose FileGram, a comprehensive framework that grounds agent memory and personalization in file-system behavioral traces, comprising three core components: (1) FileGramEngine, a scalable persona-driven data engine that simulates realistic workflows and generates fine-grained multimodal action sequences at scale; (2) FileGramBench, a diagnostic benchmark grounded in file-system behavioral traces for evaluating memory systems on profile reconstruction, trace disentanglement, persona drift detection, and multimodal grounding; and (3) FileGramOS, a bottom-up memory architecture that builds user profiles directly from atomic actions and content deltas rather than dialogue summaries, encoding these traces into procedural, semantic, and episodic channels with query-time abstraction; extensive experiments show that FileGramBench remains challenging for state-of-the-art memory systems and that FileGramEngine and FileGramOS are effective, and by open-sourcing the framework, we hope to support future research on personalized memory-centric file-system agents.",
+ "summary": "- 核心创新点（1句话）：\n  提出一个面向文件系统行为轨迹的端到端个性化代理框架 FileGram，通过 FileGramEngine、FileGramBench 和 FileGramOS 三大组件，将记忆与个性化直接 grounding 在细粒度的文件系统行为上。\n\n- 主要方法（技术/模型要点）：\n  - FileGramEngine：一个面向人物模型的可扩展数据引擎，模拟现实工作流并生成大规模的细粒度多模态行动序列。\n  - FileGramBench：基于文件系统行为轨迹的诊断基准，用于评估记忆系统在个人画像重建、轨迹解耦、个性漂移检测和多模态对齐等方面的能力。\n  - FileGramOS：自下而上的记忆架构，从原子行为与内容增量构建用户画像，不以对话摘要为媒介，而是将轨迹编码为过程性、语义性和情 episodic 三类通道，并在查询时进行抽象化。\n\n- 结论/性能（取得的效果）：\n  - 实验表明 FileGramBench 对现有记忆系统仍具挑战性，体现基准的难度。\n  - FileGramEngine 和 FileGramOS 在实现个性化记忆驱动的文件系统代理方面表现有效。\n  - 通过开源，促进未来在以记忆为核心的个性化文件系统代理研究。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-07 13:02:10"
+}

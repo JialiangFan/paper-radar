@@ -1,0 +1,13 @@
+{
+ "id": "2601.21826",
+ "title": "Mil-SCORE: Benchmarking Long-Context Geospatial Reasoning and Planning in Large Language Models",
+ "authors": "Aadi Palnitkar, Mingyang Mao, Nicholas Waytowich, Vinicius G. Goecks, Tinoosh Mohsenin, Xiaomin Lin",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21826v1",
+ "abstract": "As large language models (LLMs) are applied to increasingly longer and more complex tasks, there is a growing need for realistic long-context benchmarks that require selective reading and integration of heterogeneous, multi-modal information sources. This need is especially acute for geospatial planning problems, such as those found in planning for large-scale military operations, which demand fast and accurate reasoning over maps, orders, intelligence reports, and other distributed data. To address this gap, we present MilSCORE (Military Scenario Contextual Reasoning), to our knowledge the first scenario-level dataset of expert-authored, multi-hop questions grounded in a complex, simulated military planning scenario used for training. MilSCORE is designed to evaluate high-stakes decision-making and planning, probing LLMs' ability to combine tactical and spatial reasoning across multiple sources and to reason over long-horizon, geospatially rich context. The benchmark includes a diverse set of question types across seven categories targeting both factual recall and multi-step reasoning about constraints, strategy, and spatial analysis. We provide an evaluation protocol and report baseline results for a range of contemporary vision-language models. Our findings highlight substantial headroom on MilSCORE, indicating that current systems struggle with realistic, scenario-level long-context planning, and positioning MilSCORE as a challenging testbed for future work.",
+ "summary": "- 核心创新点：提出 MilSCORE——首个以复杂仿真军事场景为基础、面向长上下文的地理空间推理与规划的场景级多跳问答基准，整合多模态信息（地图、命令、情报等）用于高风险决策评估。\n\n- 主要方法：构建 MilSCORE 数据集，包含七类题型的专家撰写、多跳、面向事实与推理的问答，设计评测协议；对多种前沿视觉-语言模型进行基线评测，评估其在长上下文、跨源地理空间推理中的能力。\n\n- 结论/性能：当前主流视觉-语言模型在 MilSCORE 上仍表现欠佳，存在显著的提升空间，MilSCORE 成为一个具有挑战性的测试床，指向未来在长上下文地理空间推理与规划方面的研究方向。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:02:56"
+}

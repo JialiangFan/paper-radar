@@ -1,0 +1,13 @@
+{
+ "id": "2602.01722",
+ "title": "Joint Optimization of ASV and CM tasks: BTUEF Team's Submission for WildSpoof Challenge",
+ "authors": "Oguzhan Kurnaz, Jagabandhu Mishra, Tomi Kinnunen, Cemal Hanilci",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01722v1",
+ "abstract": "Spoofing-aware speaker verification (SASV) jointly addresses automatic speaker verification and spoofing countermeasures to improve robustness against adversarial attacks. In this paper, we investigate our recently proposed modular SASV framework that enables effective reuse of publicly available ASV and CM systems through non-linear fusion, explicitly modeling their interaction, and optimization with an operating-condition-dependent trainable a-DCF loss. The framework is evaluated using ECAPA-TDNN and ReDimNet as ASV embedding extractors and SSL-AASIST as the CM model, with experiments conducted both with and without fine-tuning on the WildSpoof SASV training data. Results show that the best performance is achieved by combining ReDimNet-based ASV embeddings with fine-tuned SSL-AASIST representations, yielding an a-DCF of 0.0515 on the progress evaluation set and 0.2163 on the final evaluation set.",
+ "summary": "- **核心创新点**：提出一个模块化的 SASV 框架，通过非线性融合复用公开的 ASV 与 CM 系统，显式建模二者交互，并采用一个基于运行条件的可训练 a-DCF 损失进行优化以提升鲁棒性。\n\n- **主要方法**：使用 ECAPA-TDNN 与 ReDimNet 作为 ASV 嵌入提取器，SSL-AASIST 作为 CM 模型，构建非线性融合的模块化 SASV 框架，并在 WildSpoof SASV 训练数据上进行有无微调的比较；引入运行条件相关的可训练 a‑DCF 损失来优化。\n\n- **结论/性能**：最佳结果来自以 ReDimNet 为基础的 ASV 嵌入配合微调后的 SSL-AASIST 表征的组合，a-DCF 在 progress evaluation 集为 0.0515，final evaluation 集为 0.2163。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-03 14:03:11"
+}

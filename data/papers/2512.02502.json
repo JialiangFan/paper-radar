@@ -1,0 +1,13 @@
+{
+ "id": "2512.02502",
+ "title": "AskNearby: An LLM-Based Application for Neighborhood Information Retrieval and Personalized Cognitive-Map Recommendations",
+ "authors": "Luyao Niu, Zhicheng Deng, Boyang Li, Nuoxian Huang, Ruiqi Liu, Wenjia Zhang",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02502v1",
+ "abstract": "The \"15-minute city\" envisions neighborhoods where residents can meet daily needs via a short walk or bike ride. Realizing this vision requires not only physical proximity but also efficient and reliable access to information about nearby places, services, and events. Existing location-based systems, however, focus mainly on city-level tasks and neglect the spatial, temporal, and cognitive factors that shape localized decision-making. We conceptualize this gap as the Local Life Information Accessibility (LLIA) problem and introduce AskNearby, an AI-driven community application that unifies retrieval and recommendation within the 15-minute life circle. AskNearby integrates (i) a three-layer Retrieval-Augmented Generation (RAG) pipeline that synergizes graph-based, semantic-vector, and geographic retrieval with (ii) a cognitive-map model that encodes each user's neighborhood familiarity and preferences. Experiments on real-world community datasets demonstrate that AskNearby significantly outperforms LLM-based and map-based baselines in retrieval accuracy and recommendation quality, achieving robust performance in spatiotemporal grounding and cognitive-aware ranking. Real-world deployments further validate its effectiveness. By addressing the LLIA challenge, AskNearby empowers residents to more effectively discover local resources, plan daily activities, and engage in community life.",
+ "summary": "- 核心创新点：提出 AskNearby，通过在15分钟生活圈内将检索与个性化推荐统一为一个系统，结合三层RAG管线与认知地图模型实现本地信息的高效获取与个性化排序。\n\n- 主要方法：\n  - 三层 Retrieval-Augmented Generation（RAG）管线：整合图谱检索、语义向量检索以及地理检索，提升检索的准确性与时空感知。\n  - 认知地图模型：编码用户的邻里熟悉度与偏好，支持认知感知的个性化推荐排序。\n  - 在真实社区数据集上进行评估，并进行了实际部署验证。\n\n- 结论/性能：\n  - 在检索准确性和推荐质量方面显著优于基线（LLM-based 与地图基线），具备鲁棒的时空 grounding 与认知感知排序能力。\n  - 实际部署结果证实系统在真实场景中的有效性，能够帮助居民更高效地发现本地资源、规划日常活动、参与社区生活。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-03 14:01:57"
+}

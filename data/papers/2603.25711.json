@@ -1,0 +1,13 @@
+{
+ "id": "2603.25711",
+ "title": "Seeing to Ground: Visual Attention for Hallucination-Resilient MDLLMs",
+ "authors": "Vishal Narnaware, Animesh Gupta, Kevin Zhai, Zhenyi Wang, Mubarak Shah",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25711v1",
+ "abstract": "Multimodal Diffusion Large Language Models (MDLLMs) achieve high-concurrency generation through parallel masked decoding, yet the architectures remain prone to multimodal hallucinations. This structural vulnerability stems from an algorithmic flaw: the decoder ranks candidate tokens based on textual likelihood without verifying localized visual support. We establish that this language-only ranking induces an objective mismatch, where language probability mass acts as a misspecified proxy for the intended multimodal task. Consequently, we reinterpret hallucination as a localized optimization error, a phenomenon where the decoder exploits language shortcuts to maximize a proxy score at the expense of visual grounding. To address this objective mismatch, we introduce VISAGE, a training-free decoding framework that calibrates the objective at inference time. VISAGE estimates the proxy discrepancy by quantifying the spatial entropy of cross-attention distributions. By enforcing a localization consensus across attention heads, the method penalizes spatially uniform distributions and re-ranks token commitments to favor visually grounded outcomes. We provide an analytical stability guarantee establishing that VISAGE maintains a bounded objective loss under estimation error. Evaluations across hallucination-sensitive and general-purpose benchmarks demonstrate the robustness of the framework, yielding relative gains of 8.59% on MMMU-val and 7.75% on HallusionBench.",
+ "summary": "- 核心创新点：提出 VISAGE，一种训练无关的解码框架，通过利用跨注意力分布的空间熵与多头局部化共识，在推理阶段重新校准解码目标，从而提升 MDLLMs 的视觉 grounding、抑制幻觉。\n\n- 主要方法：\n  - 诊断问题：将幻觉归因于仅以文本概率排名导致的目标不匹配，引入代理目标的校准需求。\n  - VISAGE 框架：在推理时对代理目标进行调校，基于跨模态注意力的空间信息来估计代理差异（proxy discrepancy）。\n  - 空间熵与局部化共识：度量跨注意力分布的空间熵，强制不同注意头在局部区域达成一致，惩罚空间分布过于均匀的情形，进而重新排序 token。\n  - 稳定性保证：给出分析性结果，证明在估计误差下 VISAGE 能保持有界的目标损失。\n  - 训练-free：方法不依赖额外训练，直接在推理阶段应用。\n\n- 结论/性能：\n  - 在幻觉敏感的 MMMU-val 数据集上相对提升 8.59%，在 HallusionBench 上相对提升 7.75%，展现对鲁棒性和视觉 grounding 的显著改进。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:15"
+}

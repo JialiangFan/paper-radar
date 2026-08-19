@@ -1,0 +1,13 @@
+{
+ "id": "2603.02888",
+ "title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval",
+ "authors": "Minh-Chi Phung, Thien-Bao Le, Cam-Tu Tran-Thi, Thu-Dieu Nguyen-Thi, Vu-Hung Dao",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02888v1",
+ "abstract": "The increasing diversity and scale of video data demand retrieval systems capable of multimodal understanding, adaptive reasoning, and domain-specific knowledge integration. This paper presents LLandMark, a modular multi-agent framework for landmark-aware multimodal video retrieval to handle real-world complex queries. The framework features specialized agents that collaborate across four stages: query parsing and planning, landmark reasoning, multimodal retrieval, and reranked answer synthesis. A key component, the Landmark Knowledge Agent, detects cultural or spatial landmarks and reformulates them into descriptive visual prompts, enhancing CLIP-based semantic matching for Vietnamese scenes. To expand capabilities, we introduce an LLM-assisted image-to-image pipeline, where a large language model (Gemini 2.5 Flash) autonomously detects landmarks, generates image search queries, retrieves representative images, and performs CLIP-based visual similarity matching, removing the need for manual image input. In addition, an OCR refinement module leveraging Gemini and LlamaIndex improves Vietnamese text recognition. Experimental results show that LLandMark achieves adaptive, culturally grounded, and explainable retrieval performance.",
+ "summary": "1) 核心创新点（1句）\n一个面向地标感知的分布式多智能体框架，结合地标知识代理、LLM驱动的图像检索与可解释的多模态检索管线，针对越南场景实现自适应检索。\n\n2) 主要方法\n- 四阶段流程：查询解析与计划、地标推理、多模态检索、再排序答案合成。\n- Landmark Knowledge Agent：检测文化或空间地标并将其重写为描述性视觉提示，提升 CLIP 在越南场景的语义匹配。\n- LLM-assisted 图像到图像管道：使用 Gemini 2.5 Flash 自动检测地标、生成图片检索查询、获取代表性图片并进行 CLIP 相似性匹配，省去手动输入图片的需求。\n- OCR 改善模块：利用 Gemini 与 LlamaIndex 提升越南文文本识别。\n- 整体依托 CLIP 的跨模态检索与结果重排序，用于可解释的输出。\n\n3) 结论/性能\n实验结果表明 LLandMark 实现了自适应、文化本地化且可解释的检索性能，在越南场景的多模态视频检索中提升语义匹配效果并降低对人工输入的依赖。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:02:49"
+}

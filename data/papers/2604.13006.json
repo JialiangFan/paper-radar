@@ -1,0 +1,13 @@
+{
+ "id": "2604.13006",
+ "title": "One Token Away from Collapse: The Fragility of Instruction-Tuned Helpfulness",
+ "authors": "Erfan Baghaei Potraghloo, Seyedarmin Azizi, Souvik Kundu, Massoud Pedram",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.13006v1",
+ "abstract": "Instruction-tuned large language models produce helpful, structured responses, but how robust is this helpfulness when trivially constrained? We show that simple lexical constraints (banning a single punctuation character or common word) cause instruction-tuned LLMs to collapse their responses, losing 14--48% of comprehensiveness in pairwise evaluation across three open-weight model families and one closed-weight model (GPT-4o-mini). The baseline response is preferred in 77--100% of 1,920 pairwise comparisons judged by GPT-4o-mini and GPT-4o. Notably, GPT-4o-mini suffers 31% comprehensiveness loss (99% baseline win rate), demonstrating that the fragility extends to commercially deployed closed-weight models, contrary to prior findings on format-level constraints. Through mechanistic analysis, we identify this as a planning failure: two-pass generation (free generation followed by constrained rewriting) recovers 59--96% of response length, and linear probes on prompt representations predict response length with $R^2 = 0.51$--$0.93$ before generation begins, with $R^2$ tracking collapse severity across models. The same probes yield negative $R^2$ on base models, confirming that instruction tuning creates the representational structure encoding the collapse decision. Crucially, base models show no systematic collapse under identical constraints, with effects that are small, noisy, and bidirectional, demonstrating that instruction tuning creates this fragility by coupling task competence to narrow surface-form templates. The effect replicates on MT-Bench across all eight task categories. We further show that standard independent LLM-as-judge evaluation detects only a 3.5% average quality drop where pairwise evaluation reveals 23%, exposing a methodological blind spot in how constrained generation is assessed.",
+ "summary": "- **核心创新点**：证明指令调优的大语言模型在极简单的词汇约束下也会崩溃其有用性，且该脆弱性源自两阶段生成的规划失败，并可通过提示表示的线性探针在生成前预测崩溃程度，这一现象在开源与闭源模型中普遍存在。  \n\n- **主要方法**：对三大开源模型家族和一个闭源模型（GPT-4o-mini）进行评测，采用配对比较评估与独立LLM评估（MT-Bench/LLM-as-judge），引入两阶段生成分析（自由生成后再按约束重写），并通过对提示表示的线性探针预测生成长度与崩溃强度；在 MT-Bench 的八大任务类别中复现结果。  \n\n- **结论/性能**：简单约束导致信息完整性下降14-48%；在1,920对比中，基线回答在77–100%被偏好，GPT-4o-mini有31% 的完整性损失，闭源模型亦存在此脆弱性；两阶段生成能恢复59–96% 的回复长度；线性探针在生成前即可预测崩溃程度，R^2约0.51–0.93（对比基线模型则为负值，表明调优后表征编码崩溃决策）；基线模型无系统性崩溃，八类任务也能在 MT-Bench 上复现；而独立评估仅检测到3.5%平均质量下降，而配对评估揭示23%，暴露评估方法的盲点。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-15 13:01:40"
+}

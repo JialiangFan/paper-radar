@@ -1,0 +1,13 @@
+{
+ "id": "2604.28138",
+ "title": "Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes",
+ "authors": "Tianyuan Wu, Chaokun Chang, Lunxi Cao, Wei Gao, Wei Wang",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28138v1",
+ "abstract": "Autonomous agents act through sandboxed containers and microVMs whose state spans filesystems, processes, and runtime artifacts. Checkpoint and restore (C/R) of this state is needed for fault tolerance, spot execution, RL rollout branching, and safe rollback-yet existing approaches fall into two extremes: application-level recovery preserves chat history but misses OS-side effects, while full per-turn checkpointing is correct but too expensive under dense co-location. The root cause is an agent-OS semantic gap: agent frameworks see tool calls but not their OS effects; the OS sees state changes but lacks turn-level context to judge recovery relevance. This gap hides massive sparsity: over 75% of agent turns produce no recovery-relevant state, so most checkpoints are unnecessary. Crab (Checkpoint-and-Restore for Agent SandBoxes) is a transparent host-side runtime that bridges this gap without modifying agents or C/R backends. An eBPF-based inspector classifies each turn's OS-visible effects to decide checkpoint granularity; a coordinator aligns checkpoints with turn boundaries and overlaps C/R with LLM wait time; and a host-scoped engine schedules checkpoint traffic across co-located sandboxes. On shell-intensive and code-repair workloads, Crab raises recovery correctness from 8% (chat-only) to 100%, cuts checkpoint traffic by up to 87%, and stays within 1.9% of fault-free execution time.",
+ "summary": "- 核心创新点：提出一个透明的主机端运行时 Crab，利用 eBPF 基于语义感知对每个 agent turn 在操作系统层面的影響进行分类并动态决定检查点粒度，耦合 C/R 与 LLM 等等待时间，弥合代理框架与 OS 之间的语义鸿沟，从而显著降低检查点开销并提升恢复正确性。\n- 主要方法：\n  - 基于 eBPF 的 inspector 对每个回合（turn）的 OS 可见影响进行分类，决定检查点的粒度。\n  - 一个协调器将检查点对齐到回合边界，并将检查点/恢复与 LLM 等待时间重叠。\n  - 一个主机域引擎在同屏沙箱之间调度检查点传输，实现跨沙箱的高效资源协调。\n  - 这是一个透明的主机端运行时，不需要修改代理或现有 C/R 后端。\n- 结论/性能：\n  - 在 shell 密集型和代码修复工作负载上，恢复正确性从 8%（仅聊天场景）提升到 100%。\n  - 检查点传输量最多可降低 87%。\n  - 总体执行时间开销控制在无故障时钟时间的 1.9% 以内。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-05-02 13:03:22"
+}

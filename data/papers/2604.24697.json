@@ -1,0 +1,13 @@
+{
+ "id": "2604.24697",
+ "title": "Can Current Agents Close the Discovery-to-Application Gap? A Case Study in Minecraft",
+ "authors": "Zhou Ziheng, Huacong Tang, Jinyuan Zhang, Haowei Lin, Bangcheng Yang, Qian Long, Fang Sun, Yizhou Sun, Yitao Liang, Ying Nian Wu, Demetri Terzopoulos, Xiaofeng Gao",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24697v1",
+ "abstract": "Discovering causal regularities and applying them to build functional systems--the discovery-to-application loop--is a hallmark of general intelligence, yet evaluating this capacity has been hindered by the vast complexity gap between scientific discovery and real-world engineering. We introduce SciCrafter, a Minecraft-based benchmark that operationalizes this loop through parameterized redstone circuit tasks. Agents must ignite lamps in specified patterns (e.g., simultaneously or in timed sequences); scaling target parameters substantially increases construction complexity and required knowledge, forcing genuine discovery rather than reliance on memorized solutions. Evaluating frontier models including GPT-5.2, Gemini-3-Pro, and Claude-Opus-4.5 under a general-purpose code agent scaffold, we find that all plateau at approximately 26% success rate. To diagnose these failures, we decompose the loop into four capacities--knowledge gap identification, experimental discovery, knowledge consolidation, and knowledge application--and design targeted interventions whose marginal contributions serve as proxies for corresponding gaps. Our analysis reveals that although the general knowledge application capability still remains as the biggest gap across all models, for frontier models the knowledge gap identification starts to become a major hurdle--indicating the bottleneck is shifting from solving problems right to raising the right problems for current AI. We release SciCrafter as a diagnostic probe for future research on AI systems that navigate the full discovery-to-application loop.",
+ "summary": "- 核心创新点：提出 SciCrafter 基准，在 Minecraft 中通过参数化的红石电路任务，操作化评估AI系统完成从发现到应用的完整循环，并将该循环分解为知识缺口识别、实验性发现、知识巩固与知识应用四个能力以进行诊断干预。\n\n- 主要方法：构建基于 Minecraft 的任务集 SciCrafter，通过参数化目标灯火模式提升任务难度，促使代理进行真正的发现而非记忆式解法；在通用代码代理框架下评测前沿模型（如 GPT-5.2、Gemini-3-Pro、Claude-Opus-4.5），对循环四个能力设计针对性干预，并以边际贡献量化各能力的作用，提供可复现的数据集作为诊断工具。\n\n- 结论/性能：当前前沿模型在该基准上的成功率约为 26%，未能有效闭合发现到应用的循环；分析显示知识应用仍是最大差距，但在部分模型中知识缺口识别成为主要瓶颈，显示问题提出能力正在成为新瓶颈；SciCrafter 被作为未来研究AI系统完整“发现到应用”循环的诊断工具。",
+ "keyword": "opus",
+ "source": "auto",
+ "created_at": "2026-04-28 19:51:47"
+}

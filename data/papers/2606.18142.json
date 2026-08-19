@@ -1,0 +1,13 @@
+{
+ "id": "2606.18142",
+ "title": "Your AI Travel Agent Would Book You a Bullfight: An Agentic Benchmark for Implicit Animal Welfare in Frontier AI Models",
+ "authors": "Jasmine Brazilek, Oliver Tulio, Joel Christoph, Miles Tidmarsh, Carol Kline, Arturs Kanepajs",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18142v1",
+ "abstract": "AI agents are moving from advisors to actors, booking travel, planning menus, and running procurement on behalf of users. Existing benchmarks for AI and animal welfare evaluate model text responses to question-answer prompts, leaving open whether the welfare reasoning surfaced in those responses transfers to agentic deployment where the model must take actions with tools. We introduce TAC (Travel Agent Compassion), the first agentic benchmark measuring whether AI agents avoid options involving animal exploitation when acting on behalf of users. TAC presents an AI agent with twelve hand-authored travel booking scenarios across six categories of animal exploitation, augmented to forty-eight samples to control for price, rating, and position confounds. We evaluate seven frontier models from four labs. Every model scores below the chance level of sixty-four percent, with the best performer (Claude Opus 4.7) at fifty-three percent. A single welfare-aware sentence in the system prompt yields gains of forty-seven to sixty-three percentage points in Claude and GPT-5.5, twenty-six points in GPT-5.2, and under twelve points in DeepSeek and Gemini. An auxiliary Inspect Scout audit of 288 base-condition transcripts from the top two performers, using Gemini 2.5 Flash Lite as judge, flags zero transcripts for evaluation awareness, suggesting the below-chance rates do not stem from the models recognising the evaluation. We discuss implications for category-level variation across cultural domains, the limits of text-response welfare benchmarks, and the EU General-Purpose AI Code of Practice systemic risk framework.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出首个\"行动式\"（agentic）基准 TAC（Travel Agent Compassion），用于检验 AI 智能体在**代用户执行操作（如预订旅行）**时，是否会主动规避涉及动物剥削的选项——而非仅停留在问答式的文本表态。\n\n**2. 主要方法**\n- 手工构建 12 个旅行预订场景，覆盖 6 类动物剥削情形，并通过控制价格、评分、选项位置等混淆变量扩展为 48 个样本。\n- 评测 4 家实验室的 7 个前沿模型，并测试\"在系统提示中加入一句关注动物福利的话\"的干预效果。\n- 用 Inspect Scout 框架对前两名模型的 288 条基线对话记录做审计，以 Gemini 2.5 Flash Lite 作为裁判，检测模型是否\"察觉到自己正被评测\"。\n\n**3. 结论/性能**\n- 所有模型得分均**低于 64% 的随机基线**，最佳的 Claude Opus 4.7 也仅 53%，说明问答中的福利推理并未迁移到实际行动中。\n- 仅加一句福利提示即可大幅提升表现：Claude 与 GPT-5.5 提升 47–63 个百分点，GPT-5.2 提升 26 点，而 DeepSeek 与 Gemini 提升不足 12 点（存在显著模型差异）。\n- 审计发现 0 条记录显示\"评测察觉\"，表明低分并非源于模型识破了测试，而是真实的行为缺陷。论文据此讨论了文本式福利基准的局限及其对 EU 通用 AI 行为准则系统性风险框架的启示。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-17 13:01:16"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.24499",
+ "title": "Training-Free Color-Aware Adversarial Diffusion Sanitization for Diffusion Stegomalware Defense at Security Gateways",
+ "authors": "Vladimir Frants, Sos Agaian",
+ "date": "2025-12-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24499v1",
+ "abstract": "The rapid expansion of generative AI has normalized large-scale synthetic media creation, enabling new forms of covert communication. Recent generative steganography methods, particularly those based on diffusion models, can embed high-capacity payloads without fine-tuning or auxiliary decoders, creating significant challenges for detection and remediation. Coverless diffusion-based techniques are difficult to counter because they generate image carriers directly from secret data, enabling attackers to deliver stegomalware for command-and-control, payload staging, and data exfiltration while bypassing detectors that rely on cover-stego discrepancies. This work introduces Adversarial Diffusion Sanitization (ADS), a training-free defense for security gateways that neutralizes hidden payloads rather than detecting them. ADS employs an off-the-shelf pretrained denoiser as a differentiable proxy for diffusion-based decoders and incorporates a color-aware, quaternion-coupled update rule to reduce artifacts under strict distortion limits. Under a practical threat model and in evaluation against the state-of-the-art diffusion steganography method Pulsar, ADS drives decoder success rates to near zero with minimal perceptual impact. Results demonstrate that ADS provides a favorable security-utility trade-off compared to standard content transformations, offering an effective mitigation strategy against diffusion-driven steganography.",
+ "summary": "- 核心创新点：提出一种无需额外训练的对抗性扩散净化（ADS）框架，在安全网关端通过现成的预训练去噪模型作为基于扩散的解码器的可微代理，结合颜色感知的四元耦合更新，在严格的失真约束下对潜在载荷进行中和以防止扩扩散隐写。\n\n- 主要方法：利用现成的预训练去噪模型作为扩散解码器的可微代理，引入颜色感知的四元耦合更新规则来控制伪影并保持感知质量，实现无需额外训练的防御，针对 diffusion steganography（如 Pulsar）进行评估。\n\n- 结论/性能：在对 Pulsar 的实验中，ADS 将解码器的成功率降至接近零，且感知影响极小；相比常规内容变换，提供更有利的安全性与实用性权衡，成为对抗扩散驱动隐写的有效缓解策略。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 02:32:27"
+}

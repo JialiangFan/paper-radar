@@ -1,0 +1,13 @@
+{
+ "id": "2511.21666",
+ "title": "Uncertainty Quantification for Visual Object Pose Estimation",
+ "authors": "Lorenzo Shaikewitz, Charis Georgiou, Luca Carlone",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21666v1",
+ "abstract": "Quantifying the uncertainty of an object's pose estimate is essential for robust control and planning. Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions. We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting. Our pose uncertainty only requires high probability noise bounds on pixel detections of 2D semantic keypoints on a known object. This noise model induces an implicit, non-convex set of pose uncertainty constraints. Our key contribution is SLUE (S-Lemma Uncertainty Estimation), a convex program to reduce this set to a single ellipsoidal uncertainty bound that is guaranteed to contain the true object pose with high probability. SLUE solves a relaxation of the minimum volume bounding ellipsoid problem inspired by the celebrated S-lemma. It requires no initial guess of the bound's shape or size and is guaranteed to contain the true object pose with high probability. For tighter uncertainty bounds at the same confidence, we extend SLUE to a sum-of-squares relaxation hierarchy which is guaranteed to converge to the minimum volume ellipsoidal uncertainty bound for a given set of keypoint constraints. We show this pose uncertainty bound can easily be projected to independent translation and axis-angle orientation bounds. We evaluate SLUE on two pose estimation datasets and a real-world drone tracking scenario. Compared to prior work, SLUE generates substantially smaller translation bounds and competitive orientation bounds. We release code at https://github.com/MIT-SPARK/PoseUncertaintySets.",
+ "summary": "1) 核心创新点：提出一个无分布假设的单目视觉位姿不确定性界限框架SLUE，将原本非凸的位姿不确定集合通过S-lemma启发的凸优化转化为一个单一的、高概率覆盖真实位姿的椭圆界，并提供逐步收敛到最小体积椭圆的SOS松弛层级。\n\n2) 主要方法：在已知对象的2D关键点像素噪声满足高概率界限的前提下，构建分布无关的位姿不确定性集合；设计SLUE将该集合以凸优化形式压缩成一个椭圆界，并通过最小体积包络椭圆问题的放松与SOS层级实现收敛；可将得到的椭圆边界投影为独立的平移和轴角姿态边界；在两组数据集及真实无人机跟踪场景中进行评估，且公开代码。\n\n3) 结论/性能：与先前方法相比，SLUE在平移不确定性上给出显著更小的界限，姿态边界具有竞争力；提供高概率包含真实位姿的 гарантированность且不需要初始边界形状/大小；在多组数据集和真实场景中验证有效，代码已开源。",
+ "keyword": "PDDL planning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:10:22"
+}

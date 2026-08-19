@@ -1,0 +1,13 @@
+{
+ "id": "2602.04132",
+ "title": "Lyapunov Constrained Soft Actor-Critic (LC-SAC) using Koopman Operator Theory for Quadrotor Trajectory Tracking",
+ "authors": "Dhruv S. Kushwaha, Zoleikha A. Biron",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04132v1",
+ "abstract": "Reinforcement Learning (RL) has achieved remarkable success in solving complex sequential decision-making problems. However, its application to safety-critical physical systems remains constrained by the lack of stability guarantees. Standard RL algorithms prioritize reward maximization, often yielding policies that may induce oscillations or unbounded state divergence. There has significant work in incorporating Lyapunov-based stability guarantees in RL algorithms with key challenges being selecting a candidate Lyapunov function, computational complexity by using excessive function approximators and conservative policies by incorporating stability criterion in the learning process. In this work we propose a novel Lyapunov-constrained Soft Actor-Critic (LC-SAC) algorithm using Koopman operator theory. We propose use of extended dynamic mode decomposition (EDMD) to produce a linear approximation of the system and use this approximation to derive a closed form solution for candidate Lyapunov function. This derived Lyapunov function is incorporated in the SAC algorithm to further provide guarantees for a policy that stabilizes the nonlinear system. The results are evaluated trajectory tracking of a 2D Quadrotor environment based on safe-control-gym. The proposed algorithm shows training convergence and decaying violations for Lyapunov stability criterion compared to baseline vanilla SAC algorithm. GitHub Repository: https://github.com/DhruvKushwaha/LC-SAC-Quadrotor-Trajectory-Tracking",
+ "summary": "1) 核心创新点：在 Soft Actor-Critic (SAC) 框架中引入李雅普诺夫稳定性约束，利用 Koopman 算子理论与扩展动态模态分解（EDMD）得到系统的线性近似并据此推导闭式的候选李雅普诺夫函数，从而保证非线性系统的稳定性。\n\n2) 主要方法：提出 LC-SAC，结合 Koopu man Operator Theory（通过 EDMD 线性化）得到候选李雅普诺夫函数，并把该函数以约束形式融入 SAC 的学习过程；在 2D 四旋翼轨迹跟踪任务的 safe-control-gym 环境中进行评估。\n\n3) 结论/性能：与基线 vanilla SAC 相比，LC-SAC 展现了训练收敛性和对 Lyapunov 稳定性约束的违规率下降（逐步衰减），实现更稳定的轨迹跟踪。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-05 14:00:49"
+}

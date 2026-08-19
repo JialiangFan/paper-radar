@@ -1,0 +1,13 @@
+{
+ "id": "2512.13647",
+ "title": "REVERB-FL: Server-Side Adversarial and Reserve-Enhanced Federated Learning for Robust Audio Classification",
+ "authors": "Sathwika Peechara, Rajeev Sahay",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13647v1",
+ "abstract": "Federated learning (FL) enables a privacy-preserving training paradigm for audio classification but is highly sensitive to client heterogeneity and poisoning attacks, where adversarially compromised clients can bias the global model and hinder the performance of audio classifiers. To mitigate the effects of model poisoning for audio signal classification, we present REVERB-FL, a lightweight, server-side defense that couples a small reserve set (approximately 5%) with pre- and post-aggregation retraining and adversarial training. After each local training round, the server refines the global model on the reserve set with either clean or additional adversarially perturbed data, thereby counteracting non-IID drift and mitigating potential model poisoning without adding substantial client-side cost or altering the aggregation process. We theoretically demonstrate the feasibility of our framework, showing faster convergence and a reduced steady-state error relative to baseline federated averaging. We validate our framework on two open-source audio classification datasets with varying IID and Dirichlet non-IID partitions and demonstrate that REVERB-FL mitigates global model poisoning under multiple designs of local data poisoning.",
+ "summary": "1. 核心创新点（1句）：在服务器端引入约5%的保留集，通过对全局模型进行前后重训练和对抗训练，实现对音频分类的鲁棒性提升与防御数据污染，同时不改变客户端聚合过程。\n\n2. 主要方法：提出 REVERB-FL，利用小规模保留集在每轮本地训练后对全局模型进行保留集上的再训练（数据可为干净或对抗扰动）与对抗训练，结合理论分析证明比基线 FedAvg 更快收敛、稳态误差更小，且不增加客户端成本或修改聚合规则。\n\n3. 结论/性能：在两份开放音频数据集、不同 IID 和 Dirichlet 非 IID 分区条件下验证，REVERB-FL 能在多种本地数据污染设计下缓解全局模型污染，实现更快的收敛和更低的稳态误差。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 03:02:39"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "2502.05450",
+ "title": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
+ "authors": "ConRFT authors",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2502.05450",
+ "abstract": "",
+ "summary": "Directly supports VLA post-training with online fine-tuning and human intervention for safe exploration.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "human-intervention",
+  "reinforcement-fine-tuning",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-post-training"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/2025_ConRFT.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Post_Training/2025_ConRFT.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

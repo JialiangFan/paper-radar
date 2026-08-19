@@ -1,0 +1,13 @@
+{
+ "id": "2603.19235",
+ "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
+ "authors": "Xianjin Wu, Dingkang Liang, Tianrui Feng, Kui Xia, Yumeng Zhang, Xiaofan Li, Xiao Tan, Xiang Bai",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19235v1",
+ "abstract": "While Multimodal Large Language Models demonstrate impressive semantic capabilities, they often suffer from spatial blindness, struggling with fine-grained geometric reasoning and physical dynamics. Existing solutions typically rely on explicit 3D modalities or complex geometric scaffolding, which are limited by data scarcity and generalization challenges. In this work, we propose a paradigm shift by leveraging the implicit spatial prior within large-scale video generation models. We posit that to synthesize temporally coherent videos, these models inherently learn robust 3D structural priors and physical laws. We introduce VEGA-3D (Video Extracted Generative Awareness), a plug-and-play framework that repurposes a pre-trained video diffusion model as a Latent World Simulator. By extracting spatiotemporal features from intermediate noise levels and integrating them with semantic representations via a token-level adaptive gated fusion mechanism, we enrich MLLMs with dense geometric cues without explicit 3D supervision. Extensive experiments across 3D scene understanding, spatial reasoning, and embodied manipulation benchmarks demonstrate that our method outperforms state-of-the-art baselines, validating that generative priors provide a scalable foundation for physical-world understanding. Code is publicly available at https://github.com/H-EmbodVis/VEGA-3D.",
+ "summary": "- 核心创新点：提出 VEGA-3D，将大规模视频生成模型的隐式时空先验用于场景理解，无需显式3D supervision 即可为多模态语言模型注入密集几何信息。\n\n- 主要方法：将预训练的视频扩散模型作为 Latent World Simulator；从中间噪声层提取时空特征，并通过一个 token 级自适应门控融合机制将这些特征与语义表示融合，形成对 MLLMs 的额外几何/物理线索，实现开箱即用的 plug-and-play 方案。\n\n- 结论/性能：在3D场景理解、空间推理和具象化/执行任务等基准上超越SOTA方法，验证了生成模型的先验能够提供可扩展的物理世界理解能力；代码公开。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-20 13:05:46"
+}

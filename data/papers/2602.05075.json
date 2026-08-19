@@ -1,0 +1,13 @@
+{
+ "id": "2602.05075",
+ "title": "Optimizing Mission Planning for Multi-Debris Rendezvous Using Reinforcement Learning with Refueling and Adaptive Collision Avoidance",
+ "authors": "Agni Bandyopadhyay, Gunther Waxenegger-Wilfing",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05075v1",
+ "abstract": "As the orbital environment around Earth becomes increasingly crowded with debris, active debris removal (ADR) missions face significant challenges in ensuring safe operations while minimizing the risk of in-orbit collisions. This study presents a reinforcement learning (RL) based framework to enhance adaptive collision avoidance in ADR missions, specifically for multi-debris removal using small satellites. Small satellites are increasingly adopted due to their flexibility, cost effectiveness, and maneuverability, making them well suited for dynamic missions such as ADR.\n  Building on existing work in multi-debris rendezvous, the framework integrates refueling strategies, efficient mission planning, and adaptive collision avoidance to optimize spacecraft rendezvous operations. The proposed approach employs a masked Proximal Policy Optimization (PPO) algorithm, enabling the RL agent to dynamically adjust maneuvers in response to real-time orbital conditions. Key considerations include fuel efficiency, avoidance of active collision zones, and optimization of dynamic orbital parameters.\n  The RL agent learns to determine efficient sequences for rendezvousing with multiple debris targets, optimizing fuel usage and mission time while incorporating necessary refueling stops. Simulated ADR scenarios derived from the Iridium 33 debris dataset are used for evaluation, covering diverse orbital configurations and debris distributions to demonstrate robustness and adaptability. Results show that the proposed RL framework reduces collision risk while improving mission efficiency compared to traditional heuristic approaches.\n  This work provides a scalable solution for planning complex multi-debris ADR missions and is applicable to other multi-target rendezvous problems in autonomous space mission planning.",
+ "summary": "1. 核心创新点：将掩蔽式PPO强化学习与再补给策略及自适应碰撞规避结合，用于多碎片ADR任务的高效编排，显著提升燃料效率、缩短任务时间并降低碰撞风险。\n\n2. 主要方法：建立基于强化学习的框架，采用掩蔽式PPO对小卫星在多目标碎片接近中的机动进行实时自适应决策；集成再补给策略与动态轨道参数优化，以及对活跃碰撞区的自适应避让；在 Iridium 33 碎片数据集的仿真场景中进行评估。\n\n3. 结论/性能：相较于传统启发式方法，所提框架在仿真中显著降低碰撞风险、降低燃料消耗并缩短任务完成时间，且对多目标、多轨道配置表现出鲁棒性与可扩展性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:01:20"
+}

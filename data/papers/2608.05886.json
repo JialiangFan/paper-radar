@@ -1,0 +1,13 @@
+{
+ "id": "2608.05886",
+ "title": "CodeGrep: An RL-Trained Retrieval Agent for LLM Coding Agents",
+ "authors": "Wuya Chen, Yihao yang, Yang Cao, Yue Lin",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05886v1",
+ "abstract": "Modern LLM coding agents such as Claude Code and OpenHands share a common inefficiency: they spend much of their token budget finding the file to patch, rather than patching it. On SWE-Bench Verified, a 30B OpenHands agent averages 23 rounds and 631K tokens per resolved issue, with many calls spent on grep, glob, and view_file during repository exploration. We introduce CodeGrep, a 14B retrieval agent trained end-to-end with GRPO to issue multi-turn parallel grep, glob, and read tool calls and return candidate files to a frozen downstream coding agent.\n  On all 500 SWE-Bench Verified instances, CodeGrep preserves resolve rate while substantially improving efficiency: 27.0% versus 25.8% for the no-retrieval baseline, with 15% fewer rounds and 19% fewer tokens on resolved instances. Across retrievers, downstream utility follows a precision threshold: BM25 with precision 0.375 degrades the agent, Jina with precision 0.445 is neutral, and CodeGrep with precision 0.677 crosses the threshold at which retrieval begins to reduce rollout cost. To enable this study, we mine supervision from 67K open-source agent trajectories using CATM and build a Git-worktree environment for multi-turn agent RL. In our setting, applying the efficiency signal at the advantage layer rather than the reward layer reduces KL drift and translates cleanly into downstream efficiency. We will release the model, training pipeline, RL environment, and evaluation harnesses.",
+ "summary": "## CodeGrep：面向 LLM 编码智能体的 RL 训练检索智能体\n\n**1. 核心创新点**\n用 GRPO 端到端训练了一个 14B 的专用「检索智能体」，替代编码智能体自己漫长的仓库探索过程，从而在不损失修复成功率的前提下大幅降低 token 开销。\n\n**2. 主要方法**\n- 14B 模型，通过 GRPO 强化学习端到端训练，学会多轮、并行地调用 `grep` / `glob` / `read` 工具，最终把候选文件列表交给一个**冻结的**下游编码智能体。\n- 训练监督信号来自 6.7 万条开源智能体轨迹，用 CATM 方法挖掘。\n- 自建基于 Git worktree 的环境，支持多轮智能体 RL。\n- 关键训练技巧：把「效率信号」加在 **advantage 层**而非 reward 层，可减少 KL 漂移。\n\n**3. 结论/性能**\n- 在 SWE-Bench Verified 全部 500 个实例上，解决率 **27.0%**（无检索基线 25.8%）；在已解决实例上交互轮数减少 **15%**、token 减少 **19%**。\n- 提出「精度阈值」现象：BM25（精度 0.375）反而拖累智能体，Jina（0.445）中性，CodeGrep（0.677）才越过阈值真正带来收益 —— 即检索器精度不够高时接入反而有害。\n- 作者承诺开源模型、训练流程、RL 环境与评测工具。\n\n**一句话点评**：亮点不只是性能数字，而是那个「精度阈值」结论——它解释了为什么此前把传统检索器塞进编码智能体的尝试大多没效果。不过 27.0% vs 25.8% 的解决率差距较小，论文摘要未提及置信区间，这一项提升的稳健性值得留意。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-07 13:01:14"
+}

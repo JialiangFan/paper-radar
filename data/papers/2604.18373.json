@@ -1,0 +1,13 @@
+{
+ "id": "2604.18373",
+ "title": "Dissecting AI Trading: Behavioral Finance and Market Bubbles",
+ "authors": "Shumiao Ouyang, Pengfei Sui",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18373v1",
+ "abstract": "We study how AI agents form expectations and trade in experimental asset markets. Using a simulated open-call auction populated by autonomous Large Language Model (LLM) agents, we document three main findings. First, AI agents exhibit classic behavioral patterns: a pronounced disposition effect and recency-weighted extrapolative beliefs. Second, these individual-level patterns aggregate into equilibrium dynamics that replicate classic experimental findings (Smith et al., 1988), including the predictive power of excess demand for future prices and the positive relationship between disagreement and trading volume. Third, by analyzing the agents' reasoning text through a twenty-mechanism scoring framework, we show that targeted prompt interventions causally amplify or suppress specific behavioral mechanisms, significantly altering the magnitude of market bubbles.",
+ "summary": "- 核心创新点：在由自主LLM代理组成的开放式竞拍资产市场中，系统揭示AI代理的行为金融特征，并证明通过定向提示干预可以因果放大/抑制特定行为机制，从而显著改变市场泡沫规模。\n\n- 主要方法：使用自驱动的大型语言模型代理参与模拟的开放叫价拍卖市场，量化处置效应和近记忆权重外推等行为模式；通过二十机制评分框架分析代理推理文本；实施定向提示干预以因果地调整这些行为机制，并与经典实验结论进行对比检验。\n\n- 结论/性能：AI代理在微观层面呈现经典行为模式，聚合后再现了经典均衡特征（如超额需求对未来价格的预测力、分歧与交易量的正相关），且定向提示干预能显著放大或抑制特定行为机制，从而显著改变市场泡沫的规模。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-21 13:02:02"
+}

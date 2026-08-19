@@ -1,0 +1,27 @@
+{
+ "id": "safegen-llm-safety-generalization-in-robot-task-planning",
+ "title": "SafeGen-LLM: Safety Generalization in Robot Task Planning",
+ "authors": "Jialiang Fan, Weizhe Xu, Mengyu Liu, Oleg Sokolsky, Insup Lee, Fangxin K.",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "LLM 作为 robot task planner 时，预训练知识不包含特定领域的安全约束，导致生成不安全的计划。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/SafeGen-LLM.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

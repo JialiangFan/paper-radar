@@ -1,0 +1,13 @@
+{
+ "id": "2606.20401",
+ "title": "PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies",
+ "authors": "Qian Zhang, Andrea Pomarico, Costas Mylonas, Magda Foti, Alberto Berizzi, Le Xie",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20401v1",
+ "abstract": "Large Language Model (LLM)-based agents are increasingly being used to automate multi-step engineering work flows by interacting with software tools, interpreting intermediate results, and autonomously planning subsequent actions. Power system dynamic studies represent a particularly promising yet largely unexplored application domain for these agents. Unlike static computational tasks, dynamic studies often require more time on model parameter calibration, engineering judgment, and decision making under constrained action spaces. This paper introduces PowerAgentBench-Dyn, a benchmark designed to evaluate Agentic AI systems on power system dynamic-analysis tasks. The benchmark targets problems that cannot be reduced to a single optimization or coding task, but instead require a type of reasoning, tool usage, and iterative experimentation routinely performed by experienced power system engineers. The proposed framework includes two initial benchmark tasks. The first, the Dynamic Model Quality Review Benchmark, evaluates agents' ability to validate and diagnose dynamic models based on model-quality compliance criteria specified by system operators. The second, the Dynamic Security Risk Screening Benchmark, assesses agents' capability to leverage semantic memory and a limited simulation budget to identify, rank, and analyze the most critical short-circuit contingencies from an unseen fault dataset, as well as propose and evaluate possible mitigation measures. For each task, we define the simulation environment, observation and action spaces, and evaluation metrics. The benchmark is reproducible in a metric-based sense: released cases and simulator settings define a deterministic evaluator, while stochastic agent behavior is assessed over repeated runs using success rates and other metrics. The benchmark supports the development of future Agentic AI for power system operation and planning.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-20 13:01:29"
+}

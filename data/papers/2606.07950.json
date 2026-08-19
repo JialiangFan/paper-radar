@@ -1,0 +1,13 @@
+{
+ "id": "2606.07950",
+ "title": "The Easy, the Hard, and the Learnable: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning",
+ "authors": "Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo",
+ "date": "2026-06-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07950v1",
+ "abstract": "RL with verifiable rewards can substantially improve LLM reasoning, yet standard GRPO-style training often treats easy, hard, and learnable questions alike through uniform sampling and weighting, leading to inefficient compute allocation. We study GRPO by tracking token log-probabilities, group-normalized advantages, and the induced token-level update weights. This reveals three recurring dynamics as training proceeds: (1) confidence inflation, (2) advantage contraction, and (3) hierarchical convergence. These findings suggest that the utility of each update depends strongly on both question difficulty and the model's current competence. Motivated by this, we propose Confidence and Difficulty-adaptive Policy Optimization (CoDaPO), which assigns each question a bounded value from rollout confidence and empirical difficulty. CoDaPO then uses this value to reweight policy updates and resample high-value learnable questions within mini-batches, thereby increasing discovery within the learnable band under a fixed compute budget. Across twelve benchmarks, CoDaPO consistently improves accuracy over existing RL methods. Our code is publicly available at https://github.com/tmlr-group/CoDaPO.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**：提出 CoDaPO（置信度与难度自适应策略优化），根据问题难度和模型当前能力动态分配训练计算资源，解决 GRPO 对易、难、可学习问题\"一视同仁\"导致的低效问题。\n\n**2. 主要方法**：\n- 通过追踪 token 对数概率、组归一化优势值和 token 级更新权重，揭示 GRPO 训练中的三种现象：置信度膨胀、优势收缩、层次化收敛\n- 为每个问题分配一个由 rollout 置信度和经验难度计算得出的有界数值\n- 利用该数值对策略更新进行重加权，并在 mini-batch 内对高价值\"可学习\"问题进行重采样，在固定算力预算下提升可学习区间的探索效率\n\n**3. 结论/性能**：在 12 个基准测试中，CoDaPO 相较现有 RL 方法持续提升准确率；代码已开源（github.com/tmlr-group/CoDaPO）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-09 13:01:26"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2601.22242",
+ "title": "Aligning Microscopic Vehicle and Macroscopic Traffic Statistics: Reconstructing Driving Behavior from Partial Data",
+ "authors": "Zhihao Zhang, Keith Redmill, Chengyang Peng, Bowen Weng",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22242v1",
+ "abstract": "A driving algorithm that aligns with good human driving practices, or at the very least collaborates effectively with human drivers, is crucial for developing safe and efficient autonomous vehicles. In practice, two main approaches are commonly adopted: (i) supervised or imitation learning, which requires comprehensive naturalistic driving data capturing all states that influence a vehicle's decisions and corresponding actions, and (ii) reinforcement learning (RL), where the simulated driving environment either matches or is intentionally more challenging than real-world conditions. Both methods depend on high-quality observations of real-world driving behavior, which are often difficult and costly to obtain. State-of-the-art sensors on individual vehicles can gather microscopic data, but they lack context about the surrounding conditions. Conversely, roadside sensors can capture traffic flow and other macroscopic characteristics, but they cannot associate this information with individual vehicles on a microscopic level. Motivated by this complementarity, we propose a framework that reconstructs unobserved microscopic states from macroscopic observations, using microscopic data to anchor observed vehicle behaviors, and learns a shared policy whose behavior is microscopically consistent with the partially observed trajectories and actions and macroscopically aligned with target traffic statistics when deployed population-wide. Such constrained and regularized policies promote realistic flow patterns and safe coordination with human drivers at scale.",
+ "summary": "- 核心创新点：提出一个从宏观交通观测中重构未观测的微观状态的框架，使得学习到的策略在微观轨迹/动作上与真实行为一致，同时在宏观层面与目标交通统计对齐，从而实现对规模化人车协同的约束性对齐。\n\n- 主要方法：从宏观观测出发重建未观测的微观状态；使用微观数据作为锚定以约束观测到的车辆行为；学习一个共享策略，使其在局部微观层面与部分轨迹和动作保持一致，并在大规模部署时对齐全局宏观交通统计，形成受约束、正则化的策略学习框架。\n\n- 结论/性能：所提出的受约束和正则化策略能够在微观一致性和宏观对齐之间取得平衡，促成真实的车流模式并在规模化部署时实现与人类驾驶员的安全协同。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-02 14:01:31"
+}

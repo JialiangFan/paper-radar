@@ -1,0 +1,13 @@
+{
+ "id": "2608.17933",
+ "title": "EvoTS-Agent: A Self-Evolving LLM Agent for Financial Time Series Change Point Detection",
+ "authors": "Lei Jiang, Ye Wei, Xinyu Xi, Jordan Langham-Lopez, Yifan Bao, Raad Khraishi, Yihao Ang, Anthony K. H. Tung, Lukasz Szpruch, Hao Ni",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17933v1",
+ "abstract": "Financial time series exhibit non-stationary and heterogeneous statistical properties, making change-point detection challenging because no single unsupervised algorithm performs consistently across assets and market regimes. Conventional workflows consequently depend heavily on expert-driven model selection, feature design, and hyperparameter tuning, limiting their scalability and adaptability. We propose EvoTS-Agent, a validation-guided self-evolving LLM agent for autonomous financial time-series change-point detection. EvoTS-Agent first performs curated exploratory data analysis to characterize dataset properties and initialize candidate detection models. It then evolves executable experiment trajectories through three complementary operators: \\textit{Revision} exploits the current best solution, \\textit{Alternative Strategy} explores fundamentally different modeling directions when progress stagnates, and \\textit{Recombination} synthesizes complementary evidence from high-performing trajectories. Validation feedback guides trajectory evolution throughout the search, enabling the agent to adapt its detection pipeline to the statistical characteristics of each dataset while preserving reliable optimization. Experiments across four benchmark datasets demonstrate that EvoTS-Agent consistently outperforms existing LLM-based agents while maintaining a 100\\% execution success rate across all evaluated backbone LLMs.",
+ "summary": "## EvoTS-Agent 论文摘要总结\n\n**1. 核心创新点**\n提出 EvoTS-Agent——一个由验证集反馈引导、能自我进化的 LLM 智能体，可自主完成金融时间序列的变点检测（change point detection），摆脱对专家手工选模型、设计特征和调参的依赖。\n\n**2. 主要方法**\n- 先做**精选的探索性数据分析（EDA）**，刻画数据集统计特性并初始化候选检测模型；\n- 再通过三个互补算子演化\"可执行的实验轨迹\"：\n  - *Revision（修订）*：在当前最优解上做局部利用；\n  - *Alternative Strategy（替代策略）*：当进展停滞时，转向根本不同的建模方向做探索；\n  - *Recombination（重组）*：融合多条高性能轨迹中的互补证据；\n- 全过程用**验证集反馈**引导轨迹演化，使检测流水线自适应各数据集的统计特征，同时保证优化过程的稳定可靠。\n\n**3. 结论/性能**\n在 4 个基准数据集上，EvoTS-Agent 稳定优于现有的 LLM 智能体方法；且在所有测试的骨干 LLM 上均保持 **100% 的代码执行成功率**（鲁棒性强，不会因生成代码报错而失败）。\n\n---\n\n一点观察：摘要只给出\"consistently outperforms\"这类定性表述，未披露具体指标数值（如 F1、covering score）和对比基线的名称，也未说明是否与传统非 LLM 的变点检测算法（如 BOCPD、PELT）对比——如果需要评估其实际强度，建议关注正文的实验表格。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-19 13:03:25"
+}

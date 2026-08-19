@@ -1,0 +1,13 @@
+{
+ "id": "2602.16671",
+ "title": "SPARC: Scenario Planning and Reasoning for Automated C Unit Test Generation",
+ "authors": "Jaid Monwar Chowdhury, Chi-An Fu, Reyhaneh Jabbarvand",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16671v1",
+ "abstract": "Automated unit test generation for C remains a formidable challenge due to the semantic gap between high-level program intent and the rigid syntactic constraints of pointer arithmetic and manual memory management. While Large Language Models (LLMs) exhibit strong generative capabilities, direct intent-to-code synthesis frequently suffers from the leap-to-code failure mode, where models prematurely emit code without grounding in program structure, constraints, and semantics. This will result in non-compilable tests, hallucinated function signatures, low branch coverage, and semantically irrelevant assertions that cannot properly capture bugs. We introduce SPARC, a neuro-symbolic, scenario-based framework that bridges this gap through four stages: (1) Control Flow Graph (CFG) analysis, (2) an Operation Map that grounds LLM reasoning in validated utility helpers, (3) Path-targeted test synthesis, and (4) an iterative, self-correction validation loop using compiler and runtime feedback. We evaluate SPARC on 59 real-world and algorithmic subjects, where it outperforms the vanilla prompt generation baseline by 31.36% in line coverage, 26.01% in branch coverage, and 20.78% in mutation score, matching or exceeding the symbolic execution tool KLEE on complex subjects. SPARC retains 94.3% of tests through iterative repair and produces code with significantly higher developer-rated readability and maintainability. By aligning LLM reasoning with program structure, SPARC provides a scalable path for industrial-grade testing of legacy C codebases.",
+ "summary": "- 核心创新点（一句话）\n将神经-符号方法与情景规划相结合，提出四阶段的 SPARC 框架，通过 CFG 分析、操作映射、路径定向合成和自我纠错循环，将 LLM 推理与程序结构深度对齐，以实现高覆盖率且更易维护的 C 单元测试生成。\n\n- 主要方法\n  - 基于控制流图（CFG）分析程序控制流结构\n  - 构建 Operation Map，将 LLM 推理绑定到经验证的工具函数， grounding 推理\n  - 路径定向的测试合成，聚焦目标执行路径\n  - 使用编译器和运行时反馈的迭代自我纠错验证循环进行持续改进\n  - 采用神经-符号与情景化（neuro-symbolic, scenario-based）框架来提升生成的可编译性、语义一致性和可维护性\n\n- 结论/性能\n  - 相比纯提示基线，线覆盖提升 31.36%、分支覆盖提升 26.01%、变异分数提升 20.78%\n  - 在复杂题材上达到或超过符号执行工具 KLEE 的表现\n  - 通过迭代修复，测试保留率达到 94.3%\n  - 生成的代码在可读性和可维护性方面显著提升\n  - 提供了对遗留 C 代码库进行工业级测试的可扩展路径",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:02:48"
+}

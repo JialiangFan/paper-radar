@@ -1,0 +1,13 @@
+{
+ "id": "2603.15618",
+ "title": "Look Before Acting: Enhancing Vision Foundation Representations for Vision-Language-Action Models",
+ "authors": "Yulin Luo, Hao Chen, Zhuangzhe Wu, Bowen Sui, Jiaming Liu, Chenyang Gu, Zhuoyang Liu, Qiuxuan Feng, Jiale Yu, Shuo Gu, Peng Jia, Pheng-Ann Heng, Shanghang Zhang",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15618v1",
+ "abstract": "Vision-Language-Action (VLA) models have recently emerged as a promising paradigm for robotic manipulation, in which reliable action prediction critically depends on accurately interpreting and integrating visual observations conditioned on language instructions. Although recent works have sought to enhance the visual capabilities of VLA models, most approaches treat the LLM backbone as a black box, providing limited insight into how visual information is grounded into action generation. Therefore, we perform a systematic analysis of multiple VLA models across different action-generation paradigms and observe that sensitivity to visual tokens progressively decreases in deeper layers during action generation. Motivated by this observation, we propose \\textbf{DeepVision-VLA}, built on a \\textbf{Vision-Language Mixture-of-Transformers (VL-MoT)} framework. This framework enables shared attention between the vision foundation model and the VLA backbone, injecting multi-level visual features from the vision expert into deeper layers of the VLA backbone to enhance visual representations for precise and complex manipulation. In addition, we introduce \\textbf{Action-Guided Visual Pruning (AGVP)}, which leverages shallow-layer attention to prune irrelevant visual tokens while preserving task-relevant ones, reinforcing critical visual cues for manipulation with minimal computational overhead. DeepVision-VLA outperforms prior state-of-the-art methods by 9.0\\% and 7.5\\% on simulated and real-world tasks, respectively, providing new insights for the design of visually enhanced VLA models.",
+ "summary": "1) 核心创新点：在 Vision-Language-Action 模型中，提出通过 Vision-Language Mixture-of-Transformers 框架实现视觉 foundation 与 VLA 主干的共享注意力，深层注入多层视觉特征，并结合 Action-Guided Visual Pruning，在浅层注意力下剪裁无关视觉令牌以提升操控性能。\n\n2) 主要方法：\n- 对现有 VLA 模型进行系统分析，发现动作生成时深层对视觉 token 的敏感性下降；\n- 引入 VL-MoT 框架，实现视觉基础模型与 VLA 主干之间的共享注意力，并把视觉专家的多层特征注入到 VLA 深层以增强表示；\n- 提出 AGVP（Action-Guided Visual Pruning），利用浅层注意力剪裁无关视觉 token，保留任务相关信息，降低计算开销。\n\n3) 结论/性能：\n- 在仿真实验中相比前沿方法提升约 9.0%，在真实世界任务中提升约 7.5%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-17 13:00:31"
+}

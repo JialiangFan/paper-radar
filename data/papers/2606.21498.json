@@ -1,0 +1,13 @@
+{
+ "id": "2606.21498",
+ "title": "Balancing Performance and Diversity in GRPO Autoregressive Text-to-Image Post-Training",
+ "authors": "Yuanhao Chiang, Hongbo Duan, Chunru Yang, Jiahua Pei, Yi Liu, Xueqian Wang",
+ "date": "2026-06-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.21498v1",
+ "abstract": "Autoregressive text-to-image (T2I) generation has recently advanced rapidly, yet aligning generated images with human preferences remains challenging. GRPO-style online reinforcement learning provides an effective framework; however, existing methods typically treat reference-policy divergence as fixed, despite its direct impact on policy optimization. We study this overlooked factor within a unified f-divergence framework, encompassing forward KL, reverse KL, and JS divergence, for GRPO-style autoregressive T2I alignment. Our systematic theoretical analysis reveals that different divergences reshape token-level updates in distinct ways. In particular, under the sampled-token shaping form used, JS regularization achieves a favorable trade-off by mitigating uniform bias relative to the reference policy while still discouraging large deviations. Extensive experiments on LlamaGen and Janus-7B show that JS divergence achieves the strongest or highly competitive optimization performance on most evaluation metrics while maintaining favorable generation diversity. The code is available at https://github.com/tuoyou-hao/BPD-GRPO.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-24 13:02:29"
+}

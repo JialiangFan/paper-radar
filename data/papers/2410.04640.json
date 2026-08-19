@@ -1,0 +1,32 @@
+{
+ "id": "2410.04640",
+ "title": "Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress",
+ "authors": "Christopher Agia, Rohan Sinha, Jingyun Yang, Zi-ang Cao, Rika Antonova, Marco Pavone, Jeannette Bohg",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.04640",
+ "abstract": "",
+ "summary": "Sentinel separates fast action-consistency failures from slower task-progress failures for runtime monitoring of generative robot policies.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "failure-detection",
+  "generative-policies",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2024_Agia_Sentinel.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2024_Agia_Sentinel.pdf",
+ "code": "",
+ "project": "https://sites.google.com/stanford.edu/sentinel",
+ "is_core": true,
+ "is_supplemental": false
+}

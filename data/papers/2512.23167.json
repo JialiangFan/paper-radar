@@ -1,0 +1,13 @@
+{
+ "id": "2512.23167",
+ "title": "SPIRAL: Symbolic LLM Planning via Grounded and Reflective Search",
+ "authors": "Yifan Zhang, Giridhar Ganapavarapu, Srideepika Jayaraman, Bhavna Agrawal, Dhaval Patel, Achille Fokoue",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23167v1",
+ "abstract": "Large Language Models (LLMs) often falter at complex planning tasks that require exploration and self-correction, as their linear reasoning process struggles to recover from early mistakes. While search algorithms like Monte Carlo Tree Search (MCTS) can explore alternatives, they are often ineffective when guided by sparse rewards and fail to leverage the rich semantic capabilities of LLMs. We introduce SPIRAL (Symbolic LLM Planning via Grounded and Reflective Search), a novel framework that embeds a cognitive architecture of three specialized LLM agents into an MCTS loop. SPIRAL's key contribution is its integrated planning pipeline where a Planner proposes creative next steps, a Simulator grounds the search by predicting realistic outcomes, and a Critic provides dense reward signals through reflection. This synergy transforms MCTS from a brute-force search into a guided, self-correcting reasoning process. On the DailyLifeAPIs and HuggingFace datasets, SPIRAL consistently outperforms the default Chain-of-Thought planning method and other state-of-the-art agents. More importantly, it substantially surpasses other state-of-the-art agents; for example, SPIRAL achieves 83.6% overall accuracy on DailyLifeAPIs, an improvement of over 16 percentage points against the next-best search framework, while also demonstrating superior token efficiency. Our work demonstrates that structuring LLM reasoning as a guided, reflective, and grounded search process yields more robust and efficient autonomous planners. The source code, full appendices, and all experimental data are available for reproducibility at the official project repository.",
+ "summary": "1) 核心创新点：在蒙特卡洛树搜索（MCTS）循环中引入三位一体的专门LLM代理（Planner、Simulator、Critic），实现有引导、 Grounded（ grounding）、并具反思能力的自纠式推理，从而将搜索转化为更稳健的自我纠正推理过程。\n\n2) 主要方法：将 Planner 提出创造性下一步、Simulator 预测并 grounding 结果、Critic 通过反思给出密集奖励信号的三代理协同工作，嵌入到 MCTS 框架中进行搜索与评估；在 DailyLifeAPIs 与 HuggingFace 数据集上对比基线的 Chain-of-Thought 和其他 SOTA 代理。\n\n3) 结论/性能：在 DailyLifeAPIs 上达到 83.6% 的总体准确率，相比下一个最佳的搜索框架提升超过 16 个百分点，并且在令牌效率方面也展现优势；研究成果和数据/代码公开以促进复现。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:56:01"
+}

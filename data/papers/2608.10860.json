@@ -1,0 +1,13 @@
+{
+ "id": "2608.10860",
+ "title": "Flex-$π$: A Multi-Stream World-Action Model with Compute Flexibility",
+ "authors": "Ge Yan, Jinghao Liu, Yuzhi Fan, Lei Cai, Minwen Liao, Jesse Zhang, Dieter Fox",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10860v1",
+ "abstract": "World-action models (WAMs) predict the future to act better, but nearly all of them predict only RGB latents, trained purely for pixel reconstruction, with no explicit signal for the 3D geometry or object semantics manipulation needs. We find a surprising free lunch: the same frozen video-generation VAE that encodes RGB also encodes 3D pointmaps almost losslessly, with no pointmap-specific training at all. This lets us supervise Flex-$π$, a 6B-parameter WAM, on 3D geometry and object-centric DINO semantics alongside RGB, at no cost in new sensors, new pre-training, or inference latency. Every visual signal is projected into this shared latent space and denoised jointly with actions inside a Mixture-of-Transformers backbone; per-stream dropout with cross-modality forcing then lets a single trained checkpoint run on any subset of these streams, from a fast action-only mode to full joint generation. The result is a policy that is exceptionally demonstration-efficient and generalizes well, beating the strongest baselines by up to 2-7$\\times$ on dexterous, precise, real-world bimanual manipulation tasks both in and out of distribution, all while running faster than $π_{0.5}$. Our project website: https://flex-pi.github.io/",
+ "summary": "## Flex-π：多流世界-动作模型（Multi-Stream World-Action Model）\n\n**1. 核心创新点**\n发现视频生成 VAE 无需任何针对性训练即可近乎无损地编码 3D 点图（pointmap），从而\"免费\"把 3D 几何与物体语义引入世界-动作模型，并通过每流 dropout 实现单一 checkpoint 的推理算力弹性。\n\n**2. 主要方法**\n- 用冻结的视频生成 VAE 把 RGB、3D pointmap、以及以物体为中心的 DINO 语义特征统一投影到同一潜空间；\n- 在 Mixture-of-Transformers 主干中，将这些视觉流与动作联合去噪，训练出 6B 参数的 Flex-π；\n- 采用 per-stream dropout + cross-modality forcing，使同一个训练好的模型能在任意流子集上运行——从\"仅动作\"的快速模式到全模态联合生成。\n- 优势在于不需要新传感器、不需要重新预训练、也不增加推理延迟。\n\n**3. 结论/性能**\n策略表现出很高的演示样本效率（demonstration-efficient）和泛化能力：在真实世界的双臂灵巧、高精度操作任务上，无论分布内还是分布外，都比最强基线高出最多 2–7 倍，同时推理速度快于 π₀.₅。\n\n> 说明：以上仅基于标题与摘要，具体的基线设置、任务清单和\"2–7×\"所对应的指标口径需查正文/项目主页（flex-pi.github.io）确认。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-12 13:05:07"
+}

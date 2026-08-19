@@ -1,0 +1,13 @@
+{
+ "id": "2607.29031",
+ "title": "Auto-JEPA: A Latent World Model of Continuous Intent for End-to-End Autonomous Driving",
+ "authors": "Jiwei Yang, Zhengxian Chen, Chaosheng Huang, Jun Li",
+ "date": "2026-07-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.29031v1",
+ "abstract": "Existing autonomous-driving world models typically perform dense prediction of future videos, occupancy states, BEV representations, or agent motion. We argue that planning need not reconstruct the complete future world, but only focus on scene features that affect future ego action. Based on this perspective, we propose Auto-JEPA, an action-oriented latent world model that learns continuous future driving intent through joint-embedding prediction. Given visual observations, egomotion history, and navigation commands, Auto-JEPA predicts an intent embedding aligned with the latent representation of the future ego trajectory. The predicted intent retrieves executable trajectories from a fixed trajectory memory, which are then ranked by a scene-conditioned candidate selection module. Auto-JEPA keeps the visual encoder frozen, requires no explicit perception annotations, and uses no learned trajectory generator. By optimizing only task-specific modules for trajectory representation, intent prediction, and candidate selection, Auto-JEPA achieves 91.3 PDMS on NAVSIM v1 and 89.1 EPDMS on NAVSIM v2. Semantic occlusion experiments show that masking dynamic-agent regions induces an average intent change 2.97x that of equal-area random masking. Moreover, occluding vehicles that affect future driving substantially changes the predicted intent and selected trajectory, whereas both remain essentially unchanged when non-influential vehicles are occluded. These results show that future-intent prediction encourages the model to focus on planning-relevant visual features and supports high-quality planning without dense future-world modeling.",
+ "summary": "## Auto-JEPA 论文总结\n\n**1. 核心创新点**\n提出一种面向动作的隐空间世界模型，认为端到端自动驾驶的规划无需重建完整未来世界，只需预测与自车动作相关的\"连续驾驶意图\"嵌入。\n\n**2. 主要方法**\n- 基于**联合嵌入预测（JEPA）**架构：输入视觉观测、自车运动历史和导航指令，预测一个与\"未来自车轨迹隐表征\"对齐的意图嵌入。\n- 用预测意图从**固定轨迹记忆库**中检索可执行轨迹，再经**场景条件候选选择模块**排序。\n- 视觉编码器**全程冻结**，不需要显式感知标注，也不训练轨迹生成器；只优化轨迹表征、意图预测、候选选择三个任务模块。\n\n**3. 结论/性能**\n- NAVSIM v1 达 **91.3 PDMS**，NAVSIM v2 达 **89.1 EPDMS**。\n- 语义遮挡实验：遮挡动态目标区域引起的意图变化是**同面积随机遮挡的 2.97 倍**；遮挡对未来行驶有影响的车辆会显著改变意图与所选轨迹，而遮挡无关车辆则几乎无变化。\n- 表明未来意图预测能引导模型聚焦于**与规划相关的视觉特征**，无需稠密未来世界建模即可实现高质量规划。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-03 13:03:26"
+}

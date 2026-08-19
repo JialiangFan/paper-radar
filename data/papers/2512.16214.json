@@ -1,0 +1,13 @@
+{
+ "id": "2512.16214",
+ "title": "PDE-Agent: A toolchain-augmented multi-agent framework for PDE solving",
+ "authors": "Jianming Liu, Ren Zhu, Jian Xu, Kun Ding, Xu-Yao Zhang, Gaofeng Meng, Cheng-Lin Liu",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16214v1",
+ "abstract": "Solving Partial Differential Equations (PDEs) is a cornerstone of engineering and scientific research. Traditional methods for PDE solving are cumbersome, relying on manual setup and domain expertise. While Physics-Informed Neural Network (PINNs) introduced end-to-end neural network-based solutions, and frameworks like DeepXDE further enhanced automation, these approaches still depend on expert knowledge and lack full autonomy. In this work, we frame PDE solving as tool invocation via LLM-driven agents and introduce PDE-Agent, the first toolchain-augmented multi-agent collaboration framework, inheriting the reasoning capacity of LLMs and the controllability of external tools and enabling automated PDE solving from natural language descriptions. PDE-Agent leverages the strengths of multi-agent and multi-tool collaboration through two key innovations: (1) A Prog-Act framework with graph memory for multi-agent collaboration, which enables effective dynamic planning and error correction via dual-loop mechanisms (localized fixes and global revisions). (2) A Resource-Pool integrated with a tool-parameter separation mechanism for multi-tool collaboration. This centralizes the management of runtime artifacts and resolves inter-tool dependency gaps in existing frameworks. To validate and evaluate this new paradigm for PDE solving , we develop PDE-Bench, a multi-type PDE Benchmark for agent-based tool collaborative solving, and propose multi-level metrics for assessing tool coordination. Evaluations verify that PDE-Agent exhibits superior applicability and performance in complex multi-step, cross-step dependent tasks. This new paradigm of toolchain-augmented multi-agent PDE solving will further advance future developments in automated scientific computing. Our source code and dataset will be made publicly available.",
+ "summary": "- 核心创新点（一句话概括）：将PDE求解转化为工具调用的任务，由LLM驱动的多智能体通过 toolchain 协作实现全自动化求解，并通过 Prog-Act 图记忆与资源池/工具-参数分离解决跨工具协作与依赖问题。\n\n- 主要方法（技术/模型简述）：\n  - 将 PDE 求解建模为与外部工具的交互过程，由大语言模型驱动的多智能体进行推理与执行。\n  - Prog-Act 框架：引入图记忆用于多智能体协作的动态规划与双循环错误纠错（局部修复与全局修订）。\n  - Resource-Pool 与工具-参数分离机制：集中管理运行时产物，提升多工具协作的可控性并解决工具间依赖缺口。\n  - 提出 PDE-Bench 基准和多层次的工具协同评估指标，用以评估工具协同能力。\n\n- 结论/性能（取得的效果）：\n  - 在复杂的多步骤、跨步依赖任务中展现出更高的适用性和性能，显著提升自动化PDE求解的能力与可控性。\n  - 证明了工具链增强的多智能体框架在自动化科学计算中的优越性，并计划公开源代码与数据集。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-19 02:46:08"
+}

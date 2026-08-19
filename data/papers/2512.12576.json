@@ -1,0 +1,13 @@
+{
+ "id": "2512.12576",
+ "title": "Coupled Variational Reinforcement Learning for Language Model General Reasoning",
+ "authors": "Xueru Wen, Jie Lou, Yanjiang Liu, Hongyu Lin, Ben He, Xianpei Han, Le Sun, Yaojie Lu, Debing Zhang",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12576v1",
+ "abstract": "While reinforcement learning have achieved impressive progress in language model reasoning, they are constrained by the requirement for verifiable rewards. Recent verifier-free RL methods address this limitation by utilizing the intrinsic probabilities of LLMs generating reference answers as reward signals. However, these approaches typically sample reasoning traces conditioned only on the question. This design decouples reasoning-trace sampling from answer information, leading to inefficient exploration and incoherence between traces and final answers. In this paper, we propose \\textit{\\b{Co}upled \\b{V}ariational \\b{R}einforcement \\b{L}earning} (CoVRL), which bridges variational inference and reinforcement learning by coupling prior and posterior distributions through a hybrid sampling strategy. By constructing and optimizing a composite distribution that integrates these two distributions, CoVRL enables efficient exploration while preserving strong thought-answer coherence. Extensive experiments on mathematical and general reasoning benchmarks show that CoVRL improves performance by 12.4\\% over the base model and achieves an additional 2.3\\% improvement over strong state-of-the-art verifier-free RL baselines, providing a principled framework for enhancing the general reasoning capabilities of language models.",
+ "summary": "以下是对论文要点的中文简要概括：\n\n1) 核心创新点（一句话）\n通过将先验与后验分布耦合的变分推断与强化学习结合，提出混合采样策略的 CoVRL，使推理轨迹与最终答案实现高效探索与强一致性。\n\n2) 主要方法\n在变分推断框架下构建并优化一个复合分布，将先验分布与后验分布耦合；结合 verifier-free RL（以语言模型生成参考答案的概率作为奖励信号）进行训练，通过混合采样实现轨迹信息与答案信息的耦合，提升探索效率和思考-答案的一致性。\n\n3) 结论/性能\n在数学与一般推理基准上，相对于基线模型提升约12.4%，并相对于强的 verifier-free RL 基线再提升约2.3%，给出提升通用推理能力的一个原理性框架。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-16 02:04:39"
+}

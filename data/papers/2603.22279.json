@@ -1,0 +1,13 @@
+{
+ "id": "2603.22279",
+ "title": "3D-Layout-R1: Structured Reasoning for Language-Instructed Spatial Editing",
+ "authors": "Haoyu Zhen, Xiaolong Li, Yilin Zhao, Han Zhang, Sifei Liu, Kaichun Mo, Chuang Gan, Subhashree Radhakrishnan",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22279v1",
+ "abstract": "Large Language Models (LLMs) and Vision Language Models (VLMs) have shown impressive reasoning abilities, yet they struggle with spatial understanding and layout consistency when performing fine-grained visual editing. We introduce a Structured Reasoning framework that performs text-conditioned spatial layout editing via scene-graph reasoning. Given an input scene graph and a natural-language instruction, the model reasons over the graph to generate an updated scene graph that satisfies the text condition while maintaining spatial coherence. By explicitly guiding the reasoning process through structured relational representations, our approach improves both interpretability and control over spatial relationships. We evaluate our method on a new text-guided layout editing benchmark encompassing sorting, spatial alignment, and room-editing tasks. Our training paradigm yields an average 15% improvement in IoU and 25% reduction in center-distance error compared to Chain of Thought Fine-tuning (CoT-SFT) and vanilla GRPO baselines. Compared to SOTA zero-shot LLMs, our best models achieve up to 20% higher mIoU, demonstrating markedly improved spatial precision.",
+ "summary": "- 核心创新点：提出一个结构化推理框架，通过对场景图进行推理来实现文本条件下的空间布局编辑，从而提升空间关系的可解释性与控制性。\n\n- 主要方法：基于场景图推理执行文本条件的空间布局编辑；输入为场景图和自然语言指令，模型在图上进行推理，生成更新后的场景图以满足文本约束并保持空间连贯性；通过显式的结构化关系表示来引导推理过程，提升可解释性与控制能力。\n\n- 结论/性能：在包含排序、空间对齐和房间编辑任务的新文本引导布局编辑基准上，平均 IoU 提升约15%，中心距离误差降低约25%，相较于 CoT-SFT 与 vanilla GRPO 基线；与当前最强零-shot LLM 相比，最佳模型在 mIoU 上提升可达约20%，显示更高的空间精度。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:00:48"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.10949",
+ "title": "Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation",
+ "authors": "Yiwen Tang, Zoey Guo, Kaixin Zhu, Ray Zhang, Qizhi Chen, Dongzhi Jiang, Junli Liu, Bohan Zeng, Haoming Song, Delin Qu, Tianyi Bai, Dan Xu, Wentao Zhang, Bin Zhao",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10949v1",
+ "abstract": "Reinforcement learning (RL), earlier proven to be effective in large language and multi-modal models, has been successfully extended to enhance 2D image generation recently. However, applying RL to 3D generation remains largely unexplored due to the higher spatial complexity of 3D objects, which require globally consistent geometry and fine-grained local textures. This makes 3D generation significantly sensitive to reward designs and RL algorithms. To address these challenges, we conduct the first systematic study of RL for text-to-3D autoregressive generation across several dimensions. (1) Reward designs: We evaluate reward dimensions and model choices, showing that alignment with human preference is crucial, and that general multi-modal models provide robust signal for 3D attributes. (2) RL algorithms: We study GRPO variants, highlighting the effectiveness of token-level optimization, and further investigate the scaling of training data and iterations. (3) Text-to-3D Benchmarks: Since existing benchmarks fail to measure implicit reasoning abilities in 3D generation models, we introduce MME-3DR. (4) Advanced RL paradigms: Motivated by the natural hierarchy of 3D generation, we propose Hi-GRPO, which optimizes the global-to-local hierarchical 3D generation through dedicated reward ensembles. Based on these insights, we develop AR3D-R1, the first RL-enhanced text-to-3D model, expert from coarse shape to texture refinement. We hope this study provides insights into RL-driven reasoning for 3D generation. Code is released at https://github.com/Ivan-Tang-3D/3DGen-R1.",
+ "summary": "- 核心创新点：首次对文本到3D 自回归生成系统进行系统性的 RL 研究，提出分层分阶段的 RL 框架与全新基准，打造首个 RL 增强的文本到3D 模型 AR3D-R1。\n- 主要方法：全面评估奖励设计与模型（强调与人类偏好对齐及多模态信号的鲁棒性）、探索 GRPO 的变体并聚焦 token-level 优化、扩展训练数据与迭代；提出 MME-3DR 基准用于评测隐式推理能力，并提出 Hi-GRPO 以全局到局部的分层生成和专门的奖励集合来优化3D生成。\n- 结论/性能：验证了 RL 在文本到3D 生成中的可行性与有效性，实现了从粗糙形状到纹理细化的分层优化的 AR3D-R1；彰显奖励设计与多模态信号的重要性，并提供新的基准与分层 RL 框架，代码已公开以便复现。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:03:50"
+}

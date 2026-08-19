@@ -1,0 +1,13 @@
+{
+ "id": "2608.15309",
+ "title": "Physiological World Models for Human State Transitions",
+ "authors": "Chongyang Zhang, Rendong Wang, Hao Zheng, Hanwen Zhang, Yang Liu, Xiaolong Wei, Bin Chong",
+ "date": "2026-08-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.15309v1",
+ "abstract": "Continuous multimodal sensing now allows human physiology to be observed throughout daily life rather than only during occasional clinical visits. However, most health artificial intelligence systems are designed to recognize current states, estimate risks or analyse individual biomarkers. They do not directly model how physiological states change in response to real-world events, behaviours, contexts and interventions. Here we propose the Physiological World Model (PWM), an event-conditioned framework for learning these changes at the level of the whole person. We introduce the HumanState Transition Token, a structured, quality-scored unit that connects the physiological state before an event with the event or action, relevant context and intervention information, the physiological trajectory after the event, observed outcomes and data quality. We describe four capability levels, from state representation to bounded intervention planning, together with four data acquisition and validation protocols. We also propose six benchmark tasks covering HumanState representation, forecasting across multiple timescales, individualized response prediction, simulation of alternative interventions, bounded planning and reliability under distribution shift. Together, this framework provides a practical path towards personalized health management, behavioural intervention design and clinician-supervised decision support, while clearly separating prediction from causal inference and making uncertainty, safety, governance and limits of use explicit.",
+ "summary": "## 论文总结：Physiological World Models for Human State Transitions（生理世界模型）\n\n**1. 核心创新点**\n提出\"生理世界模型\"（PWM）——一个以事件为条件的框架，把健康 AI 从\"识别当前状态/评估风险\"推进到\"直接建模生理状态在真实事件、行为、情境与干预下如何转变\"。\n\n**2. 主要方法**\n- 核心数据结构：**HumanState Transition Token**（人体状态转移令牌）——一个带质量评分的结构化单元，串联「事件前生理状态 → 事件/行为 + 情境与干预信息 → 事件后生理轨迹 → 观测结果 → 数据质量」。\n- 基于连续多模态传感（可穿戴等日常生理监测）数据。\n- 配套提出**四个能力层级**（从状态表征到有界的干预规划）、**四类数据采集与验证协议**，以及**六项基准任务**：HumanState 表征、多时间尺度预测、个体化响应预测、替代干预的反事实模拟、有界规划、以及分布偏移下的可靠性。\n\n**3. 结论/性能**\n这是一篇**框架/立场型论文（position & framework paper），提出的是概念体系与评测蓝图，而非实测性能指标**。其主张的价值在于：为个性化健康管理、行为干预设计和临床医生监督下的决策支持提供可落地路径，同时明确区分「预测」与「因果推断」，并将不确定性、安全性、治理与使用边界显式化。\n\n> 一点提醒：摘要中未给出任何数据集规模或实验结果，因此\"性能\"部分无法量化——若你需要对比同类工作，建议关注其后续是否有配套的基准实现与公开数据。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-18 13:05:57"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.08318",
+ "title": "A Model Context Protocol Server for Quantum Execution in Hybrid Quantum-HPC Environments",
+ "authors": "Masaki Shiraishi, Ikko Hamamura, Tatsuya Ishigaki, Tadashi Kadowaki",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08318v1",
+ "abstract": "The integration of large language models (LLMs) into scientific research is accelerating the realization of autonomous ``AI Scientists.'' While recent advancements have empowered AI to formulate hypotheses and design experiments, a critical gap remains in the execution of these tasks, particularly in the domain of quantum computing (QC). Executing quantum algorithms requires not only generating code but also managing complex computational resources such as QPUs and high-performance computing (HPC) clusters. In this paper, we propose an AI-driven framework specifically designed to bridge this execution gap through the implementation of a Model Context Protocol (MCP) server. Our system enables an LLM agent to process natural language prompts submitted as part of a job, autonomously executing quantum computing workflows by invoking our tools via the MCP. We demonstrate the framework's capability by performing essential quantum algorithmic primitives, including sampling and computation of expectation values. Key technical contributions include the development of an MCP server for quantum execution, a pipeline for interpreting OpenQASM code, an automated workflow with CUDA-Q for the ABCI-Q hybrid platform, and an asynchronous execution pipeline for remote quantum hardware using the Quantinuum emulator via CUDA-Q. This work validates that AI agents can effectively abstract the complexities of hardware interaction through an MCP-based architecture, thereby facilitating the automation of practical quantum research.",
+ "summary": "- 核心创新点：提出 Model Context Protocol (MCP) 服务器，作为量子执行的智能中控，使大语言模型代理能够在混合量子-HPC 环境中自动化处理提示并调用工具执行量子工作流，抽象硬件细节。\n\n- 主要方法：实现 MCP 服务器以管理量子执行上下文；构建 OpenQASM 解释流水线；基于 CUDA-Q 的 ABCI-Q 自动化工作流；面向远程量子硬件的异步执行流水线（通过 Quantinuum 仿真器与 CUDA-Q 组合实现）。\n\n- 结论/性能：通过示例量子原语（采样、期望值计算）验证框架的可行性，证明 AI 代理可通过 MCP 架构有效自动化执行量子计算任务并管理硬件资源，降低硬件交互复杂性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-10 13:04:03"
+}

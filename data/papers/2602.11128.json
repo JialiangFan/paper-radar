@@ -1,0 +1,13 @@
+{
+ "id": "2602.11128",
+ "title": "Asymmetric Prompt Weighting for Reinforcement Learning with Verifiable Rewards",
+ "authors": "Reinhard Heckel, Mahdi Soltanolkotabi, Christos Thramboulidis",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11128v1",
+ "abstract": "Reinforcement learning with verifiable rewards has driven recent advances in LLM post-training, in particular for reasoning. Policy optimization algorithms generate a number of responses for a given prompt and then effectively weight the corresponding gradients depending on the rewards. The most popular algorithms including GRPO, DAPO, and RLOO focus on ambiguous prompts, i.e., prompts with intermediate success probability, while downgrading gradients with very easy and very hard prompts. In this paper, we consider asymmetric prompt weightings that assign higher weights to prompts with low, or even zero, empirical success probability. We find that asymmetric weighting particularly benefits from-scratch RL (as in R1-Zero), where training traverses a wide accuracy range, and less so in post-SFT RL where the model already starts at high accuracy. We also provide theory that characterizes prompt weights which minimize the time needed to raise success probability from an initial level to a target accuracy under a fixed update budget. In low-success regimes, where informative responses are rare and response cost dominates, these optimal weights become asymmetric, upweighting low success probabilities and thereby accelerating effective-time convergence.",
+ "summary": "- 核心创新点：提出一种非对称的提示权重机制，在强化学习中对低或零成功概率的提示赋予更高的梯度权重，以显著提升从低基线到目标准确度的学习效率，尤其在从零起步的RL场景中效果突出。\n\n- 主要方法：在可验证奖励的RL框架下，对 GRPO、DAPO、RLOO 等策略梯度方法引入非对称提示权重；结合理论分析给出在固定更新预算下使成功概率从初始水平提升到目标准确度的最优权重区间；并在从零起步的 RL（如 R1-Zero）场景进行实验验证，比较与传统对称权重的差异。\n\n- 结论/性能：在低成功率阶段，该非对称权重显著加速有效时间的收敛，提升从低成功概率向目标准确度的提升速度；在后SFT（已具备较高初始准确度）场景效果较弱；理论结果提供了权重选择的准则，使学习在有限更新预算下更快达到目标。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-12 14:04:24"
+}

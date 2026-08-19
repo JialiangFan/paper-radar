@@ -1,0 +1,13 @@
+{
+ "id": "2603.15611",
+ "title": "Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning",
+ "authors": "Aozhe Wang, Yuchen Yan, Nan Zhou, Zhengxi Lu, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15611v1",
+ "abstract": "Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.",
+ "summary": "1. 核心创新点：提出一个对抗性共进化的双模型框架，将 Code LLM 与 Test LLM 分离为相对立的优化目标，避免自我勾结并支持白盒测试，同时引入 Mistake Book 记忆回放与综合奖励以平衡有效性与对抗难度。\n\n2. 主要方法：  \n- 采用对抗性强化学习框架，分别优化 Code LLM（以通过更多测试为奖励）与 Test LLM（以暴露更多缺陷为奖励）。  \n- 允许 Test LLM 进行白盒测试，直接检查候选代码以设计定向对抗性测试。  \n- 引入 Mistake Book 经验回放机制用于经验再利用，并使用综合奖励同时考虑测试有效性与对抗难度。  \n- 在 Qwen2.5-Coder 模型上进行实验验证。\n\n3. 结论/性能：在所用实验中，Code-A1 的代码生成性能达到或超过以人工标注测试训练的模型，同时显著提升了对抗性测试用例的生成能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-17 13:00:58"
+}

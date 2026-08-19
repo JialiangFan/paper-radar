@@ -1,0 +1,32 @@
+{
+ "id": "2309.00711",
+ "title": "Learning Shared Safety Constraints from Multi-task Demonstrations",
+ "authors": "McPherson, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2309.00711",
+ "abstract": "",
+ "summary": "This paper learns safety constraints shared across tasks from demonstrations, such as avoiding breaking plates regardless of the current goal.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "constraint-learning",
+  "demonstrations",
+  "robotics",
+  "safe-robot-learning",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2023_McPherson_SharedSafetyConstraints.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2023_McPherson_SharedSafetyConstraints.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

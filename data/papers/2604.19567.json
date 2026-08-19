@@ -1,0 +1,13 @@
+{
+ "id": "2604.19567",
+ "title": "Multi-modal Reasoning with LLMs for Visual Semantic Arithmetic",
+ "authors": "Chuou Xu, Liya Ji, Qifeng Chen",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19567v1",
+ "abstract": "Reinforcement learning (RL) as post-training is crucial for enhancing the reasoning ability of large language models (LLMs) in coding and math. However, their capacity for visual semantic arithmetic, inferring relationships from images, remains underexplored. The classic text analogy \"king\"-\"man\"+\"woman\" = \"queen\" illustrates relational reasoning, yet replacing text with images of \"king\" and \"man\" significantly reduces performance because it requires commonsense knowledge and the extraction of concise concepts from irrelevant visual details. This capability is important for service and domestic robotics in unstructured environments, where robots must infer semantic relationships among objects, agents, and actions. In a kitchen, recognizing from images that \"powder\" and \"cake\" are related by \"is made of\" grounds symbolic relations in perception, enabling tool substitution, task generalization, and improved semantic reasoning. Prior work approaches semantic arithmetic by decoding image features after vector arithmetic, but suffers from modality gaps and lacks systematic evaluation. In this paper, we formulate two novel tasks, two-term subtraction and three-term operations, and construct the Image-Relation-Pair Dataset (IRPD) for benchmarking. We further propose Semantic Arithmetic Reinforcement Fine-Tuning (SAri-RFT), which post-trains large vision-language models (LVLMs) using a verifiable function and Group Relative Policy Optimization (GRPO). Our method achieves state-of-the-art results on IRPD and the real-world Visual7W-Telling dataset. By equipping LVLMs with robust cross-modal relational reasoning, this work advances domestic robots' ability to ground symbolic reasoning in perception, enhancing decision-making, tool adaptability, and human-robot interaction in complex environments. Datasets and source code are provided in the supplementary material.",
+ "summary": "- 核心创新点：提出面向视觉语义算术的全新任务和数据集IRPD，并提出基于可验证函数与Group Relative Policy Optimization的SAri-RFT，对LVLM进行后训练以实现跨模态关系推理的显著提升。\n\n- 主要方法：在大型视觉-语言模型（LVLM）上进行Semantic Arithmetic Reinforcement Fine-Tuning（SAri-RFT），利用可验证函数构造奖励信号，并采用GRPO（Group Relative Policy Optimization）进行策略优化；同时引入两项新任务（两项“减法”与三项运算）以及Image-Relation-Pair数据集（IRPD）用于评测。\n\n- 结论/性能：在IRPD和真实场景数据集Visual7W-Telling上达到或接近SOTA，显著提升跨模态关系推理能力，从而有助于机器人在感知层面 grounding 符号推理、提升决策、工具适配、任务泛化与人机交互能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-22 13:02:29"
+}

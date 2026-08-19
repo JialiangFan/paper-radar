@@ -1,0 +1,13 @@
+{
+ "id": "2603.01874",
+ "title": "Phishing the Phishers with SpecularNet: Hierarchical Graph Autoencoding for Reference-Free Web Phishing Detection",
+ "authors": "Tailai Song, Pedro Casas, Michela Meo",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01874v1",
+ "abstract": "Phishing remains the most pervasive threat to the Web, enabling large-scale credential theft and financial fraud through deceptive webpages. While recent reference-based and generative-AI-driven phishing detectors achieve strong accuracy, their reliance on external knowledge bases, cloud services, and complex multimodal pipelines fundamentally limits practicality, scalability, and reproducibility. In contrast, conventional deep learning approaches often fail to generalize to evolving phishing campaigns. We introduce SpecularNet, a novel lightweight framework for reference-free web phishing detection that demonstrates how carefully designed compact architectures can rival heavyweight systems. SpecularNet operates solely on the domain name and HTML structure, modeling the Document Object Model (DOM) as a tree and leveraging a hierarchical graph autoencoding architecture with directional, level-wise message passing. This design captures higher-order structural invariants of phishing webpages while enabling fast, end-to-end inference on standard CPUs. Extensive evaluation against 13 state of the art phishing detectors, including leading reference-based systems, shows that SpecularNet achieves competitive detection performance with dramatically lower computational cost. On benchmark datasets, it reaches an F1 score of 93.9%, trailing the best reference-based method slightly while reducing inference time from several seconds to approximately 20 milliseconds per webpage. Field and robustness evaluations further validate SpecularNet in real-world deployments, on a newly collected 2026 open-world dataset, and against adversarial attacks.",
+ "summary": "- 核心创新点：提出 SpecularNet，一种无参考的网页钓鱼检测框架，通过将 DOM 树建模为层次化图并采用方向性、分层消息传递的自编码结构，在不依赖外部知识库的前提下实现高效且鲁棒的检测。\n- 主要方法：仅基于域名和 HTML 结构，将文档对象模型（DOM）视为树，构建层次化图自编码架构并采用方向性、逐层的消息传递；实现端到端推理，适用于常规 CPU，显著降低计算成本。\n- 结论/性能：在基准数据集上达到 93.9% 的 F1 分数，略低于最佳的参考方法，但推理时间约为每个网页 20 毫秒（相比以往的几秒级），在与13个先进检测器的对比中仍具竞争力；并在新近的 2026 年开放域数据集及对抗性攻击场景中得到实证验证，展现良好的现实部署鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-03 14:01:38"
+}

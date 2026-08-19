@@ -1,0 +1,13 @@
+{
+ "id": "2512.18906",
+ "title": "Remedy-R: Generative Reasoning for Machine Translation Evaluation without Error Annotations",
+ "authors": "Shaomu Tan, Ryosuke Mitani, Ritvik Choudhary, Qiyu Wu, Toshiyuki Sekiya, Christof Monz",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18906v1",
+ "abstract": "Over the years, automatic MT metrics have hillclimbed benchmarks and presented strong and sometimes human-level agreement with human ratings. Yet they remain black-box, offering little insight into their decision-making and often failing under real-world out-of-distribution (OOD) inputs. We introduce Remedy-R, a reasoning-driven generative MT metric trained with reinforcement learning from pairwise translation preferences, without requiring error-span annotations or distillation from closed LLMs. Remedy-R produces step-by-step analyses of accuracy, fluency, and completeness, followed by a final score, enabling more interpretable assessments. With only 60K training pairs across two language pairs, Remedy-R remains competitive with top scalar metrics and GPT-4-based judges on WMT22-24 meta-evaluation, generalizes to other languages, and exhibits strong robustness on OOD stress tests. Moreover, Remedy-R models generate self-reflective feedback that can be reused for translation improvement. Building on this finding, we introduce Remedy-R Agent, a simple evaluate-revise pipeline that leverages Remedy-R's evaluation analysis to refine translations. This agent consistently improves translation quality across diverse models, including Qwen2.5, ALMA-R, GPT-4o-mini, and Gemini-2.0-Flash, suggesting that Remedy-R's reasoning captures translation-relevant information and is practically useful.",
+ "summary": "- 核心创新点：提出 Remedy-R，一种不需要错误标注的生成式推理机器翻译评估指标，通过对比偏好强化学习训练，输出逐步推理分析（准确性、流畅性、完整性）再给出最终分数，从而提升可解释性和鲁棒性。\n\n- 主要方法：基于生成式推理框架的 MT 评估模型，使用强化学习从成对翻译偏好中训练；不依赖错误片段注释，也不从闭源大型语言模型蒸馏；输出分步分析与最终分数，并引入 Remedy-R Agent，建立 evaluate-revise 流程以利用评估分析来改进翻译；训练仅需约 6 万对数据，覆盖两种语言对，并具跨语言泛化能力。\n\n- 结论/性能：在 WMT22-24 的元评估中与顶尖标量指标和 GPT-4 基 judges 相当或具竞争力；对其他语言具泛化性，并在对 OOD 测试具鲁棒性；还能生成可用于改进翻译的自我反思反馈；Remedy-R Agent 通过利用评估分析实现对多种模型的翻译质量提升（如 Qwen2.5、ALMA-R、GPT-4o-mini、Gemini-2.0-Flash 等）。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:49:33"
+}

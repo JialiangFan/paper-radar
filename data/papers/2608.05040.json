@@ -1,0 +1,13 @@
+{
+ "id": "2608.05040",
+ "title": "Private Direct Preference Optimization for LLM Alignment",
+ "authors": "Yangfan Jiang, Fei Wei, Ergute Bao, Xiaokui Xiao, Yaliang Li, Bolin Ding",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05040v1",
+ "abstract": "Direct preference optimization (DPO) is now a standard method for aligning large language models (LLMs) using human preference data. Each DPO example contains a prompt and a pair of candidate model responses. While prompts and responses are often public or model-generated, the relative preference between responses reflects subjective judgments and can reveal sensitive attributes of annotators or end users. Off-the-shelf privacy-preserving approaches are not well matched to this structure, leading to unnecessary noise injection and biased updates in training.\n  In this paper, we formalize preference privacy, a label-DP-style privacy notion for DPO that protects only the relative preference between candidate responses, assuming an adversary who already knows the prompt and responses. We then design PrivDPO, a DPO variant that enforces preference privacy while remaining compatible with large-scale LLM training. Our main observation is that, for neighboring examples differing only in their preference signal, the gradient difference lies on a one-dimensional preference axis determined solely by the text; all preference information flows through this axis. PrivDPO adds calibrated randomness only along this axis via an unbiased randomized rescaling of the DPO objective, avoiding per-example gradient operations. Our experiments on three alignment benchmarks and three LLM families show that PrivDPO consistently achieves strong privacy-utility trade-offs compared with privacy-preserving baselines.",
+ "summary": "## 论文总结：Private Direct Preference Optimization for LLM Alignment\n\n**1. 核心创新点**\n\n提出\"偏好隐私\"（preference privacy）这一针对 DPO 的 label-DP 式隐私定义——只保护两个候选回答之间的**相对偏好标注**，并据此设计出可用于大规模 LLM 训练的 PrivDPO 算法。\n\n**2. 主要方法**\n\n- **问题动机**：DPO 样本中的 prompt 和候选回答通常是公开或模型生成的，真正敏感的是标注者给出的偏好；现成的差分隐私方法与这一结构不匹配，会注入多余噪声并造成有偏更新。\n- **威胁模型**：假设攻击者已知 prompt 和两个回答，只需隐藏偏好方向。\n- **关键观察**：对于仅在偏好信号上不同的相邻样本，其梯度差落在一个**由文本唯一决定的一维\"偏好轴\"**上——所有偏好信息都沿该轴流动。\n- **具体做法**：仅沿这条偏好轴注入校准噪声，通过对 DPO 目标函数做**无偏的随机化重缩放**（randomized rescaling）实现，从而避免了逐样本梯度裁剪等昂贵操作，保持与大规模训练的兼容性。\n\n**3. 结论/性能**\n\n在 **3 个对齐基准 × 3 个 LLM 家族**上的实验表明，PrivDPO 相比现有隐私保护基线，能稳定取得更优的隐私—效用权衡（privacy-utility trade-off）。\n\n---\n\n补充一句判断：这篇工作的巧妙之处在于把\"隐私预算该花在哪\"这个问题降维到了 1 维——因为 DPO 损失对偏好标签的依赖本质上只是一个符号翻转，梯度差自然共线。这使得噪声量与模型维度解耦，也绕开了 DP-SGD 在 LLM 上最大的工程瓶颈（per-example gradient）。摘要未披露具体的 ε 取值范围和基线是哪些（推测为 DP-SGD 与 randomized response 类方法），这部分需看正文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-06 13:02:00"
+}

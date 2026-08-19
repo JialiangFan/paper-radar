@@ -1,0 +1,13 @@
+{
+ "id": "2608.04653",
+ "title": "Overcoming Statistical Bias in Action-Controllable World Models",
+ "authors": "Yuhong Shi, Zhenhao Chu, Jie Wei, Jun Hao, Jianyi Liu, Jingwen Fu",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04653v1",
+ "abstract": "Action-conditioned world models aim to predict how visual environments evolve under an agent's actions. Yet future frames are often highly predictable from visual inertia and recurring motion patterns alone. This creates a shortcut: models can fit the data by exploiting statistical biases without making their visible dynamics meaningfully depend on the action. As a result, different actions may produce similar futures, while motion may persist even under zero action. The key question is how to reduce reliance on statistical shortcuts from dominating action-conditioned prediction. We argue that action control requires more than injecting action features; it requires enforcing consistency under counterfactual changes to actions and observations. Based on this insight, we introduce CoCo, a Counterfactual Consistency framework to enhance action controllability through two complementary constraints. Multi-step counterfactual consistency constrains reference, inverse-action, and zero-action rollouts, while action-spatial counterfactual consistency enforces consistent predictions under mirrored scenes and transformed actions. Together, they reduce reliance on statistical shortcuts from substituting for action-dependent dynamics. We further introduce Action Response Consistency (ARC) and Drift Energy (DE) to assess action controllability, together with Mini-SSMB for same-state, multi-action counterfactual evaluation. On Mini-SSMB, our full model achieved ARC_inv of 0.412 and ARC_ref of 0.483, while reducing DE by 17.07% relative to the baseline. On VP2 visual planning, it achieves the highest average success rate among SOTA models, at 73.1%. Experiments on BAIR and RoboNet further show that these gains preserve video prediction quality and transfer across model settings.",
+ "summary": "**核心创新点**\n提出 CoCo 框架，通过\"反事实一致性\"约束，迫使动作条件世界模型真正依赖动作来预测未来，而不是靠视觉惯性和重复运动模式等统计捷径蒙混过关。\n\n**主要方法**\n在动作条件视频预测模型上加入两类互补约束：\n\n- **多步反事实一致性**：约束参考轨迹、反向动作轨迹、零动作轨迹三者的多步 rollout 之间的关系（例如零动作下画面不应继续运动）。\n- **动作-空间反事实一致性**：对场景做镜像、对动作做相应变换后，要求预测结果保持一致。\n\n同时提出两个评测指标——动作响应一致性 ARC 和漂移能量 DE（衡量零动作下的残余运动），以及 Mini-SSMB 基准，用于\"同一状态、多种动作\"的反事实评估。\n\n**结论/性能**\n\n- Mini-SSMB：ARC_inv 0.412、ARC_ref 0.483，DE 相对基线降低 17.07%。\n- VP2 视觉规划：平均成功率 73.1%，在对比的 SOTA 模型中最高。\n- BAIR 和 RoboNet 上的实验表明，可控性的提升并未牺牲视频预测质量，且能迁移到不同模型设置。\n\n一点说明：摘要只给出了绝对指标值而没有基线 ARC 的对比数字，因此可控性提升的实际幅度需要看正文表格才能判断。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-06 13:05:38"
+}

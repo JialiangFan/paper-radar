@@ -1,0 +1,13 @@
+{
+ "id": "2601.20829",
+ "title": "Training Reasoning Models on Saturated Problems via Failure-Prefix Conditioning",
+ "authors": "Minwu Kim, Safal Shrestha, Keith Ross",
+ "date": "2026-01-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.20829v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved the reasoning abilities of large language models (LLMs), yet training often stalls as problems become saturated. We identify the core challenge as the poor accessibility of informative failures: learning signals exist but are rarely encountered during standard rollouts. To address this, we propose failure-prefix conditioning, a simple and effective method for learning from saturated problems. Rather than starting from the original question, our approach reallocates exploration by conditioning training on prefixes derived from rare incorrect reasoning trajectories, thereby exposing the model to failure-prone states. We observe that failure-prefix conditioning yields performance gains matching those of training on medium-difficulty problems, while preserving token efficiency. Furthermore, we analyze the model's robustness, finding that our method reduces performance degradation under misleading failure prefixes, albeit with a mild trade-off in adherence to correct early reasoning. Finally, we demonstrate that an iterative approach, which refreshes failure prefixes during training, unlocks additional gains after performance plateaus. Overall, our results suggest that failure-prefix conditioning offers an effective pathway to extend RLVR training on saturated problems.",
+ "summary": "- 核心创新点：提出失败前缀条件化方法，通过使用来自罕见错误推理轨迹的前缀来引导探索，从而在饱和问题上提升 RLVR 的学习效果。\n\n- 主要方法：在 RLVR 框架下，将训练起点从原题改为以失败前缀为条件的训练分布，暴露模型于更易出错的状态，并可通过迭代刷新失败前缀进一步提升。\n\n- 结论/性能：在饱和问题上取得的性能提升与在中等难度问题上的训练效果相当，同时保持较高的 token 效率；对误导性失败前缀的鲁棒性有所提升，但对早期正确推理的遵循性有轻微下降；并且通过迭代刷新失败前缀，在性能达到平台期后还能带来额外收益。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:24:48"
+}

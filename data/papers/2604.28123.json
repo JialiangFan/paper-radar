@@ -1,0 +1,13 @@
+{
+ "id": "2604.28123",
+ "title": "PRISM: Pre-alignment via Black-box On-policy Distillation for Multimodal Reinforcement Learning",
+ "authors": "Sudong Wang, Weiquan Huang, Xiaomin Yu, Zuhao Yang, Hehai Lin, Keming Wu, Chaojun Xiao, Chen Chen, Wenxuan Wang, Beier Zhu, Yunjian Zhang, Chengwei Qin",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28123v1",
+ "abstract": "The standard post-training recipe for large multimodal models (LMMs) applies supervised fine-tuning (SFT) on curated demonstrations followed by reinforcement learning with verifiable rewards (RLVR). However, SFT introduces distributional drift that neither preserves the model's original capabilities nor faithfully matches the supervision distribution. This problem is further amplified in multimodal reasoning, where perception errors and reasoning failures follow distinct drift patterns that compound during subsequent RL. We introduce PRISM, a three-stage pipeline that mitigates this drift by inserting an explicit distribution-alignment stage between SFT and RLVR. Building on the principle of on-policy distillation (OPD), PRISM casts alignment as a black-box, response-level adversarial game between the policy and a Mixture-of-Experts (MoE) discriminator with dedicated perception and reasoning experts, providing disentangled corrective signals that steer the policy toward the supervision distribution without requiring access to teacher logits. While 1.26M public demonstrations suffice for broad SFT initialization, distribution alignment demands higher-fidelity supervision; we therefore curate 113K additional demonstrations from Gemini 3 Flash, featuring dense visual grounding and step-by-step reasoning on the hardest unsolved problems. Experiments on Qwen3-VL show that PRISM consistently improves downstream RLVR performance across multiple RL algorithms (GRPO, DAPO, GSPO) and diverse multimodal benchmarks, improving average accuracy by +4.4 and +6.0 points over the SFT-to-RLVR baseline on 4B and 8B, respectively. Our code, data, and model checkpoints are publicly available at https://github.com/XIAO4579/PRISM.",
+ "summary": "- 核心创新点：在 SFT 与 RLVR 之间引入显式的分布对齐阶段，通过基于响应级别的对抗学习（OPD）实现对齐，采用包含感知与推理专家的 Mixture-of-Experts 判别器进行黑盒纠错，不需要教师 logits。\n\n- 主要方法：构建一个三阶段管线（PRISM）：1) 以公开演示进行 SFT 初始化；2) 通过对齐阶段实现分布对齐，利用对抗游戏（策略 vs. MoE 判别器，含感知/推理专家）实现纠错信号分离；3) 进行 RLVR 微调。对齐阶段需要更高保真度的演示，额外 curate 了 113K 来自 Gemini 3 Flash 的演示，包含密集视觉定位和逐步推理。\n\n- 结论/性能：在 Qwen3-VL 的多种 RL 算法（GRPO、DAPO、GSPO）上，PRISM 提升了下游 RLVR 性能；在 4B 与 8B 模型上，平均准确率相对 SFT-to-RLVR 基线分别提升约 +4.4 和 +6.0 点。代码/数据/模型检查点公开。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-05-02 13:01:04"
+}

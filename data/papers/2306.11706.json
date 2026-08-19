@@ -1,0 +1,32 @@
+{
+ "id": "2306.11706",
+ "title": "RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation",
+ "authors": "Bousmalis, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2306.11706",
+ "abstract": "",
+ "summary": "RoboCat studies self-improving generalist manipulation across tasks and embodiments.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "benchmarks-and-evaluation",
+  "generalist-robot-policy",
+  "manipulation",
+  "robotics",
+  "safe-vla",
+  "self-improvement",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2023_Bousmalis_RoboCat.md",
+ "pdf_path": "PDFs/VLA_Models/2023_Bousmalis_RoboCat.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

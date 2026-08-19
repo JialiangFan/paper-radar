@@ -1,0 +1,13 @@
+{
+ "id": "2604.08401",
+ "title": "Verify Before You Commit: Towards Faithful Reasoning in LLM Agents via Self-Auditing",
+ "authors": "Wenhao Yuan, Chenchen Lin, Jian Chen, Jinfeng Xu, Xuehe Wang, Edith Cheuk Han Ngai",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08401v1",
+ "abstract": "In large language model (LLM) agents, reasoning trajectories are treated as reliable internal beliefs for guiding actions and updating memory. However, coherent reasoning can still violate logical or evidential constraints, allowing unsupported beliefs repeatedly stored and propagated across decision steps, leading to systematic behavioral drift in long-horizon agentic systems. Most existing strategies rely on the consensus mechanism, conflating agreement with faithfulness. In this paper, inspired by the vulnerability of unfaithful intermediate reasoning trajectories, we propose \\textbf{S}elf-\\textbf{A}udited \\textbf{Ve}rified \\textbf{R}easoning (\\textsc{SAVeR}), a novel framework that enforces verification over internal belief states within the agent before action commitment, achieving faithful reasoning. Concretely, we structurally generate persona-based diverse candidate beliefs for selection under a faithfulness-relevant structure space. To achieve reasoning faithfulness, we perform adversarial auditing to localize violations and repair through constraint-guided minimal interventions under verifiable acceptance criteria. Extensive experiments on six benchmark datasets demonstrate that our approach consistently improves reasoning faithfulness while preserving competitive end-task performance.",
+ "summary": "**核心创新点**：提出 SAVeR 框架，在行动前对内部信念进行自我审计与可验证修正，通过结构化的 persona-based 多样候选信念、对抗性审计定位违规并以约束引导的最小干预来提升推理的忠实性。\n\n**主要方法**：采用结构化生成的 persona-based 多样候选信念；对内部推理轨迹进行对抗性审计以定位违规之处；在可验证的接受标准下通过约束引导的最小干预进行修复，从而在行动前完成信念的验证与修正，提升推理的忠实性。\n\n**结论/性能**：在六个基准数据集上实验，方法显著提升推理忠实性，同时保持端任务性能的竞争力。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-10 13:05:09"
+}

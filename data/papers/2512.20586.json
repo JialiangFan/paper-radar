@@ -1,0 +1,13 @@
+{
+ "id": "2512.20586",
+ "title": "Automated stereotactic radiosurgery planning using a human-in-the-loop reasoning large language model agent",
+ "authors": "Humza Nusrat, Luke Francisco, Bing Luo, Hassan Bagher-Ebadian, Joshua Kim, Karen Chin-Snyder, Salim Siddiqui, Mira Shah, Eric Mellon, Mohammad Ghassemi, Anthony Doemer, Benjamin Movsas, Kundan Thind",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20586v1",
+ "abstract": "Stereotactic radiosurgery (SRS) demands precise dose shaping around critical structures, yet black-box AI systems have limited clinical adoption due to opacity concerns. We tested whether chain-of-thought reasoning improves agentic planning in a retrospective cohort of 41 patients with brain metastases treated with 18 Gy single-fraction SRS. We developed SAGE (Secure Agent for Generative Dose Expertise), an LLM-based planning agent for automated SRS treatment planning. Two variants generated plans for each case: one using a non-reasoning model, one using a reasoning model. The reasoning variant showed comparable plan dosimetry relative to human planners on primary endpoints (PTV coverage, maximum dose, conformity index, gradient index; all p > 0.21) while reducing cochlear dose below human baselines (p = 0.022). When prompted to improve conformity, the reasoning model demonstrated systematic planning behaviors including prospective constraint verification (457 instances) and trade-off deliberation (609 instances), while the standard model exhibited none of these deliberative processes (0 and 7 instances, respectively). Content analysis revealed that constraint verification and causal explanation concentrated in the reasoning agent. The optimization traces serve as auditable logs, offering a path toward transparent automated planning.",
+ "summary": "- 核心创新点（一句话概括）\n  提出基于大语言模型的 humans-in-the-loop 推理代理SAGE，用于自动化SRS治疗计划，并通过链式推理与可审计的优化轨迹提升透明度与可解释性，同时在关键剂量指标上与人工计划相当并降低耳蜗剂量。\n\n- 主要方法\n  - 使用两种LLM驱动的放射治疗计划代理：一个使用非推理模型，一个使用推理（带链式推理）模型，针对41例脑转移单次18 Gy SRS回顾数据生成计划。\n  - 评估关键剂量端点：靶体积覆盖度（PTV coverage）、最大剂量（Dmax）、符合指数（CI）、梯度指数（GI），以及耳蜗剂量等。\n  - 推理模型在提示“改进符合度”等情况下，展现出系统化的规划行为，包括前瞻性约束验证（457次）和权衡/取舍 deliberation（609次）。\n  - 进行内容分析，发现约束验证和因果解释集中在推理代理上，优化轨迹形成可审计的日志。\n\n- 结论/性能\n  - 推理变体在主要端点上与人工计划相当（PTV覆盖、Dmax、CI、GI，p>0.21），且耳蜗剂量显著低于人工基线（p=0.022）。\n  - 如被要求提升符合度，推理模型表现出系统化规划行为，而非推理模型几乎没有相关 deliberations。\n  - 优化轨迹提供可审计日志，提升自动化计划的透明性与可追溯性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-24 02:48:56"
+}

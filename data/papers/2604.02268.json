@@ -1,0 +1,13 @@
+{
+ "id": "2604.02268",
+ "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+ "authors": "Zhengxi Lu, Zhiyuan Yao, Jinyang Wu, Chengcheng Han, Qi Gu, Xunliang Cai, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02268v1",
+ "abstract": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at https://github.com/ZJU-REAL/SkillZero.",
+ "summary": "1) 核心创新点（1 句话概括）\n通过在训练阶段将技能内化为模型参数，实现零-shot 自主行为，并通过动态课程筛选逐步撤回技能上下文，消除运行时技能检索的噪声与开销。\n\n2) 主要方法\n- 提出 SKILL0 框架，采用在-context 强化学习实现技能内化。\n- 将离线按类别分组的技能与交互历史渲染成紧凑的可视化上下文，训练模型掌握工具调用与多轮任务完成能力。\n- 使用动态课程（Dynamic Curriculum）评估每个技能文件在当前策略上的有用性，按线性衰减预算保留仍然有益的技能，最终实现完全零-shot。\n\n3) 结论/性能\n- 相较于标准 RL 基线，在 ALFWorld 提升约 9.7%，在 Search-QA 提升约 6.6%。\n- 推理时上下文保持较低开销，每步上下文不到 0.5k token。\n- 代码公开可用（https://github.com/ZJU-REAL/SkillZero）。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:06:13"
+}

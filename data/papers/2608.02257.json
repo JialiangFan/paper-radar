@@ -1,0 +1,13 @@
+{
+ "id": "2608.02257",
+ "title": "Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation",
+ "authors": "Donglin Yang, Haoran Chen, Xingyu Chen, Lixing Liu, Manyi Li, Changhe Tu, Ke Xu, Xiaojian Ma, Si Liu",
+ "date": "2026-08-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.02257v1",
+ "abstract": "Mobile manipulation is a key capability for embodied intelligence, enabling robots to accomplish complex multi-stage tasks in open-world environments. However, mobile manipulation poses two key challenges for vision-language-action (VLA) policies: At the data level, the efficient collection of high-quality whole-body demonstrations demands the coordinated control of both the mobile base and the robotic arms; at the model level, existing VLA models predominantly rely on local camera observations, whose limited field of view hinders global spatial understanding. To address these challenges, we develop a whole-body teleoperation system and a panoramic-aware VLA policy. The system enables coordinated control of a wheeled bimanual robot through a single VR interface and supports the acquisition of a real-world mobile manipulation dataset comprising 5.5 hours of multimodal demonstrations. Building upon this dataset, we propose PanoVLA, a panorama-aware vision-language-action policy for mobile bimanual manipulation. Built upon a Mixture-of-Transformers architecture, PanoVLA introduces global spatial context through dedicated panorama encoding and fusion modules, enabling effective integration of panoramic observations with language instructions and robot states for action generation. Evaluation on four real-world mobile manipulation tasks demonstrates that PanoVLA achieves an average stage completion rate of 91.3\\% and an end-to-end success rate of 73.4\\%, substantially outperforming local-view baselines. These results demonstrate that incorporating panoramic spatial context improves spatial understanding and closed-loop manipulation performance in mobile robots.",
+ "summary": "## PanoVLA 论文摘要总结\n\n**1. 核心创新点**\n提出一套「整机遥操作数据采集系统 + 全景感知 VLA 策略（PanoVLA）」，用全景视觉提供全局空间上下文，解决移动操作中局部相机视野受限的问题。\n\n**2. 主要方法**\n- **数据层面**：构建全身遥操作系统，通过单一 VR 界面协同控制轮式双臂机器人的移动底盘与双臂，采集了 5.5 小时真实世界多模态移动操作演示数据。\n- **模型层面**：PanoVLA 基于 Mixture-of-Transformers（MoT）架构，引入专门的全景编码模块与融合模块，将全景观测与语言指令、机器人状态联合建模，输出动作。\n\n**3. 结论/性能**\n在 4 项真实世界移动操作任务上，平均阶段完成率 **91.3%**，端到端成功率 **73.4%**，显著优于仅使用局部视角的基线方法，验证了全景空间上下文对空间理解与闭环操作性能的提升作用。\n\n---\n补充说明：仓库里有一个 `paper-review` 技能（按文献综述格式输出中英文双版本并写入 Obsidian vault）。这次我按你指定的三段式格式直接作答，没有调用它。如果你想要那种更完整的综述格式并存档到 vault，告诉我一声即可。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-06 13:05:23"
+}

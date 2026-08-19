@@ -1,0 +1,13 @@
+{
+ "id": "2607.28272",
+ "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+ "authors": "Rong Wu, Daocheng Fu, Licheng Wen, Xuemeng Yang, Shu Zou, Jianbiao Mei, Yuxin Wang, Hairong Zhang, Yu Yang, Tao Hu, Cong Zhang, Botian Shi, Pinlong Cai",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28272v1",
+ "abstract": "Retrieving past experiences has become a common strategy to enhance large language model agents. However, most existing memory-augmented agents treat retrieved experiences as static records to be replayed verbatim, injecting them into the context regardless of whether they align with the agent's current situation. This ``replay'' paradigm ignores the gap between the abstract, general nature of stored experience and the concrete, ever-changing states encountered at decision time, frequently causing negative transfer. In contrast, humans rarely recall past experiences verbatim; instead, they reorganize and adapt retrieved memories to fit the present context. Inspired by this, we propose MemHarness, a framework that equips LLM agents to actively harness and reconstruct past experiences based on the present context. At each decision step, a unified policy model critiques and reconstructs the retrieved experience conditioned on the current state, producing context-grounded guidance before acting. This reconstructive ability emerges naturally through end-to-end training with GRPO. Experiments on ALFWorld and WebShop show that MemHarness substantially outperforms pure RL and static memory-augmented baselines, demonstrating strong robustness in out-of-distribution (OOD) scenarios. Furthermore, our analyses reveal that this reconstruction objective not only prevents negative transfer but also serves as latent guidance during training, fundamentally improving the agent's intrinsic reasoning capabilities.",
+ "summary": "## MemHarness: Memory Is Reconstructed, Not Replayed\n\n**1. 核心创新点**\n让 LLM 智能体不再原样\"回放\"检索到的历史经验，而是根据当前状态主动批判并**重构**记忆，生成贴合当下情境的行动指导，从而避免负迁移。\n\n**2. 主要方法**\n提出 MemHarness 框架：在每个决策步，用一个**统一的策略模型**同时承担两件事——先对检索到的经验进行批判（critique）与重构（reconstruct），产出以当前状态为条件的\"情境化指导\"，再据此行动。这种重构能力不靠人工规则，而是通过 **GRPO 端到端强化学习**自然涌现。\n\n**3. 结论/性能**\n在 **ALFWorld** 和 **WebShop** 两个基准上，显著超越纯 RL 基线和静态记忆增强基线，并在**分布外（OOD）场景**下表现出很强的鲁棒性。分析进一步表明，重构目标不仅抑制了负迁移，还在训练中充当了一种**隐式指导信号**，从根本上提升了智能体自身的推理能力。\n\n---\n\n**一句话点评**：把\"记忆检索\"从只读的上下文注入，升级为可学习的、与策略共享参数的在线加工步骤——这是该文与常见 memory-augmented agent 工作的关键分野。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-01 13:02:01"
+}

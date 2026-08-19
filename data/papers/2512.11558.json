@@ -1,0 +1,13 @@
+{
+ "id": "2512.11558",
+ "title": "DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry",
+ "authors": "Zhenyang Cai, Jiaming Zhang, Junjie Zhao, Ziyi Zeng, Yanchao Li, Jingyi Liang, Junying Chen, Yunjin Yang, Jiajun You, Shuzhi Deng, Tongfei Wang, Wanting Chen, Chunxiu Hao, Ruiqi Xie, Zhenwei Wen, Xiangyi Feng, Zou Ting, Jin Zou Lin, Jianquan Li, Guangjun Yu, Liangyi Chen, Junwen Wang, Shan Jiang, Benyou Wang",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11558v1",
+ "abstract": "Reliable interpretation of multimodal data in dentistry is essential for automated oral healthcare, yet current multimodal large language models (MLLMs) struggle to capture fine-grained dental visual details and lack sufficient reasoning ability for precise diagnosis. To address these limitations, we present DentalGPT, a specialized dental MLLM developed through high-quality domain knowledge injection and reinforcement learning. Specifically, the largest annotated multimodal dataset for dentistry to date was constructed by aggregating over 120k dental images paired with detailed descriptions that highlight diagnostically relevant visual features, making it the multimodal dataset with the most extensive collection of dental images to date. Training on this dataset significantly enhances the MLLM's visual understanding of dental conditions, while the subsequent reinforcement learning stage further strengthens its capability for multimodal complex reasoning. Comprehensive evaluations on intraoral and panoramic benchmarks, along with dental subsets of medical VQA benchmarks, show that DentalGPT achieves superior performance in disease classification and dental VQA tasks, outperforming many state-of-the-art MLLMs despite having only 7B parameters. These results demonstrate that high-quality dental data combined with staged adaptation provides an effective pathway for building capable and domain-specialized dental MLLMs.",
+ "summary": "1. 核心创新点\n- 通过在牙科领域进行高质量知识注入与强化学习，打造面向牙科的多模态大模型DentalGPT，显著提升对牙科视觉细节的理解与复杂推理能力。\n\n2. 主要方法\n- 构建并使用截至目前最大的牙科多模态数据集：聚合超过12万张牙科图像及详细描述，突出诊断相关的可视特征。\n- 在该数据集上进行领域知识注入式训练，提升牙科视觉理解能力。\n- 引入强化学习阶段，强化多模态的复杂推理能力。\n- 模型规模为7B参数，综合应用于牙科领域的多模态任务。\n\n3. 结论/性能\n- 在口内/全景基准以及医用VQA的牙科子集上，DentalGPT在疾病分类和牙科VQA任务上取得优越表现，超过了多种SOTA的MLLMs，充分证明高质量牙科数据与分阶段自适应是构建领域专用牙科MLLM的有效路径。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-15 14:03:30"
+}

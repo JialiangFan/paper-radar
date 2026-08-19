@@ -1,0 +1,13 @@
+{
+ "id": "2602.22584",
+ "title": "Towards Faithful Industrial RAG: A Reinforced Co-adaptation Framework for Advertising QA",
+ "authors": "Wenwei Li, Ming Xu, Tianle Xia, Lingxiang Hu, Yiding Sun, Linfang Shang, Liqun Liu, Peng Shu, Huan Yu, Jie Jiang",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22584v1",
+ "abstract": "Industrial advertising question answering (QA) is a high-stakes task in which hallucinated content, particularly fabricated URLs, can lead to financial loss, compliance violations, and legal risk. Although Retrieval-Augmented Generation (RAG) is widely adopted, deploying it in production remains challenging because industrial knowledge is inherently relational, frequently updated, and insufficiently aligned with generation objectives. We propose a reinforced co-adaptation framework that jointly optimizes retrieval and generation through two components: (1) Graph-aware Retrieval (GraphRAG), which models entity-relation structure over a high-citation knowledge subgraph for multi-hop, domain-specific evidence selection; and (2) evidence-constrained reinforcement learning via Group Relative Policy Optimization (GRPO) with multi-dimensional rewards covering faithfulness, style compliance, safety, and URL validity. Experiments on an internal advertising QA dataset show consistent gains across expert-judged dimensions including accuracy, completeness, and safety, while reducing the hallucination rate by 72\\%. A two-week online A/B test demonstrates a 28.6\\% increase in like rate, a 46.2\\% decrease in dislike rate, and a 92.7\\% reduction in URL hallucination. The system has been running in production for over half a year and has served millions of QA interactions.",
+ "summary": "1) 核心创新点\n- 提出一个强化协同适配框架，通过图结构化的图感知检索(GraphRAG)与证据约束强化学习(grpo)的联合优化，实现检索与生成的多跳证据获取与安全可信性提升，用以解决产业广告QA中的幻觉问题。\n\n2) 主要方法\n- GraphRAG：基于高引用知识子图的实体-关系结构建模，进行多跳、领域特定的证据选择。\n- GRPO（Group Relative Policy Optimization）：以多维奖励（可信性、风格合规、安全性、URL有效性）进行证据约束的强化学习，用于优化检索与生成的输出。\n- 将检索与生成的优化嵌入同一个强化学习驱动的框架中，在生产场景中实施。\n\n3) 结论/性能\n- 在工业广告QA的内部数据集上，获得准确性、完整性和安全性的持续提升，并将幻觉率降低约72%。\n- 两周的在线A/B测试显示：喜欢率提升28.6%，不喜欢率下降46.2%，URL幻觉率下降92.7%。\n- 该系统已在生产环境运行超过半年，服务于数百万次QA交互。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-27 14:02:52"
+}

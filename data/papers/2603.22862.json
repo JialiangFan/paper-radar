@@ -1,0 +1,13 @@
+{
+ "id": "2603.22862",
+ "title": "The Evolution of Tool Use in LLM Agents: From Single-Tool Call to Multi-Tool Orchestration",
+ "authors": "Haoyuan Xu, Chang Li, Xinyan Ma, Xianhao Ou, Zihan Zhang, Tao He, Xiangyu Liu, Zixiang Wang, Jiafeng Liang, Zheng Chu, Runxuan Liu, Rongchuan Mu, Ming Liu, Bing Qin",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22862v1",
+ "abstract": "Tool use enables large language models (LLMs) to access external information, invoke software systems, and act in digital environments beyond what can be solved from model parameters alone. Early research mainly studied whether a model could select and execute a correct single tool call. As agent systems evolve, however, the central problem has shifted from isolated invocation to multi-tool orchestration over long trajectories with intermediate state, execution feedback, changing environments, and practical constraints such as safety, cost, and verifiability. We comprehensively review recent progress in multi-tool LLM agents and analyzes the state of the art in this rapidly developing area. First, we unify task formulations and distinguish single-call tool use from long-horizon orchestration. Then, we organize the literature around six core dimensions: inference-time planning and execution, training and trajectory construction, safety and control, efficiency under resource constraints, capability completeness in open environments, and benchmark design and evaluation. We further summarize representative applications in software engineering, enterprise workflows, graphical user interfaces, and mobile systems. Finally, we discuss major challenges and outline future directions for building reliable, scalable, and verifiable multi-tool agents.",
+ "summary": "- 核心创新点：提出从单一工具调用向长轨迹的多工具编排的研究框架，并通过统一任务表述与六大维度系统梳理多工具LLM代理领域的最新进展。\n\n- 主要方法：通过系统性文献综述，区分单次工具调用与长时序编排；将研究整理为六个核心维度（推理与执行的计划与执行、培训与轨迹构建、安全与控制、资源约束下的效率、开放环境中的能力完备性、基准设计与评估）；并汇总相关应用场景（软件工程、企业工作流、图形用户界面、移动系统），分析现状、挑战与对比。\n\n- 结论/性能：指出多工具代理处于快速发展阶段，但仍面临安全性、可验证性、成本/资源约束、开放环境中的能力完备性等挑战；提出未来方向包括提升规划与执行的协同、改进训练数据与轨迹构建、加强基准设计与评估，以及提高系统的可靠性、可扩展性和可验证性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:06"
+}

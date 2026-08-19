@@ -1,0 +1,13 @@
+{
+ "id": "2608.03893",
+ "title": "Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse",
+ "authors": "Taekyung Heo, Rasoul Shafipour, Ritchie Zhao, Maximilian Golub, Mohammad Mahdi Kamani, Ritika Borkar, Makesh Tarun Chandran, Pantea Zardoshti, Bita Darvish Rouhani",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03893v1",
+ "abstract": "Production deployments often swap between different-sized models in a family for cost-quality cascading, mid-conversation switching, and routing, and each swap forces the receiver to repay the prefill from scratch. We propose cross-model KV cache transfer, where the receiver reuses the source's KV cache, skipping prefill. We find that cross-model KV has substantial linear structure across matched-KV pairs, where source and target share KV head count and per-head dimension. On Qwen3 14B->32B, one source layer explains 56% of variance in the target's keys and 32% in values, rising to 79% and 65% with multiple source layers. Building on this, we design a closed-form ridge mapper that operates per head and proceeds in three steps. First, for each target layer we select the top-k most predictive source layers and concatenate their KV as input. Second, we strip RoPE from the keys before mapping, so the fit is position-free and reusable across context lengths. Third, we fit ridge regression on a small calibration set of 500 FineWeb-Edu sequences of 1,024 tokens each. Surprisingly, across six pairs in three families, this linear mapper retains 73-98% of the receiver's standalone-prefill accuracy on four pairs, while two degrade sharply. A nonlinear MLP recovers up to +37 pp HellaSwag retention on the failures. The mapper runs 2.7-25x faster than re-prefill and remains stable across multi-turn handoff, making cross-model KV cache transfer practical.",
+ "summary": "## 论文总结：跨模型 KV Cache 迁移\n\n**1. 核心创新点**\n提出「跨模型 KV Cache 迁移」——在同一模型家族内切换模型时，用一个闭式线性映射把小模型的 KV Cache 直接转换给大模型复用，从而完全跳过重新 prefill 的开销。\n\n**2. 主要方法**\n- **关键观察**：在 KV 头数和每头维度相匹配的模型对之间，KV 表示存在显著线性结构（Qwen3 14B→32B 上，单个源层即可解释目标层 keys 56% / values 32% 的方差；多源层组合提升到 79% / 65%）。\n- **映射器设计**（逐注意力头、闭式求解的岭回归，三步）：\n  1. 为每个目标层挑选 top-k 个最具预测力的源层，拼接其 KV 作为输入；\n  2. 映射前从 keys 中剥离 RoPE，使拟合与位置无关、可跨上下文长度复用；\n  3. 仅用 500 条 FineWeb-Edu 序列（每条 1024 token）的小规模校准集拟合。\n- 对线性映射失效的情况，改用非线性 MLP 映射器。\n\n**3. 结论 / 性能**\n- 在 3 个模型家族的 6 组模型对上，线性映射在其中 4 组保留了独立 prefill 精度的 **73–98%**；另外 2 组明显退化。\n- 对失败案例，MLP 映射器可将 HellaSwag 的精度保留率最多提升 **+37 个百分点**。\n- 速度比重新 prefill 快 **2.7–25 倍**，且在多轮对话交接场景中保持稳定，说明该方案具备实用性。\n\n> 一点说明：摘要中「四组好、两组坏」的分化本身是个值得注意的信号——线性可迁移性可能依赖于具体模型对的训练相似度，论文正文中关于失败条件的分析会是判断该方法通用性的关键。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-05 13:02:39"
+}

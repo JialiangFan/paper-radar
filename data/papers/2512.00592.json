@@ -1,0 +1,13 @@
+{
+ "id": "2512.00592",
+ "title": "HAVEN: Hierarchical Adversary-aware Visibility-Enabled Navigation with Cover Utilization using Deep Transformer Q-Networks",
+ "authors": "Mihir Chauhan, Damon Conover, Aniket Bera",
+ "date": "2025-11-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.00592v1",
+ "abstract": "Autonomous navigation in partially observable environments requires agents to reason beyond immediate sensor input, exploit occlusion, and ensure safety while progressing toward a goal. These challenges arise in many robotics domains, from urban driving and warehouse automation to defense and surveillance. Classical path planning approaches and memoryless reinforcement learning often fail under limited fields of view (FoVs) and occlusions, committing to unsafe or inefficient maneuvers. We propose a hierarchical navigation framework that integrates a Deep Transformer Q-Network (DTQN) as a high-level subgoal selector with a modular low-level controller for waypoint execution. The DTQN consumes short histories of task-aware features, encoding odometry, goal direction, obstacle proximity, and visibility cues, and outputs Q-values to rank candidate subgoals. Visibility-aware candidate generation introduces masking and exposure penalties, rewarding the use of cover and anticipatory safety. A low-level potential field controller then tracks the selected subgoal, ensuring smooth short-horizon obstacle avoidance. We validate our approach in 2D simulation and extend it directly to a 3D Unity-ROS environment by projecting point-cloud perception into the same feature schema, enabling transfer without architectural changes. Results show consistent improvements over classical planners and RL baselines in success rate, safety margins, and time to goal, with ablations confirming the value of temporal memory and visibility-aware candidate design. These findings highlight a generalizable framework for safe navigation under uncertainty, with broad relevance across robotic platforms.",
+ "summary": "- 核心创新点（1句）\n  提出一个层次化、可见性感知的导航框架：以深度Transformer Q网络（DTQN）作为高层子目标选择器，并结合可见性遮罩与暴露惩罚的候选生成，以及低层潜在场控制，实现对遮挡与不确定环境的安全高效导航。\n\n- 主要方法\n  - 架构：分层导航系统，DTQN 负责从短期历史的任务相关特征中输出子目标的Q值并排序，低层采用潜在场控制器执行所选子目标。\n  - 输入与特征：使用里程计、目标方向、障碍距离和可见性信号等任务相关特征的短时历史进行编码。\n  - 可见性感知的候选生成：引入掩码和暴露惩罚，鼓励利用遮挡处于相对安全的位置并提升前瞻安全性。\n  - 低层控制：通过潜在场方法实现对选定子目标的平滑跟踪与短期避障。\n  - 迁移与泛化：在2D仿真验证后，直接扩展到3D Unity-ROS环境，通过将点云感知投影到相同的特征模式实现无架构变动的迁移。\n\n- 结论/性能\n  - 相较经典规划与RL基线，在成功率、安全裕度和到达时间等关键指标上实现稳定提升。\n  - 消融实验验证了时序记忆的价值以及可见性感知候选设计的有效性，表明该框架在不确定环境中的安全导航具有较强泛化性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:00:40"
+}

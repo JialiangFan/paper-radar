@@ -1,0 +1,13 @@
+{
+ "id": "2604.18413",
+ "title": "TypeScript Repository Indexing for Code Agent Retrieval",
+ "authors": "Junsong Pu, Yichen Li, Zhuangbin Chen",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18413v1",
+ "abstract": "Graph-based code indexing can improve context retrieval for LLM-based code agents by preserving call chains and dependency relationships that keyword search and similarity retrieval often miss. ABCoder is an open-source framework that parses codebases into a function-level code index called UniAST, but its existing parsers combine lightweight AST parsers for syntactic analysis with language servers for semantic resolution, but because LSP-based resolution requires a JSON-RPC call for each symbol lookup, these per-symbol calls become a bottleneck on large TypeScript repositories. We present abcoder-ts-parser, a TypeScript parser built on the TypeScript Compiler API that works directly with the compiler's AST, semantic information, and module resolution logic. We evaluate the parser on three open-source TypeScript projects with up to 1.2 million lines of code and find that it produces reliable indexes significantly more efficiently than the existing architecture. For a live demonstration, watch: https://youtu.be/ryssr7ouvdE",
+ "summary": "- 核心创新点：提出 abcoder-ts-parser，即基于 TypeScript 编译器 API 的 TypeScript 解析器，直接利用编译器的 AST、语义信息和模块解析逻辑，取代基于语言服务器的逐符号解析，从而更高效地生成代码索引。\n\n- 主要方法：使用 abcoder-ts-parser 构建在 TypeScript 编译器 API 上的解析流程，直接对编译器的 AST 与语义信息/模块解析进行处理，形成 UniAST 的函数级代码索引；避免对每个符号进行 LSP JSON-RPC 调用，提升大规模仓库的索引效率；在三个开源 TypeScript 项目（总量可到 120 万行代码）上进行评测。\n\n- 结论/性能：索引结果更可靠，并且相较于现有架构显著提高效率，尤其在大规模 TypeScript 仓库中有效缓解逐符号解析的瓶颈。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-21 13:05:32"
+}

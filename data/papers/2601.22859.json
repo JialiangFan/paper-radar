@@ -1,0 +1,13 @@
+{
+ "id": "2601.22859",
+ "title": "MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering",
+ "authors": "Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan, Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22859v1",
+ "abstract": "The evolution of Large Language Model (LLM) agents for software engineering (SWE) is constrained by the scarcity of verifiable datasets, a bottleneck stemming from the complexity of constructing executable environments across diverse languages. To address this, we introduce MEnvAgent, a Multi-language framework for automated Environment construction that facilitates scalable generation of verifiable task instances. MEnvAgent employs a multi-agent Planning-Execution-Verification architecture to autonomously resolve construction failures and integrates a novel Environment Reuse Mechanism that reduces computational overhead by incrementally patching historical environments. Evaluations on MEnvBench, a new benchmark comprising 1,000 tasks across 10 languages, demonstrate that MEnvAgent outperforms baselines, improving Fail-to-Pass (F2P) rates by 8.6% while reducing time costs by 43%. Additionally, we demonstrate the utility of MEnvAgent by constructing MEnvData-SWE, the largest open-source polyglot dataset of realistic verifiable Docker environments to date, alongside solution trajectories that enable consistent performance gains on SWE tasks across a wide range of models. Our code, benchmark, and dataset are available at https://github.com/ernie-research/MEnvAgent.",
+ "summary": "- 核心创新点：提出一个面向多语言的自动化环境构造框架 MEnvAgent，通过多智能体的规划–执行–验证架构结合环境重用的增量修补机制，实现可扩展的可验证软件工程任务环境生成。\n\n- 主要方法：\n  - 引入多智能体的规划-执行-验证（Planning-Execution-Verification）架构，自动解决环境构造过程中的失败。\n  - 提出环境重用机制，通过对历史环境进行增量修补来降低计算开销。\n  - 在 MEnvBench（涵盖10种语言、1000个任务）进行评估，并构建 MEnvData-SWE，成为目前最大的开源多语言可验证 Docker 环境数据集。\n  - 提供任务解轨迹，支持在广泛模型上实现稳定的性能提升。\n\n- 结论/性能：\n  - 在 MEnvBench 上，Fail-to-Pass（F2P）提升 8.6%，时间成本下降 43%。\n  - 成功构建并发布 MEnvData-SWE，成为最大规模的开源多语言可验证 Docker 环境数据集及解轨迹集合。\n  - 该方法在不同模型上均展现出持续的 SWE 任务性能提升潜力。 \n  - 相关代码、基准和数据集已开源。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-02 14:03:49"
+}

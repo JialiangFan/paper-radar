@@ -1,0 +1,13 @@
+{
+ "id": "2602.01795",
+ "title": "RedVisor: Reasoning-Aware Prompt Injection Defense via Zero-Copy KV Cache Reuse",
+ "authors": "Mingrui Liu, Sixiao Zhang, Cheng Long, Kwok-Yan Lam",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01795v1",
+ "abstract": "Large Language Models (LLMs) are increasingly vulnerable to Prompt Injection (PI) attacks, where adversarial instructions hidden within retrieved contexts hijack the model's execution flow. Current defenses typically face a critical trade-off: prevention-based fine-tuning often degrades general utility via the \"alignment tax\", while detection-based filtering incurs prohibitive latency and memory costs. To bridge this gap, we propose RedVisor, a unified framework that synthesizes the explainability of detection systems with the seamless integration of prevention strategies. To the best of our knowledge, RedVisor is the first approach to leverage fine-grained reasoning paths to simultaneously detect attacks and guide the model's safe response. We implement this via a lightweight, removable adapter positioned atop the frozen backbone. This adapter serves a dual function: it first generates an explainable analysis that precisely localizes the injection and articulates the threat, which then explicitly conditions the model to reject the malicious command. Uniquely, the adapter is active only during this reasoning phase and is effectively muted during the subsequent response generation. This architecture yields two distinct advantages: (1) it mathematically preserves the backbone's original utility on benign inputs; and (2) it enables a novel KV Cache Reuse strategy, eliminating the redundant prefill computation inherent to decoupled pipelines. We further pioneer the integration of this defense into the vLLM serving engine with custom kernels. Experiments demonstrate that RedVisor outperforms state-of-the-art defenses in detection accuracy and throughput while incurring negligible utility loss.",
+ "summary": "- 核心创新点：在冻结的骨干模型上方引入一个轻量且可移除的适配器，通过可解释的推理路径实现对提示注入的检测与安全拒绝，并在推理阶段激活、生成阶段静默，同时引入零复制的 KV 缓存复用以提升吞吐和保留原模型能力。\n- 主要方法：在冻结骨干之上使用一个可移除的适配器，生成可解释的分析并定位注入点，条件化地拒绝恶意命令；该适配器仅在推理阶段启用，避免对后续生成阶段的影响；并实现 KV 缓存的零复制复用，集成到 vLLM 服务引擎的自定义内核。\n- 结论/性能：实验显示 RedVisor 在检测准确性与吞吐量方面超过现有防御，同时对正常输入的模型效用几乎无损失。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-03 14:02:51"
+}

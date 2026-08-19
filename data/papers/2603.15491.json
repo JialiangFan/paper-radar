@@ -1,0 +1,13 @@
+{
+ "id": "2603.15491",
+ "title": "Agentic workflow enables the recovery of critical materials from complex feedstocks via selective precipitation",
+ "authors": "Andrew Ritchhart, Sarah I. Allec, Pravalika Butreddy, Krista Kulesa, Qingpu Wang, Dan Thien Nguyen, Maxim Ziatdinov, Elias Nakouzi",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15491v1",
+ "abstract": "We present a multi-agentic workflow for critical materials recovery that deploys a series of AI agents and automated instruments to recover critical materials from produced water and magnet leachates. This approach achieves selective precipitation from real-world feedstocks using simple chemicals, accelerating the development of efficient, adaptable, and scalable separations to a timeline of days, rather than months and years.",
+ "summary": "- 核心创新点：提出一个多代理AI驱动的工作流，结合自动化仪器，在复杂原料（产出水和磁铁浸出物）中实现对关键材料的选择性沉淀回收，显著缩短开发时间至数日。\n- 主要方法：使用一系列AI代理与自动化设备协同工作，对真实 feedstock 进行数据驱动的设计与执行，通过简单化学试剂实现选择性沉淀，以实现快速、可适应且可扩展的分离过程。\n- 结论/性能：实现对真实原料的选择性沉淀回收，显著提升开发速度（从月/年级别缩短为数日），并具备快速适应性和可扩展性的分离能力。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-17 13:01:54"
+}

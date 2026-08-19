@@ -1,0 +1,13 @@
+{
+ "id": "2605.11514",
+ "title": "FlowSteer: Prompt-Only Workflow Steering Exposes Planning-Time Vulnerabilities in Multi-Agent LLM Systems",
+ "authors": "Fanxiao Li, Jiaying Wu, Tingchao Fu, Natasha Jaques, Wei Zhou, Min-Yen Kan",
+ "date": "2026-05-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.11514v1",
+ "abstract": "Multi-agent systems (MAS) powered by large language models (LLMs) increasingly adopt planner--executor architectures, where planners convert prompts into subtasks, roles, dependencies, and routing paths. This flexibility enables adaptive coordination, but exposes an attack surface in workflow formation: prompts can shape agent organization without modifying MAS infrastructure. We study this risk through social influence probing workflows to identify high-impact subtasks and malicious-signal propagation. The analysis reveals two vulnerabilities: workflow position can amplify or suppress a malicious signal, and sycophantic framing makes downstream agents more likely to relay it. We translate these findings into FlowSteer, a prompt-only workflow steering attack that converts vulnerability priors into one crafted prompt. FlowSteer aligns a malicious signal with influential task components and guides replanning toward dependencies that preserve propagation. Experiments show that FlowSteer increases malicious success by up to 55% over naive prompting, transfers across MAS setups, and remains effective with black-box topology inference. As FlowSteer biases the planning signals that generate the workflow, MAS defenses that inspect only the generated workflow provide limited protection. As such, we introduce FlowGuard, an input-side defense that reduces malicious success by up to 34% while preserving prompt utility. Our results position workflow formation as a new safety frontier for multi-agent LLM systems, opening a planning-time security perspective on how agent coordination itself can be attacked and defended.",
+ "summary": "1) 核心创新点：提出 FlowSteer——一种仅通过提示就能定向影响多智能体LLM系统工作流的攻击方法，揭示工作流形成中的脆弱性及恶意信号传播的放大/抑制效应，并给出对应的对抗机制 FlowGuard。\n\n2) 主要方法：\n- 基于对基于 planner–executor 架构的多智能体系统工作流形成过程的分析，进行“社交影响探查”（social influence probing）以识别高影响子任务与恶意信号的传播路径。\n- FlowSteer：一种 prompt-only 攻击策略，将恶意信号对齐到有影响力的任务组件，并通过引导重新规划朝向有利于传播的依赖关系来实现信号的持续传播（在黑盒拓扑下也具备一定有效性，且具跨 MAS 设置的迁移性）。\n- 提出 FlowGuard 作为输入端防御，通过对输入进行审查与约束，降低恶意成功率，同时尽量保持提示的实用性。\n\n3) 结论/性能：\n- FlowSteer 相较于天真提示，恶意成功率最高提升约55%，且能够在不同 MAS 设置间迁移，并在黑盒拓扑推断条件下仍有效。\n- FlowGuard 作为输入侧防御，在不显著损害提示效用的前提下，将恶意成功率降低最高约34%。\n- 结论指出工作流形成成为多智能体LLM系统的一个新的安全前沿，需要在规划时就考虑潜在攻击与防御。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-05-19 12:34:31"
+}

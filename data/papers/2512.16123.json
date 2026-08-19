@@ -1,0 +1,13 @@
+{
+ "id": "2512.16123",
+ "title": "Autoencoder-based Denoising Defense against Adversarial Attacks on Object Detection",
+ "authors": "Min Geun Song, Gang Min Kim, Woonmin Kim, Yongsik Kim, Jeonghyun Sim, Sangbeom Park, Huy Kang Kim",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16123v1",
+ "abstract": "Deep learning-based object detection models play a critical role in real-world applications such as autonomous driving and security surveillance systems, yet they remain vulnerable to adversarial examples. In this work, we propose an autoencoder-based denoising defense to recover object detection performance degraded by adversarial perturbations. We conduct adversarial attacks using Perlin noise on vehicle-related images from the COCO dataset, apply a single-layer convolutional autoencoder to remove the perturbations, and evaluate detection performance using YOLOv5. Our experiments demonstrate that adversarial attacks reduce bbox mAP from 0.2890 to 0.1640, representing a 43.3% performance degradation. After applying the proposed autoencoder defense, bbox mAP improves to 0.1700 (3.7% recovery) and bbox mAP@50 increases from 0.2780 to 0.3080 (10.8% improvement). These results indicate that autoencoder-based denoising can provide partial defense against adversarial attacks without requiring model retraining.",
+ "summary": "- 核心创新点：提出一种基于单层卷积自编码器的去噪防御，在不对目标检测模型重新训练的前提下，缓解对抗扰动对检测性能的影响。\n- 主要方法：对对抗攻击采用的 Perlin 噪声扰动的车辆相关图像，先通过单层卷积自编码器进行去噪，再使用 YOLOv5 进行目标检测评测，比较去噪前后的性能变化。\n- 结论/性能：在攻击将 bbox mAP 从 0.2890 降至 0.1640（下降43.3%）后，应用自编码器去噪使 bbox mAP 提升至 0.1700（3.7%恢复），bbox mAP@50 从 0.2780 提升至 0.3080（10.8%提升），实现了对抗攻击的部分防御效果且无需重新训练检测模型。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-19 02:44:53"
+}

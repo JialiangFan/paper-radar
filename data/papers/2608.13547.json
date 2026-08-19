@@ -1,0 +1,13 @@
+{
+ "id": "2608.13547",
+ "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+ "authors": "Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13547v1",
+ "abstract": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point reproduces each replayed reply's raw-path outcome, so any recovery under a disclosed boundary must come from the model changing its generation. Across eight same-window configurations, replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points; disclosure recovers 30.4 to 60.7 points for six configurations, and zero or slightly negative for the other two. Raw generation is nearly saturated at the frontier; boundary adaptation is what still separates models. GPT-5.6-sol's matched gap of -3.6 points hides -64.3 points of damage and +60.7 points of compensation. The deployment configuration reorders models: one reversal among 26 comparable pairs is unambiguous and four more sit on single-task margins. Evaluations of command-issuing agents should report the model configuration, generation contract, execution path, operating point, and final-state validator rather than treat a matched score as an intrinsic model property.",
+ "summary": "## QuoteBench：匹配分数如何掩盖命令路径故障\n\n**1. 核心创新点**\n提出 QuoteBench 基准，揭示\"LLM 智能体执行 Bash 命令的成功率\"这一聚合指标会把**模型生成错误**与**生成之后由接口序列化/重解析引入的传输层错误**混为一谈，从而掩盖真实的命令路径故障。\n\n**2. 主要方法**\n- 构建 56 个一次性（one-shot）任务，来源于 14 个真实事故衍生的问题族，采用**精确最终状态校验**（exact final-state validation）而非字符串比对。\n- 将\"生成契约\"（generation contract）与\"执行传输路径\"（execution transport）做交叉实验，在传输链路中刻意插入一个**未做转义的额外解析器**作为边界。\n- 关键控制：在插值点正确转义时，重放同一条回复可完全复现原始路径的结果——因此在\"边界被告知（disclosure）\"条件下的任何性能恢复，只可能来自模型主动改变自身生成方式，而非环境差异。\n- 在 8 组同窗口（same-window）配置上进行对照评测。\n\n**3. 结论/性能**\n- 把**同一条回复**重放through额外解析器，成功率下降 **55.4~73.2 个百分点**。\n- 告知边界后，6 组配置恢复 **30.4~60.7 个百分点**，另外 2 组恢复为零甚至轻微负增长。\n- 前沿模型的原始生成能力已接近饱和，真正拉开差距的是**边界适应能力**。\n- 典型案例：GPT-5.6-sol 表面上匹配分数仅差 **-3.6 分**，实际掩盖了 **-64.3 分的损伤**与 **+60.7 分的补偿**。\n- 部署配置会**改变模型排名**：26 组可比配对中有 1 组出现明确反转，另有 4 组处于单任务差距的边缘。\n- 结论建议：评测命令类智能体时，必须同时报告模型配置、生成契约、执行路径、操作点与最终状态校验器，而不能把匹配分数当作模型的内在属性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-16 13:00:53"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.00479",
+ "title": "All Roads Lead to Rome: Incentivizing Divergent Thinking in Vision-Language Models",
+ "authors": "Xinyu Tian, Shu Zou, Zhaoyuan Yang, Mengqi He, Peter Tu, Jing Zhang",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.00479v1",
+ "abstract": "Recent studies have demonstrated that Reinforcement Learning (RL), notably Group Relative Policy Optimization (GRPO), can intrinsically elicit and enhance the reasoning capabilities of Vision-Language Models (VLMs). However, despite the promise, the underlying mechanisms that drive the effectiveness of RL models as well as their limitations remain underexplored. In this paper, we highlight a fundamental behavioral distinction between RL and base models, where the former engages in deeper yet narrow reasoning, while base models, despite less refined along individual path, exhibit broader and more diverse thinking patterns. Through further analysis of training dynamics, we show that GRPO is prone to diversity collapse, causing models to prematurely converge to a limited subset of reasoning strategies while discarding the majority of potential alternatives, leading to local optima and poor scalability. To address this, we propose Multi-Group Policy Optimization (MUPO), a simple yet effective approach designed to incentivize divergent thinking across multiple solutions, and demonstrate its effectiveness on established benchmarks. Project page: https://xytian1008.github.io/MUPO/",
+ "summary": "1. 核心创新点：提出 Multi-Group Policy Optimization (MUPO)，通过对多组策略进行优化来激励 vision-language 模型的分歧性推理，解决 GRPO 导致的多样性崩溃和局部最优问题。\n\n2. 主要方法：在对 GRPO 行为与训练 dynamics 的分析基础上，设计 MUPO：将策略分成多组并对各组施以多样性激励与差异化奖励，促使模型在推理路径上探索多种解法；在标准的视觉-语言模型评估基准上验证其有效性。\n\n3. 结论/性能：证实 MUPO 能有效提升推理的多样性，减少对少数策略的过度收敛，改善模型的鲁棒性和可扩展性，在既有基准上表现优于 GRPO。项目页面提供实现与更多细节。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-02 13:03:11"
+}

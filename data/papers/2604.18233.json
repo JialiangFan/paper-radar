@@ -1,0 +1,13 @@
+{
+ "id": "2604.18233",
+ "title": "Aether: Network Validation Using Agentic AI and Digital Twin",
+ "authors": "Jordan Auge, Sam Betts, Giovanna Carofiglio, Giulio Grassi, Martin Gysi, John Kenneth d'Souza",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18233v1",
+ "abstract": "Network change validation remains a critical yet predominantly manual, time-consuming, and error-prone process in modern network operations. While formal network verification has made substantial progress in proving correctness properties, it is typically applied in offline, pre-deployment settings and faces challenges in accommodating continuous changes and validating live production behavior. Current operational approaches typically involve scattered testing tools, resulting in partial coverage and errors that surface only after deployment. In this paper, we present Aether, a novel approach that integrates Generative Agentic AI with a multi-functional Network Digital Twin to automate and streamline network change validation workflows. It features an agentic architecture with five specialized Network Operations AI agents that collaboratively handle the change validation lifecycle from intent analysis to network verification and testing. Aether agents use a unified Network Digital Twin integrating modeling, simulation, and emulation to maintain a consistent, up-to-date network view for verification and testing. By orchestrating agent collaboration atop this digital twin, Aether enables automated, rapid network change validation while reducing manual effort, minimizing errors, and improving operational agility and cost-effectiveness. We evaluate Aether over synthetic network change scenarios covering main classes of network changes and on past incidents from a major ISP operational network, demonstrating promising results in error detection (100%), diagnostic coverage (92-96%), and speed (6-7 minutes) over traditional methods.",
+ "summary": "1) 核心创新点：将生成式代理AI与网络数字孪生深度融合，形成五个专门的网络运维AI代理协同的端到端网络变更验证框架。\n\n2) 主要方法：提出一个五代理的代理架构，覆盖意图分析、网络验证、测试等变更验证生命周期；使用统一的网络数字孪生，集成建模、仿真与仿真执行（emulation）来维持一致、最新的网络视图；在数字孪生之上进行代理协作编排，以实现自动化、快速的验证流程并降低人工成本和错误。\n\n3) 结论/性能：在合成变更场景和一家主要运营商的历史事故上评估，达到错误检测100%、诊断覆盖率92-96%，验证速度为6-7分钟，显著优于传统方法，同时提升运营敏捷性与成本效益。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-21 13:02:23"
+}

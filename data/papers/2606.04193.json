@@ -1,0 +1,13 @@
+{
+ "id": "2606.04193",
+ "title": "Notarized Agents: Receiver-Attested Confidential Receipts for AI Agent Actions",
+ "authors": "Juan Figuera",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.04193v1",
+ "abstract": "Current AI agent observability is structurally compromised: the entity producing the activity log is the same entity whose activity is being logged. A compromised or buggy agent can omit, alter, or fabricate its own traces, and the operator running the agent has no independent way to detect tampering. We propose a class of protocols that resolves this by inverting the trust boundary: the service that receives an agent's call signs a receipt of what it observed using its own key, encrypts the receipt to the agent's owner, and publishes it to a public transparency log. The owner reconstructs a tamper-evident trail without trusting the agent or its operator. We instantiate the class as Sello, a protocol combining four properties absent in any current system: (P1) receiver-side signing, (P2) HPKE encryption to an owner public key bound to the authorization token via JWS, (P3) publication to a witness-cosigned Merkle log, and (P4) owner-side discovery by token reference. We describe the protocol, analyze its security under an adversary that controls the agent and its operator, present microbenchmarks of the cryptographic operations, and situate Sello among adjacent receipt-protocol work (Signet, AgentROA, Agent Passport System, draft-farley-acta, SCITT). We discuss known limitations including the suppression attack, service collusion, and the adoption-incentive problem.",
+ "summary": "# 论文总结：Notarized Agents - 接收方认证的 AI 智能体行为机密回执\n\n## 1. 核心创新点\n**反转信任边界**：由 AI 智能体调用的**接收方服务**（而非智能体自身）签发并发布加密回执，从而解决\"自证清白\"的可观测性难题，让被入侵或有缺陷的智能体无法篡改自己的行为日志。\n\n## 2. 主要方法\n提出 **Sello 协议**，组合四项关键属性：\n- **P1 接收方签名**：服务方用自己的密钥对观察到的调用签发回执；\n- **P2 HPKE 加密**：将回执加密至智能体所有者公钥，公钥通过 JWS 与授权令牌绑定；\n- **P3 见证者共签的 Merkle 透明日志**：将回执发布至公开可验证的日志中；\n- **P4 所有者按令牌引用发现**：所有者凭令牌检索并重建防篡改的审计轨迹。\n\n整体在对手同时控制智能体及其运营者的威胁模型下进行安全分析。\n\n## 3. 结论/性能\n- 给出协议的形式化描述与安全性分析；\n- 提供加密操作的**微基准测试**结果，证明其在实践中可行；\n- 与 Signet、AgentROA、Agent Passport System、draft-farley-acta、SCITT 等相邻方案进行了对比定位；\n- 坦诚讨论了已知局限：**抑制攻击**（suppression attack）、**服务方合谋**以及**采纳激励问题**。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-04 13:00:56"
+}

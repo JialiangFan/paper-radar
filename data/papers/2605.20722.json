@@ -1,0 +1,13 @@
+{
+ "id": "2605.20722",
+ "title": "AGPO: Adaptive Group Policy Optimization with Dual Statistical Feedback",
+ "authors": "Miaobo Hu, Shuhao Hu, Bokun Wang, Ruohan Wang, Xin Wang, Xiaobo Guo, Daren Zha, Jun Xiao",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.20722v1",
+ "abstract": "Reinforcement learning improves LLM reasoning, but PPO/GRPO typically use fixed clipping and decoding temperature, which makes training brittle and tuning-heavy. We propose Adaptive Group Policy Optimization (AGPO), a critic-free refinement of GRPO that uses group-level statistics to control both update magnitude and exploration. AGPO uses a shared probe-derived statistical state to drive two controllers: (i) adaptive clipping, which sets the trust-region size from reward dispersion and skewness, probe vote entropy, policy entropy, and step-wise KL drift; and (ii) bidirectional adaptive temperature sampling, which heats or cools decoding around a base temperature according to centered uncertainty relative to a running baseline. On nine English and Chinese math/STEM benchmarks, Qwen2.5-14B trained with AGPO outperforms PPO/GRPO under the same generated-token budget, reaching 67.3% on GSM8K and 40.5% on MATH. Gains transfer to Llama-3-8B and Gemma-2-9B, and ablations confirm both modules are complementary. Our implementation is publicly available at https://github.com/wandugu/paper_agpo.",
+ "summary": "# AGPO 论文摘要\n\n1. **核心创新点**：提出 AGPO，一种基于双重统计反馈的自适应组策略优化方法，让 GRPO 的裁剪范围和采样温度根据组级统计量动态调整，摆脱固定超参的脆弱性。\n\n2. **主要方法**：在无 critic 的 GRPO 框架上，利用探针（probe）派生的共享统计状态驱动两个控制器——(i) **自适应裁剪**：根据奖励的离散度/偏度、探针投票熵、策略熵和逐步 KL 漂移来动态设定信任域大小；(ii) **双向自适应温度采样**：根据相对于运行基线的中心化不确定性，围绕基础温度上下调节解码温度。\n\n3. **结论/性能**：在 9 个中英文数学/STEM 基准上，Qwen2.5-14B 使用 AGPO 在相同生成 token 预算下超越 PPO/GRPO，GSM8K 达到 67.3%、MATH 达到 40.5%；增益可迁移到 Llama-3-8B 和 Gemma-2-9B，消融实验证实两个模块互补。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-23 13:01:35"
+}

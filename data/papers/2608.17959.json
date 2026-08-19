@@ -1,0 +1,13 @@
+{
+ "id": "2608.17959",
+ "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+ "authors": "Isidoro Tamassia, Lennert De Smet, Giuseppe Marra",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17959v1",
+ "abstract": "State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to generalize to new tasks. In this work, we present a novel world model formulation where the reward prediction only depends on a subset of structured, symbolic components of the whole latent state. Decoupling observation reconstruction and reward prediction allows us to learn world models that can adapt zero-shot, i.e. without further environment interactions, to new reward functions defined over the same symbolic state space. We discuss the main advantages and challenges of learning these neurosymbolic world models and demonstrate the strong generalisation properties of our approach over purely neural methods.",
+ "summary": "## 论文总结：Towards Zero-Shot Task Transfer with Neurosymbolic World Models\n\n**1. 核心创新点**\n\n提出一种\"神经符号世界模型\"：让奖励预测只依赖于隐状态中一小部分结构化的符号成分，从而使模型能在无需任何新环境交互的情况下零样本迁移到新任务。\n\n**2. 主要方法**\n\n- 基于模型的强化学习（model-based RL）框架，在隐空间中做规划以改进策略。\n- 关键设计是**解耦观测重建与奖励预测**：整体隐状态仍由神经网络学习以支持观测重建，但奖励函数只建立在其中可解释的符号化子集之上。\n- 由于奖励被定义在共享的符号状态空间上，只要新任务的奖励函数用同一套符号变量表达，已学到的世界模型即可直接复用。\n\n**3. 结论/性能**\n\n作者讨论了学习这类神经symbolic世界模型的主要优势与挑战，并通过实验证明其相对于纯神经方法具有显著更强的泛化能力，可实现对新奖励函数的零样本适应（zero-shot，无额外环境交互）。\n\n> 注：摘要本身未给出具体数据集与量化指标，\"强泛化性\"为作者定性表述；若需要具体实验设置与数值对比，需查阅正文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-19 13:05:33"
+}

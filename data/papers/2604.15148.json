@@ -1,0 +1,13 @@
+{
+ "id": "2604.15148",
+ "title": "IG-Search: Step-Level Information Gain Rewards for Search-Augmented Reasoning",
+ "authors": "Zihan Liang, Yufei Ma, Ben Chen, Zhipeng Qian, Huangyu Dai, Lingtao Mao, Xuxin Zhang, Chenyi Lei, Wenwu Ou",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15148v1",
+ "abstract": "Reinforcement learning has emerged as an effective paradigm for training large language models to perform search-augmented reasoning. However, existing approaches rely on trajectory-level rewards that cannot distinguish precise search queries from vague or redundant ones within a rollout group, and collapse to a near-zero gradient signal whenever every sampled trajectory fails. In this paper, we propose IG-Search, a reinforcement learning framework that introduces a step-level reward based on Information Gain (IG). For each search step, IG measures how much the retrieved documents improve the model's confidence in the gold answer relative to a counterfactual baseline of random documents, thereby reflecting the effectiveness of the underlying search query. This signal is fed back to the corresponding search-query tokens via per-token advantage modulation in GRPO, enabling fine-grained, step-level credit assignment within a rollout. Unlike prior step-level methods that require either externally annotated intermediate supervision or shared environment states across trajectories, IG-Search derives its signals from the policy's own generation probabilities, requiring no intermediate annotations beyond standard question-answer pairs. Experiments on seven single-hop and multi-hop QA benchmarks demonstrate that IG-Search achieves an average EM of 0.430 with Qwen2.5-3B, outperforming the strongest trajectory-level baseline (MR-Search) by 1.6 points and the step-level method GiGPO by 0.9 points on average across benchmarks, with particularly pronounced gains on multi-hop reasoning tasks. Despite introducing a dense step-level signal, IG-Search adds only ~6.4% to per-step training wall-clock time over the trajectory-level baseline and leaves inference latency unchanged, while still providing a meaningful gradient signal even when every sampled trajectory answers incorrectly.",
+ "summary": "- 核心创新点：在搜索增强推理中引入基于信息增益的逐步奖励，实现对每一步检索查询的细粒度信用分配与梯度回传，而不依赖外部中间监督。\n\n- 主要方法：提出 IG-Search，通过对每个搜索步骤计算信息增益（与随机文档的对照基线相比，衡量检索结果对提高正确答案信心的贡献），将该信号通过对应该搜索查询的逐词优势调制在 GRPO 框架中实现细粒度的信用分配；该信号仅依赖模型的生成概率和标准问答对，无需额外的中间监督或共享环境状态。\n\n- 结论/性能：在七个单跳与多跳问答基准上，使用 Qwen2.5-3B 时平均 EM 达到 0.430，较最强的轨迹级基线 MR-Search 提升约 1.6 点、较 GiGPO 提升约 0.9 点，且多跳任务增益尤为明显；训练时每一步额外开销约仅增加 6.4%，推理时延不变，即使所有采样轨迹都错误也能提供有意义的梯度信号。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-17 13:03:45"
+}

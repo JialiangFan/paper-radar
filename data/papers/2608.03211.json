@@ -1,0 +1,13 @@
+{
+ "id": "2608.03211",
+ "title": "CrossScope: A Role-Asymmetric World Model for Joint Dual-Scope Surgical Video Prediction",
+ "authors": "Wanhao Liu, Jinsong Lin, Rulin Zhou, Chi Kit Ng, Wenbin Pan, Zhiqing Tang, Dongyue Li, Liwei Luo, Yanshen Wu, Panshuo Li, Zhiyong Xiong, Huxin Gao, Tamas Haidegger, Hongliang Ren",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03211v1",
+ "abstract": "Visual world models typically learn future dynamics from a single observation stream, limiting their ability to model cooperative systems with multiple independently moving observers. We investigate this challenge in Mother--Child endoscopic retrograde cholangiopancreatography (ERCP), where two flexible scopes provide complementary yet role-dependent views without a calibrated stereo relationship. Unlike conventional multi-view fusion that assumes symmetric information exchange, we formulate \\textbf{role-asymmetric dual-scope future prediction}, where cross-view evidence is selectively transferred according to the prediction target and its underlying spatial requirements. We propose \\textbf{CrossScope}, a dual-stream surgical world model that preserves view-specific experts while enabling target-specific evidence routing through geometry-guided residual interactions. CrossScope learns two complementary communication directions: geometric motion cues from the Mother view guide Child-view future dynamics, while pose-aligned Child appearance supports Mother-view prediction only when valid spatial correspondence is established. This design allows each scope to contribute task-relevant evidence without compromising its view-specific representation. To evaluate this problem, we establish a paired dual-scope benchmark comprising synchronized phantom and real-world ERCP episodes, with evaluations assessing visual fidelity, structural preservation, target localization, and motion consistency. Experiments demonstrate that CrossScope consistently outperforms strong surgical video generation baselines, validating the importance of role-aware evidence routing for multi-observer visual world modeling.",
+ "summary": "## CrossScope 论文摘要总结\n\n**1. 核心创新点**\n提出「角色非对称」的双镜头未来预测范式——两路内窥镜视图不做对称融合，而是依据预测目标的空间需求**有选择地单向传递证据**。\n\n**2. 主要方法**\n- 面向母子镜 ERCP（经内镜逆行胰胆管造影）场景，两条柔性内镜提供互补但角色不同、且**无标定立体关系**的视角。\n- 构建双流（dual-stream）手术世界模型 CrossScope，保留各视图专属的 view-specific expert 分支，通过**几何引导的残差交互**实现目标导向的证据路由。\n- 学习两条互补的通信方向：母镜的几何运动线索指导子镜的未来动态；子镜的位姿对齐外观信息仅在**空间对应关系有效时**才用于辅助母镜预测。\n- 建立配套的成对双镜头基准数据集，含同步的体模（phantom）与真实 ERCP 片段，从视觉保真度、结构保持、目标定位、运动一致性四个维度评估。\n\n**3. 结论/性能**\n在上述基准上，CrossScope 稳定优于多个强手术视频生成基线，验证了在多观察者视觉世界建模中「角色感知的证据路由」的必要性。（摘要未给出具体数值指标。）",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-05 13:05:02"
+}

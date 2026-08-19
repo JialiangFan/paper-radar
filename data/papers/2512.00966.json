@@ -1,0 +1,13 @@
+{
+ "id": "2512.00966",
+ "title": "Mitigating Indirect Prompt Injection via Instruction-Following Intent Analysis",
+ "authors": "Mintong Kang, Chong Xiang, Sanjay Kariyappa, Chaowei Xiao, Bo Li, Edward Suh",
+ "date": "2025-11-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.00966v1",
+ "abstract": "Indirect prompt injection attacks (IPIAs), where large language models (LLMs) follow malicious instructions hidden in input data, pose a critical threat to LLM-powered agents. In this paper, we present IntentGuard, a general defense framework based on instruction-following intent analysis. The key insight of IntentGuard is that the decisive factor in IPIAs is not the presence of malicious text, but whether the LLM intends to follow instructions from untrusted data. Building on this insight, IntentGuard leverages an instruction-following intent analyzer (IIA) to identify which parts of the input prompt the model recognizes as actionable instructions, and then flag or neutralize any overlaps with untrusted data segments. To instantiate the framework, we develop an IIA that uses three \"thinking intervention\" strategies to elicit a structured list of intended instructions from reasoning-enabled LLMs. These techniques include start-of-thinking prefilling, end-of-thinking refinement, and adversarial in-context demonstration. We evaluate IntentGuard on two agentic benchmarks (AgentDojo and Mind2Web) using two reasoning-enabled LLMs (Qwen-3-32B and gpt-oss-20B). Results demonstrate that IntentGuard achieves (1) no utility degradation in all but one setting and (2) strong robustness against adaptive prompt injection attacks (e.g., reducing attack success rates from 100% to 8.5% in a Mind2Web scenario).",
+ "summary": "- 核心创新点：提出 IntentGuard 框架，基于对“指令遵循意图”的分析来识别并阻断来自不可信数据的可执行指令，从而防御间接提示注入攻击（IPIAs）。\n\n- 主要方法：构建指令遵循意图分析器（IIA），通过三种“思维干预”策略从推理型大模型中提取结构化的意图指令清单，并据此识别输入中可执行指令的部分与不可信数据的重叠，进而标注/中和相关内容。\n  - 三种策略：1) start-of-thinking prefilling，2) end-of-thinking refinement，3) adversarial in-context demonstration。\n  - 将分析结果用于对输入提示进行过滤或修正，以提高对 IPIAs 的鲁棒性。\n\n- 结论/性能：在 AgentDojo 和 Mind2Web 两个代理基准上，用 Qwen-3-32B 与 gpt-oss-20B 进行评估，IntentGuard 在几乎所有设置不出现实用性下降，且对自适应提示注入攻击具有显著鲁棒性；例如 Mind2Web 场景攻击成功率从 100% 降至 8.5%。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-02 14:01:44"
+}

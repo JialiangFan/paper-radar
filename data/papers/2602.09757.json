@@ -1,0 +1,13 @@
+{
+ "id": "2602.09757",
+ "title": "Towards Poisoning Robustness Certification for Natural Language Generation",
+ "authors": "Mihnea Ghitu, Matthew Wicker",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09757v1",
+ "abstract": "Understanding the reliability of natural language generation is critical for deploying foundation models in security-sensitive domains. While certified poisoning defenses provide provable robustness bounds for classification tasks, they are fundamentally ill-equipped for autoregressive generation: they cannot handle sequential predictions or the exponentially large output space of language models. To establish a framework for certified natural language generation, we formalize two security properties: stability (robustness to any change in generation) and validity (robustness to targeted, harmful changes in generation). We introduce Targeted Partition Aggregation (TPA), the first algorithm to certify validity/targeted attacks by computing the minimum poisoning budget needed to induce a specific harmful class, token, or phrase. Further, we extend TPA to provide tighter guarantees for multi-turn generations using mixed integer linear programming (MILP). Empirically, we demonstrate TPA's effectiveness across diverse settings including: certifying validity of agent tool-calling when adversaries modify up to 0.5% of the dataset and certifying 8-token stability horizons in preference-based alignment. Though inference-time latency remains an open challenge, our contributions enable certified deployment of language models in security-critical applications.",
+ "summary": "核心创新点：首次为自然语言生成建立可证明鲁棒性的有毒攻击认证框架，提出 Targeted Partition Aggregation (TPA) 及其 MILP 扩展，用以认证有效性与目标性攻击的最小中毒预算，并对多轮生成提供更紧的保证。\n\n主要方法：将安全性 formalize 为稳定性和有效性，设计 TPA 算法计算诱发特定有害输出所需的最小中毒预算；并通过混合整数线性规划扩展，以提高对多轮生成的紧致保障；在实际场景中评估其效果，如在数据集被改动不超过 0.5% 的情况下认证代理工具调用的有效性，以及在偏好对齐中实现对 8-token 稳定性区间的认证。\n\n结论/性能：证明在多种设置下可对自然语言生成的有害输出与目标攻击给出可证明的鲁棒性边界，支持在安全关键应用中对语言模型的认证部署，然而推理时延仍是一个待解决的挑战。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-11 14:01:29"
+}

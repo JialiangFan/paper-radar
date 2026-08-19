@@ -1,0 +1,33 @@
+{
+ "id": "2204.01691",
+ "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+ "authors": "Ahn, et al.",
+ "date": null,
+ "year": 2022,
+ "url": "https://arxiv.org/abs/2204.01691",
+ "abstract": "",
+ "summary": "SayCan combines language-model planning scores with learned affordance scores so plans are both semantically plausible and executable.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "affordances",
+  "constraint-grounding",
+  "language-grounding",
+  "robot-planning",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2022_Ahn_SayCan.md",
+ "pdf_path": "PDFs/VLA_Models/2022_Ahn_SayCan.pdf",
+ "code": "",
+ "project": "https://say-can.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

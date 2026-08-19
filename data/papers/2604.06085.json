@@ -1,0 +1,13 @@
+{
+ "id": "2604.06085",
+ "title": "gyaradax: Local Gyrokinetics JAX Code",
+ "authors": "Gianluca Galletti, Eric Volkmann, Johannes Brandstetter",
+ "date": "2026-04-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06085v1",
+ "abstract": "Gyrokinetic simulations are essential for understanding and controlling turbulence in fusion plasmas, yet they are oftentimes implemented in legacy codebases, in many cases CPU-bound. These are both hard to maintain and especially incompatible with optimization and ML workflows. gyaradax is a minimal JAX/CUDA solver for local flux-tube gyrokinetics. We base our implementation on GKW (Peeters et al., 2009), but with added native GPU acceleration and automatic differentiation. We validate gyaradax against analytical cases and empirical benchmarks, achieving formal agreement and statistical parity with GKW alongside a substantial speedup. We deliberately and extensively utilized agentic workflows in this project. A key contribution is showing that coding agents, guided by human expertise, structured prompting, and measurable progress through unit testing enabled extremely fast translation of complex Fortran code, and further optimizations. Gyaradax facilitates research at the intersection of ML and plasma physics. We showcase this through practical examples in inverse problems and sensitivity analysis.",
+ "summary": "- 核心创新点：将本地 Flux-tube 螺旋动理论的求解器以 JAX/CUDA 实现，具备原生 GPU 加速和自动微分，并通过代理式工作流实现从 Fortran GKW 的快速、可验证迁移与优化。\n- 主要方法：基于 GKW（Peeters 等，2009）的本地 flux-tube gyrokinetics 模型，使用 JAX/CUDA 实现；新增原生 GPU 加速和自动微分；并引入编码代理、结构化提示以及单元测试等代理式工作流，以高效完成 Fortran 到 Python/JAX 的迁移与优化。\n- 结论/性能：与分析解和经验基准对齐，达到形式一致性与统计等价性，并实现相对于 GKW 的显著加速；同时展示在反问题和灵敏度分析等 ML/等领域的应用潜力。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-08 13:07:20"
+}

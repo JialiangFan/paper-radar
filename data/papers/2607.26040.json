@@ -1,0 +1,13 @@
+{
+ "id": "2607.26040",
+ "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+ "authors": "Gaspard Lambrechts, Adrien Bolland, Daniel Ebi, Damien Ernst",
+ "date": "2026-07-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.26040v1",
+ "abstract": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond rewards. Leveraging additional information during training to learn better representations and behaviors has been the focus of asymmetric reinforcement learning. This learning paradigm has proven effective under partial observability when additional state information is available, but also under full observability when more refined state information is available. Focusing on model-based reinforcement learning, we study the effect of asymmetric learning on observation representations and on privileged information representations. First, we identify a limitation in the privileged information representations learned by an asymmetric model-based algorithm known as the Informed Dreamer. Then, we propose a novel asymmetric representation learning objective using latent guidance, resulting in a new algorithm called the Reinformed Dreamer. Experiments across several benchmarks show a more consistent improvement over Dreamer than previous asymmetric approaches.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-29 13:03:53"
+}

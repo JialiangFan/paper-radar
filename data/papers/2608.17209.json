@@ -1,0 +1,13 @@
+{
+ "id": "2608.17209",
+ "title": "Teach and Grow: An Agent-Centered Architecture for General Robot Learning",
+ "authors": "Chang Nie, Zhe Liu, Hesheng Wang",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17209v1",
+ "abstract": "End-to-end vision-language-action (VLA) and world-action models offer an elegant route to general-purpose robotics, but their reliability is bounded by validated physical coverage. When an unfamiliar object, sensor, embodiment, or contact falls outside that coverage and no validated fallback exists, correcting the failure requires new robot data, a policy update, and regression testing. This recurring burden is the retraining tax. Unlike text, embodied data must often be created by operating machines. We present Teach-and-Grow Learning (TGL), an agent-centered architecture for general robot learning. In its general form, a multimodal agent turns a few successful demonstrations into reusable Skill Blocks: closed-loop behaviors for meaningful subgoals. In a new scene, the agent grounds and composes these blocks, selects learned or geometric tools, observes the physical outcome, and revises the route when execution departs from intent. A Skill Library stores executable behavior, while structured Experience Memory carries forward success, failure, and repair. New tasks are acquired without task-specific policy retraining. Our LIBERO evaluation attains state-of-the-art performance; controlled studies expose skill induction, persistent reuse, and agent-directed adaptation. Finally, we propose the Teach-and-Grow scaling-law hypothesis: if X denotes effective reusable experience, future-task error and teaching demand should approach irreducible floors as power laws in X. The architecture therefore treats deployment as a period of continued learning, in which one task can make the next easier.",
+ "summary": "## 论文总结：Teach and Grow —— 面向通用机器人学习的智能体中心架构\n\n**1. 核心创新点**\n\n提出 Teach-and-Grow Learning (TGL)：让多模态智能体把少量成功演示转化为可复用的「技能块」，从而在不重新训练策略的前提下获得新任务能力，消除端到端 VLA 模型的「重训练税」。\n\n**2. 主要方法**\n\n- **技能块（Skill Blocks）**：由少量成功演示归纳出的闭环行为，对应有意义的子目标。\n- **技能库（Skill Library）**：存储可执行行为，支持跨场景持久复用。\n- **经验记忆（Experience Memory）**：以结构化形式记录成功、失败与修复过程，供后续任务调用。\n- **智能体执行回路**：在新场景中对技能块做接地与组合，选择学习型或几何型工具，观察物理执行结果，当执行偏离意图时在线修正路线。\n\n**3. 结论/性能**\n\n- 在 LIBERO 基准上达到 SOTA 水平。\n- 消融/对照实验验证了三点能力：技能归纳、持久复用、智能体自主适应。\n- 提出「Teach-and-Grow 缩放律假说」：以 X 表示有效可复用经验量，未来任务的错误率与所需教学量应以幂律形式趋近各自的不可约下限。\n- 核心主张：把部署阶段视为持续学习期，使「完成一个任务让下一个任务更容易」。\n\n一点观察：文中的缩放律部分明确标注为「假说（hypothesis）」而非实证结果，摘要未给出拟合数据支撑，阅读时建议区别对待其与 LIBERO 上的实测结论。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-19 13:04:58"
+}

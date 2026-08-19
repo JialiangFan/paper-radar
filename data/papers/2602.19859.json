@@ -1,0 +1,13 @@
+{
+ "id": "2602.19859",
+ "title": "Dirichlet Scale Mixture Priors for Bayesian Neural Networks",
+ "authors": "August Arnstad, Leiv Rønneberg, Geir Storvik",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19859v1",
+ "abstract": "Neural networks are the cornerstone of modern machine learning, yet can be difficult to interpret, give overconfident predictions and are vulnerable to adversarial attacks. Bayesian neural networks (BNNs) provide some alleviation of these limitations, but have problems of their own. The key step of specifying prior distributions in BNNs is no trivial task, yet is often skipped out of convenience. In this work, we propose a new class of prior distributions for BNNs, the Dirichlet scale mixture (DSM) prior, that addresses current limitations in Bayesian neural networks through structured, sparsity-inducing shrinkage. Theoretically, we derive general dependence structures and shrinkage results for DSM priors and show how they manifest under the geometry induced by neural networks. In experiments on simulated and real world data we find that the DSM priors encourages sparse networks through implicit feature selection, show robustness under adversarial attacks and deliver competitive predictive performance with substantially fewer effective parameters. In particular, their advantages appear most pronounced in correlated, moderately small data regimes, and are more amenable to weight pruning. Moreover, by adopting heavy-tailed shrinkage mechanisms, our approach aligns with recent findings that such priors can mitigate the cold posterior effect, offering a principled alternative to the commonly used Gaussian priors.",
+ "summary": "- 核心创新点（一句话）：\n提出一种新的 Dirichlet尺度混合先验（DSM）用于贝叶斯神经网络，实现结构化的稀疏收缩以进行隐式特征选择、提升对抗鲁棒性与参数效率，并为缓解冷后验问题提供重尾收缩的理论框架。\n\n- 主要方法：\n引入 DSM 先验（Dirichlet 分布的尺度变量混合）来构造在各层权重上的依赖结构和收缩行为；在理论层面推导DSMs在神经网络几何下的依赖结构与收缩性质，并结合重尾收缩机制实现更强的稀疏化与更易于权重修剪；通过在模拟数据与真实数据上的实验，验证其在隐式特征选择、对抗攻击鲁棒性以及以显著更少的有效参数实现竞争性预测性能方面的效果。\n\n- 结论/性能：\nDSM 先验能促使网络稀疏化并实现隐式特征选择，在对抗攻击鲁棒性方面表现良好且预测性能与参数数量明显提升效率，尤其在相关性高、样本中等规模的情形表现更为突出，且更易于权重剪枝；此外，重尾收缩机制有助于缓解冷后验问题，提供了Gaussian先验的有力替代。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-24 14:02:03"
+}

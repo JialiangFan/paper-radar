@@ -1,0 +1,13 @@
+{
+ "id": "2512.16126",
+ "title": "Dual-View Inference Attack: Machine Unlearning Amplifies Privacy Exposure",
+ "authors": "Lulu Xue, Shengshan Hu, Linqiang Qian, Peijin Guo, Yechao Zhang, Minghui Li, Yanjun Zhang, Dayong Ye, Leo Yu Zhang",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16126v1",
+ "abstract": "Machine unlearning is a newly popularized technique for removing specific training data from a trained model, enabling it to comply with data deletion requests. While it protects the rights of users requesting unlearning, it also introduces new privacy risks. Prior works have primarily focused on the privacy of data that has been unlearned, while the risks to retained data remain largely unexplored. To address this gap, we focus on the privacy risks of retained data and, for the first time, reveal the vulnerabilities introduced by machine unlearning under the dual-view setting, where an adversary can query both the original and the unlearned models. From an information-theoretic perspective, we introduce the concept of {privacy knowledge gain} and demonstrate that the dual-view setting allows adversaries to obtain more information than querying either model alone, thereby amplifying privacy leakage. To effectively demonstrate this threat, we propose DVIA, a Dual-View Inference Attack, which extracts membership information on retained data using black-box queries to both models. DVIA eliminates the need to train an attack model and employs a lightweight likelihood ratio inference module for efficient inference. Experiments across different datasets and model architectures validate the effectiveness of DVIA and highlight the privacy risks inherent in the dual-view setting.",
+ "summary": "- 核心创新点：首次在双视图设定下揭示机器卸载（machine unlearning）会放大对保留数据的隐私泄露，并提出 DVIA 双视图推断攻击，利用对原模型与未卸载模型的黑盒查询实现更强的信息获取（引入 privacy knowledge gain 概念）。\n\n- 主要方法：提出 DVIA（Dual-View Inference Attack）——在不训练攻击模型的前提下，利用对原模型和未卸载模型的黑盒查询，结合一个轻量级的似然比推断模块进行高效推断；从信息论角度定义并分析 privacy knowledge gain。\n\n- 结论/性能：在多数据集和多种模型架构上验证，DVIA 能有效从双视图中提取保留数据的成员信息，比单一模型查询更易造成隐私泄露，凸显双视图设定下的隐私风险。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-19 02:44:41"
+}

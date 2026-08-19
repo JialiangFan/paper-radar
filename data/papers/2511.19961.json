@@ -1,0 +1,13 @@
+{
+ "id": "2511.19961",
+ "title": "Toward Trustworthy Digital Twins in Agentic AI-based Wireless Network Optimization: Challenges, Solutions, and Opportunities",
+ "authors": "Zhenyu Tao, Wei Xu, Xiaohu You",
+ "date": "2025-11-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.19961v1",
+ "abstract": "Optimizing modern wireless networks is exceptionally challenging due to their high dynamism and complexity. While the agentic artificial intelligence (AI) powered by reinforcement learning (RL) offers a promising solution, its practical application is limited by prohibitive exploration costs and potential risks in the real world. The emerging digital twin (DT) technology provides a safe and controlled virtual environment for agentic AI training, but its effectiveness critically depends on the DT's fidelity. Policies trained in a low-fidelity DT that does not accurately represent the physical network may experience severe performance degradation upon real-world deployment. In this article, we introduce a unified DT evaluation framework to ensure trustworthy DTs in agentic AI-based network optimization. This evaluation framework shifts from conventional isolated physical accuracy metrics, such as wireless channel and user trajectory similarities, to a more holistic, task-centric DT assessment. We demonstrate it as an effective guideline for design, selection, and lifecycle management of wireless network DTs. A comprehensive case study on a real-world wireless network testbed shows how this evaluation framework is used to pre-filter candidate DTs, leading to a significant reduction in training and testing costs without sacrificing deployment performance. Finally, potential research opportunities are discussed.",
+ "summary": "**核心创新点**：提出一个统一的、面向任务的数字双生（DT）评估框架，用以确保在基于强化学习的无线网络优化中的DT可信性，避免仅以物理准确性度量来评估。\n\n**主要方法**：设计并实现一个任务中心的DT评估体系，将评估重点从单一的物理相似性（如信道、轨迹等）转向任务性能导向的综合指标；提供设计、选型、生命周期管理的指南；在真实无线网络测试床上进行案例研究，通过对候选DT的预筛选（pre-filter）来降低训练与测试成本。\n\n**结论/性能**：通过案例研究显示，该框架能显著降低训练和测试成本，同时不影响部署性能，提升DT的可信性与实际应用价值，并提出未来的研究机会。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:36:10"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.02327",
+ "title": "Steerable Visual Representations",
+ "authors": "Jona Ruthardt, Manu Gaur, Deva Ramanan, Makarand Tapaswi, Yuki M. Asano",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02327v1",
+ "abstract": "Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic image features that can be applied to a variety of downstream tasks such as retrieval, classification, and segmentation. However, such representations tend to focus on the most salient visual cues in the image, with no way to direct them toward less prominent concepts of interest. In contrast, Multimodal LLMs can be guided with textual prompts, but the resulting representations tend to be language-centric and lose their effectiveness for generic visual tasks. To address this, we introduce Steerable Visual Representations, a new class of visual representations, whose global and local features can be steered with natural language. While most vision-language models (e.g., CLIP) fuse text with visual features after encoding (late fusion), we inject text directly into the layers of the visual encoder (early fusion) via lightweight cross-attention. We introduce benchmarks for measuring representational steerability, and demonstrate that our steerable visual features can focus on any desired objects in an image while preserving the underlying representation quality. Our method also matches or outperforms dedicated approaches on anomaly detection and personalized object discrimination, exhibiting zero-shot generalization to out-of-distribution tasks.",
+ "summary": "- 核心创新点：提出可转向的视觉表示，通过在视觉编码器内部（早期阶段）引入轻量级跨模态注意力，将文本直接作为指令对全局与局部特征进行引导，在不损失表示质量的前提下实现对任意目标的聚焦。\n- 主要方法：在预训练的视觉变换器（如 DINOv2/MAE）基础上，将文本注入编码器层实现早期融合；使用轻量级跨模态注意力实现文本对视觉表征的直接引导；设计并引入可转向性基准评估其可控性，并在异常检测与个性化对象辨识等任务中进行验证，且具备零-shot泛化能力。\n- 结论/性能：能够让全局与局部特征聚焦到图像中任意指定的对象，同时保持原有表示质量；在异常检测和个性化对象辨识等任务上达到或超过专门方法，且对分布外任务具备零-shot泛化能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:00:22"
+}

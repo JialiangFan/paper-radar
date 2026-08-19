@@ -1,0 +1,13 @@
+{
+ "id": "2608.07437",
+ "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+ "authors": "Jiacheng Miao, Jin Mu, Guanhua Chen, James Zou",
+ "date": "2026-08-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.07437v1",
+ "abstract": "Reliable hypothesis testing is the foundation of many empirical scientific claims. Large language model (LLM) agents are increasingly used to automate this process, as they can inspect datasets, generate code, and produce analyses end-to-end. However, we show that they frequently make subtle inferential errors that lead to incorrect conclusions despite correctly executed analyses. Existing benchmarks fail to capture this failure mode, as they rarely assess whether a reported p-value is statistically valid given the assumptions underlying the data. We address this gap by building P-Bench, a benchmark comprising 425 open-ended, realistic hypothesis-testing tasks spanning economics, biology, and medicine. Each task requires an agent to select a statistical method, compute a p-value, and draw a conclusion given only a scientific hypothesis and a dataset. We further introduce Fisher-R1, an open-weight LLM agent trained for rigorous hypothesis testing using synthetic tasks and reinforcement learning. On P-Bench, Fisher-R1-14B substantially improves over its backbone and outperforms strong proprietary and open-source baselines, including GPT-5.4 and DeepSeekV4-Pro, achieving a 21% average relative improvement in single-trial success over DeepSeek-V4-Pro, with gains up to 26% on the most challenging tasks. Our results demonstrate that current LLM agents lack reliable statistical reasoning for hypothesis testing and that reinforcement learning on tasks with verified statistical reward substantially improves reliability.",
+ "summary": "## Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing\n\n**1. 核心创新点**\n指出当前 LLM 智能体虽能正确执行统计分析、却常在推断层面犯下隐蔽错误（导致结论错误），为此提出了专门评测该失效模式的基准 P-Bench 和经强化学习训练的开源统计推断智能体 Fisher-R1。\n\n**2. 主要方法**\n- **P-Bench**：包含 425 个开放式、贴近真实场景的假设检验任务，覆盖经济学、生物学与医学；智能体仅给定一个科学假设和数据集，需自行选择统计方法、计算 p 值并给出结论。评测重点在于\"给定数据背后的假设前提，报告的 p 值在统计上是否成立\"——这是已有基准普遍缺失的维度。\n- **Fisher-R1**：开源权重智能体，用合成任务 + 强化学习训练，奖励信号来自可验证的统计正确性（verified statistical reward）。\n\n**3. 结论/性能**\nFisher-R1-14B 相较其骨干模型有大幅提升，并超过多个强专有及开源基线（含 GPT-5.4、DeepSeek-V4-Pro）：单次试验成功率相对 DeepSeek-V4-Pro 平均提升 21%，在最困难任务上提升达 26%。结论是现有 LLM 智能体缺乏可靠的统计推断能力，而基于可验证统计奖励的强化学习能显著改善其可靠性。\n\n> 补充提示：摘要中提到的 GPT-5.4、DeepSeek-V4-Pro 等基线模型名称，需核对是否为该论文所处时间点的真实模型版本。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-10 13:01:48"
+}

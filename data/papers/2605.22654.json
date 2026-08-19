@@ -1,0 +1,13 @@
+{
+ "id": "2605.22654",
+ "title": "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs",
+ "authors": "Shanshan Wang, Fengying Ye, Hanjia Lyu, Caiwen Gou, Junchao Wu, Jingming Yao, Chengzhong Xu, Jiebo Luo, Derek F. Wong",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22654v1",
+ "abstract": "Previous detection studies have shown that LLMs cannot be effectively used as detectors, but these studies have not addressed modern Chinese poetry. Moreover, no relevant research has explored the performance of LLMs in detecting modern Chinese poetry. This paper evaluates and enhances the performance of LLMs as detectors for modern Chinese poetry, and proposes an image-semantic guided poetry detection method. Compared with traditional detection approaches, our method innovatively incorporates images that reflect the content of the poetry. Through example-driven approaches, our method effectively integrates information such as meaning, imagery, and feeling from the image, then forms a complementary judgment with the poem text. Experimental results demonstrate that the LLM detectors based on our method outperform baseline detectors based on plain text, and even surpass the best-performing traditional detector, RoBERTa. The Gemini detector using our method achieves a Macro-F1 score of 85.65%, reaching the state-of-the-art level. The performance improvements of different LLM detectors on multiple LLMs-generated data prove the effectiveness of our method.",
+ "summary": "## 论文总结\n\n1. **核心创新点**：首次将多模态大模型（MLLM）应用于AI生成现代中文诗歌的检测，通过引入与诗歌内容相对应的图像，形成\"图像-文本\"互补判断机制。\n\n2. **主要方法**：提出图像语义引导的诗歌检测方法（image-semantic guided detection），利用反映诗歌内容的图像，通过示例驱动（example-driven）方式整合图像中的意境、意象与情感信息，再与诗歌文本相结合，由 LLM/MLLM 进行综合判别。\n\n3. **结论/性能**：基于该方法的 LLM 检测器优于纯文本基线，甚至超过最强传统检测器 RoBERTa；其中 Gemini 检测器取得 Macro-F1 **85.65%** 的 SOTA 成绩，并在多种 LLM 生成的数据上验证了方法的有效性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-24 13:02:58"
+}

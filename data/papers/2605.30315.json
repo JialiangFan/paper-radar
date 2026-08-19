@@ -1,0 +1,13 @@
+{
+ "id": "2605.30315",
+ "title": "Resolution Diagnostics for Paired LLM Evaluation",
+ "authors": "Anany Kotawala",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30315v1",
+ "abstract": "Across two public LLM leaderboards, many displayed pairwise rankings do not meet a conventional paired-test resolution target under the actual paired evaluation design: 11 of 40 Open LLM Leaderboard v1 pairwise comparisons and 4 of 9 MMLU-Pro top-10 adjacent-rank pairs are unresolved at (alpha, 1-beta) = (0.05, 0.8). The MMLU-Pro count rises to 6/9 under real subject-level clustering and stays at 5-6 out of 9 in 99.9% of category-bootstrap resamples. We frame paired LLM evaluation as a hypothesis-testing problem, invert level-alpha, power-(1-beta) tests, and report a per-pair resolution ratio q = N/N* as the primary diagnostic. A sharp small-effect expansion with an explicit second-order constant shows that the widely-used unpaired Cohen-h-plus-(1-rho) shortcut deviates from the correct N* by approximately a factor of two in the close-comparison regime, a deficit that three of five off-the-shelf calculators(Cohen 1988, G*Power, R pwr) silently inherit when the user post-multiplies their per-arm output by (1-rho). The unresolved-pair pattern remains under multiplicity correction and anytime-valid sequential testing.",
+ "summary": "# 论文总结：《配对 LLM 评估的分辨率诊断》\n\n**1. 核心创新点**\n把 LLM 排行榜上的\"两两排名\"重新表述为统计假设检验问题，提出用\"分辨率比 q = N/N*\"作为诊断指标，揭示出许多公开榜单上展示的排名差异在统计上其实并未达到可靠区分的标准。\n\n**2. 主要方法**\n- 将配对 LLM 评估建模为假设检验，通过反演显著性水平 α、检验功效 (1−β) 的检验，计算每一对模型所需样本量 N*，并与实际样本量 N 相比得到分辨率比 q。\n- 引入带显式二阶常数项的\"小效应量精确展开\",用以分析常用近似公式的误差。\n- 进一步考虑了学科层面聚类(subject-level clustering)、类别自助重采样(bootstrap)、多重比较校正,以及任意时刻有效的序贯检验(anytime-valid sequential testing)。\n\n**3. 结论/性能**\n- 在 (α, 1−β) = (0.05, 0.8) 标准下：Open LLM Leaderboard v1 的 40 组两两比较中有 11 组、MMLU-Pro 前十名相邻排名的 9 对中有 4 对未达到可分辨标准。\n- 考虑真实的学科聚类后,MMLU-Pro 的未分辨对数升至 6/9,且在 99.9% 的自助重采样中保持在 5~6/9。\n- 指出广泛使用的\"非配对 Cohen-h 加 (1−ρ)\"捷径在接近比较的情形下,样本量估计会偏离正确值约两倍;五款常见计算工具中有三款(Cohen 1988、G*Power、R pwr)在用户将单臂结果乘以 (1−ρ) 时会悄悄继承这一误差。\n- 即便施加多重比较校正和序贯检验,\"未分辨对\"的现象依然存在。\n\n简言之:这篇论文用严谨的统计功效分析表明,当前 LLM 排行榜上不少看似明确的排名差距,实际上缺乏足够的统计分辨力来支撑,并指出了常用样本量估算工具中的一个系统性误差。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-29 13:02:39"
+}

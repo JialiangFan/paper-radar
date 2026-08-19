@@ -1,0 +1,13 @@
+{
+ "id": "2604.25905",
+ "title": "A paradox of AI fluency",
+ "authors": "Christopher Potts, Moritz Sudhof",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25905v1",
+ "abstract": "How much does a user's skill with AI shape what AI actually delivers for them? This question is critical for users, AI product builders, and society at large, but it remains underexplored. Using a richly annotated sample of 27K transcripts from WildChat-4.8M, we show that fluent users take on more complex tasks than novices and adopt a fundamentally different interactional mode: they iterate collaboratively with the AI, refining goals and critically assessing outputs, whereas novices take a passive stance. These differences lead to a paradox of AI fluency: fluent users experience more failures than novices -- but their failures tend to be visible (a direct consequence of their engagement), they are more likely to lead to partial recovery, and they occur alongside greater success on complex tasks. Novices, by contrast, more often experience invisible failures: conversations that appear to end successfully but in fact miss the mark. Taken together, these results reframe what success with AI depends on. Individuals should adopt a stance of active engagement rather than passive acceptance. AI product builders should recognize that they are designing not just model behavior but user behavior; encouraging deep engagement, rather than friction-free experiences, will lead to more success overall. Our code and data are available at https://github.com/bigspinai/bigspin-fluency-outcomes",
+ "summary": "1) 核心创新点：提出并验证 AI 流利度的悖论：熟练用户通过主动迭代与评估提升对复杂任务的成功率，但也经历更多且更明显的失败，与只能产生看不见失败的新手形成对照。\n\n2) 主要方法：基于对来自 WildChat-4.8M 的 27,000 条对话转录的丰富标注，比较熟练用户与新手的交互模式、失败类型和在复杂任务上的表现，进行对话行为的定量分析与对比；并据此提出设计启示。代码与数据在 GitHub 开源。\n\n3) 结论/性能：熟练用户在复杂任务上总体更可能取得成功，尽管经历更多可见的失败且更易从中部分挽回；新手则更容易出现看不见的、表面成功却未达标的失败。对产品设计的建议是鼓励深度参与与迭代，而不仅是追求无摩擦的体验，以提升总体成功率。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-29 13:04:27"
+}

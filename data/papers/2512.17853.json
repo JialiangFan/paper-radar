@@ -1,0 +1,13 @@
+{
+ "id": "2512.17853",
+ "title": "AnyTask: an Automated Task and Data Generation Framework for Advancing Sim-to-Real Policy Learning",
+ "authors": "Ran Gong, Xiaohan Zhang, Jinghuan Shang, Maria Vittoria Minniti, Jigarkumar Patel, Valerio Pepe, Riedana Yan, Ahmet Gundogdu, Ivan Kapelyukh, Ali Abbas, Xiaoqiang Yan, Harsh Patel, Laura Herlant, Karl Schmeckpeper",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17853v1",
+ "abstract": "Generalist robot learning remains constrained by data: large-scale, diverse, and high-quality interaction data are expensive to collect in the real world. While simulation has become a promising way for scaling up data collection, the related tasks, including simulation task design, task-aware scene generation, expert demonstration synthesis, and sim-to-real transfer, still demand substantial human effort. We present AnyTask, an automated framework that pairs massively parallel GPU simulation with foundation models to design diverse manipulation tasks and synthesize robot data. We introduce three AnyTask agents for generating expert demonstrations aiming to solve as many tasks as possible: 1) ViPR, a novel task and motion planning agent with VLM-in-the-loop Parallel Refinement; 2) ViPR-Eureka, a reinforcement learning agent with generated dense rewards and LLM-guided contact sampling; 3) ViPR-RL, a hybrid planning and learning approach that jointly produces high-quality demonstrations with only sparse rewards. We train behavior cloning policies on generated data, validate them in simulation, and deploy them directly on real robot hardware. The policies generalize to novel object poses, achieving 44% average success across a suite of real-world pick-and-place, drawer opening, contact-rich pushing, and long-horizon manipulation tasks. Our project website is at https://anytask.rai-inst.com .",
+ "summary": "- **核心创新点**：通过并行GPU仿真与大模型协同自动设计多样任务并合成示范数据，结合三种ViPR代理实现高覆盖的示范数据生成与可迁移的 sim-to-real 策略学习。\n- **主要方法**：利用大量并行的GPU仿真和基础模型来设计 manipulation 任务并生成数据，提出三种代理：\n  1) ViPR：面向任务与运动规划，结合视觉-语言模型（VLM）进行并行 Refinement；\n  2) ViPR-Eureka：强化学习代理，使用生成的密集奖励与大语言模型引导的接触采样；\n  3) ViPR-RL：混合规划与学习的方法，在稀疏奖励下共同产生高质量示范；\n  以及在此数据上进行行为克隆训练、仿真验证并直接部署到真实机器人上。\n- **结论/性能**：在真实机器人任务上实现了对新对象姿态的泛化，平均成功率达到 44%，覆盖包括抓放、抽屉开启、接触密集的推动以及长时序操作等任务，并将策略直接部署到硬件实现。项目还强调了在仿真中的验证与跨域迁移能力。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:47:32"
+}

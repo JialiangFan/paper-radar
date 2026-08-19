@@ -1,0 +1,13 @@
+{
+ "id": "2512.07407",
+ "title": "Training Language Models to Use Prolog as a Tool",
+ "authors": "Niklas Mellgren, Peter Schneider-Kamp, Lukas Galke Poech",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07407v1",
+ "abstract": "Ensuring reliable tool use is critical for safe agentic AI systems. Language models frequently produce unreliable reasoning with plausible but incorrect solutions that are difficult to verify. To address this, we investigate fine-tuning models to use Prolog as an external tool for verifiable computation. Using Group Relative Policy Optimization (GRPO), we fine-tune Qwen2.5-3B-Instruct on a cleaned GSM8K-Prolog-Prover dataset while varying (i) prompt structure, (ii) reward composition (execution, syntax, semantics, structure), and (iii) inference protocol: single-shot, best-of-N, and two agentic modes where Prolog is invoked internally or independently. Our reinforcement learning approach outperforms supervised fine-tuning, with our 3B model achieving zero-shot MMLU performance comparable to 7B few-shot results. Our findings reveal that: 1) joint tuning of prompt, reward, and inference shapes program syntax and logic; 2) best-of-N with external Prolog verification maximizes accuracy on GSM8K; 3) agentic inference with internal repair yields superior zero-shot generalization on MMLU-Stem and MMLU-Pro. These results demonstrate that grounding model reasoning in formal verification systems substantially improves reliability and auditability for safety-critical applications. The source code for reproducing our experiments is available under https://github.com/niklasmellgren/grpo-prolog-inference",
+ "summary": "- 核心创新点：将 Prolog 作为外部可验证的推理工具，通过 GRPO 强化学习微调语言模型，从而使推理过程可验证、可审计，显著提升安全关键应用的可靠性。\n\n- 主要方法：采用 Group Relative Policy Optimization (GRPO) 对 Qwen2.5-3B-Instruct 进行微调，基于清洗后的 GSM8K-Prolog-Prover 数据集，系统性地变动（i）提示结构、（ii）奖励组成（执行、语法、语义、结构）以及（iii）推理协议（单次、Best-of-N，以及两种代理模式：Prolog 内部调用或独立调用）。与监督微调相比，强化学习提升了性能，3B 模型达到零-shot MMLU 与 7B 少样本结果的可比水平。\n\n- 结论/性能：1) 提示、奖励和推理的联合调优可塑造程序语法和逻辑；2) Best-of-N 加外部 Prolog 验证在 GSM8K 上达到最高准确率；3) 带有内部修复的代理推理在零-shot 下对 MMLU-Stem 与 MMLU-Pro 的泛化能力最佳。总体上，基于形式化验证系统对模型推理进行“落地”，显著提升了可靠性与可审计性。代码可在 https://github.com/niklasmellgren/grpo-prolog-inference 找到。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-09 14:01:24"
+}

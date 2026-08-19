@@ -1,0 +1,13 @@
+{
+ "id": "2604.12656",
+ "title": "FeaXDrive: Feasibility-aware Trajectory-Centric Diffusion Planning for End-to-End Autonomous Driving",
+ "authors": "Baoyun Wang, Zhuoren Li, Ming Liu, Xinrui Zhang, Bo Leng, Lu Xiong",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12656v1",
+ "abstract": "End-to-end diffusion planning has shown strong potential for autonomous driving, but the physical feasibility of generated trajectories remains insufficiently addressed. In particular, generated trajectories may exhibit local geometric irregularities, violate trajectory-level kinematic constraints, or deviate from the drivable area, indicating that the commonly used noise-centric formulation in diffusion planning is not yet well aligned with the trajectory space where feasibility is more naturally characterized. To address this issue, we propose FeaXDrive, a feasibility-aware trajectory-centric diffusion planning method for end-to-end autonomous driving. The core idea is to treat the clean trajectory as the unified object for feasibility-aware modeling throughout the diffusion process. Built on this trajectory-centric formulation, FeaXDrive integrates adaptive curvature-constrained training to improve intrinsic geometric and kinematic feasibility, drivable-area guidance within reverse diffusion sampling to enhance consistency with the drivable area, and feasibility-aware GRPO post-training to further improve planning performance while balancing trajectory-space feasibility. Experiments on the NAVSIM benchmark show that FeaXDrive achieves strong closed-loop planning performance while substantially improving trajectory-space feasibility. These findings highlight the importance of explicitly modeling trajectory-space feasibility in end-to-end diffusion planning and provide a step toward more reliable and physically grounded autonomous driving planners.",
+ "summary": "- 核心创新点：将扩散规划的对象聚焦为一个清晰轨迹，并在轨迹空间内显式建模可行性，以实现更高的几何、运动与区域符合性。\n\n- 主要方法：提出 FeaXDrive 的轨迹中心扩散规划框架，包含（1）自适应曲率约束训练以提升轨迹的几何与运动可行性；（2）在反向扩散采样阶段加入可行驶区域引导以增强对路面区域的一致性；（3）可行性感知的 GRPO 后训练以进一步提升规划性能并权衡轨迹空间的可行性。\n\n- 结论/性能：在 NAVSIM 基准上实现强的闭环规划性能，并显著提升轨迹空间的可行性，证明在端到端扩散规划中显式建模轨迹空间可行性的重要性，向更可靠、物理上更有依据的自动驾驶规划器迈进。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-15 13:09:33"
+}

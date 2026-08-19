@@ -1,0 +1,13 @@
+{
+ "id": "2604.11801",
+ "title": "CLSGen: A Dual-Head Fine-Tuning Framework for Joint Probabilistic Classification and Verbalized Explanation",
+ "authors": "WonJin Yoon, Kangyu Zhu, Ian Bulovic, Autumn Sehy, Yanjun Gao, Dmitriy Dligach, Majid Afshar, Timothy A. Miller",
+ "date": "2026-04-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.11801v1",
+ "abstract": "With the recent progress of Large Language Models (LLMs), there is a growing interest in applying these models to solve complex and challenging problems. Modern LLMs, capable of processing long contexts and generating verbalized explanations, offer significant potential in addressing real-world applications. However, a critical hurdle in deploying LLMs for practical decision-making is their inability to provide reliable, quantitative probabilities. While task-specific fine-tuning of LLMs using traditional discriminative objectives (similar to encoder-only models) can yield probability estimates, this often leads to catastrophic forgetting and linguistic collapse. Consequently, the model loses its ability to generate explanations, severely undermining its interpretability and usability. To address this challenge, we propose CLSGen, a novel LLM fine-tuning framework designed for binary classification tasks. The CLSGen framework encompasses a new model architecture, training methodology, and data construction strategy to enable robust probability estimation without sacrificing the model's inherent explanation-generation capabilities. Experimental results across multiple benchmark datasets demonstrate that models fine-tuned with CLSGen outperform existing baselines in classification metrics (AUROC and F1-score). Regarding explanation, the results showed strong alignment between predicted labels and generated justifications, as well as high readability.",
+ "summary": "核心创新点（一句话）：\n提出 CLSGen，一种双头微调框架，能够在二分类任务中同时提供可靠的概率估计和可解释的文本辩解，避免灾难性忘记与语言崩溃。\n\n主要方法：\n- 采用新的模型架构和训练方法，结合数据构建策略，针对大语言模型进行双头微调。\n- 双头设计：一个头用于输出概率/判定，另一个头用于生成辩解文本，实现概率估计与解释生成的协同学习。\n- 通过特定的训练目标和数据构建，确保在保持解释能力的同时获得鲁棒的概率估计。\n\n结论/性能：\n- 在多个基准数据集上，CLSGen 微调的模型在分类指标（AUROC、F1-score）上优于现有基线。\n- 在解释方面，预测标签与生成的辩解之间具有强对齐，且辩解具有较高的可读性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-14 13:01:02"
+}

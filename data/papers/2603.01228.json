@@ -1,0 +1,13 @@
+{
+ "id": "2603.01228",
+ "title": "Towards Policy-Adaptive Image Guardrail: Benchmark and Method",
+ "authors": "Caiyong Piao, Zhiyuan Yan, Haoming Xu, Yunzhen Zhao, Kaiqing Lin, Feiyang Xu, Shuigeng Zhou",
+ "date": "2026-03-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01228v1",
+ "abstract": "Accurate rejection of sensitive or harmful visual content, i.e., harmful image guardrail, is critical in many application scenarios. This task must continuously adapt to the evolving safety policies and content across various domains and over time. However, traditional classifiers, confined to fixed categories, require frequent retraining when new policies are introduced. Vision-language models (VLMs) offer a more adaptable and generalizable foundation for dynamic safety guardrails. Despite this potential, existing VLM-based safeguarding methods are typically trained and evaluated under only a fixed safety policy. We find that these models are heavily overfitted to the seen policy, fail to generalize to unseen policies, and even lose the basic instruction-following ability and general knowledge. To address this issue, in this paper we make two key contributions. First, we benchmark the cross-policy generalization performance of existing VLMs with SafeEditBench, a new evaluation suite. SafeEditBench leverages image-editing models to convert unsafe images into safe counterparts, producing policy-aligned datasets where each safe-unsafe image pair remains visually similar except for localized regions violating specific safety rules. Human annotators then provide accurate safe/unsafe labels under five distinct policies, enabling fine-grained assessment of policy-aware generalization. Second, we introduce SafeGuard-VL, a reinforcement learning-based method with verifiable rewards (RLVR) for robust unsafe-image guardrails. Instead of relying solely on supervised fine-tuning (SFT) under fixed policies, SafeGuard-VL explicitly optimizes the model with policy-grounded rewards, promoting verifiable adaptation across evolving policies. Extensive experiments verify the effectiveness of our method for unsafe image guardrails across various policies.",
+ "summary": "- 核心创新点（1 句概括）：提出一个跨策略泛化的危险图像守护框架，通过 SafeEditBench 评测跨策略泛化能力，并以 RLVR 的 SafeGuard-VL 实现对不断演化策略的可验证自适应，从而解决基于固定策略的模型易过拟合的问题。\n\n- 主要方法：\n  - SafeEditBench 基准：利用图像编辑模型将不安全图像转换为安全版本，生成策略对齐且视觉上相近的安全/不安全成对；涵盖五种不同策略，由人工标注给出安全/不安全标签，用于细粒度评测跨策略泛化。\n  - SafeGuard-VL：基于强化学习并带有可验证奖励的安全守护框架（RLVR），通过策略相关的奖励信号对模型进行优化，超越仅作有监督微调在固定策略上的局限，提升对新策略的自适应与鲁棒性。\n\n- 结论/性能：\n  - 通过大量实验验证，该方法在多种策略下对不安全图像的守护具有较强的跨策略泛化和鲁棒性，能够在未见策略上保持良好表现，且保持对指令遵循与通用知识的能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:00:37"
+}

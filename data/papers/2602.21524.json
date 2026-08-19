@@ -1,0 +1,13 @@
+{
+ "id": "2602.21524",
+ "title": "Quantum Attacks Targeting Nuclear Power Plants: Threat Analysis, Defense and Mitigation Strategies",
+ "authors": "Yaser Baseri, Edward Waller",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21524v1",
+ "abstract": "The advent of Cryptographically Relevant Quantum Computers (CRQCs) presents a fundamental and existential threat to the forensic integrity and operational safety of Industrial Control Systems (ICS) and Operational Technology (OT) in critical infrastructure. This paper introduces a novel, forensics-first framework for achieving quantum resilience in high-consequence environments, with a specific focus on nuclear power plants. We systematically analyze the quantum threat landscape across the Purdue architecture (L0-L5), detailing how Harvest-Now, Decrypt-Later (HNDL) campaigns, enabled by algorithms like Shor's, can retroactively compromise cryptographic foundations, undermine evidence admissibility, and facilitate sophisticated sabotage. Through two detailed case studies, \\textsc{Quantum~Scar} and \\textsc{Quantum~Dawn}, we demonstrate multi-phase attack methodologies where state-level adversaries exploit cryptographic monoculture and extended OT lifecycles to degrade safety systems while creating unsolvable forensic paradoxes. Our probabilistic risk modeling reveals alarming success probabilities (up to 78\\% for targeted facilities under current defenses), underscoring the criticality of immediate action. In response, we propose and validate a phased, defense-in-depth migration path to Post-Quantum Cryptography (PQC), integrating hybrid key exchange, cryptographic diversity, secure time synchronization, and side-channel resistant implementations aligned with ISA/IEC 62443 and NIST standards. The paper concludes that without urgent adoption of quantum-resilient controls, the integrity of both physical safety systems and digital forensic evidence remains at severe and irreversible risk.",
+ "summary": "- 核心创新点：提出一个面向法证优先的量子威胁防护框架，聚焦核电等高后果环境，系统分析量子攻击场景并给出分阶段的量子后量子密码学（PQC）迁移与防护路径。\n\n- 主要方法：\n  - 系统分析普渡架构（L0-L5）的量子威胁景观，描述 Harvest-Now, Decrypt-Later（HNDL）等策略在 Shor 算法驱动下的潜在影响。\n  - 通过两个详细案例 Quantum Scar 与 Quantum Dawn 展示多阶段攻击路径，揭示密钥单一化与超长使用周期对安全系统的削弱与取证困境。\n  - 使用基于概率的风险建模给出当前防护下的潜在成功概率（最高可达78%）。\n  - 提出并验证分阶段的防御深度迁移到后量子密码学（PQC）的方案，包含混合密钥交换、密码学多样性、安全时间同步与抗侧信道实现，结合 ISA/IEC 62443 与 NIST 标准。\n\n- 结论/性能：\n  - 如果不尽快采用量子抗性控件，物理安全系统与数字取证证据的完整性将面临严重且不可逆的风险（风险显著）。\n  - 研究不仅揭示高风险，还通过对分阶段防护迁移路径的验证，展示了在现实环境中实现量子鲁棒性的可行性与必要性，且在当前防御条件下的潜在成功概率可高达约78%。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-26 14:01:50"
+}

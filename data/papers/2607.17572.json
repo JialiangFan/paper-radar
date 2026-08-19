@@ -1,0 +1,13 @@
+{
+ "id": "2607.17572",
+ "title": "JAGG: Jacobian-Aggregated Group Gradient for Efficient GRPO Training of Diffusion Models",
+ "authors": "Ruiyi Ding, Jie Li, He Kang, Ziyan Liu, Chengru Song, Yuan chen",
+ "date": "2026-07-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.17572v2",
+ "abstract": "Group Relative Policy Optimization (GRPO) is a powerful reinforcement learning algorithm for aligning generative models with human preferences. While successful in large language models~\\cite{shao2024deepseekmathpushinglimitsmathematical}, its extension to diffusion and flow matching models introduces a severe computational bottleneck: gradients must be back-propagated through the high-capacity DiT backbone at \\emph{every} timestep of the sampling trajectory, making high-resolution text-to-image (T2I) training prohibitively expensive. Training-free DiT inference acceleration methods (e.g., $Δ$-DiT, ScalingCache) exploit the fact that DiT hidden states and velocity predictions vary \\emph{smoothly and nearly linearly} along the trajectory. We ask whether the same linearity can reduce the backward-pass cost of DiT RL training, and answer affirmatively with \\textbf{JAGG} (\\textbf{J}acobian-\\textbf{A}ggregated \\textbf{G}roup \\textbf{G}radient), which reduces full transformer backward passes from $W$ to $2$ per group of $W$ consecutive steps. JAGG approximates intermediate-step Jacobians via $t$-weighted interpolation of the endpoint Jacobians, then aggregates per-step upstream signals into two composite gradients applied through a single joint backward pass. We prove this interpolation is \\emph{exact} when the velocity is linear in $(z,t)$, and a cosine-similarity routing rule (\\texttt{jagg\\_frac}) deploys JAGG only where the assumption holds. Experiments on T2I benchmarks show JAGG delivers $\\sim$2$\\times$ backward speedup with negligible quality degradation.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-07-23 13:02:15"
+}

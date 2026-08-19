@@ -1,0 +1,13 @@
+{
+ "id": "2512.15347",
+ "title": "Expand and Prune: Maximizing Trajectory Diversity for Effective GRPO in Generative Models",
+ "authors": "Shiran Ge, Chenyi Huang, Yuang Ai, Qihang Fan, Huaibo Huang, Ran He",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15347v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) is a powerful technique for aligning generative models, but its effectiveness is bottlenecked by the conflict between large group sizes and prohibitive computational costs. In this work, we investigate the trade-off through empirical studies, yielding two key observations. First, we discover the reward clustering phenomenon in which many trajectories collapse toward the group-mean reward, offering limited optimization value. Second, we design a heuristic strategy named Optimal Variance Filtering (OVF), and verify that a high-variance subset of trajectories, selected by OVF can outperform the larger, unfiltered group. However, this static, post-sampling OVF approach still necessitates critical computational overhead, as it performs unnecessary sampling for trajectories that are ultimately discarded. To resolve this, we propose Pro-GRPO (Proactive GRPO), a novel dynamic framework that integrates latent feature-based trajectory pruning into the sampling process. Through the early termination of reward-clustered trajectories, Pro-GRPO reduces computational overhead. Leveraging its efficiency, Pro-GRPO employs an \"Expand-and-Prune\" strategy. This strategy first expands the size of initial sampling group to maximize trajectory diversity, then it applies multi-step OVF to the latents, avoiding prohibitive computational costs. Extensive experiments on both diffusion-based and flow-based models demonstrate the generality and effectiveness of our Pro-GRPO framework.",
+ "summary": "核心创新点：提出 Pro-GRPO 动态框架，通过在采样阶段引入基于潜在特征的轨迹剪枝并结合 Expand-and-Prune 策略，在扩展轨迹多样性的同时降低奖励聚簇造成的计算开销，从而提升 GRPO 在大规模群组下的效果与效率。\n\n主要方法：\n- 发现并利用奖励聚簇现象，以及引入可变分布的筛选思路，与原有的 Optimal Variance Filtering（OVF）结合，强调在潜在表示空间对轨迹进行多步筛选。\n- 将轨迹剪枝嵌入采样过程，采用早终止机制对与奖励聚簇相关的轨迹提前淘汰，减少无效采样。\n- 提出 Expand-and-Prune 策略：先扩展初始采样组以最大化轨迹多样性，再在潜在特征上对轨迹执行多步 OVF 进行剪枝，避免后续的高成本计算。\n- 适用于扩散基模型与流动基模型，验证了方法的通用性。\n\n结论/性能：\n- 实验结果表明 Pro-GRPO 在保持或提升轨迹多样性的同时显著降低计算开销，优于静态 OVF 与大组未剪枝方案。\n- 在扩散基和流基模型上均展现出良好的通用性和效果提升，证明了动态、潜在特征驱动的剪枝策略的有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-18 02:05:46"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.05922",
+ "title": "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts",
+ "authors": "Wenbo Pan, Shujie Liu, Chin-Yew Lin, Jingying Zeng, Xianfeng Tang, Xiangyang Zhou, Yan Lu, Xiaohua Jia",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05922v1",
+ "abstract": "AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions.",
+ "summary": "# 论文摘要\n\n**1. 核心创新点**\n提出 **Retrospective Harness Optimization (RHO)**：一种完全自监督的方法，仅利用过去的轨迹（无需真实标签验证集）来持续优化 AI Agent 的\"工具集/工作流\"（harness）。\n\n**2. 主要方法**\n- 从历史轨迹中选取一个**多样化、具挑战性的核心子集**（coreset）；\n- 并行**重新求解**这些任务，生成多条 rollout；\n- Agent 通过**自验证（self-validation）和自一致性（self-consistency）** 分析结果；\n- 生成多个候选的 harness 更新方案，并通过**成对自偏好（pairwise self-preference）** 选出最优版本。\n\n**3. 结论/性能**\n- 在软件工程、技术工作、知识工作三个领域均有效；\n- 在 **SWE-Bench Pro** 上单轮优化即将通过率从 **59% 提升至 78%**，且不依赖任何外部评分；\n- 能精准定位历史失败模式，改变 Agent 行为模式，并在**长程任务**中维持更高准确率。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-07 13:01:05"
+}

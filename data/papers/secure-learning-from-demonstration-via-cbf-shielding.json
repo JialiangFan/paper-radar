@@ -1,0 +1,27 @@
+{
+ "id": "secure-learning-from-demonstration-via-cbf-shielding",
+ "title": "SECURE: Learning from Demonstration via CBF Shielding",
+ "authors": "Letian Chen et al.",
+ "date": null,
+ "year": 2024,
+ "url": "",
+ "abstract": "",
+ "summary": "从人类示范学习的 robot policy 可能在部署时产生不安全的动作（如刀具操作时碰到障碍物）。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/SECURE.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

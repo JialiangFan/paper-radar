@@ -1,0 +1,32 @@
+{
+ "id": "1903.11199",
+ "title": "Control Barrier Functions: Theory and Applications",
+ "authors": "Ames, et al.",
+ "date": null,
+ "year": 2019,
+ "url": "https://arxiv.org/abs/1903.11199",
+ "abstract": "",
+ "summary": "This tutorial-style paper organizes CBF theory and applications for optimization-based safety-critical control.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "robotics",
+  "safe-vla",
+  "safety-critical-control",
+  "state-space-safety",
+  "survey"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2019_Ames_CBFTheory.md",
+ "pdf_path": "PDFs/CBF_Reachability/2019_Ames_CBFTheory.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

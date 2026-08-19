@@ -1,0 +1,13 @@
+{
+ "id": "2607.07420",
+ "title": "Initiation Safety: A Missing Dimension in Generalist-Robot Safety",
+ "authors": "Zhijin Meng, Francisco Cruz",
+ "date": "2026-07-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.07420v1",
+ "abstract": "Safety for generalist robots is usually discussed in terms of motion or dialogue. We argue a third question is missing: should the robot take its first hard-to-undo social action at all, such as a greeting, an uninvited grasp, or stepping into someone's space? We call this initiation authorization. Current frameworks rarely treat it as a separate safety layer. Today's stacks often skip this step: a high engagement score or a confident VLA rollout is treated as permission to act. But seeing a person is not the same as having their consent to be addressed. We frame initiation authorization within generalist-robot safety and contrast it with post-plan VLA guardrails, implementing PAS (probe-authorize-speak) on a doorway humanoid, comparing it with direct-init on logged traces, and proposing a three-condition user study, with open questions on metrics, governance, and where initiation ends and foundation-model generation begins.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-12 13:03:50"
+}

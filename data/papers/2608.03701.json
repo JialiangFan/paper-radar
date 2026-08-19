@@ -1,0 +1,13 @@
+{
+ "id": "2608.03701",
+ "title": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation",
+ "authors": "Fan Yang, Yuting Su, Xiaobo Wang, Yuncheng You, Fugui Fan, Yuting Wu, Minghui Wu, Chenxu Zhao, JiaHong Ning, Peiguang Jing",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03701v1",
+ "abstract": "World-action modeling has emerged as a promising paradigm for robotic control, as it empowers models to go beyond reacting to observations and anticipate how a scene will evolve. However, existing WAMs often incur substantial computational overhead. Pixel-space methods often allocate substantial capacity to visual details that may not be directly relevant to control, while some latent-space methods require multi-stage training to construct the reasoning space. The resulting training cost can make such methods difficult to train under modest computational budgets. In this work, we propose LiLa-WAM, a lightweight world-action model that reasons about the future in a compact latent space and can be trained end-to-end on a single 24GB GPU. Its core design is a compact latent reasoning space jointly shaped by future-state prediction and action generation, which keeps the model lightweight while remaining well aligned with control. For task specification, we further propose the Visual Transition Token(VTT), a language-free task representation that encodes each task as a direction in visual feature space. Experiments on RoboTwin~2.0, LIBERO, and real-robot tasks demonstrate LiLa-WAM's effectiveness, achieving 90.48\\% success across 50 RoboTwin tasks with single-GPU training.",
+ "summary": "## LiLa-WAM 论文摘要总结\n\n**1. 核心创新点**\n提出一种轻量级世界-动作模型（World-Action Model），在紧凑的潜空间中对未来进行推理，使其可在单张 24GB GPU 上端到端训练，大幅降低了此类模型的计算开销。\n\n**2. 主要方法**\n- **紧凑潜在推理空间**：由「未来状态预测」和「动作生成」两个目标联合塑造，既保持模型轻量，又使潜空间与控制任务保持对齐；避免了像素空间方法把大量容量浪费在与控制无关的视觉细节上，也避免了以往潜空间方法所需的多阶段训练。\n- **视觉转移令牌（Visual Transition Token, VTT）**：一种无需语言的任务表示方法，把每个任务编码为视觉特征空间中的一个「方向」，用于任务指定。\n- 训练方式为端到端单阶段，单 GPU 即可完成。\n\n**3. 结论/性能**\n在 RoboTwin 2.0、LIBERO 仿真基准以及真实机器人任务上均验证了有效性；其中在 RoboTwin 的 50 个任务上以单 GPU 训练取得了 **90.48%** 的成功率。\n\n---\n补充说明：以上仅基于标题与摘要，摘要未给出与基线方法的具体对比数字或训练耗时数据，实际效率优势幅度需查看正文实验部分。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-08 13:04:13"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.29755",
+ "title": "CausalPulse: An Industrial-Grade Neurosymbolic Multi-Agent Copilot for Causal Diagnostics in Smart Manufacturing",
+ "authors": "Chathurangi Shyalika, Utkarshani Jaimini, Cory Henson, Amit Sheth",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29755v1",
+ "abstract": "Modern manufacturing environments demand real-time, trustworthy, and interpretable root-cause insights to sustain productivity and quality. Traditional analytics pipelines often treat anomaly detection, causal inference, and root-cause analysis as isolated stages, limiting scalability and explainability. In this work, we present CausalPulse, an industry-grade multi-agent copilot that automates causal diagnostics in smart manufacturing. It unifies anomaly detection, causal discovery, and reasoning through a neurosymbolic architecture built on standardized agentic protocols. CausalPulse is being deployed in a Robert Bosch manufacturing plant, integrating seamlessly with existing monitoring workflows and supporting real-time operation at production scale. Evaluations on both public (Future Factories) and proprietary (Planar Sensor Element) datasets show high reliability, achieving overall success rates of 98.0% and 98.73%. Per-criterion success rates reached 98.75% for planning and tool use, 97.3% for self-reflection, and 99.2% for collaboration. Runtime experiments report end-to-end latency of 50-60s per diagnostic workflow with near-linear scalability (R^2=0.97), confirming real-time readiness. Comparison with existing industrial copilots highlights distinct advantages in modularity, extensibility, and deployment maturity. These results demonstrate how CausalPulse's modular, human-in-the-loop design enables reliable, interpretable, and production-ready automation for next-generation manufacturing.",
+ "summary": "1. 核心创新点：提出一个工业级的神经符号多智能体协同系统 CausalPulse，将异常检测、因果发现和推理统一成可解释、实时的因果诊断解决方案，面向智能制造的生产线应用。\n\n2. 主要方法：采用神经符号架构的多智能体协作框架，结合标准化的代理协议，将异常检测、因果发现与推理整合为一个端到端的诊断系统，并在 Bosch 生产现场与现有监控流程无缝对接，支持实时运算。\n\n3. 结论/性能：在公开数据集 Future Factories 和自有 Planar Sensor Element 上分别达到整体成功率 98.0% 与 98.73%；子任务指标为规划与工具使用 98.75%、自我反思 97.3%、协作 99.2%；端到端诊断工作流延时 50–60 秒，近线性扩展（R^2=0.97）；相比现有工业 Copilot，具备更强的模块化、可扩展性与部署成熟度，实现可解释、生产就绪的自动化。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-01 13:03:51"
+}

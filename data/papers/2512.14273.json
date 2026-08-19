@@ -1,0 +1,13 @@
+{
+ "id": "2512.14273",
+ "title": "Zoom-Zero: Reinforced Coarse-to-Fine Video Understanding via Temporal Zoom-in",
+ "authors": "Xiaoqian Shen, Min-Hung Chen, Yu-Chiang Frank Wang, Mohamed Elhoseiny, Ryo Hachiuma",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14273v1",
+ "abstract": "Grounded video question answering (GVQA) aims to localize relevant temporal segments in videos and generate accurate answers to a given question; however, large video-language models (LVLMs) exhibit limited temporal awareness. Although existing approaches based on Group Relative Policy Optimization (GRPO) attempt to improve temporal grounding, they still struggle to faithfully ground their answers in the relevant video evidence, leading to temporal mislocalization and hallucinations. In this work, we present Zoom-Zero, a coarse-to-fine framework that first localizes query-relevant segments and then temporally zooms into the most salient frames for finer-grained visual verification. Our method addresses the limits of GRPO for the GVQA task with two key innovations: (i) a zoom-in accuracy reward that validates the fidelity of temporal grounding prediction and facilitates fine-grained visual verification on grounded frames; (ii) token-selective credit assignment, which attributes rewards to the tokens responsible for temporal localization or answer generation, mitigating GRPO's issue in handling multi-faceted reward signals. Our proposed method advances grounded video question answering, improving temporal grounding by 5.2\\% on NExT-GQA and 4.6\\% on ReXTime, while also enhancing average answer accuracy by 2.4\\%. Additionally, the coarse-to-fine zoom-in during inference further benefits long-form video understanding by preserving critical visual details without compromising global context, yielding an average improvement of 6.4\\% on long-video benchmarks.",
+ "summary": "- 核心创新点：提出 Zoom-Zero 的粗到细时间尺度放大框架，通过引入“zoom-in 精确度奖励”和“token‑selective credit assignment”来提升时序定位的可靠性并缓解多目标奖励的难题。\n\n- 主要方法：基于粗到细的时序局部化策略，先定位与问题相关的片段，再对最 salient 的帧进行时间上的放大（zoom-in）以进行更细粒度的视觉验证；结合改进的强化学习信号：1) zoom-in 精确度奖励验证时序定位的保真度，2) token‑selective 信用分配将奖励归因给负责定位或回答生成的 token。\n\n- 结论/性能：在 GVQA 任务上提升时序定位性能，NExT-GQA 提升约 5.2%，ReXTime 提升约 4.6%；平均答案准确率提升约 2.4%。在长视频基准上，推理阶段的粗到细放大进一步提升，全局与细节兼顾，平均提升约 6.4%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-17 02:04:58"
+}

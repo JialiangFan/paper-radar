@@ -1,0 +1,13 @@
+{
+ "id": "2603.13017",
+ "title": "Structured Distillation for Personalized Agent Memory: 11x Token Reduction with Retrieval Preservation",
+ "authors": "Sydney Lewis",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13017v1",
+ "abstract": "Long conversations with an AI agent create a simple problem for one user: the history is useful, but carrying it verbatim is expensive. We study personalized agent memory: one user's conversation history with an agent, distilled into a compact retrieval layer for later search. Each exchange is compressed into a compound object with four fields (exchange_core, specific_context, thematic room_assignments, and regex-extracted files_touched). The searchable distilled text averages 38 tokens per exchange. Applied to 4,182 conversations (14,340 exchanges) from 6 software engineering projects, the method reduces average exchange length from 371 to 38 tokens, yielding 11x compression. We evaluate whether personalized recall survives that compression using 201 recall-oriented queries, 107 configurations spanning 5 pure and 5 cross-layer search modes, and 5 LLM graders (214,519 consensus-graded query-result pairs). The best pure distilled configuration reaches 96% of the best verbatim MRR (0.717 vs 0.745). Results are mechanism-dependent. All 20 vector search configurations remain non-significant after Bonferroni correction, while all 20 BM25 configurations degrade significantly (effect sizes |d|=0.031-0.756). The best cross-layer setup slightly exceeds the best pure verbatim baseline (MRR 0.759). Structured distillation compresses single-user agent memory without uniformly sacrificing retrieval quality. At 1/11 the context cost, thousands of exchanges fit within a single prompt while the verbatim source remains available for drill-down. We release the implementation and analysis pipeline as open-source software.",
+ "summary": "- 核心创新点：通过结构化蒸馏将单一用户的对话历史压缩成可检索的四字段对象，在显著降低上下文长度的同时尽量保持检索效果（实现11x令牌压缩并保留检索能力）。\n\n- 主要方法：\n  - 将每轮对话压缩为四个字段：exchange_core、specific_context、thematic room_assignments、regex-extracted files_touched，形成可检索的蒸馏文本，平均每轮38个词。\n  - 在4,182条对话（14,340轮对话）、6个软件工程项目的数据上进行评估。\n  - 通过多种检索配置（5种纯蒸馏纯配置、5种跨层检索模式，含20种向量检索和20种BM25配置）进行比较，使用5位LLM评审和214,519对问答对进行评估。\n  - 与原始逐字记忆进行对比，评估召回性能（MRR）。\n\n- 结论/性能：\n  - 将上下文长度从371降至38，达到11x压缩，并可在需要时回溯原始文本进行钻取。\n  - 最佳纯蒸馏配置达到原始逐字MRR的96%（0.717 vs 0.745）。\n  - 最佳跨层配置略高于最佳逐字基线（MRR 0.759）。\n  - 向量检索配置在Bonferroni校正后不显著，BM25配置显著下降，表明方法的效果受检索机制影响。\n  - 结构化蒸馏在不统一牺牲检索质量的前提下实现了大量对话的高效记忆压缩，并将原始文本保持可用于深入分析；相关实现与分析流水线开源发布。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-16 13:01:48"
+}

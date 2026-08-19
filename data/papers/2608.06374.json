@@ -1,0 +1,13 @@
+{
+ "id": "2608.06374",
+ "title": "DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation",
+ "authors": "Junfeng Li, Junjie He, Zhide Zhong, Yangyang Zheng, Pingyue Sheng, Jiayu Dong, Ruixin Li, Haodong Yan, Jiaguan Zhu, Tianran Zhang, Runze Yu, Wen Chen, Liuqing Yang, Yuxiang Gao, Haoang Li",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06374v1",
+ "abstract": "Vision-Language-Action (VLA) models have become a powerful paradigm for robot manipulation, but training a single generalist policy for heterogeneous robot embodiments remains an open problem. Existing methods have two main limitations. First, they underuse dynamics priors shared across diverse visual and interaction data, limiting cross-embodiment transfer. Second, they require extensive manual preprocessing to convert embodiment-specific actions into a common format. To overcome these limitations, we propose DyPES-VLA, a cross-embodiment VLA that learns shared Dynamics Priors and Embodiment-Specific control. First, we learn shared dynamics priors by training the vision-language model (VLM) with a future-prediction objective on cross-embodiment data, driving the shared query representation to capture object motion, contact, and interaction-induced scene changes. Second, an embodiment-specific Mixture-of-Experts (MoE) action head translates these shared dynamics priors into executable controls directly in each embodiment's native action space, without manually pre-aligning heterogeneous actions into a common format. This head shares attention layers to capture common temporal action structures, while its embodiment-specific feed-forward experts resolve the unique kinematic constraints and control semantics of distinct embodiments. As a generalist policy, our \\ourmethod achieves state-of-the-art performance across simulation and real-world evaluations, reaching 98.0% success on LIBERO, 59.25% on RoboCasa-GR1, and 89.02% on RoboTwin~2.0.",
+ "summary": "## DyPES-VLA 论文速览\n\n**1. 核心创新点**\n通过在跨本体数据上学习**共享的动力学先验**，并用**本体专属的控制头**直接输出各机器人原生动作空间的指令，从而免去人工对齐异构动作格式，实现单一通才策略跨本体操作。\n\n**2. 主要方法**\n- **共享动力学先验**：给视觉语言模型（VLM）加上「未来预测」训练目标，在跨本体数据上训练，迫使共享的 query 表征捕捉物体运动、接触以及交互引起的场景变化。\n- **本体专属 MoE 动作头**：用混合专家（Mixture-of-Experts）结构把上述共享先验翻译成可执行控制量——**注意力层共享**以建模通用的时序动作结构，**前馈专家按本体分离**以处理各机器人独特的运动学约束与控制语义；动作直接生成在各自的原生动作空间，无需预先手工统一格式。\n\n**3. 结论/性能**\n作为一个通才策略，在仿真与真机评测上均达到 SOTA：LIBERO **98.0%** 成功率、RoboCasa-GR1 **59.25%**、RoboTwin 2.0 **89.02%**。\n\n> 补充一点判断：摘要只给了最终成功率，未披露与各基线的逐项对比、消融（即「未来预测目标」与「MoE 动作头」各自贡献多少）以及真机实验的具体规模，这几点是评估该工作实际增益时需要回到正文核对的关键。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-08 13:03:24"
+}

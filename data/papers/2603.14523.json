@@ -1,0 +1,13 @@
+{
+ "id": "2603.14523",
+ "title": "VLA-Thinker: Boosting Vision-Language-Action Models through Thinking-with-Image Reasoning",
+ "authors": "Chaoyang Wang, Wenrui Bao, Sicheng Gao, Bingxin Xu, Yu Tian, Yogesh S. Rawat, Yunhao Ge, Yuzhang Shang",
+ "date": "2026-03-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.14523v1",
+ "abstract": "Vision-Language-Action (VLA) models have shown promising capabilities for embodied intelligence, but most existing approaches rely on text-based chain-of-thought reasoning where visual inputs are treated as static context. This limits the ability of the model to actively revisit the environment and resolve ambiguities during long-horizon tasks. We propose VLA-Thinker, a thinking-with-image reasoning framework that models perception as a dynamically invocable reasoning action. To train such a system, we introduce a two-stage training pipeline consisting of (1) an SFT cold-start phase with curated visual Chain-of-Thought data to activate structured reasoning and tool-use behaviors, and (2) GRPO-based reinforcement learning to align complete reasoning-action trajectories with task-level success. Extensive experiments on LIBERO and RoboTwin 2.0 benchmarks demonstrate that VLA-Thinker significantly improves manipulation performance, achieving 97.5% success rate on LIBERO and strong gains across long-horizon robotic tasks. Project and Codes: https://cywang735.github.io/VLA-Thinker/ .",
+ "summary": "核心创新点：\n- 提出 VLA-Thinker 的 thinking-with-image 推理框架，将感知视为可动态调取的推理行动，使模型能够主动回访环境、在长时任务中进行更鲁棒的推理与行动协同。\n\n主要方法：\n- 基于 Vision-Language-Action 的模型，并引入动态的感知-推理-行动循环。\n- 两阶段训练：1) SFT 冷启动阶段，使用带视觉链式推理的数据激活结构化推理与工具使用行为；2) 基于 GRPO 的强化学习，优化并对齐完整的推理-行动轨迹以实现任务级成功。\n\n结论/性能：\n- 在 LIBERO 和 RoboTwin 2.0 上取得显著提升，LIBERO 任务达到 97.5% 的成功率，并在长时机器人任务上展现强劲性能提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-17 13:02:41"
+}

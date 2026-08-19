@@ -1,0 +1,13 @@
+{
+ "id": "2604.07277",
+ "title": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions",
+ "authors": "Guo Gan, Yuxuan Ding, Cong Chen, Yuwei Ren, Yin Huang, Hong Zhou",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07277v1",
+ "abstract": "Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators and the sample inefficiency of existing RL algorithms. We identify a fundamental limitation in current approaches: the Single State Single Action paradigm, which updates the policy with one-to-one state-action pairs from online one-way rollouts without fully exploring each costly emulator state. In this paper, we propose Android Coach, a novel framework that shifts the training paradigm to Single State Multiple Actions, allowing the agent to sample and utilize multiple actions for a single online state. We enable this without additional emulator overhead by learning a critic that estimates action values. To ensure the critic serves as a reliable coach, we integrate a process reward model and introduce a group-wise advantage estimator based on the averaged critic outputs. Extensive experiments demonstrate the effectiveness and efficiency of Android Coach: it achieves 7.5% and 8.3% success rate improvements on AndroidLab and AndroidWorld over UI-TARS-1.5-7B, and attains 1.4x higher training efficiency than Single State Single Action methods PPO and GRPO at matched success rates.",
+ "summary": "- 核心创新点（1句话）：提出在在线强化学习中将单状态单动作更新改为单状态多动作的并行采样，并通过一个行动价值评估器和组级优势估计来高效、无额外仿真开销地指导学习。\n\n- 主要方法：引入一个 critic 来估计在同一在线状态下的多种动作的价值以支撑单状态多动作采样；加入过程奖励模型以提供稳定的奖励信号；提出基于平均 critic 输出的分组优势估计（group-wise advantage estimator）以提升学习稳定性。整体在 Android 环境中进行在线 RL，评估对象为 UI-TARS 的基线并与 PPO/GRPO 等方法比较。\n\n- 结论/性能：在 AndroidLab 和 AndroidWorld 上分别比 UI-TARS-1.5-7B 提升了 7.5% 和 8.3% 的成功率；在达到相同成功率的前提下，训练效率比单状态单动作的方法（PPO、GRPO）提升约 1.4 倍。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-09 13:02:33"
+}

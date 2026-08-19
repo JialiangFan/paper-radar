@@ -1,0 +1,13 @@
+{
+ "id": "2604.12948",
+ "title": "Drawing on Memory: Dual-Trace Encoding Improves Cross-Session Recall in LLM Agents",
+ "authors": "Benjamin Stern, Peter Nadel",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12948v1",
+ "abstract": "LLM agents with persistent memory store information as flat factual records, providing little context for temporal reasoning, change tracking, or cross-session aggregation. Inspired by the drawing effect [3], we introduce dual-trace memory encoding. In this method, each stored fact is paired with a concrete scene trace, a narrative reconstruction of the moment and context in which the information was learned. The agent is forced to commit to specific contextual details during encoding, creating richer, more distinctive memory traces. Using the LongMemEval-S benchmark (4,575 sessions, 100 recall questions), we compare dual-trace encoding against a fact-only control with matched coverage and format over 99 shared questions. Dual-trace achieves 73.7% overall accuracy versus 53.5%, a +20.2 percentage point (pp) gain (95% CI: [+12.1, +29.3], bootstrap p < 0.0001). Gains concentrate in temporal reasoning (+40pp), knowledge-update tracking (+25pp), and multi-session aggregation (+30pp), with no benefit for single-session retrieval, consistent with encoding specificity theory [8]. Token analysis shows dual-trace encoding achieves this gain at no additional cost. We additionally sketch an architectural design for adapting dual-trace encoding to coding agents, with preliminary pilot validation.",
+ "summary": "1. 核心创新点：一句话概括\n提出双轨记忆编码（dual-trace memory encoding）：在每条存储事实上配对一个具体场景轨迹/叙事实时的上下文，强制在编码阶段记忆情境细节，从而提升跨会话的时间推理与多会话聚合能力。\n\n2. 主要方法：简述用了什么技术/模型\n在具备长期记忆的LLM代理中，将信息以“事实 + 场景轨迹”两条线索编码；通过在编码阶段让系统承诺具体情境细节来形成更丰富的记忆痕迹。通过在 LongMemEval-S 基准上与仅记事实的对照组进行对比，确保覆盖和格式对等。此外，文中还给出一种将双轨编码适配到编码型/编程型代理的架构设计并给出初步验证。\n\n3. 结论/性能：取得了什么效果\n在 LongMemEval-S（4,575 个会话、100 道回忆题）的评估中，双轨编码的整体准确率为 73.7%，高于对照组的 53.5%，提升 20.2 个百分点（95% CI：+12.1～+29.3，bootstrap p<0.0001）。改进主要体现在时间推理 (+40pp)、知识更新追踪 (+25pp) 和多会话聚合 (+30pp)；对单会话检索没有收益，与编码特异性理论一致。Token 分析显示此提升并不增加成本。文中还给出将该方法应用于编码代理/编程代理的架构设计及初步验证。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-15 13:10:26"
+}

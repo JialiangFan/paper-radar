@@ -1,0 +1,13 @@
+{
+ "id": "2606.09215",
+ "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+ "authors": "Jia Zheng, Teli Ma, Yudong Fan, Zifan Wang, Shuo Yang, Junwei Liang",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.09215v1",
+ "abstract": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation. The problem is compounded by the dominant hierarchical paradigm, in which a high-level manipulation policy controls only the upper body while a low-level controller tracks coarse base commands -- placing upper and lower body in inconsistent action spaces and reducing the legs to balance-preserving locomotion. We present MotionWAM, a real-time WAM that drives autonomous humanoid loco-manipulation from a single egocentric camera by conditioning the policy on the intermediate denoising features of a video world model. MotionWAM replaces the upper-lower split with a unified motion latent and predicts whole-body motion tokens that jointly cover locomotion, torso motion, height regulation, foot interaction, and hand manipulation in a single action space. A three-stage learning framework progressively adapts the video world model to egocentric visual dynamics and to the target humanoid embodiment. On nine real-world Unitree G1 tasks, MotionWAM runs in real time, substantially outperforms Vision-Language-Action (VLA) baselines fine-tuned on the same demonstrations by over 30% in overall success rate, and executes task-driven foot interaction that decoupled upper-lower policies cannot reach. Our results suggest that video-pretrained WAMs can be lifted from tabletop manipulation to coordinated, human-like whole-body humanoid control.",
+ "summary": "# MotionWAM 论文总结\n\n## 1. 核心创新点\n提出首个面向人形机器人**实时全身 loco-manipulation（移动操控一体化）** 的世界动作模型（WAM），用统一的全身动作潜空间取代传统的\"上下半身分层控制\"范式。\n\n## 2. 主要方法\n- **统一动作空间**：废弃\"上肢策略 + 下肢平衡控制器\"的分层结构，预测覆盖移动、躯干、身高调节、足部交互、手部操控的全身动作 token。\n- **视频世界模型条件化**：策略以视频世界模型的**中间去噪特征**为条件（而非完整迭代去噪），从而满足实时性。\n- **单目第一视角输入**：仅用一个 egocentric 相机驱动自主控制。\n- **三阶段训练框架**：渐进式地将视频世界模型适配到第一视角视觉动态与目标人形机器人本体。\n\n## 3. 结论 / 性能\n在 Unitree G1 上的 **9 个真实世界任务**中：\n- 实现**实时运行**；\n- 整体成功率比同等数据微调的 VLA 基线**高出 30% 以上**；\n- 能完成传统上下半身解耦策略**无法实现**的任务驱动型足部交互；\n- 证明视频预训练 WAM 可从桌面操控扩展至协调的、类人的全身人形控制。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-09 13:02:13"
+}

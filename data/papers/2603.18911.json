@@ -1,0 +1,13 @@
+{
+ "id": "2603.18911",
+ "title": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Hallucination to Zero in English-Hindi LLMs",
+ "authors": "Vedant Pandya",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18911v1",
+ "abstract": "Knowledge-grounded dialogue systems aim to generate informative, contextually relevant responses by conditioning on external knowledge sources. However, most existing approaches focus exclusively on English, lack explicit citation mechanisms for verifying factual claims, and offer limited transparency into model decision-making. We present XKD-Dial, a progressive four-stage training pipeline for explainable, knowledge-grounded dialogue generation in a bilingual (English-Hindi) setting, comprising: (1) multilingual adaptation, (2) English dialogue SFT with citation grounding, (3) bilingual dialogue SFT, and (4) GRPO alignment with citation-aware rewards. We evaluate six models spanning encoder-decoder (250M-3B) and decoder-only (1B-7B) architectures at every pipeline stage. Our key contributions are: (i) three post-hoc explainability analyses - cross-attention alignment, Integrated Gradients attribution, and occlusion-based causal grounding - applied systematically across the training trajectory to reveal how citation behaviour is learned, not only whether it is learned; (ii) citation-grounded SFT reduces hallucination to 0.0% for encoder-decoder models from Stage 2 onward; (iii) the progressive pipeline prevents catastrophic forgetting while improving Hindi capabilities; (iv) smaller models match larger models on English after SFT; and (v) GRPO provides marginal improvement over well-designed SFT for structured citation tasks. We evaluate across six automatic metrics (BLEU, ROUGE, BERTScore, FactScore, Citation-F1, and hallucination rate).",
+ "summary": "1) 核心创新点（一句话）\n提出一个四阶段渐进式训练管线 XKD-Dial，用于可解释、证据驱动的英文-印地语知识对话，并通过后验分析揭示证据学习机制，显著降低幻觉至零并提升印地语能力。\n\n2) 主要方法\n- 四阶段训练：1) 多语言适配，2) 英文对话 SFT 并带引用对齐，3) 双语对话 SFT，4) 带引用感知奖励的 GRPO 对齐。\n- 模型与评估：覆盖编码-解码（250M–3B）与解码器-only（1B–7B）六种模型，在每个阶段评估。\n- 可解释性分析：在训练过程应用跨注意力对齐、Integrated Gradients 梯度归因、遮蔽因果定位三种后验分析，观察证据学习过程。\n- 评价指标：BLEU、ROUGE、BERTScore、FactScore、Citation-F1、幻觉率等六项自动指标。\n\n3) 结论/性能\n- 编码-解码模型从 Stage 2 起，基于引用的对话幻觉降为 0.0%。\n- 渐进式训练避免灾难性忘却并提升印地语能力；较小模型在英文上可与较大模型匹配。\n- GRPO 相对良好设计的 SFT 具有边际提升，对结构化引用任务的改进有限。\n- 通过六项自动指标综合评估，显示显著的可解释与性能提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-20 13:05:04"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.17079",
+ "title": "Can Large Reasoning Models Improve Accuracy on Mathematical Tasks Using Flawed Thinking?",
+ "authors": "Saraswathy Amjith, Mihika Dusad, Neha Muramalla, Shweta Shah",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17079v1",
+ "abstract": "Chain-of-thought (CoT) prompting has become central to mathematical reasoning in large language models, yet models remain brittle to early errors: a single arithmetic slip or unjustified inference typically propagates uncorrected to an incorrect final answer. We investigate whether training on intentionally flawed reasoning traces can teach models to detect and recover from such errors without degrading standard problem-solving ability. Using competition-level problems from MATH-lighteval, we generate CoT prefixes containing exactly one controlled error, either a calculation error (sign flips, dropped terms) or a reasoning error (misapplied rules, unjustified logical steps), and fine-tune Qwen3-4B with GRPO using a binary final-answer reward. Our Mixed-CoT-RL model matches standard RL on clean problems (41% vs 41%) while substantially outperforming it on problems prefilled with flawed reasoning (24% vs 19%). Notably, clean-only RL fine-tuning degrades robustness below the untuned baseline 19% vs. 20%), indicating that conventional training increases susceptibility to misleading prefills. Among error types, training on reasoning errors yields greater robustness gains than calculation errors alone, with mixed training performing best. These findings demonstrate that exposure to flawed traces during training can improve error-recovery behavior without sacrificing accuracy, suggesting a path toward more robust mathematical reasoning in LLMs.",
+ "summary": "- 核心创新点：通过在训练中引入带有恰好一个控制错误的混合推理轨迹（包括计算错误和推理错误），对大语言模型进行混合CoT强化学习微调，使模型能够检测并从错误前提中纠错，同时保持在干净问题上的解题能力。\n\n- 主要方法：在 Qwen3-4B 上使用 GRPO 进行强化学习微调，构建包含单一错误的 CoT 前缀（计算错误如符号翻转、遗漏项；推理错误如错误规则应用、无据推理），并以二元最终答案奖励训练混合CoT-RL 数据，比较与标准 RL 和未调优基线的性能。\n\n- 结论/性能：在干净题上与标准 RL 相当（41% vs 41%）；在被错误前提填充的题目上显著更稳健（24% vs 19%）；纯清洁数据训练的 RL 会降低鲁棒性；对推理错误的训练收益大于计算错误，混合训练效果最好。总体表明暴露于 flawed 推理轨迹可提升错误检测与纠错能力，而不牺牲准确性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-22 02:49:47"
+}

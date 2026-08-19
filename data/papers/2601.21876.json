@@ -1,0 +1,13 @@
+{
+ "id": "2601.21876",
+ "title": "LLM-Driven Scenario-Aware Planning for Autonomous Driving",
+ "authors": "He Li, Zhaowei Chen, Rui Gao, Guoliang Li, Qi Hao, Shuai Wang, Chengzhong Xu",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21876v1",
+ "abstract": "Hybrid planner switching framework (HPSF) for autonomous driving needs to reconcile high-speed driving efficiency with safe maneuvering in dense traffic. Existing HPSF methods often fail to make reliable mode transitions or sustain efficient driving in congested environments, owing to heuristic scene recognition and low-frequency control updates. To address the limitation, this paper proposes LAP, a large language model (LLM) driven, adaptive planning method, which switches between high-speed driving in low-complexity scenes and precise driving in high-complexity scenes, enabling high qualities of trajectory generation through confined gaps. This is achieved by leveraging LLM for scene understanding and integrating its inference into the joint optimization of mode configuration and motion planning. The joint optimization is solved using tree-search model predictive control and alternating minimization. We implement LAP by Python in Robot Operating System (ROS). High-fidelity simulation results show that the proposed LAP outperforms other benchmarks in terms of both driving time and success rate.",
+ "summary": "- 核心创新点：将大语言模型用于场景理解并驱动自适应分模与运动规划的联合优化，以在低复杂场景实现高速驾驶、在高复杂场景实现精确驾驶并提升轨迹质量。\n\n- 主要方法：提出 LAP（LLM 驱动的自适应规划方法），通过 LLM 的场景理解输出用于模式配置与运动规划的联合优化；采用树搜索模型预测控制（tree-search MPC）和交替最小化求解；在 ROS 上用 Python 实现。\n\n- 结论/性能：在高保真仿真中，LAP 相较基准方法在行驶时间和成功率方面表现更优，并实现高质量的轨迹生成。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:02:33"
+}

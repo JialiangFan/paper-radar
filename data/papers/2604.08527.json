@@ -1,0 +1,13 @@
+{
+ "id": "2604.08527",
+ "title": "Demystifying OPD: Length Inflation and Stabilization Strategies for Large Language Models",
+ "authors": "Feng Luo, Yu-Neng Chuang, Guanchu Wang, Zicheng Xu, Xiaotian Han, Tianyi Zhang, Vladimir Braverman",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08527v1",
+ "abstract": "On-policy distillation (OPD) trains student models under their own induced distribution while leveraging supervision from stronger teachers. We identify a failure mode of OPD: as training progresses, on-policy rollouts can undergo abrupt length inflation, causing truncated trajectories to dominate the training data. This truncation collapse coincides with abrupt repetition saturation and induces biased gradient signals, leading to severe training instability and sharp degradation in validation performance. We attribute this problem to the interaction between student-induced data collection and the distillation objective, which implicitly favors long and repetitive rollouts. To address this issue, we propose StableOPD, a stabilized OPD framework that combines a reference-based divergence constraint with rollout mixture distillation. These together mitigate repetition-induced length inflation and further stabilize OPD training. Across multiple math reasoning datasets, our approach prevents truncation collapse, stabilizes training dynamics, and improves performance by 7.2% on average.",
+ "summary": "- **核心创新点**：提出 StableOPD 框架，通过引入基于参考的分歧约束与滚动混合蒸馏，解决 OPD 过程中的长度膨胀与训练不稳定问题。\n\n- **主要方法**：在传统的 On-policy distillation 基础上，结合参考分布的 Divergence 约束和 rollout mixture distillation，通过限制学生分布与教师分布的偏离并混合不同长度/内容的滚动数据，缓解重复与长轨迹导致的训练问题。\n\n- **结论/性能**：在多组数学推理数据集上实现了避免截断崩溃、稳定训练动态的效果，平均性能提升约 7.2%。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-10 13:03:44"
+}

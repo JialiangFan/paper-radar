@@ -1,0 +1,13 @@
+{
+ "id": "2602.22197",
+ "title": "Off-The-Shelf Image-to-Image Models Are All You Need To Defeat Image Protection Schemes",
+ "authors": "Xavier Pleimling, Sifat Muhammad Abdullah, Gunjan Balde, Peng Gao, Mainack Mondal, Murtuza Jadliwala, Bimal Viswanath",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22197v1",
+ "abstract": "Advances in Generative AI (GenAI) have led to the development of various protection strategies to prevent the unauthorized use of images. These methods rely on adding imperceptible protective perturbations to images to thwart misuse such as style mimicry or deepfake manipulations. Although previous attacks on these protections required specialized, purpose-built methods, we demonstrate that this is no longer necessary. We show that off-the-shelf image-to-image GenAI models can be repurposed as generic ``denoisers\" using a simple text prompt, effectively removing a wide range of protective perturbations. Across 8 case studies spanning 6 diverse protection schemes, our general-purpose attack not only circumvents these defenses but also outperforms existing specialized attacks while preserving the image's utility for the adversary. Our findings reveal a critical and widespread vulnerability in the current landscape of image protection, indicating that many schemes provide a false sense of security. We stress the urgent need to develop robust defenses and establish that any future protection mechanism must be benchmarked against attacks from off-the-shelf GenAI models. Code is available in this repository: https://github.com/mlsecviswanath/img2imgdenoiser",
+ "summary": "- 核心创新点（一句话概括）\n  用现成的图像到图像生成模型作为通用去噪工具，通过简单文本提示即可抵消多种图像保护扰动，实现对保护方案的普遍攻击。\n\n- 主要方法\n  - 利用现成的图像到图像（image-to-image）GenAI 模型（如基于扩散的模型）作为通用“去噪/修复器”来处理带保护 Perturbation 的图片。\n  - 通过简单的文本提示引导模型对扰动进行移除，同时尽量保持原始图像的有用信息，便于攻击方后续利用。\n  - 在8个案例、6种不同的保护方案上进行系统评估，并与专门化的攻击方法进行对比。\n\n- 结论/性能\n  - 该通用攻击能够绕过大多数保护方案，甚至在某些场景上超过了现有的专门攻击方法。\n  - 同时保持了对攻击者有用的图像信息，未显著损害图像的可用性。\n  - 研究表明现有的图像保护策略存在广泛漏洞，未来的防护需以这类 off-the-shelf GenAI 模型为基准进行评估。代码已开源供复现实验。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-26 14:00:54"
+}

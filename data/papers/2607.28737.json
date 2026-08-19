@@ -1,0 +1,13 @@
+{
+ "id": "2607.28737",
+ "title": "Mirror Learning",
+ "authors": "Yunpeng Liu, Matthew Niedoba, Oluwanifemi A. Adekanye, Jason Yoo, Yingchen He, Berend Zwartsenberg, Frank Wood",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28737v1",
+ "abstract": "We investigate imitation learning through the lens of third-person observation and propose a framework for mirror learning: acquiring actionable policies from passive observation. While behavior cloning (BC) excels under dense, well-aligned first-person data, it fundamentally fails to leverage the rich observational signals arising from third-person demonstrations that humans and animals routinely exploit. We introduce a method that composes (i) a learned perspective transformation that places learners in demonstrators' shoes using a fine-tuned video diffusion model and (ii) an inverse dynamics model that infers action trajectories in the learners' control space. This enables the synthesis of mirror data, pseudo first-person expert data generated from third-person observations of demonstrator behavior. Empirically, we show that mirror data alone can train effective policies, and that augmenting first-person BC training with mirror data further improves downstream policy performance. Our results suggest that modern generative world models implicitly encode sufficient structure to enable a scalable and safe alternative to teleoperation-heavy data collection.",
+ "summary": "## Mirror Learning（镜像学习）\n\n**1. 核心创新点**\n提出通过\"视角转换 + 逆动力学\"把第三人称的被动观察合成为伪第一人称专家数据（mirror data），从而让智能体能像人和动物一样从旁观他人中学会可执行的策略。\n\n**2. 主要方法**\n两个模块的组合：\n\n- **视角变换模块**：微调一个视频扩散模型（video diffusion model），把示范者的第三人称画面\"转换\"成学习者自身视角的画面，即\"设身处地\"。\n- **逆动力学模型（IDM）**：从生成的第一人称视频轨迹中反推出学习者控制空间下的动作序列。\n\n两者串联即可批量合成带动作标注的伪第一人称示范数据，用于训练策略（对照基线是行为克隆 BC）。\n\n**3. 结论/性能**\n\n- 仅用合成的 mirror data 就能训练出有效策略；\n- 将 mirror data 与真实第一人称数据混合做 BC 训练，可进一步提升下游策略性能；\n- 作者据此认为现代生成式世界模型已隐式编码了足够的结构信息，有望替代高度依赖遥操作（teleoperation）的数据采集方式，提供更可扩展、更安全的数据来源。\n\n> 一点提示：摘要中未给出具体任务、基准或数值指标，\"有效\"\"进一步提升\"均为定性表述，实际提升幅度需看正文实验。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-03 13:06:10"
+}

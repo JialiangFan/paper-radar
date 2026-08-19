@@ -1,0 +1,13 @@
+{
+ "id": "2602.18097",
+ "title": "Interacting safely with cyclists using Hamilton-Jacobi reachability and reinforcement learning",
+ "authors": "Aarati Andrea Noronha, Jean Oh",
+ "date": "2026-02-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.18097v1",
+ "abstract": "In this paper, we present a framework for enabling autonomous vehicles to interact with cyclists in a manner that balances safety and optimality. The approach integrates Hamilton-Jacobi reachability analysis with deep Q-learning to jointly address safety guarantees and time-efficient navigation. A value function is computed as the solution to a time-dependent Hamilton-Jacobi-Bellman inequality, providing a quantitative measure of safety for each system state. This safety metric is incorporated as a structured reward signal within a reinforcement learning framework. The method further models the cyclist's latent response to the vehicle, allowing disturbance inputs to reflect human comfort and behavioral adaptation. The proposed framework is evaluated through simulation and comparison with human driving behavior and an existing state-of-the-art method.",
+ "summary": "1. 核心创新点：将哈密顿-雅可比可达性分析与深度Q学习结合，利用时间依赖的HJB不等式得到的安全度量作为强化学习的结构化奖励，从而实现对骑行者的安全且高效交互，并对自行车手的潜在响应进行建模。\n\n2. 主要方法：采用哈密顿-雅可比可达性分析计算系统状态的安全价值函数（基于时间依赖的HJB不等式），将该安全度量融入深度Q学习的奖励信号；同时建模 cyclist 的潜在响应，通过扰动输入反映人类舒适度与行为适应性；通过仿真对比人类驾驶与现有方法进行评估。\n\n3. 结论/性能：在仿真中与人类驾驶行为及现有最先进方法相比，框架在安全性与时间效率之间取得更优的折中，表现出更安全的交互与更高效的导航性能。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-23 14:00:18"
+}

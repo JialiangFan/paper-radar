@@ -1,0 +1,13 @@
+{
+ "id": "2606.13053",
+ "title": "EA-WM: Event-Aware World Models with Task-Specification Grounding for Long-Horizon Manipulation",
+ "authors": "Kailin Wang, Haoxiang Jie, Yaoyuan Yan, Jiacheng Zhou, Zhiyou Heng",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13053v1",
+ "abstract": "Pretrained-feature world models provide a useful substrate for robot imagination, but visual or latent prediction alone does not determine whether an imagined future satisfies task-relevant events. Long-horizon manipulation requires progress signals that are relational, predicate-level, and physically grounded: whether an object has moved, whether a drawer or contact state has changed, whether a placement predicate is satisfied, and whether a candidate future is reliable enough for execution. We introduce EA-WM, an event-aware world-model framework that augments frozen visual-feature dynamics with task-specification-grounded event prediction and verification. EA-WM rolls out candidate futures in pretrained visual-feature space, decodes them into structured event states, and scores them using task-progress, semantic-consistency, physical-feasibility, and uncertainty terms. The verifier guides sampling-based planning, gates candidate actions, and, in the contact-sensitive LIBERO wine-rack setting, selects among PPOgenerated proposals. Across navigation, deformable-object, wall-constrained, and languagedescribed manipulation studies, EA-WM shows that event-aware verification can make featurespace world models more interpretable and better aligned with task progress.",
+ "summary": "## EA-WM 论文摘要总结\n\n1. **核心创新点**：在冻结的视觉特征世界模型之上，引入\"事件感知\"的验证机制——通过预测和校验任务相关的谓词级事件（如物体是否移动、抽屉是否打开、放置是否完成）来判断想象出的未来是否真正满足任务目标，从而提升长程操作任务的可靠性与可解释性。\n\n2. **主要方法**：\n   - 使用**预训练视觉特征空间**中的世界模型对候选未来进行 rollout（想象）。\n   - 将预测结果**解码为结构化的事件状态**（关系型、谓词级、物理基础的进度信号）。\n   - 用**任务进度、语义一致性、物理可行性、不确定性**四项指标对候选未来打分。\n   - 该验证器（verifier）用于**引导基于采样的规划、过滤候选动作**，并在接触敏感的 LIBERO 酒架场景中从 **PPO 生成的提案**中做选择。\n\n3. **结论/性能**：在导航、可形变物体、墙体约束、以及语言描述的操作等多类任务上，EA-WM 证明了\"事件感知验证\"能让特征空间世界模型**更具可解释性、更好地对齐任务进度**，从而提高长程操作的执行可靠性。\n\n---\n\n提示：如需更系统、含中英文双版本并自动归档到 Obsidian 的文献综述，可使用 `/paper-review` 技能。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-13 13:05:16"
+}

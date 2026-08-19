@@ -1,0 +1,13 @@
+{
+ "id": "2601.21586",
+ "title": "ICL-EVADER: Zero-Query Black-Box Evasion Attacks on In-Context Learning and Their Defenses",
+ "authors": "Ningyuan He, Ronghong Huang, Qianqian Tang, Hongyu Wang, Xianghang Mi, Shanqing Guo",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21586v1",
+ "abstract": "In-context learning (ICL) has become a powerful, data-efficient paradigm for text classification using large language models. However, its robustness against realistic adversarial threats remains largely unexplored. We introduce ICL-Evader, a novel black-box evasion attack framework that operates under a highly practical zero-query threat model, requiring no access to model parameters, gradients, or query-based feedback during attack generation. We design three novel attacks, Fake Claim, Template, and Needle-in-a-Haystack, that exploit inherent limitations of LLMs in processing in-context prompts. Evaluated across sentiment analysis, toxicity, and illicit promotion tasks, our attacks significantly degrade classifier performance (e.g., achieving up to 95.3% attack success rate), drastically outperforming traditional NLP attacks which prove ineffective under the same constraints. To counter these vulnerabilities, we systematically investigate defense strategies and identify a joint defense recipe that effectively mitigates all attacks with minimal utility loss (<5% accuracy degradation). Finally, we translate our defensive insights into an automated tool that proactively fortifies standard ICL prompts against adversarial evasion. This work provides a comprehensive security assessment of ICL, revealing critical vulnerabilities and offering practical solutions for building more robust systems. Our source code and evaluation datasets are publicly available at: https://github.com/ChaseSecurity/ICL-Evader .",
+ "summary": "1) 核心创新点\n- 提出零查询黑盒对抗框架ICL-Evader，能够在不访问模型参数、梯度或查询反馈的条件下对In-Context Learning 进行高效对抗，并给出相应的防御方案。\n\n2) 主要方法\n- 设计三种新型攻击：Fake Claim、Template、Needle-in-a-Haystack，利用大语言模型在处理上下文提示时的固有限制进行攻击；在情感分析、毒性检测、非法推广等任务上进行评估；并系统性研究防御策略，提出联合防御方案和一个自动化工具以强化常见ICL prompts。\n\n3) 结论/性能\n- 攻击在多任务上显著降低分类性能，攻击成功率最高可达95.3%，远超同条件下的传统NLP攻击；联合防御能够抵御所有攻击，且准确率下降小于5%；并提供开源实现与自动化防御工具。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-30 14:01:44"
+}

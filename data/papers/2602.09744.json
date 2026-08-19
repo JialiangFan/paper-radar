@@ -1,0 +1,13 @@
+{
+ "id": "2602.09744",
+ "title": "DiffuReason: Bridging Latent Reasoning and Generative Refinement for Sequential Recommendation",
+ "authors": "Jie Jiang, Yang Wu, Qian Li, Yuling Xiong, Yihang Su, Junbang Huo, Longfei Lu, Jun Zhang, Huan Yu",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09744v1",
+ "abstract": "Latent reasoning has emerged as a promising paradigm for sequential recommendation, enabling models to capture complex user intent through multi-step deliberation. Yet existing approaches often rely on deterministic latent chains that accumulate noise and overlook the uncertainty inherent in user intent, and they are typically trained in staged pipelines that hinder joint optimization and exploration. To address these challenges, we propose DiffuReason, a unified \"Think-then-Diffuse\" framework for sequential recommendation. It integrates multi-step Thinking Tokens for latent reasoning, diffusion-based refinement for denoising intermediate representations, and end-to-end Group Relative Policy Optimization (GRPO) alignment to optimize for ranking performance. In the Think stage, the model generates Thinking Tokens that reason over user history to form an initial intent hypothesis. In the Diffuse stage, rather than treating this hypothesis as the final output, we refine it through a diffusion process that models user intent as a probabilistic distribution, providing iterative denoising against reasoning noise. Finally, GRPO-based reinforcement learning enables the reasoning and refinement modules to co-evolve throughout training, without the constraints of staged optimization. Extensive experiments on four benchmarks demonstrate that DiffuReason consistently improves diverse backbone architectures. Online A/B tests on a large-scale industrial platform further validate its practical effectiveness.",
+ "summary": "核心创新点\n- 提出一个统一的 Think-then-Diffuse 框架 DiffuReason，结合多步 Thinking Tokens、扩散式细化以及端到端的 GRPO 对齐，以高效建模潜在推理的不确定性并进行联合优化。\n\n主要方法\n- Think 阶段：使用 Thinking Tokens 对用户历史进行多步推理，形成初始意图假设。\n- Diffuse 阶段：将该假设建模为概率分布，通过扩散过程进行迭代去噪，提升对推理噪声的鲁棒性。\n- GRPO 对齐：采用端到端的 Group Relative Policy Optimization 强化学习，使推理与细化模块共同进化，避免分阶段优化。\n- 兼容性与验证：可与多种骨干架构结合，在四个基准数据集上获得性能提升，并在大规模产业平台完成在线 A/B 测试验证。\n\n结论/性能\n- DiffuReason 在四个公开基准上对多种骨干模型实现持续提升；在大型工业平台的在线 A/B 测试中验证了其实际有效性与应用价值。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-11 14:04:17"
+}

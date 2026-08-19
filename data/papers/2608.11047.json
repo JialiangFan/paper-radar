@@ -1,0 +1,13 @@
+{
+ "id": "2608.11047",
+ "title": "V-FiLLM: Verified Financial LLM Reasoning Benchmark",
+ "authors": "Alicia Larsen, Victoire Laurent, Aulia Kharis Rakhamsari, Lara Turgut, Nino Antulov-Fantulin",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11047v1",
+ "abstract": "While existing benchmarks have made substantial progress in evaluating LLMs across STEM domains, financial reasoning over structured data remains comparatively less explored. We introduce V-FiLLM, a framework that generates financial reasoning benchmarks from executable computation trees grounded in real tables, yielding items whose answers are correct by construction. Trees are evaluated symbolically to obtain ground truth and rendered into natural-language questions, removing any model from the labeling loop, so items can be generated at arbitrary scale without annotation cost and without inheriting a generator's error rate. V-FiLLM exposes four independently controllable axes of difficulty including computation depth, expression breadth, financial concept complexity, and context size. By evaluating on open-source models, we find that accuracy falls up to 51% as reasoning depth increases, and up to 47% points under adversarial numerical perturbations, highlighting remaining challenges in robust financial reasoning over tables. We further show that lightweight LoRA fine-tuning on verified chain-of-thought traces improves accuracy from 81.1% to 85.6% on held-out problems and outperforms the base model by 5% points on FinQA (Chen et al., 2022a), s), suggesting that targeted, low-cost adaptation is a promising direction for compositional reasoning in financial QA.",
+ "summary": "**V-FiLLM: 可验证的金融大模型推理基准**\n\n1. **核心创新点**\n   提出一个从\"可执行计算树\"自动生成金融推理题目的框架，答案由构造过程本身保证正确，完全不需要模型或人工标注参与打标。\n\n2. **主要方法**\n   以真实财务报表为基础构建计算树 → 符号化求值得到 ground truth → 再渲染成自然语言问题；支持四个可独立调控的难度维度（计算深度、表达式宽度、金融概念复杂度、上下文长度）。评测在开源模型上进行，另外用已验证的思维链（CoT）轨迹做轻量 LoRA 微调。\n\n3. **结论/性能**\n   - 推理深度增加时，准确率最多下降 **51%**；在对抗性数值扰动下最多下降 **47 个百分点**，说明表格金融推理的鲁棒性仍是短板。\n   - LoRA 微调后，留出集准确率从 **81.1% → 85.6%**，在 FinQA 上比基座模型高 **5 个百分点**，表明低成本定向适配是提升组合式金融推理的可行方向。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:01:19"
+}

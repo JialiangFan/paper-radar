@@ -1,0 +1,13 @@
+{
+ "id": "2602.03352",
+ "title": "PEGRL: Improving Machine Translation by Post-Editing Guided Reinforcement Learning",
+ "authors": "Yunzhi Shen, Hao Zhou, Xin Huang, Xue Han, Junlan Feng, Shujian Huang",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03352v1",
+ "abstract": "Reinforcement learning (RL) has shown strong promise for LLM-based machine translation, with recent methods such as GRPO demonstrating notable gains; nevertheless, translation-oriented RL remains challenged by noisy learning signals arising from Monte Carlo return estimation, as well as a large trajectory space that favors global exploration over fine-grained local optimization. We introduce \\textbf{PEGRL}, a \\textit{two-stage} RL framework that uses post-editing as an auxiliary task to stabilize training and guide overall optimization. At each iteration, translation outputs are sampled to construct post-editing inputs, allowing return estimation in the post-editing stage to benefit from conditioning on the current translation behavior, while jointly supporting both global exploration and fine-grained local optimization. A task-specific weighting scheme further balances the contributions of translation and post-editing objectives, yielding a biased yet more sample-efficient estimator. Experiments on English$\\to$Finnish, English$\\to$Turkish, and English$\\leftrightarrow$Chinese show consistent gains over RL baselines, and for English$\\to$Turkish, performance on COMET-KIWI is comparable to advanced LLM-based systems (DeepSeek-V3.2).",
+ "summary": "以下内容对论文标题与摘要的要点进行中文简要概括：\n\n- 核心创新点（1 句话）\n  提出 PEGRL 的两阶段强化学习框架，通过将后编辑作为辅助任务来稳定训练并引导优化；在每次迭代中用当前翻译输出构造后编辑输入，使后编辑阶段的回报估计条件化于翻译行为，从而在全局探索与局部优化之间实现协同并提升样本效率。\n\n- 主要方法（简述用了什么技术/模型）\n  - 使用两阶段的强化学习框架：阶段一进行翻译输出的策略学习，阶段二进行后编辑（post-editing）任务来辅助回报估计与优化。\n  - 在每次迭代中抽样翻译结果来构造后编辑输入，使后编辑阶段的回报能够条件化于当前翻译行为，从而兼顾全局探索与局部优化。\n  - 引入任务特定的权重对翻译目标与后编辑目标的损失进行平衡，得到更偏置但样本效率更高的估计。\n  - 依托蒙特卡洛回报估计与策略梯度优化实现两任务联合训练。\n\n- 结论/性能（取得了什么效果）\n  - 在英语→芬兰、英语→土耳其，以及英语与中文互译等任务上，相较于RL基线获得持续的性能提升。\n  - 对于英语→土耳其任务，在 COMET-KIWI 指标上接近甚至达到与先进的大语言模型系统（如 DeepSeek-V3.2）相当的水平。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-04 14:05:04"
+}

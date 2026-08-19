@@ -1,0 +1,13 @@
+{
+ "id": "2608.17948",
+ "title": "SIGMA: SHAP-Guided Implicit-Trajectory Generation for Metadata-Free LLM-Based AutoFE",
+ "authors": "Xuan Zheng, Kento Uchida, Shinichi Shirakawa",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17948v1",
+ "abstract": "Recent research has leveraged Large Language Models (LLMs) to enhance Automated Feature Engineering (AutoFE) through semantic descriptions and trajectory-based prompting. However, there exist two challenges that limit their applicability and scalability in long-horizon optimization: (1) semantic metadata is unavailable in many practical settings, and (2) trajectory accumulation increases the risk of exceeding the context window, while without it, the generation process can become unstable, leading to becoming stuck in the local optima and a high duplicate rate of generated features. To this end, we propose a SHAP-enhanced Implicit-trajectory Generation for Metadata-free AutoFE (SIGMA), a scalable constant-context optimization framework. SIGMA leverages SHAP values to provide task-aware signals for guiding group feature generation instead of semantic information. In addition, we adopt an EXposed-feature Implicit Trajectory (EXIT) approach, where the exposed features in the prompt implicitly represent the trajectory. Empirical results demonstrate that SIGMA achieves performance comparable to the state-of-the-art (SOTA) LLM baselines with a nearly constant prompt length. Notably, EXIT significantly reduces the duplicate ratio of generated features from 37.2% to 6.8%. At the same time, SIGMA matches traditional SOTA performance with only 5.4 features on average, demonstrating substantial efficiency gains in feature utilization.",
+ "summary": "## SIGMA 论文摘要总结\n\n**1. 核心创新点**\n提出 SIGMA 框架，用 SHAP 值替代语义元数据作为特征生成的引导信号，并以「已暴露特征」隐式承载搜索轨迹，从而实现无需元数据、且提示词长度近似恒定的可扩展 LLM 自动特征工程（AutoFE）。\n\n**2. 主要方法**\n- **SHAP 引导**：用 SHAP 值提供任务感知（task-aware）的重要性信号，指导 LLM 进行成组（group）特征生成，绕开现实场景中常缺失的语义描述。\n- **EXIT（EXposed-feature Implicit Trajectory）**：不再把历史轨迹逐轮累加进提示词，而是让提示中呈现的当前特征集合隐式代表优化轨迹，避免上下文窗口爆炸，同时缓解无轨迹时生成不稳定、易陷局部最优和重复生成的问题。\n- 整体构成一个「常数上下文」的长程优化框架。\n\n**3. 结论/性能**\n- 在提示长度几乎恒定的前提下，性能与 SOTA 的 LLM 基线相当。\n- EXIT 将生成特征的重复率从 **37.2% 降至 6.8%**。\n- 平均仅用 **5.4 个特征**即可达到传统 SOTA 方法的效果，特征利用效率显著提升。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-19 13:03:06"
+}

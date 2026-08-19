@@ -1,0 +1,27 @@
+{
+ "id": "perceived-safety-in-physical-human-robot-interaction",
+ "title": "Perceived Safety in Physical Human Robot Interaction",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "越来越多的自主系统与人类共享物理空间（协作机器人、自动驾驶等），安全是这些应用的首要需求。然而，机器人不仅需要实际安全，还必须被用户感知为安全——缺乏安全感知会导致压力、恐惧等负面心理影响，阻碍机器人的接受和采纳。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Perceived Safety in Physical Human Robot Interaction - A Survey.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

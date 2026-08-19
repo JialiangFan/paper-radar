@@ -1,0 +1,13 @@
+{
+ "id": "2606.07342",
+ "title": "LLM-Guided Evolution for Medical Decision Pipelines",
+ "authors": "Ivan Sviridov, Artem Oskin, Ivan Panin, Iaroslav Bespalov, Dmitry Dylov, Ivan Oseledets, Aleksandr Nesterov",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07342v1",
+ "abstract": "Adapting large language models (LLMs) to clinical workflows often requires costly fine-tuning or manual prompt and pipeline engineering. We study LLM-guided MAP-Elites evolution as an inference-time alternative for discovering medical decision strategies and provide an implementation repository at https://github.com/univanxx/llm_guided_evo_medical. We formulate urgency triage, interactive consultation, and medical image classification as evolutionary searches over executable artifacts optimized by task-specific fitness functions.\n  Across all three settings, evolution improves over manually designed baselines under practical constraints. In triage, evolved programs increase Semigran accuracy from $77.3\\%$ to $87.1\\%$ and emergency recall from $0.60$ to $0.97$, while improving safety-weighted held-out MIMIC-ESI performance. In interactive consultation, evolved policies improve the accuracy--cost frontier across Llama-3, Qwen-3.5, and Gemma-4 and transfer to held-out iCRAFTMD. In PneumoniaMNIST, prompt-only evolution improves frozen MedGemma VLMs while preserving strict JSON outputs. Qualitative analysis shows that the gains come from interpretable program-level mechanisms, calibrated triage boundaries, targeted evidence acquisition, selective commitment, and finding-oriented visual decision rules, rather than superficial prompt rewording alone.",
+ "summary": "# 论文总结：LLM-Guided Evolution for Medical Decision Pipelines\n\n1. **核心创新点**：提出在推理阶段使用 LLM 引导的 MAP-Elites 进化算法，替代昂贵的微调或手动提示工程，自动发现医疗决策策略。\n\n2. **主要方法**：将紧急分诊、交互式问诊、医学影像分类三类任务建模为对可执行程序产物的进化搜索，通过任务专属的适应度函数进行优化；使用 Llama-3、Qwen-3.5、Gemma-4、MedGemma 等冻结模型作为底座。\n\n3. **结论/性能**：\n   - **分诊**：Semigran 准确率从 77.3% 提升至 87.1%，紧急召回率从 0.60 提升至 0.97，并在 MIMIC-ESI 上提升安全加权性能。\n   - **交互式问诊**：在多个 LLM 上改善准确率-成本权衡，并迁移至 iCRAFTMD 数据集。\n   - **影像分类**：在 PneumoniaMNIST 上仅靠提示进化即可提升冻结 MedGemma VLM，且保持严格 JSON 输出。\n   - 定性分析表明，性能提升来自可解释的程序级机制（如校准的分诊边界、针对性证据获取、选择性决断、面向发现的视觉决策规则），而非表面的提示改写。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-08 13:01:18"
+}

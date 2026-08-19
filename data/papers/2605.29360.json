@@ -1,0 +1,13 @@
+{
+ "id": "2605.29360",
+ "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+ "authors": "Tianzhuo Yang, Zihan Shen, Zirui Mi, Zhaoyi Zhang, Jiayi Zhou, Jiaming Ji, Juntao Dai, Jiawei Chen, Boyuan Chen, Yaodong Yang",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29360v1",
+ "abstract": "Action-conditioned world models are increasingly used as scalable simulators for robot learning, yet current evaluations provide limited evidence that their predictions are reliable under the actions they condition on. Existing benchmarks largely emphasize visual fidelity, leaving unclear whether predicted futures are physically plausible, faithful to commanded actions, and calibrated to failure when actions should not succeed. We introduce \\textsc{MiraBench}, a hierarchical benchmark that defines \\emph{action-conditioned reliability} as a core evaluation target for robotic world models. MiraBench decomposes this target into three progressively demanding levels: \\emph{Physics Adherence}, which evaluates reference-free physical consistency; \\emph{Action-Following Fidelity}, which measures whether predictions respect task-relevant action inputs; and \\emph{Optimism Bias Detection}, which probes the tendency to predict successful outcomes under failure-inducing actions. To support this evaluation, we curate a human-annotated corpus with over 16,000 judgments across tasks, failure categories, and leading world models. We evaluate 12 representative model configurations spanning vector-conditioned robotic world models, text-conditioned generative world models, open-weight systems, closed-source systems, and multiple model scales. Across this broad model landscape, MiraBench reveals three central findings: visual fidelity is a poor proxy for action fidelity; increasing model scale does not reliably improve action following; and optimism bias is pervasive across current systems. By shifting evaluation from appearance to action-conditioned reliability, MiraBench provides a diagnostic foundation for assessing and improving robotic world models as faithful simulators.",
+ "summary": "## MiraBench 论文总结\n\n1. **核心创新点**：提出首个面向机器人世界模型「动作条件可靠性（action-conditioned reliability）」的分层评测基准 MiraBench，将评估重心从视觉保真度转向预测是否真正遵循输入动作并对失败情况保持校准。\n\n2. **主要方法**：将可靠性分解为三个递进层级——物理一致性（Physics Adherence，无参考）、动作跟随保真度（Action-Following Fidelity）、乐观偏差检测（Optimism Bias Detection，针对应当失败的动作）；构建了一个超过 16,000 条人工标注的语料库，覆盖多种任务与失败类别，并在 12 种代表性模型配置（向量条件机器人世界模型、文本条件生成世界模型、开源/闭源、不同规模）上进行系统评测。\n\n3. **结论/性能**：得出三项关键发现——(1) 视觉保真度不能代表动作保真度；(2) 增大模型规模并不能稳定提升动作跟随能力；(3) 乐观偏差在当前所有系统中普遍存在。MiraBench 为评估和改进机器人世界模型作为「忠实模拟器」提供了诊断基础。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-31 13:03:42"
+}

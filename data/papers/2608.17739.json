@@ -1,0 +1,13 @@
+{
+ "id": "2608.17739",
+ "title": "Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control",
+ "authors": "Lu Liu, Chi Xie, Xi Xiong",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17739v1",
+ "abstract": "This study investigates cooperative control of connected and automated vehicles (CAVs) at partially observable highway bottlenecks in mixed traffic, aiming to mitigate congestion without relying on complete global traffic states or online trial-and-error. We propose a physics-informed world model-based offline multi-agent reinforcement learning framework that reconstructs a physically interpretable global traffic state from local CAV observation-action histories, with coupled macroscopic-microscopic traffic dynamics providing physics-based supervision. A probabilistic ensemble world model learns traffic-state transitions and system rewards, while model disagreement quantifies epistemic uncertainty. Multi-step imagined rollouts with pessimistic rewards and uncertainty-driven truncation are then used for offline policy learning. Experiments in a SUMO-based on-ramp bottleneck using approximately $1\\times10^6$ offline transitions show that physics supervision improves state reconstruction and world-model prediction accuracy.",
+ "summary": "## 论文中文摘要\n\n**标题**：基于物理信息世界模型的离线多智能体强化学习用于协同混合交通控制\n\n1. **核心创新点**\n   提出一种“物理信息世界模型 + 离线多智能体强化学习”框架，让网联自动驾驶车辆（CAV）仅凭局部可观测信息、无需在线试错，就能协同缓解高速公路瓶颈路段的拥堵。\n\n2. **主要方法**\n   - **状态重构**：从各 CAV 的局部“观测—动作”历史中重建具有物理可解释性的全局交通状态；\n   - **物理监督**：引入宏观—微观耦合的交通流动力学作为物理约束监督信号；\n   - **世界模型**：用概率集成（probabilistic ensemble）世界模型学习交通状态转移与系统奖励，并以模型间的分歧度量化认知不确定性（epistemic uncertainty）；\n   - **策略学习**：在世界模型中做多步想象式 rollout，配合**悲观奖励**和**不确定性驱动的轨迹截断**进行离线策略优化；\n   - **实验平台**：SUMO 仿真的匝道汇入瓶颈场景，使用约 1×10⁶ 条离线转移数据。\n\n3. **结论/性能**\n   实验表明，加入物理监督后，全局交通状态的重构精度与世界模型的预测精度均得到提升。（摘要中仅报告了这一层结果，未给出具体的通行效率/拥堵缓解数值指标。）\n\n> 备注：摘要给出的定量证据较弱——只验证了“模型层面”更准，而未直接说明最终控制策略在拥堵缓解上的收益，这是阅读全文时值得重点核查的地方。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-19 13:04:03"
+}

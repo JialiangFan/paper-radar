@@ -1,0 +1,13 @@
+{
+ "id": "2602.02192",
+ "title": "ECHO-2: A Large Scale Distributed Rollout Framework for Cost-efficient Reinforcement Learning",
+ "authors": "Jie Xiao, Meng Chen, Qingnan Ren, Song Jingwei, Jiaqi Huang, Yangshen Deng, Chris Tong, Wanyi Chen, Suli Wang, Ziqian Bi, Shuo Lu, Yiqun Duan, Lynn Ai, Eric Yang, Bill Shi",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02192v1",
+ "abstract": "Reinforcement learning (RL) is a critical stage in post-training large language models (LLMs), involving repeated interaction between rollout generation, reward evaluation, and centralized learning. Distributing rollout execution offers opportunities to leverage more cost-efficient inference resources, but introduces challenges in wide-area coordination and policy dissemination. We present ECHO-2, a distributed RL framework for post-training with remote inference workers and non-negligible dissemination latency. ECHO-2 combines centralized learning with distributed rollouts and treats bounded policy staleness as a user-controlled parameter, enabling rollout generation, dissemination, and training to overlap. We introduce an overlap-based capacity model that relates training time, dissemination latency, and rollout throughput, yielding a practical provisioning rule for sustaining learner utilization. To mitigate dissemination bottlenecks and lower cost, ECHO-2 employs peer-assisted pipelined broadcast and cost-aware activation of heterogeneous workers. Experiments on GRPO post-training of 4B and 8B models under real wide-area bandwidth regimes show that ECHO-2 significantly improves cost efficiency while preserving RL reward comparable to strong baselines.",
+ "summary": "- 核心创新点：提出一个可控时效性、基于重叠容量模型的分布式后训练框架 ECHO-2，通过对等流水线广播和异构工作者的成本感知激活，在广域网络条件下实现低成本、高效的强化学习回放与学习耦合。\n\n- 主要方法： \n  - 采用远程推理工作者与中心化学习相结合的分布式回放框架；将回放生成、策略分发与训练的流程实现重叠。 \n  - 将策略时效性（staleness）设为可控参数，并提出一种基于重叠的容量模型，关联训练时间、传播延迟与回放吞吐量，给出实际的资源配置规则。 \n  - 通过对等辅助的流水线广播（peer-assisted pipelined broadcast）和对异构工作者的成本感知激活策略，缓解传播瓶颈、降低成本。\n\n- 结论/性能：在 GRPO 的 4B 和 8B 模型后训练任务中，在真实广域带宽条件下，显著提升成本效率，同时所得到的 RL 奖励与强基线相当。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-03 14:05:26"
+}

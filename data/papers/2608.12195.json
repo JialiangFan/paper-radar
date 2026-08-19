@@ -1,0 +1,13 @@
+{
+ "id": "2608.12195",
+ "title": "IF:CARGO: LLM-Based Semantic Compilation for Al-Native Rule Programming Games",
+ "authors": "Ting-Chen Hsu, Lianye Zhang, Jiangxu Lin, Zhaoyi Yu, Fei Qin, Zihao Chen",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.12195v1",
+ "abstract": "This case study presents IF: CARGO, an experimental puzzle game that uses a large language model as a semantic compiler rather than an autonomous game-playing agent. Players author IF/THEN rules in natural language, which the model translates into a constrained command schema for deterministic validation and execution by the game engine. This architecture creates a playable loop of expression, execution, observation, and revision, framing AI interaction as semantic debugging. A mixed-methods playtest with 24 participants across eight levels examined player attempts, thinking time, perceived controllability, adjustability, and interpretations of the AI's role. Results suggest that players generally understood the model as a translation intermediary and could revise their strategies through feedback, while periodic commands, multi-robot coordination, and rule-priority mechanics created greater cognitive and diagnostic demands. The study proposes a practical pattern for AI-native gameplay: constrain natural-language input, preserve player authorship, and ensure deterministic execution.",
+ "summary": "**IF:CARGO：基于 LLM 语义编译的 AI 原生规则编程游戏**\n\n1. **核心创新点**\n把大语言模型当作\"语义编译器\"而非自主游戏智能体——玩家用自然语言写 IF/THEN 规则，模型负责翻译，游戏引擎负责确定性执行，从而在保留玩家作者权的同时实现 AI 原生玩法。\n\n2. **主要方法**\n设计了一款实验性解谜游戏：LLM 将玩家的自然语言规则转译为**受约束的命令 schema**，再由引擎做确定性校验与执行，形成\"表达—执行—观察—修改\"的可玩循环，把人机交互框定为\"语义调试\"。评估采用混合方法，24 名参与者、8 个关卡，测量尝试次数、思考时间、可控感、可调节性以及玩家对 AI 角色的理解。\n\n3. **结论/性能**\n玩家普遍能把模型理解为\"翻译中介\"，并依据反馈迭代修正策略；而周期性命令、多机器人协同、规则优先级等机制显著加大了认知与诊断负担。研究据此提出一套 AI 原生游戏设计范式：**约束自然语言输入、保留玩家作者权、保证执行的确定性**。\n\n> 注：这是一篇 case study / playtest 性质的研究，报告的是质性与体验层面的发现，未给出与基线方法对比的量化性能指标。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-13 13:01:15"
+}

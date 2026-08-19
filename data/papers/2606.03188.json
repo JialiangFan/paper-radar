@@ -1,0 +1,13 @@
+{
+ "id": "2606.03188",
+ "title": "GeoSem-WAM: Geometry- and Semantic-Aware World Action Models",
+ "authors": "Fulong Ma, Daojie Peng, Wenjun Yue, Jiahang Cao, Bintao Wang, Qiang Zhang, Jun Ma",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.03188v1",
+ "abstract": "Recent World Action Models (WAMs) have demonstrated impressive capabilities in embodied decision-making. However, whether their effectiveness stems from explicit future imagination during inference or representation learning induced by predictive training remains an open question. Emerging evidence suggests the primary advantage lies in learning robust latent representations rather than generating future observations at test time. Nevertheless, existing WAMs mainly rely on RGB-based future prediction, which provides limited structural and spatial understanding of complex environments. To address this, we propose a structured world modeling framework that enhances latent representations through geometric and semantic supervision. Alongside future RGB prediction, our model introduces two auxiliary prediction branches for future geometry and semantic representations, enabling it to jointly capture scene dynamics, spatial geometry, and semantic context within a unified latent space. Crucially, our approach preserves efficient inference by avoiding explicit future rollout or video generation at test time. Extensive experiments show that incorporating structured world supervision consistently improves action prediction accuracy, scene understanding, and robustness under challenging embodied scenarios, highlighting its potential for advancing scalable and efficient WAMs.",
+ "summary": "# GeoSem-WAM 论文总结\n\n**1. 核心创新点**\n在世界动作模型（WAM）中引入几何与语义的结构化监督，以增强潜在表征学习，而非依赖测试时的显式未来生成。\n\n**2. 主要方法**\n在传统 RGB 未来预测基础上，新增两个辅助预测分支——未来几何信息与语义表征，使模型在统一潜在空间中联合建模场景动态、空间几何和语义上下文；推理时无需显式的未来 rollout 或视频生成，保持高效率。\n\n**3. 结论/性能**\n实验证明，结构化世界监督持续提升了动作预测准确率、场景理解能力以及在复杂具身场景下的鲁棒性，为可扩展、高效的 WAM 提供了新方向。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-07 13:03:20"
+}

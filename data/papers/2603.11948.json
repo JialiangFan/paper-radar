@@ -1,0 +1,13 @@
+{
+ "id": "2603.11948",
+ "title": "Kraken*: Architecting Generative, Semantic, and Goal-Oriented Network Management for 6G Wireless Systems",
+ "authors": "Ian F. Akyildiz, Tuğçe Bilen",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11948v1",
+ "abstract": "Sixth-generation (6G) wireless networks are expected to support autonomous, immersive, and mission-critical services that require not only extreme data rates and ultra-low latency but also adaptive reasoning, cross-domain coordination, and objective-driven control across distributed edge-cloud infrastructures. Current AI-enabled network management remains largely data-centric, relying on discriminative models that optimize intermediate quality-of-service metrics without explicitly reasoning about long-term service objectives. This article advocates a transition from bit-centric communication toward knowledge-centric coordination in 6G systems. Semantic communication prioritizes task-relevant information and contextual meaning over raw data delivery, while generative artificial intelligence enables predictive reasoning and adaptive policy synthesis aligned with dynamic service intents. Network optimization is therefore reframed around goal-oriented performance metrics capturing application-level outcomes rather than solely protocol-level indicators. To operationalize this vision, we introduce Kraken, a multi-agent architecture composed of a Knowledge Plane, a distributed Agent Plane, and a semantic-aware Infrastructure Plane. By integrating semantic communication, generative reasoning, and goal-oriented optimization over a shared knowledge substrate, Kraken enables scalable collective intelligence and outlines an evolutionary path from current 5G infrastructures toward knowledge-native 6G systems.",
+ "summary": "- 核心创新点：提出 Kraken 多代理架构，将语义通信、生成式推理和面向目标的优化整合在一个共享知识底盘上，推动6G从“比特”为主的数据管理转向“知识”为主的协同管理。\n\n- 主要方法：构建一个三平面体系（Knowledge Plane、分布式 Agent Plane、语义感知的 Infrastructure Plane），在统一的知识底盘上结合语义通信、生成式人工智能用于预测推理与策略合成，以及面向应用目标的优化，实现跨域协同与自适应决策。\n\n- 结论/性能：提出一个理论性框架与演进路径，显示可实现面向应用目标的全局优化与可扩展的集体智能，但未给出具体的量化实验结果或性能指标。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-15 13:01:54"
+}

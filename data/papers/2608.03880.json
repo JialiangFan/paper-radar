@@ -1,0 +1,13 @@
+{
+ "id": "2608.03880",
+ "title": "Evaluating MFU as a Proxy for GPU Power for Energy-Aware Simulation of LLM Training",
+ "authors": "Niklas Enskat, Philipp Wiesner",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03880v1",
+ "abstract": "High-fidelity performance simulators are essential for designing and configuring efficient AI systems, yet today's tools lack the ability to predict power consumption. Established GPU power models rely on hardware utilization counters, which do not exist until the workload has actually run. This work evaluates whether Model FLOPs Utilization (MFU)-an analytical, software-defined metric relating achieved throughput to peak hardware capability-can serve as a portable, software-defined predictor of GPU power for LLMs. We benchmark almost 3000 single-device training runs across six GPUs, covering different model families, numerical precisions, batch sizes, and context-window lengths. We find that a linear MFU-based power model fits every tested GPU as long as the workload is compute-bound, as in production LLM training. Fitting per-(GPU, dtype, batch size) instead of per-GPU drops the within-cell mean error from around 10% to around 1%, matching the cross-repeat measurement-noise floor.",
+ "summary": "## 论文速览：用 MFU 作为 GPU 功耗代理，实现能耗感知的 LLM 训练仿真\n\n**1. 核心创新点**\n提出并验证了用 MFU（Model FLOPs Utilization，模型浮点利用率）这一纯解析、软件可计算的指标来预测 GPU 功耗，从而让性能仿真器在workload 实际运行之前就能估算能耗——摆脱了传统功耗模型对\"必须先跑一遍才能拿到\"的硬件利用率计数器的依赖。\n\n**2. 主要方法**\n- 构建线性 MFU–功耗回归模型（功耗 ≈ MFU 的线性函数）。\n- 实测基准：近 3000 次单卡训练运行，覆盖 6 款 GPU，并在多个维度上扫描——不同模型家族、数值精度（dtype）、batch size、上下文窗口长度。\n- 对比两种拟合粒度：按 GPU 拟合 vs. 按 (GPU, dtype, batch size) 三元组分组拟合。\n\n**3. 结论 / 性能**\n- 只要 workload 是**计算受限（compute-bound）**的（生产环境的 LLM 训练正属此类），线性 MFU 功耗模型对所有被测 GPU 都拟合良好，说明该方法具备跨硬件的可移植性。\n- 拟合粒度细化到 (GPU, dtype, batch size) 后，组内平均误差从约 **10% 降至约 1%**，已达到重复测量本身的噪声下限——即模型精度基本被测量噪声而非建模误差所限制。\n\n**一句话评价**：贡献在于把\"功耗预测\"从事后测量问题转化为可在仿真阶段前置计算的解析问题，代价是适用范围受限于计算受限场景（内存/通信受限的负载未被覆盖）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-05 13:03:47"
+}

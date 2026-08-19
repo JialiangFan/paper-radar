@@ -1,0 +1,13 @@
+{
+ "id": "2605.31492",
+ "title": "LinTree: Improving LLM Reasoning with Explicitly Structured Search Histories",
+ "authors": "Liwei Kang, Yee Whye Teh, Wee Sun Lee",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.31492v1",
+ "abstract": "Large language models (LLMs) often solve reasoning problems by generating intermediate traces that explore and revise partial solutions. From a search perspective, these traces can be viewed as linearized search trees, where the model extends a partial solution, abandons it when it fails, and backtracks to try alternatives. Compared with traditional heuristic-guided search, such a policy has a potential advantage: it conditions on the whole search trace rather than only on the current local state. We first test whether LLMs utilize this advantage by comparing trace-conditioned reasoning policies against best-first search equipped with an LLM heuristic that only observes the current local state. Across three controlled reasoning environments, Blocks World, grid Navigation, and Sokoban, we find that raw access to search history alone is not enough to reliably outperform heuristic search. We then study one possible reason: in LLM reasoning traces, the underlying search tree is only implicitly represented, and when the model backtracks or switches branches, the trace does not explicitly identify which earlier search state is being revisited. We show that adding simple parent pointers to explicitly represent the linearized tree (LinTree) structure improves both task performance and search efficiency relative to implicit reasoning models and LLM-heuristic-guided search. These results suggest that search history becomes most useful when its tree structure is made explicit, motivating more structure-aware representations for LLM reasoning.",
+ "summary": "## 论文总结：LinTree\n\n**1. 核心创新点**\n通过显式引入\"父指针\"将LLM推理轨迹中隐含的搜索树结构外显化（LinTree），从而提升LLM在推理回溯过程中的有效性。\n\n**2. 主要方法**\n- 将LLM的中间推理轨迹视作\"线性化搜索树\"（探索、放弃、回溯）。\n- 对比两种策略：①基于完整轨迹的LLM推理策略；②仅观察当前局部状态的LLM启发式最佳优先搜索（best-first search）。\n- 在 Blocks World、Grid Navigation、Sokoban 三个受控推理环境中实验，发现仅有原始搜索历史并不足够。\n- 进而提出 LinTree：在轨迹中加入简单的\"父指针\"，明确标注回溯时所返回到的先前搜索状态。\n\n**3. 结论 / 性能**\n- 单纯让 LLM 看到搜索历史，并不能稳定超越基于启发式的搜索方法。\n- 加入显式父指针（LinTree）后，相较于隐式推理模型和 LLM 启发式搜索，**任务表现和搜索效率均有提升**。\n- 结论：搜索历史的价值依赖于树结构的显式表达，提示未来 LLM 推理应采用更\"结构感知\"的表示方式。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-01 13:01:20"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.23639",
+ "title": "Learning to Reflect and Correct: Towards Better Decoding Trajectories for Large-Scale Generative Recommendation",
+ "authors": "Haibo Xing, Hao Deng, Lingyu Mu, Jinxin Hu, Yu Zhang, Xiaoyi Zeng, Jing Zhang",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23639v1",
+ "abstract": "Generative Recommendation (GR) has become a promising paradigm for large-scale recommendation systems. However, existing GR models typically perform single-pass decoding without explicit refinement, causing early deviations to accumulate and ultimately degrade recommendation quality. To tackle this problem, we propose GRC, which is, to our knowledge, the first structured reflection-correction framework for GR that extends standard decoding into a Generation-Reflection-Correction (GRC) process. Concretely, GRC introduces a supervised reflection-correction template that decomposes the decoding process into initial draft generation, multi-granular reflection, and reflection-guided correction, thereby enabling structured reflection and correction in the semantic token space. To further explore the enlarged refinement space introduced by the GRC process, we optimize the entire GRC trajectory with GRPO-based reinforcement learning, under a carefully designed reward function with token-level and trajectory-level signals. For efficient online serving, we propose an Entropy-Guided Reflection Scheduling (EGRS) strategy that dynamically allocates more correction budget to high-uncertainty decoding trajectories during beam search. Extensive experiments on real-world datasets show that GRC consistently outperforms six state-of-the-art baselines by up to 15.74%, and online A/B tests demonstrate its substantial practical value in large-scale industrial recommendation, delivering a 1.79% lift in advertising revenue with only modest latency overhead.",
+ "summary": "- 核心创新点：首次提出面向生成式推荐的结构化“生成-反思-纠正”（GRC）框架，通过多级反思与纠正优化解码轨迹，并结合GRPO强化学习与熵引导的纠正预算分配实现高效在线部署。\n\n- 主要方法：\n  - GRC 框架：将解码过程分为初始草案、多粒度反思和反思引导纠正，在语义 token 空间内完成结构化的反思与纠正。\n  - 训练策略：使用基于 GRPO 的强化学习对整条 GRC 轨迹进行优化，设计含 token-level 与 trajectory-level 的奖励函数。\n  - 在线部署：提出 Entropy-Guided Reflection Scheduling（EGRS），在 beam search 中将更多纠正预算分配给高不确定性轨迹。\n\n- 结论/性能：\n  - 实验结果：在真实数据集上，GRC 相比六个SOTA基线提升最高可达15.74%。\n  - 在线效果：A/B测试显示广告收入提升约1.79%，且延迟开销在可接受范围内。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-02 14:03:24"
+}

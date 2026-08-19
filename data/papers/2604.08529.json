@@ -1,0 +1,13 @@
+{
+ "id": "2604.08529",
+ "title": "PSI: Shared State as the Missing Layer for Coherent AI-Generated Instruments in Personal AI Agents",
+ "authors": "Zhiyuan Wang, Erzhen Hu, Mark Rucker, Laura E. Barnes",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08529v1",
+ "abstract": "Personal AI tools can now be generated from natural-language requests, but they often remain isolated after creation. We present PSI, a shared-state architecture that turns independently generated modules into coherent instruments: persistent, connected, and chat-complementary artifacts accessible through both GUIs and a generic chat agent. By publishing current state and write-back affordances to a shared personal-context bus, modules enable cross-module reasoning and synchronized actions across interfaces. We study PSI through a three-week autobiographical deployment in a self-developed personal AI environment and show that later-generated instruments can be integrated automatically through the same contract. PSI identifies shared state as the missing systems layer that transforms AI-generated personal software from isolated apps into coherent personal computing environments.",
+ "summary": "- 核心创新点：提出一种共享状态架构 PSI，通过共享个人上下文总线将独立生成的 AI 模块变成可持续连接、跨接口协同的“乐器”式工具，从而实现跨模块推理与同步操作。\n\n- 主要方法：设计并实现一个共享个人上下文总线，模块通过暴露当前状态和写回能力来进行交互，使 GUI 与通用聊天代理之间实现跨模块推理和动作同步；在一个自建的个人 AI 环境中进行为期三周的自传式部署实验，验证通过相同契约自动集成后续生成的工具。\n\n- 结论/性能：证明共享状态是将 AI 生成的个人软件从孤立应用转变为贯穿、互联且与聊天代理互补的连贯个人计算环境的关键层次，后续工具可通过同一契约自动接入并实现跨模块协同与界面间同步。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-10 13:01:40"
+}

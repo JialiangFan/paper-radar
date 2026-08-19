@@ -1,0 +1,13 @@
+{
+ "id": "2604.20714",
+ "title": "Learning to Evolve: A Self-Improving Framework for Multi-Agent Systems via Textual Parameter Graph Optimization",
+ "authors": "Shan He, Runze Wang, Zhuoyun Du, Huiyu Bai, Zouying Cao, Yu Cheng, Bo Zheng",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20714v1",
+ "abstract": "Designing and optimizing multi-agent systems (MAS) is a complex, labor-intensive process of \"Agent Engineering.\" Existing automatic optimization methods, primarily focused on flat prompt tuning, lack the structural awareness to debug the intricate web of interactions in MAS. More critically, these optimizers are static; they do not learn from experience to improve their own optimization strategies. To address these gaps, we introduce Textual Parameter Graph Optimization (TPGO), a framework that enables a multi-agent system to learn to evolve. TPGO first models the MAS as a Textual Parameter Graph (TPG), where agents, tools, and workflows are modular, optimizable nodes. To guide evolution, we derive \"textual gradients,\" structured natural language feedback from execution traces, to pinpoint failures and suggest granular modifications. The core of our framework is Group Relative Agent Optimization (GRAO), a novel meta-learning strategy that learns from historical optimization experiences. By analyzing past successes and failures, GRAO becomes progressively better at proposing effective updates, allowing the system to learn how to optimize itself. Extensive experiments on complex benchmarks like GAIA and MCP-Universe show that TPGO significantly enhances the performance of state-of-the-art agent frameworks, achieving higher success rates through automated, self-improving optimization.",
+ "summary": "核心创新点：提出 Textual Parameter Graph Optimization（TPGO）与组内相对代理优化（GRAO），使多智能体系统能够通过历史经验自我进化与自我优化，并利用执行痕迹产生的结构化文本梯度进行故障定位与细粒度修改建议。\n\n主要方法：将 MAS 表示为 Textual Parameter Graph（TPG，节点为代理、工具、工作流），从执行痕迹提取结构化的自然语言反馈（文本梯度）指导改进；以 GRAO 为核心元学习策略，基于 past 成功与失败经验学习如何提出有效的优化更新，从而实现自我提升；在 GAIA、MCP-Universe 等复杂基准上进行大规模实验。\n\n结论/性能：显著提升了现有代理框架的性能与成功率，实现自动化、自我改进的优化，在复杂基准上显示更高的成功率和更好的优化效果。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-23 13:03:29"
+}

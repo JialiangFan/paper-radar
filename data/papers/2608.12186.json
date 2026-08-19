@@ -1,0 +1,13 @@
+{
+ "id": "2608.12186",
+ "title": "Nascent Embedded-protostar Survey in Taurus (NEST) I: Protostellar Multiplicity",
+ "authors": "Aislinn C. Plante, John J. Tobin, Patrick D. Sheehan, Noshin Yesmin, Nicholas P. Ballering, Tyler L. Bourke, Josh Eisner, Zhi-Yun Li",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.12186v1",
+ "abstract": "We present new ALMA 0.9 mm and VLA 9 mm observations in the Taurus Molecular Cloud (TMC) of 25 protostellar systems, containing 40 protostars, observed at 0.3\" (~20 au) resolution. Within separations of 18-10,000 au, the ALMA/VLA-observed Taurus sample has a multiplicity fraction (MF), defined as the fraction of systems with at least one companion, of 0.50 +/- 0.07, and a companion fraction (CF), defined as the average number of companions per system, of 0.58 +/- 0.20. To build a more complete census of protostellar multiplicity in this region, we supplement the observed sample with 24 protostars (12 protostellar systems and 5 additional companions associated with systems we observed) previously identified through archival infrared or ALMA observations. Together, these 64 individual protostars (37 systems) define our Taurus+ sample, for which we measure higher values of 0.53 +/- 0.06 and 0.72 +/- 0.19 for the MF and CF, respectively. These multiplicity statistics in the TMC are notably higher than those reported in the more clustered star-forming regions of Orion and Perseus at the ~3-4 sigma level, suggesting that Taurus may preserve a larger fraction of primordial multiples. The separation distributions in our samples show populations of both close and wide multiples, but a deficit at intermediate separations of 200-300 au. This pattern may suggest two distinct formation pathways: close binaries (<200 au) arising primarily from disk fragmentation, and wide multiples (>1000 au) from core fragmentation.",
+ "summary": "## 论文总结：Taurus 分子云新生内埋原恒星巡天 (NEST) I：原恒星多重性\n\n**1. 核心创新点**\n\n首次利用 ALMA + VLA 高分辨率数据系统测定金牛座分子云 (TMC) 中年轻原恒星的多重星比例，发现这一稀疏成星区的多重性显著高于猎户座、英仙座等成团环境，暗示 Taurus 更多地保留了\"原初\"的多重系统。\n\n**2. 主要方法**\n\n- 观测手段：ALMA 0.9 mm 与 VLA 9 mm 双波段成像，角分辨率 0.3″（约 20 au）。\n- 样本：观测 25 个原恒星系统（含 40 颗原恒星），探测 18–10,000 au 的伴星分离度范围。\n- 样本扩充：补充此前红外/ALMA 存档数据识别出的 24 颗原恒星（12 个系统 + 5 颗额外伴星），构成 64 颗原恒星、37 个系统的 \"Taurus+\" 样本。\n- 统计量：多重性比例 MF（至少含一颗伴星的系统占比）与伴星比例 CF（每系统平均伴星数），并分析分离度分布。\n\n**3. 结论/性能**\n\n- ALMA/VLA 观测样本：MF = 0.50 ± 0.07，CF = 0.58 ± 0.20。\n- 扩充后的 Taurus+ 样本：MF = 0.53 ± 0.06，CF = 0.72 ± 0.19。\n- 该结果比猎户座、英仙座等成团区高出约 3–4 σ，支持\"低密度环境保留更多原初多重系统\"的图景。\n- 分离度分布呈双峰形态，在 200–300 au 处存在明显缺口，作者据此提出两条形成通道：近距双星（< 200 au）主要源自**盘碎裂**，宽距多重系统（> 1000 au）源自**云核碎裂**。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-16 13:05:17"
+}

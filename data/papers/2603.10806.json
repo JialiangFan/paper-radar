@@ -1,0 +1,13 @@
+{
+ "id": "2603.10806",
+ "title": "Backdoor Directions in Vision Transformers",
+ "authors": "Sengim Karayalcin, Marina Krcek, Pin-Yu Chen, Stjepan Picek",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10806v1",
+ "abstract": "This paper investigates how Backdoor Attacks are represented within Vision Transformers (ViTs). By assuming knowledge of the trigger, we identify a specific ``trigger direction'' in the model's activations that corresponds to the internal representation of the trigger. We confirm the causal role of this linear direction by showing that interventions in both activation and parameter space consistently modulate the model's backdoor behavior across multiple datasets and attack types. Using this direction as a diagnostic tool, we trace how backdoor features are processed across layers. Our analysis reveals distinct qualitative differences: static-patch triggers follow a different internal logic than stealthy, distributed triggers. We further examine the link between backdoors and adversarial attacks, specifically testing whether PGD-based perturbations (de-)activate the identified trigger mechanism. Finally, we propose a data-free, weight-based detection scheme for stealthy-trigger attacks. Our findings show that mechanistic interpretability offers a robust framework for diagnosing and addressing security vulnerabilities in computer vision.",
+ "summary": "- 核心创新点：在 Vision Transformers 中提出并验证一个“触发方向”（trigger direction），通过该线性方向在激活与参数层面的干预来揭示后门的因果机制，并将其用作诊断和检测后门攻击的核心工具。\n\n- 主要方法：使用 Vision Transformer 作为模型对象，假设已知触发信息，定位一个在激活中的线性触发方向来表征触发；通过对激活和参数空间的干预验证因果关系，追踪该方向在各层中的处理过程，并对静态补丁触发与分布式 stealthy 触发进行对比；还检验与对抗性扰动（如 PGD）对触发机制的影响；最后提出一种数据无关、基于权重的隐蔽触发检测方案。\n\n- 结论/性能：证明触发方向对后门行为具有因果作用且在不同数据集和攻击类型上具备鲁棒性；揭示静态补丁触发与隐蔽分布触发在内部工作机制上的本质差异；给出一个数据无关的、权重基础的检测方案，凸显机械可解释性作为诊断与解决视觉安全问题的有效框架。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-12 13:02:23"
+}

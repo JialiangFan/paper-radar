@@ -1,0 +1,33 @@
+{
+ "id": "2410.02038",
+ "title": "Realizable Continuous-Space Shields for Safe Reinforcement Learning",
+ "authors": "Kyungmin Kim, Davide Corsi, Andoni Rodriguez, JB Lanier, Benjami Parellada, Pierre Baldi, Cesar Sanchez, Roy Fox",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.02038",
+ "abstract": "",
+ "summary": "This paper extends shielding toward continuous state and action spaces with realizability checks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-shielding",
+  "continuous-control",
+  "robotics",
+  "runtime-assurance",
+  "safe-rl",
+  "safe-vla",
+  "shielding",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2024_Kim_ContinuousShields.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2024_Kim_ContinuousShields.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

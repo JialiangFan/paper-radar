@@ -1,0 +1,13 @@
+{
+ "id": "2603.19195",
+ "title": "How Auditory Knowledge in LLM Backbones Shapes Audio Language Models: A Holistic Evaluation",
+ "authors": "Ke-Han Lu, Szu-Wei Fu, Chao-Han Huck Yang, Zhehuai Chen, Sung-Feng Huang, Chih-Kai Yang, Yi-Cheng Lin, Chi-Yuan Hsiao, Wenze Ren, En-Pei Hu, Yu-Han Huang, An-Yu Cheng, Cheng-Han Chiang, Yu Tsao, Yu-Chiang Frank Wang, Hung-yi Lee",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19195v1",
+ "abstract": "Large language models (LLMs) have been widely used as knowledge backbones of Large Audio Language Models (LALMs), yet how much auditory knowledge they encode through text-only pre-training and how this affects downstream performance remains unclear. We study this gap by comparing different LLMs under two text-only and one audio-grounded setting: (1) direct probing on AKB-2000, a curated benchmark testing the breadth and depth of auditory knowledge; (2) cascade evaluation, where LLMs reason over text descriptions from an audio captioner; and (3) audio-grounded evaluation, where each LLM is fine-tuned into a Large Audio Language Model (LALM) with an audio encoder. Our findings reveal that auditory knowledge varies substantially across families, and text-only results are strongly correlated with audio performance. Our work provides empirical grounding for a comprehensive understanding of LLMs in audio research.",
+ "summary": "以下是按要求的中文摘要：\n\n1) 核心创新点\n- 首次系统评估文本预训练阶段的听觉知识在不同LLM家族中对音频语言模型（LALM）性能的影响，并通过三种设置揭示差异与联系。\n\n2) 主要方法\n- 对多家LLM在三类任务上进行评测：直接在 AKB-2000 上的听觉知识探测；让LLM基于音频 Captioner 生成的文本描述进行级联推理；将每个LLM 微调为带有音频编码器的 LALM 以进行音频对齐的评估。\n\n3) 结论/性能\n- 发现不同LLM家族的听觉知识差异显著；文本级别的听觉知识水平与音频任务表现存在强相关性；提出了一个用于全面评估LLMs在音频研究中作用的实证框架。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-20 13:01:36"
+}

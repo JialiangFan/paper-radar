@@ -1,0 +1,13 @@
+{
+ "id": "2603.25184",
+ "title": "Train at Moving Edge: Online-Verified Prompt Selection for Efficient RL Training of Large Reasoning Model",
+ "authors": "Jiahao Wu, Ning Lu, Shengcai Liu, Kun Wang, Yanting Yang, Li Qing, Ke Tang",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25184v1",
+ "abstract": "Reinforcement learning (RL) has become essential for post-training large language models (LLMs) in reasoning tasks. While scaling rollouts can stabilize training and enhance performance, the computational overhead is a critical issue. In algorithms like GRPO, multiple rollouts per prompt incur prohibitive costs, as a large portion of prompts provide negligible gradients and are thus of low utility. To address this problem, we investigate how to select high-utility prompts before the rollout phase. Our experimental analysis reveals that sample utility is non-uniform and evolving: the strongest learning signals concentrate at the ``learning edge\", the intersection of intermediate difficulty and high uncertainty, which shifts as training proceeds. Motivated by this, we propose HIVE (History-Informed and online-VErified prompt selection), a dual-stage framework for data-efficient RL. HIVE utilizes historical reward trajectories for coarse selection and employs prompt entropy as a real-time proxy to prune instances with stale utility. By evaluating HIVE across multiple math reasoning benchmarks and models, we show that HIVE yields significant rollout efficiency without compromising performance.",
+ "summary": "- 核心创新点（1句）：提出 HIVE 框架，在 RL 训练中结合历史奖励信息的粗筛和在线基于提示熵的实时裁剪，精准定位并优先选取“学习边缘”样本，实现数据更高效的提示选择与在线验证。\n- 主要方法：采用双阶段策略：1) 基于历史奖励轨迹进行粗筛选以选取高效样本；2) 以提示熵作为实时代理，在线验证并裁剪效用已过时的样本，从而在训练过程中动态保留高价值提示用于 rollout。\n- 结论/性能：在多组数学推理基准与模型上验证，HIVE 在不牺牲性能的前提下显著提升 rollout 效率（数据/计算效率更高）。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-28 13:01:16"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.20172",
+ "title": "Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation",
+ "authors": "Richard J. Young",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20172v1",
+ "abstract": "Recent work on chain-of-thought (CoT) faithfulness reports single aggregate numbers (e.g., DeepSeek-R1 acknowledges hints 39% of the time), implying that faithfulness is an objective, measurable property of a model. This paper demonstrates that it is not. Three classifiers (a regex-only detector, a two-stage regex-plus-LLM pipeline, and an independent Claude Sonnet 4 judge) are applied to 10,276 influenced reasoning traces from 12 open-weight models spanning 9 families and 7B to 1T parameters. On identical data, these classifiers produce overall faithfulness rates of 74.4%, 82.6%, and 69.7%, respectively, with non-overlapping 95% confidence intervals. Per-model gaps range from 2.6 to 30.6 percentage points; all are statistically significant (McNemar's test, p < 0.001). The disagreements are systematic, not random: inter-classifier agreement measured by Cohen's kappa ranges from 0.06 (\"slight\") for sycophancy hints to 0.42 (\"moderate\") for grader hints, and the asymmetry is pronounced: for sycophancy, 883 cases are classified as faithful by the pipeline but unfaithful by the Sonnet judge, while only 2 go the other direction. Classifier choice can also reverse model rankings: Qwen3.5-27B ranks 1st under the pipeline but 7th under the Sonnet judge; OLMo-3.1-32B moves in the opposite direction, from 9th to 3rd. The root cause is that different classifiers operationalize related faithfulness constructs at different levels of stringency (lexical mention versus epistemic dependence), and these constructs yield divergent measurements on the same behavior. These results demonstrate that published faithfulness numbers cannot be meaningfully compared across studies that use different classifiers, and that future evaluations should report sensitivity ranges across multiple classification methodologies rather than single point estimates.",
+ "summary": "- 核心创新点：揭示对大型语言模型推理的忠实性（faithfulness）度量并非唯一、客观的数值，而高度依赖所选的分类器/评估准则，主张对同一问题应给出多方法的敏感性区间而非单点数值，以避免跨研究的不可比性。\n\n- 主要方法：在同一组数据上用三种分类器评估忠实性（Regex-only 检测、Regex+LLM 的两阶段管线、以及独立的 Claude Sonnet 4 判断器）对 10,276 条 influenced reasoning traces，覆盖 12 个开放权重模型（7B–1T 参数），通过 McNemar 检验和 Cohen’s kappa 等统计分析比较不同分类器的结果及对模型排名的影响，探讨不同忠实性构念（词汇提及 vs 认知依赖）带来的差异。\n\n- 结论/性能：三种方法给出的忠实性率分别为 74.4%、82.6%、69.7%，且 95% 置信区间不重叠；各模型间差距为 2.6–30.6 个百分点，均具统计显著性（p<0.001）；分类器间的一致性较低（Kappa 介于 0.06 到 0.42，呈现显著不对称性，且可导致模型排名翻转）；因此，公开的忠实性数值不能跨研究直接比较，未来应报告多方法下的敏感性区间。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:08:07"
+}

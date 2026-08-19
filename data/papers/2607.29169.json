@@ -1,0 +1,13 @@
+{
+ "id": "2607.29169",
+ "title": "ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency",
+ "authors": "Wenda Yu, Tianshi Wang, Fengling Li, Xin Li, Jingjing Li, Lei Zhu",
+ "date": "2026-07-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.29169v1",
+ "abstract": "Vision-language-action (VLA) policies achieve strong performance in robotic manipulation but remain vulnerable to runtime disturbances that break the temporal alignment among visual observations, robot states, and executed actions. We introduce ActFovea, a plug-and-play safeguarding framework that detects and mitigates such failures without retraining or modifying the underlying VLA policy. ActFovea uses robot kinematics, proprioceptive states, and recent actions to construct action-conditioned foveated regions that retain contact-relevant areas and predicted motion corridors while suppressing task-irrelevant visual content. It detects runtime risks by evaluating whether visual motion and observation freshness remain consistent with geometric, proprioceptive, and action transitions. For recoverable disturbances, ActFovea constructs disturbance-specific candidate observations and accepts a recovery only after verifying the resulting action chunk. When stale or replayed observations make reliable recovery impossible, it invokes a bounded safe-failure procedure. In closed-loop evaluations of $π_0$ across multiple LIBERO suites, ActFovea increases success under localized visual overlays from 49.3\\% to 90.3\\%, closing 93.7\\% of the gap to clean performance. It further improves success under action drift and visual delay by 7.0 and 9.8 percentage points, respectively, while preserving clean-task performance. Under frozen-observation replay, ActFovea triggers timely safe failure in all trials, with no unprotected failures. These results demonstrate that spatiotemporal visual-action consistency provides an effective basis for runtime safeguarding of VLA policies.",
+ "summary": "## ActFovea 论文摘要总结\n\n**1. 核心创新点**\n提出 ActFovea——一个即插即用的运行时防护框架，无需重训练或修改原有 VLA 策略，即可通过\"时空视觉-动作一致性\"检测并缓解运行时扰动导致的失效。\n\n**2. 主要方法**\n- **动作条件化的中央凹区域（foveated regions）**：利用机器人运动学、本体感受状态和近期动作，保留接触相关区域与预测运动走廊，抑制任务无关的视觉内容。\n- **风险检测**：评估视觉运动与观测新鲜度是否与几何、本体感受、动作转移保持一致。\n- **分级响应**：对可恢复扰动，构造针对特定扰动的候选观测，并在验证生成的 action chunk 后才接受恢复；当观测陈旧或被重放导致无法可靠恢复时，触发有界的\"安全失败\"程序。\n\n**3. 结论/性能**\n在 π₀ 模型、多个 LIBERO 任务套件的闭环评测中：\n- 局部视觉遮挡下成功率由 **49.3% → 90.3%**，弥合了与干净环境性能差距的 **93.7%**；\n- 动作漂移、视觉延迟场景下分别提升 **7.0** 和 **9.8** 个百分点；\n- 干净任务性能不受损；\n- 冻结观测重放场景下，**所有试验均及时触发安全失败，无未受保护的失效**。\n\n结果表明，时空视觉-动作一致性可作为 VLA 策略运行时防护的有效依据。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-03 13:05:52"
+}

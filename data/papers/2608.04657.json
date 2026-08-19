@@ -1,0 +1,13 @@
+{
+ "id": "2608.04657",
+ "title": "MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight",
+ "authors": "Zehua Fan, Junjie He, Wenxuan Song, Xi Wang, Wenqi Lyu, Linge Zhao, Fuhao Li, Zihan You, Yifei Yang, Kaiming Xu, Qi Jiang, Yue Jiang, Haoang Li, Cheng Chi, Bailin Li, Yan Wang",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04657v1",
+ "abstract": "World action models (WAMs) built on video generation backbones are a rising recipe for robot learning, yet remain confined to tabletop manipulation. Mobile manipulation demands simultaneous locomotion and whole-body manipulation amid scene-scale dynamics, yet is still dominated by dynamics-blind visual encoders with hand-crafted coordination. We bridge this gap with MobileWAM, a mixture-of-transformers architecture that fuses a pretrained video diffusion transformer with a lightweight action expert through layerwise joint attention, translating internet-scale motion priors into whole-body control. To reconcile the heterogeneous dynamics of moving and manipulating, each feed-forward layer of the action expert becomes a three-expert mixture of shared, locomotion, and manipulation experts, softly routed by the motion intent in the action tokens. To densify supervision, we further propose Chain-of-Foresight (CoF): intermediate representations sequentially predict a chain of future latent chunks, each step conditioned on its predecessor. CoF pairs naturally with our decoupled video--action denoising scheme. At deployment, the WAM serves as a pure current-frame encoder; foresight acts only through gradients, so at inference the foresight chain and video generation are discarded, leaving only policy-level cost. MobileWAM surpasses state-of-the-art mobile manipulation policies on ManiSkill-HAB and fine-tunes to a real ARX Lift2 mobile manipulator across diverse tasks with strong generalization. Code will be released soon.",
+ "summary": "**MobileWAM 论文摘要总结**\n\n**1. 核心创新点**\n首次将基于视频生成骨干的世界动作模型（WAM）从桌面操作扩展到移动操作，通过\"前瞻链\"（Chain-of-Foresight）实现移动与全身操作的统一控制。\n\n**2. 主要方法**\n- **混合 Transformer 架构**：用逐层联合注意力（layerwise joint attention）把预训练的视频扩散 Transformer 与一个轻量级\"动作专家\"融合，将互联网规模的运动先验迁移到全身控制。\n- **三专家混合 FFN**：动作专家的每个前馈层拆成「共享 / 移动（locomotion）/ 操作（manipulation）」三个专家，由动作 token 中的运动意图做软路由，以调和移动与操作两类异质动力学。\n- **Chain-of-Foresight (CoF)**：中间表示依次预测一串未来隐变量块，每步以前一步为条件，从而稠密化监督信号；配合视频—动作解耦去噪方案。\n- **零额外推理开销**：部署时 WAM 只作当前帧编码器，前瞻仅通过梯度起作用，推理阶段丢弃前瞻链与视频生成，仅保留策略级成本。\n\n**3. 结论/性能**\n在 ManiSkill-HAB 基准上超越当前最先进的移动操作策略；并成功微调迁移到真实的 ARX Lift2 移动机械臂，在多样化任务上展现出较强的泛化能力。代码即将开源。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-06 13:03:35"
+}

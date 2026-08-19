@@ -1,0 +1,13 @@
+{
+ "id": "2512.02807",
+ "title": "SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment",
+ "authors": "Yixuan Tang, Yi Yang",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02807v1",
+ "abstract": "Aligning Large Language Models (LLMs) with human preferences typically relies on external supervision, which faces critical limitations: human annotations are scarce and subjective, reward models are vulnerable to reward hacking, and self-evaluation methods suffer from prompt sensitivity and biases. In this work, we propose stable rank, an intrinsic, annotation-free quality signal derived from model representations. Stable rank measures the effective dimensionality of hidden states by computing the ratio of total variance to dominant-direction variance, capturing quality through how information distributes across representation dimensions. Empirically, stable rank achieves 84.04% accuracy on RewardBench and improves task accuracy by an average of 11.3 percentage points over greedy decoding via Best-of-N sampling. Leveraging this insight, we introduce Stable Rank Group Relative Policy Optimization (SR-GRPO), which uses stable rank as a reward signal for reinforcement learning. Without external supervision, SR-GRPO improves Qwen2.5-1.5B-Instruct by 10% on STEM and 19% on mathematical reasoning, outperforming both learned reward models and self-evaluation baselines. Our findings demonstrate that quality signals can be extracted from internal model geometry, offering a path toward scalable alignment without external supervision.",
+ "summary": "- 核心创新点：将稳定秩（stable rank）作为无标注的内部几何质量信号，用于强化学习中的奖励，以实现无需外部监督的 LLM 对齐。\n\n- 主要方法：提出稳定秩的定义（隐藏状态的总方差与主方向方差的比值），用以评估表示维度上的信息分布质量；据此设计 SR-GRPO（Stable Rank Group Relative Policy Optimization）在强化学习框架中使用稳定秩作为奖励信号进行对齐；方法无需人工标注或外部奖励模型，且在评估中与 Best-of-N 采样等基线进行对比。\n\n- 结论/性能：在 RewardBench 上达到 84.04% 的准确率；相比贪婪解码的 Best-of-N 提升平均 11.3 个点；在无需外部 supervision 的情况下，SR-GRPO 使 Qwen2.5-1.5B-Instruct 的 STEM 任务提升 10%、数学推理提升 19%，优于学习型奖励模型和自评基线。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-03 14:03:51"
+}

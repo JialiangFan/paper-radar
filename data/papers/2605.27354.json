@@ -1,0 +1,13 @@
+{
+ "id": "2605.27354",
+ "title": "Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders",
+ "authors": "Yi Jing, Zao Dai, Jinwu Hu, Zijun Yao, Lei Hou, Juanzi Li, Xiaozhi Wang",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27354v1",
+ "abstract": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interpretability tool. Each property grounds a concrete data engineering operation: SAE-space clustering with moderate batch mixing for batch diversity control, a difficulty proxy for easy-to-hard curriculum ordering, and a quality probe for data filtering. SAERL improves average accuracy by 3.00% over vanilla GRPO and reaches target accuracy with 20% fewer training steps on Qwen2.5-Math-1.5B, with consistent gains across model scales and RL algorithms. Experiments show that SAE transfers effectively across model families and scales, serving as a lightweight and reusable data engineering tool. These results demonstrate that model internals are a powerful and practical source of signals for post-training data engineering.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n首次利用稀疏自编码器（SAE）从大模型内部表征中提取信号，指导强化学习后训练阶段的数据工程，替代传统依赖外部信号的做法。\n\n**2. 主要方法**\n提出 SAERL 框架，通过 SAE 建模数据的三种内在属性并对应具体操作：\n- **多样性**：在 SAE 空间聚类 + 适度批次混合，控制批次多样性；\n- **难度**：构建难度代理，实现从易到难的课程式排序；\n- **质量**：训练质量探针进行数据过滤。\n\n**3. 结论/性能**\n在 Qwen2.5-Math-1.5B 上相比原始 GRPO 平均准确率提升 **3.00%**，达到目标准确率所需训练步数减少 **20%**；在不同模型规模和 RL 算法上均有稳定增益，且 SAE 可跨模型家族和规模迁移，是一种轻量、可复用的数据工程工具。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-27 13:01:17"
+}

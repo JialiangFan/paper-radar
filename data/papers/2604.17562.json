@@ -1,0 +1,32 @@
+{
+ "id": "2604.17562",
+ "title": "SafeAgent: A Runtime Protection Architecture for Agentic Systems",
+ "authors": "Liu, Ilyushin, Ni, Zhu",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2604.17562",
+ "abstract": "",
+ "summary": "SafeAgent treats LLM agent safety as a stateful runtime protection problem over evolving trajectories rather than as stateless input-output filtering.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "agent-safety",
+  "llm-agents",
+  "runtime-monitoring",
+  "runtime-protection",
+  "runtime-safety",
+  "safe-vla",
+  "tool-agents"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2026_Liu_SafeAgent.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2026_Liu_SafeAgent.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

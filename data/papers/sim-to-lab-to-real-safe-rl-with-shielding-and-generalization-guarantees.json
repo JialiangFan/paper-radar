@@ -1,0 +1,27 @@
+{
+ "id": "sim-to-lab-to-real-safe-rl-with-shielding-and-generalization-guarantees",
+ "title": "Sim-to-Lab-to-Real: Safe RL with Shielding and Generalization Guarantees",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "RL训练的策略在真实世界部署时性能常急剧下降（sim-to-real gap），不安全行为在仿真中可能无关紧要，但在真实环境中可能导致严重后果。现有sim-to-real方法（如domain randomization）并未显式考虑安全问题。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Sim-to-Lab-to-Real - Safe RL with Shielding and Generalization.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

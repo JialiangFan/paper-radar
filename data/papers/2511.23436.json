@@ -1,0 +1,13 @@
+{
+ "id": "2511.23436",
+ "title": "Towards Continuous Intelligence Growth: Self-Training, Continual Learning, and Dual-Scale Memory in SuperIntelliAgent",
+ "authors": "Jianzhe Lin, Zeyu Pan, Yun Zhu, Ruiqi Song, Jining Yang",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23436v1",
+ "abstract": "We introduce SuperIntelliAgent, an agentic learning framework that couples a trainable small diffusion model (the learner) with a frozen large language model (the verifier) to enable continual intelligence growth through self-supervised interaction. Unlike conventional supervised fine-tuning, SuperIntelliAgent learns autonomously without annotation: the learner generates candidate outputs, the verifier evaluates them through step-by-step reasoning, and their interaction produces chosen/rejected pairs for Direct Preference Optimization (DPO). This converts each input into a pseudo-training signal for continual improvement. The framework integrates dual-scale memory: short-term in-context memory that preserves reasoning traces across refinement cycles, and long-term memory that consolidates acquired knowledge through lightweight on-the-fly fine-tuning. A replay buffer retains samples that show verifiable progress and replays them as auxiliary supervision, reinforcing recent learning while forming adaptive curricula. SuperIntelliAgent is infrastructure-agnostic and can be plugged into existing agentic frameworks while turning ordinary inference loops into a lifelong optimization process. We posit that pairing a trainable learner with a reasoning-capable verifier forms a minimal reliable unit of growing intelligence, as paired feedback and partial-history replay yield richer learning curricula and stronger preference alignment. With a small number of automatically generated DPO pairs, the learner improves across all benchmarks, indicating that this mechanism provides a promising direction for continual intelligence accumulation and real-world deployment.",
+ "summary": "1. 核心创新点\n- 通过将可训练的小扩散模型（学习者）与冻结的大语言模型（验证者）进行自监督交互，结合双尺度记忆与回放机制，实现无标注的持续性智能增长与偏好对齐的学习单元。\n\n2. 主要方法\n- 架构：学习者为小型扩散模型，验证者为强大且冻结的大语言模型；二者协作进行自监督学习。\n- 自监督循环：学习者生成候选输出，验证者进行逐步推理并评估，产生选择/拒绝对，并用于直接偏好优化（DPO）。\n- 信号来源：将每个输入转化为伪训练信号，推动持续改进。\n- 记忆系统：引入短期的上下文记忆以跨回合保留推理轨迹，及长期记忆通过轻量化微调巩固知识。\n- 回放机制：回放缓冲保存具备进步的样本，作为辅助监督，形成自适应学习 curricula。\n- 平台性：框架可无缝接入现有的 agentic 系统，成为一个 lifelong optimization 循环。\n- 理论要点：将学习者与具备推理能力的验证者配对，构成增加智能的最小可行单元。\n\n3. 结论/性能\n- 使用少量自动生成的 DPO 对，在所有基准上实现了学习者的提升，证明该自监督互动、记忆回放和 DPO 机制在持续智能积累和实际部署中具有潜力。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:04:47"
+}

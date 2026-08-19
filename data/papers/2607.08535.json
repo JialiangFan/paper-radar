@@ -1,0 +1,13 @@
+{
+ "id": "2607.08535",
+ "title": "When the Judge Changes, So Does the Measurement: Auditing LLM-as-Judge Reliability",
+ "authors": "Zongyou Yang, Yinghan Hou, Xiaokun Yang",
+ "date": "2026-07-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.08535v1",
+ "abstract": "An LLM-as-judge score can move even when the candidate responses stay fixed, simply because the evaluator has changed. We treat this evaluator-replacement ambiguity as a measurement-validity problem. Across four judgment datasets, we compare two upgrade paths available in practice: scaling Qwen3 dense judges from 1.7B to 32B parameters and moving across MiniMax M2-M2.7 released APIs. The main pattern is that judge upgrades are not interchangeable: only Qwen3 1.7B to 4B gives a robust adjacent gain, while MiniMax adjacent releases do not. Stronger judges reduce but do not remove position and verbosity bias. Repeated-sample juries add little when errors are correlated. Structured debate can move decisions substantially, but without parser and fallback logs those shifts cannot be attributed to deliberation. We argue that LLM-as-judge reports should include dataset slices, bias probes, error-dependence estimates, and protocol audit trails.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-11 13:00:20"
+}

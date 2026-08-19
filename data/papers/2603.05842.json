@@ -1,0 +1,13 @@
+{
+ "id": "2603.05842",
+ "title": "Expert Knowledge-driven Reinforcement Learning for Autonomous Racing via Trajectory Guidance and Dynamics Constraints",
+ "authors": "Bo Leng, Weiqi Zhang, Zhuoren Li, Lu Xiong, Guizhe Jin, Ran Yu, Chen Lv",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05842v1",
+ "abstract": "Reinforcement learning has demonstrated significant potential in the field of autonomous driving. However, it suffers from defects such as training instability and unsafe action outputs when faced with autonomous racing environments characterized by high dynamics and strong nonlinearities. To this end, this paper proposes a trajectory guidance and dynamics constraints Reinforcement Learning (TraD-RL) method for autonomous racing. The key features of this method are as follows: 1) leveraging the prior expert racing line to construct an augmented state representation and facilitate reward shaping, thereby integrating domain knowledge to stabilize early-stage policy learning; 2) embedding explicit vehicle dynamic priors into a safe operating envelope formulated via control barrier functions to enable safety-constrained learning; and 3) adopting a multi-stage curriculum learning strategy that shifts from expert-guided learning to autonomous exploration, allowing the learned policy to surpass expert-level performance. The proposed method is evaluated in a high-fidelity simulation environment modeled after the Tempelhof Airport Street Circuit. Experimental results demonstrate that TraD-RL effectively improves both lap speed and driving stability of the autonomous racing vehicle, achieving a synergistic optimization of racing performance and safety.",
+ "summary": "- 核心创新点：将专家轨迹引导和动力学约束结合到强化学习中，通过控制屏障函数定义安全域并采用分阶段课程学习，实现从专家引导到自主探索并超越专家水平的自驾赛车策略。\n\n- 主要方法：1) 利用专家赛车线扩充状态表示并进行奖励塑形以稳定早期学习；2) 将车辆动力学先验嵌入到安全边界（基于控制屏障函数）中，实现安全约束学习；3) 采用多阶段课程学习策略，由专家引导阶段逐步转向自主探索，提升策略性能。\n\n- 结论/性能：在高保真仿真环境（Tempelhof Airport Street Circuit）中，TraD-RL 显著提升圈速与驾驶稳定性，实现赛车性能与安全性的协同优化，且学习策略在一定程度上超越专家水平。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-09 13:00:42"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.10393",
+ "title": "Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models",
+ "authors": "Jiahui Han, Yuhui Yao, Xin Wang, Jiafei Cao, Mingxuan Zhang, Danfeng Shan, Huiqi Deng, Guanchu Wang, Xia Hu",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10393v1",
+ "abstract": "Vision-Language-Action (VLA) models have shown strong capabilities in controlling robots across diverse manipulation tasks. However, their adversarial robustness remains largely underexplored, and exploiting this weakness can lead to physical-world harm. Existing attacks on VLA models often rely on pixel-space perturbations or white-box access, resulting in noticeable artifacts and limited deployability in real-world robotic systems. In this work, we propose DURA, a diffusion-based unrestricted robotic attack that generates visually natural adversarial patches for VLA models. DURA supports both white-box and black-box attack settings, where the black-box setting requires only the predicted actions of the victim model. By optimizing along the latent trajectory of a pretrained diffusion model, DURA generates visually natural patches while steering the robot toward attacker-specified target actions. Extensive experiments in both simulation and the real physical world show that DURA consistently outperforms existing methods. Our findings expose a safety risk for physically deployed VLA models and call for stronger defenses.",
+ "summary": "## DURA 论文摘要总结\n\n**1. 核心创新点**\n提出 DURA——一种基于扩散模型的\"无限制\"对抗攻击方法，能为视觉-语言-动作（VLA）机器人模型生成视觉上自然、无明显噪点痕迹的对抗补丁。\n\n**2. 主要方法**\n利用预训练扩散模型，沿其**潜空间轨迹（latent trajectory）**进行优化，而非传统的像素空间扰动，从而在保持图像自然观感的同时，将机器人诱导至攻击者指定的目标动作。方法同时支持白盒与黑盒两种设置，其中黑盒仅需获取受害模型输出的预测动作，无需模型内部参数。\n\n**3. 结论/性能**\n在仿真环境与真实物理世界的大量实验中，DURA 的攻击效果均稳定优于现有方法，揭示了实际部署的 VLA 模型存在的安全隐患，并呼吁研究更强的防御机制。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-15 13:05:47"
+}

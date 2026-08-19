@@ -1,0 +1,13 @@
+{
+ "id": "2604.08538",
+ "title": "ParseBench: A Document Parsing Benchmark for AI Agents",
+ "authors": "Boyang Zhang, Sebastián G. Acosta, Preston Carlson, Sacha Bron, Pierre-Loïc Doulcet, Simon Suo",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08538v1",
+ "abstract": "AI agents are changing the requirements for document parsing. What matters is \\emph{semantic correctness}: parsed output must preserve the structure and meaning needed for autonomous decisions, including correct table structure, precise chart data, semantically meaningful formatting, and visual grounding. Existing benchmarks do not fully capture this setting for enterprise automation, relying on narrow document distributions and text-similarity metrics that miss agent-critical failures. We introduce \\textbf{ParseBench}, a benchmark of ${\\sim}2{,}000$ human-verified pages from enterprise documents spanning insurance, finance, and government, organized around five capability dimensions: tables, charts, content faithfulness, semantic formatting, and visual grounding. Across 14 methods spanning vision-language models, specialized document parsers, and LlamaParse, the benchmark reveals a fragmented capability landscape: no method is consistently strong across all five dimensions. LlamaParse Agentic achieves the highest overall score at \\agenticoverall\\%, and the benchmark highlights the remaining capability gaps across current systems. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ParseBench}{HuggingFace} and \\href{https://github.com/run-llama/ParseBench}{GitHub}.",
+ "summary": "- 核心创新点：提出 ParseBench，围绕企业文档解析的语义正确性构建一个覆盖表格、图表、内容忠实性、语义格式与视觉定位等五大能力维度的基准，揭示现有方法在五维指标上的能力差距与碎片化现状。\n\n- 主要方法：对约2000页经人工核验的企业文档（覆盖保险、金融、政府等领域）进行评测，比较来自14种方法的系统表现，涵盖视觉-语言模型、专用文档解析器，以及 LlamaParse 及其变体（如 LlamaParse Agentic），并公开数据集与评测代码（HuggingFace、GitHub）。\n\n- 结论/性能：没有方法在全部五个维度上都表现出色；LlamaParse Agentic 在整体表现上居于首位；基准揭示了当前系统仍存在的能力缺口，为企业自动化解析提供了更全面的评估基准。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-10 13:01:30"
+}

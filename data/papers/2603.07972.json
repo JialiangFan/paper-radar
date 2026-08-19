@@ -1,0 +1,13 @@
+{
+ "id": "2603.07972",
+ "title": "Adaptive Collaboration with Humans: Metacognitive Policy Optimization for Multi-Agent LLMs with Continual Learning",
+ "authors": "Wei Yang, Defu Cao, Jiacheng Pang, Muyan Weng, Yan Liu",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07972v1",
+ "abstract": "While scaling individual Large Language Models (LLMs) has delivered remarkable progress, the next frontier lies in scaling collaboration through multi-agent systems (MAS). However, purely autonomous MAS remain ''closed-world'' systems, constrained by the static knowledge horizon of pre-trained models. This limitation makes them brittle on tasks requiring knowledge beyond training data, often leading to collective failure under novel challenges. To address this, we propose the Human-In-the-Loop Multi-Agent Collaboration (HILA) framework, a principled paradigm for human--agent collaboration. HILA trains agents to learn a metacognitive policy that governs when to solve problems autonomously and when to defer to a human expert. To operationalize this policy, we introduce Dual-Loop Policy Optimization, which disentangles immediate decision-making from long-term capability growth. The inner loop applies Group Relative Policy Optimization (GRPO) with a cost-aware reward to optimize deferral decisions, while the outer loop implements continual learning, transforming expert feedback into high-quality supervised signals that strengthen the agent's reasoning ability. Experiments on challenging mathematical and problem-solving benchmarks show that HILA, equipped with Dual-Loop Policy Optimization, consistently outperforms advanced MAS, establishing a principled foundation for collaborative and continually improving agentic systems.",
+ "summary": "核心创新点：提出 HILA 人机协作框架，通过元认知策略在多智能体大语言模型中动态决定“自主解题”与“向人类专家求助”的时机，并通过双循环策略优化实现即时决策与长期能力提升。\n\n主要方法：构建 Dual-Loop Policy Optimization；内环使用 Group Relative Policy Optimization (GRPO) + 成本感知奖励来优化求助/拒绝决策，外环进行持续学习，将专家反馈转化为高质量监督信号以增强推理能力，面向多智能体LLM的协作与持续改进。\n\n结论/性能：在挑战性数学与问题求解基准上，HILA（配合 Dual-Loop Policy Optimization） consistently 超越先进的多智能体系统，显示出更强的协作能力与长期改进潜力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-10 13:04:42"
+}

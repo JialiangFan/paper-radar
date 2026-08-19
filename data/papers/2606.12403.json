@@ -1,0 +1,13 @@
+{
+ "id": "2606.12403",
+ "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+ "authors": "Zefu Lin, Rongxu Cui, Junjia Xu, Xiaojuan Jin, Wenling Li, Lue Fan, Zhaoxiang Zhang",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12403v1",
+ "abstract": "Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways. Latent Steering conditions the perception layer on a scene-evolution latent, and Action Steering supplies an anticipated trajectory as a motion prior to the action generator. Together the two priors equip the VLA with an anticipated view of the scene and a trajectory-level motion hint alongside its semantic conditioning, and the scene-evolution prior remains effective even when supplied by a video-pretrained world model that has not been action-post-trained. World Pilot attains a state-of-the-art Total success rate of 84.7% on the LIBERO-Plus zero-shot OOD benchmark and the highest success rate on every real-robot setting across four manipulation tasks, with the largest margins under shifts in viewpoint, geometry, deformable state, and pose. Project Website: https://world-pilot.github.io/",
+ "summary": "**World Pilot: Steering Vision-Language-Action Models with World-Action Priors**\n\n1. **核心创新点**：通过引入\"世界-动作模型\"（WAM）的先验知识来增强 VLA 模型，弥补其静态图文预训练无法捕捉操作过程中接触动力学的缺陷。\n\n2. **主要方法**：在 VLA 框架中接入两条互补的注入路径——**Latent Steering**（用\"场景演化潜变量\"调控感知层，让模型\"预见\"场景将如何变化）和 **Action Steering**（向动作生成器提供一条预期轨迹作为运动先验）。值得注意的是，即使场景演化先验来自仅经过视频预训练、未做动作微调的世界模型，依然有效。\n\n3. **结论/性能**：在 LIBERO-Plus 零样本分布外（OOD）基准上取得 **84.7% 的总成功率**（SOTA）；在 4 个真实机器人操作任务的所有设置中均达到最高成功率，尤其在视角、几何形状、可变形状态和位姿变化等分布偏移场景下优势最大。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-12 13:03:50"
+}

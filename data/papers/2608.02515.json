@@ -1,0 +1,13 @@
+{
+ "id": "2608.02515",
+ "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+ "authors": "Zhichen Liu, Ruihan Sun, Hengjie Yang, Zipeng Wu, Zhaohan Chen, Xiaofan Zhang, Yang Xu",
+ "date": "2026-08-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.02515v1",
+ "abstract": "Long-running assistants and agents consume interaction streams that eventually outgrow the context. Existing context retention, summarization, and retrieval preserve access to selected history, but do not provide a persistent state over the full lifecycle when working context changes. We formulate this missing inference capability as \\emph{state continuity under context turnover}: carrying computation forward through a fixed-capacity memory state whose lifetime is independent of the active context. We introduce an intrinsic memory method, \\textbf{LiveMem}, which augments a pretrained full-attention LLM with a memory state that preserves the historical information over the whole lifecycle while the main attention path retains a bounded KV window. Context turnover and memory state maintaining, memory-oriented post-training, and state-aware serving jointly make this memory state load bearing after its originating tokens are released. Our experiments show that LiveMem achieves leading overall performance among evaluated systems and other intrinsic memory methods. Experiments on LongMemEval show that LiveMem is able to answer the question based on the memory state, even when the supporting evidence has been removed from the current context, and evidence-distance analysis shows that useful information persists beyond the active window. LiveMem thus establishes state continuity as a distinct and complementary abstraction for continual LLM inference.",
+ "summary": "## LiveMem 论文摘要总结\n\n**1. 核心创新点**\n\n提出\"上下文轮替下的状态连续性\"（state continuity under context turnover）这一新问题，即让 LLM 通过一个固定容量、生命周期独立于当前上下文的记忆状态，把计算持续向前推进，而非仅仅保留对历史片段的访问权。\n\n**2. 主要方法**\n\nLiveMem 是一种**内生式记忆（intrinsic memory）**方法：在预训练的全注意力 LLM 上外加一个记忆状态，主注意力路径只保留**有界的 KV 窗口**，历史信息则被压缩进覆盖整个生命周期的记忆状态中。三项技术协同工作：\n\n- 上下文轮替与记忆状态维护机制\n- 面向记忆的后训练（memory-oriented post-training）\n- 状态感知的推理服务（state-aware serving）\n\n三者共同保证：即使产生记忆的原始 token 已被释放，该记忆状态仍然\"承重\"可用。\n\n**3. 结论/性能**\n\n- 在所评测的系统及其他内生记忆方法中取得**领先的整体性能**。\n- 在 **LongMemEval** 上，即使支撑证据已从当前上下文中移除，模型仍能依据记忆状态正确作答。\n- 证据距离（evidence-distance）分析表明，有效信息确实能留存到活动窗口之外。\n\n作者由此主张：状态连续性是持续性 LLM 推理中一个**独立且互补**的抽象层，区别于已有的上下文保留、摘要和检索方案。\n\n---\n\n补充一句判断：摘要中\"leading overall performance among evaluated systems\"这类表述较为笼统，未给出具体基线与数值，实际效果强度需看正文实验表格。如需我进一步做完整的文献综述式解读（背景、贡献、方法论细节），可以调用 `paper-review` 技能处理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-04 13:02:54"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.02288",
+ "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
+ "authors": "Gengsheng Li, Tianyu Yang, Junfeng Fang, Mingyang Song, Mao Zheng, Haiyun Guo, Dan Zhang, Jinqiao Wang, Tat-Seng Chua",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02288v1",
+ "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models. While Group Relative Policy Optimization (GRPO) is widely adopted, its coarse credit assignment uniformly penalizes failed rollouts, lacking the token-level focus needed to efficiently address specific deviations. Self-Distillation Policy Optimization (SDPO) addresses this by providing denser, more targeted logit-level supervision that facilitates rapid early improvement, yet it frequently collapses during prolonged training. We trace this late-stage instability to two intrinsic flaws: self-distillation on already-correct samples introduces optimization ambiguity, and the self-teacher's signal reliability progressively degrades. To resolve these issues, we propose Sample-Routed Policy Optimization (SRPO), a unified on-policy framework that routes correct samples to GRPO's reward-aligned reinforcement and failed samples to SDPO's targeted logit-level correction. SRPO further incorporates an entropy-aware dynamic weighting mechanism to suppress high-entropy, unreliable distillation targets while emphasizing confident ones. Evaluated across five benchmarks and two model scales, SRPO achieves both the rapid early improvement of SDPO and the long-horizon stability of GRPO. It consistently surpasses the peak performance of both baselines, raising the five-benchmark average on Qwen3-8B by 3.4% over GRPO and 6.3% over SDPO, while simultaneously yielding moderate response lengths and lowering per-step compute cost by up to 17.2%.",
+ "summary": "- **核心创新点**：提出 Sample-Routed Policy Optimization（SRPO），将正确样本路由到 GRPO 的奖励对齐强化、将失败样本路由到 SDPO 的日志项级别矫正，并引入熵感知的动态权重以抑制不可靠的蒸馏目标，从而实现早期快速提升与长期稳定性的统一。\n\n- **主要方法**：提出在策略优化框架内的统一路由机制 SRPO，结合 GRPO 的奖励对齐强化和 SDPO 的日志项级别自蒸馏纠错；并加入熵感知的动态权重来强调可信目标、抑制高熵、低信心的蒸馏信号，形成一个端到端的 on-policy 学习框架。\n\n- **结论/性能**：在五项基准和两种模型规模上，SRPO 同时具备 SDPO 的快速早期提升和 GRPO 的长期稳定性，五基准在 Qwen3-8B 上平均提升分别为相对于 GRPO 的 3.4%、相对于 SDPO 的 6.3%；并带来适度的输出长度、且每步计算成本降低最多 17.2%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-03 13:03:02"
+}

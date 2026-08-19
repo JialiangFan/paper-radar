@@ -1,0 +1,13 @@
+{
+ "id": "2604.22577",
+ "title": "QuantClaw: Precision Where It Matters for OpenClaw",
+ "authors": "Manyi Zhang, Ji-Fu Li, Zhongao Sun, Xiaohao Liu, Zhenhua Dong, Xianzhi Yu, Haoli Bai, Xiaobo Xia",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22577v1",
+ "abstract": "Autonomous agent systems such as OpenClaw introduce significant efficiency challenges due to long-context inputs and multi-turn reasoning. This results in prohibitively high computational and monetary costs in real-world development. While quantization is a standard approach for reducing cost and latency, its impact on agent performance in realistic scenarios remains unclear. In this work, we analyze quantization sensitivity across diverse complex workflows over OpenClaw, and show that precision requirements are highly task-dependent. Based on this observation, we propose QuantClaw, a plug-and-play precision routing plugin that dynamically assigns precision according to task characteristics. QuantClaw routes lightweight tasks to lower-cost configurations while preserving higher precision for demanding workloads, saving cost and accelerating inference without increasing user complexity. Experiments show that our QuantClaw maintains or improves task performance while reducing both latency and computational cost. Across a range of agent tasks, it achieves up to 21.4% cost savings and 15.7% latency reduction on GLM-5 (FP8 baseline). These results highlight the benefit of treating precision as a dynamic resource in agent systems.",
+ "summary": "1) 核心创新点（1 句话）  \n提出一个可插拔的精度路由插件 QuantClaw，基于任务特征在 OpenClaw 的不同工作负载中动态分配量化精度，实现“需要就高、不需就低”的精度调度，降低成本与延迟且不增加用户复杂度。\n\n2) 主要方法  \n分析 OpenClaw 的量化敏感性，发现精度需求高度依赖任务特征；实现 QuantClaw 作为插件，对任务/阶段进行动态精度分配，将轻量任务路由至低成本配置、关键/高需求任务保留更高精度，具备无缝对接和易用性。\n\n3) 结论/性能  \n在多类代理任务中，QuantClaw 能保持或提升任务性能，同时显著降低延迟与计算成本；在 GLM-5（FP8 基线）场景下实现最高约 21.4% 的成本节省和约 15.7% 的延迟降低，体现将精度作为动态资源的价值。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-27 13:04:06"
+}

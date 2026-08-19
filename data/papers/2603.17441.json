@@ -1,0 +1,13 @@
+{
+ "id": "2603.17441",
+ "title": "AdaZoom-GUI: Adaptive Zoom-based GUI Grounding with Instruction Refinement",
+ "authors": "Siqi Pei, Liang Tang, Tiaonan Duan, Long Chen, Shuxian Li, Kaer Huang, Yanzhe Jing, Yiqiang Yan, Bo Zhang, Chenghao Jiang, Borui Zhang, Jiwen Lu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17441v1",
+ "abstract": "GUI grounding is a critical capability for vision-language models (VLMs) that enables automated interaction with graphical user interfaces by locating target elements from natural language instructions. However, grounding on GUI screenshots remains challenging due to high-resolution images, small UI elements, and ambiguous user instructions. In this work, we propose AdaZoom-GUI, an adaptive zoom-based GUI grounding framework that improves both localization accuracy and instruction understanding. Our approach introduces an instruction refinement module that rewrites natural language commands into explicit and detailed descriptions, allowing the grounding model to focus on precise element localization. In addition, we design a conditional zoom-in strategy that selectively performs a second-stage inference on predicted small elements, improving localization accuracy while avoiding unnecessary computation and context loss on simpler cases. To support this framework, we construct a high-quality GUI grounding dataset and train the grounding model using Group Relative Policy Optimization (GRPO), enabling the model to predict both click coordinates and element bounding boxes. Experiments on public benchmarks demonstrate that our method achieves state-of-the-art performance among models with comparable or even larger parameter sizes, highlighting its effectiveness for high-resolution GUI understanding and practical GUI agent deployment.",
+ "summary": "- 核心创新点：在高分辨率 GUI 场景中，提出 AdaZoom-GUI，结合指令细化模块将自然语言指令改写为更明确的描述，并通过条件缩放的二阶段推理对小元素进行精细定位，同时使用 GRPO 训练，使模型能同时预测点击坐标和元素边界框。\n\n- 主要方法：\n  - 指令 refinement 模块：将自然语言指令重写为更明确、详细的描述，便于定位。\n  - 条件放大策略：对预测为小元素的目标实行二阶段推理，提升定位精度且避免在简单情况中产生额外计算与上下文损失。\n  - 数据与训练：构建高质量 GUI grounding 数据集，使用 Group Relative Policy Optimization（GRPO）进行训练，使模型能够同时输出点击坐标和元素边界框。\n\n- 结论/性能：\n  - 在公开基准上达到与同等或更大参数规模模型相比的最先进水平（state-of-the-art）。\n  - 显著提升高分辨率 GUI 的定位精度与指令理解能力，适合实际 GUI 代理部署。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-19 13:04:29"
+}

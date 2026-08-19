@@ -1,0 +1,13 @@
+{
+ "id": "2604.06925",
+ "title": "LungCURE: Benchmarking Multimodal Real-World Clinical Reasoning for Precision Lung Cancer Diagnosis and Treatment",
+ "authors": "Fangyu Hao, Jiayu Yang, Yifan Zhu, Zijun Yu, Qicen Wu, Wang Yunlong, Jiawei Li, Yulin Liu, Xu Zeng, Guanting Chen, Shihao Li, Zhonghong Ou, Meina Song, Mengyang Sun, Haoran Luo, Yu Shi, Yingyi Wang",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06925v1",
+ "abstract": "Lung cancer clinical decision support demands precise reasoning across complex, multi-stage oncological workflows. Existing multimodal large language models (MLLMs) fail to handle guideline-constrained staging and treatment reasoning. We formalize three oncological precision treatment (OPT) tasks for lung cancer, spanning TNM staging, treatment recommendation, and end-to-end clinical decision support. We introduce LungCURE, the first standardized multimodal benchmark built from 1,000 real-world, clinician-labeled cases across more than 10 hospitals. We further propose LCAgent, a multi-agent framework that ensures guideline-compliant lung cancer clinical decision-making by suppressing cascading reasoning errors across the clinical pathway. Experiments reveal large differences across various large language models (LLMs) in their capabilities for complex medical reasoning, when given precise treatment requirements. We further verify that LCAgent, as a simple yet effective plugin, enhances the reasoning performance of LLMs in real-world medical scenarios.",
+ "summary": "- 核心创新点：提出首个标准化的多模态肺癌临床推理基准 LungCURE，并辅以多代理框架 LCAgent，确保在分阶段治疗决策中严格遵循指南，减少推理中的级联错误。\n\n- 主要方法：\n  - LungCURE 基准：建立涵盖 TNM 分期、治疗推荐和端到端临床决策三类“肿瘤学精准治疗”任务的多模态数据基准，基于1000个真实病例、覆盖10家以上医院。\n  - LCAgent 多代理框架：作为插件式的多代理系统，分阶段并行或串行构建推理路径，通过约束和跨代理信息协作来提升指南遵循性和整体推理质量，抑制 cascading 错误。\n\n- 结论/性能：\n  - 在不同的大语言模型（LLMs）对复杂医疗推理能力的对比中，存在明显差异。\n  - LCAgent 作为简单有效的插件，显著提升了 LLMs 在真实医疗场景中的推理性能，尤其在遵循临床指南的任务中表现更好。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-09 13:04:05"
+}

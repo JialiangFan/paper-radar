@@ -1,0 +1,13 @@
+{
+ "id": "2604.20727",
+ "title": "Supplement Generation Training for Enhancing Agentic Task Performance",
+ "authors": "Young Min Cho, Daniele Bonadiman, Divya Bhargavi, Tamer Alkhouli, Salvatore Romeo, Dongwei Jiang, Khushbu Pahwa, Yubin Ge, Etsuko Ishii, Monica Sunkara, Yi Zhang",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20727v1",
+ "abstract": "Training large foundation models for agentic tasks is increasingly impractical due to the high computational costs, long iteration cycles, and rapid obsolescence as new models are continuously released. Instead of post-training massive models for every new task or domain, we propose Supplement Generation Training (SGT), a more efficient and sustainable strategy. SGT trains a smaller LLM to generate useful supplemental text that, when appended to the original input, helps the larger LLM solve the task more effectively. These lightweight models can dynamically adapt supplements to task requirements, improving performance without modifying the underlying large models. This approach decouples task-specific optimization from large foundation models and enables more flexible, cost-effective deployment of LLM-powered agents in real-world applications.",
+ "summary": "- 1. **核心创新点**：通过训练一个小型 LLM 生成与任务相关的补充文本，附加到原始输入上以提升大型基础模型的任务性能，而无需对基础模型进行微调。\n\n- 2. **主要方法**：提出 Supplement Generation Training (SGT)，让轻量级模型生成可用的补充文本并动态适配不同任务需求，随后将其与原输入拼接后输入到大型模型以提高解题效果，实现任务优化与大模型的解耦。\n\n- 3. **结论/性能**：在不修改大型模型前提下实现性能提升，并带来更灵活、成本更低的 LLM 驱动代理部署。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-23 13:03:50"
+}

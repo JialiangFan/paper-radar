@@ -1,0 +1,13 @@
+{
+ "id": "2606.09499",
+ "title": "Targeting World Models to Compromise Robot Learning Pipelines",
+ "authors": "Ethan Rathbun, Ahmed Agha, Saaduddin Mahmud, Christopher Amato, Alina Oprea, Eugene Bagdasarian",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.09499v1",
+ "abstract": "World models have recently seen a rapid growth in both their popularity and capability as more data efficient tools for generating robot training data or simulating real world environments, with many works proposing their integration into the robot learning pipeline. While highly practical, in this work we demonstrate that world models introduce a uniquely stealthy and effective data poisoning entry point into the robot learning supply chain that can result in the deployment of unsafe or otherwise compromised robotic policies despite training on seemingly safe ground truth training data. In contrast to traditional data poisoning techniques which directly implant dangerous trajectories into sold or uploaded datasets, our novel attack methods inject malicious prompts or compromising transition dynamics into visibly safe teleoperated datasets which are only activated once fed through a world model as input. This can result in the generation of synthetic, dangerous robot training trajectories and subsequently unsafe or compromised robot policies. We demonstrate the effectiveness of our attacks against both state of the art action conditioned and text conditioned world models, showing a full end-to-end backdoor on a downstream DRL policy and a proof-of-concept for the VLA setting. Overall these findings necessitate research into more secure world models and reevaluating their position within the robot learning supply chain.",
+ "summary": "# 论文总结\n\n## 核心创新点\n首次揭示**世界模型（World Models）**在机器人学习管线中构成一种隐蔽且高效的数据投毒入口，攻击者可在看似安全的训练数据中植入恶意触发器，仅在经世界模型处理后才被激活，从而部署不安全的机器人策略。\n\n## 主要方法\n- 不同于传统直接污染数据集的方式，作者将**恶意提示（malicious prompts）**或**被篡改的转移动力学（compromising transition dynamics）**注入到视觉上安全的遥操作（teleoperated）数据集中。\n- 这些隐藏触发器在数据被输入世界模型后才会激活，生成合成的、危险的机器人训练轨迹。\n- 攻击针对两类前沿世界模型：**动作条件（action-conditioned）**和**文本条件（text-conditioned）**世界模型。\n\n## 结论/性能\n- 在下游 **DRL（深度强化学习）策略**上实现了完整的端到端后门攻击。\n- 在 **VLA（视觉-语言-动作）模型**场景中给出了概念验证。\n- 研究表明世界模型在机器人学习供应链中存在重大安全隐患，呼吁开发更安全的世界模型，并重新评估其在管线中的定位。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-09 13:03:33"
+}

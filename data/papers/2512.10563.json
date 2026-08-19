@@ -1,0 +1,13 @@
+{
+ "id": "2512.10563",
+ "title": "NormCode: A Semi-Formal Language for Context-Isolated AI Planning",
+ "authors": "Xin Guan",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10563v1",
+ "abstract": "Multistep workflows that chain large language model (LLM) calls suffer from context pollution: as information accumulates across steps, models hallucinate, confuse intermediate outputs, and lose track of task constraints. We present NormCode, a semiformal language for constructing plans of inferences, structured decompositions where each step operates in data isolation and receives only explicitly passed inputs, which eliminates crossstep contamination by design. NormCode enforces a strict separation between semantic operations (LLMdriven reasoning, nondeterministic) and syntactic operations (deterministic data restructuring), enabling precise cost and reliability tracing. The language exists in three isomorphic formats: .ncds for human authoring, .ncd for machine execution, and .ncn for human verification, supporting progressive formalization from sketch to production. We validate NormCode through two demonstrations: (1) a base X addition algorithm achieving 100 percent accuracy on arbitrary length inputs, and (2) self hosted execution of NormCode's own five phase compiler pipeline. The working orchestrator provides dependency driven scheduling, SQLite backed checkpointing, and loop management, making AI workflows auditable by design and addressing a critical need for transparency in high stakes domains such as legal reasoning, medical decision making, and financial analysis.",
+ "summary": "1) 核心创新点\n- 提出 NormCode 一种半形式化语言，用以构建上下文隔离的推理计划，严格将语义推理与句法数据重组分离，防止跨步污染并实现可追溯的成本与可靠性分析。\n\n2) 主要方法\n- 使用三种同构格式的半形式化语言（.ncds、.ncd、.ncn）来支持从草案到生产的逐步形式化；以数据隔离的逐步推理计划为核心，在每一步仅传递显式输入并实现跨步无污染。\n- 将语义运算（由大语言模型驱动的推理、非确定性）与句法操作（确定性的数据重组）严格分离，便于成本与可靠性追踪。\n- 底层实现包含一个依赖驱动的编排器、SQLite 断点/checkpoint 机制、循环管理等特性，支持可审计的工作流执行。\n- 验证包括两项示例：一个基于 X 的加法算法在任意长度输入上达到 100% 准确；以及 NormCode 自身五阶段编译管线的自托管执行。\n\n3) 结论/性能\n- 实验显示该方案能够实现高可控、可审计的 AI 工作流，解决高风险领域（如法律、医疗、金融等）对透明度和可追溯性的需求；并且在两项示例中分别展示了达到完整准确性和自托管编译管线的可行性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:03:10"
+}

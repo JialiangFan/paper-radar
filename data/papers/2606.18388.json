@@ -1,0 +1,13 @@
+{
+ "id": "2606.18388",
+ "title": "LLMZero: Discovering Adaptive Training Strategies for RL Post-Training via LLM Agents",
+ "authors": "Haoyang Fang, Wei Zhu, Boran Han, Alex Zhang, Zhenyu Pan, Shuo Yang, Shuai Zhang, Jiading Gai, Peng Tang, Cuixiong Hu, Xuan Zhu, Huzefa Rangwala, George Karypis, Bernie Wang",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18388v1",
+ "abstract": "RL post-training strategies are dataset-dependent and reveal a recurring empirical pattern: capacity parameters accumulate monotonically across stages, while regularization parameters predominantly oscillate in response to shifting training dynamics. This distinction matters because fixed schedules commit all parameters to fixed trajectories and therefore cannot express the non-stationary exploration-exploitation tradeoffs that regularization must track; the principle provides actionable design rules for multi-stage training. We discover this through LLMZero, a system where LLM agents search over training trajectories via tree search, diagnosing pathologies at each checkpoint and proposing coordinated multi-parameter transitions. Across 4 diverse GRPO tasks, LLMZero discovers strategies that improve over the base model by 9% to 140% relative and over grid search by 6% to 15% relative, consistently outperforming random search and the skill-based agent. The structural principle transfers across tasks, providing an explanation for why discovered strategies take qualitatively different forms yet share similar parameter dynamics.",
+ "summary": "## LLMZero 论文总结\n\n1. **核心创新点**：通过 LLM 智能体自动搜索 RL 后训练的「自适应」训练策略，揭示出一条结构性规律——容量类参数应随阶段单调累积，而正则化类参数则应随训练动态振荡调整，从而突破固定调度无法表达非平稳「探索-利用」权衡的局限。\n\n2. **主要方法**：构建 LLMZero 系统，让 LLM 智能体以**树搜索**方式在训练轨迹空间中探索，在每个检查点诊断训练病态（pathologies），并提出多参数协调式的阶段性转换方案（基于 GRPO 训练框架）。\n\n3. **结论/性能**：在 4 个不同的 GRPO 任务上，相比基座模型相对提升 **9%~140%**，相比网格搜索（grid search）相对提升 **6%~15%**，并持续优于随机搜索和基于技能的智能体；所发现的结构性规律可跨任务迁移，解释了为何不同任务的最优策略形态各异却共享相似的参数动态。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-18 13:01:13"
+}

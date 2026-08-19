@@ -1,0 +1,13 @@
+{
+ "id": "2602.04356",
+ "title": "When and Where to Attack? Stage-wise Attention-Guided Adversarial Attack on Large Vision Language Models",
+ "authors": "Jaehyun Kwak, Nam Cao, Boryeong Cho, Segyu Lee, Sumyeong Ahn, Se-Young Yun",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04356v1",
+ "abstract": "Adversarial attacks against Large Vision-Language Models (LVLMs) are crucial for exposing safety vulnerabilities in modern multimodal systems. Recent attacks based on input transformations, such as random cropping, suggest that spatially localized perturbations can be more effective than global image manipulation. However, randomly cropping the entire image is inherently stochastic and fails to use the limited per-pixel perturbation budget efficiently. We make two key observations: (i) regional attention scores are positively correlated with adversarial loss sensitivity, and (ii) attacking high-attention regions induces a structured redistribution of attention toward subsequent salient regions. Based on these findings, we propose Stage-wise Attention-Guided Attack (SAGA), an attention-guided framework that progressively concentrates perturbations on high-attention regions. SAGA enables more efficient use of constrained perturbation budgets, producing highly imperceptible adversarial examples while consistently achieving state-of-the-art attack success rates across ten LVLMs. The source code is available at https://github.com/jackwaky/SAGA.",
+ "summary": "- **核心创新点**：提出阶段式注意力引导对抗攻击SAGA，通过逐步聚焦高注意力区域，在有限扰动预算下实现更高效且更隐蔽的对抗攻击，并在十个LVLM上达到SOTA攻击成功率。\n\n- **主要方法**：基于区域注意力分布与对抗损失敏感性的观测，设计 Stage-wise Attention-Guided Attack (SAGA) 框架，在图像的高注意力区域分阶段施加扰动，利用注意力引导和预算约束实现高效的像素利用，适用于大型视觉-语言模型。\n\n- **结论/性能**：在有限的像素扰动预算下，产生高度不可察觉的对抗样本，同时在十个LVLM上持续实现最先进的攻击成功率（SOTA）。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-05 14:02:46"
+}

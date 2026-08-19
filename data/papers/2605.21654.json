@@ -1,0 +1,13 @@
+{
+ "id": "2605.21654",
+ "title": "Value-Gradient Hypothesis of RL for LLMs",
+ "authors": "Arip Asadulaev, Daniil Ognev, Karim Salta, Martin Takac",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21654v1",
+ "abstract": "Reinforcement learning substantially improves pretrained language models, but it remains understudied why critic-free methods such as PPO and GRPO work as well as they do, and when they should provide the largest gains. We develop a value-gradient perspective of critic-free RL for LLM post-training. First, under a differentiable rollout and additive-noise parameterization, we show that the actor update is value-gradient-like in expectation: the backward pass propagates costates whose conditional expectation equals the value gradient. Second, for discrete transformer policies, we show that autodifferentiation through attention produces empirical costates that approximate this value signal, with an error controlled by the sampling gap and policy entropy. These results motivate a decomposition of RL impact into value gradient signal and reachable reward headroom, yielding a criterion for when RL should be most effective along a pretraining trajectory.",
+ "summary": "# 论文总结：Value-Gradient Hypothesis of RL for LLMs\n\n1. **核心创新点**：从\"价值梯度\"（value-gradient）视角统一解释 PPO/GRPO 等无 critic 强化学习方法在 LLM 后训练中为何有效，并给出 RL 何时收益最大的判据。\n\n2. **主要方法**：\n   - 在可微 rollout + 加性噪声参数化假设下，证明 actor 的更新在期望意义上等价于价值梯度——反向传播得到的 costate 的条件期望即为值函数梯度。\n   - 针对离散 transformer 策略，证明通过 attention 的自动微分可以产生近似该价值信号的经验 costate，其误差受采样间隙（sampling gap）和策略熵控制。\n   - 基于此将 RL 的提升分解为\"价值梯度信号\"与\"可达奖励空间\"（reachable reward headroom）两个因子。\n\n3. **结论/性能**：提供了无 critic RL 方法有效性的理论解释，并给出一个判据，用于预测在预训练轨迹中的哪个阶段应用 RL 收益最大；属于理论分析型工作，未强调具体实验性能指标。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-23 13:01:14"
+}

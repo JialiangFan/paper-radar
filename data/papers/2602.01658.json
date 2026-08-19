@@ -1,0 +1,13 @@
+{
+ "id": "2602.01658",
+ "title": "Efficient Adversarial Attacks on High-dimensional Offline Bandits",
+ "authors": "Seyed Mohammad Hadi Hosseini, Amir Najafi, Mahdieh Soleymani Baghshah",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01658v1",
+ "abstract": "Bandit algorithms have recently emerged as a powerful tool for evaluating machine learning models, including generative image models and large language models, by efficiently identifying top-performing candidates without exhaustive comparisons. These methods typically rely on a reward model, often distributed with public weights on platforms such as Hugging Face, to provide feedback to the bandit. While online evaluation is expensive and requires repeated trials, offline evaluation with logged data has become an attractive alternative. However, the adversarial robustness of offline bandit evaluation remains largely unexplored, particularly when an attacker perturbs the reward model (rather than the training data) prior to bandit training. In this work, we fill this gap by investigating, both theoretically and empirically, the vulnerability of offline bandit training to adversarial manipulations of the reward model. We introduce a novel threat model in which an attacker exploits offline data in high-dimensional settings to hijack the bandit's behavior. Starting with linear reward functions and extending to nonlinear models such as ReLU neural networks, we study attacks on two Hugging Face evaluators used for generative model assessment: one measuring aesthetic quality and the other assessing compositional alignment. Our results show that even small, imperceptible perturbations to the reward model's weights can drastically alter the bandit's behavior. From a theoretical perspective, we prove a striking high-dimensional effect: as input dimensionality increases, the perturbation norm required for a successful attack decreases, making modern applications such as image evaluation especially vulnerable. Extensive experiments confirm that naive random perturbations are ineffective, whereas carefully targeted perturbations achieve near-perfect attack success rates ...",
+ "summary": "- 核心创新点：提出并理论/实证验证了离线高维Bandit评估对奖励模型的对抗性攻击威胁，且在维度提升时对扰动的需求显著下降，使得微小且有针对性的权重扰动即可致使Bandit行为偏离。\n\n- 主要方法：从线性奖励开始推广到 ReLU 等非线性模型，构造对 Hugging Face 两个评估器（美学质量评估与组合对齐评估）的攻击，研究在离线数据下对奖励模型权重的扰动对Bandit选择的影响；给出高维情形的理论分析，证明输入维度增大时所需扰动范数降低；并通过大量实验比较有针对性扰动与随机扰动的效果，验证高效攻击。\n\n- 结论/性能：在高维离线Bandit评估中，经过有针对性的权重扰动几乎能实现攻击的近乎100%成功率，而随机扰动效果较差；理论与实验均表明维度提升会放大攻击的可行性，尤其适用于图像等高维评估场景。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-03 14:03:28"
+}

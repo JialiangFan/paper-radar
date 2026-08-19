@@ -1,0 +1,13 @@
+{
+ "id": "2602.22146",
+ "title": "Provable Last-Iterate Convergence for Multi-Objective Safe LLM Alignment via Optimistic Primal-Dual",
+ "authors": "Yining Li, Peizhong Ju, Ness Shroff",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22146v1",
+ "abstract": "Reinforcement Learning from Human Feedback (RLHF) plays a significant role in aligning Large Language Models (LLMs) with human preferences. While RLHF with expected reward constraints can be formulated as a primal-dual optimization problem, standard primal-dual methods only guarantee convergence with a distributional policy where the saddle-point problem is in convex-concave form. Moreover, standard primal-dual methods may exhibit instability or divergence in the last iterate under policy parameterization in practical applications. In this work, we propose a universal primal-dual framework for safe RLHF that unifies a broad class of existing alignment algorithms, including safe-RLHF, one-shot, and multi-shot based methods. Building on this framework, we introduce an optimistic primal-dual (OPD) algorithm that incorporates predictive updates for both primal and dual variables to stabilize saddle-point dynamics. We establish last-iterate convergence guarantees for the proposed method, covering both exact policy optimization in the distributional space and convergence to a neighborhood of the optimal solution whose gap is related to approximation error and bias under parameterized policies. Our analysis reveals that optimism plays a crucial role in mitigating oscillations inherent to constrained alignment objectives, thereby closing a key theoretical gap between constrained RL and practical RLHF.",
+ "summary": "核心创新点：提出一个普适的乐观原-对偶框架及 OPD（Optimistic Primal-Dual）算法，用于安全 RLHF 的对齐问题，并能统一多种对齐方法且实现最后迭代收敛。\n\n主要方法：在原-对偶优化框架下引入对原变量和对偶变量的预测性（乐观）更新，形成 OPD 算法；覆盖并统一包括 safe-RLHF、one-shot、multi-shot 等多种对齐策略，并给出在分布域空间的精确策略优化及参数化策略下的收敛分析。\n\n结论/性能：建立了该方法的最后迭代收敛性保证，能够收敛到最优解的邻域（邻域误差由近似和偏差决定），并通过乐观更新缓解受约束对齐目标引发的振荡，弥补了约束 RL 与实际 RLHF 之间的理论空白。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-26 14:00:41"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2511.21375",
+ "title": "Thinking With Bounding Boxes: Enhancing Spatio-Temporal Video Grounding via Reinforcement Fine-Tuning",
+ "authors": "Xin Gu, Haoji Zhang, Qihang Fan, Jingxuan Niu, Zhipeng Zhang, Libo Zhang, Guang Chen, Fan Chen, Longyin Wen, Sijie Zhu",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21375v1",
+ "abstract": "Spatio-temporal video grounding (STVG) requires localizing a target object in untrimmed videos both temporally and spatially from natural language descriptions. Despite their strong language understanding, multimodal large language models (MLLMs) underperform on STVG due to misaligned training objectives and weak fine-grained region-word alignment in standard visual encoders. To address this, we propose STVG-o1, the first framework that enables off-the-shelf MLLMs to achieve state-of-the-art STVG performance without any architectural modifications. Our method introduces a bounding-box chain-of-thought mechanism that explicitly reasons about spatio-temporal locations in an intermediate step before producing the final prediction. We further design a multi-dimensional reinforcement reward function consisting of format, consistency, temporal, spatial, and think rewards, which provides geometry-aware supervision through reinforcement fine-tuning. Evaluated on HCSTVG-v1/v2 and VidSTG, STVG-o1 sets new state-of-the-art results on HCSTVG, outperforming the best task-specific method by 7.3\\% m\\_tIoU on HCSTVG-v1, matching specialized models on VidSTG, and surpassing all existing MLLM-based approaches by large margins. It also demonstrates strong open-vocabulary generalization across datasets, establishing MLLMs as viable and powerful backbones for precise spatio-temporal grounding. Our code and models will be released.",
+ "summary": "- 核心创新点：在不改动模型结构的前提下，提出 bounding-box chain-of-thought 与多维强化学习奖励的 STVG-o1，显著提升现成多模态大语言模型的时空视频定位性能。\n\n- 主要方法：引入 bounding-box chain-of-thought 机制在最终预测前进行中间的时空位置推理，并通过格式、一致性、时序、空间、思维等多维奖励进行强化微调，使模型具备几何感知的监督能力。\n\n- 结论/性能：在 HCSTVG-v1/v2 与 VidSTG 上达到新的最先进性能，HCSTVG-v1 提升约 7.3% m_tIoU，VidSTG 与专门模型接近或媲美，且显著超越所有现有基于 MLLM 的方法，展示出良好的开集通用性，代码与模型将公开。",
+ "keyword": "chain-of-thought, PDDL planning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:33:25"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.13276",
+ "title": "CogniEdit: Dense Gradient Flow Optimization for Fine-Grained Image Editing",
+ "authors": "Yan Li, Lin Liu, Xiaopeng Zhang, Wei Xue, Wenhan Luo, Yike Guo, Qi Tian",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13276v1",
+ "abstract": "Instruction-based image editing with diffusion models has achieved impressive results, yet existing methods strug- gle with fine-grained instructions specifying precise attributes such as colors, positions, and quantities. While recent approaches employ Group Relative Policy Optimization (GRPO) for alignment, they optimize only at individual sampling steps, providing sparse feedback that limits trajectory-level control. We propose a unified framework CogniEdit, combining multi-modal reasoning with dense reward optimization that propagates gradients across con- secutive denoising steps, enabling trajectory-level gradient flow through the sampling process. Our method comprises three components: (1) Multi-modal Large Language Models for decomposing complex instructions into actionable directives, (2) Dynamic Token Focus Relocation that adaptively emphasizes fine-grained attributes, and (3) Dense GRPO-based optimization that propagates gradients across consecutive steps for trajectory-level supervision. Extensive experiments on benchmark datasets demonstrate that our CogniEdit achieves state-of-the-art performance in balancing fine-grained instruction following with visual quality and editability preservation",
+ "summary": "- 核心创新点：将多模态大语言模型、动态令牌聚焦与密集梯度流的GRPO结合，在扩散采样的连续步骤中实现轨迹级梯度传播，提升对细粒度属性（颜色、位置、数量等）的精准编辑能力。\n\n- 主要方法：CogniEdit 框架由三部分组成：1) 使用多模态大语言模型将复杂编辑指令分解为可执行的指令；2) Dynamic Token Focus Relocation 动态聚焦细粒度属性的关键信息；3) 基于 Dense GRPO 的优化，在连续的去噪步骤中传播梯度，实现轨迹级的监督和梯度流。\n\n- 结论/性能：在基准数据集上实现对细粒度指令的高保真遵循，同时保持图像质量与可编辑性，达到并超越当前方法的最先进性能（SOTA）。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-16 03:05:05"
+}

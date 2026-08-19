@@ -1,0 +1,13 @@
+{
+ "id": "2602.20720",
+ "title": "AdapTools: Adaptive Tool-based Indirect Prompt Injection Attacks on Agentic LLMs",
+ "authors": "Che Wang, Jiaming Zhang, Ziqi Zhang, Zijie Wang, Yinghui Wang, Jianbo Gao, Tao Wei, Zhong Chen, Wei Yang Bryan Lim",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20720v1",
+ "abstract": "The integration of external data services (e.g., Model Context Protocol, MCP) has made large language model-based agents increasingly powerful for complex task execution. However, this advancement introduces critical security vulnerabilities, particularly indirect prompt injection (IPI) attacks. Existing attack methods are limited by their reliance on static patterns and evaluation on simple language models, failing to address the fast-evolving nature of modern AI agents. We introduce AdapTools, a novel adaptive IPI attack framework that selects stealthier attack tools and generates adaptive attack prompts to create a rigorous security evaluation environment. Our approach comprises two key components: (1) Adaptive Attack Strategy Construction, which develops transferable adversarial strategies for prompt optimization, and (2) Attack Enhancement, which identifies stealthy tools capable of circumventing task-relevance defenses. Comprehensive experimental evaluation shows that AdapTools achieves a 2.13 times improvement in attack success rate while degrading system utility by a factor of 1.78. Notably, the framework maintains its effectiveness even against state-of-the-art defense mechanisms. Our method advances the understanding of IPI attacks and provides a useful reference for future research.",
+ "summary": "- 核心创新点：提出 AdapTools，一种基于自适应工具选择和自适应攻击提示生成的间接提示注入攻击框架，用于对具代理能力的LLMs进行更强力的安全评估。\n\n- 主要方法：\n  - 自适应攻击策略构建（Adaptive Attack Strategy Construction）：开发可迁移的对抗策略用于提示优化，提升攻击的泛化性。\n  - 攻击增强（Attack Enhancement）：识别更隐蔽、能绕过任务相关性防御的攻击工具，配合自适应提示生成，形成更严密的攻击环境。\n\n- 结论/性能：\n  - 在实验中，攻击成功率提高约2.13倍；系统效用下降约1.78倍。\n  - 该框架对最先进的防御机制仍保持有效性，提升了对IPI攻击的理解并为未来研究提供参考。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-25 14:01:27"
+}

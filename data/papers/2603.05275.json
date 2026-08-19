@@ -1,0 +1,13 @@
+{
+ "id": "2603.05275",
+ "title": "SarcasmMiner: A Dual-Track Post-Training Framework for Robust Audio-Visual Sarcasm Reasoning",
+ "authors": "Zhu Li, Yongjian Chen, Huiyuan Lai, Xiyuan Gao, Shekhar Nayak, Matt Coler",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05275v1",
+ "abstract": "Multimodal sarcasm detection requires resolving pragmatic incongruity across textual, acoustic, and visual cues through cross-modal reasoning. To enable robust sarcasm reasoning with foundation models, we propose SarcasmMiner, a reinforcement learning based post-training framework that resists hallucination in multimodal reasoning. We reformulate sarcasm detection as structured reasoning and adopt a dual-track distillation strategy: high-quality teacher trajectories initialize the student model, while the full set of trajectories trains a generative reward model (GenRM) to evaluate reasoning quality. The student is optimized with group relative policy optimization (GRPO) using decoupled rewards for accuracy and reasoning quality. On MUStARD++, SarcasmMiner increases F1 from 59.83% (zero-shot), 68.23% (supervised finetuning) to 70.22%. These findings suggest that reasoning-aware reward modeling enhances both performance and multimodal grounding.",
+ "summary": "- **核心创新点**：提出基于强化学习的后训练框架 SarcasmMiner，利用双轨蒸馏与生成式奖励模型来提升跨模态推理的鲁棒性和减少幻觉，从而提升音频-视觉讽刺检测的结构化推理能力。\n\n- **主要方法**：将讽刺检测重新表述为结构化推理；采用后训练的强化学习框架；双轨蒸馏：高质量教师轨迹用于初始化学生模型，完整轨迹用于训练生成式奖励模型（GenRM）来评估推理质量；学生模型使用组相对策略优化（GRPO）并以解耦的奖励（准确性与推理质量）进行学习；面向多模态数据（文本、音频、视觉）的推理与对齐。\n\n- **结论/性能**：在 MUStARD++ 数据集上，F1 从 zero-shot 59.83% 和有监督微调 68.23% 提升至 70.22%，表明基于推理感知的奖励建模提升了整体性能与多模态对齐能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-06 14:02:17"
+}

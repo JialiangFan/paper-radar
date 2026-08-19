@@ -1,0 +1,13 @@
+{
+ "id": "2512.21540",
+ "title": "Leash: Adaptive Length Penalty and Reward Shaping for Efficient Large Reasoning Model",
+ "authors": "Yanhao Li, Lu Ma, Jiaran Zhang, Lexiang Tang, Wentao Zhang, Guibo Luo",
+ "date": "2025-12-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21540v1",
+ "abstract": "Existing approaches typically rely on fixed length penalties, but such penalties are hard to tune and fail to adapt to the evolving reasoning abilities of LLMs, leading to suboptimal trade-offs between accuracy and conciseness. To address this challenge, we propose Leash (adaptive LEngth penAlty and reward SHaping), a reinforcement learning framework for efficient reasoning in LLMs. We formulate length control as a constrained optimization problem and employ a Lagrangian primal-dual method to dynamically adjust the penalty coefficient. When generations exceed the target length, the penalty is intensified; when they are shorter, it is relaxed. This adaptive mechanism guides models toward producing concise reasoning without sacrificing task performance. Experiments on Deepseek-R1-Distill-Qwen-1.5B and Qwen3-4B-Thinking-2507 show that Leash reduces the average reasoning length by 60% across diverse tasks - including in-distribution mathematical reasoning and out-of-distribution domains such as coding and instruction following - while maintaining competitive performance. Our work thus presents a practical and effective paradigm for developing controllable and efficient LLMs that balance reasoning capabilities with computational budgets.",
+ "summary": "- 核心创新点（1句概括）：在大语言模型推理中提出 Leash，通过自适应的长度惩罚与奖励塑形，利用拉格朗日对偶优化动态调节惩罚系数，实现高效且不牺牲任务性能的推理长度控制。\n\n- 主要方法：将长度控制建模为约束优化问题，采用拉格朗日原对偶方法动态调整惩罚系数；在一个专门的强化学习框架下进行推理过程中的长度控制，惩罚随生成长度超出/低于目标而自适应增减；实验针对 Deepseek-R1-Distill-Qwen-1.5B 和 Qwen3-4B-Thinking-2507 等模型进行评估。\n\n- 结论/性能：在多任务场景（包括数学推理、编程、指令跟随等离分布域）中将平均推理长度减少约60%，同时保持具有竞争力的性能，展示了可控且高效的推理长度管理能力。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-29 02:54:45"
+}

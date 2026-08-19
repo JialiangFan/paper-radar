@@ -1,0 +1,13 @@
+{
+ "id": "2512.18616",
+ "title": "DASH: Deception-Augmented Shared Mental Model for a Human-Machine Teaming System",
+ "authors": "Zelin Wan, Han Jun Yoon, Nithin Alluru, Terrence J. Moore, Frederica F. Nelson, Seunghyun Yoon, Hyuk Lim, Dan Dongseong Kim, Jin-Hee Cho",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18616v1",
+ "abstract": "We present DASH (Deception-Augmented Shared mental model for Human-machine teaming), a novel framework that enhances mission resilience by embedding proactive deception into Shared Mental Models (SMM). Designed for mission-critical applications such as surveillance and rescue, DASH introduces \"bait tasks\" to detect insider threats, e.g., compromised Unmanned Ground Vehicles (UGVs), AI agents, or human analysts, before they degrade team performance. Upon detection, tailored recovery mechanisms are activated, including UGV system reinstallation, AI model retraining, or human analyst replacement. In contrast to existing SMM approaches that neglect insider risks, DASH improves both coordination and security. Empirical evaluations across four schemes (DASH, SMM-only, no-SMM, and baseline) show that DASH sustains approximately 80% mission success under high attack rates, eight times higher than the baseline. This work contributes a practical human-AI teaming framework grounded in shared mental models, a deception-based strategy for insider threat detection, and empirical evidence of enhanced robustness under adversarial conditions. DASH establishes a foundation for secure, adaptive human-machine teaming in contested environments.",
+ "summary": "- 核心创新点：将主动欺骗（bait tasks）融入共享心智模型（SMM），以检测并抑制内部威胁，从而提升人机协作的韧性与安全性。\n\n- 主要方法：提出 DASH 框架，在共享心智模型中嵌入欺骗性任务来发现内鬼威胁（包括受损的 UGV、AI 代理或人类分析师），威胁被检测后触发定制化恢复机制（如 UGV 系统重新安装、AI 模型再训练、替换分析师），并通过与 SMM-only、无 SMM、基线等对照实验进行评估。\n\n- 结论/性能：在高攻击率下，DASH 能维持约 80% 的任务成功率，约为基线的 8 倍，显示在对抗性环境中的更强协调性与安全性，并为基于共享心智模型的安全、可自适应人机协作提供实证支持。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-23 02:55:45"
+}

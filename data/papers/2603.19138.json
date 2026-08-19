@@ -1,0 +1,13 @@
+{
+ "id": "2603.19138",
+ "title": "Implicit Patterns in LLM-Based Binary Analysis",
+ "authors": "Qiang Li, XiangRui Zhang, Haining Wang",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19138v1",
+ "abstract": "Binary vulnerability analysis is increasingly performed by LLM-based agents in an iterative, multi-pass manner, with the model as the core decision-maker. However, how such systems organize exploration over hundreds of reasoning steps remains poorly understood, due to limited context windows and implicit token-level behaviors. We present the first large-scale, trace-level study showing that multi-pass LLM reasoning gives rise to structured, token-level implicit patterns. Analyzing 521 binaries with 99,563 reasoning steps, we identify four dominant patterns: early pruning, path-dependent lock-in, targeted backtracking, and knowledge-guided prioritization that emerge implicitly from reasoning traces. These token-level implicit patterns serve as an abstraction of LLM reasoning: instead of explicit control-flow or predefined heuristics, exploration is organized through implicit decisions regulating path selection, commitment, and revision. Our analysis shows these patterns form a stable, structured system with distinct temporal roles and measurable characteristics. Our results provide the first systematic characterization of LLM-driven binary analysis and a foundation for more reliable analysis systems.",
+ "summary": "- 核心创新点：首次对LLM驱动的二进制漏洞分析进行大规模跟踪分析，揭示并系统化多轮推理中的四个令牌级隐性模式，为理解与提升LLM推理驱动的分析提供可解释的抽象框架。\n\n- 主要方法：以大语言模型为核心决策者进行多轮推理的二进制分析，对521个二进制文件、共计99,563个推理步骤的推理轨迹进行逐步追踪分析，提取并归纳出早期剪枝、路径依赖锁定、定向回溯、知识驱动优先级等隐性模式。\n\n- 结论/性能：发现并描述这四大隐性模式，表明LLM推理探索可以通过隐性决策组织成一个稳定、结构化且具可测特征的系统；为理解、评估与提升LLM驱动的二进制分析提供了系统化的理论基础与评估框架。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-22 13:00:41"
+}

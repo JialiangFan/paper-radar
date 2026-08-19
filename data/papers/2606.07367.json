@@ -1,0 +1,13 @@
+{
+ "id": "2606.07367",
+ "title": "Self-evolving LLM agents with in-distribution Optimization",
+ "authors": "Yudi Zhang, Meng Fang, Zhenfang Chen, Mykola Pechenizkiy",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07367v1",
+ "abstract": "Large Language Models (LLMs) have recently emerged as powerful controllers for interactive agents in complex environments, yet training them to perform reliable long-horizon decision making remains a fundamental challenge. A key difficulty lies in credit assignment: agents often receive delayed rewards only at the end of episodes. In this paper, we propose Q-Evolve, a self-evolving framework for LLM agents that unifies automatic process-reward labeling and policy learning within a principled in-distribution reinforcement learning paradigm. In each evolving iteration, our method learns an in-distribution critic from a hybrid off-policy dataset that combines expert demonstrations with agent-generated trajectories, stabilizing Bellman backups in sparse-reward settings via a weighted Implicit Q-Learning objective. The learned value function is then used to derive step-wise process rewards through advantage estimation, enabling dense and reliable supervision without environment backtracking or human annotation. Leveraging these signals, we perform behavior-proximal policy optimization that evolves the agent over the data used for process reward labeling, allowing iterative self-improvement without exacerbating distribution shift. We evaluate our method on AlfWorld, WebShop, and ScienceWorld, showing Q-Evolve outperforms strong baselines in sample efficiency, robustness, and overall task performance. Our results demonstrate that stable agent self-evolution is achievable through the co-evolution of process-level supervision and policy, both grounded within a shared in-distribution learning loop.",
+ "summary": "# 论文总结：Q-Evolve\n\n## 1. 核心创新点\n提出 **Q-Evolve**——一个自演化框架，通过在分布内（in-distribution）强化学习范式，将**自动过程奖励标注**与**策略学习**统一起来，解决 LLM 智能体长程决策中的稀疏奖励与信用分配难题。\n\n## 2. 主要方法\n- **混合离策略数据集**：结合专家示范与智能体自生成轨迹。\n- **加权隐式 Q 学习（Implicit Q-Learning）**：训练分布内 critic，稳定稀疏奖励下的 Bellman 回传。\n- **过程奖励生成**：利用学到的价值函数通过优势估计导出步级（step-wise）密集奖励，无需环境回溯或人工标注。\n- **行为近端策略优化（behavior-proximal policy optimization）**：在用于奖励标注的同一数据上演化策略，避免分布偏移加剧，实现迭代自我改进。\n\n## 3. 结论/性能\n在 **AlfWorld、WebShop、ScienceWorld** 三个基准上，Q-Evolve 在**样本效率、鲁棒性和整体任务性能**上均超越了强基线，验证了过程级监督与策略协同演化的稳定自演化路径是可行的。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-08 13:01:02"
+}

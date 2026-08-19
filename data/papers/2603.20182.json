@@ -1,0 +1,13 @@
+{
+ "id": "2603.20182",
+ "title": "IndoorR2X: Indoor Robot-to-Everything Coordination with LLM-Driven Planning",
+ "authors": "Fan Yang, Soumya Teotia, Shaunak A. Mehta, Prajit KrisshnaKumar, Quanting Xie, Jun Liu, Yueqi Song, Li Wenkai, Atsunori Moteki, Kanji Uchino, Yonatan Bisk",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20182v1",
+ "abstract": "Although robot-to-robot (R2R) communication improves indoor scene understanding beyond what a single robot can achieve, R2R alone cannot overcome partial observability without substantial exploration overhead or scaling team size. In contrast, many indoor environments already include low-cost Internet of Things (IoT) sensors (e.g., cameras) that provide persistent, building-wide context beyond onboard perception. We therefore introduce IndoorR2X, the first benchmark and simulation framework for Large Language Model (LLM)-driven multi-robot task planning with Robot-to-Everything (R2X) perception and communication in indoor environments. IndoorR2X integrates observations from mobile robots and static IoT devices to construct a global semantic state that supports scalable scene understanding, reduces redundant exploration, and enables high-level coordination through LLM-based planning. IndoorR2X provides configurable simulation environments, sensor layouts, robot teams, and task suites to systematically evaluate high-level semantic coordination strategies. Extensive experiments across diverse settings demonstrate that IoT-augmented world modeling improves multi-robot efficiency and reliability, and we highlight key insights and failure modes for advancing LLM-based collaboration between robot teams and indoor IoT sensors.",
+ "summary": "- 核心创新点：提供首个面向室内场景的基于大语言模型的多机器人任务规划基准与仿真框架（IndoorR2X），通过与IoT传感的R2X感知与通信构建全局语义状态，从而实现高层次协同与高效场景理解。\n\n- 主要方法：将移动机器人观测与静态IoT设备观测集成，构建全局语义状态；利用大语言模型进行高层次任务规划与协同；提供可配置的仿真环境、传感器布局、机器人队伍和任务集，用于评估高层语义协调策略。\n\n- 结论/性能：在多种设置中实验表明，IoT增强的世界建模能够提高多机器人系统的效率与可靠性，并揭示推进LLM驱动的机器人团队与室内IoT协作的关键洞察与失效模式。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-23 13:06:52"
+}

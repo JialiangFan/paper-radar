@@ -1,0 +1,13 @@
+{
+ "id": "2608.10149",
+ "title": "REATS: LLM Reasoning-based Ensemble Learning for Adaptive Time Series Forecasting",
+ "authors": "Xu Zhang, Chang Xu, Hui Sun, Nan Ma, Zijian Zhang, Peng Wang, Wei Wang, Li Zhao",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10149v1",
+ "abstract": "Due to the diversity of real-world time series, no single forecasting model consistently dominates across all samples. Ensemble learning addresses this by combining complementary model strengths, yet existing methods rely on fixed rules or black-box models based solely on numerical inputs, failing to leverage LLM reasoning for interpretable weighting decisions. We propose REATS, which leverages LLM reasoning capabilities as an intelligent ensemble router that jointly processes textual temporal pattern descriptions and numerical features to produce interpretable, sample-adaptive ensemble weights through chain-of-thought reasoning. To enable effective LLM-based ensembling, we study its key design choices and propose: (i) a structured input pipeline that transforms raw time series into hybrid textual--numerical representations with fixed token cost, enabling rule-based chain-of-thought construction without API dependency, augmented with retrieved similar-sample priors; (ii) a diverse multi-row weight supervision scheme coupled with a token-efficient percentage-table format that reduces numerical complexity and mitigates LLM hallucinations; and (iii) a two-stage fine-tuning framework combining SFT with GRPO, where a reciprocal reward mapping transforms the continuous unbounded MSE gap into bounded signals with amplified near-oracle sensitivity, addressing the uniform sensitivity and outlier-dominated advantage compression inherent in naive reward designs for regression-based GRPO. Experiments on eight benchmarks demonstrate that REATS outperforms competitive ensemble baselines while providing natural language explanations and demonstrating strong transfer learning and out-of-domain generalization to unseen candidate models.",
+ "summary": "## REATS 论文摘要总结\n\n**1. 核心创新点**\n首次将大语言模型的推理能力用作时间序列预测的\"集成路由器\"，为每个样本自适应地生成可解释的模型集成权重。\n\n**2. 主要方法**\n- **结构化输入管线**：把原始时间序列转成\"文本描述 + 数值特征\"的混合表示，token 开销固定；基于规则构造思维链（CoT），无需调用外部 API，并检索相似样本作为先验补充。\n- **监督与格式设计**：采用多行多样化权重监督方案，配合 token 高效的\"百分比表格\"输出格式，降低数值复杂度、抑制 LLM 幻觉。\n- **两阶段微调**：SFT + GRPO。其中设计了倒数型奖励映射（reciprocal reward mapping），把无界连续的 MSE 差距转换为有界信号，并放大接近 oracle 区间的敏感度，以缓解回归型 GRPO 中\"敏感度均一\"和\"离群值主导导致优势压缩\"的问题。\n\n**3. 结论/性能**\n在 8 个基准数据集上超越了有竞争力的集成基线；同时能输出自然语言解释，并在迁移学习和面向未见候选模型的域外泛化上表现良好。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:01:05"
+}

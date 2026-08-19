@@ -1,0 +1,13 @@
+{
+ "id": "2602.02055",
+ "title": "FORLER: Federated Offline Reinforcement Learning with Q-Ensemble and Actor Rectification",
+ "authors": "Nan Qiao, Sheng Yue",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02055v1",
+ "abstract": "In Internet-of-Things systems, federated learning has advanced online reinforcement learning (RL) by enabling parallel policy training without sharing raw data. However, interacting with real environments online can be risky and costly, motivating offline federated RL (FRL), where local devices learn from fixed datasets. Despite its promise, offline FRL may break down under low-quality, heterogeneous data. Offline RL tends to get stuck in local optima, and in FRL, one device's suboptimal policy can degrade the aggregated model, i.e., policy pollution. We present FORLER, combining Q-ensemble aggregation on the server with actor rectification on devices. The server robustly merges device Q-functions to curb policy pollution and shift heavy computation off resource-constrained hardware without compromising privacy. Locally, actor rectification enriches policy gradients via a zeroth-order search for high-Q actions plus a bespoke regularizer that nudges the policy toward them. A $δ$-periodic strategy further reduces local computation. We theoretically provide safe policy improvement performance guarantees. Extensive experiments show FORLER consistently outperforms strong baselines under varying data quality and heterogeneity.",
+ "summary": "- 核心创新点：在服务器端通过 Q-ensemble 的鲁棒聚合抑制策略污染，同时在设备端使用 actor rectification（包含 zeroth-order 搜索高 Q 行动和定制正则化）实现离线联邦强化学习的安全、高效与鲁棒性。\n\n- 主要方法：\n  - 服务器端：对多设备的 Q 函数进行集成/鲁棒聚合，降低单个设备低质量数据对全局策略的污染，并将大量计算负担转移到服务器以保护隐私。\n  - 设备端（本地）：通过 actor rectification 增强策略梯度，使用 zeroth-order 搜索找到高 Q 行动并以定制正则化将策略引导向这些高 Q 行动；引入 δ-周期性策略以减少本地计算需求。\n  - 理论方面：给出安全的策略改进性能保证。\n  \n- 结论/性能：\n  - 实验表明在数据质量差异与数据异质性变化的场景下，FORLER 始终显著优于强基线，且具备理论上的安全性保证，展现出更好的鲁棒性和性能。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:00:50"
+}

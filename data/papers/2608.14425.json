@@ -1,0 +1,13 @@
+{
+ "id": "2608.14425",
+ "title": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+ "authors": "Toby D. Pilditch",
+ "date": "2026-08-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.14425v1",
+ "abstract": "LLM evaluations often use fixed sampling budgets, testing every item the same number of times even after estimates are precise. We introduce optstop, a precision-based adaptive stopping framework that treats evaluation as a sequential measurement problem: keep sampling where uncertainty remains high, and stop where estimates are precise or stable enough. The framework builds on hierarchical Bayesian inference, supports binary, ordinal, and continuous outcomes, and keeps every benchmark item eligible for sampling, without requiring a calibrated item bank. It runs live or retrospectively, and includes a safeguard that samples more cautiously as measured performance approaches zero, where rare successes matter most. In an illustrative 200-item, 10-epoch evaluation, it removes 57%-97% of planned trials across nine validation settings, with overall conclusions equivalent to the full run. These results show that LLM evaluation compute can be allocated by uncertainty rather than by fixed repetition counts, with the magnitude of savings depending on evaluation design.",
+ "summary": "1. **核心创新点**：提出 optstop——把 LLM 评测当作序贯测量问题，用「精度自适应」的最优停止规则替代固定采样预算，不确定性高的题目继续采样、估计已足够精确或稳定的题目就停。\n\n2. **主要方法**：基于分层贝叶斯推断（hierarchical Bayesian inference）建模，支持二元、有序和连续三类结果指标；不需要预先校准的题库，所有基准题目始终保持可被继续采样的资格；可在评测过程中实时运行，也可对已有结果回溯分析。另外设有一道安全阀：当实测性能接近 0 时（此时罕见的成功样本信息量最大）自动放慢停止、更谨慎地多采样。\n\n3. **结论/性能**：在一个 200 题、10 轮（epoch）的示例评测中，跨 9 种验证设置削减了 **57%–97%** 的计划试验次数，而整体结论与跑完全量一致。说明 LLM 评测算力可以按不确定性分配，而非按固定重复次数；不过节省幅度取决于具体的评测设计。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-17 13:01:54"
+}

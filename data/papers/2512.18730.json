@@ -1,0 +1,13 @@
+{
+ "id": "2512.18730",
+ "title": "A Theoretical Lens for RL-Tuned Language Models via Energy-Based Models",
+ "authors": "Zhiquan Tan, Yinrong Hong",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18730v1",
+ "abstract": "Large language models (LLMs) trained via KL-regularized reinforcement learning demonstrate strong instruction following, self-correction, and reasoning abilities. Yet their theoretical underpinnings remain limited. We exploit the closed-form energy-based model (EBM) structure of the optimal KL-regularized policy to provide a unified variational analysis of LLMs.\n  For instruction-tuned models, under natural assumptions on reward potentials and pretraining symmetry, we prove that the transition kernel satisfies detailed balance with respect to a scalar potential encoding response quality. This yields monotonic KL convergence to a high-quality stationary distribution, bounded hitting times to superior states, and exponential mixing governed by the spectral gap.\n  For reasoning models trained with verifiable rewards (RLVR), we show the objective is equivalent to expected KL minimization toward an optimal reasoning distribution, with the suboptimality gap reducing to the Bernoulli KL between target and current accuracies along the natural gradient flow. This helps explain empirical entropy-accuracy trade-offs.",
+ "summary": "- 核心创新点：提出将通过 KL-正则化的强化学习调控的语言模型视为能量基模型（EBM），建立一个统一的变分分析框架来解析其收敛性和混合性特性。\n\n- 主要方法：\n  - 将最优的 KL 正则化策略建模为闭式的能量基模型（EBM）结构，进行 variational（变分）分析。\n  - 指令微调（instruction-tuned）模型：在奖励势函数和预训练对称性假设下，证明转移核对响应质量满足细节平衡，从而得到对高质量稳态分布的单调 KL 收敛、对优越状态的击中时间有界、以谱隙驱动的指数混合等结论。\n  - 可验证奖励的推理模型（RLVR）：证明目标等价于向最优推理分布的期望 KL 最小化，子最优差距随自然梯度流退化为目标准确率与当前准确率之间的 Bernoulli KL，从而解释 entropy-accuracy 的权衡现象。\n\n- 结论/性能：\n  - 提供理论保障：KL 路径的单调收敛到高质量稳态、击中时间有界、指数混合速率等性质。\n  - 对 RLVR 的解释性结果：给出子最优界的表达和熵-准确度权衡的理论解释。\n  - 为理解 RL 调参下的语言模型行为提供了一个统一且具有解释性的理论框架。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:50:10"
+}

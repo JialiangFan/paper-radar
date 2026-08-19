@@ -1,0 +1,13 @@
+{
+ "id": "2604.19404",
+ "title": "M$^{2}$GRPO: Mamba-based Multi-Agent Group Relative Policy Optimization for Biomimetic Underwater Robots Pursuit",
+ "authors": "Yukai Feng, Zhiheng Wu, Zhengxing Wu, Junwen Gu, Junzhi Yu",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19404v1",
+ "abstract": "Traditional policy learning methods in cooperative pursuit face fundamental challenges in biomimetic underwater robots, where long-horizon decision making, partial observability, and inter-robot coordination require both expressiveness and stability. To address these issues, a novel framework called Mamba-based multi-agent group relative policy optimization (M$^{2}$GRPO) is proposed, which integrates a selective state-space Mamba policy with group-relative policy optimization under the centralized-training and decentralized-execution (CTDE) paradigm. Specifically, the Mamba-based policy leverages observation history to capture long-horizon temporal dependencies and exploits attention-based relational features to encode inter-agent interactions, producing bounded continuous actions through normalized Gaussian sampling. To further improve credit assignment without sacrificing stability, the group-relative advantages are obtained by normalizing rewards across agents within each episode and optimized through a multi-agent extension of GRPO, significantly reducing the demand for training resources while enabling stable and scalable policy updates. Extensive simulations and real-world pool experiments across team scales and evader strategies demonstrate that M$^{2}$GRPO consistently outperforms MAPPO and recurrent baselines in both pursuit success rate and capture efficiency. Overall, the proposed framework provides a practical and scalable solution for cooperative underwater pursuit with biomimetic robot systems.",
+ "summary": "- 核心创新点：在集中训练-分散执行框架下，提出基于 Mamba 的多智能体组相对策略优化（M2GRPO），通过長时观测历史与注意力关系特征编码智能体间互动，并结合组内奖励归一化的相对优势优化，实现高效、稳定的 biomimetic 水下追捕协同。\n\n- 主要方法：采用选择性状态空间的 Mamba 策略来捕捉长时序依赖（通过观测历史）、利用注意力机制建模多智能体关系与互动、输出受限的连续动作（标准化高斯采样）；在 CTDE 框架下通过对同一回合内的组内奖励归一化得到组相对优势，并以多智能体扩展的 GRPO 进行优化，从而实现稳定且高效的策略更新，显著降低训练资源需求。\n\n- 结论/性能：在广泛的仿真与真实泳池实验中，M2GRPO 在追捕成功率和捕获效率上持续优于 MAPPO 与循环基线，且在不同队伍规模和诱捕策略下均展现出更强的鲁棒性和可扩展性，证明其在水下协同追捕任务中的实用性与优越性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-22 13:03:05"
+}

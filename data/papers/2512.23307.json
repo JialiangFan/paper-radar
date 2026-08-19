@@ -1,0 +1,13 @@
+{
+ "id": "2512.23307",
+ "title": "RobustMask: Certified Robustness against Adversarial Neural Ranking Attack via Randomized Masking",
+ "authors": "Jiawei Liu, Zhuo Chen, Rui Zhu, Miaokun Chen, Yuyang Gong, Wei Lu, Xiaofeng Wang",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23307v1",
+ "abstract": "Neural ranking models have achieved remarkable progress and are now widely deployed in real-world applications such as Retrieval-Augmented Generation (RAG). However, like other neural architectures, they remain vulnerable to adversarial manipulations: subtle character-, word-, or phrase-level perturbations can poison retrieval results and artificially promote targeted candidates, undermining the integrity of search engines and downstream systems. Existing defenses either rely on heuristics with poor generalization or on certified methods that assume overly strong adversarial knowledge, limiting their practical use. To address these challenges, we propose RobustMask, a novel defense that combines the context-prediction capability of pretrained language models with a randomized masking-based smoothing mechanism. Our approach strengthens neural ranking models against adversarial perturbations at the character, word, and phrase levels. Leveraging both the pairwise comparison ability of ranking models and probabilistic statistical analysis, we provide a theoretical proof of RobustMask's certified top-K robustness. Extensive experiments further demonstrate that RobustMask successfully certifies over 20% of candidate documents within the top-10 ranking positions against adversarial perturbations affecting up to 30% of their content. These results highlight the effectiveness of RobustMask in enhancing the adversarial robustness of neural ranking models, marking a significant step toward providing stronger security guarantees for real-world retrieval systems.",
+ "summary": "- 核心创新点：提出 RobustMask，一种将随机掩蔽平滑与预训练语言模型的上下文预测能力结合的防御框架，为神经排序模型在字符、词、短语级对抗扰动下提供可认证的 top-K 鲁棒性。\n- 主要方法：通过随机掩蔽对输入进行扰动并利用上下文预测能力进行鲁棒化，结合排序模型的两两比较机制与概率分析，给出 certified top-K 鲁棒性的理论证明。\n- 结论/性能：在理论上证明了对前十名的鲁棒性可被认证；实验结果显示对影响高达30%内容的对抗扰动，能够认证前10名中超过20%的候选文档的鲁棒性，显著提升现实检索系统的安全性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-30 02:30:36"
+}

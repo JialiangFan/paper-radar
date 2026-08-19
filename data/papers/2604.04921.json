@@ -1,0 +1,13 @@
+{
+ "id": "2604.04921",
+ "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
+ "authors": "Weian Mao, Xi Lin, Wei Huang, Yuxin Xie, Tianfu Fu, Bohan Zhuang, Song Han, Yukang Chen",
+ "date": "2026-04-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.04921v1",
+ "abstract": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE queries. However, queries rotate with position during RoPE, making representative queries very few, leading to poor top-key selection and unstable reasoning. To avoid this issue, we turn to the pre-RoPE space, where we observe that Q and K vectors are highly concentrated around fixed non-zero centers and remain stable across positions -- Q/K concentration. We show that this concentration causes queries to preferentially attend to keys at specific distances (e.g., nearest keys), with the centers determining which distances are preferred via a trigonometric series. Based on this, we propose TriAttention to estimate key importance by leveraging these centers. Via the trigonometric series, we use the distance preference characterized by these centers to score keys according to their positions, and also leverage Q/K norms as an additional signal for importance estimation. On AIME25 with 32K-token generation, TriAttention matches Full Attention reasoning accuracy while achieving 2.5x higher throughput or 10.7x KV memory reduction, whereas leading baselines achieve only about half the accuracy at the same efficiency. TriAttention enables OpenClaw deployment on a single consumer GPU, where long context would otherwise cause out-of-memory with Full Attention.",
+ "summary": "- 核心创新点：在预 RoPE 空间发现 Q/K 的集中性且随位置稳定，揭示键的距离偏好可由一个三角级数描述，从而提出 TriAttention 用中心信息来高效估算 Key 重要性，实现长上下文推理的高吞吐与低内存开销。\n\n- 主要方法：提出 TriAttention 模块，基于前 RoPE 空间的 Q/K 集中性利用固定中心及其对应的距离偏好（通过三角级数建模）来对键进行打分并选择关键键，同时把 Q/K 范数作为额外信号，结合 KV 缓存压缩以实现高效的长上下文注意力。\n\n- 结论/性能：在 AIME25 的 32K-token 生成任务上，TriAttention 达到与全注意力相同的推理准确度，同时实现约 2.5x 的吞吐提升或 10.7x 的 KV 内存降低；相同效率下，基线方法仅能达到约一半的准确度。此外可在单个消费级 GPU 上通过 OpenClaw 部署，避免长上下文导致的显存瓶颈。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-07 13:00:51"
+}

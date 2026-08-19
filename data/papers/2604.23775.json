@@ -1,0 +1,32 @@
+{
+ "id": "2604.23775",
+ "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+ "authors": "Li, et al.",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2604.23775",
+ "abstract": "",
+ "summary": "This survey organizes VLA safety across attack timing and defense timing, explicitly identifying unified runtime safety architectures as an open problem.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "robotics",
+  "runtime-monitoring",
+  "runtime-safety",
+  "safe-vla",
+  "semantic-safety",
+  "survey",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2026_Li_VLASafetySurvey.md",
+ "pdf_path": "PDFs/VLA_Safety/2026_Li_VLASafetySurvey.pdf",
+ "code": "https://github.com/LiQiiiii/Awesome-VLA-Safety",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

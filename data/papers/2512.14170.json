@@ -1,0 +1,13 @@
+{
+ "id": "2512.14170",
+ "title": "On Improving Deep Active Learning with Formal Verification",
+ "authors": "Jonathan Spiegelman, Guy Amir, Guy Katz",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14170v1",
+ "abstract": "Deep Active Learning (DAL) aims to reduce labeling costs in neural-network training by prioritizing the most informative unlabeled samples for annotation. Beyond selecting which samples to label, several DAL approaches further enhance data efficiency by augmenting the training set with synthetic inputs that do not require additional manual labeling. In this work, we investigate how augmenting the training data with adversarial inputs that violate robustness constraints can improve DAL performance. We show that adversarial examples generated via formal verification contribute substantially more than those produced by standard, gradient-based attacks. We apply this extension to multiple modern DAL techniques, as well as to a new technique that we propose, and show that it yields significant improvements in model generalization across standard benchmarks.",
+ "summary": "- 核心创新点：将通过形式化验证生成的对抗样本用于扩增深度主动学习数据集，显著提升模型泛化能力，优于使用梯度对抗样本的做法。\n\n- 主要方法：在多种现代DAL框架基础上引入来自形式化验证的对抗输入作为合成数据，并提出一种新技术，将这种对抗样本融入主动学习流程；与基于梯度的对抗样本进行对比，验证形式化验证样本的更大效益。\n\n- 结论/性能：在标准基准上实现了显著的模型泛化提升，且形式化验证生成的对抗样本对性能的贡献大于传统梯度攻击。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-17 02:02:38"
+}

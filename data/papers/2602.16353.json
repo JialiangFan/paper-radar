@@ -1,0 +1,13 @@
+{
+ "id": "2602.16353",
+ "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+ "authors": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16353v1",
+ "abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods.",
+ "summary": "- 核心创新点：在窄环境下通过安全强化学习实现双四足协同搬运，提出成本-优势分解与约束分配机制，在全合作约束马尔可夫博弈中保证任务安全并提升协作绩效。\n\n- 主要方法：将任务建模为完全协作的约束马尔可夫博弈，将碰撞规避作为约束；提出成本-优势分解法以确保团队约束总和落在上限之下以保障安全；提出约束分配策略将共享约束分配给各个机器人以最大化团队奖励，促进自主任务分配和协作。\n\n- 结论/性能：通过仿真与实时实验表明，该方法在双四足协同搬运任务中实现更优的性能和更高的成功率，优于现有方法。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:00:39"
+}

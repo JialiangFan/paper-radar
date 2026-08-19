@@ -1,0 +1,13 @@
+{
+ "id": "2605.18137",
+ "title": "Xiaomi EV World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving",
+ "authors": "Lijun Zhou, Hongcheng Luo, Zhenxin Zhu, Cheng Chi, Mingfei Tu, Kaixin Xiong, Lei Gong, Zhanqian Wu, Zehan Zhang, Fangzhen Li, Hao Li, Yingying Shen, Jiale He, Haohui Zhu, Shan Zhao, Kai Wang, Zhiwei Zhan, Yuechuan Pu, Kaiyuan Tan, Ruiling Yang, Xianqi Wang, Tianyi Yan, Jiawei Zhou, Lei Zhang, Jingyang Zhao, Xi Zhou, Chitian Sun, Chenming Wu, Jiong Deng, Hongwei Xie, Ming Lu, Kun Ma, Long Chen, Guang Chen, Hangjun Ye, Bing Wang, Haiyang Sun",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.18137v1",
+ "abstract": "This report presents a unified technical system addressing the two core capabilities of world models for autonomous driving: world representation and world generation. For world representation, we propose WorldRec, a feed-forward reconstruction architecture driven by sparse scene queries. WorldRec initializes structured queries in 3D space, leveraging them to aggregate cross-view, cross-temporal features, thereby naturally enforcing spatial consistency across frames and yielding compact yet high-fidelity 3D Gaussian scene representations. For world generation, we propose WorldGen, a two-stage training framework of bidirectional pretraining followed by causal fine-tuning through three progressive stages (Teacher Forcing, ODE distillation, and DMD), enabling high-quality online causal video generation in as few as 4 denoising steps. Building on both modules, we further introduce the JWM, which deeply integrates WorldRec and WorldGen to achieve synergistic gains in generation stability, cross-frame consistency, and visual fidelity, providing a solid foundation for closed-loop simulation, data synthesis, and end-to-end training in autonomous driving.",
+ "summary": "# 小米电动车世界模型论文总结\n\n**1. 核心创新点**\n提出 JWM（联合世界模型），首次将 3D 场景重建（WorldRec）与视频生成（WorldGen）深度融合，统一解决自动驾驶世界模型的\"表征\"与\"生成\"两大核心能力。\n\n**2. 主要方法**\n- **WorldRec**：基于稀疏场景查询（sparse scene queries）的前馈式重建架构，在 3D 空间初始化结构化查询，聚合跨视角、跨时序特征，输出紧凑高保真的 3D 高斯（Gaussian）场景表征，天然保证空间一致性。\n- **WorldGen**：两阶段训练框架——双向预训练 + 因果微调（含 Teacher Forcing、ODE 蒸馏、DMD 三个渐进阶段），实现仅需 4 步去噪即可在线因果视频生成。\n- **JWM**：将两者深度耦合，相互增益。\n\n**3. 结论/性能**\n在生成稳定性、跨帧一致性和视觉保真度上实现协同增益，仅 4 步去噪即可完成高质量在线生成，为自动驾驶的闭环仿真、数据合成与端到端训练提供了坚实基础。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-19 13:25:37"
+}

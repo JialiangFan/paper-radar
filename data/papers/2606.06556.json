@@ -1,0 +1,13 @@
+{
+ "id": "2606.06556",
+ "title": "Robots Need More than VLA and World Models",
+ "authors": "Elis Karcini, Faisal Mehrban, Quang Nguyen, Mac Schwager, Arash Ajoudani, Cesar Cadena, Jan Peters, Marco Hutter, Haitham Bou-Ammar",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.06556v1",
+ "abstract": "Generalist robot intelligence is often framed as a policy-scaling problem: collect more robot demonstrations, train larger Vision-Language-Action (VLA) models, and expect broader generalisation. In this position paper, we argue that this framing is incomplete. The central bottleneck is not only policy learning, but the absence of mechanisms that convert the world's abundant unstructured behavioural data into grounded robot supervision. Human motion, internet video, simulation rollouts, and interactive demonstrations contain rich information about tasks, goals, contacts, failures, and physical constraints, yet most of this information is not directly usable by robot policies because it lacks embodiment-specific action labels, task semantics, and reward structure. We identify four missing components for the next generation of robotics: data interfaces for autolabelling unstructured behaviour, embodiment interfaces for retargeting human motion to robot actions, world-model interfaces for physics-grounded 3D reasoning, and reward interfaces for inferring task progress and success from video and language. We survey recent progress in robot foundation models, cross-embodiment datasets, learning from video, world models, and reward modelling, and propose a research agenda for building robotics systems that can learn not only from robot demonstrations, but from the broader physical world.",
+ "summary": "## 论文总结\n\n**核心创新点**：作者提出，通用机器人智能的真正瓶颈不在于扩大 VLA 策略模型规模，而在于缺乏将海量非结构化行为数据（人类动作、网络视频、仿真等）转化为机器人可用监督信号的\"接口\"机制。\n\n**主要方法**：这是一篇立场论文（position paper），作者梳理了机器人基础模型、跨形体数据集、视频学习、世界模型和奖励建模等方向的最新进展，并提出下一代机器人系统需要构建四类关键接口：\n1. **数据接口**：对非结构化行为进行自动标注；\n2. **形体接口**：将人类动作重定向到机器人动作；\n3. **世界模型接口**：实现基于物理的 3D 推理；\n4. **奖励接口**：从视频和语言中推断任务进度与成功信号。\n\n**结论/性能**：本文不提供实验结果，而是给出一份研究议程（research agenda），主张机器人系统应当从更广泛的物理世界数据中学习，而非仅依赖机器人示教数据，以此突破现有 VLA 范式的局限。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-08 13:02:50"
+}

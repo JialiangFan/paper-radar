@@ -1,0 +1,13 @@
+{
+ "id": "2606.17200",
+ "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
+ "authors": "Hao Li, Ganlong Zhao, Yufei Liu, Haotian Hou, Guoquan Ye, Tongyan Fang, Chunxiao Liu, Siyuan Huang, Jianbo Liu, Xiaogang Wang, Hongsheng Li",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.17200v1",
+ "abstract": "Vision-Language-Action (VLA) models benefit from large-scale and diverse embodied data, yet scaling robot trajectory collection is costly and labor-intensive. Recent advances show that large-scale egocentric human videos provide complementary real-world supervision in pretraining. However, joint training on human and robot data remains challenging due to divergences in action spaces, embodiment structures, temporal dynamics, and supervision quality. We introduce ACE-EGO-0, a unified VLA pretraining framework jointly leveraging heterogeneous data sources. To extract large-scale pretraining supervision from egocentric human videos, we build a scalable egocentric video-to-action pipeline that converts raw human videos into robot-format pseudo-action trajectories. To make these labels comparable with robot demonstrations, ACE-EGO-0 uses a unified action representation based on camera-space actions, morphology conditioning, and time-aligned action chunking. To robustly leverage noisy pseudo-action supervision from egocentric human videos, we formulate a reliability-aware training objective with a human auxiliary loss that concentrates supervision on reliable signals. We instantiate ACE-EGO-0 on 4.53K hours of robot and simulation data, together with 1.48K hours of pseudo-action-labeled egocentric human data. Experiments show that incorporating large-scale human supervision under reliability-aware weighting consistently improves both unified joint pretraining and supervised fine-tuning. ACE-EGO-0 achieves state-of-the-art performance on RoboCasa GR1 TableTop and RoboTwin 2.0, while demonstrating strong transfer to real-world bimanual manipulation.",
+ "summary": "**ACE-Ego-0 论文摘要总结**\n\n1. **核心创新点**：提出一个统一的 VLA（视觉-语言-动作）预训练框架，把大规模第一人称（egocentric）人类视频与机器人数据联合起来训练，从而低成本扩充具身数据。\n\n2. **主要方法**：\n   - 构建可扩展的\"视频转动作\"流水线，将原始人类第一人称视频转换成机器人格式的**伪动作轨迹**；\n   - 采用统一动作表示——基于相机空间动作、形态学条件化（morphology conditioning）和时间对齐的动作分块（action chunking）——使人类伪标签与机器人示范可比；\n   - 设计**可靠性感知（reliability-aware）训练目标**，配合人类辅助损失，把监督信号集中到可靠的部分，以应对伪标签噪声。\n   - 数据规模：4.53K 小时机器人+仿真数据 + 1.48K 小时伪动作标注的人类第一人称数据。\n\n3. **结论/性能**：在可靠性加权下引入大规模人类监督，对联合预训练和监督微调均有稳定提升；在 RoboCasa GR1 TableTop 和 RoboTwin 2.0 上达到 SOTA，并能很好地迁移到真实世界的双臂操作任务。\n\n---\n说明：你给的是自定义三点格式，我直接作答了。如果想要完整的中英双语文献综述版本（自动输出到 Obsidian），可以用 `/paper-review`。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-19 13:05:42"
+}

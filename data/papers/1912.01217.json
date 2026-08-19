@@ -1,0 +1,32 @@
+{
+ "id": "1912.01217",
+ "title": "SafeLife 1.0: Exploring Side Effects in Complex Environments",
+ "authors": "Wainwright, et al.",
+ "date": null,
+ "year": 2019,
+ "url": "https://arxiv.org/abs/1912.01217",
+ "abstract": "",
+ "summary": "SafeLife benchmarks side effects and impact regularization in complex gridworld environments.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "ai-safety",
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "side-effects"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2019_Wainwright_SafeLife.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2019_Wainwright_SafeLife.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

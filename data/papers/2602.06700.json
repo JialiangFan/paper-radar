@@ -1,0 +1,13 @@
+{
+ "id": "2602.06700",
+ "title": "Taipan: A Query-free Transfer-based Multiple Sensitive Attribute Inference Attack Solely from Publicly Released Graphs",
+ "authors": "Ying Song, Balaji Palanisamy",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06700v1",
+ "abstract": "Graph-structured data underpin a wide spectrum of modern applications. However, complex graph topologies and homophilic patterns can facilitate attribute inference attacks (AIAs) by enabling sensitive information leakage to propagate across local neighborhoods. Existing AIAs predominantly assume that adversaries can probe sensitive attributes through repeated model queries. Such assumptions are often impractical in real-world settings due to stringent data protection regulations, prohibitive query budgets, and heightened detection risks, especially when inferring multiple sensitive attributes. More critically, this model-centric perspective obscures a pervasive blind spot: \\textbf{intrinsic multiple sensitive information leakage arising solely from publicly released graphs.} To exploit this unexplored vulnerability, we introduce a new attack paradigm and propose \\textbf{Taipan, the first query-free transfer-based attack framework for multiple sensitive attribute inference attacks on graphs (G-MSAIAs).} Taipan integrates \\emph{Hierarchical Attack Knowledge Routing} to capture intricate inter-attribute correlations, and \\emph{Prompt-guided Attack Prototype Refinement} to mitigate negative transfer and performance degradation. We further present a systematic evaluation framework tailored to G-MSAIAs. Extensive experiments on diverse real-world graph datasets demonstrate that Taipan consistently achieves strong attack performance across same-distribution settings and heterogeneous similar- and out-of-distribution settings with mismatched feature dimensionalities, and remains effective even under rigorous differential privacy guarantees. Our findings underscore the urgent need for more robust multi-attribute privacy-preserving graph publishing methods and data-sharing practices.",
+ "summary": "- 核心创新点：提出首个无需查询、基于迁移的针对图数据的多敏感属性推断攻击框架 Taipan，能仅凭公开发布的图来实现多属性推断。\n\n- 主要方法：建立无查询的跨图迁移学习框架，核心组件包括分层攻击知识路由以捕捉属性之间的复杂相关性，以及提示引导的攻击原型精炼以缓解负迁移；并辅以系统化的评估框架在真实图数据上进行广泛实验。\n\n- 结论/性能：在同分布与异分布（相似与不同分布、特征维度不匹配）场景下均表现出强攻性能，且在严格的差分隐私保护下仍然有效，突出公开图数据在多属性隐私方面的脆弱性，强调需要更强的隐私保护的图数据发布与共享方法。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-09 14:02:15"
+}

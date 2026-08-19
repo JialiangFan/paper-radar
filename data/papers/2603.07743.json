@@ -1,0 +1,13 @@
+{
+ "id": "2603.07743",
+ "title": "Hide and Find: A Distributed Adversarial Attack on Federated Graph Learning",
+ "authors": "Jinshan Liu, Ken Li, Jiazhe Wei, Bin Shi, Bo Dong",
+ "date": "2026-03-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07743v1",
+ "abstract": "Federated Graph Learning (FedGL) is vulnerable to malicious attacks, yet developing a truly effective and stealthy attack method remains a significant challenge. Existing attack methods suffer from low attack success rates, high computational costs, and are easily identified and smoothed by defense algorithms. To address these challenges, we propose \\textbf{FedShift}, a novel two-stage \"Hide and Find\" distributed adversarial attack. In the first stage, before FedGL begins, we inject a learnable and hidden \"shifter\" into part of the training data, which subtly pushes poisoned graph representations toward a target class's decision boundary without crossing it, ensuring attack stealthiness during training. In the second stage, after FedGL is complete, we leverage the global model information and use the hidden shifter as an optimization starting point to efficiently find the adversarial perturbations. During the final attack, we aggregate these perturbations from multiple malicious clients to form the final effective adversarial sample and trigger the attack. Extensive experiments on six large-scale datasets demonstrate that our method achieves the highest attack effectiveness compared to existing advanced attack methods. In particular, our attack can effectively evade 3 mainstream robust federated learning defense algorithms and converges with a time cost reduction of over 90\\%, highlighting its exceptional stealthiness, robustness, and efficiency.",
+ "summary": "- 核心创新点：提出 FedShift，这是一种两阶段的分布式对抗攻击，在训练前通过注入可学习的隐藏“位移器”来隐蔽地引导被污染的图表示靠近目标分类边界；训练完成后再利用全局模型信息，以隐藏位移器为起点高效搜索并聚合多方扰动，从而显著提升攻击的 stealthiness、有效性与效率。\n\n- 主要方法：使用两阶段策略实现分布式对抗攻击。阶段一在 FedGL 开始前，将可学习的隐藏位移器注入部分训练数据，使被污染的图表示朝向目标分类边界但不越界；阶段二在 FedGL 完成后，借助全局模型信息和隐藏位移器作为优化起点，高效找到对抗扰动，并由多名恶意客户端聚合得到最终的对抗样本进行攻击。\n\n- 结论/性能：在六个大规模数据集上实现了最高的攻击有效性；能够有效绕过三种主流鲁棒联邦学习防御算法；并且在收敛时间上相比对比方法缩短超过90%，显示出极高的隐蔽性、鲁棒性与效率。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-10 13:01:54"
+}

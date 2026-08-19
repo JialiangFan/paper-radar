@@ -1,0 +1,13 @@
+{
+ "id": "2602.06911",
+ "title": "TamperBench: Systematically Stress-Testing LLM Safety Under Fine-Tuning and Tampering",
+ "authors": "Saad Hossain, Tom Tseng, Punya Syon Pandey, Samanvay Vajpayee, Matthew Kowal, Nayeema Nonta, Samuel Simko, Stephen Casper, Zhijing Jin, Kellin Pelrine, Sirisha Rambhatla",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06911v1",
+ "abstract": "As increasingly capable open-weight large language models (LLMs) are deployed, improving their tamper resistance against unsafe modifications, whether accidental or intentional, becomes critical to minimize risks. However, there is no standard approach to evaluate tamper resistance. Varied data sets, metrics, and tampering configurations make it difficult to compare safety, utility, and robustness across different models and defenses. To this end, we introduce TamperBench, the first unified framework to systematically evaluate the tamper resistance of LLMs. TamperBench (i) curates a repository of state-of-the-art weight-space fine-tuning attacks and latent-space representation attacks; (ii) enables realistic adversarial evaluation through systematic hyperparameter sweeps per attack-model pair; and (iii) provides both safety and utility evaluations. TamperBench requires minimal additional code to specify any fine-tuning configuration, alignment-stage defense method, and metric suite while ensuring end-to-end reproducibility. We use TamperBench to evaluate 21 open-weight LLMs, including defense-augmented variants, across nine tampering threats using standardized safety and capability metrics with hyperparameter sweeps per model-attack pair. This yields novel insights, including effects of post-training on tamper resistance, that jailbreak-tuning is typically the most severe attack, and that Triplet emerges as a leading alignment-stage defense. Code is available at: https://github.com/criticalml-uw/TamperBench",
+ "summary": "- 核心创新点（1 句概括）：提出首个统一框架 TamperBench，用于系统评估开放权重大模型在微调和篡改情境下的篡改抗性，确保可比性与可复现性。\n\n- 主要方法：\n  - 汇聚了前沿的权重空间微调攻击和潜在空间表示攻击的攻击库；\n  - 通过对每对攻击-模型进行系统化的超参数 Sweep，进行真实的对抗评估；\n  - 同时提供安全性和实用性（能力）评估指标，覆盖全面性能；\n  - 只需极少额外代码即可指定微调配置、对齐阶段防御与指标集，确保端到端复现；\n  - 在 21 个开源权重 LLM（含防御增强版本）上，针对 9 种篡改威胁进行评估。\n\n- 结论/性能：\n  - 提供了新的发现：后训练对篡改抗性有影响； Jailbreak-tuning 通常是最严重的攻击；Triplet 成为对齐阶段防御中的领跑方法；\n  - 证明 TamperBench 的可用性与可比性，适合跨模型、跨防御的系统性评估；\n  - 代码开源，便于他人复现实验与对比。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-09 14:01:28"
+}

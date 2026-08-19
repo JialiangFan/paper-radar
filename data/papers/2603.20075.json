@@ -1,0 +1,13 @@
+{
+ "id": "2603.20075",
+ "title": "Agentic Harness for Real-World Compilers",
+ "authors": "Yingwei Zheng, Cong Li, Shaohua Li, Yuqun Zhang, Zhendong Su",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20075v1",
+ "abstract": "Compilers are critical to modern computing, yet fixing compiler bugs is difficult. While recent large language model (LLM) advancements enable automated bug repair, compiler bugs pose unique challenges due to their complexity, deep cross-domain expertise requirements, and sparse, non-descriptive bug reports, necessitating compiler-specific tools. To bridge the gap, we introduce llvm-autofix, the first agentic harness designed to assist LLM agents in understanding and fixing compiler bugs. Our focus is on LLVM, one of the most widely used compiler infrastructures. Central to llvm-autofix are agent-friendly LLVM tools, a benchmark llvm-bench of reproducible LLVM bugs, and a tailored minimal agent llvm-autofix-mini for fixing LLVM bugs. Our evaluation demonstrates a performance decline of 60% in frontier models when tackling compiler bugs compared with common software bugs. Our minimal agent llvm-autofix-mini also outperforms the state-of-the-art by approximately 22%. This emphasizes the necessity for specialized harnesses like ours to close the loop between LLMs and compiler engineering. We believe this work establishes a foundation for advancing LLM capabilities in complex systems like compilers. GitHub: https://github.com/dtcxzyw/llvm-autofix",
+ "summary": "- **核心创新点**：提出首个面向代理的 harness（llvm-autofix），专门帮助LLM代理理解并修复LLVM编译器错误。\n- **主要方法**：引入面向代理的 LLVM 工具、可复现 LLVM 错误的基准集 llvm-bench，以及为 LLVM 错误修复定制的最小代理 llvm-autofix-mini，构成端到端的代理协作框架。\n- **结论/性能**：评估显示，前沿模型在应对编译器错误时相比处理普通软件错误的性能下降约60%；而最小代理 llvm-autofix-mini 相比现有最先进方法提升约22%。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:08:25"
+}

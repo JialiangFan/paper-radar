@@ -1,0 +1,13 @@
+{
+ "id": "2603.24558",
+ "title": "LensWalk: Agentic Video Understanding by Planning How You See in Videos",
+ "authors": "Keliang Li, Yansong Li, Hongze Shen, Mengdi Liu, Hong Chang, Shiguang Shan",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24558v1",
+ "abstract": "The dense, temporal nature of video presents a profound challenge for automated analysis. Despite the use of powerful Vision-Language Models, prevailing methods for video understanding are limited by the inherent disconnect between reasoning and perception: they rely on static, pre-processed information and cannot actively seek raw evidence from video as their understanding evolves. To address this, we introduce LensWalk, a flexible agentic framework that empowers a Large Language Model reasoner to control its own visual observation actively. LensWalk establishes a tight reason-plan-observe loop where the agent dynamically specifies, at each step, the temporal scope and sampling density of the video it observes. Using a suite of versatile, Vision-Language Model based tools parameterized by these specifications, the agent can perform broad scans for cues, focus on specific segments for fact extraction, and stitch evidence from multiple moments for holistic verification. This design allows for progressive, on-demand evidence gathering that directly serves the agent's evolving chain of thought. Without requiring any model fine-tuning, LensWalk delivers substantial, plug-and-play performance gains on multiple model recipes, boosting their accuracy by over 5\\% on challenging long-video benchmarks like LVBench and Video-MME. Our analysis reveals that enabling an agent to control how it sees is key to unlocking more accurate, robust, and interpretable video reasoning.",
+ "summary": "- 核心创新点：通过让大语言模型在视频理解中主动控制观察过程，建立一个持续的 reason-plan-observe 循环，按需设定时间范围与采样密度进行证据获取，从而实现自适应的逐步证据推理。\n\n- 主要方法：提出 LensWalk 框架，代理在推理中动态指定视频的观察参数（时间范围与采样密度），使用基于 Vision-Language 模型的工具集按参数化规格执行广泛扫描、聚焦片段的事实提取、以及将多时刻证据拼接进行综合验证；无需对模型进行微调，直接 plug-and-play。\n\n- 结论/性能：在 LVBench、Video-MME 等长视频基准上提升准确率超过 5%，显示让代理控制“如何观察”能显著提升视频推理的准确性、鲁棒性与可解释性。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-26 13:05:04"
+}

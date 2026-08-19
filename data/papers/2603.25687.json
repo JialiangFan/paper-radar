@@ -1,0 +1,13 @@
+{
+ "id": "2603.25687",
+ "title": "On Neural Scaling Laws for Weather Emulation through Continual Training",
+ "authors": "Shashank Subramanian, Alexander Kiefer, Arnur Nigmetov, Amir Gholami, Dmitriy Morozov, Michael W. Mahoney",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25687v1",
+ "abstract": "Neural scaling laws, which in some domains can predict the performance of large neural networks as a function of model, data, and compute scale, are the cornerstone of building foundation models in Natural Language Processing and Computer Vision. We study neural scaling in Scientific Machine Learning, focusing on models for weather forecasting. To analyze scaling behavior in as simple a setting as possible, we adopt a minimal, scalable, general-purpose Swin Transformer architecture, and we use continual training with constant learning rates and periodic cooldowns as an efficient training strategy. We show that models trained in this minimalist way follow predictable scaling trends and even outperform standard cosine learning rate schedules. Cooldown phases can be re-purposed to improve downstream performance, e.g., enabling accurate multi-step rollouts over longer forecast horizons as well as sharper predictions through spectral loss adjustments. We also systematically explore a wide range of model and dataset sizes under various compute budgets to construct IsoFLOP curves, and we identify compute-optimal training regimes. Extrapolating these trends to larger scales highlights potential performance limits, demonstrating that neural scaling can serve as an important diagnostic for efficient resource allocation. We open-source our code for reproducibility.",
+ "summary": "- 核心创新点：在天气仿真任务中将神经缩放规律应用于持续训练，结合极简的 Swin Transformer 架构与恒定学习率＋周期性 cooldown，揭示可预测的扩展性并用于指示高效的资源配置。\n\n- 主要方法：采用可扩展的 Swin Transformer；进行持续训练（恒定学习率＋定期 cooldown）并通过光谱损失调整提升预测；在不同模型规模、数据规模与计算预算下系统性构建 IsoFLOP 曲线以寻找计算最优训练规程，并与标准余弦学习率进行对比；并开源代码。\n\n- 结论/性能：在该最小化设置下呈现可预测的缩放趋势，且甚至优于常用的 cosine 学习率；cooldown 阶段可提升下游性能（如实现更长 horizon 的多步 rollout 与更尖锐的预测），并在更大规模下揭示潜在性能上限，表明神经缩放可作为资源分配的有效诊断工具。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:24"
+}

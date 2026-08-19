@@ -1,0 +1,13 @@
+{
+ "id": "2605.15964",
+ "title": "WorldVLN: Autoregressive World Action Model for Aerial Vision-Language Navigation",
+ "authors": "Baining Zhao, Jiacheng Xu, Weicheng Feng, Xin Zhang, Zhaolu Wang, Haoyang Wang, Shilong Ji, Ziyou Wang, Jianjie Fang, Zhiheng Zheng, Weichen Zhang, Yu Shang, Wei Wu, Chen Gao, Xinlei Chen, Yong Li",
+ "date": "2026-05-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.15964v1",
+ "abstract": "Aerial vision-language navigation (VLN) requires agents to follow natural-language instructions through closed-loop perception and action in 3D environments. We argue that aerial VLN can be formulated as a prediction-driven world-action problem: the agent should anticipate latent world evolution and act according to the predicted consequences. To this end, we propose WorldVLN, the first autoregressive world action model for aerial VLN. Unlike full-sequence video-generation world models that generate an entire visual clip, WorldVLN adapts a latent autoregressive video backbone to predict short-horizon world-state transitions and directly decodes them into executable waypoint actions. After each action segment is executed, newly received observations are encoded back into the autoregressive context, enabling closed-loop world-action prediction. We further introduce a two-stage training framework that first grounds the video prior in instruction-conditioned navigation dynamics and then develops Action-aware GRPO, the first reinforcement learning method tailored to autoregressive WAMs, to optimize waypoint decisions through their downstream rollout consequences. On public outdoor and indoor benchmarks, WorldVLN consistently outperforms existing Vision-Language-Action baselines with 12\\%+ success-rate gains and larger advantages on challenging cases. It further transfers zero-shot to real drone deployment, suggesting that the proposed WorldVLN offers a promising route for spatial action tasks. Demos and code are available at https://embodiedcity.github.io/WorldVLN/.",
+ "summary": "# WorldVLN 论文总结\n\n1. **核心创新点**：首次提出面向空中视觉-语言导航（VLN）的自回归\"世界-动作\"模型，将导航问题重构为\"预测潜在世界演化并据此行动\"的闭环预测驱动任务。\n\n2. **主要方法**：基于潜在自回归视频生成骨干网络，预测短时程世界状态转移并直接解码为可执行的航点动作；执行后将新观测重新编码进自回归上下文形成闭环；采用两阶段训练框架——先用指令条件下的导航动态对视频先验进行接地，再通过首创的 Action-aware GRPO 强化学习方法，依据下游 rollout 结果优化航点决策。\n\n3. **结论/性能**：在公开的室内外基准上相比现有 VLA 基线成功率提升 12% 以上，在复杂场景中优势更显著；并可零样本迁移到真实无人机部署，验证了该方法在空间动作任务上的可行性。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-24 13:04:17"
+}

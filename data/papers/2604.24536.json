@@ -1,0 +1,13 @@
+{
+ "id": "2604.24536",
+ "title": "Generating Place-Based Compromises Between Two Points of View",
+ "authors": "Sumanta Bhattacharyya, Francine Chen, Scott Carter, Yan-Ying Chen, Tatiana Lau, Nayeli Suseth Bravo, Monica P. Van, Kate Sieck, Charlene C. Wu",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24536v1",
+ "abstract": "Large Language Models (LLMs) excel academically but struggle with social intelligence tasks, such as creating good compromises. In this paper, we present methods for generating empathically neutral compromises between two opposing viewpoints. We first compared four different prompt engineering methods using Claude 3 Opus and a dataset of 2,400 contrasting views on shared places. A subset of the gen erated compromises was evaluated for acceptability in a 50-participant study. We found that the best method for generating compromises between two views used external empathic similarity between a compromise and each viewpoint as iterative feedback, outperforming stan dard Chain of Thought (CoT) reasoning. The results indicate that the use of empathic neutrality improves the acceptability of compromises. The dataset of generated compromises was then used to train two smaller foundation models via margin-based alignment of human preferences, improving efficiency and removing the need for empathy estimation during inference.",
+ "summary": "- 核心创新点：提出一种基于对妥协与各观点之间的外部同理性相似性作为迭代反馈的方法，在两个对立观点之间生成情感上中性的妥协，并用这些妥协数据训练更小的基础模型以实现人类偏好对齐且不需推理阶段的同理估计。\n\n- 主要方法：\n  - 比较四种提示工程方法，使用 Claude 3 Opus，基于一个包含 2,400 对比观点的“共同地点”数据集。\n  - 对生成的妥协样本进行可接受性评估（50 名参与者的实验）。\n  - 发现最佳方法是利用外部同理性相似性作为对每个观点的迭代反馈来生成妥协，效果优于标准链式推理（CoT）。\n  - 将生成的妥协数据用于通过边际对齐的人类偏好来训练两种较小的基础模型，提高效率并在推理阶段移除对同理估计的需求。\n\n- 结论/性能：\n  - 使用外部同理性反馈的生成方法在妥协的可接受性方面优于基线的 CoT 方法，显示同理性中立性有助于提升接受度。\n  - 通过对生成数据进行 margin-based 人类偏好对齐，训练出的两种小型基础模型在效率上有显著提升且无需在推理时进行同理估计。",
+ "keyword": "opus",
+ "source": "auto",
+ "created_at": "2026-04-28 19:52:20"
+}

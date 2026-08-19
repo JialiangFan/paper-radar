@@ -1,0 +1,27 @@
+{
+ "id": "safe-learning-for-contact-rich-robot-tasks",
+ "title": "Safe Learning for Contact-Rich Robot Tasks",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "机器人日益需要在非结构化动态环境中操作，装配、插入、切割等接触密集型任务因复杂的不连续动力学和精确力控需求而极具挑战性。学习方法虽带来灵活性，但在接触任务中应用引发严重安全顾虑。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Safe Learning for Contact-Rich Robot Tasks - A Survey.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

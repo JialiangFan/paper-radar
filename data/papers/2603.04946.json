@@ -1,0 +1,13 @@
+{
+ "id": "2603.04946",
+ "title": "LocalSUG: Geography-Aware LLM for Query Suggestion in Local-Life Services",
+ "authors": "Jinwen Chen, Shuai Gong, Shiwen Zhang, Zheng Zhang, Yachao Zhao, Lingxiang Wang, Haibo Zhou, Yuan Zhan, Wei Lin, Hainan Zhang",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04946v1",
+ "abstract": "In local-life service platforms, the query suggestion module plays a crucial role in enhancing user experience by generating candidate queries based on user input prefixes, thus reducing user effort and accelerating search. Traditional multi-stage cascading systems rely heavily on historical top queries, limiting their ability to address long-tail demand. While LLMs offer strong semantic generalization, deploying them in local-life services introduces three key challenges: lack of geographic grounding, exposure bias in preference optimization, and online inference latency. To address these issues, we propose LocalSUG, an LLM-based query suggestion framework tailored for local-life service platforms. First, we introduce a city-aware candidate mining strategy based on term co-occurrence to inject geographic grounding into generation. Second, we propose a beam-search-driven GRPO algorithm that aligns training with inference-time decoding, reducing exposure bias in autoregressive generation. A multi-objective reward mechanism further optimizes both relevance and business-oriented metrics. Finally, we develop quality-aware beam acceleration and vocabulary pruning techniques that significantly reduce online latency while preserving generation quality. Extensive offline evaluations and large-scale online A/B testing demonstrate that LocalSUG improves click-through rate (CTR) by +0.35% and reduces the low/no-result rate by 2.56%, validating its effectiveness in real-world deployment.",
+ "summary": "1. 核心创新点（1 句话）\n- 提出 LocalSUG，一种地理感知的 LLM 查询推荐框架，通过地理候选挖掘、对齐训练与推理的光束搜索 GRPO、以及多目标奖励与质量感知加速机制，解决地理 grounding、曝光偏差和在线延迟问题。\n\n2. 主要方法\n- 城市感知的候选挖掘策略：基于术语共现实现地理 grounding，注入地理信息到候选查询中。\n- 光束搜索驱动的 GRPO 算法：使训练与推理时的解码过程对齐，降低自回归生成中的曝光偏差。\n- 多目标奖励机制：在优化过程中同时考虑相关性与业务指标。\n- 质量感知的 beam 加速与词表裁剪：在降低在线延迟的同时尽量保持生成质量。\n- 基于大语言模型的查询推荐框架，综合解决现实场景中的地理性、顺应性与性能问题。\n\n3. 结论/性能\n- 离线评测与大规模在线 A/B 测试均表明 LocalSUG 有效提升实际效果：CTR 提升约 0.35%，低/无结果率下降约 2.56%，并在显著降低在线延迟的同时保持生成质量。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-06 14:02:38"
+}

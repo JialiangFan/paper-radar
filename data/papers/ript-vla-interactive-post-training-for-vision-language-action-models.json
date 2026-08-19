@@ -1,0 +1,27 @@
+{
+ "id": "ript-vla-interactive-post-training-for-vision-language-action-models",
+ "title": "RIPT-VLA: Interactive Post-Training for Vision-Language-Action Models",
+ "authors": "Shuhan Tan, Kairan Dou, Yue Zhao, Philipp Krahenbuhl",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-Language-Action (VLA) 模型旨在使agent能够感知、推理并在物理世界中执行动作，通常采用两阶段监督学习范式进行训练：大规模预训练和监督微调 (SFT)。然而，这种纯监督方法存在固有局限——模型从未观察到自身动作的后果，且在少样本场景下性能显著退化。受大语言模型 (LLM) 中reinforcement learnin...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2505.17016)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/RIPT-VLA - Interactive Post-Training for VLA Models.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.08524",
+ "title": "What Drives Representation Steering? A Mechanistic Case Study on Steering Refusal",
+ "authors": "Stephen Cheng, Sarah Wiegreffe, Dinesh Manocha",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08524v1",
+ "abstract": "Applying steering vectors to large language models (LLMs) is an efficient and effective model alignment technique, but we lack an interpretable explanation for how it works-- specifically, what internal mechanisms steering vectors affect and how this results in different model outputs. To investigate the causal mechanisms underlying the effectiveness of steering vectors, we conduct a comprehensive case study on refusal. We propose a multi-token activation patching framework and discover that different steering methodologies leverage functionally interchangeable circuits when applied at the same layer. These circuits reveal that steering vectors primarily interact with the attention mechanism through the OV circuit while largely ignoring the QK circuit-- freezing all attention scores during steering drops performance by only 8.75% across two model families. A mathematical decomposition of the steered OV circuit further reveals semantically interpretable concepts, even in cases where the steering vector itself does not. Leveraging the activation patching results, we show that steering vectors can be sparsified by up to 90-99% while retaining most performance, and that different steering methodologies agree on a subset of important dimensions.",
+ "summary": "- 核心创新点：提出一个多-token 激活补丁框架来揭示 steering 向量的工作机理，发现其通过 OV 电路与注意力交互，并可在同一层复用功能电路，同时实现对 steering 向量的高效稀疏化而保持大部分性能。\n\n- 主要方法：采用多-token 激活补丁框架对不同 steering 方法在注意力中的作用进行因果分析，比较 OV 电路与 QK 电路的贡献，对 steered OV 电路进行数学分解，并在两个模型家族上验证冻结注意力分数与稀疏化的影响及跨方法的一致性。\n\n- 结论/性能：冻结全部注意力分数对性能的下降仅约 8.75%（在两大模型家族间），OV 电路的分解能产生可解释的语义概念；通过激活补丁可以将 steering 向量稀疏化 90-99% 而仍保留大部分性能，并且不同 steering 方法在一组重要维度上达成共识。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-10 13:00:41"
+}

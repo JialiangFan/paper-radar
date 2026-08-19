@@ -1,0 +1,13 @@
+{
+ "id": "2603.28767",
+ "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
+ "authors": "Kaituo Feng, Manyuan Zhang, Shuang Chen, Yunlong Lin, Kaixuan Fan, Yilei Jiang, Hongyu Li, Dian Zheng, Chenyang Wang, Xiangyu Yue",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28767v1",
+ "abstract": "Recent image generation models have shown strong capabilities in generating high-fidelity and photorealistic images. However, they are fundamentally constrained by frozen internal knowledge, thus often failing on real-world scenarios that are knowledge-intensive or require up-to-date information. In this paper, we present Gen-Searcher, as the first attempt to train a search-augmented image generation agent, which performs multi-hop reasoning and search to collect the textual knowledge and reference images needed for grounded generation. To achieve this, we construct a tailored data pipeline and curate two high-quality datasets, Gen-Searcher-SFT-10k and Gen-Searcher-RL-6k, containing diverse search-intensive prompts and corresponding ground-truth synthesis images. We further introduce KnowGen, a comprehensive benchmark that explicitly requires search-grounded external knowledge for image generation and evaluates models from multiple dimensions. Based on these resources, we train Gen-Searcher with SFT followed by agentic reinforcement learning with dual reward feedback, which combines text-based and image-based rewards to provide more stable and informative learning signals for GRPO training. Experiments show that Gen-Searcher brings substantial gains, improving Qwen-Image by around 16 points on KnowGen and 15 points on WISE. We hope this work can serve as an open foundation for search agents in image generation, and we fully open-source our data, models, and code.",
+ "summary": "- 核心创新点：首次提出一个具备多跳推理与检索能力的图像生成代理 Gen-Searcher，用检索来支撑知识性、时效性强的图像生成。\n\n- 主要方法：\n  - 构建数据管线，创建 Gen-Searcher-SFT-10k 和 Gen-Searcher-RL-6k 两个数据集，覆盖检索密集型提示及对应的真实合成图。\n  - 提出 KnowGen 基准，专门评估需要检索外部知识的图像生成能力。\n  - 以监督微调（SFT）为起点，随后采用双奖励的代理式强化学习（GRPO），结合文本奖励和图像奖励进行训练。\n\n- 结论/性能：\n  - 实验显示 Gen-Searcher 相对基线 Qwen-Image，在 KnowGen 上提升约 16 点，在 WISE 上提升约 15 点。\n  - 同时开源数据、模型和代码，便于后续研究。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-31 13:07:54"
+}

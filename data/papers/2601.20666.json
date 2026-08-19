@@ -1,0 +1,31 @@
+{
+ "id": "2601.20666",
+ "title": "Learning Contextual Runtime Monitors for Safe AI-Based Autonomy",
+ "authors": "Yuan, et al.",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2601.20666",
+ "abstract": "",
+ "summary": "This paper formulates monitor selection for AI controller ensembles as a contextual monitoring problem.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "controller-ensembles",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "safe-autonomy",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2026_Yuan_ContextualRuntimeMonitors.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2026_Yuan_ContextualRuntimeMonitors.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

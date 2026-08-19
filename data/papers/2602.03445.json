@@ -1,0 +1,30 @@
+{
+ "id": "2602.03445",
+ "title": "CRL-VLA: Continual Vision-Language-Action Learning",
+ "authors": "CRL-VLA authors",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2602.03445",
+ "abstract": "",
+ "summary": "Complements LifeLong-RFT with a continual reinforcement learning framing.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "continual-learning",
+  "reinforcement-learning",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-post-training"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/2026_CRL_VLA.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Post_Training/2026_CRL_VLA.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

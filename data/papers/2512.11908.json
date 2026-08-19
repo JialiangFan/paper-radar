@@ -1,0 +1,13 @@
+{
+ "id": "2512.11908",
+ "title": "Safe Learning for Contact-Rich Robot Tasks: A Survey from Classical Learning-Based Methods to Safe Foundation Models",
+ "authors": "Heng Zhang, Rui Dai, Gokhan Solak, Pokuang Zhou, Yu She, Arash Ajoudani",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11908v1",
+ "abstract": "Contact-rich tasks pose significant challenges for robotic systems due to inherent uncertainty, complex dynamics, and the high risk of damage during interaction. Recent advances in learning-based control have shown great potential in enabling robots to acquire and generalize complex manipulation skills in such environments, but ensuring safety, both during exploration and execution, remains a critical bottleneck for reliable real-world deployment. This survey provides a comprehensive overview of safe learning-based methods for robot contact-rich tasks. We categorize existing approaches into two main domains: safe exploration and safe execution. We review key techniques, including constrained reinforcement learning, risk-sensitive optimization, uncertainty-aware modeling, control barrier functions, and model predictive safety shields, and highlight how these methods incorporate prior knowledge, task structure, and online adaptation to balance safety and efficiency. A particular emphasis of this survey is on how these safe learning principles extend to and interact with emerging robotic foundation models, especially vision-language models (VLMs) and vision-language-action models (VLAs), which unify perception, language, and control for contact-rich manipulation. We discuss both the new safety opportunities enabled by VLM/VLA-based methods, such as language-level specification of constraints and multimodal grounding of safety signals, and the amplified risks and evaluation challenges they introduce. Finally, we outline current limitations and promising future directions toward deploying reliable, safety-aligned, and foundation-model-enabled robots in complex contact-rich environments. More details and materials are available at our \\href{ https://github.com/jack-sherman01/Awesome-Learning4Safe-Contact-rich-tasks}{Project GitHub Repository}.",
+ "summary": "- 核心创新点：系统性梳理面向接触丰富任务的安全学习方法，并前瞻性分析其与视觉-语言基础模型的耦合，以在确保安全的前提下提升操控性能。  \n\n- 主要方法：将安全学习分为安全探索和安全执行两大域，覆盖约束强化学习、风险敏感优化、不确定性建模、控制屏障函数，以及模型预测安全护盾等技术，强调结合先验知识、任务结构和在线自适应来平衡安全与效率；并重点探讨将视觉-语言模型（VLM）与视觉-语言行动模型（VLA）用于感知-语言-控制的统一框架，提供语言层面的约束规范和多模态安全信号的 grounding。  \n\n- 结论/性能：在理论和应用层面推动了接触丰富任务的安全学习探索与执行框架，但现实部署仍面临评估标准、鲁棒性与风险控制等挑战；未来需要更可靠的安全对齐、与基础模型的深度整合，以及面向真实场景的统一评估方法。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-16 02:01:56"
+}

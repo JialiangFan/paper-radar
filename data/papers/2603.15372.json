@@ -1,0 +1,13 @@
+{
+ "id": "2603.15372",
+ "title": "SKILLS: Structured Knowledge Injection for LLM-Driven Telecommunications Operations",
+ "authors": "Ivo Brett",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15372v1",
+ "abstract": "As telecommunications operators accelerate adoption of AI-enabled automation, a practical question remains unresolved: can general-purpose large language model (LLM) agents reliably execute telecom operations workflows through real API interfaces, or do they require structured domain guidance? We introduce SKILLS (Structured Knowledge Injection for LLM-driven Service Lifecycle operations), a benchmark framework comprising 37 telecom operations scenarios spanning 8 TM Forum Open API domains (TMF620, TMF621, TMF622, TMF628, TMF629, TMF637, TMF639, TMF724). Each scenario is grounded in live mock API servers with seeded production-representative data, MCP tool interfaces, and deterministic evaluation rubrics combining response content checks, tool-call verification, and database state assertions. We evaluate open-weight models under two conditions: baseline (generic agent with tool access but no domain guidance) and with-skill (agent augmented with a portable SKILL.md document encoding workflow logic, API patterns, and business rules). Results across 5 open-weight model conditions and 185 scenario-runs show consistent skill lift across all models. MiniMax M2.5 leads (81.1% with-skill, +13.5pp), followed by Nemotron 120B (78.4%, +18.9pp), GLM-5 Turbo (78.4%, +5.4pp), and Seed 2.0 Lite (75.7%, +18.9pp).",
+ "summary": "- 核心创新点（1 句话）\n  提出可移植的结构化知识注入框架 SKILLS，通过将工作流逻辑、API 模式和业务规则以 SKILL.md 形式嵌入，从而显著提升通用大语言模型代理在真实 API 场景下执行电信运维工作流的可靠性。\n\n- 主要方法\n  - 构建 SKILLS 基准框架，覆盖 37 个电信运维场景，跨 8 个 TM Forum Open API 域（TMF620、TMF621、TMF622、TMF628、TMF629、TMF637、TMF639、TMF724）。\n  - 场景基于实时的 Mock API 服务器、种子生产数据、MCP 工具接口，采用确定性评估 Rubric（响应内容、工具调用、数据库状态断言）。\n  - 对比两种条件的开源权重模型：baseline（仅具备工具访问，无领域指导）与 with-skill（通过可移植的 SKILL.md 注入工作流逻辑、API 模式和业务规则）。\n  - 评估方法涵盖多模型、多场景的系统化对比，验证 SKILL 注入的通用性与鲁棒性。\n\n- 结论/性能\n  - 在 5 种开源权重模型条件下、共 185 次场景运行中均观察到“技能提升”（with-skill 相对于 baseline）。\n  - 具体表现：MiniMax M2.5 81.1%（提升 13.5 个百分点）、Nemotron 120B 78.4%（提升 18.9pp）、GLM-5 Turbo 78.4%（提升 5.4pp）、Seed 2.0 Lite 75.7%（提升 18.9pp）。\n  - 结论：结构化知识注入的 SKILLS 能在跨域、多模型的真实 API 场景中实现一致的性能提升，推动 LLM 驱动的电信运维自动化的稳定性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-17 13:04:49"
+}

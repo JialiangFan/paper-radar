@@ -1,0 +1,13 @@
+{
+ "id": "2512.11783",
+ "title": "Super Suffixes: Bypassing Text Generation Alignment and Guard Models Simultaneously",
+ "authors": "Andrew Adiletta, Kathryn Adiletta, Kemal Derya, Berk Sunar",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11783v1",
+ "abstract": "The rapid deployment of Large Language Models (LLMs) has created an urgent need for enhanced security and privacy measures in Machine Learning (ML). LLMs are increasingly being used to process untrusted text inputs and even generate executable code, often while having access to sensitive system controls. To address these security concerns, several companies have introduced guard models, which are smaller, specialized models designed to protect text generation models from adversarial or malicious inputs. In this work, we advance the study of adversarial inputs by introducing Super Suffixes, suffixes capable of overriding multiple alignment objectives across various models with different tokenization schemes. We demonstrate their effectiveness, along with our joint optimization technique, by successfully bypassing the protection mechanisms of Llama Prompt Guard 2 on five different text generation models for malicious text and code generation. To the best of our knowledge, this is the first work to reveal that Llama Prompt Guard 2 can be compromised through joint optimization.\n  Additionally, by analyzing the changing similarity of a model's internal state to specific concept directions during token sequence processing, we propose an effective and lightweight method to detect Super Suffix attacks. We show that the cosine similarity between the residual stream and certain concept directions serves as a distinctive fingerprint of model intent. Our proposed countermeasure, DeltaGuard, significantly improves the detection of malicious prompts generated through Super Suffixes. It increases the non-benign classification rate to nearly 100%, making DeltaGuard a valuable addition to the guard model stack and enhancing robustness against adversarial prompt attacks.",
+ "summary": "- 核心创新点（一句话）：\n  首次提出的 Super Suffixes 及联合优化方法能够跨模型与不同分词方案绕过文本生成对齐目标与守护模型，同时提出 DeltaGuard 的轻量化检测基线，用于识别这类攻击。\n\n- 主要方法（简述技术/模型）：\n  - 提出 Super Suffixes 机制，利用跨模型、跨分词方案的对齐目标覆盖来绕过对文本生成的保护（包括多模型守护机制如 Llama Prompt Guard 2）。\n  - 通过联合优化实现对上述防护的绕过，实验覆盖五种文本生成模型的恶意文本与代码生成场景。\n  - 提出 DeltaGuard：基于残差流与特定概念方向的余弦相似度，作为模型意图的指纹进行轻量化的恶意提示检测，显著提升检测能力。\n\n- 结论/性能（取得的效果）：\n  - 证明 Super Suffixes 能绕过多模型守护机制（包括对 Llama Prompt Guard 2 的防护），在五个模型上实现恶意文本与代码生成的攻防绕过。\n  - DeltaGuard 能显著提升对这类攻击的检测率，非恶意分类（正确拒识恶意提示）接近 100%，为守护模型堆栈提供了有效的轻量化防护手段。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-15 14:01:09"
+}

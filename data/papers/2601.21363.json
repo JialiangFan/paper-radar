@@ -1,0 +1,13 @@
+{
+ "id": "2601.21363",
+ "title": "Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control",
+ "authors": "Weidong Huang, Zhehan Li, Hangxin Liu, Biao Hou, Yao Su, Jingwen Zhang",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21363v1",
+ "abstract": "Reinforcement learning (RL) is widely used for humanoid control, with on-policy methods such as Proximal Policy Optimization (PPO) enabling robust training via large-scale parallel simulation and, in some cases, zero-shot deployment to real robots. However, the low sample efficiency of on-policy algorithms limits safe adaptation to new environments. Although off-policy RL and model-based RL have shown improved sample efficiency, the gap between large-scale pretraining and efficient finetuning on humanoids still exists. In this paper, we find that off-policy Soft Actor-Critic (SAC), with large-batch update and a high Update-To-Data (UTD) ratio, reliably supports large-scale pretraining of humanoid locomotion policies, achieving zero-shot deployment on real robots. For adaptation, we demonstrate that these SAC-pretrained policies can be finetuned in new environments and out-of-distribution tasks using model-based methods. Data collection in the new environment executes a deterministic policy while stochastic exploration is instead confined to a physics-informed world model. This separation mitigates the risks of random exploration during adaptation while preserving exploratory coverage for improvement. Overall, the approach couples the wall-clock efficiency of large-scale simulation during pretraining with the sample efficiency of model-based learning during fine-tuning.",
+ "summary": "- 核心创新点：提出一个“大规模预训练+模型基微调”的框架，通过在大规模并行仿真中使用具有大批量更新与高更新-数据比（UTD）的离策略SAC进行预训练，以实现对真实机器人零-shot部署，并在微调阶段将探索限定在物理知识驱动的世界模型中进行模型基学习，从而兼顾预训练的效率和微调的样本效率。\n\n- 主要方法：利用离策略Soft Actor-Critic（SAC）在大批量更新和高UTD条件下对 humanoid 行走策略进行预训练；在微调阶段采用模型基方法，在新环境和OOD任务中进行学习，数据采集使用确定性策略，而探索由一个物理知化的世界模型承担，实现探索的安全性与覆盖性分离。\n\n- 结论/性能：实现了从预训练到现实部署的高效桥接：SAC预训练得到的策略可以零-shot部署到真实机器人；在新环境与OOD任务中通过模型基微调获得更好的样本效率，且探索风险被减小、同时保持对性能改进的探索能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:01:00"
+}

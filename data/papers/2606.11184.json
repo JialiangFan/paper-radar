@@ -1,0 +1,13 @@
+{
+ "id": "2606.11184",
+ "title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
+ "authors": "Yujie Zang, Yuhang Zheng, Xian Nie, Yupeng Zheng, Shuai Tian, Songen Gu, Chen Gao, Zining Wang, Shuicheng Yan, Wenchao Ding",
+ "date": "2026-06-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.11184v1",
+ "abstract": "Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force and local tactile sensing. To address this, we propose TacForeSight, a lightweight force-conditioned tactile foresight framework for real-time manipulation. The core component is TacForceWM, a tactile world model that predicts short-horizon tactile latent dynamics from dual-finger tactile observations conditioned on high-frequency wrist force and torque signals. Another key component, the Predictive Tactile-Conditioned Policy, leverages the predicted latents as anticipatory contact priors, models the current-to-future tactile evolution via cross-attention, and adaptively fuses visuo-tactile features through a tactile-guided gating module. By forecasting purely within a compact latent space, TacForeSight enables proactive contact reasoning with efficient real-time inference suitable for high-frequency manipulation control. Real-robot experiments on five representative tasks and three in-process perturbation settings show that TacForeSight consistently outperforms existing baselines, particularly under dynamic contact disturbances. All models and datasets will be made publicly available on the project website at https://tacforesight.github.io/ProjectPage.",
+ "summary": "# TacForeSight 论文总结\n\n**1. 核心创新点**\n提出一个由力信号引导的触觉世界模型框架，通过预测短时未来的触觉潜在动态，为接触密集型机器人操作提供前瞻性接触推理能力。\n\n**2. 主要方法**\n- **TacForceWM（触觉世界模型）**：基于双指触觉观测，以高频腕部力/力矩信号为条件，在紧凑的潜在空间中预测短时触觉动态。\n- **预测式触觉条件策略（Predictive Tactile-Conditioned Policy）**：将预测的潜在表示作为\"预期接触先验\"，通过**交叉注意力**建模当前到未来的触觉演变，并使用**触觉引导的门控模块**自适应融合视觉-触觉特征。\n- 在潜在空间内完成预测，保证高频实时推理。\n\n**3. 结论/性能**\n在真实机器人上的 5 个代表性任务和 3 种过程扰动设置中，TacForeSight 始终优于现有基线方法，尤其在**动态接触扰动**场景下表现突出；模型和数据集将开源。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-10 13:02:46"
+}

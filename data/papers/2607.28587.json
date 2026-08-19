@@ -1,0 +1,13 @@
+{
+ "id": "2607.28587",
+ "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+ "authors": "Manyi Wang, Junjielong Xu, Pinjia He",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28587v1",
+ "abstract": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue by extracting issue references from the PR description; the issue description is used as the problem statement, and the PR patch serves as the test oracle. However, due to the inherent complexity of developing and maintaining large repositories, such PR-Issue pairings are often misaligned in practice. In this work, we systematically study SWE-bench Verified instances, finding that 13.6% exhibit misalignment across five patterns in eleven fine-grained scenarios. To enable reliable and scalable construction of those benchmarks in the future, we propose PAIChecker, a multi-agent system for checking PR-Issue misalignment in SWE-bench-like benchmarks. Specifically, PAIChecker adopts a three-phase design that combines specific pattern identification, cross-agent label synthesis, and code-level validation, thereby enabling more accurate, generalizable, and progressively verified detection. Experiments on SWE-Gym and SWE-bench Multilingual show that PAIchecker achieves the best performance across all four LLM backbones, reaching up to 92.12% and 91.67% binary accuracy, respectively.",
+ "summary": "## PAIChecker 论文总结\n\n**1. 核心创新点**\n首次系统揭示了 SWE-bench 类基准中普遍存在的\"PR–Issue 不匹配\"问题（SWE-bench Verified 中占 13.6%），并提出多智能体系统 PAIChecker 来自动检测这类错配。\n\n**2. 主要方法**\n针对现有基准\"从 PR 描述提取 issue 引用 → issue 作为问题陈述、PR patch 作为测试标准\"的构建流程，作者先归纳出 5 种错配模式、11 个细粒度场景；PAIChecker 采用三阶段设计：\n- 特定模式识别（pattern identification）\n- 跨智能体标签合成（cross-agent label synthesis）\n- 代码级验证（code-level validation）\n\n由此实现更准确、可泛化且逐级验证的检测。\n\n**3. 结论/性能**\n在 SWE-Gym 与 SWE-bench Multilingual 上、四种 LLM 底座下均取得最佳表现，二分类准确率分别达到 92.12% 和 91.67%，可支撑未来更可靠、可扩展的基准构建。\n\n---\n\n需要的话，我可以用 `/paper-review` 生成完整的中英双语综述笔记并写入 Obsidian vault。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-01 13:02:48"
+}

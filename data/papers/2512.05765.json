@@ -1,0 +1,13 @@
+{
+ "id": "2512.05765",
+ "title": "The Missing Layer of AGI: From Pattern Alchemy to Coordination Physics",
+ "authors": "Edward Y. Chang",
+ "date": "2025-12-05",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05765v1",
+ "abstract": "Influential critiques argue that Large Language Models (LLMs) are a dead end for AGI: \"mere pattern matchers\" structurally incapable of reasoning or planning. We argue this conclusion misidentifies the bottleneck: it confuses the ocean with the net. Pattern repositories are the necessary System-1 substrate; the missing component is a System-2 coordination layer that selects, constrains, and binds these patterns. We formalize this layer via UCCT, a theory of semantic anchoring that models reasoning as a phase transition governed by effective support (rho_d), representational mismatch (d_r), and an adaptive anchoring budget (gamma log k). Under this lens, ungrounded generation is simply an unbaited retrieval of the substrate's maximum likelihood prior, while \"reasoning\" emerges when anchors shift the posterior toward goal-directed constraints. We translate UCCT into architecture with MACI, a coordination stack that implements baiting (behavior-modulated debate), filtering (Socratic judging), and persistence (transactional memory). By reframing common objections as testable coordination failures, we argue that the path to AGI runs through LLMs, not around them.",
+ "summary": "- 核心创新点：将大语言模型的模式库视为 System-1 底层，提出 UCCT 的语义锚定理论并配套 MACI 的协调栈，构建一个将模式检索与目标导向推理衔接的 System-2 协调机制。\n- 主要方法：提出 UCCT，将推理建模为由有效支持 rho_d、表征不匹配 d_r、自适应锚定预算 gamma log k 三个要素驱动的相变；实现 MACI 协调栈来执行 baiting（行为调节的辩论）、filtering（苏格拉底式判断）和 persistence（事务性记忆），并将无锚点的生成视为对最大似然先验的无偏检索，推理在锚定使后验向目标约束收敛时发生。\n- 结论/性能：提出了一个理论+架构框架，表明通过引入协调层可以让 LLMs 实现更接近通用智能的推理能力，并将对 LLMs 的常见质疑转化为可测试的协调失败问题；尚无量化实验结果，需要通过测试验证协调层的实际效果。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-08 14:01:42"
+}

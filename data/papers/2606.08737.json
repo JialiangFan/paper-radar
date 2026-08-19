@@ -1,0 +1,13 @@
+{
+ "id": "2606.08737",
+ "title": "Dream-Tac: A Unified Tactile World Action Model for Contact-Rich Robot Manipulation",
+ "authors": "Yunfan Lou, Yifan Ye, Yankai Fu, Jun Cen, Xiaowei Chi, Yaoxu Lyu, Peidong Jia, Sirui Han, Zhihe Lu, Shanghang Zhang",
+ "date": "2026-06-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08737v1",
+ "abstract": "World action models inherit the predictive capability of world models, enabling action generation to be guided by anticipated future observations. However, they rely primarily on vision and often fail in contact-rich manipulation, where critical cues arise from physical interaction. In this paper, we propose Dream-Tac, a unified Tactile-World Action Model that jointly models actions, future visual observations, and tactile dynamics. Specifically, Dream-Tac introduces (i) contact-gated visuotactile fusion to selectively integrate tactile signals and (ii) a contact-aware attention bias to better regulate cross-modal interactions during manipulation. To support real-time deployment, we further design a dual-level acceleration strategy, reformulating the contact-aware bias to preserve the fused attention path during training and introducing cache-based diffusion acceleration at inference, achieving up to 2.9$\\times$ faster training and 1.8$\\times$ faster inference. Across six contact-rich manipulation tasks, Dream-Tac improves action accuracy by 31.7\\% on average, demonstrating the effectiveness of unified visuotactile world modeling.Code is available at https://github.com/LYFCLOUDFAN/Dream-Tac.",
+ "summary": "# Dream-Tac 论文总结\n\n1. **核心创新点**：提出首个统一的\"触觉-世界动作模型\"（Tactile-World Action Model），将动作生成、未来视觉观测与触觉动力学联合建模，解决传统视觉世界模型在接触密集型机器人操作中失效的问题。\n\n2. **主要方法**：\n   - **接触门控视触融合**（contact-gated visuotactile fusion）：选择性地融入触觉信号；\n   - **接触感知注意力偏置**（contact-aware attention bias）：调节跨模态交互；\n   - **双层加速策略**：训练阶段重构接触感知偏置以保留融合注意力路径，推理阶段采用基于缓存的扩散加速。\n\n3. **结论/性能**：在 6 个接触密集型操作任务上，动作准确率平均提升 **31.7%**；训练速度提升 **2.9×**，推理速度提升 **1.8×**，验证了统一视触世界建模的有效性。代码已开源。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-09 13:03:10"
+}

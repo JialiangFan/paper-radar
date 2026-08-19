@@ -1,0 +1,13 @@
+{
+ "id": "2606.16733",
+ "title": "A First-Principles Derivation of LLM Policy Optimization: From Expected Reward to GRPO and Its Structural Extensions",
+ "authors": "Jianghan Shen, Siqi Luo, Yue Li, Jiyao Liu, Wanying Qu, Yi Zhang, Ziyan Huang, Tianbin Li, Ming Hu, Xiaohong Liu, Yirong Chen, Junjun He",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.16733v1",
+ "abstract": "Policy gradient algorithms for language models optimize the same objective $J(θ) = \\mathbb{E}*{τ\\sim p*θ(τ)}[R(τ)]$, which has exactly two factors: the trajectory probability $p_θ(τ)$ and the reward $R(τ)$. Every method from REINFORCE to PPO to GRPO and their descendants modifies one or both factors to address a specific failure in the preceding formulation. Existing surveys organize these methods by domain or chronology, which obscures the rationale behind each design choice and the precise location of its intervention within the gradient estimator. This survey revisits the landscape of LLM policy optimization from $J(θ)$ on first principles and uses the trajectory side, induced by $p_θ(τ)$, and the reward side, induced by $R(τ)$, as the two axes along which methods are located. It covers the path from REINFORCE and PPO to GRPO, as well as post-GRPO variants, Agentic RL, and GRPO-OPD. The resulting framework is unified, diagnostic, and extensible: it analyzes methods from a shared objective, identifies which side each method modifies and why, and applies the same trajectory and reward axes across these settings. Across these settings, the framework also exposes compound failures that no single-side fix resolves and that therefore require joint design of the trajectory side and the reward side. The boundary cases and coupled failures identified by this map mark where existing solutions run out and provide a principled starting point for designing the next generation of LLM policy optimization algorithms.",
+ "summary": "以下是该论文的中文简要总结：\n\n## 论文总结：《从期望奖励到 GRPO 及其结构性扩展——大模型策略优化的第一性原理推导》\n\n**1. 核心创新点**\n该综述以单一目标函数 $J(θ)=\\mathbb{E}[R(τ)]$ 为出发点，提出用\"轨迹概率 $p_θ(τ)$\"和\"奖励 $R(τ)$\"两条正交轴线，统一地重新组织和剖析所有大模型（LLM）策略优化方法。\n\n**2. 主要方法**\n将期望奖励目标拆解为仅有的两个因子——轨迹概率与奖励——并据此构建一个二维定位框架：每一种算法（从 REINFORCE、PPO 到 GRPO，再到 post-GRPO 变体、Agentic RL 和 GRPO-OPD）都被解释为对其中一侧或两侧因子的特定修改，用以修补前一种方法的某个具体缺陷。区别于按领域或时间线分类的传统综述，本文从共享目标、第一性原理出发进行\"诊断式\"归类。\n\n**3. 结论/性能**\n该框架具有统一、可诊断、可扩展三大特性：能精确指出每种方法\"改了哪一侧、为何这样改\"。更重要的是，它揭示了单侧修补无法解决的\"复合型失效\"（需轨迹侧与奖励侧联合设计），并标示出现有方案的边界与耦合失效点，从而为设计下一代 LLM 策略优化算法提供了原则性的起点。（注：这是一篇综述/框架性论文，不含具体实验性能指标。）\n\n---\n补充一句：若你希望生成中英双语的完整文献综述笔记并自动归档到 Obsidian，我可以改用 `/paper-review` 技能来处理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-16 13:01:14"
+}

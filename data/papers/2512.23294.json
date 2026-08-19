@@ -1,0 +1,13 @@
+{
+ "id": "2512.23294",
+ "title": "Agentic AI-Enhanced Semantic Communications: Foundations, Architecture, and Applications",
+ "authors": "Haixiao Gao, Mengying Sun, Ruichen Zhang, Yanhan Wang, Xiaodong Xu, Nan Ma, Dusit Niyato, Ping Zhang",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23294v1",
+ "abstract": "Semantic communications (SemCom), as one of the key technologies for 6G, is shifting networks from bit transmission to semantic information exchange. On this basis, introducing agentic artificial intelligence (AI) with perception, memory, reasoning, and action capabilities provides a practicable path to intelligent communications. This paper provides a systematic exposition of how agentic AI empowers SemCom from the perspectives of research foundations, system architecture, and application scenarios. We first provide a comprehensive review of existing studies by agent types, covering embedded agents, large language model (LLM)/large vision model (LVM) agents, and reinforcement learning (RL) agents. Additionally, we propose a unified agentic AI-enhanced SemCom framework covering the application layer, the semantic layer, and the cloud-edge collaboration layer, forming a closed loop from intent to encoding to transmission to decoding to action to evaluation. We also present several typical scenarios, including multi-vehicle collaborative perception, multi-robot cooperative rescue, and agentic operations for intellicise (intelligent and concise) networks. Furthermore, we introduce an agentic knowledge base (KB)-based joint source-channel coding case study, AKB-JSCC, where the source KB and channel KB are built by LLM/LVM agents and RL agents, respectively. Experimental results show that AKB-JSCC achieves higher information reconstruction quality under different channel conditions. Finally, we discuss future evolution and research directions, providing a reference for portable, verifiable, and controllable research and deployment of agentic SemCom.",
+ "summary": "- 核心创新点：提出具备感知、记忆、推理和行动能力的 agentic AI-强化语义通信框架，构建从意图到编码、传输、解码、行动与评估的闭环，并通过源/信道知识库驱动的联合编码来提升鲁棒性和信息重建质量。\n\n- 主要方法：综合评述嵌入式代理、LLM/LVM 代理、RL 代理等 agent 类型；提出统一的 agentic AI–SemCom 框架，覆盖应用层、语义层、云‑边协作层；提出以知识库驱动的 AKB‑JSCC（源知识库由 LLM/LVM 代理构建，信道知识库由 RL 代理构建）的联合源信道编码案例；并在多场景（如多车协同感知、多机器人协作救援、intellicise 网络等）中阐释应用。\n\n- 结论/性能：AKB‑JSCC 在不同信道条件下实现了更高的信息重建质量，显示出更好的鲁棒性与性能潜力；并对未来的发展方向进行了讨论，指向可移植、可验证、可控的 agentic SemCom 研究与部署。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:49:52"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.23896",
+ "title": "TSC: Topology-Conditioned Stackelberg Coordination for Multi-Agent Reinforcement Learning in Interactive Driving",
+ "authors": "Xiaotong Zhang, Gang Xiong, Yuanjing Wang, Siyu Teng, Alois Knoll, Long Chen",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23896v1",
+ "abstract": "Safe and efficient autonomous driving in dense traffic is fundamentally a decentralized multi-agent coordination problem, where interactions at conflict points such as merging and weaving must be resolved reliably under partial observability. With only local and incomplete cues, interaction patterns can change rapidly, often causing unstable behaviors such as oscillatory yielding or unsafe commitments. Existing multi-agent reinforcement learning (MARL) approaches either adopt synchronous decision-making, which exacerbate non-stationarity, or depend on centralized sequencing mechanisms that scale poorly as traffic density increases. To address these limitations, we propose Topology-conditioned Stackelberg Coordination (TSC), a learning framework for decentralized interactive driving under communication-free execution, which extracts a time-varying directed priority graph from braid-inspired weaving relations between trajectories, thereby defining local leader-follower dependencies without constructing a global order of play. Conditioned on this graph, TSC endogenously factorizes dense interactions into graph-local Stackelberg subgames and, under centralized training and decentralized execution (CTDE), learns a sequential coordination policy that anticipates leaders via action prediction and trains followers through action-conditioned value learning to approximate local best responses, improving training stability and safety in dense traffic. Experiments across four dense traffic scenarios show that TSC achieves superior performance over representative MARL baselines across key metrics, most notably reducing collisions while maintaining competitive traffic efficiency and control smoothness.",
+ "summary": "- 核心创新点：通过从轨迹 braid-inspired weaving 关系中提取时变的有向优先图，条件化 Stackelberg 协调，实现局部领导-跟随依赖的去中心化安全高效多智能体驾驶。\n\n- 主要方法：提出 TSC 框架，在集中训练-分散执行（CTDE）下，将密集交互分解为图局部的 Stackelberg 子博弈；基于提取的拓扑图进行领导者预测与跟随者的动作条件价值学习，以近似局部最优响应，且无需全局排序即可执行。\n\n- 结论/性能：在四个密集交通场景中优于代表性 MARL 基线，显著降低碰撞率，同时保持竞争力的交通效率与控制平滑性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-02 14:00:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.09460",
+ "title": "SEA-Nav: Efficient Policy Learning for Safe and Agile Quadruped Navigation in Cluttered Environments",
+ "authors": "Shiyi Chen, Mingye Yang, Haiyan Mao, Jiaqi Zhang, Haiyi Liu, Shuheng He, Debing Zhang, Zihao Qiu, Chun Zhang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09460v1",
+ "abstract": "Efficiently training quadruped robot navigation in densely cluttered environments remains a significant challenge. Existing methods are either limited by a lack of safety and agility in simple obstacle distributions or suffer from slow locomotion in complex environments, often requiring excessively long training phases. To this end, we propose SEA-Nav (Safe, Efficient, and Agile Navigation), a reinforcement learning framework for quadruped navigation. Within diverse and dense obstacle environments, a differentiable control barrier function (CBF)-based shield constraints the navigation policy to output safe velocity commands. An adaptive collision replay mechanism and hazardous exploration rewards are introduced to increase the probability of learning from critical experiences, guiding efficient exploration and exploitation. Finally, kinematic action constraints are incorporated to ensure safe velocity commands, facilitating successful physical deployment. To the best of our knowledge, this is the first approach that achieves highly challenging quadruped navigation in the real world with minute-level training time.",
+ "summary": "- 核心创新点（一句话）：\n  提出 SEA-Nav，一种在四足导航中将可微分控制屏障函数（CBF）屏障、自适应碰撞重放与危险探索奖励以及运动学约束融合的端到端强化学习框架，实现安全高效的现实世界四足导航，训练时间达到分钟级。\n\n- 主要方法：\n  - 采用端到端强化学习框架用于四足导航。\n  - 引入可微分的控制屏障函数（CBF）屏障约束，确保输出的速度指令安全可控。\n  - 设计自适应的碰撞重放机制和危险探索奖励，提升从关键经验中学习的概率，提升探索与利用效率。\n  - 加入运动学约束，确保生成的速度指令在物理上可执行，便于现实部署。\n\n- 结论/性能：\n  在密集障碍环境中实现了高挑战性的四足导航任务，并在现实世界中的训练时间达到分钟级，首次实现此类任务的高效、安全部署。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:00:50"
+}

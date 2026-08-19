@@ -1,0 +1,13 @@
+{
+ "id": "2603.22853",
+ "title": "Agent Audit: A Security Analysis System for LLM Agent Applications",
+ "authors": "Haiyue Zhang, Yi Nian, Yue Zhao",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22853v1",
+ "abstract": "What should a developer inspect before deploying an LLM agent: the model, the tool code, the deployment configuration, or all three? In practice, many security failures in agent systems arise not from model weights alone, but from the surrounding software stack: tool functions that pass untrusted inputs to dangerous operations, exposed credentials in deployment artifacts, and over-privileged Model Context Protocol (MCP) configurations.\n  We present Agent Audit, a security analysis system for LLM agent applications. Agent Audit analyzes Python agent code and deployment artifacts through an agent-aware pipeline that combines dataflow analysis, credential detection, structured configuration parsing, and privilege-risk checks. The system reports findings in terminal, JSON, and SARIF formats, enabling direct integration with local development workflows and CI/CD pipelines. On a benchmark of 22 samples with 42 annotated vulnerabilities, Agent Audit detects 40 vulnerabilities with 6 false positives, substantially improving recall over common SAST baselines while maintaining sub-second scan times. Agent Audit is open source and installable via pip, making security auditing accessible for agent systems.\n  In the live demonstration, attendees scan vulnerable agent repositories and observe how Agent Audit identifies security risks in tool functions, prompts, and more. Findings are linked to source locations and configuration paths, and can be exported into VS Code and GitHub Code Scanning for interactive inspection.",
+ "summary": "1) 核心创新点：面向 LLM 代理应用的安全分析系统 Agent Audit，提出一个代理感知的分析管线，将数据流分析、凭证检测、结构化配置解析与权限风险检查结合，用以全面发现代理环境中的安全漏洞。\n\n2) 主要方法：分析 Python 代理代码与部署工件，使用数据流分析、凭证检测、结构化配置解析和权限风险评估的组合管线，输出多格式报告（终端、JSON、SARIF），并可直接集成到本地开发与 CI/CD 流程中；开源且通过 pip 安装。\n\n3) 结论/性能：在包含 22 个样本、42 处注解漏洞的基准上，Agent Audit 检出 40 处漏洞、6 个误报，较常见 SAST 基线显著提升召回率，且扫描时间为亚秒级；报告可导出并在 VS Code、GitHub Code Scanning 中进行交互式检查，演示中可看到对工具函数、提示等安全风险的定位。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:15"
+}

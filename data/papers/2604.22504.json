@@ -1,0 +1,13 @@
+{
+ "id": "2604.22504",
+ "title": "Objective Shaping with Hard Negatives: Windowed Partial AUC Optimization for RL-based LLM Recommenders",
+ "authors": "Wentao Shi, Qifan Wang, Chen Chen, Fei Liu, Dongfang Liu, Xu Liu, Wanli Ma, Junfeng Pan, Linhong Zhu, Fuli Feng",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22504v1",
+ "abstract": "Reinforcement learning (RL) effectively optimizes Large Language Model (LLM)-based recommenders by contrasting positive and negative items. Empirically, training with beam-search negatives consistently outperforms random negatives, yet the mechanism is not well understood. We address this gap by analyzing the induced optimization objective and show that: (i) Under binary reward feedback, optimizing LLM recommenders with Group Relative Policy Optimization (GRPO) is theoretically equivalent to maximizing the Area Under the ROC Curve (AUC), which is often misaligned with Top-$K$ recommendation; and (ii) Replacing random negatives with beam-search negatives reshapes the objective toward partial AUC, improving alignment with Top-$K$ metrics. Motivated by this perspective, we introduce Windowed Partial AUC (WPAUC), which constrains the false positive rate (FPR) to a window [$α,α+d$] to more directly align with Top-$K$ metrics. We further propose an efficient Threshold-Adjusted Windowed reweighting (TAWin) RL method for its optimization, enabling explicit control over the targeted Top-$K$ performance. Experiments on four real-world datasets validate the theory and deliver consistent state-of-the-art performance.",
+ "summary": "- 核心创新点：通过引入硬负样本与窗口化的部分AUC（WPAUC），将 RL 基于 LLM 的推荐器的目标对齐直接指向 Top-K 性能，并给出可控的优化框架 TAWin。\n\n- 主要方法：1) 理论分析表明在二进制奖励下，用 GRPO 优化的目标等价于最大化 AUC，但与 Top-K 常不对齐；2) 将负样本从随机替换为 beam-search 负样本，使目标趋向部分 AUC；3) 提出 Windowed Partial AUC（WPAUC）定义，限定假阳性率在窗口 [α, α+d]；4) 提出 Threshold-Adjusted Windowed 重加权的 RL 方法（TAWin），实现对目标 Top-K 性能的显式控制。\n\n- 结论/性能：在四个真实数据集上的实验验证了理论结论，且方法实现持续达到并维持最优状态（SOTA），显示对 Top-K 的改进与对齐效果显著。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-27 13:02:52"
+}

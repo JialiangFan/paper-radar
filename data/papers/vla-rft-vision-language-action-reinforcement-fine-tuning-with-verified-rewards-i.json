@@ -1,0 +1,27 @@
+{
+ "id": "vla-rft-vision-language-action-reinforcement-fine-tuning-with-verified-rewards-i",
+ "title": "VLA-RFT: Vision-Language-Action Reinforcement Fine-Tuning with Verified Rewards in World Simulators",
+ "authors": "Hengtao Li, Pengxiang Ding, Runze Suo, Yihao Wang, Zirui Ge, Dongyuan Zang, Kexian Yu, Mingyang Sun, Hongyin Zhang, Donglin Wang, Weihua Su",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-Language-Action (VLA) 模型通过大规模imitation learning实现了具身决策能力，但纯模仿学习在distribution shift下容易产生compounding errors，导致策略鲁棒性不足。Reinforcement learning (RL) 可以缓解这些问题，但传统RL方法面临simulati...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2510.00406)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/VLA-RFT - Reinforcement Fine-tuning with Verified Rewards.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

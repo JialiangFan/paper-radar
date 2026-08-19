@@ -1,0 +1,13 @@
+{
+ "id": "2606.05699",
+ "title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+ "authors": "Runfa Blark Li, Kuang-Ting Tu, Nikola Raicevic, Dwait Bhatt, Xinshuang Liu, Keito Suzuki, Ki Myung Brian Lee, Nikolay Atanasov, Truong Nguyen",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05699v1",
+ "abstract": "Bimanual dexterous tool use remains challenging for robots due to high-dimensional hand configurations and complex hand-tool-object dynamics and contact. Most existing control policies depend on future configuration references provided from demonstrations, while future action-conditioned world models require slow online planning over high-dimensional action sequences. A significant challenge is generating a dynamically consistent future reference trajectory without relying on privileged states from demonstrations or slow counterfactual planning. We propose DexFuture, a hierarchical system that couples a high-level Future-State Visuomotor Target Predictor with a low-level Target-Conditioned Structured Dexterous Policy. Conditioned on egocentric RGB, proprioceptive and geometric history, the high-level predictor constructs structured hand-tool-object visuomotor embeddings and uses a horizon-conditioned transformer to generate a multi-step future target trajectory. Then, the low-level policy tracks them with a target-conditioned per-link transformer. This hierarchy decouples coarse future reference generation from fine-grained action control, and slow long-horizon semantic prediction from high-frequency execution. On OakInk2 bimanual tool-use tasks, DexFuture achieves 90% of the privileged-oracle performance, compared to 7% for a no-reference policy. DexFuture operates at 60 Hz, approximately 250 times faster than DexWM-style Cross-Entropy Method (CEM) planning with a future action-conditioned world model.",
+ "summary": "# DexFuture 论文总结\n\n1. **核心创新点**：提出一种分层视觉运动系统，通过预测未来状态目标轨迹来替代依赖示教特权信息或缓慢规划的方式，实现双手灵巧工具操作。\n\n2. **主要方法**：\n   - **高层模块**：Future-State Visuomotor Target Predictor，以第一视角 RGB、本体感知和几何历史为输入，构建手-工具-物体的结构化视觉运动嵌入，使用 horizon-conditioned Transformer 生成多步未来目标轨迹。\n   - **低层模块**：Target-Conditioned Structured Dexterous Policy，用 per-link Transformer 跟踪目标。\n   - 该分层结构将粗粒度未来参考生成与精细动作控制解耦，将慢速长时序语义预测与高频执行解耦。\n\n3. **结论/性能**：在 OakInk2 双手工具使用任务上，DexFuture 达到特权 oracle 90% 的性能（对照无参考策略仅 7%）；运行频率 60 Hz，比 DexWM 风格基于未来动作世界模型的 CEM 规划快约 250 倍。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-08 13:03:00"
+}

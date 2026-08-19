@@ -1,0 +1,13 @@
+{
+ "id": "2608.13438",
+ "title": "ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models",
+ "authors": "Gehan Zheng, Matthew Johnson-Roberson, Weiming Zhi",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13438v1",
+ "abstract": "Contact-rich manipulation failures are often detected only after the robot has committed to contact. This is especially limiting in wrist-camera setups: close gripper--object views help observe contact, but a poor approach may already push, miss, slip, or disturb the object before conventional detectors react. We introduce \\emph{ContactGuard}, a pre-contact execution monitor for chunked visuomotor policies. Given the policy's planned action chunk, ContactGuard predicts its short-horizon consequence in latent visual space and aborts if the predicted future latent indicates likely failure. Its latent world model is trained from unlabelled robot trajectories to predict compact multi-view visual embeddings under planned actions, avoiding pixel-level video prediction. A lightweight failure probe is then trained from a small labelled set of pre-contact clips. At deployment, ContactGuard anchors prediction before an imminent contact event, rolls the model forward under the policy's own actions, and verifies the predicted post-contact latent. Across real-world contact-rich manipulation tasks, ContactGuard predicts failure more accurately than direct and corrupted-action ablations, and transfers to live robot as a pre-contact abort signal without modifying the underlying policy.",
+ "summary": "## ContactGuard 论文摘要总结\n\n**1. 核心创新点**\n提出 ContactGuard——一种\"接触前\"执行监控器，在机器人真正碰到物体之前就预测该动作块会不会失败并及时中止，而不是等接触发生后才检测。\n\n**2. 主要方法**\n- 针对分块（chunked）视觉运动策略：把策略已规划好的动作块输入一个**动作条件隐空间世界模型**，预测短时程后的多视角视觉嵌入（latent），而非做像素级视频预测，因此更轻量。\n- 世界模型用**无标注机器人轨迹**自监督训练；再用**少量已标注的接触前片段**训练一个轻量级失败判别探针（failure probe）。\n- 部署时：在即将发生接触的时刻锚定预测 → 用策略自身的动作向前 rollout → 校验预测出的\"接触后隐状态\"，判定是否中止。\n\n**3. 结论/性能**\n在多个真实世界接触密集型操作任务上，其失败预测精度优于\"直接预测\"和\"扰动动作\"等消融基线；并可直接迁移到实机作为接触前中止信号，**无需修改底层策略**。\n\n**一句话点评**：本质是把\"世界模型 + 隐空间预测\"用作策略无关的安全护栏，亮点在于规避了昂贵的像素级预测，且标注成本很低。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-14 13:05:13"
+}

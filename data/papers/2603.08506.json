@@ -1,0 +1,13 @@
+{
+ "id": "2603.08506",
+ "title": "Oracle-Guided Soft Shielding for Safe Move Prediction in Chess",
+ "authors": "Prajit T Rajendran, Fabio Arnez, Huascar Espinoza, Agnes Delaborde, Chokri Mraidha",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.08506v1",
+ "abstract": "In high stakes environments, agents relying purely on imitation learning or reinforcement learning often struggle to avoid safety-critical errors during exploration. Existing reinforcement learning approaches for environments such as chess require hundreds of thousands of episodes and substantial computational resources to converge. Imitation learning, on the other hand, is more sample efficient but is brittle under distributional shift and lacks mechanisms for proactive risk avoidance. In this work, we propose Oracle-Guided Soft Shielding (OGSS), a simple yet effective framework for safer decision-making, enabling safe exploration by learning a probabilistic safety model from oracle feedback in an imitation learning setting. Focusing on the domain of chess, we train a model to predict strong moves based on past games, and separately learn a blunder prediction model from Stockfish evaluations to estimate the tactical risk of each move. During inference, the agent first generates a set of candidate moves and then uses the blunder model to determine high-risk options, and uses a utility function combining the predicted move likelihood from the policy model and the blunder probability to select actions that strike a balance between performance and safety. This enables the agent to explore and play competitively while significantly reducing the chance of tactical mistakes. Across hundreds of games against a strong chess engine, we compare our approach with other methods in the literature, such as action pruning, SafeDAgger, and uncertainty-based sampling. Our results demonstrate that OGSS variants maintain a lower blunder rate even as the agent's exploration ratio is increased by several folds, highlighting its ability to support broader exploration without compromising tactical soundness.",
+ "summary": "- **核心创新点**：在 imitation 学习框架中提出 OGSS，通过学习一个由 oracle 反馈得到的概率安全模型并结合一个基于 Stockfish 评估的失误风险预测模型，使用效用函数在推理阶段对候选棋步进行软护栏式筛选，以在探索与安全之间取得平衡。\n\n- **主要方法**：\n  - 构建强棋步预测模型：基于历史对局，预测高质量的走棋选择。\n  - 学习 blunder（失误）预测模型：从 Stockfish 的评估中学习每步的战术风险。\n  - 推理阶段流程：先生成候选步，然后用 blunder 模型筛选高风险选项，再以一个结合策略输出概率和 blunder 概率的效用函数来选择动作，达到性能与安全的折中。\n  - 对比评估：将 OGSS 与 action pruning、SafeDAgger、基于不确定性的采样等方法在数百局对强力棋引擎的对弈中比较。\n\n- **结论/性能**：\n  - 在探索比例提升数倍的情况下，OGSS 变体仍保持较低的失误率，证明可以在扩大探索的同时保持战术稳健性；相较于基线方法，展现出在安全性与探索性之间的显著平衡与优势。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-10 13:00:36"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.24198",
+ "title": "RefReward-SR: LR-Conditioned Reward Modeling for Preference-Aligned Super-Resolution",
+ "authors": "Yushuai Song, Weize Quan, Weining Wang, Jiahui Sun, Jing Liu, Meng Li, Pengbin Yu, Zhentao Chen, Wei Shen, Lunxi Yuan, Dong-ming Yan",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24198v1",
+ "abstract": "Recent advances in generative super-resolution (SR) have greatly improved visual realism, yet existing evaluation and optimization frameworks remain misaligned with human perception. Full-Reference and No-Reference metrics often fail to reflect perceptual preference, either penalizing semantically plausible details due to pixel misalignment or favoring visually sharp but inconsistent artifacts. Moreover, most SR methods rely on ground-truth (GT)-dependent distribution matching, which does not necessarily correspond to human judgments. In this work, we propose RefReward-SR, a low-resolution (LR) reference-aware reward model for preference-aligned SR. Instead of relying on GT supervision or NR evaluation, RefReward-SR assesses high-resolution (HR) reconstructions conditioned on their LR inputs, treating the LR image as a semantic anchor. Leveraging the visual-linguistic priors of a Multimodal Large Language Models (MLLM), it evaluates semantic consistency and plausibility in a reasoning-aware manner. To support this paradigm, we construct RefSR-18K, the first large-scale LR-conditioned preference dataset for SR, providing pairwise rankings based on LR-HR consistency and HR naturalness. We fine-tune the MLLM with Group Relative Policy Optimization (GRPO) using LR-conditioned ranking rewards, and further integrate GRPO into SR model training with RefReward-SR as the core reward signal for preference-aligned generation. Extensive experiments show that our framework achieves substantially better alignment with human judgments, producing reconstructions that preserve semantic consistency while enhancing perceptual plausibility and visual naturalness. Code, models, and datasets will be released upon paper acceptance.",
+ "summary": "**核心创新点**：提出基于低分辨率输入的 LR-条件奖励模型 RefReward-SR，利用多模态大语言模型的视觉-语言先验进行推理评估，实现偏好对齐的超分辨率优化，无需 GT 监督或 NR 评估。\n\n**主要方法**：\n- 构建 RefSR-18K：第一份面向 SR 的 LR 条件偏好数据集，给出基于 LR-HR 一致性与 HR 自然性的成对排序。  \n- 以 RefReward-SR 为核心：使用 LR 作为语义锚点，利用 MLLM 的视觉-语言先验评估 HR 重建的语义一致性与 plausibility，进行奖励建模。  \n- GRPO 微调与训练整合：用 LR 条件的排序奖励对 MLLM 进行 Group Relative Policy Optimization（GRPO）微调，并将 GRPO 融入 SR 训练， RefReward-SR 作为核心奖励信号实现偏好对齐的生成。\n\n**结论/性能**：\n- 实验显示与人类判断的对齐显著提升，生成结果在语义一致性和感知自然度上优于基线。  \n- 框架不依赖 GT 监督或 NR 评估，能够更好反映人类偏好。  \n- 代码、模型与数据集计划在论文被接收后公开发布。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-26 13:03:44"
+}

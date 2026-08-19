@@ -1,0 +1,13 @@
+{
+ "id": "2602.23323",
+ "title": "Modeling Large-Scale Adversarial Swarm Engagements using Optimal Control",
+ "authors": "Claire Walton, Isaac Kaminer, Qi Gong, Abram H. Clark, Theodoros Tsatsanifos",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23323v1",
+ "abstract": "We investigate the optimal control of large-scale autonomous systems under explicitly adversarial conditions, incorporating the probabilistic destruction of agents over time. In many such systems, adversarial interactions arise as different agents or groups compete against one another. A crucial yet often overlooked factor in existing theoretical and modeling frameworks is the random attrition of agents during operation. Effective modeling and control strategies must therefore account for both agent attrition and spatial dynamics.\n  Given the inherently random nature of agent survival, directly solving this problem is challenging. To address this, we propose and evaluate three approximate numerical modeling approaches in which agent survival probabilities decrease deterministically over time based on their relative positions. We apply these schemes to a scenario where agents defend a high-value unit against an attacking swarm. Our results demonstrate that these models can effectively capture the dynamics of such interactions, provided that attrition and spatial positioning are tightly integrated. These findings are relevant to a broad range of adversarial autonomy scenarios where both agent positioning and survival probabilities play a critical role.",
+ "summary": "- 核心创新点：把代理的随机消亡（attrition）纳入大规模对抗性自主系统的最优控制框架，并提出三种基于相对位置的确定性生存概率衰减的近似数值方案，以同时刻画生存与空间动态。\n\n- 主要方法：在最优控制框架下，提出并评估三种近似数值建模方法，使代理的生存概率随时间按相对位置确定性下降；将这三种方法应用于防御高价值目标免受攻击群的情景，研究生存与空间布局的耦合对系统行为的影响。\n\n- 结论/性能：这些模型能够有效捕捉对抗性群体互动的动力学，前提是把 attrition 与空间定位紧密耦合；在给定场景下，三种近似方法展现出对生存概率与空间因素影响的良好表现，具有广泛适用性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-27 14:00:30"
+}

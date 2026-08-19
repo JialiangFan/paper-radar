@@ -1,0 +1,13 @@
+{
+ "id": "2604.22239",
+ "title": "Navigating Large-Scale Document Collections: MuDABench for Multi-Document Analytical QA",
+ "authors": "Zhanli Li, Yixuan Cao, Lvzhou Luo, Ping Luo",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22239v1",
+ "abstract": "This paper introduces the task of analytical question answering over large, semi-structured document collections. We present MuDABench, a benchmark for multi-document analytical QA, where questions require extracting and synthesizing information across numerous documents to perform quantitative analysis. Unlike existing multi-document QA benchmarks that typically require information from only a few documents with limited cross-document reasoning, MuDABench demands extensive inter-document analysis and aggregation. Constructed via distant supervision by leveraging document-level metadata and annotated financial databases, MuDABench comprises over 80,000 pages and 332 analytical QA instances. We also propose an evaluation protocol that measures final answer accuracy and uses intermediate-fact coverage as an auxiliary diagnostic signal for the reasoning process. Experiments reveal that standard RAG systems, which treat all documents as a flat retrieval pool, perform poorly. To address these limitations, we propose a multi-agent workflow that orchestrates planning, extraction, and code generation modules. While this approach substantially improves both process and outcome metrics, a significant gap remains compared to human expert performance. Our analysis identifies two primary bottlenecks: single-document information extraction accuracy and insufficient domain-specific knowledge in current systems. MuDABench is available at https://github.com/Zhanli-Li/MuDABench.",
+ "summary": "- 核心创新点：提出并构建面向大规模半结构化文档集合的分析型问答任务与基准 MuDABench，强调跨文档信息提取、推理与聚合以完成定量分析。\n\n- 主要方法：通过 distant supervision 利用文档级元数据和标注的金融数据库构建数据集；设定以最终答案正确性为主、以中间事实覆盖为辅的评估协议；提出一个多智能体工作流，协同规划、信息抽取和代码生成等模块来进行跨文档分析与聚合（相较之下，传统的 RAG 将文档视作扁平检索池表现较差）。\n\n- 结论/性能：数据集规模超过 8 万页、332 个分析性QA 实例；实验显示标准 RAG 表现不佳，而所提出的多智能体方法在过程与结果指标上均有显著提升，但仍显著落后于人类专家，主要瓶颈在单文档信息抽取的准确性与缺乏领域专门知识。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-27 13:04:23"
+}

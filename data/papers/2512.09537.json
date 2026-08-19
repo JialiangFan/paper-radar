@@ -1,0 +1,13 @@
+{
+ "id": "2512.09537",
+ "title": "REASAN: Learning Reactive Safe Navigation for Legged Robots",
+ "authors": "Qihao Yuan, Ziyu Cao, Ming Cao, Kailai Li",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09537v1",
+ "abstract": "We present a novel modularized end-to-end framework for legged reactive navigation in complex dynamic environments using a single light detection and ranging (LiDAR) sensor. The system comprises four simulation-trained modules: three reinforcement-learning (RL) policies for locomotion, safety shielding, and navigation, and a transformer-based exteroceptive estimator that processes raw point-cloud inputs. This modular decomposition of complex legged motor-control tasks enables lightweight neural networks with simple architectures, trained using standard RL practices with targeted reward shaping and curriculum design, without reliance on heuristics or sophisticated policy-switching mechanisms. We conduct comprehensive ablations to validate our design choices and demonstrate improved robustness compared to existing approaches in challenging navigation tasks. The resulting reactive safe navigation (REASAN) system achieves fully onboard and real-time reactive navigation across both single- and multi-robot settings in complex environments. We release our training and deployment code at https://github.com/ASIG-X/REASAN.",
+ "summary": "以下是用中文的简要总结：\n\n- 核心创新点：提出一个模块化的端到端反应式安全导航框架REASAN，利用单颗 LiDAR 和四个模拟训练模块实现复杂动态环境中的全板载、实时导航。\n\n- 主要方法：由三个强化学习策略（用于运动控制、安全屏蔽和导航）以及一个基于Transformer的外感知估计器组成，处理原始点云输入；通过标准的RL训练、目标奖励设计与课程学习实现，避免使用启发式策略切换，模块化结构使网络保持轻量且架构简单。\n\n- 结论/性能：在具有挑战性的导航任务中显示出比现有方法更高的鲁棒性；实现完全板载、实时的反应式导航，适用于单机器人和多机器人场景，且相关代码已开源。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-11 14:00:52"
+}

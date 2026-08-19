@@ -1,0 +1,13 @@
+{
+ "id": "2512.16424",
+ "title": "Synthelite: Chemist-aligned and feasibility-aware synthesis planning with LLMs",
+ "authors": "Nguyen Xuan-Vu, Daniel Armstrong, Milena Wehrbach, Andres M Bran, Zlatko Jončev, Philippe Schwaller",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16424v1",
+ "abstract": "Computer-aided synthesis planning (CASP) has long been envisioned as a complementary tool for synthetic chemists. However, existing frameworks often lack mechanisms to allow interaction with human experts, limiting their ability to integrate chemists' insights. In this work, we introduce Synthelite, a synthesis planning framework that uses large language models (LLMs) to directly propose retrosynthetic transformations. Synthelite can generate end-to-end synthesis routes by harnessing the intrinsic chemical knowledge and reasoning capabilities of LLMs, while allowing expert intervention through natural language prompts. Our experiments demonstrate that Synthelite can flexibly adapt its planning trajectory to diverse user-specified constraints, achieving up to 95\\% success rates in both strategy-constrained and starting-material-constrained synthesis tasks. Additionally, Synthelite exhibits the ability to account for chemical feasibility during route design. We envision Synthelite to be both a useful tool and a step toward a paradigm where LLMs are the central orchestrators of synthesis planning.",
+ "summary": "- 核心创新点（1句）：将大语言模型直接用于提出反向合成转换，并结合自然语言交互与化学可行性评估，实现化学家对称合成规划的对齐与可行性-aware的端到端规划。\n\n- 主要方法：利用LLMs直接生成反向合成步骤和完整合成路线；支持通过自然语言提示进行专家干预；在路线设计中融入化学可行性评估；能够灵活适配不同的用户约束（策略约束、起始物约束等）。\n\n- 结论/性能：在策略约束与起始材料约束的任务中，成功率可达最高约95%； demonstrated 能在规划阶段考虑化学可行性，并将LLMs作为合成规划的核心编排者。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-19 02:45:39"
+}

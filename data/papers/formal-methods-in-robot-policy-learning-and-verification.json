@@ -1,0 +1,27 @@
+{
+ "id": "formal-methods-in-robot-policy-learning-and-verification",
+ "title": "Formal Methods in Robot Policy Learning and Verification",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "深度学习驱动的机器人策略（参数化为深度神经网络）在操作、导航等任务中取得了显著进展，但这些策略缺乏可解释性、对OOD场景泛化差、易受对抗输入攻击。在安全关键场景下，这些弱点可能导致灾难性后果。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Formal Methods in Robot Policy Learning and Verification.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

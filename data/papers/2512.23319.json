@@ -1,0 +1,13 @@
+{
+ "id": "2512.23319",
+ "title": "Flexible Keyword-Aware Top-$k$ Route Search",
+ "authors": "Ziqiang Yu, Xiaohui Yu, Yueting Chen, Wei Liu, Anbang Song, Bolong Zheng",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23319v1",
+ "abstract": "With the rise of Large Language Models (LLMs), tourists increasingly use it for route planning by entering keywords for attractions, instead of relying on traditional manual map services. LLMs provide generally reasonable suggestions, but often fail to generate optimal plans that account for detailed user requirements, given the vast number of potential POIs and possible routes based on POI combinations within a real-world road network. In this case, a route-planning API could serve as an external tool, accepting a sequence of keywords and returning the top-$k$ best routes tailored to user requests. To address this need, this paper introduces the Keyword-Aware Top-$k$ Routes (KATR) query that provides a more flexible and comprehensive semantic to route planning that caters to various user's preferences including flexible POI visiting order, flexible travel distance budget, and personalized POI ratings. Subsequently, we propose an explore-and-bound paradigm to efficiently process KATR queries by eliminating redundant candidates based on estimated score bounds from global to local levels. Extensive experiments demonstrate our approach's superior performance over existing methods across different scenarios.",
+ "summary": "- 核心创新点：提出可处理关键字、灵活访问顺序、预算约束和个性化评分的 Top-k 路线查询 KATR，并通过全局到局部的探索-界定（explore-and-bound）框架实现高效候选裁剪。\n- 主要方法：定义 KATR 查询并采用 explore-and-bound 框架，通过从全局到局部的分数界限来逐步消除冗余候选，针对大规模 POI/路线组合在路网中的灵活偏好（可变访问顺序、预算、POI 评分）进行高效计算。\n- 结论/性能：大量实验表明该方法在多种场景下相较现有方法具有更优的性能，能够更高效地满足用户的灵活偏好与约束。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:55:53"
+}

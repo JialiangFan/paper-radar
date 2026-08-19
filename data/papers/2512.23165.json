@@ -1,0 +1,13 @@
+{
+ "id": "2512.23165",
+ "title": "Evaluating Parameter Efficient Methods for RLVR",
+ "authors": "Qingyu Yin, Yulun Wu, Zhennan Shen, Sunbowen Li, Zhilin Wang, Yanshu Li, Chak Tou Leong, Jiale Kang, Jinjin Gu",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23165v1",
+ "abstract": "We systematically evaluate Parameter-Efficient Fine-Tuning (PEFT) methods under the paradigm of Reinforcement Learning with Verifiable Rewards (RLVR). RLVR incentivizes language models to enhance their reasoning capabilities through verifiable feedback; however, while methods like LoRA are commonly used, the optimal PEFT architecture for RLVR remains unidentified. In this work, we conduct the first comprehensive evaluation of over 12 PEFT methodologies across the DeepSeek-R1-Distill families on mathematical reasoning benchmarks. Our empirical results challenge the default adoption of standard LoRA with three main findings. First, we demonstrate that structural variants, such as DoRA, AdaLoRA, and MiSS, consistently outperform LoRA. Second, we uncover a spectral collapse phenomenon in SVD-informed initialization strategies (\\textit{e.g.,} PiSSA, MiLoRA), attributing their failure to a fundamental misalignment between principal-component updates and RL optimization. Furthermore, our ablations reveal that extreme parameter reduction (\\textit{e.g.,} VeRA, Rank-1) severely bottlenecks reasoning capacity. We further conduct ablation studies and scaling experiments to validate our findings. This work provides a definitive guide for advocating for more exploration for parameter-efficient RL methods.",
+ "summary": "- 核心创新点：首次在 RLVR 框架下系统比较超过12种参数高效微调（PEFT）方法在数学推理基准上的表现，揭示结构化变体优于 LoRA、SVD 初始化存在光谱崩溃、极端参数压缩显著削弱推理能力，为 RLVR 场景中的 PEFT 选型提供明确指南。\n\n- 主要方法：系统评估12种 PEFT 方法，涵盖 DoRA、AdaLoRA、MiSS 等结构变体，以及 PiSSA、MiLoRA 等基于 SVD 的初始化策略，在 DeepSeek-R1-Distill 家族的数学推理基准上进行对比，并通过消融研究与放缩实验验证发现。\n\n- 结论/性能：结构变体普遍优于默认的 LoRA；SVD 初始化策略存在光谱崩溃导致性能下降；极端参数压缩（如 VeRA、Rank-1）显著限制推理能力；研究结果为在 RLVR 场景中选择与发展 PEFT 方法提供了更全面的实证指南。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:50:23"
+}

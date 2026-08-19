@@ -1,0 +1,13 @@
+{
+ "id": "2512.01046",
+ "title": "Shielded Controller Units for RL with Operational Constraints Applied to Remote Microgrids",
+ "authors": "Hadi Nekoei, Alexandre Blondin Massé, Rachid Hassani, Sarath Chandar, Vincent Mai",
+ "date": "2025-11-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01046v1",
+ "abstract": "Reinforcement learning (RL) is a powerful framework for optimizing decision-making in complex systems under uncertainty, an essential challenge in real-world settings, particularly in the context of the energy transition. A representative example is remote microgrids that supply power to communities disconnected from the main grid. Enabling the energy transition in such systems requires coordinated control of renewable sources like wind turbines, alongside fuel generators and batteries, to meet demand while minimizing fuel consumption and battery degradation under exogenous and intermittent load and wind conditions. These systems must often conform to extensive regulations and complex operational constraints. To ensure that RL agents respect these constraints, it is crucial to provide interpretable guarantees. In this paper, we introduce Shielded Controller Units (SCUs), a systematic and interpretable approach that leverages prior knowledge of system dynamics to ensure constraint satisfaction. Our shield synthesis methodology, designed for real-world deployment, decomposes the environment into a hierarchical structure where each SCU explicitly manages a subset of constraints. We demonstrate the effectiveness of SCUs on a remote microgrid optimization task with strict operational requirements. The RL agent, equipped with SCUs, achieves a 24% reduction in fuel consumption without increasing battery degradation, outperforming other baselines while satisfying all constraints. We hope SCUs contribute to the safe application of RL to the many decision-making challenges linked to the energy transition.",
+ "summary": "- 核心创新点：提出 Shielded Controller Units（SCUs），通过分层屏蔽与利用先验动力学实现对强化学习在远程微网中的操作约束的可解释且可保证满足。\n\n- 主要方法：采用屏蔽合成方法将环境分解为层次结构，每个 SCU 负责管理一组约束，结合对系统动力学的先验知识，构成一个可部署的、与 RL 代理协同工作的约束保障框架。\n\n- 结论/性能：在远程微网优化任务中，配备 SCUs 的 RL 在满足所有约束的前提下，燃料消耗降低约 24%，且不增加电池劣化，显著优于基线方法。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:00:25"
+}

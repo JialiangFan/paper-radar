@@ -1,0 +1,13 @@
+{
+ "id": "2512.18317",
+ "title": "Trustworthy and Explainable Deep Reinforcement Learning for Safe and Energy-Efficient Process Control: A Use Case in Industrial Compressed Air Systems",
+ "authors": "Vincent Bezold, Patrick Wagner, Jakob Hofmann, Marco Huber, Alexander Sauer",
+ "date": "2025-12-20",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18317v1",
+ "abstract": "This paper presents a trustworthy reinforcement learning approach for the control of industrial compressed air systems. We develop a framework that enables safe and energy-efficient operation under realistic boundary conditions and introduce a multi-level explainability pipeline combining input perturbation tests, gradient-based sensitivity analysis, and SHAP (SHapley Additive exPlanations) feature attribution. An empirical evaluation across multiple compressor configurations shows that the learned policy is physically plausible, anticipates future demand, and consistently respects system boundaries. Compared to the installed industrial controller, the proposed approach reduces unnecessary overpressure and achieves energy savings of approximately 4\\,\\% without relying on explicit physics models. The results further indicate that system pressure and forecast information dominate policy decisions, while compressor-level inputs play a secondary role. Overall, the combination of efficiency gains, predictive behavior, and transparent validation supports the trustworthy deployment of reinforcement learning in industrial energy systems.",
+ "summary": "1) 核心创新点（一句话概括）\n提出一个可解释且可信的深度强化学习框架，用于在现实边界条件下实现工业压缩空气系统的安全、节能控制（不依赖显式物理模型）。\n\n2) 主要方法（简述使用的技术/模型）\n- 基于深度强化学习的控制策略，用于实现安全与能效并行优化的压缩空气系统控制。\n- 构建多层可解释性管线：输入扰动测试、基于梯度的敏感性分析，以及 SHAP 特征归因，用以验证和解释策略决策。\n\n3) 结论/性能（取得的效果）\n- 与现有工业控制器相比，减少不必要的过压，实现约4%的能源节省，且不需要显式物理模型。\n- 策略在多个压缩机配置下表现为物理上可行、能预测未来需求并始终遵守系统边界；系统压力与预测信息主导决策，压缩机级输入作用较次要。\n- 结果支持将强化学习以透明且可信的方式部署到工业能源系统中。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:47:10"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.15160",
+ "title": "EagleVision: A Dual-Stage Framework with BEV-grounding-based Chain-of-Thought for Spatial Intelligence",
+ "authors": "Jiaxu Wan, Xu Wang, Mengwei Xie, Hang Zhang, Mu Xu, Yang Han, Hong Zhang, Ding Yuan, Yifan Yang",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15160v1",
+ "abstract": "Recent spatial intelligence approaches typically attach 3D cues to 2D reasoning pipelines or couple MLLMs with black-box reconstruction modules, leading to weak spatial consistency, limited viewpoint diversity, and evidence chains that cannot be traced back to supporting views. Frameworks for \"thinking with images\" (e.g., ChatGPT-o3 and DeepEyes) show that stepwise multimodal reasoning can emerge by interleaving hypothesis formation with active acquisition of visual evidence, but they do not address three key challenges in spatial Chain-of-Thought (CoT): building global space perception under strict token budgets, explicitly associating 3D hypotheses with video frames for verification, and designing spatially grounded rewards for reinforcement learning. To address these issues, we present EagleVision, a dual-stage framework for progressive spatial cognition through macro perception and micro verification. In the macro perception stage, EagleVision employs a semantics-perspective-fusion determinantal point process (SPF-DPP) to select a compact set of geometry- and semantics-aware keyframes from long videos under a fixed token budget. In the micro verification stage, we formalize spatial CoT as BEV-grounded pose querying: the agent iteratively predicts poses on a BEV plane, retrieves the nearest real frames, and is trained purely by reinforcement learning with a spatial grounding reward that scores the consistency between predicted poses and observed views. On VSI-Bench, EagleVision achieves state-of-the-art performance among open-source vision-language models, demonstrating strong and generalizable spatial understanding.",
+ "summary": "1) 核心创新点（1 句）  \n在严格的 token 预算下，提出一个双阶段的空间认知框架：先用 SPF-DPP 进行语义与几何感知的关键帧筛选实现宏观全局感知，再通过 BEV-grounded 的姿态验证与强化学习构建可追溯的证据链，从而显著提升开放源模型的空间理解能力与证据可解释性。\n\n2) 主要方法  \n- 宏观阶段：设计 semantics-perspective-fusion determinantal point process（SPF-DPP），从长视频中筛选兼具几何与语义信息的紧凑关键帧，符合固定的 token 预算。  \n- 微观验证阶段：将空间 CoT 表述为 BEV-grounded 的姿态查询，代理在 BEV 平面迭代预测姿态并检索最近的真实帧进行验证。  \n- 训练策略：仅使用强化学习，并引入空间性 grounded reward，衡量预测姿态与观测视图之间的一致性，从而形成可追溯的证据链。  \n- 目标与优势：明确将 3D 假设与视频帧关联，提升全局空间感知在证据可追溯性与概率规划上的表现。\n\n3) 结论/性能  \n在 VSI-Bench 上达到开源 Vision-Language 模型中的 state-of-the-art，展现出强健且具通用性的空间理解能力与可验证的证据链。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-18 02:08:44"
+}

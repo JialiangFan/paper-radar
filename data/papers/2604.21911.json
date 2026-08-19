@@ -1,0 +1,13 @@
+{
+ "id": "2604.21911",
+ "title": "When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs",
+ "authors": "Pegah Khayatan, Jayneel Parekh, Arnaud Dapogny, Mustafa Shukor, Alasdair Newson, Matthieu Cord",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21911v1",
+ "abstract": "Despite impressive progress in capabilities of large vision-language models (LVLMs), these systems remain vulnerable to hallucinations, i.e., outputs that are not grounded in the visual input. Prior work has attributed hallucinations in LVLMs to factors such as limitations of the vision backbone or the dominance of the language component, yet the relative importance of these factors remains unclear. To resolve this ambiguity, We propose HalluScope, a benchmark to better understand the extent to which different factors induce hallucinations. Our analysis indicates that hallucinations largely stem from excessive reliance on textual priors and background knowledge, especially information introduced through textual instructions. To mitigate hallucinations induced by textual instruction priors, we propose HalluVL-DPO, a framework for fine-tuning off-the-shelf LVLMs towards more visually grounded responses. HalluVL-DPO leverages preference optimization using a curated training dataset that we construct, guiding the model to prefer grounded responses over hallucinated ones. We demonstrate that our optimized model effectively mitigates the targeted hallucination failure mode, while preserving or improving performance on other hallucination benchmarks and visual capability evaluations. To support reproducibility and further research, we will publicly release our evaluation benchmark, preference training dataset, and code at https://pegah-kh.github.io/projects/prompts-override-vision/ .",
+ "summary": "1) 核心创新点（一句话概括）\n提出 HalluScope 基准用于系统性分解 LVLM 幻觉的来源，并给出 HalluVL-DPO，通过偏好优化对 LVLM 进行微调以增强视觉 grounding、降低文本指令先验引发的幻觉。\n\n2) 主要方法\n- HalluScope：设计并验证一个评估基准，用以分析幻觉的主要诱因及其相对重要性，聚焦文本先验与视觉能力的关系等因素。 \n- HalluVL-DPO：对现成的 LVLM 进行微调，采用偏好优化（preference optimization）并使用自建的训练数据集，引导模型在回答时更偏向 grounded 的输出，减少幻觉。\n\n3) 结论/性能\n- 经优化的模型在针对性幻觉模式上显著缓解，同时在其他幻觉基准和视觉能力评估上保持或提高表现。\n- 研究结果支持文本指令先验是幻觉的主要来源之一，并且所提出的方法能够在不损害其他能力的前提下提升 grounding 可靠性。\n- 相关评估基准、偏好训练数据集和代码将公开发布，便于复现与后续研究。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-24 13:02:42"
+}

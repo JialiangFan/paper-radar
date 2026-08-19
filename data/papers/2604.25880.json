@@ -1,0 +1,13 @@
+{
+ "id": "2604.25880",
+ "title": "From Threads to Trajectories: A Multi-LLM Pipeline for Community Knowledge Extraction from GitHub Issue Discussions",
+ "authors": "Nazia Shehnaz Joynab, Soneya Binta Hossain",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25880v1",
+ "abstract": "Resolution of complex post-production issues in large-scale open-source software (OSS) projects requires significant cognitive effort, as developers need to go through long, unstructured and fragmented issue discussion threads before that. In this paper, we present SWE-MIMIC-Bench, an issue trajectory dataset generated from raw GitHub discussions using an automated multi-LLM pipeline. Unlike simple summarization, this pipeline utilizes a group of closed-source LLMs to perform granular tasks: analyzing individual comments with awareness of externally-linked resources, classifying comment analyses into label-specific fields (e.g., root cause, solution plan, implementation progress), and synthesizing label-aware trajectories which capture a structured and coherent narrative of the entire discussion thread. Our pipeline uses five closed-source LLM configurations for distinct purposes: label classification, inline code block and external link summarization, comment analysis, label-specific field classification and trajectory synthesis. By generating concise and reliable trajectories from complex conversation threads, this system can assist developers and researchers of broader software engineering community to understand the experience-driven collaborative approach for issue diagnosis. Furthermore, the generated trajectories can be used to train modern LLM agents to think and act like an expert developer. We evaluated our system on 800 real-world GitHub issues drawn from the SWE-Bench-Pro, SWE-Bench-Multilingual and SWE-Bench-Verified dataset, achieving a 91.7% success rate in extracting 734 high-fidelity reasoning trajectories.",
+ "summary": "- 核心创新点（1 句）：\n  提出一个自动化的多-LLM管道，将 GitHub Issue 讨论从长篇非结构化对话转化为结构化、带标签的轨迹，用于提取知识并训练专家级代理。\n\n- 主要方法：\n  使用由五种闭源大语言模型配置组成的协同管道，分别执行标签分类、内联代码块与外部链接摘要、评论分析、标签字段分类和轨迹综合；对每条评论在参考外部资源的前提下进行细粒度分析，并产出根因、解决方案、实现进度等字段，进而汇总成标签化的整条讨论轨迹，形成 SWE-MIMIC-Bench 数据集。\n\n- 结论/性能：\n  在 800 个真实 GitHub issue 上评估，成功提取了 734 条高保真推理轨迹，成功率达到 91.7%；生成的轨迹可帮助开发者与研究者理解基于经验的问题诊断过程，并可用于训练能够“像专家开发者一样思考和行动”的现代 LLM 代理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-29 13:01:38"
+}

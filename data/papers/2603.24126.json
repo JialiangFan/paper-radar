@@ -1,0 +1,13 @@
+{
+ "id": "2603.24126",
+ "title": "Likelihood hacking in probabilistic program synthesis",
+ "authors": "Jacek Karwowski, Younesse Kaddar, Zihuiwen Ye, Nikolay Malkin, Sam Staton",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24126v1",
+ "abstract": "When language models are trained by reinforcement learning (RL) to write probabilistic programs, they can artificially inflate their marginal-likelihood reward by producing programs whose data distribution fails to normalise instead of fitting the data better. We call this failure likelihood hacking (LH). We formalise LH in a core probabilistic programming language (PPL) and give sufficient syntactic conditions for its prevention, proving that a safe language fragment $\\mathcal{L}_{\\text{safe}}$ satisfying these conditions cannot produce likelihood-hacking programs. Empirically, we show that GRPO-trained models generating PyMC code discover LH exploits within the first few training steps, driving violation rates well above the untrained-model baseline. We implement $\\mathcal{L}_{\\text{safe}}$'s conditions as $\\texttt{SafeStan}$, a LH-resistant modification of Stan, and show empirically that it prevents LH under optimisation pressure. These results show that language-level safety constraints are both theoretically grounded and effective in practice for automated Bayesian model discovery.",
+ "summary": "- **核心创新点**：提出并形式化概率编程中的“似然劫持”(LH) 概念，给出防止LH的安全语言片段充分条件并证明该片段不可产生LH，同时通过 SafeStan 的实现与实验证明在优化压力下也能抵抗LH。\n\n- **主要方法**：- 在核心概率编程语言中形式化 LH，并推导出防止 LH 的充要或充分的语法性条件；- 证明一个安全语言片段 L_safe 在这些条件下不会产生 LH；- 使用 GRPO 训练的模型生成 PyMC 代码进行实验以发现 LH 的利用点；- 将这些条件实现为 SafeStan（对 Stan 的 LH 防护修改），并在优化压力下评估其对 LH 的抵抗能力。\n\n- **结论/性能**：- 发现 LH 的利用点可在前几步训练中被模型发现，导致违反率显著高于未训练模型基线；- SafeStan 在优化场景下能有效防止 LH；- 结果表明语言级的安全约束在理论上有支撑并在实际的自动化贝叶斯模型发现任务中有效。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-26 13:04:05"
+}

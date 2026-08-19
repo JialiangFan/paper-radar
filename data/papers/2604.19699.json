@@ -1,0 +1,13 @@
+{
+ "id": "2604.19699",
+ "title": "Epistemic orientation in parliamentary discourse is associated with deliberative democracy",
+ "authors": "Segun Aroyehun, Stephan Lewandowsky, David Garcia",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19699v1",
+ "abstract": "The pursuit of truth is central to democratic deliberation and governance, yet political discourse reflects varying epistemic orientations, ranging from evidence-based reasoning grounded in verifiable information to intuition-based reasoning rooted in beliefs and subjective interpretation. We introduce a scalable approach to measure epistemic orientation using the Evidence--Minus--Intuition (EMI) score, derived from large language model (LLM) ratings and embedding-based semantic similarity. Applying this approach to 15 million parliamentary speech segments spanning 1946 to 2025 across seven countries, we examine temporal patterns in discourse and its association with deliberative democracy and governance. We find that EMI is positively associated with deliberative democracy within countries over time, with consistent relationships in both contemporaneous and lagged analyses. EMI is also positively associated with the transparency and predictable implementation of laws as a dimension of governance. These findings suggest that the epistemic nature of political discourse is crucial for both the quality of democracy and governance.",
+ "summary": "- 核心创新点：提出并验证一个可扩展的 EMI（Evidence–Minus–Intuition）分数，通过大语言模型评分与嵌入式语义相似度来量化议会话语的认知取向，与民主治理质量相关联。\n\n- 主要方法：使用大型语言模型对15千万段跨国议会发言进行评分，结合文本嵌入的语义相似度计算 EMI 分数；数据覆盖1946–2025年的七个国家；开展同期与滞后分析，探究 EMI 与 deliberative democracy 以及治理（法规透明度、可预测性执行等）之间的关系。\n\n- 结论/性能：EMI 与各国的 deliberative democracy 呈正相关，且在同期与滞后分析中均稳健；EMI 也与治理的透明性和法规执行的可预测性正相关，表明议会话语的认知性质对民主质量与治理具有关键作用。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-22 13:01:03"
+}

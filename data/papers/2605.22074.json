@@ -1,0 +1,13 @@
+{
+ "id": "2605.22074",
+ "title": "From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning",
+ "authors": "Xitai Jiang, Zihan Tang, Wenze Lin, Yang Yue, Shenzhi Wang, Gao Huang",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22074v1",
+ "abstract": "Reinforcement learning from verifiable rewards (RLVR) has shown strong promise for LLM reasoning, but outcome-based RLVR remains inefficient on hard problems because correct final-answer rollouts are rare and sample-level credit assignment cannot use partial progress in failed attempts. We introduce SCRL (Subproblem Curriculum Reinforcement Learning), a curriculum RL framework that derives verifiable subproblems from reference reasoning chains and fixes the final subproblem as the original problem. This turns partial progress on hard problems into verifiable learning signals. Algorithmically, SCRL uses subproblem-level normalization, which normalizes rewards independently at each subproblem position and assigns the resulting advantages to the corresponding answer spans, enabling finer-grained credit assignment without external rubrics or reward models. Our analysis shows that subproblem curricula lift hard problems out of gradient dead zones, with larger relative gains as the original problem becomes harder. Across seven mathematical reasoning benchmarks, SCRL outperforms strong curriculum-learning baselines, improving average accuracy over GRPO by +4.1 points on Qwen3-4B-Base and +1.9 points on Qwen3-14B-Base. On AIME24, AIME25, and IMO-Bench, SCRL further improves pass@1 by +3.7 points and pass@64 by +4.6 points on Qwen3-4B-Base, indicating better exploration on hard reasoning problems.",
+ "summary": "# 论文总结\n\n**标题**：From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning\n\n1. **核心创新点**：提出 SCRL（子问题课程强化学习）框架，将参考推理链拆分为可验证的子问题序列，把困难问题上的\"部分进展\"转化为可用的学习信号，解决了 outcome-based RLVR 在难题上信用分配粗糙、样本稀疏的问题。\n\n2. **主要方法**：从参考推理链中派生出一系列可验证的子问题（并将最终子问题固定为原始问题），构建子问题课程；算法上采用**子问题级归一化**——在每个子问题位置独立归一化奖励，并将相应优势值分配给对应的答案片段，实现细粒度信用分配，无需外部评分准则或奖励模型。\n\n3. **结论/性能**：在 7 个数学推理基准上优于强课程学习基线；相较 GRPO，平均准确率在 Qwen3-4B-Base 上提升 **+4.1** 分、在 Qwen3-14B-Base 上提升 **+1.9** 分；在 AIME24、AIME25、IMO-Bench 上，Qwen3-4B-Base 的 pass@1 提升 **+3.7** 分、pass@64 提升 **+4.6** 分，表明对难题的探索能力更强；分析显示子问题课程能将难题从\"梯度死区\"中拉出，问题越难相对收益越大。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:01:05"
+}

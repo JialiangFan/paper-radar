@@ -1,0 +1,13 @@
+{
+ "id": "2608.16651",
+ "title": "Orbit-Planner: Towards Latent World Models for On-Orbit Obstacle Avoidance of Satellite Agents",
+ "authors": "Zhijian Li, Chao Ren, Peijin Wang, Xian Sun",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16651v1",
+ "abstract": "Satellite agents for on-orbit navigation tasks need to predict collision risks using limited onboard observations. However, conventional planners often rely on predefined maps and fixed environmental assumptions, limiting their adaptability in dynamic on-orbit scenarios. In this paper, we propose Orbit-Planner, a two-stage latent world model for on-orbit obstacle avoidance. Orbit-Planner learns action-conditioned spacecraft dynamics to perform future-state rollouts in latent space, and introduces a Physics Probe to decode physical state changes from imagined latent trajectories. Experiments demonstrate that Orbit-Planner can perform long-horizon latent rollouts and recover physical states from imagined trajectories. In closed-loop obstacle-avoidance navigation in Isaac Sim, it attains a success rate of 91.7%. Code is available at https://github.com/ZhijianLi2003/Orbit_Planner.",
+ "summary": "## Orbit-Planner 论文摘要总结\n\n**1. 核心创新点**\n提出 Orbit-Planner——一个面向卫星在轨避障的两阶段\"隐空间世界模型\"，用可学习的动力学预测替代传统规划器对预定义地图和固定环境假设的依赖。\n\n**2. 主要方法**\n- **动作条件的航天器动力学建模**：学习\"当前状态 + 动作 → 未来状态\"的映射，在隐空间（latent space）中直接进行未来状态推演（rollout），无需显式重建环境地图。\n- **Physics Probe（物理探针）**：一个解码模块，从\"想象出来的\"隐空间轨迹中还原出可解释的物理状态变化，把隐表征与真实物理量对应起来，提升可验证性。\n- **仿真验证平台**：在 NVIDIA Isaac Sim 中做闭环避障导航实验。\n\n**3. 结论/性能**\n模型能够完成长时程（long-horizon）的隐空间推演，并从想象轨迹中成功恢复物理状态；在 Isaac Sim 的闭环避障导航任务中取得 **91.7% 的成功率**。代码已开源（github.com/ZhijianLi2003/Orbit_Planner）。\n\n> 补充判断：摘要未给出与其他规划器/世界模型的对比基线，也未说明 91.7% 的测试场景规模，因此该数字的相对优势暂无法评估。如需深入，建议重点看正文的实验设置与消融部分。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-18 13:05:42"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.06507",
+ "title": "FloorplanVLM: A Vision-Language Model for Floorplan Vectorization",
+ "authors": "Yuanqing Liu, Ziming Yang, Yulong Li, Yue Yang",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06507v1",
+ "abstract": "Converting raster floorplans into engineering-grade vector graphics is challenging due to complex topology and strict geometric constraints. To address this, we present FloorplanVLM, a unified framework that reformulates floorplan vectorization as an image-conditioned sequence modeling task. Unlike pixel-based methods that rely on fragile heuristics or query-based transformers that generate fragmented rooms, our model directly outputs structured JSON sequences representing the global topology. This 'pixels-to-sequence' paradigm enables the precise and holistic constraint satisfaction of complex geometries, such as slanted walls and curved arcs. To support this data-hungry approach, we introduce a scalable data engine: we construct a large-scale dataset (Floorplan-2M) and a high-fidelity subset (Floorplan-HQ-300K) to balance geometric diversity and pixel-level precision. We then employ a progressive training strategy, using Supervised Fine-Tuning (SFT) for structural grounding and quality annealing, followed by Group Relative Policy Optimization (GRPO) for strict geometric alignment. To standardize evaluation on complex layouts, we establish and open-source FPBench-2K. Evaluated on this rigorous benchmark, FloorplanVLM demonstrates exceptional structural validity, achieving $\\textbf{92.52%}$ external-wall IoU and robust generalization across non-Manhattan architectures.",
+ "summary": "1) 核心创新点\n- 将栅格化平面图的向量化问题重新建模为图像条件下的序列生成任务，直接输出表示全局拓扑的结构化JSON序列，形成“像素到序列”的端到端矢量化方法，克服传统像素/基于查询的Transformer在复杂拓扑中的局限。\n\n2) 主要方法\n- 提出 FloorplanVLM——一个视觉-语言模型框架，将平面向量化转化为图像条件的序列生成；构建大规模数据集 Floorplan-2M 与高保真子集 Floorplan-HQ-300K；采用分阶段训练：先进行监督微调（SFT）以结构 grounding 和质量退火，然后使用 Group Relative Policy Optimization（GRPO）实现严格几何对齐；并开源 FPBench-2K 以标准化评估。\n\n3) 结论/性能\n- 在 FPBench-2K 基准上显示出强烈结构有效性，外墙 IoU 达到 92.52%，并具有对非曼哈顿布局的良好泛化与鲁棒性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-09 14:04:04"
+}

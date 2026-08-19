@@ -1,0 +1,13 @@
+{
+ "id": "2603.22206",
+ "title": "Chimera: Latency- and Performance-Aware Multi-agent Serving for Heterogeneous LLMs",
+ "authors": "Kangqi Ni, Wenyue Hua, Xiaoxiang Shi, Jiang Guo, Shiyu Chang, Tianlong Chen",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22206v1",
+ "abstract": "Multi-agent applications often execute complex tasks as multi-stage workflows, where each stage is an LLM call whose output becomes part of context for subsequent steps. Existing LLM serving systems largely assume homogeneous clusters with identical model replicas. This design overlooks the potential of heterogeneous deployments, where models of different sizes and capabilities enable finer trade-offs between latency and performance. However, heterogeneity introduces new challenges in scheduling across models with diverse throughput and performance. We present Chimera, a predictive scheduling system for multi-agent workflow serving on heterogeneous LLM clusters that jointly improves end-to-end latency and task performance. Chimera applies semantic routing to estimate per-model confidence scores for each request, predicts the total remaining output length of the workflow, and estimates per-model congestion using in-flight predicted token volumes for load balancing. We evaluate Chimera on representative agentic workflows for code generation and math reasoning using multiple heterogeneous LLM configurations. Across comparable settings, Chimera traces the best latency-performance frontier, reducing end-to-end latency by 1.2--2.4$\\times$ and improving task performance by 8.0-9.5 percentage points on average over competitive baselines including vLLM.",
+ "summary": "1. 核心创新点：在异质大语言模型集群上实现面向多代理工作流的预测性调度系统 Chimera，通过语义路由、工作流剩余输出长度预测和在飞令牌容量估计实现端到端延迟与任务性能的联合优化。\n\n2. 主要方法：利用语义路由对每个请求在各模型上的置信分数进行估计；预测整个工作流的剩余输出长度；基于在飞的预测令牌量来估计各模型拥塞并进行负载均衡，适用于异质 LLM 集群的多代理工作流调度。\n\n3. 结论/性能：在代表性代码生成与数学推理的多代理工作流上，与包括 vLLM 在内的基线相比，端到端延迟降低约 1.2–2.4 倍，任务性能提升约 8.0–9.5 个百分点。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:09:50"
+}

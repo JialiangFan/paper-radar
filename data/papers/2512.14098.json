@@ -1,0 +1,13 @@
+{
+ "id": "2512.14098",
+ "title": "Cornserve: Efficiently Serving Any-to-Any Multimodal Models",
+ "authors": "Jeff J. Ma, Jae-Won Chung, Jisang Ahn, Yizhuo Liang, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14098v1",
+ "abstract": "We present Cornserve, an efficient online serving system for an emerging class of multimodal models called Any-to-Any models. Any-to-Any models accept combinations of text and multimodal data (e.g., image, video, audio) as input and also generate combinations of text and multimodal data as output, introducing request type, computation path, and computation scaling heterogeneity in model serving.\n  Cornserve allows model developers to describe the computation graph of generic Any-to-Any models, which consists of heterogeneous components such as multimodal encoders, autoregressive models like Large Language Models (LLMs), and multimodal generators like Diffusion Transformers (DiTs). Given this, Cornserve's planner automatically finds an optimized deployment plan for the model, including whether and how to disaggregate the model into smaller components based on model and workload characteristics. Cornserve's distributed runtime then executes the model per the plan, efficiently handling Any-to-Any model heterogeneity during online serving. Evaluations show that Cornserve can efficiently serve diverse Any-to-Any models and workloads, delivering up to 3.81$\\times$ throughput improvement and up to 5.79$\\times$ tail latency reduction over existing solutions.",
+ "summary": "- 核心创新点：提出 Cornserve，一套能够自动建模、优化部署计划并将任意到任意的多模态模型分解成组件，在分布式运行时高效执行的在线服务系统，以应对输入/输出多模态组合与计算路径的异质性。\n\n- 主要方法：\n  - 将 Any-to-Any 模型表示为包含多模态编码器、自回归模型（如大语言模型）和多模态生成器等组件的计算图。\n  - 规划器（planner）自动生成优化的部署计划，判断是否以及如何将模型按工作负载特征拆分成更小的组件并进行分布式部署。\n  - 分布式运行时（runtime）按计划执行，高效处理在线服务中的异质性与组件间通信。\n\n- 结论/性能：\n  - 能高效服务多样的 Any-to-Any 模型与工作负载。\n  - 相比现有方案，吞吐量最高提升至 3.81 倍，尾延迟下降最高达 5.79 倍。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:03:06"
+}

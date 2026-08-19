@@ -1,0 +1,13 @@
+{
+ "id": "2605.27293",
+ "title": "BASIS: Batchwise Advantage Estimation from Single-Rollout Information Sharing for LLM Reasoning",
+ "authors": "Shijin Gong, Erhan Xu, Kai Ye, Francesco Quinzan, Giulia Livieri, Chengchun Shi",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27293v1",
+ "abstract": "Reinforcement learning with verifiable rewards has become a standard recipe for improving the reasoning abilities of large language models. Existing algorithms face a tradeoff between computational efficiency and sample efficiency in value estimation and policy learning. We introduce BASIS, a critic-free post-training algorithm designed to address this tradeoff. At each online training step, BASIS samples only one rollout per prompt, but leverages rich information across prompts in the entire batch to improve value function estimation. Our experiments demonstrate that BASIS reduces MSE in value function estimation by 69% compared to REINFORCE++, a representative single-rollout baseline, and achieves lower MSE with one rollout than group mean estimators with 8 rollouts. This improvement in value estimation translates to better policy optimization: using substantially less training time, BASIS achieves performance close to multi-rollout GRPO-type baselines and often outperforms single-rollout REINFORCE-type baselines.",
+ "summary": "# BASIS 论文总结\n\n**核心创新点**：提出一种 critic-free 的后训练算法 BASIS，通过在 batch 内跨 prompt 共享信息，仅用单次 rollout 就能实现高质量的价值函数估计，缓解了强化学习中计算效率与样本效率的权衡难题。\n\n**主要方法**：在每个在线训练步骤中，BASIS 对每个 prompt 只采样一次 rollout（而非 GRPO 等方法的多次采样），但利用整个 batch 内所有 prompt 的丰富信息来改进价值函数（advantage）估计，从而避免训练 critic 网络的开销。\n\n**结论/性能**：\n- 价值函数估计的 MSE 相比单 rollout 基线 REINFORCE++ 降低 **69%**；\n- 仅用 1 次 rollout 的 MSE 就低于 group mean 估计器使用 8 次 rollout 的结果；\n- 训练时间大幅减少的前提下，性能接近多 rollout 的 GRPO 类方法，并常常优于单 rollout 的 REINFORCE 类方法。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-27 13:01:27"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.04563",
+ "title": "COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence",
+ "authors": "Zefeng Zhang, Xiangzhao Hao, Hengzhu Tang, Zhenyu Zhang, Jiawei Sheng, Xiaodong Li, Zhenyang Li, Li Gao, Daiting Shi, Dawei Yin, Tingwen Liu",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04563v1",
+ "abstract": "Visual Spatial Reasoning is crucial for enabling Multimodal Large Language Models (MLLMs) to understand object properties and spatial relationships, yet current models still struggle with 3D-aware reasoning. Existing approaches typically enhance either perception, by augmenting RGB inputs with auxiliary modalities such as depth and segmentation, or reasoning, by training on spatial VQA datasets and applying reinforcement learning, and thus treat these two aspects in isolation. In this work, we investigate whether a unified MLLM can develop an intrinsic ability to enhance spatial perception and, through adaptive interleaved reasoning, achieve stronger spatial intelligence. We propose \\textbf{COOPER}, a unified MLLM that leverages depth and segmentation as auxiliary modalities and is trained in two stages to acquire auxiliary modality generation and adaptive, interleaved reasoning capabilities. COOPER achieves an average \\textbf{6.91\\%} improvement in spatial reasoning while maintaining general performance. Moreover, even a variant trained only for auxiliary modality generation attains a \\textbf{7.92\\%} gain on distance and size estimation, suggesting that learning to generate auxiliary modalities helps internalize spatial knowledge and strengthen spatial understanding.",
+ "summary": "- 核心创新点：提出一个统一的多模态大语言模型 COOPER，结合感知与推理能力，通过两阶段训练让模型能够生成辅助模态（深度与分割）并进行自适应、交错的推理，从而提升空间智能和3D感知能力。\n\n- 主要方法：使用深度和分割作为RGB的辅助模态，作为输入信息增强感知；COOPER 作为一个统一的 MLLM，分两阶段训练实现（1）辅助模态生成能力的获得；（2）自适应、交错的推理能力的培养，强调感知与推理的联合提升，而非彼此独立。\n\n- 结论/性能：在空间推理任务上平均提升约 6.91%，且保持一般性能；仅用于辅助模态生成的变体在距离与尺寸估计上也达到约 7.92% 的提升，表明学习生成辅助模态有助于内部化空间知识、加强空间理解。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:03:52"
+}

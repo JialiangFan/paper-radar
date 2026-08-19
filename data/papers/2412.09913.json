@@ -1,0 +1,33 @@
+{
+ "id": "2412.09913",
+ "title": "Digital Twin Enabled Runtime Verification for Autonomous Mobile Robots under Uncertainty",
+ "authors": "Joakim Schack Betzer, Jalil Boudjadar, Mirgita Frasheri, Prasad Talasila",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2412.09913",
+ "abstract": "",
+ "summary": "This paper uses a digital twin as a runtime verification watchdog for autonomous mobile robots under uncertainty.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "digital-twin",
+  "robot-safety",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "runtime-verification",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2024_Betzer_DigitalTwinRV.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2024_Betzer_DigitalTwinRV.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

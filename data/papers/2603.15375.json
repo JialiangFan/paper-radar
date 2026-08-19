@@ -1,0 +1,13 @@
+{
+ "id": "2603.15375",
+ "title": "Formalizing and validating properties in Asmeta with Large Language Models (Extended Abstract)",
+ "authors": "Andrea Bombarda, Silvia Bonfanti, Angelo Gargantini, Nico Pellegrinelli",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15375v1",
+ "abstract": "Writing temporal logic properties is often a challenging task for users of model-based development frameworks, particularly when translating informal requirements into formal specifications. In this paper, we explore the idea of integrating Large Language Models (LLMs) into the Asmeta framework to assist users during the definition, formalization, explanation, and validation of temporal properties. We present a workflow in which an LLM-based agent supports these activities by leveraging the Asmeta specification and the feedback produced by the model checker. This work serves as a proof of concept that illustrates the feasibility and potential benefits of such an integration through representative examples.",
+ "summary": "1) 核心创新点：将大语言模型（LLM）代理嵌入 Asmeta 框架，协助定义、形式化、解释和基于模型检查的验证时序性质，提升属性编写与验证的可行性与效率。\n\n2) 主要方法：使用基于 LLM 的代理与 Asmeta 规范耦合，构建一个支持定义/形式化/解释/验证的工作流，利用模型检查器的反馈开展交互式辅助，并通过代表性示例进行概念验证。\n\n3) 结论/性能：证明该整合的可行性与潜在收益，提供概念验证证据；当前以代表性示例展示其有效性，尚未给出定量性能指标。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-17 13:04:31"
+}

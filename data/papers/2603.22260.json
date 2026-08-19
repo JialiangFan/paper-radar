@@ -1,0 +1,13 @@
+{
+ "id": "2603.22260",
+ "title": "Greater accessibility can amplify discrimination in generative AI",
+ "authors": "Carolin Holtermann, Minh Duc Bui, Kaitlyn Zhou, Valentin Hofmann, Katharina von der Wense, Anne Lauscher",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22260v1",
+ "abstract": "Hundreds of millions of people rely on large language models (LLMs) for education, work, and even healthcare. Yet these models are known to reproduce and amplify social biases present in their training data. Moreover, text-based interfaces remain a barrier for many, for example, users with limited literacy, motor impairments, or mobile-only devices. Voice interaction promises to expand accessibility, but unlike text, speech carries identity cues that users cannot easily mask, raising concerns about whether accessibility gains may come at the cost of equitable treatment. Here we show that audio-enabled LLMs exhibit systematic gender discrimination, shifting responses toward gender-stereotyped adjectives and occupations solely on the basis of speaker voice, and amplifying bias beyond that observed in text-based interaction. Thus, voice interfaces do not merely extend text models to a new modality but introduce distinct bias mechanisms tied to paralinguistic cues. Complementary survey evidence ($n=1,000$) shows that infrequent chatbot users are most hesitant to undisclosed attribute inference and most likely to disengage when such practices are revealed. To demonstrate a potential mitigation strategy, we show that pitch manipulation can systematically regulate gender-discriminatory outputs. Overall, our findings reveal a critical tension in AI development: efforts to expand accessibility through voice interfaces simultaneously create new pathways for discrimination, demanding that fairness and accessibility be addressed in tandem.",
+ "summary": "- 核心创新点：首次系统性揭示语音界面中的性别偏见会因声学线索而放大，并提出可通过调控声音特征（如音高）来缓解该偏见的思路，强调了无障碍扩展与公平性之间的权衡。\n\n- 主要方法：\n  - 使用音频启用的大语言模型，比较文本输入与语音输入下的输出偏见，聚焦对性别刻板形容词与职业的偏好变化，分析基于讲述者声音的偏见机制。\n  - 引入声音特征（音高/声线等）作为变量，评估其对性别偏见输出的影响；提出并实验性验证一种通过音高调控来缓解性别偏见的可能策略。\n  - 进行问卷调查（样本量约1000），收集非频繁使用者对隐私属性推断的担忧程度及在暴露相关偏见后对使用意愿的变化。\n\n- 结论/性能：\n  - 发现音频界面中的生成输出存在系统性性别歧视，且偏见强度超出文本界面的同类情况，且由 paralinguistic（如音高等）线索驱动的偏见机制不同于纯文本途径。\n  - 提出并初步验证一种通过调控讲话音高来系统性地调控性别歧视输出的潜在缓解策略。\n  - 调查结果显示，较少使用者对隐匿属性推断更为敏感，且在相关偏见被揭露时更可能停止使用聊天机器人，凸显在推进无障碍的同时需要并行考虑公平性问题。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:01:01"
+}

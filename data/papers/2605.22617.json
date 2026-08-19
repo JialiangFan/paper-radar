@@ -1,0 +1,13 @@
+{
+ "id": "2605.22617",
+ "title": "Search for radio polarization in the particle-accelerating colliding-wind binaries WR 147 and HD 167971",
+ "authors": "A. B. Blanco, M. De Becker, P. Benaglia, S. del Palacio",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22617v1",
+ "abstract": "Particle-accelerating colliding-wind binaries (PACWBs) are multiple systems of massive stars in which strong stellar winds collide, accelerating particles to relativistic energies. This population of relativistic particles emits NT radiation, including synchrotron radiation in the radio domain. This emission is expected to be linearly polarized, but the polarization signature has not yet been detected for a PACWB. Our objective is to quantify the linear polarization of synchrotron radiation in two well-known PACWBs and to interpret our measurements within the framework of the physics of these specific NT emitters. We observed the PACWBs WR 147 and HD 167971 with the Very Large Array (VLA) radio interferometer in the frequency bands L and C (1-2 and 4-8 GHz, respectively), where synchrotron emission is expected to be more prominent. We performed polarization calibration and analyzed the resulting Stokes maps. We did not detect any polarization signature for either of the two targets in either of the two bands, even when considering narrower bands to mitigate the effect of bandpass depolarization. The most conservative upper limit on the polarization degree is on the order of 1% for both targets. The lack of linear polarization for the two targets is likely attributable to a combination of effects, including the turbulent nature of the magnetic field in the synchrotron-emitting region, and depolarization processes based on Faraday rotation that are certainly active in these sources. Their complex geometry, unresolved by the VLA at these frequencies, is most likely to lead to beam depolarization. We emphasize that, in contrast to other canonical synchrotron sources, PACWBs are also subject to thermal dilution. This is especially relevant for systems with stars whose winds are strong enough to contribute copiously to thermal emission, such as those harboring a Wolf-Rayet component.",
+ "summary": "# 论文总结\n\n## 1. 核心创新点\n首次尝试对粒子加速碰撞风双星（PACWBs）中的同步辐射进行射电偏振探测，为这类非热辐射源的偏振特征研究填补空白。\n\n## 2. 主要方法\n使用甚大阵列（VLA）射电干涉仪，在 L 波段（1-2 GHz）和 C 波段（4-8 GHz）观测了两个知名 PACWB 系统 WR 147 和 HD 167971，进行偏振定标并分析 Stokes 参数图，同时采用更窄的子频段以减轻带通退偏振效应的影响。\n\n## 3. 结论/性能\n两个目标在两个波段均未检测到偏振信号，偏振度上限约为 1%。作者将无偏振归因于多重退偏振机制的共同作用：发射区磁场的湍流性质、法拉第旋转导致的退偏振、未分辨的复杂几何结构造成的束流退偏振，以及 Wolf-Rayet 星强星风产生的热辐射稀释效应。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-25 13:12:43"
+}

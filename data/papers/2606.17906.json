@@ -1,0 +1,13 @@
+{
+ "id": "2606.17906",
+ "title": "WAM-RL: World-Action Model Reinforcement Learning with Reconstruction Rewards and Online Video SFT",
+ "authors": "Zezhong Qian, Xiaowei Chi, Yu Qi, Haozhan Li, Zhi Yang Chen, Shanghang Zhang",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.17906v1",
+ "abstract": "Recent World-Action (WA) models demonstrate strong generalization ability and data efficiency, but they typically rely on expert trajectories for training. This reliance limits their ability to acquire fine-grained manipulation skills beyond the demonstration distribution and prevents them from continuously improving through real-world interaction. To address these limitations, we propose WAM-RL, a reinforcement learning framework that enables joint optimization of the world model and the action model through online interaction with the environment. By allowing the two components to co-evolve, our approach enhances fine-grained control and adaptability. Specifically, a WA model consists of a world model and an actor. We design a tailored reinforcement learning method with hierarchical optimization to coordinate their improvement. On the methodological side, we systematically investigate the effects of applying reinforcement learning to the action model, as well as online training of the world model within an RL setting. Our experiments reveal a key insight: optimizing only the actor yields improvements on short-horizon tasks, but fails to provide significant gains on long-horizon tasks. In contrast, jointly optimizing both the world model and the actor is critical for achieving strong performance in long-horizon settings. Our work is the first to introduce reinforcement learning into the World-Action paradigm, and provides insights into how online optimization of both the action head and the world model impacts overall performance.",
+ "summary": "# WAM-RL 论文摘要总结\n\n1. **核心创新点**：首次将强化学习引入\"世界-动作\"（World-Action）模型范式，通过在线交互联合优化世界模型与动作模型，使其能够超越专家示范数据、持续自我提升。\n\n2. **主要方法**：WA 模型由\"世界模型 + 执行器（actor）\"两部分组成。作者设计了一种带**分层优化**的定制化强化学习方法来协调二者的共同进化，并系统性地研究了：(a) 对动作模型应用 RL，以及 (b) 在 RL 框架下对世界模型进行在线训练，分别带来的影响。此外引入了重建奖励（reconstruction rewards）和在线视频监督微调（Online Video SFT）。\n\n3. **结论/性能**：实验得出关键洞见——**只优化执行器**仅在短程任务上有效，对长程任务提升有限；而**联合优化世界模型与执行器**才是长程任务取得强性能的关键。该工作验证了在 WA 范式中同时在线优化动作头与世界模型的重要性。\n\n---\n\n补充一点：如果你希望生成更完整的、中英双语并自动归档到 Obsidian 的正式综述，可以使用 `/paper-review` 技能。当前我按你指定的简洁格式直接作答。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-17 13:05:16"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.11034",
+ "title": "SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training",
+ "authors": "Zhuang Wang",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11034v1",
+ "abstract": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin. Existing diagnosis often relies on in-process monitors that cannot report after the trainer blocks or terminates, or on post-mortem logs that preserve only synchronized symptoms; offline health tests lose the workload and operating conditions that triggered the failure. We present SCOUT, a unified runtime failure-localization framework built on one design principle: identify outliers through strict-majority consensus among equivalent replicas. SCOUT aligns replica progress, timing, and numerical evidence, then uses its Consensus Collective Communication (C3) abstraction to identify ranks whose compact signatures disagree with their peers. An out-of-band CPU observer remains responsive when training hangs, whereas in-situ replay exercises recurring stragglers and silent data corruption (SDC) beside the live job with its model state, kernels, allocations, communication path, and thermal and memory pressure present. Collective fingerprints expose rank-local protocol divergence. Clean replay coverage certifies checkpoint numerical integrity, preventing recovery from selecting state corrupted by SDC. SCOUT integrates with PyTorch, TorchTitan, Megatron-Core, and DeepSpeed without training-loop or framework-source modifications. SCOUT is open source at https://github.com/LMResiliency/lm-resiliency.",
+ "summary": "## SCOUT 论文摘要总结\n\n**1. 核心创新点**\n提出 SCOUT 运行时故障定位框架，核心思想是\"在等价副本之间用严格多数共识来识别离群 rank\"，从而在 LLM 预训练中把被同步操作掩盖的全局症状追溯回真正出问题的那张卡。\n\n**2. 主要方法**\n- **共识集合通信（C3）抽象**：对齐各副本的训练进度、时序与数值证据，比对各 rank 的紧凑\"签名\"，找出与多数同伴不一致者。\n- **带外 CPU 观察器**：独立于训练进程，在训练 hang 死或崩溃后仍能持续上报（解决传统 in-process 监控失效的问题）。\n- **原位重放（in-situ replay）**：在真实作业旁复现慢节点（straggler）和静默数据损坏（SDC），保留当时的模型状态、kernel、显存分配、通信路径以及温度/内存压力等真实运行条件，避免离线健康检查丢失故障触发上下文。\n- **集合通信指纹**：暴露单个 rank 的协议层偏离。\n- **Checkpoint 数值完整性认证**：通过\"干净重放覆盖\"验证 checkpoint，防止恢复时选到已被 SDC 污染的状态。\n\n**3. 结论/性能**\nSCOUT 统一覆盖了卡死（hang）、慢节点和静默数据损坏三类故障的定位，并可无侵入地集成到 PyTorch、TorchTitan、Megatron-Core 和 DeepSpeed —— 无需修改训练循环或框架源码。项目已开源（github.com/LMResiliency/lm-resiliency）。\n\n> 注：摘要中未给出具体的定量指标（如定位准确率、开销百分比），上述\"效果\"为摘要所声明的能力范围；具体性能数字需查阅正文实验部分。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:02:14"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.20144",
+ "title": "Multi-hop Reasoning via Early Knowledge Alignment",
+ "authors": "Yuxin Wang, Shicheng Fang, Bo Wang, Qi Luo, Xuanjing Huang, Yining Zheng, Xipeng Qiu",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20144v1",
+ "abstract": "Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for Large Language Models (LLMs) to address knowledge-intensive queries requiring domain-specific or up-to-date information. To handle complex multi-hop questions that are challenging for single-step retrieval, iterative RAG approaches incorporating reinforcement learning have been proposed. However, existing iterative RAG systems typically plan to decompose questions without leveraging information about the available retrieval corpus, leading to inefficient retrieval and reasoning chains that cascade into suboptimal performance. In this paper, we introduce Early Knowledge Alignment (EKA), a simple but effective module that aligns LLMs with retrieval set before planning in iterative RAG systems with contextually relevant retrieved knowledge. Extensive experiments on six standard RAG datasets demonstrate that by establishing a stronger reasoning foundation, EKA significantly improves retrieval precision, reduces cascading errors, and enhances both performance and efficiency. Our analysis from an entropy perspective demonstrate that incorporating early knowledge reduces unnecessary exploration during the reasoning process, enabling the model to focus more effectively on relevant information subsets. Moreover, EKA proves effective as a versatile, training-free inference strategy that scales seamlessly to large models. Generalization tests across diverse datasets and retrieval corpora confirm the robustness of our approach. Overall, EKA advances the state-of-the-art in iterative RAG systems while illuminating the critical interplay between structured reasoning and efficient exploration in reinforcement learning-augmented frameworks. The code is released at \\href{https://github.com/yxzwang/EarlyKnowledgeAlignment}{Github}.",
+ "summary": "- 核心创新点：在迭代式检索增强生成（RAG）中提出 Early Knowledge Alignment（EKA）模块，在计划前就将大语言模型与当前检索集合对齐，从而提升推理基础、提高检索精度并降低级联错误，且属于训练无关的推理扩展。\n\n- 主要方法：在迭代式 RAG 框架中引入 EKA，作为一个训练-free 的前置对齐步骤，利用上下文相关的检索知识对 LLM 的初始推理进行约束；通过信息熵分析解释其减少探索的机制，并证明该方法可无缝扩展到大模型，实验在六个标准 RAG 数据集上进行，代码已公开。\n\n- 结论/性能：EKA 能显著提升检索精度、减少推理中的级联错误、提升整体性能与推理效率，并在跨数据集和检索语料上表现出良好鲁棒性，作为训练无关的推理策略具有良好的扩展性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-24 02:50:31"
+}

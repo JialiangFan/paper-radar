@@ -1,0 +1,13 @@
+{
+ "id": "2605.23857",
+ "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+ "authors": "Taiming Lu, Zhuang Liu",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23857v1",
+ "abstract": "Knowledge distillation generally assumes a strong-to-weak relationship where stronger teachers yield better students. In this work, we examine this assumption about distillation in large language model pretraining. By varying architecture sizes and training token budgets, we create strong-to-weak, same-level, and weak-to-strong teacher-student relationships, and study distillation's effectiveness under each. We find that the teacher need not be strong: with proper mixing of the language modeling and knowledge distillation losses, even small and undertrained teachers improve larger students. At the same time, a stronger teacher is not always better: pushing the teacher further, through more parameters or more training tokens, can saturate or even reverse the distillation gains. We further observe that distillation improves generalization (out-of-distribution and downstream performance) more readily than in-domain fitting. Together, these results challenge the common belief that distillation pretraining always requires a strong teacher.",
+ "summary": "# 论文总结：Strong Teacher Not Needed? On Distillation in LLM Pretraining\n\n## 1. 核心创新点\n挑战了\"知识蒸馏必须由强教师指导弱学生\"的传统假设，证明在大语言模型预训练中，弱教师同样可以有效提升更强的学生模型。\n\n## 2. 主要方法\n通过系统性地变化模型架构规模和训练 token 预算，构造了**强→弱、同级、弱→强**三种师生关系组合，并研究在适当混合**语言建模损失**与**知识蒸馏损失**条件下的蒸馏效果。\n\n## 3. 结论/性能\n- 教师无需更强：即使是规模小、训练不足的教师，也能提升更大的学生模型；\n- 更强的教师并非总是更好：教师参数或训练 token 过多时，蒸馏收益会**饱和甚至反转**；\n- 蒸馏对**泛化能力**（OOD 与下游任务）的提升比对域内拟合更明显。\n- 整体颠覆了\"蒸馏预训练必须依赖强教师\"的常见认知。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-25 13:02:40"
+}

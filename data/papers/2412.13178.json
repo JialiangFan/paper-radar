@@ -1,0 +1,30 @@
+{
+ "id": "2412.13178",
+ "title": "SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents",
+ "authors": "Sheng Yin et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2412.13178",
+ "abstract": "",
+ "summary": "Foundational embodied-agent safety benchmark for task planning.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental Agent Safety Benchmarks",
+ "tags": [
+  "agent-safety",
+  "benchmark",
+  "embodied-agents",
+  "safe-vla",
+  "supplemental-recent"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Agent_Safety_Benchmarks/2024_SafeAgentBench.md",
+ "pdf_path": "PDFs/Supplemental_Agent_Safety_Benchmarks/2024_SafeAgentBench.pdf",
+ "code": "https://github.com/shengyin1224/SafeAgentBench",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

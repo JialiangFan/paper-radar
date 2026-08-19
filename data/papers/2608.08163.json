@@ -1,0 +1,13 @@
+{
+ "id": "2608.08163",
+ "title": "Agentic AI-driven Immersive Simulation: A Knowledge-Aware Virtual Training Platform forHigh Dose Rate (HDR) Brachytherapy",
+ "authors": "Ronghua Xu, Kepha Barasa, Manoj Kumal, Xinyun Liu, Weihua Zhou, Xin Qian",
+ "date": "2026-08-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.08163v1",
+ "abstract": "The convergence of the Metaverse and Large Language Model (LLM)-based AI agent is catalyzing a shift toward autonomous, immersive, and personalized pedagogical frameworks in medical education. This paper presents a novel agentic AI-driven immersive simulation specifically designed for High Dose Rate (HDR) vaginal cylinder (VC) brachytherapy in cancer care. By integrating Virtual Reality (VR) and mobile computing, the system establishes a high-fidelity, risk-free environment that allows trainees to master complex procedural skills without the facility or safety constraints posed by physical anatomy or live radioactive sources. A core contribution of this work is the seamless integration of a knowledge-aware assistant leveraging Retrieval-Augmented Generation (RAG) to ground agent interactions in authoritative clinical guidelines. This architecture also enables an interactive agent to provide natural language interfaces and hands-free, real-time guidance during intricate medical maneuvers. We validate the proposed system through a prototype deployment comprising a Meta Quest 3 interface linked to a local GPU-accelerated AI backend, demonstrating a feasible architecture for HDR brachytherapy simulation. Experimental results indicate that the system maintains suitable end-to-end latency and high context precision, answer completeness, and relevance in the RAG-enhanced pedagogical support.",
+ "summary": "## 论文摘要总结\n\n**标题**：智能体 AI 驱动的沉浸式仿真——面向高剂量率（HDR）近距离放疗的知识感知虚拟培训平台\n\n### 1. 核心创新点\n将 VR 沉浸式仿真与基于 RAG 的 LLM 智能体结合，构建了首个面向 HDR 阴道柱（vaginal cylinder）近距离放疗的、能实时提供权威临床指南依据的无风险虚拟培训平台。\n\n### 2. 主要方法\n- **沉浸式环境**：融合虚拟现实（VR）与移动计算，搭建高保真、零辐射风险的操作训练场景，规避真实解剖模型与放射源带来的场地和安全限制。\n- **知识感知助手**：以检索增强生成（RAG）为核心，把智能体的回答锚定在权威临床指南上，避免 LLM 自由生成导致的知识失准。\n- **交互方式**：提供自然语言接口，支持术中免手操作（hands-free）的实时引导。\n- **系统实现**：原型采用 Meta Quest 3 头显作为前端，连接本地 GPU 加速的 AI 后端。\n\n### 3. 结论/性能\n原型部署验证了该架构在 HDR 近距离放疗仿真中的可行性：端到端延迟处于可接受范围，且 RAG 增强的教学支持在**上下文精确率（context precision）、答案完整性和相关性**三项指标上均表现良好。\n\n---\n一点观察：摘要中的实验结果为原型层面的系统性能与 RAG 质量评估，**尚未报告真实学员的培训效果（如技能迁移、学习曲线）对比数据**，这是判断该平台教学价值时需要留意的局限。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-11 13:01:12"
+}

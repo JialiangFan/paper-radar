@@ -1,0 +1,13 @@
+{
+ "id": "2608.06296",
+ "title": "On-Policy Self-Distillation without Any Supervision",
+ "authors": "Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06296v1",
+ "abstract": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose Unsupervised On-Policy Self-Distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo-solution by majority vote under a self-consistency threshold. It then conditions a teacher distribution on the shortest pseudo-solution and distills it into prefixes of the model's longest incorrect completion, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT), such as OPSD and GRPO. On AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at the 4B and 8B scales, respectively, and outperforms OPSD by an average of 3.2% and 2.3%. In thinking mode, U-OPSD remains on par with OPSD, outperforming it by 0.9% at 4B and matching it at 8B, while surpassing GRPO by 0.7% and 1.1%, respectively.",
+ "summary": "## 论文总结：《On-Policy Self-Distillation without Any Supervision》\n\n**1. 核心创新点**\n首次实现完全无监督的同策略自蒸馏——不依赖真值标签、环境反馈或更大的教师模型，仅靠模型自身生成结果的\"内部一致性\"就能完成后训练。\n\n**2. 主要方法**\n提出 **U-OPSD（Unsupervised On-Policy Self-Distillation）**，流程分两步：\n- **构造伪解**：对同一问题采样多条 rollout，在满足自一致性阈值的前提下用多数投票产出伪标准答案；\n- **自我蒸馏**：以其中**最短**的伪解为条件构造教师分布，再将其蒸馏到模型**最长错误补全**的各个前缀上——即精准地在模型\"自信地答错\"的位置进行纠偏。\n\n**3. 结论/性能**\n在多种基准、基座模型和训练设置下均稳定优于基座模型，并可**匹配甚至超过使用真值标签的监督方法**（OPSD、GRPO）。\n- **非思考模式（Qwen3）**：在 AIME24/25、HMMT25、MATH500、AMC23 上，4B 与 8B 分别比基座提升 **8.5%** 和 **10.7%**，平均超过 OPSD **3.2%** 和 **2.3%**；\n- **思考模式**：与 OPSD 基本持平（4B 领先 0.9%，8B 打平），并分别超过 GRPO **0.7%** 和 **1.1%**。\n\n> 补充一点判读提示：论文的核心卖点是\"零监督却不输有监督\"，但其伪解构造依赖多数投票，因此方法本质上受限于**模型自身已有的自一致性能力**——在基座模型多数投票准确率本身就很低的任务上，该增益可能难以复现。摘要中未说明这一点的适用边界。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-09 13:01:58"
+}

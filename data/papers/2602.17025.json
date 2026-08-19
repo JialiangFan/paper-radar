@@ -1,0 +1,13 @@
+{
+ "id": "2602.17025",
+ "title": "WS-GRPO: Weakly-Supervised Group-Relative Policy Optimization for Rollout-Efficient Reasoning",
+ "authors": "Gagan Mundada, Zihan Huang, Rohan Surana, Sheldon Yu, Jennifer Yuntong Zhang, Xintong Li, Tong Yu, Lina Yao, Jingbo Shang, Julian McAuley, Junda Wu",
+ "date": "2026-02-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.17025v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) is effective for training language models on complex reasoning. However, since the objective is defined relative to a group of sampled trajectories, extended deliberation can create more chances to realize relative gains, leading to inefficient reasoning and overthinking, and complicating the trade-off between correctness and rollout efficiency. Controlling this behavior is difficult in practice, considering (i) Length penalties are hard to calibrate because longer rollouts may reflect harder problems that require longer reasoning, penalizing tokens risks truncating useful reasoning along with redundant continuation; and (ii) supervision that directly indicates when to continue or stop is typically unavailable beyond final answer correctness. We propose Weakly Supervised GRPO (WS-GRPO), which improves rollout efficiency by converting terminal rewards into correctness-aware guidance over partial trajectories. Unlike global length penalties that are hard to calibrate, WS-GRPO trains a preference model from outcome-only correctness to produce prefix-level signals that indicate when additional continuation is beneficial. Thus, WS-GRPO supplies outcome-derived continue/stop guidance, reducing redundant deliberation while maintaining accuracy. We provide theoretical results and empirically show on reasoning benchmarks that WS-GRPO substantially reduces rollout length while remaining competitive with GRPO baselines.",
+ "summary": "- 核心创新点（一句话概括）\n  提出一种弱监督的组相对策略优化 WS-GRPO，通过从结果正确性出发的偏好模型，为部分轨迹输出前缀级的继续/停止信号，从而在不使用全局长度惩罚的情况下提升 rollout 效率并保持准确性。\n\n- 主要方法（简述使用的技术/模型）\n  - 以 GRPO 为基础，将终局奖励转化为对部分轨迹的正确性导向信号，避免依赖难以校准的全局长度惩罚。\n  - 训练一个从结果正确性中学习的偏好模型，输出前缀级的继续/停止指示，用于指导推理过程中的继续或停止决策。\n  - 采用弱监督信号（仅基于结果正确性）来实现对部分轨迹的指引，提升推理的效率（降低冗余 deliberation）同时保持性能。\n  - 提供理论分析及在推理基准上的经验结果，验证方法的有效性。\n\n- 结论/性能（取得的效果）\n  - 在推理基准上，WS-GRPO 能显著降低 rollout 的长度（推理过程更高效）。\n  - 保持与 GRPO 基线相当甚至有竞争力的正确性表现，证明在提高效率的同时未牺牲准确性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-20 14:03:03"
+}

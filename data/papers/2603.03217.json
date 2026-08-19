@@ -1,0 +1,13 @@
+{
+ "id": "2603.03217",
+ "title": "Recovery-Induced Erasure Attack on QKD Systems",
+ "authors": "Hashir Kuniyil, Asad Ali, Syed M. Arslan, Muhammad Talha Rahim, Artur Czerwinski, Saif Al Kuwari",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.03217v1",
+ "abstract": "Detector dead time is typically treated as a fixed parameter in quantum key distribution (QKD) security analyses. In practice, however, the effective recovery time of single-photon avalanche photodiodes (SPADs) depends on the incident count rate. In this work, we demonstrate that this count-rate-dependent recovery nonlinearity constitutes a distinct attack primitive. We experimentally characterize the dead time shift of a free-running SPAD under controlled broadband loading and observe a substantial increase in effective recovery time as the detected rate rises into the high photon count regime.\n  We show that recovery-induced availability reduction can be modeled as an adversarial erasure channel and derive a conservative bound on the signal detection probability under loading. Unlike previously studied detector-control or efficiency mismatch attacks, the proposed mechanism does not rely on deterministic blinding or timing discrimination. Instead, count-rate-dependent recovery asymmetry induces basis-dependent suppression of detection probabilities ($p_\\perp<p_\\parallel$), converting mismatch-induced errors into loss. Particularly, we show in active-basis BBM92 systems, this effect reduces the observed quantum bit error rate (QBER) below the abort threshold while increasing erasure probability. Using experimentally measured detector recovery data, we quantify the parameter regime in which such stealth suppression is achievable.\n  These results establish count-rate-dependent detector recovery as a security-relevant vulnerability and show that countermeasures designed for timing-based efficiency mismatch do not directly address recovery-induced erasure (RIE) attack. Our findings underscore the need to incorporate detector recovery dynamics explicitly into practical QKD security models.",
+ "summary": "- 核心创新点（1句话）\n  首次提出并实验验证计数率依赖的探测器恢复时间非线性可以作为独立的攻击原语（恢复诱导擦除，RIE），在QKD系统中实现隐蔽的擦除/损失攻击。\n\n- 主要方法\n  - 实验测量：在可控宽带负载下对自由工作SPAD的死时间偏移进行表征，发现高计数率时有效恢复时间显著增加。\n  - 建模与理论分析：将恢复效应建模为对手可控的擦除信道，推导在加载条件下的信号检测概率的保守界限。\n  - 机制对比与创新点：不同于以往的探测器控制或效率不匹配攻击，该攻击不依赖确定性盲化或定时辨识，而是利用计数率依赖的恢复不对称性引起基底相关的检测概率抑制（p⊥ < p∥），将错配错误转化为损失。\n  - 应用场景与量化：在主动基BBM92系统中分析，该效应可使观测到的QBER降至abort阈值以下，同时提高擦除概率；并利用实测探测器恢复数据量化可实现的参数范围。\n\n- 结论/性能\n  - 安全性影响：计数率依赖的探测器恢复被确认为一个安全相关的漏洞，现有针对时序效率不匹配的对策并不能直接解决RIE。\n  - 实用含义：需要在实际QKD安全模型中显式纳入探测器恢复动力学；在特定参数区间可以实现隐蔽的抑制，即降低QBER同时增加擦除概率。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-04 14:01:35"
+}

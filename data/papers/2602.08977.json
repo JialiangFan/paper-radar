@@ -1,0 +1,13 @@
+{
+ "id": "2602.08977",
+ "title": "Contraction Metric Based Safe Reinforcement Learning Force Control for a Hydraulic Actuator with Real-World Training",
+ "authors": "Lucca Maitan, Lucas Toschi, Cícero Zanette, Elisa G. Vergamini, Leonardo F. Santos, Thiago Boaventura",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08977v1",
+ "abstract": "Force control in hydraulic actuators is notoriously difficult due to strong nonlinearities, uncertainties, and the high risks associated with unsafe exploration during learning. This paper investigates safe reinforcement learning (RL) for hy draulic force control with real-world training using contraction metric certificates. A data-driven model of a hydraulic actuator, identified from experimental data, is employed for simulation based pretraining of a Soft Actor-Critic (SAC) policy that adapts the PI gains of a feedback-linearization (FL) controller. To reduce instability during online training, we propose a quadratic-programming (QP) contraction filter that leverages a learned contraction metric to enforce approximate exponential convergence of trajectories, applying minimal corrections to the policy output. The approach is validated on a hydraulic test bench, where the RL controller is trained directly on hardware and benchmarked against a simulation-trained agent and a fixed-gain baseline. Experimental results show that real-hardware training improves force-tracking performance compared to both alternatives, while the contraction filter mitigates chattering and instabilities. These findings suggest that contraction-based certificates can enable safe RL in high force hydraulic systems, though robustness at extreme operating conditions remains a challenge.",
+ "summary": "- 核心创新点：提出基于收敛性度量（contracting metric）的证据来实现安全强化学习在液压力控中的应用，并通过二次规划（QP）收敛滤波器进行在线最小干预的策略修正。\n- 主要方法：\n  - 使用实验数据得到液压执行器的数据驱动模型，用于仿真预训练一个软体行为克制的 SAC 策略，该策略同时自适应反馈线性化（FL）控制器的 PI 增益；\n  - 引入基于学习得到的收敛度度量的 QP 收敛滤波器，在在线训练中强制轨迹近似指数收敛，同时对策略输出做最小修正；\n  - 在实际水压试验台上直接进行硬件训练，并与在仿真中训练的代理及固定增益基线进行对比。\n- 结论/性能：\n  - 真实硬件训练在力跟踪性能上优于仿真训练的代理和固定增益基线；\n  - 收敛滤波器有效缓解了在线训练中的抖动和不稳定性；\n  - 结果表明收敛性证据可以使高力液压系统中的安全 RL 成为可能，但在极端工况下的鲁棒性仍是一个挑战。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:00:52"
+}

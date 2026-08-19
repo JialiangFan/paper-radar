@@ -1,0 +1,30 @@
+{
+ "id": "vla-eval-a-unified-evaluation-harness-for-vision-language-action-models",
+ "title": "vla-eval: A Unified Evaluation Harness for Vision-Language-Action Models",
+ "authors": "Allen Institute for AI authors",
+ "date": null,
+ "year": 2026,
+ "url": "https://openreview.net/forum?id=IpKQsHWaYS",
+ "abstract": "",
+ "summary": "Evaluation harness for running many VLA models on many robot simulation benchmarks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "ICLR 2026",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "benchmark",
+  "evaluation-harness",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-evaluation"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2026_VLA_Eval_Harness.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2026_VLA_Eval_Harness.pdf",
+ "code": "https://github.com/allenai/vla-evaluation-harness",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

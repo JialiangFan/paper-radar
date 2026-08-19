@@ -1,0 +1,13 @@
+{
+ "id": "2602.19974",
+ "title": "RL-RIG: A Generative Spatial Reasoner via Intrinsic Reflection",
+ "authors": "Tianyu Wang, Zhiyuan Ma, Qian Wang, Xinyi Zhang, Xinwei Long, Bowen Zhou",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19974v1",
+ "abstract": "Recent advancements in image generation have achieved impressive results in producing high-quality images. However, existing image generation models still generally struggle with a spatial reasoning dilemma, lacking the ability to accurately capture fine-grained spatial relationships from the prompt and correctly generate scenes with structural integrity. To mitigate this dilemma, we propose RL-RIG, a Reinforcement Learning framework for Reflection-based Image Generation. Our architecture comprises four primary components: Diffuser, Checker, Actor, and Inverse Diffuser, following a Generate-Reflect-Edit paradigm to spark the Chain of Thought reasoning ability in image generation for addressing the dilemma. To equip the model with better intuition over generation trajectories, we further develop Reflection-GRPO to train the VLM Actor for edit prompts and the Image Editor for better image quality under a given prompt, respectively. Unlike traditional approaches that solely produce visually stunning yet structurally unreasonable content, our evaluation metrics prioritize spatial accuracy, utilizing Scene Graph IoU and employing a VLM-as-a-Judge strategy to assess the spatial consistency of generated images on LAION-SG dataset. Experimental results show that RL-RIG outperforms existing state-of-the-art open-source models by up to 11% in terms of controllable and precise spatial reasoning in image generation.",
+ "summary": "**核心创新点**：提出基于反射的强化学习框架 RL-RIG，通过生成-反思-编辑的循环显著提升图像生成的空间推理能力与结构一致性。\n\n**主要方法**：利用 Diffuser、Checker、Actor、Inverse Diffuser 四大模块构成 Generate-Reflect-Edit 的工作流，融入 Chain-of-Thought 式的空间推理；引入 Reflection-GRPO 训练策略，分别用于训练具备编辑提示理解的 VLM Actor 和在给定 prompts 下提升图像质量的 Image Editor；采用 VLM 作为判定者，在 LAION-SG 数据集上以 Scene Graph IoU 等空间准确性指标评估生成结果。\n\n**结论/性能**：相较于现有开源模型，RL-RIG 在可控性与空间推理的精确性方面提升显著，评测达到最高约 11% 的性能提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-24 14:03:43"
+}

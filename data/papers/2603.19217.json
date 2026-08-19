@@ -1,0 +1,13 @@
+{
+ "id": "2603.19217",
+ "title": "LVOmniBench: Pioneering Long Audio-Video Understanding Evaluation for Omnimodal LLMs",
+ "authors": "Keda Tao, Yuhua Zheng, Jia Xu, Wenjie Du, Kele Shao, Hesong Wang, Xueyi Chen, Xin Jin, Junhan Zhu, Bohan Yu, Weiqiang Wang, Jian Liu, Can Qin, Yulun Zhang, Ming-Hsuan Yang, Huan Wang",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19217v1",
+ "abstract": "Recent advancements in omnimodal large language models (OmniLLMs) have significantly improved the comprehension of audio and video inputs. However, current evaluations primarily focus on short audio and video clips ranging from 10 seconds to 5 minutes, failing to reflect the demands of real-world applications, where videos typically run for tens of minutes. To address this critical gap, we introduce LVOmniBench, a new benchmark designed specifically for the cross-modal comprehension of long-form audio and video. This dataset comprises high-quality videos sourced from open platforms that feature rich audio-visual dynamics. Through rigorous manual selection and annotation, LVOmniBench comprises 275 videos, ranging in duration from 10 to 90 minutes, and 1,014 question-answer (QA) pairs. LVOmniBench aims to rigorously evaluate the capabilities of OmniLLMs across domains, including long-term memory, temporal localization, fine-grained understanding, and multimodal perception. Our extensive evaluation reveals that current OmniLLMs encounter significant challenges when processing extended audio-visual inputs. Open-source models generally achieve accuracies below 35%, whereas the Gemini 3 Pro reaches a peak accuracy of approximately 65%. We anticipate that this dataset, along with our empirical findings, will stimulate further research and the development of advanced models capable of resolving complex cross-modal understanding problems within long-form audio-visual contexts.",
+ "summary": "- 核心创新点：提出 LVOmniBench，面向跨模态长时长音视频理解的首个基准，包含275段10–90分钟视频与1014道问答，用以评估记忆、时间定位、细粒度理解与多模态感知等能力。\n\n- 主要方法：通过从公开平台精选高质量视频并进行严格人工筛选与标注，构建完整的评测数据集与评测流程，覆盖长时记忆、时间定位、细粒度理解、跨模态感知等维度；对现有开源 OmniLLMs 及 Gemini 3 Pro 等模型进行系统评测，给出性能对比与分析。\n\n- 结论/性能：当前 OmniLLMs 在处理长时长音视频方面仍显乏力，开源模型普遍准确率低于35%，Gemini 3 Pro 最高约65%，该数据集及分析将推动更先进模型的研究与发展。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-20 13:01:23"
+}

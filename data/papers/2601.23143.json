@@ -1,0 +1,13 @@
+{
+ "id": "2601.23143",
+ "title": "THINKSAFE: Self-Generated Safety Alignment for Reasoning Models",
+ "authors": "Seanie Lee, Sangwoo Park, Yumin Choi, Gyeongman Kim, Minki Kang, Jihun Yun, Dongmin Park, Jongho Park, Sung Ju Hwang",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.23143v1",
+ "abstract": "Large reasoning models (LRMs) achieve remarkable performance by leveraging reinforcement learning (RL) on reasoning tasks to generate long chain-of-thought (CoT) reasoning. However, this over-optimization often prioritizes compliance, making models vulnerable to harmful prompts. To mitigate this safety degradation, recent approaches rely on external teacher distillation, yet this introduces a distributional discrepancy that degrades native reasoning. We propose ThinkSafe, a self-generated alignment framework that restores safety alignment without external teachers. Our key insight is that while compliance suppresses safety mechanisms, models often retain latent knowledge to identify harm. ThinkSafe unlocks this via lightweight refusal steering, guiding the model to generate in-distribution safety reasoning traces. Fine-tuning on these self-generated responses effectively realigns the model while minimizing distribution shift. Experiments on DeepSeek-R1-Distill and Qwen3 show ThinkSafe significantly improves safety while preserving reasoning proficiency. Notably, it achieves superior safety and comparable reasoning to GRPO, with significantly reduced computational cost. Code, models, and datasets are available at https://github.com/seanie12/ThinkSafe.git.",
+ "summary": "- 核心创新点：提出自生成安全对齐框架 ThinkSafe，通过轻量级的拒绝引导让模型在自身分布内生成安全的推理痕迹，从而在无需外部教师的情况下恢复安全对齐。\n\n- 主要方法：利用拒绝引导（refusal steering）引导模型产生在分布内的安全推理轨迹，并以这些自生成的安全响应对模型进行微调，从而实现自生成的安全对齐，避免外部教师蒸馏带来的分布差异。\n\n- 结论/性能：在 DeepSeek-R1-Distill 与 Qwen3 上实验，ThinkSafe 能显著提升安全性并保持推理能力，且在安全性方面优于 GRPO，同时具备显著更低的计算成本。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-02 14:04:39"
+}

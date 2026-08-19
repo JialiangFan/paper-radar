@@ -1,0 +1,13 @@
+{
+ "id": "2604.28196",
+ "title": "HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation",
+ "authors": "Xin Zhou, Dingkang Liang, Xiwu Chen, Feiyang Tan, Dingyuan Zhang, Hengshuang Zhao, Xiang Bai",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28196v1",
+ "abstract": "Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks. The model and code will be publicly released at https://github.com/H-EmbodVis/HERMESV2.",
+ "summary": "- 核心创新点：将3D场景理解与未来几何预测统一在一个驾驶世界模型中，通过 BEV 表征、LLM 增强的世界查询、Current-to-Future 链接以及联合几何优化实现理解与生成的协同。\n\n- 主要方法：\n  - BEV 表征：把多视角空间信息汇聚成与大语言模型对接的底层表示。\n  - LLM 增强的世界查询：引入大语言模型进行知识迁移，促进理解分支与推理能力的协同。\n  - Current-to-Future Link：在时间维度上建立从当前场景到未来几何演化的条件化联系，以语义上下文引导几何预测。\n  - Joint Geometric Optimization：将显式几何约束与隐式潜在正则化结合，确保内部表示与几何先验的一致性。\n\n- 结论/性能：在多个基准上取得强劲效果，超越专门方法在未来点云预测和3D 场景理解任务的表现；模型与代码将公开。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-01 13:00:45"
+}

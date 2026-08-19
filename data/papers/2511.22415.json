@@ -1,0 +1,13 @@
+{
+ "id": "2511.22415",
+ "title": "Exposing Vulnerabilities in RL: A Novel Stealthy Backdoor Attack through Reward Poisoning",
+ "authors": "Bokang Zhang, Chaojun Lu, Jianhui Li, Junfeng Wu",
+ "date": "2025-11-27",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.22415v1",
+ "abstract": "Reinforcement learning (RL) has achieved remarkable success across diverse domains, enabling autonomous systems to learn and adapt to dynamic environments by optimizing a reward function. However, this reliance on reward signals creates a significant security vulnerability. In this paper, we study a stealthy backdoor attack that manipulates an agent's policy by poisoning its reward signals. The effectiveness of this attack highlights a critical threat to the integrity of deployed RL systems and calls for urgent defenses against training-time manipulation. We evaluate the attack across classic control and MuJoCo environments. The backdoored agent remains highly stealthy in Hopper and Walker2D, with minimal performance drops of only 2.18 % and 4.59 % under non-triggered scenarios, while achieving strong attack efficacy with up to 82.31% and 71.27% declines under trigger conditions.",
+ "summary": "- 核心创新点：提出一种在强化学习中隐蔽地注入后门的攻击方法，通过在训练阶段污染奖励信号来操控代理策略，揭示 RL 系统安全的关键脆弱性。\n\n- 主要方法：在训练阶段对奖励信号进行污染，利用触发条件触发后门效应来显著改变代理的策略；在经典控制与 MuJoCo 环境（包括 Hopper、Walker2D）进行评估，验证其隐蔽性与攻击效果。\n\n- 结论/性能：在非触发情形下对性能影响极小（Hopper 与 Walker2D 的下降分别为 2.18% 和 4.59%），在触发情形下攻击效果显著，性能下降最高达 82.31% 与 71.27%。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:01:20"
+}

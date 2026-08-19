@@ -1,0 +1,13 @@
+{
+ "id": "2511.21688",
+ "title": "G$^2$VLM: Geometry Grounded Vision Language Model with Unified 3D Reconstruction and Spatial Reasoning",
+ "authors": "Wenbo Hu, Jingli Lin, Yilin Long, Yunlong Ran, Lihan Jiang, Yifan Wang, Chenming Zhu, Runsen Xu, Tai Wang, Jiangmiao Pang",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21688v1",
+ "abstract": "Vision-Language Models (VLMs) still lack robustness in spatial intelligence, demonstrating poor performance on spatial understanding and reasoning tasks. We attribute this gap to the absence of a visual geometry learning process capable of reconstructing 3D space from 2D images. We present G$^2$VLM, a geometry grounded vision-language model that bridges two fundamental aspects of spatial intelligence: spatial 3D reconstruction and spatial understanding. G$^2$VLM natively leverages learned 3D visual geometry features to directly predict 3D attributes and enhance spatial reasoning tasks via in-context learning and interleaved reasoning. Our unified design is highly scalable for spatial understanding: it trains on abundant multi-view image and video data, while simultaneously leveraging the benefits of 3D visual priors that are typically only derived from hard-to-collect annotations. Experimental results demonstrate G$^2$VLM is proficient in both tasks, achieving comparable results to state-of-the-art feed-forward 3D reconstruction models and achieving better or competitive results across spatial understanding and reasoning tasks. By unifying a semantically strong VLM with low-level 3D vision tasks, we hope G$^2$VLM can serve as a strong baseline for the community and unlock more future applications, such as 3D scene editing.",
+ "summary": "- 核心创新点：提出一个几何约束的视觉语言模型 G^2VLM，将二维图像中的几何信息直接用于3D重建与空间理解的统一框架，实现两者的相互促进与融合。\n\n- 主要方法：将强大的视觉语言模型与低层的3D视觉任务结合，利用学习得到的3D几何特征直接预测3D属性，并通过在上下文学习和交错推理来提升空间理解；在训练阶段利用丰富的多视图图像和视频数据，依靠3D几何先验而无需额外的繁重标注，构建一个可扩展的统一框架。\n\n- 结论/性能：实验表明 G^2VLM 在两大任务上都具备竞争力：与最先进的前馈3D重建模型相当，且在空间理解与推理任务上表现更好或具有竞争力；同时可作为强基线，具备未来在3D场景编辑等应用的潜力。",
+ "keyword": "LLM reasoning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:21:35"
+}

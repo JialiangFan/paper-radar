@@ -1,0 +1,13 @@
+{
+ "id": "2603.19974",
+ "title": "Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance",
+ "authors": "Fazhong Liu, Zhuoyan Chen, Tu Lan, Haozhen Tan, Zhenyu Xu, Xiang Li, Guoxing Chen, Yan Meng, Haojin Zhu",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19974v1",
+ "abstract": "Autonomous coding agents are increasingly integrated into software development workflows, offering capabilities that extend beyond code suggestion to active system interaction and environment management. OpenClaw, a representative platform in this emerging paradigm, introduces an extensible skill ecosystem that allows third-party developers to inject behavioral guidance through lifecycle hooks during agent initialization. While this design enhances automation and customization, it also opens a novel and unexplored attack surface. In this paper, we identify and systematically characterize guidance injection, a stealthy attack vector that embeds adversarial operational narratives into bootstrap guidance files. Unlike traditional prompt injection, which relies on explicit malicious instructions, guidance injection manipulates the agent's reasoning context by framing harmful actions as routine best practices. These narratives are automatically incorporated into the agent's interpretive framework and influence future task execution without raising suspicion.We construct 26 malicious skills spanning 13 attack categories including credential exfiltration, workspace destruction, privilege escalation, and persistent backdoor installation. We evaluate them using ORE-Bench, a realistic developer workspace benchmark we developed. Across 52 natural user prompts and six state-of-the-art LLM backends, our attacks achieve success rates from 16.0% to 64.2%, with the majority of malicious actions executed autonomously without user confirmation. Furthermore, 94% of our malicious skills evade detection by existing static and LLM-based scanners. Our findings reveal fundamental tensions in the design of autonomous agent ecosystems and underscore the urgent need for defenses based on capability isolation, runtime policy enforcement, and transparent guidance provenance.",
+ "summary": "- 核心创新点：首次系统性揭示并研究一种通过引导注入（bootstrapped guidance）的隐蔽攻击向量，能够在 OpenClaw 平台的初始化阶段将恶意叙事注入代理推理框架并影响后续任务执行。\n\n- 主要方法：在 OpenClaw 的生命周期钩子中注入 bootstrap 指南，构建并注入 26 种恶意技能（覆盖 13 类攻击，如凭证窃取、工作区破坏、特权提升、持久后门等），通过现实开发工作区基准 ORE-Bench 在 52 条自然语言提示和 6 个前沿 LLM 后端上进行大规模评估，衡量攻击的成功率、自动化执行程度及检测规避能力。\n\n- 结论/性能：在实验中攻击成功率为 16.0%–64.2%，多数行动可在未获得用户确认的情况下自动执行；同时有 94% 的恶意技能能够绕过现有静态与基于 LLM 的检测工具，暴露自治代理生态的脆弱性，并提出以能力隔离、运行时策略执行与透明的引导来源等防御方向来缓解。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:08:46"
+}

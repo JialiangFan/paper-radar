@@ -1,0 +1,13 @@
+{
+ "id": "2603.28731",
+ "title": "SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability",
+ "authors": "Oliver Aleksander Larsen, Mahyar T. Moghaddam",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28731v1",
+ "abstract": "Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.'s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.",
+ "summary": "- 核心创新点：在运行时将大语言模型引入 FastAPI 中间件，结合混合检测、双重解析策略和三层保障的五层管线，实现跨 REST/GraphQL/物联网场景的动态模式互操作性。\n\n- 主要方法：\n  - 架构：基于 FastAPI 的 SAGAI-MID 中间件，面向运行时的模式互操作性。\n  - 技术路径：通过结构差异检测和 LLM 语义分析的混合检测；双重解析策略（按请求的 LLM 转换与由 LLM 生成的可复用适配器代码）来对接不同模式。\n  - 保障机制：三层守卫体系——验证、集成投票、基于规则的回退。\n  - 评估设计：对 10 种互操作场景（REST 版本迁移、物联网到分析、GraphQL 协议转换等）在 6 种 LLM（两家提供商）上进行对比。\n\n- 结论/性能：\n  - 最佳配置实现 0.90 的 pass@1 准确率。\n  - CODEGEN 策略平均 0.83，优于 DIRECT 的 0.77。\n  - 模型成本相差超过 30 倍，但并未带来成比例的准确性提升；最准确的模型也是成本最低的。\n  - 对软件架构师的启示：可将 LLM 作为运行时架构组件带来互操作性能力，但需权衡成本与稳定性等因素。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-31 13:00:49"
+}

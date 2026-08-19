@@ -1,0 +1,13 @@
+{
+ "id": "2602.08847",
+ "title": "Dr. MAS: Stable Reinforcement Learning for Multi-Agent LLM Systems",
+ "authors": "Lang Feng, Longtao Zheng, Shuo He, Fuxiang Zhang, Bo An",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08847v1",
+ "abstract": "Multi-agent LLM systems enable advanced reasoning and tool use via role specialization, yet reliable reinforcement learning (RL) post-training for such systems remains difficult. In this work, we theoretically pinpoint a key reason for training instability when extending group-based RL to multi-agent LLM systems. We show that under GRPO-style optimization, a global normalization baseline may deviate from diverse agents' reward distributions, which ultimately leads to gradient-norm instability. Based on this finding, we propose Dr. MAS, a simple and stable RL training recipe for multi-agent LLM systems. Dr. MAS uses an agent-wise remedy: normalizing advantages per agent using each agent's own reward statistics, which calibrates gradient scales and dramatically stabilizes training, both theoretically and empirically. Beyond the algorithm, Dr. MAS provides an end-to-end RL training framework for multi-agent LLM systems, supporting scalable orchestration, flexible per-agent LLM serving and optimization configs, and shared resource scheduling of LLM actor backends. We evaluate Dr. MAS on multi-agent math reasoning and multi-turn search benchmarks using Qwen2.5 and Qwen3 series models. Dr. MAS achieves clear gains over vanilla GRPO (e.g., +5.6\\% avg@16 and +4.6\\% pass@16 on math, and +15.2\\% avg@16 and +13.1\\% pass@16 on search) while largely eliminating gradient spikes. Moreover, it remains highly effective under heterogeneous agent-model assignments while improving efficiency.",
+ "summary": "- **核心创新点**：在多代理LLM系统的强化学习训练中，揭示了 GRPO 风格优化下全局归一化基线与各代理奖励分布不同步导致梯度范数不稳定的根本原因，并提出按代理自身奖励统计归一化优势的代理级别方法，从而实现稳定的训练（Dr. MAS）及端到端多代理RL框架。  \n- **主要方法**：基于 GRPO 风格的多代理强化学习，提出 agent-wise 的优势归一化（依赖每个代理的奖励统计）来校准梯度尺度，并提供端到端的多代理LLM RL训练框架，支持可扩展编排、逐代理的LLM服务与优化配置，以及共享资源调度，评估用 Qwen2.5/ Qwen3 系列模型进行多代理数学推理与多轮检索任务。  \n- **结论/性能**：相较于原生 GRPO，Dr. MAS 在数学任务上 avg@16 提升 5.6%、pass@16 提升 4.6%；在检索任务上 avg@16 提升 15.2%、pass@16 提升 13.1%；并显著降低梯度尖峰，在异构代理模型配置下仍保持高效。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-10 14:05:46"
+}

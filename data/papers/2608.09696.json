@@ -1,0 +1,13 @@
+{
+ "id": "2608.09696",
+ "title": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models",
+ "authors": "Kevin Murphy",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.09696v2",
+ "abstract": "Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive data leaves its mechanisms unidentified. Experiments are expensive, so the central problem is \\emph{data efficiency}. We present the Model Discovery Agent (MDA), which couples a large language model (LLM), used as a \\emph{proposer} of candidate structures, with standard Bayesian machinery --- sequential Monte Carlo (SMC) for parameter and structure posteriors, simulation-based inference (SBI) for intractable likelihoods, and value-of-information (VoI) for experiment design --- to discover latent mechanistic world models from few interventions. MDA operates in the M-open setting: when the truth lies outside the current hypothesis class, a predictive check flags the inadequacy and the proposer expands the hypothesis space with a new model whose parameters are then identified by designed experiments. We show that \\emph{discovery and design reinforce}: the design step identifies the mechanism the discovery step proposes, and the identified mechanism improves predictions, enabling further discoveries from the remaining unexplained residuals. On three different benchmarks --- covering physics (\\DPbench, \\citep{wiemann2026discoverphysics}), chemistry (\\CHEMbench, \\citep{kabra2026autoscilab}) and biology (\\HHbench, a new partially observed single-neuron electrophysiology benchmark we create) --- we show that MDA sets a new SOTA in terms of data-efficient model learning and reliable interventional prediction ability.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 Model Discovery Agent (MDA)，把大语言模型当作\"机制模型结构提议者\"，与贝叶斯实验设计闭环耦合，从极少量干预实验中发现潜在的机制性世界模型。\n\n**2. 主要方法**\n- **LLM 作为 proposer**：负责生成候选模型结构（而非拟合曲线）\n- **SMC（序贯蒙特卡洛）**：同时推断参数后验与结构后验\n- **SBI（基于模拟的推断）**：处理似然不可解的情形\n- **VoI（信息价值）**：驱动下一步实验的最优设计\n- **M-open 设定**：当真实机制落在当前假设空间之外时，用预测检验（predictive check）标记模型失配，再由 LLM 扩展假设空间，新参数交给设计好的实验来辨识\n\n关键洞察是\"发现与设计相互增强\"：设计步骤辨识出发现步骤提出的机制，被辨识的机制改善预测，从残差中又能引出下一轮发现。\n\n**3. 结论/性能**\n在三个跨学科基准上达到 SOTA——物理（DPbench）、化学（CHEMbench）以及作者新构建的生物学基准 HHbench（部分可观测的单神经元电生理），在**数据效率**和**干预式预测可靠性**两个维度上均优于此前方法。\n\n---\n提示：如果你想要更完整的文献综述式笔记（含背景、研究问题、方法论细节，中英双语并自动存入 Obsidian），可以用 `/paper-review`。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-13 13:04:26"
+}

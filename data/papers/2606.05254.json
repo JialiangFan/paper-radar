@@ -1,0 +1,13 @@
+{
+ "id": "2606.05254",
+ "title": "Flash-WAM: Modality-Aware Distillation for World Action Models",
+ "authors": "Arman Akbari, Ci Zhang, Arash Akbari, Lin Zhao, Yixiao Chen, Weiwei Chen, Xuan Zhang, Geng Yuan, Yanzhi Wang",
+ "date": "2026-06-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05254v1",
+ "abstract": "World-action models (WAMs) jointly generate future video and robot actions through iterative diffusion, achieving strong performance on manipulation benchmarks but requiring tens of denoising steps, a cost that precludes real-time control. Step distillation has emerged as the natural remedy, but off-the-shelf methods break down in the joint video-action setting because video and action streams use different SNR-shifted noise schedules and reach training with substantially different marginal noise distributions, an asymmetry that single-modality distillation methods cannot accommodate. We introduce \\textbf{Flash-WAM}, a modality-aware step-distillation framework inspired by consistency distillation that selects the consistency function for each modality to match its noise regime: a linear-gradient-scaling parametrization for the action stream's low-noise regime, paired with a variance-preserving parametrization for the video stream's high-noise regime, grounded in a structural analysis of the consistency-function family that characterizes the achievable gradient scaling under the consistency boundary condition. Instantiated on LingBot-VA, Flash-WAM compresses inference to a single step in each modality. On RoboTwin 2.0, this reduces per-chunk latency from $8.1$ seconds to $348$ ms on NVIDIA L40S, a $23{\\times}$ speedup that enables real-time inference. Flash-WAM preserves task success on simulation benchmarks ($85.5\\%$ RoboTwin 2.0, $95.7\\%$ LIBERO) and substantially recovers real-world performance ($60\\%$ average on a Unitree G1 humanoid robot), while naive consistency distillation drops to $24\\%$ at the same step budget.",
+ "summary": "## 论文总结：Flash-WAM\n\n**1. 核心创新点**\n针对世界-动作模型（WAM）中视频流和动作流噪声分布不对称的问题，提出**模态感知**的步骤蒸馏框架，为不同模态匹配各自适合的一致性函数参数化方案。\n\n**2. 主要方法**\n- 基于一致性蒸馏（consistency distillation），对一致性函数族进行结构性分析。\n- **动作流**（低噪声区）：采用线性梯度缩放参数化（linear-gradient-scaling）。\n- **视频流**（高噪声区）：采用方差保持参数化（variance-preserving）。\n- 在 LingBot-VA 模型上实例化，将视频与动作两个模态的推理均压缩至**单步**。\n\n**3. 结论/性能**\n- **速度**：在 NVIDIA L40S 上，每块（per-chunk）延迟从 8.1 秒降至 348 毫秒，**加速 23 倍**，实现实时控制。\n- **精度保持**：RoboTwin 2.0 上 85.5%、LIBERO 上 95.7% 的任务成功率；Unitree G1 人形机器人真实场景平均 60%。\n- **对比**：相同步数预算下，朴素一致性蒸馏仅 24%，Flash-WAM 显著优于基线。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-07 13:03:35"
+}

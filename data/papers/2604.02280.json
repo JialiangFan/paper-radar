@@ -1,0 +1,13 @@
+{
+ "id": "2604.02280",
+ "title": "Novel Memory Forgetting Techniques for Autonomous AI Agents: Balancing Relevance and Efficiency",
+ "authors": "Payal Fofadiya, Sunil Tiwari",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02280v1",
+ "abstract": "Long-horizon conversational agents require persistent memory for coherent reasoning, yet uncontrolled accumulation causes temporal decay and false memory propagation. Benchmarks such as LOCOMO and LOCCO report performance degradation from 0.455 to 0.05 across stages, while MultiWOZ shows 78.2% accuracy with 6.8% false memory rate under persistent retention. This work introduces an adaptive budgeted forgetting framework that regulates memory through relevanceguided scoring and bounded optimization. The approach integrates recency, frequency, and semantic alignment to maintain stability under constrained context. Comparative analysis demonstrates improved long-horizon F1 beyond 0.583 baseline levels, higher retention consistency, and reduced false memory behavior without increasing context usage. These findings confirm that structured forgetting preserves reasoning performance while preventing unbounded memory growth in extended conversational settings.",
+ "summary": "1) 核心创新点（1句话）\n提出一个自适应预算化忘记框架，通过相关性引导的评分和有界优化，在保持记忆稳定性的同时限制记忆规模，防止无序增长。\n\n2) 主要方法\n- 使用自适应预算化忘记机制，对记忆进行筛选与删除，以避免记忆过度累积。\n- 引入相关性引导的评分，结合最近性、出现频次和语义对齐等因素来评估记忆的重要性。\n- 采用有界优化框架，在受限上下文条件下实现记忆的稳定性与有效性平衡。\n- 在长时对话场景下进行评估，且不增加额外的上下文使用量。\n\n3) 结论/性能\n- 长时域的F1性能超过基线0.583以上水平，提升了长期推理能力。\n- 记忆保持更一致，减少了错误记忆的传播（false memory）。\n- 实现了更好的记忆保留与稳定性，同时未增加上下文的使用量，避免了无界的记忆增长。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-03 13:01:43"
+}

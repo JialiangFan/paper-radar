@@ -1,0 +1,13 @@
+{
+ "id": "2604.20316",
+ "title": "R2IF: Aligning Reasoning with Decisions via Composite Rewards for Interpretable LLM Function Calling",
+ "authors": "Aijia Cheng, Kailong Wang, Ling Shi, Yongxin Zhao",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20316v1",
+ "abstract": "Function calling empowers large language models (LLMs) to interface with external tools, yet existing RL-based approaches suffer from misalignment between reasoning processes and tool-call decisions. We propose R2IF, a reasoning-aware RL framework for interpretable function calling, adopting a composite reward integrating format/correctness constraints, Chain-of-Thought Effectiveness Reward (CER), and Specification-Modification-Value (SMV) reward, optimized via GRPO. Experiments on BFCL/ACEBench show R2IF outperforms baselines by up to 34.62% (Llama3.2-3B on BFCL) with positive Average CoT Effectiveness (0.05 for Llama3.2-3B), enhancing both function-calling accuracy and interpretability for reliable tool-augmented LLM deployment.",
+ "summary": "- 核心创新点：提出 R2IF，一种将推理过程与工具调用决策对齐的可解释强化学习框架，通过多元复合奖励提升推理与决策的一致性，从而实现更可解释的函数调用。\n\n- 主要方法：构建一个面向推理的强化学习框架，采用复合奖励来引导学习：包括格式与正确性约束奖励、Chain-of-Thought 效果奖励（CER）以及规格-修改-值奖励（SMV），通过 GRPO 进行优化；在 BFCL/ACEBench 上以 Llama3.2-3B 进行实验，提升函数调用的准确性与可解释性。\n\n- 结论/性能：相较基线在 BFCL 上最高提升约 34.62%；在 Llama3.2-3B 上达到正的平均 CoT 有效性（0.05），显著改善函数调用的准确性与可解释性，促进了更可靠的工具增强型大语言模型部署。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-23 13:02:34"
+}

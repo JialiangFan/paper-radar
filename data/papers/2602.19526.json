@@ -1,0 +1,13 @@
+{
+ "id": "2602.19526",
+ "title": "How to Train Your Deep Research Agent? Prompt, Reward, and Policy Optimization in Search-R1",
+ "authors": "Yinuo Xu, Shuo Lu, Jianjie Cheng, Meng Wang, Qianlong Xie, Xingxing Wang, Ran He, Jian Liang",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19526v1",
+ "abstract": "Deep Research agents tackle knowledge-intensive tasks through multi-round retrieval and decision-oriented generation. While reinforcement learning (RL) has been shown to improve performance in this paradigm, its contributions remain underexplored. To fully understand the role of RL, we conduct a systematic study along three decoupled dimensions: prompt template, reward function, and policy optimization. Our study reveals that: 1) the Fast Thinking template yields greater stability and better performance than the Slow Thinking template used in prior work; 2) the F1-based reward underperforms the EM due to training collapse driven by answer avoidance; this can be mitigated by incorporating action-level penalties, ultimately surpassing EM; 3) REINFORCE outperforms PPO while requiring fewer search actions, whereas GRPO shows the poorest stability among policy optimization methods. Building on these insights, we then introduce Search-R1++, a strong baseline that improves the performance of Search-R1 from 0.403 to 0.442 (Qwen2.5-7B) and 0.289 to 0.331 (Qwen2.5-3B). We hope that our findings can pave the way for more principled and reliable RL training strategies in Deep Research systems.",
+ "summary": "- 核心创新点：通过对深度研究代理的提示模板、奖励函数与策略优化三大维度进行系统分解评估，并据此提出更强的基线 Search-R1++，推动在该类任务中更 principled 的 RL 训练策略。\n\n- 主要方法：在多轮检索与决策导向生成框架中，比较三种提示模板（Fast Thinking vs Slow Thinking）、三种奖励函数（F1、EM，以及引入动作级惩罚的组合）、以及三种策略优化方法（REINFORCE、PPO、GRPO），并基于这些发现提出 Search-R1++，在 Qwen2.5-7B 与 Qwen2.5-3B 上评估性能。\n\n- 结论/性能：结论要点包括：Fast Thinking 提升稳定性和性能；F1 基于奖励因训练崩溃（因回避答案）而不及 EM，但通过加入动作级惩罚后可超越 EM；REINFORCE 相较 PPO 在需要更少搜索动作时更优，GRPO 稳定性最低。Search-R1++ 在两种模型规模上均显著提升：Qwen2.5-7B 从 0.403 提升到 0.442；Qwen2.5-3B 从 0.289 提升到 0.331。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-24 14:04:04"
+}

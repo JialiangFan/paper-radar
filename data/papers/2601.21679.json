@@ -1,0 +1,13 @@
+{
+ "id": "2601.21679",
+ "title": "BAP-SRL: Bayesian Adaptive Priority Safe Reinforcement Learning for Vehicle Motion Planning at Mixed Traffic Intersections",
+ "authors": "Yuansheng Lian, Ke Zhang, Yaming Guo, Shen Li, Meng Li",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21679v1",
+ "abstract": "Navigating urban intersections, especially when interacting with heterogeneous traffic participants, presents a formidable challenge for autonomous vehicles (AVs). In such environments, safety risks arise simultaneously from multiple sources, each carrying distinct priority levels and sensitivities that necessitate differential protection preferences. While safe reinforcement learning (RL) offers a robust paradigm for constrained decision-making, existing methods typically model safety as a single constraint or employ static, heuristic weighting schemes for multiple constraints. These approaches often fail to address the dynamic nature of multi-source risks, leading to gradient cancellation that hampers learning, and suboptimal trade-offs in critical dilemma zones. To address this, we propose a Bayesian adaptive priority safe reinforcement learning (BAP-SRL) based motion planning framework. Unlike heuristic weighting schemes, BAP formulates constraint prioritization as a probabilistic inference task. By modeling historical optimization difficulty as a Bayesian prior and instantaneous risk evidence as a likelihood, BAP dynamically gates gradient updates using a Bayesian inference mechanism on latent constraint criticality. Extensive experiments demonstrate that our approach outperforms state-of-the-art baselines in handling interactions with stochastic, heterogeneous agents, achieving lower collision rates and smoother conflict resolution.",
+ "summary": "- 核心创新点：将多源安全约束的优先级通过贝叶斯推断动态自适应确定，以历史优化难度作为先验、即时风险证据作为似然对潜在约束临界性进行门控，从而在强化学习中实现更合理的冲突权衡。\n\n- 主要方法：提出 BAP-SRL 框架，将约束优先级建模为概率变量，利用历史优化难度的先验和即时风险证据的似然进行贝叶斯推断，动态门控梯度更新以实现多源安全约束的自适应处理，应用于混合交通路口的车辆运动规划。\n\n- 结论/性能：在与随机、异质代理的交互场景中，BAP-SRL 相较于先进基线实现更低的碰撞率和更平滑的冲突解决，显示出更强的鲁棒性和安全性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:00:46"
+}

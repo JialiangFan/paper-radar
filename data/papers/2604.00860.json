@@ -1,0 +1,13 @@
+{
+ "id": "2604.00860",
+ "title": "Policy Improvement Reinforcement Learning",
+ "authors": "Huaiyang Wang, Xiaojie Li, Deqing Wang, Haoyi Zhou, Zixuan Huang, Yaodong Yang, Jianxin Li, Yikun Ban",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.00860v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become a central post-training paradigm for improving the reasoning capabilities of large language models. Yet existing methods share a common blind spot: they optimize policies based on instantaneous group-level or batch-level statistics without ever verifying whether the resulting update actually improved the model. This open-loop design -- updating in isolation at each step, guided only by within-group (batch) reward signals -- means optimization can drift or collapse with no mechanism to detect and correct these failures. We argue that the missing ingredient is policy improvement feedback: the ability to measure and optimize inter-iteration progress directly. To this end, we introduce Policy Improvement Reinforcement Learning (PIRL), a framework that replaces surrogate reward maximization with the explicit objective of maximizing cumulative policy improvement across iterations, and prove this temporal objective is perfectly aligned with maximizing final task performance. Building on PIRL, we propose Policy Improvement Policy Optimization (PIPO), which implements closed-loop optimization through retrospective verification. At each iteration, PIPO evaluates whether the previous update yielded genuine improvement against a sliding-window historical baseline, then actively reinforces beneficial updates and suppresses the harmful ones -- transforming an open-loop process into a self-correcting one. We provide theoretical analysis showing that PIPO performs ascent on the PIRL objective in expectation, and experiments on mathematical reasoning benchmarks demonstrate improved stability and performance over GRPO and its variants.",
+ "summary": "1. 核心创新点：提出 Policy Improvement Reinforcement Learning (PIRL) 框架，将优化目标从单步奖励最大化转为跨迭代的累积策略改进，并在此基础上引入闭环的 Policy Improvement Policy Optimization (PIPO) 以实现自我纠错。  \n\n2. 主要方法：在 PIRL 框架下，PIPO 通过回顾性验证对比滑动窗口历史基线，主动强化有益更新、抑制有害更新，将开环优化转为闭环自我纠正；并给出理论分析证明在期望意义上对 PIRL 目标的上升性；在数学推理基准上与 GRPO 等变体比较，验证更高的稳定性和性能提升。  \n\n3. 结论/性能：理论上证明 PIPO 能在期望上实现对 PIRL 目标的上升，并在数学推理基准实验中展现出相较 GRPO 及其变体更稳定且更好的性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-02 13:02:42"
+}

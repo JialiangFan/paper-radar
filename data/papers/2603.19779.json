@@ -1,0 +1,13 @@
+{
+ "id": "2603.19779",
+ "title": "One Model, Two Minds: Task-Conditioned Reasoning for Unified Image Quality and Aesthetic Assessment",
+ "authors": "Wen Yin, Cencen Liu, Dingrui Liu, Bing Su, Yuan-Fang Li, Tao He",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19779v1",
+ "abstract": "Unifying Image Quality Assessment (IQA) and Image Aesthetic Assessment (IAA) in a single multimodal large language model is appealing, yet existing methods adopt a task-agnostic recipe that applies the same reasoning strategy and reward to both tasks. We show this is fundamentally misaligned: IQA relies on low-level, objective perceptual cues and benefits from concise distortion-focused reasoning, whereas IAA requires deliberative semantic judgment and is poorly served by point-wise score regression. We identify these as a reasoning mismatch and an optimization mismatch, and provide empirical evidence for both through controlled probes. Motivated by these findings, we propose TATAR (Task-Aware Thinking with Asymmetric Rewards), a unified framework that shares the visual-language backbone while conditioning post-training on each task's nature. TATAR combines three components: fast--slow task-specific reasoning construction that pairs IQA with concise perceptual rationales and IAA with deliberative aesthetic narratives; two-stage SFT+GRPO learning that establishes task-aware behavioral priors before reward-driven refinement; and asymmetric rewards that apply Gaussian score shaping for IQA and Thurstone-style completion ranking for IAA. Extensive experiments across eight benchmarks demonstrate that TATAR consistently outperforms prior unified baselines on both tasks under in-domain and cross-domain settings, remains competitive with task-specific specialized models, and yields more stable training dynamics for aesthetic assessment. Our results establish task-conditioned post-training as a principled paradigm for unified perceptual scoring. Our code is publicly available at https://github.com/yinwen2019/TATAR.",
+ "summary": "- 核心创新点：提出 TATAR（Task-Aware Thinking with Asymmetric Rewards），在同一视觉-语言大模型上通过任务条件化的思考策略和不对称奖励，实现 IQA 与 IAA 的统一感知评分。\n\n- 主要方法：\n  - 共享视觉-语言骨干，并对不同任务进行后训练阶段的任务性质条件化；\n  - 快-慢两级任务特定推理：IQA 采用简洁的感知推理，IAA 采用更为 deliberative 的美学叙事；\n  - 两阶段 SFT+GRPO 学习：先建立任务感知的行为先验，再进行基于奖励的细化与优化；\n  - 不对称奖励设计：IQA 使用高斯分数塑形，IAA 采用 Thurstone 风格的完成排序。\n\n- 结论/性能：\n  - 在八个基准上，TATAR 普遍优于以往的统一基线，且与任务专用模型相比仍具竞争力；\n  - 在域内与跨域设置下均表现稳定，尤其提高了美学评估的训练稳定性；\n  - 结果表明任务条件化后训练是实现统一感知评分的 principled paradigm。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-23 13:06:07"
+}

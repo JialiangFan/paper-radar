@@ -1,0 +1,13 @@
+{
+ "id": "2512.07783",
+ "title": "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models",
+ "authors": "Charlie Zhang, Graham Neubig, Xiang Yue",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07783v1",
+ "abstract": "Recent reinforcement learning (RL) techniques have yielded impressive reasoning improvements in language models, yet it remains unclear whether post-training truly extends a model's reasoning ability beyond what it acquires during pre-training. A central challenge is the lack of control in modern training pipelines: large-scale pre-training corpora are opaque, mid-training is often underexamined, and RL objectives interact with unknown prior knowledge in complex ways. To resolve this ambiguity, we develop a fully controlled experimental framework that isolates the causal contributions of pre-training, mid-training, and RL-based post-training. Our approach employs synthetic reasoning tasks with explicit atomic operations, parseable step-by-step reasoning traces, and systematic manipulation of training distributions. We evaluate models along two axes: extrapolative generalization to more complex compositions and contextual generalization across surface contexts. Using this framework, we reconcile competing views on RL's effectiveness. We show that: 1) RL produces true capability gains (pass@128) only when pre-training leaves sufficient headroom and when RL data target the model's edge of competence, tasks at the boundary that are difficult but not yet out of reach. 2) Contextual generalization requires minimal yet sufficient pre-training exposure, after which RL can reliably transfer. 3) Mid-training significantly enhances performance under fixed compute compared with RL only, demonstrating its central but underexplored role in training pipelines. 4) Process-level rewards reduce reward hacking and improve reasoning fidelity. Together, these results clarify the interplay between pre-training, mid-training, and RL, offering a foundation for understanding and improving reasoning LM training strategies.",
+ "summary": "1) 核心创新点：提出一个完全受控的实验框架，系统分离并量化预训练、中期训练与基于强化学习的后训练对推理语言模型能力的因果贡献，借助可解析的逐步推理轨迹和合成任务实现严格比较。\n\n2) 主要方法：采用含显式原子操作、可解析的逐步推理轨迹的合成推理任务；通过系统性地操作训练分布来比较预训练/中期训练/RL的组合效果；引入过程级奖励以减少奖励劫持；在固定算力条件下评估边界能力和情境泛化（外推与上下文泛化）等。\n\n3) 结论/性能：1) 只有当预训练留有足够头部空间且RL数据指向模型的边缘能力时，RL才能带来真正的能力提升（pass@128）；2) 情境泛化需要最少但足够的预训练暴露，之后RL可实现可靠迁移；3) 中期训练在固定计算下显著提升性能，优于仅做RL；4) 过程级奖励降低奖励劫持并提升推理保真度。总体上澄清了预训练、中期训练和RL之间的关系，为改进推理语言模型的训练策略提供基础。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-09 14:04:36"
+}

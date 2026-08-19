@@ -1,0 +1,13 @@
+{
+ "id": "2603.28653",
+ "title": "BACE: LLM-based Code Generation through Bayesian Anchored Co-Evolution of Code and Test Populations",
+ "authors": "Kaushitha Silva, Srinath Perera",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28653v1",
+ "abstract": "Large Language Models (LLMs) have demonstrated impressive capabilities in code generation. While an interactive feedback loop can improve performance, writing effective tests is a non-trivial task. Early multi-agent frameworks, such as AgentCoder, automated this process but relied on generated tests as absolute ground truth. This approach is fragile: incorrect code frequently passes faulty or trivial tests, while valid solutions are often degraded to satisfy incorrect assertions. Addressing this limitation, newer methods have largely abandoned test generation in favor of planning and reasoning based on examples. We argue, however, that generated tests remain a valuable signal if we model them as noisy sensors guided by bayesian updates. To this end, we introduce BACE (Bayesian Anchored Co-Evolution), a framework that reformulates synthesis as a Bayesian co-evolutionary process where code and test populations are evolved, guided by belief distributions that are reciprocally updated based on noisy interaction evidence. By anchoring this search on minimal public examples, BACE prevents the co-evolutionary drift typical of self-validating loops. Extensive evaluations on LiveCodeBench v6 (post-March 2025) reveal that BACE achieves superior performance across both proprietary models and open-weight small language models.",
+ "summary": "1) 核心创新点\n- 将代码与测试用例视作互相影响的种群，通过贝叶斯更新进行共同进化，并以最小公开示例作为锚点，避免自证循环带来的偏差。\n\n2) 主要方法\n- 将代码和测试用例分成两大族群进行贝叶斯共进化，测试用例作为带噪声的传感器，其信念分布互相更新。\n- 通过贝叶斯更新引导代码生成与测试生成的迭代，利用噪声交互信号而非将测试结果视为绝对真值。\n- 以最小公开示例作为锚点，防止共同进化的漂移，增强搜索稳定性。\n- 在 LiveCodeBench v6 上进行广泛评估，覆盖专有模型与开源小语言模型。\n\n3) 结论/性能\n- 在 LiveCodeBench v6 的评估中，BACE 相较于基线方法对多种模型（包括专有模型和开源小模型）均表现出更优的代码生成性能与鲁棒性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-31 13:01:34"
+}

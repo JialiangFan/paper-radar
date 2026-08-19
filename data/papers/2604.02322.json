@@ -1,0 +1,13 @@
+{
+ "id": "2604.02322",
+ "title": "Batched Contextual Reinforcement: A Task-Scaling Law for Efficient Reasoning",
+ "authors": "Bangji Yang, Hongbo Ma, Jiajun Fan, Ge Liu",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02322v1",
+ "abstract": "Large Language Models employing Chain-of-Thought reasoning achieve strong performance but suffer from excessive token consumption that inflates inference costs. Existing efficiency methods such as explicit length penalties, difficulty estimators, or multi-stage curricula either degrade reasoning quality or require complex training pipelines. We introduce Batched Contextual Reinforcement, a minimalist, single-stage training paradigm that unlocks efficient reasoning through a simple structural modification: training the model to solve N problems simultaneously within a shared context window, rewarded purely by per-instance accuracy. This formulation creates an implicit token budget that yields several key findings: (1) We identify a novel task-scaling law: as the number of concurrent problems N increases during inference, per-problem token usage decreases monotonically while accuracy degrades far more gracefully than baselines, establishing N as a controllable throughput dimension. (2) BCR challenges the traditional accuracy-efficiency trade-off by demonstrating a \"free lunch\" phenomenon at standard single-problem inference. Across both 1.5B and 4B model families, BCR reduces token usage by 15.8% to 62.6% while consistently maintaining or improving accuracy across five major mathematical benchmarks. (3) Qualitative analyses reveal emergent self-regulated efficiency, where models autonomously eliminate redundant metacognitive loops without explicit length supervision. (4) Crucially, we empirically demonstrate that implicit budget constraints successfully circumvent the adversarial gradients and catastrophic optimization collapse inherent to explicit length penalties, offering a highly stable, constraint-based alternative for length control. These results prove BCR practical, showing simple structural incentives unlock latent high-density reasoning in LLMs.",
+ "summary": "- 核心创新点（一句话概括）：提出 Batched Contextual Reinforcement（BCR）这一单阶段最小化训练范式，通过在共享上下文窗口中并行解决N个问题、以逐实例准确性为奖励，引入隐式的 token 预算以提升推理密度。\n\n- 主要方法：简述使用的技术/模型：在单阶段训练中对模型进行结构性修改，使其在同一上下文窗口内并行处理N道待解问题，奖励仅来自每个实例的正确性，不使用显式长度惩罚；通过研究N对推理吞吐量和准确性的影响，验证在1.5B与4B模型家族上的普适性与效果。\n\n- 结论/性能：取得的效果：随着N增大，单个问题的 token 使用量下降且准确性下降更为温和，形成可控的吞吐量维度；在1.5B和4B模型上，BCR将 token 使用量降低约15.8%到62.6%，且在五个数学基准上保持或提升准确性；还显示出自我调节的高效性、避免了显式长度惩罚带来的对抗梯度与优化崩溃，提供一个稳定的长度控制替代方案。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:00:42"
+}

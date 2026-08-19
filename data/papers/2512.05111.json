@@ -1,0 +1,13 @@
+{
+ "id": "2512.05111",
+ "title": "ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning",
+ "authors": "Shengyuan Ding, Xinyu Fang, Ziyu Liu, Yuhang Zang, Yuhang Cao, Xiangyu Zhao, Haodong Duan, Xiaoyi Dong, Jianze Liang, Bin Wang, Conghui He, Dahua Lin, Jiaqi Wang",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05111v1",
+ "abstract": "Reward models are critical for aligning vision-language systems with human preferences, yet current approaches suffer from hallucination, weak visual grounding, and an inability to use tools for verification, limiting their reliability on complex multimodal reasoning tasks. We present ARM-Thinker, an A}gentic multimodal Reward Model that autonomously invokes external tools (e.g., image cropping, doc page retrieval) to ground judgments in verifiable evidence, replacing static, non-interactive reward scoring. This enables the model to verify fine-grained visual details, cross-reference multi-page evidence, and validate reasoning claims, which are capabilities absent in existing reward models. We train ARM-Thinker with multi-stage reinforcement learning, jointly optimizing tool-calling decisions and judgment accuracy. To evaluate agentic reward modeling, we introduce ARMBench-VL, comprising three benchmarks that assess fine-grained visual grounding (image-level tools), multi-page document understanding (retrieval tools), and instruction following (text-level verification). ARM-Thinker achieves +16.2% average improvement on reward modeling benchmarks, +9.6% on tool-use tasks, and outperforms baselines on multimodal math and logical reasoning benchmarks. Our results demonstrate that agentic capabilities significantly enhance both accuracy and interpretability of reward models.",
+ "summary": "- 核心创新点：提出具代理性的多模态奖励模型 ARM-Thinker，能够主动调用外部工具并以可验证的证据支撑评估，以提高可解释性和判断准确性。\n\n- 主要方法：使用多阶段强化学习来联合优化工具调用决策与判定准确性；允许模型通过图像裁剪、文档页检索等外部工具 grounding 评估，提出并使用 ARMBench-VL 以评估细粒度视觉 grounding、多页文档理解和文本级验证等能力。\n\n- 结论/性能：在对奖励建模的基准上平均提升约16.2%，在工具使用任务上提升约9.6%，并在多模态数学与逻辑推理任务上超越基线，证明代理能力能显著提升准确性与可解释性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:03:03"
+}

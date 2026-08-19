@@ -1,0 +1,13 @@
+{
+ "id": "2605.22779",
+ "title": "FAME: Failure-Aware Mixture-of-Experts for Message-Level Log Anomaly Detection",
+ "authors": "Huanchi Wang, Zihang Huang, Yifang Tian, Kristina Dzeparoska, Hans-Arno Jacobsen, Alberto Leon-Garcia",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22779v1",
+ "abstract": "Production systems generate millions of log lines daily, yet most anomaly detectors operate at the session or window-level, flagging groups of lines rather than identifying the specific message responsible. This coarse granularity forces operators to inspect many routine lines per alert. Message-level detection offers finer granularity, but remains challenging. A single event template may correspond to both normal and anomalous messages, failures arise from heterogeneous subsystems, and line-level labeling at scale is impractical. Although large language models (LLMs) can reason over log semantics, applying them to every line is too costly for continuous monitoring. We present FAME (Failure-Aware Mixture-of-Experts), a label-efficient message-level mixture-of-experts framework that uses an LLM only once offline. We annotate at most K labeled lines per template to derive binary normal/anomaly indicators and representative examples. The LLM proposes a partition of templates into failure domains, and a certification step validates the proposal before training. FAME trains a lightweight router and domain experts that run on-premise and output anomaly predictions and failure-domain labels. On BGL, FAME achieves F1 = 98.16 at K = 100 reducing annotation effort by 76x and detects 86.3% of anomalies from unseen EventIDs. On Thunderbird, FAME reaches F1 = 99.95 with perfect recall.",
+ "summary": "## FAME: 故障感知混合专家模型用于消息级日志异常检测\n\n**核心创新点**：提出了一种标签高效的消息级（而非会话/窗口级）日志异常检测框架，仅在离线阶段使用一次大语言模型（LLM）来划分故障域，从而避免持续监控时的高昂推理成本。\n\n**主要方法**：采用\"故障感知混合专家（Mixture-of-Experts）\"架构——每个模板最多标注 K 条样本以生成二元正常/异常指示和代表性示例；由 LLM 提议将模板划分为不同的\"故障域\"，并通过认证步骤校验；随后训练一个轻量级路由器和多个领域专家在本地运行，同时输出异常预测和故障域标签。\n\n**结论/性能**：\n- 在 BGL 数据集上，K=100 时取得 **F1 = 98.16**，标注工作量减少 **76 倍**，对未见过的 EventID 异常检测率达 **86.3%**。\n- 在 Thunderbird 数据集上达到 **F1 = 99.95**，召回率为 100%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-24 13:01:26"
+}

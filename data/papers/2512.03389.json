@@ -1,0 +1,13 @@
+{
+ "id": "2512.03389",
+ "title": "Continuous Prompts: LLM-Augmented Pipeline Processing over Unstructured Streams",
+ "authors": "Shu Chen, Deepti Raghavan, Uğur Çetintemel",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03389v1",
+ "abstract": "Monitoring unstructured streams increasingly requires persistent, semantics-aware computation, yet today's LLM frameworks remain stateless and one-shot, limiting their usefulness for long-running analytics. We introduce Continuous Prompts (CPs), the first framework that brings LLM reasoning into continuous stream processing. CPs extend RAG to streaming settings, define continuous semantic operators, and provide multiple implementations, primarily focusing on LLM-based approaches but also reporting one embedding-based variants. Furthermore, we study two LLM-centric optimizations, tuple batching and operator fusion, to significantly improve efficiency while managing accuracy loss.\n  Because these optimizations inherently trade accuracy for speed, we present a dynamic optimization framework that uses lightweight shadow executions and cost-aware multi-objective Bayesian optimization (MOBO) to learn throughput-accuracy frontiers and adapt plans under probing budgets.\n  We implement CPs in the VectraFlow stream processing system. Using operator-level microbenchmarks and streaming pipelines on real datasets, we show that VectraFlow can adapt to workload dynamics, navigate accuracy-efficiency trade-offs, and sustain persistent semantic queries over evolving unstructured streams.",
+ "summary": "核心创新点：首次在连续流处理框架中将大语言模型推理引入，提出 Continuous Prompts（CPs）以在流数据上实现持续、语义感知的推理，并将 RAG 扩展到流场景，含多种实现与自适应优化。\n\n主要方法：\n- 将 RAG 概念扩展为流处理中的连续语义算子，定义持续的语义推理流程。\n- 提供多种实现，重点为基于LLM的方法，并给出嵌入向变体。\n- 引入两大 LLm 相关优化：tuple batching 与 operator fusion，以提升效率并控制准确性损失。\n- 构建动态优化框架，使用轻量化影子执行和成本感知的多目标贝叶斯优化（MOBO），在探测预算内学习吞吐-准确性前沿并自适应计划。\n- 在 VectraFlow 流处理系统中实现，并通过运算符级微基准和真实数据流管线验证。\n\n结论/性能：\n- CPs 能使 VectraFlow 适应工作负载动态，灵活权衡吞吐和准确性，持续地执行面向语义的查询。\n- 实验显示在多场景下能导航准确性与效率之间的权衡，维持对演化无结构流的持续语义查询能力，并显著提升实际应用的吞吐与效率。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:03:55"
+}

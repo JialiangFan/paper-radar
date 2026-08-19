@@ -1,0 +1,13 @@
+{
+ "id": "2608.14380",
+ "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+ "authors": "Yu Zhuang, Kefei Chen, Yitong Duan, Shuxin Zheng, Jian Li, Xu-Yao Zhang",
+ "date": "2026-08-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.14380v1",
+ "abstract": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.",
+ "summary": "## AgentRewind 论文摘要总结\n\n**1. 核心创新点**\n提出一种运行时\"可恢复执行\"框架，让长程 LLM 智能体在出错后能回滚到早期状态重新尝试，而不是只靠事前预防错误。\n\n**2. 主要方法**\n- **AgentRewind**：运行时恢复框架，对**智能体上下文**与**受控环境状态**同步记录对齐的检查点（checkpoint）；出错时可回退到先前状态，并携带此前尝试中获得的信息继续执行。\n- **MettleBench**：配套构建的评测基准，面向包含一系列关联需求的长程工程任务，同时评估**任务完成度**和**部分进度**（checklist 进展）。\n\n**3. 结论/性能**\n在多种任务、多个模型、不同执行策略与不同 agent harness 上的实验表明，AgentRewind 相比基线方法提升了任务成功率和平均 checklist 进度。\n\n---\n\n补充一点判断：摘要只给了\"优于基线\"的定性结论，没有披露具体数值、检查点的存储/时间开销，也没有说明\"受控环境\"的适用边界（例如不可逆的外部副作用，如已发送的请求或已提交的事务，快照机制大概率无法覆盖）——这是读正文时值得重点核实的地方。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-17 13:02:10"
+}

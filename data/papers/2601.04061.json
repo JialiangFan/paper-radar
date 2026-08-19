@@ -1,0 +1,31 @@
+{
+ "id": "2601.04061",
+ "title": "CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos",
+ "authors": "Chubin Zhang, Jianan Wang, Zifeng Gao, Yue Su, Tianru Dai, Cai Zhou, Jiwen Lu, Yansong Tang",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2601.04061",
+ "abstract": "",
+ "summary": "Adds a recent human-video pretraining route for VLA models by learning executable latent actions from video transitions.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "contrastive-learning",
+  "human-video-pretraining",
+  "latent-action-models",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-foundation-model"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2026_Zhang_CLAP.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2026_Zhang_CLAP.pdf",
+ "code": "",
+ "project": "https://lin-shan.com/CLAP/",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.16279",
+ "title": "Evaluating the Progression of Large Language Model Capabilities for Small-Molecule Drug Design",
+ "authors": "Shriram Chennakesavalu, Kirill Shmilovich, Hayley Weir, Colin Grambow, John Bradshaw, Patricia Suriana, Chen Cheng, Kangway Chuang",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.16279v1",
+ "abstract": "Large Language Models (LLMs) have the potential to accelerate small molecule drug design due to their ability to reason about information from diverse sources and formats. However, their practical utility remains unclear due to the lack of benchmarks that reflect real-world scenarios. In this work, we introduce a suite of chemically-grounded tasks spanning molecular property prediction, molecular representation transformations, and molecular design. Importantly, we formulate these tasks as reinforcement learning (RL) environments, enabling a unified approach for evaluation and post-training. Across three model families, we find that frontier models are increasingly proficient at chemical tasks, but that there is significant room for improvement, especially in experimental settings with low data. Critically, we show that RL-based post-training can substantially improve performance. A smaller model post-trained on our environments becomes competitive with state-of-the-art frontier models, despite a significantly weaker base model. This suggests a practical route toward employing LLMs in drug discovery; by combining carefully-designed evaluation tasks with targeted post-training, we can both elucidate and close critical capability gaps.",
+ "summary": "- 核心创新点：通过构建化学驱动的任务集合并将其形式化为强化学习环境，实现对大语言模型在小分子药物设计中的统一评估与RL后训练，从而用较小模型也能达到接近前沿模型的性能。\n\n- 主要方法：\n  - 构建三类化学任务组成的任务集：分子性质预测、分子表征变换、分子设计，并将其统一建模为强化学习环境。\n  - 在三种模型家族上进行评估，重点比较前沿模型与其他模型的能力差异。\n  - 采用RL-based post-training，对模型在这些环境中的能力进行专门的后训练，以提升实际任务性能。\n\n- 结论/性能：\n  - RL的后训练能显著提升模型性能。\n  - 经后训练的小模型在与状态-最先进前沿模型的对比中具备竞争力，尽管基础模型较弱，且在低数据场景下仍存在改进空间。\n  - 提出通过设计良好的评估任务并进行目标化后训练，成为将LLMs应用于药物发现的切实可行路径。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-20 13:01:13"
+}

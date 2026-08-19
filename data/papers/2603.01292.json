@@ -1,0 +1,13 @@
+{
+ "id": "2603.01292",
+ "title": "Integrating LTL Constraints into PPO for Safe Reinforcement Learning",
+ "authors": "Maifang Zhang, Hang Yu, Qian Zuo, Cheng Wang, Vaishak Belle, Fengxiang He",
+ "date": "2026-03-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01292v1",
+ "abstract": "This paper proposes Proximal Policy Optimization with Linear Temporal Logic Constraints (PPO-LTL), a framework that integrates safety constraints written in LTL into PPO for safe reinforcement learning. LTL constraints offer rigorous representations of complex safety requirements, such as regulations that broadly exist in robotics, enabling systematic monitoring of safety requirements. Violations against LTL constraints are monitored by limit-deterministic Büchi automata, and then translated by a logic-to-cost mechanism into penalty signals. The signals are further employed for guiding the policy optimization via the Lagrangian scheme. Extensive experiments on the Zones and CARLA environments show that our PPO-LTL can consistently reduce safety violations, while maintaining competitive performance, against the state-of-the-art methods. The code is at https://github.com/EVIEHub/PPO-LTL.",
+ "summary": "1) 核心创新点：在 PPO 框架中引入线性时序逻辑（LTL）约束，通过 limit-deterministic Büchi 自动机（LDBA）监控违规并将其转化为罚分信号，借助拉格朗日优化实现带约束的安全强化学习。\n\n2) 主要方法：提出 PPO-LTL 框架，将LTL约束嵌入到策略优化过程；使用 LDBA 监控违规行为，采用逻辑到成本的机制将违规转化为罚分信号，结合拉格朗日方法引导策略更新；在 Zone 和 CARLA 环境中进行大量实验。\n\n3) 结论/性能：实验表明 PPO-LTL 能在持续降低安全违规的同时，保持与现有最先进方法相近的性能水平，展现出稳定的安全性提升与竞争力的任务性能（代码已开源）。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:00:23"
+}

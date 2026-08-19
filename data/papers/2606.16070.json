@@ -1,0 +1,13 @@
+{
+ "id": "2606.16070",
+ "title": "Mind-Studio: Executable World Models with Lookahead Evaluation for Partially Observable Games",
+ "authors": "Yifei Dong, Mingen Zheng, Linquan Wu, Jeff Z. Pan, Jiaxin Bai",
+ "date": "2026-06-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.16070v1",
+ "abstract": "World-model synthesis aims to turn interaction experience into an internal model of environment dynamics. Existing symbolic approaches often fit observed transitions or mixtures of local rules, but they do not produce a complete executable program that can run independently of the real environment. We present Mind-Studio, a framework that synthesizes executable pygame-style world models from state-action-next-state trajectories using large language models. Mind-Studio combines entropy-selected traces with a lightweight game skill file containing object, action, and static scene information extracted from screenshots. We evaluate synthesis quality with a K-step lookahead fidelity protocol that compares generated world-model rollouts against Real-ALE rollouts from the same state. On Montezuma's Revenge, Mind-Studio improves chosen-action next-state prediction from 0.3% for PoE-World to 48.7% while verifying 5 of 8 subgoals; across Alien, Assault, and Skiing, it achieves stronger branch-level fidelity than prior learned lookahead sources.",
+ "summary": "# Mind-Studio 论文摘要总结\n\n1. **核心创新点**：利用大语言模型，从「状态-动作-下一状态」轨迹中合成出**可独立运行的完整可执行世界模型**（pygame 风格程序），适用于部分可观测游戏。\n\n2. **主要方法**：\n   - 用 LLM 将交互轨迹合成为可执行的 pygame 式世界模型程序；\n   - 结合**熵筛选的轨迹**（entropy-selected traces）与从截图中提取的**轻量级游戏技能文件**（包含物体、动作、静态场景信息）；\n   - 提出 **K 步前瞻保真度（K-step lookahead fidelity）评测协议**，将生成模型的 rollout 与同一状态下的 Real-ALE rollout 进行对比。\n\n3. **结论/性能**：\n   - 在《Montezuma's Revenge》上，所选动作的下一状态预测准确率从 PoE-World 的 **0.3% 提升至 48.7%**，并验证了 8 个子目标中的 5 个；\n   - 在 Alien、Assault、Skiing 等游戏上，其**分支级保真度优于**已有的学习式前瞻方法。\n\n---\n\n提示：如果你希望按学术综述规范（含背景、问题、贡献、方法论，并自动输出中英双语到 Obsidian）来整理这篇论文，我可以改用 `/paper-review` 技能处理。需要的话告诉我。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-16 13:05:32"
+}

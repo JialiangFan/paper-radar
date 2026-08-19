@@ -1,0 +1,13 @@
+{
+ "id": "2605.30348",
+ "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+ "authors": "Yaxin Luo, Jiacheng Cui, Xiaohan Zhao, Xinyi Shang, Jiacheng Liu, Xinyue Bi, Zhaoyi Li, Zhiqiang Shen",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30348v1",
+ "abstract": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+ "summary": "## 论文总结：LLMSurgeon\n\n1. **核心创新点**：首次形式化\"数据混合手术\"（DMS）任务——仅凭目标 LLM 生成的文本，反推其预训练语料在预定义分类体系下的领域分布，实现对模型\"数字 DNA\"的事后审计。\n\n2. **主要方法**：将 DMS 建模为标签偏移假设下的逆问题；提出 LLMSurgeon 框架，不直接聚合分类器输出，而是估计一个经过校准的**软混淆矩阵**，并通过求解带约束的逆问题来修正系统性的领域混淆，从而恢复潜在的混合先验分布。同时构建了 LLMScan 评测基准，基于预训练配方公开的开源 LLM 进行可验证评估。\n\n3. **结论/性能**：在 LLMScan 上，LLMSurgeon 能在固定协议下高保真地恢复领域混合比例，为在无法访问训练数据的情况下审计基础模型的数据成分提供了一种实用的事后方法。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:01:17"
+}

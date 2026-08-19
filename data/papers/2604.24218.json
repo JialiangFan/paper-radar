@@ -1,0 +1,13 @@
+{
+ "id": "2604.24218",
+ "title": "RefEvo: Agentic Design with Co-Evolutionary Verification for Agile Reference Model Generation",
+ "authors": "Yifan Zhang, Jianmin Ye, Jiahao Yang, Xi Wang",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24218v1",
+ "abstract": "As the complexity of System-on-Chip (SoC) designs grows, the shift-left paradigm necessitates the rapid development of high-fidelity reference models (typically written in SystemC) for early architecture exploration and verification. While Large Language Models (LLMs) show promise in code generation, their application to hardware modeling faces unique challenges: (1) Rigid, static workflows fail to adapt to varying design complexity, causing inefficiency; (2) Context window overflow in multi-turn interactions leads to catastrophic forgetting of critical specifications; and (3) the Coupled Validation Failure problem--where generated Testbenches (TBs) incorrectly validate flawed models due to correlated hallucinations--severely undermines reliability. To address these limitations, we introduce RefEvo, a dynamic multi-agent framework designed for agile and reliable reference modeling. RefEvo features three key innovations: (1) A Dynamic Design Planner that autonomously decomposes design specifications and constructs tailored execution workflows based on semantic complexity; (2) A Co-Evolutionary Verification Mechanism, which employs a Dialectical Arbiter to simultaneously rectify the model and verification logic against the specification (Spec) oracle, effectively mitigating false positives; and (3) A Spec Anchoring Strategy for lossless context compression. Evaluated on a diverse benchmark of 20 hardware modules, RefEvo achieves a 95% pass rate, outperforming static baselines by a large margin. Furthermore, our context optimization reduces token consumption by an average of 71.04%, achieving absolute savings of over 70,000 tokens per session for complex designs while maintaining 100% specification recall.",
+ "summary": "- 核心创新点（1句概括）：\n  提出一个动态多智能体框架RefEvo，通过动态设计规划、共进化验证与规格锚定实现高效、可靠的参考模型生成，解决工作流僵化、上下文遗忘和验证偏差等挑战。\n\n- 主要方法（技术/模型要点）：\n  - 动态设计规划器（Dynamic Design Planner）：自动分解设计规格，并基于语义复杂度构建定制化执行工作流。\n  - 共进化验证机制（Co-Evolutionary Verification Mechanism）及Dialectical Arbiter：同时修正模型与验证逻辑，基于规格口訣（Spec oracle）降低假阳性。\n  - 规格锚定策略（Spec Anchoring Strategy）：实现无损的上下文压缩，缓解上下文窗口限制带来的问题。\n  - 面向多智能体的协作框架与SystemC参考模型生成，以及对规格的持续对齐与验证。\n\n- 结论/性能（效果与指标）：\n  - 在20个硬件模块基准上达到95%通过率，显著优于静态基线。\n  - 上下文优化平均降低token消耗71.04%，复杂设计每次会话节省超过70,000个token，同时保持100%规格召回。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-28 13:07:10"
+}

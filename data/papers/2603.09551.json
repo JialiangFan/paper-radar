@@ -1,0 +1,13 @@
+{
+ "id": "2603.09551",
+ "title": "GeoSolver: Scaling Test-Time Reasoning in Remote Sensing with Fine-Grained Process Supervision",
+ "authors": "Lang Sun, Ronghao Fu, Zhuoran Duan, Haoran Liu, Xueyan Liu, Bo Yang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09551v1",
+ "abstract": "While Vision-Language Models (VLMs) have significantly advanced remote sensing interpretation, enabling them to perform complex, step-by-step reasoning remains highly challenging. Recent efforts to introduce Chain-of-Thought (CoT) reasoning to this domain have shown promise, yet ensuring the visual faithfulness of these intermediate steps remains a critical bottleneck. To address this, we introduce GeoSolver, a novel framework that transitions remote sensing reasoning toward verifiable, process-supervised reinforcement learning. We first construct Geo-PRM-2M, a large-scale, token-level process supervision dataset synthesized via entropy-guided Monte Carlo Tree Search (MCTS) and targeted visual hallucination injection. Building upon this dataset, we train GeoPRM, a token-level process reward model (PRM) that provides granular faithfulness feedback. To effectively leverage these verification signals, we propose Process-Aware Tree-GRPO, a reinforcement learning algorithm that integrates tree-structured exploration with a faithfulness-weighted reward mechanism to precisely assign credit to intermediate steps. Extensive experiments demonstrate that our resulting model, GeoSolver-9B, achieves state-of-the-art performance across diverse remote sensing benchmarks. Crucially, GeoPRM unlocks robust Test-Time Scaling (TTS). Serving as a universal geospatial verifier, it seamlessly scales the performance of GeoSolver-9B and directly enhances general-purpose VLMs, highlighting its remarkable cross-model generalization.",
+ "summary": "1) 核心创新点（一句话概括）\n提出 GeoSolver：通过细粒度的过程监督与树状强化学习，实现遥感推理的可验证性与测试时规模化扩展（TTS）。\n\n2) 主要方法（技术/模型简述）\n- 构建 Geo-PRM-2M 数据集：采用熵导向的蒙特卡洛树搜索（MCTS）和定向视觉幻觉注入，获得 token 级的过程监督信号。\n- 训练 token 级的过程奖励模型 GeoPRM，用于提供细粒度的可信度反馈。\n- 提出 Process-Aware Tree-GRPO 强化学习算法：将树状探索与基于信实性的奖励权重结合，精准为中间推理步骤分配 credit。\n- 基于上述组件形成 GeoSolver-9B，并实现强大的测试时推理扩展（Test-Time Scaling，TTS）。\n- 作为通用地理空间验证器，GeoPRM 能直接提升其他大模型在遥感任务上的性能，并展现跨模型的泛化能力。\n\n3) 结论/性能（取得的效果）\n- GeoSolver-9B 在多项遥感基准上达到现有方法的最新性能（SOTA）。\n- GeoPRM 实现稳健的测试时扩展能力，能够提升 GeoSolver-9B 的性能，并直接提升通用 VLMs 的地理空间推理能力，且具有良好的跨模型泛化性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-11 13:04:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.20821",
+ "title": "Defending against adversarial attacks using mixture of experts",
+ "authors": "Mohammad Meymani, Roozbeh Razavi-Far",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20821v1",
+ "abstract": "Machine learning is a powerful tool enabling full automation of a huge number of tasks without explicit programming. Despite recent progress of machine learning in different domains, these models have shown vulnerabilities when they are exposed to adversarial threats. Adversarial threats aim to hinder the machine learning models from satisfying their objectives. They can create adversarial perturbations, which are imperceptible to humans' eyes but have the ability to cause misclassification during inference. Moreover, they can poison the training data to harm the model's performance or they can query the model to steal its sensitive information. In this paper, we propose a defense system, which devises an adversarial training module within mixture-of-experts architecture to enhance its robustness against adversarial threats. In our proposed defense system, we use nine pre-trained experts with ResNet-18 as their backbone. During end-to-end training, the parameters of expert models and gating mechanism are jointly updated allowing further optimization of the experts. Our proposed defense system outperforms state-of-the-art defense systems and plain classifiers, which use a more complex architecture than our model's backbone.",
+ "summary": "- 核心创新点（1句概括）：在混合专家（Mixture-of-Experts）架构中引入对抗训练模块，联合优化九个以 ResNet-18 为 backbone 的专家及门控机制，从而显著提升对对抗性攻击的鲁棒性。\n\n- 主要方法：采用九个预训练的 ResNet-18 专家组成 Mixture-of-Experts，设计门控机制进行专家输出的选择与加权，在端到端训练中同时更新专家参数和门控参数，并加入对抗训练模块来增强鲁棒性。\n\n- 结论/性能：在对抗性攻击场景下，该防御系统的表现优于现有最先进防御方法和使用更复杂 Backbone 的普通分类器，且实现了对多种威胁（包括对抗扰动、数据投毒和模型查询）的更强鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-25 02:05:16"
+}

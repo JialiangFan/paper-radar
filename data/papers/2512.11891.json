@@ -1,0 +1,31 @@
+{
+ "id": "2512.11891",
+ "title": "VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer",
+ "authors": "Hu, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2512.11891",
+ "abstract": "",
+ "summary": "AEGIS wraps VLA actions in a plug-and-play control-barrier-function safety constraint layer to reduce collisions without retraining the base policy.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "robot-manipulation",
+  "robotics",
+  "safe-vla",
+  "spatial-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2025_Hu_VLSA_AEGIS.md",
+ "pdf_path": "PDFs/VLA_Safety/2025_Hu_VLSA_AEGIS.pdf",
+ "code": "",
+ "project": "https://vlsa-aegis.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

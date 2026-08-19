@@ -1,0 +1,13 @@
+{
+ "id": "2602.17078",
+ "title": "Safe Continuous-time Multi-Agent Reinforcement Learning via Epigraph Form",
+ "authors": "Xuefeng Wang, Lei Zhang, Henglin Pu, Husheng Li, Ahmed H. Qureshi",
+ "date": "2026-02-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.17078v1",
+ "abstract": "Multi-agent reinforcement learning (MARL) has made significant progress in recent years, but most algorithms still rely on a discrete-time Markov Decision Process (MDP) with fixed decision intervals. This formulation is often ill-suited for complex multi-agent dynamics, particularly in high-frequency or irregular time-interval settings, leading to degraded performance and motivating the development of continuous-time MARL (CT-MARL). Existing CT-MARL methods are mainly built on Hamilton-Jacobi-Bellman (HJB) equations. However, they rarely account for safety constraints such as collision penalties, since these introduce discontinuities that make HJB-based learning difficult. To address this challenge, we propose a continuous-time constrained MDP (CT-CMDP) formulation and a novel MARL framework that transforms discrete MDPs into CT-CMDPs via an epigraph-based reformulation. We then solve this by proposing a novel physics-informed neural network (PINN)-based actor-critic method that enables stable and efficient optimization in continuous time. We evaluate our approach on continuous-time safe multi-particle environments (MPE) and safe multi-agent MuJoCo benchmarks. Results demonstrate smoother value approximations, more stable training, and improved performance over safe MARL baselines, validating the effectiveness and robustness of our method.",
+ "summary": "- **核心创新点**：提出将离散时间 MDP 通过基于上确界的 epigraph 重参数化转化为连续时间约束 MDP（CT-CMDP），并结合基于物理信息神经网络（PINN）的 actor-critic，在连续时间框架内实现安全多代理强化学习。\n\n- **主要方法**：采用 epigraph-based reformulation 将离散 MDP 转换为 CT-CMDP；提出基于 PINN 的 actor-critic 方法在连续时间中进行稳定高效的优化，考虑安全约束（如碰撞惩罚），并在连续时间的安全多粒子环境和安全 MuJoCo 基准上进行评估。\n\n- **结论/性能**：实现了更平滑的价值函数近似、训练更稳定，并在安全多代理任务中相较安全 MARL 基线取得性能提升，验证了方法的有效性与鲁棒性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-20 14:00:21"
+}

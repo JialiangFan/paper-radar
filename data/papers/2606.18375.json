@@ -1,0 +1,13 @@
+{
+ "id": "2606.18375",
+ "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+ "authors": "Yuhang Huang, Xuan Lv, Junyan Xu, Zhiyuan Yu, Jiazhao Zhang, Ruizhen Hu, Wancheng Feng, Shilong Zou, Hewen Xiao, Ziqiao Zhou, Kaiyun Huang, Zhiyu Peng, Juzhan Xu, Hang Zhao, Chenyang Zhu, Renjiao Yi, Yifei Huang, Douhui Wu, Yan Zhang, Kexu Cheng, Chunhe Song, Yunzhi Xue, Xiuhong Zhang, Leitao Guo, Yunji Chen, Bin Wu, Haibin Yu, Kai Xu",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18375v1",
+ "abstract": "World foundation models (WFMs) are powerful simulators, yet they predominantly operate in a single-view setting and lack the multi-view 3D consistency required for robotic manipulation. While robotic systems rely on multiple cameras (egocentric, eye-to-hand, and wrist-mounted) for policy learning, current multi-view world models simply concatenate view tokens without explicit geometric reasoning. This causes cross-view object drift, depth inconsistency, and texture misalignment. We trace these failures to two deficiencies: the absence of an explicit inter-view communication mechanism and the lack of a 3D geometric prior. We argue that resolving both simultaneously is necessary and sufficient. To address this, we present PAIWorld, a framework that augments diffusion-transformer world models via three core components: (1) Geometry-Aware Cross-View Attention blocks that establish an explicit pathway across views, (2) Geometric Rotary Position Embedding that encodes camera ray directions and extrinsic poses into the attention mechanism, and (3) Latent 3D-REPA, which distills 3D-aware features from frozen 3D foundation models to ensure 3D consistency. Built upon a DiT-based world foundation model, PAIWorld achieves state-of-the-art multi-view 3D consistency on robotic manipulation benchmarks, ranking 1st on the WorldArena leaderboard and 2nd on the AgiBot-Challenge2026 leaderboard, while enabling downstream applications such as model-based planning, world action models, and multi-view policy post-training.",
+ "summary": "# PAIWorld 论文总结\n\n1. **核心创新点**：提出首个面向机器人操作的\"3D一致性\"世界基础模型，解决多视角世界模型因缺乏几何推理而导致的跨视角物体漂移、深度不一致和纹理错位问题。\n\n2. **主要方法**：在基于 DiT（扩散 Transformer）的世界基础模型上引入三大组件——①**几何感知跨视角注意力**（在不同视角间建立显式信息通路）；②**几何旋转位置编码**（将相机光线方向与外参位姿编码进注意力机制）；③**Latent 3D-REPA**（从冻结的 3D 基础模型中蒸馏 3D 感知特征，保证 3D 一致性）。\n\n3. **结论/性能**：在机器人操作基准上取得 SOTA 的多视角 3D 一致性，**WorldArena 排行榜第 1**、**AgiBot-Challenge2026 第 2**，并可支撑基于模型的规划、世界-动作模型、多视角策略后训练等下游应用。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-18 13:03:59"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.10386",
+ "title": "Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving",
+ "authors": "Jiazhuo Li, Linjiang Cao, Qi Liu, Xi Xiong",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10386v1",
+ "abstract": "Sample-efficient reinforcement learning for autonomous driving is often limited by the trade-off between data efficiency and model bias. While world models reduce the reliance on costly environment interactions, policy optimization over learned dynamics remains sensitive to prediction errors. This paper proposes the Dreamer-SAC framework, which integrates a recurrent state-space world model with an off-policy soft actor-critic algorithm trained directly in latent space. The framework uses a combination of real interactions and short-horizon generated trajectories with n-step target estimation and multi-objective supervision. Evaluated in autonomous driving scenarios with objectives encompassing driving efficiency and safety, the proposed framework consistently outperforms representative reinforcement learning baselines, including DreamerV3, SAC, and PPO, while achieving improved performance with substantially fewer real environment interactions. Experiments reveal an inverted-U relationship between rollout horizon and policy performance, where short-horizon latent rollouts achieve the best trade-off between additional training signals and accumulated model bias. Furthermore, n-step target estimation demonstrates more effectiveness over one-step temporal-difference targets in exploiting predicted experience for value learning.",
+ "summary": "## 论文摘要总结\n\n**标题**：Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving\n\n### 1. 核心创新点\n将循环状态空间世界模型与离策略 SAC 相结合，直接在隐空间中用\"真实交互 + 短程想象轨迹\"训练策略，从而在自动驾驶任务中大幅提升样本效率。\n\n### 2. 主要方法\n- **世界模型**：循环状态空间模型（RSSM），学习环境动力学并在隐空间生成预测轨迹。\n- **策略优化**：离策略的 Soft Actor-Critic，完全在隐状态空间中训练。\n- **数据构成**：真实环境交互数据与**短时域（short-horizon）**生成轨迹混合使用。\n- **训练技巧**：采用 **n-step 回报目标估计**替代单步 TD 目标；引入多目标监督（兼顾行驶效率与安全性）。\n\n### 3. 结论/性能\n- 在自动驾驶场景下稳定优于 DreamerV3、SAC、PPO 等代表性基线，且所需真实环境交互次数显著更少。\n- 发现 **rollout 长度与策略性能呈\"倒 U 型\"关系**：短程想象轨迹在\"额外训练信号\"与\"累积模型偏差\"之间达到最佳权衡。\n- 消融显示 n-step 目标在利用预测经验做价值学习时明显优于单步 TD 目标。\n\n> 一点观察：摘要未给出具体数值指标（成功率、碰撞率、交互步数等），也未说明使用的仿真平台（如 CARLA/MetaDrive），这两点需查看正文才能评估其\"显著更少交互\"的实际幅度。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-13 13:06:01"
+}

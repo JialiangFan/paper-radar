@@ -1,0 +1,13 @@
+{
+ "id": "2604.19685",
+ "title": "An Answer is just the Start: Related Insight Generation for Open-Ended Document-Grounded QA",
+ "authors": "Saransh Sharma, Pritika Ramu, Aparna Garimella, Koyel Mukherjee",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19685v1",
+ "abstract": "Answering open-ended questions remains challenging for AI systems because it requires synthesis, judgment, and exploration beyond factual retrieval, and users often refine answers through multiple iterations rather than accepting a single response. Existing QA benchmarks do not explicitly support this refinement process. To address this gap, we introduce a new task, document-grounded related insight generation, where the goal is to generate additional insights from a document collection that help improve, extend, or rethink an initial answer to an open-ended question, ultimately supporting richer user interaction and a better overall question answering experience. We curate and release SCOpE-QA (Scientific Collections for Open-Ended QA), a dataset of 3,000 open-ended questions across 20 research collections. We present InsightGen, a two-stage approach that first constructs a thematic representation of the document collection using clustering, and then selects related context based on neighborhood selection from the thematic graph to generate diverse and relevant insights using LLMs. Extensive evaluation on 3,000 questions using two generation models and two evaluation settings shows that InsightGen consistently produces useful, relevant, and actionable insights, establishing a strong baseline for this new task.",
+ "summary": "**核心创新点**：首次将开放式文档问答中的“相关洞察生成”作为独立任务，提供数据集SCOpE-QA并给出从文档集合生成可用于改进初始答案的洞察的解决方案。\n\n**主要方法**：提出 InsightGen 的两阶段方法：第一阶段通过聚类构建文档集合的主题表示；第二阶段在该主题图上进行邻域选择，挑选相关上下文后由大型语言模型生成多样、相关且可操作的洞察。同时发布包含3,000个问题、覆盖20个研究集合的SCOpE-QA数据集，并在两种生成模型与两种评估设置下进行评测。\n\n**结论/性能**：在对3,000个问题的广泛评估中，InsightGen consistently 生成有用、相关且可操作的洞察，为这一新任务建立了强基线。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-22 13:01:15"
+}

@@ -1,0 +1,30 @@
+{
+ "id": "2605.26820",
+ "title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?",
+ "authors": "Jiarun Zhu, Yijun Hong, Xiaoquan Sun, Zetian Xu, Mingqi Yuan, Zhiyong Wang, Wenjun Zeng, Jiayu Chen",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.26820v1",
+ "abstract": "Vision-language-action (VLA) models provide a promising foundation for general-purpose robotics. However, their successful deployment in real-world scenarios requires the ability to continually acquire new skills while retaining previously learned behaviors. While pioneering research has studied the continual learning of VLA models in narrowly simulated environments, this challenge remains largely unexplored under realistic conditions. To address this limitation, we construct a real-world continual learning dataset comprising four sequential manipulation tasks, spanning rigid-object pick-and-place, contact-rich pressing, and deformable-object folding. Using this dataset, we conduct comprehensive experiments and find that VLA models suffer significant catastrophic forgetting when continually learning from heterogeneous real-world demonstrations. We then systematically evaluate experience replay and uncover key implementation factors that govern its success. In summary, this work provides the first empirical study of real-world continual VLA learning and offers practical guidance for deploying long-lived robot policies.",
+ "summary": "Adds the most recent real-world continual VLA learning angle.",
+ "keyword": "VLA",
+ "source": "curated",
+ "created_at": "2026-05-28 13:05:12",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "continual-learning",
+  "real-robot",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-post-training"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/2026_RealWorldContinualVLA.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Post_Training/2026_RealWorldContinualVLA.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

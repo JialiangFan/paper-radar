@@ -1,0 +1,13 @@
+{
+ "id": "2512.24665",
+ "title": "HeteroHBA: A Generative Structure-Manipulating Backdoor Attack on Heterogeneous Graphs",
+ "authors": "Honglin Gao, Lan Zhao, Junhao Ren, Xiang Li, Gaoxi Xiao",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24665v1",
+ "abstract": "Heterogeneous graph neural networks (HGNNs) have achieved strong performance in many real-world applications, yet targeted backdoor poisoning on heterogeneous graphs remains less studied. We consider backdoor attacks for heterogeneous node classification, where an adversary injects a small set of trigger nodes and connections during training to force specific victim nodes to be misclassified into an attacker-chosen label at test time while preserving clean performance. We propose HeteroHBA, a generative backdoor framework that selects influential auxiliary neighbors for trigger attachment via saliency-based screening and synthesizes diverse trigger features and connection patterns to better match the local heterogeneous context. To improve stealthiness, we combine Adaptive Instance Normalization (AdaIN) with a Maximum Mean Discrepancy (MMD) loss to align the trigger feature distribution with benign statistics, thereby reducing detectability, and we optimize the attack with a bilevel objective that jointly promotes attack success and maintains clean accuracy. Experiments on multiple real-world heterogeneous graphs with representative HGNN architectures show that HeteroHBA consistently achieves higher attack success than prior backdoor baselines with comparable or smaller impact on clean accuracy; moreover, the attack remains effective under our heterogeneity-aware structural defense, CSD. These results highlight practical backdoor risks in heterogeneous graph learning and motivate the development of stronger defenses.",
+ "summary": "- 核心创新点（一句话）：\n  提出面向异构图的生成式结构操控后门框架 HeteroHBA，通过选择性附着触发器并合成多样触发特征/连接模式，同时引入 AdaIN+MMD 以提升隐蔽性与攻击效果。\n\n- 主要方法（简述技术/模型）：\n  - 采用基于显著性筛选（saliency-based screening）来选取对触发攻击最具影响力的辅助邻居用于触发器附着；\n  - 通过生成式手段合成多样化的触发特征和连接模式，使触发更贴合局部异质结构上下文；\n  - 为提高隐蔽性，结合 Adaptive Instance Normalization (AdaIN) 与最大均值差异（MMD）损失，将触发特征分布对齐到 benign 统计分布；\n  - 采用双层优化（bilevel objective）同时提高攻击成功率并保持干净准确性；\n  - 在多种真实异构图和代表性 HGNN 架构上评估，且对抗异构结构防御 CSD 仍有效。\n\n- 结论/性能（取得的效果）：\n  HeteroHBA 在实验中显著提升攻击成功率，且对清洁准确率的影响较小；且在异构结构防御 CSD 下仍保持有效，揭示了异构图学习中的现实后门风险。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 02:31:56"
+}

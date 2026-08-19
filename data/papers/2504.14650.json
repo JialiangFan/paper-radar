@@ -1,0 +1,30 @@
+{
+ "id": "2504.14650",
+ "title": "A Framework for Benchmarking and Aligning Task-Planning Safety in LLM-Based Embodied Agents",
+ "authors": "Yuting Huang et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2504.14650",
+ "abstract": "",
+ "summary": "Adds SafePlan-Bench and Safe-Align for embodied-agent task-planning safety.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental Agent Safety Benchmarks",
+ "tags": [
+  "agent-safety",
+  "alignment",
+  "benchmark",
+  "safe-vla",
+  "supplemental-recent"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Agent_Safety_Benchmarks/2025_SafePlan_Bench_SafeAlign.md",
+ "pdf_path": "PDFs/Supplemental_Agent_Safety_Benchmarks/2025_SafePlan_Bench_SafeAlign.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

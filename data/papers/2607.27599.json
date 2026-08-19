@@ -1,0 +1,13 @@
+{
+ "id": "2607.27599",
+ "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
+ "authors": "Xiangcheng Zhang, Yilun Du",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27599v1",
+ "abstract": "Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system that leverages the reasoning capabilities of Vision-Language Models (VLMs) and the physical grounding of a multi-task pose-image conditioned world model. Our system enables an agent to propose initial action plans and iteratively refine them via optimization and search, reasoning over imagined world model rollouts. We demonstrate that our approach achieves superior performance across compositional tasks, new layouts, and zero-shot generalization scenarios, significantly outperforming state-of-the-art end-to-end policy models such as VLAs and WAMs. Project website at worldactionplanner.github.io",
+ "summary": "## World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models\n\n**1. 核心创新点**\n\n把视觉语言模型（VLM）的推理能力与动作条件世界模型的物理常识结合起来，让机器人在\"想象\"中反复推演并优化动作计划，从而突破模仿学习策略难以泛化到新场景、新任务的瓶颈。\n\n**2. 主要方法**\n\n- **VLM 作为规划器**：利用其语义推理能力生成初始动作方案；\n- **多任务位姿-图像条件世界模型（pose-image conditioned world model）**：提供物理层面的落地约束，可根据候选动作\"想象\"出未来的观测 rollout；\n- **迭代优化与搜索**：在想象出的 rollout 上做评估，通过优化与搜索循环不断精修动作计划，再交付执行——本质上是\"用世界模型做规划时的仿真器\"的思路。\n\n**3. 结论/性能**\n\n在组合式任务（compositional tasks）、未见过的新布局、以及零样本泛化三类设定下均取得更优表现，明显超过当前最先进的端到端策略模型，包括 VLA（视觉-语言-动作模型）和 WAM 类方法。项目主页：worldactionplanner.github.io\n\n> 摘要中未给出具体数值指标、仿真/真机的实验规模，也未说明世界模型的推理开销——这几点需要看正文才能判断方法的实用性。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-31 13:04:17"
+}

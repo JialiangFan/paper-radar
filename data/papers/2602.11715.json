@@ -1,0 +1,13 @@
+{
+ "id": "2602.11715",
+ "title": "DICE: Diffusion Large Language Models Excel at Generating CUDA Kernels",
+ "authors": "Haolei Bai, Lingcheng Kong, Xueyi Chen, Jianmian Wang, Zhiqiang Tao, Huan Wang",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11715v1",
+ "abstract": "Diffusion large language models (dLLMs) have emerged as a compelling alternative to autoregressive (AR) LLMs, owing to their capacity for parallel token generation. This paradigm is particularly well-suited for code generation, where holistic structural planning and non-sequential refinement are critical. Despite this potential, tailoring dLLMs for CUDA kernel generation remains challenging, obstructed not only by the high specialization but also by the severe lack of high-quality training data. To address these challenges, we construct CuKe, an augmented supervised fine-tuning dataset optimized for high-performance CUDA kernels. On top of it, we propose a bi-phase curated reinforcement learning (BiC-RL) framework consisting of a CUDA kernel infilling stage and an end-to-end CUDA kernel generation stage. Leveraging this training framework, we introduce DICE, a series of diffusion large language models designed for CUDA kernel generation, spanning three parameter scales, 1.7B, 4B, and 8B. Extensive experiments on KernelBench demonstrate that DICE significantly outperforms both autoregressive and diffusion LLMs of comparable scale, establishing a new state-of-the-art for CUDA kernel generation.",
+ "summary": "**核心创新点**：通过 CuKe 高质量数据集与 BiC-RL 双阶段强化学习，利用扩散大语言模型实现端到端的 CUDA 内核生成，显著提升生成质量并树立 CUDA 内核生成的新SOTA。\n\n**主要方法**：\n- 构建并使用 CuKe 增强监督微调数据集，针对高性能 CUDA 内核进行数据优化。  \n- 提出 Bi-phase curated reinforcement learning（BiC-RL）框架，包括 CUDA 内核填充（infilling）阶段与端到端 CUDA 内核生成阶段。  \n- 设计并发布 DICE 系列扩散大语言模型，覆盖 1.7B、4B、8B 三个规模，在 KernelBench 上进行系统评测。  \n- 与同规模的自回归（AR）LLM 及扩散 LLM 进行对比，验证在 CUDA 内核生成任务中的优势。\n\n**结论/性能**：在 KernelBench 上，DICE 在同规模的自回归与扩散模型上显著超越，确立了 CUDA 内核生成的新状态点（SOTA）。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-13 14:02:33"
+}

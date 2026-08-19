@@ -1,0 +1,13 @@
+{
+ "id": "2603.30034",
+ "title": "EnsembleSHAP: Faithful and Certifiably Robust Attribution for Random Subspace Method",
+ "authors": "Yanting Wang, Jinyuan Jia",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30034v1",
+ "abstract": "Random subspace method has wide security applications such as providing certified defenses against adversarial and backdoor attacks, and building robustly aligned LLM against jailbreaking attacks. However, the explanation of random subspace method lacks sufficient exploration. Existing state-of-the-art feature attribution methods, such as Shapley value and LIME, are computationally impractical and lacks security guarantee when applied to random subspace method. In this work, we propose EnsembleSHAP, an intrinsically faithful and secure feature attribution for random subspace method that reuses its computational byproducts. Specifically, our feature attribution method is 1) computationally efficient, 2) maintains essential properties of effective feature attribution (such as local accuracy), and 3) offers guaranteed protection against privacy-preserving attacks on feature attribution methods. To the best of our knowledge, this is the first work to establish provable robustness against explanation-preserving attacks. We also perform comprehensive evaluations for our explanation's effectiveness when faced with different empirical attacks, including backdoor attacks, adversarial attacks, and jailbreak attacks. The code is at https://github.com/Wang-Yanting/EnsembleSHAP. WARNING: This document may include content that could be considered harmful.",
+ "summary": "- 核心创新点（1句话）：提出 EnsembleSHAP，一种面向随机子空间方法的忠实且可证鲁棒的特征归因方法，能够复用计算副产物并对解释攻击提供形式化保护。\n\n- 主要方法：在随机子空间框架内构建 EnsembleSHAP，将子空间层面的贡献汇聚成全局归因，兼具高效计算、保持局部准确性等重要属性，并提供对解释保持攻击的可证明鲁棒性；首次实现对解释攻击的理论保障，且对后门、对抗、越狱等攻击进行了全面评估。代码公开。  \n\n- 结论/性能：实现高效且忠实的特征解释，具备可证鲁棒性，对解释攻击有理论与实证保障，并在多种经验性攻击场景中验证了其鲁棒性与有效性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-01 13:00:44"
+}

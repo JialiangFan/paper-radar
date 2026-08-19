@@ -1,0 +1,13 @@
+{
+ "id": "2608.05033",
+ "title": "SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System",
+ "authors": "Shiyang Li, Guangyan Sun, Jinwei Tang, Yanzhi Wang, Mingyi Hong, Caiwen Ding",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05033v1",
+ "abstract": "Sparse matrix kernels are fundamental to scientific computing, graph analytics, and machine learning. Their GPU performance depends strongly on the input sparsity pattern and execution strategy. For the same SpMM on the same matrix, cuSPARSE exhibits a 350x performance gap between CSR and Blocked-ELL. Our study of multiple data formats, specialized systems, and sparse compilers shows that no single implementation consistently dominates across sparsity patterns and operators. This motivates a system that can adapt its representation, execution strategy, and hardware mapping to each workload and target GPU.\n  We present SparseDitto, an LLM-based system that constructs a GPU kernel for each matrix, operator, and target GPU. SparseDitto supports SpMV, SpMM, and SpGEMM within a unified design framework. A lightweight additive model ranks established strategies using structural features of the input matrix. An architecture-aware planner then proposes several candidate designs. Coding and verification agents implement and refine them using measurements from the target GPU. Across three sparse operators and a diverse set of matrices, SparseDitto achieves a geometric-mean speedup of 2.68x over cuSPARSE on an NVIDIA RTX PRO 6000 GPU, with a maximum of 146.61x. On an NVIDIA H200 GPU, it achieves 2.79x, with a maximum of 78.5x. Its generated SpMM kernels also accelerate full-batch GCN training by up to 3.39x.",
+ "summary": "**SparseDitto 论文摘要**\n\n1. **核心创新点**\n用 LLM 智能体系统为每个稀疏矩阵、算子和目标 GPU 定制生成专属 GPU 内核，取代\"一刀切\"的通用稀疏库实现。\n\n2. **主要方法**\n- 出发点：稀疏内核性能高度依赖稀疏模式与执行策略（同一 SpMM 同一矩阵下，cuSPARSE 的 CSR 与 Blocked-ELL 版本差距达 350 倍），且没有任何单一实现能在所有稀疏模式和算子上通吃。\n- 系统流程：① 轻量级**加性模型**基于矩阵结构特征对已有策略排序；② **架构感知的规划器**提出若干候选设计；③ **编码智能体 + 验证智能体**在目标 GPU 上实测反馈，迭代实现与优化内核。\n- 统一框架同时支持 SpMV、SpMM、SpGEMM 三类算子。\n\n3. **结论/性能**\n- NVIDIA RTX PRO 6000 上相对 cuSPARSE 几何平均加速 **2.68×**，最高 **146.61×**。\n- NVIDIA H200 上几何平均 **2.79×**，最高 **78.5×**。\n- 生成的 SpMM 内核用于全批量 GCN 训练，最高加速 **3.39×**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-06 13:02:13"
+}

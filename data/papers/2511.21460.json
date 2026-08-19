@@ -1,0 +1,13 @@
+{
+ "id": "2511.21460",
+ "title": "MADRA: Multi-Agent Debate for Risk-Aware Embodied Planning",
+ "authors": "Junjian Wang, Lidan Zhao, Xi Sheryl Zhang",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21460v1",
+ "abstract": "Ensuring the safety of embodied AI agents during task planning is critical for real-world deployment, especially in household environments where dangerous instructions pose significant risks. Existing methods often suffer from either high computational costs due to preference alignment training or over-rejection when using single-agent safety prompts. To address these limitations, we propose MADRA, a training-free Multi-Agent Debate Risk Assessment framework that leverages collective reasoning to enhance safety awareness without sacrificing task performance. MADRA employs multiple LLM-based agents to debate the safety of a given instruction, guided by a critical evaluator that scores responses based on logical soundness, risk identification, evidence quality, and clarity. Through iterative deliberation and consensus voting, MADRA significantly reduces false rejections while maintaining high sensitivity to dangerous tasks. Additionally, we introduce a hierarchical cognitive collaborative planning framework that integrates safety, memory, planning, and self-evolution mechanisms to improve task success rates through continuous learning. We also contribute SafeAware-VH, a benchmark dataset for safety-aware task planning in VirtualHome, containing 800 annotated instructions. Extensive experiments on AI2-THOR and VirtualHome demonstrate that our approach achieves over 90% rejection of unsafe tasks while ensuring that safe-task rejection is low, outperforming existing methods in both safety and execution efficiency. Our work provides a scalable, model-agnostic solution for building trustworthy embodied agents.",
+ "summary": "- 核心创新点（1 句话）\n  提出一个训练无关的多代理辩论风险评估框架MADRA，通过多LLM代理的辩论与关键评估者的共识投票来提升任务规划的安全性，同时保持高执行效率。\n\n- 主要方法\n  - 使用多名基于大型语言模型的代理对指令安全性进行辩论，由一个关键评估者对回答在逻辑性、风险识别、证据质量、清晰度等方面打分并参与迭代与投票达成共识，降低误拒绝。\n  - 引入分层认知协作规划框架，整合安全、记忆、规划和自我进化机制以提升任务成功率并实现持续学习。\n  - 提供 SafeAware-VH 数据集（VirtualHome，800 条标注指令）用于安全感知任务规划的评估。\n  - 在 AI2-THOR 与 VirtualHome 上进行广泛实验，验证方法的有效性与效率提升。\n\n- 结论/性能\n  - 实验结果显示MADRA对不安全任务的拒绝率超过90%，同时对安全任务的误拒率较低，优于现有方法在安全性与执行效率上的表现。\n  - 该框架具有可扩展性、模型无关性，提供了一个可部署的可信赖具身智能代理解决方案。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-11-30 06:06:02"
+}

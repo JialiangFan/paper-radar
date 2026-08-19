@@ -1,0 +1,13 @@
+{
+ "id": "2604.18418",
+ "title": "MedProbeBench: Systematic Benchmarking at Deep Evidence Integration for Expert-level Medical Guideline",
+ "authors": "Jiyao Liu, Jianghan Shen, Sida Song, Tianbin Li, Xiaojia Liu, Rongbin Li, Ziyan Huang, Jiashi Lin, Junzhi Ning, Changkai Ji, Siqi Luo, Wenjie Li, Chenglong Ma, Ming Hu, Jing Xiong, Jin Ye, Bin Fu, Ningsheng Xu, Yirong Chen, Lei Jin, Hong Chen, Junjun He",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18418v1",
+ "abstract": "Recent advances in deep research systems enable large language models to retrieve, synthesize, and reason over large-scale external knowledge. In medicine, developing clinical guidelines critically depends on such deep evidence integration. However, existing benchmarks fail to evaluate this capability in realistic workflows requiring multi-step evidence integration and expert-level judgment. To address this gap, we introduce MedProbeBench, the first benchmark leveraging high-quality clinical guidelines as expert-level references. Medical guidelines, with their rigorous standards in neutrality and verifiability, represent the pinnacle of medical expertise and pose substantial challenges for deep research agents. For evaluation, we propose MedProbe-Eval, a comprehensive evaluation framework featuring: (1) Holistic Rubrics with 1,200+ task-adaptive rubric criteria for comprehensive quality assessment, and (2) Fine-grained Evidence Verification for rigorous validation of evidence precision, grounded in 5,130+ atomic claims. Evaluation of 17 LLMs and deep research agents reveals critical gaps in evidence integration and guideline generation, underscoring the substantial distance between current capabilities and expert-level clinical guideline development. Project: https://github.com/uni-medical/MedProbeBench",
+ "summary": "1. 核心创新点：以高质量临床指南作为专家级参考，首次构建面向深度证据整合的系统性基准MedProbeBench及其评估框架MedProbe-Eval，用于评估模型在多步证据整合和专家级指南生成中的能力。\n\n2. 主要方法：提出MedProbeBench及MedProbe-Eval，包含1) 基于高质量临床指南的评估参照；2) Holistic Rubrics，含超过1200条任务自适应评估标准；3) Fine-grained Evidence Verification，基于超过5130条原子级断言进行证据精确性验证；4) 对17种大模型与深度研究代理进行系统评测。\n\n3. 结论/性能：评测揭示现有模型在证据整合和指南生成方面存在显著不足，与专家级临床指南开发仍存在较大差距，显示当前能力与目标之间的距离。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-21 13:04:34"
+}

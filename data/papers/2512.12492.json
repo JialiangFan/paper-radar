@@ -1,0 +1,13 @@
+{
+ "id": "2512.12492",
+ "title": "Adaptive Detector-Verifier Framework for Zero-Shot Polyp Detection in Open-World Settings",
+ "authors": "Shengkai Xu, Hsiang Lun Kao, Tianxiang Xu, Honghui Zhang, Junqiao Wang, Runmeng Ding, Guanyu Liu, Tianyu Shi, Zhenyu Yu, Guofeng Pan, Ziqian Bi, Yuqi Ouyang",
+ "date": "2025-12-13",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12492v1",
+ "abstract": "Polyp detectors trained on clean datasets often underperform in real-world endoscopy, where illumination changes, motion blur, and occlusions degrade image quality. Existing approaches struggle with the domain gap between controlled laboratory conditions and clinical practice, where adverse imaging conditions are prevalent. In this work, we propose AdaptiveDetector, a novel two-stage detector-verifier framework comprising a YOLOv11 detector with a vision-language model (VLM) verifier. The detector adaptively adjusts per-frame confidence thresholds under VLM guidance, while the verifier is fine-tuned with Group Relative Policy Optimization (GRPO) using an asymmetric, cost-sensitive reward function specifically designed to discourage missed detections -- a critical clinical requirement. To enable realistic assessment under challenging conditions, we construct a comprehensive synthetic testbed by systematically degrading clean datasets with adverse conditions commonly encountered in clinical practice, providing a rigorous benchmark for zero-shot evaluation. Extensive zero-shot evaluation on synthetically degraded CVC-ClinicDB and Kvasir-SEG images demonstrates that our approach improves recall by 14 to 22 percentage points over YOLO alone, while precision remains within 0.7 points below to 1.7 points above the baseline. This combination of adaptive thresholding and cost-sensitive reinforcement learning achieves clinically aligned, open-world polyp detection with substantially fewer false negatives, thereby reducing the risk of missed precancerous polyps and improving patient outcomes.",
+ "summary": "- **核心创新点**：提出 AdaptiveDetector——一个自适应的两阶段 detector-verifier 框架，通过在 VLM 指导下对每帧置信度阈值进行自适应调整，并使用基于 GRPO 的成本敏感强化学习对验证器进行微调，从而在开放世界的零-shot 场景中显著降低漏检并提升鲁棒性。\n\n- **主要方法**：\n  - 两阶段框架：YOLOv11 检测器 + 视觉-语言模型（VLM）验证器。\n  - 检测阶段：在 VLM 指导下对每帧的置信度阈值进行自适应调整。\n  - 验证阶段：验证器采用 Group Relative Policy Optimization (GRPO) 进行微调，使用不对称、成本敏感的奖励函数以抑制漏检。\n  - 数据与评估：构建通过降质合成的测试床，在零-shot 场景下对 CVC-ClinicDB 和 Kvasir-SEG 进行评估。\n\n- **结论/性能**：\n  - 在合成降质的 CVC-ClinicDB 与 Kvasir-SEG 上进行零-shot评测，召回率相比仅使用 YOLO 提升 14–22 个百分点。\n  - 精度在基线的-0.7 到 +1.7 百分点范围内波动。\n  - 自适应阈值与成本敏感强化学习的结合实现了临床对齐的开放世界 polyp 检测，显著减少漏检风险、可能改善患者结局。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-16 02:04:54"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.11671",
+ "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models",
+ "authors": "Siyu Xu, Yunke Wang, Zijian Wang, Dihao Zhu, Chenghao Xia, Chengbin Du, Daochang Liu, Tao Huang, Chang Xu",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11671v1",
+ "abstract": "Vision-Language-Action (VLA) models can follow instructions and manipulate objects, but their performance often collapses out of distribution (OOD), when the scene, viewpoint, or object differs from training. Adapting to each new situation typically requires collecting more data and fine-tuning. We present StellaVLA, a framework that instead adapts at test time by conditioning on a single retrieved demonstration. The key idea is to move beyond imitating what an expert did and instead convey why: an automated offline pipeline converts each raw trajectory into a structured demonstration, e.g., a task plan, sub-goal descriptions, and verbalized 3D motion, at zero human-annotation cost. Provided as in-context guidance, this structured demonstration lets the policy reason about the task rather than mimic a pixel trajectory, which also makes it transferable across embodiments (real-robot, human-hand, or XR demonstrations). A parallel dual-training design internalizes this reasoning during training through a joint action-and-language objective, while inference uses the action expert alone, preserving real-time, high-frequency control with no added latency. On the VLA-Arena leaderboard(Aug 1, 2026), StellaVLA ranks first with an overall score of 0.63, versus 0.44 and 0.22 for the strong prior models ($π_{0.5}$ and LingBot-VLA), and it further leads on LIBERO with 98.8% average success rate and LIBERO-Plus with 85.1% success rate. Our real-robot benchmark demonstrates that StellaVLA can use both human/robot demos and human-to-robot (XR) demos as in-context structured demonstration to help VLA model adapt to OOD tasks.",
+ "summary": "## StellaVLA 论文摘要总结\n\n**1. 核心创新点**\n不再靠采数据微调来适应新场景，而是在测试时通过检索一条「结构化示范」作为上下文提示，让 VLA 模型理解任务「为什么这么做」而非模仿像素轨迹，从而实现分布外（OOD）泛化。\n\n**2. 主要方法**\n- **离线自动化流水线**：把原始轨迹转换成结构化示范——任务规划、子目标描述、语言化的 3D 运动信息，零人工标注成本。\n- **上下文示范（in-context）**：该示范作为提示注入策略，因为是语义层面的表达，所以可跨本体迁移（真机、人手、XR 示范均可用）。\n- **并行双训练设计**：训练时用「动作 + 语言」联合目标把推理能力内化到模型中；推理时只跑 action expert，保持实时高频控制，不增加延迟。\n\n**3. 结论/性能**\n- VLA-Arena 排行榜（2026-08-01）总分 **0.63** 排名第一，显著超过 π₀.₅（0.44）和 LingBot-VLA（0.22）。\n- LIBERO 平均成功率 **98.8%**，LIBERO-Plus **85.1%**。\n- 真机实验验证：人类/机器人示范以及人到机器人的 XR 示范都能作为上下文结构化示范，帮助模型适应 OOD 任务。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-16 13:05:45"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.02289",
+ "title": "Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation",
+ "authors": "Chongjie Ye, Cheng Cao, Chuanyu Pan, Yiming Hao, Yihao Zhi, Yuanming Hu, Xiaoguang Han",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02289v1",
+ "abstract": "Recent multimodal large language models have achieved strong performance in unified text and image understanding and generation, yet extending such native capability to 3D remains challenging due to limited data. Compared to abundant 2D imagery, high-quality 3D assets are scarce, making 3D synthesis under-constrained. Existing methods often rely on indirect pipelines that edit in 2D and lift results into 3D via optimization, sacrificing geometric consistency. We present Omni123, a 3D-native foundation model that unifies text-to-2D and text-to-3D generation within a single autoregressive framework. Our key insight is that cross-modal consistency between images and 3D can serve as an implicit structural constraint. By representing text, images, and 3D as discrete tokens in a shared sequence space, the model leverages abundant 2D data as a geometric prior to improve 3D representations. We introduce an interleaved X-to-X training paradigm that coordinates diverse cross-modal tasks over heterogeneous paired datasets without requiring fully aligned text-image-3D triplets. By traversing semantic-visual-geometric cycles (e.g., text to image to 3D to image) within autoregressive sequences, the model jointly enforces semantic alignment, appearance fidelity, and multi-view geometric consistency. Experiments show that Omni123 significantly improves text-guided 3D generation and editing, demonstrating a scalable path toward multimodal 3D world models.",
+ "summary": "- 核心创新点（1句话）\n  在一个自回归框架内将文本、2D图像和3D表示统一为离散token的共享序列，通过跨模态一致性作为隐式结构约束，并以大量2D数据作为几何先验来提升3D表示，从而实现文本到2D与文本到3D的统一生成。\n\n- 主要方法\n  - 提出 Omni123，一种3D原生的基础模型，在同一自回归框架中同时处理文本到2D与文本到3D的生成。\n  - 将文本、图片、3D在共享的序列空间中离散化为统一的token表示，通过跨模态一致性来约束几何和语义关系。\n  - 引入互嵌的 X-to-X 训练范式，在异构配对数据集上协调文本-图像、图像-3D、文本-3D等跨模态任务，且不要求完全对齐的三元组。\n  - 通过在自回归序列中进行语义-视觉-几何的循环（文本→图像→3D→图像），共同推进语义对齐、外观保真和多视角几何的一致性。\n  - 利用丰富的2D数据作为几何先验来提升3D表示和生成质量。\n\n- 结论/性能\n  实验表明 Omni123显著提升了文本引导的3D生成与编辑能力，展示了向多模态3D世界模型扩展的可扩展路径。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-03 13:04:31"
+}

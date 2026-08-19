@@ -1,0 +1,33 @@
+{
+ "id": "2403.08248",
+ "title": "CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models",
+ "authors": "Chen, et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2403.08248",
+ "abstract": "",
+ "summary": "CoPa uses foundation models to infer spatial constraints between object parts and solve open-world manipulation tasks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "foundation-models",
+  "manipulation",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "spatial-constraints",
+  "spatial-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2024_Chen_CoPa.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2024_Chen_CoPa.pdf",
+ "code": "",
+ "project": "https://copa-2024.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.16849",
+ "title": "Evolution & Foundation: AI Shares Creative Control",
+ "authors": "Dylan Banarse, Stephen Todd, William Latham, Frederic Fol Leymarie",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.16849v1",
+ "abstract": "This paper investigates the creative process of automated design and artistic evaluation using an evolutionary system. We consider how a multimodal artificial intelligence (AI) model can communicate and guide a combined generative and evolutionary computational system. This creates a framework for the evolution of aesthetically pleasing complex 3D organic forms by integrating genetic algorithms with the visual reasoning capabilities of large-scale AI foundation models.\n  The framework shifts the artist role from that of intensive direct selection to one of system design; transferring detailed step-by-step curation to an AI agent capable of multimodal aesthetic judgement. This framework enables the human artist/designer to rapidly traverse large areas of multi-dimensional evolutionary parameter space to find creative outcomes based on their semantic targets.\n  Detailed audit trails of the AI's aesthetic reasoning are generated for each experiment. Interactive visualisation tools, together with AI-generated summaries and evolutionary narratives, enable deep exploration into each evolutionary experiment and providing a transparent insight into the AI-guided process.",
+ "summary": "**核心创新点**：让多模态 AI 基础模型充当\"审美评判者\"来引导进化计算系统，使艺术家从逐步筛选的\"选择者\"转变为系统\"设计者\"，自动进化出美观的 3D 有机形态。\n\n**主要方法**：将遗传算法（进化计算）与生成系统结合，并接入大规模多模态 AI 基础模型的视觉推理能力——由 AI 代替人工对每一代生成结果进行审美判断与选择；同时记录 AI 审美推理的完整审计轨迹，配合交互式可视化工具、AI 生成的摘要和\"进化叙事\"。\n\n**结论/性能**：构建了一个人机协作框架，使设计者能依据语义目标快速遍历高维进化参数空间、高效找到符合预期的创意结果，并通过审计轨迹与可视化实现对 AI 引导过程的透明化解释。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-16 13:02:55"
+}

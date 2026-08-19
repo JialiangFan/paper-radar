@@ -1,0 +1,13 @@
+{
+ "id": "2606.17924",
+ "title": "PearlVLA: Progressive Embodied Action-Plan Refinement in Latent Space",
+ "authors": "Bochen Yang, Lianlei Shan",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.17924v1",
+ "abstract": "Current Vision-Language-Action (VLA) models face a trade-off between efficient action generation and explicit deliberation. Directly decoding actions from vision-language backbone representations enables low-latency control, whereas explicit reasoning through textual chains, pixel-level subgoals, or action search can improve planning but incurs substantial latency and computational cost. We propose PearlVLA, a VLA framework that moves deliberation into the latent space of a vision-language model (VLM). PearlVLA separates VLM meta-query representations into a fixed visual grounding branch and an iterative latent plan branch. At each refinement round, a plan-conditioned world query probes a lightweight frozen latent world model for an action-free future observation latent, which is fed back to guide plan refinement. A future-guided RefineNet then applies scheduled residual updates to progressively refine a coarse semantic draft into a fine-grained latent action plan. The refined plan after K rounds is then decoded in parallel into an action chunk for low-latency execution. We further introduce Causal Refinement-Grouped Process-Reward RL to optimize the latent refinement process with rewards from longer-horizon imagined futures induced by latent plan edits. Empirical evaluations on the LIBERO benchmark demonstrate that PearlVLA achieves state-of-the-art performance among existing methods.",
+ "summary": "## PearlVLA 论文总结\n\n1. **核心创新点**：将\"深思熟虑\"式的规划过程从显式的文本/像素推理转移到视觉-语言模型的**潜空间**中进行渐进式精化，从而在低延迟动作生成与显式规划之间取得平衡。\n\n2. **主要方法**：\n   - 把 VLM 的元查询表示拆分为**固定的视觉接地分支**和**迭代的潜规划分支**。\n   - 每轮精化时，用\"规划条件世界查询\"探询一个轻量级冻结的**潜世界模型**，得到无动作的未来观测潜变量，反馈回去引导规划。\n   - 通过 **Future-guided RefineNet** 施加按计划安排的残差更新，将粗糙语义草稿逐步精化为细粒度潜动作规划；K 轮后**并行解码**为动作块以低延迟执行。\n   - 提出 **Causal Refinement-Grouped Process-Reward RL**，利用由潜规划编辑诱导的更长时程\"想象未来\"提供奖励来优化精化过程。\n\n3. **结论/性能**：在 **LIBERO** 基准上达到了现有方法中的**最先进（SOTA）性能**，兼顾了规划质量与执行效率。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-17 13:04:56"
+}

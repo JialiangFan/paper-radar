@@ -1,0 +1,13 @@
+{
+ "id": "2603.20179",
+ "title": "AI Agents Can Already Autonomously Perform Experimental High Energy Physics",
+ "authors": "Eric A. Moreno, Samuel Bright-Thonney, Andrzej Novak, Dolores Garcia, Philip Harris",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20179v1",
+ "abstract": "Large language model-based AI agents are now able to autonomously execute substantial portions of a high energy physics (HEP) analysis pipeline with minimal expert-curated input. Given access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find that Claude Code succeeds in automating all stages of a typical analysis: event selection, background estimation, uncertainty quantification, statistical inference, and paper drafting. We argue that the experimental HEP community is underestimating the current capabilities of these systems, and that most proposed agentic workflows are too narrowly scoped or scaffolded to specific analysis structures. We present a proof-of-concept framework, Just Furnish Context (JFC), that integrates autonomous analysis agents with literature-based knowledge retrieval and multi-agent review, and show that this is sufficient to plan, execute, and document a credible high energy physics analysis. We demonstrate this by conducting analyses on open data from ALEPH, DELPHI, and CMS to perform electroweak, QCD, and Higgs boson measurements. Rather than replacing physicists, these tools promise to offload the repetitive technical burden of analysis code development, freeing researchers to focus on physics insight, truly novel method development, and rigorous validation. Given these developments, we advocate for new strategies for how the community trains students, organizes analysis efforts, and allocates human expertise.",
+ "summary": "- 核心创新点：利用大语言模型驱动的自治分析代理，结合文献检索与多代理评审，能够自给自足地执行完整的高能物理分析并输出论文草案。\n\n- 主要方法：引入 Just Furnish Context (JFC) 框架，将 autonomous analysis agents、基于文献的知识检索与多代理审阅整合；以 Claude Code 为核心代理，在给定数据集、执行框架和先前文献的条件下，自动完成事件选择、背景估计、不确定性量化、统计推断和论文撰写等分析阶段，并在 ALEPH、DELPHI、CMS 开放数据上进行电子弱、QCD 与希格斯测量。\n\n- 结论/性能：证明该体系能够计划、执行并文档化可信的高能物理分析，实现分析全过程的自动化，帮助研究者减少重复编码工作、聚焦物理洞察与方法创新，并提出关于培训、研究组织与人力配置的新策略。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-23 13:04:36"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.23471",
+ "title": "Regulating AI Agents",
+ "authors": "Kathrin Gardhouse, Amin Oueslati, Noam Kolt",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23471v1",
+ "abstract": "AI agents -- systems that can independently take actions to pursue complex goals with only limited human oversight -- have entered the mainstream. These systems are now being widely used to produce software, conduct business activities, and automate everyday personal tasks. While AI agents implicate many areas of law, ranging from agency law and contracts to tort liability and labor law, they present particularly pressing questions for the most globally consequential AI regulation: the European Union's AI Act. Promulgated prior to the development and widespread use of AI agents, the EU AI Act faces significant obstacles in confronting the governance challenges arising from this transformative technology, such as performance failures in autonomous task execution, the risk of misuse of agents by malicious actors, and unequal access to the economic opportunities afforded by AI agents. We systematically analyze the EU AI Act's response to these challenges, focusing on both the substantive provisions of the regulation and, crucially, the institutional frameworks that aim to support its implementation. Our analysis of the Act's allocation of monitoring and enforcement responsibilities, reliance on industry self-regulation, and level of government resourcing illustrates how a regulatory framework designed for conventional AI systems can be ill-suited to AI agents. Taken together, our findings suggest that policymakers in the EU and beyond will need to change course, and soon, if they are to effectively govern the next generation of AI technology.",
+ "summary": "- 核心创新点：首次系统评估EU AI Act在治理AI代理方面的不足，聚焦监测与执法、行业自律与政府资源配置等机构框架，提出改进方向。\n\n- 主要方法：以法学/政策分析为主，对EU AI Act及其实施框架进行文本与制度分析，评估其对AI代理的适用性，并比较传统AI系统治理的差异，分析监管分工与资源配置的可行性。\n\n- 结论/性能：揭示现有框架可能与AI代理的特性不匹配，难以应对性能失败、滥用风险与不平等的经济机会等挑战，呼吁EU及全球政策制定者尽快调整监管路径以实现对下一代AI技术的有效治理。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-25 13:01:47"
+}

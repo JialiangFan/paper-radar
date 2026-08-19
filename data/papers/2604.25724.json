@@ -1,0 +1,13 @@
+{
+ "id": "2604.25724",
+ "title": "Scalable Inference Architectures for Compound AI Systems: A Production Deployment Study",
+ "authors": "Srikanta Prasad S, Utkarsh Arora",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25724v1",
+ "abstract": "Modern enterprise AI applications increasingly rely on compound AI systems - architectures that compose multiple models, retrievers, and tools to accomplish complex tasks. Deploying such systems in production demands inference infrastructure that can efficiently serve concurrent, heterogeneous model invocations while maintaining cost-effectiveness and low latency. This paper presents a production deployment study of a modular, platform-agnostic inference architecture developed at Salesforce to support compound AI use cases including Agentforce (autonomous AI agents) and ApexGuru (AI-powered code analysis). The system integrates serverless execution, dynamic autoscaling, and MLOps pipelines to deliver consistent low-latency inference across multi-component agent workflows. We report production results demonstrating over 50% reduction in tail latency (P95), up to 3.9x throughput improvement, and 30 to 40% cost savings compared to prior static deployments. We further present a novel analysis of compound-system-specific challenges including multi-model fan-out overhead, cascading cold-start propagation, and heterogeneous scaling dynamics that emerge uniquely when serving agentic workloads. Through detailed case studies and operational lessons, we illustrate how the architecture enables compound AI systems to scale model invocations in parallel, handle bursty multi-agent workloads, and support rapid model iteration - capabilities essential for operationalizing agentic AI at enterprise scale.",
+ "summary": "以下是用中文对论文标题与摘要的简要概括：\n\n- 核心创新点（1句概括）\n  在生产环境中提出并部署一种模块化、平台无关的复合AI推理架构，通过无服务器执行、动态自动扩缩和MLOps管线，显著提升多组件工作流的低延迟与成本效益。\n\n- 主要方法\n  - 采用模块化、平台无关的推理架构，支持多模型、检索与工具的组合工作流（如 Agentforce、ApexGuru）。\n  - 集成无服务器执行、动态自动扩缩，以及端到端的MLOps pipelines，以实现对并发、异构模型调用的高效服务。\n  - 针对复合AI系统独有的挑战进行分析与实践，包括多模型扇出开销、级联冷启动传播、以及异构扩缩动态，并通过实际案例研究提供运维经验。\n\n- 结论/性能\n  - 生产部署结果显示：P95尾部延迟下降超过50%，吞吐量提升可达3.9x，成本相比 prior 静态部署降低约30-40%。\n  - 展示该架构在并发、突发多代理工作负载和快速模型迭代方面的能力，促进企业规模化落地“代理型AI”。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-29 13:01:55"
+}

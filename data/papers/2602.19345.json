@@ -1,0 +1,13 @@
+{
+ "id": "2602.19345",
+ "title": "Smooth Gate Functions for Soft Advantage Policy Optimization",
+ "authors": "Egor Denisov, Svetlana Glazyrina, Maksim Kryzhanovskiy, Roman Ischenko",
+ "date": "2026-02-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19345v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) has significantly advanced the training of large language models and enhanced their reasoning capabilities, while it remains susceptible to instability due to the use of hard clipping. Soft Adaptive Policy Optimization (SAPO) addresses this limitation by replacing clipping with a smooth sigmoid-based gate function, which leads to more stable updates. We have decided to push this theory further and investigate the impact of different gate functions on both training stability and final model performance. We formalize the key properties that admissible gates should satisfy and identify several families of such functions for empirical evaluation. This paper presents an analysis of our findings based on experiments conducted with the Qwen2.5-7B-Instruct model on mathematical reasoning tasks. These results provide practical guidance for designing smoother and more robust policy optimization objectives for large language model training.",
+ "summary": "以下是对论文标题与摘要的简要中文总结：\n\n- 核心创新点：提出并系统比较多种平滑门控函数作为软性策略优化的替代裁剪，明确可接受门控函数的关键性质，并对它们在训练稳定性与最终性能上的影响进行实证分析，为大语言模型训练设计更平滑、鲁棒的策略优化目标提供理论与实证依据。\n\n- 主要方法：在群组相对策略优化（GRPO）的基础上，用平滑门控函数（如基于 sigmoid 的门控）替代硬裁剪，提出门控函数应满足的关键性质，识别并评估若干门控函数族，通过在 Qwen2.5-7B-Instruct 模型的数学推理任务上进行实验比较来分析稳定性与性能影响。\n\n- 结论/性能：不同门控函数对训练稳定性和最终推理性能有显著影响，实验结果为如何设计更平滑、鲁棒的策略优化目标提供实用指南，显示相较于硬裁剪的更新，能够带来更稳定的训练与潜在的性能提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-24 14:04:32"
+}

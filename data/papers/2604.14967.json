@@ -1,0 +1,13 @@
+{
+ "id": "2604.14967",
+ "title": "UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards",
+ "authors": "Jun Wang, Shuo Tan, Zelong Sun, Tiancheng Gu, Yongle Zhao, Ziyong Feng, Kaicheng Yang, Cewu Lu",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14967v1",
+ "abstract": "Retrieval-Augmented Generation (RAG) extends Large Vision-Language Models (LVLMs) with external visual knowledge. However, existing visual RAG systems typically rely on generic retrieval signals that overlook the fine-grained visual semantics essential for complex reasoning. To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning. UniDoc-RL formulates visual information acquisition as a sequential decision-making problem with a hierarchical action space. Specifically, it progressively refines visual evidence from coarse-grained document retrieval to fine-grained image selection and active region cropping, allowing the model to suppress irrelevant content and attend to information-dense regions. For effective end-to-end training, we introduce a dense multi-reward scheme that provides task-aware supervision for each action. Based on Group Relative Policy Optimization (GRPO), UniDoc-RL aligns agent behavior with multiple objectives without relying on a separate value network. To support this training paradigm, we curate a comprehensive dataset of high-quality reasoning trajectories with fine-grained action annotations. Experiments on three benchmarks demonstrate that UniDoc-RL consistently surpasses state-of-the-art baselines, yielding up to 17.7% gains over prior RL-based methods.",
+ "summary": "1) 核心创新点：提出一个统一的强化学习框架 UniDoc-RL，通过分层动作与密集奖励实现从粗粒度检索到细粒度图像选择与主动区域裁剪的端到端视觉信息获取，显著提升视觉RAG的细粒度推理能力。\n\n2) 主要方法：\n- 将 LVLM 代理的检索、重新排序、主动视觉感知与推理整合为一个序列决策问题，采用分层动作空间实现从粗到细的证据获取。\n- 引入密集多奖励信号，为每个动作提供任务相关的监督。\n- 基于 Group Relative Policy Optimization (GRPO) 进行多目标对齐，无需单独的价值网络。\n- 构建包含细粒度动作注释的高质量推理轨迹数据集。\n- 在三项基准上进行实验评估。\n\n3) 结论/性能：在三项基准上持续超越 state-of-the-art 基线，相较于以往的 RL 方法，性能提升可高达约 17.7%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-17 13:03:53"
+}

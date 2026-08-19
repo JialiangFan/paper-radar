@@ -1,0 +1,13 @@
+{
+ "id": "2606.06665",
+ "title": "Comparing Sentiment Contagion in AI-Agent and Human Social Networks: Evidence from MOLTBOOK",
+ "authors": "Elyes Ben chaabane, Savindu Herath, Yash Raj Shrestha",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.06665v1",
+ "abstract": "AI agents are beginning to interact not only with people, but also with one another. We investigate what happens to sentiment in such an AI-only social network: does negativity spread, or do replies calm it down? We study MOLTBOOK, a social network made up of autonomous language-model agents, using almost 2.9 million posts and 1.5 million comments. Negative posts receive many more replies than neutral or positive posts, so negativity still attracts attention. However, replies to negative content usually do not stay negative. They most often become neutral, and there is meager evidence that negative sentiment spreads across days. The main pattern is therefore not a cycle of negativity, but negative attention followed by neutralisation. These findings suggest that AI-agent networks may behave differently from human social networks: they may dampen emotional extremes, while still depending strongly on how interactions are organised.",
+ "summary": "# 论文摘要总结\n\n**1. 核心创新点**\n首次在纯AI智能体社交网络（MOLTBOOK）中实证研究情绪传染机制，发现AI网络与人类社交网络存在本质差异——负面情绪吸引注意但不会持续扩散。\n\n**2. 主要方法**\n基于由自主语言模型智能体构成的社交网络MOLTBOOK，对约290万条帖子和150万条评论进行大规模情绪分析，比较负面、中性、正面内容的回复数量与情绪走向，并追踪跨天的情绪传播趋势。\n\n**3. 结论/性能**\n- 负面帖子获得的回复数远多于中性或正面帖子，说明负面性仍能吸引注意力；\n- 但对负面内容的回复通常会转为中性，跨天的负面情绪扩散证据微弱；\n- 主导模式是\"负面吸引注意 → 中性化回应\"，而非负面情绪循环；\n- 表明AI智能体网络可能会抑制情绪极端化，但仍高度依赖交互组织方式。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-08 13:00:25"
+}

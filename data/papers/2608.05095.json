@@ -1,0 +1,13 @@
+{
+ "id": "2608.05095",
+ "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
+ "authors": "Xiawei Yue, Boran Wang, Xiaoqing Zhang, Shuxin Zheng, Ziwei Zhang",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05095v1",
+ "abstract": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
+ "summary": "## HiGram 论文摘要总结\n\n**1. 核心创新点**\n提出 HiGram——一种可演化的**分层图记忆**框架，通过**路径级定位与改写**替代传统扁平图记忆的单元级独立更新，从而降低检索噪声与更新成本。\n\n**2. 主要方法**\n- **分层图记忆**：把记忆组织成\"粗到细\"的层次结构，由上层节点与底层 MemoryUnits 构成，检索时先粗后细，减少无关上下文进入。\n- **基于 MicroGraph 的路径级定位**：利用查询条件与更新条件下构建的 MicroGraph，在改写前先识别出支撑子图（support subgraph）和证据路径（evidence path）。\n- **协同改写机制**：在定位到的证据路径上，同时修订单元内部记忆内容与单元之间的依赖关系，保证依赖结构更新后仍然有效。\n\n**3. 结论/性能**\n在**长期对话问答**和**冲突感知记忆评测**两类基准上，相比基线在**答案质量**和 **token 效率**上均有显著提升；并且在**动态冲突、静态冲突、条件冲突**三种设定下，都提高了答案准确率与\"查询有效证据\"的选择质量。\n\n> 一点说明：摘要只给出\"substantial improvements\"这类定性表述，未披露具体数据集名称与量化指标，如需评估实际提升幅度需查阅正文实验部分。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-06 13:01:40"
+}

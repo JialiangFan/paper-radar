@@ -1,0 +1,13 @@
+{
+ "id": "2512.23611",
+ "title": "Close the Loop: Synthesizing Infinite Tool-Use Data via Multi-Agent Role-Playing",
+ "authors": "Yuwen Li, Wei Zhang, Zelong Huang, Mason Yang, Jiajun Wu, Shawn Guo, Huahao Hu, Lingyi Sun, Jian Yang, Mingjie Tang, Byran Dai",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23611v1",
+ "abstract": "Enabling Large Language Models (LLMs) to reliably invoke external tools remains a critical bottleneck for autonomous agents. Existing approaches suffer from three fundamental challenges: expensive human annotation for high-quality trajectories, poor generalization to unseen tools, and quality ceilings inherent in single-model synthesis that perpetuate biases and coverage gaps. We introduce InfTool, a fully autonomous framework that breaks these barriers through self-evolving multi-agent synthesis. Given only raw API specifications, InfTool orchestrates three collaborative agents (User Simulator, Tool-Calling Assistant, and MCP Server) to generate diverse, verified trajectories spanning single-turn calls to complex multi-step workflows. The framework establishes a closed loop: synthesized data trains the model via Group Relative Policy Optimization (GRPO) with gated rewards, the improved model generates higher-quality data targeting capability gaps, and this cycle iterates without human intervention. Experiments on the Berkeley Function-Calling Leaderboard (BFCL) demonstrate that InfTool transforms a base 32B model from 19.8% to 70.9% accuracy (+258%), surpassing models 10x larger and rivaling Claude-Opus, and entirely from synthetic data without human annotation.",
+ "summary": "1) 核心创新点：通过自我演化的多智能体协同闭环，在无人工标注条件下仅用原始 API 规格就能自动生成、验证并迭代提升大规模工具调用数据与模型能力。\n\n2) 主要方法：构建三方代理系统（User Simulator、Tool-Calling Assistant、MCP Server）来产生多样且可验证的工具使用轨迹；使用 GRPO（Group Relative Policy Optimization）配合门控奖励进行数据驱动的模型提升，形成“合成数据→模型改进→生成更好数据”的闭环，无需人工干预。\n\n3) 结论/性能：在 Berkeley Function-Calling Leaderboard (BFCL) 上，将基线32B模型的准确率从19.8%提升到70.9%（+258%），超越规模达十倍的模型，接近 Claude-Opus 的水平，且完全来自合成数据不依赖人工标注。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 03:29:25"
+}

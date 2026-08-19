@@ -1,0 +1,13 @@
+{
+ "id": "2608.14533",
+ "title": "Finding Vulnerabilities via LLM-Augmented Semantics-Aware Type-Checking",
+ "authors": "Ruizhe Wang, Meng Xu, N. Asokan",
+ "date": "2026-08-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.14533v1",
+ "abstract": "Vulnerability detection via static analysis traditionally relies on security experts encoding insecure coding patterns into algorithmic rules. However, this approach often focuses on syntactic patterns and overlooks deeper semantic information in the code, such as the meanings of variable and function names. As software systems grow more complex, modeling vulnerabilities using only syntactic rules becomes increasingly challenging.\n  In this paper, we propose a semantics-aware approach to detecting software vulnerabilities. We present SETYPE, a semantics-aware type system that can be derived directly from source code based solely on the meanings of symbols and expressions in natural language. In the SETYPE type system, both type inference and checking are performed by Large Language Models (LLMs), and a failed type check indicates a potential vulnerability.\n  We prototype PYSETYPE to demonstrate the feasibility of SETYPE for detecting vulnerabilities in Python web applications. Our evaluation on real-world applications achieves 87% detection precision and 88% detection accuracy. Using PYSETYPE, we identified 15 potential zero-day vulnerabilities, nine of which were confirmed by developers.",
+ "summary": "## 论文摘要总结\n\n**标题**：Finding Vulnerabilities via LLM-Augmented Semantics-Aware Type-Checking（通过 LLM 增强的语义感知类型检查来发现漏洞）\n\n---\n\n### 1. 核心创新点\n\n提出将代码中符号与表达式的**自然语言语义**本身当作\"类型\"，用 LLM 完成类型推断与检查，把漏洞检测转化为一次类型检查失败——从而突破传统静态分析只能匹配语法模式的局限。\n\n### 2. 主要方法\n\n- 设计了语义感知类型系统 **SETYPE**：类型不来自语言的声明信息，而是直接从源码中变量名、函数名等符号的**含义**推导得出。\n- 类型推断（type inference）与类型检查（type checking）两个环节**全部由大语言模型执行**；一旦类型检查不通过，即标记为潜在漏洞。\n- 实现原型系统 **PYSETYPE**，面向 **Python Web 应用**验证该思路的可行性。\n\n### 3. 结论 / 性能\n\n- 在真实世界应用上评测，检测**精确率 87%**、**准确率 88%**。\n- 实际挖掘出 **15 个潜在 0-day 漏洞**，其中 **9 个已获开发者确认**。\n\n---\n\n一点观察：摘要给出了 precision 和 accuracy，但未报告 recall/召回率，因此漏报情况无从判断；此外\"87%/88%\"所对应的评测集规模与构成也需看正文才能评估结论的强度。\n\n如果你希望按文献综述的规范格式（主题、背景、问题、贡献、方法论，中英双版并存入 Obsidian）来做，我可以改用 `/paper-review` 重新整理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-17 13:01:20"
+}

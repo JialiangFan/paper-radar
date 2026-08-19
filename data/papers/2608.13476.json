@@ -1,0 +1,13 @@
+{
+ "id": "2608.13476",
+ "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+ "authors": "Saisha Shetty, Satvik Tripathi, Austin Lin, Colin Zhao, Theodore Kim, Don Enwerem, Jacinta Arnold, Shahriar Faghani, Tessa S Cook",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13476v1",
+ "abstract": "We present Multi-Agent Reasoning and Coordination (MARC), an open-source framework that replaces monolithic LLM prompting with deterministic multi-agent orchestration for clinical reasoning. MARC coordinates role-specialized agents for extraction, reasoning, answer generation, and evaluation, with explicit context passing and traceable intermediate outputs, enabling stage-wise failure attribution. We additionally introduce a Decomposer module that generates task-specific agent prompts from a plain-language description, eliminating manual prompt engineering. The framework supports both API-based and local CPU-compatible deployments and is entirely configurable via YAML, without code modifications. MARC is designed to be model-agnostic, interpretable, and accessible to clinical domain experts without programming expertise. The full framework is available at https://github.com/Penn-RAIL/MARC-v1.",
+ "summary": "## MARC v1 论文摘要总结\n\n**1. 核心创新点**\n用确定性的多智能体编排（role-specialized agents）取代单体式 LLM prompting，为临床推理提供一个可解释、可追溯、无需编程的开源框架。\n\n**2. 主要方法**\n- 将临床推理流程拆分为四类角色化智能体：信息抽取（extraction）、推理（reasoning）、答案生成（answer generation）、评估（evaluation）；\n- 智能体之间显式传递上下文，保留可追溯的中间输出，从而支持**分阶段的失败归因**（stage-wise failure attribution）；\n- 提出 **Decomposer 模块**，可从一段自然语言任务描述自动生成各智能体的任务专属提示词，免去人工 prompt engineering；\n- 工程上模型无关（model-agnostic），同时支持 API 调用与本地 CPU 部署，全部行为通过 YAML 配置，无需改动代码。\n\n**3. 结论/性能**\n摘要中未给出定量的基准测试或性能数字，属于**框架/系统类工作**。其宣称的价值在于：相比单体 prompting 更具可解释性与错误可定位性，且降低使用门槛，使不具备编程能力的临床领域专家也能配置和使用。框架已开源（https://github.com/Penn-RAIL/MARC-v1）。\n\n> 提示：摘要未提供实验对比与评测指标，若需判断实际有效性，需查看正文的评估章节。另外，仓库里有一个 `/paper-review` 技能（会输出中英双语版本到 Obsidian），如果你想要更完整的文献综述式笔记，可以告诉我。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-14 13:00:26"
+}

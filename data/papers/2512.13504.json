@@ -1,0 +1,13 @@
+{
+ "id": "2512.13504",
+ "title": "An $H_2$-norm approach to performance analysis of networked control systems under multiplicative routing transformations",
+ "authors": "Ruslan Seifullaev, André M. H. Teixeira",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13504v1",
+ "abstract": "This paper investigates the performance of networked control systems subject to multiplicative routing transformations that alter measurement pathways without directly injecting signals. Such transformations, arising from faults or adversarial actions, modify the feedback structure and can degrade performance while remaining stealthy. An $H_2$-norm framework is proposed to quantify the impact of these transformations by evaluating the ratio between the steady-state energies of performance and residual outputs. Equivalent linear matrix inequality (LMI) formulations are derived for computational assessment, and analytical upper bounds are established to estimate the worst-case degradation. The results provide structural insight into how routing manipulations influence closed-loop behavior and reveal conditions for stealthy multiplicative attacks.",
+ "summary": "- 核心创新点：提出一个基于 H2 范数的性能分析框架，用于量化乘性路由变换对网络化控制系统的性能劣化，并给出等效的线性矩阵不等式（LMI）与解析上界，揭示潜在隐蔽攻击的条件及闭环结构的影响。\n\n- 主要方法：构建以稳态能量比（性能输出与残差输出的能量比）为指标的 H2 框架，将问题转化为等效的 LMIs 以便计算评估，并推导解析上界来估计最坏情况下的性能退化；分析对象为在测量路径被乘性变换影响的网络化控制系统。\n\n- 结论/性能：提供了量化性能退化的指标和方法，揭示了路由操控对闭环行为的结构性影响，并给出最坏情况的解析上界以及识别潜在隐蔽乘性攻击的条件。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 03:03:02"
+}

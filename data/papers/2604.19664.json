@@ -1,0 +1,13 @@
+{
+ "id": "2604.19664",
+ "title": "ECLASS-Augmented Semantic Product Search for Electronic Components",
+ "authors": "Nico Baumgart, Markus Lange-Hegermann, Jan Henze",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19664v1",
+ "abstract": "Efficient semantic access to industrial product data is a key enabler for factory automation and emerging LLM-based agent workflows, where both human engineers and autonomous agents must identify suitable components from highly structured catalogs. However, the vocabulary mismatch between natural-language queries and attribute-centric product descriptions limits the effectiveness of traditional retrieval approaches, e.g., BM25. In this work, we present a systematic evaluation of LLM-assisted dense retrieval for semantic product search on industrial electronic components, and investigate the integration of hierarchical semantics from the ECLASS standard into embedding-based retrieval. Our results show that dense retrieval combined with re-ranking substantially outperforms classical lexical methods and foundation model web-search baselines. In particular, the proposed approach achieves a Hit_Rate@5 of 94.3 %, compared to 31.4 % for BM25 on expert queries, while also exceeding foundation model baselines in both effectiveness and efficiency. Furthermore, augmenting product representations with ECLASS semantics yields consistent performance gains across configurations, demonstrating that standardized hierarchical metadata provides a crucial semantic bridge between user intent and sparse product descriptions.",
+ "summary": "1. 核心创新点：将 ECLASS 标准的层级语义融入基于嵌入的密集检索，并结合 LLM 辅助的重新排序，以提升工业电子元件的语义检索效果与效率。\n\n2. 主要方法：采用多阶段的嵌入式密集检索与再排序框架，並在产品表示中加入 ECLASS 层级语义进行增强，对比 BM25 等传统词汇检索与基础模型基线，进行系统性评估。\n\n3. 结论/性能：在专家查询上实现 Hit_Rate@5 为 94.3%，显著高于 BM25 的 31.4%，且在效果与效率上超越基础模型基线；且不同配置下加入 ECLASS 语义的表示均带来稳定的性能提升。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-22 13:03:41"
+}

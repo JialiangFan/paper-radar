@@ -1,0 +1,13 @@
+{
+ "id": "2602.03305",
+ "title": "medR: Reward Engineering for Clinical Offline Reinforcement Learning via Tri-Drive Potential Functions",
+ "authors": "Qianyi Xu, Gousia Habib, Feng Wu, Yanrui Du, Zhihui Chen, Swapnil Mishra, Dilruk Perera, Mengling Feng",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03305v1",
+ "abstract": "Reinforcement Learning (RL) offers a powerful framework for optimizing dynamic treatment regimes (DTRs). However, clinical RL is fundamentally bottlenecked by reward engineering: the challenge of defining signals that safely and effectively guide policy learning in complex, sparse offline environments. Existing approaches often rely on manual heuristics that fail to generalize across diverse pathologies. To address this, we propose an automated pipeline leveraging Large Language Models (LLMs) for offline reward design and verification. We formulate the reward function using potential functions consisted of three core components: survival, confidence, and competence. We further introduce quantitative metrics to rigorously evaluate and select the optimal reward structure prior to deployment. By integrating LLM-driven domain knowledge, our framework automates the design of reward functions for specific diseases while significantly enhancing the performance of the resulting policies.",
+ "summary": "- 核心创新点：首次在临床离线强化学习中引入由大语言模型驱动的奖励函数自动设计与验证框架，并以三驱潜在函数（生存、置信度、胜任度）构成奖励，同时配备量化指标进行优选，以实现对特定疾病奖励函数的自动化设计和显著提升策略性能。\n\n- 主要方法：使用大语言模型进行离线奖励设计与验证；将奖励函数表达为由三大分量组成的潜在函数（生存、置信度、胜任度）；提出用于评估和筛选最佳奖励结构的量化指标；将设计好的奖励用于离线强化学习来优化动态治疗方案，并融入领域知识以提升通用性与稳定性。\n\n- 结论/性能：该框架能够自动化设计针对特定疾病的奖励函数，并显著提升所得到的离线RL策略的性能。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-04 14:00:26"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.13004",
+ "title": "Large Language Models for Power System Applications: A Comprehensive Literature Survey",
+ "authors": "Muhammad Sarwar, Muhammad Rizwan, Mubushra Aziz, Abdul Rehman Sudais",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13004v1",
+ "abstract": "This comprehensive literature review examines the emerging applications of Large Language Models (LLMs) in power system engineering. Through a systematic analysis of recent research published between 2020 and 2025, we explore how LLMs are being integrated into various aspects of power system operations, planning, and management. The review covers key application areas including fault diagnosis, load forecasting, cybersecurity, control and optimization, system planning, simulation, and knowledge management. Our findings indicate that while LLMs show promising potential in enhancing power system operations through their advanced natural language processing and reasoning capabilities, significant challenges remain in their practical implementation. These challenges include limited domain-specific training data, concerns about reliability and safety in critical infrastructure, and the need for enhanced explainability. The review also highlights emerging trends such as the development of power system-specific LLMs and hybrid approaches combining LLMs with traditional power engineering methods. We identify crucial research directions for advancing the field, including the development of specialized architectures, improved security frameworks, and enhanced integration with existing power system tools. This survey provides power system researchers and practitioners with a comprehensive overview of the current state of LLM applications in the field and outlines future pathways for research and development.",
+ "summary": "- 核心创新点（一句话概括）\n  本文对2020–2025年大语言模型在电力系统运营、规划与管理等多领域的应用进行系统综述，揭示潜力与挑战，并提出面向电力系统的专用化与混合式方法的未来方向。\n\n- 主要方法（简述使用的技术/模型）\n  通过系统文献综述法对相关研究进行定性分析与分类整理，覆盖故障诊断、负荷预测、网络安全、控制与优化、系统规划、仿真、知识管理等应用场景；总结应用模式、数据需求、可解释性与安全性等关键要点，分析LLMs与传统电力工程方法的融合趋势，提出未来的研究方向。\n\n- 结论/性能（取得了什么效果）\n  结果表明LLMs在提升自然语言处理与推理能力方面对电力系统运营具有潜在帮助，但在实际落地中仍面临数据不足、可靠性与安全性、可解释性等挑战；同时指出发展趋势包括开发电力系统专用的LLMs、与传统方法的混合应用，以及更强的安全性和与现有工具的集成框架。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:03:49"
+}

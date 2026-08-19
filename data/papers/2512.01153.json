@@ -1,0 +1,13 @@
+{
+ "id": "2512.01153",
+ "title": "DPAC: Distribution-Preserving Adversarial Control for Diffusion Sampling",
+ "authors": "Han-Jin Lee, Han-Ju Lee, Jin-Seong Kim, Seok-Hwan Choi",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01153v1",
+ "abstract": "Adversarially guided diffusion sampling often achieves the target class, but sample quality degrades as deviations between the adversarially controlled and nominal trajectories accumulate. We formalize this degradation as a path-space Kullback-Leibler divergence(path-KL) between controlled and nominal (uncontrolled) diffusion processes, thereby showing via Girsanov's theorem that it exactly equals the control energy. Building on this stochastic optimal control (SOC) view, we theoretically establish that minimizing this path-KL simultaneously tightens upper bounds on both the 2-Wasserstein distance and Fréchet Inception Distance (FID), revealing a principled connection between adversarial control energy and perceptual fidelity. From a variational perspective, we derive a first-order optimality condition for the control: among all directions that yield the same classification gain, the component tangent to iso-(log-)density surfaces (i.e., orthogonal to the score) minimizes path-KL, whereas the normal component directly increases distributional drift. This leads to DPAC (Distribution-Preserving Adversarial Control), a diffusion guidance rule that projects adversarial gradients onto the tangent space defined by the generative score geometry. We further show that in discrete solvers, the tangent projection cancels the O(Δt) leading error term in the Wasserstein distance, achieving an O(Δt^2) quality gap; moreover, it remains second-order robust to score or metric approximation. Empirical studies on ImageNet-100 validate the theoretical predictions, confirming that DPAC achieves lower FID and estimated path-KL at matched attack success rates.",
+ "summary": "- 核心创新点（1句概括）\n  提出 DPAC（Distribution-Preserving Adversarial Control），将对抗梯度投影到与生成分数几何切空间正交的方向，以在扩散采样中同时最小化路径空间 KL，并保持分布一致性，从而提升样本质量。\n\n- 主要方法\n  - 将对抗控制的路径 KL 与控制能量等价（通过 Girsanov 定理），从随机过程的路径角度建立理论基础。\n  - 从随机最优控制视角给出第一阶最优性条件：在同等分类增益下，切向分量（与分布等密度面切线正交于 score 的方向）最小化路径 KL，法向分量直接增加分布漂移。\n  - 提出 DPAC 的具体实现规则：将对抗梯度投影到由生成分数几何定义的切空间，以实现分布保持的对抗引导。\n  - 在离散求解中，切向投影消除了 Δt 的领先误差项，达到 O(Δt^2) 的质量差提升；对 score 近似与度量近似具有二阶鲁棒性。\n  - 在 ImageNet-100 的实验中验证理论预测，DPAC 在对等的攻击成功率下获得更低的 FID 和路径 KL估计值。\n\n- 结论/性能\n  - 理论上，最小化路径 KL 同时紧致地收紧 2-Wasserstein 距离和 FID 的上界，提升分布与样本质量的一致性。\n  - 实证上，DPAC 在 ImageNet-100 上实现更低的 FID 和路径 KL，且对攻击成功率保持相同水平时优于对比方法；离散求解下对 Δt 的误差有二阶抵消效果，并对分数或度量近似具有二阶鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-02 14:01:29"
+}

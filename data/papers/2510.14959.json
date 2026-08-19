@@ -1,0 +1,32 @@
+{
+ "id": "2510.14959",
+ "title": "CBF-RL: Safety Filtering Reinforcement Learning in Training with Control Barrier Functions",
+ "authors": "Lizhi Yang, Blake Werner, Massimiliano de Sa, Aaron D. Ames",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2510.14959",
+ "abstract": "",
+ "summary": "CBF-RL uses CBF filtering during training so policies internalize safety and may deploy without an online filter.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "humanoid",
+  "low-level-robot-safety",
+  "robotics",
+  "safe-rl",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2025_Yang_CBFRL.md",
+ "pdf_path": "PDFs/CBF_Reachability/2025_Yang_CBFRL.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

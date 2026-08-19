@@ -1,0 +1,13 @@
+{
+ "id": "2607.29433",
+ "title": "Know It, Act on It: Investigating Memory Utilization in LLM Personalization",
+ "authors": "Zhaoxin Feng, Jianfei Ma, Emmanuele Chersoni",
+ "date": "2026-07-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.29433v1",
+ "abstract": "As large language model (LLM) agents evolve into personalized companions, memory has emerged as a core capability. However, LLMs face a knowledge utilization problem: they may fail to act on relevant user preferences even when they are fully present in context. When an agent fails to tailor its response in a context where previously shared user preferences should matter, it is unclear whether the model failed to remember that information or remembered it but failed to use it. To isolate this breakdown, we introduce a decoupled evaluation paradigm that administers paired Know and Act tests to the same user preference. We conduct large-scale experiments across 16 systems and five memory architectures, evaluating 1,000 preferences embedded at three levels of expression strength. Our results show a large gap between Know and Act outcomes: agents often pass the recall test for a user preference but fail to reflect that same preference in the paired behavioral scenario. While memory architectures reduce this gap, utilization remains especially weak for health and therapy-related preferences, where failures to act carry the greatest real-world stakes.",
+ "summary": "## 论文总结\n\n**标题**：Know It, Act on It: Investigating Memory Utilization in LLM Personalization\n（知道却做不到：LLM 个性化中的记忆利用研究）\n\n### 1. 核心创新点\n提出\"知道 (Know) / 做到 (Act)\"解耦评估范式，首次把 LLM 个性化失败明确区分为**\"没记住\"**和**\"记住了却没用上\"**两类问题，指出后者才是被忽视的关键瓶颈。\n\n### 2. 主要方法\n- 对**同一条用户偏好**同时施加配对的两项测试：Know 测试（直接回忆该偏好）与 Act 测试（在需要体现该偏好的行为场景中作答）。\n- 构建 1000 条用户偏好，并按**三种表达强度**（偏好陈述的明确/隐晦程度）分层嵌入上下文。\n- 在 **16 个系统、5 类记忆架构**上开展大规模对比实验。\n\n### 3. 结论/性能\n- Know 与 Act 之间存在**显著差距**：智能体常能准确复述用户偏好，却在配对的行为场景中不予体现，即\"知识利用 (knowledge utilization) 问题\"真实存在且普遍。\n- 引入记忆架构可以**缩小但无法消除**该差距。\n- 在**健康与心理治疗类偏好**上利用率尤其薄弱——而这恰恰是\"知道却不执行\"现实风险最高的领域。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-03 13:02:11"
+}

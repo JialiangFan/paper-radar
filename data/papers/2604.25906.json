@@ -1,0 +1,13 @@
+{
+ "id": "2604.25906",
+ "title": "Make Any Collection Navigable: Methods for Constructing and Evaluating Hypergraph of Text",
+ "authors": "Dean E. Alvarez, ChengXiang Zhai",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25906v1",
+ "abstract": "One reason the Web is more useful than a simple collection of documents is that the structure created by hyperlinks enables flexible navigation from one web page to another. However, hyperlinks are typically created manually and cannot fully capture a corpus' implicit semantic structures. Is there a general way to make an arbitrary collection navigable? Recent work has formalized this problem generally as constructing a Hypergraph of Text (HoT), which provides a formal mathematical structure for supporting navigation and browsing. However, how to construct and evaluate a Hypergraph of Text remains a challenge. In this paper, we propose and study several methods for constructing a HoT. We also propose a novel quantitative metric, effort ratio, for evaluating the structural quality of a constructed HoT. Experimental results show that even simple TF-IDF baselines can match LLM-based methods on our proposed effort ratio metric.",
+ "summary": "1. 核心创新点：提出并评估将任意文本集合构造成超图（HoT）的通用方法，并引入新的结构质量度量“effort ratio”，在该度量下简单的TF-IDF基线即可与基于LLM的方法相当。\n\n2. 主要方法：提出多种构建HoT的方法来建构文本超图，结合使用TF-IDF与其他潜在技术对文本之间的关系进行建模；同时提出并使用一个新的量化指标effort ratio来评估HoT的结构质量。\n\n3. 结论/性能：实验结果显示，在所提出的effort ratio指标下，简单的TF-IDF基线能够与基于大型语言模型的方法在结构质量评估上相媲美。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-29 13:00:42"
+}

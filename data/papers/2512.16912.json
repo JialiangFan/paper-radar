@@ -1,0 +1,13 @@
+{
+ "id": "2512.16912",
+ "title": "Exploration v.s. Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward",
+ "authors": "Peter Chen, Xiaopeng Li, Ziniu Li, Wotao Yin, Xi Chen, Tianyi Lin",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16912v1",
+ "abstract": "This paper examines the exploration-exploitation trade-off in reinforcement learning with verifiable rewards (RLVR), a framework for improving the reasoning of Large Language Models (LLMs). Recent studies suggest that RLVR can elicit strong mathematical reasoning in LLMs through two seemingly paradoxical mechanisms: spurious rewards, which suppress exploitation by rewarding outcomes unrelated to the ground truth, and entropy minimization, which suppresses exploration by pushing the model toward more confident and deterministic outputs, highlighting a puzzling dynamic: both discouraging exploitation and discouraging exploration improve reasoning performance, yet the underlying principles that reconcile these effects remain poorly understood. We focus on two fundamental questions: (i) how policy entropy relates to performance, and (ii) whether spurious rewards yield gains, potentially through the interplay of clipping bias and model contamination. Our results show that clipping bias under spurious rewards reduces policy entropy, leading to more confident and deterministic outputs, while entropy minimization alone is insufficient for improvement. We further propose a reward-misalignment model explaining why spurious rewards can enhance performance beyond contaminated settings. Our findings clarify the mechanisms behind spurious-reward benefits and provide principles for more effective RLVR training.",
+ "summary": "- **核心创新点**：提出并揭示 RLVR 框架中伪奖励与熵最小化对探索-利用权衡的影响机制，发现伪奖励下的剪裁偏差可以降低策略熵、使输出更自信和确定，并提出奖励错配模型解释在污染环境外伪奖励仍能提升性能的原因。\n\n- **主要方法**：通过理论分析与实验评估，聚焦策略熵与性能的关系，分析剪裁偏差、伪奖励以及模型污染条件的作用，提出奖励错配模型，并给出 RLVR 训练的原则与见解。\n\n- **结论/性能**：实验表明在伪奖励条件下剪裁偏差能降低策略熵、提升推理的确定性；单独的熵最小化不足以带来提升；提出的奖励错配模型解释伪奖励的有效性，为更高效的 RLVR 训练提供原则。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-19 03:46:46"
+}

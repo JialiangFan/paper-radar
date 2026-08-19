@@ -1,0 +1,13 @@
+{
+ "id": "2512.03043",
+ "title": "OneThinker: All-in-one Reasoning Model for Image and Video",
+ "authors": "Kaituo Feng, Manyuan Zhang, Hongyu Li, Kaixuan Fan, Shuang Chen, Yilei Jiang, Dian Zheng, Peiwen Sun, Yiyuan Zhang, Haoze Sun, Yan Feng, Peng Pei, Xunliang Cai, Xiangyu Yue",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03043v1",
+ "abstract": "Reinforcement learning (RL) has recently achieved remarkable success in eliciting visual reasoning within Multimodal Large Language Models (MLLMs). However, existing approaches typically train separate models for different tasks and treat image and video reasoning as disjoint domains. This results in limited scalability toward a multimodal reasoning generalist, which restricts practical versatility and hinders potential knowledge sharing across tasks and modalities. To this end, we propose OneThinker, an all-in-one reasoning model that unifies image and video understanding across diverse fundamental visual tasks, including question answering, captioning, spatial and temporal grounding, tracking, and segmentation. To achieve this, we construct the OneThinker-600k training corpus covering all these tasks and employ commercial models for CoT annotation, resulting in OneThinker-SFT-340k for SFT cold start. Furthermore, we propose EMA-GRPO to handle reward heterogeneity in multi-task RL by tracking task-wise moving averages of reward standard deviations for balanced optimization. Extensive experiments on diverse visual benchmarks show that OneThinker delivers strong performance on 31 benchmarks, across 10 fundamental visual understanding tasks. Moreover, it exhibits effective knowledge transfer between certain tasks and preliminary zero-shot generalization ability, marking a step toward a unified multimodal reasoning generalist. All code, model, and data are released.",
+ "summary": "1) 核心创新点：提出一个统一的一体化推理模型 OneThinker，跨图像与视频覆盖问答、 caption、空间/时间定位、跟踪、分割等多任务，解决多模态推理的可扩展性与知识共享问题，并通过 EMA-GRPO 在多任务强化学习中平衡奖励异质性。\n\n2) 主要方法：构建 OneThinker-600k 的多任务训练语料，覆盖上述任务；利用商业模型进行 Chain-of-Thought 注释，形成 OneThinker-SFT-340k 的 SFT 冷启动数据；提出 EMA-GRPO，在多任务 RL 中通过跟踪各任务奖励标准差的移动均值实现奖励分布的平衡优化。\n\n3) 结论/性能：在 31 个基准、10 项基础视觉理解任务上展现强劲性能，具备跨任务知识转移能力及初步的零-shot 泛化能力；并已公开代码、模型与数据。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-03 14:02:50"
+}

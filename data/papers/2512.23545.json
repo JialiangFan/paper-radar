@@ -1,0 +1,13 @@
+{
+ "id": "2512.23545",
+ "title": "PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis",
+ "authors": "Shengyi Hua, Jianfeng Wu, Tianle Shen, Kangzhe Hu, Zhongzhen Huang, Shujuan Ni, Zhihong Zhang, Yuan Li, Zhe Wang, Xiaofan Zhang",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23545v1",
+ "abstract": "Recent pathological foundation models have substantially advanced visual representation learning and multimodal interaction. However, most models still rely on a static inference paradigm in which whole-slide images are processed once to produce predictions, without reassessment or targeted evidence acquisition under ambiguous diagnoses. This contrasts with clinical diagnostic workflows that refine hypotheses through repeated slide observations and further examination requests. We propose PathFound, an agentic multimodal model designed to support evidence-seeking inference in pathological diagnosis. PathFound integrates the power of pathological visual foundation models, vision-language models, and reasoning models trained with reinforcement learning to perform proactive information acquisition and diagnosis refinement by progressing through the initial diagnosis, evidence-seeking, and final decision stages. Across several large multimodal models, adopting this strategy consistently improves diagnostic accuracy, indicating the effectiveness of evidence-seeking workflows in computational pathology. Among these models, PathFound achieves state-of-the-art diagnostic performance across diverse clinical scenarios and demonstrates strong potential to discover subtle details, such as nuclear features and local invasions.",
+ "summary": "- 核心创新点：提出 PathFound，一种面向证据搜索的代理式多模态诊断模型，通过主动获取证据来迭代修正病理诊断。\n\n- 主要方法：将病理视觉基础模型、视觉-语言模型和通过强化学习训练的推理模型结合，构建一个三阶段工作流（初始诊断 → 证据搜索 → 最终决策），实现主动信息获取与诊断细化。\n\n- 结论/性能：在多种大型多模态模型中该证据搜索策略普遍提升诊断准确性；PathFound 在多样临床场景中达到领先的诊断性能，并具备发现核特征和局部侵袭等微细信息的潜力。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 03:50:00"
+}

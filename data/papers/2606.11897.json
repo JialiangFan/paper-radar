@@ -1,0 +1,13 @@
+{
+ "id": "2606.11897",
+ "title": "Notes2Skills: From Lab Notebooks to Certainty-Aware Scientific Agent Skills",
+ "authors": "Shi Liu, Jiayao Chen, Chengwei Qin, Yanqing Hu, Jufan Zhang, Linyi Yang",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.11897v1",
+ "abstract": "Scientific discovery workflows usually contain and rely heavily on lab notes, where researchers record observations, interpret uncertain results, and plan follow-up experiments. Such informative lab notes preserve evolving scientific reasoning and author uncertainty, rather than polished final results exhibited in publications, providing a valuable opportunity for AI to engage in scientific exploration at a more comprehensive and deeper level. However, most prior work on scientific text focuses on papers, protocols, or structured databases, leaving informal laboratory notes underexplored as inputs to AI agents for science. This gap matters because lab notes often intermingle validated observations, tentative judgments, and possible experimental next steps within the same passage. If these signals are conflated, an AI agent may mistake uncertain scientific judgments for confirmed conclusions or executable actions. To this end, we present Notes2Skills, a two-stage framework for turning lab notebooks into verifiable skills for scientific AI agents while preserving the author's certainty. Across seven conditions and three wet-lab sessions, Notes2Skills is the only configuration that neither mistakes uncertain notes for firm instructions nor discards firm ones. We show that certainty preservation is the missing piece between lab notebooks and reliable agent skills, opening a path toward safer AI co-scientist systems.",
+ "summary": "## Notes2Skills 论文总结\n\n1. **核心创新点**：将科研人员的实验室笔记转化为 AI 科学智能体可执行的\"技能\"时，保留作者原有的\"确定性\"信号（区分已验证结论、暂定判断与待办实验），从而避免智能体把不确定的猜测误当作确凿结论或可执行指令。\n\n2. **主要方法**：提出 **Notes2Skills** 两阶段框架——先从实验室笔记中提取并保留作者的确定性层级，再将其转化为可验证的智能体技能；在 7 种实验配置和 3 次湿实验（wet-lab）会话中进行评估对比。\n\n3. **结论/性能**：Notes2Skills 是唯一一种\"既不会把不确定的笔记误判为确定指令、也不会丢弃确定信息\"的配置。研究表明\"确定性保留\"正是连接实验室笔记与可靠智能体技能之间缺失的关键环节，为构建更安全的 AI 协同科学家（co-scientist）系统提供了路径。\n\n---\n\n补充一句：如果你希望我用 `/paper-review` 技能生成更完整的中英文双语综述（含主题、背景、贡献、方法论拆解）并输出到 Obsidian vault，告诉我即可。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-12 13:01:28"
+}

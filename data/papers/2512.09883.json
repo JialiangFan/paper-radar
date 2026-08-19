@@ -1,0 +1,13 @@
+{
+ "id": "2512.09883",
+ "title": "ByteShield: Adversarially Robust End-to-End Malware Detection through Byte Masking",
+ "authors": "Daniel Gibert, Felip Manyà",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09883v1",
+ "abstract": "Research has proven that end-to-end malware detectors are vulnerable to adversarial attacks. In response, the research community has proposed defenses based on randomized and (de)randomized smoothing. However, these techniques remain susceptible to attacks that insert large adversarial payloads. To address these limitations, we propose a novel defense mechanism designed to harden end-to-end malware detectors by leveraging masking at the byte level. This mechanism operates by generating multiple masked versions of the input file, independently classifying each version, and then applying a threshold-based voting mechanism to produce the final classification. Key to this defense is a deterministic masking strategy that systematically strides a mask across the entire input file. Unlike randomized smoothing defenses, which randomly mask or delete bytes, this structured approach ensures coverage of the file over successive versions. In the best-case scenario, this strategy fully occludes the adversarial payload, effectively neutralizing its influence on the model's decision. In the worst-case scenario, it partially occludes the adversarial payload, reducing its impact on the model's predictions. By occluding the adversarial payload in one or more masked versions, this defense ensures that some input versions remain representative of the file's original intent, allowing the voting mechanism to suppress the influence of the adversarial payload. Results achieved on the EMBER and BODMAS datasets demonstrate the suitability of our defense, outperforming randomized and (de)randomized smoothing defenses against adversarial examples generated with a wide range of functionality-preserving manipulations while maintaining high accuracy on clean examples.",
+ "summary": "核心创新点：提出一种基于确定性字节掩蔽的防御，通过生成多版本输入并进行阈值投票，显著提升端到端恶意软件检测对对抗样本的鲁棒性。\n\n主要方法：\n- 在输入文件上以系统性滑动掩码覆盖整个文件，形成多个被掩蔽的版本；\n- 对每个版本独立进行分类，随后通过阈值投票得到最终判定；\n- 该掩蔽策略是确定性的、覆盖全面的，区别于随机/去随机平滑，能够在最佳情况下完全遮蔽对抗载荷，最坏情况下部分遮蔽，投票机制抑制对抗载荷的影响。\n\n结论/性能：\n- 在 EMBER 与 BODMAS 数据集上，该方法优于随机与（去)随机平滑防御，对功能性保持的对抗样本具有更强鲁棒性，同时对干净样本保持高准确度。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-11 14:01:28"
+}

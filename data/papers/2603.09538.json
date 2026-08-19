@@ -1,0 +1,13 @@
+{
+ "id": "2603.09538",
+ "title": "Towards Unified Multimodal Interleaved Generation via Group Relative Policy Optimization",
+ "authors": "Ming Nie, Chunwei Wang, Jianhua Han, Hang Xu, Li Zhang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09538v1",
+ "abstract": "Unified vision-language models have made significant progress in multimodal understanding and generation, yet they largely fall short in producing multimodal interleaved outputs, which is a crucial capability for tasks like visual storytelling and step-by-step visual reasoning. In this work, we propose a reinforcement learning-based post-training strategy to unlock this capability in existing unified models, without relying on large-scale multimodal interleaved datasets. We begin with a warm-up stage using a hybrid dataset comprising curated interleaved sequences and limited data for multimodal understanding and text-to-image generation, which exposes the model to interleaved generation patterns while preserving its pretrained capabilities. To further refine interleaved generation, we propose a unified policy optimization framework that extends Group Relative Policy Optimization (GRPO) to the multimodal setting. Our approach jointly models text and image generation within a single decoding trajectory and optimizes it with our novel hybrid rewards covering textual relevance, visual-text alignment, and structural fidelity. Additionally, we incorporate process-level rewards to provide step-wise guidance, enhancing training efficiency in complex multimodal tasks. Experiments on MMIE and InterleavedBench demonstrate that our approach significantly enhances the quality and coherence of multimodal interleaved generation.",
+ "summary": "1. **核心创新点**：在统一的视觉-语言模型上引入强化学习后训练，并将 Group Relative Policy Optimization（GRPO）扩展到多模态场景，从而实现文本与图像的交错生成。\n\n2. **主要方法**：提出基于强化学习的后训练策略，不依赖大规模多模态交错数据；热身阶段使用混合数据集暴露交错生成模式并保留原有能力；构建统一的策略优化框架，将 GRPO 跨模态扩展到多模态任务，在单一解码轨迹中同时建模文本与图像生成；设计混合奖励（文本相关性、视觉文本对齐、结构保真性）与过程级奖励以提高训练效率。\n\n3. **结论/性能**：在 MMIE 与 InterleavedBench 上实验显示，该方法显著提升多模态交错生成的质量与连贯性，同时无需依赖大规模的交错数据。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-11 13:04:39"
+}

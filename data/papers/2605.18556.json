@@ -1,0 +1,13 @@
+{
+ "id": "2605.18556",
+ "title": "Key-Gram: Extensible World Knowledge for Embodied Manipulation",
+ "authors": "Jingjing Fan, Siyuan Li, Botao Ren, Zhidong Deng",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.18556v1",
+ "abstract": "Embodied control increasingly requires models to follow compositional language instructions while reasoning over dynamic visual states. However, current vision-language-action policies and world-action models often couple linguistic knowledge with visual computation in a shared backbone or conditioning pathway, leading to modality competition and making knowledge extension dependent on backbone updates. In this paper, we introduce Key-Gram, a conditional-memory framework that separates language-derived world knowledge from visual-state reasoning for embodied control. At its core is a memory module that decomposes an instruction into task-specific key-grams, retrieves static linguistic priors through deterministic hashed lookup, and injects the retrieved entries into selected hidden layers through context-aware gating and lightweight convolutional fusion. This design allows the backbone to devote its main capacity to visual reasoning and action inference, while reusable instruction knowledge is stored in an extensible external memory. The logical memory table can be conveniently partitioned during training and, due to its $O(1)$ lookup pattern, efficiently placed on host memory during inference. Across RoboTwin2.0, LIBERO/LIBERO-Plus, and real-world dual-arm manipulation, Key-Gram consistently improves both $π_{0}$ and $π_{0.5}$ backbones, with average relative gains of $29.5\\%/9.9\\%$ on RoboTwin2.0, $35.8\\%/4.5\\%$ on LIBERO-Plus transfer without target-domain fine-tuning, and $15.4\\%/8.1\\%$ on real-world long-horizon tasks. These results demonstrate that externalized linguistic memory provides an effective and extensible mechanism for improving compositional grounding, transfer, and real-world manipulation.",
+ "summary": "# Key-Gram 论文总结\n\n## 1. 核心创新点\n提出一种**条件记忆框架**，将语言派生的世界知识与视觉状态推理**解耦**，通过外部可扩展记忆模块为具身操作提供组合性语言知识，避免视觉-语言模态在共享主干中的竞争。\n\n## 2. 主要方法\n- **Key-Gram 记忆模块**：将指令分解为任务特定的 key-grams，通过**确定性哈希查找**（O(1) 复杂度）检索静态语言先验。\n- **注入机制**：采用**上下文感知门控**和**轻量卷积融合**，将检索到的条目注入主干网络的选定隐藏层。\n- **外部化设计**：逻辑记忆表可在训练时分区、推理时驻留主机内存，使知识扩展不依赖主干更新；主干则专注于视觉推理与动作推断。\n\n## 3. 结论/性能\n在 π₀ 和 π₀.₅ 两种主干上一致提升，平均相对增益为：\n- **RoboTwin2.0**：29.5% / 9.9%\n- **LIBERO-Plus**（无目标域微调的迁移）：35.8% / 4.5%\n- **真实世界双臂长程任务**：15.4% / 8.1%\n\n验证了外部化语言记忆在组合性 grounding、跨域迁移和真实操作场景中的有效性与可扩展性。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-24 13:04:39"
+}

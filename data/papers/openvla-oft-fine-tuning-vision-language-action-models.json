@@ -1,0 +1,27 @@
+{
+ "id": "openvla-oft-fine-tuning-vision-language-action-models",
+ "title": "OpenVLA-OFT: Fine-Tuning Vision-Language-Action Models",
+ "authors": "Moo Jin Kim, Chelsea Finn, Percy Liang",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-language-action models (VLAs) 通过在大规模机器人数据集上微调预训练的vision-language models来实现强大的任务执行、语义泛化和语言跟随能力。然而，将VLA适配到新的机器人平台和任务时，面临推理速度慢（autoregressive decoding仅3-5 Hz）和高频控制场景（25-50+...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2502.19645)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/OpenVLA-OFT - Fine-Tuning VLA for Speed and Success.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

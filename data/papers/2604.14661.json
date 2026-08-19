@@ -1,0 +1,13 @@
+{
+ "id": "2604.14661",
+ "title": "AIPC: Agent-Based Automation for AI Model Deployment with Qualcomm AI Runtime",
+ "authors": "Jianhao Su, Zhanwei Wu, ShengTing Huang, Weidong Feng",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14661v1",
+ "abstract": "Edge AI model deployment is a multi-stage engineering process involving model conversion, operator compatibility handling, quantization calibration, runtime integration, and accuracy validation. In\n  practice, this workflow is long, failure-prone, and heavily dependent on deployment expertise, particularly when targeting hardware-specific inference runtimes. This technical report presents AIPC (AI\n  Porting Conversion), an AI agent-driven approach for constrained automation of AI model deployment. AIPC decomposes deployment into standardized, verifiable stages and injects deployment-domain knowledge\n  into agent execution through Agent Skills, helper scripts, and a stage-wise validation loop. This design reduces both the expertise barrier and the engineering time required for hardware deployment.\n  Using Qualcomm AI Runtime (QAIRT) as the primary scenario, this report examines automated deployment across representative vision, multimodal, and speech models. In the cases covered here, AIPC can\n  complete deployment from PyTorch to runnable QNN/SNPE inference within 7-20 minutes for structurally regular vision models, with indicative API costs roughly in the range of USD 0.7-10. For more complex\n  models involving less-supported operators, dynamic shapes, or autoregressive decoding structures, fully automated deployment may still require further advances, but AIPC already provides practical support\n  for execution, failure localization, and bounded repair.",
+ "summary": "核心创新点\n- 提出基于AI代理的自动化部署框架AIPC，通过分阶段、可验证的流程和Agent Skills，将模型从PyTorch移植到Qualcomm AI Runtime的可运行推理，显著降低部署门槛和工程时间。\n\n主要方法\n- 采用AI代理驱动的 constrained 自动化部署，将部署拆分为标准化阶段并通过阶段性验证循环执行，注入部署领域知识（Agent Skills、辅助脚本）。\n- 以 Qualcomm AI Runtime 为主场景，覆盖视觉、多模态和语音模型，实现从 PyTorch 到可运行的 QNN/SNPE 推理的端到端自动化；提供执行、故障定位与受限修复能力。\n\n结论/性能\n- 在覆盖的案例中，结构较规则的视觉模型可在7–20分钟内完成从PyTorch到可运行QNN/SNPE推理的部署，API成本约0.7–10美元；对于复杂模型（操作符支持不足、动态形状、自回归解码等）完全自动化部署仍需进一步研究，但AIPC已提供实用的执行、故障定位与受限修复能力。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-17 13:06:05"
+}

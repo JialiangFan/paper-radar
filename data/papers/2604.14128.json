@@ -1,0 +1,13 @@
+{
+ "id": "2604.14128",
+ "title": "Rhetorical Questions in LLM Representations: A Linear Probing Study",
+ "authors": "Louie Hong Yao, Vishesh Anand, Yuan Zhuang, Tianyu Jiang",
+ "date": "2026-04-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14128v1",
+ "abstract": "Rhetorical questions are asked not to seek information but to persuade or signal stance. How large language models internally represent them remains unclear. We analyze rhetorical questions in LLM representations using linear probes on two social-media datasets with different discourse contexts, and find that rhetorical signals emerge early and are most stably captured by last-token representations. Rhetorical questions are linearly separable from information-seeking questions within datasets, and remain detectable under cross-dataset transfer, reaching AUROC around 0.7-0.8. However, we demonstrate that transferability does not simply imply a shared representation. Probes trained on different datasets produce different rankings when applied to the same target corpus, with overlap among the top-ranked instances often below 0.2. Qualitative analysis shows that these divergences correspond to distinct rhetorical phenomena: some probes capture discourse-level rhetorical stance embedded in extended argumentation, while others emphasize localized, syntax-driven interrogative acts. Together, these findings suggest that rhetorical questions in LLM representations are encoded by multiple linear directions emphasizing different cues, rather than a single shared direction.",
+ "summary": "- 核心创新点（一句话）：首次系统揭示修辞性疑问在大语言模型表示中通过多条线性方向进行编码，并可通过线性探针在不同数据集上实现跨数据集检测，挑战了单一共享方向的假设。\n\n- 主要方法：使用线性探针对两组具有不同话语背景的社交媒体数据集中的LLM表示进行分析，比较末尾 token 与其他 token 的信息在区分修辞性与信息性问题上的表现，评估跨数据集转移的可检测性（AUROC 约0.7–0.8），并通过定性分析区分不同修辞现象（论证中嵌入的话语立场 vs 局部句法驱动的问句），结论为修辞性疑问由多条线性方向共同编码。\n\n- 结论/性能：修辞信号在模型内部较早出现，末尾 token 最稳定且最具可检测性；在数据集内可将修辞性与信息性问题线性分离，跨数据集仍能检测但迁移性并不等同于共享表示，不同数据集训练的探针在同一目标语料上的排名相关度通常较低且重叠度低（常低于 0.2）；定性分析显示不同探针捕捉到的修辞现象对应不同的语用层面（广义话语立场与局部语法驱动的问句），由此结论为修辞性疑问在LLM表示中由多条线性方向编码，而非单一共用方向。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-16 13:01:14"
+}

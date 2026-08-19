@@ -1,0 +1,13 @@
+{
+ "id": "2606.02314",
+ "title": "Discovering Agents for Discovery: The Case for DNS",
+ "authors": "Ramachandra Rao Seethiraju, Sameer Thakar, Karthik Shyamsunder, Eric Osterweil",
+ "date": "2026-06-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.02314v1",
+ "abstract": "As Artificial Intelligence (AI) agents enter their next stage of being deployed ubiquitously throughout the Internet, their discoverability will become a central challenge. The information AI agents need to discover one another, how they will locate it, how to facilitate authentication, integrity, and authorization, how to connect across different platforms, and how to scale across organizational boundaries form a set of unanswered challenges that deployment success will prompt. These are challenges for which one of the Internet's most venerable, solid, and ubiquitous infrastructures is ideally suited: The Domain Name System (DNS). Such a rich, already ubiquitous, and programmatically flexible foundation is an ideal option for discovery of AI agents. In this work, we propose an illustration and rationale for the basic semantics that discovery for AI agents will require. We argue that three key evaluation criteria will become paramount: navigational completeness (the extent to which the necessary metadata, with elements like trust, is included in a discovery solution), lookup complexity, and transaction performance (e.g., latency, speed, or recency). Using data about 119,757 real-world service endpoints and multiple agent tooling ecosystems, we empirically evaluate the first of these considerations to illustrate the appropriateness of using DNS for AI agent discovery. Our results show the size and amount of data necessary are well within the range of a single DNS UDP transaction, whose latency can be on the order of milliseconds. Our evaluations illustrate a promising path toward enabling AI agent discoverability at the Internet's scale, and thereby accelerating secure, stable, and resilient AI agent deployments.",
+ "summary": "# 论文简要总结：《Discovering Agents for Discovery: The Case for DNS》\n\n1. **核心创新点**：提出利用现有的域名系统（DNS）作为 AI 智能体在互联网规模下相互发现的基础设施，并论证其在元数据完整性、查询复杂度和事务性能上的适配性。\n\n2. **主要方法**：定义了 AI 智能体发现所需的基本语义，提出三项关键评估标准——导航完整性（含信任等元数据）、查询复杂度、事务性能（延迟/速度/时效）；基于 119,757 个真实服务端点及多种智能体工具生态的数据，对 DNS 承载发现元数据的可行性进行了实证评估。\n\n3. **结论/性能**：实验显示所需元数据的大小和数据量完全可被单次 DNS UDP 事务承载，延迟达到毫秒级，证明 DNS 是支持 AI 智能体在互联网规模下安全、稳定、可扩展发现的可行路径。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-02 13:01:49"
+}

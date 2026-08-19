@@ -1,0 +1,13 @@
+{
+ "id": "2602.04510",
+ "title": "OSCAgent: Accelerating the Discovery of Organic Solar Cells with LLM Agents",
+ "authors": "Zhaolin Hu, Zhiliang Wu, Hehe Fan, Yi Yang",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04510v1",
+ "abstract": "Organic solar cells (OSCs) hold great promise for sustainable energy, but discovering high-performance materials is time-consuming and costly. Existing molecular generation methods can aid the design of OSC molecules, but they are mostly confined to optimizing known backbones and lack effective use of domain-specific chemical knowledge, often leading to unrealistic candidates. In this paper, we introduce OSCAgent, a multi-agent framework for OSC molecular discovery that unifies retrieval-augmented design, molecular generation, and systematic evaluation into a continuously improving pipeline, without requiring additional human intervention. OSCAgent comprises three collaborative agents. The Planner retrieves knowledge from literature-curated molecules and prior candidates to guide design directions. The Generator proposes new OSC acceptors aligned with these plans. The Experimenter performs comprehensive evaluation of candidate molecules and provides feedback for refinement. Experiments show that OSCAgent produces chemically valid, synthetically accessible OSC molecules and achieves superior predicted performance compared to both traditional and large language model (LLM)-only baselines. Representative results demonstrate that some candidates achieve predicted efficiencies approaching 18\\%. The code will be publicly available.",
+ "summary": "**核心创新点**：提出一个多代理协同的 OSC 分子发现框架 OSCAgent，将检索增强设计、分子生成与系统评估无缝整合成一个持续自我改进的闭环，无需额外人工干预，显著提升候选分子的可行性与预测性能。\n\n**主要方法**：OSCAgent 由 Planner、Generator、Experimenter 三个协同代理组成，实现检索-设计-评估的循环：Planner 从文献与先前候选中检索知识以指导设计方向；Generator 根据计划生成新的 OSC 受体分子；Experimenter 对候选分子进行全面评估并提供反馈用于 refinement，形成持续迭代的检索增强设计、分子生成与评估流程，显著优于传统方法和仅依赖大语言模型的基线。\n\n**结论/性能**：实验表明 OSCAgent 能生成化学有效、可合成的 OSC 分子，且预测性能优于传统方法与仅 LL M 的基线；部分候选的预测效率接近 18%。代码计划公开。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-05 14:03:57"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.05799",
+ "title": "XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?",
+ "authors": "Yixiang Chen, Jiabing Yang, Yuan Xu, Qisen Ma, Keji He, Peiyan Li, Kai Wang, Ziheng He, Xiangnan Wu, Jing Liu, Nianfeng Liu, Yan Huang, Liang Wang",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05799v1",
+ "abstract": "Action-conditioned world models are promising learned simulators for robotic manipulation, yet evaluating them exclusively on training robots fails to reveal whether they capture physical dynamics or merely memorize visual patterns. To answer whether a model can faithfully render a robot it has never seen, we introduce XEWorld, a controlled cross-embodiment testbed for world models that isolates embodiments by evaluating held-out robots within physically identical scenes. Our systematic analysis uncovers a shared architectural bottleneck: current models act primarily as 2D visual pattern matchers whose generalization is governed by visual similarity rather than physical kinematic similarity. Driven by this limitation, they struggle to translate abstract numeric joint actions into coherent visual trajectories, and fail to predict dynamic visual changes from static initial observations. Consequently, successfully rendering an unseen embodiment zero-shot strictly requires heavily grounded cues, specifically pixel-space actions and explicit spatial-temporal alignment. Even when bypassing this zero-shot barrier via few-shot adaptation, the forced appearance recovery triggers catastrophic forgetting of seen embodiments. Together, these failures expose a critical inability to apply learned physical dynamics to novel visual appearances, highlighting that achieving true cross-embodiment generalization requires architectural innovations that decouple visual appearance from underlying physical dynamics.",
+ "summary": "## XEWorld 论文摘要总结\n\n**1. 核心创新点**\n提出 XEWorld——一个受控的跨本体（cross-embodiment）测试平台，通过在物理条件完全相同的场景中评估「未见过的机器人」，来检验动作条件世界模型究竟是学到了物理动力学，还是只是记住了视觉模式。\n\n**2. 主要方法**\n构建隔离本体变量的对照实验：场景保持物理一致，仅替换机器人本体，对留出（held-out）机器人做零样本渲染评估；并进一步测试少样本适配（few-shot adaptation）方案。分析维度包括视觉相似度 vs. 运动学相似度、数值关节动作 vs. 像素空间动作、以及显式时空对齐等条件。\n\n**3. 结论/性能**\n- 现有模型本质上是**2D 视觉模式匹配器**，泛化能力由视觉相似度而非物理运动学相似度决定。\n- 模型难以把抽象的数值关节动作翻译成连贯的视觉轨迹，也无法从静态初始观测预测动态变化。\n- 零样本渲染未见本体**必须依赖强落地线索**（像素空间动作 + 显式时空对齐）才能成功。\n- 即便用少样本适配绕过零样本瓶颈，为恢复外观所做的微调会引发对已见本体的**灾难性遗忘**。\n- 结论：真正的跨本体泛化需要架构层面的创新，将**视觉外观与底层物理动力学解耦**。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-08 13:03:56"
+}

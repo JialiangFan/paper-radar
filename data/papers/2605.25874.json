@@ -1,0 +1,13 @@
+{
+ "id": "2605.25874",
+ "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+ "authors": "Kaining Ying, Hengrui Hu, Siyu Ren, Jiamu Li, Fengjiao Chen, Ziwen Wang, Xuezhi Cao, Xunliang Cai, Henghui Ding",
+ "date": "2026-05-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.25874v1",
+ "abstract": "Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the required competencies, leaving no unified standard for systematic evaluation. To fill this gap, we introduce WBench, a comprehensive multi-turn benchmark for interactive world model evaluation along five dimensions, namely video quality, setting adherence, interaction adherence, consistency, and physics compliance. WBench contains 289 test cases and 1,058 interaction turns, where each case specifies a world setting and a multi-turn interaction sequence, covering diverse scenes, styles, subjects, and both first- and third-person perspectives, together with four interaction types, including navigation, subject action, event editing, and perspective switching. For navigation, WBench unifies text, 6-DoF pose, and discrete-action control, enabling evaluation of models with different native input interfaces. Evaluation uses 22 automatic sub-metrics that combine specialist vision models with large multimodal models, and all metrics are validated against human judgments. Across 20 state-of-the-art models, we find that no single model performs strongly across all dimensions. We provide detailed diagnostic insights into the characteristic strengths, weaknesses, and open challenges of each model. Code and data are available at https://github.com/meituan-longcat/WBench.",
+ "summary": "# WBench 论文总结\n\n1. **核心创新点**：提出首个面向交互式视频世界模型的统一多轮评测基准 WBench，从五个维度系统衡量模型能力，填补该领域缺乏统一评测标准的空白。\n\n2. **主要方法**：构建 289 个测试用例、共 1058 个交互回合，覆盖多样场景/风格/主体及第一与第三人称视角，包含导航、主体动作、事件编辑、视角切换四类交互；导航上统一了文本、6-DoF 位姿与离散动作三种控制接口；评测采用 22 个自动子指标，结合专用视觉模型与大型多模态模型，并经人工判断校验。\n\n3. **结论/性能**：在 20 个 SOTA 模型上的评测显示，没有任何单一模型在所有维度上都表现强劲，论文进一步给出了各模型特征性优劣与开放挑战的诊断性分析，代码与数据已开源。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:03:02"
+}

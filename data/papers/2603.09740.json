@@ -1,0 +1,13 @@
+{
+ "id": "2603.09740",
+ "title": "Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments",
+ "authors": "Haoyuan Li, Rui Liu, Hehe Fan, Yi Yang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09740v1",
+ "abstract": "Vision-Language Navigation in Continuous Environments (VLN-CE) requires agents to learn complex reasoning from long-horizon human interactions. While Multi-modal Large Language Models (MLLMs) have driven recent progress, current training paradigms struggle to balance generalization capability, error recovery and training stability. Specifically, (i) policies derived from SFT suffer from compounding errors, struggling to recover from out-of-distribution states, and (ii) Reinforcement Fine-Tuning (RFT) methods e.g. GRPO are bottlenecked by sparse outcome rewards. Their binary feedback fails to assign credit to individual steps, leading to gradient signal collapse in failure dominant batches. To address these challenges, we introduce Step-Aware Contrastive Alignment (SACA), a framework designed to extract dense supervision from imperfect trajectories. At its core, the Perception-Grounded Step-Aware auditor evaluates progress step-by-step, disentangling failed trajectories into valid prefixes and exact divergence points. Leveraging these signals, Scenario-Conditioned Group Construction mechanism dynamically routes batches to specialized resampling and optimization strategies. Extensive experiments on VLN-CE benchmarks demonstrate that SACA achieves state-of-the-art performance.",
+ "summary": "**核心创新点（1 句话）**  \n提出 Step-Aware Contrastive Alignment (SACA)，通过逐步感知的审计将不完美轨迹分解为有效前缀与精确分歧点，以密集监督实现对比对齐，并结合情景条件分组路由优化策略，提升 VLN-CE 的学习稳定性与性能。\n\n**主要方法**  \n- 引入 Perception-Grounded Step-Aware auditor：对每一步进行进度评估，能够把失败轨迹拆解成有效前缀和确切的偏离点，提供步级的监督信号。  \n- 采用 Step-Aware Contrastive Alignment：基于步级信号进行对比学习，以从 imperfect trajectories 中提取密集监督，缓解稀疏奖励带来的梯度问题。  \n- 设计 Scenario-Conditioned Group Construction：根据场景信号动态将批次路由到专门的重采样与优化策略，提高训练的效率与效果。\n\n**结论/性能**  \n在 VLN-CE 基准上，SACA 实现了当前最优性能，显著优于现有方法，显示出更强的稳健性与泛化能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-11 13:04:10"
+}

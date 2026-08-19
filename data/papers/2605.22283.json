@@ -1,0 +1,13 @@
+{
+ "id": "2605.22283",
+ "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
+ "authors": "Pengteng Li, Weiyu Guo, He Zhang, Tiefu Cai, Xiao He, Yandong Guo, Hui Xiong",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22283v1",
+ "abstract": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models. Most existing VLAs implicitly assume that task-relevant objects are always visible, leading to brittle and reactive behaviors when targets fall outside the camera's field of view. SOMA addresses this limitation by equipping VLAs with a persistent spatial memory constructed from multi-view observations acquired via a movable head camera, enabling reasoning beyond the current visual frustum. The framework consists of three components: Spatial Memory Construction, which aggregates angular-wise observations into a unified spatial-semantic representation through scanning; Dynamic Memory Refinement, which maintains global consistency over time; and Contextual Memory Retrieval, which activates instruction-relevant spatial cues during manipulation. We evaluate SOMA on five challenging real-world out-of-vision manipulation tasks, including multi-step and dual-arm scenarios where target objects are initially invisible. Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability. Additional experiments on RoboCasa GR1 and SimplerEnv further validate the effectiveness of SOMA's memory design under conventional fully observable settings. Code will be released soon.",
+ "summary": "# SOMA：面向视野外操作的空间记忆框架\n\n1. **核心创新点**：为视觉-语言-动作（VLA）模型引入持久化空间记忆，使其能够推理并操作当前摄像头视野之外的目标物体。\n\n2. **主要方法**：通过可移动头部摄像头采集多视角观测，构建三大组件——**空间记忆构建**（将角度化观测聚合为统一的空间-语义表征）、**动态记忆精炼**（维持时序上的全局一致性）、**上下文记忆检索**（根据指令激活相关空间线索）。\n\n3. **结论/性能**：在 5 个真实世界视野外操作任务（含多步骤与双臂场景）上提升了成功率，并展现出更快的目标定位、更少的视角搜索以及部分可观测下接近一次性抓取的行为；在 RoboCasa GR1 和 SimplerEnv 等完全可观测场景中也验证了其有效性。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-25 13:11:58"
+}

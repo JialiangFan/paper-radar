@@ -1,0 +1,13 @@
+{
+ "id": "2603.23500",
+ "title": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation",
+ "authors": "Jie Liu, Zilyu Ye, Linxiao Yuan, Shenhan Zhu, Yu Gao, Jie Wu, Kunchang Li, Xionghui Wang, Xiaonan Nie, Weilin Huang, Wanli Ouyang",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23500v1",
+ "abstract": "Unified models capable of interleaved generation have emerged as a promising paradigm, with the community increasingly converging on autoregressive modeling for text and flow matching for image generation. To advance this direction, we propose a unified reinforcement learning framework tailored for interleaved generation. We validate our approach on its fundamental unit: a single round of reasoning-driven image generation, where the model first expands the user prompt through reasoning, followed by image synthesis. Formulating this multimodal generation process as a Markov Decision Process with sparse terminal rewards, we introduce UniGRPO to jointly optimize text and image generation policies using GRPO. Adopting a minimalist methodology to avoid over-design, we leverage established training recipes for both modalities by seamlessly integrating standard GRPO for reasoning and FlowGRPO for visual synthesis. To ensure scalability to multi-round interleaved generation, we introduce two critical modifications to the original FlowGRPO: (1) eliminating classifier-free guidance to maintain linear, unbranched rollouts, which is essential for scaling to complex scenarios involving multi-turn interactions and multi-condition generation (e.g., editing); and (2) replacing the standard latent KL penalty with an MSE penalty directly on the velocity fields, providing a more robust and direct regularization signal to mitigate reward hacking effectively. Our experiments demonstrate that this unified training recipe significantly enhances image generation quality through reasoning, providing a robust and scalable baseline for the future post-training of fully interleaved models.",
+ "summary": "1) 核心创新点\n提出统一的策略优化框架 UniGRPO，用于推理驱动的视觉生成，实现文本推理与图像生成策略的端到端联合优化，并具备多轮交互的扩展能力。\n\n2) 主要方法\n- 将推理+生成过程建模为马尔可夫决策过程(MDP)，并用 UniGRPO 在文本生成和图像生成策略上进行联合优化；\n- 结合 GRPO（用于推理阶段）与 FlowGRPO（用于视觉合成）的“最小化设计”策略，将两种模态训练方案无缝整合；\n- 为实现多轮交互，作出两点改动：1) 去除 classifier-free 指导以维持线性、无分支的滚动；2) 将潜在 KL 惩罚替换为对速度场的均方误差惩罚，以提供更稳健的正则化并降低奖励操纵风险。\n\n3) 结论/性能\n实验表明，该统一训练方法显著提升了通过推理驱动的图像生成质量，具有鲁棒性与可扩展性，能够为未来完全互嵌模型的后续训练提供稳健且可扩展的基线。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:39"
+}

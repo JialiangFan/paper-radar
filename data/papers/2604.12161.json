@@ -1,0 +1,13 @@
+{
+ "id": "2604.12161",
+ "title": "Development, Evaluation, and Deployment of a Multi-Agent System for Thoracic Tumor Board",
+ "authors": "Tim Ellis-Caleo, Timothy Keyes, Nerissa Ambers, Faraah Bekheet, Wen-wai Yim, Nikesh Kotecha, Nigam H. Shah, Joel Neal",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12161v1",
+ "abstract": "Tumor boards are multidisciplinary conferences dedicated to producing actionable patient care recommendations with live review of primary radiology and pathology data. Succinct patient case summaries are needed to drive efficient and accurate case discussions. We developed a manual AI-based workflow to generate patient summaries to display live at the Stanford Thoracic Tumor board. To improve on this manually intensive process, we developed several automated AI chart summarization methods and evaluated them against physician gold standard summaries and fact-based scoring rubrics. We report these comparative evaluations as well as our deployment of the final state automated AI chart summarization tool along with post-deployment monitoring. We also validate the use of an LLM as a judge evaluation strategy for fact-based scoring. This work is an example of integrating AI-based workflows into routine clinical practice.",
+ "summary": "- 核心创新点：在胸科肿瘤委员会的临床日常中，首次将自动化AI图表摘要工具完整嵌入工作流，并结合医生金标准对比、基于事实的评分以及LLM作为评估裁判，形成评估与部署的闭环。\n- 主要方法：开发并比较多种自动化AI图表摘要方法，与手动摘要与事实性评分标准对照评估；部署最终的自动化摘要工具并实施部署后监控；验证使用LLM作为事实评分的评估策略。\n- 结论/性能：完成了从手工到自动化的转变、工具的部署与监控，证明AI工作流在日常临床实践中的可行性，并通过部署后监控与LLM评估验证其可靠性与可评估性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-15 13:08:27"
+}

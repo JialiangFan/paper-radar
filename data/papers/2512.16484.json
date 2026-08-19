@@ -1,0 +1,13 @@
+{
+ "id": "2512.16484",
+ "title": "Guiding Perception-Reasoning Closer to Human in Blind Image Quality Assessment",
+ "authors": "Yuan Li, Yahan Yu, Youyuan Lin, Yong-Hao Yang, Chenhui Chu, Shin'ya Nishida",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16484v1",
+ "abstract": "Humans assess image quality through a perception-reasoning cascade, integrating sensory cues with implicit reasoning to form self-consistent judgments. In this work, we investigate how a model can acquire both human-like and self-consistent reasoning capability for blind image quality assessment (BIQA). We first collect human evaluation data that capture several aspects of human perception-reasoning pipeline. Then, we adopt reinforcement learning, using human annotations as reward signals to guide the model toward human-like perception and reasoning. To enable the model to internalize self-consistent reasoning capability, we design a reward that drives the model to infer the image quality purely from self-generated descriptions. Empirically, our approach achieves score prediction performance comparable to state-of-the-art BIQA systems under general metrics, including Pearson and Spearman correlation coefficients. In addition to the rating score, we assess human-model alignment using ROUGE-1 to measure the similarity between model-generated and human perception-reasoning chains. On over 1,000 human-annotated samples, our model reaches a ROUGE-1 score of 0.512 (cf. 0.443 for baseline), indicating substantial coverage of human explanations and marking a step toward human-like interpretable reasoning in BIQA.",
+ "summary": "1) 核心创新点\n- 将人类感知-推理链融入BIQA的强化学习框架，通过人类注释作为奖励，促使模型同时具备人类般的感知和自洽推理能力。\n\n2) 主要方法\n- 收集覆盖人类感知-推理过程的评估数据。\n- 采用强化学习，把人类注释作为奖励信号，引导模型学习人类式的感知与推理。\n- 设计使模型能仅凭自生成的描述推断图像质量的奖励，推动自洽推理能力的内部化。\n- 通过评分（Pearson/Spearman）评估图像质量预测，同时用 ROUGE-1 衡量模型生成的感知-推理链与人类链的相似性；在超过1,000个标注样本上给出对比。\n\n3) 结论/性能\n- 在常用指标下，图像质量分数预测性能与最新BIQA系统相当（Pearson/Spearman）。\n- ROUGE-1 达到0.512，显著高于基线0.443，表明模型在人类解释与推理链的覆盖率上有明显提升，向可解释的人类式BIQA推进。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-19 02:46:45"
+}

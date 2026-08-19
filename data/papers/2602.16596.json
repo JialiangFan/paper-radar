@@ -1,0 +1,13 @@
+{
+ "id": "2602.16596",
+ "title": "Sequential Membership Inference Attacks",
+ "authors": "Thomas Michel, Debabrota Basu, Emilie Kaufmann",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16596v1",
+ "abstract": "Modern AI models are not static. They go through multiple updates in their lifecycles. Thus, exploiting the model dynamics to create stronger Membership Inference (MI) attacks and tighter privacy audits are timely questions. Though the literature empirically shows that using a sequence of model updates can increase the power of MI attacks, rigorous analysis of the `optimal' MI attacks is limited to static models with infinite samples. Hence, we develop an `optimal' MI attack, SeMI*, that uses the sequence of model updates to identify the presence of a target inserted at a certain update step. For the empirical mean computation, we derive the optimal power of SeMI*, while accessing a finite number of samples with or without privacy. Our results retrieve the existing asymptotic analysis. We observe that having access to the model sequence avoids the dilution of MI signals unlike the existing attacks on the final model, where the MI signal vanishes as training data accumulates. Furthermore, an adversary can use SeMI* to tune both the insertion time and the canary to yield tighter privacy audits. Finally, we conduct experiments across data distributions and models trained or fine-tuned with DP-SGD demonstrating that practical variants of SeMI* lead to tighter privacy audits than the baselines.",
+ "summary": "核心创新点：提出面向模型连续更新序列的最优成员资格推断攻击 SeMI*，能够在更新步骤中定位目标样本的插入时机并提升攻击强度，从而实现更紧的隐私审计。\n\n主要方法：\n- 构建 SeMI*，利用模型更新序列而非仅最终模型进行攻击。\n- 对经验均值的计算推导出最优功效，在可获得的有限样本条件下给出理论分析。\n- 通过与现有仅基于最终模型的攻击比较，证明拥有序列访问可避免 MI 信号衰减，并可用于插入时机和 canary 的调优。\n- 在跨数据分布的模型、以及 DP-SGD 训练/微调的设置中进行实验，验证 SeMI* 的实际效果。\n\n结论/性能：\n- 实验表明，SeMI* 的实际变体在多种数据分布与 DP-SGD 模型上相较基线能够给出更紧的隐私审计结果，并且通过序列访问避免了最终模型情形下的 MI 信号耗散，提升了对插入时间与 canary 的调优能力。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-19 14:01:50"
+}

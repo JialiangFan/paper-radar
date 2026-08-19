@@ -1,0 +1,13 @@
+{
+ "id": "2512.14944",
+ "title": "Puzzle Curriculum GRPO for Vision-Centric Reasoning",
+ "authors": "Ahmadreza Jeddi, Hakki Can Karaimer, Hue Nguyen, Zhongling Wang, Ke Zhao, Javad Rajabi, Ran Zhang, Raghav Goyal, Babak Taati, Radek Grzeszczuk",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14944v1",
+ "abstract": "Recent reinforcement learning (RL) approaches like outcome-supervised GRPO have advanced chain-of-thought reasoning in Vision Language Models (VLMs), yet key issues linger: (i) reliance on costly and noisy hand-curated annotations or external verifiers; (ii) flat and sparse reward schemes in GRPO; and (iii) logical inconsistency between a chain's reasoning and its final answer. We present Puzzle Curriculum GRPO (PC-GRPO), a supervision-free recipe for RL with Verifiable Rewards (RLVR) that strengthens visual reasoning in VLMs without annotations or external verifiers. PC-GRPO replaces labels with three self-supervised puzzle environments: PatchFit, Rotation (with binary rewards) and Jigsaw (with graded partial credit mitigating reward sparsity). To counter flat rewards and vanishing group-relative advantages, we introduce a difficulty-aware curriculum that dynamically weights samples and peaks at medium difficulty. We further monitor Reasoning-Answer Consistency (RAC) during post-training: mirroring reports for vanilla GRPO in LLMs, RAC typically rises early then degrades; our curriculum delays this decline, and consistency-enforcing reward schemes further boost RAC. RAC correlates with downstream accuracy. Across diverse benchmarks and on Qwen-7B and Qwen-3B backbones, PC-GRPO improves reasoning quality, training stability, and end-task accuracy, offering a practical path to scalable, verifiable, and interpretable RL post-training for VLMs.",
+ "summary": "1) 核心创新点（一句话）\n提出 Puzzle Curriculum GRPO（PC-GRPO），在完全无监督的前提下通过自监督谜题任务与难度自适应课程进行可验证的强化学习后训练，显著提升视觉语言模型的推理能力与结果一致性，无需人工注释或外部验证器。\n\n2) 主要方法（简述使用的技术/模型）\n- 基于 RL with Verifiable Rewards（RLVR）的 supervision-free 框架，替代标签与外部验证。\n- 三种自监督谜题环境替代显式标签：PatchFit、Rotation（给出二元奖励）、Jigsaw（给出分级部分分数）。\n- 引入难度感知课程，对样本进行动态加权，解决平坦奖励和相对优势消退的问题，优势在中等难度处达到峰值。\n- 训练后阶段监控 Reasoning-Answer Consistency（RAC），并通过一致性强化奖励来提升 RAC；RAC 与下游准确性呈相关关系。\n- 在 Qwen-7B、Qwen-3B 等骨干上进行多场基准评测，证明在推理质量、训练稳定性和端任务准确性上的提升。\n\n3) 结论/性能（取得的效果）\n- PC-GRPO 在多种基准与骨干模型上提升了视觉推理能力、训练稳定性与端任务准确性。\n- RAC 在训练过程中的提升被延迟下降，并通过一致性导向的奖励进一步增强，RAC 与下游准确性相关性得到证实。\n- 提供了一条可扩展、可验证、可解释的无注释、无外部验证器的 RL 后训练路径，提升了 VLM 的可用性与可解释性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-18 02:05:58"
+}

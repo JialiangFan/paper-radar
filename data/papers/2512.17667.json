@@ -1,0 +1,13 @@
+{
+ "id": "2512.17667",
+ "title": "STAR: Semantic-Traffic Alignment and Retrieval for Zero-Shot HTTPS Website Fingerprinting",
+ "authors": "Yifei Cheng, Yujia Zhu, Baiyang Li, Xinhao Deng, Yitong Cai, Yaochen Ren, Qingyun Liu",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17667v1",
+ "abstract": "Modern HTTPS mechanisms such as Encrypted Client Hello (ECH) and encrypted DNS improve privacy but remain vulnerable to website fingerprinting (WF) attacks, where adversaries infer visited sites from encrypted traffic patterns. Existing WF methods rely on supervised learning with site-specific labeled traces, which limits scalability and fails to handle previously unseen websites. We address these limitations by reformulating WF as a zero-shot cross-modal retrieval problem and introducing STAR. STAR learns a joint embedding space for encrypted traffic traces and crawl-time logic profiles using a dual-encoder architecture. Trained on 150K automatically collected traffic-logic pairs with contrastive and consistency objectives and structure-aware augmentation, STAR retrieves the most semantically aligned profile for a trace without requiring target-side traffic during training. Experiments on 1,600 unseen websites show that STAR achieves 87.9 percent top-1 accuracy and 0.963 AUC in open-world detection, outperforming supervised and few-shot baselines. Adding an adapter with only four labeled traces per site further boosts top-5 accuracy to 98.8 percent. Our analysis reveals intrinsic semantic-traffic alignment in modern web protocols, identifying semantic leakage as the dominant privacy risk in encrypted HTTPS traffic. We release STAR's datasets and code to support reproducibility and future research.",
+ "summary": "- 核心创新点：将 HTTPS 指纹识别转化为零-shot 跨模态检索问题，通过 STAR 在加密流量轨迹与爬取时序逻辑特征之间建立语义对齐的联合嵌入空间。\n\n- 主要方法：提出 STAR，采用双编码器将“加密流量轨迹”和“crawl-time 逻辑特征”映射到同一嵌入空间；基于对比学习、一致性目标和结构感知增强进行训练，使用约150K对自动收集的流量-逻辑数据；训练时无需目标端流量即可进行检索，并可通过一个四标签样本的适配器进一步提升性能。\n\n- 结论/性能：在1,600个未见网站上实现顶-1准确率87.9%、开放世界AUC 0.963，优于监督和少样本基线；加入仅4个标注样本的适配器，Top-5 提升至98.8%；分析显示现代网页协议中存在固有的语义-流量对齐，语义泄漏是加密 HTTPS 流量的主要隐私风险；并公开数据集与代码以便复现。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-22 02:46:42"
+}

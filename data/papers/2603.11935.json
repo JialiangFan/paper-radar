@@ -1,0 +1,13 @@
+{
+ "id": "2603.11935",
+ "title": "MobileKernelBench: Can LLMs Write Efficient Kernels for Mobile Devices?",
+ "authors": "Xingze Zou, Jing Wang, Yuhua Zheng, Xueyi Chen, Haolei Bai, Lingcheng Kong, Syed A. R. Abu-Bakar, Zhaode Wang, Chengfei Lv, Haoji Hu, Huan Wang",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11935v1",
+ "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in code generation, yet their potential for generating kernels specifically for mobile de- vices remains largely unexplored. In this work, we extend the scope of automated kernel generation to the mobile domain to investigate the central question: Can LLMs write efficient kernels for mobile devices? To enable systematic investigation, we introduce MobileKernelBench, a comprehensive evaluation framework comprising a benchmark prioritizing operator diversity and cross-framework interoperability, coupled with an automated pipeline that bridges the host-device gap for on-device verification. Leveraging this framework, we conduct extensive evaluation on the CPU backend of Mobile Neural Network (MNN), revealing that current LLMs struggle with the engineering complexity and data scarcity inher-ent to mobile frameworks; standard models and even fine-tuned variants exhibit high compilation failure rates (over 54%) and negligible performance gains due to hallucinations and a lack of domain-specific grounding. To overcome these limitations, we propose the Mobile K ernel A gent (MoKA), a multi-agent system equipped with repository-aware reasoning and a plan-and-execute paradigm.Validated on MobileKernelBench, MoKA achieves state-of-the-art performance, boosting compilation success to 93.7% and enabling 27.4% of generated kernelsto deliver measurable speedups over native libraries.",
+ "summary": "1) 核心创新点：提出并实现 MobileKernelBench 框架与多代理系统 MoKA，专门面向移动设备的高效内核生成与端到端验证，显著提升 LLM 生成内核的可编译性与实际加速效果。\n\n2) 主要方法：\n- 构建 MobileKernelBench 基准，强调操作符多样性与跨框架互操作性，并提供主机到设备的自动化验证流水线。\n- 在 MNN 的 CPU 后端进行系统评测，揭示现有 LLMs 在移动框架上的工程和数据挑战。\n- 提出 MoKA（多代理系统）：具备仓库感知推理和计划-执行范式的协作机制，结合检索、推理、执行等模块，进行端到端代码生成、编译与在设备上的验证。\n\n3) 结论/性能：\n- 现有 LLMs 在移动内核生成中存在高编译失败率（>54%）且几乎无明显性能提升，受制于幻觉与缺乏领域 grounding。\n- MoKA 在 MobileKernelBench 上实现了编译成功率提升至 93.7%，并使约 27.4% 的生成内核对原生库实现了可测量的加速。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:01:41"
+}

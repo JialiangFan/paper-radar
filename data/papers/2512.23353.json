@@ -1,0 +1,13 @@
+{
+ "id": "2512.23353",
+ "title": "ISOPO: Proximal policy gradients without pi-old",
+ "authors": "Nilin Abrahamsen",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23353v1",
+ "abstract": "This note introduces Isometric Policy Optimization (ISOPO), an efficient method to approximate the natural policy gradient in a single gradient step. In comparison, existing proximal policy methods such as GRPO or CISPO use multiple gradient steps with variants of importance ratio clipping to approximate a natural gradient step relative to a reference policy. In its simplest form, ISOPO normalizes the log-probability gradient of each sequence in the Fisher metric before contracting with the advantages. Another variant of ISOPO transforms the microbatch advantages based on the neural tangent kernel in each layer. ISOPO applies this transformation layer-wise in a single backward pass and can be implemented with negligible computational overhead compared to vanilla REINFORCE.",
+ "summary": "1) 核心创新点：提出 Isometric Policy Optimization（ISOPO），在无需 pi-old 的情况下，通过单步梯度更新近似自然策略梯度，并在一次反向传播中实现近似的高效近端策略优化。\n\n2) 主要方法：  \n- 最简单形式在 Fisher 指标下对每条序列的对数梯度进行归一化，再与优势相乘以近似自然梯度；  \n- 另有基于神经张量核（NTK）的变体，在每一层对微批次优势进行变换；  \n- 这两种变换按层逐层在单次反向传播中完成，避免多步优化且与 vanilla REINFORCE 的额外开销相比几乎可忽略。\n\n3) 结论/性能：相较于需要多步更新且依赖 pi-old 的近端策略方法，ISOPO 能在单步更新中实现近似自然梯度且计算开销极低，具备高效的实现性与实用性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 03:29:58"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.09344",
+ "title": "Robust Regularized Policy Iteration under Transition Uncertainty",
+ "authors": "Hongqiang Lin, Zhenghui Fu, Weihao Tang, Pengfei Wang, Yiding Sun, Qixian Huang, Dongxu Zhang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.09344v1",
+ "abstract": "Offline reinforcement learning (RL) enables data-efficient and safe policy learning without online exploration, but its performance often degrades under distribution shift. The learned policy may visit out-of-distribution state-action pairs where value estimates and learned dynamics are unreliable. To address policy-induced extrapolation and transition uncertainty in a unified framework, we formulate offline RL as robust policy optimization, treating the transition kernel as a decision variable within an uncertainty set and optimizing the policy against the worst-case dynamics. We propose Robust Regularized Policy Iteration (RRPI), which replaces the intractable max-min bilevel objective with a tractable KL-regularized surrogate and derives an efficient policy iteration procedure based on a robust regularized Bellman operator. We provide theoretical guarantees by showing that the proposed operator is a $γ$-contraction and that iteratively updating the surrogate yields monotonic improvement of the original robust objective with convergence. Experiments on D4RL benchmarks demonstrate that RRPI achieves strong average performance, outperforming recent baselines including percentile-based methods such as PMDB on the majority of environments while remaining competitive on the rest. Moreover, RRPI exhibits robust behavior. The learned $Q$-values decrease in regions with higher epistemic uncertainty, suggesting that the resulting policy avoids unreliable out-of-distribution actions under transition uncertainty.",
+ "summary": "- 核心创新点：将离线强化学习中的转移核不确定性纳入鲁棒优化，并提出一个可解的鲁棒正则化策略迭代框架 RRPI。\n\n- 主要方法：把转移核作为不确定集合中的决策变量，对策略进行对最坏动态的鲁棒优化；提出鲁棒正则化策略迭代（RRPI），用一个可解的 KL 正则化代理替代原始的 max-min 双层目标，基于鲁棒正则化 Bellman 运算符实现策略迭代；给出理论保证：该运算符是 γ-收缩且代理更新可带来原始鲁棒目标的单调改进与收敛。\n\n- 结论/性能：在 D4RL 基准上，RRPI 取得较强的平均性能，优于包括 PMDB 在内的多数基线（在部分环境仍具竞争力）；并展现鲁棒性特征：在高本体不确定性区域，Q 值下降，表示策略避免在转移不确定性下的不可置信分布外行动。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:01:47"
+}

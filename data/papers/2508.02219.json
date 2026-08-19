@@ -1,0 +1,30 @@
+{
+ "id": "2508.02219",
+ "title": "CO-RFT: Efficient Fine-Tuning of Vision-Language-Action Models through Chunked Offline Reinforcement Learning",
+ "authors": "CO-RFT authors",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2508.02219",
+ "abstract": "",
+ "summary": "Adds an offline RL fine-tuning option that may be practical when real-robot online exploration is limited.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "fine-tuning",
+  "offline-rl",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-post-training"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/2025_CO_RFT.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Post_Training/2025_CO_RFT.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

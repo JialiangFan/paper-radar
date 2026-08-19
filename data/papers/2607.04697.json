@@ -1,0 +1,13 @@
+{
+ "id": "2607.04697",
+ "title": "AI Agent Pull Requests on GitHub: Frequency, Structure, and Merge Conflict Rates",
+ "authors": "George Xu, Arjun Subramanian, Nithilan Karthik",
+ "date": "2026-07-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.04697v1",
+ "abstract": "AI coding agents can create and submit pull requests (PRs) to a common repository at the same time; however, there is little research on the frequency of such concurrent submissions or the cost associated with them. In this study, we use the AIDev-pop dataset (33,596 PRs across 2,807 repositories) to perform the first large-scale empirical analysis of concurrency among agent-authored PRs. We find that under exact temporal overlap, 40.2% of repositories have co-active agent-authored PR pairs, and these co-active pairs account for 79.4% of all PRs submitted by an AI agent. When examining co-activity within a conventional one-week collaboration period, these percentages increase to 53.4% and 95.0%, respectively. For the vast majority of co-active PR pairs, both PRs were authored by the same agent (intra-agent), whereas only 0.5% of co-active pairs were cross-agent, and these were located in only 122 of the 2,807 total repositories examined (approximately 4.3%). Furthermore, we replayed actual three-way git merge operations on 747 unique co-active pairs (one per repository) to determine the rate of textual conflict when merging the two PRs in each pair. We found that the rate of textual conflict was significantly greater for cross-agent pairs than for intra-agent pairs: 41.7% versus 19.8%, respectively, with non-overlapping 95% confidence intervals. Finally, we developed a classification system based upon the output of git's conflict detection, and determined that the majority of conflicts result from changes to source code files (84.4% of conflicted files) rather than dependency manifest files, and that nearly 42% of the conflicts we observed were structural (modify/delete or add/add). Because these metrics capture only the textual layer, they represent a conservative lower bound on the cost associated with uncoordinated AI teammates working together.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-07 13:00:42"
+}

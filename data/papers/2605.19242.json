@@ -1,0 +1,13 @@
+{
+ "id": "2605.19242",
+ "title": "PhyWorld: Physics-Faithful World Model for Video Generation",
+ "authors": "Pu Zhao, Juyi Lin, Timothy Rupprecht, Arash Akbari, Chence Yang, Rahul Chowdhury, Elaheh Motamedi, Arman Akbari, Yumei He, Chen Wang, Geng Yuan, Weiwei Chen, Yanzhi Wang",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19242v1",
+ "abstract": "World simulators can provide safe and scalable environments for training Physical AI systems before real-world deployment. Large video generation models are emerging as a promising basis for such simulators because they can generate diverse and realistic visual futures. However, using them as world simulators requires physically faithful video continuations, namely, generated videos that preserve the physical state implied by the conditioning input, and evolve in ways consistent with basic physical principles. We propose PhyWorld, a video generation world model designed to produce temporally coherent and physically faithful scene continuations through two-stage post-training. In the first stage, we improve video-to-video continuation with flow matching fine-tuning, encouraging stable visual attributes and coherent motion dynamics across frames. In the second stage, we align generated dynamics with physical principles using Direct Preference Optimization (DPO) over physics preference pairs, guiding the model toward outputs with higher physical plausibility. To evaluate PhyWorld, we use both standard video-quality benchmarks and a dedicated physical-faithfulness benchmark with per-law scoring. Experiments show that PhyWorld improves video consistency, achieving an average score of 0.769 on VBench compared with 0.756 or below for state-of-the-art baselines. PhyWorld also improves physical plausibility, reaching an average score of 3.09 on our physical-faithfulness benchmark compared with 2.99 for the strongest baseline. These results suggest that post-training large video generation models with continuation and physics-preference signals can make them more effective world simulators for Physical AI.",
+ "summary": "# PhyWorld：面向视频生成的物理保真世界模型\n\n1. **核心创新点**：提出一种两阶段后训练方法，使大型视频生成模型在作为\"世界模拟器\"时能够输出在时序上连贯、且符合基本物理规律的视频续写。\n\n2. **主要方法**：\n   - **第一阶段**：使用 flow matching 对视频到视频续写任务进行微调，确保跨帧的视觉属性稳定和运动动态连贯。\n   - **第二阶段**：基于物理偏好对（physics preference pairs），采用 Direct Preference Optimization (DPO) 将生成的动态与物理原理对齐，引导模型输出更具物理合理性的结果。\n   - **评估**：同时使用标准视频质量基准（VBench）和专门设计的、按物理定律逐项评分的物理保真度基准。\n\n3. **结论/性能**：\n   - VBench 平均得分 **0.769**，优于 SOTA 基线的 ≤0.756；\n   - 物理保真度基准平均得分 **3.09**，高于最强基线的 2.99；\n   - 表明\"续写微调 + 物理偏好对齐\"的后训练范式能有效提升大型视频生成模型作为 Physical AI 世界模拟器的能力。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-20 13:04:55"
+}

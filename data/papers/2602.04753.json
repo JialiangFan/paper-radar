@@ -1,0 +1,13 @@
+{
+ "id": "2602.04753",
+ "title": "Comparative Insights on Adversarial Machine Learning from Industry and Academia: A User-Study Approach",
+ "authors": "Vishruti Kakkad, Paul Chung, Hanan Hibshi, Maverick Woo",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04753v1",
+ "abstract": "An exponential growth of Machine Learning and its Generative AI applications brings with it significant security challenges, often referred to as Adversarial Machine Learning (AML). In this paper, we conducted two comprehensive studies to explore the perspectives of industry professionals and students on different AML vulnerabilities and their educational strategies. In our first study, we conducted an online survey with professionals revealing a notable correlation between cybersecurity education and concern for AML threats. For our second study, we developed two CTF challenges that implement Natural Language Processing and Generative AI concepts and demonstrate a poisoning attack on the training data set. The effectiveness of these challenges was evaluated by surveying undergraduate and graduate students at Carnegie Mellon University, finding that a CTF-based approach effectively engages interest in AML threats. Based on the responses of the participants in our research, we provide detailed recommendations emphasizing the critical need for integrated security education within the ML curriculum.",
+ "summary": "- 核心创新点：首次对比分析业界与学术界在对抗性机器学习（AML）教育与威胁认知的差异与共性，并通过基于CTF的教学设计验证将安全教育融入ML课程的有效性与必要性。\n\n- 主要方法：1) 通过在线调查研究专业人士，分析安全教育程度与对AML威胁的关注度之间的相关性；2) 设计两道包含自然语言处理与生成式AI概念的CTF挑战，演示对训练数据的投毒攻击，并在卡耐基梅隆大学的本科生/研究生中通过问卷评估其教育效果与参与度。\n\n- 结论/性能：研究发现安全教育水平与对AML威胁的关注存在显著相关；CTF挑战能有效提升对AML威胁的兴趣与参与度；基于参与者反馈，提出在ML课程中进行安全教育整合的详细建议。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-05 14:01:40"
+}

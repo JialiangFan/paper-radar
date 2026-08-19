@@ -1,0 +1,13 @@
+{
+ "id": "2512.16295",
+ "title": "OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models",
+ "authors": "Zhenyu Wu, Jingjing Xie, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, Zichen Ding",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16295v1",
+ "abstract": "With VLM-powered computer-using agents (CUAs) becoming increasingly capable at graphical user interface (GUI) navigation and manipulation, reliable step-level decision-making has emerged as a key bottleneck for real-world deployment. In long-horizon workflows, errors accumulate quickly and irreversible actions can cause unintended consequences, motivating critic models that assess each action before execution. While critic models offer a promising solution, their effectiveness is hindered by the lack of diverse, high-quality GUI feedback data and public critic benchmarks for step-level evaluation in computer use. To bridge these gaps, we introduce OS-Oracle that makes three core contributions: (1) a scalable data pipeline for synthesizing cross-platform GUI critic data; (2) a two-stage training paradigm combining supervised fine-tuning (SFT) and consistency-preserving group relative policy optimization (CP-GRPO); (3) OS-Critic Bench, a holistic benchmark for evaluating critic model performance across Mobile, Web, and Desktop platforms. Leveraging this framework, we curate a high-quality dataset containing 310k critic samples. The resulting critic model, OS-Oracle-7B, achieves state-of-the-art performance among open-source VLMs on OS-Critic Bench, and surpasses proprietary models on the mobile domain. Furthermore, when serving as a pre-critic, OS-Oracle-7B improves the performance of native GUI agents such as UI-TARS-1.5-7B in OSWorld and AndroidWorld environments. The code is open-sourced at https://github.com/numbmelon/OS-Oracle.",
+ "summary": "1) 核心创新点（一句话概括）\n提出一个跨平台 GUI critic 框架 OS-Oracle，通过可扩展的数据合成、SFT+CP-GRPO 两阶段训练，以及跨平台评测基准 OS-Critic Bench，显著提升开源 VLM 在逐步决策评估中的性能。\n\n2) 主要方法\n- 构建可扩展的数据管线，用于跨 Mobile、Web、Desktop 的 GUI critic 数据合成与标注。\n- 采用两阶段训练：先进行监督微调（SFT），再进行一致性保持的组相对策略优化（CP-GRPO）。\n- 提出 OS-Critic Bench，建立跨平台的综合评测基准。\n- 训练得到 OS-Oracle-7B，并作为 pre-critic 在 OSWorld/AndroidWorld 环境中提升原生 GUI 代理的性能；代码开源，数据集规模约 310k 条 critic 样本。\n\n3) 结论/性能\n- OS-Oracle-7B 在 OS-Critic Bench 上达到开源 VLM 的 state-of-the-art 水平，并在移动领域超过了专有模型。\n- 作为 pre-critic 时，提升了原生 GUI 代理如 UI-TARS-1.5-7B 在 OSWorld 与 AndroidWorld 环境中的表现。\n- 数据集规模达到 310k 条样本，相关工作代码已公开。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-19 02:47:30"
+}

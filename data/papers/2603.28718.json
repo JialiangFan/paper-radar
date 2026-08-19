@@ -1,0 +1,13 @@
+{
+ "id": "2603.28718",
+ "title": "Stepwise Credit Assignment for GRPO on Flow-Matching Models",
+ "authors": "Yash Savani, Branislav Kveton, Yuchen Liu, Yilin Wang, Jing Shi, Subhojyoti Mukherjee, Nikos Vlassis, Krishna Kumar Singh",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28718v1",
+ "abstract": "Flow-GRPO successfully applies reinforcement learning to flow models, but uses uniform credit assignment across all steps. This ignores the temporal structure of diffusion generation: early steps determine composition and content (low-frequency structure), while late steps resolve details and textures (high-frequency details). Moreover, assigning uniform credit based solely on the final image can inadvertently reward suboptimal intermediate steps, especially when errors are corrected later in the diffusion trajectory. We propose Stepwise-Flow-GRPO, which assigns credit based on each step's reward improvement. By leveraging Tweedie's formula to obtain intermediate reward estimates and introducing gain-based advantages, our method achieves superior sample efficiency and faster convergence. We also introduce a DDIM-inspired SDE that improves reward quality while preserving stochasticity for policy gradients.",
+ "summary": "1) 核心创新点\n提出 Stepwise-Flow-GRPO：对 Flow-GRPO 采用逐步信用分配，依据每一步的收益改进来赋予信用，并结合 Tweedie 公式得到中间奖励估计和增益式优势，从而更好地利用扩散过程的时间结构；同时引入受 DDIM 启发的 SDE 来提升奖励质量。\n\n2) 主要方法\n- 在 Flow-GRPO 框架中实现逐步信用分配：根据每一步的实际收益提升进行信用分配，而非仅以最终结果为标准。  \n- 使用 Tweedie 公式估计中间奖励，得到各步的中间奖励信号。  \n- 引入增益式（gain-based）优势估计，改进策略梯度的信号。  \n- 提出一个受 DDIM 启发的 SDE，以在保持随机性的同时提高奖励质量。\n\n3) 结论/性能\n相比原始 Flow-GRPO，达到更高的样本效率和更快的收敛速度；奖励信号质量得到提升，并更好地利用扩散过程的早期低频结构与晚期高频细节的分工。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-31 13:08:09"
+}

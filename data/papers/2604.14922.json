@@ -1,0 +1,13 @@
+{
+ "id": "2604.14922",
+ "title": "LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning",
+ "authors": "Bowen Ping, Zijun Chen, Tingfeng Hui, Qize Yu, Chenxuan Li, Junchi Yan, Baobao Chang",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14922v1",
+ "abstract": "Reinforcement Learning (RL) has emerged as a critical driver for enhancing the reasoning capabilities of Large Language Models (LLMs). While recent advancements have focused on reward engineering or data synthesis, few studies exploit the model's intrinsic representation characteristics to guide the training process. In this paper, we first observe the presence of high-magnitude activations within the query and key vectors when processing long contexts. Drawing inspiration from model quantization -- which establishes the criticality of such high-magnitude activations -- and the insight that long-context reasoning inherently exhibits a sparse structure, we hypothesize that these weights serve as the pivotal drivers for effective model optimization. Based on this insight, we propose LongAct, a strategy that shifts from uniform to saliency-guided sparse updates. By selectively updating only the weights associated with these significant activations, LongAct achieves an approximate 8% improvement on LongBench v2 and enhances generalization on the RULER benchmark. Furthermore, our method exhibits remarkable universality, consistently boosting performance across diverse RL algorithms such as GRPO and DAPO. Extensive ablation studies suggest that focusing on these salient features is key to unlocking long-context potential.",
+ "summary": "- 核心创新点：提出 LongAct，通过利用长上下文处理中查询-键向量的高幅度激活作为显著性信号，改用基于显著性的稀疏权重更新，以提升长上下文强化学习的性能。\n\n- 主要方法：将模型量化的直觉引入 RL 训练，进行从均匀更新到基于激活显著性的稀疏更新，只更新与高激活权重相关的参数，且在多种 RL 算法（如 GRPO、DAPO）上验证其普适性。\n\n- 结论/性能：在 LongBench v2 上约提升 8%，并提高在 RULER 基准上的泛化能力，消融研究表明聚焦这些显著特征是释放长上下文潜力的关键。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-17 13:04:05"
+}

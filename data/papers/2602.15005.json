@@ -1,0 +1,13 @@
+{
+ "id": "2602.15005",
+ "title": "Learning User Interests via Reasoning and Distillation for Cross-Domain News Recommendation",
+ "authors": "Mengdan Zhu, Yufan Zhao, Tao Di, Yulan Yan, Liang Zhao",
+ "date": "2026-02-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.15005v1",
+ "abstract": "News recommendation plays a critical role in online news platforms by helping users discover relevant content. Cross-domain news recommendation further requires inferring user's underlying information needs from heterogeneous signals that often extend beyond direct news consumption. A key challenge lies in moving beyond surface-level behaviors to capture deeper, reusable user interests while maintaining scalability in large-scale production systems. In this paper, we present a reinforcement learning framework that trains large language models to generate high-quality lists of interest-driven news search queries from cross-domain user signals. We formulate query-list generation as a policy optimization problem and employ GRPO with multiple reward signals. We systematically study two compute dimensions: inference-time sampling and model capacity, and empirically observe consistent improvements with increased compute that exhibit scaling-like behavior. Finally, we perform on-policy distillation to transfer the learned policy from a large, compute-intensive teacher to a compact student model suitable for scalable deployment. Extensive offline experiments, ablation studies and large-scale online A/B tests in a production news recommendation system demonstrate consistent gains in both interest modeling quality and downstream recommendation performance.",
+ "summary": "- 核心创新点：提出一个基于强化学习的大语言模型框架，从跨域信号中生成面向深层用户兴趣的新闻查询列表，并通过策略蒸馏将高成本教师模型迁移到高效的学生模型以实现可扩展部署。\n\n- 主要方法：\n  - 通过强化学习框架训练大语言模型，让其生成兴趣驱动的新闻查询列表，从跨域信号中推断用户深层兴趣。\n  - 将查询列表生成建模为策略优化问题，使用 GRPO 算法并结合多种奖励信号进行学习。\n  - 同时研究推理阶段的采样策略与模型容量对性能的影响，观察到随着计算增加呈现缩放式提升。\n  - 采用 on-policy 知识蒸馏，将高成本的教师模型的策略迁移到紧凑的学生模型，以实现可扩展部署。\n  - 进行了大量离线实验、消融研究和生产端的大规模在线 A/B 测试。\n\n- 结论/性能：\n  - 离线与在线评测均显示兴趣建模质量和下游推荐性能的持续提升，且具备显著的规模化潜力。\n  - 随着推理计算和模型容量的增加，性能呈现稳定的缩放式提升，证明在大规模生产系统中的可行性与有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-19 14:05:10"
+}

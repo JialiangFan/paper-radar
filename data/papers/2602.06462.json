@@ -1,0 +1,13 @@
+{
+ "id": "2602.06462",
+ "title": "Diffusion-State Policy Optimization for Masked Diffusion Language Models",
+ "authors": "Daisuke Oba, Hiroki Furuta, Naoaki Okazaki",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06462v1",
+ "abstract": "Masked diffusion language models generate by iteratively filling masked tokens over multiple denoising steps, so learning only from a terminal reward on the final completion yields coarse credit assignment over intermediate decisions. We propose DiSPO (Diffusion-State Policy Optimization), a plug-in credit-assignment layer that directly optimizes intermediate filling decisions. At selected intermediate masked states, DiSPO branches by resampling fillings for the currently masked positions from rollout-cached logits, scores the resulting completions, and updates only the newly filled tokens -- without additional multi-step diffusion rollouts. We formalize a fixed-state objective for branched completions and derive a policy-gradient estimator that can be combined with terminal-feedback policy optimization using the same rollouts. On LLaDA-8B-Instruct, DiSPO consistently improves over the terminal-feedback diffu-GRPO baseline on math and planning benchmarks under matched rollout compute and optimizer steps. Our code will be available at https://daioba.github.io/dispo .",
+ "summary": "1. 核心创新点：在掩码扩散语言模型中引入 DiSPO，一种可插拔的信用分配层，通过在中间掩码状态分支重采样并评分补全，只更新新填充的 token，从而直接优化中间填充决策。\n\n2. 主要方法：提出 DiSPO（Diffusion-State Policy Optimization），在选定的中间状态进行分支，利用回放缓存的 logits 重采样当前掩码位置的填充并评分，推导固定状态目标与策略梯度估计，能够与终端反馈的策略优化共同使用，适用于掩码扩散语言模型的策略优化。\n\n3. 结论/性能：在 LLaDA-8B-Instruct 上，DiSPO 相较于终端反馈的 diffu-GRPO 基线，在数学与计划任务等基准上表现出一致提升，且在匹配的回放计算量和优化步数条件下有效。代码将公开。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-09 14:04:16"
+}

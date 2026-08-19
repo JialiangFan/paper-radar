@@ -1,0 +1,13 @@
+{
+ "id": "2602.08711",
+ "title": "TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions",
+ "authors": "Linli Yao, Yuancheng Wei, Yaojie Zhang, Lei Li, Xinlong Chen, Feifan Song, Ziyue Wang, Kun Ouyang, Yuanxin Liu, Lingpeng Kong, Qi Liu, Pengfei Wan, Kun Gai, Yuanxing Zhang, Xu Sun",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08711v1",
+ "abstract": "This paper proposes Omni Dense Captioning, a novel task designed to generate continuous, fine-grained, and structured audio-visual narratives with explicit timestamps. To ensure dense semantic coverage, we introduce a six-dimensional structural schema to create \"script-like\" captions, enabling readers to vividly imagine the video content scene by scene, akin to a cinematographic screenplay. To facilitate research, we construct OmniDCBench, a high-quality, human-annotated benchmark, and propose SodaM, a unified metric that evaluates time-aware detailed descriptions while mitigating scene boundary ambiguity. Furthermore, we construct a training dataset, TimeChatCap-42K, and present TimeChat-Captioner-7B, a strong baseline trained via SFT and GRPO with task-specific rewards. Extensive experiments demonstrate that TimeChat-Captioner-7B achieves state-of-the-art performance, surpassing Gemini-2.5-Pro, while its generated dense descriptions significantly boost downstream capabilities in audio-visual reasoning (DailyOmni and WorldSense) and temporal grounding (Charades-STA). All datasets, models, and code will be made publicly available at https://github.com/yaolinli/TimeChat-Captioner.",
+ "summary": "- 核心创新点（1句）：提出 Omni Dense Captioning 任务，结合六维结构化脚本化描述和时间戳，实现连续、细粒度且具场景化结构的音视频叙事，并 accompany 新基准、评测和大模型训练范式。\n\n- 主要方法：\n  - 设计六维结构化的脚本化字幕，提供带时间轴的细粒度、场景化描述。\n  - 构建 OmniDCBench 基准和高质量人工标注数据，提出 SodaM 统一评测指标以缓解场景边界模糊。\n  - 构建 TimeChatCap-42K 训练数据集，提出 TimeChat-Captioner-7B 模型，采用监督微调（SFT）与 GRPO（带任务特定奖励的强化学习）训练。\n  - 基于多模态 Transformer 框架实现时间感知的连续音视频描述。\n\n- 结论/性能：\n  - TimeChat-Captioner-7B 达到并超过当前 SOTA，胜过 Gemini-2.5-Pro。\n  - 生成的密集描述显著提升下游能力，在音视频推理（DailyOmni、WorldSense）和时间定位（Charades-STA）等任务上表现更好。\n  - 相关数据集、模型与代码将公开。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-10 14:06:19"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.17692",
+ "title": "Can Blindfolded LLMs Still Trade? An Anonymization-First Framework for Portfolio Optimization",
+ "authors": "Joohyoung Jeon, Hongchul Lee",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17692v1",
+ "abstract": "For LLM trading agents to be genuinely trustworthy, they must demonstrate understanding of market dynamics rather than exploitation of memorized ticker associations. Building responsible multi-agent systems demands rigorous signal validation: proving that predictions reflect legitimate patterns, not pre-trained recall. We address two sources of spurious performance: memorization bias from ticker-specific pre-training, and survivorship bias from flawed backtesting. Our approach is to blindfold the agents--anonymizing all identifiers--and verify whether meaningful signals persist. BlindTrade anonymizes tickers and company names, and four LLM agents output scores along with reasoning. We construct a GNN graph from reasoning embeddings and trade using PPO-DSR policy. On 2025 YTD (through 2025-08-01), we achieved Sharpe 1.40 +/- 0.22 across 20 seeds and validated signal legitimacy through negative control experiments. To assess robustness beyond a single OOS window, we additionally evaluate an extended period (2024--2025), revealing market-regime dependency: the policy excels in volatile conditions but shows reduced alpha in trending bull markets.",
+ "summary": "核心创新点：提出一种匿名化优先的信号验证框架（BlindTrade），通过对股票代码与公司名去标识化，结合多代理LLM的推理与图神经网络，再以PPO-DSR交易策略实现交易，以区分真实市场信号与记忆化偏差。\n\n主要方法：\n- BlindTrade 对标识信息（ticker、公司名）进行匿名化处理，防止记忆化回忆影响评估。\n- 四个LLM代理输出交易分数及推理过程，形成多源推理信号。\n- 将推理嵌入构建成图神经网络（GNN），捕捉代理间关系与推理结构信息。\n- 使用PPO-DSR策略进行交易决策与执行。\n- 通过负控制实验验证信号的真实性与鲁棒性；在截至2025-08-01的2025年YTD数据上进行20组种子回测，并扩展到2024–2025区间以评估市场情景依赖。\n\n结论/性能：\n- 在2025年YTD（至2025-08-01）实现 Sharpe 1.40 ± 0.22，覆盖20组种子，且通过负控制实验验证信号的合法性。\n- 延伸至2024–2025区间的回测显示策略表现受市场情景影响：在波动性较高的市场环境中表现出色，而在单边上涨的牛市中阿尔法有所下降。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-19 13:03:04"
+}

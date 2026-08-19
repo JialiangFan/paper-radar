@@ -1,0 +1,13 @@
+{
+ "id": "2602.06630",
+ "title": "TrapSuffix: Proactive Defense Against Adversarial Suffixes in Jailbreaking",
+ "authors": "Mengyao Du, Han Fang, Haokai Ma, Gang Yang, Quanjun Yin, Shouling Ji, Ee-Chien Chang",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06630v1",
+ "abstract": "Suffix-based jailbreak attacks append an adversarial suffix, i.e., a short token sequence, to steer aligned LLMs into unsafe outputs. Since suffixes are free-form text, they admit endlessly many surface forms, making jailbreak mitigation difficult. Most existing defenses depend on passive detection of suspicious suffixes, without leveraging the defender's inherent asymmetric ability to inject secrets and proactively conceal gaps. Motivated by this, we take a controllability-oriented perspective and develop a proactive defense that nudges attackers into a no-win dilemma: either they fall into defender-designed optimization traps and fail to produce an effective adversarial suffix, or they can succeed only by generating adversarial suffixes that carry distinctive, traceable fingerprints. We propose TrapSuffix, a lightweight fine-tuning approach that injects trap-aligned behaviors into the base model without changing the inference pipeline. TrapSuffix channels jailbreak attempts into these two outcomes by reshaping the model's response landscape to adversarial suffixes. Across diverse suffix-based jailbreak settings, TrapSuffix reduces the average attack success rate to below 0.01 percent and achieves an average tracing success rate of 87.9 percent, providing both strong defense and reliable traceability. It introduces no inference-time overhead and incurs negligible memory cost, requiring only 15.87 MB of additional memory on average, whereas state-of-the-art LLM-based detection defenses typically incur memory overheads at the 1e4 MB level, while composing naturally with existing filtering-based defenses for complementary protection.",
+ "summary": "- 核心创新点：通过在基础模型中进行轻量微调，植入对抗性“陷阱”行为，主动引导后缀攻击者陷入无胜算的两难局面，并对可追踪指纹的对抗性后缀实现可靠追踪。\n\n- 主要方法：采用 TrapSuffix 的轻量化微调策略，在不改变推理流水线的前提下注入 trap-aligned 行为，塑造模型对 adversarial suffix 的响应景观，使攻击要么在 Defender 设定的优化陷阱中失败，要么只能产生带有可追踪指纹的后缀；与现有检测防御可互补。\n\n- 结论/性能：在多场景的后缀化绕过场景中，攻击成功率降至低于 0.01%，追踪成功率平均达到 87.9%；无推理时延开销，平均额外内存约 15.87 MB，显著低于基于大规模检测的内存成本，并可与基于过滤的防御协同提升安全性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-09 14:02:23"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.20752",
+ "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation",
+ "authors": "Zijian Zhang, Yuqing Jiang, Qian Cheng, Si Liu, Ding Zhao, Ping Luo, Weitao Zhou, Haibao Yu",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.20752v1",
+ "abstract": "Vision-language-action (VLA) policies have advanced language-conditioned robotic manipulation by transferring semantic priors from pretrained vision-language models to action generation. Yet, standard action-imitation training often provides limited explicit supervision for 3D geometry, dense visual structure, and short-horizon environment evolution, which are critical for physically precise manipulation. We introduce \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in that turns robot trajectories into structured spatial-temporal supervision. The key idea is to couple current Gaussian reconstruction with horizon-conditioned future Gaussian prediction during training, forcing a compact spatio-temporal prefix to be decodable into renderable 3D Gaussian states. This enables dense RGB rendering, depth, and pseudo 3D scene-flow supervision without requiring test-time Gaussian decoding. At inference, GaussianDream discards all auxiliary decoding heads and retains only the learned prefix to condition action generation, avoiding rendering, video rollout, or additional planning during closed-loop control. Experiments on LIBERO, RoboCasa Human-50, and real-robot tasks demonstrate strong and highly competitive performance, achieving \\textbf{98.4\\%} average success on LIBERO, \\textbf{52.6\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} in real-world evaluation.",
+ "summary": "# GaussianDream 论文总结\n\n**核心创新点**：提出一种前馈式 3D 高斯世界模型插件，通过将机器人轨迹转化为结构化的时空监督信号，为视觉-语言-动作（VLA）策略注入显式的 3D 几何与短时环境演化先验。\n\n**主要方法**：在训练阶段联合\"当前高斯重建\"与\"horizon 条件下的未来高斯预测\"，迫使一个紧凑的时空前缀能被解码为可渲染的 3D 高斯状态，从而获得 RGB 渲染、深度与伪 3D 场景流的稠密监督；推理阶段则丢弃所有辅助解码头，仅保留学习到的前缀来条件化动作生成，避免渲染、视频回放或额外规划带来的开销。\n\n**结论/性能**：在 LIBERO 上取得 **98.4%** 平均成功率，在 RoboCasa Human-50 上达到 **52.6%**，真实机器人评测达到 **50.0%**，整体表现具有强竞争力。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-22 13:03:08"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2601.22662",
+ "title": "Task-Aware LLM Council with Adaptive Decision Pathways for Decision Support",
+ "authors": "Wei Zhu, Lixing Yu, Hao-Ren Yao, Zhiwen Tang, Kun Yue",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22662v1",
+ "abstract": "Large language models (LLMs) have shown strong capabilities across diverse decision-making tasks. However, existing approaches often overlook the specialization differences among available models, treating all LLMs as uniformly applicable regardless of task characteristics. This limits their ability to adapt to varying reasoning demands and task complexities. In this work, we propose Task-Aware LLM Council (TALC), a task-adaptive decision framework that integrates a council of LLMs with Monte Carlo Tree Search (MCTS) to enable dynamic expert selection and efficient multi-step planning. Each LLM is equipped with a structured success memory profile derived from prior task trajectories, enabling semantic matching between current reasoning context and past successes. At each decision point, TALC routes control to the most contextually appropriate model and estimates node value using a dual-signal mechanism that fuses model-based evaluations with historical utility scores. These signals are adaptively weighted based on intra-node variance and used to guide MCTS selection, allowing the system to balance exploration depth with planning confidence. Experiments on WebShop, HumanEval, and the Game of 24 demonstrate that TALC achieves superior task success rates and improved search efficiency compared to strong baselines, validating the benefits of specialization-aware routing and adaptive planning.",
+ "summary": "- 核心创新点（一句话）\n  提出 Task-Aware LLM Council (TALC)，将多模型自治路由与蒙特卡洛树搜索相结合，在每个决策点基于任务特征选择最合适的模型并进行多步规划，同时利用历史成功记忆进行语义匹配。\n\n- 主要方法\n  - 构建一个由多路LLM组成的“LLM Council”并引入蒙特卡洛树搜索（MCTS）进行决策与规划。\n  - 为每个LLM建立基于以往任务轨迹的结构化成功记忆，从而实现上下文与过去成功的语义匹配。\n  - 在每个决策点使用双信号节点估值：结合模型评估与历史效用分数，并基于节点内方差自适应加权以引导MCTS的选择，实现探索-开发的平衡。\n\n- 结论/性能\n  在 WebShop、HumanEval、Game of 24 等任务上，TALC 相比强基线实现了更高的任务成功率和更高的搜索效率，验证了基于任务的模型专长路由与自适应规划的有效性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-02 14:04:01"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.19524",
+ "title": "SafeAlign-VLA: A Negative-Enhanced Safe Alignment Framework for Risk-Aware Autonomous Driving",
+ "authors": "Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19524v1",
+ "abstract": "End-to-end autonomous driving systems excel in common scenarios but struggle with safety-critical long-tail cases. Vision-Language-Action (VLA) models are promising due to their strong reasoning capabilities. However, most VLA-based approaches rely on positive expert demonstrations, rarely exploiting negative samples, leading to insufficient understanding of risky behaviors and safety boundaries. To address this limitation, we propose SafeAlign-VLA, a unified negative-enhanced safe alignment framework that incorporates negative data into supervised learning and reinforcement learning. First, we develop a counterfactual safety pairing paradigm to generate structured safety labels and counterfactual positive trajectories from risky scenarios via counterfactual reasoning. Then, a two-stage training strategy is adopted: negative-enhanced supervised fine-tuning for failure feedback and trajectory correction, followed by anchor-based group relative policy optimization that uses positive and negative trajectories as contrastive anchors to steer sampling and penalize high-risk behaviors via group-relative advantages. Experiments on NAVSIM and DeepAccident validate the proposed framework. SafeAlign-VLA achieves 89.1 PDMS on the NAVSIM v1 testset, improving over the baseline without negative data by 1.3%. On DeepAccident, it reduces the collision rate to 3.36%, while achieving 84.2% language accuracy and 85.8% risk prediction accuracy. These results demonstrate the effectiveness of the proposed negative-enhanced safe alignment framework for safe and robust autonomous driving.",
+ "summary": "# SafeAlign-VLA 论文总结\n\n**1. 核心创新点**\n首次将\"负样本（风险/失败案例）\"系统性地融入 VLA 自动驾驶模型的对齐训练，通过反事实推理让模型学会识别并规避高风险行为。\n\n**2. 主要方法**\n- **反事实安全配对范式**：从风险场景中生成结构化安全标签和反事实正向轨迹（即\"如果安全应该怎么开\"）。\n- **两阶段训练**：\n  - 阶段一：负样本增强的监督微调（SFT），用失败反馈进行轨迹修正。\n  - 阶段二：基于锚点的群组相对策略优化（Anchor-based GRPO），把正/负轨迹作为对比锚点，通过群组相对优势惩罚高风险行为。\n\n**3. 结论/性能**\n- **NAVSIM v1**：PDMS 达 89.1，比无负样本基线提升 1.3%。\n- **DeepAccident**：碰撞率降至 3.36%，语言准确率 84.2%，风险预测准确率 85.8%。\n- 验证了负样本增强对齐在安全、鲁棒自动驾驶中的有效性。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-24 13:05:22"
+}

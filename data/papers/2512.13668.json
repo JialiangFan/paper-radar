@@ -1,0 +1,13 @@
+{
+ "id": "2512.13668",
+ "title": "A Scientific Reasoning Model for Organic Synthesis Procedure Generation",
+ "authors": "Guoqing Liu, Junren Li, Zihan Zhao, Eray Inanc, Krzysztof Maziarz, Jose Garrido Torres, Victor Garcia Satorras, Shoko Ueda, Christopher M. Bishop, Marwin Segler",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13668v1",
+ "abstract": "Solving computer-aided synthesis planning is essential for enabling fully automated, robot-assisted synthesis workflows and improving the efficiency of drug discovery. A key challenge, however, is bridging the gap between computational route design and practical laboratory execution, particularly the accurate prediction of viable experimental procedures for each synthesis step. In this work, we present QFANG, a scientific reasoning language model capable of generating precise, structured experimental procedures directly from reaction equations, with explicit chain-of-thought reasoning. To develop QFANG, we curated a high-quality dataset comprising 905,990 chemical reactions paired with structured action sequences, extracted and processed from patent literature using large language models. We introduce a Chemistry-Guided Reasoning (CGR) framework that produces chain-of-thought data grounded in chemical knowledge at scale. The model subsequently undergoes supervised fine-tuning to elicit complex chemistry reasoning. Finally, we apply Reinforcement Learning from Verifiable Rewards (RLVR) to further enhance procedural accuracy. Experimental results demonstrate that QFANG outperforms advanced general-purpose reasoning models and nearest-neighbor retrieval baselines, measured by traditional NLP similarity metrics and a chemically aware evaluator using an LLM-as-a-judge. Moreover, QFANG generalizes to certain out-of-domain reaction classes and adapts to variations in laboratory conditions and user-specific constraints. We believe that QFANG's ability to generate high-quality synthesis procedures represents an important step toward bridging the gap between computational synthesis planning and fully automated laboratory synthesis.",
+ "summary": "- 核心创新点：提出 QFANG 及 Chemistry-Guided Reasoning（CGR）框架，能够直接从反应方程生成具有化学知识支撑的精确、结构化实验步骤，并给出可解释的链式推理。\n\n- 主要方法：\n  - 构建并使用大规模数据集：从专利文献中通过大语言模型提取并处理了约9.06×10^5条化学反应及其结构化操作序列。\n  - Chemistry-Guided Reasoning（CGR）框架：在生成推理过程中以化学知识为支撑，输出链式推理数据。\n  - 监督微调与强化学习：先进行监督微调以提升复杂化学推理能力，再通过可验证奖励的强化学习（RLVR）进一步提高程序的准确性。\n\n- 结论/性能：\n  - QFANG 在传统 NLP 相似性指标和“化学感知”评估（由大语言模型担任评审）上，超越了先进的通用推理模型和最近邻检索基线。\n  - 对部分域外反应类具备一定泛化能力，并能适应不同实验室条件与用户约束。\n  - 该方法显著提升了生成高质量合成程序的能力，向实现计算合成规划与全自动化实验室合成之间的有效衔接迈出关键一步。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:03:39"
+}

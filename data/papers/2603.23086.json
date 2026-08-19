@@ -1,0 +1,13 @@
+{
+ "id": "2603.23086",
+ "title": "Policy-based Tuning of Autoregressive Image Models with Instance- and Distribution-Level Rewards",
+ "authors": "Orhun Buğra Baran, Melih Kandemir, Ramazan Gokberk Cinbis",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23086v1",
+ "abstract": "Autoregressive (AR) models are highly effective for image generation, yet their standard maximum-likelihood estimation training lacks direct optimization for sample quality and diversity. While reinforcement learning (RL) has been used to align diffusion models, these methods typically suffer from output diversity collapse. Similarly, concurrent RL methods for AR models rely strictly on instance-level rewards, often trading off distributional coverage for quality. To address these limitations, we propose a lightweight RL framework that casts token-based AR synthesis as a Markov Decision Process, optimized via Group Relative Policy Optimization (GRPO). Our core contribution is the introduction of a novel distribution-level Leave-One-Out FID (LOO-FID) reward; by leveraging an exponential moving average of feature moments, it explicitly encourages sample diversity and prevents mode collapse during policy updates. We integrate this with composite instance-level rewards (CLIP and HPSv2) for strict semantic and perceptual fidelity, and stabilize the multi-objective learning with an adaptive entropy regularization term. Extensive experiments on LlamaGen and VQGAN architectures demonstrate clear improvements across standard quality and diversity metrics within only a few hundred tuning iterations. The results also show that the model can be updated to produce competitive samples even without Classifier-Free Guidance, and bypass its 2x inference cost.",
+ "summary": "- 核心创新点：提出一个轻量化的策略优化框架，将自回归图像生成视作马尔可夫决策过程，并引入分布层面的 Leave-One-Out FID（LOO-FID）奖励以显式促进样本多样性并防止模式塌陷，同时结合实例级奖励实现语义和感知保真。\n\n- 主要方法：将 token 基自回归生成建模为 MDP，使用 Group Relative Policy Optimization（GRPO）进行优化；引入分布层面的 LOO-FID 奖励，利用特征矩(moment)的指数滑动均值；联合使用 CLIP 与 HPSv2 的实例级奖励，并引入自适应熵正则化来稳定多目标学习；在 LlamaGen 与 VQGAN 架构上进行实验，微调仅需数百次。\n\n- 结论/性能：在标准质量与多样性指标上获得显著提升，且仅用数百次微调即可得到更好样本；无需 classifier-free guidance 也能生成具备竞争力的样本，且避免 CFG 的额外推理成本。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:59"
+}

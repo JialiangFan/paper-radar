@@ -1,0 +1,13 @@
+{
+ "id": "2602.23783",
+ "title": "Diffusion Probe: Generated Image Result Prediction Using CNN Probes",
+ "authors": "Benlei Cui, Bukun Huang, Zhizeng Ye, Xuemei Dong, Tuo Chen, Hui Xue, Dingkang Yang, Longtao Huang, Jingqun Tang, Haiwen Hong",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23783v1",
+ "abstract": "Text-to-image (T2I) diffusion models lack an efficient mechanism for early quality assessment, leading to costly trial-and-error in multi-generation scenarios such as prompt iteration, agent-based generation, and flow-grpo. We reveal a strong correlation between early diffusion cross-attention distributions and final image quality. Based on this finding, we introduce Diffusion Probe, a framework that leverages internal cross-attention maps as predictive signals.\n  We design a lightweight predictor that maps statistical properties of early-stage cross-attention extracted from initial denoising steps to the final image's overall quality. This enables accurate forecasting of image quality across diverse evaluation metrics long before full synthesis is complete.\n  We validate Diffusion Probe across a wide range of settings. On multiple T2I models, across early denoising windows, resolutions, and quality metrics, it achieves strong correlation (PCC > 0.7) and high classification performance (AUC-ROC > 0.9).\n  Its reliability translates into practical gains. By enabling early quality-aware decisions in workflows such as prompt optimization, seed selection, and accelerated RL training, the probe supports more targeted sampling and avoids computation on low-potential generations. This reduces computational overhead while improving final output quality.\n  Diffusion Probe is model-agnostic, efficient, and broadly applicable, offering a practical solution for improving T2I generation efficiency through early quality prediction.",
+ "summary": "- 核心创新点：利用扩散过程早期的交叉注意力分布作为预测信号，提出 Diffusion Probe 在完全生成前即可预测最终图像质量。\n\n- 主要方法：设计一个轻量级的预测器（CNN 探针），对初始去噪步骤中提取的早期交叉注意力的统计特征进行建模，将其映射到最终图像的综合质量，且对多种文本到图像扩散模型具备模型无关性与高效性。\n\n- 结论/性能：在多种设置下实现高相关性和分类性能（PCC > 0.7，AUC-ROC > 0.9），并带来实际效益，如在 Prompt 优化、种子选择和加速强化学习训练中实现早期质量判断、减少低潜力生成的计算开销、提升最终输出质量。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-02 14:03:11"
+}

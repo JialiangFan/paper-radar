@@ -1,0 +1,13 @@
+{
+ "id": "2603.05023",
+ "title": "Label Hijacking in Track Consensus-Based Distributed Multi-Target Tracking",
+ "authors": "Helena Calatrava, Shuo Tang, Pau Closas",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05023v1",
+ "abstract": "Distributed multi-target tracking (DMTT) in limited field-of-view (FoV) sensor networks commonly suffers from label inconsistency, whereby different nodes disagree on the identity of the same target. Recent track-consensus DMTT (TC-DMTT) strategies mitigate this issue by enforcing kinematic and label agreement through metric-based track matching. Nevertheless, their behavior under adversarial conditions remains largely unexplored. In this paper, we reveal identity-level vulnerabilities in TC-DMTT and introduce the concept of label hijacking: an attack in which an adversary injects spoofed tracks to corrupt target identities across the network. Drawing on an analogy to classical pull-off deception in radar, we formalize a notion of attack stealthiness and derive an optimization-based strategy for crafting such attacks. A three-sensor network case study demonstrates the impact of the proposed attack on label consistency and tracking accuracy, showing successful target impersonation. Overall, this work highlights the need to rethink robustness at the consensus layer in DMTT frameworks.",
+ "summary": "- 核心创新点：提出并形式化“标签劫持”（label hijacking）攻击及其隐蔽性概念，通过优化设计伪轨迹注入，扰乱TC-DMTT的目标身份一致性。\n- 主要方法：将攻击与雷达 pull-off 的类比引入，建立身份层面的攻防模型，基于优化方法生成伪轨迹并在三传感器网络上进行实验评估，评估对标签一致性与跟踪精度的影响。\n- 结论/性能：攻击能够显著破坏标签一致性和跟踪准确性，实现对目标的成功冒充，揭示在分布式多目标跟踪的共识层鲁棒性需要重新考虑。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-06 14:00:46"
+}

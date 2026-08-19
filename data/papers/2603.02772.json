@@ -1,0 +1,13 @@
+{
+ "id": "2603.02772",
+ "title": "Agentic Self-Evolutionary Replanning for Embodied Navigation",
+ "authors": "Guoliang Li, Ruihua Han, Chengyang Li, He Li, Shuai Wang, Wenchao Ding, Hong Zhang, Chengzhong Xu",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02772v1",
+ "abstract": "Failure is inevitable for embodied navigation in complex environments. To enhance the resilience, replanning (RP) is a viable option, where the robot is allowed to fail, but is capable of adjusting plan until success. However, existing RP approaches freeze the ego action model and miss the opportunities to explore better plans by upgrading the robot itself. To address this limitation, we propose Self-Evolutionary RePlanning, or SERP for short, which leads to a paradigm shift from frozen models towards evolving models by run-time learning from recent experiences. In contrast to existing model evolution approaches that often get stuck at predefined static parameters, we introduce agentic self-evolving action model that uses in-context learning with auto-differentiation (ILAD) for adaptive function adjustment and global parameter reset. To achieve token-efficient replanning for SERP, we also propose graph chain-of-thought (GCOT) replanning with large language model (LLM) inference over distilled graphs. Extensive simulation and real-world experiments demonstrate that SERP achieves higher success rate with lower token expenditure over various benchmarks, validating its superior robustness and efficiency across diverse environments.",
+ "summary": "- 核心创新点：通过运行时自我进化的行动模型结合 ILAD（在上下文学习与自动微分下的自适应函数调整与全局参数重置）以及 GCOT（图-链式思考的 LLM 推理）实现对机器人行动策略的自我升级与高效再规划，打破以往冻结模型的局限。\n\n- 主要方法：\n  - SERP：提出一个自我进化的再规划框架，在运行时从最近的经验中学习并升级行动模型。\n  - Agentic self-evolving action model：自我进化的行动模型，避免固定参数瓶颈。\n  - ILAD：在上下文中学习并通过自动微分实现自适应函数调整与全局参数重置。\n  - GCOT：利用蒸馏图进行图-链式思考推理，并在大语言模型（LLM）推理下实现更令牌高效的再规划。\n\n- 结论/性能：\n  - 在广泛的仿真与真实世界实验中，SERP 取得更高的成功率，且令牌消耗更低，显示出更强的鲁棒性与效率。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:03:06"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.19665",
+ "title": "GenFacet: End-to-End Generative Faceted Search via Multi-Task Preference Alignment in E-Commerce",
+ "authors": "Zhouwei Zhai, Min Yang, Jin Li",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19665v1",
+ "abstract": "Faceted search acts as a critical bridge for navigating massive ecommerce catalogs, yet traditional systems rely on static rule-based extraction or statistical ranking, struggling with emerging vocabulary, semantic gaps, and a disconnect between facet selection and underlying retrieval. In this paper, we introduce GenFacet, an industrial-grade, end-to-end generative framework deployed at JD.com. GenFacet reframes faceted search as two coupled generative tasks within a unified Large Language Model: Context-Aware Facet Generation, which dynamically synthesizes trend-responsive navigation options, and Intent-Driven Query Rewriting, which translates user interactions into precise search queries to close the retrieval loop. To bridge the gap between generative capabilities and search utility, we propose a novel multi-task training pipeline combining teacher-student distillation with GRPO. This aligns the model with complex user preferences by directly optimizing for downstream search satisfaction. Validated on China's largest selfoperated e-commerce platform via rigorous offline evaluations and online A/B tests, GenFacet demonstrated substantial improvements. Specifically, online results reveal a relative increase of 42.0% in facet Click-Through Rate (CTR) and 2.0% in User Conversion Rate (UCVR). These outcomes provide strong evidence of the benefits of generative methods for improving query understanding and user engagement in large-scale information retrieval systems.",
+ "summary": "- 核心创新点：将分面搜索视为两个耦合的生成任务，在同一大型语言模型中端到端实现，并通过多任务训练直接优化下游搜索满意度，从而在大规模电商场景中提升导航性与检索效果。\n- 主要方法：在一个统一的大语言模型中实现 Context-Aware Facet Generation（上下文感知的分面生成）与 Intent-Driven Query Rewriting（意图驱动的查询改写）两大生成任务；提出结合教师-学生蒸馏与 GRPO 的多任务训练管线，以对齐复杂用户偏好并直接优化搜索满意度。\n- 结论/性能：在京东自营电商平台上通过离线评估与在线A/B测试验证，线上结果显示分面点击率提升42.0%，用户转化率提升2.0%，证明生成式方法能显著提升查询理解和用户参与度。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-23 13:06:28"
+}

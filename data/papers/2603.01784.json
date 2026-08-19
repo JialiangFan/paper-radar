@@ -1,0 +1,13 @@
+{
+ "id": "2603.01784",
+ "title": "Co-Evolutionary Multi-Modal Alignment via Structured Adversarial Evolution",
+ "authors": "Guoxin Shi, Haoyu Wang, Zaihui Yang, Yuxing Wang, Yongzhe Chang",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01784v1",
+ "abstract": "Adversarial behavior plays a central role in aligning large language models with human values. However, existing alignment methods largely rely on static adversarial settings, which fundamentally limit robustness, particularly in multimodal settings with a larger attack surface. In this work, we move beyond static adversarial supervision and introduce co-evolutionary alignment with evolving attacks, instantiated by CEMMA (Co-Evolutionary Multi-Modal Alignment), an automated and adaptive framework for multimodal safety alignment. We introduce an Evolutionary Attacker that decomposes adversarial prompts into method templates and harmful intents. By employing genetic operators, including mutation, crossover, and differential evolution, it enables simple seed attacks to inherit the structural efficacy of sophisticated jailbreaks. The Adaptive Defender is iteratively updated on the synthesized hard negatives, forming a closed-loop process that adapts alignment to evolving attacks. Experiments show that the Evolutionary Attacker substantially increases red-teaming jailbreak attack success rate (ASR), while the Adaptive Defender improves robustness and generalization across benchmarks with higher data efficiency, without inducing excessive benign refusal, and remains compatible with inference-time defenses such as AdaShield.",
+ "summary": "核心创新点：提出一个自适应的协同进化对齐框架 CEMMA，通过演化攻击者与自适应防御者的闭环，动态提升多模态场景下的大模型安全对齐鲁棒性。\n\n主要方法：\n- Evolutionary Attacker（演化攻击者）：将对抗性提示分解为方法模板与有害意图，使用遗传算子（变异、交叉、差分进化）将简单种子攻击演化成具有结构性效能的越狱攻击。\n- Adaptive Defender（自适应防御者）：基于合成出的困难负样本进行迭代更新，形成对 evolving attacks 的自适应对齐。\n- 闭环协同进化：攻击者与防御者持续互相进化，形成自动化、适应性强的多模态安全对齐框架。\n- 与 AdaShield 等推理时防御方法兼容，提升鲁棒性与泛化性，同时提高数据使用效率。\n\n结论/性能：\n- 演化攻击者显著提高了红队越狱攻击的成功率（ASR）。\n- 自适应防御者在基准测试上提升了鲁棒性与泛化能力，具备更高的数据效率。\n- 在不引起过多无害拒绝的前提下，仍保持对推理时防御（如 AdaShield）的兼容性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-03 14:01:48"
+}

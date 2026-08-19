@@ -1,0 +1,13 @@
+{
+ "id": "2512.13262",
+ "title": "Post-Training and Test-Time Scaling of Generative Agent Behavior Models for Interactive Autonomous Driving",
+ "authors": "Hyunki Seong, Jeong-Kyun Lee, Heesoo Myeong, Yongho Shin, Hyun-Mook Cho, Duck Hoon Kim, Pranav Desai, Monu Surana",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13262v1",
+ "abstract": "Learning interactive motion behaviors among multiple agents is a core challenge in autonomous driving. While imitation learning models generate realistic trajectories, they often inherit biases from datasets dominated by safe demonstrations, limiting robustness in safety-critical cases. Moreover, most studies rely on open-loop evaluation, overlooking compounding errors in closed-loop execution. We address these limitations with two complementary strategies. First, we propose Group Relative Behavior Optimization (GRBO), a reinforcement learning post-training method that fine-tunes pretrained behavior models via group relative advantage maximization with human regularization. Using only 10% of the training dataset, GRBO improves safety performance by over 40% while preserving behavioral realism. Second, we introduce Warm-K, a warm-started Top-K sampling strategy that balances consistency and diversity in motion selection. Our Warm-K method-based test-time scaling enhances behavioral consistency and reactivity at test time without retraining, mitigating covariate shift and reducing performance discrepancies. Demo videos are available in the supplementary material.",
+ "summary": "- 核心创新点（1句话）\n提出一套结合后训练强化学习微调的 GRBO 框架和测试时 Warm-K Top-K 采样策略的多智能体交互驾驶行为方案，利用组级相对优势最大化与人类正则化实现对预训练模型的鲁棒性与现实性提升，并在测试阶段无须再次训练即可缓解协变量偏移。\n\n- 主要方法\n  - GRBO（Group Relative Behavior Optimization）：一种后训练的强化学习微调方法，通过组级相对优势最大化并结合人类正则化，对预训练的行为模型进行微调，提升安全性与行为 realism。\n  - Warm-K：一种温启动的 Top-K 采样策略，用于测试时对运动执行进行缩放，在不重新训练的情况下提升行为的一致性和反应性，缓解协变量偏移并减少性能差异。\n\n- 结论/性能\n  - 使用仅 10% 的训练数据，GRBO 将安全性提升超过 40%，同时保持行为的现实性。\n  - Warm-K 在测试阶段提高行为的一致性与反应性，降低因协变量偏移带来的性能差异，且无需再培训。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:01:56"
+}

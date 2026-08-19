@@ -1,0 +1,13 @@
+{
+ "id": "2605.30345",
+ "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+ "authors": "Qinpei Luo, Ruichun Ma, Xinyu Zhang, Lili Qiu",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30345v1",
+ "abstract": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+ "summary": "# SchGen 论文总结\n\n**核心创新点**：提出首个能根据自然语言生成可编辑 PCB 原理图的大语言模型，关键在于设计了一种语义化的代码表示方法，将几何驱动的生成问题转化为语义驱动的匹配问题。\n\n**主要方法**：\n- 设计了**语义化代码表示（semantically grounded code representation）**，用相对位置放置和基于引脚名的连线编码原理图编辑原语，替代冗长的工具专属语法与几何描述。\n- 通过**人-智能体协同流水线**，将开源硬件设计转换为该表示，构建了大规模\"PCB 原理图—用户提示\"配对数据集。\n- 基于此训练 LLM（SchGen），实现自然语言到可编辑原理图的生成。\n\n**结论/性能**：在**连线连通性准确率**和**功能正确性**上，SchGen 显著优于其他表示方式以及更大规模的通用 LLM，验证了表示设计对硬件生成任务的关键作用。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:02:04"
+}

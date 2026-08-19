@@ -1,0 +1,13 @@
+{
+ "id": "2604.01195",
+ "title": "ORBIT: Scalable and Verifiable Data Generation for Search Agents on a Tight Budget",
+ "authors": "Nandan Thakur, Zijian Chen, Xueguang Ma, Jimmy Lin",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01195v1",
+ "abstract": "Search agents, which integrate language models (LMs) with web search, are becoming crucial for answering complex user queries. Constructing training datasets for deep research tasks, involving multi-step retrieval and reasoning, remains challenging due to expensive human annotation, or cumbersome prerequisites. In this work, we introduce ORBIT, a training dataset with 20K reasoning-intensive queries with short verifiable answers, generated using a frugal framework without relying on paid API services. The modular framework relies on four stages: seed creation, question--answer pair generation, and two stages of verification: self and external. ORBIT spans 15 domains and each training pair requires 4--5 reasoning steps, with external search verification required from the complete web. We train Qwen3-4B as the base model on ORBIT using GRPO and evaluate it on Wikipedia question answering tasks. Extensive experiment results demonstrate that ORBIT-4B achieves strong performance among sub-4B LLMs as search agents, proving the utility of synthetic datasets. Our framework, code and datasets are open-sourced and available publicly.",
+ "summary": "- **核心创新点**：提出一个可扩展且可验证的训练数据生成框架 ORBIT，在不依赖付费 API 的前提下，生成约2万个含推理步骤且可验证的跨领域查询，用多阶段自检与外部网页验证来提升数据质量，供小型到中型规模的语言模型用作搜索代理的训练数据。\n\n- **主要方法**：\n  - 四阶段模块化框架：种子创建、问答对生成、以及两阶段验证（自我验证与外部验证）。\n  - 数据特征：覆盖15个领域，每对样本包含4–5步推理，外部验证需要基于完整网络搜索。\n  - 模型与训练：使用 ORBIT 数据集对 Qwen3-4B 进行训练，采用 GRPO；在维基百科问答任务上进行评估。\n\n- **结论/性能**：ORBIT-4B 在子4B规模的LLM作为搜索代理上表现出色，验证了合成数据的有效性与实用性；代码与数据集开源发布。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-02 13:01:12"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.18584",
+ "title": "MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval",
+ "authors": "Shaden Alshammari, Kevin Wen, Abrar Zainal, Mark Hamilton, Navid Safaei, Sultan Albarakati, William T. Freeman, Antonio Torralba",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18584v1",
+ "abstract": "Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-scale, multimodal, and multilingual dataset of Olympiad-level math problems together with a benchmark for evaluating mathematical reasoning in generative models and mathematical retrieval in embedding-based systems. MathNet spans 47 countries, 17 languages, and two decades of competitions, comprising 30,676 expert-authored problems with solutions across diverse domains. In addition to the core dataset, we construct a retrieval benchmark consisting of mathematically equivalent and structurally similar problem pairs curated by human experts.\n  MathNet supports three tasks: (i) Problem Solving, (ii) Math-Aware Retrieval, and (iii) Retrieval-Augmented Problem Solving. Experimental results show that even state-of-the-art reasoning models (78.4% for Gemini-3.1-Pro and 69.3% for GPT-5) remain challenged, while embedding models struggle to retrieve equivalent problems. We further show that retrieval-augmented generation performance is highly sensitive to retrieval quality; for example, DeepSeek-V3.2-Speciale achieves gains of up to 12%, obtaining the highest scores on the benchmark. MathNet provides the largest high-quality Olympiad dataset together with the first benchmark for evaluating mathematical problem retrieval, and we publicly release both the dataset and benchmark at https://mathnet.mit.edu.",
+ "summary": "- 核心创新点（一句话概括）：提出全球化、多语言、跨类目的大规模奥赛数学题数据集 MathNet，并配套一个包含三类任务的基准（问题求解、数学检索、检索增强求解），首次覆盖等价/结构相似题对的检索评估，推动对数学推理与检索的系统评测。\n\n- 主要方法：构建并公开了 30,676 道专家撰写的题目，覆盖 47 个国家、17 种语言、两 decades 的数据集；设计三项评测任务，同时构建人工筛选的等价题对和结构相似题对用于检索基准；对前沿模型（如 Gemini-3.1-Pro、GPT-5）进行评测，并分析检索模型对检索增强生成的影响，比较如 DeepSeek-V3.2-Speciale 等方法在该基准上的效果。\n\n- 结论/性能：即使是最先进的推理模型在该基准上仍然具有挑战性（Gemini-3.1-Pro 78.4%、GPT-5 69.3%），嵌入检索在找到等价题方面也存在困难；检索-增强生成的性能对检索质量高度敏感；如 DeepSeek-V3.2-Speciale 在检索增强生成中获得最高提升，达到约 12% 的增益并在基准上取得最高分；同时公开发布数据集与基准，成为规模最大、质量最高的奥赛题数据集与首个数学题检索基准。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-21 13:03:55"
+}

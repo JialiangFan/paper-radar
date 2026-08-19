@@ -1,0 +1,13 @@
+{
+ "id": "2512.11760",
+ "title": "SpectralKrum: A Spectral-Geometric Defense Against Byzantine Attacks in Federated Learning",
+ "authors": "Aditya Tripathi, Karan Sharma, Rahul Mishra, Tapas Kumar Maiti",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11760v1",
+ "abstract": "Federated Learning (FL) distributes model training across clients who retain their data locally, but this architecture exposes a fundamental vulnerability: Byzantine clients can inject arbitrarily corrupted updates that degrade or subvert the global model. While robust aggregation methods (including Krum, Bulyan, and coordinate-wise defenses) offer theoretical guarantees under idealized assumptions, their effectiveness erodes substantially when client data distributions are heterogeneous (non-IID) and adversaries can observe or approximate the defense mechanism.\n  This paper introduces SpectralKrum, a defense that fuses spectral subspace estimation with geometric neighbor-based selection. The core insight is that benign optimization trajectories, despite per-client heterogeneity, concentrate near a low-dimensional manifold that can be estimated from historical aggregates. SpectralKrum projects incoming updates into this learned subspace, applies Krum selection in compressed coordinates, and filters candidates whose orthogonal residual energy exceeds a data-driven threshold. The method requires no auxiliary data, operates entirely on model updates, and preserves FL privacy properties.\n  We evaluate SpectralKrum against eight robust baselines across seven attack scenarios on CIFAR-10 with Dirichlet-distributed non-IID partitions (alpha = 0.1). Experiments spanning over 56,000 training rounds show that SpectralKrum is competitive against directional and subspace-aware attacks (adaptive-steer, buffer-drift), but offers limited advantage under label-flip and min-max attacks where malicious updates remain spectrally indistinguishable from benign ones.",
+ "summary": "1) 核心创新点：通过从历史聚合中学习的低维谱子空间，对传入更新进行投影并在投影坐标中使用Krum选择，同时对超出阈值的残差能量进行过滤，从而在不使用辅助数据的前提下对抗 Byzantine 攻击并保护隐私。\n\n2) 主要方法：将谱子空间估计（谱域/谱投影）与几何邻域选择结合，在压缩坐标上应用Krum筛选，并对正交残差能量进行数据驱动阈值过滤，以实现对抗鲁棒聚合；方法仅基于模型更新，不需要外部数据，兼顾隐私。\n\n3) 结论/性能：在 CIFAR-10 的 Dirichlet 非IID（alpha=0.1）设置下，与8个鲁棒基线在7种攻击场景下的评估（共56,000轮训练）显示，SpectralKrum 在对抗方向性攻击和子空间感知攻击（如 adaptive-steer、buffer-drift）方面具有竞争力；但在标签翻转和极值型 min-max 攻击下提升有限，因为这些攻击的更新在谱域上与良性更新难以区分。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-15 14:01:37"
+}

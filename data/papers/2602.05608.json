@@ -1,0 +1,13 @@
+{
+ "id": "2602.05608",
+ "title": "HiCrowd: Hierarchical Crowd Flow Alignment for Dense Human Environments",
+ "authors": "Yufei Zhu, Shih-Min Yang, Martin Magnusson, Allan Wang",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05608v1",
+ "abstract": "Navigating through dense human crowds remains a significant challenge for mobile robots. A key issue is the freezing robot problem, where the robot struggles to find safe motions and becomes stuck within the crowd. To address this, we propose HiCrowd, a hierarchical framework that integrates reinforcement learning (RL) with model predictive control (MPC). HiCrowd leverages surrounding pedestrian motion as guidance, enabling the robot to align with compatible crowd flows. A high-level RL policy generates a follow point to align the robot with a suitable pedestrian group, while a low-level MPC safely tracks this guidance with short horizon planning. The method combines long-term crowd aware decision making with safe short-term execution. We evaluate HiCrowd against reactive and learning-based baselines in offline setting (replaying recorded human trajectories) and online setting (human trajectories are updated to react to the robot in simulation). Experiments on a real-world dataset and a synthetic crowd dataset show that our method outperforms in navigation efficiency and safety, while reducing freezing behaviors. Our results suggest that leveraging human motion as guidance, rather than treating humans solely as dynamic obstacles, provides a powerful principle for safe and efficient robot navigation in crowds.",
+ "summary": "1. 核心创新点（1 句话）\n将层次化强化学习与模型预测控制结合，将周围人群的运动作为引导而非仅将人视为动态障碍，从而在密集人群环境中实现安全高效导航并减少“冻结”现象。\n\n2. 主要方法\n- 架构：建立一个两层次的鸿沟式框架，结合强化学习与模型预测控制。\n- 高层（RL）：学习生成一个跟随点，引导机器人对齐到合适的步行群体，进行长时空的 crowd-aware 决策。\n- 低层（MPC）：在短视野内跟踪高层给出的引导，确保安全执行和鲁棒性。\n- 思路要点：把人群运动作为导航引导而非纯粹的动态障碍，综合长时的群体感知与短时的安全控制。\n\n3. 结论/性能\n- 在离线（回放真实轨迹）与在线（在线更新人类轨迹以对机器人做出反应的仿真）两种设置中，与反应型和其他学习基线相比，HiCrowd 在导航效率与安全性方面具有优势。\n- 实验在真实数据集和合成数据集上均显示效能提升，显著降低冻结行为概率。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:00:42"
+}

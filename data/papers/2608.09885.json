@@ -1,0 +1,13 @@
+{
+ "id": "2608.09885",
+ "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+ "authors": "Wanying Qu, Qinghua Mao, Yu Li, Jiyao Liu, Xin Zhang, Dadi Guo, Yanxu Zhu, Qingyu Liu, Leitao Yuan, Xi Lin, Shanfeng Zhu, Yanwei Fu, Jing Shao, Xia Hu, Dongrui Liu",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.09885v1",
+ "abstract": "The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control. Existing safety mechanisms often treat the harness as a fixed deployment artifact, limiting their ability to evolve with emerging risks. Moreover, coupled functions across harness components obscure safety responsibility attribution, making localized evolution difficult. We propose Safety Harness Evolution (SHE), a framework that learns evolving safe boundaries from rollout trajectories. SHE decomposes the harness into four artifacts with explicit safety responsibilities, including the System Prompt, Rule Bank, Safety Memory, and Tool Policy, defining clear functional boundaries for localized evolution. Based on this decomposition, SHE introduces an attribution-guided evolution loop that converts trajectory failures into structured diagnoses, learns artifact-specific boundary refinements, and selects evolved harnesses through safety-utility validation. Experiments on Agent-SafetyBench demonstrate that SHE effectively enhances safety through harness evolution, achieving a 3.1x ASR reduction compared with static SafeHarness, while also improving benign utility. The evolved harness further generalizes to unseen risks on the held-out AgentHarm benchmark and transfers across agent models without additional evolution.",
+ "summary": "## SHE: Trajectory-driven Safety Harness Evolution for LLM Agents\n\n**1. 核心创新点**\n把 LLM 智能体的\"运行外壳（harness）\"从固定的部署产物变成可自我进化的对象——通过从执行轨迹中学习不断更新的安全边界，实现安全机制的持续演化。\n\n**2. 主要方法**\n- **外壳解耦**：将 harness 拆成四个职责明确的组件——系统提示词（System Prompt）、规则库（Rule Bank）、安全记忆（Safety Memory）、工具策略（Tool Policy），使安全责任可归因、可局部演化。\n- **归因引导的进化循环**：把 rollout 轨迹中的失败案例转化为结构化诊断 → 定位到具体组件 → 学习该组件的边界修正 → 通过\"安全性—有用性\"双重验证筛选出演化后的 harness。\n\n**3. 结论/性能**\n- 在 **Agent-SafetyBench** 上，相比静态 SafeHarness，攻击成功率（ASR）降低 **3.1 倍**，同时正常任务的可用性（benign utility）不降反升。\n- 泛化性良好：演化后的 harness 在未见过的 **AgentHarm** 基准上仍然有效，且无需重新演化即可迁移到不同的智能体模型上。\n\n**一句话点评**：这篇工作的价值在于指出安全不只在模型权重里，也在工程外壳里，并给出了一个可归因、可局部迭代的框架——缓解了以往\"安全责任耦合、无法定位改哪里\"的问题。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-11 13:03:05"
+}

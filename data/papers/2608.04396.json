@@ -1,0 +1,13 @@
+{
+ "id": "2608.04396",
+ "title": "CofactVLA: Deconfounding Vision-Language-Action Models via Counterfactual Intervention",
+ "authors": "Yan Zhang, Yinan Wu, Haoran Duan, Jungong Han",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04396v1",
+ "abstract": "Vision-Language-Action (VLA) models have driven significant progress in robotic manipulation, yet they fundamentally struggle with the vision-override phenomenon. Driven by the severe modality imbalance between dense visual streams and sparse linguistic instructions, VLAs frequently fall prey to causal confusion. Instead of treating language as the primary causal driver, the policy entirely bypasses the original instruction by overfitting to spurious visual confounders, such as prominent objects or familiar layouts. To systematically alleviate this bias, we formalize the process of action generation as a Dual-path Deconfounding Graph (DDG) and propose CofactVLA, a novel causal intervention framework. By dynamically constructing a language-masked counterfactual branch within a single forward pass, CofactVLA isolates and neutralizes visual confounders through two synergistic mechanisms. First, Action-Level Orthogonal Projection Guidance (OPG) geometrically projects the factual velocity field away from the counterfactual visual bias during continuous flow matching, extracting the pure semantic intent. Second, Feature-Level Counterfactual Covariance Reduction (CCR) mathematically deconfounds latent representations by penalizing the positive eigenspace of the covariance difference, explicitly suppressing dominant visual shortcuts while preserving the causal language intent. Extensive experiments demonstrate that CofactVLA establishes a new state-of-the-art across diverse simulation benchmarks. Beyond simulation, real-world robot experiments demonstrate the causal efficacy of our method in bridging the generalization gap, yielding a 52.3\\% absolute success rate gain under out-of-distribution scenarios.",
+ "summary": "## CofactVLA 论文摘要总结\n\n**1. 核心创新点**\n提出一个因果干预框架，通过\"语言掩码反事实分支\"消除视觉-语言-动作（VLA）模型中的视觉混杂因子，纠正模型忽略语言指令、过度依赖视觉捷径的\"视觉压制\"（vision-override）问题。\n\n**2. 主要方法**\n- 将动作生成过程形式化为**双路径去混杂图（DDG）**，在单次前向传播中动态构建一条语言被掩码的反事实分支。\n- **动作层面 —— 正交投影引导（OPG）**：在连续流匹配（flow matching）过程中，将事实路径的速度场几何投影到与反事实视觉偏置正交的方向上，提取纯粹的语义意图。\n- **特征层面 —— 反事实协方差缩减（CCR）**：惩罚事实/反事实表征协方差差异的正特征空间，压制主导性视觉捷径，同时保留语言的因果意图。\n\n**3. 结论/性能**\n在多个仿真基准上达到新的 SOTA；真实机器人实验中，在分布外（OOD）场景下成功率取得 **52.3% 的绝对提升**，验证了该方法在弥合泛化差距上的因果有效性。\n\n---\n\n补充一点判断：52.3% 的绝对增益属于异常大的数字，通常意味着 baseline 在该 OOD 设定下接近失效（成功率极低）。若要引用该结果，建议核对正文中 baseline 的绝对数值和 OOD 场景的构造方式。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-09 13:06:04"
+}

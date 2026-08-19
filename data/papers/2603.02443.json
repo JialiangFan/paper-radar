@@ -1,0 +1,13 @@
+{
+ "id": "2603.02443",
+ "title": "Safe Whole-Body Loco-Manipulation via Combined Model and Learning-based Control",
+ "authors": "Alexander Schperberg, Yeping Wang, Stefano Di Cairano",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02443v1",
+ "abstract": "Simultaneous locomotion and manipulation enables robots to interact with their environment beyond the constraints of a fixed base. However, coordinating legged locomotion with arm manipulation, while considering safety and compliance during contact interaction remains challenging. To this end, we propose a whole-body controller that combines a model-based admittance control for the manipulator arm with a Reinforcement Learning (RL) policy for legged locomotion. The admittance controller maps external wrenches--such as those applied by a human during physical interaction--into desired end-effector velocities, allowing for compliant behavior. The velocities are tracked jointly by the arm and leg controllers, enabling a unified 6-DoF force response. The model-based design permits accurate force control and safety guarantees via a Reference Governor (RG), while robustness is further improved by a Kalman filter enhanced with neural networks for reliable base velocity estimation. We validate our approach in both simulation and hardware using the Unitree Go2 quadruped robot with a 6-DoF arm and wrist-mounted 6-DoF Force/Torque sensor. Results demonstrate accurate tracking of interaction-driven velocities, compliant behavior, and safe, reliable performance in dynamic settings.",
+ "summary": "- 核心创新点：提出一个整机全身控制框架，将模型驱动的臂导纳控制与基于强化学习的腿部策略耦合，并结合参考 Governor 与神经网络增强的卡尔曼滤波，在与外部力交互时实现安全、柔顺的六自由度力响应。\n\n- 主要方法：使用基于模型的导纳控制处理机械臂，使其将外部外力映射为末端速度；用强化学习策略控制腿部运动实现步态协调；两者的末端速度在整机层面联合跟踪，提供统一的六自由度力响应；通过参考 Governor 实现安全约束，利用带神经网络的卡尔曼滤波提高基座速度估计的鲁棒性；在 Unitree Go2 四足机器人（6-DoF 臂、腕部 6-DoF 力/力矩传感器）上进行仿真与硬件验证。\n\n- 结论/性能：能够准确跟踪由交互驱动的速度、实现柔顺的交互行为，并在动态场景下提供安全、可靠的性能，验证结果在仿真与实机测试中一致。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:00:55"
+}

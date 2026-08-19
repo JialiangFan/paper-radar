@@ -1,0 +1,13 @@
+{
+ "id": "2606.20400",
+ "title": "The Significance of Style Diversity in Annotation-Free Synthetic Data Generation",
+ "authors": "Zahra Abbasiantaeb, Zeno Belligoli, Omar Essam, Mohammad Aliannejadi",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20400v1",
+ "abstract": "Generating high-utility synthetic data for intent classification typically requires human-annotated seed data, which is often unavailable in fast-paced industrial settings. In this paper, we propose a framework for synthetic dialogue generation that works entirely without human-annotated data, relying solely on intent definitions. Our proposed dialogue generation framework utilizes two different types of topic and style attributes to improve data diversity. Also, we propose two novel post-hoc stylization models called Univ and Exam to transform synthetic LLM-generated utterances into more varied, human-like linguistic styles. To enhance data quality, we utilize an LLM-as-a-judge filtering process. Experimental results on both industrial and public datasets demonstrate that the proposed approach achieves up to 93.3% of the performance obtained using human-annotated training data. Crucially, the findings reveal that style diversity is more critical than topic diversity for synthetic data utility, as it prevents models from learning spurious stylistic correlations. Furthermore, the study shows that incorporating style attributes during the generation process is more effective than post-hoc style adaptation.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-21 13:02:28"
+}

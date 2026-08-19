@@ -1,0 +1,13 @@
+{
+ "id": "2608.11683",
+ "title": "FrontierFinance: A Challenging Benchmark for Measuring Frontier Intelligence of Finance Agents",
+ "authors": "Yuhao Zhang, O. Ozan Koyluoglu, Thejas Venkatesh, Richard Diehl Martinez, Vishank Bhatia, Arash Alidoust, Ashwin Paranjape",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11683v1",
+ "abstract": "AI agents are increasingly deployed for professional investment research, yet no benchmark captures the complexity of the full investor workflow. Existing benchmarks mainly target financial data extraction, a narrow slice that current models have largely saturated, while reference-based metrics and generic LLM-as-a-judge scoring fall short on the open-ended, long-form answers that real analyst queries demand. We introduce FrontierFinance, a fully open benchmark of 220 expert-crafted queries and 11,543 source-attributed rubrics spanning six crucial use cases across the full investor workflow. FrontierFinance is both broader and harder than existing public finance benchmarks. Evaluating frontier models and agent systems under a common harness restricted to publicly available data, we find that the tool harness, not the model alone, strongly shapes quality and efficiency; that Samaya's in-house system leads at 56.0%, ahead of the strongest frontier model (Claude Fable 5, 49.2%) at roughly 2.2x lower cost; and that the best open-weight model (Kimi K3, 46.4%) nearly matches the best proprietary model at 4.5x lower cost. Screening & Discovery and Sector, Industry & Macro remain the hardest use cases across all systems, where even the best systems reach only 33% and 39%. We make the dataset and grading code publicly available.",
+ "summary": "## FrontierFinance 论文摘要总结\n\n**1. 核心创新点**\n提出 FrontierFinance——首个覆盖投资研究**完整工作流**的开放式高难度金融智能体基准，用大规模「带来源标注的评分细则（rubrics）」替代传统参考答案匹配，来评测长文本、开放式的分析师级回答。\n\n**2. 主要方法**\n- 数据：220 条专家撰写的查询 + 11,543 条 source-attributed rubrics，覆盖投资工作流中的 6 类关键使用场景。\n- 评测：在**统一的工具/执行环境（common harness）**下、仅限公开可得数据，对前沿模型与智能体系统做横向对比；以 rubric 打分取代 reference-based 指标和通用的 LLM-as-a-judge。\n- 数据集与打分代码均开源。\n\n**3. 结论 / 性能**\n- **工具环境（harness）而非模型本身**对结果质量与效率影响显著。\n- 排名：Samaya 自研系统 56.0% > 最强前沿模型 Claude Fable 5 的 49.2%，且成本约低 2.2 倍；最佳开源权重模型 Kimi K3 达 46.4%，接近最强闭源模型但成本低 4.5 倍。\n- 最难的两类场景是 **Screening & Discovery（33%）** 与 **Sector, Industry & Macro（39%）**，即便最佳系统也仅达此水平，说明基准远未饱和。\n\n> 一点阅读提示：该基准由 Samaya 提出，而榜首正是其自研系统，横向对比结论建议结合具体 harness 配置细节谨慎看待。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-15 13:01:58"
+}

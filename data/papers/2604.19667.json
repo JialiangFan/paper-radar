@@ -1,0 +1,13 @@
+{
+ "id": "2604.19667",
+ "title": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+ "authors": "Yi Zhong, Buqiang Xu, Yijun Wang, Zifei Shan, Shuofei Qiao, Guozhou Zheng, Ningyu Zhang",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19667v1",
+ "abstract": "At present, executable visual workflows have emerged as a mainstream paradigm in real-world industrial deployments, offering strong reliability and controllability. However, in current practice, such workflows are almost entirely constructed through manual engineering: developers must carefully design workflows, write prompts for each step, and repeatedly revise the logic as requirements evolve-making development costly, time-consuming, and error-prone. To study whether large language models can automate this multi-round interaction process, we introduce Chat2Workflow, a benchmark for generating executable visual workflows directly from natural language, and propose a robust agentic framework to mitigate recurrent execution errors. Chat2Workflow is built from a large collection of real-world business workflows, with each instance designed so that the generated workflow can be transformed and directly deployed to practical workflow platforms such as Dify and Coze. Experimental results show that while state-of-the-art language models can often capture high-level intent, they struggle to generate correct, stable, and executable workflows, especially under complex or changing requirements. Although our agentic framework yields up to 5.34% resolve rate gains, the remaining real-world gap positions Chat2Workflow as a foundation for advancing industrial-grade automation. Code is available at https://github.com/zjunlp/Chat2Workflow.",
+ "summary": "- 核心创新点：提出 Chat2Workflow 基准并配套一个鲁棒的 agentic 框架，能够直接从自然语言生成可执行的可视化工作流并在多轮执行中纠正错误，推动工业级自动化的实现。\n\n- 主要方法：基于大规模语言模型进行高层意图到工作流的生成；设计代理式（agentic）框架，通过多轮交互、执行回放与纠错机制提升稳定性和可执行性；数据集来自真实商业工作流，生成的工作流可直接转化部署到 Dify、Coze 等平台。\n\n- 结论/性能：实验发现尽管现有模型能抓住高层意图，但在复杂或需求变化情境下很难产出正确、稳定、可执行的工作流；引入代理框架后，解决率提升最高约 5.34%；仍存在现实世界差距，Chat2Workflow 为工业级自动化提供基础。代码已开源于 GitHub（https://github.com/zjunlp/Chat2Workflow）。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-22 13:03:33"
+}

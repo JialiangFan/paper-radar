@@ -1,0 +1,13 @@
+{
+ "id": "2605.18684",
+ "title": "Reversa: A Reverse Documentation Engineering Framework for Converting Legacy Software into Operational Specifications for AI Agents",
+ "authors": "Sanderson Oliveira de Macedo, Ronaldo Martins da Costa",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.18684v1",
+ "abstract": "Legacy systems concentrate business rules, architectural decisions, and operational exceptions that often remain implicit in code, data, configuration, and\n  maintenance practices. At the same time, language-model-based coding agents depend on reliable context, correctness criteria, and behavioral contracts to\n  modify real systems with lower risk. This paper presents Reversa, a reverse documentation engineering framework for converting legacy software into\n  traceable operational specifications for AI agents. Reversa organizes this process as a multi-agent pipeline: specialized agents map the project surface,\n  analyze modules, extract implicit rules, synthesize architecture, write unit-level specifications, and review generated claims. The proposal emphasizes\n  three mechanisms: traceability between code and specification, explicit confidence marking, and preservation of gaps for human validation. The framework is\n  distributed as a Node.js CLI, installs skills across multiple agent engines, and uses a SHA-256 manifest to preserve modified files during update or\n  uninstall operations. In addition to the architectural description, we report an exploratory case study on migrating an ATM from COBOL to Go, in which the\n  pipeline produced 517 claims classified by an internal confidence index, 10 registered gaps, 53 Gherkin parity scenarios, and a reconstruction plan with 9\n  of 11 tasks completed at inventory time. Final parity validation and cutover were not completed in this study. We do not claim broad empirical superiority;\n  we position the contribution with respect to the literature on reverse engineering, LLM-based documentation, and software agents, and propose an evaluation\n  protocol with metrics for coverage, traceability, confidence, utility, and cost.",
+ "summary": "# Reversa 论文总结\n\n**核心创新点**：提出一个反向文档工程框架，将遗留软件（如 COBOL 系统）自动转换为带有可追溯性和置信度标记的操作规范，专供 AI 编码代理使用。\n\n**主要方法**：基于多代理流水线（multi-agent pipeline），由多个专业代理分工协作——分别负责项目表面映射、模块分析、隐式规则提取、架构综合、单元级规范编写和声明审核；强调代码与规范的可追溯性、显式置信度标注、以及保留缺口供人工验证；以 Node.js CLI 形式分发，使用 SHA-256 清单保护被修改文件。\n\n**结论/性能**：在 COBOL 到 Go 的 ATM 迁移探索性案例研究中，流水线生成了 517 条带内部置信度分类的声明、10 个已登记的缺口、53 个 Gherkin 对等场景，以及一个完成度 9/11 任务的重建计划；但最终对等验证和切换未完成，作者不主张普遍经验优越性，并提出了涵盖覆盖率、可追溯性、置信度、效用与成本的评估协议。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-23 13:01:56"
+}

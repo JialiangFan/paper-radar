@@ -1,0 +1,13 @@
+{
+ "id": "2605.07079",
+ "title": "Learning Visual Feature-Based World Models via Residual Latent Action",
+ "authors": "Xinyu Zhang, Zhengtong Xu, Yutian Tao, Yeping Wang, Yu She, Abdeslam Boularias",
+ "date": "2026-05-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.07079v1",
+ "abstract": "World models predict future transitions from observations and actions. Existing works predominantly focus on image generation only. Visual feature-based world models, on the other hand, predict future visual features instead of raw video pixels, offering a promising alternative that is more efficient and less prone to hallucination. However, current feature-based approaches rely on direct regression, which leads to blurry or collapsed predictions in complex interactions, while generative modeling in high-dimensional feature spaces still remains challenging. In this work, we discover that a new type of latent action representation, which we refer to as *Residual Latent Action* (RLA), can be easily learned from DINO residuals. We also show that RLA is predictive, generalizable, and encodes temporal progression. Building on RLA, we propose *RLA World Model* (RLA-WM), which predicts RLA values via flow matching. RLA-WM outperforms both state-of-the-art feature-based and video-diffusion world models on simulation and real-world datasets, while being orders of magnitude faster than video diffusion. Furthermore, we develop two robot learning techniques that use RLA-WM to improve policy learning. The first one is a minimalist world action model with RLA that learns from actionless demonstration videos. The second one is the first visual RL framework trained entirely inside a world model learned from offline videos only, using a video-aligned reward and no online interactions or handcrafted rewards. Project page: https://mlzxy.github.io/rla-wm",
+ "summary": "# 论文总结：Learning Visual Feature-Based World Models via Residual Latent Action\n\n## 1. 核心创新点\n提出**残差潜在动作（Residual Latent Action, RLA）**——一种可从 DINO 残差中轻松学习、具有可预测性与可泛化性、并编码时间进程的新型潜在动作表示，用于构建高效的视觉特征级世界模型。\n\n## 2. 主要方法\n- 从 DINO 特征的残差中提取 RLA 表示；\n- 基于 RLA 构建 **RLA World Model (RLA-WM)**，使用 **flow matching（流匹配）** 来预测 RLA 值，避免了直接回归带来的模糊/坍塌问题，也避免了在高维特征空间做生成建模的难题；\n- 进一步衍生出两项机器人学习技术：\n  1. 基于 RLA 的极简\"世界-动作\"模型，可从**无动作标注的演示视频**中学习；\n  2. 首个完全在仅由离线视频训练的世界模型内部进行训练的**视觉强化学习框架**，使用视频对齐奖励，无需在线交互或人工设计的奖励。\n\n## 3. 结论/性能\n在仿真和真实数据集上均**超越了当前最先进的特征级世界模型与视频扩散世界模型**，同时推理速度比视频扩散方法**快几个数量级**，并能有效赋能策略学习与视觉 RL。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-22 13:04:39"
+}

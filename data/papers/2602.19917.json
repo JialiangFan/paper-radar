@@ -1,0 +1,13 @@
+{
+ "id": "2602.19917",
+ "title": "Uncertainty-Aware Rank-One MIMO Q Network Framework for Accelerated Offline Reinforcement Learning",
+ "authors": "Thanh Nguyen, Tung Luu, Tri Ton, Sungwoong Kim, Chang D. Yoo",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19917v1",
+ "abstract": "Offline reinforcement learning (RL) has garnered significant interest due to its safe and easily scalable paradigm. However, training under this paradigm presents its own challenge: the extrapolation error stemming from out-of-distribution (OOD) data. Existing methodologies have endeavored to address this issue through means like penalizing OOD Q-values or imposing similarity constraints on the learned policy and the behavior policy. Nonetheless, these approaches are often beset by limitations such as being overly conservative in utilizing OOD data, imprecise OOD data characterization, and significant computational overhead. To address these challenges, this paper introduces an Uncertainty-Aware Rank-One Multi-Input Multi-Output (MIMO) Q Network framework. The framework aims to enhance Offline Reinforcement Learning by fully leveraging the potential of OOD data while still ensuring efficiency in the learning process. Specifically, the framework quantifies data uncertainty and harnesses it in the training losses, aiming to train a policy that maximizes the lower confidence bound of the corresponding Q-function. Furthermore, a Rank-One MIMO architecture is introduced to model the uncertainty-aware Q-function, \\TP{offering the same ability for uncertainty quantification as an ensemble of networks but with a cost nearly equivalent to that of a single network}. Consequently, this framework strikes a harmonious balance between precision, speed, and memory efficiency, culminating in improved overall performance. Extensive experimentation on the D4RL benchmark demonstrates that the framework attains state-of-the-art performance while remaining computationally efficient. By incorporating the concept of uncertainty quantification, our framework offers a promising avenue to alleviate extrapolation errors and enhance the efficiency of offline RL.",
+ "summary": "1) 核心创新点：提出不确定性感知的 Rank-One MIMO Q 网络框架，在离线强化学习中对OOD数据进行不确定性建模并最大化Q函数的下置信界，同时通过 Rank-One MIMO 架构实现接近单网络的不确定性量化能力，兼顾精度、速度与内存效率。\n\n2) 主要方法：- 将数据不确定性量化融入训练损失，优化策略以最大化对应 Q 函数的下置信界；- 引入 Rank-One MIMO 架构来对不确定性进行建模，达到类似于集成网络的量化效果但成本接近单网络；- 在 D4RL 基准上进行广泛实验，比较并验证其在效率与性能上的优势。\n\n3) 结论/性能：在 D4RL 上达到了State-of-the-Art 或接近 State-of-the-Art 的性能，同时保持较高的计算效率和较低的内存占用，有效缓解外推误差，提升离线强化学习的学习效率。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-24 14:00:55"
+}

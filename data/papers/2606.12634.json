@@ -1,0 +1,13 @@
+{
+ "id": "2606.12634",
+ "title": "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+ "authors": "Tianyu Ding, Jianhong Xin, Juan Pablo De la Cruz Weinstein",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12634v1",
+ "abstract": "Long-horizon tool-use reinforcement learning can learn from outcome verification, but its\n  trajectory-level advantage is broadcast across many reasoning, API, and answer tokens.\n  Self-distillation promises a denser signal by reusing a policy's own rollouts or a privileged\n  teacher. We show, however, that direct token-level self-distillation can silently destroy tool use:\n  it rehearses teacher behavior without knowing which actions the verifier rewards, so useful skills\n  and harmful shortcuts are amplified together. We introduce Sibling-Guided Credit Distillation\n  (SGCD), which uses distillation for credit assignment rather than as a competing actor loss.\n  Dynamic sampling produces mixed successful and failed sibling rollouts; an external LLM summarizes\n  their contrast into a training-only stepwise credit reference; dense teacher/student divergence\n  drives credit reassignment; and bounded detached credit weights reshape GRPO token advantages. The\n  deployed student sees no external LLM, sibling evidence, or oracle. Across AppWorld and\n  $τ^3$-airline, SGCD improves over matched GRPO comparators: AppWorld TGC $42.9 \\to 45.6$ on\n  test_normal and $24.7 \\to 27.0$ on test_challenge, and $τ^3$-airline pass@1 $0.583 \\to 0.602$.",
+ "summary": "# 论文总结\n\n**标题**：《让策略梯度主导：用于长程工具调用智能体的兄弟引导式信用蒸馏》(SGCD)\n\n1. **核心创新点**：将自蒸馏从\"竞争性的模仿损失\"重新定位为\"信用分配机制\"，从而在保留策略梯度主导地位的前提下，为长程工具调用任务提供更密集的训练信号。\n\n2. **主要方法**：\n   - 指出直接的 token 级自蒸馏的弊端——它会盲目复刻教师行为，无法分辨哪些动作真正被验证器奖励，导致有用技能和有害捷径被同时放大。\n   - SGCD 通过**动态采样**生成成功与失败混合的\"兄弟轨迹\"(sibling rollouts)；用一个**外部 LLM** 对比这些轨迹、总结出仅用于训练的**逐步信用参考**；再以教师/学生间的密集散度驱动信用重分配；最后用**有界且 detached 的信用权重**去重塑 GRPO 的 token 级优势(advantage)。\n   - 部署阶段的学生模型完全不依赖外部 LLM、兄弟证据或 oracle。\n\n3. **结论/性能**：在 AppWorld 和 τ³-airline 上均优于匹配的 GRPO 基线——AppWorld TGC 在 test_normal 上 42.9→45.6、test_challenge 上 24.7→27.0；τ³-airline 的 pass@1 由 0.583 提升至 0.602。\n\n---\n提示：项目里有 `paper-review` 技能，可自动生成更详尽的中英文综述并输出到 Obsidian。如需更深入的解读，可以让我用它来处理这篇论文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-13 13:02:09"
+}

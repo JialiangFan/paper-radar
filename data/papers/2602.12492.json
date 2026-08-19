@@ -1,0 +1,13 @@
+{
+ "id": "2602.12492",
+ "title": "Composable Model-Free RL for Navigation with Input-Affine Systems",
+ "authors": "Xinhuan Sang, Abdelrahman Abdelgawad, Roberto Tron",
+ "date": "2026-02-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.12492v1",
+ "abstract": "As autonomous robots move into complex, dynamic real-world environments, they must learn to navigate safely in real time, yet anticipating all possible behaviors is infeasible. We propose a composable, model-free reinforcement learning method that learns a value function and an optimal policy for each individual environment element (e.g., goal or obstacle) and composes them online to achieve goal reaching and collision avoidance. Assuming unknown nonlinear dynamics that evolve in continuous time and are input-affine, we derive a continuous-time Hamilton-Jacobi-Bellman (HJB) equation for the value function and show that the corresponding advantage function is quadratic in the action and optimal policy. Based on this structure, we introduce a model-free actor-critic algorithm that learns policies and value functions for static or moving obstacles using gradient descent. We then compose multiple reach/avoid models via a quadratically constrained quadratic program (QCQP), yielding formal obstacle-avoidance guarantees in terms of value-function level sets, providing a model-free alternative to CLF/CBF-based controllers. Simulations demonstrate improved performance over a PPO baseline applied to a discrete-time approximation.",
+ "summary": "- 核心创新点（一句话概括）\n  提出一种可组合的无模型强化学习框架，针对每个环境要素学习价值函数与最优策略并在线组合，以实现目标到达与避障，并给出基于值函数的形式化避障保证。\n\n- 主要方法\n  - 在未知的连续时间输入同构系统下，推导连续时间的哈密顿-里卡德-贝尔（HJB）方程，证明对应的优势函数对动作是二次型，且最优策略可由此结构获得。\n  - 设计模型无关的 actor-critic 算法，在线学习静态或移动障碍物的策略与价值函数，利用梯度下降实现。\n  - 将多个 reach/avoid 模型通过二次约束的二次规划（QCQP）进行组合，基于价值函数的层级实现对障碍的形式化避障保证，作为对 CLF/CBF 控制器的模型无关替代。\n  \n- 结论/性能\n  仿真结果表明，相比对离散时间近似应用的 PPO 基线，该方法在目标达成与避障任务上具有更优性能，并通过价值函数层级提供了形式化的障碍避让保障。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-16 14:00:20"
+}

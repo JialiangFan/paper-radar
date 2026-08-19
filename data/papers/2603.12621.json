@@ -1,0 +1,13 @@
+{
+ "id": "2603.12621",
+ "title": "AEGIS: No Tool Call Left Unchecked -- A Pre-Execution Firewall and Audit Layer for AI Agents",
+ "authors": "Aojie Yuan, Zhiyuan Su, Yue Zhao",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12621v1",
+ "abstract": "AI agents increasingly act through external tools: they query databases, execute shell commands, read and write files, and send network requests. Yet in most current agent stacks, model-generated tool calls are handed to the execution layer with no framework-agnostic control point in between. Post-execution observability can record these actions, but it cannot stop them before side effects occur. We present AEGIS, a pre-execution firewall and audit layer for AI agents. AEGIS interposes on the tool-execution path and applies a three-stage pipeline: (i) deep string extraction from tool arguments, (ii) content-first risk scanning, and (iii) composable policy validation. High-risk calls can be held for human approval, and all decisions are recorded in a tamper-evident audit trail based on Ed25519 signatures and SHA-256 hash chaining. In the current implementation, AEGIS supports 14 agent frameworks across Python, JavaScript, and Go with lightweight integration. On a curated suite of 48 attackinstances, AEGIS blocks all attacks in the suite before execution; on 500 benign tool calls, it yields a 1.2% false positive rate; and across 1,000 consecutive interceptions, it adds 8.3 ms median latency. The live demo will show end-to-end interception of benign, malicious, and human-escalated tool calls, allowing attendees to observe real-time blocking, approval workflows, and audit-trail generation. These results suggest that pre-execution mediation for AI agents can be practical, low-overhead, and directly deployable.",
+ "summary": "核心创新点：\n- 提出在 AI 代理工具调用执行前就拦截的防火墙与审计层 AEGIS，通过多阶段处理和可核验审计轨迹实现阻断与追踪。\n\n主要方法：\n- 采用三阶段管线：(i) 从工具参数中进行深度字符串提取，(ii) 以内容为先的风险扫描，(iii) 可组合的策略校验；高风险调用可暂停等待人工审批；所有决策通过 Ed25519 签名与 SHA-256 哈希链形成防篡改的审计轨迹；并实现对 14 种框架的轻量化集成，覆盖 Python、JavaScript 和 Go。\n\n结论/性能：\n- 在 48 个攻击实例上实现执行前全部拦截；在 500 次无害调用中误报率为 1.2%；在 1000 次拦截中中位延迟为 8.3 毫秒；演示表明前执行介入具有实用性、低开销、可直接部署。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-16 13:04:10"
+}

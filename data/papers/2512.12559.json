@@ -1,0 +1,13 @@
+{
+ "id": "2512.12559",
+ "title": "Unveiling Malicious Logic: Towards a Statement-Level Taxonomy and Dataset for Securing Python Packages",
+ "authors": "Ahmed Ryan, Junaid Mansur Ifti, Md Erfan, Akond Ashfaque Ur Rahman, Md Rayhanur Rahman",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12559v1",
+ "abstract": "The widespread adoption of open-source ecosystems enables developers to integrate third-party packages, but also exposes them to malicious packages crafted to execute harmful behavior via public repositories such as PyPI. Existing datasets (e.g., pypi-malregistry, DataDog, OpenSSF, MalwareBench) label packages as malicious or benign at the package level, but do not specify which statements implement malicious behavior. This coarse granularity limits research and practice: models cannot be trained to localize malicious code, detectors cannot justify alerts with code-level evidence, and analysts cannot systematically study recurring malicious indicators or attack chains. To address this gap, we construct a statement-level dataset of 370 malicious Python packages (833 files, 90,527 lines) with 2,962 labeled occurrences of malicious indicators. From these annotations, we derive a fine-grained taxonomy of 47 malicious indicators across 7 types that capture how adversarial behavior is implemented in code, and we apply sequential pattern mining to uncover recurring indicator sequences that characterize common attack workflows. Our contribution enables explainable, behavior-centric detection and supports both semantic-aware model training and practical heuristics for strengthening software supply-chain defenses.",
+ "summary": "- 核心创新点：首次提出面向 Python 包的语句级恶意指示数据集，构建47条恶意指示、7类细粒度分类体系，并通过序列模式挖掘揭示常见攻击工作流，实现可解释、基于行为的检测。\n\n- 主要方法：\n  - 数据集构建与标注：收集并标注了370个恶意 Python 包（833个文件、90,527 行），标注了2,962处恶意指示。\n  - 细粒度分类体系：从实现方式角度提出7种类型、共47条恶意指示的 taxonomy。\n  - 序列模式挖掘：对指示在代码中的出现序列进行挖掘，揭示常见的攻击工作流模式。\n  - 应用目标：支撑语义感知的模型训练和实用化的防护启发式方法，提升可解释性与证据链。\n\n- 结论/性能：\n  - 提供可解释、行为导向的恶意代码检测基础，能够在代码级别定位恶意行为并给出证据；为语义感知模型训练和软件供应链防御的实用启发式方法提供数据和方法支持。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 02:02:18"
+}

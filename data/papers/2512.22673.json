@@ -1,0 +1,13 @@
+{
+ "id": "2512.22673",
+ "title": "TravelBench: A Real-World Benchmark for Multi-Turn and Tool-Augmented Travel Planning",
+ "authors": "Xiang Cheng, Yulan Hu, Xiangwen Zhang, Lu Xu, Zheng Pan, Xin Li, Yong Liu",
+ "date": "2025-12-27",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22673v1",
+ "abstract": "Large language model (LLM) agents have demonstrated strong capabilities in planning and tool use. Travel planning provides a natural and high-impact testbed for these capabilities, as it requires multi-step reasoning, iterative preference elicitation through interaction, and calls to external tools under evolving constraints. Prior work has studied LLMs on travel-planning tasks, but existing settings are limited in domain coverage and multi-turn interaction. As a result, they cannot support dynamic user-agent interaction and therefore fail to comprehensively assess agent capabilities. In this paper, we introduce TravelBench, a real-world travel-planning benchmark featuring multi-turn interaction and tool use. We collect user requests from real-world scenarios and construct three subsets-multi-turn, single-turn, and unsolvable-to evaluate different aspects of agent performance. For stable and reproducible evaluation, we build a controlled sandbox environment with 10 travel-domain tools, providing deterministic tool outputs for reliable reasoning. We evaluate multiple LLMs on TravelBench and conduct an analysis of their behaviors and performance. TravelBench offers a practical and reproducible benchmark for advancing LLM agents in travel planning.",
+ "summary": "- 核心创新点：TravelBench 提供一个真实场景、支持多轮交互与工具调用的旅程规划基准，并搭建可控沙箱环境与十种旅行领域工具，实现可重复、可靠的评测。\n\n- 主要方法：通过收集真实场景的用户请求，构建三类子集（多轮、单轮、不可解）来评估不同方面；建立带有十个旅行域工具的受控沙箱，确保工具输出具有确定性以便稳定推理；对多种大语言模型（LLMs）进行评测并分析其行为与性能。\n\n- 结论/性能：提供一个实用且可重复的评测平台以评估、比较不同 LLM 在多轮推理与工具使用方面的能力，并通过对行为与性能的分析揭示当前模型在旅行规划任务中的优势与不足。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:56:13"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.16867",
+ "title": "Efficient Reasoning on the Edge",
+ "authors": "Yelysei Bondarenko, Thomas Hehn, Rob Hesselink, Romain Lepert, Fabio Valerio Massoli, Evgeny Mironov, Leyla Mirvakhabova, Tribhuvanesh Orekondy, Spyridon Stasis, Andrey Kuzmin, Anna Kuzina, Markus Nagel, Ankita Nayak, Corrado Rainone, Ork de Rooij, Paul N Whatmough, Arash Behboodi, Babak Ehteshami Bejnordi",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16867v1",
+ "abstract": "Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device inference. In this work, we propose a lightweight approach to enable reasoning in small LLMs using LoRA adapters combined with supervised fine-tuning. We further introduce budget forcing via reinforcement learning on these adapters, significantly reducing response length with minimal accuracy loss. To address memory-bound decoding, we exploit parallel test-time scaling, improving accuracy at minor latency increase. Finally, we present a dynamic adapter-switching mechanism that activates reasoning only when needed and a KV-cache sharing strategy during prompt encoding, reducing time-to-first-token for on-device inference. Experiments on Qwen2.5-7B demonstrate that our method achieves efficient, accurate reasoning under strict resource constraints, making LLM reasoning practical for mobile scenarios. Videos demonstrating our solution running on mobile devices are available on our project page.",
+ "summary": "- 核心创新点：在边缘设备的轻量级大模型上实现高效推理，将 LoRA 适配器与监督微调结合，并通过预算强制、动态适配器切换、KV 缓存共享和并行测试时扩展等多种策略，显著降低成本和时延同时尽量保持准确性。\n\n- 主要方法：在 Qwen2.5-7B 等小型 LLM 上使用 LoRA 适配器进行轻量化调优并配合监督微调；引入基于强化学习的预算强制以缩短输出长度；通过并行测试时扩展缓解内存瓶颈的解码问题；实现动态适配器切换以仅在需要时启用推理能力；在提示编码阶段采用 KV 缓存共享以减少首 Token 时间。\n\n- 结论/性能：在资源受限的边缘场景下实现了高效、较为准确的推理，方法显著降低回复长度、内存占用与延迟，并在保持较小精度损失的同时提升边缘设备上的推理实用性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-18 13:00:29"
+}

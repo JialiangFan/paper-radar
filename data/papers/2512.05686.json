@@ -1,0 +1,13 @@
+{
+ "id": "2512.05686",
+ "title": "LA-RL: Language Action-guided Reinforcement Learning with Safety Guarantees for Autonomous Highway Driving",
+ "authors": "Yiming Shu, Jiahui Xu, Jiwei Tang, Ruiyang Gao, Chen Sun",
+ "date": "2025-12-05",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05686v1",
+ "abstract": "Autonomous highway driving demands a critical balance between proactive, efficiency-seeking behavior and robust safety guarantees. This paper proposes Language Action-guided Reinforcement Learning (LA-RL) with Safety Guarantees, a novel framework that integrates the semantic reasoning of large language models (LLMs) into the actor-critic architecture with an improved safety layer. Within this framework, task-specific reward shaping harmonizes the dual objectives of maximizing driving efficiency and ensuring safety, guiding decision-making based on both environmental insights and clearly defined goals. To enhance safety, LA-RL incorporates a safety-critical planner that combines model predictive control (MPC) with discrete control barrier functions (DCBFs). This layer formally constrains the LLM-informed policy to a safe action set, employs a slack mechanism that enhances solution feasibility, prevents overly conservative behavior and allows for greater policy exploration without compromising safety. Extensive experiments demonstrate that it significantly outperforms several current state-of-the-art methods, offering a more adaptive, reliable, and robust solution for autonomous highway driving. Compared to existing SOTA, it achieves approximately 20$\\%$ higher success rate than the knowledge graph (KG) based baseline and about 30$\\%$ higher than the retrieval augmented generation (RAG) based baseline. In low-density environments, LA-RL achieves a 100$\\%$ success rate. These results confirm its enhanced exploration of the state-action space and its ability to autonomously adopt more efficient, proactive strategies in complex, mixed-traffic highway environments.",
+ "summary": "- 核心创新点：将大语言模型的语义推理嵌入强化学习的决策中，并通过一个基于模型预测控制（MPC）与离散控制屏障函数（DCBF）的安全规划层＋松弛机制，实现在高效主动驾驶与严格安全保障之间的平衡。\n\n- 主要方法：将语言模型（LLM）的语义推理融入 actor-critic 框架，结合任务导向的奖励塑形来协调效率与安全；引入安全关键的规划器，采用 MPC + DCBFs 对策略进行形式化安全约束，并使用松弛机制提升可行性、避免过于保守、增强探索。\n\n- 结论/性能：实验显示显著优于若干 SOTA 方法，约在 KG 基线上提升约20%的成功率、在 RAG 基线上提升约30%；在低密度环境下达到100%的成功率，表明更好地探索状态-动作空间并在复杂混合交通场景中实现更高效、更鲁棒的策略。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-08 14:00:34"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.08584",
+ "title": "Conditional Sequence Modeling for Safe Reinforcement Learning",
+ "authors": "Wensong Bai, Chao Zhang, Qihang Xu, Chufan Chen, Chenhao Zhou, Hui Qian",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08584v1",
+ "abstract": "Offline safe reinforcement learning (RL) aims to learn policies from a fixed dataset while maximizing performance under cumulative cost constraints. In practice, deployment requirements often vary across scenarios, necessitating a single policy that can adapt zero-shot to different cost thresholds. However, most existing offline safe RL methods are trained under a pre-specified threshold, yielding policies with limited generalization and deployment flexibility across cost thresholds. Motivated by recent progress in conditional sequence modeling (CSM), which enables flexible goal-conditioned control by specifying target returns, we propose RCDT, a CSM-based method that supports zero-shot deployment across multiple cost thresholds within a single trained policy. RCDT is the first CSM-based offline safe RL algorithm that integrates a Lagrangian-style cost penalty with an auto-adaptive penalty coefficient. To avoid overly conservative behavior and achieve a more favorable return--cost trade-off, a reward--cost-aware trajectory reweighting mechanism and Q-value regularization are further incorporated. Extensive experiments on the DSRL benchmark demonstrate that RCDT consistently improves return--cost trade-offs over representative baselines, advancing the state-of-the-art in offline safe RL.",
+ "summary": "1) 核心创新点（一句话）\n将条件序列模型（CSM）引入离线安全强化学习，提出可在单一策略中实现对多种成本阈值的零-shot自适应部署的 RCDT，并通过自适应拉格朗日成本惩罚、奖励-成本轨迹重加权与Q值正则等机制，提升回报-成本权衡。\n\n2) 主要方法（简述用到的技术/模型）\n- 提出基于条件序列模型的离线安全RL算法 RCDT，首次在这一领域实现 CS M 的离线安全 RL 应用。\n- 通过将目标成本阈值/目标回报作为条件输入，让模型在同一训练后能零-shot适配多种阈值。\n- 引入拉格朗日型成本惩罚并具备自适应惩罚系数，以实现更灵活的成本约束处理。\n- 增加奖励-成本感知的轨迹重加权机制，以及Q值正则，辅助避免过于保守并改善收益-成本权衡。\n- 全部在离线数据上训练，并在 DSRL 基准上进行大量实验对比。\n\n3) 结论/性能（取得的效果）\n在 DSRL 基准上的实验表明，RCDT 相对于代表性基线 consistently 提升回报-成本权衡，推动了离线安全强化学习领域的性能水平，并实现了对多成本阈值的高效零-shot部署能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:01:42"
+}

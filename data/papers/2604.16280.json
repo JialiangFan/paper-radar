@@ -1,0 +1,13 @@
+{
+ "id": "2604.16280",
+ "title": "Using Large Language Models and Knowledge Graphs to Improve the Interpretability of Machine Learning Models in Manufacturing",
+ "authors": "Thomas Bayer, Alexander Lohr, Sarah Weiß, Bernd Michelberger, Wolfram Höpken",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.16280v1",
+ "abstract": "Explaining Machine Learning (ML) results in a transparent and user-friendly manner remains a challenging task of Explainable Artificial Intelligence (XAI). In this paper, we present a method to enhance the interpretability of ML models by using a Knowledge Graph (KG). We store domain-specific data along with ML results and their corresponding explanations, establishing a structured connection between domain knowledge and ML insights. To make these insights accessible to users, we designed a selective retrieval method in which relevant triplets are extracted from the KG and processed by a Large Language Model (LLM) to generate user-friendly explanations of ML results. We evaluated our method in a manufacturing environment using the XAI Question Bank. Beyond standard questions, we introduce more complex, tailored questions that highlight the strengths of our approach. We evaluated 33 questions, analyzing responses using quantitative metrics such as accuracy and consistency, as well as qualitative ones such as clarity and usefulness. Our contribution is both theoretical and practical: from a theoretical perspective, we present a novel approach for effectively enabling LLMs to dynamically access a KG in order to improve the explainability of ML results. From a practical perspective, we provide empirical evidence showing that such explanations can be successfully applied in real-world manufacturing environments, supporting better decision-making in manufacturing processes.",
+ "summary": "1) 核心创新点\n- 通过将领域知识图谱与机器学习结果及其解释建立结构化关联，并设计选择性检索机制使大语言模型动态访问KG，从而生成面向制造场景的可解释性说明。\n\n2) 主要方法\n- 构建领域知识图谱，存储领域数据、ML结果及相应解释，形成领域知识与ML洞察的结构化连接\n- 设计从KG中提取相关三元组的选择性检索方法\n- 将提取的三元组输入大型语言模型，生成用户友好且可理解的解释\n- 在制造环境使用 XAI Question Bank 进行评估，覆盖33个问题，结合定量（准确性、一致性）和定性（清晰度、实用性）指标\n\n3) 结论/性能\n- 在真实制造环境中具备可行性，实验证据显示该解释方法提升了准确性与一致性，并产出更清晰、实用的解释，帮助制造过程中的决策制定。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-20 13:01:03"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.13201",
+ "title": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+ "authors": "Xin Chen, Junchao Wu, Shu Yang, Runzhe Zhan, Zeyu Wu, Min Yang, Shujian Huang, Lidia S. Chao, Derek F. Wong",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13201v1",
+ "abstract": "Instruction Tuning (IT) has been proven to be an effective approach to unlock the powerful capabilities of large language models (LLMs). Recent studies indicate that excessive IT data can degrade LLMs performance, while carefully selecting a small subset of high-quality IT data can significantly enhance their capabilities. Therefore, identifying the most efficient subset data from the IT dataset to effectively develop either specific or general abilities in LLMs has become a critical challenge. To address this, we propose a novel and efficient framework called NAIT. NAIT evaluates the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. Specifically, NAIT captures neuron activation patterns from in-domain datasets of target domain capabilities to construct reusable and transferable neuron activation features. It then evaluates and selects optimal samples based on the similarity between candidate samples and the expected activation features of the target capabilities. Experimental results show that training on the 10\\% Alpaca-GPT4 IT data subset selected by NAIT consistently outperforms methods that rely on external advanced models or uncertainty-based features across various tasks. Our findings also reveal the transferability of neuron activation features across different capabilities of LLMs. In particular, IT data with more logical reasoning and programmatic features possesses strong general transferability, enabling models to develop stronger capabilities across multiple tasks, while a stable core subset of data is sufficient to consistently activate fundamental model capabilities and universally improve performance across diverse tasks.",
+ "summary": "1) 核心创新点\n- 提出 NAIT 框架：通过分析神经元激活模式的相似性来从指令微调（IT）数据中筛选最具价值的样本，以提升大语言模型的微调效果。\n\n2) 主要方法\n- NAIT 将目标领域的就域数据中提取并构建可重复、可迁移的神经元激活特征；对候选 IT 样本的激活模式与这些目标特征的相似度进行评估，选出最优子集用于微调。\n\n3) 结论/性能\n- 在 Alpaca-GPT4 IT 数据的 10% 子集上，NAIT 筛选的样本持续优于依赖外部先进模型或基于不确定性特征的方法；并且神经元激活特征具有跨能力的可迁移性，逻辑推理与编程特征的数据更具通用性，核心子集即可稳定提升多任务表现。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-16 13:00:46"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.23816",
+ "title": "Learning to maintain safety through expert demonstrations in settings with unknown constraints: A Q-learning perspective",
+ "authors": "George Papadopoulos, George A. Vouros",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23816v1",
+ "abstract": "Given a set of trajectories demonstrating the execution of a task safely in a constrained MDP with observable rewards but with unknown constraints and non-observable costs, we aim to find a policy that maximizes the likelihood of demonstrated trajectories trading the balance between being conservative and increasing significantly the likelihood of high-rewarding trajectories but with potentially unsafe steps. Having these objectives, we aim towards learning a policy that maximizes the probability of the most $promising$ trajectories with respect to the demonstrations. In so doing, we formulate the ``promise\" of individual state-action pairs in terms of $Q$ values, which depend on task-specific rewards as well as on the assessment of states' safety, mixing expectations in terms of rewards and safety. This entails a safe Q-learning perspective of the inverse learning problem under constraints: The devised Safe $Q$ Inverse Constrained Reinforcement Learning (SafeQIL) algorithm is compared to state-of-the art inverse constraint reinforcement learning algorithms to a set of challenging benchmark tasks, showing its merits.",
+ "summary": "1. 核心创新点（一句话）\n提出 SafeQIL，将未知约束下的逆约束强化学习问题转化为通过 Q 值表达状态-动作对潜在前景的安全性与奖励综合优化，利用专家演示最大化最有前景轨迹的概率。\n\n2. 主要方法\n基于 Q-learning 的 SafeQIL 算法，将每个状态-动作对的“潜力/承诺”用 Q 值表示，该 Q 值同时编码任务奖励与状态安全性评估；以最大化示范轨迹中最具前景的轨迹被选择的概率为目标，进行安全的逆向约束强化学习，并与现有逆约束 RL 算法在若干基准任务上进行对比。\n\n3. 结论/性能\n在一组具有挑战性的基准任务上，SafeQIL 相较于现有逆约束强化学习算法显示出明显的优势，提升了在安全约束下对高奖励轨迹的学习与利用效果。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-02 14:01:01"
+}

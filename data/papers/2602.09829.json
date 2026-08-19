@@ -1,0 +1,13 @@
+{
+ "id": "2602.09829",
+ "title": "Internalizing Multi-Agent Reasoning for Accurate and Efficient LLM-based Recommendation",
+ "authors": "Yang Wu, Haoze Wang, Qian Li, Jun Zhang, Huan Yu, Jie Jiang",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09829v1",
+ "abstract": "Large Language Models (LLMs) are reshaping recommender systems by leveraging extensive world knowledge and semantic reasoning to interpret user intent. However, effectively integrating these capabilities with collaborative signals while avoiding prohibitive inference latency remains a critical bottleneck. To address this, we propose a trajectory-driven internalization framework to develop a Single-agent Trajectory-Aligned Recommender (STAR). Specifically, to internalize complex reasoning capabilities into a single efficient model, we first design a multi-agent teacher system capable of multi-turn tool usage and reflection. This teacher utilizes a Collaborative Signal Translation mechanism to explicitly convert latent behavioral patterns into descriptive natural language evidence to enhance reasoning accuracy. Subsequently, a trajectory-driven distillation pipeline transfers this agentic logic, including planning, tool usage, and self-reflection, into the compact STAR model. Extensive experiments demonstrate that STAR surpasses its teacher by 8.7% to 39.5% while eliminating iterative latency, paving the way for real-time, reasoning-enhanced recommendation.",
+ "summary": "- 核心创新点：提出一个轨迹驱动的内部化框架，将多智能体教师的推理、工具使用和自我反思等能力内化到一个高效的单智能体STAR模型，实现实时、带推理的推荐。\n\n- 主要方法：\n  - 设计多智能体教师系统，具备多轮工具使用与反思能力；\n  - 引入 Collaborative Signal Translation 机制，将潜在行为模式转化为可描述的自然语言证据，以提升推理准确性；\n  - 构建轨迹驱动的蒸馏流程，将规划、工具使用和自我反思等代理逻辑转移到紧凑的 STAR 模型；\n  - 最终得到一个单模型 STAR，可在不依赖多轮迭代的情况下实现推理强化的实时推荐。\n\n- 结论/性能：\n  - 实验结果显示，STAR 在多数场景下超过其教师8.7%至39.5%的性能，同时消除了迭代推理的延迟，实现实时、带推理的推荐。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-11 14:02:50"
+}

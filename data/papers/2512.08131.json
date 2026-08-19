@@ -1,0 +1,13 @@
+{
+ "id": "2512.08131",
+ "title": "Universal Adversarial Suffixes for Language Models Using Reinforcement Learning with Calibrated Reward",
+ "authors": "Sampriti Soor, Suklav Ghosh, Arijit Sur",
+ "date": "2025-12-09",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.08131v1",
+ "abstract": "Language models are vulnerable to short adversarial suffixes that can reliably alter predictions. Previous works usually find such suffixes with gradient search or rule-based methods, but these are brittle and often tied to a single task or model. In this paper, a reinforcement learning framework is used where the suffix is treated as a policy and trained with Proximal Policy Optimization against a frozen model as a reward oracle. Rewards are shaped using calibrated cross-entropy, removing label bias and aggregating across surface forms to improve transferability. The proposed method is evaluated on five diverse NLP benchmark datasets, covering sentiment, natural language inference, paraphrase, and commonsense reasoning, using three distinct language models: Qwen2-1.5B Instruct, TinyLlama-1.1B Chat, and Phi-1.5. Results show that RL-trained suffixes consistently degrade accuracy and transfer more effectively across tasks and models than previous adversarial triggers of similar genres.",
+ "summary": "- 核心创新点：提出把后缀作为策略，通过强化学习（PPO）在冻结模型上训练，并使用经过校准的交叉熵奖励来提升后缀的通用性和跨任务/跨模型的对抗性迁移性。\n\n- 主要方法：将后缀视为策略进行强化学习，使用近端策略优化（PPO）对冻结的目标模型进行学习，奖励函数由 calibrated cross-entropy 组成以消除标签偏差并对不同表述形式进行聚合，从而提高迁移性；在五个 NLP 任务和三种模型上进行评估。\n\n- 结论/性能：所学的 RL 后缀在不同任务和模型上都能稳定降低准确率，并且相比同类的以前触发器具有更强的跨任务/跨模型的 Transferability。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-10 14:04:31"
+}

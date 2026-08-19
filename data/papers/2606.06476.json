@@ -1,0 +1,13 @@
+{
+ "id": "2606.06476",
+ "title": "Thinking with Imagination: Agentic Visual Spatial Reasoning with World Simulators",
+ "authors": "Chenming Zhu, Jingli Lin, Yilin Long, Peizhou Cao, Tai Wang, Jiangmiao Pang, Xihui Liu",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.06476v1",
+ "abstract": "While Vision-Language Models (VLMs) have shown strong visual reasoning capabilities, their spatial reasoning abilities remain largely constrained to the observed images and text-oriented chain-of-thought. They often struggle to infer unobserved layouts, maintain cross-view consistency, and reason from alternative viewpoints when only limited egocentric observations are available. In this work, we study this problem as thinking with imagination, where a VLM actively acquires imagined visual evidence by interacting with a world simulator during reasoning. We propose Astra, an agentic spatial reasoning framework that empowers VLMs with action-conditioned visual imagination. Specifically, Astra couples Astra-VL, an RL-trained VLM policy, with Astra-WM, a Bagel-based world simulator that generates novel-view observations from context images and natural-language camera motions. To provide reliable imagined evidence, Astra-WM is trained with view consistency tuning to improve pose and content consistency across views. In the RL stage, we propose a world-simulator-in-the-loop two-phase RL curriculum to stabilize tool-use exploration and advance the model's ability to invoke the simulator only when imagined observations improve over direct answering. Experiments demonstrate that both the world simulator and the agentic policy are necessary: Astra-WM improves simulator-augmented Gemini-3-Flash on MMSI-Bench from 45.1 to 49.5, while Astra-VL improves the Qwen3-VL backbone from 29.8 to 38.8 on MMSI-Bench and from 36.8 to 42.7 on MindCube. These results show that imagined observations can provide useful spatial evidence, but effective world-model-augmented reasoning requires learning when, where, and how to imagine.",
+ "summary": "# 论文总结：Thinking with Imagination\n\n## 1. 核心创新点\n提出\"想象式思考\"范式——让视觉语言模型（VLM）在推理时主动调用世界模拟器生成想象中的新视角观测，以突破仅依赖已观测图像和文本思维链的空间推理局限。\n\n## 2. 主要方法\n提出 **Astra** 框架，由两部分组成：\n- **Astra-WM**：基于 Bagel 的世界模拟器，根据上下文图像和自然语言相机运动生成新视角观测，采用**视角一致性微调**保证姿态与内容跨视图一致。\n- **Astra-VL**：经强化学习训练的 VLM 策略，采用**\"世界模拟器在环\"的两阶段 RL 课程**，学习何时、何地、如何调用模拟器（仅在想象观测能改善直接回答时调用）。\n\n## 3. 结论/性能\n世界模拟器与智能体策略缺一不可：\n- Astra-WM 将 Gemini-3-Flash 在 MMSI-Bench 上从 **45.1 → 49.5**；\n- Astra-VL 将 Qwen3-VL 在 MMSI-Bench 上从 **29.8 → 38.8**，在 MindCube 上从 **36.8 → 42.7**。\n\n结果证明想象观测能提供有效的空间证据，但需学习\"何时/何地/如何想象\"才能真正发挥世界模型增强推理的作用。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-07 13:04:17"
+}

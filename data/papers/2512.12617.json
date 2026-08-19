@@ -1,0 +1,13 @@
+{
+ "id": "2512.12617",
+ "title": "Spectral Sentinel: Scalable Byzantine-Robust Decentralized Federated Learning via Sketched Random Matrix Theory on Blockchain",
+ "authors": "Animesh Mishra",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12617v1",
+ "abstract": "Decentralized federated learning (DFL) enables collaborative model training without centralized trust, but it remains vulnerable to Byzantine clients that poison gradients under heterogeneous (Non-IID) data. Existing defenses face a scalability trilemma: distance-based filtering (e.g., Krum) can reject legitimate Non-IID updates, geometric-median methods incur prohibitive $O(n^2 d)$ cost, and many certified defenses are evaluated only on models below 100M parameters. We propose Spectral Sentinel, a Byzantine detection and aggregation framework that leverages a random-matrix-theoretic signature: honest Non-IID gradients produce covariance eigenspectra whose bulk follows the Marchenko-Pastur law, while Byzantine perturbations induce detectable tail anomalies. Our algorithm combines Frequent Directions sketching with data-dependent MP tracking, enabling detection on models up to 1.5B parameters using $O(k^2)$ memory with $k \\ll d$. Under a $(σ,f)$ threat model with coordinate-wise honest variance bounded by $σ^2$ and $f < 1/2$ adversaries, we prove $(ε,δ)$-Byzantine resilience with convergence rate $O(σf / \\sqrt{T} + f^2 / T)$, and we provide a matching information-theoretic lower bound $Ω(σf / \\sqrt{T})$, establishing minimax optimality. We implement the full system with blockchain integration on Polygon networks and validate it across 144 attack-aggregator configurations, achieving 78.4 percent average accuracy versus 48-63 percent for baseline methods.",
+ "summary": "- 核心创新点：提出 Spectral Sentinel，将随机矩阵谱分析与 Frequent Directions 压缩相结合，在区块链上的去中心化联邦学习中实现对拜占庭更新的可扩展鲁棒检测与聚合。\n\n- 主要方法：\n  - 以随机矩阵理论为基础，通过梯度协方差谱的特征区分：真实的非独立同分布（Non-IID）梯度的谱轮廓符合 Marchenko–Pastur 分布，拜占庭扰动引入显著的尾部异常。\n  - 将 Frequent Directions 预算化压缩与数据相关的 MP 跟踪结合，实现对大模型（可达 1.5B 参数）的谱分析，内存复杂度仅 O(k^2)，其中 k 远小于 d。\n  - 设计面向攻击检测与聚合的框架，并在 Polygon 区块链网络上实现端到端系统测试。\n\n- 结论/性能：\n  - 理论上：在坐标化的方差界限和对手攻击比 f < 1/2 的设定下，证明了 (ε, δ)-Byzantine 鲁棒性和收敛率为 O(σf / √T + f^2 / T)，并给出匹配的信息论下界 Ω(σf / √T)，实现极限最优。\n  - 实验上：在 144 种攻击-聚合配置中，平均正确率达到 78.4%，显著优于基线方法的 48–63%。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 02:02:07"
+}

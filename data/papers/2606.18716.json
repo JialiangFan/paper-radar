@@ -1,0 +1,13 @@
+{
+ "id": "2606.18716",
+ "title": "Human-AI Agent Interaction in a Business Context",
+ "authors": "Kathrin Paimann, Elizangela Valarini, Sebastian Juhl",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18716v1",
+ "abstract": "As AI agents are increasingly integrated into core business processes, understanding and designing effective interaction patterns between humans and AI agents becomes crucial for value creation. This study identifies and evaluates principles and criteria for a positive User Experience (UX) with AI agents, along with methods for its measurement. We identify user expectations and needs to facilitate adoption, build trust, and support user-centered decision-making by development teams. Using a mixed-methods approach that combines qualitative and quantitative techniques, we explore interaction patterns between humans and AI agents. The findings from this exploratory research serve as the basis to develop a survey experiment which evaluates the effectiveness of specific design elements on a larger scale. This foundational research contributes to the development of more intuitive and effective human-AI agent interactions in business settings.",
+ "summary": "**论文中文总结**\n\n1. **核心创新点**：从用户体验（UX）视角出发，识别并评估商业场景中人与 AI 智能体（AI agent）实现良好交互的设计原则、评价标准及其测量方法。\n\n2. **主要方法**：采用混合研究方法（质性 + 量化结合）的探索性研究——先通过定性手段挖掘用户对 AI 智能体的期望与需求、梳理人机交互模式，再据此设计一项调查实验（survey experiment），以更大规模验证特定设计要素的有效性。\n\n3. **结论/性能**：作为一项基础性研究，其成果为提升用户采纳度、建立信任、支持开发团队以用户为中心的决策提供了依据，有助于在商业环境中构建更直观、更有效的人—AI 智能体交互。\n\n> 注：这是一篇探索性/基础性研究论文，摘要中未给出具体的量化性能指标，结论侧重于方法框架与设计指导价值。\n\n如果需要，我也可以用 `/paper-review` 技能生成更完整的中英文双语精读笔记（含主题、背景、贡献、方法论等）并存入你的 Obsidian vault。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-18 13:00:58"
+}

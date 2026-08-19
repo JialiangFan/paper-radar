@@ -1,0 +1,13 @@
+{
+ "id": "2606.05523",
+ "title": "CHASE: Adversarial Red-Blue Teaming for Improving LLM Safety using Reinforcement Learning",
+ "authors": "Rahul Markasserithodi, Aditya Joshi, Yuekang Li, Ishmanbir Singh, Chris Yoo, Alan Niu",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05523v1",
+ "abstract": "Despite advances in safety alignment, prompt-rewriting attacks such as persona modulation, fictional framing and persuasion-based reformulation, can bypass safety filters even on frontier models. Existing defenses either rely on non-scalable human curation or white-box optimisation that overfits to specific model internals, leaving aligned models brittle against the very class of adaptive black-box adversaries they will face in deployment. To address this gap, we introduce CHASE (Co-evolutionary Hardening through Adversarial Safety-Escalation), a closed-loop red-blue teaming framework in which a black-box attacker and a safety-aligned defender co-evolve. The attacker is trained via Group Relative Policy Optimization (GRPO) under a multiplicative reward that jointly enforces bypass effectiveness and intent fidelity, while the defender is hardened on the harvested adversarial rewrites through a two-stage GRPO + rejection-sampled SFT pipeline balanced with benign data. Evaluated on BeaverTails and JailbreakBench against five held-out attack families (PAIR, TAP, AutoDAN, PAP, Translation), CHASE cuts mean StrongREJECT score by 43.2\\% with 0\\% false-refusal on benign prompts. Beyond the headline result, CHASE shows that template-free RL exploration recovers latent attack primitives that transfer across mechanistically distinct attack families, suggesting a path toward LLM safety hardening that generalises beyond the narrow distributions achieved thus far in adversarial training.",
+ "summary": "# CHASE 论文总结\n\n1. **核心创新点**：提出一个攻击者与防御者通过强化学习协同进化的闭环红蓝对抗框架，用于增强 LLM 对黑盒提示重写攻击的鲁棒性。\n\n2. **主要方法**：攻击者使用 GRPO（Group Relative Policy Optimization），以\"绕过有效性 × 意图保真度\"的乘性奖励进行训练；防御者则在采集到的对抗性重写样本上，通过\"GRPO + 拒绝采样 SFT\"两阶段流水线进行硬化，并与良性数据混合以防止过度拒绝。\n\n3. **结论/性能**：在 BeaverTails 和 JailbreakBench 上，针对 5 类未见攻击族（PAIR、TAP、AutoDAN、PAP、Translation），平均 StrongREJECT 分数降低 **43.2%**，且对良性提示的误拒率为 **0%**；同时验证了无模板的 RL 探索能发现可跨攻击族迁移的潜在攻击原语，展现出更强的泛化能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-07 13:01:41"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2607.28384",
+ "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+ "authors": "Tairan Wang, Liang Zhou, Zikang Zhan, Pingchuan Yan",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28384v1",
+ "abstract": "Large language models (LLMs) are increasingly required to integrate multiple sources of information that may be inconsistent or conflicting. However, there is still a lack of controllable and attributable methods for analyzing how models resolve conflicts between competing specifications. We propose a controlled experimental framework for studying model preferences under conflicting specifications. By constructing specifications with explicit conflicts, the framework enables model choices between competing specifications to be directly observed and analyzed. A symmetry-based design further reduces confounding factors, allowing preferences across representation types to be compared systematically.\n  We evaluate the framework on an executable mathematical benchmark with 550 conflict instances spanning 11 function families, comparing four representation types: pure natural language, formal language, naturalized formal language, and input--output examples. Results show systematic preference patterns rather than random behavior, with a consistent ordering: $ \\text{Formal} \\approx \\text{Naturalized Formal} > \\text{Pure Natural Language} > \\text{Input--Output Examples} $. Example effects further depend on model capability and function family.\n  We extend the framework to heterogeneous specification conflicts in Boolean algebra, code generation, and the clinical domain, demonstrating its applicability across diverse tasks and specification forms. The framework provides a unified approach for measuring how LLMs resolve conflicts between competing sources of information.",
+ "summary": "**论文标题**：When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences（当规范相互冲突时：一个基于对称性的 LLM 偏好度量框架）\n\n---\n\n### 1. 核心创新点\n\n提出一个基于**对称性设计的受控实验框架**，通过构造显式冲突的规范，可直接观测并归因地量化 LLM 在面对相互矛盾的规范表述时会偏向哪一种。\n\n### 2. 主要方法\n\n- **显式冲突构造**：人为设计两条相互矛盾的规范，让模型的选择成为可直接观测的行为信号。\n- **对称性设计**：通过对调规范的位置/角色等方式抵消混杂因素，使不同「表征类型」之间的偏好可以公平横向比较。\n- **可执行的数学基准**：550 个冲突实例，覆盖 11 个函数族，对比四种规范表征类型——纯自然语言、形式语言、自然化的形式语言、输入—输出示例。\n- **跨域扩展**：进一步将框架推广到布尔代数、代码生成和临床医疗领域的**异构规范冲突**场景。\n\n### 3. 结论/性能\n\n- 模型表现出**系统性偏好而非随机行为**，稳定呈现如下次序：\n **形式语言 ≈ 自然化形式语言 > 纯自然语言 > 输入—输出示例**。\n- 即：模型显著更信任形式化/结构化的规范，而对「举例说明」这类规范的采信程度最低。\n- 示例（examples）所起的作用并非固定，而是**依赖于模型能力强弱和具体函数族**。\n- 跨布尔代数、代码生成、临床三个领域的扩展验证了框架的**通用性**，为衡量 LLM 如何裁决多来源信息冲突提供了统一方法。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-31 13:02:24"
+}

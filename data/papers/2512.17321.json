@@ -1,0 +1,13 @@
+{
+ "id": "2512.17321",
+ "title": "Neuro-Symbolic Control with Large Language Models for Language-Guided Spatial Tasks",
+ "authors": "Momina Liaqat Ali, Muhammad Abid",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17321v1",
+ "abstract": "Although large language models (LLMs) have recently become effective tools for language-conditioned control in embodied systems, instability, slow convergence, and hallucinated actions continue to limit their direct application to continuous control. A modular neuro-symbolic control framework that clearly distinguishes between low-level motion execution and high-level semantic reasoning is proposed in this work. While a lightweight neural delta controller performs bounded, incremental actions in continuous space, a locally deployed LLM interprets symbolic tasks. We assess the suggested method in a planar manipulation setting with spatial relations between objects specified by language. Numerous tasks and local language models, such as Mistral, Phi, and LLaMA-3.2, are used in extensive experiments to compare LLM-only control, neural-only control, and the suggested LLM+DL framework. In comparison to LLM-only baselines, the results show that the neuro-symbolic integration consistently increases both success rate and efficiency, achieving average step reductions exceeding 70% and speedups of up to 8.83x while remaining robust to language model quality. The suggested framework enhances interpretability, stability, and generalization without any need of reinforcement learning or costly rollouts by controlling the LLM to symbolic outputs and allocating uninterpreted execution to a neural controller trained on artificial geometric data. These outputs show empirically that neuro-symbolic decomposition offers a scalable and principled way to integrate language understanding with ongoing control, this approach promotes the creation of dependable and effective language-guided embodied systems.",
+ "summary": "- 核心创新点：提出一种模块化的神经符号控制框架，将高层语言理解与低层连续动作执行分离，通过局部部署的LLM产出符号性任务输出，并由轻量级神经Δ控制器执行有界增量动作，从而实现语言引导的稳定、可解释的控制且无需强化学习。\n\n- 主要方法：采用局部部署的LLM进行符号化任务解释；使用一个轻量级的神经Δ控制器在连续空间执行有界的增量动作；将语言理解产出用于符号化指令，未解释的执行交给神经控制器，控制器基于人工几何数据进行训练；对比LLM-only、神经网络-only与LLM+DL三种方案，使用多种本地LLM（Mistral、Phi、LLaMA-3.2）在平面操作的语言空间关系任务上进行评估。\n\n- 结论/性能：相较于LLM单独基线，神经符号框架在成功率和效率上显著提升，平均步数减少超过70%，速度提升最高达8.83倍；对语言模型质量具鲁棒性；无需强化学习或高成本的回滚，提升了可解释性、稳定性和泛化能力。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:48:58"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.29919",
+ "title": "SkillReducer: Optimizing LLM Agent Skills for Token Efficiency",
+ "authors": "Yudong Gao, Zongjie Li, Yuanyuanyuan, Zimo Ji, Pingchuan Ma, Shuai Wang",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29919v1",
+ "abstract": "LLM-based coding agents rely on \\emph{skills}, pre-packaged instruction sets that extend agent capabilities, yet every token of skill content injected into the context window incurs both monetary cost and attention dilution. To understand the severity of this problem, we conduct a large-scale empirical study of 55,315 publicly available skills and find systemic inefficiencies: 26.4\\% lack routing descriptions entirely, over 60\\% of body content is non-actionable, and reference files can inject tens of thousands of tokens per invocation. Motivated by these findings, we present \\textsc{SkillReducer}, a two-stage optimization framework. Stage~1 optimizes the routing layer by compressing verbose descriptions and generating missing ones via adversarial delta debugging. Stage~2 restructures skill bodies through taxonomy-driven classification and progressive disclosure, separating actionable core rules from supplementary content loaded on demand, validated by faithfulness checks and a self-correcting feedback loop. Evaluated on 600 skills and the SkillsBench benchmark, \\textsc{SkillReducer} achieves 48\\% description compression and 39\\% body compression while improving functional quality by 2.8\\%, revealing a \\emph{less-is-more} effect where removing non-essential content reduces distraction in the context window. These benefits transfer across five models from four families with a mean retention of 0.965, and generalize to an independent agent framework.",
+ "summary": "- 核心创新点：提出 SkillReducer，一种两阶段的技能优化框架，通过压缩路由描述与分层披露技能主体内容，实现对预置技能的冗余信息去除，从而显著提升令牌效率与功能保真。\n\n- 主要方法：Stage 1 对路由层进行压缩并用对抗性delta调试生成缺失描述；Stage 2 通过分类学驱动的分层结构和渐进披露，将可操作核心规则与可按需加载的补充内容分离，结合信度检查与自我纠错循环进行优化。\n\n- 结论/性能：在600个技能与 SkillsBench 评估中，获得描述压缩48%、主体压缩39%，功能质量提升约2.8%；对五种模型、四个家族具有平均保留率0.965，并可泛化到独立的代理框架，体现“越少越好”的效应，减少上下文窗口的干扰。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-01 13:04:25"
+}

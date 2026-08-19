@@ -1,0 +1,13 @@
+{
+ "id": "2606.07314",
+ "title": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+ "authors": "An B. B. Pham, Hoa T. Nguyen, Muhammad Usman",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07314v1",
+ "abstract": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+ "summary": "# QBugLM 论文总结\n\n1. **核心创新点**：提出首个面向量子软件调试的多智能体基准框架 QBugLM，系统性评估 LLM 在量子代码缺陷检测与修复上的能力。\n\n2. **主要方法**：构建端到端的多 agent 流水线，涵盖基于缺陷分类法的 bug 注入、LLM 驱动的检测与修复，以及基于模拟的验证，针对框架无关的 OpenQASM 3.0 程序；并以 Claude 4.6 Sonnet 与 Qwen3 Coder Next 为对象，对比不同提示策略（结构化提示、CoT、ReAct）和缺陷类别。\n\n3. **结论/性能**：迭代反馈至关重要——仅一次重试即可将 Pass@1 从不足 25% 提升到 80% 以上；在固定资源下，对具备推理能力的模型而言，更简洁的结构化提示甚至优于 CoT 和 ReAct，为自动化量子软件修复提供了实证基线。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-08 13:01:42"
+}

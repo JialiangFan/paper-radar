@@ -1,0 +1,13 @@
+{
+ "id": "2603.30016",
+ "title": "Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks",
+ "authors": "Chong Xiang, Drew Zagieboylo, Shaona Ghosh, Sanjay Kariyappa, Kai Greshake, Hanshen Xiao, Chaowei Xiao, G. Edward Suh",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30016v1",
+ "abstract": "AI agents, predominantly powered by large language models (LLMs), are vulnerable to indirect prompt injection, in which malicious instructions embedded in untrusted data can trigger dangerous agent actions. This position paper discusses our vision for system-level defenses against indirect prompt injection attacks. We articulate three positions: (1) dynamic replanning and security policy updates are often necessary for dynamic tasks and realistic environments; (2) certain context-dependent security decisions would still require LLMs (or other learned models), but should only be made within system designs that strictly constrain what the model can observe and decide; (3) in inherently ambiguous cases, personalization and human interaction should be treated as core design considerations. In addition to our main positions, we discuss limitations of existing benchmarks that can create a false sense of utility and security. We also highlight the value of system-level defenses, which serve as the skeleton of agentic systems by structuring and controlling agent behaviors, integrating rule-based and model-based security checks, and enabling more targeted research on model robustness and human interaction.",
+ "summary": "1) 核心创新点：提出面向系统级的安全防御框架，以对抗间接提示注入攻击，强调通过动态重规划、严格受控的观测与决策以及人机交互为核心设计来提升AI代理的安全性。\n\n2) 主要方法：提出将系统架构作为防御骨架，结合动态重规划与安全策略更新；在可观测信息与决策权限上对模型进行严格约束；在模糊情境中引入个性化与人机交互设计；并主张将规则基和模型基的安全检查混合应用，分析并指出现有基准的局限性。\n\n3) 结论/性能：以理论与设计原则为核心，强调通过系统级防御框架能够结构化、控制代理行为并提升鲁棒性与安全性，指明未来在模型鲁棒性研究与人机交互方面的研究方向；尚未给出具体实验结果。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-01 13:01:20"
+}

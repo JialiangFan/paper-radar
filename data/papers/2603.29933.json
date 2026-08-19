@@ -1,0 +1,13 @@
+{
+ "id": "2603.29933",
+ "title": "GreenFLag: A Green Agentic Approach for Energy-Efficient Federated Learning",
+ "authors": "Theodora Panagea, Nikolaos Koursioumpas, Lina Magoula, Ramin Khalili",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29933v1",
+ "abstract": "Progressing toward a new generation of mobile networks, a clear focus on integrating distributed intelligence across the system is observed to drive performance, autonomy, and real-time adaptability. Federated learning (FL) stands out as a key emerging technique, enabling on-device model training while preserving data locality. However, its operation introduces substantial energy and resource demands. Energy needs are mostly met by grid power sources, while FL resource orchestration strategies remain limited. This work introduces GreenFLag, an agentic resource orchestration framework designed to minimize the energy consumption from the grid power to complete FL workflows, guarantee FL model performance, and reduce grid power reliance by incorporating renewable sources into the system. GreenFLag leverages a Soft-Actor Critic reinforcement learning approach to jointly optimize computational and communication resources, while accounting for communication contention and the dynamic availability of renewable energy. Evaluations using a real-world open dataset from Copernicus, demonstrate that GreenFLag significantly reduces grid energy consumption by 94.8% on average, compared to three state-of-the-art baselines, while primarily relying on green power.",
+ "summary": "1) 核心创新点：提出 GreenFLag，一种面向绿色能源的智能代理资源编排框架，通过软策略梯度强化学习在考虑通信竞争与可再生能源动态可用性的前提下，最小化电网能耗并保障联邦学习性能。\n\n2) 主要方法：采用 Soft-Actor-Critic（SAC）强化学习构建代理，联合优化计算与通信资源分配，考虑通信 contention 和可再生能源的动态可用性，并在真实的 Copernicus 数据集上进行评估。\n\n3) 结论/性能：在与三种前沿基线的对比中，GreenFLag 平均将电网能耗降低约 94.8%，并以主要依赖绿色电力的方式完成 FL 工作流，同时保障模型性能。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-01 13:03:30"
+}

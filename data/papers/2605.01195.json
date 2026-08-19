@@ -1,0 +1,32 @@
+{
+ "id": "2605.01195",
+ "title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies",
+ "authors": "Ahmed, et al.",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2605.01195",
+ "abstract": "",
+ "summary": "TAIL-Safe learns an empirical safe set for imitation policies and applies a recovery mechanism when proposed actions leave that set.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "action-shielding",
+  "imitation-learning",
+  "robotics",
+  "runtime-monitoring",
+  "safe-set",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2026_Ahmed_TAILSafe.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2026_Ahmed_TAILSafe.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

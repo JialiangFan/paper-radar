@@ -1,0 +1,13 @@
+{
+ "id": "2608.06366",
+ "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+ "authors": "Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi, Daniel Kang, Roy Ka-Wei Lee, Koustuv Saha, Christian Poellabauer, Christopher Lee, Sajeev Singh, Piyum Zonooz, Navin Kumar, Zeeshan Ahmed, Priyadarshini Kachroo",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06366v1",
+ "abstract": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific, guideline-based clinical reasoning. Existing rule-based and large language model (LLM)-based approaches offer only partial automation with limited maintainability and evidence traceability. We developed the Nimblemind Multi-Agent System (nMAS), an evidence-linked, rubric-grounded pipeline for automated heart-failure feature engineering, and evaluated it on 500 dummy patient records from nine EHR source tables. nMAS generated 132 structured and 70 rubric-scored aggregated features, verified for structural integrity, rubric compliance, and provenance, and audited by a restricted LLM. Adding the aggregated features improved held-out AUROC from 0.895 to 0.963 for HFrEF and 0.870 to 0.910 for HFpEF phenotyping, and an independent LLM-based rubric assessment of evidence support and methodological soundness scored the features at 81.5% of maximum points. These results demonstrate the feasibility of automated, auditable feature engineering for complex cardiovascular EHR data, though evaluation was limited to a single-institution cohort and external validation is needed.",
+ "summary": "## 论文总结：Tracing the Heart —— 面向心衰特征工程的证据链接流水线\n\n**1. 核心创新点**\n提出 nMAS（Nimblemind 多智能体系统），把电子病历（EHR）中心力衰竭的特征工程自动化，并让每个特征都可追溯到指南证据、可审计。\n\n**2. 主要方法**\n- 基于多智能体 + LLM 的流水线，以\"证据链接（evidence-linked）\"和\"评分量表（rubric-grounded）\"为约束，融合指南驱动的临床推理。\n- 在 9 张 EHR 源表、500 份模拟患者记录上运行，生成 **132 个结构化特征** 和 **70 个量表打分的聚合特征**。\n- 对结构完整性、量表合规性与来源溯源（provenance）做校验，并由一个受限的 LLM 做独立审计。\n\n**3. 结论/性能**\n- 加入聚合特征后，留出集表型分类 AUROC：HFrEF 从 **0.895 → 0.963**，HFpEF 从 **0.870 → 0.910**。\n- 独立 LLM 量表评估（证据支持度 + 方法学严谨性）得分为满分的 **81.5%**。\n- 说明复杂心血管 EHR 数据的自动化、可审计特征工程是可行的；但局限在于仅用单中心队列（且为模拟数据）评估，仍需外部验证。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-08 13:01:24"
+}

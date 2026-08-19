@@ -1,0 +1,13 @@
+{
+ "id": "2605.23826",
+ "title": "Decomposing Queries into Tool Calls for Long-Video Keyframe Retrieval",
+ "authors": "Michal Shlapentokh-Rothman, Prachi Garg, Yu-Xiong Wang, Derek Hoiem",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23826v1",
+ "abstract": "Keyframe selection is a direct way to provide verifiable visual evidence for long-video question answering (QA). Queries differ in what they require, and finding the right frames depends on knowing what to look for. Existing keyframe selectors either score every frame against a single query, or decompose the query into a fixed schema evaluated by a single visual tool. We propose ToolMerge, a keyframe retrieval method based on decomposition and merging: an Large Language Model (LLM) based planner decomposes the query into tool calls and specifies how their per-tool rankings are merged using boolean operators. To evaluate retrieval directly, we construct Molmo-2 Moments (M2M), a benchmark in which every question is anchored to a specific time interval by construction. Across QA, question retrieval, and caption retrieval, ToolMerge is competitive with prior keyframe selectors, most notably on caption retrieval, outperforming other methods by 5%. Code and data can be found at https://github.com/michalsr/ToolMerge .",
+ "summary": "## 论文总结\n\n1. **核心创新点**：提出 ToolMerge，通过 LLM 规划器将查询分解为多个工具调用，并用布尔运算符合并各工具的排序结果，从而实现长视频关键帧检索。\n\n2. **主要方法**：\n   - 基于 LLM 的 planner 将用户查询拆解为若干工具调用（而非固定 schema 或单一视觉工具）；\n   - 每个工具独立对帧进行打分排序，再通过布尔运算符（合并策略）融合得到最终关键帧；\n   - 同时构建了新基准 **Molmo-2 Moments (M2M)**，其中每个问题都明确锚定到特定时间区间，可直接评估检索效果。\n\n3. **结论/性能**：在问答、问题检索、字幕检索三类任务上均与现有关键帧选择方法相当，尤其在 **字幕检索任务上比其他方法高出 5%**。代码与数据已开源（GitHub: michalsr/ToolMerge）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-25 13:06:45"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.19915",
+ "title": "LLM Agents Make Collective Belief Dynamics Programmable: Challenges and Research Directions",
+ "authors": "Xin He, Junxi Shen, Yuchen Mou, David M. Bossens, Caishun Chen, Ivor W. Tsang, Yew Soon Ong",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19915v1",
+ "abstract": "Classical models of opinion dynamics assume human participants with bounded rationality and limited coordination. The rise of LLM-based agents introduces a qualitative shift: agents can now participate in online discussions at scale, maintain consistent persuasion strategies, and coordinate systematically. This paper argues that LLM agents make collective belief dynamics programmable, enabling deliberate steering of population-level beliefs. We term this emerging problem programmable collective belief control. Through controlled multi-agent simulations, we provide proof-of-concept evidence that coordinated AI agents can induce measurable belief shifts that stabilize within a few interaction rounds. We identify four structural properties (indistinguishability, persistence, contextuality, and configurability) that make detection and defense fundamentally difficult. Based on these findings, we outline a research agenda spanning theoretical foundations for adversarial belief dynamics, operational methods for system-level detection and intervention, and simulation infrastructure for scalable experimentation. Our goal is not to present a complete solution, but to articulate why this problem demands urgent attention and to provide a conceptual foundation for future work.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出\"可编程集体信念控制\"（programmable collective belief control）这一新问题——LLM 智能体使群体信念动态首次具备可被系统性操控的可能性，构成对经典观点动力学模型的范式挑战。\n\n**2. 主要方法**\n- 通过受控的多智能体仿真实验，验证协调一致的 AI 智能体能否在群体中诱发可测量的信念偏移；\n- 提炼出使检测与防御困难的四个结构性特征：**不可区分性（indistinguishability）、持久性（persistence）、情境性（contextuality）、可配置性（configurability）**；\n- 在此基础上勾勒出涵盖理论基础、系统级检测/干预方法、可扩展仿真基础设施的研究议程。\n\n**3. 结论 / 性能**\n概念验证实验表明，协调的 LLM 智能体能够在**几轮交互内**诱发并稳定下来可观测的群体信念偏移。论文未提出完整解决方案，而是论证该问题的紧迫性并为后续研究奠定概念框架，呼吁学界关注对抗性信念动力学这一新兴方向。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-21 13:01:35"
+}

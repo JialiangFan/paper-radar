@@ -1,0 +1,13 @@
+{
+ "id": "2512.07761",
+ "title": "RL-MTJail: Reinforcement Learning for Automated Black-Box Multi-Turn Jailbreaking of Large Language Models",
+ "authors": "Xiqiao Xiong, Ouxiang Li, Zhuo Liu, Moxin Li, Wentao Shi, Fuli Feng, Xiangnan He",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07761v1",
+ "abstract": "Large language models are vulnerable to jailbreak attacks, threatening their safe deployment in real-world applications. This paper studies black-box multi-turn jailbreaks, aiming to train attacker LLMs to elicit harmful content from black-box models through a sequence of prompt-output interactions. Existing approaches typically rely on single turn optimization, which is insufficient for learning long-term attack strategies. To bridge this gap, we formulate the problem as a multi-turn reinforcement learning task, directly optimizing the harmfulness of the final-turn output as the outcome reward. To mitigate sparse supervision and promote long-term attack strategies, we propose two heuristic process rewards: (1) controlling the harmfulness of intermediate outputs to prevent triggering the black-box model's rejection mechanisms, and (2) maintaining the semantic relevance of intermediate outputs to avoid drifting into irrelevant content. Experimental results on multiple benchmarks show consistently improved attack success rates across multiple models, highlighting the effectiveness of our approach. The code is available at https://github.com/xxiqiao/RL-MTJail. Warning: This paper contains examples of harmful content.",
+ "summary": "1) 核心创新点（一句话）\n将多轮强化学习应用于黑盒大语言模型的自动化多轮越狱攻击，通过以最终输出的有害性为奖励直接优化攻击策略，克服了以往单轮优化的局限。\n\n2) 主要方法\n将攻击任务建模为多轮强化学习问题，直接优化最终-turn 的有害输出；为缓解稀疏奖励并促进长程攻击策略，提出两种过程奖励：一是对中间输出的有害性进行控制以避免触发对方模型的拒绝机制，二是保持中间输出的语义相关性以避免偏离无关内容。此外，训练攻击者 LLM 在黑盒模型的提示-输出序列中学习诱导有害输出，实验在多项基准和模型上进行，代码公开。\n\n3) 结论/性能\n在多项基准和模型上实现了稳定提升的攻击成功率，证明所提出的多轮强化学习框架在黑盒模型的攻击中具有有效性。代码可获取。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-09 14:01:03"
+}

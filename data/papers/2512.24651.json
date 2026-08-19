@@ -1,0 +1,13 @@
+{
+ "id": "2512.24651",
+ "title": "Hybrid Motion Planning with Deep Reinforcement Learning for Mobile Robot Navigation",
+ "authors": "Yury Kolomeytsev, Dmitry Golembiovsky",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24651v1",
+ "abstract": "Autonomous mobile robots operating in complex, dynamic environments face the dual challenge of navigating large-scale, structurally diverse spaces with static obstacles while safely interacting with various moving agents. Traditional graph-based planners excel at long-range pathfinding but lack reactivity, while Deep Reinforcement Learning (DRL) methods demonstrate strong collision avoidance but often fail to reach distant goals due to a lack of global context. We propose Hybrid Motion Planning with Deep Reinforcement Learning (HMP-DRL), a hybrid framework that bridges this gap. Our approach utilizes a graph-based global planner to generate a path, which is integrated into a local DRL policy via a sequence of checkpoints encoded in both the state space and reward function. To ensure social compliance, the local planner employs an entity-aware reward structure that dynamically adjusts safety margins and penalties based on the semantic type of surrounding agents. We validate the proposed method through extensive testing in a realistic simulation environment derived from real-world map data. Comprehensive experiments demonstrate that HMP-DRL consistently outperforms other methods, including state-of-the-art approaches, in terms of key metrics of robot navigation: success rate, collision rate, and time to reach the goal. Overall, these findings confirm that integrating long-term path guidance with semantically-aware local control significantly enhances both the safety and reliability of autonomous navigation in complex human-centric settings.",
+ "summary": "- 核心创新点：提出混合框架 HMP-DRL，将图基全局规划与语义感知的局部深度强化学习相结合，通过在状态与奖励中嵌入检查点实现全局路径引导的局部决策，并以实体感知奖励动态调整安全边界，提升复杂人群场景下的导航鲁棒性与安全性。\n\n- 主要方法：先用图基全局规划生成全局路径，然后将其融入局部 DRL 策略，通过一系列检查点编码到状态空间和奖励函数中实现全球信息对局部决策的引导；引入实体感知奖励结构，依据周围代理的语义类型自适应调整安全裕度与惩罚项；在基于真实世界地图数据的仿真环境中进行验证。\n\n- 结论/性能：在大量仿真实验中，HMP-DRL 在成功率、碰撞率和到达目标所需时间等关键导航指标上持续优于其他方法（包括最先进方法），显示出在复杂人群环境中更高的安全性与可靠性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:58:39"
+}

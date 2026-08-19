@@ -1,0 +1,13 @@
+{
+ "id": "2512.15687",
+ "title": "Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning",
+ "authors": "Zhenwen Liang, Sidi Lu, Wenhao Yu, Kishan Panaganti, Yujun Zhou, Haitao Mi, Dong Yu",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15687v1",
+ "abstract": "Reinforcement learning has become essential for strengthening the reasoning abilities of large language models, yet current exploration mechanisms remain fundamentally misaligned with how these models actually learn. Entropy bonuses and external semantic comparators encourage surface level variation but offer no guarantee that sampled trajectories differ in the update directions that shape optimization. We propose G2RL, a gradient guided reinforcement learning framework in which exploration is driven not by external heuristics but by the model own first order update geometry. For each response, G2RL constructs a sequence level feature from the model final layer sensitivity, obtainable at negligible cost from a standard forward pass, and measures how each trajectory would reshape the policy by comparing these features within a sampled group. Trajectories that introduce novel gradient directions receive a bounded multiplicative reward scaler, while redundant or off manifold updates are deemphasized, yielding a self referential exploration signal that is naturally aligned with PPO style stability and KL control. Across math and general reasoning benchmarks (MATH500, AMC, AIME24, AIME25, GPQA, MMLUpro) on Qwen3 base 1.7B and 4B models, G2RL consistently improves pass@1, maj@16, and pass@k over entropy based GRPO and external embedding methods. Analyzing the induced geometry, we find that G2RL expands exploration into substantially more orthogonal and often opposing gradient directions while maintaining semantic coherence, revealing that a policy own update space provides a far more faithful and effective basis for guiding exploration in large language model reinforcement learning.",
+ "summary": "- 核心创新点（一句话概括）\nG2RL提出一个以模型自身一阶更新几何为驱动的自参照探索框架，通过比较最终层敏感度构成的序列特征来引导探索，并对引入新梯度方向的轨迹给予受限奖励，抑制冗余更新，与PPO稳定性与KL控制相容。\n\n- 主要方法\n使用 Qwen3 基础模型（1.7B 和 4B），在强化学习中引入梯度引导的探索：为每条回复构造来自模型最终层敏感度的序列级特征（可通过一次前向传播获得），在同一采样组内比较这些特征以评估各轨迹对策略的重塑效果；对 introduces novel gradient directions 的轨迹给予有限放大的奖励系数，弱化冗余或“非流形”更新，形成自参照的探索信号，兼容 PPO 风格的稳定性和 KL 控制。\n\n- 结论/性能\n在 MATH500、AMC、AIME24、AIME25、GPQA、MMLUpro 等推理基准上，G2RL 相较基线的熵奖励 GRPO 与外部嵌入方法，持续提升了 pass@1、maj@16、pass@k 等指标；几何分析显示探索向量变得更正交甚至对立，同时保持语义连贯，表明自更新空间是引导大语言模型强化学习探索的更可靠有效基础。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-18 02:05:31"
+}

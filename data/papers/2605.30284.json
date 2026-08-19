@@ -1,0 +1,13 @@
+{
+ "id": "2605.30284",
+ "title": "ProjectionBench: Evaluating Scientific Hypothesis Generation in LLMs Under Progressive Information Disclosure",
+ "authors": "A. J. Lew, Y. Cao, M. J. Buehler",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30284v1",
+ "abstract": "Scientific discovery is an inherently creative and uncertain process, requiring reasoning beyond the recall of known knowledge. While many benchmarks have been proposed to evaluate large language model (LLM) performance on deep research tasks via multi-hop retrieval, their innovative reasoning abilities essential for true scientific discovery remain largely untested. We introduce a benchmark framework for evaluating model performance in scientific discovery and reasoning, building up from a raw problem to the classical null hypothesis test. In our framework, models initially receive only the topic and research question from a recent paper, with technical details progressively revealed. At each stage of information disclosure, the model is tasked with generating hypotheses that address the research question, which is compared with the conclusions from the original paper and evaluated via automated semantic similarity of constituent atomic claims. This progressive evaluation of semantic divergence from ground-truth conclusions enables assessment of a model's innovativeness (under minimal information) to grounded reasoning capabilities (under full experimental details), both critical for using LLMs for scientific discovery purposes. Our framework provides a foundation for systematically evaluating scientific reasoning and discovery capabilities in LLMs, crucial for advancing the development of next-generation AI scientist/co-scientist systems. Specifically, here we evaluate GPT-5, GPT-5.4, Gemini 2.5 pro, and Gemini 3.1 pro preview across 45 papers spanning bioactive materials, mechanical materials, and nanomaterials. We find that GPT-5.4 and Gemini 3.1 pro outperform their previous generation counterparts as expected, and GPT-5.4 in particular maintains 0.7 F1 score alignment with ground truth conclusions even under minimal context.",
+ "summary": "# ProjectionBench 论文总结\n\n**核心创新点**：提出一个通过\"渐进式信息披露\"评估 LLM 科学假设生成能力的基准框架，区分模型的\"创新性推理\"与\"基于证据的推理\"。\n\n**主要方法**：从近期论文中只给模型提供主题和研究问题作为起点，逐步揭示技术细节；在每个阶段让模型生成假设，并通过原子声明的语义相似度自动比对原论文结论，从而度量模型输出与真实结论的语义偏差。\n\n**结论/性能**：在涵盖生物活性材料、力学材料和纳米材料的 45 篇论文上评测了 GPT-5、GPT-5.4、Gemini 2.5 pro 和 Gemini 3.1 pro；新一代模型整体优于上一代，其中 GPT-5.4 即便在信息极少的情况下仍能保持与真实结论 0.7 的 F1 对齐度。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:01:52"
+}

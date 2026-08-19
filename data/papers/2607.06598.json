@@ -1,0 +1,13 @@
+{
+ "id": "2607.06598",
+ "title": "Non-contact, Real-time, Heart-rate Measurement using Image Processing with Commodity Cameras and AI Agents",
+ "authors": "Kelly Li, Fulu Li",
+ "date": "2026-07-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.06598v1",
+ "abstract": "Heart rate measurement is one of the key requirements for real-time health monitoring, in particular for health caring of elderly people. Traditional heart rate measurement relies on contact sensing mechanisms such as some heart rate measurement devices at medical hospitals or some wearable devices with embedded sensors such as Apple Watch, etc. In this paper, we develop a system for non-contact, real-time, heart rate measurement using image processing with commodity cameras such as an embedded camera on a laptop, where we use an innovative algorithm to capture the relevant signals for the computation of heart rate in a time series in real life environments. The presented heart rate computation (HRC) process is composed with four major steps: (a) identify frames per second of the camera in use, i.e., 30 frames per second for a given camera, (b) face detection (FD) with shape predictor of 68 face landmarks using deep learning (DL) method, (c) time sliding window (TSW) algorithm to de-noise the signal by smoothing out the noise, and (d) compute heart rate based on identified signal periodicity. We test and analyze the developed prototypes against heart rate results by Apple Watch and check the difference range in multiple rounds and compute the mean of the difference for the measurement values of the heart rate of the same person at the same time. We will do further tuning and optimization of the present methods and deploy the system as a personal AI agent [6] for health monitoring as our future directions.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-10 13:01:42"
+}

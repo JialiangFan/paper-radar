@@ -1,0 +1,33 @@
+{
+ "id": "2507.18262",
+ "title": "ReSem3D: Refinable 3D Spatial Constraints via Fine-Grained Semantic Grounding for Generalizable Robotic Manipulation",
+ "authors": "Su, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2507.18262",
+ "abstract": "",
+ "summary": "ReSem3D uses MLLMs and vision foundation models to build hierarchical 3D spatial constraints from language and RGB-D observations.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "3d-grounding",
+  "constraint-grounding",
+  "robot-manipulation",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "spatial-constraints",
+  "spatial-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2025_Su_ReSem3D.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2025_Su_ReSem3D.pdf",
+ "code": "https://github.com/scy-v/ReSem3D",
+ "project": "https://resem3d.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

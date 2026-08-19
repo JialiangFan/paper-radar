@@ -1,0 +1,13 @@
+{
+ "id": "2604.28157",
+ "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+ "authors": "Yanting Wang, Chenlong Yin, Ying Chen, Jinyuan Jia",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28157v1",
+ "abstract": "Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants. However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corruption. To quantify the security risks faced by LLMs under these threats, the research community has developed heuristic-based and optimization-based red-teaming methods. Optimization-based methods generally produce stronger attacks than heuristic attacks and thus provide a more rigorous assessment of LLM security risks. However, they are often resource-intensive, requiring significant computation and GPU memory, especially for long context scenarios. The resource-intensive nature poses a major obstacle for the community (especially academic researchers) to systematically evaluate the security risks of long-context LLMs and assess the effectiveness of defense strategies at scale. In this work, we propose FlashRT, the first framework to improve the efficiency (in terms of both computation and memory) for optimization-based prompt injection and knowledge corruption attacks under long-context LLMs. Through extensive evaluations, we find that FlashRT consistently delivers a 2x-7x speedup (e.g., reducing runtime from one hour to less than ten minutes) and a 2x-4x reduction in GPU memory consumption (e.g., reducing from 264.1 GB to 65.7 GB GPU memory for a 32K token context) compared to state-of-the-art baseline nanoGCG. FlashRT can be broadly applied to black-box optimization methods, such as TAP and AutoDAN. We hope FlashRT can serve as a red-teaming tool to enable systematic evaluation of long-context LLM security. The code is available at: https://github.com/Wang-Yanting/FlashRT",
+ "summary": "**核心创新点**：提出 FlashRT，面向长上下文大模型的优化驱动红队攻击，实现计算与显存双重高效，便于大规模评估长上下文LLMs 的提示注入与知识篡改风险。\n\n**主要方法**：提出一个框架性解决方案，针对长上下文情境下的优化型提示注入和知识篡改攻击进行计算与内存效率的提升；可广泛应用于黑盒优化方法（如 TAP、AutoDAN）并在其中实现资源优化，以降低计算量和 GPU 内存占用。\n\n**结论/性能**：相比状态化基线 nanoGCG，FlashRT实现总体性能提升：速度提升约2x–7x，GPU内存降低约2x–4x；以32K上下文为例，显存从约264.1GB降至约65.7GB；运行时从约1小时缩短至不到10分钟；可作为长上下文LLM安全红队评估的通用工具。代码已开源。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-01 13:01:32"
+}

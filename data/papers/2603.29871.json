@@ -1,0 +1,13 @@
+{
+ "id": "2603.29871",
+ "title": "ShapE-GRPO: Shapley-Enhanced Reward Allocation for Multi-Candidate LLM Training",
+ "authors": "Rui Ai, Yu Pan, David Simchi-Levi, Chonghuan Wang",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29871v1",
+ "abstract": "In user-agent interaction scenarios such as recommendation, brainstorming, and code suggestion, Large Language Models (LLMs) often generate sets of candidate recommendations where the objective is to maximize the collective utility of the entire set rather than individual candidates independently. However, existing reinforcement learning post-training paradigms, such as Group Relative Policy Optimization (GRPO), typically assign the same set-level scalar reward to every candidate in the set. This leads to noisy training signals where poor candidates free-ride on the high reward produced by a single strong peer, resulting in suboptimal exploration. To address this, we propose Shapley-Enhanced GRPO (ShapE-GRPO). By leveraging the permutation-invariant nature of set-level utility, we derive a Shapley-enhanced formulation from cooperative game theory to decompose set-level rewards into granular, candidate-specific signals. We show that our formulation preserves the fundamental axioms of the Shapley value while remaining computationally efficient with polynomial-time complexity. Empirically, ShapE-GRPO consistently outperforms standard GRPO across diverse datasets with accelerated convergence during training.",
+ "summary": "- 核心创新点：将集合层级的奖励通过Shapley值分解为候选项级别的贡献信号，解决GRPO中对整集合统一奖励导致的信号噪声与探索不足的问题。\n- 主要方法：基于集合效用的置换不变性，提出Shapley增强的GRPO（ShapE-GRPO），将集体奖励分配到个体候选项，沿用Shapley值公理性并实现多项式时间计算，提升训练中的奖励信号分辨率。\n- 结论/性能：在多候选LLM训练任务上持续优于标准GRPO，且训练收敛速度更快。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-01 13:01:31"
+}

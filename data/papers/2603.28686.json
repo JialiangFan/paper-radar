@@ -1,0 +1,13 @@
+{
+ "id": "2603.28686",
+ "title": "C2RustXW: Program-Structure-Aware C-to-Rust Translation via Program Analysis and LLM",
+ "authors": "Yanyan Yan, Yang Feng, Jiangshan Liu, Di Liu, Zixi Liu, Hao Teng, Baowen Xu",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28686v1",
+ "abstract": "The growing adoption of Rust for its memory safety and performance has increased the demand for effective migration of legacy C codebases. However, existing rule-based translators (e.g., \\ctorust) often generate verbose, non-idiomatic code that preserves unsafe C semantics, limiting readability, maintainability, and practical adoption. Moreover, manual post-processing of such outputs is labor-intensive and rarely yields high-quality Rust code, posing a significant barrier to large-scale migration. To address these limitations, we present \\tool, a program-structure-aware C-to-Rust translation approach that integrates program analysis with Large Language Models (LLMs). \\tool extracts the multi-level program structure, including global symbols, function dependencies, and control- and data-flow information, and encodes these as structured textual representations injected into LLM prompts to guide translation and repair. Based on this design, \\tool performs dependency-aware translation and adopts a multi-stage repair pipeline that combines rule-based and structure-guided LLM-based techniques to ensure syntactic correctness. For semantic correctness, \\tool further integrates execution-based validation with structure-guided reasoning to localize and repair behavioral inconsistencies. Experimental results show that \\tool achieves 100\\% syntactic correctness on CodeNet and 97.78\\% on GitHub, while significantly reducing code size (up to 43.70\\%) and unsafe usage (to 5.75\\%). At the project level, \\tool achieves perfect syntactic correctness and an average semantic correctness of 78.87\\%, demonstrating its effectiveness for practical and scalable C-to-Rust migration.",
+ "summary": "核心创新点：提出面向程序结构感知的C到Rust翻译框架C2RustXW，将程序分析得到的全局符号、函数依赖以及控制/数据流信息以结构化文本注入 LL M 提示，实现依赖感知翻译和多阶段结构化修复，并结合执行验证提升语义正确性。\n\n主要方法：\n- 提取并编码多层次程序结构（全局符号、函数依赖、控制流与数据流）为结构化文本，注入到 LLM 提示中以引导翻译与修复\n- 进行依赖感知的翻译流程\n- 采用多阶段修复管线，结合规则基方法与结构-guided 的 LLM 修复\n- 引入执行性验证与结构化推理来定位并修复行为不一致\n\n结论/性能：\n- CodeNet 上实现100% 语法正确性，GitHub 上97.78%\n- 代码规模缩减最多43.70%，不安全用法降至5.75%\n- 项目层面实现了完美语法正确性，平均语义正确性达到78.87%",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-31 13:00:59"
+}

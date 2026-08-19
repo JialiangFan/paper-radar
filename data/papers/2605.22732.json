@@ -1,0 +1,13 @@
+{
+ "id": "2605.22732",
+ "title": "Beyond Acoustic Emotion Recognition: Multimodal Pathos Analysis in Political Speech Using LLM-Based and Acoustic Emotion Models",
+ "authors": "Juergen Dietrich",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22732v1",
+ "abstract": "We investigate whether acoustic emotion recognition models can serve as proxies for the Pathos dimension in political speech analysis, as operationalised by the TRUST multi-agent large language model (LLM) pipeline. Using a Bundestag plenary speech by Felix Banaszak (51 segments, 245 s) as a case study, we compare three analysis modalities: (1) emotion2vec_plus_large, an acoustic speech emotion recognition (SER) model whose continuous Arousal and Valence values are derived via post-hoc Russell Circumplex projection; (2) Gemini 2.5 Flash, an LLM analysing the full speech audio together with its transcript in an open-ended, context-aware fashion; and (3) TRUST-Pathos scores from a three-advocate LLM supervisor ensemble. Spearman rank correlations reveal that Gemini Valence correlates strongly with TRUST-Pathos (rho = +0.664, p < 0.001), whereas emotion2vec Valence does not (rho = +0.097, p = 0.499). We further demonstrate, via a systematic quality evaluation of the Berlin Database of Emotional Speech (EMO-DB) using Gemini in an open-ended annotation paradigm, that standard SER benchmark corpora suffer from acted speech, cultural bias, and category incompatibility. Our results suggest that LLM-based multimodal analysis captures semantically defined political emotion substantially better than acoustic models alone, while acoustic features remain informative for low-level Arousal estimation. Future work will extend this approach to video-based analysis incorporating facial expression and gaze.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**：\n首次将声学情感识别模型与基于LLM的多模态分析进行对比，证明在政治演讲的\"Pathos（情感诉求）\"维度分析上，LLM多模态方法显著优于传统声学情感识别（SER）模型。\n\n**2. 主要方法**：\n以德国联邦议院Felix Banaszak的演讲（51个片段，245秒）为案例，对比三种模态：\n- **emotion2vec_plus_large**：声学SER模型，通过Russell环形模型投影获得Arousal/Valence连续值；\n- **Gemini 2.5 Flash**：结合音频与文本的开放式、上下文感知LLM分析；\n- **TRUST-Pathos**：基于三智能体LLM监督集成的Pathos评分。\n采用Spearman秩相关进行比较，并用Gemini对柏林情感语音库（EMO-DB）做开放式标注质量评估。\n\n**3. 结论/性能**：\n- Gemini的Valence与TRUST-Pathos强相关（ρ=+0.664, p<0.001），而emotion2vec的Valence几乎无相关（ρ=+0.097, p=0.499）；\n- 揭示了标准SER基准语料库存在表演化语音、文化偏见和类别不兼容等问题；\n- 结论：LLM多模态分析更能捕捉语义层面的政治情感，声学特征仅在低层Arousal估计上仍有价值；未来计划扩展到包含面部表情和视线的视频分析。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:02:01"
+}

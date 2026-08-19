@@ -1,0 +1,13 @@
+{
+ "id": "2606.09821",
+ "title": "Rethinking the Divergence Regularization in LLM RL",
+ "authors": "Jiarui Yao, Xiangxin Zhou, Penghui Qi, Wee Sun Lee, Liefeng Bo, Tianyu Pang",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.09821v1",
+ "abstract": "Reinforcement learning (RL) has become a key component of post-training large language models (LLMs). In practice, LLM RL is often off-policy because of training-inference mismatch and policy staleness, making trust-region control essential for stable optimization. Mainstream methods such as PPO and GRPO approximate this control with a ratio-clipping mechanism, but the importance ratio can be a poor proxy for distributional shift in long-tailed vocabularies. Recent work such as DPPO addresses this mismatch by replacing ratio-based clipping with a divergence-based mask, yielding a trust region defined by the sampled token's absolute probability shift. However, DPPO still relies on a hard mask: once a token crosses the trust-region boundary in a harmful direction, its gradient is discarded rather than corrected. To address this, we propose Divergence Regularized Policy Optimization (DRPO), which replaces the hard mask with a smooth advantage-weighted quadratic regularizer on policy shift. DRPO preserves the same trust-region geometry as DPPO while inducing bounded, continuous gradient weights that attenuate diverging updates and provide corrective signals beyond the boundary. Experiments across model scales, architectures, and precision settings show that DRPO improves the stability and efficiency of LLM RL training.",
+ "summary": "# 论文摘要总结\n\n**1. 核心创新点**\n提出 DRPO（散度正则化策略优化），用平滑的优势加权二次正则项取代 DPPO 的硬掩码，对越过信任域边界的更新进行连续衰减与矫正，而非简单丢弃。\n\n**2. 主要方法**\n- 针对 LLM RL 中训练-推理不匹配与策略陈旧导致的离策略问题，重新审视信任域控制；\n- 指出 PPO/GRPO 的比率裁剪在长尾词表上无法很好代表分布偏移，DPPO 改用基于散度（token 绝对概率偏移）的硬掩码仍会丢弃梯度；\n- DRPO 保留 DPPO 的信任域几何结构，但用 **平滑的 advantage-weighted 二次正则** 给出有界、连续的梯度权重，能在边界之外提供矫正信号。\n\n**3. 结论/性能**\n在不同模型规模、架构与精度设置下的实验表明，DRPO 提升了 LLM RL 训练的稳定性与效率。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-09 13:00:47"
+}

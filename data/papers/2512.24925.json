@@ -1,0 +1,13 @@
+{
+ "id": "2512.24925",
+ "title": "Towards Provably Secure Generative AI: Reliable Consensus Sampling",
+ "authors": "Yu Cui, Hang Fu, Sicheng Pan, Zhuoyu Sun, Yifei Liu, Yuhong Nie, Bo Ran, Baohan Huang, Xufeng Zhang, Haibin Zhang, Cong Zuo, Licheng Wang",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24925v1",
+ "abstract": "Existing research on generative AI security is primarily driven by mutually reinforcing attack and defense methodologies grounded in empirical experience. This dynamic frequently gives rise to previously unknown attacks that can circumvent current detection and prevention. This necessitates the continual updating of security mechanisms. Constructing generative AI with provable security and theoretically controllable risk is therefore necessary. Consensus Sampling (CS) is a promising algorithm toward provably secure AI. It controls risk by leveraging overlap in model output probabilities. However, we find that CS relies on frequent abstention to avoid unsafe outputs, which reduces utility. Moreover, CS becomes highly vulnerable when unsafe models are maliciously manipulated. To address these issues, we propose a new primitive called Reliable Consensus Sampling (RCS), that traces acceptance probability to tolerate extreme adversarial behaviors, improving robustness. RCS also eliminates the need for abstention entirely. We further develop a feedback algorithm to continuously and dynamically enhance the safety of RCS. We provide theoretical guarantees that RCS maintains a controllable risk threshold. Extensive experiments show that RCS significantly improves robustness and utility while maintaining latency comparable to CS. We hope this work contributes to the development of provably secure generative AI.",
+ "summary": "1) 核心创新点\n- 提出可证明安全的生成式AI原语 Reliable Consensus Sampling（RCS），通过追踪接受概率来容忍极端对手行为，消除对 abstention 的依赖，并提供可控风险的理论保障。\n\n2) 主要方法\n- 在现有的 Consensus Sampling（CS）框架基础上提出 RCS，设计接受概率的追踪机制以提高鲁棒性，开发一个自适应的反馈算法以动态提升安全性，并给出理论保证；通过实验与 CS 对比验证鲁棒性、效用与延迟。\n\n3) 结论/性能\n- 实验表明 RCS 在鲁棒性和效用方面显著优于 CS，且延迟与 CS 相当，同时不再需要 abstention，具有可控风险阈值的理论保障，推动可证明安全的生成式AI研究。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 03:31:48"
+}

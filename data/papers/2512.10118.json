@@ -1,0 +1,13 @@
+{
+ "id": "2512.10118",
+ "title": "Explicit Control Barrier Function-based Safety Filters and their Resource-Aware Computation",
+ "authors": "Pol Mestres, Shima Sadat Mousavi, Pio Ong, Lizhi Yang, Ersin Das, Joel W. Burdick, Aaron D. Ames",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10118v1",
+ "abstract": "This paper studies the efficient implementation of safety filters that are designed using control barrier functions (CBFs), which minimally modify a nominal controller to render it safe with respect to a prescribed set of states. Although CBF-based safety filters are often implemented by solving a quadratic program (QP) in real time, the use of off-the-shelf solvers for such optimization problems poses a challenge in applications where control actions need to be computed efficiently at very high frequencies. In this paper, we introduce a closed-form expression for controllers obtained through CBF-based safety filters. This expression is obtained by partitioning the state-space into different regions, with a different closed-form solution in each region. We leverage this formula to introduce a resource-aware implementation of CBF-based safety filters that detects changes in the partition region and uses the closed-form expression between changes. We showcase the applicability of our approach in examples ranging from aerospace control to safe reinforcement learning.",
+ "summary": "核心创新点：提出通过将状态空间分区域并在每个区域给出相应的闭式控制解来实现基于CBF的安全滤波器，并引入资源感知实现，在区域变化时切换使用闭式解，从而避免实时求解QP。\n\n主要方法：在控制边界函数（CBF）框架下推导分区域的闭式控制律；实现区域检测与区域内复用闭式解的资源感知执行策略，降低对通用QP求解器的依赖。\n\n结论/性能：在高频控制场景中实现更高的计算效率，显著减少实时QP求解的需求，具备在航空航天控制与安全强化学习等领域的适用性与应用潜力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:01:01"
+}

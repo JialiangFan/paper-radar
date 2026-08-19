@@ -1,0 +1,13 @@
+{
+ "id": "2512.24555",
+ "title": "From Perception to Punchline: Empowering VLM with the Art of In-the-wild Meme",
+ "authors": "Xueyan Li, Yingyi Xue, Mengjie Jiang, Qingzi Zhu, Yazhe Niu",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24555v1",
+ "abstract": "Generating humorous memes is a challenging multimodal task that moves beyond direct image-to-caption supervision. It requires a nuanced reasoning over visual content, contextual cues, and subjective humor. To bridge this gap between visual perception and humorous punchline creation, we propose HUMOR}, a novel framework that guides VLMs through hierarchical reasoning and aligns them with group-wise human preferences. First, HUMOR employs a hierarchical, multi-path Chain-of-Thought (CoT): the model begins by identifying a template-level intent, then explores diverse reasoning paths under different contexts, and finally anchors onto a high-quality, context-specific path. This CoT supervision, which traces back from ground-truth captions, enhances reasoning diversity. We further analyze that this multi-path exploration with anchoring maintains a high expected humor quality, under the practical condition that high-quality paths retain significant probability mass. Second, to capture subjective humor, we train a pairwise reward model that operates within groups of memes sharing the same template. Following established theory, this approach ensures a consistent and robust proxy for human preference, even with subjective and noisy labels. The reward model then enables a group-wise reinforcement learning optimization, guaranteeing providing a theoretical guarantee for monotonic improvement within the trust region. Extensive experiments show that HUMOR empowers various VLMs with superior reasoning diversity, more reliable preference alignment, and higher overall meme quality. Beyond memes, our work presents a general training paradigm for open-ended, human-aligned multimodal generation, where success is guided by comparative judgment within coherent output group.",
+ "summary": "1) 核心创新点\n- 提出 HUMOR 框架，结合分层多路径链式推理和组内对比偏好强化学习，使视觉语言模型在 meme 生成中实现更丰富的推理、多样的幽默路径与人群偏好的一致对齐。\n\n2) 主要方法\n- 分层多路径 CoT：先确定模板级意图，再在不同情境下探索多条推理路径，最终锚定高质量、情境特定的路径；通过从地面真实字幕回溯的 CoT 监督提升推理多样性。\n- 组内对比偏好与奖励模型：在同一模板组的 meme 中训练成对（pairwise）奖励模型，作为人类偏好的代理；利用组内强化学习在信赖区间内实现单调改进。\n- 通用训练范式：将开放式、多模态生成任务的成功建立在组内比较判断之上，强调人类偏好的一致性与鲁棒性。\n\n3) 结论/性能\n- 实验表明 HUMOR 使多种 VLMs 获得更高的推理多样性、更可靠的偏好对齐，以及更高的整体 meme 质量；同时提供了一种可泛化的训练范式，适用于以比较判断为导向的开放式多模态生成任务。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:51:35"
+}

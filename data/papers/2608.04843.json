@@ -1,0 +1,13 @@
+{
+ "id": "2608.04843",
+ "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+ "authors": "Songxin Lei, Kun Ouyang, Weilin Ruan, Yuqian Wu, Zhijiang Guo, Yushi Sun, Fugee Tsung",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04843v1",
+ "abstract": "Long-horizon LLM agents require memory systems that recover useful evidence from large interaction histories without passing excessive context to downstream models. Existing memory pipelines often rely on hand-crafted heuristics and repeated LLM calls, which can introduce redundant context and high inference cost. We propose MemoryCPT, an end-to-end trainable agent memory pipeline that spans offline memory construction and online query-conditioned context generation. MemoryCPT consists of two stages: Query-agnostic Distillation (QAD), which distills a modular memory-construction pipeline into a compact model using explicit reasoning traces; and Query-aware Retrieval and Summarization (QAR), which combines reciprocal rank fusion (RRF) with a LoRA-based summarizer trained via Group Relative Policy Optimization (GRPO) under a cost-aware reward. We further introduce Quality per Cost (QPC) to quantify answer quality per unit inference cost. Experiments on LoCoMo and LongMemEval show that MemoryCPT improves the cost-performance trade-off over the evaluated baselines, while ablation and sensitivity analyses characterize the contributions of its components and the effects of key design choices.",
+ "summary": "## MemoryCPT 论文摘要总结\n\n**1. 核心创新点**\n提出 MemoryCPT——一个端到端可训练的智能体记忆框架，用统一训练替代传统的手工启发式规则和反复 LLM 调用，在\"回答质量\"与\"推理成本\"之间取得更优权衡。\n\n**2. 主要方法**\n分为两个阶段：\n- **QAD（查询无关蒸馏）**：离线阶段，借助显式推理链（reasoning traces）把模块化的记忆构建流水线蒸馏进一个小型紧凑模型。\n- **QAR（查询感知检索与摘要）**：在线阶段，用倒数排序融合（RRF）做检索，再接一个 LoRA 摘要器，并通过 GRPO 强化学习在**成本感知奖励**下训练，使输出上下文尽量精简。\n\n此外提出新指标 **QPC（Quality per Cost）**，衡量单位推理成本所换来的答案质量。\n\n**3. 结论/性能**\n在 LoCoMo 与 LongMemEval 两个长期记忆基准上，MemoryCPT 相比所评测的基线取得了更好的成本-性能权衡；消融与敏感性实验进一步验证了各组件的贡献及关键设计选择的影响。\n\n> 补充说明：摘要仅陈述\"优于所评测基线\"，未给出具体数值提升幅度，因此实际性能增益需查看正文实验表格。\n\n如需更完整的文献综述式分析（研究背景、问题定位、贡献拆解、方法论细节，并输出中英双语到 Obsidian），可以调用 `/paper-review`。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-08 13:02:47"
+}

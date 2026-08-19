@@ -1,0 +1,13 @@
+{
+ "id": "2512.19691",
+ "title": "Scalably Enhancing the Clinical Validity of a Task Benchmark with Physician Oversight",
+ "authors": "Junze Ye, Daniel Tawfik, Alex J. Goodell, Nikhil V. Kotha, Mark K. Buyyounouski, Mohsen Bayati",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19691v1",
+ "abstract": "Automating the calculation of clinical risk scores offers a significant opportunity to reduce physician administrative burden and enhance patient care. The current standard for evaluating this capability is MedCalc-Bench, a large-scale dataset constructed using LLM-based feature extraction and rule-based aggregation. However, treating such model-generated benchmarks as static oracles risks enshrining historical model errors as evaluation gold standards, a problem dangerously amplified when these datasets serve as reward signals for Reinforcement Learning (RL). In this work, we propose viewing benchmarks for complex tasks such as clinical score computation as ''in-progress living documents'' that should be periodically re-evaluated as the processes for creating them improve. We introduce a systematic, physician-in-the-loop pipeline that leverages advanced agentic verifiers to audit and relabel MedCalc-Bench, utilizing automated triage to reserve scarce clinician attention for the most contentious instances. Our audit reveals that a notable fraction of original labels diverge from medical ground truth due to extraction errors, calculator logic mismatches, and clinical ambiguity. To study whether this label noise meaningfully impacts downstream RL training, we fine-tune a Qwen3-8B model via Group Relative Policy Optimization (GRPO) and demonstrate that training on corrected labels yields an 8.7% absolute improvement in accuracy over the original baseline -- validating that label noise materially affects model evaluation. These findings underscore that in safety-critical domains, rigorous benchmark maintenance is a prerequisite for genuine model alignment.",
+ "summary": "- 核心创新点：将临床分数基准视为“正在进行中的活文档”，通过医生在环的审计-重标流程与自动化争议分流来持续纠正基准标签，从而提升基准质量和评估可靠性。\n\n- 主要方法：建立系统化的医生在环管线，使用具代理能力的校验器对 MedCalc-Bench 进行审计与重标，自动化分流将争议样本分配给临床专家；评估标签噪声对下游 RL 的影响；以 GRPO（Group Relative Policy Optimization）对 Qwen3-8B 进行微调并比较修正标签与原始标签的效果。\n\n- 结论/性能：使用纠正标签进行微调的模型在 RL 训练中实现了相对于原始基线的8.7个百分点的绝对准确度提升，验证了标签噪声对评估的实质性影响；强调在安全关键领域，基准的严格维护是实现真正模型对齐的前提。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-23 03:50:47"
+}

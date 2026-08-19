@@ -1,0 +1,13 @@
+{
+ "id": "2602.02380",
+ "title": "Unified Personalized Reward Model for Vision Generation",
+ "authors": "Yibin Wang, Yuhang Zang, Feng Han, Jiazi Bu, Yujie Zhou, Cheng Jin, Jiaqi Wang",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02380v1",
+ "abstract": "Recent advancements in multimodal reward models (RMs) have significantly propelled the development of visual generation. Existing frameworks typically adopt Bradley-Terry-style preference modeling or leverage generative VLMs as judges, and subsequently optimize visual generation models via reinforcement learning. However, current RMs suffer from inherent limitations: they often follow a one-size-fits-all paradigm that assumes a monolithic preference distribution or relies on fixed evaluation rubrics. As a result, they are insensitive to content-specific visual cues, leading to systematic misalignment with subjective and context-dependent human preferences. To this end, inspired by human assessment, we propose UnifiedReward-Flex, a unified personalized reward model for vision generation that couples reward modeling with flexible and context-adaptive reasoning. Specifically, given a prompt and the generated visual content, it first interprets the semantic intent and grounds on visual evidence, then dynamically constructs a hierarchical assessment by instantiating fine-grained criteria under both predefined and self-generated high-level dimensions. Our training pipeline follows a two-stage process: (1) we first distill structured, high-quality reasoning traces from advanced closed-source VLMs to bootstrap SFT, equipping the model with flexible and context-adaptive reasoning behaviors; (2) we then perform direct preference optimization (DPO) on carefully curated preference pairs to further strengthen reasoning fidelity and discriminative alignment. To validate the effectiveness, we integrate UnifiedReward-Flex into the GRPO framework for image and video synthesis, and extensive results demonstrate its superiority.",
+ "summary": "核心创新点：提出 UnifiedReward-Flex，统一且个性化的视觉生成奖励模型，能基于内容语义与视觉证据进行灵活、情境自适应的分层推理，从而更好地对齐人类主观偏好。\n\n主要方法：\n- 模型与框架：引入 UnifiedReward-Flex 作为可与 GRPO 框架结合的奖励评估模块，用于图像与视频生成。\n- 两阶段训练：\n  - 第1阶段：从先进的闭源视觉语言模型中蒸馏结构化、高质量的推理轨迹，进行监督微调（SFT），获得灵活且上下文自适应的推理能力。\n  - 第2阶段：在精心筛选的偏好对上进行直接偏好优化（DPO），增强推理的保真度与判别对齐。\n- 推理与评估设计：给定提示与生成内容，先解释语义意图并以视觉证据为基底，动态构建包含预定义与自生成高层维度的层次化评估标准（细粒度标准）。\n- 应用场景：将其接入图像和视频的生成/评估流程中进行验证。\n\n结论/性能：广泛的实验结果表明，该模型在对人类偏好的一致性和对内容特定视觉线索的敏感性方面优于现有奖励模型，显著提升了图像和视频生成的质量与对齐效果。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-03 14:05:07"
+}

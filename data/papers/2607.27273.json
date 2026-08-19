@@ -1,0 +1,13 @@
+{
+ "id": "2607.27273",
+ "title": "SDO: Structure-Aware Data Organization for Efficient LLM Post-Training",
+ "authors": "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27273v1",
+ "abstract": "Post-training of large language models is expensive, and existing efficiency improvements mainly focus on selecting informative samples or designing training schedules. However, data organization itself is usually treated as a static preprocessing step: embedding-based grouping methods construct fixed partitions before training and cannot adapt to the evolving sample exposure during optimization. As a result, all samples receive similar exposure despite their different optimization needs, leading to redundant updates for some samples while leaving others under-optimized. To address this problem, we propose SDO (Structure-Aware Data Organization), a plug-and-play data organization framework with an exposure-driven feedback mechanism that organizes mini-batch composition and sample exposure according to representation-space structure. SDO operates epoch by epoch on frozen external embeddings, avoiding model warm-up training overhead: within each epoch, locality-aware batching forms coherent mini-batches via KNN neighborhood traversal; across epochs, exposure-balanced scheduling records per-sample participation and reduces the sampling probability of over-exposed samples to preserve long-term coverage. Across SFT, DPO, and GRPO, SDO accelerates convergence, with the largest gains observed in the early-to-mid phase, producing more coherent gradients and more balanced accuracy across question types without permanently excluding training samples.",
+ "summary": "## 论文速览：SDO — 面向 LLM 后训练的结构感知数据组织\n\n**1. 核心创新点**\n把\"数据组织\"从静态预处理升级为训练中动态自适应的机制——依据表示空间结构组织 mini-batch，并用曝光反馈平衡各样本的训练次数。\n\n**2. 主要方法**\n即插即用框架，基于**冻结的外部 embedding**（无需模型 warm-up），按 epoch 迭代运行两个组件：\n\n- **Epoch 内 —— 局部感知批构建**：通过 KNN 邻域遍历，把表示空间中相邻的样本组织进同一个 mini-batch，使批内语义连贯。\n- **Epoch 间 —— 曝光均衡调度**：记录每个样本的历史参与次数，降低过度曝光样本的采样概率，从而保证长期覆盖率，且不会永久剔除任何训练样本。\n\n**3. 结论/性能**\n在 **SFT、DPO、GRPO** 三种后训练范式上均加速收敛，收益集中在训练的**early-to-mid 阶段**；同时产生更一致（coherent）的梯度方向，并在不同题型上取得更均衡的准确率。\n\n> 一点说明：摘要中只给出\"加速收敛\"\"更均衡\"等定性描述，未提供具体的加速比或基准分数，实际增益幅度需看正文实验部分。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-31 13:00:55"
+}

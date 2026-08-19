@@ -1,0 +1,13 @@
+{
+ "id": "2602.03596",
+ "title": "SAGE-5GC: Security-Aware Guidelines for Evaluating Anomaly Detection in the 5G Core Network",
+ "authors": "Cristian Manca, Christian Scano, Giorgio Piras, Fabio Brau, Maura Pintor, Battista Biggio",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03596v1",
+ "abstract": "Machine learning-based anomaly detection systems are increasingly being adopted in 5G Core networks to monitor complex, high-volume traffic. However, most existing approaches are evaluated under strong assumptions that rarely hold in operational environments, notably the availability of independent and identically distributed (IID) data and the absence of adaptive attackers.In this work, we study the problem of detecting 5G attacks \\textit{in the wild}, focusing on realistic deployment settings. We propose a set of Security-Aware Guidelines for Evaluating anomaly detectors in 5G Core Network (SAGE-5GC), driven by domain knowledge and consideration of potential adversarial threats. Using a realistic 5G Core dataset, we first train several anomaly detectors and assess their baseline performance against standard 5GC control-plane cyberattacks targeting PFCP-based network services.We then extend the evaluation to adversarial settings, where an attacker tries to manipulate the observable features of the network traffic to evade detection, under the constraint that the intended functionality of the malicious traffic is preserved. Starting from a selected set of controllable features, we analyze model sensitivity and adversarial robustness through randomized perturbations. Finally, we introduce a practical optimization strategy based on genetic algorithms that operates exclusively on attacker-controllable features and does not require prior knowledge of the underlying detection model. Our experimental results show that adversarially crafted attacks can substantially degrade detection performance, underscoring the need for robust, security-aware evaluation methodologies for anomaly detection in 5G networks deployed in the wild.",
+ "summary": "- 核心创新点：提出 SAGE-5GC 安全感知评估框架，在真实部署与对抗场景中评估5G核心网异常检测的鲁棒性与安全性，解决 IID 假设与自适应攻击等现实挑战。\n\n- 主要方法：使用真实的5G Core 数据集训练多种异常检测器，评估基线在 PFCP 基础网络服务上的攻击；在对抗场景中从攻击者可控特征出发进行随机扰动分析模型敏感性与鲁棒性；提出基于遗传算法的优化策略，仅在攻击者可控特征上运行且不需要事先了解检测模型，即可寻找对抗路径。\n\n- 结论/性能：实验表明经过精心设计的对抗性攻击能显著降低检测性能，揭示现有检测在真实野外部署中的脆弱性，强调需要更具安全意识的评估方法。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-04 14:01:26"
+}

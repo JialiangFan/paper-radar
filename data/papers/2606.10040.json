@@ -1,0 +1,13 @@
+{
+ "id": "2606.10040",
+ "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+ "authors": "Jiajun Li, Tiecheng Guo, Yifan Ye, Rongyu Zhang, Xiaowei Chi, Qianpu Sun, Ying Li, Yunfan Lou, Yan Huang, Zhihe Lu, Meng Guo, Shanghang Zhang",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.10040v1",
+ "abstract": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and makes real-time robot deployment difficult. This motivates a more efficient WAM design that preserves the control benefits of future visual prediction while reducing its inference cost. We introduce Efficient-WAM, a World-Action Model that reduces the cost of future imagination while preserving its control benefit. Efficient-WAM improves inference efficiency via a compact video expert transferred from WAN-2.2-5B, token-sparse video latents, and asymmetric video-action denoising that allocates fewer sampling steps to video than to actions. Instead of optimizing the future branch for visual fidelity, Efficient-WAM treats future video prediction as a compact guidance signal for action generation. Comprehensive experiments on RoboTwin 2.0 and real-world manipulation tasks show that Efficient-WAM maintains strong action performance despite visibly coarse future predictions. While maintaining competitive control capabilities, our 1B-parameter model can reduce per-chunk latency to around 100 ms during physical deployment, achieving a 30x speedup over existing WAMs.",
+ "summary": "# Efficient-WAM 论文总结\n\n**1. 核心创新点**\n提出一种高效的世界-动作模型（WAM），将未来视觉预测视为动作生成的**紧凑引导信号**而非追求高保真画面，从而大幅降低推理成本同时保持控制性能。\n\n**2. 主要方法**\n- 从 WAN-2.2-5B 迁移得到紧凑视频专家，构建 1B 参数模型；\n- 采用 **token 稀疏化** 的视频潜变量表征；\n- 设计 **非对称视频-动作去噪**，给视频分配更少的采样步数、给动作分配更多步数。\n\n**3. 结论/性能**\n在 RoboTwin 2.0 仿真和真实世界机械臂操作任务中，尽管未来预测画面较粗糙，控制性能依然保持强劲；实际部署时每个 chunk 延迟约 **100 ms**，相比现有 WAM 实现 **30 倍加速**。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-10 13:03:39"
+}

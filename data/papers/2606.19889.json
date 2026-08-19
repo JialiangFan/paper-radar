@@ -1,0 +1,13 @@
+{
+ "id": "2606.19889",
+ "title": "SurgVista: Long-Horizon Surgical World Modeling with Plausible Instrument-Tissue Dynamics",
+ "authors": "Wentao Pan, Wuyang Li, Shengyuan Liu, Xinyu Liu, Hengyu Liu, Yixuan Yuan",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19889v1",
+ "abstract": "Scaling robot policy learning for autonomous surgery is challenging, as expert demonstrations are expensive and in vivo exploration poses substantial safety risks. Surgical world models address this by generating realistic, action-conditioned future frames from an initial observation, but existing methods exhibit two persistent failure modes: spatial interaction incoherence, where visible instrument contact fails to induce spatially consistent tissue deformation, and temporal fidelity collapse, where prediction errors compound across autoregressive rollouts and progressively corrupt visual quality. We present SurgVista, a surgical world model that mitigates both failures through two training recipes. Deformation Consistency Regularization extracts scene-point trajectories from training videos and enforces cross-frame coherence through latent contrastive learning, strengthening physically consistent instrument-tissue dynamics. Drift Adaptation Training mitigates long-horizon drift by perturbing conditioning frames with online prediction residuals and photometric augmentations calibrated to long-horizon drift statistics, sustaining visual fidelity over extended rollouts. To enable rigorous evaluation, we further introduce SurgWorld-Bench, featuring diverse procedure types, long-range rollouts, and decoupled metrics for instrument-motion accuracy and tissue-response fidelity. Extensive experiments show that SurgVista consistently outperforms state-of-the-art methods across visual quality, temporal consistency, and interaction fidelity, with gains widening as the prediction horizon grows.",
+ "summary": "**SurgVista：长时程手术世界建模**\n\n1. **核心创新点**：提出一个手术世界模型 SurgVista，通过两种训练策略同时解决\"器械-组织交互空间不一致\"和\"长时程自回归预测中视觉保真度崩塌\"两大顽疾。\n\n2. **主要方法**：\n   - **形变一致性正则化（Deformation Consistency Regularization）**：从训练视频中提取场景点轨迹，用隐空间对比学习强制跨帧一致性，从而增强物理上合理的器械-组织动力学。\n   - **漂移自适应训练（Drift Adaptation Training）**：用在线预测残差扰动条件帧，并结合按长时程漂移统计标定的光度增强，抑制长程预测中误差累积导致的漂移。\n   - 此外还构建了评测基准 **SurgWorld-Bench**，涵盖多种手术类型、长程推演，并将\"器械运动精度\"与\"组织响应保真度\"解耦为独立指标。\n\n3. **结论/性能**：在视觉质量、时间一致性和交互保真度上全面超越当前最优方法，且预测时程越长、优势越明显。\n\n---\n需要我用 `/paper-review` 生成完整的中英文双语综述并存入 Obsidian 笔记库吗？",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-19 13:05:01"
+}

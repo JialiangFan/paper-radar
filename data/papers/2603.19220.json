@@ -1,0 +1,13 @@
+{
+ "id": "2603.19220",
+ "title": "Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Policy Distillation",
+ "authors": "Zhuolin Yang, Zihan Liu, Yang Chen, Wenliang Dai, Boxin Wang, Sheng-Chieh Lin, Chankyu Lee, Yangyi Chen, Dongfu Jiang, Jiafan He, Renjie Pi, Grace Lam, Nayeon Lee, Alexander Bukharin, Mohammad Shoeybi, Bryan Catanzaro, Wei Ping",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19220v1",
+ "abstract": "We introduce Nemotron-Cascade 2, an open 30B MoE model with 3B activated parameters that delivers best-in-class reasoning and strong agentic capabilities. Despite its compact size, its mathematical and coding reasoning performance approaches that of frontier open models. It is the second open-weight LLM, after DeepSeekV3.2-Speciale-671B-A37B, to achieve Gold Medal-level performance in the 2025 International Mathematical Olympiad (IMO), the International Olympiad in Informatics (IOI), and the ICPC World Finals, demonstrating remarkably high intelligence density with 20x fewer parameters. In contrast to Nemotron-Cascade 1, the key technical advancements are as follows. After SFT on a meticulously curated dataset, we substantially expand Cascade RL to cover a much broader spectrum of reasoning and agentic domains. Furthermore, we introduce multi-domain on-policy distillation from the strongest intermediate teacher models for each domain throughout the Cascade RL process, allowing us to efficiently recover benchmark regressions and sustain strong performance gains along the way. We release the collection of model checkpoint and training data.",
+ "summary": "核心创新点：通过在一个 30B 参数的门控专家模型（MoE）上应用 Cascade RL，并结合跨域的多域在策略蒸馏，在仅激活约 3B 参数的情况下实现接近前沿模型的推理与强代理能力，并达到金牌级竞赛水平。\n\n主要方法：\n- 基于 30B MoE 架构，实际激活参数约为 3B。\n- 先进行精选数据集的监督微调（SFT）。\n- 将 Cascade RL 扩展到覆盖更广的推理与代理域。\n- 在 Cascade RL 过程中实施多域在策略蒸馏，从各域的最强中间教师模型获得指导，提升并稳定性能。\n- 公开奖励权重与训练数据、模型检查点等资源。\n\n结论/性能：\n- 在 2025 年的 IMO、IOI 和 ICPC World Finals 上实现金牌级别表现，数学与编码推理接近前沿开放模型。\n- 相比 Nemotron-Cascade 1，展示出高效的“智能密度”（20x 参数级别的提升在性能上的体现），即使参数总量更少也能达到强劲能力。\n- 这是第二个实现开放权重且达到该水平的模型，并伴随相应的模型权重与训练数据发布。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-20 13:01:09"
+}

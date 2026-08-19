@@ -1,0 +1,13 @@
+{
+ "id": "2605.25829",
+ "title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
+ "authors": "Xinzhe Chen, Sihua Ren, Liqi Huang, Haowen Sun, Mingyang Li, Xingyu Chen, Zeyang Liu, Xuguang Lan",
+ "date": "2026-05-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.25829v1",
+ "abstract": "Recent vision-language-action (VLA) models and world action models (WAMs) advance robotic manipulation by enriching intermediate representations with auxiliary spatial features or future visual-state prediction. However, these representations largely remain within the observation space and do not share the rigid-body geometry of the action space, forcing the action decoder to implicitly recover this geometry. We propose OASIS, a visuomotor policy that aligns the intermediate representation with the action space via $SE(3)$ end-effector trajectory prediction. OASIS couples a 3D-aware feature encoder that fuses vision-language and metric-depth features with an $SE(3)$ trajectory predictor that produces a camera-frame end-effector trajectory. Conditioned on the predictor's pose-supervised hidden states, the action decoder generates action chunks consistent with rigid-body motion. Across simulation and real-world experiments, OASIS outperforms VLA and WAM baselines in success rate and out-of-distribution generalization. Our project page is available at https://npuhandsome.github.io/OASIS_web.",
+ "summary": "## OASIS 论文总结\n\n**核心创新点**：通过 SE(3) 末端执行器轨迹预测，将机器人操作策略的中间表征与动作空间的刚体几何对齐，解决以往 VLA/WAM 模型中间表征仅停留在观测空间、动作解码器需隐式恢复几何信息的问题。\n\n**主要方法**：提出 OASIS 视觉运动策略，包含两个核心模块：\n- **3D 感知特征编码器**：融合视觉-语言特征与度量深度（metric-depth）特征；\n- **SE(3) 轨迹预测器**：在相机坐标系下预测末端执行器轨迹，其经过位姿监督的隐藏状态用于条件化动作解码器，从而生成符合刚体运动几何的动作块（action chunks）。\n\n**结论/性能**：在仿真与真实世界实验中，OASIS 在成功率和分布外（OOD）泛化能力上均优于现有的 VLA 与 WAM 基线方法。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-26 13:04:10"
+}

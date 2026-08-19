@@ -1,0 +1,13 @@
+{
+ "id": "2604.22693",
+ "title": "CRAFT: Clustered Regression for Adaptive Filtering of Training data",
+ "authors": "Parthasarathi Panda, Asheswari Swain, Subhrakanta Panda",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22693v1",
+ "abstract": "Selecting a small, high-quality subset from a large corpus for fine-tuning is increasingly important as corpora grow to tens of millions of datapoints, making full fine-tuning expensive and often unnecessary. We propose CRAFT (Clustered Regression for Adaptive Filtering of Training data), a vectorization-agnostic selection method for training sequence-to-sequence models. CRAFT decomposes the joint source-target distribution and performs a two-stage selection: (i) match the validation source distribution through proportional budget allocation across k-means clusters, and (ii) within each source cluster, select training pairs whose target embeddings minimize a conditional expected distance derived from the validation target distribution. We prove that proportional cluster allocation bounds the continuous KL divergence between selected and validation distributions, with the residual controlled by cluster diameters. We evaluate CRAFT on English-Hindi translation by selecting training data from 33 million NLLB sentence pairs and fine-tuning mBART via LoRA. CRAFT achieves 43.34 BLEU, outperforming TSDS (41.21) by 2.13 points on the same candidate pool and encoder while completing selection over 40 times faster. With TF-IDF vectorization, the entire pipeline completes in under one minute on CPU. TAROT achieves 45.61 BLEU, but CRAFT completes selection in 26.86 seconds versus TAROT's 75.6 seconds, a 2.8 time speedup.",
+ "summary": "核心创新点：提出一个向量化无关的两阶段聚类回归筛选框架 CRAFT，通过对源分布进行聚类并在每簇内以目标嵌入为条件最小化距离来自适应筛选高质量的微调训练子集，同时给出理论上界来控制选取分布与验证分布之间的差异。\n\n主要方法：\n- 将训练数据的源-目标分布进行分解，提出两阶段筛选流程。\n- 阶段1：在 k-means 聚类上对源分布进行聚类，并按比例分配预算以对齐验证集的源分布。\n- 阶段2：在每个源簇内，选取目标嵌入使条件期望距离最小化，该距离来自验证目标分布的统计算法推导。\n- 理论贡献：证明比例聚类分配可以界定连续 KL 散度的上界，剩余误差由聚类直径控制。\n- 实验设置：英语-印地语翻译任务，使用 3300 万条 NLLB 句对数据，基于 LoRA 微调 mBART。\n  \n结论/性能：\n- 在相同候选池和编码器上，CRAFT 获得 43.34 BLEU，比 TSDS 的 41.21 提升 2.13 BLEU，且筛选速度超过原方法 40 倍以上；在使用 TF-IDF 向量化时，整个流程在 CPU 上可在不到一分钟内完成。\n- 与 TAROT 比较，TAROT 为 45.61 BLEU，但 CRAFT 的筛选用时仅 26.86 秒，而 TAROT 为 75.6 秒，提速约 2.8 倍。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-27 13:03:36"
+}

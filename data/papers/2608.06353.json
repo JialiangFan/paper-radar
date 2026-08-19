@@ -1,0 +1,13 @@
+{
+ "id": "2608.06353",
+ "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+ "authors": "Praphul Chandra, Sujit Gujar, Ganesh Ghalme",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06353v1",
+ "abstract": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the Safe AI paradigm that compute is an effective governance lever. We situate our work as a compliance or commons overlay on a deployer. One governance period is an extensive form game in which verified human stakeholders arrive sequentially and contribute, on a provision or a rejection market, in a governance currency that is deliberately distinct from the agents compute. A funding aggregator turns raw contributions into breadth weighted effective supports - a two threshold gate with hysteresis converts net support into a binary authorization that, through a coupling map bounded by an exogenously certified safety ceiling, releases a metered compute budget - realized in hardware as a signed compute license so that the decision is self-enforcing. We characterize the class of agents the mechanism can govern and isolate manipulation of the governing electorate by the governed agent as the central open problem. We also introduce several challenges addressing manipulation of governing electorate by the governed agents.",
+ "summary": "## 论文简要总结\n\n**1. 核心创新点**\n提出一个把\"算力预算\"当作治理杠杆的机制设计模型——通过资源分配而非规则约束来控制已部署的 AI 智能体，使授权本身具备自我执行力（拿不到算力就无法运行）。\n\n**2. 主要方法**\n- 将一个治理周期建模为**扩展式博弈**：经过身份验证的人类利益相关者按序到达，在\"支持/否决\"双向市场中用一种**与智能体算力刻意分离的治理货币**进行出资。\n- **资金聚合器**把原始出资额转换为\"广度加权的有效支持\"（防止少数大额出资者主导）。\n- **双阈值 + 滞回（hysteresis）机制**将净支持度映射为二元授权决策，避免在阈值附近反复震荡。\n- 通过一个**受外生认证的安全上限约束的耦合映射**，把授权转化为计量发放的算力预算；在硬件层面落地为**带签名的算力许可证**，从而实现决策的自我执行。\n- 整体定位为叠加在部署方之上的\"合规层 / 公共池资源治理层\"。\n\n**3. 结论 / 性能**\n本文属于纯理论工作（无实验评测）。主要结果是刻画了该机制**能够治理的智能体类别**，并论证\"算力可作为有效治理杠杆\"这一 Safe AI 命题；同时把**被治理的智能体反过来操纵治理选民**识别为核心开放问题，并围绕该问题提出了若干待解挑战。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-07 13:02:06"
+}

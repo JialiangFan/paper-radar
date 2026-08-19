@@ -1,0 +1,33 @@
+{
+ "id": "1708.08611",
+ "title": "Safe Reinforcement Learning via Shielding",
+ "authors": "Alshiekh, et al.",
+ "date": null,
+ "year": 2017,
+ "url": "https://arxiv.org/abs/1708.08611",
+ "abstract": "",
+ "summary": "This foundational shielded RL paper synthesizes reactive shields from temporal-logic safety specifications.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "AAAI 2018",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-shielding",
+  "formal-methods",
+  "robotics",
+  "runtime-assurance",
+  "safe-rl",
+  "safe-vla",
+  "shielding",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2017_Alshiekh_Shielding.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2017_Alshiekh_Shielding.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

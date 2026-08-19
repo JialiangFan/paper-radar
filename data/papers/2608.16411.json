@@ -1,0 +1,13 @@
+{
+ "id": "2608.16411",
+ "title": "Towards Risk-free AI Agent Deployment",
+ "authors": "Yintong Huo, Rangeet Pan, Abhik Roychoudhury",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16411v1",
+ "abstract": "LLM-based agents are rapidly moving from research prototypes into the core business processes of organizations, but these agents pose deployment risks to security, compliance, and functionality. In this article, we argue that risk-free deployment must be grounded in the agent's trajectory: the recorded sequence of reasoning steps, tool invocations, and environmental observations. Trajectories are available for any agent, and many failures are visible only in the trajectory. To make agents deployable and sustainable, we advocate agent testing and debugging as a systematic research direction for detecting and mitigating these risks. This article begins with the challenges of testing agents, including the oracle problem, non-determinism, trajectory validation, and the absence of adequacy metrics. We then turn to debugging agents, from automated failure attribution to repair and self-evolution. We distill these directions into a practical deployment-readiness checklist covering the full deployment lifecycle. Finally, we identify open problems, i.e., formal adequacy metrics, root-cause attribution over long-horizon trajectories, and the reliability of self-evolving agents, that the community must address to enable trustworthy agent deployment.",
+ "summary": "## 论文速览：《Towards Risk-free AI Agent Deployment》\n\n> 说明：这是一篇**立场/展望型（position paper）**论文，而非实验型工作，因此第 3 项没有传统意义上的性能指标，我按其\"主张与产出\"来概括。\n\n**1. 核心创新点**\n主张以**智能体的\"轨迹\"（trajectory，即推理步骤、工具调用与环境观测的完整记录）**作为无风险部署的根基，并把\"智能体测试与调试\"确立为一个系统性的研究方向。\n\n**2. 主要方法**\n不提出具体模型，而是构建了一套面向 LLM 智能体部署的研究议程与方法框架：\n\n- **测试侧**：剖析四大难题——预言机问题（oracle problem）、非确定性、轨迹验证、以及缺乏充分性度量（adequacy metrics）。\n- **调试侧**：涵盖自动化失效归因（failure attribution）、修复（repair）与自我演化（self-evolution）。\n- **工程落地**：将上述方向提炼为一份覆盖完整部署生命周期的**\"部署就绪检查清单\"（deployment-readiness checklist）**。\n\n**3. 结论/开放问题**\n论证了\"许多故障只有在轨迹中才可见，而轨迹对任何智能体都天然可得\"，因此轨迹是通用可行的抓手。最终指出三个亟待社区解决的开放问题：**形式化的充分性度量、长时程轨迹上的根因归因、自我演化智能体的可靠性**——这些是实现可信智能体部署的关键前提。\n\n---\n一句话定位：把软件工程中成熟的\"测试—调试\"范式，系统性地迁移到 LLM 智能体上，并以轨迹为核心可观测对象。\n\n如果你想要更完整的文献综述式解读（背景、贡献、方法论分层，中英双语并存入 Obsidian），可以用 `/paper-review`。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-18 13:00:27"
+}

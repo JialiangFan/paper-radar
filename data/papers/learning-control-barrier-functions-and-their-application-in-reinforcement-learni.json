@@ -1,0 +1,27 @@
+{
+ "id": "learning-control-barrier-functions-and-their-application-in-reinforcement-learni",
+ "title": "Learning Control Barrier Functions and Their Application in Reinforcement Learning",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "在现代机器人学中，设计能在复杂动态环境中安全运行的自主系统是核心挑战。CBF因其计算效率和在安全集前向不变性方面的保证而受到广泛关注，但手工设计CBF需要大量领域知识且难以泛化。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Learning CBFs and their Application in RL - A Survey.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

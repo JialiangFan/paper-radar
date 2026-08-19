@@ -1,0 +1,32 @@
+{
+ "id": "2410.06158",
+ "title": "GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation",
+ "authors": "Chi-Lam Cheang, Guangzeng Chen, Ya Jing, Tao Kong, Hang Li, Yifeng Li, Yuxiao Liu, Hongtao Wu, Jiafeng Xu, Yichu Yang, Hanbo Zhang, Minzhao Zhu",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.06158",
+ "abstract": "",
+ "summary": "GR-2 pretrains on web-scale video and fine-tunes for video generation and action prediction in robot manipulation.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "robot-manipulation",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "video-language-action",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2024_Cheang_GR2.md",
+ "pdf_path": "PDFs/VLA_Models/2024_Cheang_GR2.pdf",
+ "code": "",
+ "project": "https://gr2-manipulation.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

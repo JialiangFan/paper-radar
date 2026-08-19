@@ -1,0 +1,13 @@
+{
+ "id": "2604.06861",
+ "title": "REAgent: Requirement-Driven LLM Agents for Software Issue Resolution",
+ "authors": "Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, Shaowei Wang, Haoli Bai, Lifeng Shang, Junjie Chen",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06861v1",
+ "abstract": "Issue resolution aims to automatically generate patches from given issue descriptions and has attracted significant attention with the rapid advancement of large language models (LLMs). However, due to the complexity of software issues and codebases, LLM-generated patches often fail to resolve corresponding issues. Although various advanced techniques have been proposed with carefully designed tools and workflows, they typically treat issue descriptions as direct inputs and largely overlook their quality (e.g., missing critical context or containing ambiguous information), which hinders LLMs from accurate understanding and resolution. To address this limitation, we draw on principles from software requirements engineering and propose REAgent, a requirement-driven LLM agent framework that introduces issue-oriented requirements as structured task specifications to better guide patch generation. Specifically, REAgent automatically constructs structured and information-rich issue-oriented requirements, identifies low-quality requirements, and iteratively refines them to improve patch correctness. We conduct comprehensive experiments on three widely used benchmarks using two advanced LLMs, comparing against five representative or state-of-the-art baselines. The results demonstrate that REAgent consistently outperforms all baselines, achieving an average improvement of 17.40% in terms of the number of successfully-resolved issues (% Resolved).",
+ "summary": "1) 核心创新点（一句话）\n以需求工程为灵感，提出需求驱动的 LLM 代理 REAgent，通过自动构建、识别低质量并迭代改进的面向问题的结构化需求来引导补丁生成，从而提升缺陷修复的正确性。\n\n2) 主要方法\n- 将软件问题描述转化为结构化、信息丰富的 issue-oriented 需求，作为任务规范输入给 LLM。\n- 自动构建并评估这些需求，识别低质量的需求并进行迭代 refinement，以改进对补丁生成的指引。\n- 采用两种先进的大语言模型，在三个常用基准上进行实验，对比五个代表性或前沿基线方法。\n- 通过需求驱动的工作流（需求构建、质量识别与迭代、补丁生成与验证等）来提升补丁正确性。\n\n3) 结论/性能\n- REAgent 在三个基准上均优于所有基线，且平均提升约 17.40% 的“成功解决的 issue 数量/占比（% Resolved）”。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-09 13:04:13"
+}

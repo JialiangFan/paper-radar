@@ -1,0 +1,13 @@
+{
+ "id": "2603.05035",
+ "title": "Good-Enough LLM Obfuscation (GELO)",
+ "authors": "Anatoly Belikov, Ilya Fedotov",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05035v1",
+ "abstract": "Large Language Models (LLMs) are increasingly served on shared accelerators where an adversary with read access to device memory can observe KV caches and hidden states, threatening prompt privacy for open-source models. Cryptographic protections such as MPC and FHE offer strong guarantees but remain one to two orders of magnitude too slow for interactive inference, while static obfuscation schemes break under multi-run statistical attacks once the model is known. We present GELO (Good-Enough LLM Obfuscation), a lightweight protocol for privacy-preserving inference that limits information leakage from untrusted accelerator observations by hiding hidden states with fresh, per-batch invertible mixing. For each offloaded projection, the TEE samples a random matrix A, forms $U = AH$, offloads U and weights W to the accelerator, and then applies $A^-1$ on return, so that $A^-1 ((AH)W ) = HW$ and outputs are unchanged. Because mixing is never reused across batches, the attacker faces only a single-batch blind source separation problem. We analyze information leakage and introduce two practical defenses: (i) non-orthogonal mixing to mask Gram matrices, and (ii) orthogonal mixing augmented with a small fraction of high-energy \"shield\" vectors that pollute higher-order statistics. On Llama-2 7B, GELO preserves float32 outputs exactly, closely matches low-precision baselines, offloads the dominant matrix multiplications with about 20-30% latency overhead, and defeats a range of ICA/BSS and anchor-based attacks.",
+ "summary": "1) 核心创新点：通过对隐藏状态进行每批次独立的可逆混合，以最小开销实现对未受信任加速器的提示隐私保护，同时确保输出不变，且不易被跨批次攻击破解。\n\n2) 主要方法：\n- 在可信执行环境（TEE）中随机采样矩阵 A，计算 U = A H，将 U 与权重 W 一并下发到加速器，返回后对结果乘以 A^-1，得到 HW，从而使观测信息被混合但输出不变。\n- 混合在每个批次重置，避免跨批次的盲源分离攻击。\n- 提出两种实用防御： (i) 非正交混合以掩盖 Gram 矩阵；(ii) 正交混合并辅以少量高能量“屏蔽”向量，污染高阶统计。\n- 在 Llama-2 7B 上进行评估，分析信息泄漏并对抗 ICA/BSS 与基于锚点的攻击。\n\n3) 结论/性能：\n- 能在保持 float32 输出完全不变的前提下，输出接近低精度基线；主矩阵乘法的 offload 约有 20-30% 的延迟开销。\n- 实验表明 GELO 能有效抵御多种 ICA/BSS 与锚点攻击。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-06 14:00:38"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.09275",
+ "title": "Impact of Positional Encoding: Clean and Adversarial Rademacher Complexity for Transformers under In-Context Regression",
+ "authors": "Weiyi He, Yue Xing",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09275v1",
+ "abstract": "Positional encoding (PE) is a core architectural component of Transformers, yet its impact on the Transformer's generalization and robustness remains unclear. In this work, we provide the first generalization analysis for a single-layer Transformer under in-context regression that explicitly accounts for a completely trainable PE module. Our result shows that PE systematically enlarges the generalization gap. Extending to the adversarial setting, we derive the adversarial Rademacher generalization bound. We find that the gap between models with and without PE is magnified under attack, demonstrating that PE amplifies the vulnerability of models. Our bounds are empirically validated by a simulation study. Together, this work establishes a new framework for understanding the clean and adversarial generalization in ICL with PE.",
+ "summary": "1. 核心创新点：首次在单层Transformer且可完全训练的位置编码（PE）条件下，对就地回归任务进行泛化分析，并扩展到对抗性场景，揭示PE放大一般化差距与对抗性脆弱性，提出在ICL中评估PE影响的全新框架。\n\n2. 主要方法：通过理论推导给出普通Rademacher泛化界与对抗性Rademacher泛化界限，分析PE对泛化的系统性影响；模型基于单层Transformer并引入可训练的PE模块，辅以仿真实验来验证理论边界。\n\n3. 结论/性能：证明PE显著扩大无对抗情形下的泛化差距，在对抗攻击下差距进一步放大；仿真实验验证了理论边界的有效性，确立了PE在ICL中的清洁与对抗性泛化的新理解框架。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-11 14:02:31"
+}

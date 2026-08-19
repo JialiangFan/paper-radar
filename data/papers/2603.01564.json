@@ -1,0 +1,13 @@
+{
+ "id": "2603.01564",
+ "title": "From Secure Agentic AI to Secure Agentic Web: Challenges, Threats, and Future Directions",
+ "authors": "Zhihang Deng, Jiaping Gui, Weinan Zhang",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01564v1",
+ "abstract": "Large Language Models (LLMs) are increasingly deployed as agentic systems that plan, memorize, and act in open-world environments. This shift brings new security problems: failures are no longer only unsafe text generation, but can become real harm through tool use, persistent memory, and interaction with untrusted web content. In this survey, we provide a transition-oriented view from Secure Agentic AI to a Secure Agentic Web. We first summarize a component-aligned threat taxonomy covering prompt abuse, environment injection, memory attacks, toolchain abuse, model tampering, and agent network attacks. We then review defense strategies, including prompt hardening, safety-aware decoding, privilege control for tools and APIs, runtime monitoring, continuous red-teaming, and protocol-level security mechanisms. We further discuss how these threats and mitigations escalate in the Agentic Web, where delegation chains, cross-domain interactions, and protocol-mediated ecosystems amplify risks via propagation and composition. Finally, we highlight open challenges for web-scale deployment, such as interoperable identity and authorization, provenance and traceability, ecosystem-level response, and scalable evaluation under adaptive adversaries. Our goal is to connect recent empirical findings with system-level requirements, and to outline practical research directions toward trustworthy agent ecosystems.",
+ "summary": "1) 核心创新点：提出从 Secure Agentic AI 向 Secure Agentic Web 的转型视角，构建组件化的威胁分类与系统级防护框架，并重点分析跨域代理生态中的放大效应与治理挑战。\n\n2) 主要方法：通过文献综述建立以组件对齐的威胁分类（提示滥用、环境注入、记忆攻击、工具链滥用、模型篡改、代理网络攻击），系统梳理与比较现有防护策略（提示强化、安全解码、工具/API 权限控制、运行时监控、持续红队、协议级安全机制），并扩展分析到 Agentic Web 的委托链、跨域交互与协议中介生态的风险与需求，提出面向大规模部署的研究方向与挑战。\n\n3) 结论/性能：提供一个连接实验性发现与系统级需求的研究路线图，强调在互操作身份/授权、可溯源性、生态级响应以及面对自适应对手的可扩展评估等方面的关键挑战，指引未来构建更可信的代理生态系统。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-03 14:02:00"
+}

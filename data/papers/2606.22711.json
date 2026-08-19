@@ -1,0 +1,13 @@
+{
+ "id": "2606.22711",
+ "title": "Beyond Simpson's Paradox: A Cascade of Confounders in AI Agent Pull-Request Co-Authorship",
+ "authors": "Haoran Yu, Xiaochong Jiang, Lifei Liu, Su Wang, Pin Qian, Yihang Chen",
+ "date": "2026-06-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.22711v1",
+ "abstract": "Pooled across five AI coding agents, pull requests (PRs) with a human Co-Authored-By trailer merge less often than purely-autonomous ones (53.8% vs. 79.8%) -- yet this aggregate finding is a textbook Simpson's Paradox. Stratifying 33,596 PRs from the AIDev dataset by agent identity reverses the conclusion: Copilot and Devin show large positive within-agent gaps (+41.2 and +33.5 pp, both p<0.001), while Cursor, Claude Code, and Codex show small effects whose cross-sectional 95% CIs span zero. The paradox is driven entirely by agent composition: Codex, which dominates 64.9% of the dataset, achieves high merge rates while rarely using co-authorship. But Simpson's Paradox is only the first layer of a cascade of confounders: within-repo controls eliminate Devin's gap (+33.5 to +1.6 pp, p=0.73); a commit-count control further halves Copilot's within-repo gap (+36.2 to +24.4 pp); restricted to multi-commit PRs, the Copilot within-repo effect dissolves to +4.8 pp (p=0.59). No agent retains a clear co-authorship effect once both repository selection and PR structure are controlled. Our findings caution against reporting agent-pooled statistics without stratification and demonstrate that cross-sectional co-authorship associations are largely selection and PR-structure artefacts rather than evidence of a causal benefit.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-23 13:00:47"
+}

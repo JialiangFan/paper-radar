@@ -1,0 +1,13 @@
+{
+ "id": "2604.14126",
+ "title": "AI-assisted writing and the reorganization of scientific knowledge",
+ "authors": "Erjia Yan, Chaoqun Ni",
+ "date": "2026-04-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14126v1",
+ "abstract": "Generative AI systems such as ChatGPT are increasingly used in scientific writing, yet their broader implications for the organization of scientific knowledge remain unclear. We examine whether AI-assisted writing intensity, measured as the share of text in a paper that is predicted to exhibit features consistent with LLM-generated text, is associated with scientific disruption and knowledge recombination. Using approximately two million full-text research articles published between 2021 and 2024 and linked to citation networks, we document a sharp temporal pattern beginning in 2023. Before 2023, higher AI-assisted writing intensity is weakly or negatively associated with disruption; after 2023, the association becomes positive in within-author, within-field analyses. Over the same period, the positive association between AI-assisted writing intensity and cross-field citation breadth weakens substantially, and the negative association with citation concentration attenuates. Thus, the post-2023 increase in disruption is not accompanied by broader knowledge sourcing. These patterns suggest that generative AI is associated with more disruptive citation structures without a corresponding expansion in cross-field recombination. Rather than simply broadening the search space of science, AI-assisted writing may be associated with new forms of recombination built from relatively narrower knowledge inputs.",
+ "summary": "- 核心创新点：通过量化AI辅助写作强度（论文文本中被预测为LLM生成特征的部分所占比例），系统性研究其与学科颠覆及知识跨领域重组的关系，发现2023年后AI写作与颠覆性引用增强，但并未带来跨领域知识来源的显著扩张。\n\n- 主要方法：基于约200万篇2021–2024年的全文论文及其引用网络，使用能够预测文本LLM生成特征的模型来度量AI辅助写作强度；结合作者内/领域内的固定效应分析，考察AI写作强度与学科颠覆、跨领域引文广度及引文集中度之间的关系。\n\n- 结论/性能：2023年后，AI写作强度与学科颠覆在同一作者/同一领域的分析中呈现显著正相关，但与跨领域引文广度的正相关大幅减弱、对引文集中度的负相关也趋缓；因此，AI写作带来的是更具颠覆性的引用结构，而非跨领域知识的广泛重组，暗示生成式AI可能基于相对狭窄的知识输入构建新的重组形式。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-16 13:01:32"
+}

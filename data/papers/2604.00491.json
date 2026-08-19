@@ -1,0 +1,13 @@
+{
+ "id": "2604.00491",
+ "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
+ "authors": "Zhensu Sun, Zhihao Lin, Zhi Chen, Chengran Yang, Mingyi Zhou, Li Li, David Lo",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.00491v1",
+ "abstract": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end latency. We observe that, unlike human developers, LLMs produce code tokens sequentially without revision, making it possible to execute code as it is being generated. We formalize this parallel execution paradigm, modeling it as a three-stage pipeline of generation, detection, and execution, and derive closed-form latency bounds that characterize its speedup potential and operating regimes. We then present Eager, a concrete implementation featuring AST-based chunking, dynamic batching with gated execution, and early error interruption. We evaluate Eager across four benchmarks, seven LLMs, and three execution environments. Results show that Eager reduces the non-overlapped execution latency by up to 99.9% and the end-to-end latency by up to 55% across seven LLMs and four benchmarks.",
+ "summary": "1) 核心创新点：提出将代码生成与执行并行化，利用生成阶段即可对代码进行检测与执行，建立生成-检测-执行三阶段流水线并给出理论延迟界限，从而显著降低端到端延迟。\n\n2) 主要方法：提出 Eager 实现，包含对代码的 AST 级别分块、基于动态分批的门控执行，以及提前错误中断等技术；将流水线Formalize为 generation-detection-execution 三阶段，并给出闭式延迟界限；在四个基准、七个模型和三种执行环境上进行评估。\n\n3) 结论/性能：在七个 LLM、四个基准和三种执行环境下，将非重叠执行延迟最多降低到原来的0.1% ~ 100%量级（即最高降低近99.9%），端到端延迟最多降低约55%。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-02 13:04:03"
+}

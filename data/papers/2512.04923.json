@@ -1,0 +1,13 @@
+{
+ "id": "2512.04923",
+ "title": "Algorithmic Thinking Theory",
+ "authors": "MohammadHossein Bateni, Vincent Cohen-Addad, Yuzhou Gu, Silvio Lattanzi, Simon Meierhans, Christopher Mohri",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04923v1",
+ "abstract": "Large language models (LLMs) have proven to be highly effective for solving complex reasoning tasks. Surprisingly, their capabilities can often be improved by iterating on previously generated solutions. In this context, a reasoning plan for generating and combining a set of solutions can be thought of as an algorithm for reasoning using a probabilistic oracle.\n  We introduce a theoretical framework for analyzing such reasoning algorithms. This framework formalizes the principles underlying popular techniques for iterative improvement and answer aggregation, providing a foundation for designing a new generation of more powerful reasoning methods. Unlike approaches for understanding models that rely on architectural specifics, our model is grounded in experimental evidence. As a result, it offers a general perspective that may extend to a wide range of current and future reasoning oracles.",
+ "summary": "- **核心创新点**：提出一个面向迭代改进与答案聚合的推理算法理论框架，将推理计划视为针对概率性 oracle 的算法，并给出可推广的理解与设计基础。\n\n- **主要方法**：构建并 formalize 一个理论框架，系统化地描述迭代改进和答案聚合的原理，基于实验证据，强调与模型架构无关的普适性，旨在指导当前及未来推理 oracle 的设计与分析。\n\n- **结论/性能**：未给出具体数值性能指标，但提供了一个通用、可扩展的理论基础，能够用于设计更强大的推理方法，适用于广义的推理系统。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:02:14"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.24077",
+ "title": "LoongFlow: Directed Evolutionary Search via a Cognitive Plan-Execute-Summarize Paradigm",
+ "authors": "Chunhui Wan, Xunan Dai, Zhuo Wang, Minglei Li, Yanpeng Wang, Yinan Mao, Yu Lan, Zhiwen Xiao",
+ "date": "2025-12-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24077v1",
+ "abstract": "The transition from static Large Language Models (LLMs) to self-improving agents is hindered by the lack of structured reasoning in traditional evolutionary approaches. Existing methods often struggle with premature convergence and inefficient exploration in high-dimensional code spaces. To address these challenges, we introduce LoongFlow, a self-evolving agent framework that achieves state-of-the-art solution quality with significantly reduced computational costs. Unlike \"blind\" mutation operators, LoongFlow integrates LLMs into a cognitive \"Plan-Execute-Summarize\" (PES) paradigm, effectively mapping the evolutionary search to a reasoning-heavy process. To sustain long-term architectural coherence, we incorporate a hybrid evolutionary memory system. By synergizing Multi-Island models with MAP-Elites and adaptive Boltzmann selection, this system theoretically balances the exploration-exploitation trade-off, maintaining diverse behavioral niches to prevent optimization stagnation. We instantiate LoongFlow with a General Agent for algorithmic discovery and an ML Agent for pipeline optimization. Extensive evaluations on the AlphaEvolve benchmark and Kaggle competitions demonstrate that LoongFlow outperforms leading baselines (e.g., OpenEvolve, ShinkaEvolve) by up to 60% in evolutionary efficiency while discovering superior solutions. LoongFlow marks a substantial step forward in autonomous scientific discovery, enabling the generation of expert-level solutions with reduced computational overhead.",
+ "summary": "- 核心创新点：将大语言模型嵌入“计划-执行-总结”认知循环的自进化搜索框架 LoongFlow，并结合混合记忆、多岛模型、MAP-Elites与自适应 Boltzmann 选择，以实现高效且具长期结构一致性的自我进化。  \n\n- 主要方法：构建 LoongFlow 作为自进化代理，利用计划-执行-总结 (PES) 的认知循环将进化搜索映射为推理过程；通过混合进化记忆维持长期架构一致性；采用多岛模型、MAP-Elites 与自适应 Boltzmann 选择来平衡探索与开发；以通用代理用于算法发现与机器学习代理用于流水线优化两种实例化实现，并在 AlphaEvolve 基准与 Kaggle 竞赛中评估。  \n\n- 结论/性能：在 AlphaEvolve 和 Kaggle 上相较于 OpenEvolve、ShinkaEvolve 等基线实现最高达约 60% 的进化效率提升，并发现更优解，同时显著降低计算成本，推动自主科学发现的进展。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:27:53"
+}

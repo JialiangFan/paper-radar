@@ -1,0 +1,13 @@
+{
+ "id": "2608.13538",
+ "title": "SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization",
+ "authors": "Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, Xiaozhi Wang, Lei Hou, Juanzi Li",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13538v1",
+ "abstract": "Sparse autoencoders (SAEs) are proposed to extract numerous features from large language model (LLM) representations, yet explaining these features still relies primarily on external observation. This reliance leads to superficial explanations inferred from observed model behavior and computational inefficiency from collecting such behavioral evidence at scale. We introduce SAEVerbalizer, a framework that injects SAE decoder directions into an LLM's representations and fine-tunes the LLM's downstream layers to generate natural-language explanations of the injected features. Once trained, the resulting verbalizer explains SAE features directly from decoder directions, addressing both limitations. Our experiments show that the learned verbalization capability generalizes to unseen features, transfers across separately trained SAE dictionaries, and, with a lightweight adapter, extends to SAE features from different LLMs. Intervention experiments show that injecting multiple directions yields an explanation combining their meanings, while reversing individual directions produces corresponding meaning shifts.",
+ "summary": "## SAEVerbalizer 论文摘要总结\n\n**1. 核心创新点**\n提出 SAEVerbalizer 框架，让 LLM 直接从稀疏自编码器（SAE）的解码器方向\"说出\"特征含义，摆脱以往依赖外部行为观察来解释 SAE 特征的做法。\n\n**2. 主要方法**\n将 SAE 的 decoder direction（解码器方向向量）注入到 LLM 的内部表示中，并微调该 LLM 的下游层，使其学会针对被注入的特征生成自然语言解释。训练完成后，该\"verbalizer\"可直接由解码器方向输出解释；跨模型场景下再额外接一个轻量级 adapter 进行适配。\n\n**3. 结论/性能**\n学到的解释能力可泛化到未见过的特征，可迁移到独立训练的其他 SAE 字典，并借助轻量 adapter 扩展到不同 LLM 的 SAE 特征。干预实验显示：同时注入多个方向会生成融合各自语义的解释，反转单个方向则产生相应的语义反向变化——说明解释与特征方向存在因果性对应，同时也避免了大规模收集行为证据的计算开销。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-16 13:01:20"
+}

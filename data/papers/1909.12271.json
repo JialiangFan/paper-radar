@@ -1,0 +1,32 @@
+{
+ "id": "1909.12271",
+ "title": "RLBench: The Robot Learning Benchmark & Learning Environment",
+ "authors": "Stephen James, Zicong Ma, David Rovick Arrojo, Andrew J. Davison",
+ "date": null,
+ "year": 2019,
+ "url": "https://arxiv.org/abs/1909.12271",
+ "abstract": "",
+ "summary": "RLBench offers a large suite of vision-guided manipulation tasks with generated demonstrations.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "benchmarks-and-evaluation",
+  "few-shot-learning",
+  "manipulation",
+  "robot-benchmark",
+  "robotics",
+  "safe-vla",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2019_James_RLBench.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2019_James_RLBench.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

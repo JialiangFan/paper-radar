@@ -1,0 +1,13 @@
+{
+ "id": "2601.21991",
+ "title": "Geometry of Drifting MDPs with Path-Integral Stability Certificates",
+ "authors": "Zuyuan Zhang, Mahdi Imani, Tian Lan",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21991v1",
+ "abstract": "Real-world reinforcement learning is often \\emph{nonstationary}: rewards and dynamics drift, accelerate, oscillate, and trigger abrupt switches in the optimal action. Existing theory often represents nonstationarity with coarse-scale models that measure \\emph{how much} the environment changes, not \\emph{how} it changes locally -- even though acceleration and near-ties drive tracking error and policy chattering. We take a geometric view of nonstationary discounted Markov Decision Processes (MDPs) by modeling the environment as a differentiable homotopy path and tracking the induced motion of the optimal Bellman fixed point. This yields a length-curvature-kink signature of intrinsic complexity: cumulative drift, acceleration/oscillation, and action-gap-induced nonsmoothness. We prove a solver-agnostic path-integral stability bound and derive gap-safe feasible regions that certify local stability away from switch regimes. Building on these results, we introduce \\textit{Homotopy-Tracking RL (HT-RL)} and \\textit{HT-MCTS}, lightweight wrappers that estimate replay-based proxies of length, curvature, and near-tie proximity online and adapt learning or planning intensity accordingly. Experiments show improved tracking and dynamic regret over matched static baselines, with the largest gains in oscillatory and switch-prone regimes.",
+ "summary": "1) 核心创新点（简述成一句话）\n将非平稳离散折扣MDP建模为可微分的同伦理路径，通过跟踪最优贝尔曼不动点的运动，提出路径积分稳定性界限与长度-曲率-拐点的内在复杂性度量，并据此实现局部稳定性认证与自适应学习/规划。\n\n2) 主要方法（技术/模型要点）\n- 采用几何视角将非平稳MDP建模为可微分的同伦理路径，追踪最优贝尔曼不动点的演化。 \n- 推导 solver-无关的路径积分稳定性界限，给出 gap-safe 的局部可行域以证实局部稳定性。 \n- 提出 HT-RL 与 HT-MCTS 两个轻量包装器，利用回放代理在线估计路径长度、曲率和近似“近战/无差距”行动的接近度，动态调节学习与规划强度。\n\n3) 结论/性能（效果与结果）\n实验显示相对于匹配的静态基线，在跟踪性与动态遗憾方面有提升，且在振荡与切换频繁的情景中收益最大。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:00:33"
+}

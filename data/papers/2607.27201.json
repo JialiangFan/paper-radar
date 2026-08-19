@@ -1,0 +1,13 @@
+{
+ "id": "2607.27201",
+ "title": "Mental World Modeling",
+ "authors": "Hao Fei, Yiran Zhao",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27201v1",
+ "abstract": "World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a model that tracks the physical scene but not what each agent knows and believes about it predicts the wrong action for the right-looking scene. We formulate Mental World Modeling (MWM), a generic theoretical framework that makes mental variables core components of a world model rather than posthoc rationales: MWM aintains a coupled physical-mental world state, renders a target-specific partial observation, and simulates how candidate actions jointly update both components. We instantiate the framework in MENTIS, a training-free and fully inspectable baseline that decomposes the process into state parsing, target-observation generation, action decomposition, coupled physical and mental transition, and branch-level value evaluation. On a manually constructed, quality-controlled dataset of situated decision scenarios spanning text, image, and sounding-video stories, experiments with 8 modern LLM-based world models demonstrate that explicitly modeling the mental state is essential for predicting human decisions. Deeper analyses further expose the bottlenecks of current mental world modeling. We expect MWM as a next stage of world modeling, from simulating physical scenes to simulating the minds that act in them.",
+ "summary": "## Mental World Modeling(心智世界建模)\n\n**1. 核心创新点**\n提出将\"心智变量\"(信念、意图、情绪、社会规范等)作为世界模型的**核心状态组成部分**而非事后解释,把世界建模从\"模拟物理场景\"推进到\"模拟场景中行动的心智\"。\n\n**2. 主要方法**\n- 提出通用理论框架 **MWM**:维护耦合的\"物理—心智\"世界状态,为特定对象渲染其**局部可观测视角**,并模拟候选动作如何同时更新物理与心智两部分。\n- 给出免训练、全过程可检视的基线 **MENTIS**,将推理拆解为五步:状态解析 → 目标视角观测生成 → 动作分解 → 物理与心智的耦合状态转移 → 分支级价值评估。\n- 自建人工构造并做过质量管控的**情境决策数据集**,覆盖文本、图像、带声音视频三类故事情境。\n\n**3. 结论/性能**\n在 8 个现代 LLM 世界模型上的实验表明:显式建模心智状态对预测人类决策**至关重要**(仅追踪物理场景会在\"看起来正确的场景\"下预测出错误动作)。进一步分析揭示了当前心智世界建模的瓶颈所在。\n\n> 附注:摘要中 \"MWM aintains\" 应为 \"maintains\",疑为原文笔误。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-30 13:04:43"
+}

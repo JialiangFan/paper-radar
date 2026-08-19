@@ -1,0 +1,13 @@
+{
+ "id": "2606.12507",
+ "title": "Rubric-Guided Self-Distillation: Post-Training Without Rubric Verifiers",
+ "authors": "MohammadHossein Rezaei, Anas Mahmoud, Zihao Wang, Utkarsh Tyagi, Advait Gosai, Razvan-Gabriel Dumitru, Aakash Sabharwal, Bing Liu, Yunzhong He",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12507v1",
+ "abstract": "Rubrics have emerged as an alternative to RLVR in open-ended domains where a single ground-truth final answer is not available. Existing rubric-based training methods rely on an LLM verifier that scores each rollout against rubrics. This introduces substantial training-time overhead, exposes optimization to verifier-specific biases, and reduces rubric feedback to a sparse end-of-trajectory signal. We propose Rubric-Guided Self-Distillation (RGSD), a verifier-free training method in which the base policy, conditioned on the rubric, serves as the teacher for the unconditioned student. RGSD distills the rubric-conditioned teacher distribution into the student token-by-token, replacing sparse trajectory-level rewards with dense per-token learning signals and removing the LLM judge from the training loop entirely. Across Qwen-2.5 (3B, 7B) and Qwen3-Thinking (4B, 8B) models on medical and science domains, RGSD achieves rubric satisfaction comparable to judge-based GRPO while using one on-policy rollout per prompt and no training-time verifier calls. Ablations show that raw rubrics provide a stronger teacher enrichment signal than self-generated reference responses, while a stronger GRPO judge can outperform RGSD in some settings, positioning RGSD as a complementary verifier-free alternative when verifier cost or reliability is the bottleneck.",
+ "summary": "**Rubric-Guided Self-Distillation: Post-Training Without Rubric Verifiers**\n\n1. **核心创新点**：提出一种无需验证器（verifier-free）的评分标准（rubric）训练方法，让模型自己充当\"教师\"来指导训练，从而摆脱传统方法对昂贵且有偏见的 LLM 评分器的依赖。\n\n2. **主要方法**：采用 **RGSD（Rubric-Guided Self-Distillation，评分标准引导的自蒸馏）**。其核心是：让基础策略模型在\"看到评分标准\"的条件下作为教师，向\"看不到评分标准\"的学生模型进行逐 token 的分布蒸馏。这样把原本稀疏的、只在轨迹末端给出的奖励信号，替换为密集的每 token 学习信号，并彻底从训练循环中移除了 LLM 裁判。\n\n3. **结论/性能**：在 Qwen-2.5（3B、7B）和 Qwen3-Thinking（4B、8B）模型、医学与科学领域上，RGSD 在评分标准满足度上可媲美基于裁判的 GRPO，同时每个 prompt 仅需一次 on-policy rollout 且无需任何训练时验证器调用。消融实验表明：原始评分标准比模型自生成的参考答案能提供更强的教师信号；不过在某些设置下更强的 GRPO 裁判仍可超越 RGSD——因此 RGSD 定位为当验证器成本或可靠性成为瓶颈时的一种互补性无验证器方案。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-13 13:02:24"
+}

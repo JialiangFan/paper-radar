@@ -1,0 +1,13 @@
+{
+ "id": "2603.07985",
+ "title": "On the Feasibility and Opportunity of Autoregressive 3D Object Detection",
+ "authors": "Zanming Huang, Jinsu Yoo, Sooyoung Jeon, Zhenzhen Liu, Mark Campbell, Kilian Q Weinberger, Bharath Hariharan, Wei-Lun Chao, Katie Z Luo",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.07985v1",
+ "abstract": "LiDAR-based 3D object detectors typically rely on proposal heads with hand-crafted components like anchor assignment and non-maximum suppression (NMS), complicating training and limiting extensibility. We present AutoReg3D, an autoregressive 3D detector that casts detection as sequence generation. Given point-cloud features, AutoReg3D emits objects in a range-causal (near-to-far) order and encodes each object as a short, discrete-token sequence consisting of its center, size, orientation, velocity, and class. This near-to-far ordering mirrors LiDAR geometry--near objects occlude far ones but not vice versa--enabling straightforward teacher forcing during training and autoregressive decoding at test time. AutoReg3D is compatible across diverse point-cloud or backbones and attains competitive nuScenes performance without anchors or NMS. Beyond parity, the sequential formulation unlocks language-model advances for 3D perception, including GRPO-style reinforcement learning for task-aligned objectives. These results position autoregressive decoding as a viable, flexible alternative for LiDAR-based detection and open a path to importing modern sequence-modeling tools into 3D perception.",
+ "summary": "- **核心创新点**：将 LiDAR 3D 目标检测建模为自回归的序列生成任务，按近-远的范围因果顺序输出每个目标的离散 token 描述，完全无需锚框和 NMS。\n- **主要方法**：基于点云特征，从近到远逐步自回归解码，每个目标用一个短的离散 token 序列编码中心、尺寸、姿态、速度与类别；训练采用教师强制，测试进行自回归解码，方法可与多种点云后端兼容，且不依赖锚框/NMS；并提出将语言模型思路（包括序列建模与潜在的强化学习机制）应用于3D感知。\n- **结论/性能**：在 nuScenes 数据集上实现了与传统锚框/NMS 方法相当甚至具竞争力的性能，证明自回归序列生成是可行且灵活的检测范式，并为将现代序列建模工具引入3D感知打开了新路径。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-10 13:04:32"
+}

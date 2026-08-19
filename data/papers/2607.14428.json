@@ -1,0 +1,13 @@
+{
+ "id": "2607.14428",
+ "title": "Accurate proper motions of the protostellar system VLA1623-2417",
+ "authors": "Ricardo Hernández Garnica, Laurent Loinard, Carlos Carrasco-González, Jazmín Ordóñez-Toro, Johanan Ramírez-Arellano, María José Maureira, Isaac C. Radley, Eleonora Bianchi, Claire J. Chandler, Luis F. Rodríguez, Rosa M. Torres, Aina Palau",
+ "date": "2026-07-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.14428v1",
+ "abstract": "We present a detailed astrometric analysis of the quadruple protostellar system VLA1623-2417, deriving accurate absolute proper motions for components A, B, and W, as well as, for the first time, individual motions for the compact binary components of A (Aa and Ab). Our study combines 37 archival interferometric observations from the Atacama Large Millimeter/submillimeter Array (ALMA) and the Karl G. Jansky Very Large Array (VLA) at centimeter and millimeter wavelengths, supplemented with additional data from the Submillimeter Array (SMA) and the Berkeley-Illinois-Maryland Association (BIMA) millimeter array taken from the literature. Together, these data provides time baselines of ~34.5 years for component B, ~32.5 years for component W, and ~11 years for the individual components Aa and Ab. The relative proper motions of Aa/Ab indicate significant orbital motions, but cover too small a fraction of the orbit to provide a reliable mass estimate. The relative proper motions of W with respect to components A and B indicate that their projected separations are decreasing at a rate of 1 to 2 km/s. These inward motions are inconsistent with scenarios in which component W has been dynamically ejected from the VLA1623-2417 system. Instead, we argue that W is either not bound to the A/B components or is moving on a highly inclined orbit.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-19 13:04:59"
+}

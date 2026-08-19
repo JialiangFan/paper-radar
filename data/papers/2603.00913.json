@@ -1,0 +1,13 @@
+{
+ "id": "2603.00913",
+ "title": "Minimalist Compliance Control",
+ "authors": "Haochen Shi, Songbo Hu, Yifan Hou, Weizhuo Wang, Karen Liu, Shuran Song",
+ "date": "2026-03-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.00913v1",
+ "abstract": "Compliance control is essential for safe physical interaction, yet its adoption is limited by hardware requirements such as force torque sensors. While recent reinforcement learning approaches aim to bypass these constraints, they often suffer from sim-to-real gaps, lack safety guarantees, and add system complexity. We propose Minimalist Compliance Control, which enables compliant behavior using only motor current or voltage signals readily available in modern servos and quasi-direct-drive motors, without force sensors, current control, or learning. External wrenches are estimated from actuator signals and Jacobians and incorporated into a task-space admittance controller, preserving sufficient force measurement accuracy for stable and responsive compliance control. Our method is embodiment-agnostic and plug-and-play with diverse high-level planners. We validate our approach on a robot arm, a dexterous hand, and two humanoid robots across multiple contact-rich tasks, using vision-language models, imitation learning, and model-based planning. The results demonstrate robust, safe, and compliant interaction across embodiments and planning paradigms.",
+ "summary": "1) 核心创新点（一句话概括）\n在无力传感器、无电流控制与无学习的前提下，提出极简顺从控制：仅用电机电流/电压信号结合执行器信号与雅可比矩阵估计外部力/扭矩，并将其融入任务空间的顺从控制，具备跨执行器的可嵌入性。\n\n2) 主要方法\n- 核心思路：不依赖力传感器、也不进行电流控制或学习，通过从执行器信号和雅可比矩阵估算外部扰动（外力/扭矩），再用任务空间顺从控制进行补偿。  \n- 技术要点：建立任务空间的顺从控制框架（admittance controller），将估计的外部力耦合进入控制律，保持稳定且响应性良好的顺从行为。  \n- 适用性与扩展性：方法与具体硬件无关，具备 embodiment-agnostic、即插即用特性，可与多种高层规划器兼容（包括视觉–语言模型、模仿学习、模型驱动规划等）。\n\n3) 结论/性能\n- 在机器人臂、灵巧手和两台 humanoid 机器人上进行多项对接触丰富任务的验证，展示了鲁棒、_safe、以及高质量的顺从交互。  \n- 不依赖力传感器、电流控制或学习，且在不同执行器和规划范式下均保持良好力感知与控制表现，具备广泛的跨 embodiment 与跨规划 paradigm 的适用性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:01:01"
+}

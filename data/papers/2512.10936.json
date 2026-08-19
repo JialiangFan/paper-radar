@@ -1,0 +1,13 @@
+{
+ "id": "2512.10936",
+ "title": "Empirical evaluation of the Frank-Wolfe methods for constructing white-box adversarial attacks",
+ "authors": "Kristina Korotkova, Aleksandr Katrutsa",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10936v1",
+ "abstract": "The construction of adversarial attacks for neural networks appears to be a crucial challenge for their deployment in various services. To estimate the adversarial robustness of a neural network, a fast and efficient approach is needed to construct adversarial attacks. Since the formalization of adversarial attack construction involves solving a specific optimization problem, we consider the problem of constructing an efficient and effective adversarial attack from a numerical optimization perspective. Specifically, we suggest utilizing advanced projection-free methods, known as modified Frank-Wolfe methods, to construct white-box adversarial attacks on the given input data. We perform a theoretical and numerical evaluation of these methods and compare them with standard approaches based on projection operations or geometrical intuition. Numerical experiments are performed on the MNIST and CIFAR-10 datasets, utilizing a multiclass logistic regression model, the convolutional neural networks (CNNs), and the Vision Transformer (ViT).",
+ "summary": "- 核心创新点：首次系统性地使用改进的投影自由 Frank-Wolfe 方法来构造白盒对抗样本，并进行理论与经验比较。\n\n- 主要方法：利用改进的 Frank-Wolfe（投影-free）优化框架求解对抗扰动的优化问题；在 MNIST 和 CIFAR-10 上对多类逻辑回归、CNN 以及 Vision Transformer（ViT）等模型进行实证评估，并与基于投影操作或几何直觉的标准对抗攻击方法进行比较。\n\n- 结论/性能：证明该投影自由方法在对抗样本构造方面具有理论与数值上的可行性和竞争力，在多种模型上与传统投影法相比表现出相近的攻击效果与潜在的效率优势。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-12 14:01:23"
+}

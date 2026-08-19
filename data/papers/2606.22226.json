@@ -1,0 +1,13 @@
+{
+ "id": "2606.22226",
+ "title": "Quantifying Theoretical AI Alignment Guarantees: Receiver-Utility Bounds in Bayesian Persuasion",
+ "authors": "Eric Yachbes, Eva Tardos",
+ "date": "2026-06-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.22226v1",
+ "abstract": "Misalignment can change how information moves from an AI agent to a human user. We model this as an information advantage: the AI agent observes the world state, while the human receiver only knows a prior and must act after seeing the agent's signal. A strategic AI sender may withhold evidence or garble information in order to steer the human's decision. We ask how much useful information can still reach the human when the AI optimizes a misaligned objective. We study a Bayesian persuasion model in which the world state is a bit string, the human receiver wants to guess the bits correctly, and a single AI sender wants the receiver to guess as many bits as possible as $1$. For a prior $μ$, let $R_0(μ)$ be the receiver's utility from using only the prior, and let $R_{\\max}(μ)$ be the largest receiver utility among signaling schemes that are optimal for the sender. We prove $R_{\\max}(μ)/R_0(μ)\\leq 3/2$. This bound improves for priors close to the independent product prior with the same marginals: if $μ(x)\\geq (1-η)π_μ(x)$ for every state $x$, then $R_{\\max}(μ)\\leq R_0(μ)+ηn$. We also give a six-bit prior for which $R_{\\max}(μ)/R_0(μ)=39/31>5/4$, so no universal $5/4$ bound is possible.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-24 13:00:40"
+}

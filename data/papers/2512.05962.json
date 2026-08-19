@@ -1,0 +1,13 @@
+{
+ "id": "2512.05962",
+ "title": "Whatever Remains Must Be True: Filtering Drives Reasoning in LLMs, Shaping Diversity",
+ "authors": "Germán Kruszewski, Pierre Erbacher, Jos Rozen, Marc Dymetman",
+ "date": "2025-12-05",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05962v1",
+ "abstract": "Reinforcement Learning (RL) has become the de facto standard for tuning LLMs to solve tasks involving reasoning. However, growing evidence shows that models trained in such way often suffer from a significant loss in diversity. We argue that this arises because RL implicitly optimizes the \"mode-seeking\" or \"zero-forcing\" Reverse KL to a target distribution causing the model to concentrate mass on certain high-probability regions of the target while neglecting others. In this work, we instead begin from an explicit target distribution, obtained by filtering out incorrect answers while preserving the relative probabilities of correct ones. Starting from a pre-trained LLM, we approximate this target distribution using the $α$-divergence family, which unifies prior approaches and enables direct control of the precision-diversity trade-off by interpolating between mode-seeking and mass-covering divergences. On a Lean theorem-proving benchmark, our method achieves state-of-the-art performance along the coverage-precision Pareto frontier, outperforming all prior methods on the coverage axis.",
+ "summary": "- **核心创新点**：从 RL 优化的模式寻求偏好转为以显式目标分布为基礎，通过 α-发散近似在模式寻求与覆盖之间可控地平衡精度与多样性，从而提升推理任务的覆盖性而不牺牲正确性。\n\n- **主要方法**：以预训练的大语言模型为起点，构建目标分布（筛掉错误答案但保留正确答案的相对概率），使用 α-发散族近似该目标分布，并通过在模式寻求与覆盖之间插值实现精度-多样性权衡；在 Lean 定理证明基准上评估并达到高水平性能。\n\n- **结论/性能**：在 Lean 定理证明任务的覆盖-精度帕累托前沿上实现了 state-of-the-art，且在覆盖维度上显著优于所有前人方法。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-08 14:02:29"
+}

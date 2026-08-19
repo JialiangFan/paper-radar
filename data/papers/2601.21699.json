@@ -1,0 +1,13 @@
+{
+ "id": "2601.21699",
+ "title": "Can David Beat Goliath? On Multi-Hop Reasoning with Resource-Constrained Agents",
+ "authors": "Hojae Han, Heeyun Jung, Jongyoon Kim, Seung-won Hwang",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21699v1",
+ "abstract": "While reinforcement learning (RL) has empowered multi-turn reasoning agents with retrieval and tools, existing successes largely depend on extensive on-policy rollouts in high-cost, high-accuracy regimes. Under realistic resource constraints that cannot support large models or dense explorations, however, small language model agents fall into a low-cost, low-accuracy regime, where limited rollout budgets lead to sparse exploration, sparse credit assignment, and unstable training. In this work, we challenge this trade-off and show that small language models can achieve strong multi-hop reasoning under resource constraints. We introduce DAVID-GRPO, a budget-efficient RL framework that (i) stabilizes early learning with minimal supervision, (ii) assigns retrieval credit based on evidence recall, and (iii) improves exploration by resampling truncated near-miss trajectories. Evaluated on agents up to 1.5B parameters trained on only four RTX 3090 GPUs, DAVID-GRPO consistently outperforms prior RL methods designed for large-scale settings on six multi-hop QA benchmarks. These results show that with the right inductive biases, small agents can achieve low training cost with high accuracy.",
+ "summary": "1. 核心创新点：提出一个预算高效的强化学习框架DAVID-GRPO，使资源受限的小型语言模型也能实现强力的多跳推理。\n\n2. 主要方法：在DAVID-GRPO框架下，通过（1）在极少监督下稳定早期学习，（2）基于证据回忆对检索阶段进行信用分配，以及（3）对近错轨迹进行重采样以提升探索，结合1.5B参数的模型在4张RTX 3090 GPU上的训练。\n\n3. 结论/性能：在六个多跳问答基准上，DAVID-GRPO持续优于为大规模设置设计的前沿RL方法，证明在合适的归纳偏置下，小模型也能以较低的训练成本达到高准确性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-01-30 14:04:31"
+}

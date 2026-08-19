@@ -1,0 +1,13 @@
+{
+ "id": "2603.29798",
+ "title": "SceneTeract: Agentic Functional Affordances and VLM Grounding in 3D Scenes",
+ "authors": "Léopold Maillard, Francis Engelmann, Tom Durand, Boxiao Pan, Yang You, Or Litany, Leonidas Guibas, Maks Ovsjanikov",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29798v1",
+ "abstract": "Embodied AI depends on interactive 3D environments that support meaningful activities for diverse users, yet assessing their functional affordances remains a core challenge. We introduce SceneTeract, a framework that verifies 3D scene functionality under agent-specific constraints. Our core contribution is a grounded verification engine that couples high-level semantic reasoning with low-level geometric checks. SceneTeract decomposes complex activities into sequences of atomic actions and validates each step against accessibility requirements (e.g., reachability, clearance, and navigability) conditioned on an embodied agent profile, using explicit physical and geometric simulations. We deploy SceneTeract to perform an in-depth evaluation of (i) synthetic indoor environments, uncovering frequent functional failures that prevent basic interactions, and (ii) the ability of frontier Vision-Language Models (VLMs) to reason about and predict functional affordances, revealing systematic mismatches between semantic confidence and physical feasibility even for the strongest current models. Finally, we leverage SceneTeract as a reward engine for VLM post-training, enabling scalable distillation of geometric constraints into reasoning models. We release the SceneTeract verification suite and data to bridge perception and physical reality in embodied 3D scene understanding.",
+ "summary": "- 核心创新点（一句话）\n  提出 SceneTeract，一套将高层语义推理与低层几何/物理仿真耦合的具象化验证引擎，用于在面向代理的3D场景中验证功能可供性。\n\n- 主要方法\n  - 将复杂活动分解为原子动作序列，并逐步验证每一步是否满足可访问性要求（可达性、间隙、可导航性等），条件化为 embodied agent 的属性与配置。\n  - 通过显式的物理与几何仿真进行低层检查，结合高层语义推理实现对场景功能的“地面化”验证。\n  - 对前沿 Vision-Language Models (VLMs) 的推理与预测能力进行评估，比较语义置信与物理可行性之间的关系。\n  - 将 SceneTeract 作为后训练的奖励引擎，对 VLM 进行几何约束的蒸馏，使推理模型能够更好地体现物理现实。\n  - 发布 SceneTeract 验证套件与数据，推动感知与物理现实在三维场景理解中的衔接。\n\n- 结论/性能\n  - 在合成室内环境中揭示频繁的功能性失败，揭示基本交互受阻的原因。\n  - 发现前沿 VLMs 在推理功能可供性时存在系统性错配，即使是在最强模型上，语义置信与物理可行性也不一致。\n  - 通过将 SceneTeract 作为奖励信号进行后训练蒸馏，实现了将几何约束向推理模型的可扩展迁移。\n  - 公开了验证套件和数据，促进感知与物理现实在 embodied 3D 场景理解中的融合。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-01 13:01:44"
+}

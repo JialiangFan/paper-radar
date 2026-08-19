@@ -1,0 +1,13 @@
+{
+ "id": "2604.11805",
+ "title": "Solving Physics Olympiad via Reinforcement Learning on Physics Simulators",
+ "authors": "Mihir Prabhudesai, Aryan Satpathy, Yangmin Li, Zheyang Qin, Nikash Bhardwaj, Amir Zadeh, Chuan Li, Katerina Fragkiadaki, Deepak Pathak",
+ "date": "2026-04-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.11805v1",
+ "abstract": "We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at: https://sim2reason.github.io/.",
+ "summary": "- 核心创新点（一句话）：将物理仿真器作为大规模合成数据源，通过在合成数据上对大型语言模型进行强化学习训练，使模型获得物理推理能力，并实现对真实世界问题的零-shot迁移。\n\n- 主要方法：在物理引擎中随机生成场景，从仿真交互中提取并构造合成的问答对，利用这些数据对大型语言模型进行强化学习训练以学习物理推理能力，评估在真实基准上的零-shot迁移。\n\n- 结论/性能：仅用合成数据训练即可在真实世界物理基准（如 IPhO 问题）上实现5–10个百分点的性能提升，且对不同模型规模均有改善；证明物理仿真器可作为可扩展的数据生成器，超越依赖互联网问答数据的局限。代码可在项目主页查看。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-14 13:00:38"
+}

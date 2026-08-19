@@ -1,0 +1,13 @@
+{
+ "id": "2603.13213",
+ "title": "MoEKD: Mixture-of-Experts Knowledge Distillation for Robust and High-Performing Compressed Code Models",
+ "authors": "Md. Abdul Awal, Mrigank Rochan, Chanchal K. Roy",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13213v1",
+ "abstract": "Large language models for code have achieved strong performance across diverse software analytics tasks, yet their real-world adoption remains limited by high computational demands, slow inference speeds, significant energy consumption, and environmental impact. Knowledge distillation (KD) offers a practical solution by transferring knowledge from a large model to a smaller and more efficient model. Despite its effectiveness, recent studies show that models distilled from a single source often exhibit degraded adversarial robustness, even when robustness-aware distillation techniques are employed. These observations suggest a fundamental limitation of single-source distillation in simultaneously transferring high-quality and robust knowledge. To overcome this limitation, we propose Mixture of Experts Knowledge Distillation (MoEKD), a KD framework that leverages a Mixture of Experts (MoE) architecture to enable more effective and robust knowledge transfer from multiple specialized experts into a compact model. MoEKD decomposes the distillation process into expert and router training, aggregation of expert knowledge through a learned routing mechanism, and distillation from the aggregated knowledge. We evaluate MoEKD on the vulnerability detection task using CodeBERT and GraphCodeBERT models. Experimental results show that MoEKD not only improves adversarial robustness by up to 35.8%, but also enhances predictive performance by up to 13%, compared to state-of-the-art KD baselines, including Compressor and AVATAR. Furthermore, an ablation study demonstrates that aggregating expert knowledge enables ultra-compact models to maintain competitive performance even when their size is reduced by approximately half. Overall, these results highlight the effectiveness of multi-expert knowledge aggregation in addressing key limitations of existing single-source KD approaches.",
+ "summary": "1) 核心创新点：通过引入混合专家知识蒸馏（MoEKD），将来自多个专业化专家的知识进行学习化聚合并路由到一个紧凑模型，以同时提升鲁棒性与预测性能。\n\n2) 主要方法：采用混合专家（MoE）框架分离专家训练与路由器训练，通过学习的路由机制将各专家知识聚合后再进行蒸馏到小模型；蒸馏过程分解为专家训练、路由训练、基于聚合知识的蒸馏。评估对象为代码漏洞检测任务，基线模型为 CodeBERT/GraphCodeBERT。\n\n3) 结论/性能：相对于单源KD基线（如 Compressor、AVATAR），MoEKD在对抗鲁棒性提升高达35.8%，在总体预测性能上提升高达13%；消融研究还显示，超紧凑模型在规模约缩半时，仍能通过多专家知识聚合保持竞争力。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-16 13:03:40"
+}

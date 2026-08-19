@@ -1,0 +1,13 @@
+{
+ "id": "2512.02830",
+ "title": "Defense That Attacks: How Robust Models Become Better Attackers",
+ "authors": "Mohamed Awad, Mahmoud Akrm, Walid Gomaa",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02830v1",
+ "abstract": "Deep learning has achieved great success in computer vision, but remains vulnerable to adversarial attacks. Adversarial training is the leading defense designed to improve model robustness. However, its effect on the transferability of attacks is underexplored. In this work, we ask whether adversarial training unintentionally increases the transferability of adversarial examples. To answer this, we trained a diverse zoo of 36 models, including CNNs and ViTs, and conducted comprehensive transferability experiments. Our results reveal a clear paradox: adversarially trained (AT) models produce perturbations that transfer more effectively than those from standard models, which introduce a new ecosystem risk. To enable reproducibility and further study, we release all models, code, and experimental scripts. Furthermore, we argue that robustness evaluations should assess not only the resistance of a model to transferred attacks but also its propensity to produce transferable adversarial examples.",
+ "summary": "- 核心创新点：揭示对抗训练虽然提升了模型鲁棒性，却会使其产生的对抗扰动对其他模型具有更高的转移性，呈现“防御同时也在成为更强攻击者”的悖论。\n- 主要方法：构建并比较36个不同架构的模型（包括CNN和ViT），对它们进行对抗训练，开展大规模的跨模型对抗样本转移性实验，并公开所有模型、代码与实验脚本以促进复现。\n- 结论/性能：与未对抗训练模型相比，对抗训练模型生成的对抗扰动在其他模型上更易转移，带来新的生态风险；提出在鲁棒性评估中应同时考量模型对抗样本的转移倾向。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-03 14:00:43"
+}

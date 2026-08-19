@@ -1,0 +1,13 @@
+{
+ "id": "2608.02254",
+ "title": "Homebot: A Personal AI Agent for Conversational Home Assistance and Automation",
+ "authors": "Shengyuan Ye, Yixin Zhang, Han Liang, Liekang Zeng, Jiangsu Du, Mu Yuan",
+ "date": "2026-08-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.02254v1",
+ "abstract": "\\texttt{Homebot} is a locally deployable AI agent for conversational household assistance and automation. It accepts voice and instant-messaging requests through a shared runtime that combines language-model responses with registered tools and task-specific skills. The design separates common request processing from session ownership: messaging history remains scoped to a channel and chat, whereas voice interaction is bounded by wake-word activation. For hands-free use, \\texttt{Homebot} combines local wake-word detection, streaming speech recognition and synthesis, and an explicit dialogue-state protocol for ending, following up, or continuing a conversation. Clear channel, tool, and skill contracts support practical customization for household use.",
+ "summary": "## Homebot：面向对话式家居助理与自动化的个人 AI Agent\n\n**1. 核心创新点**\n提出一个可本地部署的个人 AI Agent，通过统一运行时同时支持语音与即时通讯两种入口，实现对话式家务协助与家居自动化。\n\n**2. 主要方法**\n- **共享运行时**：将语言模型回复与已注册的工具（tools）、任务专用技能（skills）结合在同一处理链路上。\n- **请求处理与会话归属解耦**：通用请求处理逻辑复用，而会话状态分别管理——IM 侧的历史记录按「频道 + 聊天」作用域隔离，语音侧则由唤醒词激活来界定会话边界。\n- **免手操作语音链路**：本地唤醒词检测 + 流式语音识别（ASR）与语音合成（TTS），并配套一套显式的对话状态协议，用于判定结束对话、追问还是继续当前会话。\n- **可扩展契约**：定义清晰的 channel / tool / skill 接口契约，方便针对具体家庭场景做定制。\n\n**3. 结论/性能**\n摘要属于典型的系统类工作，**未给出量化实验或基准评测结果**。其宣称的成效为工程层面的：本地化部署（隐私与离线友好）、语音与文字双通道的一致体验、以及借助三类明确契约带来的良好可定制性与可扩展性，能够满足实际家庭使用需求。\n\n> 提示：若需要判断该工作的实际效果强弱，建议查看正文是否有延迟（唤醒到响应）、识别准确率、技能调用成功率等指标——摘要中完全没有涉及，这是评审时值得追问的点。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-04 13:00:31"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.20622",
+ "title": "pAI/MSc: ML Theory Research with Humans on the Loop",
+ "authors": "Mahmoud Abdelmoneum, Pierfrancesco Beneventano, Tomaso Poggio",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20622v1",
+ "abstract": "We present pAI/MSc, an open-source, customizable, modular multi-agent system for academic research workflows. Our goal is not autonomous scientific ideation, nor fully automated research. It is narrower and more practical: to reduce by orders of magnitude the human steering required to turn a specified hypothesis into a literature-grounded, mathematically established, experimentally supported, submission-oriented manuscript draft. pAI/MSc is built with a current emphasis on machine learning theory and adjacent quantitative fields.",
+ "summary": "- 核心创新点：提出一个开放源代码、可定制、模块化的多智能体系统 pAI/MSc，用以显著减少将指定假设转化为文献支撑、数学表述、实验验证与投稿草稿所需的人类引导量级，聚焦机器学习理论等定量领域。\n\n- 主要方法：基于模块化的多智能体架构来编排和协同学术研究工作流，覆盖文献 grounding、数学形式化、实验设计与执行、论文撰写等环节，并实现人机协同（人类在环）与可扩展定制。\n\n- 结论/性能：提出一个框架以实现从假设到论文草稿的流程中大幅降低人类引导需求的数量级；摘要未给出具体实验结果或量化性能指标。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-23 13:03:39"
+}

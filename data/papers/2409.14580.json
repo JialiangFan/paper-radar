@@ -1,0 +1,33 @@
+{
+ "id": "2409.14580",
+ "title": "Updating Robot Safety Representations Online from Natural Language Feedback",
+ "authors": "Santos, et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2409.14580",
+ "abstract": "",
+ "summary": "This paper is a direct prototype for grounding natural-language safety feedback into online-updated reachability safety controllers.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "human-feedback",
+  "language-specified-constraints",
+  "reachability",
+  "reachability-analysis",
+  "robotics",
+  "safe-vla",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2024_Santos_LanguageSafetyFeedback.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2024_Santos_LanguageSafetyFeedback.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.12791",
+ "title": "Beyond Task Completion: An Assessment Framework for Evaluating Agentic AI Systems",
+ "authors": "Sreemaee Akshathala, Bassam Adnan, Mahisha Ramesh, Karthik Vaidhyanathan, Basil Muhammed, Kannan Parthasarathy",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12791v1",
+ "abstract": "Recent advances in agentic AI have shifted the focus from standalone Large Language Models (LLMs) to integrated systems that combine LLMs with tools, memory, and other agents to perform complex tasks. These multi-agent architectures enable coordinated reasoning, planning, and execution across diverse domains, allowing agents to collaboratively automate complex workflows. Despite these advances, evaluation and assessment of LLM agents and the multi-agent systems they constitute remain a fundamental challenge. Although various approaches have been proposed in the software engineering literature for evaluating conventional software components, existing methods for AI-based systems often overlook the non-deterministic nature of models. This non-determinism introduces behavioral uncertainty during execution, yet existing evaluations rely on binary task completion metrics that fail to capture it. Evaluating agentic systems therefore requires examining additional dimensions, including the agent ability to invoke tools, ingest and retrieve memory, collaborate with other agents, and interact effectively with its environment. We propose an end-to-end Agent Assessment Framework with four evaluation pillars encompassing LLMs, Memory, Tools, and Environment. We validate the framework on a representative Autonomous CloudOps use case, where experiments reveal behavioral deviations overlooked by conventional metrics, demonstrating its effectiveness in capturing runtime uncertainties.",
+ "summary": "- 核心创新点：提出一个端到端的代理评估框架，以四大评估支柱（LLMs、Memory、Tools、Environment）系统地评估代理系统，并专门捕捉非确定性和运行时不确定性。\n\n- 主要方法：设计并实现 Agent Assessment Framework，通过对 LLM、Memory、Tools、Environment 四个支柱的综合评估指标，量化工具调用、记忆检索、与其他代理的协作，以及与环境的交互等能力；在一个具有代表性的 Autonomous CloudOps 场景中进行验证，比较传统二元任务完成度，揭示运行时行为偏差。\n\n- 结论/性能：证明该框架能够揭示传统指标未能捕捉的运行时不确定性与行为偏差，显示在评估 agentic AI 系统时更全面、有效。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:03:58"
+}

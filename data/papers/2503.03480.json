@@ -1,0 +1,33 @@
+{
+ "id": "2503.03480",
+ "title": "SafeVLA: Towards Safety Alignment of Vision-Language-Action Model via Constrained Learning",
+ "authors": "Zhang, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2503.03480",
+ "abstract": "",
+ "summary": "SafeVLA treats safety alignment for VLA policies as a constrained learning problem rather than relying on inherited LLM/VLM harmlessness.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "NeurIPS 2025",
+ "category": "VLA Safety",
+ "tags": [
+  "benchmarks-and-evaluation",
+  "robotics",
+  "safe-rl",
+  "safe-vla",
+  "safety-alignment",
+  "semantic-safety",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2025_Zhang_SafeVLA.md",
+ "pdf_path": "PDFs/VLA_Safety/2025_Zhang_SafeVLA.pdf",
+ "code": "https://github.com/PKU-Alignment/SafeVLA",
+ "project": "https://pku-safevla.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

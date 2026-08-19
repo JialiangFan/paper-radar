@@ -1,0 +1,32 @@
+{
+ "id": "2402.11498",
+ "title": "Verifiably Following Complex Robot Instructions with Foundation Models",
+ "authors": "Quartey, et al.",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2402.11498",
+ "abstract": "",
+ "summary": "LIMP grounds complex natural-language robot instructions into symbolic specifications and motion-planning behavior that can be checked before execution.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "language-instructions",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "spatial-safety",
+  "verification"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2024_Quartey_LIMP.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2024_Quartey_LIMP.pdf",
+ "code": "https://github.com/robotlimp",
+ "project": "https://robotlimp.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

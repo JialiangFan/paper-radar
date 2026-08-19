@@ -1,0 +1,13 @@
+{
+ "id": "2603.12023",
+ "title": "Cascade: Composing Software-Hardware Attack Gadgets for Adversarial Threat Amplification in Compound AI Systems",
+ "authors": "Sarbartha Banerjee, Prateek Sahu, Anjo Vahldiek-Oberwagner, Jose Sanchez Vicarte, Mohit Tiwari",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12023v1",
+ "abstract": "Rapid progress in generative AI has given rise to Compound AI systems - pipelines comprised of multiple large language models (LLM), software tools and database systems. Compound AI systems are constructed on a layered traditional software stack running on a distributed hardware infrastructure. Many of the diverse software components are vulnerable to traditional security flaws documented in the Common Vulnerabilities and Exposures (CVE) database, while the underlying distributed hardware infrastructure remains exposed to timing attacks, bit-flip faults, and power-based side channels. Today, research targets LLM-specific risks like model extraction, training data leakage, and unsafe generation -- overlooking the impact of traditional system vulnerabilities.\n  This work investigates how traditional software and hardware vulnerabilities can complement LLM-specific algorithmic attacks to compromise the integrity of a compound AI pipeline. We demonstrate two novel attacks that combine system-level vulnerabilities with algorithmic weaknesses: (1) Exploiting a software code injection flaw along with a guardrail Rowhammer attack to inject an unaltered jailbreak prompt into an LLM, resulting in an AI safety violation, and (2) Manipulating a knowledge database to redirect an LLM agent to transmit sensitive user data to a malicious application, thus breaching confidentiality. These attacks highlight the need to address traditional vulnerabilities; we systematize the attack primitives and analyze their composition by grouping vulnerabilities by their objective and mapping them to distinct stages of an attack lifecycle. This approach enables a rigorous red-teaming exercise and lays the groundwork for future defense strategies.",
+ "summary": "- 核心创新点：提出将传统软件/硬件漏洞与大模型（LLM）算法攻击结合的攻击框架，系统化地放大并分析在复合AI系统中的威胁，通过对攻击原语和生命周期阶段的分组映射实现红队化评估。\n\n- 主要方法：展示两种新颖攻击并给出技术路径：1) 利用软件代码注入漏洞结合 guardrail Rowhammer 实现对LLM注入未修改的越狱提示，导致AI安全违规；2) 操纵知识库使LLM代理将敏感用户数据转发给恶意应用，造成机密泄露。同时对攻击原语进行系统化分组、按目标分类并映射到攻击生命周期的不同阶段，构建端到端红队演练框架。\n\n- 结论/性能：验证传统漏洞与LLM攻击可协同放大复合AI系统的风险，暴露在完整管线中的安全性与隐私脆弱性；并提出系统化的攻击原语与生命周期映射，为未来防御策略和红队演练奠定基础。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-13 13:01:13"
+}

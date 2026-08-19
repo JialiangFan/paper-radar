@@ -1,0 +1,13 @@
+{
+ "id": "2606.16465",
+ "title": "When Agent Automation Becomes Profitable: Quantifying and Insuring Autonomous AI Risk through Trace-Economic Underwriting",
+ "authors": "Binyan Xu, Xilin Dai, Fan Yang, Kehuan Zhang",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.16465v1",
+ "abstract": "AI agents can now take irreversible actions in operational systems, but agent-caused losses are still not clearly assigned, priced, or transferred. Providers often disclaim consequential damages, users are left with uncompensated losses, and default human review limits the efficiency gains of automation. We ask when autonomous AI deployment can become economically acceptable despite failure risk. Our answer is to quantify risk at the customer-task-trace episode level and transfer it through insurance. Automation is acceptable when its expected benefit exceeds the premium, control cost, and remaining risk. This requires a defined role with bounded permissions and comparable traces. We introduce trace-economic underwriting, which maps tool-use traces to customer exposure and claimable loss, then uses this representation for pricing, control, and risk transfer. It uses deterministic economic labels rather than an LLM judge. In our trace-to-loss testbed, trace-economic pricing reduces pricing MAE from $17.7K to $569 and removes regressive cross-subsidy. A 300-trace expert audit accepts 295 labels unchanged. On 1,000 real SWE-smith traces, trace-conditioned controls reduce CVaR95 by 72%. Theorem~1 gives a finite-sample scope condition. We release code, labels, and audit sheets.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出\"轨迹-经济承保\"（trace-economic underwriting）方法，把自主 AI 智能体的失败风险按\"客户-任务-轨迹\"粒度量化并通过保险转移，从而判断何时自动化在经济上可被接受（预期收益 > 保费 + 管控成本 + 残余风险）。\n\n**2. 主要方法**\n将智能体的工具调用轨迹（tool-use traces）映射为客户敞口与可索赔损失，用**确定性的经济标签**进行定价、管控和风险转移，而**不依赖 LLM 充当裁判**。需要明确角色、有界权限和可比较的轨迹，并给出有限样本适用条件的理论保证（定理 1）。\n\n**3. 结论/性能**\n- 在 trace-to-loss 测试台上，定价平均绝对误差（MAE）从 1.77 万美元降至 569 美元，并消除了累退式的交叉补贴；\n- 300 条轨迹的专家审计中，295 条标签被原样接受；\n- 在 1,000 条真实 SWE-smith 轨迹上，轨迹条件化的管控使 CVaR95（95% 条件风险价值）降低 72%。\n- 作者公开了代码、标签和审计表。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-16 13:01:59"
+}

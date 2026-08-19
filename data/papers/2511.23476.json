@@ -1,0 +1,13 @@
+{
+ "id": "2511.23476",
+ "title": "Thinking by Doing: Building Efficient World Model Reasoning in LLMs via Multi-turn Interaction",
+ "authors": "Bao Shu, Yan Cai, Jianjian Sun, Chunrui Han, En Yu, Liang Zhao, Jingcheng Hu, Yinmin Zhang, Haoran Lv, Yuang Peng, Zheng Ge, Xiangyu Zhang, Daxin Jiang, Xiangyu Yue",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23476v1",
+ "abstract": "Developing robust world model reasoning is crucial for large language model (LLM) agents to plan and interact in complex environments. While multi-turn interaction offers a superior understanding of environmental dynamics via authentic feedback, current approaches often impose a rigid reasoning process, which constrains the model's active learning, ultimately hindering efficient world model reasoning. To address these issues, we explore world-model internalization through efficient interaction and active reasoning (WMAct), which liberates the model from structured reasoning, allowing the model to shape thinking directly through its doing, and achieves effective and efficient world model reasoning with two key mechanisms: (1) a reward rescaling mechanism adjusting outcome reward based on action efficacy to incentivize redundancy reduction and purposeful interaction; (2) an interaction frequency annealing strategy to progressively reduce the maximum allowed interaction turns, which compels the model to condense its learning and internalize environmental dynamics rather than over-relying on environmental cues. Our experiments on Sokoban, Maze, and Taxi show that WMAct yields effective world model reasoning capable of resolving tasks in a single turn that previously required multiple interactions and fosters strong transferability to complex environments, improving performance on a suite of reasoning benchmarks.",
+ "summary": "- 核心创新点：通过奖励重标定和交互频次退火这两大机制实现世界模型的内化，使大型语言模型在做中学、用更少的轮次就能获得有效的环境理解与推理能力。\n\n- 主要方法：提出 WMAct，结合两大技术：1) 奖励重标定（reward rescaling）根据行动效能调整结果奖励，鼓励去冗余、目的明确的交互；2) 交互频次退火（interaction frequency annealing）逐步降低最大允许交互轮次，促使模型压缩学习、内化环境动态，并通过多轮交互训练形成世界模型推理能力。\n\n- 结论/性能：在 Sokoban、Maze、Taxi 等任务上，WMAct 能实现单轮就可解决原需多轮互动的任务，且对复杂环境具较强的迁移性，在一系列推理基准上提升了性能。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:02:57"
+}

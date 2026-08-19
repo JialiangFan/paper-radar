@@ -1,0 +1,13 @@
+{
+ "id": "2604.06856",
+ "title": "Enhancing Secure Intent-Based Networking with an Agentic AI: The EU Project MARE Approach",
+ "authors": "Iulisloi Zacarias, Marla Grunewald, Fin Gentzen, Xavi Masip-Bruin, Admela Jukan",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06856v1",
+ "abstract": "In the EU project MARE, a novel plane was proposed and used in combination with intent-based networking (IBN), allowing the operator to focus on what, rather than on how. Recently, LLMs have been successfully employed to translate the high-level intents into low-level actions. The open challenge is to understand how IBN can be effectively enhanced with LLM and the emerging agentic AI for security purposes. Enhancing IBN with an agentic AI paradigm introduces significant challenges that existing solutions do not fully address. This paper proposes an enhanced IBN framework with a strong security focus toward agentic AI. We address the architectural and security requirements for a multi-agent intent-based system (IBS) architecture, including a multi-domain IBN. We propose a hierarchical multi-agent and multi-vendor architecture that can also be applied more broadly in 6G architectures and beyond, beyond the security architecture proposed in MARE. The architecture incorporates an interactive intent-processing pipeline using LLMs, and it also allows the IBS to connect to external security knowledge bases, such as MITRE ATT\\&CK, MITRE FiGHT, and NIST.",
+ "summary": "核心创新点：\n- 将代理式AI引入意图驱动网络（IBN），提出一个具备多域/多厂商的层级化多代理架构，聚焦安全性，并将LLMs与外部安全知识库（如 MITRE ATT&CK、MITRE FiGHT、NIST）对接，以实现从高层意图到低层动作的安全化转换。\n\n主要方法：\n- 构建一个强化安全性的增强型IBN框架，采用层级化的多代理、多域/多厂商架构；\n- 在意图处理管线中引入交互式LLM驱动的处理流程；\n- 支持与外部安全知识库的连接，以提升威胁识别与响应能力，适用于更广泛的6G及以上场景。\n\n结论/性能：\n- 目前主要提出架构与方法论，尚未给出具体实验评估结果；但指出该框架具备在多域IBS中扩展应用的潜力，能够提升安全性并可在6G及以上场景中实现从意图到动作的安全化执行。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-09 13:02:20"
+}

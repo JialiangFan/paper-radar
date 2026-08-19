@@ -1,0 +1,13 @@
+{
+ "id": "2604.15267",
+ "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+ "authors": "Emanuel Tewolde, Xiao Zhang, David Guzman Piedrahita, Vincent Conitzer, Zhijing Jin",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15267v1",
+ "abstract": "It is increasingly important that LLM agents interact effectively and safely with other goal-pursuing agents, yet, recent works report the opposite trend: LLMs with stronger reasoning capabilities behave _less_ cooperatively in mixed-motive games such as the prisoner's dilemma and public goods settings. Indeed, our experiments show that recent models -- with or without reasoning enabled -- consistently defect in single-shot social dilemmas.\n  To tackle this safety concern, we present the first comparative study of game-theoretic mechanisms that are designed to enable cooperative outcomes between rational agents _in equilibrium_. Across four social dilemmas testing distinct components of robust cooperation, we evaluate the following mechanisms: (1) repeating the game for many rounds, (2) reputation systems, (3) third-party mediators to delegate decision making to, and (4) contract agreements for outcome-conditional payments between players. Among our findings, we establish that contracting and mediation are most effective in achieving cooperative outcomes between capable LLM models, and that repetition-induced cooperation deteriorates drastically when co-players vary. Moreover, we demonstrate that these cooperation mechanisms become _more effective_ under evolutionary pressures to maximize individual payoffs.",
+ "summary": "1) 核心创新点（1句话）\n首次对比评估并量化四种旨在在社会困境中维持合作的机制（重复博弈、声誉系统、第三方仲裁/代理、以及结果条件支付契约）在大语言模型代理中的有效性，揭示契约与仲裁在实现合作方面最为有效，并分析其在进化压力下的鲁棒性。\n\n2) 主要方法\n- 在四种社会困境中，对比评估四类机制对合作的影响：重复博弈、声誉系统、第三方仲裁者来代理决策、以及基于结果的契约性支付。  \n- 使用具备能力的LLM代理进行对局实验，观察在不同机制下的合作水平、是否达成均衡，以及对手多样性和进化压力下的表现差异。  \n- 以博弈论框架分析机制在实际对局中的作用与鲁棒性。\n\n3) 结论/性能\n- 结论表明：契约和仲裁在实现具备能力的LLM模型之间的合作方面最为有效；重复博弈在对手多样化时显著削弱合作。  \n- 当受到以最大化个人收益为目标的进化压力时，这些合作机制的效果增强，成为更稳健的促进合作的手段。  \n- 总体而言，单次对局中模型往往倾向于背离合作，而通过契约与仲裁等机制可以在长期均衡中提升合作水平。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-17 13:06:47"
+}

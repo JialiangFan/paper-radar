@@ -1,0 +1,13 @@
+{
+ "id": "2511.21432",
+ "title": "Multi-Hypotheses Navigation in Collaborative Localization subject to Cyber Attacks",
+ "authors": "Peter Iwer Hoedt Karstensen, Roberto Galeazzi",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21432v1",
+ "abstract": "This paper addresses resilient collaborative localization in multi-agent systems exposed to spoofed radio frequency measurements. Each agent maintains multiple hypotheses of its own state and exchanges selected information with neighbors using covariance intersection. Geometric reductions based on distance tests and convex hull structure limit the number of hypotheses transmitted, controlling the spread of hypotheses through the network. The method enables agents to separate spoofed and truthful measurements and to recover consistent estimates once the correct hypothesis is identified. Numerical results demonstrate the ability of the approach to contain the effect of adversarial measurements, while also highlighting the impact of conservative fusion on detection speed. The framework provides a foundation for resilient multi-agent navigation and can be extended with coordinated hypothesis selection across the network.",
+ "summary": "1) 核心创新点（1句）：\n在多代理协同定位中引入多假设状态、通过距离测试和凸包几何约束进行缩减，并结合协方差交叉融合，从而识别并抑制伪造测量以实现鲁棒导航。\n\n2) 主要方法：\n提出一个鲁棒协同定位框架：每个代理维护多种自身状态假设并与邻居交换选定信息，使用协方差交叉（CI）进行信息融合；通过距离测试和凸包结构进行几何缩减，控制传输的假设数量，抑制假设在网络中的扩散；能够区分伪造与真实测量，并在识别到正确假设后恢复一致估计。\n\n3) 结论/性能：\n数值结果表明该方法能有效抑制对抗性（伪造）测量的影响并获得一致估计，但较保守的融合会降低对检测速度的影响；为鲁棒多代理导航提供了一个可扩展的框架，未来可进一步实现跨网络的协调假设选择。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-11-30 06:05:06"
+}

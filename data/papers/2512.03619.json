@@ -1,0 +1,13 @@
+{
+ "id": "2512.03619",
+ "title": "LAMP: Language-Assisted Motion Planning for Controllable Video Generation",
+ "authors": "Muhammed Burak Kizil, Enes Sanli, Niloy J. Mitra, Erkut Erdem, Aykut Erdem, Duygu Ceylan",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03619v1",
+ "abstract": "Video generation has achieved remarkable progress in visual fidelity and controllability, enabling conditioning on text, layout, or motion. Among these, motion control - specifying object dynamics and camera trajectories - is essential for composing complex, cinematic scenes, yet existing interfaces remain limited. We introduce LAMP that leverages large language models (LLMs) as motion planners to translate natural language descriptions into explicit 3D trajectories for dynamic objects and (relatively defined) cameras. LAMP defines a motion domain-specific language (DSL), inspired by cinematography conventions. By harnessing program synthesis capabilities of LLMs, LAMP generates structured motion programs from natural language, which are deterministically mapped to 3D trajectories. We construct a large-scale procedural dataset pairing natural text descriptions with corresponding motion programs and 3D trajectories. Experiments demonstrate LAMP's improved performance in motion controllability and alignment with user intent compared to state-of-the-art alternatives establishing the first framework for generating both object and camera motions directly from natural language specifications.",
+ "summary": "1. 核心创新点：将大语言模型作为运动规划器，将自然语言转译为可映射到3D轨迹的结构化运动程序，首次实现从文本直接生成对象与相机运动的完整控制框架。\n\n2. 主要方法：提出面向运动的领域专用语言（DSL）并以其为基础；利用LLMs的程序合成能力从自然语言生成结构化运动程序；将该程序确定性映射到对象和相机的3D轨迹；构建大规模数据集将自然语言描述、运动程序与3D轨迹成对；通过实验评估与对比，展示在可控性与用户意图对齐方面的提升。\n\n3. 结论/性能：在对象与相机的运动可控性和对用户意图的一致性方面优于现有方法，确立了首个从自然语言直接生成两者运动的完整框架。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:03:31"
+}

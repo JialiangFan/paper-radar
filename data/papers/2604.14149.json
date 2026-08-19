@@ -1,0 +1,13 @@
+{
+ "id": "2604.14149",
+ "title": "One Token per Highly Selective Frame: Towards Extreme Compression for Long Video Understanding",
+ "authors": "Zheyu Zhang, Ziqi Pang, Shixing Chen, Xiang Hao, Vimal Bhat, Yu-Xiong Wang",
+ "date": "2026-04-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14149v1",
+ "abstract": "Long video understanding is inherently challenging for vision-language models (VLMs) because of the extensive number of frames. With each video frame typically expanding into tens or hundreds of tokens, the limited context length of large language models (LLMs) forces the VLMs to perceive the frames sparsely and lose temporal information. To address this, we explore extreme video token compression towards \\emph{one token per frame} at the final LLM layer. Our key insight is that heuristic-based compression, widely adopted by previous methods, is prone to information loss, and this necessitates supervising LLM layers into \\emph{learnable} and \\emph{progressive} modules for \\emph{token-level compression} (LP-Comp). Such compression enables our VLM to digest 2x-4x more frames with improved performance. To further increase the token efficiency, we investigate \\emph{frame-level compression}, which selects the frames most relevant to the queries via the internal attention scores of the LLM layers, named \\emph{question-conditioned compression} (QC-Comp). As a notable distinction from previous studies, we mitigate the position bias of LLM attention in long contexts, \\emph{i.e.}, the over-concentration on the beginning and end of a sequence, by splitting long videos into short segments and employing local attention. Collectively, our combined \\emph{token-level} and \\emph{frame-level} leads to an e\\textbf{x}treme compression model for long video understanding, named \\textbf{\\name}, achieving a significantly larger compression ratio and enabling denser frame sampling. Our \\name is finetuned from VideoChat-Flash with a data-efficient \\emph{supervised compression tuning} stage that only requires 2.5\\% of the supervised fine-tuning data, yet boosts the accuracy from 42.9\\% to 46.2\\% on LVBench and enhances multiple other long video benchmarks.",
+ "summary": "1. 核心创新点：提出可学习且渐进的 token-level 压缩（LP-Comp）与基于问题条件的帧级压缩（QC-Comp），在最终 LLM 层实现“每帧仅一个 token”的极致长视频理解，并通过分段局部注意力缓解位置偏置。\n\n2. 主要方法：在视觉-语言模型框架下，设计两大压缩策略：LP-Comp 进行逐帧的 token-level学习压缩，以及 QC-Comp 通过 LLM 内部注意力分数选择与查询相关的关键帧；通过将长视频分段并采用局部注意力来降低位置偏置；在 VideoChat-Flash 基础上进行数据高效的监督压缩调优，仅需 2.5% 的监督微调数据。\n\n3. 结论/性能：实现极高的压缩比，使模型能够处理 2x-4x 更多的帧并提升性能；在 LVBench 上准确率从 42.9% 提升到 46.2%，并在多个长视频基准上获得提升。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-16 13:00:28"
+}

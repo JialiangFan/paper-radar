@@ -1,0 +1,32 @@
+{
+ "id": "2305.13681",
+ "title": "GUARD: A Safe Reinforcement Learning Benchmark",
+ "authors": "Zhao, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2305.13681",
+ "abstract": "",
+ "summary": "GUARD provides a generalized benchmark for comparing SafeRL algorithms under diverse constraints and tasks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "constraints",
+  "robotics",
+  "safe-rl",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2023_Zhao_GUARD.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2023_Zhao_GUARD.pdf",
+ "code": "https://github.com/intelligent-control-lab/GUARD",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

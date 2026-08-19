@@ -1,0 +1,13 @@
+{
+ "id": "2605.28816",
+ "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+ "authors": "Fangfu Liu, Kai He, Tianchang Shen, Tianshi Cao, Sanja Fidler, Yueqi Duan, Jun Gao, Igor Gilitschenski, Zian Wang, Xuanchi Ren",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28816v1",
+ "abstract": "World models for interactive video generation have largely focused on single-agent settings, where future observations are generated from a single control signal. However, many generated environments require multi-agent interaction: multiple players, robots, or embodied agents act simultaneously within a shared space. Scaling world models to such settings requires a principled multi-agent design: agents should remain independently controllable, permutation-symmetric, and support efficient inference while maintaining consistency across time and perspectives. In this paper, we present our generative multi-agent world model for interactive simulation. It introduces Simplex Rotary Agent Encoding, a parameter-free extension of 3D RoPE that represents agents as vertices of a regular simplex in rotary angle space. This gives each agent a distinct phase while making all agents permutation-equivalent, enabling scalable agent identity without learned per-slot identities or a fixed agent ordering. To avoid dense all-to-all attention across agents, we further propose Sparse Hub Attention, where learnable hub tokens mediate token interaction across agents, reducing cross-agent attention cost from quadratic to linear in the number of agents. For real-time rollout, we distill a full-context diffusion teacher into a causal student that generates temporal blocks sequentially with KV caching, enabling action-responsive generation at 24 FPS. Experiments in multiplayer virtual environments show that our model improves video fidelity, action controllability, and inter-agent consistency over slot-based and dense-attention baselines, while generalizing from two to four players without additional training.",
+ "summary": "## Gamma-World 论文总结\n\n**1. 核心创新点**\n首个面向多智能体交互式视频生成的世界模型，突破了以往世界模型仅支持单智能体控制的局限，能够在共享空间内同时模拟多个独立可控的玩家/智能体。\n\n**2. 主要方法**\n- **Simplex Rotary Agent Encoding (SRAE)**：在 3D RoPE 基础上的无参数扩展，将每个智能体表示为旋转角空间中正单纯形（regular simplex）的顶点，赋予每个智能体独特相位，同时保持所有智能体的置换等变性，无需学习每个槽位的身份编码或固定智能体顺序。\n- **Sparse Hub Attention**：引入可学习的 hub tokens 作为中介，让跨智能体的 token 交互通过 hub 进行，将跨智能体注意力的计算复杂度从 O(N²) 降到 O(N)。\n- **因果学生模型蒸馏**：把全上下文扩散教师模型蒸馏成因果学生模型，结合 KV 缓存按时间块顺序生成，实现 24 FPS 的实时、动作响应式生成。\n\n**3. 结论/性能**\n在多人虚拟环境实验中，相较 slot-based 和 dense-attention 基线，模型在视频保真度、动作可控性以及智能体间一致性方面均有提升；并能从 2 玩家泛化到 4 玩家场景而无需额外训练。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:04:29"
+}

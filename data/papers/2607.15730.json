@@ -1,0 +1,13 @@
+{
+ "id": "2607.15730",
+ "title": "RECAP: Feedback-Driven Streaming Semantic User Profiles for Short-Video Recommendation",
+ "authors": "Ziyi Zhao, Xiaoyou Zhou, Xiao Lv, Yangyang Li, Chubo He, Zhao Liu, Jiayao Shen, Yuqi Liu, He Li, Chengyi Zhang, Jian Liang, Ming Li, Chongming Gao, Fuli Feng, Ruiming Tang, Han Li",
+ "date": "2026-07-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.15730v1",
+ "abstract": "Language-based user profiles convert long behavioral histories into explicit semantic representations for recommendation. However, most profile generators are optimized in an open loop: they may summarize past behavior fluently, but are not directly trained to improve future recommendation. We study this problem in real-world short-video recommendation, where user behaviors continuously arrive as streams and profiles must be incrementally updated under limited capacity. This requires maintaining a consistent bounded profile state and constructing profile-targeted semantic feedback from industrial implicit behavior logs. We propose RECAP, an offline closed-loop framework for optimizing streaming structured semantic profiles with historical recommendation feedback. RECAP maintains each profile as a bounded structured memory by combining LLM-based semantic updates with deterministic lifecycle and capacity control. RECAP constructs profile-targeted semantic feedback by filtering label-consistent behavior pairs with an LLM judge and training a dual-tower evaluator whose matching score serves as a GRPO reward. Experiments on Kuaishou short-video data show that RECAP improves uAUC by 0.0084 and Recall@2000 by about 4.9% over the base generator. Further analyses confirm the benefits of feedback construction and policy optimization, and show more grounded refinement and user-level abstraction in profile updates. A seven-day online A/B test further shows a statistically significant 0.139% improvement in average application usage time per user.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-26 13:00:23"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.22729",
+ "title": "Temporal Logic Guidance for Action-Only Diffusion Policies with World Models",
+ "authors": "Moritz Zoellner, Anastasios Manganaris, Rohan Paleja",
+ "date": "2026-06-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.22729v1",
+ "abstract": "Diffusion policies enable multimodal robot behavior but offer limited ability to choose among behavior modes at inference time, even though such control is desirable in human-robot settings. Prior solutions to this lack of control have utilized Signal Temporal Logic (STL) to express human intentions and provide corresponding guidance for diffusion policy inference. However, these approaches can only guide diffusion policies that jointly generate future actions and states, increasing both complexity and runtime. We propose a novel guidance method for action-only diffusion policies that uses a separate learned world model to enable differentiable evaluation of STL robustness, with its gradient then injected into the diffusion process. This steers behavior toward constraint satisfaction without retraining, improving constraint adherence while preserving task performance. On the Can Transport task from Robomimic, our method maintains 100% task success while reducing constraint violations from over 80% for baseline methods to 4%. We also discuss extensions toward improved robustness and more complex constraints.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-23 13:05:05"
+}

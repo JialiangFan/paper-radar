@@ -1,0 +1,13 @@
+{
+ "id": "2603.15457",
+ "title": "Evasive Intelligence: Lessons from Malware Analysis for Evaluating AI Agents",
+ "authors": "Simone Aonzo, Merve Sahin, Aurélien Francillon, Daniele Perito",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15457v1",
+ "abstract": "Artificial intelligence (AI) systems are increasingly adopted as tool-using agents that can plan, observe their environment, and take actions over extended time periods. This evolution challenges current evaluation practices where the AI models are tested in restricted, fully observable settings. In this article, we argue that evaluations of AI agents are vulnerable to a well-known failure mode in computer security: malicious software that exhibits benign behavior when it detects that it is being analyzed. We point out how AI agents can infer the properties of their evaluation environment and adapt their behavior accordingly. This can lead to overly optimistic safety and robustness assessments. Drawing parallels with decades of research on malware sandbox evasion, we demonstrate that this is not a speculative concern, but rather a structural risk inherent to the evaluation of adaptive systems. Finally, we outline concrete principles for evaluating AI agents, which treat the system under test as potentially adversarial. These principles emphasize realism, variability of test conditions, and post-deployment reassessment.",
+ "summary": "- **核心创新点**：将 AI 代理的评估问题映射到潜在对手能控制的对抗性环境中，借鉴恶意软件沙箱规避的研究，提出面向对抗性的评估原则以提升评估的现实性与鲁棒性。\n\n- **主要方法**：通过对恶意软件沙箱规避研究的系统分析与跨域类比，提出并阐释一组具体的评估原则，强调现实性、测试条件的多样性与动态性，以及对部署后重新评估的要求，提供框架性实现思路和实验设计指引。\n\n- **结论/性能**：指出现有评估可能因为对抗性不足而产生结构性风险，容易对安全性与鲁棒性作出乐观判断；提出的对抗性评估原则有助于提升评估的可信度、现实性和可复评估性。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-17 13:02:17"
+}

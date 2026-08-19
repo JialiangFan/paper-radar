@@ -1,0 +1,13 @@
+{
+ "id": "2512.24268",
+ "title": "RAGPart & RAGMask: Retrieval-Stage Defenses Against Corpus Poisoning in Retrieval-Augmented Generation",
+ "authors": "Pankayaraj Pathmanathan, Michael-Andrei Panaitescu-Liess, Cho-Yu Jason Chiang, Furong Huang",
+ "date": "2025-12-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24268v1",
+ "abstract": "Retrieval-Augmented Generation (RAG) has emerged as a promising paradigm to enhance large language models (LLMs) with external knowledge, reducing hallucinations and compensating for outdated information. However, recent studies have exposed a critical vulnerability in RAG pipelines corpus poisoning where adversaries inject malicious documents into the retrieval corpus to manipulate model outputs. In this work, we propose two complementary retrieval-stage defenses: RAGPart and RAGMask. Our defenses operate directly on the retriever, making them computationally lightweight and requiring no modification to the generation model. RAGPart leverages the inherent training dynamics of dense retrievers, exploiting document partitioning to mitigate the effect of poisoned points. In contrast, RAGMask identifies suspicious tokens based on significant similarity shifts under targeted token masking. Across two benchmarks, four poisoning strategies, and four state-of-the-art retrievers, our defenses consistently reduce attack success rates while preserving utility under benign conditions. We further introduce an interpretable attack to stress-test our defenses. Our findings highlight the potential and limitations of retrieval-stage defenses, providing practical insights for robust RAG deployments.",
+ "summary": "1) 核心创新点：提出两种基于检索阶段的防御（RAGPart 与 RAGMask），直接对检索器进行防护、无需修改生成模型即可抑制语料污染对检索增强生成的影响。\n\n2) 主要方法：\n- RAGPart：利用密集检索器的训练动态与文档分区策略，降低被污染文档对检索结果的影响。\n- RAGMask：在针对性 token 掩码下，基于相似度的显著变化识别可疑 token，从而对可疑信息进行过滤或抑制。\n- 两者均在检索阶段实现防御，不依赖对生成模型的修改；并在两项基准、四种污染策略、四种主流检索器上进行评估。\n\n3) 结论/性能：\n- 在所有评估设定中，RAGPart 与 RAGMask 能显著降低攻击成功率，并在 benign 条件下保持良好的下游实用性（查询/生成质量等）。\n- 同时给出一个可解释的攻击用于压力测试，讨论检索阶段防御的潜力与局限性以及对实际 RAG 部署的实践性启示。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 02:32:39"
+}

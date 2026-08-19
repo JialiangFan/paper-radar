@@ -1,0 +1,13 @@
+{
+ "id": "2607.28405",
+ "title": "QuantWAMs: Calibrating at the Right Granularity for World Action Models",
+ "authors": "Jiacheng Zhou, Jinfan Lv, Ruixuan Li, Longtai Zhang, Yan Wang, Wenqiang Zhang, Lizhe Qi",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28405v1",
+ "abstract": "World Action Models (WAMs) jointly predict future observations and actions, but their iterative denoising and closed-loop execution make efficient deployment costly. Existing post-training quantization (PTQ) methods are poorly suited to WAMs because they rely on open-loop objectives, homogeneous model assumptions, and calibration distributions that do not reflect deployment. We present QuantWAMs, a PTQ framework that aligns quantization decisions with the calibration context defined by model structure, rollout distribution, and task objective. QuantWAMs introduces three strategies: shared-basis outlier calibration, which pools activation evidence only across coordinate-compatible modules; co-training-objective saliency, which computes empirical-Fisher scores from the joint video--action gradient and assigns weight precision at a calibration-stable layer granularity; and fixed-intervention rollout auditing, which revises denoising-step protection schedules using reachable closed-loop states without changing the precision budget. We evaluate QuantWAMs on Fast-WAM and LingBot-VA across RoboTwin 2.0, LIBERO, and real-robot manipulation with an AgiBot G2. Under a W4A4-dominant setting, the reported simulation means differ from FP16 by 0.2--0.7 percentage points. Real-robot trials further establish deployment feasibility on three manipulation tasks. For the targeted video and action blocks, QuantWAMs reduces peak weight-and-activation memory to about 29\\% of FP16 and provides 1.4--1.6$\\times$ block-level speedups.",
+ "summary": "## QuantWAMs 论文摘要总结\n\n**1. 核心创新点**\n提出 QuantWAMs——一个让量化决策与\"模型结构、rollout 分布、任务目标\"三者共同定义的校准语境相对齐的训练后量化（PTQ）框架，专门针对世界动作模型（WAM）。\n\n**2. 主要方法**\n针对现有 PTQ 依赖开环目标、同构模型假设和脱离部署场景的校准分布这三个问题，引入三项策略：\n- **共享基底离群值校准**：仅在坐标兼容的模块之间汇聚激活值统计证据；\n- **协同训练目标显著性**：由视频—动作联合梯度计算经验 Fisher 分数，在\"校准稳定\"的层粒度上分配权重精度；\n- **固定干预式 rollout 审计**：利用闭环可达状态修正去噪步的保护调度，且不改变整体精度预算。\n\n实验模型为 Fast-WAM 与 LingBot-VA，评测平台包括 RoboTwin 2.0、LIBERO 仿真环境以及 AgiBot G2 真机操作。\n\n**3. 结论/性能**\n在以 W4A4 为主的量化配置下，仿真任务平均成功率与 FP16 相差仅 **0.2–0.7 个百分点**；真机三项操作任务验证了部署可行性；在目标视频块和动作块上，权重+激活的峰值显存降至 FP16 的约 **29%**，块级推理获得 **1.4–1.6 倍**加速。\n\n> 一点说明：摘要中\"reported simulation means\"的表述较为保守，未给出方差或多次种子结果，实际精度损失的稳定性需看正文。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-07-31 13:03:47"
+}

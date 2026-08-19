@@ -1,0 +1,13 @@
+{
+ "id": "2603.30036",
+ "title": "Aligned, Orthogonal or In-conflict: When can we safely optimize Chain-of-Thought?",
+ "authors": "Max Kaufmann, David Lindner, Roland S. Zimmermann, and Rohin Shah",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30036v1",
+ "abstract": "Chain-of-Thought (CoT) monitoring, in which automated systems monitor the CoT of an LLM, is a promising approach for effectively overseeing AI systems. However, the extent to which a model's CoT helps us oversee the model - the monitorability of the CoT - can be affected by training, for instance by the model learning to hide important features of its reasoning. We propose and empirically validate a conceptual framework for predicting when and why this occurs. We model LLM post-training as an RL environment where the reward decomposes into two terms: one term depending on final outputs and another term depending on the CoT. Our framework allows us to classify these two terms as \"aligned\", \"orthogonal\", or \"in-conflict\" before training. We predict that training with in-conflict terms will reduce monitorability, orthogonal terms will not affect it, and aligned terms will improve it. To validate our framework, we use it to classify a set of RL environments, train LLMs within those environments, and evaluate how training affects CoT monitorability. We find that (1) training with \"in-conflict\" reward terms reduces CoT monitorability and (2) optimizing in-conflict reward terms is difficult.",
+ "summary": "- 核心创新点：提出一个将LLM后训练视为带有两项奖励分解的强化学习环境的概念框架，并在训练前将这两项奖励分类为对齐、正交或冲突，以预测和解释训练对CoT可监控性的影响。\n\n- 主要方法：将后训练建模为RL环境，奖励分解为面向最终输出的奖励和面向链路推理（CoT）的奖励两部分，在训练前对这两部分进行“对齐/正交/冲突”分类；通过在多种RL环境中分类、训练LLMs并评估训练对CoT监控性的变化来验证框架，并分析冲突奖励项的可优化性。\n\n- 结论/性能：实验结果支持预测：在冲突项上进行训练会降低CoT的可监控性，正交项不会显著影响监控性，理论上对齐项可能提升监控性；并且优化冲突奖励项具有较高难度。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-01 13:00:26"
+}

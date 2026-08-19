@@ -1,0 +1,13 @@
+{
+ "id": "2606.20285",
+ "title": "Co-VLA: Coordination-Aware Structured Action Modeling for Dual-Arm Vision-Language-Action Systems",
+ "authors": "Yandong Wang, Jiaqian Yu, Xiongfeng Peng, Lu Xu, Yamin Mao, Weiming Li, Jaewook Yoo, Dongwook Lee, Daehyun Ji, Mingbo Zhao, Chao Zhang",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20285v1",
+ "abstract": "Vision-language-action (VLA) models show strong capabilities in single and dual-arm robotic manipulation. Prior works show coordinated bimanual behaviors can emerge from end-to-end learning, leveraging large vision-language backbones with continuous action prediction. However, as bimanual tasks become tightly coupled and execution constraints become critical, implicit coordination alone is insufficient to ensure reliable, interpretable, and stable behavior.\n  In this work, we propose Co-VLA, a coordination-aware bimanual manipulation framework introducing explicit structural priors into VLA models. We instantiate our method on a state-of-the-art vision-language backbone by replacing its monolithic action head with a Structured Action Expert (SAE) designed for bimanual coordination. Specifically, we introduce explicit structure at the action generation level with a modular coordination-aware loss that shapes shared and residual latents according to task-specific structures. The shared latent encodes task-level coordination intent, while residual latents capture execution adjustments for each arm.\n  At deployment, a Latent-Aware Controller (LAC) interprets the learned representations to modulate synchronization strength, execution asymmetry, smoothness, and safety constraints in real time. LAC operates at the joint-command level and remains compatible with standard control pipelines without requiring force or impedance control. Experiments across simulation and real-world benchmarks show Co-VLA significantly outperforms monolithic baselines, achieving a 27% success rate gain in tight-coordination tasks, more than doubling performance in OOD real-world scenarios (from 13% to 27%), and reducing task completion time by up to 25%.",
+ "summary": "## Co-VLA 论文总结\n\n1. **核心创新点**：针对双臂机器人操作，提出在视觉-语言-动作（VLA）模型中显式引入\"协调感知\"的结构化先验，解决端到端学习中隐式协调在紧耦合任务下不够可靠、可解释和稳定的问题。\n\n2. **主要方法**：在一个先进的视觉-语言骨干网络上，用**结构化动作专家（SAE）**替换原本单一的动作输出头，通过模块化的\"协调感知损失\"将隐变量拆分为——编码任务级协调意图的**共享隐变量**与捕捉各臂执行微调的**残差隐变量**。部署时再用**隐变量感知控制器（LAC）**在关节指令层实时调节同步强度、执行非对称性、平滑度与安全约束，且无需力控/阻抗控制，兼容标准控制管线。\n\n3. **结论/性能**：在仿真与真实基准上显著优于单一动作头的基线——紧协调任务成功率提升 **27%**，真实世界分布外（OOD）场景成功率从 13% 翻倍至 **27%**，任务完成时间最多缩短 **25%**。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-19 13:05:13"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.21595",
+ "title": "SPOC: Safety-Aware Planning Under Partial Observability And Physical Constraints",
+ "authors": "Hyungmin Kim, Hobeom Jeon, Dohyung Kim, Minsu Jang, Jeahong Kim",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21595v1",
+ "abstract": "Embodied Task Planning with large language models faces safety challenges in real-world environments, where partial observability and physical constraints must be respected. Existing benchmarks often overlook these critical factors, limiting their ability to evaluate both feasibility and safety. We introduce SPOC, a benchmark for safety-aware embodied task planning, which integrates strict partial observability, physical constraints, step-by-step planning, and goal-condition-based evaluation. Covering diverse household hazards such as fire, fluid, injury, object damage, and pollution, SPOC enables rigorous assessment through both state and constraint-based online metrics. Experiments with state-of-the-art LLMs reveal that current models struggle to ensure safety-aware planning, particularly under implicit constraints. Code and dataset are available at https://github.com/khm159/SPOC",
+ "summary": "1) 核心创新点：提出 SPOC 作为面向安全感知的 embodied 任务规划基准，将严格的部分观测、物理约束、逐步规划与基于目标条件的评估有机结合，用以系统评估模型在现实环境中的安全性与可行性。\n\n2) 主要方法：构建一个覆盖多种家庭危害（火灾、液体、伤害、物体损伤、污染）的基准与评测框架，集成严格的部分观测、物理约束、逐步规划和在线的状态/约束评估指标，对最先进的大语言模型进行安全感知规划的评测，并提供开源代码与数据集。\n\n3) 结论/性能：实验表明现有的前沿 LLMs 在安全感知规划方面存在显著挑战，尤其在隐式约束下难以确保安全且可行的计划。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-26 14:02:44"
+}

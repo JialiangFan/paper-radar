@@ -1,0 +1,13 @@
+{
+ "id": "2605.27622",
+ "title": "Reasoning and Planning with Dynamically Changing Norms",
+ "authors": "Taylor Olson, Roberto Salas-Damian, Kenneth D. Forbus",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27622v1",
+ "abstract": "To safely interact with humans, AI agents must both know our norms and consider them during planning. However, such norm-guided planning has been less explored, only within communities of artificial agents, and has ignored the dynamic nature of norms. This paper instead presents an approach to guiding planning with dynamically changing norms in a human-AI setting. We contribute a defeasible calculus for resolving normative conflicts and an approach to using such dynamically changing norms as guard rails on plans. We theoretically demonstrate our approach with formal proofs and empirically with an AI agent, SocialBot, on a natural language dialogue task.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-28 13:01:29"
+}

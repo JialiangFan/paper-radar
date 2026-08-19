@@ -1,0 +1,13 @@
+{
+ "id": "2606.05275",
+ "title": "Personal AI Agent for Camera Roll VQA",
+ "authors": "Thao Nguyen, Krishna Kumar Singh, Donghyun Kim, Yong Jae Lee, Yuheng Li",
+ "date": "2026-06-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05275v1",
+ "abstract": "We study the personal camera roll visual question answering setting. In this setting, a conversational AI assistant can access a user's personal camera roll and retrieve relevant photos to answer queries, ranging from simple factual questions (e.g., ``Name of the food I tried yesterday?'') to more open-ended ones (e.g., ``Recommend some dishes I have never eaten before''). Given the vast nature of the personal camera roll (i.e., multiple years, hundreds to thousands of photos), a successful AI assistant needs to understand a long-horizon, highly personalized visual content stream in order to navigate and locate the correct and/or relevant information. To support this, we collect and manually annotate questions that mimic real-world usage. The final dataset, camroll, contains 50 users, 31,476 images, and 2,500 QA pairs. We further design camroll-agent, a conversational AI agent equipped with hierarchical memory and a minimal set of tools for efficient navigation over large, personalized visual memory. Experimental results show that camroll-agent outperforms numerous baselines and methods for long-context understanding AI agents system. Together, the camroll dataset and camroll-agent highlight the gap in AI agents' long-context reasoning: personalized visual memory requires different approaches from standard long-context textual memory, especially when consistency, visual details, and user-specific context are present.",
+ "summary": "# 论文总结：Personal AI Agent for Camera Roll VQA\n\n1. **核心创新点**：提出\"个人相册视觉问答\"新任务，并构建了首个面向长跨度、高度个性化视觉记忆的对话式AI助手与数据集。\n\n2. **主要方法**：\n   - **数据集 camroll**：包含 50 位用户、31,476 张照片、2,500 个 QA 对，覆盖从事实型到开放式推荐型问题。\n   - **camroll-agent**：采用**分层记忆（hierarchical memory）**结构，并配备一套**极简工具集**，用于在海量个人照片流中高效检索与导航。\n\n3. **结论/性能**：camroll-agent 在多个基线及长上下文 AI agent 方法上均取得更优表现；实验同时揭示出——个性化视觉记忆的长上下文推理（涉及一致性、视觉细节、用户专属语境）与传统文本型长上下文有本质差异，是当前 AI agent 的能力短板。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-07 13:00:41"
+}

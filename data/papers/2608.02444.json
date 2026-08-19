@@ -1,0 +1,13 @@
+{
+ "id": "2608.02444",
+ "title": "ParEvalLayer: When Partial LLM-Agent Evaluations Support a Decision",
+ "authors": "Wei-Jung Huang, Bonan Shen",
+ "date": "2026-08-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.02444v1",
+ "abstract": "LLM-agent evaluations often produce task outcomes long before the full benchmark run is complete. A partial score is tempting to report, but it does not show whether the observed tasks support the same conclusion as the completed evaluation. Early tasks can omit important parts of a benchmark, running cheaper tasks first can distort the observed sample, and a rule that decides only easy pairs can appear accurate while leaving many comparisons unresolved. We introduce ParEvalLayer, a decision layer that reads paired outcomes for two agent systems and a comparison policy chosen in advance. For each partial run, it records whether the tested agent system is better by the required amount, is not better by that amount, needs more evidence, or should abstain. We evaluate ParEvalLayer by replaying completed public benchmark data as if each evaluation had stopped earlier. At each point, ParEvalLayer applies the policy using only the outcomes observed so far; if it reaches one of the two comparison judgments, we check whether that judgment matches the completed data for the same system pair. With the main comparison rule, three of the public benchmarks reach the same decision as the completed evaluation after observing only 15% to 25% of task outcomes. Other benchmarks require more task outcomes. This variation shows why a partial score alone is not enough: reports should also state the decision rule and how many comparisons remain without a decision.",
+ "summary": "## ParEvalLayer 论文摘要总结\n\n**1. 核心创新点**\n提出 ParEvalLayer——一个作用于**部分完成**的 LLM-Agent 评测结果之上的\"决策层\"，判断当前已观测的任务结果是否足以支撑与完整评测相同的比较结论，而不是简单地报告一个中途分数。\n\n**2. 主要方法**\n- 输入为两个 agent 系统在同一批任务上的**成对结果**（paired outcomes），以及一条**事先选定**的比较策略（comparison policy）。\n- 对每个部分完成的评测运行，输出四类判定之一：待测系统**优于**基线达到所需幅度、**未优于**该幅度、**证据不足需继续**、或**弃权**（abstain）。\n- 验证方式为**回放（replay）**已完成的公开 benchmark 数据，模拟评测在更早时间点停止；在每个截断点只使用当时已观测到的结果套用策略，一旦给出前两类比较判定，就与完整数据上的结论做一致性核对。\n- 论文同时点出了部分评测的三类偏差来源：早期任务可能遗漏 benchmark 的重要部分；先跑便宜任务会扭曲观测样本；只判定\"容易的配对\"的规则看似准确率高，实则留下大量未决比较。\n\n**3. 结论/性能**\n在主比较规则下，**3 个公开 benchmark 只需观测 15%–25% 的任务结果**即可得出与完整评测一致的结论；其余 benchmark 则需要更多任务结果。这种差异说明：单独一个部分分数不足以说明问题，评测报告还应同时声明所用的**决策规则**以及**仍未得出判定的比较数量**。\n\n---\n\n一点阅读提示：摘要通篇只报告\"提前判定与完整结论一致\"的случа，没有提及错误判定率（即提前下结论但与完整评测相反的比例）、benchmark 具体名称，也没有与顺序检验（sequential testing / SPRT、赌博式置信序列等）这类现成统计方法的对比——这三点是评估该工作实际价值时需要在正文中重点核实的。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-04 13:03:42"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.10747",
+ "title": "Pneuma-Seeker: A Relational Reification Mechanism to Align AI Agents with Human Work over Relational Data",
+ "authors": "Muhammad Imam Luthfi Balaka, John Hillesland, Kemal Badur, Raul Castro Fernandez",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10747v1",
+ "abstract": "When faced with data problems, many data workers cannot articulate their information need precisely enough for software to help. Although LLMs interpret natural-language requests, they behave brittly when intent is under-specified, e.g., hallucinating fields, assuming join paths, or producing ungrounded answers.\n  We present Pneuma-Seeker, a system built around a central idea: relational reification. Pneuma-Seeker represents a user's evolving information need as a relational schema: a concrete, analysis-ready data model shared between user and system. Rather than answering prompts directly, Pneuma-Seeker iteratively refines this schema, then discovers and prepares relevant sources to construct a relation and executable program that compute the answer. Pneuma-Seeker employs an LLM-powered agentic architecture with conductor-style planning and macro- and micro-level context management to operate effectively over heterogeneous relational corpora.\n  We evaluate Pneuma-Seeker across multiple domains against state-of-the-art academic and industrial baselines, demonstrating higher answer accuracy. Deployment in a real organization highlights trust and inspectability as essential requirements for LLM-mediated data systems.",
+ "summary": "1. 核心创新点：通过关系重化机制将用户不断演化的信息需求建模为共享的关系模式，并据此迭代发现数据源、构建关系并生成可执行程序来回答问题，从而提升对关系型数据的理解与回答准确性。\n\n2. 主要方法：基于以 LLM 为核心的代理式架构（agentic architecture）与 conductor 风格的计划，结合宏观与微观上下文管理，在异构关系型数据上迭代精炼关系模式，自动发现并准备相关源数据，构建关系及可执行程序以计算答案。\n\n3. 结论/性能：在多领域评估中对比最先进的学术与工业基线，取得更高的答案准确性；在实际组织部署中强调信任与可检验性，认为这是 LLM 驱动数据系统的关键需求。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:03:12"
+}

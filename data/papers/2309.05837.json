@@ -1,0 +1,32 @@
+{
+ "id": "2309.05837",
+ "title": "The Safety Filter: A Unified View of Safety-Critical Control in Autonomous Systems",
+ "authors": "Hsu, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2309.05837",
+ "abstract": "",
+ "summary": "This paper provides a modular view of safety filters across CBF, reachability, MPC, and data-driven families.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "robotics",
+  "runtime-assurance",
+  "safe-vla",
+  "safety-filter",
+  "survey"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2023_Hsu_SafetyFilterUnified.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2023_Hsu_SafetyFilterUnified.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

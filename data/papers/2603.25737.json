@@ -1,0 +1,13 @@
+{
+ "id": "2603.25737",
+ "title": "Training the Knowledge Base through Evidence Distillation and Write-Back Enrichment",
+ "authors": "Yuxing Lu, Xukai Zhao, Wei Wu, Jinzhuo Wang",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25737v1",
+ "abstract": "The knowledge base in a retrieval-augmented generation (RAG) system is typically assembled once and never revised, even though the facts a query requires are often fragmented across documents and buried in irrelevant content. We argue that the knowledge base should be treated as a trainable component and propose WriteBack-RAG, a framework that uses labeled examples to identify where retrieval succeeds, isolate the relevant documents, and distill them into compact knowledge units that are indexed alongside the original corpus. Because the method modifies only the corpus, it can be applied once as an offline preprocessing step and combined with any RAG pipeline. Across four RAG methods, six benchmarks, and two LLM backbones, WriteBack-RAG improves every evaluated setting, with gains averaging +2.14%. Cross-method transfer experiments further show that the distilled knowledge benefits RAG pipelines other than the one used to produce it, confirming that the improvement resides in the corpus itself.",
+ "summary": "- 核心创新点：把知识库视为可训练组件，通过证据蒸馏与写回增强，将检索成功的相关证据蒸馏成紧凑的知识单元并与原始语料一起索引，从而离线改造并提升RAG系统的检索效果。\n- 主要方法：利用带标签的示例来识别检索成功的地方，筛选相关文档，将其蒸馏成紧凑的知识单元并写回到原文库中，与原语料共同建立索引；该过程仅修改语料库，可作为离线预处理，与任意RAG管线结合。实验覆盖四种RAG方法、六个基准和两种LLM骨架。\n- 结论/性能：在所有评估设置中均实现提升，平均提升约2.14%；跨方法迁移实验还表明蒸馏出的知识对其他RAG管线也有帮助，说明提升来自于语料库本身。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-27 13:00:28"
+}

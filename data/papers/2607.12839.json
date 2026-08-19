@@ -1,0 +1,13 @@
+{
+ "id": "2607.12839",
+ "title": "HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference",
+ "authors": "Gregory Hyegang Jun, Wesley Pang, Eddie Richter, Mehdi Saeedi, Aporva Amarnath, Pallavi Ferrao, Deming Chen",
+ "date": "2026-07-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.12839v1",
+ "abstract": "Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. As a result, they underutilize heterogeneous resources, particularly on unified-memory platforms where performance depends on both device placement and task-graph coordination.\n  We present HeteroMosaic, a heterogeneity-first scheduling framework for edge LLM inference. HeteroMosaic first uses a heterogeneous roofline model to identify when combining iGPU and NPU execution is beneficial. It then decomposes inference into dependency-preserving micro-batches that expose cross-accelerator overlap and applies trace-guided co-optimization of scheduling and device allocation under practical effects such as memory contention, DVFS, device variation, and NPU runtime overheads.\n  We implement HeteroMosaic in PyTorch C++ and evaluate it on three AMD Ryzen AI platforms spanning NPU-heavy, balanced, and iGPU-heavy designs. On the balanced platform, HeteroMosaic achieves up to 1.73X speedup over an iGPU baseline, 1.78X over an NPU baseline, and 2.05X over frameworks such as \\texttt{llama.cpp}, while reducing energy by up to 45.3%. It also improves performance over prior heterogeneous edge AI solutions by up to 2.35X.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-15 13:01:51"
+}

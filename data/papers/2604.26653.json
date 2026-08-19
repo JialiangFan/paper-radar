@@ -1,0 +1,13 @@
+{
+ "id": "2604.26653",
+ "title": "AgentSim: A Platform for Verifiable Agent-Trace Simulation",
+ "authors": "Saber Zerhoudi, Michael Granitzer, Jelena Mitrovic",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26653v1",
+ "abstract": "Training trustworthy agentic LLMs requires data that shows the grounded reasoning process, not just the final answer. Existing datasets fall short: question-answering data is outcome-only, chain-of-thought data is not tied to specific documents, and web-agent datasets track interface actions rather than the core retrieval and synthesis steps of a RAG workflow. We introduce AgentSim, an open-source platform for simulating RAG agents. It generates verifiable, stepwise traces of agent reasoning over any document collection. AgentSim uses a policy to ensure the agent widely explores the document set. It combines a multi-model validation pipeline with an active human-in-the-loop process. This approach focuses human effort on difficult steps where models disagree. Using AgentSim, we construct and release the Agent-Trace Corpus (ATC), a large collection of grounded reasoning trajectories spanning three established IR benchmarks. We make three contributions: (1) the AgentSim platform with two mechanisms, Corpus-Aware Seeding and Active Validation, that improve trace diversity and quality; (2) the Agent-Trace Corpus (ATC), over 103,000 verifiable reasoning steps spanning three IR benchmarks, with 100% grounding rate on substantive answers; and (3) a comparative behavioral analysis revealing systematic differences in how state-of-the-art models approach information seeking. Platform, toolkit, and corpus are publicly available.",
+ "summary": "- 核心创新点（一句话）：提出一个开源的 AgentSim 平台，能够在任意文档集合上生成可验证的逐步推理轨迹，并通过 Corpus-Aware Seeding 与 Active Validation 等机制提升轨迹的多样性与质量，从而构建可验证的 Agent-Trace Corpus ATC。\n\n- 主要方法：\n  - 使用策略驱动的代理仿真平台 AgentSim，用于仿真检索-生成（RAG）工作流，生成可验证的逐步推理轨迹。\n  - 引入 Corpus-Aware Seeding 和 Active Validation 两大机制，以及多模型验证管线和主动的人机协同环节，使轨迹覆盖更广、质量更高。\n  - 在三个已确立的信息检索（IR）基准上构建 ATC，提供可比的行为分析数据集，便于研究模型在信息检索与信息综合中的行为差异。\n\n- 结论/性能：\n  - 构建并发布 Agent-Trace Corpus ATC，包含超过103,000条可验证的推理步骤，覆盖三大 IR 基准，且对实质性答案的 grounding 率达 100%。\n  - 通过平台、工具包与语料的公开，展示了对比分析不同 SOTA 模型在信息获取策略上的系统性差异，并提升了轨迹的多样性与质量。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-30 13:05:23"
+}

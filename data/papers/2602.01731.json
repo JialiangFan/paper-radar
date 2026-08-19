@@ -1,0 +1,13 @@
+{
+ "id": "2602.01731",
+ "title": "Uncertainty-Aware Non-Prehensile Manipulation with Mobile Manipulators under Object-Induced Occlusion",
+ "authors": "Jiwoo Hwang, Taegeun Yang, Jeil Jeong, Minsung Yoon, Sung-Eui Yoon",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01731v1",
+ "abstract": "Non-prehensile manipulation using onboard sensing presents a fundamental challenge: the manipulated object occludes the sensor's field of view, creating occluded regions that can lead to collisions. We propose CURA-PPO, a reinforcement learning framework that addresses this challenge by explicitly modeling uncertainty under partial observability. By predicting collision possibility as a distribution, we extract both risk and uncertainty to guide the robot's actions. The uncertainty term encourages active perception, enabling simultaneous manipulation and information gathering to resolve occlusions. When combined with confidence maps that capture observation reliability, our approach enables safe navigation despite severe sensor occlusion. Extensive experiments across varying object sizes and obstacle configurations demonstrate that CURA-PPO achieves up to 3X higher success rates than the baselines, with learned behaviors that handle occlusions. Our method provides a practical solution for autonomous manipulation in cluttered environments using only onboard sensing.",
+ "summary": "- 核心创新点：提出 CURA-PPO，通过将碰撞概率建模为分布来显式处理部分可观测下的不确定性，并结合置信度地图实现主动感知，从而在对象遮挡条件下实现安全的非抓取式移动操控。\n- 主要方法：使用强化学习框架 CURA-PPO，在对象遮挡的情境下预测碰撞概率的分布，提取风险与不确定性引导策略；引入主动感知激励与观测可靠性置信度地图，促进信息 gathering 与安全导航，全部基于机载传感实现。\n- 结论/性能：在不同对象尺寸和障碍配置下，实验显示相较基线提高高达3倍的成功率，且学得的策略能在强遮挡下完成安全的非抓取移动操作。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:01:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.12772",
+ "title": "A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery",
+ "authors": "Madeline Anderson, Mikhail Klassen, Ash Hoover, Kerri Cahoy",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12772v1",
+ "abstract": "Changes in satellite imagery often occur over multiple time steps. Despite the emergence of bi-temporal change captioning datasets, there is a lack of multi-temporal event captioning datasets (at least two images per sequence) in remote sensing. This gap exists because (1) searching for visible events in satellite imagery and (2) labeling multi-temporal sequences require significant time and labor. To address these challenges, we present SkyScraper, an iterative multi-agent workflow that geocodes news articles and synthesizes captions for corresponding satellite image sequences. Our experiments show that SkyScraper successfully finds 5x more events than traditional geocoding methods, demonstrating that agentic feedback is an effective strategy for surfacing new multi-temporal events in satellite imagery. We apply our framework to a large database of global news articles, curating a new multi-temporal captioning dataset with 5,000 sequences. By automatically identifying imagery related to news events, our work also supports journalism and reporting efforts.",
+ "summary": "- 核心创新点：提出一个迭代的多智能体工作流 SkyScraper，通过对新闻文本进行地理编码并在对应卫星图像序列上生成事件描述，显著提升多时相事件的发现与标注效率（约比传统方法多出5倍）。\n\n- 主要方法：使用一个多智能体反馈系统对全球新闻进行地理编码，并筛选出相关的卫星影像序列，再对这些序列进行时序性描述/字幕生成，形成自动化的多时相事件标注流程；通过agentic feedback不断改进事件检出和描述质量，最终构建包含5,000条序列的数据集。\n\n- 结论/性能：比传统地理编码方法能多发现约5倍的事件；构建了一个新的多时相字幕数据集（5,000个序列），并显示该框架可自动识别与新闻事件相关的卫星影像，支持新闻报道与报道工作的开展。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-15 13:08:00"
+}

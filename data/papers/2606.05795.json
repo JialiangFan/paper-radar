@@ -1,0 +1,13 @@
+{
+ "id": "2606.05795",
+ "title": "Efficient Multi-Agent Optimization of Optical Power in S+C+L-Band Systems",
+ "authors": "Junzhe Xiao, Kaida Chen, Cong Wang, Zekun Niu, Minghui Shi, Yanhan Zhou, Lilin Yi",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05795v1",
+ "abstract": "We propose an AI Agent tailored for link power management in multi-band systems. In S+C+L band span-level study, the agent efficiently solves various optimization objectives. In network-wide evaluation, it delivers 689.0 Tbps gain in total allocated traffic with merely 303 average interactions per power profile.",
+ "summary": "# 论文总结\n\n1. **核心创新点**：提出了一种面向 S+C+L 多频段光通信系统链路功率管理的 AI Agent，实现高效的多目标光功率优化。\n\n2. **主要方法**：采用多智能体（Multi-Agent）优化框架，针对多频段系统进行跨频段、跨链路的光功率分配与调控，可灵活适配不同的优化目标。\n\n3. **结论/性能**：在 S+C+L 频段的跨段级研究中可高效求解多种优化目标；在全网评估中，仅需平均 303 次交互即可生成一个功率配置，并带来 **689.0 Tbps** 的总分配流量增益。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-07 13:02:11"
+}

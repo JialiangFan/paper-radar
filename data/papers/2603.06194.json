@@ -1,0 +1,13 @@
+{
+ "id": "2603.06194",
+ "title": "MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue",
+ "authors": "Naifan Zhang, Ruihan Sun, Jinwei Su, Hengjie Yang, Zhengyuan Pan, Zhaohan Chen, Xiaofan Zhang",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.06194v1",
+ "abstract": "Subjective multi-turn dialogue tasks, such as emotional support, require conversational policies that adapt to evolving user states and optimize long-horizon interaction quality. However, reinforcement learning (RL) for such settings remains challenging due to the absence of reliable process supervision. Outcome-only training collapses credit assignment across turns into a single trajectory-level reward, while naïve turn-level group sampling incurs prohibitive rollout costs in interactive environments. We propose a critic-free and efficient RL algorithm named MAPO that leverages dense process feedback from a judge model and propagates long-horizon effects through Monte Carlo returns. To stabilize optimization, we introduce a mixed advantage estimator that combines turn-level normalization with batch-level normalization, enabling fine-grained yet scalable credit assignment. Across multiple subjective dialogue benchmarks, including EMPA, EmoBench, and EQ-Bench, and model scales ranging from 7B to 32B, our method consistently improves both training stability and final performance over outcome-only GRPO and single-level normalization baselines. On EMPA, we improve rates by up to 9 points and increase dialogue scores by as much as +43.2 over the 7B base model. Despite training only on EMPA-style environments, our approach generalizes well, yielding consistent improvements on unseen emotional-intelligence benchmarks, including up to +4 points on EmoBench and +3.5 on EQ-Bench. Together, these results demonstrate that dense process supervision combined with mixed-level normalization enables effective and scalable RL for subjective, open-ended multi-turn dialogue.",
+ "summary": "- 核心创新点（一句话概括）\n  提出 critic-free 的 MAPO 算法，利用评审模型提供的密集过程反馈和蒙特卡洛回报传递长时序影响，并通过混合优势估计实现高效且可扩展的信用分配。\n\n- 主要方法（技术/模型要点）\n  - 采用 MAPO 框架，去除了值函数 critic。\n  - 使用来自 judge/评审模型的密集过程反馈作为学习信号，进行长时序的强化学习优化。\n  - 通过蒙特卡洛返回传播长时程效果，解决长对话中的 credit assignment 问题。\n  - 引入混合优势估计：结合 turn-level normalization 与 batch-level normalization，提供细粒度但可扩展的信用分配。\n\n- 结论/性能（取得的效果）\n  - 在 EMPA、EmoBench、EQ-Bench 等多项主观对话基准上，且模型规模从 7B 到 32B，显著提升训练稳定性和最终性能，优于仅以结果为监督的 GRPO 与单层正规化基线。\n  - 在 EMPA 上，提升率达至最多 9 个点，且对话分数最多提升 +43.2（相对于 7B 基线）。\n  - 对未见的情感智能基准也有良好泛化表现：EmoBench +4、EQ-Bench +3.5。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-09 13:04:28"
+}

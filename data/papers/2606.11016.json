@@ -1,0 +1,13 @@
+{
+ "id": "2606.11016",
+ "title": "Superficial Beliefs in LLM Decision-Making",
+ "authors": "Gabriel Freedman, Francesca Toni",
+ "date": "2026-06-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.11016v1",
+ "abstract": "We ask whether large language models (LLMs) merely imitate rationales when choosing between two options, or whether their choices reflect a systematic underlying decision structure. Using synthetic binary decision settings in which models choose between profiles defined by graded attributes, we compare the attribute a model says mattered most with the attribute that best explains its choice under a behavioural model fit to prior decisions. The behavioural model predicts held-out choices well, showing that model behaviour is systematically related to the visible attributes rather than being random. However, direct self-reports and a separate score-based judge recover the behaviourally inferred driver only partially. The resulting picture is neither one of arbitrary behaviour nor one of fully articulated belief - outputs are structured enough to support prediction, but explicit reasons track the recovered driver only imperfectly. This qualitative pattern persists across prompt-order and sampling perturbations, alternative behavioural models, targeted occlusion analyses, and structurally varied decision settings. We interpret this as evidence for ``superficial belief'' in LLM decision-making: models behave as if guided by probabilistic local priorities over attributes, while having only limited verbal access to the attributes that drive their decisions.",
+ "summary": "# 论文总结：LLM 决策中的\"浅层信念\"\n\n**1. 核心创新点**\n\n揭示 LLM 在二选一决策中存在\"浅层信念\"现象——其行为受系统性的属性优先级驱动，但模型自述的理由与实际驱动因素只能部分对应。\n\n**2. 主要方法**\n\n- 构建合成的二元决策场景，让模型在由分级属性定义的两个方案间做选择；\n- 用行为模型（behavioural model）拟合模型的历史选择，反推出真正主导决策的属性；\n- 将该\"行为推断驱动因素\"与模型自述最看重的属性及独立打分裁判的结果进行对比；\n- 通过提示词顺序扰动、采样扰动、替代行为模型、遮蔽分析（occlusion）和多种决策结构进行稳健性验证。\n\n**3. 结论/性能**\n\n- 行为模型能很好地预测留出集中的选择，说明 LLM 行为并非随机，而是与可见属性系统性相关；\n- 然而模型自我报告和评分裁判只能部分还原行为上推断出的真实驱动属性；\n- 这一现象在多种扰动和实验设置下稳定存在，作者将其解释为：LLM 的决策受局部属性概率优先级引导，但对自身决策依据只有有限的言语访问能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-10 13:02:10"
+}

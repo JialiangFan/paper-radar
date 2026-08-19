@@ -1,0 +1,13 @@
+{
+ "id": "2604.01206",
+ "title": "LLM REgression with a Latent Iterative State Head",
+ "authors": "Yiheng Su, Matthew Lease",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01206v1",
+ "abstract": "We present RELISH (REgression with a Latent Iterative State Head), a novel, lightweight architecture designed for text regression with large language models. Rather than decoding numeric targets as text or aggregating multiple generated outputs, RELISH predicts scalar values directly from frozen LLM representations by iteratively refining a learned latent state through cross-attention over token-level representations, and then mapping the final state to a point estimate with a linear regressor. Across five datasets, four LLM backbones, and two LLM training regimes, RELISH consistently outperforms prior baselines from all three major LLM regression families, including autoregressive decoding, regression-aware inference, and existing predictive head methods. Despite these gains, RELISH remains highly parameter-efficient, requiring only 3.4-3.7M trainable parameters across frozen LLM backbones (only 0.01-0.04% additional overhead), far less than LoRA-based alternatives that grow with model size (0.26-0.42%).",
+ "summary": "1) 核心创新点\n- 在冻结的大语言模型表示上，提出通过一个学习的隐状态头进行迭代跨注意力更新，直接将最终隐状态映射到单一标量回归值的轻量化架构 RELISH。\n\n2) 主要方法\n- RELISH 使用一个可学习的 latent 状态，通过多轮跨注意力对 token 级表征进行迭代更新，逐步 refine 隐状态后再用线性回归器将最终状态映射为点估计；与之不同的是，它不通过文本解码或输出聚合来回归数值目标。该方法对冻结的 LLM 权重仅需极少额外训练参数，且兼容多种 LLM 骨架与训练策略。\n\n3) 结论/性能\n- 在五个数据集、四个 LLM 骨架和两种 LLM 训练模式下，RELISH 在三大主流 LLM 回归范畴（自回归解码、回归感知推理、现有预测头方法）中均优于已有基线，且参数效率极高，仅需 3.4–3.7M 可训练参数，额外开销约 0.01–0.04%，显著低于随模型增长的 LoRA 等方法。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-02 13:00:55"
+}

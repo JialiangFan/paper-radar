@@ -1,0 +1,13 @@
+{
+ "id": "2604.25684",
+ "title": "Think Before You Act -- A Neurocognitive Governance Model for Autonomous AI Agents",
+ "authors": "Eranga Bandara, Ross Gore, Asanga Gunaratna, Sachini Rajapakse, Isurunima Kularathna, Ravi Mukkamala, Sachin Shetty, Xueping Liang, Amin Hass, Tharaka Hewa, Abdul Rahman, Christopher K. Rhea, Anita H. Clayton, Preston Samuel, Atmaram Yarlagadda",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25684v1",
+ "abstract": "The rapid deployment of autonomous AI agents across enterprise, healthcare, and safety-critical environments has created a fundamental governance gap. Existing approaches, runtime guardrails, training-time alignment, and post-hoc auditing treat governance as an external constraint rather than an internalized behavioral principle, leaving agents vulnerable to unsafe and irreversible actions. We address this gap by drawing on how humans self-govern naturally: before acting, humans engage deliberate cognitive processes grounded in executive function, inhibitory control, and internalized organizational rules to evaluate whether an intended action is permissible, requires modification, or demands escalation. This paper proposes a neurocognitive governance framework that formally maps this human self-governance process to LLM-driven agent reasoning, establishing a structural parallel between the human brain and the large language model as the cognitive core of an agent. We formalize a Pre-Action Governance Reasoning Loop (PAGRL) in which agents consult a four-layer governance rule set: global, workflow-specific, agent-specific, and situational before every consequential action, mirroring how human organizations structure compliance hierarchies across enterprise, department, and role levels. Implemented on a production-grade retail supply chain workflow, the framework achieves 95% compliance accuracy and zero false escalations to human oversight, demonstrating that embedding governance into agent reasoning produces more consistent, explainable, and auditable compliance than external enforcement. This work offers a principled foundation for autonomous AI agents that govern themselves the way humans do: not because rules are imposed upon them, but because deliberation is embedded in how they think.",
+ "summary": "- 核心创新点：提出一个神经认知治理框架，将人类在行动前的执行功能、抑制控制与内嵌组织规则的自我治理过程映射到LLM驱动的智能体推理中，建立在每个重要行动前进行自我治理的前行动治理循环（PAGRL）。\n\n- 主要方法：构建PAGRL，形成四层治理规则集（全球、工作流、代理、情境），在每次重要行动前由智能体进行自我评估与推理；基于生产级的零售供应链工作流将该框架落地实现，强调将治理嵌入推理过程以提升可解释性与可审计性。\n\n- 结论/性能：在生产级零售供应链场景中实现95%合规准确性，并且零次将需要升级给人类监督的错误上报，显示内部治理的推理机制比外部约束更具一致性、可解释性和可审计性。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-29 13:02:05"
+}

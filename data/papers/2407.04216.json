@@ -1,0 +1,33 @@
+{
+ "id": "2407.04216",
+ "title": "Safe MPC Alignment with Human Directional Feedback",
+ "authors": "Zhixian Xie, Wenlong Zhang, Yi Ren, Zhaoran Wang, George J. Pappas, Wanxin Jin",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2407.04216",
+ "abstract": "",
+ "summary": "This paper learns implicit safety constraints for MPC from sparse human directional corrections.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Human in the Loop",
+ "tags": [
+  "constraint-grounding",
+  "constraint-learning",
+  "human-in-the-loop",
+  "human-in-the-loop-safety",
+  "mpc",
+  "robotics",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Human_in_the_Loop/2024_Xie_SafeMPCFeedback.md",
+ "pdf_path": "PDFs/Human_in_the_Loop/2024_Xie_SafeMPCFeedback.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

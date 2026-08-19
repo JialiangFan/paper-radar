@@ -1,0 +1,13 @@
+{
+ "id": "2605.17580",
+ "title": "ECG-WM: A Physiology-Informed ECG World Model for Clinical Intervention Simulation",
+ "authors": "Zhikang Chen, Yue Wang, Sen Cui, Yu Zhang, Changshui Zhang, Tianling Ren, Tingting Zhu",
+ "date": "2026-05-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.17580v1",
+ "abstract": "Electrocardiogram (ECG)-based models have achieved strong performance in diagnostic tasks, yet they remain limited in modeling how cardiac dynamics evolve under external interventions. In particular, existing approaches focus primarily on static prediction and lack mechanisms to capture ECG variations under different pharmacological conditions. In this work, we propose an ECG World Model for action-conditioned predictive simulation of cardiac electrophysiology. Moving beyond disjoint pipelines, our framework features a principled integration of physiological ordinary differential equation (ODE) priors into latent diffusion dynamics via energy regularization. This structural constraint enables the synthesis of physiologically plausible post-intervention ECG trajectories while effectively mitigating generative hallucinations. Building on this simulation process, we introduce an uncertainty-aware evaluation strategy that leverages the stochasticity of diffusion sampling to characterize both the expected clinical risk and its variability, allowing a more reliable comparative assessment of candidate interventions. We evaluate our method across diverse settings, including controlled drug-response scenarios and real-world clinical records. Beyond standard waveform metrics, experimental results demonstrate improved risk calibration and strong alignment with expert-informed treatment preferences. These results establish our approach as a robust foundation for safe and intervention-aware clinical decision support.",
+ "summary": "# ECG-WM 论文总结\n\n**1. 核心创新点**\n首个面向心电图（ECG）的\"世界模型\"，能够在给定药物干预条件下，预测性地模拟心脏电生理动态变化，突破了以往模型只能做静态诊断的局限。\n\n**2. 主要方法**\n- **动作条件化预测框架**：将外部干预（如药物）作为动作输入，模拟干预后的 ECG 轨迹。\n- **物理先验融合**：通过能量正则化（energy regularization）将心脏生理常微分方程（ODE）先验嵌入到潜在扩散模型（latent diffusion）中，约束生成过程符合生理规律，抑制幻觉。\n- **不确定性感知评估**：利用扩散采样的随机性，刻画候选干预方案的预期临床风险及其波动性。\n\n**3. 结论/性能**\n- 在受控药物响应场景和真实临床记录上均完成验证。\n- 除常规波形指标外，在风险校准（risk calibration）以及与专家治疗偏好的一致性方面均有显著提升。\n- 为安全、可干预感知的临床决策支持系统奠定了稳健基础。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-19 13:25:25"
+}

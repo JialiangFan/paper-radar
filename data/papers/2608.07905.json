@@ -1,0 +1,13 @@
+{
+ "id": "2608.07905",
+ "title": "GraphThink: Graph-Enhanced LLM Thinking for Long-Horizon Embodied Task Planning",
+ "authors": "Chen Li, Sijie Cheng, Yuelin Zhang, Junxi Li, Maozhi Huang, Yang Liu, Wenbing Huang",
+ "date": "2026-08-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.07905v1",
+ "abstract": "Embodied agents using LLM-based planners often struggle with physical hallucinations, poor generalization to long-horizon tasks, and lack of environmental awareness. We propose GraphThink, a novel framework that integrates a task graph to provide structured knowledge for robust planning and a scene graph to maintain environmental memory for event-driven replanning. Specifically, the task graph guides LLM thinking through contextual prompting and iterative refinement, effectively mitigating planning hallucinations. Furthermore, within the GRPO framework, the task graph offers delicate reward design to train the LLM planner, enhancing long-horizon planning capabilities and improving generalization. Finally, an event-driven replanning module, powered by the scene graph, enables closed-loop environment awareness and error correction. GraphThink achieves state-of-the-art performance on the ALFRED benchmark. In particular, our high-level planner surpasses leading API-based LLMs on both the validation set and held-out long-horizon tasks, underscoring its robust zero-shot and few-shot capabilities. Additional evaluations further demonstrate strong out-of-distribution generalization to novel tasks and environments.",
+ "summary": "**GraphThink：图增强的 LLM 思考框架，用于长时序具身任务规划**\n\n1. **核心创新点**\n把「任务图 + 场景图」双图结构引入 LLM 规划器，同时用图结构约束推理、设计强化学习奖励并驱动重规划，从而缓解具身规划中的物理幻觉与长时序泛化难题。\n\n2. **主要方法**\n- **任务图**：通过上下文提示（contextual prompting）与迭代精修引导 LLM 的思考过程，抑制规划幻觉；\n- **GRPO 强化学习**：利用任务图提供细粒度奖励信号训练 LLM 规划器，提升长时序规划与泛化能力；\n- **场景图 + 事件驱动重规划模块**：维护环境记忆，实现闭环环境感知与错误纠正。\n\n3. **结论/性能**\n在 ALFRED 基准上达到 SOTA。其高层规划器在验证集和留出的长时序任务上均超过主流 API 型 LLM，体现出较强的零样本与少样本能力；额外实验还验证了对新任务与新环境的分布外（OOD）泛化能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-11 13:01:26"
+}

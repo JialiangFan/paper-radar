@@ -1,0 +1,13 @@
+{
+ "id": "2602.20548",
+ "title": "Robust Spiking Neural Networks Against Adversarial Attacks",
+ "authors": "Shuai Wang, Malu Zhang, Yulin Jiang, Dehao Zhang, Ammar Belatreche, Yu Liang, Yimeng Shan, Zijian Zhou, Yang Yang, Haizhou Li",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20548v1",
+ "abstract": "Spiking Neural Networks (SNNs) represent a promising paradigm for energy-efficient neuromorphic computing due to their bio-plausible and spike-driven characteristics. However, the robustness of SNNs in complex adversarial environments remains significantly constrained. In this study, we theoretically demonstrate that those threshold-neighboring spiking neurons are the key factors limiting the robustness of directly trained SNNs. We find that these neurons set the upper limits for the maximum potential strength of adversarial attacks and are prone to state-flipping under minor disturbances. To address this challenge, we propose a Threshold Guarding Optimization (TGO) method, which comprises two key aspects. First, we incorporate additional constraints into the loss function to move neurons' membrane potentials away from their thresholds. It increases SNNs' gradient sparsity, thereby reducing the theoretical upper bound of adversarial attacks. Second, we introduce noisy spiking neurons to transition the neuronal firing mechanism from deterministic to probabilistic, decreasing their state-flipping probability due to minor disturbances. Extensive experiments conducted in standard adversarial scenarios prove that our method significantly enhances the robustness of directly trained SNNs. These findings pave the way for advancing more reliable and secure neuromorphic computing in real-world applications.",
+ "summary": "- 核心创新点（一句话概括）：通过 Threshold Guarding Optimization（TGO）机制，将膜电位远离阈值并引入带噪声的尖峰神经元，使发放从确定性转为概率性，从而突破阈值邻近神经元对鲁棒性的瓶颈，显著提升直接训练的SNN对对抗攻击的鲁棒性。\n\n- 主要方法：在损失函数中增加额外约束以将膜电位推离阈值，从而提升梯度稀疏性，降低对抗攻击的理论上界；同时引入带噪声的尖峰神经元，使发放机制由确定性变为概率性，降低小扰动导致的状态翻转概率。\n\n- 结论/性能：在标准对抗场景的广泛实验中，显著提升了直接训练SNN的鲁棒性，有效降低对抗攻击的影响并提高在对抗条件下的稳定性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-25 14:02:11"
+}

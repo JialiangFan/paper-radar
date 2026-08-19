@@ -1,0 +1,13 @@
+{
+ "id": "2608.13334",
+ "title": "RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory",
+ "authors": "Jingbo Ji, Lingyi Li, Xilong Cheng, Yuhao Zhou, Wenji Zhang, Yuting Tan, Yunxiao Qin",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13334v1",
+ "abstract": "LLM-based agents increasingly rely on external memory to support long-horizon reasoning and interaction. However, the main bottleneck is not simply storing past experience, but recovering the right set of evidence when relevant information is distributed across many interactions. Existing approaches struggle with this access problem. Full-context methods require noisy long-context search, flat retrieval often returns isolated and incomplete records, and graph-based memory systems can be expensive to construct while compressing rich event context. We introduce RippleMem, a long-term memory system that replaces one-shot retrieval with adaptive associative recollection. Inspired by cue-dependent episodic retrieval and associative completion, RippleMem stores interaction history as cue-rich episodic memory units and organizes them in an event-centric memory graph. Given a query, it first recalls relevant memory anchors through hybrid cues, then expands from these anchors along semantic and structural associations to recover missing supporting evidence. In this way, initially recalled memories serve not only as answer context, but also as cues for completing the evidence needed to answer. Experiments on LoCoMo and LongMemEval-S show that RippleMem achieves the best overall performance across evaluated settings, improving LLM-as-a-Judge accuracy by 3.95% on LoCoMo and up to 11.87% on LongMemEval-S, while reducing graph construction cost by about 30x.",
+ "summary": "## RippleMem 论文摘要总结\n\n**1. 核心创新点**\n将长期记忆的\"一次性孤立检索\"升级为\"自适应联想回忆\"——先由线索召回记忆锚点，再沿锚点向外扩散补全证据链。\n\n**2. 主要方法**\n- 把交互历史存为**富线索的情景记忆单元**（cue-rich episodic memory units），并组织成**以事件为中心的记忆图**（event-centric memory graph）；\n- 查询时分两步：先用**混合线索**召回相关记忆锚点，再从锚点沿**语义关联与结构关联**扩展，找回缺失的支撑证据；\n- 关键理念是：初次召回的记忆既是答案上下文，本身也充当继续检索的线索（借鉴认知科学中的线索依赖情景提取与联想补全）。\n\n**3. 结论 / 性能**\n在 LoCoMo 与 LongMemEval-S 两个基准上综合表现最优：LLM-as-a-Judge 准确率在 LoCoMo 上提升 **3.95%**，在 LongMemEval-S 上最高提升 **11.87%**，同时图构建开销降低约 **30 倍**。\n\n---\n\n补充一点判断：摘要将\"记忆瓶颈不在存储而在证据获取\"作为立论，对比对象涵盖全上下文、扁平检索、图记忆三类，定位比较清晰；不过\"最优表现\"的提升幅度（LoCoMo 仅 3.95%）与 30 倍构建成本下降相比，后者可能才是更实质的贡献点。\n\n如果需要，我可以用 `/paper-review` 生成更完整的文献综述式笔记（含研究背景、问题定义、方法论细节，中英双语输出到 Obsidian）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-16 13:03:05"
+}

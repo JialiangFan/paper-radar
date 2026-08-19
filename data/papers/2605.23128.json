@@ -1,0 +1,13 @@
+{
+ "id": "2605.23128",
+ "title": "$π_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control",
+ "authors": "Huanming Liu, Congsheng Xu, Jianmin Ji, Yao Mu",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23128v1",
+ "abstract": "Currently, Vision-Language-Action (VLA) models have become the most adopted paradigm for robotic manipulation for its great potential for task generalization. While most generative flow-matching action decoders for VLA control are often deployed with fixed sampling horizons, limiting state-dependent compute and temporal reuse across control cycles. We present $π_0$-EqM, which replaces the flow-matching expert in $π_0$ with an Equilibrium Matching (EqM) decoder while leaving the upstream VLA stack unchanged. Under a matched 300-step budget, $π_0$-EqM improves RoboTwin average success from 40.4% to 50.2% across 19 tasks and remains competitive on LIBERO, with its clearest gain on LIBERO-10 (87.0%). Two threshold scans reveal a task-dependent non-monotonic relation between residual and success, which we term the stationarity--executability gap. The results suggest that inference depth in iterative VLA control is part of policy design and introduce an energy-based VLA perspective that may inform future work on composable action generation across tasks and embodiments.",
+ "summary": "## 论文简要总结\n\n**1. 核心创新点**\n将 $π_0$ VLA 模型中的流匹配 (flow-matching) 动作解码器替换为均衡匹配 (Equilibrium Matching, EqM) 解码器，使推理深度成为策略设计的一部分，实现状态自适应的闭环视觉-语言-动作控制。\n\n**2. 主要方法**\n- 保持 $π_0$ 上游 VLA 架构不变，仅替换其动作专家模块；\n- 用基于能量 (energy-based) 的 EqM 解码器取代原有的流匹配解码器，使动作生成过程可以在控制周期间进行时间复用，并依据状态动态调整计算量；\n- 通过两次阈值扫描分析残差与任务成功率之间的关系，提出\"稳态性–可执行性差距 (stationarity–executability gap)\"概念。\n\n**3. 结论/性能**\n- 在相同 300 步预算下，RoboTwin 19 个任务的平均成功率从 40.4% 提升到 50.2%；\n- 在 LIBERO 上保持竞争力，其中 LIBERO-10 达到 87.0%，提升最为显著；\n- 揭示了残差与成功率之间任务相关的非单调关系，为未来跨任务、跨本体的可组合动作生成提供了基于能量的 VLA 新视角。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-25 13:12:32"
+}

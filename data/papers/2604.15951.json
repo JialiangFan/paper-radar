@@ -1,0 +1,13 @@
+{
+ "id": "2604.15951",
+ "title": "Integrating Graphs, Large Language Models, and Agents: Reasoning and Retrieval",
+ "authors": "Hamed Jelodar, Samita Bai, Mohammad Meymani, Parisa Hamedi, Roozbeh Razavi-Far, Ali Ghorbani",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15951v1",
+ "abstract": "Generative AI, particularly Large Language Models, increasingly integrates graph-based representations to enhance reasoning, retrieval, and structured decision-making. Despite rapid advances, there remains limited clarity regarding when, why, where, and what types of graph-LLM integrations are most appropriate across applications. This survey provides a concise, structured overview of the design choices underlying the integration of graphs with LLMs. We categorize existing methods based on their purpose (reasoning, retrieval, generation, recommendation), graph modality (knowledge graphs, scene graphs, interaction graphs, causal graphs, dependency graphs), and integration strategies (prompting, augmentation, training, or agent-based use). By mapping representative works across domains such as cybersecurity, healthcare, materials science, finance, robotics, and multimodal environments, we highlight the strengths, limitations, and best-fit scenarios for each technique. This survey aims to offer researchers a practical guide for selecting the most suitable graph-LLM approach depending on task requirements, data characteristics, and reasoning complexity.",
+ "summary": "- 核心创新点：提出一个系统化的图-LLM 集成框架，将方法按目的、图模态与集成策略进行分类，并给出跨领域的任务匹配与应用指南。\n\n- 主要方法：通过文献综述构建分类体系（目的：推理/检索/生成/推荐；图模态：知识图/场景图/交互图/因果图/依赖图；集成策略：提示/增强/训练/基于代理），对代表性工作在网络安全、医疗、材料科学、金融、机器人等领域进行梳理、映射与对比，分析优缺点与适用情景。\n\n- 结论/性能：提供实用的选型指南，帮助研究者在任务需求、数据特征与推理复杂性条件下选择合适的图-LLM 方法，明确不同集成策略的优势与局限；未给出统一的定量性能提升，侧重策略层面的系统化指引。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-20 13:02:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2511.22700",
+ "title": "Ghosting Your LLM: Without The Knowledge of Your Gradient and Data",
+ "authors": "Abeer Matar A. Almalky, Ziyan Wang, Mohaiminul Al Nahian, Li Yang, Adnan Siraj Rakin",
+ "date": "2025-11-27",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.22700v1",
+ "abstract": "In recent years, large language models (LLMs) have achieved substantial advancements and are increasingly integrated into critical applications across various domains. This growing adoption underscores the need to ensure their security and robustness. In this work, we focus on the impact of Bit Flip Attacks (BFAs) on LLMs, which exploits hardware faults to corrupt model parameters, posing a significant threat to model integrity and performance. Existing studies on BFA against LLMs adopt a progressive bit-search strategy that predominantly relies on gradient-based techniques to identify sensitive layers or weights. However, computing gradients comes with two specific challenges: First, in the context of LLMs, it increases computational and memory costs exponentially, and Second, it requires access to a sample victim dataset or knowledge of the victim domain to compute the gradient. In this work, we investigate beyond the scope of attack efficacy and aim to develop an efficient, practical Gradient-Data-free Bit-Flip Attack. The challenge lies in the core principle of adversarial attacks, which relies heavily on computing gradients from sample test/train data and manipulating model weights based on gradient information. To overcome this, we propose novel vulnerability index metrics that can identify vulnerable weight bits in LLMs independent of any gradient or data knowledge. By removing the dependency on gradient computation, our approach drastically reduces memory requirements and scales efficiently across multiple tasks with constant complexity. Experimental results demonstrate the efficiency of our method, requiring as few as a single bit flip to achieve adversarial objectives for five open-source LLMs.",
+ "summary": "1) 核心创新点：提出一种不依赖梯度和数据的脆弱性指数，用以识别并攻击大语言模型中易被比特翻转的权重量位，实现无需梯度/数据知识的比特翻转攻击。\n\n2) 主要方法：设计新的脆弱性指数指标来定位易受攻击的权重量位，基于该指标实现 Gradient-Data-free Bit-Flip Attack，具备常数复杂度、显著降低内存需求，并在多任务场景下可扩展；在五个开源LLM上进行实验验证。\n\n3) 结论/性能：实验结果显示仅需一个比特翻转便可实现对抗目标，且方法在五个开源LLM上有效，具备低内存需求、常数复杂度等优势，适用于跨任务的高效攻击。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-01 14:02:29"
+}

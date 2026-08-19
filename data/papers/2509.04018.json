@@ -1,0 +1,32 @@
+{
+ "id": "2509.04018",
+ "title": "FPC-VLA: A Vision-Language-Action Framework with a Supervisor for Failure Prediction and Correction",
+ "authors": "Yang, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2509.04018",
+ "abstract": "",
+ "summary": "FPC-VLA wraps a VLA policy with a VLM-based supervisor that predicts failure-prone actions and issues corrective guidance before execution.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "failure-correction",
+  "failure-prediction",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "supervisor",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2025_Yang_FPCVLA.md",
+ "pdf_path": "PDFs/VLA_Safety/2025_Yang_FPCVLA.pdf",
+ "code": "",
+ "project": "https://fpcvla.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

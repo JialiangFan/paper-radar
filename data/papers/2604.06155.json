@@ -1,0 +1,13 @@
+{
+ "id": "2604.06155",
+ "title": "Toward Consistent World Models with Multi-Token Prediction and Latent Semantic Enhancement",
+ "authors": "Qimin Zhong, Hao Liao, Haiming Qin, Mingyang Zhou, Rui Mao, Wei Chen, Naipeng Chao",
+ "date": "2026-04-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06155v1",
+ "abstract": "Whether Large Language Models (LLMs) develop coherent internal world models remains a core debate. While conventional Next-Token Prediction (NTP) focuses on one-step-ahead supervision, Multi-Token Prediction (MTP) has shown promise in learning more structured representations. In this work, we provide a theoretical perspective analyzing the gradient inductive bias of MTP, supported by empirical evidence, showing that MTP promotes the convergence toward internal belief states by inducing representational contractivity via gradient coupling. However, we reveal that standard MTP often suffers from structural hallucinations, where discrete token supervision encourages illegal shortcuts in latent space that violate environmental constraints. To address this, we propose a novel method Latent Semantic Enhancement MTP (LSE-MTP), which anchors predictions to ground-truth hidden state trajectories. Experiments on synthetic graphs and real-world Manhattan Taxi Ride show that LSE-MTP effectively bridges the gap between discrete tokens and continuous state representations, enhancing representation alignment, reducing structural hallucinations, and improving robustness to perturbations.",
+ "summary": "1) 核心创新点\n- 提出 Latent Semantic Enhancement MTP（LSE-MTP），在多-token预测框架中通过将预测锚定到真实隐藏状态轨迹来实现一致的世界模型，并给出对跨 token 梯度诱导偏向的理论分析以解决结构性幻觉问题。\n\n2) 主要方法\n- 理论分析：研究多-token预测（MTP）的梯度耦合如何推动内部信念状态的收敛，以及其导致结构性幻觉的原因。\n- 方法设计：提出 LSE-MTP，将预测细化锚定到真实隐藏状态轨迹，实现潜在语义增强，缓解离散 token 监督带来的非法 latent space shortcut。\n- 实验设置：在合成图和真实数据集曼哈顿出租车轨迹上进行评估。\n\n3) 结论/性能\n- LSE-MTP 能有效桥接离散 token 与连续状态表示，提升表示对齐，降低结构性幻觉，并增强对扰动的鲁棒性；在合成图和曼哈顿出租车数据集上显示出更好的一致性与鲁棒性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-08 13:08:08"
+}

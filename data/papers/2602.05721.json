@@ -1,0 +1,13 @@
+{
+ "id": "2602.05721",
+ "title": "A Dual-Loop Agent Framework for Automated Vulnerability Reproduction",
+ "authors": "Bin Liu, Yanjie Zhao, Zhenpeng Chen, Guoai Xu, Haoyu Wang",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05721v1",
+ "abstract": "Automated vulnerability reproduction from CVE descriptions requires generating executable Proof-of-Concept (PoC) exploits and validating them in target environments. This process is critical in software security research and practice, yet remains time-consuming and demands specialized expertise when performed manually. While LLM agents show promise for automating this task, existing approaches often conflate exploring attack directions with fixing implementation details, which leads to unproductive debugging loops when reproduction fails. To address this, we propose Cve2PoC, an LLM-based dual-loop agent framework following a plan-execute-evaluate paradigm. The Strategic Planner analyzes vulnerability semantics and target code to produce structured attack plans. The Tactical Executor generates PoC code and validates it through progressive verification. The Adaptive Refiner evaluates execution results and routes failures to different loops: the \\textit{Tactical Loop} for code-level refinement, while the \\textit{Strategic Loop} for attack strategy replanning. This dual-loop design enables the framework to escape ineffective debugging by matching remediation to failure type. Evaluation on two benchmarks covering 617 real-world vulnerabilities demonstrates that Cve2PoC achieves 82.9\\% and 54.3\\% reproduction success rates on SecBench.js and PatchEval, respectively, outperforming the best baseline by 11.3\\% and 20.4\\%. Human evaluation confirms that generated PoCs achieve comparable code quality to human-written exploits in readability and reusability.",
+ "summary": "- 核心创新点：提出一个基于LLM的双回路代理框架 Cve2PoC，通过战略回路与战术回路分离的计划-执行-评估流程与自适应改进，显著提升漏洞重现的成功率并减少无效调试。\n\n- 主要方法：利用双循环的计划-执行-评估架构。战略规划器（Strategic Planner）分析CVE语义与目标代码，生成结构化的攻击计划；战术执行器（Tactical Executor）生成PoC代码并通过渐进验证进行验证；自适应改造器（Adaptive Refiner）根据执行结果将失败路由到战术循环进行代码级 refinement，或路由到战略循环进行攻击策略重新规划，从而实现对不同失败类型的定向修正。\n\n- 结论/性能：在SecBench.js和PatchEval两组包含617个真实漏洞的基准上，重现成功率分别达到82.9%和54.3%，较最佳基线提升11.3个百分点和20.4个百分点；人工评估也显示所生成的PoC在可读性与可复用性方面与人工编写的利用代码相媲美。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:02:48"
+}

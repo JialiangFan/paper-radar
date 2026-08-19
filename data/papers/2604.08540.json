@@ -1,0 +1,13 @@
+{
+ "id": "2604.08540",
+ "title": "AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation",
+ "authors": "Ziwei Zhou, Zeyuan Lai, Rui Wang, Yifan Yang, Zhen Xing, Yuqing Yang, Qi Dai, Lili Qiu, Chong Luo",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08540v1",
+ "abstract": "Text-to-Audio-Video (T2AV) generation is rapidly becoming a core interface for media creation, yet its evaluation remains fragmented. Existing benchmarks largely assess audio and video in isolation or rely on coarse embedding similarity, failing to capture the fine-grained joint correctness required by realistic prompts. We introduce AVGen-Bench, a task-driven benchmark for T2AV generation featuring high-quality prompts across 11 real-world categories. To support comprehensive assessment, we propose a multi-granular evaluation framework that combines lightweight specialist models with Multimodal Large Language Models (MLLMs), enabling evaluation from perceptual quality to fine-grained semantic controllability. Our evaluation reveals a pronounced gap between strong audio-visual aesthetics and weak semantic reliability, including persistent failures in text rendering, speech coherence, physical reasoning, and a universal breakdown in musical pitch control. Code and benchmark resources are available at http://aka.ms/avgenbench.",
+ "summary": "- 核心创新点：提出 AVGen-Bench——一个面向文本到音频到视频生成的任务驱动基准，结合11个真实场景的高质量提示与多粒度评估框架，能够同时评估感知质量和細粒度的语义可控性。\n\n- 主要方法：构建以轻量级专业模型与多模态大语言模型（MLLMs）相结合的多粒度评估框架，覆盖从感知层面到细粒度语义控制的评估，并提供覆盖11类现实场景的高质量 prompts。\n\n- 结论/性能：评估结果揭示强烈的音视频美学能力与语义可靠性之间的显著差距，且在文本渲染、语音连贯性、物理推理以及音乐音高控制等方面存在持续性失败；同时提供了可重复使用的代码与基准资源以推动后续研究。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-10 13:03:30"
+}

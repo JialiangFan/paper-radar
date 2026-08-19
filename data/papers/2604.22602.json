@@ -1,0 +1,13 @@
+{
+ "id": "2604.22602",
+ "title": "PASS: A Provenanced Access Subaccount System for Blockchain Wallets",
+ "authors": "Jay Yu, Shunfan Zhou, Hang Yin, Brian Seong",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22602v1",
+ "abstract": "Blockchain wallets conventionally follow an ownership model where possession of a private key grants unilateral control. However, this assumption is brittle for emerging settings such as AI agent wallets, organizational custody, and enterprise payroll, where multiple actors must coordinate without exposing secrets or leaking internal activity. We present PASS, a Provenanced Access Subaccount System that replaces role-based or identity-based control with provenance-based control: assets can only be used by subaccounts that can trace custody back to a valid deposit. A simple Inbox-Outbox mechanism ensures all external actions have verifiable lineage, while internal transfers remain private and indistinguishable from ordinary EOAs. We formalize PASS in Lean 4 and prove core invariants, including privacy of internal transfers, asset accessibility, and provenance integrity. We implement a prototype with enclave backends on AWS Nitro Enclaves and dstack Intel TDX, integrate with WalletConnect, and benchmark throughput across wallet operations. These results show that provenance-based wallets are both implementable and efficient. PASS bridges today's gap between strict self-custody and flexible shared access, advancing the design space for practical, privacy-preserving custody.",
+ "summary": "1) 核心创新点（一句话）\n提出 Provenanced Access Subaccount System（PASS），以 provenance 基础的访问控制取代传统私钥控制，实现可溯源的多方协作访问与内部操作的隐私保护。\n\n2) 主要方法\n- 以 provenance 控制取代单点私钥控制，允许子账户仅在能追溯到有效存放的情况下使用资产。\n- 引入 Inbox-Outbox 机制，确保所有外部动作具备可验证的 lineage；内部转移保持私密性且与普通 EOAs 无区别。\n- 在 Lean 4 中对 PASS 进行形式化并证明核心不变量（内部转移隐私、资产可访问性、provenance 完整性）。\n- 原型实现：在 AWS Nitro Enclaves 与 dstack Intel TDX 的 enclave 后端上部署，集成 WalletConnect；对钱包操作进行吞吐量基准测试。\n\n3) 结论/性能\n- 证明并实现了 provenance-based 钱包的可实现性与高效性；获得核心不变量的形式化证明。\n- 原型通过两种 enclave 后端及 WalletConnect 集成，进行了吞吐量基准测试，结果表明在实际钱包操作中具有可接受的性能水平，推动了在隐私保护前提下的可控共享 custody 的设计空间。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-27 13:02:25"
+}

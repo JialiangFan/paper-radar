@@ -1,0 +1,13 @@
+{
+ "id": "2608.01212",
+ "title": "Do Humans Bargain Differently with AI? Evidence from Alternating-Offer Games",
+ "authors": "Yuhao Fu, Nobuyuki Hanaki, Haitao Wang",
+ "date": "2026-08-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.01212v1",
+ "abstract": "Artificial intelligence increasingly participates in economic interactions not only as a tool, but also as an autonomous bargaining counterpart negotiating on behalf of firms, platforms, and consumers. Yet little is known about how humans respond psychologically and strategically when bargaining with such agents in dynamic settings. We study this question in a laboratory experiment using a three-stage alternating-offer bargaining game in which participants negotiate in real time with either another human or a GPT-based AI agent. We also introduce a human-beneficiary condition in which the AI agent's earnings may affect another participant's payment. Agreements are not reached earlier in human-human bargaining than in human-AI bargaining, but they are reached significantly earlier when the AI's payoff affects another participant's payoff. Human proposers offer more to human opponents than to AI agents, whereas responders become significantly more willing to accept unfair AI offers when AI earnings may benefit another human. These findings suggest that fairness and reciprocity toward AI are weaker and more conditional than toward humans, but partially remerge when AI outcomes affect real people. The results have implications for the design of AI negotiation systems and broader human-AI economic interactions.",
+ "summary": "# 论文摘要总结\n\n**标题**：《人类与 AI 的议价方式不同吗？来自交替出价博弈的证据》\n\n---\n\n### 1. 核心创新点\n首次通过实验证明：人类在与 AI 讨价还价时，公平与互惠倾向明显弱于对人类对手，但当 AI 的收益会影响到另一个真实的人时，这种公平关切会部分回归。\n\n### 2. 主要方法\n- **实验设计**：实验室受控实验，采用**三阶段交替出价议价博弈**（alternating-offer bargaining game），参与者实时议价。\n- **对照条件**：对手随机设定为「另一名真人」或「基于 GPT 的 AI 智能体」。\n- **创新条件**：引入**「人类受益方」（human-beneficiary）条件**——AI 智能体所赚取的收益会影响到另一名真实参与者的报酬，用以分离「对 AI 本身的态度」与「对 AI 背后真人的态度」。\n\n### 3. 结论 / 主要发现\n- **达成速度**：人-人议价并不比人-AI议价更快达成协议；但在 AI 收益关联真人报酬的条件下，协议达成**显著提前**。\n- **作为提议者**：人类给人类对手的出价**高于**给 AI 的出价。\n- **作为回应者**：当 AI 的收益可能让另一个真人获益时，参与者**显著更愿意接受来自 AI 的不公平报价**。\n- **启示**：人们对 AI 的公平与互惠是「更弱且有条件的」，其道德关切实际锚定在 AI 背后的真人身上。这对 AI 谈判系统的设计及更广泛的人机经济互动具有实践意义。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-04 13:02:11"
+}

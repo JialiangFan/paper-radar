@@ -1,0 +1,13 @@
+{
+ "id": "2512.24792",
+ "title": "Projection-based Adversarial Attack using Physics-in-the-Loop Optimization for Monocular Depth Estimation",
+ "authors": "Takeru Kusakabe, Yudai Hirose, Mashiho Mukaida, Satoshi Ono",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24792v1",
+ "abstract": "Deep neural networks (DNNs) remain vulnerable to adversarial attacks that cause misclassification when specific perturbations are added to input images. This vulnerability also threatens the reliability of DNN-based monocular depth estimation (MDE) models, making robustness enhancement a critical need in practical applications. To validate the vulnerability of DNN-based MDE models, this study proposes a projection-based adversarial attack method that projects perturbation light onto a target object. The proposed method employs physics-in-the-loop (PITL) optimization -- evaluating candidate solutions in actual environments to account for device specifications and disturbances -- and utilizes a distributed covariance matrix adaptation evolution strategy. Experiments confirmed that the proposed method successfully created adversarial examples that lead to depth misestimations, resulting in parts of objects disappearing from the target scene.",
+ "summary": "1) 核心创新点：提出一种投影式对抗攻击，通过将扰动光投射到目标物体，结合物理环路优化与分布式协方差矩阵自适应进化策略，在真实环境中针对单目深度估计模型产生对抗样本。  \n2) 主要方法：使用投影式对抗扰动光投射到目标对象，利用物理环路优化（PITL）在实际环境中评估候选解以考虑设备规格与干扰，并采用分布式 CMA-ES 搜索最优扰动。  \n3) 结论/性能：在实验中成功生成对抗样本，导致单目深度估计出现失真，甚至使目标场景的部分物体从深度图中消失。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 03:31:59"
+}

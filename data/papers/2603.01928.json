@@ -1,0 +1,13 @@
+{
+ "id": "2603.01928",
+ "title": "LaST-VLA: Thinking in Latent Spatio-Temporal Space for Vision-Language-Action in Autonomous Driving",
+ "authors": "Yuechen Luo, Fang Li, Shaoqing Xu, Yang Ji, Zehan Zhang, Bing Wang, Yuannan Shen, Jianwei Cui, Long Chen, Guang Chen, Hangjun Ye, Zhi-Xin Yang, Fuxi Wen",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01928v1",
+ "abstract": "While Vision-Language-Action (VLA) models have revolutionized autonomous driving by unifying perception and planning, their reliance on explicit textual Chain-of-Thought (CoT) leads to semantic-perceptual decoupling and perceptual-symbolic conflicts. Recent shifts toward latent reasoning attempt to bypass these bottlenecks by thinking in continuous hidden space. However, without explicit intermediate constraints, standard latent CoT often operates as a physics-agnostic representation. To address this, we propose the Latent Spatio-Temporal VLA (LaST-VLA), a framework shifting the reasoning paradigm from discrete symbolic processing into a physically grounded Latent Spatio-Temporal CoT. By implementing a dual-feature alignment mechanism, we distill geometric constraints from 3D foundation models and dynamic foresight from world models directly into the latent space. Coupled with a progressive SFT training strategy that transitions from feature alignment to trajectory generation, and refined via Reinforcement Learning with Group Relative Policy Optimization (GRPO) to ensure safety and rule compliance. \\method~setting a new record on NAVSIM v1 (91.3 PDMS) and NAVSIM v2 (87.1 EPDMS), while excelling in spatial-temporal reasoning on SURDS and NuDynamics benchmarks.",
+ "summary": "- 核心创新点：提出 LaST-VLA，将推理从离散符号转向物理约束的潜在时空推理（Latent Spatio-Temporal CoT），通过双特征对齐把几何约束与动态前瞻信息融入潜在空间，并结合渐进式训练与 GRPO 强化学习确保安全合规。\n\n- 主要方法：\n  - 双特征对齐机制：从3D基础模型提炼几何约束，从世界模型提取动态前瞻信息，直接对齐到潜在时空空间。\n  - 渐进式 SFT 训练：从特征对齐逐步过渡到轨迹生成。\n  - 基于 GRPO 的强化学习：在训练中强化策略，使其符合安全与规则要求。\n\n- 结论/性能：\n  - 在 NAVSIM v1 和 NAVSIM v2 上分别创下新纪录（PDMS 91.3、EPDMS 87.1）。\n  - 在 SURDS 与 NuDynamics 等基准上展现出优越的时空推理能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-03 14:03:16"
+}

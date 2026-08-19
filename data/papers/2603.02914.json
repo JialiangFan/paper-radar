@@ -1,0 +1,13 @@
+{
+ "id": "2603.02914",
+ "title": "Does Fine-tuning by Reinforcement Learning Improve Generalization in Binary Speech Deepfake Detection?",
+ "authors": "Xin Wang, Ge Wanying, Junichi Yamagishi",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02914v1",
+ "abstract": "Building speech deepfake detection models that are generalizable to unseen attacks remains a challenging problem. Although the field has shifted toward a pre-training and fine-tuning paradigm using speech foundation models, most approaches rely solely on supervised fine-tuning (SFT). Inspired by the field of large language models, wherein reinforcement learning (RL) is used for model fine-tuning, we investigate the impact of RL, specifically Group Relative Policy Optimization (GRPO). The results from experiments using multiple detectors and test sets indicate that pure GRPO-based fine-tuning improves performance on out-of-domain test sets while maintaining performance on target-domain test data. This approach outperforms both SFT-only and hybrid setups. Our ablation studies further suggest that the negative reward in GRPO may be a key factor in this improvement.",
+ "summary": "- **核心创新点**：引入纯粹的 GRPO（Group Relative Policy Optimization）强化学习微调策略，用于二分类语音深伪检测，显著提升对未见攻击的泛化能力，同时保持对目标域的性能。\n\n- **主要方法**：在基于语音 foundation model 的预训练-微调框架中，采用 GRPO 进行微调，与传统的监督微调（SFT）及混合微调方式进行对比；通过多检测器和多测试集的实验设置并辅以消融研究，指出负奖励在提升泛化性能中的关键作用。\n\n- **结论/性能**：纯 GRPO 微调在未见域测试集上提升了泛化表现，同时保持对目标域测试数据的性能，优于 SFT-only 和混合设置；负奖励被认为是提升效果的关键因素。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-04 14:04:11"
+}

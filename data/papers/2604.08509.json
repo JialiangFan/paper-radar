@@ -1,0 +1,13 @@
+{
+ "id": "2604.08509",
+ "title": "Visually-grounded Humanoid Agents",
+ "authors": "Hang Ye, Xiaoxuan Ma, Fan Lu, Wayne Wu, Kwan-Yee Lin, Yizhou Wang",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08509v1",
+ "abstract": "Digital human generation has been studied for decades and supports a wide range of real-world applications. However, most existing systems are passively animated, relying on privileged state or scripted control, which limits scalability to novel environments. We instead ask: how can digital humans actively behave using only visual observations and specified goals in novel scenes? Achieving this would enable populating any 3D environments with digital humans at scale that exhibit spontaneous, natural, goal-directed behaviors. To this end, we introduce Visually-grounded Humanoid Agents, a coupled two-layer (world-agent) paradigm that replicates humans at multiple levels: they look, perceive, reason, and behave like real people in real-world 3D scenes. The World Layer reconstructs semantically rich 3D Gaussian scenes from real-world videos via an occlusion-aware pipeline and accommodates animatable Gaussian-based human avatars. The Agent Layer transforms these avatars into autonomous humanoid agents, equipping them with first-person RGB-D perception and enabling them to perform accurate, embodied planning with spatial awareness and iterative reasoning, which is then executed at the low level as full-body actions to drive their behaviors in the scene. We further introduce a benchmark to evaluate humanoid-scene interaction in diverse reconstructed environments. Experiments show our agents achieve robust autonomous behavior, yielding higher task success rates and fewer collisions than ablations and state-of-the-art planning methods. This work enables active digital human population and advances human-centric embodied AI. Data, code, and models will be open-sourced.",
+ "summary": "核心创新点：提出一个耦合的两层世界-代理框架（World Layer 与 Agent Layer），通过从真实视频重建可动画的三维高斯场景和高斯人体代理，使数字人能够在新场景中仅凭视觉观测和给定目标实现主动、自然的行为。\n\n主要方法：\n- World Layer：基于遮挡感知的管线从真实视频重建语义丰富的三维高斯场景，并生成可动画的高斯基人体像。\n- Agent Layer：将这些Avatar转化为自主 humanoid 代理，具备第一人称 RGB-D 感知，进行具身化的规划（具空间感知与迭代推理），并在低层执行为全身动作以驱动场景中的行为。\n- 同时提出一个用于评估 humanoid–scene 交互的基准数据集。\n\n结论/性能：实验表明所提出的代理在自主行为方面表现鲁棒，任务成功率更高、碰撞率更低，优于消融对照与现有最前沿的规划方法；数据、代码和模型将开放。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-10 13:01:59"
+}

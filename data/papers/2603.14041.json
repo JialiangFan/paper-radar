@@ -1,0 +1,13 @@
+{
+ "id": "2603.14041",
+ "title": "GRPO and Reflection Reward for Mathematical Reasoning in Large Language Models",
+ "authors": "Zhijie Wang",
+ "date": "2026-03-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.14041v1",
+ "abstract": "The enhancement of reasoning capabilities in large language models (LLMs) has garnered significant attention, with supervised fine-tuning (SFT) and reinforcement learning emerging as dominant paradigms. While recent studies recognize the importance of reflection in reasoning processes, existing methodologies seldom address proactive reflection encouragement during training. This study focuses on mathematical reasoning by proposing a four-stage framework integrating Group Relative Policy Optimization (GRPO) with reflection reward mechanisms to strengthen LLMs' self-reflective capabilities. Besides, this approach incorporates established accuracy and format reward. Experimental results demonstrate GRPO's state-of-the-art performance through reflection-encouraged training, with ablation studies confirming the reflection reward's pivotal role. Comparative evaluations demonstrate full-parameter SFT's superiority over low-rank adaptation (LoRA) despite heightened computational demands. Building on these cumulative findings, this research substantiates GRPO's methodological significance in post-training optimization and envisions its potential to serve as a pivotal enabler for future LLM-based intelligent agents through the synergistic integration of cognitive rewards with dynamic environmental interactions.",
+ "summary": "- 核心创新点：提出一个四阶段训练框架，将 Group Relative Policy Optimization（GRPO）与反思奖励机制相结合，主动在训练中提升大语言模型在数学推理中的自我反思能力。\n\n- 主要方法：在四阶段框架中引入 GRPO 与反思奖励机制，并结合准确性奖励与输出格式奖励进行综合优化，以增强模型的自我反思与推理质量，聚焦于后训练优化场景中的方法论探索。\n\n- 结论/性能：在引入反思激励的训练下实现了在数学推理任务上的最新综合性能；消融实验证实反思奖励的关键作用；全参数 SFT 在对比 LoRA 时表现更优，尽管计算成本更高；该方法对未来基于 LLM 的智能体发展具有重要意义，强调将认知奖励与动态环境交互结合的潜力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-17 13:03:21"
+}

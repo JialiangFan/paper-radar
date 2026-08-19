@@ -1,0 +1,13 @@
+{
+ "id": "2606.03127",
+ "title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language-Action Models",
+ "authors": "Wenbo Zhang, Jianxiong Li, Shuai Yang, Sijin Chen, Jiajun Liu, Lingqiao Liu, Xiao Ma",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.03127v1",
+ "abstract": "Vision-Language-Action (VLA) models trained on large-scale data have made remarkable progress, but they remain vulnerable to distribution shifts at deployment time. Recent VLA models suggest that prompts can serve as an efficient interface for steering policy behavior, but existing prompt-based steering typically relies on external guidance. This raises a natural question: can test-time training (TTT) for VLA be achieved by optimizing a prompt, so that the steering interface itself can be learned and adapted from interaction? We address this question with TTT-VLA, a test-time training framework based on Latent Prompt Optimization (LPO). During training, the latent prompt is learned with an additional proxy task, providing an extra learned conditioning signal for policy learning. At test time, TTT is performed by collecting interaction data from the current environment and optimizing only the latent prompt on those data using the proxy task's self-supervised signal, without modifying the policy itself. Experiments on SimplerEnv demonstrate that the proposed method consistently improves task success rates in both single- and multi-embodiment settings. Further analysis shows that the gains arise primarily from correcting a small number of critical decisions rather than globally altering policy behavior. These results suggest that LPO provides an effective and practical pathway for deployment-time improvement of foundation manipulation policies.",
+ "summary": "## TTT-VLA 论文总结\n\n**1. 核心创新点**\n提出通过在测试时仅优化\"潜在提示（latent prompt）\"而非整个策略，实现 VLA（视觉-语言-动作）模型在部署时的自适应。\n\n**2. 主要方法**\n基于潜在提示优化（LPO）的测试时训练框架：训练阶段引入一个代理任务（proxy task）来学习潜在提示，作为策略学习的额外条件信号；测试阶段从当前环境收集交互数据，利用代理任务的自监督信号仅对潜在提示进行优化，策略本身保持不变。\n\n**3. 结论/性能**\n在 SimplerEnv 上的实验表明，该方法在单体和多体（embodiment）设置下均能稳定提升任务成功率；进一步分析显示性能提升主要来自对少数关键决策的纠正，而非全局改变策略行为，证明 LPO 是一条切实可行的基础操作策略部署期优化路径。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-04 13:07:31"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.19928",
+ "title": "SWAP: Symmetric Equivariant World-Model for Agile Robot Parkour",
+ "authors": "Kaixin Lan, Ze Wang, Hongyi Li, Lei Jiang, Chaojie Fu, Chengkai Su, Choi Lam Wong, Yongbin Jin, Hongtao Wang",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19928v1",
+ "abstract": "While latent world models enable the proactive predictions required for extreme parkour, their purely data-driven nature forces them to redundantly encode left-right symmetric interactions as independent patterns. This inflates the learning burden and hinders the capture of geometric regularities, restricting the latent space's efficiency for downstream policies. To address this, we propose SWAP, an end-to-end equivariant symmetric world model. This framework embeds symmetry directly into both the world model and the actor-critic networks. In real-world tests, the robot leaps across a 2.13 m gap and climbs a 1.63 m platform, breaking records for quadruped parkour. Furthermore, the framework exhibits robust geometric generalization to unseen mirrored terrains and exceptional zero-shot transferability across diverse outdoor environments. These results demonstrate that symmetry equivariance is an effective structural prior for pushing the physical boundaries of learned legged locomotion.",
+ "summary": "## SWAP：用于敏捷机器人跑酷的对称等变世界模型\n\n1. **核心创新点**：将左右对称性作为结构先验直接嵌入世界模型与策略网络，提升潜空间学习效率，从而突破足式机器人跑酷的物理极限。\n\n2. **主要方法**：提出端到端的等变对称世界模型 SWAP，把对称等变性同时融入潜在世界模型和 actor-critic（演员-评论家）网络中，避免数据驱动模型重复编码左右对称交互。\n\n3. **结论/性能**：真实机器人实现跨越 2.13 米沟壑、攀爬 1.63 米平台，刷新四足跑酷记录；对未见过的镜像地形展现出强几何泛化能力，并在多样化户外环境中具备出色的零样本迁移性。\n\n---\n\n补充说明：如果你希望生成更完整的文献综述（提取主题、背景、问题、贡献、方法论，并输出中英双版本到 Obsidian），可以使用 `/paper-review` 技能。需要我调用它吗？",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-19 13:03:46"
+}

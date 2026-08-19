@@ -1,0 +1,32 @@
+{
+ "id": "2412.10345",
+ "title": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+ "authors": "Ruijie Zheng, Yongyuan Liang, Shuaiyi Huang, Jianfeng Gao, Hal Daumé, Andrey Kolobov, Furong Huang, Jianwei Yang",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2412.10345",
+ "abstract": "",
+ "summary": "TraceVLA encodes state-action history as visual traces to improve spatial-temporal awareness in VLA policies.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "robotics",
+  "safe-vla",
+  "spatial-safety",
+  "spatial-temporal",
+  "vision-language-action-models",
+  "visual-traces",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2024_Zheng_TraceVLA.md",
+ "pdf_path": "PDFs/VLA_Models/2024_Zheng_TraceVLA.pdf",
+ "code": "",
+ "project": "https://tracevla.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2601.22710",
+ "title": "AlienLM: Alienization of Language for API-Boundary Privacy in Black-Box LLMs",
+ "authors": "Jaehee Kim, Pilsung Kang",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22710v1",
+ "abstract": "Modern LLMs are increasingly accessed via black-box APIs, requiring users to transmit sensitive prompts, outputs, and fine-tuning data to external providers, creating a critical privacy risk at the API boundary. We introduce AlienLM, a deployable API-only privacy layer that protects text by translating it into an Alien Language via a vocabulary-scale bijection, enabling lossless recovery on the client side. Using only standard fine-tuning APIs, Alien Adaptation Training (AAT) adapts target models to operate directly on alienized inputs. Across four LLM backbones and seven benchmarks, AlienLM retains over 81\\% of plaintext-oracle performance on average, substantially outperforming random-bijection and character-level baselines. Under adversaries with access to model weights, corpus statistics, and learning-based inverse translation, recovery attacks reconstruct fewer than 0.22\\% of alienized tokens. Our results demonstrate a practical pathway for privacy-preserving LLM deployment under API-only access, substantially reducing plaintext exposure while maintaining task performance.",
+ "summary": "1. 核心创新点\n- 提出一个可部署的 API 级隐私层 AlienLM：通过将文本以词汇级双射映射成“外星语言”并在客户端实现无损恢复，同时通过 Alien Adaptation Training 使模型直接处理外星化输入，从而在 API 边界保护隐私。\n\n2. 主要方法\n- 引入外星语言：使用词汇尺度的双射将输入转换为外星文本，确保可在客户端无损还原。\n- Alien Adaptation Training（AAT）：仅用标准微调接口，使目标模型能够直接在外星化输入上工作。\n- 评估设置：在四种 LLM 主干和七项基准上对比，且对比随机双射和字符级基线，验证隐私保护与性能。\n\n3. 结论/性能\n- 在四种背骨和七项基准上平均保留超过81%的明文-Oracle性能，显著优于基线。\n- 在具有模型权重、语料统计和学习型逆翻译攻击的对手下，恢复攻击仅能重构不到0.22%的外星化令牌。\n- 结论：实现了在仅 API 访问条件下的隐私保护的实际路径，同时保持较高的任务性能。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-02 14:02:37"
+}

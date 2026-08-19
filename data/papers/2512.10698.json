@@ -1,0 +1,13 @@
+{
+ "id": "2512.10698",
+ "title": "How to Brake? Ethical Emergency Braking with Deep Reinforcement Learning",
+ "authors": "Jianbo Wang, Galina Sidorenko, Johan Thunberg",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10698v1",
+ "abstract": "Connected and automated vehicles (CAVs) have the potential to enhance driving safety, for example by enabling safe vehicle following and more efficient traffic scheduling. For such future deployments, safety requirements should be addressed, where the primary such are avoidance of vehicle collisions and substantial mitigating of harm when collisions are unavoidable. However, conservative worst-case-based control strategies come at the price of reduced flexibility and may compromise overall performance. In light of this, we investigate how Deep Reinforcement Learning (DRL) can be leveraged to improve safety in multi-vehicle-following scenarios involving emergency braking. Specifically, we investigate how DRL with vehicle-to-vehicle communication can be used to ethically select an emergency breaking profile in scenarios where overall, or collective, three-vehicle harm reduction or collision avoidance shall be obtained instead of single-vehicle such. As an algorithm, we provide a hybrid approach that combines DRL with a previously published method based on analytical expressions for selecting optimal constant deceleration. By combining DRL with the previous method, the proposed hybrid approach increases the reliability compared to standalone DRL, while achieving superior performance in terms of overall harm reduction and collision avoidance.",
+ "summary": "1) 核心创新点：提出一个将深度强化学习（DRL）与基于解析表达的最优恒减速方法的混合框架，用于在多车跟车与车对车通信场景下以伦理目标优化集体层面的伤害减小与碰撞规避。\n\n2) 主要方法：在三车跟车场景中，利用 DRL 学习紧急制动策略，同时结合已有的解析式最优恒减速方法进行融合，形成混合算法，以实现更可靠且具伦理导向的紧急制动决策。\n\n3) 结论/性能：相比单独的 DRL，该混合方法在可靠性上有所提升，并在总体伤害减小与碰撞避免方面达到更优性能。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:00:27"
+}

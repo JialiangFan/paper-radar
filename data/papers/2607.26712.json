@@ -1,0 +1,13 @@
+{
+ "id": "2607.26712",
+ "title": "ActSWM: Action-Sensitive World Models for Long-Horizon Planning in Open-World Games",
+ "authors": "Zhenfeng Gan, ZiTong Zeng, Jiajun Cheng, Yeke Song, Yongyi Tang, Xueqian Wang",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.26712v1",
+ "abstract": "Latent world models support efficient model-predictive control by optimizing future control sequences in latent space and replanning in a receding-horizon manner. However, existing latent predictors often lack stable long-horizon rollout ability, and prediction accuracy alone does not ensure that rollouts remain responsive to the actions being planned. We identify Context Collapse, a failure mode in which autoregressive latent predictors maintain high similarity to future states while producing nearly indistinguishable futures under different action sequences. To address this issue, we propose ActSWM, an action-sensitive latent world model grounded in a transition-separation principle: a planning-useful latent dynamics model should keep alternative-action futures distinguishable and make the action associated with each local transition recoverable. Under this principle, action sensitivity is enforced as a constraint on latent rollouts rather than treated only as an auxiliary prediction target, encouraging predicted futures to preserve action-dependent differences over long horizons. Across step-drift analysis, closed-loop Minecraft planning, and cross-game local action recovery, ActSWM preserves larger action-dependent rollout gaps than existing baselines, improves task success in long-horizon interactive settings, and enables world-model-based action recovery from offline gameplay videos.",
+ "summary": "## ActSWM 论文摘要总结\n\n**1. 核心创新点**\n提出 ActSWM，通过\"转移可分离性\"（transition-separation）原则约束隐空间 rollout，解决世界模型中\"上下文崩塌\"（Context Collapse）问题——即预测器虽然对未来状态拟合精度高，却对不同动作序列给出几乎无差别的未来，导致规划失效。\n\n**2. 主要方法**\n- 一个动作敏感的隐空间世界模型（latent world model），配合模型预测控制（MPC）：在隐空间优化未来控制序列并做滚动时域重规划。\n- 关键设计是把\"动作敏感性\"作为对隐空间 rollout 的**约束**（而非仅作为辅助预测目标）来施加，具体要求两点：不同动作对应的未来必须保持可区分；每一步局部转移所对应的动作必须可被还原（action recovery）。\n- 这使得预测出的未来在长时域上仍保留动作相关的差异。\n\n**3. 结论/性能**\n在三类实验上验证：逐步漂移分析（step-drift）、Minecraft 闭环规划、跨游戏局部动作还原。相比现有基线，ActSWM 保持了更大的动作相关 rollout 间距，在长时域交互任务中提升了任务成功率，并且能够基于世界模型从离线游戏视频中还原动作。\n\n> 注：以上仅基于标题与摘要，摘要未给出具体数值指标，因此\"性能\"部分只能是定性描述。如需更细的方法细节或量化结果，需要读正文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-30 13:04:28"
+}

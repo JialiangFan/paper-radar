@@ -1,0 +1,13 @@
+{
+ "id": "2607.28529",
+ "title": "CoGate: Confidence-Gated Co-Decoding for Secure Code Generation",
+ "authors": "Minghao Hu, Lannan Luo, Allen Roush, Phillip Howard",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28529v1",
+ "abstract": "Large language models are widely used for code generation, but they can also produce insecure programs due to patterns learned from their pretraining data. Decoding-time steering has become an important solution to this problem: a small expert model is combined with the target model at each step to generate more secure code, which is referred to as co-decoding. However, the acceptance rule for existing co-decoding approaches does not consider the expert model's confidence. When the security expert is unconfident due to unseen patterns or out-of-distribution (OOD) contexts, its guidance can therefore be misleading. To address the challenge, we propose CoGate, a confidence-gated co-decoding approach that controls the expert's influence on the co-decoding process based on its confidence. We implement our approach and evaluate it across multiple LLM backends (CodeGen, DeepSeek-Coder, Qwen-Coder, StarCoder) on several code generation benchmarks (HumanEval, security suite, and CWEval). Our approach outperforms existing co-decoding methods (CoSec+) across multiple benchmarks, achieving up to a 12.6% gain of Func-Sec@10 on CWEval.",
+ "summary": "**CoGate: 置信度门控的协同解码安全代码生成**\n\n1. **核心创新点**\n   在协同解码（co-decoding）中引入\"置信度门控\"机制，根据安全专家模型自身的置信度动态调节其对生成过程的影响，避免专家在不确定时给出误导性引导。\n\n2. **主要方法**\n   沿用\"小型安全专家模型 + 目标大模型逐步融合\"的解码时引导范式，但改造了 token 接受规则：当专家模型因遇到未见过的模式或分布外（OOD）上下文而置信度偏低时，削弱其干预权重。实验覆盖 CodeGen、DeepSeek-Coder、Qwen-Coder、StarCoder 四种主干模型，在 HumanEval、security suite、CWEval 三类基准上评测。\n\n3. **结论/性能**\n   在多个基准上优于现有协同解码方法 CoSec+，其中 CWEval 上的 Func-Sec@10 最高提升 12.6%，说明在兼顾功能正确性的同时提升了代码安全性。\n\n**一句话点评**：本质是给现有 co-decoding 加了一个\"专家什么时候该闭嘴\"的判据，属于低成本、可插拔的改进，无需重训主干模型。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-02 13:00:27"
+}

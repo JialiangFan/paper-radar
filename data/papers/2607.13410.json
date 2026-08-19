@@ -1,0 +1,13 @@
+{
+ "id": "2607.13410",
+ "title": "Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation",
+ "authors": "Zhidong Wang, Jingsong Liang, Zirui Li, Zhan Chen, Han Yu, Chen Lv",
+ "date": "2026-07-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.13410v1",
+ "abstract": "World model (WM)-based reinforcement learning enables sample-efficient end-to-end autonomous driving learning by imagining long-horizon trajectories in latent space. However, most driving WMs operate on bird's-eye-view (BEV) representations that are inherently egocentric: the transition between consecutive frames entangles the ego vehicle's own motion with scene dynamics. As a result, the WM devotes significant capacity to recovering ego-motion from warped observations, at the cost of scene modeling fidelity and imagination accuracy. This work proposes DynaDreamer, a dynamics-augmented Dreamer-style reinforcement learning method to address this problem by augmenting the WM with an explicit ego-dynamics prior. A physics-informed ego-dynamics encoder-decoder extracts the ego-state history into a compact and identifiable context, which modulates a causal Transformer WM to condition both its prior and posterior latents. During imagination, the ego-dynamics predictor propagates this context forward to keep the ego-dynamics prior synchronized with the rollout. An information-theoretic analysis shows that conditioning on this context reduces both the predictive entropy of the observation transition and the prior--posterior Kullback--Leibler divergence, confining the WM's modeling burden to the scene dynamics beyond ego-motion. An additional benefit is zero-shot cross-chassis adaptation: the ego-dynamics context depends on identifiable chassis parameters, so that a vehicle with previously unseen dynamic characteristics can adapt the WM to the new chassis without retraining. Experiments demonstrate that DynaDreamer improves task success rates over the strongest baseline by 28% and 61% in urban and highway driving scenarios, respectively, with the advantage rising to 73% when extrapolating to unseen chassis.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-16 13:03:35"
+}

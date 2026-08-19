@@ -1,0 +1,33 @@
+{
+ "id": "2303.00855",
+ "title": "Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents",
+ "authors": "Wenlong Huang, Fei Xia, Dhruv Shah, Danny Driess, Andy Zeng, Yao Lu, Pete Florence, Igor Mordatch, Sergey Levine, Karol Hausman, Brian Ichter",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2303.00855",
+ "abstract": "",
+ "summary": "Grounded Decoding constrains LLM-generated action sequences using grounded environment models during decoding.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "embodied-agents",
+  "grounded-decoding",
+  "language-grounding",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2023_Huang_GroundedDecoding.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2023_Huang_GroundedDecoding.pdf",
+ "code": "",
+ "project": "https://grounded-decoding.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

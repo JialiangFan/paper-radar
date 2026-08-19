@@ -1,0 +1,13 @@
+{
+ "id": "2602.18252",
+ "title": "On the Adversarial Robustness of Discrete Image Tokenizers",
+ "authors": "Rishika Bhagwatkar, Irina Rish, Nicolas Flammarion, Francesco Croce",
+ "date": "2026-02-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.18252v1",
+ "abstract": "Discrete image tokenizers encode visual inputs as sequences of tokens from a finite vocabulary and are gaining popularity in multimodal systems, including encoder-only, encoder-decoder, and decoder-only models. However, unlike CLIP encoders, their vulnerability to adversarial attacks has not been explored. Ours being the first work studying this topic, we first formulate attacks that aim to perturb the features extracted by discrete tokenizers, and thus change the extracted tokens. These attacks are computationally efficient, application-agnostic, and effective across classification, multimodal retrieval, and captioning tasks. Second, to defend against this vulnerability, inspired by recent work on robust CLIP encoders, we fine-tune popular tokenizers with unsupervised adversarial training, keeping all other components frozen. While unsupervised and task-agnostic, our approach significantly improves robustness to both unsupervised and end-to-end supervised attacks and generalizes well to unseen tasks and data. Unlike supervised adversarial training, our approach can leverage unlabeled images, making it more versatile. Overall, our work highlights the critical role of tokenizer robustness in downstream tasks and presents an important step in the development of safe multimodal foundation models.",
+ "summary": "1. 核心创新点：首次系统研究离散图像标记器的对抗鲁棒性，提出针对标记器提取特征并改变输出 token 的高效攻击，同时给出无监督对抗训练以鲁棒化标记器的防御方法（保持其他组件冻结）。\n\n2. 主要方法：\n- 攻击：设计计算高效、与具体任务无关的扰动，目标是扰动离散标记器提取的特征，从而改变输出的 token，适用于分类、跨模态检索与 captioning 等任务。\n- 防御：对标记器进行无监督对抗训练，冻结其他模块，仅对标记器进行训练，利用未标注图像提升对未监督攻击和端到端攻击的鲁棒性，并具备对未见任务和数据的良好泛化。\n\n3. 结论/性能：\n- 实验表明攻击在多任务上均有效；经无监督对抗训练后，标记器的鲁棒性显著提升，能抵御未监督和端到端攻击，并对未见任务和数据具有较好泛化能力；相比监督对抗训练，该方法还能利用未标注图像，更具通用性，凸显标记器鲁棒性在下游任务中的关键作用。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-23 14:01:11"
+}

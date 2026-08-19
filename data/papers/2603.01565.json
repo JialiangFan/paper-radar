@@ -1,0 +1,13 @@
+{
+ "id": "2603.01565",
+ "title": "Investigating Group Relative Policy Optimization for Diffusion Transformer based Text-to-Audio Generation",
+ "authors": "Yi Gu, Yanqing Liu, Chen Yang, Sheng Zhao",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01565v1",
+ "abstract": "Text-to-audio (T2A) generation has advanced considerably in recent years, yet existing methods continue to face challenges in accurately rendering complex text prompts, particularly those involving intricate audio effects, and achieving precise text-audio alignment. While prior approaches have explored data augmentation, explicit timing conditioning, and reinforcement learning, overall synthesis quality remains constrained. In this work, we experiment with reinforcement learning to further enhance T2A generation quality, building on diffusion transformer (DiT)-based architectures. Our method first employs a large language model (LLM) to generate high-fidelity, richly detailed audio captions, substantially improving text-audio semantic alignment, especially for ambiguous or underspecified prompts. We then apply Group Relative Policy Optimization (GRPO), a recently introduced reinforcement learning algorithm, to fine-tune the T2A model. Through systematic experimentation with diverse reward functions (including CLAP, KL, FAD, and their combinations), we identify the key drivers of effective RL in audio synthesis and analyze how reward design impacts final audio quality. Experimental results demonstrate that GRPO-based fine-tuning yield substantial gains in synthesis fidelity and prompt adherence.",
+ "summary": "1. 核心创新点：在基于 Diffusion Transformer 的文本到音频生成中，先用大语言模型生成高保真的音频描述以强化文本–音频对齐，再通过组相对策略优化（GRPO）进行强化学习微调，以显著提升合成质量和提示遵循性。\n\n2. 主要方法：- 构建基于 Diffusion Transformer 的文本到音频生成框架；- 使用大语言模型生成丰富的音频描述/字幕以增强文本–音频语义对齐；- 采用 GRPO 对模型进行强化学习微调；- 通过对比多种奖励函数（CLAP、KL、FAD及其组合）研究奖励设计对音频质量的影响。\n\n3. 结论/性能：- GRPO 微调在合成保真度和对文本提示的遵循方面取得显著提升；- 通过系统比较不同奖励函数，揭示了影响音频质量与对齐效果的关键因素；- 实验结果显示相较基线，性能有明显提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-03 14:03:45"
+}

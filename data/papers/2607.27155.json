@@ -1,0 +1,13 @@
+{
+ "id": "2607.27155",
+ "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+ "authors": "Jingbo Zhou, Yusai Zhao, Qi Bao, Jingjia Cao, Zhenghai Chen, Chang Gao, Kaiqi Guo, Muxin Guo, Mingxuan Li, Xinjiang Lu, Yanru Ma, Yixiong Xiao, Zenghui Zhang, Le Zhang, Hua Wu",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27155v1",
+ "abstract": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks. However, existing benchmarks provide limited support for evaluating whether agents can carry out office-suite workflows at a reasonable cost. We introduce OmegaUse-OfficeVal, a benchmark for evaluating LLM agents on long-horizon office-suite tasks with task-level economic grounding. The benchmark comprises 100 tasks derived from office-suite requests proposed by practitioners and adapted through a privacy-preserving process. On average, these tasks require 2.32 hours of human labor to complete. An important feature of the benchmark is that each task is paired with two economic signals: human labor time and task price proxy. These signals enable direct comparisons between human costs and LLM inference costs, as well as value-weighted evaluation. To support stable evaluation, we develop code-based verifiers from fine-grained rubrics. We evaluate several frontier LLMs together with a human baseline. Although all evaluated LLMs are substantially cheaper and faster than human workers, they have not yet approached human-level deliverable quality. The code and dataset are fully open-sourced, and more information is available on our project website: https://omegause-officeval.github.io.",
+ "summary": "## OmegaUse-OfficeVal 论文摘要总结\n\n**1. 核心创新点**\n首个为长周期办公套件任务引入「经济基准」的 LLM 智能体评测集——让每个任务都带上人力工时与价格代理两个经济信号，从而可以直接对比人类成本与模型推理成本。\n\n**2. 主要方法**\n- 构建 100 个任务，来源于真实从业者提出的办公套件需求，并经过隐私保护流程改写；平均每个任务需人类约 **2.32 小时** 完成。\n- 每个任务配对两类经济信号：**人力工时（human labor time）** 与 **任务价格代理（task price proxy）**，支持按价值加权的评估。\n- 为保证评测稳定性，基于细粒度评分细则（rubrics）开发了**代码化验证器（code-based verifiers）**，而非依赖主观打分。\n- 评测对象为若干前沿 LLM，并设置了**人类基线**做对照。\n\n**3. 结论 / 性能**\n所有被测 LLM 在成本和速度上都显著优于人类工作者（更便宜、更快），但**交付物质量尚未达到人类水平**。即经济性已经领先、质量仍有明显差距。代码与数据集已完全开源（项目主页：omegause-officeval.github.io）。\n\n---\n\n一点补充观察：摘要只说明了「更便宜更快但质量未达标」，并未给出具体分数或性价比拐点，也未说明价格代理的定价依据——这两点是判断该基准说服力的关键，值得在正文中重点核实。\n\n如果你需要更完整的文献综述式笔记（含研究背景、问题定义、贡献分解、方法论细节，并输出中英双语到 Obsidian），我可以调用 `paper-review` 技能来处理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-30 13:01:25"
+}

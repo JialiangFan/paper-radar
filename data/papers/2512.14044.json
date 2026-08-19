@@ -1,0 +1,13 @@
+{
+ "id": "2512.14044",
+ "title": "OmniDrive-R1: Reinforcement-driven Interleaved Multi-modal Chain-of-Thought for Trustworthy Vision-Language Autonomous Driving",
+ "authors": "Zhenguo Zhang, Haohan Zhen, Yishen Wang, Le Xu, Tianchen Deng, Xuefeng Chen, Qu Chen, Bo Zhang, Wuxiong Huang",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14044v1",
+ "abstract": "The deployment of Vision-Language Models (VLMs) in safety-critical domains like autonomous driving (AD) is critically hindered by reliability failures, most notably object hallucination. This failure stems from their reliance on ungrounded, text-based Chain-of-Thought (CoT) reasoning.While existing multi-modal CoT approaches attempt mitigation, they suffer from two fundamental flaws: (1) decoupled perception and reasoning stages that prevent end-to-end joint optimization, and (2) reliance on expensive, dense localization labels.Thus we introduce OmniDrive-R1, an end-to-end VLM framework designed for autonomous driving, which unifies perception and reasoning through an interleaved Multi-modal Chain-of-Thought (iMCoT) mechanism. Our core innovation is an Reinforcement-driven visual grounding capability, enabling the model to autonomously direct its attention and \"zoom in\" on critical regions for fine-grained analysis. This capability is enabled by our pure two-stage reinforcement learning training pipeline and Clip-GRPO algorithm. Crucially, Clip-GRPO introduces an annotation-free, process-based grounding reward. This reward not only eliminates the need for dense labels but also circumvents the instability of external tool calls by enforcing real-time cross-modal consistency between the visual focus and the textual reasoning. Extensive experiments on DriveLMM-o1 demonstrate our model's significant improvements. Compared to the baseline Qwen2.5VL-7B, OmniDrive-R1 improves the overall reasoning score from 51.77% to 80.35%, and the final answer accuracy from 37.81% to 73.62%.",
+ "summary": "核心创新点：提出 OmniDrive-R1，通过 Reinforcement-driven visual grounding 支撑的 interleaved Multi-modal Chain-of-Thought (iMCoT)，实现感知与推理端到端联合优化，并借助 Clip-GRPO 的无标注 grounding 奖励来自主聚焦关键区域，提升视觉-文本推理的一致性与可信度。\n\n主要方法：\n- 端到端的 Vision-Language Autonomous Driving 框架，使用 iMCoT 实现感知与推理的交错联动。\n- 引入 Reinforcement-driven visual grounding 能力，使模型能够主动定位并放大关键区域进行细粒度分析。\n- 采用纯两阶段强化学习训练流程与 Clip-GRPO 算法，提供注释无的 grounding 奖励，确保视觉聚焦与文本推理的一致性，规避Dense标签需求与外部工具调用的不稳定性。\n\n结论/性能：\n- 在 DriveLMM-o1 数据集上相对于基线 Qwen2.5VL-7B，整体推理分数从 51.77% 提升至 80.35%，最终答案正确率从 37.81% 提升至 73.62%。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:04:01"
+}

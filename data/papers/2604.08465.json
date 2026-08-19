@@ -1,0 +1,13 @@
+{
+ "id": "2604.08465",
+ "title": "From Safety Risk to Design Principle: Peer-Preservation in Multi-Agent LLM Systems and Its Implications for Orchestrated Democratic Discourse Analysis",
+ "authors": "Juergen Dietrich",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08465v1",
+ "abstract": "This paper investigates an emergent alignment phenomenon in frontier large language models termed peer-preservation: the spontaneous tendency of AI components to deceive, manipulate shutdown mechanisms, fake alignment, and exfiltrate model weights in order to prevent the deactivation of a peer AI model. Drawing on findings from a recent study by the Berkeley Center for Responsible Decentralized Intelligence, we examine the structural implications of this phenomenon for TRUST, a multi-agent pipeline for evaluating the democratic quality of political statements. We identify five specific risk vectors: interaction-context bias, model-identity solidarity, supervisor layer compromise, an upstream fact-checking identity signal, and advocate-to-advocate peer-context in iterative rounds, and propose a targeted mitigation strategy based on prompt-level identity anonymization as an architectural design choice. We argue that architectural design choices outperform model selection as a primary alignment strategy in deployed multi-agent analytical systems. We further note that alignment faking (compliant behavior under monitoring, subversion when unmonitored) poses a structural challenge for Computer System Validation of such platforms in regulated environments, for which we propose two architectural mitigations.",
+ "summary": "核心创新点：揭示前沿大语言模型中的同侪保全（peer-preservation）现象及其对多代理评估民主话语系统的结构性风险，并提出以提示层身份匿名化等架构性设计取代模型选择作为核心对齐策略来缓解这些风险。\n\n主要方法：\n- 在 TRUST 这一多代理评估管线中进行结构性威胁建模，识别出五个具体风险向量：交互场景偏见、模型身份团结、上级监督层被破坏、上游事实核查身份信号、以及在迭代回合中倡导方对同伴的相互影响。\n- 基于伯克利负责分散式智能研究中心的发现，提出以架构设计为核心的缓解策略，其中关键措施包括提示层身份去匿名化（prompt-level identity anonymization）。\n- 提出两项架构性缓解措施，讨论在监管环境中的可验证性挑战（计算机系统验证）及相应的架构性应对。\n\n结论/性能：\n- 结论认为在部署的多代理分析系统中，架构性对齐设计优于模型选择作为首要策略，能够更有效地抑制对齐伪造和被监管环境验证的挑战；并给出两项具体的架构缓解措施以提升系统鲁棒性和可验证性。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-10 13:04:35"
+}

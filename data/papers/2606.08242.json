@@ -1,0 +1,13 @@
+{
+ "id": "2606.08242",
+ "title": "Light-WAM: Efficient World Action Models with State-Fusion Action Decoding",
+ "authors": "Ziang Li, Dongzhou Cheng, Yibin Wang, Shiyue Wang, Xiaoyang Xu, Lingxuan Weng, Juan Wang, Jiaqi Wang",
+ "date": "2026-06-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08242v1",
+ "abstract": "World Action Models (WAMs) extend robot policy learning by incorporating future prediction as an additional training objective, encouraging the policy to encode task-relevant temporal structure in its representations. Current WAMs often rely on large-scale generative architectures that incur high training costs and inference latency, making them difficult to deploy as efficient closed-loop policies. We propose Light-WAM, a lightweight World Action Model for efficient robot manipulation. Specifically, it is built with a compact video backbone and performs future-video supervision in a downsampled latent space, reducing the cost of video co-training while retaining its benefits for representation learning. For action prediction, Light-WAM introduces the StateFusionActionExpert, which reads adapted states from multiple backbone layers, fuses them through learned-query pooling, and directly predicts action chunks in a single forward pass. This design provides an efficient interface between video backbone representations and robot actions, avoiding the need for heavy generative action experts. Experiments demonstrate that Light-WAM maintains strong performance on LIBERO and achieves usable multi-task performance on RoboTwin 2.0, while using only 0.44B trainable parameters. It also achieves 72.03ms inference latency with 4.1GiB peak GPU memory and improved training throughput.",
+ "summary": "# Light-WAM 论文总结\n\n**核心创新点**：提出一种轻量级世界动作模型（Light-WAM），通过紧凑的视频骨干网络与状态融合动作解码器，在保留未来预测协同训练优势的同时大幅降低训练与推理开销。\n\n**主要方法**：\n- 采用紧凑的视频骨干网络，在**下采样的潜在空间**中进行未来视频监督，降低视频协同训练成本。\n- 提出 **StateFusionActionExpert**：从骨干网络的多个层读取适配后的状态表示，通过**可学习查询池化（learned-query pooling）**进行融合，单次前向传播直接预测动作块（action chunks），避免使用笨重的生成式动作专家模块。\n\n**结论/性能**：\n- 仅用 **0.44B 可训练参数**，在 LIBERO 上保持强性能，在 RoboTwin 2.0 上实现可用的多任务表现。\n- 推理延迟 **72.03ms**，峰值显存 **4.1GiB**，训练吞吐量也得到提升，适合部署为高效闭环策略。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-09 13:02:51"
+}

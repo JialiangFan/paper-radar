@@ -1,0 +1,30 @@
+{
+ "id": "2510.12985",
+ "title": "SENTINEL: A Multi-Level Formal Framework for Safety Evaluation of LLM-based Embodied Agents",
+ "authors": "SENTINEL authors",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2510.12985",
+ "abstract": "",
+ "summary": "Adds a multi-level formal evaluation perspective for embodied agents.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental Agent Safety Benchmarks",
+ "tags": [
+  "agent-safety",
+  "formal-verification",
+  "safe-vla",
+  "supplemental-recent",
+  "temporal-logic"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Agent_Safety_Benchmarks/2025_SENTINEL_Formal.md",
+ "pdf_path": "PDFs/Supplemental_Agent_Safety_Benchmarks/2025_SENTINEL_Formal.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

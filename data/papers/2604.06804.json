@@ -1,0 +1,13 @@
+{
+ "id": "2604.06804",
+ "title": "LASER: A Data-Centric Method for Low-Cost and Efficient SQL Rewriting based on SQL-GRPO",
+ "authors": "Jiahui Li, Tongwang Wu, Yuren Mao, Rong Kang, Tieying Zhang, Yunjun Gao",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06804v1",
+ "abstract": "Query rewriting, the process of transforming queries into semantically equivalent yet more efficient variants, is crucial for database optimization. Existing solutions predominantly rely on either rule-based heuristics or Large Language Models (LLMs). However, traditional rule-based methods lack adaptability, while LLM-based approaches incur prohibitive inference costs and privacy risks. In contrast, Small Language Models (SLMs) present a compelling middle ground, potentially offering both flexibility and efficiency. However, the development of such compact models is severely bottlenecked by the scarcity of high-quality, domain-specific training data. To bridge this gap, we introduce LASER, a data-centric framework designed to empower small models for robust SQL optimization. First, to address the scarcity of existing benchmarks and the limited optimization headroom of generic synthetic queries, we construct SQL-MCTS, a large-scale corpus of complex slow queries. We employ an MCTS-based hybrid expansion strategy that combines rule-guided anti-patterns with LLM mutations to evolve structurally expressive seeds into execution-verified slow variants. Second, to enable the model to autonomously discover latency-aware rewriting patterns, we propose SQL-GRPO, a specialized alignment strategy adapted from Group Relative Policy Optimization. By integrating Anchored Group Advantage to refine advantage estimation and Complexity-Adaptive Dynamic Rollout to efficiently allocate exploration budgets, this approach effectively empowers compact models to master execution-based optimization logic. Implemented on Qwen3 models, LASER significantly outperforms rule-based systems and LLMs in execution efficiency, while exhibiting robust zero-shot transferability with minimal overhead.",
+ "summary": "1) 核心创新点（1句）\n数据驱动、面向小模型的 SQL 重写框架，通过 SQL-MCTS 生成大规模训练数据并采用 SQL-GRPO 对齐学习，使小模型也能高效实现 SQL 执行优化。\n\n2) 主要方法\n- SQL-MCTS：构建大规模“复杂慢查询”数据集，采用基于 MCTS 的混合扩展策略，结合规则反模式与 LLM 突变，将结构表达丰富的种子演化为经执行验证的慢变体。\n- SQL-GRPO：提出基于 Group Relative Policy Optimization 的对齐策略，包含 Anchored Group Advantage（锚定的分组优势估计）与 Complexity-Adaptive Dynamic Rollout（按复杂度自适应分配探索预算），使小模型自主发现延迟感知的重写模式。\n- 实现与评估：在 Qwen3 系列模型上实现，显著优于规则基系统和 LLM，具备鲁棒的零-shot 泛化能力，开销低。\n\n3) 结论/性能\n- LASER 在执行效率方面显著优于规则基系统和大型语言模型，且对新场景具有良好的零-shot 转移性，且开销极低。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-09 13:03:14"
+}

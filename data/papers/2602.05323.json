@@ -1,0 +1,13 @@
+{
+ "id": "2602.05323",
+ "title": "GAS: Enhancing Reward-Cost Balance of Generative Model-assisted Offline Safe RL",
+ "authors": "Zifan Liu, Xinran Li, Shibo Chen, Jun Zhang",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05323v1",
+ "abstract": "Offline Safe Reinforcement Learning (OSRL) aims to learn a policy to achieve high performance in sequential decision-making while satisfying constraints, using only pre-collected datasets. Recent works, inspired by the strong capabilities of Generative Models (GMs), reformulate decision-making in OSRL as a conditional generative process, where GMs generate desirable actions conditioned on predefined reward and cost values. However, GM-assisted methods face two major challenges in OSRL: (1) lacking the ability to \"stitch\" optimal transitions from suboptimal trajectories within the dataset, and (2) struggling to balance reward targets with cost targets, particularly when they are conflict. To address these issues, we propose Goal-Assisted Stitching (GAS), a novel algorithm designed to enhance stitching capabilities while effectively balancing reward maximization and constraint satisfaction. To enhance the stitching ability, GAS first augments and relabels the dataset at the transition level, enabling the construction of high-quality trajectories from suboptimal ones. GAS also introduces novel goal functions, which estimate the optimal achievable reward and cost goals from the dataset. These goal functions, trained using expectile regression on the relabeled and augmented dataset, allow GAS to accommodate a broader range of reward-cost return pairs and achieve a better tradeoff between reward maximization and constraint satisfaction compared to human-specified values. The estimated goals then guide policy training, ensuring robust performance under constrained settings. Furthermore, to improve training stability and efficiency, we reshape the dataset to achieve a more uniform reward-cost return distribution. Empirical results validate the effectiveness of GAS, demonstrating superior performance in balancing reward maximization and constraint satisfaction compared to existing methods.",
+ "summary": "- 核心创新点：提出 GAS（Goal-Assisted Stitching）算法，通过在转移级对数据进行增强与重新标注实现对子最优轨迹的高质量拼接，并利用 expectile 回归在数据中学习可达的最优奖励与成本目标，从而在离线安全强化学习中更好地平衡奖励最大化与约束满足。\n\n- 主要方法：\n  - 以生成模型为基础的离线安全强化学习，将决策过程建模为条件生成任务，按给定的奖励/成本目标生成行动。\n  - 通过转移级的数据增强与重新标注，提升拼接能力，能够从子最优轨迹中构造高质量的轨迹。\n  - 引入基于 expectile 回归的目标函数，在重标注与增强数据上学习可达到的最优奖励/成本目标，覆盖更广的目标对，改善权衡效果。\n  - 重新整形数据集，使奖励-成本返回分布更均匀，从而提升训练稳定性与效率，并用估计的目标引导策略学习。\n\n- 结论/性能：实验证明 GAS 在权衡奖励最大化与约束满足方面优于现有方法，且训练更稳定、效率更高，能够在离线安全强化学习任务中获得更好的综合性能。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:00:54"
+}

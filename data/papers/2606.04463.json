@@ -1,0 +1,13 @@
+{
+ "id": "2606.04463",
+ "title": "OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics",
+ "authors": "Zhuoyuan Wu, Jun Gao",
+ "date": "2026-06-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.04463v2",
+ "abstract": "We present OSCAR, a precise action-conditioned video world model that generalizes across different robot embodiments and enables robot policy evaluation. Existing video world models face three main challenges for real-world robot evaluation: limited scenario diversity in current robot training datasets, imprecise action following, and poor generalization across embodiments for broad adoption. We tackle these challenges from two perspectives. At its core is a large-scale standardized data pipeline that curates, filters, and deduplicates broad robotics and egocentric human datasets, yielding a clean joint-training dataset that spans diverse tasks, scenarios, actions, and robot embodiments. To condition the video model, we adopt 2D kinematic skeleton rendering as a unified conditioning representation that generalizes across different robot arms or even human hands. We finetune the Cosmos-Predict2.5-2B model on a single GH200 GPU. Our model achieves significant improvement on action following, appearance quality, and motion consistency, compared to existing baselines, which either have a much larger model size or require more GPUs. We further deploy OSCAR to evaluate robot policies from RoboArena. Extensive experiments demonstrate the significant correlation between our virtual policy evaluation in OSCAR and real-world evaluation, paving the way for the future where robot policies can be purely evaluated in virtual generated worlds.",
+ "summary": "# OSCAR 论文总结\n\n**1. 核心创新点**\n提出一个跨机器人本体（embodiment）通用的、动作可控的视频世界模型，可在虚拟生成环境中评估机器人策略，且评估结果与真实世界高度相关。\n\n**2. 主要方法**\n- **数据层面**：构建大规模标准化数据管线，对机器人和第一人称人类数据进行整理、过滤、去重，形成涵盖多任务、多场景、多本体的联合训练数据集。\n- **动作条件化**：采用 **2D 运动学骨架渲染**作为统一条件表示，可兼容不同机械臂甚至人手。\n- **模型训练**：在单张 GH200 GPU 上微调 **Cosmos-Predict2.5-2B** 模型。\n\n**3. 结论/性能**\n- 在动作跟随精度、画面质量和运动一致性上显著超过现有基线（这些基线往往模型更大或需更多 GPU）。\n- 用于评估 RoboArena 中的机器人策略，虚拟评估结果与真实世界评估结果高度相关，为「纯虚拟世界中评估机器人策略」铺平道路。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-07 13:02:50"
+}

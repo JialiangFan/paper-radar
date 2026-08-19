@@ -1,0 +1,30 @@
+{
+ "id": "2511.11298",
+ "title": "Experiences from Benchmarking Vision-Language-Action Models for Robotic Manipulation",
+ "authors": "Yihao Zhang, Yuankai Qi, Xi Zheng",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2511.11298",
+ "abstract": "",
+ "summary": "Directly supports the evaluation slide for real-world VLA manipulation.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "benchmark",
+  "real-robot",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-evaluation"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2025_Benchmarking_VLAs.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2025_Benchmarking_VLAs.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.10848",
+ "title": "$V_{0.5}$: Generalist Value Model as a Prior for Sparse RL Rollouts",
+ "authors": "Yi-Kai Zhang, Yueqing Sun, Hongyan Hao, Qi Gu, Xunliang Cai, De-Chuan Zhan, Han-Jia Ye",
+ "date": "2026-03-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10848v1",
+ "abstract": "In Reinforcement Learning with Verifiable Rewards (RLVR), constructing a robust advantage baseline is critical for policy gradients, effectively guiding the policy model to reinforce desired behaviors. Recent research has introduced Generalist Value Models (such as $V_0$), which achieve pre-trained value estimation by explicitly encoding model capabilities in-context, eliminating the need to synchronously update the value model alongside the policy model. In this paper, we propose $V_{0.5}$, which adaptively fuses the baseline predicted by such value model (acting as a prior) with the empirical mean derived from sparse rollouts. This constructs a robust baseline that balances computational efficiency with extremely low variance. Specifically, we introduce a real-time statistical testing and dynamic budget allocation. This balances the high variance caused by sparse sampling against the systematic bias (or hallucinations) inherent in the value model's prior. By constructing a hypothesis test to evaluate the prior's reliability in real-time, the system dynamically allocates additional rollout budget on demand. This mechanism minimizes the baseline estimator's Mean Squared Error (MSE), guaranteeing stable policy gradients, even under extreme sparsity with a group size of 4. Extensive evaluations across six mathematical reasoning benchmarks demonstrate that $V_{0.5}$ significantly outperforms GRPO and DAPO, achieving faster convergence and over some 10% performance improvement.",
+ "summary": "1) 核心创新点：通过将通用价值模型V0.5作为先验，与极稀疏回合的经验均值自适应融合，并引入实时假设检验与动态预算分配，以最小化基线估计的MSE，确保在极度稀疏下也能稳健地获得稳定的策略梯度。\n\n2) 主要方法：在RLVR框架下建立以V0.5为先验的基线，结合稀疏回合数据的经验均值，设计实时统计假设检验评估先验可靠性，并据此动态分配额外回合预算以控制方差与偏差；组规模为4的极稀疏场景下实现，且与GRPO、DAPO等方法对比。\n\n3) 结论/性能：在六个数学推理基准上显著优于GRPO与DAPO，实现更快的收敛和约10%及以上的性能提升，且在极端稀疏条件下仍保持稳定的策略梯度。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-12 13:03:43"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "2410.22225",
+ "title": "CaStL: Constraints as Specifications through LLM Translation for Long-Horizon Task and Motion Planning",
+ "authors": "Weihang Guo, Zachary Kingston, Lydia E. Kavraki",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2410.22225",
+ "abstract": "",
+ "summary": "CaStL translates natural-language constraints into formal planning specifications.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "ICRA 2025",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "formal-specification",
+  "language-constraints",
+  "planning",
+  "robotics",
+  "runtime-assurance",
+  "safe-vla",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2025_Guo_CaStL.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2025_Guo_CaStL.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

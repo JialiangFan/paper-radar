@@ -1,0 +1,13 @@
+{
+ "id": "2605.29625",
+ "title": "Improving Collaborative Storytelling with a Multi-Agent Framework Based on Large Language Models",
+ "authors": "Arturo Valdivia, Paolo Burelli",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29625v1",
+ "abstract": "The topic of Co-creation, i.e., AI agents interacting with humans to generate outputs (e.g., art), has gained significant attention recently. However, most studies focus on adult-human interactions in a digital setting. This paper explores a novel ludic co-creation scenario involving children and Large Language Models (LLMs) interacting through a physical board game to create written stories. Our goal is to develop a multi-agent framework capable of producing high-quality narratives suitable for young players. At the core of our approach is an iterative Writer-Editor process in which one LLM generates stories while another evaluates them and provides feedback for refinement. Through a simulation study involving multiple LLMs, we show that this iterative interaction consistently improves the perceived quality of generated stories across successive loops. The results indicate that a small number of refinement steps may be sufficient to achieve high-quality outputs in interactive storytelling systems.",
+ "summary": "## 论文总结\n\n1. **核心创新点**：提出了一种面向儿童、基于实体桌游交互的多智能体协作叙事框架，通过 LLM 之间的\"作者—编辑\"迭代机制提升故事生成质量。\n\n2. **主要方法**：构建多智能体系统，由一个 LLM 担任\"作者\"生成故事，另一个 LLM 担任\"编辑\"进行评估与反馈，二者循环迭代以不断优化叙事内容，并通过多种 LLM 的模拟实验进行验证。\n\n3. **结论/性能**：实验表明，迭代式 Writer-Editor 交互能持续提升生成故事的感知质量，且少量几轮的精炼步骤即足以获得高质量输出，说明该方法在交互式叙事系统中高效可行。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:02:14"
+}

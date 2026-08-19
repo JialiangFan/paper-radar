@@ -1,0 +1,13 @@
+{
+ "id": "2601.22037",
+ "title": "Optimizing Agentic Workflows using Meta-tools",
+ "authors": "Sami Abuzakuk, Anne-Marie Kermarrec, Rishi Sharma, Rasmus Moorits Veski, Martijn de Vos",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.22037v1",
+ "abstract": "Agentic AI enables LLM to dynamically reason, plan, and interact with tools to solve complex tasks. However, agentic workflows often require many iterative reasoning steps and tool invocations, leading to significant operational expense, end-to-end latency and failures due to hallucinations. This work introduces Agent Workflow Optimization (AWO), a framework that identifies and optimizes redundant tool execution patterns to improve the efficiency and robustness of agentic workflows. AWO analyzes existing workflow traces to discover recurring sequences of tool calls and transforms them into meta-tools, which are deterministic, composite tools that bundle multiple agent actions into a single invocation. Meta-tools bypass unnecessary intermediate LLM reasoning steps and reduce operational cost while also shortening execution paths, leading to fewer failures. Experiments on two agentic AI benchmarks show that AWO reduces the number of LLM calls up to 11.9% while also increasing the task success rate by up to 4.2 percent points.",
+ "summary": "- **核心创新点**：提出 Agent Workflow Optimization（AWO）框架，通过把重复的工具调用序列转化为确定性、复合的“元工具”（meta-tools），实现单次调用封装多步代理动作，从而提升效率与鲁棒性。\n\n- **主要方法**：对现有工作流痕迹进行分析，发现并提取重复的工具调用序列；将这些序列转化为元工具（确定性、复合工具），将多步代理行为打包为一次调用；通过减少中间的LLM推理步骤来降低成本、缩短执行路径并减少失败。\n\n- **结论/性能**：在两个代理型AI基准上评估，AWO 将LLM调用次数最多减少11.9%，任务成功率提高最多4.2个百分点。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:02:20"
+}

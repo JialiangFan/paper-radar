@@ -1,0 +1,13 @@
+{
+ "id": "2601.21969",
+ "title": "Token-Guard: Towards Token-Level Hallucination Control via Self-Checking Decoding",
+ "authors": "Yifan Zhu, Huiqiang Rong, Haoran Luo",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21969v1",
+ "abstract": "Large Language Models (LLMs) often hallucinate, generating content inconsistent with the input. Retrieval-Augmented Generation (RAG) and Reinforcement Learning with Human Feedback (RLHF) can mitigate hallucinations but require resource-intensive retrieval or large-scale fine-tuning. Decoding-based methods are lighter yet lack explicit hallucination control. To address this, we present Token-Guard, a token-level hallucination control method based on self-checking decoding. Token-Guard performs internal verification at each reasoning step to detect hallucinated tokens before they propagate. Candidate fragments are further evaluated in a latent space with explicit hallucination risk scoring, while iterative pruning and regeneration dynamically correct detected errors. Experiments on HALU datasets show Token-Guard substantially reduces hallucinations and improves generation accuracy, offering a scalable, modular solution for reliable LLM outputs. Our code is publicly available.",
+ "summary": "- 核心创新点：提出一种基于自检解码的令牌级幻觉控制方法 Token-Guard，在每一步推理中进行内部核验以检测并阻断幻觉令牌的传播，同时在潜在空间对候选片段进行显式幻觉风险评分，并通过迭代剪枝与再生成动态纠错，从而抑制大语言模型的幻觉。\n\n- 主要方法：在解码阶段引入自检机制，对每一步的生成令牌进行即时核验；将候选片段在潜在空间进行幻觉风险评分；对高风险片段进行迭代的剪枝与再生成，形成一个模块化、解码驱动的幻觉控制框架。\n\n- 结论/性能：在 HALU 数据集上显著降低幻觉率、提升生成准确性，提供一种轻量、可扩展的解码级解决方案，且代码公开发布。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:03:37"
+}

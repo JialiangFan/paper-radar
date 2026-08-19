@@ -1,0 +1,13 @@
+{
+ "id": "2608.11769",
+ "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
+ "authors": "Chaeyeon Jung, Juyoun Park",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11769v1",
+ "abstract": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
+ "summary": "**核心创新点**：首次将 VLA 策略在人形机器人双臂操作中「由初始位姿决定的早期用手偏好」明确定义为一种**策略诱导的手部先验（policy-induced hand prior）**，并指出聚合任务成功率会掩盖特定位姿下的失败与选错手的问题。\n\n**主要方法**：提出三个量化指标——HandPriorScore、残差用手偏差（residual hand bias）和目标响应性（target responsiveness）；在多个 VLA 策略 × 17 种初始构型上做系统评测，考察腕部相机观测的影响，并通过扩大训练集初始位姿覆盖、对低性能构型做定向数据增强，以及对比不同训练组合（真机/辅助数据比例、仿真占比、可用观测）来做因果与缓解分析。\n\n**结论/性能**：初始位姿与策略之间存在强交互——同一位姿在不同策略上成功率差异显著，同一策略在不同位姿间波动很大；特定的初始手臂构型可以抑制或诱发不对称的用手偏好，方向和强度随策略而变，构成一个可操控的局部「因果把手」。腕部相机观测也会影响用手选择与任务表现。扩大初始位姿覆盖能显著提升鲁棒性，针对低性能构型的定向增强可提高该构型成功率；充分接触目标仿真任务有益，而真机/辅助数据的收益则取决于位姿覆盖、仿真比例和观测可用性。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-16 13:05:32"
+}

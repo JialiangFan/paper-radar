@@ -1,0 +1,13 @@
+{
+ "id": "2512.20760",
+ "title": "Generalization of RLVR Using Causal Reasoning as a Testbed",
+ "authors": "Brian Lu, Hongyu Zhao, Shuo Sun, Hao Peng, Rui Ding, Hongyuan Mei",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20760v1",
+ "abstract": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a promising paradigm for post-training large language models (LLMs) on complex reasoning tasks. Yet, the conditions under which RLVR yields robust generalization remain poorly understood. This paper provides an empirical study of RLVR generalization in the setting of probabilistic inference over causal graphical models. This setting offers two natural axes along which to examine generalization: (i) the level of the probabilistic query -- associational, interventional, or counterfactual -- and (ii) the structural complexity of the query, measured by the size of its relevant subgraph. We construct datasets of causal graphs and queries spanning these difficulty axes and fine-tune Qwen-2.5-Instruct models using RLVR or supervised fine-tuning (SFT). We vary both the model scale (3B-32B) and the query level included in training. We find that RLVR yields stronger within-level and across-level generalization than SFT, but only for specific combinations of model size and training query level. Further analysis shows that RLVR's effectiveness depends on the model's initial reasoning competence. With sufficient initial competence, RLVR improves an LLM's marginalization strategy and reduces errors in intermediate probability calculations, producing substantial accuracy gains, particularly on more complex queries. These findings show that RLVR can improve specific causal reasoning subskills, with its benefits emerging only when the model has sufficient initial competence.",
+ "summary": "- 核心创新点：以因果图模型作为测试床，系统研究 RLVR 在不同查询级别（关联、干预、反事实）和子图规模下的泛化效果，揭示只有在具备足够初始推理能力时，特定模型规模和训练配置下 RLVR 才能显著提升泛化性能。\n\n- 主要方法：\n  - 构建包含因果图和多级查询的数据集，覆盖 associational、interventional、counterfactual 以及不同子图规模。\n  - 使用 Qwen-2.5-Instruct 系列模型，在 RLVR 与 SFT 两种微调方式下进行训练，模型规模覆盖 3B–32B。\n  - 评估同级别与跨级别的泛化能力，分析 RLVR 的边缘化策略与中间概率计算的误差，并考察模型初始能力对效果的影响。\n\n- 结论/性能：\n  - RLVR 相比 SFT 在同级别和跨级别泛化上具有更强的提升，但效果只在特定的模型规模与训练查询级别组合下成立。\n  - 当模型具备足够的初始推理能力时，RLVR 能改进边缘化策略、降低中间概率计算错误，从而在更复杂的查询上获得显著的准确性提升。\n  - 结论显示 RLVR 能提升某些因果推理子技能，但收益依赖于模型的初始能力水平与配置。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:52:10"
+}

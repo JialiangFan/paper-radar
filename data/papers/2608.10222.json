@@ -1,0 +1,13 @@
+{
+ "id": "2608.10222",
+ "title": "A JEPA-Based Field-Layer World Model for Bridging Channel Prediction and Estimation",
+ "authors": "Yuzhi Yang, Brahim Mefgouda, Hang Zou, Lina Bariah, Anis Bara, Yuhuan Lu, Hao Zhang, MérouaneDebbah",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10222v1",
+ "abstract": "Channel state information (CSI) acquisition, reconstruction, and prediction are fundamental yet costly tasks in modern MIMO-OFDM wireless systems. Direct coefficient-level prediction of raw CSI is fragile in realistic propagation environments, since small spatial perturbations, local scattering changes, and phase variations can cause large errors in the complex channel domain. However, the underlying wireless propagation field still contains stable and predictable structures that can be exploited across time, frequency, antenna, and carrier dimensions. Motivated by this observation, we propose a JEPA-based field-layer world model (FWM) that learns a shared latent propagation state from multi-resolution CSI observations across the considered carrier bands and predicts its task-relevant evolution in the latent domain. The proposed FWM maps multiple CSI observation resolutions to a shared latent propagation-field space through scale-specific tokenizer heads. A latent prediction backbone is then trained to infer masked or future field states, while an incremental multi-scale alignment strategy allows new observation scales to be incorporated without retraining the entire model from scratch. For downstream reconstruction, the predicted latent field is used as a structured prior and combined with sparse current pilots. Experiments on single-band and cross-band reconstruction demonstrate improved symbol detection and, more notably, substantial beamforming gains despite modest NMSE improvements, indicating that FWM captures task-relevant spatial propagation structure beyond coefficient-wise CSI fitting.",
+ "summary": "## 论文速览：A JEPA-Based Field-Layer World Model for Bridging Channel Prediction and Estimation\n\n**1. 核心创新点**\n不再直接预测脆弱的原始 CSI 复数系数，而是借鉴 JEPA 自监督思想构建\"场层世界模型\"（FWM），在潜在传播场空间中预测信道演化，从而把信道预测与信道估计/重建统一起来。\n\n**2. 主要方法**\n- **多尺度 tokenizer heads**：将不同分辨率、不同载波频段的 CSI 观测映射到一个共享的潜在传播场空间。\n- **潜在预测主干**：以 JEPA 式训练目标推断被掩码的或未来的场状态（跨时间、频率、天线、载波维度）。\n- **增量多尺度对齐**：新增观测尺度时可增量接入，无需从头重训整个模型。\n- **下游重建**：将预测得到的潜在场作为结构化先验，与当前稀疏导频信息融合完成 CSI 重建。\n\n**3. 结论/性能**\n在单频段与跨频段重建实验中，符号检测性能提升；更值得注意的是，在 NMSE 改善幅度不大的情况下取得了显著的波束成形增益——说明模型学到的是任务相关的空间传播结构，而非逐系数的 CSI 拟合。\n\n> 补充一句观察：NMSE 提升有限却带来大幅波束成形增益，是该文最有说服力的论点，但也意味着若以传统 NMSE 为唯一指标评估，其优势会被低估；建议关注论文中是否给出了这一现象的机理解释（如潜在场更准确地保留了主导径的空间相位结构）。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-12 13:04:17"
+}

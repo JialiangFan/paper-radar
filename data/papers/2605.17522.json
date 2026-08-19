@@ -1,0 +1,13 @@
+{
+ "id": "2605.17522",
+ "title": "RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation",
+ "authors": "Sixu Lin, Junliang Chen, Huaiyuan Xu, Zhuohao Li, Guangming Wang, Yixiong Jing, Sheng Xu, Runyi Zhao, Brian Sheil, Lap-Pui Chau, Guiliang Liu",
+ "date": "2026-05-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.17522v1",
+ "abstract": "Planning and acting in 3D environments is a fundamental capability for robotic manipulation in the real world. Although prior work has explored predictive flow planners to guide 3D manipulation, existing approaches often rely on modular pipelines stacking multiple submodels, resulting in high computational overhead and limited real-time performance. To address these challenges, we introduce RoboFlow4D, a lightweight flow world model that unifies perception and planning by estimating temporal motion in physical 3D space. As an end-to-end framework, RoboFlow4D directly predicts multi-frame 3D flows from visual observations and textual instructions, providing explicit flow-based planning to guide action generation. This design allows seamless integration with general action policies, forming an efficient observation-planning-execution closed loop. Through slow-fast collaboration between flow prediction and action control, RoboFlow4D enables real-time and resource-efficient manipulation. Extensive experiments in both simulation and real-world settings demonstrate that RoboFlow4D consistently improves manipulation success rates and computational efficiency, advancing flow-guided planning for embodied intelligence.",
+ "summary": "# RoboFlow4D 论文总结\n\n1. **核心创新点**：提出一个轻量级的端到端 4D 流世界模型，将感知与规划统一起来，实现实时流引导的机器人操作。\n\n2. **主要方法**：基于视觉观测和文本指令直接预测多帧 3D 流（4D 时空运动），采用\"慢-快\"协同机制——慢速的流预测模块负责规划、快速的动作控制模块负责执行，形成\"观测-规划-执行\"闭环；可与通用动作策略无缝集成，避免了传统模块化流水线堆叠多个子模型带来的计算开销。\n\n3. **结论/性能**：在仿真和真实场景的大量实验中，相比现有方法持续提升了操作成功率与计算效率，推动了具身智能领域中流引导规划的发展。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-20 13:05:42"
+}

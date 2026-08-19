@@ -1,0 +1,13 @@
+{
+ "id": "2603.12062",
+ "title": "Systematic Security Analysis of the Iridium Satellite Radio Link",
+ "authors": "Eric Jedermann, Piotr Kulpinski, Martin Strohmeier, Vincent Lenders, Jens Schmitt",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12062v1",
+ "abstract": "The Iridium Low Earth Orbit (LEO) satellite constellation remains a unique provider of global communications for critical industries, governments, and private users, serving over 2.5 million active subscribers despite recent market competition. In contrast to terrestrial wireless standards such as 3GPP, Iridium protocol specifications are proprietary and have not undergone rigorous, public, and systematic security evaluation. In this work, we present the first comprehensive security analysis of Iridium authentication and radio link protocols. We reverse engineer Iridium SIM-based authentication mechanism and demonstrate that the secret key can be extracted from the SIM card, enabling full device cloning and impersonation attacks. Leveraging a month-long dataset of Iridium up- and downlink satellite traffic, we further show that nearly all signaling and radio communication protocols currently in use lack encryption, resulting in the exposure of sensitive information in cleartext over the air such as login credentials and large volumes of personal data. Finally, we develop custom software-defined radio (SDR) tools to carry out spoofing and jamming attacks, revealing that modestly equipped adversaries can inject falsified messages or disrupt the Iridium service locally due to the absence of source authentication. Our findings uncover systemic vulnerabilities in the Iridium radio link and highlight the urgent need for users of critical applications to transition to more secure communication radio links.",
+ "summary": "- 核心创新点：首次对 Iridium 星座系统的认证与射频链路进行系统性安全分析，揭示通过从 SIM 卡提取密钥可实现设备克隆与伪装，以及通信链路普遍缺乏加密与源认证的重大安全缺陷。\n\n- 主要方法：1) 逆向工程 Iridium 的 SIM 基于认证机制并定位密钥；2) 基于一个月的上/下链路流量数据进行分析，发现大部分信令与射频通信未加密；3) 开发定制的软件定义无线电（SDR）工具，实施伪装/干扰攻击以验证实际风险。\n\n- 结论/性能：证实存在系统性漏洞，攻击者在局部范围即可进行伪造消息注入或干扰服务，且大量敏感信息以明文暴露，强烈建议关键应用用户迁移到更安全的通信无线链路。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-13 13:01:02"
+}

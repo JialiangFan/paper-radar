@@ -1,0 +1,13 @@
+{
+ "id": "2512.17062",
+ "title": "Lang2Manip: A Tool for LLM-Based Symbolic-to-Geometric Planning for Manipulation",
+ "authors": "Muhayy Ud Din, Jan Rosell, Waseem Akram, Irfan Hussain",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17062v1",
+ "abstract": "Simulation is essential for developing robotic manipulation systems, particularly for task and motion planning (TAMP), where symbolic reasoning interfaces with geometric, kinematic, and physics-based execution. Recent advances in Large Language Models (LLMs) enable robots to generate symbolic plans from natural language, yet executing these plans in simulation often requires robot-specific engineering or planner-dependent integration. In this work, we present a unified pipeline that connects an LLM-based symbolic planner with the Kautham motion planning framework to achieve generalizable, robot-agnostic symbolic-to-geometric manipulation. Kautham provides ROS-compatible support for a wide range of industrial manipulators and offers geometric, kinodynamic, physics-driven, and constraint-based motion planning under a single interface. Our system converts language instructions into symbolic actions and computes and executes collision-free trajectories using any of Kautham's planners without additional coding. The result is a flexible and scalable tool for language-driven TAMP that is generalized across robots, planning modalities, and manipulation tasks.",
+ "summary": "- **核心创新点**：提出一个将基于大语言模型的符号规划器与 Kautham 动力学/几何规划框架无缝对接的统一管线，实现机器人无关的符号到几何的 manipulation 与可扩展的语言驱动 TAMP。\n\n- **主要方法**：利用 LLM 生成符号化的行动序列并将自然语言指令转化为符号行动，通过与 ROS 兼容的 Kautham 对接，在其几何、运动学/动力学、物理驱动和约束等规划器中选择任一实现无碰撞的轨迹，且无需额外编码。\n\n- **结论/性能**：提供一个灵活、可扩展的语言驱动 TAMP 工具，能够在不同机器人、不同规划模态和不同操作任务之间实现端到端的符号到几何规划与执行，显著降低机器人特定工程和规划器集成的需求。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:48:27"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2607.12231",
+ "title": "The GEST-Engine: From Event Graphs to Synthetic Video. A Full Technical Report",
+ "authors": "Nicolae Cudlenco, Mihai Masala, Marius Leordeanu",
+ "date": "2026-07-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.12231v1",
+ "abstract": "We present the GEST-Engine, a complete system that goes from natural-language text to fully-annotated multi-actor video. At its core is an explicit world model: rather than encoding state as a learned latent, the engine maintains a complete, inspectable representation of the world (which actors exist, where they are, what they are doing, which objects they hold, and how events relate in time and space), expressed as a formal Graph of Events in Space and Time (GEST) and realized deterministically inside the open world of a commercial game engine driven through an open-source multiplayer scripting framework. GESTs are produced either procedurally or by an agentic text-to-GEST system in which an LLM Director plans a story through tool calls validated by a programmatic state backend, so every generated specification is executable by construction. A GEST then enters a four-stage execution pipeline: graph parsing and validation, entity and action grounding, temporal orchestration (Allen-style constraints resolved by Floyd-Warshall transitive closure), and execution and capture. In a single simulation pass the engine emits frame-aligned RGB video, dense per-pixel depth, instance segmentation, per-actor skeletal pose, per-frame pairwise spatial-relation graphs, 2D bounding boxes, event-to-frame temporal mappings, and natural-language descriptions, all at zero marginal annotation cost. We further describe an in-game world editor, runtime capability extraction, a text-generation pipeline, and a production system that renders corpora at scale across parallel virtual machines. Because every frame traces back to a semantic specification, the engine guarantees object permanence, multi-actor coordination, and temporal consistency by construction, making its output valuable as training data, evaluation benchmarks, and diagnostic tools for video understanding.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-15 13:05:48"
+}

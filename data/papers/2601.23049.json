@@ -1,0 +1,13 @@
+{
+ "id": "2601.23049",
+ "title": "MedMCP-Calc: Benchmarking LLMs for Realistic Medical Calculator Scenarios via MCP Integration",
+ "authors": "Yakun Zhu, Yutong Huang, Shengqian Qin, Zhongzhen Huang, Shaoting Zhang, Xiaofan Zhang",
+ "date": "2026-01-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.23049v1",
+ "abstract": "Medical calculators are fundamental to quantitative, evidence-based clinical practice. However, their real-world use is an adaptive, multi-stage process, requiring proactive EHR data acquisition, scenario-dependent calculator selection, and multi-step computation, whereas current benchmarks focus only on static single-step calculations with explicit instructions. To address these limitations, we introduce MedMCP-Calc, the first benchmark for evaluating LLMs in realistic medical calculator scenarios through Model Context Protocol (MCP) integration. MedMCP-Calc comprises 118 scenario tasks across 4 clinical domains, featuring fuzzy task descriptions mimicking natural queries, structured EHR database interaction, external reference retrieval, and process-level evaluation. Our evaluation of 23 leading models reveals critical limitations: even top performers like Claude Opus 4.5 exhibit substantial gaps, including difficulty selecting appropriate calculators for end-to-end workflows given fuzzy queries, poor performance in iterative SQL-based database interactions, and marked reluctance to leverage external tools for numerical computation. Performance also varies considerably across clinical domains. Building on these findings, we develop CalcMate, a fine-tuned model incorporating scenario planning and tool augmentation, achieving state-of-the-art performance among open-source models. Benchmark and Codes are available in https://github.com/SPIRAL-MED/MedMCP-Calc.",
+ "summary": "- 核心创新点：提出 MedMCP-Calc 基准，通过 Model Context Protocol（MCP）实现对真实医疗计算场景的端对端评估，覆盖模糊描述的自然查询、结构化 EHR 数据交互、外部参考检索及过程级评估。\n\n- 主要方法：构建包含118个场景任务、覆盖4个临床领域的基准；通过 MCP 实现与 EHR 数据库的结构化交互、迭代的 SQL 查询、外部工具/参考的调用；对23个主流模型进行评估并分析在场景化工作流中的不足；基于此开发并微调 CalcMate，结合情景规划和工具增强，达到开源模型中的最新性能。\n\n- 结论/性能：发现现有模型在端到端工作流中的关键环节（选择合适的计算器、迭代数据库交互、利用外部工具进行数值计算）存在显著瓶颈，且不同临床领域的表现差异较大；CalcMate 通过情景规划与工具增强实现了开源模型中的最优性能；基准和代码公开，便于后续研究与对比（https://github.com/SPIRAL-MED/MedMCP-Calc）。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-02 14:03:39"
+}

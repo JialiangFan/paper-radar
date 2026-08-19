@@ -1,0 +1,13 @@
+{
+ "id": "2512.18857",
+ "title": "CORE: Concept-Oriented Reinforcement for Bridging the Definition-Application Gap in Mathematical Reasoning",
+ "authors": "Zijun Gao, Zhikun Xu, Xiao Ye, Ben Zhou",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18857v1",
+ "abstract": "Large language models (LLMs) often solve challenging math exercises yet fail to apply the concept right when the problem requires genuine understanding. Popular Reinforcement Learning with Verifiable Rewards (RLVR) pipelines reinforce final answers but provide little fine-grained conceptual signal, so models improve at pattern reuse rather than conceptual applications. We introduce CORE (Concept-Oriented REinforcement), an RL training framework that turns explicit concepts into a controllable supervision signal. Starting from a high-quality, low-contamination textbook resource that links verifiable exercises to concise concept descriptions, we run a sanity probe showing LLMs can restate definitions but fail concept-linked quizzes, quantifying the conceptual reasoning gap. CORE then (i) synthesizes concept-aligned quizzes, (ii) injects brief concept snippets during rollouts to elicit concept-primed trajectories, and (iii) reinforces conceptual reasoning via trajectory replacement after group failures, a lightweight forward-KL constraint that aligns unguided with concept-primed policies, or standard GRPO directly on concept-aligned quizzes. Across several models, CORE delivers consistent gains over vanilla and SFT baselines on both in-domain concept-exercise suites and diverse out-of-domain math benchmarks. CORE unifies direct training on concept-aligned quizzes and concept-injected rollouts under outcome regularization. It provides fine-grained conceptual supervision that bridges problem-solving competence and genuine conceptual reasoning, while remaining algorithm- and verifier-agnostic.",
+ "summary": "核心创新点（一句话）\n- 提出 CORE：一个以概念为导向的强化学习框架，通过显式概念描述来监督和引导模型的推理过程，弥合定义理解与概念应用之间的鸿沟。\n\n主要方法\n- 数据与信号源：使用高质量、低污染的教科书资源，将可验证练习与简明的概念描述建立对应关系，形成概念对齐的监督信号。\n- 诊断分析：进行 sanity probe，验证模型能复述定义但在概念相关测验上存在不足，从而量化概念推理的差距。\n- 核心流程（三步走）：\n  1) 合成概念对齐的测验；\n  2) 在 rollout 过程中注入简短的概念片段， eliciting 概念驱动的轨迹；\n  3) 通过轨迹替换实现强化学习更新（前向 KL 约束将 unguided 策略对齐到概念引导策略，或直接在概念对齐测验上执行 GRPO）。\n- 结果整合：将概念对齐的直接训练与概念注入的 rollout 在结果正则化框架下统一处理，提供细粒度的概念 supervision。\n\n结论/性能\n- 在多种模型上，CORE 相较于 vanilla 和 SFT 基线，在同域的概念练习集和多样化的跨域数学基准上均获得稳定提升。\n- 体现为将直接的概念对齐训练与概念注入 rollout 的方法论统一起来，提升了概念推理与应用的协同能力，且对算法和 verifier 无依赖性。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:49:43"
+}

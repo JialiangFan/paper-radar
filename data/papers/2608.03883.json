@@ -1,0 +1,13 @@
+{
+ "id": "2608.03883",
+ "title": "DS@GT-ARC at eRisk 2026 Task 3: Sparse, Semantic, and LLM Reranking for ADHD Symptom Sentences",
+ "authors": "David Guecha",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03883v1",
+ "abstract": "This paper describes our submissions to eRisk 2026 Task 3, ADHD Symptom Sentence Ranking. The task requires systems to rank candidate Reddit sentences according to their relevance to each of the 18 symptoms in the Adult ADHD Self-Report Scale (ASRS-v1.1). Because no annotated training data were released for this first edition of the task, we relied on zero-shot experimentation, manual validation, and unsupervised or weakly guided retrieval pipelines. Our systems combine sparse BM25 retrieval, evidence-aware rescoring for self-referential symptom reports, embedding-based reranking, query-prototype expansion, and LLM-based reranking. All submitted systems follow a staged retrieval design in which BM25 retrieves candidates at scale and semantic or LLM rerankers refine the final rankings. Among our submissions, the LLM reranker achieved the strongest official scores, followed by the prototype query-expansion run. Our manual top-10 analysis aligned with the official expert scoring trend, suggesting that staged reranking is a promising direction for further development.",
+ "summary": "## 论文摘要总结\n\n**标题**：DS@GT-ARC at eRisk 2026 Task 3: Sparse, Semantic, and LLM Reranking for ADHD Symptom Sentences\n\n---\n\n### 1. 核心创新点\n在缺乏标注训练数据的情况下，提出一套\"分阶段检索 + 重排序\"的零样本流水线，用于将 Reddit 句子按其与成人 ADHD 自评量表（ASRS-v1.1）18 项症状的相关性进行排序。\n\n### 2. 主要方法\n- **第一阶段（召回）**：用稀疏检索 BM25 大规模筛选候选句子。\n- **第二阶段（精排）**：组合多种策略——\n  - 证据感知重打分（evidence-aware rescoring），专门识别\"自我指涉\"式的症状陈述；\n  - 基于嵌入向量（embedding）的语义重排序；\n  - 查询原型扩展（query-prototype expansion）；\n  - 基于大语言模型（LLM）的重排序。\n- 由于该任务首届未发布标注数据，整体依赖零样本实验、人工验证以及无监督/弱引导的检索流程。\n\n### 3. 结论/性能\n在所有提交系统中，**LLM 重排序方案取得最佳官方成绩**，其次是原型查询扩展方案。作者自行进行的 top-10 人工分析结果与官方专家评分趋势一致，表明分阶段重排序是一个值得继续深入的研究方向。\n\n---\n\n**一句话点评**：这是一篇典型的评测任务（shared task）参赛报告，方法上没有全新的模型架构，价值在于验证了\"BM25 粗召回 + LLM 精排\"这一经典范式在零样本心理健康症状检索场景下的有效性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-05 13:03:23"
+}

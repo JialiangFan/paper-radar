@@ -1,0 +1,13 @@
+{
+ "id": "2607.14830",
+ "title": "AI Prototyper: A Figma Plugin for Decomposition-Based GUI Prototyping with LLMs",
+ "authors": "Tawatchai Salangsingha, Sami Ashkan, Md Zia Ullah, Iain McGregor",
+ "date": "2026-07-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.14830v1",
+ "abstract": "Graphical user interface (GUI) prototyping remains a time-consuming activity that demands both design expertise and considerable manual effort. As GUI prototypes are non-code artifacts that evolve alongside requirements throughout the development cycle, automating their generation is directly relevant to software maintenance and evolution. We present AI Prototyper, an open-source Figma plugin that automates GUI prototyping through a decomposition and retrieval-augmented generation (RAG) pipeline. Given a natural-language description of a desired screen, such as a login page or a product detail card, the plugin decomposes the request into discrete GUI features, retrieves matching components from a custom 32-primitive library, and renders each component as a fully editable Figma layer with auto-layout. The pipeline uses Gemini 2.5 Flash as its LLM back-end and a Node.js/Express service. Unlike existing decomposition-based tools, AI Prototyper introduces a human-in-the-loop editing step that lets users review, modify, or extend the generated feature list before rendering, uses a different technology stack and LLM family, and supports multilingual input, producing correctly labelled interfaces in Thai, English, and Mandarin Chinese. In a preliminary evaluation, participants using AI Prototyper completed more prototypes in a fixed time window than those working manually, and expert practitioners rated the AI-generated prototypes higher across nine quality dimensions. A demonstration video is available at https://youtu.be/pRoFAH7MQaE. The source code and component library are available at https://github.com/tongsalangsingha/AI-prototyper-tool",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-19 13:02:12"
+}

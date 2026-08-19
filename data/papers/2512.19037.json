@@ -1,0 +1,13 @@
+{
+ "id": "2512.19037",
+ "title": "Elevating Intrusion Detection and Security Fortification in Intelligent Networks through Cutting-Edge Machine Learning Paradigms",
+ "authors": "Md Minhazul Islam Munna, Md Mahbubur Rahman, Jaroslav Frnda, Muhammad Shahid Anwar, Alpamis Kutlimuratov",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19037v1",
+ "abstract": "The proliferation of IoT devices and their reliance on Wi-Fi networks have introduced significant security vulnerabilities, particularly the KRACK and Kr00k attacks, which exploit weaknesses in WPA2 encryption to intercept and manipulate sensitive data. Traditional IDS using classifiers face challenges such as model overfitting, incomplete feature extraction, and high false positive rates, limiting their effectiveness in real-world deployments. To address these challenges, this study proposes a robust multiclass machine learning based intrusion detection framework. The methodology integrates advanced feature selection techniques to identify critical attributes, mitigating redundancy and enhancing detection accuracy. Two distinct ML architectures are implemented: a baseline classifier pipeline and a stacked ensemble model combining noise injection, Principal Component Analysis (PCA), and meta learning to improve generalization and reduce false positives. Evaluated on the AWID3 data set, the proposed ensemble architecture achieves superior performance, with an accuracy of 98%, precision of 98%, recall of 98%, and a false positive rate of just 2%, outperforming existing state-of-the-art methods. This work demonstrates the efficacy of combining preprocessing strategies with ensemble learning to fortify network security against sophisticated Wi-Fi attacks, offering a scalable and reliable solution for IoT environments. Future directions include real-time deployment and adversarial resilience testing to further enhance the model's adaptability.",
+ "summary": "- 核心创新点：在特征选择基础上，提出一个包含噪声注入、PCA降维与元学习的堆栈式集成模型，用于物联网Wi-Fi场景的多类入侵检测，显著提升鲁棒性与泛化能力。\n- 主要方法：采用高级特征选择去冗余；实现两种架构：一个基线分类管线，另一个为堆栈式集成模型（结合噪声注入、PCA和元学习）以提升泛化并降低误报；在 AWID3 数据集上进行评估。\n- 结论/性能：在 AWID3 数据集上达到准确率98%、精确率98%、召回率98%，假阳性率仅2%，超越现有状态的方法；未来工作包括实时部署与对抗性鲁棒性测试。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-23 03:55:34"
+}

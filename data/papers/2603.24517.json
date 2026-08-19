@@ -1,0 +1,13 @@
+{
+ "id": "2603.24517",
+ "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
+ "authors": "Terry Chen, Zhifan Ye, Bing Xu, Zihao Ye, Timmy Liu, Ali Hassani, Tianqi Chen, Andrew Kerr, Haicheng Wu, Yang Xu, Yu-Jung Chen, Hanfeng Chen, Aditya Kane, Ronny Krashinsky, Ming-Yu Liu, Vinod Grover, Luis Ceze, Roger Bringmann, John Tran, Wei Liu, Fung Xie, Michael Lightstone, Humphrey Shi",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24517v1",
+ "abstract": "Agentic Variation Operators (AVO) are a new family of evolutionary variation operators that replace the fixed mutation, crossover, and hand-designed heuristics of classical evolutionary search with autonomous coding agents. Rather than confining a language model to candidate generation within a prescribed pipeline, AVO instantiates variation as a self-directed agent loop that can consult the current lineage, a domain-specific knowledge base, and execution feedback to propose, repair, critique, and verify implementation edits. We evaluate AVO on attention, among the most aggressively optimized kernel targets in AI, on NVIDIA Blackwell (B200) GPUs. Over 7 days of continuous autonomous evolution on multi-head attention, AVO discovers kernels that outperform cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5% across the evaluated configurations. The discovered optimizations transfer readily to grouped-query attention, requiring only 30 minutes of additional autonomous adaptation and yielding gains of up to 7.0% over cuDNN and 9.3% over FlashAttention-4. Together, these results show that agentic variation operators move beyond prior LLM-in-the-loop evolutionary pipelines by elevating the agent from candidate generator to variation operator, and can discover performance-critical micro-architectural optimizations that produce kernels surpassing state-of-the-art expert-engineered attention implementations on today's most advanced GPU hardware.",
+ "summary": "1. 核心创新点：提出 Agentic Variation Operators (AVO)，用自我驱动的编码代理来执行变异操作，将语言模型从单纯的候选生成器提升为变异算子，通过自我循环的提议/修复/批评/验证来优化实现。\n\n2. 主要方法：引入自主动机化的代理循环（结合当前谱系、领域知识库与执行反馈）来产生和改进实现编辑；在 NVIDIA Blackwell B200 GPU 上对多头注意力核进行7天连续自进化，探索并迁移到分组查询注意力；强调代理对变异过程的控制与自我验证。\n\n3. 结论/性能：在评估配置上，AVO发现的核性能比 cuDNN高出最多3.5%，比 FlashAttention-4高出最多10.5%；迁移到分组查询注意力需额外30分钟自适配，性能提升达7.0%（相对 cuDNN）和9.3%（相对 FlashAttention-4），表明该方法可发现超越现有专家工程优化的微架构核。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-26 13:02:25"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.18500",
+ "title": "Implicit Hierarchical GRPO: Decoupling Tool Invocation from Execution for Tool-Integrated Mathematical Reasoning",
+ "authors": "Li Wang, Xiaohan Wang, Xiaodong Lu, Zipeng Zhang, Jinyang Wu, Jiajun Chai, Wei Lin, Guojun Yin",
+ "date": "2026-05-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.18500v1",
+ "abstract": "Large language models (LLMs) have increasingly leveraged tool invocation to enhance their reasoning capabilities. However, existing approaches typically tightly couple tool invocation with immediate execution. Such immediate tool interaction may disrupt the reasoning coherence of LLMs and constrain their expressivity, ultimately degrading reasoning performance. To this end, for the first time, we propose and formalize the problem of decoupling tool invocation from execution during reasoning, and introduce delayed execution with explicit control to enhance tool-integrated reasoning (TIR). Furthermore, we propose a hierarchical control framework and theoretically derive a surrogate loss that enables an implicitly hierarchical policy to learn behavior equivalent to that of an explicit hierarchical policy, leading to the proposed IH-GRPO algorithm. Extensive experiments on IH-GRPO achieve absolute improvements of 1.87\\%, 2.16\\%, and 2.53\\% on Qwen3-1.7B, Qwen3-4B, and Qwen3-8B across six out-of-domain mathematical reasoning benchmarks over the strongest baseline method, while also yielding consistent performance gains in other domains. Our code is available at https://github.com/Lumina04/IH-GRPO-01.",
+ "summary": "- **核心创新点**：首次提出在推理过程中将工具调用与执行解耦的思路，通过延迟执行与显式控制实现工具协同推理，并给出隐式分层策略的IH-GRPO算法来等价于显式分层策略的学习。\n\n- **主要方法**：提出分层控制框架并引入延迟执行机制，推导出一个代理损失，使隐式分层策略能够学习到与显式分层策略等效的行为，从而实现 IH-GRPO 算法。\n\n- **结论/性能**：在 Qwen3-1.7B、Qwen3-4B、Qwen3-8B 三个模型上，在六个域外的数学推理基准上，分别比最强基线提升 1.87%、2.16%、2.53%，在其他领域也显示出一致的性能提升，代码已开源。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-05-19 12:34:10"
+}

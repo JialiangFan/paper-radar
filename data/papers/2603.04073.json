@@ -1,0 +1,13 @@
+{
+ "id": "2603.04073",
+ "title": "Swimming Under Constraints: A Safe Reinforcement Learning Framework for Quadrupedal Bio-Inspired Propulsion",
+ "authors": "Xinyu Cui, Fei Han, Hang Xu, Yongcheng Zeng, Luoyang Sun, Ruizhi Zhang, Jian Zhao, Haifeng Zhang, Weikun Li, Hao Chen, Jun Wang, Dixia Fan",
+ "date": "2026-03-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04073v1",
+ "abstract": "Bio-inspired aquatic propulsion offers high thrust and maneuverability but is prone to destabilizing forces such as lift fluctuations, which are further amplified by six-degree-of-freedom (6-DoF) fluid coupling. We formulate quadrupedal swimming as a constrained optimization problem that maximizes forward thrust while minimizing destabilizing fluctuations. Our proposed framework, Accelerated Constrained Proximal Policy Optimization with a PID-regulated Lagrange multiplier (ACPPO-PID), enforces constraints with a PID-regulated Lagrange multiplier, accelerates learning via conditional asymmetric clipping, and stabilizes updates through cycle-wise geometric aggregation. Initialized with imitation learning and refined through on-hardware towing-tank experiments, ACPPO-PID produces control policies that transfer effectively to quadrupedal free-swimming trials. Results demonstrate improved thrust efficiency, reduced destabilizing forces, and faster convergence compared with state-of-the-art baselines, underscoring the importance of constraint-aware safe RL for robust and generalizable bio-inspired locomotion in complex fluid environments.",
+ "summary": "- 核心创新点：提出 ACPPO-PID，一种面向四足生物启发水下推进的带 PID 调节的拉格朗日乘子约束的安全强化学习框架，用以在最大化前向推力的同时最小化六自由度水动耦合引起的扰动，并结合加速学习与循环几何聚合等技术提升稳定性与收敛性。\n\n- 主要方法：将四足游泳建模为带约束的优化问题，目标是最大化前向推力、最小化扰动；实现方式为 ACPPO-PID（Accelerated Constrained Proximal Policy Optimization with a PID-regulated Lagrange multiplier），通过带 PID 调节的拉格朗日乘子实现约束、使用条件性非对称裁剪来加速学习、采用周期性几何聚合来稳定更新；并以仿真模仿学习初始化，结合硬件 towing-tank 实验对策略进行 refinement，从而实现对自由游泳的有效迁移。\n\n- 结论/性能：与现有基线相比，取得了更高的推力效率、更低的 destabilizing 力量、以及更快的收敛速度；策略能够从仿真/模仿学习顺利迁移到四足自由游泳任务，证实了在复杂流体环境中引入约束感知的安全强化学习对于鲁棒性与泛化性的提升作用。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-05 14:00:24"
+}

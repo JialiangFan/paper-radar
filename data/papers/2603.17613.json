@@ -1,0 +1,13 @@
+{
+ "id": "2603.17613",
+ "title": "VeriAgent: A Tool-Integrated Multi-Agent System with Evolving Memory for PPA-Aware RTL Code Generation",
+ "authors": "Yaoxiang Wang, Qi Shi, ShangZhan Li, Qingguo Hu, Xinyu Yin, Bo Guo, Xu Han, Maosong Sun, Jinsong Su",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17613v1",
+ "abstract": "LLMs have recently demonstrated strong capabilities in automatic RTL code generation, achieving high syntactic and functional correctness. However, most methods focus on functional correctness while overlooking critical physical design objectives, including Power, Performance, and Area. In this work, we propose a PPA-aware, tool-integrated multi-agent framework for high-quality verilog code generation. Our framework explicitly incorporates EDA tools into a closed-loop workflow composed of a \\textit{Programmer Agent}, a \\textit{Correctness Agent}, and a \\textit{PPA Agent}, enabling joint optimization of functional correctness and physical metrics. To support continuous improvement without model retraining, we introduce an \\textit{Evolved Memory Mechanism} that externalizes optimization experience into structured memory nodes. A dedicated memory manager dynamically maintains the memory pool and allows the system to refine strategies based on historical execution trajectories. Extensive experiments demonstrate that our approach achieves strong functional correctness while delivering significant improvements in PPA metrics. By integrating tool-driven feedback with structured and evolvable memory, our framework transforms RTL generation from one-shot reasoning into a continual, feedback-driven optimization process, providing a scalable pathway for deploying LLMs in real-world hardware design flows.",
+ "summary": "- 核心创新点：提出 VeriAgent，这是一个工具整合的多代理系统，结合可进化记忆机制，在 RTL 代码生成中实现对功耗、性能和面积（PPA）的感知与闭环优化。 \n\n- 主要方法：使用 Programmer Agent、Correctness Agent、PPA Agent 三个子代理组成的多代理框架，集成 EDA 工具进入一个闭环流程，进行功能正确性与物理指标的联合优化；引入 Evolved Memory Mechanism，将优化经验外化为结构化内存节点，通过内存管理器动态维护记忆池，并基于历史执行轨迹迭代改进策略。\n\n- 结论/性能：大量实验表明在保持较强功能正确性的同时，显著提升了 PPA 指标；该框架将 RTL 生成从一次性推理转变为持续、反馈驱动的优化过程，为在实际硬件设计流程中部署大语言模型提供了可扩展路径。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-19 13:06:28"
+}

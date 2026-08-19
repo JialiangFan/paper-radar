@@ -1,0 +1,32 @@
+{
+ "id": "2605.17268",
+ "title": "Is VLA Reasoning Faithful? Probing Safety of Chain-of-Causation",
+ "authors": "Wang, et al.",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2605.17268",
+ "abstract": "",
+ "summary": "This paper probes whether VLA driving-model reasoning faithfully reflects entities and actions relevant to safety.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "benchmarks-and-evaluation",
+  "embodied-reasoning",
+  "faithfulness",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2026_Wang_VLAReasoningFaithfulness.md",
+ "pdf_path": "PDFs/VLA_Safety/2026_Wang_VLAReasoningFaithfulness.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.16543",
+ "title": "Vulnerability Analysis of Safe Reinforcement Learning via Inverse Constrained Reinforcement Learning",
+ "authors": "Jialiang Fan, Shixiong Jiang, Mengyu Liu, Fanxin Kong",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16543v1",
+ "abstract": "Safe reinforcement learning (Safe RL) aims to ensure policy performance while satisfying safety constraints. However, most existing Safe RL methods assume benign environments, making them vulnerable to adversarial perturbations commonly encountered in real-world settings. In addition, existing gradient-based adversarial attacks typically require access to the policy's gradient information, which is often impractical in real-world scenarios. To address these challenges, we propose an adversarial attack framework to reveal vulnerabilities of Safe RL policies. Using expert demonstrations and black-box environment interaction, our framework learns a constraint model and a surrogate (learner) policy, enabling gradient-based attack optimization without requiring the victim policy's internal gradients or the ground-truth safety constraints. We further provide theoretical analysis establishing feasibility and deriving perturbation bounds. Experiments on multiple Safe RL benchmarks demonstrate the effectiveness of our approach under limited privileged access.",
+ "summary": "- 核心创新点：提出一个基于逆约束强化学习的对抗攻击框架，在黑箱条件下通过学习约束模型与替代策略，实现梯度优化攻击，从而揭示 Safe RL 的潜在脆弱性。\n\n- 主要方法：利用专家示范和黑箱环境交互，学习一个约束模型和一个替代（学习）策略，对受害策略的安全约束进行近似，并在不访问受害策略梯度或真实约束的情况下进行梯度基攻击优化；并附带理论分析，给出攻/扰动的可行性与界限。\n\n- 结论/性能：在多个 Safe RL 基准上实验，证明在有限特权访问条件下攻击有效，能够揭示受害策略的安全漏洞，强调需要更强的安全性约束保护。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-19 14:00:26"
+}

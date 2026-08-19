@@ -1,0 +1,13 @@
+{
+ "id": "2603.25522",
+ "title": "Automating Computational Chemistry Workflows via OpenClaw and Domain-Specific Skills",
+ "authors": "Mingwei Ding, Chen Huang, Yibo Hu, Yifan Li, Zitian Lu, Xingtai Yu, Duo Zhang, Wenxi Zhai, Tong Zhu, Qiangqiang Gu, Jinzhe Zeng",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25522v1",
+ "abstract": "Automating multistep computational chemistry tasks remains challenging because reasoning, workflow specification, software execution, and high-performance computing (HPC) execution are often tightly coupled. We demonstrate a decoupled agent-skill design for computational chemistry automation leveraging OpenClaw. Specifically, OpenClaw provides centralized control and supervision; schema-defined planning skills translate scientific goals into executable task specifications; domain skills encapsulate specific computational chemistry procedures; and DPDispatcher manages job execution across heterogeneous HPC environments. In a molecular dynamics (MD) case study of methane oxidation, the system completed cross-tool execution, bounded recovery from runtime failures, and reaction network extraction, illustrating a scalable and maintainable approach to multistep computational chemistry automation.",
+ "summary": "- 核心创新点：提出一种解耦的代理-技能设计，通过 OpenClaw 实现对计算化学多步工作流的集中控制与调度，将推理、工作流规划、软件执行与 HPC 执行解耦，并结合模式化规划技能、领域技能和 DPDispatcher 支撑跨工具与异构 HPC 的自动化执行。\n\n- 主要方法：\n  - 使用 OpenClaw 提供集中控制与监督。\n  - 采用 schema-defined (模式化) 规划技能将科学目标转化为可执行任务。\n  - 以领域技能封装具体的计算化学流程。\n  - 由 DPDispatcher 在异构 HPC 环境中管理作业执行。\n  - 以甲烷氧化的分子动力学案例为验证，展示跨工具执行、对运行时故障的边界恢复以及反应网络提取。\n\n- 结论/性能：\n  - 实现了跨工具执行、对运行时故障的有界恢复以及反应网络的提取，展示了该方法在多步计算化学自动化中的可扩展性与可维护性。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:34"
+}

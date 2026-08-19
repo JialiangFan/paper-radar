@@ -1,0 +1,13 @@
+{
+ "id": "2604.11808",
+ "title": "Pair2Scene: Learning Local Object Relations for Procedural Scene Generation",
+ "authors": "Xingjian Ran, Shujie Zhang, Weipeng Zhong, Li Luo, Bo Dai",
+ "date": "2026-04-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.11808v1",
+ "abstract": "Generating high-fidelity 3D indoor scenes remains a significant challenge due to data scarcity and the complexity of modeling intricate spatial relations. Current methods often struggle to scale beyond training distribution to dense scenes or rely on LLMs/VLMs that lack the ability for precise spatial reasoning. Building on top of the observation that object placement relies mainly on local dependencies instead of information-redundant global distributions, in this paper, we propose Pair2Scene, a novel procedural generation framework that integrates learned local rules with scene hierarchies and physics-based algorithms. These rules mainly capture two types of inter-object relations, namely support relations that follow physical hierarchies, and functional relations that reflect semantic links. We model these rules through a network, which estimates spatial position distributions of dependent objects conditioned on position and geometry of the anchor ones. Accordingly, we curate a dataset 3D-Pairs from existing scene data to train the model. During inference, our framework can generate scenes by recursively applying our model within a hierarchical structure, leveraging collision-aware rejection sampling to align local rules into coherent global layouts. Extensive experiments demonstrate that our framework outperforms existing methods in generating complex environments that go beyond training data while maintaining physical and semantic plausibility.",
+ "summary": "- 核心创新点：提出 Pair2Scene，通过学习局部对象关系（支撑关系与功能关系）并结合场景层次结构与物理约束，实现可递归的局部规则驱动场景生成，能够生成超出训练分布的复杂室内场景。\n\n- 主要方法：\n  - 设计一个关系网络，估计依赖对象在给定锚对象位置与几何条件下的空间分布，聚焦两类局部关系（支撑/功能）。\n  - 基于现有场景数据构建数据集 3D-Pairs，进行模型训练。\n  - 推理阶段在分层结构内递归应用模型，结合碰撞感知的拒绝采样，将局部规则整合为一致的全局布局。\n  - 同时借助场景层次结构与物理/几何算法实现更可靠的局部到全局的场景生成。\n\n- 结论/性能：实验表明该框架在生成更复杂、密集的环境方面优于现有方法，能够超越训练数据分布，同时保持物理和语义的合理性与一致性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-14 13:00:28"
+}

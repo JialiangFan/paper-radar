@@ -1,0 +1,13 @@
+{
+ "id": "2603.20101",
+ "title": "Pitfalls in Evaluating Interpretability Agents",
+ "authors": "Tal Haklay, Nikhil Prakash, Sana Pandey, Antonio Torralba, Aaron Mueller, Jacob Andreas, Tamar Rott Shaham, Yonatan Belinkov",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20101v1",
+ "abstract": "Automated interpretability systems aim to reduce the need for human labor and scale analysis to increasingly large models and diverse tasks. Recent efforts toward this goal leverage large language models (LLMs) at increasing levels of autonomy, ranging from fixed one-shot workflows to fully autonomous interpretability agents. This shift creates a corresponding need to scale evaluation approaches to keep pace with both the volume and complexity of generated explanations. We investigate this challenge in the context of automated circuit analysis -- explaining the roles of model components when performing specific tasks. To this end, we build an agentic system in which a research agent iteratively designs experiments and refines hypotheses. When evaluated against human expert explanations across six circuit analysis tasks in the literature, the system appears competitive. However, closer examination reveals several pitfalls of replication-based evaluation: human expert explanations can be subjective or incomplete, outcome-based comparisons obscure the research process, and LLM-based systems may reproduce published findings via memorization or informed guessing. To address some of these pitfalls, we propose an unsupervised intrinsic evaluation based on the functional interchangeability of model components. Our work demonstrates fundamental challenges in evaluating complex automated interpretability systems and reveals key limitations of replication-based evaluation.",
+ "summary": "- 核心创新点：揭示复制性评估在自动化可解释性代理中的局限性，并提出基于模型组件功能互换性的无监督内在评估方法来评估复杂可解释性系统。\n\n- 主要方法：构建一个具备迭代设计实验和假设修正能力的研究代理系统，对六个电路分析任务进行与人类专家解释的对比评估；同时提出并采用基于模型组件功能互换性的无监督内在评估，作为替代传统复制性评估的办法。\n\n- 结论/性能：在六项任务上系统表现与人类专家解释相竞争，但也暴露了复制性评估的局限性（专家解释的主观性/不完整性、结果导向的比较掩盖研究过程、LLM系统可能通过记忆或猜测重复先前结论等问题）；并给出无监督内在评估作为改进评估的方法与方向。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-23 13:07:23"
+}

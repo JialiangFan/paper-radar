@@ -1,0 +1,13 @@
+{
+ "id": "2602.23117",
+ "title": "Devling into Adversarial Transferability on Image Classification: Review, Benchmark, and Evaluation",
+ "authors": "Xiaosen Wang, Zhijin Ge, Bohan Liu, Zheng Fang, Fengfan Zhou, Ruixuan Zhang, Shaokang Wang, Yuyang Luo",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23117v1",
+ "abstract": "Adversarial transferability refers to the capacity of adversarial examples generated on the surrogate model to deceive alternate, unexposed victim models. This property eliminates the need for direct access to the victim model during an attack, thereby raising considerable security concerns in practical applications and attracting substantial research attention recently. In this work, we discern a lack of a standardized framework and criteria for evaluating transfer-based attacks, leading to potentially biased assessments of existing approaches. To rectify this gap, we have conducted an exhaustive review of hundreds of related works, organizing various transfer-based attacks into six distinct categories. Subsequently, we propose a comprehensive framework designed to serve as a benchmark for evaluating these attacks. In addition, we delineate common strategies that enhance adversarial transferability and highlight prevalent issues that could lead to unfair comparisons. Finally, we provide a brief review of transfer-based attacks beyond image classification.",
+ "summary": "- **核心创新点**：提出一个标准化的评估框架与基准，用于系统评估图像分类领域的迁移式对抗攻击；并对现有攻击归类为六大类、总结提升转移性的策略、揭示公平比较的潜在问题，同时对图像分类之外的迁移攻击进行了简要回顾。\n\n- **主要方法**：通过对大量相关工作进行系统性文献综述，将迁移攻击分成六类并设计一个综合的评估基准框架，以统一评估标准来比较不同攻击方法；总结提升转移性的常见策略并指出可能导致不公平比较的问题，另外对图像分类之外的迁移攻击进行简要回顾。\n\n- **结论/性能**：提供了一个可用于统一评估迁移攻击的基准框架，帮助研究者更公平地比较方法、减少评估偏差，并为未来研究指明方向。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-27 14:00:44"
+}

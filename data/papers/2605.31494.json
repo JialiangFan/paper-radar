@@ -1,0 +1,13 @@
+{
+ "id": "2605.31494",
+ "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+ "authors": "Zheyu Zhang, Shuo Yang, Gjergji Kasneci",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.31494v1",
+ "abstract": "Post-training of language models is commonly framed as a sample-score-update loop implemented by gradient descent. A recent line of work, exemplified by RandOpt, relocates this loop to weight space, sampling Gaussian perturbations around a pretrained model and ensembling the top-K rewarded specialists at inference. While competitive with PPO and GRPO under matched training compute, this prediction-level ensemble incurs K forward passes per test example and does not extend cleanly to free-form generation. We ask whether the rewarded population can instead be folded into a single deployable model, replacing the inference-time ensemble with one consolidated update. A split-half analysis over 25 model-task pairs reveals reproducible low-rank structure in every case. We turn this geometry into CoRP (Consolidating Rewarded Perturbations), a gradient-free operator that combines reward-weighted aggregation, compatibility-aware reweighting, and a held-out validation gate, with no gradient flowing through the language model. Across five language models from 0.5B to 8B and five tasks covering math, code, and creative writing, CoRP improves the base model by 8.1 points on average. Using one tenth of RandOpt's perturbation budget, CoRP exceeds single-inference RandOpt by 6.5 points and recovers more than half of the gain of the 50-pass majority-vote ensemble, at one forward pass per test example.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：提出 CoRP（Consolidating Rewarded Perturbations），将权重空间中多个奖励扰动模型\"折叠\"成单一可部署模型，用一次前向推理替代传统集成的 K 次推理。\n\n**2. 主要方法**：基于 RandOpt 思路，在预训练模型周围采样高斯扰动并按奖励打分；利用 split-half 分析发现扰动种群中可复现的低秩结构；据此设计无梯度算子，结合奖励加权聚合、兼容性感知重加权和留出验证门控，全程不经过语言模型反传梯度。\n\n**3. 结论/性能**：在 0.5B–8B 的五个模型与数学、代码、创意写作五类任务上，相对基线平均提升 8.1 分；仅用 RandOpt 十分之一的扰动预算，就比单次推理的 RandOpt 高 6.5 分，并恢复了 50 次多数投票集成增益的一半以上，而推理代价仅为单次前向。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-01 13:00:32"
+}

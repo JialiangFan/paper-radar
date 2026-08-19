@@ -1,0 +1,13 @@
+{
+ "id": "2605.22671",
+ "title": "From Abstraction to Instantiation: Learning Behavioral Representation for Vision-Language-Action Model",
+ "authors": "Bing Hu, Zaijing Li, Rui Shao, Junda Chen, April Hua Liu, Wei-Shi Zheng, Liqiang Nie",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22671v1",
+ "abstract": "Vision-Language-Action (VLA) models often suffer from performance degradation under distribution shifts, as they struggle to learn generalized behavior representations across varying environments. While existing approaches attempt to construct behavior representations through action-centric latent variables, they are often limited by short-horizon temporal fragmentation and static execution-alignment, leading to inconsistent behaviors in complex scenarios. To address these limitations, we propose \\textbf{BehaviorVLA}, a framework that facilitates robust manipulation through the learning of a temporally coherent behavioral representations. Our approach features two symmetric components: (1) the \\textbf{Visuomotor Behavior Encoder (VBE)}, which utilizes a causal Mamba-based architecture to aggregate long-horizon trajectory information into a unified behavior representation; and (2) the \\textbf{Phase-conditioned Behavior Decoder (PBD)}, which decodes this representation into precise actions by dynamically aligning task-level priors with real-time execution progress. Experiments on RoboTwin 2.0, LIBERO, and CALVIN demonstrate state-of-the-art success rates of 58\\%, 98\\%, and 4.36 (Avg.Len), respectively. Notably, in real-world sim-to-real transfer, BehaviorVLA matches the performance of OpenVLA-OFT using only 50\\% of the demonstration data, showcasing its superior data efficiency and generalization.",
+ "summary": "# BehaviorVLA 论文总结\n\n## 1. 核心创新点\n提出通过学习**时序连贯的行为表示**来提升视觉-语言-动作（VLA）模型在分布偏移下的鲁棒性与泛化能力，解决现有方法短时序碎片化和静态执行对齐的问题。\n\n## 2. 主要方法\n框架包含两个对称组件：\n- **视觉运动行为编码器（VBE）**：基于因果 Mamba 架构，将长时序轨迹信息聚合为统一的行为表示。\n- **阶段条件行为解码器（PBD）**：将该表示解码为精确动作，通过动态对齐任务级先验与实时执行进度来实现。\n\n## 3. 结论/性能\n- 在 RoboTwin 2.0、LIBERO、CALVIN 三个基准上分别取得 **58%、98% 成功率和 4.36 (Avg.Len)** 的 SOTA 表现。\n- 在真实世界 sim-to-real 迁移中，**仅用 50% 演示数据**即可媲美 OpenVLA-OFT，展现出优越的数据效率与泛化能力。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-05-25 13:11:49"
+}

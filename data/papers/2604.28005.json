@@ -1,0 +1,13 @@
+{
+ "id": "2604.28005",
+ "title": "Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning",
+ "authors": "Shijin Gong, Kai Ye, Jin Zhu, Xinyu Zhang, Hongyi Zhou, Chengchun Shi",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28005v1",
+ "abstract": "Recent advances in large language models (LLMs) have increasingly relied on reinforcement learning (RL) to improve their reasoning capabilities. Three approaches have been widely adopted: (i) Proximal policy optimization and advantage actor-critic rely on a deep neural network to estimate the value function of the learning policy in order to reduce the variance of the policy gradient. However, estimating and maintaining such a value network incurs substantial computational and memory overhead. (ii) Group relative policy optimization (GRPO) avoids training a value network by approximating the value function using sample averages. However, GRPO samples a large number of reasoning traces per prompt to achieve accurate value function approximation, making it computationally expensive. (iii) REINFORCE-type algorithms sample only a single reasoning trajectory per prompt, which reduces computational cost but suffers from poor sample efficiency.\n  In this work, we focus on a practical, resource-constrained setting in which only a small number of reasoning traces can be sampled per prompt, while low-variance gradient estimation remains essential for high-quality policy learning. To address this challenge, we bring classical nonparametric statistical methods, which are both computationally and statistically efficient, to LLM reasoning. We employ kernel smoothing as a concrete example for value function estimation and the subsequent policy optimization. Numerical and theoretical results demonstrate that our proposal achieves accurate value and gradient estimation, leading to improved policy optimization.",
+ "summary": "- 核心创新点（1句）：在资源受限的LLM强化学习场景中，首次将核平滑等非参数统计方法用于价值函数估计与后续策略优化，提出 Kernelized Advantage Estimation，以实现低方差的梯度估计而无需训练大规模价值网络。\n\n- 主要方法：使用核平滑作为价值函数估计的非参数方法，并据此进行策略优化，构建 Kernelized Advantage Estimation；相较于需要训练价值网络的方法，该思路在少样本（每 Prompt 仅能采样少量推理轨迹）条件下提高了数值稳定性和样本利用效率。\n\n- 结论/性能：理论与数值结果表明，该方法能够在有限样本下实现准确的价值与梯度估计，从而提升策略优化效果，并在资源受限设置中具有更低的计算与存储成本。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-05-02 13:01:51"
+}

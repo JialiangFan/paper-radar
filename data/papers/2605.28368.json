@@ -1,0 +1,13 @@
+{
+ "id": "2605.28368",
+ "title": "LEIA: Learned Environment for Interactive Architected Materials",
+ "authors": "Haiqian Yang, Yuan Cao, Markus J. Buehler",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28368v2",
+ "abstract": "World models have enabled interactive exploration of game environments and robotic manipulation, but physical engineering remains beyond their reach: real materials exhibit nonlinear constitutive laws, carry history-dependent internal state, undergo inertial dynamics, and may possess hierarchical structures spanning multiple length scales. We present LEIA (Learned Environment for Interactive Architected materials), a world model that lets engineers apply boundary conditions step by step and observe the resulting deformation and stress fields in real time. LEIA handles large three-dimensional unstructured meshes and generates autoregressive responses to user-specified loading. We introduce MicroPlate, a benchmark of architected plates spanning two regimes of microstructure modeling: architected lattices that resolve microstructure explicitly through three-dimensional geometry, and a homogeneous plate where microstructural change is modeled implicitly through internal degrees of freedom. MicroPlate is used to assess LEIA alongside four baseline methods across both regimes. Finally, we demonstrate that LEIA enables efficient candidate generation and ranking for fast surrogate-guided search for de novo designs of architected materials, with stress-accurate candidate ranking validated by finite element ground truth.",
+ "summary": "## 论文总结：LEIA\n\n**1. 核心创新点**\n首个面向\"架构化材料\"工程仿真的交互式世界模型，让工程师能像玩游戏一样逐步施加边界条件并实时观察 3D 变形与应力场。\n\n**2. 主要方法**\n- 构建世界模型 LEIA，支持大规模三维非结构化网格，对用户指定载荷以**自回归**方式生成响应，能够处理非线性本构、历史相关内部状态和惯性动力学。\n- 提出基准数据集 **MicroPlate**，覆盖两类微结构建模范式：显式三维几何的架构化点阵（lattice），以及通过内部自由度隐式建模微结构变化的均质板。\n- 在两个范式下与 4 种基线方法对比评测。\n\n**3. 结论/性能**\nLEIA 在两种微结构建模范式上均表现良好，并被用作快速代理模型驱动新型架构材料的候选设计搜索与排序；其应力预测的候选排序结果经有限元（FEM）真值验证准确，从而显著加速 de novo 材料设计。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-31 13:03:54"
+}

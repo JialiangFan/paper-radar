@@ -1,0 +1,13 @@
+{
+ "id": "2603.03198",
+ "title": "ACE-Brain-0: Spatial Intelligence as a Shared Scaffold for Universal Embodiments",
+ "authors": "Ziyang Gong, Zehang Luo, Anke Tang, Zhe Liu, Shi Fu, Zhi Hou, Ganlin Yang, Weiyun Wang, Xiaofeng Wang, Jianbo Liu, Gen Luo, Haolan Kang, Shuang Luo, Yue Zhou, Yong Luo, Li Shen, Xiaosong Jia, Yao Mu, Xue Yang, Chunxiao Liu, Junchi Yan, Hengshuang Zhao, Dacheng Tao, Xiaogang Wang",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.03198v1",
+ "abstract": "Universal embodied intelligence demands robust generalization across heterogeneous embodiments, such as autonomous driving, robotics, and unmanned aerial vehicles (UAVs). However, existing embodied brain in training a unified model over diverse embodiments frequently triggers long-tail data, gradient interference, and catastrophic forgetting, making it notoriously difficult to balance universal generalization with domain-specific proficiency. In this report, we introduce ACE-Brain-0, a generalist foundation brain that unifies spatial reasoning, autonomous driving, and embodied manipulation within a single multimodal large language model~(MLLM). Our key insight is that spatial intelligence serves as a universal scaffold across diverse physical embodiments: although vehicles, robots, and UAVs differ drastically in morphology, they share a common need for modeling 3D mental space, making spatial cognition a natural, domain-agnostic foundation for cross-embodiment transfer. Building on this insight, we propose the Scaffold-Specialize-Reconcile~(SSR) paradigm, which first establishes a shared spatial foundation, then cultivates domain-specialized experts, and finally harmonizes them through data-free model merging. Furthermore, we adopt Group Relative Policy Optimization~(GRPO) to strengthen the model's comprehensive capability. Extensive experiments demonstrate that ACE-Brain-0 achieves competitive and even state-of-the-art performance across 24 spatial and embodiment-related benchmarks.",
+ "summary": "1) 核心创新点（1句）\n将空间智能作为跨车、机器人与无人机等多种具身系统的通用支架，提出 Scaffold-Specialize-Reconcile 与数据无合并策略，以及 GRPO，构建统一的多模态大语言模型 ACE-Brain-0 实现跨域通用能力。\n\n2) 主要方法\n- 采用多模态大语言模型（MLLM），将空间推理/三维心智模型作为共享底座，支撑不同具身任务。 \n- 提出 Scaffold-Specialize-Reconcile（SSR）范式：先建立共享的空间基础，再培养领域专精的专家，最后通过数据无对合并进行协调与融合。 \n- 引入数据-free model merging 实现专家之间的无数据合并与协同。 \n- 采用 Group Relative Policy Optimization（GRPO）来增强模型的综合能力与跨域适应性。 \n- 在24项与空间及具身相关的基准上进行广泛实验，验证跨域通用性与领域专精能力。\n\n3) 结论/性能\n在24项空间和具身相关基准上，ACE-Brain-0 展现出具有竞争力甚至接近/SOTA 的性能，证明了以空间智能为共用基础的跨域通用与领域专精能力的有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-04 14:03:35"
+}

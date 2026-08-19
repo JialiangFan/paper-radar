@@ -1,0 +1,13 @@
+{
+ "id": "2607.07182",
+ "title": "A search for narrowband technosignatures from LTT 3780 with the Allen Telescope Array and the Karl G. Jansky Very Large Array",
+ "authors": "Chenoa D. Tremblay, Sofia Z. Sheikh, Vishal Gajjar, Nikku Madhusudhan, Isabel Gerrard, Daniel Czech, Talon Myburgh, David E. MacMahon, Ross A. Donnachie, Andrew P. V. Siemion, Matthew Lebofsky, Alex W. Pollak",
+ "date": "2026-07-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.07182v1",
+ "abstract": "The LTT3780 system hosts two known exoplanets-LTT3780b, a rocky super-Earth, and LTT3780c, a temperate sub-Neptune-orbiting a nearby M dwarf on opposite sides of the radius valley. LTT3780c has been proposed as a candidate Hycean world, making the system an important target for astrobiological investigation, particularly in light of recent JWST atmospheric observations. Although biosignature and technosignature searches both seek evidence of life beyond Earth, these approaches have historically been pursued independently. Well-characterized exoplanet systems provide an opportunity to combine these complementary search strategies. In this work, we conducted radio technosignature observations of the LTT3780 system using both the Allen Telescope Array (ATA) and the Karl G. Jansky Very Large Array (VLA). The two facilities provide complementary observational capabilities, with the ATA optimized for wide-band multi-beam post-processing analyses and the VLA enabling high-sensitivity real-time interferometric searches. Across approx 30 hr of total observing time, we searched for narrowband Doppler-drifting signals in the frequency range approx 1--10 GHz. After applying comprehensive radio-frequency interference mitigation and multi-beam consistency tests, no candidate signals consistent with astrophysical or technosignature origins were identified. We place minimum detectable effective isotropic radiated power limits of 4.7 X 10^12--3.6 X 10^13W across the observed bands and facilities. Although no technosignatures were detected, this work demonstrates how complementary observation and analysis strategies can be applied to exoplanets of astrobiological interest and serves as a pathfinder for future combined biosignature and technosignature investigations.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-12 13:04:05"
+}

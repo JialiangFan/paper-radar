@@ -1,0 +1,13 @@
+{
+ "id": "2607.25019",
+ "title": "Interactive Alignment",
+ "authors": "Sylvain Chassang",
+ "date": "2026-07-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.25019v1",
+ "abstract": "This paper studies the long-run alignment of interactive agents, including AI systems, teams, firms, and governments, with human welfare. It develops a farming game in which a population of agents makes planting, trading, and expansion decisions. Agents must allocate final output between transfers to humans and investment in their own expansion. Because transfers to humans reduce the resources available for expansion, evolutionary forces tend to select against aligned behavior. The central question is whether agents' constitutional principles governing sharing and trade can be designed so that alignment persists in the long run. The paper investigates this question using two complementary approaches. First, it develops an AI-agent simulation in which agents' preferences are specified by written constitutions and interpreted by a large language model. Second, it introduces a tractable evolutionary game-theoretic framework that permits rapid and intuitive exploration of alternative constitutional designs. The results suggest that evolutionary game theory provides a useful approximation to the dynamics of constitutional-agent economies. They also indicate that pragmatic norm enforcement, under which agents condition both human-facing altruism and agent-facing trade exclusion on the state of the population, can sustain long-run alignment more effectively than simple altruism or unconditional altruistic enforcement.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-29 13:01:17"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.14474",
+ "title": "Model-First Reasoning LLM Agents: Reducing Hallucinations through Explicit Problem Modeling",
+ "authors": "Annu Rana, Gaurav Kumar",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14474v1",
+ "abstract": "Large Language Models (LLMs) often struggle with complex multi-step planning tasks, showing high rates of constraint violations and inconsistent solutions. Existing strategies such as Chain-of-Thought and ReAct rely on implicit state tracking and lack an explicit problem representation. Inspired by classical AI planning, we propose Model-First Reasoning (MFR), a two-phase paradigm in which the LLM first constructs an explicit model of the problem, defining entities, state variables, actions, and constraints, before generating a solution plan. Across multiple planning domains, including medical scheduling, route planning, resource allocation, logic puzzles, and procedural synthesis, MFR reduces constraint violations and improves solution quality compared to Chain-of-Thought and ReAct. Ablation studies show that the explicit modeling phase is critical for these gains. Our results suggest that many LLM planning failures stem from representational deficiencies rather than reasoning limitations, highlighting explicit modeling as a key component for robust and interpretable AI agents. All prompts, evaluation procedures, and task datasets are documented to facilitate reproducibility.",
+ "summary": "- **核心创新点**：提出 Model-First Reasoning（MFR）两阶段框架，先由大型语言模型显式构建问题的完整模型（实体、状态变量、动作、约束），再基于该模型生成解决方案计划，从而显著减少约束违规并提升规划质量。\n\n- **主要方法**：采用两阶段流程：第一阶段由LLM输出一个显式的、结构化的问题模型（包含实体/变量、可执行动作、约束等）；第二阶段在该模型的基础上生成解决方案或计划。与 Chain-of-Thought 和 ReAct 相比，增加显式建模阶段。并在医疗排程、路线规划、资源分配、逻辑谜题、过程合成等多个领域进行评估，且通过消融研究证明显式建模阶段对性能提升至关重要；并对可复现性进行强调，公开了 prompts、评估流程和数据集。\n\n- **结论/性能**：在多个规划任务上，MFR 能减少约束违规、提高解题质量，相比现有方法有显著改进；消融结果显示问题建模的表达能力不足是失败的主要原因之一，强调显式建模是实现鲁棒、可解释的AI代理的关键。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:02:51"
+}

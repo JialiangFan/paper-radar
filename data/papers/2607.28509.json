@@ -1,0 +1,13 @@
+{
+ "id": "2607.28509",
+ "title": "RefCaptioner: Multi-Reference Image-Grounded Video Captioning",
+ "authors": "Tengfei Liu, Yang Shi, Yuran Wang, Xiaohan Zhang, Yuqing Wen, Yuqi Tang, Qixun Wang, Zhuoran Zhang, Xuanyu Zhu, Weihong Lin, Xinlei Yu, Yujie Wei, Xinwei Long, Fengxiang Wang, Xinlong Chen, Yue Ding, Jialu Chen, Haotian Wang, Yuanxing Zhang",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28509v1",
+ "abstract": "Existing video captioning models generate natural descriptions of video content but cannot explicitly ground local visual elements to multiple reference images. We introduce multi-reference image-grounded video captioning, a new task requiring factual video descriptions with phrase-level reference grounding, and propose RefCaptioner, a two-stage post-training framework for this task. RefCaptioner combines mixed-data SFT with Hierarchical Coverage-Discounted GRPO to jointly improve reference selection, phrase-level binding, distractor rejection, and cross-reference consistency while preserving general video-captioning ability. To support training, we construct a corpus containing $20,000$ videos and 171,354 reference images. We further introduce MRVBench, a benchmark for evaluating caption factuality and multi-reference grounding on both real-world and AI-generated videos. Experiments show that RefCaptioner achieves the best overall performance among the open-source models while remaining competitive on standard video captioning benchmarks. Human evaluation further confirms that its captions are preferred by annotators and enable more source-faithful video reconstruction with both open-source and proprietary video generators.",
+ "summary": "## RefCaptioner：多参考图像接地的视频描述生成\n\n**1. 核心创新点**\n提出了「多参考图像接地视频描述」这一新任务——要求生成的视频描述不仅事实准确，还能在短语级别显式关联到多张参考图像，并配套提出了 RefCaptioner 框架。\n\n**2. 主要方法**\n采用两阶段后训练框架：先用混合数据做监督微调（SFT），再用「层次化覆盖折扣 GRPO」（Hierarchical Coverage-Discounted GRPO）强化学习，联合优化参考图选择、短语级绑定、干扰项拒绝和跨参考一致性，同时保留通用视频描述能力。数据方面构建了含 2 万条视频、171,354 张参考图像的训练语料，并推出 MRVBench 基准，用于评估真实视频和 AI 生成视频上的描述事实性与多参考接地能力。\n\n**3. 结论/性能**\n在开源模型中取得最佳综合性能，同时在标准视频描述基准上保持竞争力。人工评测显示其生成的描述更受标注者青睐，且在开源与闭源视频生成器上都能实现更忠实于原视频的重建效果。\n\n---\n\n补充一句：你有一个 `paper-review` 技能，可以输出更完整的中英双语综述并自动存入 Obsidian vault。需要的话我可以用它再跑一遍这篇。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-02 13:02:52"
+}

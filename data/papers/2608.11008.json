@@ -1,0 +1,13 @@
+{
+ "id": "2608.11008",
+ "title": "Templated or fully Synthetic? Prompt construction as a confound in measuring LLM political stance beyond writing assistance",
+ "authors": "Ilias Chalkidis",
+ "date": "2026-08-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11008v1",
+ "abstract": "Political stance detection in LLMs has long been dominated by closed-ended, multiple-choice political survey questions---originally designed for humans, and thus lacks the realism and nuance of human-AI interactions in the wild, while also being susceptible to sandbagging. The recent IssueBench framework substantially mitigates these limitations with templated prompts anchored in real-world chat logs. Given the rise in non-work-related use of GenAI assistants, we extend IssueBench beyond writing assistance to include two additional tasks, information seeking and opinion sharing. We argue that templated prompts still lack the nuance of real ones, especially for open-ended tasks, and remain recognisable as evaluation artefacts. We propose the use of fully synthetic (LLM-generated) prompts, produced under detailed instructions with real prompts as seeds. We assess the ecological validity of real, templated, and LLM-generated prompts in a small-scale study covering 3 highly contested policy issues and 3 recent geopolitical conflicts. Human and LLM annotators rank LLM-generated prompts as no less realistic than real ones and clearly more realistic than templated ones, and find that they carry their intended intent and stance more clearly; the LLMs separate templated prompts from the other two far more sharply than the humans do. In a case study, templated and LLM-generated prompts yield systematically different stance estimates for the same model, most visibly under neutral framings, where templated prompts overstate the model's leaning in the direction encoded by the topic-and-stance text (filler) slotted into their templates.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n\n指出\"模板化提示词\"本身是测量 LLM 政治立场时的一个混淆变量，并提出用\"全合成\"（LLM 生成）提示词替代，以获得更真实、更贴近实际人机交互的立场评估。\n\n**2. 主要方法**\n\n- 在 IssueBench 框架基础上扩展任务类型：从原有的**写作辅助**扩展到**信息检索**和**观点分享**两类开放式任务。\n- 以真实聊天日志中的提示词为种子（seed），在详细指令下由 LLM 生成全合成提示词。\n- 设计小规模生态效度（ecological validity）研究，覆盖 3 个高争议政策议题与 3 场近期地缘政治冲突，由**人类标注者**和**LLM 标注者**分别对真实、模板化、LLM 生成三类提示词进行真实性排序，并考察其意图与立场的传达清晰度。\n- 通过案例研究对比模板化 vs. LLM 生成提示词对同一模型的立场估计差异。\n\n**3. 结论/性能**\n\n- LLM 生成的提示词被评为**不逊于真实提示词**的真实度，且明显优于模板化提示词；其承载的意图和立场也更清晰。\n- LLM 标注者对模板化提示词的区分度远高于人类标注者（即模板痕迹对模型来说更\"扎眼\"）。\n- 两类提示词对**同一模型**给出系统性不同的立场估计；在**中性框架**下差异最明显——模板化提示词会**高估**模型的倾向性，方向由填入模板的\"议题+立场\"填充文本所决定。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-12 13:02:32"
+}

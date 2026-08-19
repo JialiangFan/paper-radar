@@ -1,0 +1,13 @@
+{
+ "id": "2604.19406",
+ "title": "HP-Edit: A Human-Preference Post-Training Framework for Image Editing",
+ "authors": "Fan Li, Chonghuinan Wang, Lina Lei, Yuping Qiu, Jiaqi Xu, Jiaxiu Jiang, Xinran Qin, Zhikai Chen, Fenglong Song, Zhixin Wang, Renjing Pei, Wangmeng Zuo",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19406v1",
+ "abstract": "Common image editing tasks typically adopt powerful generative diffusion models as the leading paradigm for real-world content editing. Meanwhile, although reinforcement learning (RL) methods such as Diffusion-DPO and Flow-GRPO have further improved generation quality, efficiently applying Reinforcement Learning from Human Feedback (RLHF) to diffusion-based editing remains largely unexplored, due to a lack of scalable human-preference datasets and frameworks tailored to diverse editing needs. To fill this gap, we propose HP-Edit, a post-training framework for Human Preference-aligned Editing, and introduce RealPref-50K, a real-world dataset across eight common tasks and balancing common object editing. Specifically, HP-Edit leverages a small amount of human-preference scoring data and a pretrained visual large language model (VLM) to develop HP-Scorer--an automatic, human preference-aligned evaluator. We then use HP-Scorer both to efficiently build a scalable preference dataset and to serve as the reward function for post-training the editing model. We also introduce RealPref-Bench, a benchmark for evaluating real-world editing performance. Extensive experiments demonstrate that our approach significantly enhances models such as Qwen-Image-Edit-2509, aligning their outputs more closely with human preference.",
+ "summary": "1) 核心创新点\n- HP-Edit 提出一种基于人类偏好后训练的图像编辑框架：通过少量偏好数据和预训练视觉大语言模型构建自动的人类偏好评分器HP-Scorer，并以其作为奖励信号对编辑模型进行后训练，同时提供 RealPref-50K 数据集与 RealPref-Bench 基准用于现实场景的偏好对齐评估。\n\n2) 主要方法\n- 用少量人类偏好评分数据结合预训练视觉大语言模型训练出HP-Scorer（一个自动、偏好对齐的评估器）。\n- 将HP-Scorer作为奖励函数，对扩散模型的图像编辑进行后训练（类似 RLHF 的思路）。\n- 构建 RealPref-50K，覆盖八类常见任务并平衡对象编辑，并提供 RealPref-Bench 作为评估基准。\n- 实验显示对如 Qwen-Image-Edit-2509 等模型的输出在偏好对齐方面有显著提升。\n\n3) 结论/性能\n- 方法显著提升模型输出与人类偏好的一致性，在 RealPref-50K/RealPref-Bench 的评估，以及对 Qwen-Image-Edit-2509 等模型的实际应用中表现出明显改进。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-22 13:02:56"
+}

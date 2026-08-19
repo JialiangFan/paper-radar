@@ -1,0 +1,13 @@
+{
+ "id": "2602.16520",
+ "title": "Recursive language models for jailbreak detection: a procedural defense for tool-augmented agents",
+ "authors": "Doron Shavit",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16520v1",
+ "abstract": "Jailbreak prompts are a practical and evolving threat to large language models (LLMs), particularly in agentic systems that execute tools over untrusted content. Many attacks exploit long-context hiding, semantic camouflage, and lightweight obfuscations that can evade single-pass guardrails. We present RLM-JB, an end-to-end jailbreak detection framework built on Recursive Language Models (RLMs), in which a root model orchestrates a bounded analysis program that transforms the input, queries worker models over covered segments, and aggregates evidence into an auditable decision. RLM-JB treats detection as a procedure rather than a one-shot classification: it normalizes and de-obfuscates suspicious inputs, chunks text to reduce context dilution and guarantee coverage, performs parallel chunk screening, and composes cross-chunk signals to recover split-payload attacks. On AutoDAN-style adversarial inputs, RLM-JB achieves high detection effectiveness across three LLM backends (ASR/Recall 92.5-98.0%) while maintaining very high precision (98.99-100%) and low false positive rates (0.0-2.0%), highlighting a practical sensitivity-specificity trade-off as the screening backend changes.",
+ "summary": "- 核心创新点：提出基于递归语言模型的端到端 jailbreak 检测框架 RLM-JB，通过根模型指挥有界分析程序，对输入进行去混淆、分块筛查并跨块汇聚证据，从而实现对工具增强代理的可审计检测（以过程而非单次分类的方式）。\n\n- 主要方法：\n  - 使用递归语言模型（RLMs）构建检测框架，根模型调度有界分析流程，分布式地处理输入。\n  - 对可疑输入进行归一化/去混淆、文本分块以降低上下文稀释、确保覆盖性。\n  - 进行并行的分块筛查，并通过跨块信号汇聚来恢复分段载荷攻击，形成可审计的判定。\n  - 将检测视为过程性任务，评估在 AutoDAN 风格对抗输入下的鲁棒性，覆盖三种后端 LLM。\n\n- 结论/性能：\n  - 在三种 LLM 后端上实现高检测效果：召回率 92.5–98.0%，精确度 98.99–100%，假阳性率 0.0–2.0%。\n  - 结果显示随着筛查後端的变化存在一个实用的灵敏度–特异性权衡。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-19 14:02:05"
+}

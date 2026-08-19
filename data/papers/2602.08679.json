@@ -1,0 +1,13 @@
+{
+ "id": "2602.08679",
+ "title": "Dashed Line Defense: Plug-And-Play Defense Against Adaptive Score-Based Query Attacks",
+ "authors": "Yanzhang Fu, Zizheng Guo, Jizhou Luo",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08679v1",
+ "abstract": "Score-based query attacks pose a serious threat to deep learning models by crafting adversarial examples (AEs) using only black-box access to model output scores, iteratively optimizing inputs based on observed loss values. While recent runtime defenses attempt to disrupt this process via output perturbation, most either require access to model parameters or fail when attackers adapt their tactics. In this paper, we first reveal that even the state-of-the-art plug-and-play defense can be bypassed by adaptive attacks, exposing a critical limitation of existing runtime defenses. We then propose Dashed Line Defense (DLD), a plug-and-play post-processing method specifically designed to withstand adaptive query strategies. By introducing ambiguity in how the observed loss reflects the true adversarial strength of candidate examples, DLD prevents attackers from reliably analyzing and adapting their queries, effectively disrupting the AE generation process. We provide theoretical guarantees of DLD's defense capability and validate its effectiveness through experiments on ImageNet, demonstrating that DLD consistently outperforms prior defenses--even under worst-case adaptive attacks--while preserving the model's predicted labels.",
+ "summary": "- **核心创新点**：提出 Dashed Line Defense (DLD)，是一种可插拔的后处理防御，通过在观测到的损失与候选样本的真实对抗强度之间引入不确定性，抵御自适应的分数基查询攻击。\n\n- **主要方法**：以 plug-and-play 的后处理方式实现 DLD；在黑盒仅能访问模型分数的前提下，通过对损失观测的映射引入模糊性/不确定性，干扰攻击者对损失与对抗强度的解析与自适应查询策略；提供理论保证；在 ImageNet 等规模数据集上进行实验验证，且无需访问模型参数。\n\n- **结论/性能**：在最坏情形的自适应攻击下，DLD 持续优于此前的防御方法，同时保持模型的预测标签不变，实验结果支持其有效性与鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-10 14:03:23"
+}

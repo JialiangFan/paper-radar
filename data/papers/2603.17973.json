@@ -1,0 +1,13 @@
+{
+ "id": "2603.17973",
+ "title": "TDAD: Test-Driven Agentic Development - Reducing Code Regressions in AI Coding Agents via Graph-Based Impact Analysis",
+ "authors": "Pepe Alonso",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17973v1",
+ "abstract": "AI coding agents can resolve real-world software issues, yet they frequently introduce regressions, breaking tests that previously passed. Current benchmarks focus almost exclusively on resolution rate, leaving regression behavior under-studied. This paper presents TDAD (Test-Driven Agentic Development), an open-source tool and benchmark methodology that combines abstract-syntax-tree (AST) based code-test graph construction with weighted impact analysis to surface the tests most likely affected by a proposed change. Evaluated on SWE-bench Verified with two local models (Qwen3-Coder 30B on 100 instances and Qwen3.5-35B-A3B on 25 instances), TDAD's GraphRAG workflow reduced test-level regressions by 70% (6.08% to 1.82%) and improved resolution from 24% to 32% when deployed as an agent skill. A surprising finding is that TDD prompting alone increased regressions (9.94%), revealing that smaller models benefit more from contextual information (which tests to verify) than from procedural instructions (how to do TDD). An autonomous auto-improvement loop raised resolution from 12% to 60% on a 10-instance subset with 0% regression. These findings suggest that for AI agent tool design, surfacing contextual information outperforms prescribing procedural workflows. All code, data, and logs are publicly available at https://github.com/pepealonso95/TDAD.",
+ "summary": "- **核心创新点**：提出 TDAD，将基于抽象语法树（AST）的代码-测试图与加权影响分析结合，用于在 AI 编码代理中定位受变更影响的测试并减少回归。\n\n- **主要方法**：采用 AST 基于的 code-test 图构建和加权影响分析，形成 GraphRAG 工作流以高效 surfaceduce（揭示）最可能受变更影响的测试；在 SWE-bench 上以两种本地模型（Qwen3-Coder 30B、Qwen3.5-35B-A3B）进行评估，并引入自动自我改进循环以提升性能。\n\n- **结论/性能**：\n  - GraphRAG 工作流将测试级回归降低约 70%，从 6.08% 降至 1.82%。\n  - 以代理技能部署时，解决率（并行修复成功率）从 24% 提升到 32%。\n  - 仅使用 TDD 提示会增加回归，达到 9.94% 的回归率，表明小模型更依赖上下文信息而非流程指令。\n  - 自主的自动改进循环在一个 10 实例子集上将解决率从 12% 提升到 60%，且回归为 0%。\n  - 这些结果表明，在 AI 编码代理设计中，暴露上下文信息比强加固定的工作流程更有效。\n  - 全部代码、数据与日志公开可在 https://github.com/pepealonso95/TDAD 获取。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-19 13:01:57"
+}

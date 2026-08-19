@@ -1,0 +1,13 @@
+{
+ "id": "2605.23809",
+ "title": "Advanced AI Service Provisioning in O-RAN through LLM Engine Integration",
+ "authors": "Seyed Bagher Hashemi Natanzi, Pranshav Gajja, Bo Tang, Vijay K. Shah",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23809v1",
+ "abstract": "The Open Radio Access Network (O-RAN) architecture allows AI to be embedded directly into the RAN through modular xApps and rApps, yet creating these applications collecting data, training models, writing code, and deploying them safely remains slow and largely manual. Large Language Models (LLMs) offer strong reasoning and code-generation capabilities but are unsuited for the fast, deterministic inference required in real-time RAN control. We present a proof-of-concept Dual-Brain architecture that combines both strengths: an LLM-based orchestrator translates operator intents into data-collection policies and deployment code, while an automated ML engine, NeuralSmith, trains lightweight classifiers on demand via an API. We describe the architecture and provisioning workflow, share practical insights from a containerized O-RAN 5G~SA testbed, and discuss open research directions.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：提出\"双脑（Dual-Brain）\"架构，将 LLM 的推理与代码生成能力和自动化 ML 引擎的确定性快速推理能力结合，用于 O-RAN 中 AI 服务（xApps/rApps）的自动化按需供给。\n\n**2. 主要方法**：\n- **LLM 编排器**：将运营商的自然语言意图翻译为数据采集策略和部署代码。\n- **NeuralSmith 自动化 ML 引擎**：通过 API 按需训练轻量级分类器，承担实时 RAN 控制所需的快速确定性推理。\n- 在容器化的 O-RAN 5G SA 测试平台上完成概念验证（PoC）。\n\n**3. 结论/性能**：作为概念验证，论文展示了该架构与供给工作流的可行性，分享了测试平台的实践经验，并指出了若干开放性研究方向（未给出具体定量性能指标）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-25 13:02:49"
+}

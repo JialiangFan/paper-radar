@@ -1,0 +1,13 @@
+{
+ "id": "2604.15311",
+ "title": "LeapAlign: Post-Training Flow Matching Models at Any Generation Step by Building Two-Step Trajectories",
+ "authors": "Zhanhao Liang, Tao Yang, Jie Wu, Chengjian Feng, Liang Zheng",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15311v1",
+ "abstract": "This paper focuses on the alignment of flow matching models with human preferences. A promising way is fine-tuning by directly backpropagating reward gradients through the differentiable generation process of flow matching. However, backpropagating through long trajectories results in prohibitive memory costs and gradient explosion. Therefore, direct-gradient methods struggle to update early generation steps, which are crucial for determining the global structure of the final image. To address this issue, we introduce LeapAlign, a fine-tuning method that reduces computational cost and enables direct gradient propagation from reward to early generation steps. Specifically, we shorten the long trajectory into only two steps by designing two consecutive leaps, each skipping multiple ODE sampling steps and predicting future latents in a single step. By randomizing the start and end timesteps of the leaps, LeapAlign leads to efficient and stable model updates at any generation step. To better use such shortened trajectories, we assign higher training weights to those that are more consistent with the long generation path. To further enhance gradient stability, we reduce the weights of gradient terms with large magnitude, instead of completely removing them as done in previous works. When fine-tuning the Flux model, LeapAlign consistently outperforms state-of-the-art GRPO-based and direct-gradient methods across various metrics, achieving superior image quality and image-text alignment.",
+ "summary": "1. 核心创新点\n- 提出 LeapAlign：通过两步跃迁将长轨迹缩短为两步，实现对奖励梯度直接传播到早期生成步骤，从而高效微调 Flow Matching 模型以对齐人类偏好。\n\n2. 主要方法\n- 在后训练阶段通过直接梯度反向传播奖励到可微分的生成过程进行微调。\n- 将长轨迹分解为两次连续跃迁，每次跳过若干 ODE 采样步骤并在单步内预测未来潜在变量。\n- 通过随机化跃迁的起止时间步，实现在任意生成步骤的稳定更新。\n- 对缩短轨迹赋予更高的训练权重，并减小大幅度梯度项的权重以提升梯度稳定性。\n- 针对 Flux 模型实施微调，与 GRPO 基准和直接梯度方法相比表现优越。\n\n3. 结论/性能\n- 在多个评估指标上 consistently 超越基于 GRPO 的方法与直接梯度方法，取得更高的图像质量与更好的图像-文本对齐。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-17 13:03:32"
+}

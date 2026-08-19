@@ -1,0 +1,13 @@
+{
+ "id": "2603.24484",
+ "title": "Video-Only ToM: Enhancing Theory of Mind in Multimodal Large Language Models",
+ "authors": "Siqi Liu, Xinyang Li, Bochao Zou, Junbao Zhuo, Huimin Ma, Jiansheng Chen",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24484v1",
+ "abstract": "As large language models (LLMs) continue to advance, there is increasing interest in their ability to infer human mental states and demonstrate a human-like Theory of Mind (ToM). Most existing ToM evaluations, however, are centered on text-based inputs, while scenarios relying solely on visual information receive far less attention. This leaves a gap, since real-world human-AI interaction typically requires multimodal understanding. In addition, many current methods regard the model as a black box and rarely probe how its internal attention behaves in multiple-choice question answering (QA). The impact of LLM hallucinations on such tasks is also underexplored from an interpretability perspective. To address these issues, we introduce VisionToM, a vision-oriented intervention framework designed to strengthen task-aware reasoning. The core idea is to compute intervention vectors that align visual representations with the correct semantic targets, thereby steering the model's attention through different layers of visual features. This guidance reduces the model's reliance on spurious linguistic priors, leading to more reliable multimodal language model (MLLM) outputs and better QA performance. Experiments on the EgoToM benchmark-an egocentric, real-world video dataset for ToM with three multiple-choice QA settings-demonstrate that our method substantially improves the ToM abilities of MLLMs. Furthermore, results on an additional open-ended generation task show that VisionToM enables MLLMs to produce free-form explanations that more accurately capture agents' mental states, pushing machine-human collaboration toward greater alignment.",
+ "summary": "- 核心创新点：提出 VisionToM 这一面向视觉的干预框架，通过计算干预向量使视觉表示对齐到正确的语义目标，进而引导多模态大语言模型的注意力，提升理论心智（ToM）推理能力。\n\n- 主要方法：使用 VisionToM 框架对视觉特征的不同层进行干预，降低模型对错误语言先验的依赖，将视觉表示与正确语义目标对齐，从而增强任务感知的推理；在 EgoToM（基于自我导向的真实世界视频数据集）的三种多选题设置和开放式生成任务上进行评估。\n\n- 结论/性能：在 EgoToM 基准上显著提升多模态大语言模型的 ToM 能力和问答性能；在开放式生成任务中，生成的解释更准确地反映代理人心智状态，提升人机协作的对齐度。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-26 13:02:46"
+}

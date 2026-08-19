@@ -1,0 +1,13 @@
+{
+ "id": "2604.19716",
+ "title": "Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views",
+ "authors": "Feihao Fang, My T. Thai, Yuanyuan Lei",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19716v1",
+ "abstract": "Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead ask whether LLMs contain a shared internal logical subspace that simultaneously aligns natural-language and symbolic-language views of the reasoning process. Our hypothesis is that this logical subspace captures logical reasoning capabilities in LLMs that are shared across views while remaining independent of surface forms. To verify this, we employ Canonical Correlation Analysis on the paired residual activations from natural-language and symbolic-language reasoning chains, learning a low-dimensional subspace with maximum cross-view correlation. Furthermore, we design a training-free approach that steers LLMs reasoning chain along this logical subspace, thereby leveraging the complementary reasoning signals from both views. Experiments on four logical reasoning benchmarks demonstrate the effectiveness of our approach, improving accuracy by up to 11 percentage points and generalizing well on out-of-domain problems.",
+ "summary": "- 核心创新点：提出在大语言模型内部存在一个共享的逻辑子空间，使自然语言与符号语言两种推理视图在该子空间对齐，从而提升跨视角的逻辑推理能力。\n- 主要方法：对自然语言和符号语言推理链的成对残差激活，使用Canonical Correlation Analysis（CCA）学习一个最大化跨视角相关性的低维子空间；在此基础上设计一种无需额外训练的引导策略，使模型的推理链沿该逻辑子空间进行，以结合两种视角的互补信号。\n- 结论/性能：在四个逻辑推理基准上实验，准确率提升最高可达11个百分点，且对领域外问题具有良好的泛化能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-22 13:00:54"
+}

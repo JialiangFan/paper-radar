@@ -1,0 +1,13 @@
+{
+ "id": "2603.30022",
+ "title": "Hybrid Framework for Robotic Manipulation: Integrating Reinforcement Learning and Large Language Models",
+ "authors": "Md Saad, Sajjad Hussain, Mohd Suhaib",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.30022v1",
+ "abstract": "This paper introduces a new hybrid framework that combines Reinforcement Learning (RL) and Large Language Models (LLMs) to improve robotic manipulation tasks. By utilizing RL for accurate low-level control and LLMs for high level task planning and understanding of natural language, the proposed framework effectively connects low-level execution with high-level reasoning in robotic systems. This integration allows robots to understand and carry out complex, human-like instructions while adapting to changing environments in real time. The framework is tested in a PyBullet-based simulation environment using the Franka Emika Panda robotic arm, with various manipulation scenarios as benchmarks. The results show a 33.5% decrease in task completion time and enhancements of 18.1% and 36.4% in accuracy and adaptability, respectively, when compared to systems that use only RL. These results underscore the potential of LLM-enhanced robotic systems for practical applications, making them more efficient, adaptable, and capable of interacting with humans. Future research will aim to explore sim-to-real transfer, scalability, and multi-robot systems to further broaden the framework's applicability.",
+ "summary": "- 核心创新点：提出一个将强化学习（RL）与大型语言模型（LLM）耦合的混合框架，利用 RL 做低层控制、LLM 负责高层任务规划与自然语言理解，从而实现对复杂指令的高效理解与实时自适应的机器人操控。\n\n- 主要方法：在 PyBullet 的 Franka Emika Panda 仿真环境中，将 RL 用于学习低层控制策略，同时通过 LLM 进行高层任务规划与自然语言理解，构建两者之间的协同执行机制以连接低层执行与高层推理。\n\n- 结论/性能：与仅使用 RL 的系统相比，在多种操控场景下任务完成时间降低 33.5%，准确性提升 18.1%，适应性提升 36.4%，并指出未来将关注 sim-to-real 转移、扩展性和多机器人系统。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-01 13:03:22"
+}

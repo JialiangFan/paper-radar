@@ -1,0 +1,13 @@
+{
+ "id": "2603.18756",
+ "title": "Are complicated loss functions necessary for teaching LLMs to reason?",
+ "authors": "Gabriele Carrino, Andrea Sassella, Nicolo Brunello, Federico Toschi, Mark James Carman",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18756v1",
+ "abstract": "Recent advances in large language models (LLMs) highlight the importance of post training techniques for improving reasoning and mathematical ability. Group Relative Policy Optimization (GRPO) has shown promise in this domain by combining group relative advantage estimation, PPO style clipping, and KL regularization. However, its complexity raises the question of whether all components are necessary for fostering reasoning behaviors. We conduct a systematic analysis of GRPO and identify two key findings: (1) incorporating negative feedback is essential training solely on actions above a baseline limits learning; and (2) PPO style constraints, such as policy ratio clipping, are not required to improve mathematical reasoning or performance. Building on these insights, we propose REINFORCE with Group Relative Advantage (RGRA), a simplified variant that retains group relative advantage estimation but removes PPO style clipping and policy ratio terms. Experiments across standard mathematical benchmarks indicate that RGRA has the potential to achieve stronger performance than GRPO. Our results suggest that simpler REINFORCE based approaches can effectively enhance reasoning in LLMs, offering a more transparent and efficient alternative to GRPO.",
+ "summary": "- 核心创新点：在对 GRPO 进行系统分析的基础上，提出一个更简化的 REINFORCE 变体 RGRA，保留分组相对优势估计，去除 PPO 风格裁剪与策略比项，以更高效地促进 LLMS 的推理能力。\n\n- 主要方法：基于对GRPO的两个关键发现（负反馈必不可少、PPO裁剪等约束非必要），设计使用 REINFORCE 框架的 RGRA，仍然采用分组相对优势估计，却取消了裁剪和策略比项，并在标准数学基准上进行对比实验。\n\n- 结论/性能：实验结果显示 RGRA 在标准数学基准上可能优于 GRPO，表明更简单的 REINFORCE 方法也能有效提升 LLM 推理能力，提供更透明、高效的替代方案。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-20 13:05:28"
+}

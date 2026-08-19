@@ -1,0 +1,13 @@
+{
+ "id": "2604.01039",
+ "title": "Automated Framework to Evaluate and Harden LLM System Instructions against Encoding Attacks",
+ "authors": "Anubhab Sahu, Diptisha Samanta, Reza Soosahabi",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01039v1",
+ "abstract": "System Instructions in Large Language Models (LLMs) are commonly used to enforce safety policies, define agent behavior, and protect sensitive operational context in agentic AI applications. These instructions may contain sensitive information such as API credentials, internal policies, and privileged workflow definitions, making system instruction leakage a critical security risk highlighted in the OWASP Top 10 for LLM Applications. Without incurring the overhead costs of reasoning models, many LLM applications rely on refusal-based instructions that block direct requests for system instructions, implicitly assuming that prohibited information can only be extracted through explicit queries. We introduce an automated evaluation framework that tests whether system instructions remain confidential when extraction requests are re-framed as encoding or structured output tasks. Across four common models and 46 verified system instructions, we observe high attack success rates (> 0.7) for structured serialization where models refuse direct extraction requests but disclose protected content in the requested serialization formats. We further demonstrate a mitigation strategy based on one-shot instruction reshaping using a Chain-of-Thought reasoning model, indicating that even subtle changes in wording and structure of system instructions can significantly reduce attack success rate without requiring model retraining.",
+ "summary": "- 核心创新点：提出一个自动化评估框架，能够在将系统指令的提取请求改写为编码化或结构化输出任务时，检验系统指令的机密性并揭示潜在的编码攻击风险。 \n\n- 主要方法：开发一个覆盖四种模型与46条系统指令的自动化评估框架，比较直接提取与通过编码/结构化序列化输出的攻击路径的成功率；并提出一种基于一次性指令重塑的缓解策略，结合 Chain-of-Thought 推理模型实现，且无需对模型进行再训练。 \n\n- 结论/性能：在结构化序列化场景中攻击成功率显著高于0.7，表明易被泄露；所提缓解策略能够显著降低攻击成功率且不需要重新训练模型，提供了低成本的防护路径。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-02 13:02:03"
+}

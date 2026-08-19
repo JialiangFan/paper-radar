@@ -1,0 +1,13 @@
+{
+ "id": "2603.23957",
+ "title": "PointRFT: Explicit Reinforcement Fine-tuning for Point Cloud Few-shot Learning",
+ "authors": "Yankai Wang, Yiding Sun, Qirui Wang, Pengbo Li, Chaoyi Lu, Dongxu Zhang",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23957v1",
+ "abstract": "Understanding spatial dynamics and semantics in point cloud is fundamental for comprehensive 3D comprehension. While reinforcement learning algorithms such as Group Relative Policy Optimization (GRPO) have recently achieved remarkable breakthroughs in large language models by incentivizing reasoning capabilities through strategic reward design, their potential remains largely unexplored in the 3D perception domain. This naturally raises a pivotal question: Can RL-based methods effectively empower 3D point cloud fine-tuning? In this paper, we propose PointRFT, the first reinforcement fine-tuning paradigm tailored specifically for point cloud representation learning. We select three prevalent 3D foundation models and devise specialized accuracy reward and dispersion reward functions to stabilize training and mitigate distribution shifts. Through comprehensive few-shot classification experiments comparing distinct training paradigms, we demonstrate that PointRFT consistently outperforms vanilla supervised fine-tuning (SFT) across diverse benchmarks. Furthermore, when organically integrated into a hybrid Pretraining-SFT-RFT paradigm, the representational capacity of point cloud foundation models is substantially unleashed, achieving state-of-the-art performance particularly under data-scarce scenarios.",
+ "summary": "1) 核心创新点：首次将强化微调引入点云表征学习，提出 PointRFT，并设计专门的准确性奖励与分散奖励以稳定训练、缓解分布漂移。\n\n2) 主要方法：在三种常见的3D基础模型上应用强化微调，使用针对点云任务的准确性奖励和分散度奖励；通过少样本分类实验比较不同训练范式，并提出混合的 Pretraining–SFT–RFT 框架以提升在数据稀缺情形下的表示能力。\n\n3) 结论/性能：在多项少样本分类基准上，PointRFT 持续优于 vanilla SFT；结合混合范式时达到更高的性能，达到并体现出在数据稀缺场景下的 state-of-the-art 水平。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-26 13:04:16"
+}

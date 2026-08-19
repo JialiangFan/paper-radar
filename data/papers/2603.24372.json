@@ -1,0 +1,13 @@
+{
+ "id": "2603.24372",
+ "title": "Improving Lean4 Autoformalization via Cycle Consistency Fine-tuning",
+ "authors": "Arsen Shebzukhov",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24372v1",
+ "abstract": "Autoformalization - automatically translating natural language mathematical texts into formal proof language such as Lean4 - can help accelerate AI-assisted mathematical research, be it via proof verification or proof search. I fine-tune Qwen3.5-2B with LoRA for natural language to Lean4 formalization on FineLeanCorpus and consider three training regimes: supervised fine-tuning (SFT) with curriculum learning (difficulty 1 to 10), SFT without curriculum ordering, and reinforcement learning using group relative policy optimization (GRPO) with a cycle consistency reward. Cycle consistency measures how well the meaning of a statement is preserved through a NL to Lean4 to NL' loop, computed as cosine similarity of off-the-shelf sentence embeddings. On an unseen subset of FineLeanCorpus (FLC) and on PutnamBench, RL substantially outperforms both SFT variants (mean cycle consistency 0.669 vs. 0.513 on FLC; 0.561 vs. 0.422 on PutnamBench), while increasing cross-entropy loss by only 0.011 nats, with minimal impact on formalization quality. Curriculum ordering provides no measurable benefit over shuffled training.",
+ "summary": "1）核心创新点：通过引入以循环一致性为奖励的 GRPO 强化学习，对 Lean4 自动形式化进行微调，显著提升 NL→Lean4 的语义保持与形式化性能。\n\n2）主要方法：\n- 使用 Qwen3.5-2B 模型，并对 NL 到 Lean4 的任务做 LoRA 微调，数据源为 FineLeanCorpus。\n- 三种训练策略：有 curriculum 的有监督微调（SFT+Curriculum）、无 curriculum 的 SFT、以及基于 GRPO 的强化学习，后者引入循环一致性奖励。\n- 循环一致性衡量：NL→Lean4→NL' 的含义保持，通过现成句向量的余弦相似度计算。\n- 评测在未见子集 FineLeanCorpus（FLC）和 PutnamBench 上进行。\n\n3）结论/性能：\n- 相较于两种 SFT 变体，RL 显著提升循环一致性：FLC 上 0.669 对 0.513，PutnamBench 上 0.561 对 0.422。\n- 同时交叉熵损失仅增加 0.011 nats，形式化质量提升有限但保持良好。\n- Curriculum 排序对效果无显著益处，打乱训练的表现并无明显劣势。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-26 13:03:31"
+}

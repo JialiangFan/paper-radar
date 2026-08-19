@@ -1,0 +1,13 @@
+{
+ "id": "2603.10268",
+ "title": "SpecOps: A Fully Automated AI Agent Testing Framework in Real-World GUI Environments",
+ "authors": "Syed Yusuf Ahmed, Shiwei Feng, Chanwoo Bae, Calix Barrus Xiangyu Zhang",
+ "date": "2026-03-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.10268v1",
+ "abstract": "Autonomous AI agents powered by large language models (LLMs) are increasingly deployed in real-world applications, where reliable and robust behavior is critical. However, existing agent evaluation frameworks either rely heavily on manual efforts, operate within simulated environments, or lack focus on testing complex, multimodal, real-world agents. We introduce SpecOps, a novel, fully automated testing framework designed to evaluate GUI-based AI agents in real-world environments. SpecOps decomposes the testing process into four specialized phases - test case generation, environment setup, test execution, and validation - each handled by a distinct LLM-based specialist agent. This structured architecture addresses key challenges including end-to-end task coherence, robust error handling, and adaptability across diverse agent platforms including CLI tools, web apps, and browser extensions. In comprehensive evaluations across five diverse real-world agents, SpecOps outperforms baselines including general-purpose agentic systems such as AutoGPT and LLM-crafted automation scripts in planning accuracy, execution success, and bug detection effectiveness. SpecOps identifies 164 true bugs in the real-world agents with an F1 score of 0.89. With a cost of under 0.73 USD and a runtime of under eight minutes per test, it demonstrates its practical viability and superiority in automated, real-world agent testing.",
+ "summary": "- **核心创新点**：提出一个完全自动化、分阶段的 GUI 代理测试框架 SpecOps，通过四个 LLM 专家代理实现从测试用例生成到环境搭建、测试执行与验证的端到端测试，适用于现实世界的多平台 GUI 场景（CLI、网页应用、浏览器扩展）。\n\n- **主要方法**：利用四个独立的 LLM 基于的专家代理分别承担测试用例生成、环境设置、测试执行和结果验证；构建一个面向现实世界 GUI 的端到端测试流程，解决任务连贯性、错误处理和跨平台适应性等挑战，并在五个真实世界代理上与基线系统（如 AutoGPT、LLM 脚本等）进行对比评估。\n\n- **结论/性能**：在五个真实世界代理的评估中，SpecOps 在计划准确性、执行成功率和漏洞检测效果上优于基线；共发现 164 个真实漏洞，F1 分数达 0.89；单次测试成本低于 0.73 美元，运行时间不足 8 分钟，展示了在自动化现实世界代理测试中的可行性与优越性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-12 13:03:33"
+}

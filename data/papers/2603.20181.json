@@ -1,0 +1,13 @@
+{
+ "id": "2603.20181",
+ "title": "Improving Generalization on Cybersecurity Tasks with Multi-Modal Contrastive Learning",
+ "authors": "Jianan Huang, Rodolfo V. Valentim, Luca Vassio, Matteo Boffa, Marco Mellia, Idilio Drago, Dario Rossi",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20181v1",
+ "abstract": "The use of ML in cybersecurity has long been impaired by generalization issues: Models that work well in controlled scenarios fail to maintain performance in production. The root cause often lies in ML algorithms learning superficial patterns (shortcuts) rather than underlying cybersecurity concepts. We investigate contrastive multi-modal learning as a first step towards improving ML performance in cybersecurity tasks. We aim at transferring knowledge from data-rich modalities, such as text, to data-scarce modalities, such as payloads. We set up a case study on threat classification and propose a two-stage multi-modal contrastive learning framework that uses textual vulnerability descriptions to guide payload classification. First, we construct a semantically meaningful embedding space using contrastive learning on descriptions. Then, we align payloads to this space, transferring knowledge from text to payloads. We evaluate the approach on a large-scale private dataset and a synthetic benchmark built from public CVE descriptions and LLM-generated payloads. The methodology appears to reduce shortcut learning over baselines on both benchmarks. We release our synthetic benchmark and source code as open source.",
+ "summary": "1) 核心创新点：提出一个两阶段的多模态对比学习框架，通过在文本描述上构建语义嵌入空间，并将负载数据对齐到该空间，实现文本到负载的跨模态知识迁移，从而提升网络威胁分类等 cybersecurity 任务的泛化能力，降低捷径学习。\n\n2) 主要方法：\n- 在文本描述（如漏洞描述）上进行对比学习，构建一个语义清晰的嵌入空间。\n- 将 payloads（有效负载数据）对齐到这个文本嵌入空间，实现文本端到负载端的跨模态对齐与知识转移。\n- 采用两阶段训练：阶段1 关注描述的对比学习，阶段2 将负载对齐到描述的嵌入空间。\n- 在大规模私有数据集以及由公开 CVE 描述和 LLM 生成的合成基准上进行评估。\n\n3) 结论/性能：相较于基线方法，该框架在两个基准上都表现出降低捷径学习的倾向、提升泛化能力的效果，并且公开了合成基准和源代码。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:07:54"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.13494",
+ "title": "NavWAM: A Navigation World Action Model for Goal-Conditioned Visual Navigation",
+ "authors": "Daichi Azuma, Taiki Miyanishi, Koya Sakamoto, Shuhei Kurita, Yaonan Zhu, Petr Khrapchenkov, Motoaki Kawanabe, Yusuke Iwasawa, Yutaka Matsuo",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13494v1",
+ "abstract": "Goal-conditioned visual navigation requires a robot to act under partial observability by anticipating how its motion will change the future egocentric view and whether that change brings it closer to the goal. Navigation world models provide such visual foresight, but they remain prediction modules that require an external planner to convert predicted futures into closed-loop control. We propose Navigation World Action Model (NavWAM), a diffusion-transformer policy that turns navigation world-model prediction into executable action by representing future observations, goal-progress values, and action chunks in a shared latent sequence. By learning future prediction jointly with the action and value targets that determine closed-loop behavior, NavWAM makes visual foresight directly usable for robot control. We build NavWAM through simulation pretraining and real-robot adaptation, and evaluate it on image-goal navigation against planning-based world models and a representative direct navigation policy. Across offline benchmarks and closed-loop real-robot deployment, NavWAM improves over planning-based world-model baselines in our evaluations while using the default policy mode without CEM-style action search. Project page: https://dachii-azm.github.io/navwam/",
+ "summary": "## NavWAM 论文总结\n\n**1. 核心创新点**\n将\"导航世界模型\"的视觉预测能力直接转化为可执行动作，提出一个无需外部规划器的目标条件视觉导航策略（NavWAM）。\n\n**2. 主要方法**\n采用**扩散-Transformer（diffusion-transformer）策略**，把未来观测、目标进度价值（goal-progress value）和动作块（action chunk）统一编码到一个共享的潜在序列中，让\"未来预测\"与\"动作/价值目标\"联合训练，从而使视觉前瞻直接服务于闭环控制。训练流程为**仿真预训练 + 真实机器人适配**。\n\n**3. 结论/性能**\n在图像目标（image-goal）导航任务上，离线基准测试与真实机器人闭环部署均优于基于规划的世界模型基线，且仅使用默认策略模式即可达成——无需 CEM 式的动作搜索（action search），降低了推理开销。\n\n---\n\n补充说明：如果你需要更深入、规范化的论文综述（按主题/背景/问题/贡献/方法论拆解，并自动输出中英文双版本到 Obsidian），可以告诉我，我会调用 `/paper-review` 技能来处理。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-12 13:04:39"
+}

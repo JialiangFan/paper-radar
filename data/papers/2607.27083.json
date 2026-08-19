@@ -1,0 +1,13 @@
+{
+ "id": "2607.27083",
+ "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
+ "authors": "Yicheng Feng, Yan Zhang, Yan Cheng, Wei Qi",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27083v1",
+ "abstract": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools leaves the task under-informed, while too many adds cost, context load, and privacy exposure. Routers and retrievers can rank candidate tools by relevance, but a ranking alone does not determine how many are worth selecting. Existing approaches leave acquisition under heterogeneous costs unaddressed. We formulate this decision as cost-aware marginal decision-focused stopping (CAM-DF) over ranked tool prefixes, with CAM-DF-lite as a compact interpretable variant. We train directly on the offline gap between stopping now and the best continuation: its sign labels the decision, its magnitude weights each error by the payoff at stake. We prove this objective is Bayes-aligned with the stopping target and that score-only rules are suboptimal under heterogeneous costs. We evaluate on 1,343 tasks across five tool-use domains. On $τ$-bench Retail, CAM-DF attains the highest payoff among deployable methods, with gains over a predict-then-threshold baseline across all five ranking sources and two cost regimes. Our approach is state-of-the-art under heterogeneous costs and high cost pressure, with larger gains under weaker rankings. In live execution, CAM-DF exposes the agent to 37\\% fewer tools than full access while maintaining comparable task success. The CAM-DF family is a lightweight pre-execution plugin that turns existing tool rankings into lower-cost acquisition decisions without fine-tuning the underlying LLM.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n将 LLM agent 的工具选择从\"按相关性排序\"升级为\"在异构成本下决定何时停止获取\"的决策问题，提出 CAM-DF（成本感知的边际决策导向停止）框架。\n\n**2. 主要方法**\n- 在已排序的工具前缀（ranked prefixes）上建模停止决策，直接对\"现在停止\"与\"最优继续\"之间的**离线收益差（gap）**进行训练：差值的**符号**给出决策标签，**幅度**作为误差权重（体现该次判断的实际得失）。\n- 提出轻量可解释变体 CAM-DF-lite。\n- 理论上证明该目标与停止目标是 **Bayes-aligned** 的，并证明仅依赖相关性分数的规则在异构成本下**次优**。\n- 定位为**执行前的插件**，无需微调底层 LLM。\n\n**3. 结论/性能**\n- 在 5 个工具使用领域、共 1343 个任务上评测；在 τ-bench Retail 上，CAM-DF 在可部署方法中收益最高，且在 5 种排序来源、2 种成本设定下均优于 predict-then-threshold 基线。\n- 在异构成本与高成本压力场景下达到 SOTA，排序质量越差、增益越明显。\n- 实际执行中，相比全量工具访问**减少 37% 的工具暴露**，同时任务成功率相当。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-30 13:02:26"
+}

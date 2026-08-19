@@ -1,0 +1,13 @@
+{
+ "id": "2606.08998",
+ "title": "The Token Not Taken: Sampling, State, and the Variability of AI Agent Outputs",
+ "authors": "Muhammad Zia Hydari, Raja Iqbal",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08998v1",
+ "abstract": "Agentic AI systems can behave differently across runs: the same request may produce a different plan, a different tool call, a different code edit, or a different final answer. Such variability arises from several layers that are often conflated. A foundation model is a large pretrained model, usually adaptable to many downstream tasks, that maps an input context to predictions over outputs. In many current agents, that model is embedded in an orchestration loop that plans, calls tools, observes results, and updates state. One explicit intrinsic source of variability in such systems is token generation: the model computes scores over possible next tokens, the scores are converted into probabilities, and a decoder may sample tokens using a pseudo-random number generator. A small sampled token difference can then propagate upward into a different tool call, code path, search query, or agent state. Other sources of variability are extrinsic to token sampling, including changing environments, live data, serving infrastructure, batch effects, and numerical details. By separating these layers, the manuscript clarifies what it means to call agentic AI systems stochastic, when such variability can be reproduced under matched conditions, and why deterministic execution need not imply identical behavior in deployed settings.",
+ "summary": "**核心创新点**：从分层视角厘清 Agentic AI 系统输出可变性的来源，区分 token 采样的\"内在随机性\"与环境、基础设施等\"外在随机性\"。\n\n**主要方法**：以概念性分析为主，将 Agent 系统拆解为基础模型、token 解码（含伪随机采样）、编排循环（规划/工具调用/状态更新）和部署环境等多个层次，分别剖析每一层引入差异的机制及其向上传播路径。\n\n**结论/性能**：澄清了\"Agent 是随机系统\"这一说法的真正含义，指出在匹配条件下哪些可变性可复现，并解释了为何即使解码本身是确定性的，部署环境中的 Agent 行为仍可能不一致，为可复现性研究和系统设计提供了概念框架。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-09 13:00:37"
+}

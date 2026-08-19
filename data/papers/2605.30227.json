@@ -1,0 +1,13 @@
+{
+ "id": "2605.30227",
+ "title": "Unifying Temporal and Structural Credit Assignment in LLM-Based Multi-Agent Prompt Optimization",
+ "authors": "Wenwu Li, Yuran Song, Mingze Zhao, Bo Jin, Wenhao Li",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30227v1",
+ "abstract": "While Multi-Agent Systems (MAS) empower Large Language Models to tackle complex reasoning tasks through collaborative interaction, optimizing their dynamics remains a formidable challenge due to the discrete, non-differentiable nature of the computation graph and the sparsity of global supervisory signals. Existing black-box optimizers struggle to attribute trajectory-level failure to specific local components, resulting in inefficient, high-variance exploration. We argue that tractable MAS optimization needs structural inductive biases to disentangle error signals. We propose temporal and structural credit assignment, which decomposes the objective along two axes: (i) temporal credit, using state-space bottlenecks to identify critical rounds, and (ii) structural credit, using stationary role policies to isolate agent contributions. Leveraging these decomposed signals, we introduce a discrete, verbalized block coordinate descent algorithm for iterative refinement. Rather than indiscriminate global updates, it alternates between optimizing role prompts and aggregation protocols, using LLM-generated \"proxy gradients\" to target only the identified weak links. Across diverse reasoning benchmarks, our approach substantially reduces query complexity while improving performance, providing a principled and interpretable path toward self-improving MAS.",
+ "summary": "# 论文总结\n\n## 1. 核心创新点\n提出**时间与结构双维度信用分配框架**，解决多智能体系统（MAS）优化中难以将全局失败归因到具体组件的难题。\n\n## 2. 主要方法\n- **时间信用**：通过状态空间瓶颈识别关键轮次（critical rounds）。\n- **结构信用**：通过稳态角色策略隔离各智能体的贡献。\n- **优化算法**：提出离散、口语化（verbalized）的**块坐标下降算法**，交替优化角色提示词与聚合协议，利用 LLM 生成的\"代理梯度\"（proxy gradients）只针对薄弱环节进行迭代精修，避免无差别的全局更新。\n\n## 3. 结论/性能\n在多个推理基准测试中，该方法**显著降低查询复杂度**的同时**提升了性能**，为自我改进的多智能体系统提供了一条可解释、有原则的优化路径。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:01:10"
+}

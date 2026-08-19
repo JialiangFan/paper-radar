@@ -1,0 +1,13 @@
+{
+ "id": "2608.13474",
+ "title": "Decoding Task Progress from VLA Representations",
+ "authors": "Atiksh Bhardwaj, Edward Weiyi Duan, Prithwish Dan, Wei-Chiu Ma, Preston Culbertson",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13474v1",
+ "abstract": "Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual stream of $π_{0.5}$ and find that task progress, the normalized time remaining in a trajectory, is linearly readable from the activations. We find that this signal is present in the pretrained PaliGemma backbone prior to training on any robot-specific data. A single linear probe generalizes to unseen tasks and varies under language counterfactuals when trained on multi-prompt data, but does not enable meaningful steering of the policy. These properties make the signal directly useful for instrumenting deployed VLAs. We use the probe as a simple label-free OOD detector, which detects stalled task progress, and find it competitive with state-of-the-art methods. Our results suggest that VLAs have rich, linearly readable internal representations of semantic quantities like task progress, and that learning to read these signals offers a lightweight, interpretable path toward monitoring deployed visuomotor policies.",
+ "summary": "## 论文总结：Decoding Task Progress from VLA Representations\n\n**1. 核心创新点**\n研究发现视觉-语言-动作模型（VLA）的内部激活中**线性可读出\"任务进度\"**（轨迹剩余时间的归一化量），可用作部署时监控策略运行状态的轻量级探针。\n\n**2. 主要方法**\n借鉴机制可解释性（mechanistic interpretability）思路，对 **π₀.₅** 模型的残差流（residual stream）训练**线性探针（linear probe）**来解码任务进度。实验包括：验证该信号在未经机器人数据训练的预训练 **PaliGemma** 主干中已经存在；测试单个探针在未见任务上的泛化性；用语言反事实（language counterfactuals）检验其对指令语义的敏感性；以及尝试用该方向对策略进行操控（steering）。最后将探针用作**无标签的 OOD 检测器**，通过识别\"任务进度停滞\"来发现异常。\n\n**3. 结论/性能**\n- 任务进度信号线性可读，且**源自预训练视觉-语言主干**，而非机器人数据微调所得；\n- 单一线性探针可**泛化到未见任务**，在多提示数据上训练后能随语言反事实而变化，说明它编码的是语义量而非单纯计时；\n- 但该方向**无法有效操控策略行为**（只可读、不可写），这反而使其适合作为纯监控工具；\n- 作为无标签 OOD 检测器，性能**与当前最优方法相当（competitive with SOTA）**。\n\n**意义**：VLA 内部存在丰富且线性可读的语义表征，\"读取\"这些信号为部署中的视觉运动策略提供了一条轻量、可解释的运行时监控路径。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-15 13:04:46"
+}

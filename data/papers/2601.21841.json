@@ -1,0 +1,13 @@
+{
+ "id": "2601.21841",
+ "title": "Embodied Task Planning via Graph-Informed Action Generation with Large Lanaguage Model",
+ "authors": "Xiang Li, Ning Yan, Masood Mortazavi",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21841v1",
+ "abstract": "While Large Language Models (LLMs) have demonstrated strong zero-shot reasoning capabilities, their deployment as embodied agents still faces fundamental challenges in long-horizon planning. Unlike open-ended text generation, embodied agents must decompose high-level intent into actionable sub-goals while strictly adhering to the logic of a dynamic, observed environment. Standard LLM planners frequently fail to maintain strategy coherence over extended horizons due to context window limitation or hallucinate transitions that violate constraints. We propose GiG, a novel planning framework that structures embodied agents' memory using a Graph-in-Graph architecture. Our approach employs a Graph Neural Network (GNN) to encode environmental states into embeddings, organizing these embeddings into action-connected execution trace graphs within an experience memory bank. By clustering these graph embeddings, the framework enables retrieval of structure-aware priors, allowing agents to ground current decisions in relevant past structural patterns. Furthermore, we introduce a novel bounded lookahead module that leverages symbolic transition logic to enhance the agents' planning capabilities through the grounded action projection. We evaluate our framework on three embodied planning benchmarks-Robotouille Synchronous, Robotouille Asynchronous, and ALFWorld. Our method outperforms state-of-the-art baselines, achieving Pass@1 performance gains of up to 22% on Robotouille Synchronous, 37% on Asynchronous, and 15% on ALFWorld with comparable or lower computational cost.",
+ "summary": "1. 核心创新点：提出 GiG 框架，采用 Graph-in-Graph 的记忆结构与结构化检索，并通过有界前瞻的符号转移逻辑提升长期任务规划的连贯性与可控性。\n\n2. 主要方法：利用图神经网络将环境状态编码为嵌入，组成执行轨迹图并存储在经验记忆库中；通过对图嵌入进行聚类获得结构化先验以检索相关历史模式；引入有界前瞻模块，基于符号转移逻辑进行 grounded 的行动投射来辅助规划。\n\n3. 结论/性能：在 Robotouille Synchronous、Robotouille Asynchronous 与 ALFWorld 三个基准上，显著优于SOTA基线，Pass@1 分别提升至最高 22%、37%、15%，且计算成本与对比方法相当或更低。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-30 14:02:44"
+}

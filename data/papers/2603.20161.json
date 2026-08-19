@@ -1,0 +1,13 @@
+{
+ "id": "2603.20161",
+ "title": "Semantic Token Clustering for Efficient Uncertainty Quantification in Large Language Models",
+ "authors": "Qi Cao, Andrew Gambardella, Takeshi Kojima, Yutaka Matsuo, Yusuke Iwasawa",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20161v1",
+ "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities across diverse tasks. However, the truthfulness of their outputs is not guaranteed, and their tendency toward overconfidence further limits reliability. Uncertainty quantification offers a promising way to identify potentially unreliable outputs, but most existing methods rely on repeated sampling or auxiliary models, introducing substantial computational overhead. To address these limitations, we propose Semantic Token Clustering (STC), an efficient uncertainty quantification method that leverages the semantic information inherently encoded in LLMs. Specifically, we group tokens into semantically consistent clusters using embedding clustering and prefix matching, and quantify uncertainty based on the probability mass aggregated over the corresponding semantic cluster. Our approach requires only a single generation and does not depend on auxiliary models. Experimental results show that STC achieves performance comparable to state-of-the-art baselines while substantially reducing computational overhead.",
+ "summary": "- 核心创新点：提出语义令牌聚类（STC）方法，通过对生成文本中的令牌进行语义一致的聚类并基于簇级概率质量来量化不确定性，仅需单次生成且不依赖外部辅助模型。\n\n- 主要方法：利用嵌入向量进行聚类（embedding clustering）和前缀匹配将令牌分成语义一致的簇；对每个簇的概率质量进行汇聚以度量不确定性；整个过程无需重复采样或辅助模型。\n\n- 结论/性能：实验表明 STC 的不确定性量化与现有最先进基线相当，同时显著降低了计算开销和推理成本。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-23 13:08:14"
+}

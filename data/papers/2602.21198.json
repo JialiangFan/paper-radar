@@ -1,0 +1,13 @@
+{
+ "id": "2602.21198",
+ "title": "Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs",
+ "authors": "Yining Hong, Huang Huang, Manling Li, Li Fei-Fei, Jiajun Wu, Yejin Choi",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21198v1",
+ "abstract": "Embodied LLMs endow robots with high-level task reasoning, but they cannot reflect on what went wrong or why, turning deployment into a sequence of independent trials where mistakes repeat rather than accumulate into experience. Drawing upon human reflective practitioners, we introduce Reflective Test-Time Planning, which integrates two modes of reflection: \\textit{reflection-in-action}, where the agent uses test-time scaling to generate and score multiple candidate actions using internal reflections before execution; and \\textit{reflection-on-action}, which uses test-time training to update both its internal reflection model and its action policy based on external reflections after execution. We also include retrospective reflection, allowing the agent to re-evaluate earlier decisions and perform model updates with hindsight for proper long-horizon credit assignment. Experiments on our newly-designed Long-Horizon Household benchmark and MuJoCo Cupboard Fitting benchmark show significant gains over baseline models, with ablative studies validating the complementary roles of reflection-in-action and reflection-on-action. Qualitative analyses, including real-robot trials, highlight behavioral correction through reflection.",
+ "summary": "- 核心创新点：提出反思性测试时规划（Reflective Test-Time Planning），通过执行前的内部反思进行多候选行动的生成与评分、执行后的测试时训练更新以及基于回顾性反思的长期信用分配，从而使具身LLMs 实现自我改进。  \n- 主要方法：在具身LLMs 中引入三种反思模式——reflection-in-action（执行前利用测试时尺度化生成并评分多条候选行动的内部反思）、reflection-on-action（执行后通过测试时训练更新内部反思模型和动作策略）、retrospective reflection（回顾性反思对早期决策重新评估并用后见之明进行模型更新以实现长时序信用分配），在 Long-Horizon Household 基准和 MuJoCo Cupboard Fitting 基准上进行对比与消融分析，并含有真实机器人试验。  \n- 结论/性能：在两个基准上相比基线模型实现显著提升，消融研究验证了 reflection-in-action 与 reflection-on-action 的互补作用，真实机器人实验也显示通过反思可以实现行为纠正。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-25 14:02:35"
+}

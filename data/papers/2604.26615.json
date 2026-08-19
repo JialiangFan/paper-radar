@@ -1,0 +1,13 @@
+{
+ "id": "2604.26615",
+ "title": "TDD Governance for Multi-Agent Code Generation via Prompt Engineering",
+ "authors": "Tarlan Hasanli, Shahbaz Siddeeq, Bishwash Khanal, Pyry Kotilainen, Tommi Mikkonen, Pekka Abrahamsson",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26615v1",
+ "abstract": "Large language models (LLMs) accelerate software development but often exhibit instability, non-determinism, and weak adherence to development discipline in unconstrained workflows. While test-driven development (TDD) provides a structured Red-Green-Refactor process, existing LLM-based approaches typically use tests as auxiliary inputs rather than enforceable process constraints. We present an AI-native TDD framework that operationalizes classical TDD principles as structured prompt-level and workflow-level governance mechanisms. Extracted principles are formalized in a machine-readable manifesto and distributed across planning, generation, repair, and validation stages within a layered architecture that separates model proposal from deterministic engine authority. The system enforces phase ordering, bounded repair loops, validation gates, and atomic mutation control to improve stability and reproducibility. We describe architecture and discuss encoding software engineering discipline directly into prompt orchestration, which we think offers a promising direction for reliable LLM-assisted development.",
+ "summary": "- 核心创新点（1句）\n  将经典的测试驱动开发（TDD）原理转化为结构化的提示级与工作流级治理机制，通过分层架构和确定性引擎将模型提案与执行权威分离，从而提升多代理LLM代码生成的稳定性与可重复性。\n\n- 主要方法（技术/模型要点）\n  - 将 TDD 原则形式化为可机器可读的宣言，分布在规划、生成、修复、验证等阶段，构成一个AI-native TDD框架。\n  - 采用分层架构，分离模型提出（提案阶段）与确定性引擎权威（执行/验证阶段）。\n  - 具体治理机制包括：阶段性顺序 enforce、受限的修复循环、验证门控、原子变更控制。\n  - 通过提示编排（prompt engineering）将软件工程纪律编码到系统提示与工作流中，支持多代理协作的代码生成。\n\n- 结论/性能（取得了什么效果）\n  - 声称通过上述机制能够提高生成过程的稳定性和可重复性，并提出这是实现可靠的LLM辅助开发的有希望方向；文中主要描述架构与方法，并讨论实施的可行性与前景，未给出具体实验数据。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-30 13:02:27"
+}

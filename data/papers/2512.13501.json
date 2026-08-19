@@ -1,0 +1,13 @@
+{
+ "id": "2512.13501",
+ "title": "Behavior-Aware and Generalizable Defense Against Black-Box Adversarial Attacks for ML-Based IDS",
+ "authors": "Sabrine Ennaji, Elhadj Benkhelifa, Luigi Vincenzo Mancini",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13501v1",
+ "abstract": "Machine learning based intrusion detection systems are increasingly targeted by black box adversarial attacks, where attackers craft evasive inputs using indirect feedback such as binary outputs or behavioral signals like response time and resource usage. While several defenses have been proposed, including input transformation, adversarial training, and surrogate detection, they often fall short in practice. Most are tailored to specific attack types, require internal model access, or rely on static mechanisms that fail to generalize across evolving attack strategies. Furthermore, defenses such as input transformation can degrade intrusion detection system performance, making them unsuitable for real time deployment.\n  To address these limitations, we propose Adaptive Feature Poisoning, a lightweight and proactive defense mechanism designed specifically for realistic black box scenarios. Adaptive Feature Poisoning assumes that probing can occur silently and continuously, and introduces dynamic and context aware perturbations to selected traffic features, corrupting the attacker feedback loop without impacting detection capabilities. The method leverages traffic profiling, change point detection, and adaptive scaling to selectively perturb features that an attacker is likely exploiting, based on observed deviations.\n  We evaluate Adaptive Feature Poisoning against multiple realistic adversarial attack strategies, including silent probing, transferability based attacks, and decision boundary based attacks. The results demonstrate its ability to confuse attackers, degrade attack effectiveness, and preserve detection performance. By offering a generalizable, attack agnostic, and undetectable defense, Adaptive Feature Poisoning represents a significant step toward practical and robust adversarial resilience in machine learning based intrusion detection systems.",
+ "summary": "- 核心创新点（一句话概括）\n  提出自适应特征投毒（Adaptive Feature Poisoning）在黑盒对抗场景下通过动态、上下文感知地扰动选定流量特征，混淆攻击者的反馈循环且不损害 IDS 的检测性能。\n\n- 主要方法（技术与模型要点）\n  - 以流量画像为基础进行 traffic profiling、结合 change point detection 捕捉异常变动。\n  - 使用 adaptive scaling 对选定特征实施动态扰动，聚焦攻击者可能利用的特征。\n  - 设计为轻量、无需访问内部模型的防御，能够对持续的静默探测、迁移型攻击以及基于决策边界的攻击具备泛化能力。\n\n- 结论/性能（取得的效果）\n  - 能混淆攻击者、降低攻击的有效性，同时保持或提升检测系统的性能。\n  - 展现出一般化、攻击无关的防御特性，对多种现实攻击场景均有效且难以被察觉。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 03:03:12"
+}

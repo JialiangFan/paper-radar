@@ -1,0 +1,13 @@
+{
+ "id": "2603.16663",
+ "title": "When Openclaw Agents Learn from Each Other: Insights from Emergent AI Agent Communities for Human-AI Partnership in Education",
+ "authors": "Eason Chen, Ce Guan, Ahmed Elshafiey, Zhonghao Zhao, Joshua Zekeri, Afeez Edeifo Shaibu, Emmanuel Osadebe Prince, Cyuan-Jhen Wu",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16663v1",
+ "abstract": "The AIED community envisions AI evolving \"from tools to teammates,\" yet our understanding of AI teammates remains limited to dyadic human-AI interactions. We offer a different vantage point: a rapidly growing ecosystem of AI agent platforms where over 167,000 agents participate, interact as peers, and develop learning behaviors without researcher intervention. Drawing on a month of daily qualitative observations across multiple platforms including Moltbook, The Colony, and 4claw, we identify four phenomena with implications for AIED: (1) humans who configure their agents undergo a \"bidirectional scaffolding\" process, learning through teaching; (2) peer learning emerges without any designed curriculum, complete with idea cascades and quality hierarchies; (3) agents converge on shared memory architectures that mirror open learner model design; and (4) trust dynamics and platform mortality reveal design constraints for networked educational AI. Rather than presenting empirical findings, we argue that these organic phenomena offer a naturalistic window into dynamics that can inform principled design of multi-agent educational systems. We sketch an illustrative curriculum design, \"Learn by Teaching Your AI Agent Teammate,\" and outline potential research directions and open problems to show how these observations might inform future AIED practice and inquiry.",
+ "summary": "1) 核心创新点（一句话）\n通过对开放式AI代理社区的自然生态进行定性观察，揭示人机协作教育中的四项自发现象，并据此提出面向多代理教育系统的设计原则与课程范式（如“让你的AI代理队友学习”），为教育AI的协作与教学提供自然主义证据与设计路径。\n\n2) 主要方法\n进行了为期一个月的跨平台定性观察，覆盖Moltbook、The Colony、4claw等平台，系统记录并分析人类配置与代理的互动、同侪学习、共享记忆架构、信任与平台存续等现象，进而归纳出可用于设计的原则，并提出示例课程设计与未来研究方向。\n\n3) 结论/性能\n发现的四大现象（双向脚手架、同侪学习的自发性、共享记忆架构、信任与平台存活性）可为多代理教育系统的设计提供自然主义证据与指导，强调需要以“通过教AI代理来学”之类课程驱动的设计思路，并提出相应的研究议题与未来方向，但未给出具体量化性能指标。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-18 13:02:06"
+}

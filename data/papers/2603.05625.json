@@ -1,0 +1,13 @@
+{
+ "id": "2603.05625",
+ "title": "Identifying Adversary Characteristics from an Observed Attack",
+ "authors": "Soyon Choi, Scott Alfeld, Meiyi Ma",
+ "date": "2026-03-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05625v1",
+ "abstract": "When used in automated decision-making systems, machine learning (ML) models are vulnerable to data-manipulation attacks. Some defense mechanisms (e.g., adversarial regularization) directly affect the ML models while others (e.g., anomaly detection) act within the broader system. In this paper we consider a different task for defending the adversary, focusing on the attacker, rather than the attack. We present and demonstrate a framework for identifying characteristics about the attacker from an observed attack.\n  We prove that, without additional knowledge, the attacker is non-identifiable (multiple potential attackers would perform the same observed attack). To address this challenge, we propose a domain-agnostic framework to identify the most probable attacker. This framework aids the defender in two ways. First, knowledge about the attacker can be leveraged for exogenous mitigation (i.e., addressing the vulnerability by altering the decision-making system outside the learning algorithm and/or limiting the attacker's capability). Second, when implementing defense methods that directly affect the learning process (e.g., adversarial regularization), knowledge of the specific attacker improves performance. We present the details of our framework and illustrate its applicability through specific instantiations on a variety of learners.",
+ "summary": "1. 核心创新点（1句话）：\n提出一个领域无关的攻击者识别框架，能够从观测到的攻击中推断出最可能的攻击者，并给出在缺乏额外知识时的不可辨识性分析。\n\n2. 主要方法：\n设计并证明一个域无关的攻击者识别框架；对攻击者不可辨识性给出理论分析（在无额外知识时多位潜在攻击者可产生相同攻击），并在多种学习器上对该框架进行具体实例化，展示其在两类防御场景中的应用：一是通过外源性缓解（改变决策系统或限制攻击能力等）来降低漏洞，二是提升对抗性正则化等直接影响学习过程的防御方法的效果。\n\n3. 结论/性能：\n在没有额外知识时攻击者不可辨识；提出的框架可识别最可能的攻击者并在多类学习者上得到实证应用，证明其在提高外源性缓解与学习过程防御效果方面的可用性和普适性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-09 13:01:54"
+}

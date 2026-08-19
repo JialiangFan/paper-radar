@@ -1,0 +1,13 @@
+{
+ "id": "2604.14989",
+ "title": "Dr.~RTL: Autonomous Agentic RTL Optimization through Tool-Grounded Self-Improvement",
+ "authors": "Wenji Fang, Yao Lu, Shang Liu, Jing Wang, Ziyan Guo, Junxian He, Fengbin Tu, Zhiyao Xie",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14989v1",
+ "abstract": "Recent advances in large language models (LLMs) have sparked growing interest in automatic RTL optimization for better performance, power, and area (PPA). However, existing methods are still far from realistic RTL optimization. Their evaluation settings are often unrealistic: they are tested on manually degraded, small-scale RTL designs and rely on weak open-source tools. Their optimization methods are also limited, relying on coarse design-level feedback and simple pre-defined rewriting rules. To address these limitations, we present Dr. RTL, an agentic framework for RTL timing optimization in a realistic evaluation environment, with continual self-improvement through reusable optimization skills. We establish a realistic evaluation setting with more challenging RTL designs and an industrial EDA workflow. Within this setting, Dr. RTL performs closed-loop optimization through a multi-agent framework for critical-path analysis, parallel RTL rewriting, and tool-based evaluation. We further introduce group-relative skill learning, which compares parallel RTL rewrites and distills the optimization experience into an interpretable skill library. Currently, this library contains 47 pattern--strategy entries for cross-design reuse to improve PPA and accelerate convergence, and it can continue evolving over time. Evaluated on 20 real-world RTL designs, Dr. RTL achieves average WNS/TNS improvements of 21\\%/17\\% with a 6\\% area reduction over the industry-leading commercial synthesis tool.",
+ "summary": "- 核心创新点（一句话概括）\n  提出一个具备工具驱动自我提升能力的自治代理框架Dr. RTL，在现实EDA工作流中实现RTL时序优化的闭环，并通过组级相对技能学习实现跨设计的可复用优化策略。\n\n- 主要方法\n  - 在现实且具有挑战性的RTL设计和工业级EDA工作流中建立评测环境，进行闭环优化。\n  - 采用多代理框架进行关键路径分析、并行RTL重写和基于工具的评估，以推动自我改进过程。\n  - 引入组级相对技能学习，比较并 distill 平行RTL重写经验，形成可解释的技能库（包含47条模式-策略条目），用于跨设计复用并持续进化。\n\n- 结论/性能\n  - 在20个真实世界RTL设计上评估，平均实现WNS提升21%、TNS提升17%，面积约下降6%，优于行业领先的商用综合工具。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-17 13:05:38"
+}

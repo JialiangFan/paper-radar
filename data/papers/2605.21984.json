@@ -1,0 +1,13 @@
+{
+ "id": "2605.21984",
+ "title": "Echo: Learning from Experience Data via User-Driven Refinement",
+ "authors": "Hande Dong, Xiaoyun Liang, Jiarui Yu, Jiayi Lin, Changqing Ai, Feng Liu, Wenjun Zhang, Rongbi Wei, Chaofan Zhu, Linjie Che, Feng Wu, Xin Shen, Dexu Kong, Xiaotian Wang, Qiuyuan Chen, Bingxu An, Yueting Lei, Qiang Lin",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21984v1",
+ "abstract": "Static \"human data\" faces inherent limitations: it is expensive to scale and bounded by the knowledge of its creators. Continuous learning from \"experience data\" - interactions between agents and their environments - promises to transcend these barriers. Today, the widespread deployment of AI agents grants us low-cost access to massive streams of such real-world experience. However, raw interaction logs are inherently noisy, filled with trial-and-error and low information density, rendering them inefficient for direct model training.\n  We introduce Echo, a generalized framework designed to operationalize the transition from raw experience to learnable knowledge, effectively \"echoing\" environmental feedback back into the training loop for model optimization. In today's agent ecosystem, user refinement serves as a primary source of such feedback: driven by responsibility for the outcome, users rigorously transform flawed agent proposals into verified solutions. These user-driven refinement sequences inherently distill agents' crude attempts into high-quality training signals. Echo systematically harvests these signals to continuously align the agent with real-world needs. Large-scale validation in a production code completion environment confirms that Echo effectively harnesses this pipeline, breaking the static performance ceiling by increasing the acceptance rate from 25.7% to 35.7%.",
+ "summary": "# 论文总结：Echo\n\n1. **核心创新点**：提出 Echo 框架，将用户对 AI 代理输出的\"修改/精炼\"行为转化为高质量训练信号，实现从\"人类静态数据\"到\"环境交互经验数据\"的持续学习。\n\n2. **主要方法**：通过系统化采集用户在使用代理过程中对其输出的修正序列（user-driven refinement），把噪声大、信息密度低的原始交互日志蒸馏为可学习信号，并将其\"回声\"反馈到训练回路中，对模型进行持续对齐优化。\n\n3. **结论/性能**：在生产级代码补全环境的大规模验证中，突破了静态数据带来的性能天花板，将代码补全的接受率从 **25.7% 提升到 35.7%**。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-24 13:03:12"
+}

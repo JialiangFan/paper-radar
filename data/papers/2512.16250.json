@@ -1,0 +1,13 @@
+{
+ "id": "2512.16250",
+ "title": "AMUSE: Audio-Visual Benchmark and Alignment Framework for Agentic Multi-Speaker Understanding",
+ "authors": "Sanjoy Chowdhury, Karren D. Yang, Xudong Liu, Fartash Faghri, Pavan Kumar Anasosalu Vasu, Oncel Tuzel, Dinesh Manocha, Chun-Liang Li, Raviteja Vemulapalli",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16250v1",
+ "abstract": "Recent multimodal large language models (MLLMs) such as GPT-4o and Qwen3-Omni show strong perception but struggle in multi-speaker, dialogue-centric settings that demand agentic reasoning tracking who speaks, maintaining roles, and grounding events across time. These scenarios are central to multimodal audio-video understanding, where models must jointly reason over audio and visual streams in applications such as conversational video assistants and meeting analytics. We introduce AMUSE, a benchmark designed around tasks that are inherently agentic, requiring models to decompose complex audio-visual interactions into planning, grounding, and reflection steps. It evaluates MLLMs across three modes zero-shot, guided, and agentic and six task families, including spatio-temporal speaker grounding and multimodal dialogue summarization. Across all modes, current models exhibit weak multi-speaker reasoning and inconsistent behavior under both non-agentic and agentic evaluation. Motivated by the inherently agentic nature of these tasks and recent advances in LLM agents, we propose RAFT, a data-efficient agentic alignment framework that integrates reward optimization with intrinsic multimodal self-evaluation as reward and selective parameter adaptation for data and parameter efficient updates. Using RAFT, we achieve up to 39.52\\% relative improvement in accuracy on our benchmark. Together, AMUSE and RAFT provide a practical platform for examining agentic reasoning in multimodal models and improving their capabilities.",
+ "summary": "- 核心创新点：提出 AMUSE 作为面向具代理性多说话场景的音视频基准，系统评估多模态大语言模型的代理性推理，并同时提出数据高效的代理对齐框架 RAFT 以提升模型的代理性能力。\n\n- 主要方法：\n  - AMUSE 基准设计：六大任务族、三种评测模式（零-shot、引导、代理人模式），任务如时空发言人定位和多模态对话摘要，要求模型把复杂音视频交互分解为规划、着落/ grounding、反思等步骤。\n  - RAFT 框架：结合奖励优化和内在的多模态自评作为奖励信号，进行选择性参数更新，实现数据与参数的高效对齐。\n\n- 结论/性能：\n  - 在 AMUSE 基准上，使用 RAFT 可带来最高约 39.52% 的相对准确率提升。\n  - 同时指出当前模型在多说话推理方面仍显薄弱、行为不一致，AMUSE 与 RAFT 提供了一个实际的平台来评估并提升多模态模型的代理性推理能力。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-19 02:45:56"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.21768",
+ "title": "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents",
+ "authors": "Sikuan Yan, Ahmed Bahloul, Ercong Nie, Susanna Schwarzmann, Riccardo Trivisonno, Volker Tresp, Yunpu Ma",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21768v1",
+ "abstract": "Memory-augmented LLM agents enable interactions that extend beyond finite context windows by storing, updating, and reusing information across sessions. However, training such agents with reinforcement learning in multi-session environments is challenging because memory turns the agent's past actions into part of its future environment. Once different rollouts write, update, or delete different memories, they no longer share the same intermediate memory state, making trajectory-level comparisons fundamentally unfair. This violates a key assumption behind group-relative methods such as GRPO, where rollouts are compared as if they were sampled from the same effective environment. Consequently, trajectory-level rewards provide noisy or biased credit signals for long-horizon memory operations. To address this challenge, we introduce Memory-R2, a training framework for long-horizon memory-augmented LLM agents. Its core algorithm, LoGo-GRPO, combines local and global group-relative optimization. The global objective preserves end-to-end learning from long-horizon trajectory-level rewards, while local rerollouts compare different memory-operation outcomes from the same intermediate memory state, yielding fairer group comparisons and more precise supervision for memory construction. Beyond credit assignment, Memory-R2 jointly optimizes memory formation and memory evolution with a shared-parameter co-learning design, where a fact extractor and a memory manager are instantiated from the same LLM backbone through role-specific prompts. To stabilize multi-step RL over long memory horizons, we adopt a progressive curriculum that increases the training horizon from 8 to 16 to 32 sessions. Together, these components provide an effective training paradigm for memory-augmented LLM agents in long-horizon multi-session settings.",
+ "summary": "# Memory-R2 论文总结\n\n**1. 核心创新点**\n提出 LoGo-GRPO 算法，通过\"局部+全局\"组相对优化解决记忆增强 LLM 智能体在多会话强化学习中因记忆状态分歧导致的信用分配不公平问题。\n\n**2. 主要方法**\n- **LoGo-GRPO**：全局目标保留长程轨迹级奖励的端到端学习；局部 rerollout 在相同中间记忆状态下比较不同记忆操作的结果，提供更公平的组内对比。\n- **共享参数协同学习**：用同一个 LLM 主干通过角色特定 prompt 实例化\"事实提取器\"和\"记忆管理器\"，联合优化记忆形成与演化。\n- **渐进式课程学习**：训练时长从 8 → 16 → 32 会话逐步增加，稳定多步 RL 训练。\n\n**3. 结论/性能**\n摘要未给出具体数值指标，但提出的 Memory-R2 框架为长程多会话场景下的记忆增强 LLM 智能体训练提供了一套有效范式，解决了 GRPO 等组相对方法在记忆环境中假设失效的根本性问题。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:01:29"
+}

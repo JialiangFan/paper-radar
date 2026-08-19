@@ -1,0 +1,13 @@
+{
+ "id": "2602.16958",
+ "title": "Automating Agent Hijacking via Structural Template Injection",
+ "authors": "Xinhao Deng, Jiaqing Wu, Miao Chen, Yue Xiao, Ke Xu, Qi Li",
+ "date": "2026-02-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.16958v1",
+ "abstract": "Agent hijacking, highlighted by OWASP as a critical threat to the Large Language Model (LLM) ecosystem, enables adversaries to manipulate execution by injecting malicious instructions into retrieved content. Most existing attacks rely on manually crafted, semantics-driven prompt manipulation, which often yields low attack success rates and limited transferability to closed-source commercial models. In this paper, we propose Phantom, an automated agent hijacking framework built upon Structured Template Injection that targets the fundamental architectural mechanisms of LLM agents. Our key insight is that agents rely on specific chat template tokens to separate system, user, assistant, and tool instructions. By injecting optimized structured templates into the retrieved context, we induce role confusion and cause the agent to misinterpret the injected content as legitimate user instructions or prior tool outputs. To enhance attack transferability against black-box agents, Phantom introduces a novel attack template search framework. We first perform multi-level template augmentation to increase structural diversity and then train a Template Autoencoder (TAE) to embed discrete templates into a continuous, searchable latent space. Subsequently, we apply Bayesian optimization to efficiently identify optimal adversarial vectors that are decoded into high-potency structured templates. Extensive experiments on Qwen, GPT, and Gemini demonstrate that our framework significantly outperforms existing baselines in both Attack Success Rate (ASR) and query efficiency. Moreover, we identified over 70 vulnerabilities in real-world commercial products that have been confirmed by vendors, underscoring the practical severity of structured template-based hijacking and providing an empirical foundation for securing next-generation agentic systems.",
+ "summary": "- 核心创新点（1 句话）：\n  提出 Phantom 框架，基于结构化模板注入，结合模板自编码器和贝叶斯优化，在检索上下文中自动化生成高效攻击向量，从而实现对多家商用黑盒 LLM 代理的可转移劫持。\n\n- 主要方法：\n  - 以结构化模板注入为核心，利用对系统/用户/助手/工具指令的分界模板标记来诱导角色混淆。\n  - 引入多层模板增强以提升结构多样性，并训练模板自编码器（Template Autoencoder, TAE）将离散模板映射到连续潜在空间。\n  - 通过贝叶斯优化在潜在空间中高效搜索并解码为高效的攻击模板向量，形成一个攻击模板搜索框架。\n  - 在 Qwen、GPT、Gemini 上进行广泛实验，验证对黑盒模型的高转移性与可用性。\n\n- 结论/性能：\n  - 显著优于现有基线，在攻击成功率（ASR）和查询效率方面取得更好结果。\n  - 发现并得到厂商确认的超过 70 个真实商用产品漏洞，显示该威胁具现实性并需重视防护。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-20 14:01:08"
+}

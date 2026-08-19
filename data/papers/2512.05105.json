@@ -1,0 +1,13 @@
+{
+ "id": "2512.05105",
+ "title": "Semantic Soft Bootstrapping: Long Context Reasoning in LLMs without Reinforcement Learning",
+ "authors": "Purbesh Mitra, Sennur Ulukus",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05105v1",
+ "abstract": "Long context reasoning in large language models (LLMs) has demonstrated enhancement of their cognitive capabilities via chain-of-thought (CoT) inference. Training such models is usually done via reinforcement learning with verifiable rewards (RLVR) in reasoning based problems, like math and programming. However, RLVR is limited by several bottlenecks, such as, lack of dense reward, and inadequate sample efficiency. As a result, it requires significant compute resources in post-training phase. To overcome these limitations, in this work, we propose \\textbf{Semantic Soft Bootstrapping (SSB)}, a self-distillation technique, in which the same base language model plays the role of both teacher and student, but receives different semantic contexts about the correctness of its outcome at training time. The model is first prompted with a math problem and several rollouts are generated. From them, the correct and most common incorrect response are filtered, and then provided to the model in context to produce a more robust, step-by-step explanation with a verified final answer. This pipeline automatically curates a paired teacher-student training set from raw problem-answer data, without any human intervention. This generation process also produces a sequence of logits, which is what the student model tries to match in the training phase just from the bare question alone. In our experiment, Qwen2.5-3B-Instruct on GSM8K dataset via parameter-efficient fine-tuning. We then tested its accuracy on MATH500, and AIME2024 benchmarks. Our experiments show a jump of 10.6%, and 10% improvements in accuracy, respectively, over group relative policy optimization (GRPO), which is a commonly used RLVR algorithm. Our code is available at https://github.com/purbeshmitra/semantic-soft-bootstrapping, and the model, curated dataset is available at https://huggingface.co/purbeshmitra/semantic-soft-bootstrapping.",
+ "summary": "- 核心创新点：提出 Semantic Soft Bootstrapping（SSB），让同一模型在训练时既充当教师又充当学生，通过给出正确答案与最常见错误答案的语义上下文进行自蒸馏，从而提升长上下文推理能力，且无需人工标注的 RLVR。\n- 主要方法：基于自蒸馏的语义软监督。对同一基模型生成若干推理 rollout，筛选正确答案与最常见错误答案并连同上下文输送给模型，以获得更鲁棒的逐步推理与经验证的最终答案；同时让学生去匹配从纯问题得到的 logits。实验使用 Qwen2.5-3B-Instruct 在 GSM8K 上进行参数高效微调，并在 MATH500、AIME2024 上评估。\n- 结论/性能：相较于常用的 RLVR 算法 GRPO，在 MATH500 提升约 10.6%，在 AIME2024 提升约 10%；代码和数据集公开可用。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:03:18"
+}

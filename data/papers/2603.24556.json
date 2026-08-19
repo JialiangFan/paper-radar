@@ -1,0 +1,13 @@
+{
+ "id": "2603.24556",
+ "title": "Evaluating Chunking Strategies For Retrieval-Augmented Generation in Oil and Gas Enterprise Documents",
+ "authors": "Samuel Taiwo, Mohd Amaluddin Yusoff",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24556v1",
+ "abstract": "Retrieval-Augmented Generation (RAG) has emerged as a framework to address the constraints of Large Language Models (LLMs). Yet, its effectiveness fundamentally hinges on document chunking - an often-overlooked determinant of its quality. This paper presents an empirical study quantifying performance differences across four chunking strategies: fixed-size sliding window, recursive, breakpoint-based semantic, and structure-aware. We evaluated these methods using a proprietary corpus of oil and gas enterprise documents, including text-heavy manuals, table-heavy specifications, and piping and instrumentation diagrams (P and IDs). Our findings show that structure-aware chunking yields higher overall retrieval effectiveness, particularly in top-K metrics, and incurs significantly lower computational costs than semantic or baseline strategies. Crucially, all four methods demonstrated limited effectiveness on P and IDs, underscoring a core limitation of purely text-based RAG within visually and spatially encoded documents. We conclude that while explicit structure preservation is essential for specialised domains, future work must integrate multimodal models to overcome current limitations.",
+ "summary": "- **核心创新点**：首次在油气企业文档的检索增强生成（RAG）场景中系统比较四种分块策略，证明结构感知分块在检索效果和计算成本上优于其他策略，并揭示文本型RAG在P&IDs等可视/空间编码文档上的局限性，强调需要引入多模态模型。\n\n- **主要方法**：采用 Retrieval-Augmented Generation（RAG）框架，比较固定大小滑动窗口、递归、断点语义和结构感知四种分块策略；在自有的油气企业文本语料（文本密集手册、表格密集的规范、P&IDs）上进行评估，关注检索效果（Top-K 等指标）与计算成本。\n\n- **结论/性能**：结构感知分块在总体检索效果，特别是 Top-K 指标上表现最佳且计算成本显著低于语义和基线策略；所有方法对 P&IDs 的效果都较弱，显示纯文本RAG在视觉/空间编码文档上的局限性，指向未来需结合多模态模型以克服该局限。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-26 13:01:49"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.15306",
+ "title": "Generalization in LLM Problem Solving: The Case of the Shortest Path",
+ "authors": "Yao Tong, Jiayuan Ye, Anastasia Borovykh, Reza Shokri",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15306v1",
+ "abstract": "Whether language models can systematically generalize remains actively debated. Yet empirical performance is jointly shaped by multiple factors such as training data, training paradigms, and inference-time strategies, making failures difficult to interpret. We introduce a controlled synthetic environment based on shortest-path planning, a canonical composable sequential optimization problem. The setup enables clean separation of these factors and supports two orthogonal axes of generalization: spatial transfer to unseen maps and length scaling to longer-horizon problems. We find that models exhibit strong spatial transfer but consistently fail under length scaling due to recursive instability. We further analyze how distinct stages of the learning pipeline influence systematic problem-solving: for example, data coverage sets capability limits; reinforcement learning improves training stability but does not expand those limits; and inference-time scaling enhances performance but cannot rescue length-scaling failures.",
+ "summary": "- 核心创新点：提出一个基于最短路径规划的受控合成环境，能够清晰分离影响模型解决问题能力的因素，并提出空间泛化与长度泛化这两条正交轴，用以系统评估大语言模型在组合性序列优化任务中的通用性。\n\n- 主要方法：在该合成任务中评估模型对未见地图的空间转移能力和对更长规划距离的长度扩展能力，结合数据覆盖、强化学习训练稳定性，以及推断阶段规模扩展等因素，分析不同学习阶段对一般化能力的影响及其局限性。\n\n- 结论/性能：模型在空间泛化上表现较强，但在长度扩展上长期失败，原因指向递归不稳定；数据覆盖设定了能力上限，强化学习提升训练稳定性但不扩大上限，推断时的规模扩展能提升性能但无法挽救长度扩展的失败。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-17 13:00:33"
+}

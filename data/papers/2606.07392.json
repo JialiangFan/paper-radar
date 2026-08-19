@@ -1,0 +1,13 @@
+{
+ "id": "2606.07392",
+ "title": "Online Pandora's Box for Contextual LLM Cascading",
+ "authors": "Alexandre Belloni, Yan Chen, Yehua Wei",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07392v1",
+ "abstract": "Motivated by Large Language Model (LLM) cascading, we propose an online contextual Pandora's Box model for adaptively querying and selecting LLM APIs. In each period, a decision-maker observes a request context and faces a two-phase decision problem. In the query phase, the decision-maker sequentially queries APIs, where each query reveals a generated output and the decision-maker incurs an (output-dependent) cost. In the selection phase, the decision-maker selects one of the generated outputs to deploy and observes only the downstream reward of the deployed output. This output-mediated feedback structure differs from classical online contextual Pandora's Box models, in which opening a box directly reveals its reward.\n  Rather than estimating the full conditional output and cost distributions of each API, we directly model the reservation index and develop a learning approach for the query phase. Specifically, we impose a parametric structure on the contextual reservation index functions induced by the classical Weitzman's policy. Our policy combines generalized method of moments (GMM) type estimation of these reservation indices with UCB-style confidence bounds for both these indices and the shared output-level reward evaluator. Under regularity conditions, we prove that the resulting policy achieves dimension-dependent $\\widetilde O(\\sqrt T)$ cumulative regret over a horizon of $T$ periods.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n将\"潘多拉盒子\"问题扩展到在线上下文场景，用于自适应地查询和选择 LLM API，实现成本与质量的权衡。\n\n**2. 主要方法**\n- 建模为两阶段决策：查询阶段（顺序调用 API 并产生与输出相关的成本）与选择阶段（仅观察到所部署输出的下游奖励）。\n- 不直接估计每个 API 的完整输出/成本分布，而是基于 Weitzman 策略中的**保留指数 (reservation index)** 引入参数化结构。\n- 结合**广义矩估计 (GMM)** 与 **UCB 置信上界**，同时学习保留指数和共享的输出级奖励评估器。\n\n**3. 结论/性能**\n在正则性条件下，证明该策略在 $T$ 期内可达到维度相关的 $\\widetilde{O}(\\sqrt{T})$ 累积遗憾界。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-08 13:00:52"
+}

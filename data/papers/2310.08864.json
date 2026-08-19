@@ -1,0 +1,32 @@
+{
+ "id": "2310.08864",
+ "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+ "authors": "O'Neill, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2310.08864",
+ "abstract": "",
+ "summary": "Open X-Embodiment standardizes a large multi-robot manipulation dataset and trains RT-X models for cross-embodiment transfer.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "benchmarks-and-evaluation",
+  "cross-embodiment",
+  "robot-dataset",
+  "robotics",
+  "safe-vla",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2023_ONeill_OpenXEmbodiment.md",
+ "pdf_path": "PDFs/VLA_Models/2023_ONeill_OpenXEmbodiment.pdf",
+ "code": "",
+ "project": "https://robotics-transformer-x.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

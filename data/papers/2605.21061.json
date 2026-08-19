@@ -1,0 +1,13 @@
+{
+ "id": "2605.21061",
+ "title": "Grounding Driving VLA via Inverse Kinematics",
+ "authors": "Junsung Park, Hyunjung Shim",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21061v1",
+ "abstract": "Existing Driving VLAs predict trajectories while largely ignoring their visual tokens -- a phenomenon we trace not to insufficient training but to a structurally ill-posed task formulation. We show that trajectory recovery, when viewed through the lens of inverse kinematics, requires both a current and a future visual state as boundary conditions; existing VLAs supply only the former, which encourages the model to shortcut through ego status and text commands alone. To address this, we re-design Driving VLA in the style of an inverse kinematics solver. First, a next visual state prediction objective that requires the LLM to predict the future visual scene provides dense visual supervision and suppresses shortcut paths. Second, a separate Inverse Kinematics Network (a cross-attention-based conditional diffusion model) that takes only the current and future visual states as input is designed to suppress reliance on ego status and textual shortcuts during trajectory decoding. With this simple prescription alone, our 0.5B-scale model recovers visual grounding and reaches trajectory planning performance comparable to 7B--8B VLAs more than an order of magnitude larger, on both the closed-loop NAVSIM-v2 and the nuScenes benchmarks. Extensive analysis further shows that this improvement stems from a recovered ability to exploit visual features, with the effect being most pronounced in dynamic driving situations such as turning.",
+ "summary": "# 论文总结：Grounding Driving VLA via Inverse Kinematics\n\n## 1. 核心创新点\n将驾驶 VLA（视觉-语言-动作模型）重新设计为**逆运动学求解器**结构，通过引入未来视觉状态预测作为边界条件，解决现有 VLA 忽略视觉 token、走\"自车状态+文本指令\"捷径的结构性问题。\n\n## 2. 主要方法\n- **问题诊断**：从逆运动学视角指出，轨迹恢复需要\"当前+未来\"两个视觉状态作为边界条件，而现有 VLA 仅提供当前状态，导致模型走捷径。\n- **下一视觉状态预测目标**：让 LLM 预测未来视觉场景，提供密集的视觉监督，抑制捷径路径。\n- **独立的逆运动学网络（IKN）**：基于交叉注意力的条件扩散模型，仅以当前和未来视觉状态作为输入来解码轨迹，避免依赖自车状态和文本捷径。\n\n## 3. 结论/性能\n- 仅 **0.5B 参数**的模型，在闭环 NAVSIM-v2 和 nuScenes 基准上，轨迹规划性能可媲美参数量大一个数量级以上的 **7B–8B VLA** 模型。\n- 模型恢复了真正利用视觉特征的能力，在**转弯等动态驾驶场景**中改进最为显著。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-24 13:05:01"
+}

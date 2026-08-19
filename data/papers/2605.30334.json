@@ -1,0 +1,13 @@
+{
+ "id": "2605.30334",
+ "title": "Demystifying Data Organization for Enhanced LLM Training",
+ "authors": "Yalun Dai, Yangyu Huang, Tongshen Yang, Yonghan Wang, Xin Zhang, Wenshan Wu, Qihao Zhao, Hao Li, Yuanyuan Gao, Kim-Hui Yap, Scarlett Li",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30334v1",
+ "abstract": "Large Language Models (LLMs) have revolutionized various fields, yet their training efficiency is heavily reliant on effective data curation. While data selection has been widely studied, the strategic data organization for enhanced training remains an underexplored area, particularly since current LLMs are often trained for only one or a few epochs. This paper systematically explores the influence of data organization on LLM training by reusing pre-computed sample-level scores originally generated for data efficiency, thereby incurring minimal additional computational overhead. We identify and formalize four key guidelines for optimizing data organization: Boundary Sharpening, Cyclic Scheduling, Curriculum Continuity, and Local Diversity. Guided by them, we introduce two novel data ordering methods termed STR and SAW. Extensive experiments across different model scales and data sizes, encompassing both pre-training and SFT stages, validate the effectiveness of our summarized guidelines. They also demonstrate the robustness of our proposed data ordering methods in enhancing the stability and performance of LLM training. Github Link: https://github.com/microsoft/data-efficacy/",
+ "summary": "# 论文总结\n\n**1. 核心创新点：**\n在几乎不增加计算开销的前提下，通过复用已有的样本级评分来优化训练数据的\"组织顺序\"（而非仅做数据筛选），从而提升大模型训练的稳定性与性能。\n\n**2. 主要方法：**\n论文系统研究了数据组织对 LLM 训练的影响，提炼出四条关键准则——边界锐化（Boundary Sharpening）、循环调度（Cyclic Scheduling）、课程连续性（Curriculum Continuity）和局部多样性（Local Diversity）；并据此提出两种新的数据排序方法 **STR** 和 **SAW**。整个方法复用此前为\"数据效率\"计算的样本评分，因此额外成本极低。\n\n**3. 结论/性能：**\n在不同模型规模与数据规模、覆盖预训练（pre-training）和监督微调（SFT）两个阶段的大量实验中，验证了上述准则的有效性，且 STR/SAW 在增强训练稳定性和最终性能方面表现稳健。代码已开源（microsoft/data-efficacy）。\n\n---\n一句话概括：**这是一篇关注\"在单/少 epoch 训练范式下如何排序数据\"的研究，核心贡献是四条数据组织准则 + 两种低成本排序方法（STR、SAW）。**\n\n要我帮你用 `/paper-review` 技能生成更详细的中英双语综述并存入 Obsidian 吗？",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-29 13:02:18"
+}

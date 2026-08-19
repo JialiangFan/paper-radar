@@ -1,0 +1,13 @@
+{
+ "id": "2606.02372",
+ "title": "COMAP: Co-Evolving World Models and Agent Policies for LLM Agents",
+ "authors": "Youwei Liu, Jian Wang, Hanlin Wang, Wenjie Li",
+ "date": "2026-06-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.02372v1",
+ "abstract": "Equipping language agents with world models enables them to anticipate environment dynamics and evaluate candidate actions before execution. However, existing textual world models are typically fixed after training, preventing them from adapting to the on-policy state-action distributions induced by an evolving agent. Meanwhile, agent-improvement methods often rely on external rewards or verifiers, limiting their applicability in realistic interactive environments. In this paper, we propose COMAP, a novel framework that co-evolves textual world models and agent policies through closed-loop interaction. At each decision step, the world model predicts future state feedback for candidate actions, and the agent performs future-aware reflection by estimating the reliability of this feedback and refining its action accordingly. The resulting on-policy trajectories are then used to update the world model via self-distillation, allowing it to better match the agent's evolving interaction distribution. Across embodied task planning, Web navigation, and tool-use benchmarks, COMAP consistently outperforms competitive baselines, e.g., +16.75% relative improvement with Qwen3-4B. Further analyses show that the co-evolutionary loop improves the world model's prediction accuracy over time and leads to more effective long-horizon decision-making. Our code is available at: https://github.com/loyiv/CoMAP.",
+ "summary": "## COMAP 论文总结\n\n**1. 核心创新点**\n提出一个闭环协同进化框架，让文本世界模型与智能体策略在交互中相互迭代更新，解决传统世界模型训练后固定、无法适应智能体策略漂移的问题。\n\n**2. 主要方法**\n- **世界模型预测**：在每一步决策时，世界模型预测候选动作的未来状态反馈。\n- **未来感知反思（future-aware reflection）**：智能体评估预测可靠性，据此修正动作。\n- **自蒸馏更新**：用产生的 on-policy 轨迹对世界模型进行自蒸馏，使其匹配智能体不断演化的分布，无需外部奖励或验证器。\n\n**3. 结论/性能**\n在具身任务规划、网页导航和工具使用三类基准上均超越强基线，例如基于 Qwen3-4B 取得 **+16.75%** 的相对提升；分析显示协同进化循环可持续提高世界模型的预测准确度，并显著增强长时序决策能力。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-02 13:03:30"
+}

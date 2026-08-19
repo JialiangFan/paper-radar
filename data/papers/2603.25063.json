@@ -1,0 +1,13 @@
+{
+ "id": "2603.25063",
+ "title": "TopoPilot: Reliable Conversational Workflow Automation for Topological Data Analysis and Visualization",
+ "authors": "Nathaniel Gorski, Shusen Liu, Bei Wang",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25063v1",
+ "abstract": "Recent agentic systems demonstrate that large language models can generate scientific visualizations from natural language. However, reliability remains a major limitation: systems may execute invalid operations, introduce subtle but consequential errors, or fail to request missing information when inputs are underspecified. These issues are amplified in real-world workflows, which often exceed the complexity of standard benchmarks. Ensuring reliability in autonomous visualization pipelines therefore remains an open challenge. We present TopoPilot, a reliable and extensible agentic framework for automating complex scientific visualization workflows. TopoPilot incorporates systematic guardrails and verification mechanisms to ensure reliable operation. While we focus on topological data analysis and visualization as a primary use case, the framework is designed to generalize across visualization domains. TopoPilot adopts a reliability-centered two-agent architecture. An orchestrator agent translates user prompts into workflows composed of atomic backend actions, while a verifier agent evaluates these workflows prior to execution, enforcing structural validity and semantic consistency. This separation of interpretation and verification reduces code-generation errors and enforces correctness guarantees. A modular architecture further improves robustness by isolating components and enabling seamless integration of new descriptors and domain-specific workflows without modifying the core system. To systematically address reliability, we introduce a taxonomy of failure modes and implement targeted safeguards for each class. In evaluations simulating 1,000 multi-turn conversations across 100 prompts, including adversarial and infeasible requests, TopoPilot achieves a success rate exceeding 99%, compared to under 50% for baselines without comprehensive guardrails and checks.",
+ "summary": "1. 核心创新点\n- 提出一个可靠性驱动的两代理架构TopoPilot，通过编排器与验证器分工，将自然语言提示转化为可执行的拓扑数据分析与可视化工作流，并配套系统化的守则与故障分类以保障可靠性。\n\n2. 主要方法\n- 采用可靠性中心化的两代理架构：编排器将用户提示转化为由原子后端动作组成的工作流；验证器在执行前对工作流进行结构有效性与语义一致性评估，确保正确性。\n- 采用模块化架构以实现组件隔离，便于无改动核心系统即可接入新的描述符和领域工作流。\n- 建立并应用针对不同故障模式的分类（故障模式 taxonomy）及相应的保护措施，针对拓扑数据分析与可视化领域进行定制化守则。\n- 在评估中使用100个提示、1000轮多轮对话的设置，包含对抗性与不可行请求场景。\n\n3. 结论/性能\n- 在包含对抗性与不可行请求的测试中，TopoPilot的成功率超过99%，显著优于没有完整守则与校验的基线（约50%）。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-28 13:03:09"
+}

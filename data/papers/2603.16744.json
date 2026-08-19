@@ -1,0 +1,13 @@
+{
+ "id": "2603.16744",
+ "title": "Nonstandard Errors in AI Agents",
+ "authors": "Ruijiang Gao, Steven Chong Xiao",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16744v1",
+ "abstract": "We study whether state-of-the-art AI coding agents, given the same data and research question, produce the same empirical results. Deploying 150 autonomous Claude Code agents to independently test six hypotheses about market quality trends in NYSE TAQ data for SPY (2015--2024), we find that AI agents exhibit sizable \\textit{nonstandard errors} (NSEs), that is, uncertainty from agent-to-agent variation in analytical choices, analogous to those documented among human researchers. AI agents diverge substantially on measure choice (e.g., autocorrelation vs.\\ variance ratio, dollar vs.\\ share volume). Different model families (Sonnet 4.6 vs.\\ Opus 4.6) exhibit stable ``empirical styles,'' reflecting systematic differences in methodological preferences. In a three-stage feedback protocol, AI peer review (written critiques) has minimal effect on dispersion, whereas exposure to top-rated exemplar papers reduces the interquartile range of estimates by 80--99\\% within \\textit{converging} measure families. Convergence occurs both through within-family estimation tightening and through agents switching measure families entirely, but convergence reflects imitation rather than understanding. These findings have implications for the growing use of AI in automated policy evaluation and empirical research.",
+ "summary": "- 核心创新点（1句概括）：揭示AI代理在相同数据与研究问题下产生的“非标准误差”及其稳定的经验风格，并证明通过暴露于高质量范例论文可以显著收敛估计，但这本质是模仿而非理解。\n\n- 主要方法：部署150个独立的 Claude Code 代理，分别测试关于NYSE TAQ数据（SPY，2015–2024）的六个假设；比较不同测量口径（如自相关、方差比、美元量与股本量等）及不同模型家族（Sonnet 4.6 vs Opus 4.6）的分析结果；设计三阶段反馈：同行评审/文字评议，以及暴露于顶级范例论文。\n\n- 结论/性能：AI代理存在显著的非标准误差，测量选择和方法偏好导致分歧；不同模型家族呈现稳定的“经验风格”；在三阶段反馈中，同行评审对分散影响有限，而暴露于顶级范例论文可将收敛测量家族内的IQR下降80–99%；收敛来自于同家族内的估计收紧和代理切换测量家族，且多为模仿而非真正理解，对自动化政策评估及实证研究具有重要影响。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-18 13:01:53"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.01626",
+ "title": "IMWM: Intuition Models Complement World Models for Latent Planning",
+ "authors": "Baoqi Gao, Ruize Han, Miao Wang, Song Wang",
+ "date": "2026-06-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01626v1",
+ "abstract": "Planning with a learned latent world model is a promising route to control from raw pixels, but a strong world model alone is not enough. We show this experimentally: even with a perfect world model (operationalized by replacing the learned forward predictor with an idealized rollout of the true environment dynamics), a finite-budget sample-based planner still fails on some tasks, indicating that the bottleneck can lie in search rather than in world-model accuracy. Motivated by this gap, we propose IMWM (Intuition Model + World Model), which pairs the world model with an intuition model trained from demonstrations to recognize promising actions. The two models collaborate through three lightweight components: (i) Retrieval Initialization, which initializes the planner's action proposal from a retrieved demonstration; (ii) Hybrid Cost, which combines the intuition score with the world-model rollout cost; and (iii) a Reliability Gate, which adjusts how much the planner trusts intuition in each setting. Across four pixel-based goal-reaching tasks (Two-Room, Reacher, Push-T, and OGBench-Cube), IMWM has higher mean success than the world-model-only planner on all four, with the largest gains on Two-Room (99.2%, +11.5 percentage points) and OGBench-Cube (94.7%, +28.5 percentage points).",
+ "summary": "# IMWM: 直觉模型补充世界模型用于潜空间规划\n\n## 1. 核心创新点\n即使拥有完美的世界模型，有限预算的采样规划器仍会失败，瓶颈在于\"搜索\"而非\"模型精度\"——为此提出用从演示中学到的**直觉模型**来辅助世界模型，引导规划器找到有希望的动作。\n\n## 2. 主要方法\n**IMWM（Intuition Model + World Model）** 框架，通过三个轻量级组件让两个模型协作：\n- **检索初始化（Retrieval Initialization）**：从检索到的演示中初始化规划器的动作提案；\n- **混合代价（Hybrid Cost）**：将直觉评分与世界模型 rollout 代价相结合；\n- **可靠性门控（Reliability Gate）**：根据情境动态调整对直觉的信任程度。\n\n## 3. 结论 / 性能\n在四个基于像素的目标到达任务（Two-Room、Reacher、Push-T、OGBench-Cube）上，IMWM 在全部四项任务上的平均成功率均高于仅用世界模型的规划器，其中：\n- **Two-Room**：99.2%（+11.5 个百分点）\n- **OGBench-Cube**：94.7%（+28.5 个百分点）\n\n表明直觉模型对突破规划搜索瓶颈具有显著效果。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-02 13:03:40"
+}

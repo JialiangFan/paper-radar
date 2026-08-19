@@ -1,0 +1,13 @@
+{
+ "id": "2602.09431",
+ "title": "Understanding and Enhancing Encoder-based Adversarial Transferability against Large Vision-Language Models",
+ "authors": "Xinwei Zhang, Li Bai, Tianwei Zhang, Youqian Zhang, Qingqing Ye, Yingnan Zhao, Ruochen Du, Haibo Hu",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09431v1",
+ "abstract": "Large vision-language models (LVLMs) have achieved impressive success across multimodal tasks, but their reliance on visual inputs exposes them to significant adversarial threats. Existing encoder-based attacks perturb the input image by optimizing solely on the vision encoder, rather than the entire LVLM, offering a computationally efficient alternative to end-to-end optimization. However, their transferability across different LVLM architectures in realistic black-box scenarios remains poorly understood. To address this gap, we present the first systematic study towards encoder-based adversarial transferability in LVLMs. Our contributions are threefold. First, through large-scale benchmarking over eight diverse LVLMs, we reveal that existing attacks exhibit severely limited transferability. Second, we perform in-depth analysis, disclosing two root causes that hinder the transferability: (1) inconsistent visual grounding across models, where different models focus their attention on distinct regions; (2) redundant semantic alignment within models, where a single object is dispersed across multiple overlapping token representations. Third, we propose Semantic-Guided Multimodal Attack (SGMA), a novel framework to enhance the transferability. Inspired by the discovered causes in our analysis, SGMA directs perturbations toward semantically critical regions and disrupts cross-modal grounding at both global and local levels. Extensive experiments across different victim models and tasks show that SGMA achieves higher transferability than existing attacks. These results expose critical security risks in LVLM deployment and underscore the urgent need for robust multimodal defenses.",
+ "summary": "1) 核心创新点：提出一种语义引导的多模态对抗攻击 SGMA，专注于编码器级扰动，通过指向语义关键区域并破坏跨模态对齐来提升对不同 LVLM 架构的传输性。\n\n2) 主要方法：在不进行端到端优化的前提下，基于对视觉编码器的对抗扰动，先对八种不同的 LVLM 进行大规模基准测试并分析传输性不足的原因（不一致的视觉定位和冗余的语义对齐）。然后提出 SGMA，通过引导扰动聚焦语义关键区域以及在全局与局部层面打断跨模态对齐，以提高对其他模型的传输性。\n\n3) 结论/性能：实验表明 SGMA 在不同受害模型和任务上具有比现有攻击更高的传输性，揭示 LVLM 部署的潜在安全风险，并强调需要更稳健的多模态防御。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-11 14:01:59"
+}

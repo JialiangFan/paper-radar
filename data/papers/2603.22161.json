@@ -1,0 +1,13 @@
+{
+ "id": "2603.22161",
+ "title": "Causal Evidence that Language Models use Confidence to Drive Behavior",
+ "authors": "Dharshan Kumaran, Nathaniel Daw, Simon Osindero, Petar Velickovic, Viorica Patraucean",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22161v1",
+ "abstract": "Metacognition -- the ability to assess one's own cognitive performance -- is documented across species, with internal confidence estimates serving as a key signal for adaptive behavior. While confidence can be extracted from Large Language Model (LLM) outputs, whether models actively use these signals to regulate behavior remains a fundamental question. We investigate this through a four-phase abstention paradigm.Phase 1 established internal confidence estimates in the absence of an abstention option. Phase 2 revealed that LLMs apply implicit thresholds to these estimates when deciding to answer or abstain. Confidence emerged as the dominant predictor of behavior, with effect sizes an order of magnitude larger than knowledge retrieval accessibility (RAG scores) or surface-level semantic features. Phase 3 provided causal evidence through activation steering: manipulating internal confidence signals correspondingly shifted abstention rates. Finally, Phase 4 demonstrated that models can systematically vary abstention policies based on instructed thresholds.Our findings indicate that abstention arises from the joint operation of internal confidence representations and threshold-based policies, mirroring the two-stage metacognitive control found in biological systems. This capacity is essential as LLMs transition into autonomous agents that must recognize their own uncertainty to decide when to act or seek help.",
+ "summary": "- 核心创新点：揭示并证实语言模型具备内部置信估计，并通过阈值策略驱动回答与放弃的行为，呈现类似生物系统的两阶段元认知控制。\n\n- 主要方法：\n  - 构建四阶段的 abstention（放弃）范式来研究行为决策。\n  - Phase 1：在没有放弃选项的条件下建立内部置信估计。\n  - Phase 2：检验置信对“回答/放弃”的决定的预测力，并将其与知识检索可及性（RAG分数）及表层语义特征比较。\n  - Phase 3：通过激活引导（activation steering）操作内部置信信号，观察放弃率的因果变化。\n  - Phase 4：通过指令阈值使模型系统性地改变放弃策略，展示可控性。\n  - 结论性发现：置信是行为的主导预测因子，且其效应量远超RAG分数或表层特征。\n\n- 结论/性能：\n  - 放弃行为源于内部置信表示与阈值策略的联合作用，体现出与生物系统相似的两阶段元认知控制。\n  - 该能力对未来作为自主代理的LLM尤为关键，因为需要在不确定性时决定行动还是求助。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:10:17"
+}

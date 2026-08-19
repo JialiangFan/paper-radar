@@ -1,0 +1,13 @@
+{
+ "id": "2512.13510",
+ "title": "MedCEG: Reinforcing Verifiable Medical Reasoning with Critical Evidence Graph",
+ "authors": "Linjie Mu, Yannian Gu, Zhongzhen Huang, Yakun Zhu, Shaoting Zhang, Xiaofan Zhang",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13510v1",
+ "abstract": "Large language models with reasoning capabilities have demonstrated impressive performance across a wide range of domains. In clinical applications, a transparent, step-by-step reasoning process provides physicians with strong evidence to support decision-making. While reinforcement learning has effectively enhanced reasoning performance in medical contexts, the clinical reliability of these reasoning processes remains limited because their accuracy and validity are often overlooked during training. To address this gap, we propose MedCEG, a framework that augments medical language models with clinically valid reasoning pathways by explicitly supervising the reasoning process through a Critical Evidence Graph (CEG). We curate a dataset of challenging clinical cases and algorithmically construct a CEG for each sample to represent a high-quality verifiable reasoning pathway. To guide the reasoning process, we introduce a Clinical Reasoning Procedure Reward, which evaluates Node Coverage, Structural Correctness, and Chain Completeness, thereby providing a holistic assessment of reasoning quality. Experimental results show that MedCEG surpasses existing methods in performance while producing clinically valid reasoning chains, representing a solid advancement in reliable medical AI reasoning. The code and models are available at https://github.com/LinjieMu/MedCEG.",
+ "summary": "1. 核心创新点：通过构建并显式监督的关键证据图（Critical Evidence Graph, CEG），增强医学语言模型的可验证推理路径，从而提升推理的可解释性与临床可靠性。\n\n2. 主要方法：为每个样本自动构建高质量的 CEG 表征推理过程，引入 Clinical Reasoning Procedure Reward（基于节点覆盖、结构正确性、链路完整性）对推理进行 holistic 评估与强化学习式训练；结合大语言模型进行临床推理，且利用一个挑战性临床病例数据集进行训练与评估。\n\n3. 结论/性能：MedCEG 在性能上优于现有方法，并且能够生成具有临床有效性的推理链，显著提升医疗AI推理的可靠性；代码与模型已公开可用（GitHub 链接。）。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:04:51"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.21723",
+ "title": "HELP: Hierarchical Embodied Language Planner for Household Tasks",
+ "authors": "Alexandr V. Korchemnyi, Anatoly O. Onishchenko, Eva A. Bakaeva, Alexey K. Kovalev, Aleksandr I. Panov",
+ "date": "2025-12-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21723v1",
+ "abstract": "Embodied agents tasked with complex scenarios, whether in real or simulated environments, rely heavily on robust planning capabilities. When instructions are formulated in natural language, large language models (LLMs) equipped with extensive linguistic knowledge can play this role. However, to effectively exploit the ability of such models to handle linguistic ambiguity, to retrieve information from the environment, and to be based on the available skills of an agent, an appropriate architecture must be designed. We propose a Hierarchical Embodied Language Planner, called HELP, consisting of a set of LLM-based agents, each dedicated to solving a different subtask. We evaluate the proposed approach on a household task and perform real-world experiments with an embodied agent. We also focus on the use of open source LLMs with a relatively small number of parameters, to enable autonomous deployment.",
+ "summary": "- 核心创新点：提出一个分层的 embodied language planner HELP，通过多个专门处理子任务的 LLM 代理协同完成家庭任务，提升对语言歧义的处理、环境信息检索与技能复用的能力，并支持使用开源、参数较小的模型实现自主部署。\n\n- 主要方法：构建一个分层架构，由若干基于大语言模型的代理组成，每个代理负责一个子任务，利用层级规划来协调代理行动；在家庭任务的仿真与真实环境中进行评估，同时强调使用开源、参数较小的 LLM 以实现自主部署。\n\n- 结论/性能：在家庭任务的评估及真实世界实验中验证了 HELP 的可行性，展示了通过分层 LLM 代理实现任务解决的能力，并证明了可借助相对较小的开源 LLM 实现自主部署。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-29 02:54:57"
+}

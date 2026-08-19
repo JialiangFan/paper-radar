@@ -1,0 +1,13 @@
+{
+ "id": "2512.21309",
+ "title": "A Plan Reuse Mechanism for LLM-Driven Agent",
+ "authors": "Guopeng Li, Ruiqi Wu, Haisheng Tan",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21309v1",
+ "abstract": "Integrating large language models (LLMs) into personal assistants, like Xiao Ai and Blue Heart V, effectively enhances their ability to interact with humans, solve complex tasks, and manage IoT devices. Such assistants are also termed LLM-driven agents. Upon receiving user requests, the LLM-driven agent generates plans using an LLM, executes these plans through various tools, and then returns the response to the user. During this process, the latency for generating a plan with an LLM can reach tens of seconds, significantly degrading user experience. Real-world dataset analysis shows that about 30% of the requests received by LLM-driven agents are identical or similar, which allows the reuse of previously generated plans to reduce latency. However, it is difficult to accurately define the similarity between the request texts received by the LLM-driven agent through directly evaluating the original request texts. Moreover, the diverse expressions of natural language and the unstructured format of plan texts make implementing plan reuse challenging. To address these issues, we present and implement a plan reuse mechanism for LLM-driven agents called AgentReuse. AgentReuse leverages the similarities and differences among requests' semantics and uses intent classification to evaluate the similarities between requests and enable the reuse of plans. Experimental results based on a real-world dataset demonstrate that AgentReuse achieves a 93% effective plan reuse rate, an F1 score of 0.9718, and an accuracy of 0.9459 in evaluating request similarities, reducing latency by 93.12% compared with baselines without using the reuse mechanism.",
+ "summary": "**核心创新点**：通过意图分类对请求的语义相似性进行高效评估，并据此在相似请求之间重用已有计划，从而显著降低通过 LLM 生成计划的时延。\n\n**主要方法**：\n- 利用请求语义的相似性和差异性，结合意图分类来判断请求之间的相似度。\n- 将历史请求及其对应的已生成计划进行缓存/映射，遇到相似请求直接复用已有计划并执行。\n- 针对自然语言的多样表达和计划文本的非结构化挑战，设计实现策略以支持计划重用。\n- 在真实世界数据集上进行实验验证。\n\n**结论/性能**：\n- 实验结果表明 AgentReuse 实现了 93% 的有效计划重用率，评估请求相似性的 F1 分数为 0.9718，准确率为 0.9459。\n- 相比不使用重用机制的基线，整体延迟降低约 93.12%。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:52:21"
+}

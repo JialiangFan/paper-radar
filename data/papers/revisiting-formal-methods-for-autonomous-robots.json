@@ -1,0 +1,27 @@
+{
+ "id": "revisiting-formal-methods-for-autonomous-robots",
+ "title": "Revisiting Formal Methods for Autonomous Robots",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "随着Robotic Autonomous Systems (RAS)在核能、航空航天、农业、交通等安全关键领域的应用增加，仅靠测试不足以保证无bug——形式化方法提供数学证明级的正确性保证。形式化方法包括theorem proving、Model Checking (MC)和Runtime Verification (RV)。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Revisiting Formal Methods for Autonomous Robots - A Survey.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

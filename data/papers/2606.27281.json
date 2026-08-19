@@ -1,0 +1,13 @@
+{
+ "id": "2606.27281",
+ "title": "Resource-Aware Neuro-Symbolic Reasoning for Local Small Language Models",
+ "authors": "Carlos Ramírez Ovalle, Abel Alvarez",
+ "date": "2026-06-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.27281v1",
+ "abstract": "Small language models can run locally on consumer hardware, but structured reasoning often pushes users toward repeated sampling or larger models. This article studies a bounded neuro-symbolic alternative for local inference: a model translates a problem into typed finite-domain rules and constraints, a symbolic layer checks traceability and consistency, and a deterministic solver performs the reasoning step. The resulting Verifiable Formalization and Repair pipeline (VFR-LLM) tests when symbolic verification can replace repeated sampling without weakening accuracy. We evaluate it through LM Studio on Apple Silicon, using Qwen3-4B-2507 as the primary model, with Phi-4-mini-reasoning and Gemma-3n-E4B as robustness checks. On 120 generated pure-precedence problems, Qwen VFR-LLM achieves 0.983 accuracy, versus 0.700 for serial self-consistency using one model call instead of five. On a 120-instance BBH-derived extended logical-deduction subset, it reaches 0.933 versus 0.283. The advantage persists against a stronger cost-aware adaptive self-consistency baseline, which lowers sampling cost but not the single-call accuracy gap. Gemma reproduces the same model-dependent boundaries and Phi is negative on typed constraints. The contribution is bounded: finite-domain logic can replace repeated local sampling for some structured tasks, saving model calls and serial latency, with stratum-dependent token savings.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-28 13:01:43"
+}

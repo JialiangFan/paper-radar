@@ -1,0 +1,13 @@
+{
+ "id": "2511.23478",
+ "title": "Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models",
+ "authors": "Muhammad Maaz, Hanoona Rasheed, Fahad Shahbaz Khan, Salman Khan",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23478v1",
+ "abstract": "Reasoning over dynamic visual content remains a central challenge for multimodal large language models. Recent thinking models generate explicit reasoning traces for interpretability; however, their reasoning often appears convincing while being logically inconsistent or weakly grounded in visual evidence. We identify and formalize these issues through two diagnostic metrics: Think Answer Consistency (TAC), which measures the alignment between reasoning and answers, and Video Attention Score (VAS), which captures the extent to which reasoning depends on visual versus textual cues. Analysis across 11 video reasoning benchmarks shows that current models rely heavily on linguistic priors rather than visual content. To address this, we propose a reinforcement learning approach that enhances both temporal precision and reasoning consistency. Our approach combines timestamp aware supervised fine tuning with Group Relative Policy Optimization (GRPO) guided by a novel Temporal Alignment Reward (TAR). This dual step post training stage encourages temporally aligned and causally coherent video reasoning. The resulting model, Video R2, achieves consistently higher TAC, VAS, and accuracy across multiple benchmarks, demonstrating that improvements in temporal alignment and reasoning coherence lead to more accurate and trustworthy video understanding. Our code, dataset, and model will be open sourced.",
+ "summary": "1) 核心创新点（一句话）\n提出 Video-R2，通过时序对齐与推理一致性的强化学习框架提升视频推理的 groundedness，减少对语言先验的依赖。\n\n2) 主要方法\n- 构建两阶段后训练：时间戳感知的监督微调（timestamp-aware supervised fine tuning）与以 Temporal Alignment Reward 指导的 Group Relative Policy Optimization（GRPO）。\n- 引入并利用两项诊断指标：Think Answer Consistency（TAC）用于衡量推理与答案的一致性，Video Attention Score（VAS）用于衡量推理对视觉证据的依赖程度。\n- 在 11 个视频推理基准上评估，证明当前模型容易偏向语言先验，Video-R2 通过上述方法实现更好的时序对齐和因果一致性。\n\n3) 结论/性能\n- Video-R2 在 TAC、VAS 和准确性等指标上持续提升，显示时间对齐与推理连贯性的改进能带来更准确、可信的在线视频理解。\n- 研究、数据与模型将开源。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:04:17"
+}

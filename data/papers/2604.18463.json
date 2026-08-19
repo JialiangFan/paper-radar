@@ -1,0 +1,30 @@
+{
+ "id": "2604.18463",
+ "title": "Using Large Language Models for Embodied Planning Introduces Systematic Safety Risks",
+ "authors": "DESPITE authors",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2604.18463",
+ "abstract": "",
+ "summary": "Recent systematic evidence that embodied planning introduces safety risks even without malicious prompting.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental Agent Safety Benchmarks",
+ "tags": [
+  "agent-safety",
+  "benchmark",
+  "embodied-planning",
+  "safe-vla",
+  "supplemental-recent"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Agent_Safety_Benchmarks/2026_DESPITE.md",
+ "pdf_path": "PDFs/Supplemental_Agent_Safety_Benchmarks/2026_DESPITE.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

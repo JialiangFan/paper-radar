@@ -1,0 +1,13 @@
+{
+ "id": "2604.15800",
+ "title": "From Intention to Text: AI-Supported Goal Setting in Academic Writing",
+ "authors": "Yueling Fan, Richard Lee Davis, Olga Viberg",
+ "date": "2026-04-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15800v1",
+ "abstract": "This study presents WriteFlow, an AI voice-based writing assistant designed to support reflective academic writing through goal-oriented interaction. Academic writing involves iterative reflection and evolving goal regulation, yet prior research and a formative study with 17 participants show that writers often struggle to articulate and manage changing goals. While commonly used AI writing tools emphasize efficiency, they offer limited support for metacognition and writer agency. WriteFlow frames AI interaction as a dialogic space for ongoing goal articulation, monitoring, and negotiation grounded in writers' intentions. Findings from a Wizard-of-Oz study with 12 expert users show that WriteFlow scaffolds metacognitive regulation and reflection-in-action by supporting iterative goal refinement, maintaining goal-text alignment during drafting, and prompting evaluation of goal fulfillment. We discuss design implications for AI writing systems that prioritize reflective dialogue, flexible goal structures, and multi-perspective feedback to support intentional and agentic writing.",
+ "summary": "- 核心创新点：将AI写作助手打造为基于语音的对话式空间，通过持续的目标表达、监控与协商来支撑学术写作中的元认知调节和作者性（agentic writing）。\n\n- 主要方法：设计并原型化 WriteFlow 作为语音交互的AI写作助手；通过 Wizard-of-Oz 实验对12名专家用户进行评估，并辅以对17名参与者的形成性研究，聚焦在目标导向的对话、目标-文本对齐与目标完成度评估的交互设计。\n\n- 结论/性能：研究表明 WriteFlow 能有效促进元认知调节与反思在行动中的过程（reflection-in-action），通过迭代的目标细化、 drafting 过程中的目标与文本对齐，以及对目标完成情况的提示性评估来实现，并提出面向 reflective dialogue、灵活目标结构与多角度反馈的AI写作系统设计原则。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-20 13:02:33"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.21426",
+ "title": "What Makes a GitHub Issue Ready for Copilot?",
+ "authors": "Mohammed Sayagh",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21426v1",
+ "abstract": "AI-agents help developers in different coding tasks, such as developing new features, fixing bugs, and reviewing code. Developers can write a Github issue and assign it to an AI-agent like Copilot for implementation. Based on the issue and its related discussion, the AI-agent performs a plan for the implementation, and executes it. However, the performance of AI-agents and LLMs heavily depends on the input they receive. For instance, a GitHub issue that is unclear or not well scoped might not lead to a successful implementation that will eventually be merged. GitHub Copilot provides a set of best practice recommendations that are limited and high-level. In this paper, we build a set of 32 detailed criteria that we leverage to measure the quality of GitHub issues to make them suitable for AI-agents. We compare the GitHub issues that lead to a merged pull request versus closed pull request. Then, we build an interpretable machine learning model to predict the likelihood of a GitHub issue resulting in a merged pull request. We observe that pull requests that end up being merged are those originating from issues that are shorter, well scoped, with clear guidance and hints about the relevant artifacts for an issue, and with guidance on how to perform the implementation. Issues with external references including configuration, context setup, dependencies or external APIs are associated with lower merge rates. We built an interpretable machine learning model to help users identify how to improve a GitHub issue to increase the chances of the issue resulting in a merged pull request by Copilot. Our model has a median AUC of 72\\%. Our results shed light on quality metrics relevant for writing GitHub issues and motivate future studies further investigate the writing of GitHub issues as a first-class software engineering activity in the era of AI-teammates.",
+ "summary": "- 核心创新点：提出32条细化的 GitHub issue 质量度量准则，并基于这些准则训练一个可解释的机器学习模型来预测 issue 是否会被 Copilot 合并成 PR，从而揭示影响合并的关键因素。\n\n- 主要方法：建立并应用32条准则评估 issue 质量；比较导致合并 PR 与被关闭 PR 的 issue；训练一个可解释的机器学习模型来预测 issue 转化为合并 PR 的概率，并给出改进建议，评估指标为中位 AUC。\n\n- 结论/性能：被合并的 PR 多来自长度较短、范围清晰、具有明确实施指南和相关产物提示的 issue；包含外部引用（配置、上下文设置、依赖或外部 API）的 issue 合并率较低；模型中位 AUC 为 72%，可用于帮助用户改进 issue 以提高被 Copilot 合并的概率，并为 AI 助手时代的软件工程活动中 issue 编写提供参考。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-29 02:55:15"
+}

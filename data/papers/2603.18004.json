@@ -1,0 +1,13 @@
+{
+ "id": "2603.18004",
+ "title": "Unified Spatio-Temporal Token Scoring for Efficient Video VLMs",
+ "authors": "Jianrui Zhang, Yue Yang, Rohun Tripathi, Winson Han, Ranjay Krishna, Christopher Clark, Yong Jae Lee, Sangho Lee",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18004v1",
+ "abstract": "Token pruning is essential for enhancing the computational efficiency of vision-language models (VLMs), particularly for video-based tasks where temporal redundancy is prevalent. Prior approaches typically prune tokens either (1) within the vision transformer (ViT) exclusively for unimodal perception tasks such as action recognition and object segmentation, without adapting to downstream vision-language tasks; or (2) only within the LLM while leaving the ViT output intact, often requiring complex text-conditioned token selection mechanisms. In this paper, we introduce Spatio-Temporal Token Scoring (STTS), a simple and lightweight module that prunes vision tokens across both the ViT and the LLM without text conditioning or token merging, and is fully compatible with end-to-end training. By learning how to score temporally via an auxiliary loss and spatially via LLM downstream gradients, aided by our efficient packing algorithm, STTS prunes 50% of vision tokens throughout the entire architecture, resulting in a 62% improvement in efficiency during both training and inference with only a 0.7% drop in average performance across 13 short and long video QA tasks. Efficiency gains increase with more sampled frames per video. Applying test-time scaling for long-video QA further yields performance gains of 0.5-1% compared to the baseline. Overall, STTS represents a novel, simple yet effective technique for unified, architecture-wide vision token pruning.",
+ "summary": "- 核心创新点：提出统一的时空视觉标记评分（STTS）模块，在不依赖文本条件的情况下，对 ViT 与 LLM 之间的视觉 Token 进行端到端的统一剪枝，从而显著提升视频VLM的计算效率。\n\n- 主要方法：设计 STTS，跨时空对视觉 Token 进行评分；通过辅助损失实现时间维度评分、利用 LLM 下游梯度实现空间维度评分，并结合高效打包算法进行端到端训练；不进行文本条件、也无 Token 合并，能够对整条模型的视觉 Token 进行剪枝，目标剪出约 50% 的 Token。\n\n- 结论/性能：在13个短时/长视频问答任务上实现平均性能仅下降约0.7%，同时带来约62%的训练和推理阶段的效率提升，且随视频帧数增加效率增益更大；对于长视频问答的测试时可进一步通过尺度化获得额外约0.5–1%的性能提升。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-19 13:00:21"
+}

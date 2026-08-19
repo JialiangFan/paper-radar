@@ -1,0 +1,13 @@
+{
+ "id": "2601.20737",
+ "title": "A Human-Centred AI System for Multi-Actor Planning and Collaboration in Family Learning",
+ "authors": "Si Chen, Jingyi Xie, Yao Li, Ya-Fang Lin, He Zhang, Ge Wang, Gaojian Huang, Rui Yu, Ronald Anthony Metoyer, Ting Hua, Nitesh Chawla",
+ "date": "2026-01-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.20737v1",
+ "abstract": "Family learning takes place in everyday routines where children and caregivers read, practice, and develop new skills together. Despite growing interest in AI tutors, most existing systems are designed for single learners or classroom settings and do not address the distributed planning, coordination, and execution demands of learning at home. This paper introduces ParPal, a human-centred, LLM-powered system that supports multi-actor family learning by decomposing learning goals into actionable subtasks, allocating them across caregivers under realistic availability and expertise constraints, and providing caregiver-in-the-loop tutoring support with visibility into individual and collective contributions. Through expert evaluation of generated weekly learning plans and a one-week field deployment with 11 families, we identify systematic failure modes in current LLM-based planning, including misalignment with role expertise, unnecessary or costly collaboration, missing pedagogical learning trajectories, and physically or temporally infeasible tasks. While ParPal improves coordination clarity and recognition of caregiving effort, these findings expose fundamental limitations in how current LLMs operationalize pedagogical knowledge, reason about collaboration, and account for real-world, embodied constraints. We discuss implications for human-centred AI design and AI methodology, positioning multi-actor family learning as a critical testbed for advancing planning, adaptation, and pedagogical structure in next-generation AI systems.",
+ "summary": "- 核心创新点：提出一个以人为中心的多参与者家庭学习系统 ParPal，能够将学习目标分解为可执行子任务，按家庭成员的可用性与专长进行分配，并提供带有参与可视化的 caregiver-in-the-loop 辅导支持，以实现家庭层面的协同学习。\n\n- 主要方法：\n  - 基于大型语言模型（LLM）进行学习目标的分解、任务生成与跨成员的协作规划。\n  - 在现实约束下进行资源调度：考虑成员可用性、专长和时间窗等因素进行任务分配。\n  - 提供 caregiver-in-the-loop 的辅导支持，并对个人与集体贡献进行可视化与追踪。\n  - 通过专家评估对生成的周计划进行评估，并在11个家庭中开展为期一周的现场部署，分析当前LLM规划的表现与问题。\n\n- 结论/性能：\n  - ParPal 提高了协作的清晰度与对照护劳动的认知与认可。\n  - 同时暴露了现有LLM在落地教育性知识、推理协作以及考虑真实世界约束方面的根本局限，揭示了如与角色专长不对齐、过度或成本高的协作、缺失的教育学学习轨迹、任务物理/时间不可行等系统性失败模式。\n  - 研究对人本AI设计与AI方法论提出启示，强调多参与家庭学习是测试下一代AI系统在规划、自适应和教育结构方面的重要场景。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:24:14"
+}

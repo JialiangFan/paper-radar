@@ -1,0 +1,33 @@
+{
+ "id": "2410.13691",
+ "title": "Jailbreaking LLM-Controlled Robots",
+ "authors": "Alexander Robey, Zachary Ravichandran, Vijay Kumar, Hamed Hassani, George J. Pappas",
+ "date": null,
+ "year": 2024,
+ "url": "https://arxiv.org/abs/2410.13691",
+ "abstract": "",
+ "summary": "RoboPAIR adapts jailbreak search to LLM-controlled robots and demonstrates that unsafe physical actions can be elicited across access regimes.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Embodied AI Safety",
+ "tags": [
+  "embodied-ai",
+  "human-in-the-loop-safety",
+  "jailbreak",
+  "robot-safety",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Embodied_AI_Safety/2024_Robey_RoboPAIR.md",
+ "pdf_path": "PDFs/Embodied_AI_Safety/2024_Robey_RoboPAIR.pdf",
+ "code": "",
+ "project": "https://robopair.org/",
+ "is_core": true,
+ "is_supplemental": false
+}

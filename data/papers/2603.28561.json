@@ -1,0 +1,13 @@
+{
+ "id": "2603.28561",
+ "title": "Fine-Tuning Large Language Models for Cooperative Tactical Deconfliction of Small Unmanned Aerial Systems",
+ "authors": "Iman Sharifi, Alex Zongo, Peng Wei",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28561v1",
+ "abstract": "The growing deployment of small Unmanned Aerial Systems (sUASs) in low-altitude airspaces has increased the need for reliable tactical deconfliction under safety-critical constraints. Tactical deconfliction involves short-horizon decision-making in dense, partially observable, and heterogeneous multi-agent environments, where both cooperative separation assurance and operational efficiency must be maintained. While Large Language Models (LLMs) exhibit strong reasoning capabilities, their direct application to air traffic control remains limited by insufficient domain grounding and unpredictable output inconsistency. This paper investigates LLMs as decision-makers in cooperative multi-agent tactical deconfliction using fine-tuning strategies that align model outputs to human operator heuristics. We propose a simulation-to-language data generation pipeline based on the BlueSky air traffic simulator that produces rule-consistent deconfliction datasets reflecting established safety practices. A pretrained Qwen-Math-7B model is fine-tuned using two parameter-efficient strategies: supervised fine-tuning with Low-Rank Adaptation (LoRA) and preference-based fine-tuning combining LoRA with Group-Relative Policy Optimization (GRPO). Experimental results on validation datasets and closed-loop simulations demonstrate that supervised LoRA fine-tuning substantially improves decision accuracy, consistency, and separation performance compared to the pretrained LLM, with significant reductions in near mid-air collisions. GRPO provides additional coordination benefits but exhibits reduced robustness when interacting with heterogeneous agent policies.",
+ "summary": "- 核心创新点：通过对大型语言模型进行LoRA等参数高效微调，并结合仿真驱动的数据与GRPO偏好式学习，打造面向多智能体协作的战术去冲突决策者。\n\n- 主要方法：利用 BlueSky 仿真器生成规则一致的去冲突数据；以预训练的 Qwen-Math-7B 为基础模型，采用两种参数高效微调策略——（1）监督微调（LoRA）和（2）偏好式微调（LoRA + GRPO），对模型输出进行对人类操作者经验的对齐与优化。\n\n- 结论/性能：与预训练LLM相比，监督LoRA微调显著提升决策准确性、一致性和分离性能，并显著降低近中空冲突事件；GRPO 在提升协同方面有额外收益，但在与异质代理策略交互时鲁棒性较弱。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-31 13:08:39"
+}

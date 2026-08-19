@@ -1,0 +1,13 @@
+{
+ "id": "2602.11666",
+ "title": "PhyNiKCE: A Neurosymbolic Agentic Framework for Autonomous Computational Fluid Dynamics",
+ "authors": "E Fan, Lisong Shi, Zhengtong Li, Chih-yung Wen",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11666v1",
+ "abstract": "The deployment of autonomous agents for Computational Fluid Dynamics (CFD), is critically limited by the probabilistic nature of Large Language Models (LLMs), which struggle to enforce the strict conservation laws and numerical stability required for physics-based simulations. Reliance on purely semantic Retrieval Augmented Generation (RAG) often leads to \"context poisoning,\" where agents generate linguistically plausible but physically invalid configurations due to a fundamental Semantic-Physical Disconnect. To bridge this gap, this work introduces PhyNiKCE (Physical and Numerical Knowledgeable Context Engineering), a neurosymbolic agentic framework for trustworthy engineering. Unlike standard black-box agents, PhyNiKCE decouples neural planning from symbolic validation. It employs a Symbolic Knowledge Engine that treats simulation setup as a Constraint Satisfaction Problem, rigidly enforcing physical constraints via a Deterministic RAG Engine with specialized retrieval strategies for solvers, turbulence models, and boundary conditions. Validated through rigorous OpenFOAM experiments on practical, non-tutorial CFD tasks using Gemini-2.5-Pro/Flash, PhyNiKCE demonstrates a 96% relative improvement over state-of-the-art baselines. Furthermore, by replacing trial-and-error with knowledge-driven initialization, the framework reduced autonomous self-correction loops by 59% while simultaneously lowering LLM token consumption by 17%. These results demonstrate that decoupling neural generation from symbolic constraint enforcement significantly enhances robustness and efficiency. While validated on CFD, this architecture offers a scalable, auditable paradigm for Trustworthy Artificial Intelligence in broader industrial automation.",
+ "summary": "- 核心创新点：将神经规划与符号化约束验证解耦，通过符号知识引擎将仿真设置建模为约束满足问题，并以确定性RAG引擎与专门的检索策略严格 enforcing 物理约束，从而实现可信的CFD自动化。\n\n- 主要方法：提出 PhyNiKCE 这一神经符号代理框架，将仿真设置转化为约束满足问题并由符号知识引擎执行；使用确定性RAG引擎结合针对求解器、湍流模型与边界条件的专门检索策略进行求解与组装；在 OpenFOAM 环境（Gemini-2.5-Pro/Flash）下进行实际任务验证。\n\n- 结论/性能：相对于现有基线实现了约96%的相对提升；通过知识驱动初始化降低自治自校正循环57%（文中写作59%），同时将LLM token消耗降低约17%；证明解耦神经生成与符号约束执行可显著提升鲁棒性与效率，并为工业自动化中的可信AI提供可审计的范式。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-13 14:02:45"
+}

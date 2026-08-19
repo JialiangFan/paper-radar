@@ -1,0 +1,13 @@
+{
+ "id": "2603.12142",
+ "title": "Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing (Extended Version)",
+ "authors": "Patricia Guerra-Balboa, Annika Sauer, Héber H. Arcolezi, Thorsten Strufe",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12142v1",
+ "abstract": "Differential Privacy (DP) is widely adopted in data management systems to enable data sharing with formal disclosure guarantees. A central systems challenge is understanding how DP noise translates into effective protection against inference attacks, since this directly determines achievable utility. Most existing analyses focus only on membership inference -- capturing only a threat -- or rely on reconstruction robustness (ReRo). However, under realistic assumptions, we show that ReRo can yield misleading risk estimates and violate claimed bounds, limiting their usefulness for principled DP calibration and auditing.\n  This paper introduces reconstruction advantage, a unified risk metric that consistently captures risk across membership inference, attribute inference, and data reconstruction. We derive tight bounds that relate DP noise to adversarial advantage and characterize optimal adversarial strategies for arbitrary DP mechanisms and attacker knowledge. These results enable risk-driven noise calibration and provide a foundation for systematic DP auditing. We show that reconstruction advantage improves the accuracy and scope of DP auditing and enables more effective utility-privacy trade-offs in DP-enabled data management systems.",
+ "summary": "1) 核心创新点（一句话概括）\n提出统一的风险指标“reconstruction advantage”，覆盖成员推断、属性推断与数据重构等攻击，克服现有ReRo分析的局限，为DP噪声的风险校准与审计提供理论基础。\n\n2) 主要方法\n- 构建 reconstruction advantage 的理论框架，用以量化在不同攻击场景下的总体风险。\n- 推导与DP噪声相关的对手优势的紧界（tight bounds），并分析任意DP机制及攻击者知识下的最优攻击策略。\n- 将上述分析用于风险驱动的噪声校准与系统性DP审计，结合对抗性分析和形式化攻击模型。\n\n3) 结论/性能\n- 提升了DP审计的准确性与覆盖范围，支持更可靠的效用-隐私权衡。\n- 提供了可操作的风险驱动噪声设计与审计框架，减少对ReRo的潜在误导，提升在数据管理系统中的隐私保护与数据使用的综合效用。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-13 13:00:51"
+}

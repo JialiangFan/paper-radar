@@ -1,0 +1,13 @@
+{
+ "id": "2605.31530",
+ "title": "UNISON: A Unified Sound Generation and Editing Framework via Deep LLM Fusion",
+ "authors": "Zhaoqing Li, Haoning Xu, Jingran Su, Yaofang Liu, Zhefan Rao, Huimeng Wang, Jiajun Deng, Tianzi Wang, Zengrui Jin, Rui Liu, Haoxuan Che, Xunying Liu",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.31530v1",
+ "abstract": "We present UNISON, a latent diffusion framework that unifies speech generation, sound generation, and audio editing within a single model. A single model handles text-to-audio, text-to-speech, zero-shot speaker cloning, mixed speech-and-sound generation, scene-level audio editing, speech-in-scene editing, and timed temporal composition, all of which share a single set of weights. Our architecture features two core designs: (1) Layer-wise deep LLM fusion, which injects hidden states from uniformly sampled layers of a frozen MLLM into corresponding MM-DiT blocks via learned projections, providing depth-matched semantic conditioning that improves instruction following over single-layer baselines; and (2) a unified multi-task architecture where task identity is encoded solely by a channel-wise mask and source audio is provided through VAE-encoded channel concatenation. Training is stabilized by an online GPU-side multi-task data synthesis pipeline with task-homogeneous batching and a two-stage curriculum. With 621M--732M trainable parameters, UNISON achieves results competitive with or exceeding task-specialist models across evaluated domains, while being roughly $4\\times$ smaller than comparable unified systems.",
+ "summary": "# UNISON 论文总结\n\n## 1. 核心创新点\n提出一个统一的潜在扩散框架，用单一模型（同一套权重）同时完成语音生成、音效生成和音频编辑等多种任务。\n\n## 2. 主要方法\n- **逐层深度 LLM 融合**：从冻结的多模态大模型中均匀采样各层隐状态，通过可学习投影注入到对应的 MM-DiT 模块，实现深度匹配的语义条件控制。\n- **统一多任务架构**：任务身份仅用通道维度的 mask 编码，源音频通过 VAE 编码后做通道拼接输入。\n- **训练策略**：GPU 端在线多任务数据合成、任务同质化批处理，以及两阶段课程学习来稳定训练。\n\n## 3. 结论/性能\n仅用 621M–732M 可训练参数（约为同类统一系统的 1/4 大小），在文本到音频、文本到语音、零样本说话人克隆、混合语音音效生成、场景级音频编辑、场景内语音编辑、定时时序合成等任务上，达到或超越各领域专用模型的水平。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-01 13:01:08"
+}

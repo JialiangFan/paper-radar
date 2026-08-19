@@ -1,0 +1,13 @@
+{
+ "id": "2603.25674",
+ "title": "Measuring What Matters -- or What's Convenient?: Robustness of LLM-Based Scoring Systems to Construct-Irrelevant Factors",
+ "authors": "Cole Walsh, Rodica Ivan",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25674v1",
+ "abstract": "Automated systems have been widely adopted across the educational testing industry for open-response assessment and essay scoring. These systems commonly achieve performance levels comparable to or superior than trained human raters, but have frequently been demonstrated to be vulnerable to the influence of construct-irrelevant factors (i.e., features of responses that are unrelated to the construct assessed) and adversarial conditions. Given the rising usage of large language models in automated scoring systems, there is a renewed focus on ``hallucinations'' and the robustness of these LLM-based automated scoring approaches to construct-irrelevant factors. This study investigates the effects of construct-irrelevant factors on a dual-architecture LLM-based scoring system designed to score short essay-like open-response items in a situational judgment test. It was found that the scoring system was generally robust to padding responses with meaningless text, spelling errors, and writing sophistication. Duplicating large passages of text resulted in lower scores predicted by the system, on average, contradicting results from previous studies of non-LLM-based scoring systems, while off-topic responses were heavily penalized by the scoring system. These results provide encouraging support for the robustness of future LLM-based scoring systems when designed with construct relevance in mind.",
+ "summary": "1) 核心创新点：首次系统评估双架构LLM评分系统在情境判断测试的短文开放题中对构念无关因素的鲁棒性，发现对某些扰动具鲁棒性而对重复大段文本和偏题回答有显著惩罚。  \n2) 主要方法：使用一个双架构的LLM基评分系统对短文题进行评分，并通过有控制的干扰（填充无意义文本、拼写错误、写作水平变化、重复大量文本、偏题等）来评估对构念无关因素的敏感性。  \n3) 结论/性能：系统总体对填充文本、拼写错误和写作水平的扰动较为鲁棒；重复大段文本会降低分数，与非LLM评分系统的结论不同；偏题回答会被系统显著惩罚，研究支持在强调构念相关性的设计下提升鲁棒性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-27 13:01:23"
+}

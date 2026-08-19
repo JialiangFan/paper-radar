@@ -1,0 +1,13 @@
+{
+ "id": "2602.10917",
+ "title": "Near-Constant Strong Violation and Last-Iterate Convergence for Online CMDPs via Decaying Safety Margins",
+ "authors": "Qian Zuo, Zhiyong Wang, Fengxiang He",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.10917v1",
+ "abstract": "We study safe online reinforcement learning in Constrained Markov Decision Processes (CMDPs) under strong regret and violation metrics, which forbid error cancellation over time. Existing primal-dual methods that achieve sublinear strong reward regret inevitably incur growing strong constraint violation or are restricted to average-iterate convergence due to inherent oscillations. To address these limitations, we propose the Flexible safety Domain Optimization via Margin-regularized Exploration (FlexDOME) algorithm, the first to provably achieve near-constant $\\tilde{O}(1)$ strong constraint violation alongside sublinear strong regret and non-asymptotic last-iterate convergence. FlexDOME incorporates time-varying safety margins and regularization terms into the primal-dual framework. Our theoretical analysis relies on a novel term-wise asymptotic dominance strategy, where the safety margin is rigorously scheduled to asymptotically majorize the functional decay rates of the optimization and statistical errors, thereby clamping cumulative violations to a near-constant level. Furthermore, we establish non-asymptotic last-iterate convergence guarantees via a policy-dual Lyapunov argument. Experiments corroborate our theoretical findings.",
+ "summary": "- 核心创新点：在在线 CMDP 场景中首次通过时间可变的安全边际与边际正则化的原-对偶框架（FlexDOME），实现近常数级的强约束违背、子线性强奖励悔以及非渐近的末迭收敛。\n\n- 主要方法：提出 FlexDOME 算法，结合时间变安全边际和正则化项嵌入原-对偶框架，并引入逐项渐进支配（term-wise asymptotic dominance）策略来调度安全边际以匹配优化与统计误差的衰减速率，同时通过策略-对偶 Lyapunov 分析获得非渐近的末迭收敛保证。\n\n- 结论/性能：理论上证明并实验验证在在线 CMDP 中可实现近常数级的强约束违背、子线性强奖励悔，以及非渐近的末迭收敛。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-12 14:00:39"
+}

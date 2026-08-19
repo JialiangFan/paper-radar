@@ -1,0 +1,13 @@
+{
+ "id": "2603.03108",
+ "title": "RAIN: Secure and Robust Aggregation under Shuffle Model of Differential Privacy",
+ "authors": "Yuhang Li, Yajie Wang, Xiangyun Tang, Peng Jiang, Yu-an Tan, Liehuang Zhu",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.03108v1",
+ "abstract": "Secure aggregation is a foundational building block of privacy-preserving learning, yet achieving robustness under adversarial behavior remains challenging. Modern systems increasingly adopt the shuffle model of differential privacy (Shuffle-DP) to locally perturb client updates and globally anonymize them via shuffling for enhanced privacy protection. However, these perturbations and anonymization distort gradient geometry and remove identity linkage, leaving systems vulnerable to adversarial poisoning attacks. Moreover, the shuffler, typically a third party, can be compromised, undermining security against malicious adversaries. To address these challenges, we present Robust Aggregation in Noise (RAIN), a unified framework that reconciles privacy, robustness, and verifiability under Shuffle-DP. At its core, RAIN adopts sign-space aggregation to robustly measure update consistency and limit malicious influence under noise and anonymization. Specifically, we design two novel secret-shared protocols for shuffling and aggregation that operate directly on additive shares and preserve Shuffle-DP's tight privacy guarantee. In each round, the aggregated result is verified to ensure correct aggregation and detect any selective dropping, achieving malicious security with minimal overhead. Extensive experiments across comprehensive benchmarks show that RAIN maintains strong privacy guarantees under Shuffle-DP and remains robust to poisoning attacks with negligible degradation in accuracy and convergence. It further provides real-time integrity verification with complete tampering detection, while achieving up to 90x lower communication cost and 10x faster aggregation compared with prior work.",
+ "summary": "核心创新点：\n- 提出在Shuffle-DP场景下的统一鲁棒聚合框架RAIN，通过符号空间聚合与基于秘密共享的洗牌/聚合协议，实现隐私保护、对抗投毒的鲁棒性以及可验证性。\n\n主要方法：\n- 在更新的符号空间进行聚合以鲁棒地度量更新的一致性，限制恶意影响。\n- 设计两种新颖的秘密共享协议，直接在加法分享上实现洗牌与聚合，且保持Shuffle-DP的严格隐私界限。\n- 每一轮聚合后进行结果完整性验证，检测是否存在选择性丢弃等恶意行为，从而提供高效的恶意安全性。\n\n结论/性能：\n- 在广泛基准上，RAIN在Shuffle-DP下保持强隐私保护，并对投毒攻击具有鲁棒性，精度与收敛几乎不受影响。\n- 提供实时的完整性验证，能够完全检测篡改。\n- 相较于此前工作，通信成本最高可降低约90倍，聚合速度提升约10倍，开销极低。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-04 14:01:52"
+}

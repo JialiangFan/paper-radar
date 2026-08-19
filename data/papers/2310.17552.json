@@ -1,0 +1,32 @@
+{
+ "id": "2310.17552",
+ "title": "Model-Based Runtime Monitoring with Interactive Imitation Learning",
+ "authors": "Liu, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2310.17552",
+ "abstract": "",
+ "summary": "This paper learns a runtime monitor from trustworthy deployments to predict future failures and reduce human supervision load.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "human-in-the-loop",
+  "human-in-the-loop-safety",
+  "interactive-imitation-learning",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2023_Liu_SiriusMonitor.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2023_Liu_SiriusMonitor.pdf",
+ "code": "",
+ "project": "https://ut-austin-rpl.github.io/sirius-runtime-monitor/",
+ "is_core": true,
+ "is_supplemental": false
+}

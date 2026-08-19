@@ -1,0 +1,13 @@
+{
+ "id": "2608.06183",
+ "title": "MicroEvo: Knowledge-Guided LLM Sampling for Efficient Microarchitecture Design Space Exploration",
+ "authors": "Jia Xiong, Runkai Li, Chenxu Niu, Guangyuan Gao, Changwen Xing, Yifan Zhang, Xinlai Wan, Jieran Cui, Chen Bai, Yusheng Hua, Ying Wang, Ming Ling, Xi Wang, Tao Xie",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.06183v1",
+ "abstract": "Microarchitecture design space exploration suffers from expansive search spaces and expensive PPA evaluation, leaving only a small simulation budget for design decision-making. Existing methods perform blind search without considering microarchitectural dependencies and fail to learn from the iterative search effectively, leading to wasted evaluations and weak Pareto convergence. In this paper, we propose MicroEvo, a knowledge-guided framework that couples off-the-shelf LLMs with Monte Carlo Tree Search (MCTS) for multi-objective microarchitecture optimization. MicroEvo combines LLM-driven evolutionary operators, a Pareto-aware tree policy that balances Pareto contribution and diversity, an active knowledge accumulation mechanism that extracts and reuses optimization insights, and state-aware directives that adapt the search behavior online. Experiments show that MicroEvo improves Pareto-front quality by up to 36.2% over NSGA-II and achieves 10.6x higher search efficiency, and also demonstrates strong scalability to a complex industrial-scale core. The code repository is available at: https://github.com/GEAR-SEU/MicroEvo-ICCAD-26.",
+ "summary": "**MicroEvo：知识引导的 LLM 采样用于高效微架构设计空间探索**\n\n1. **核心创新点**\n   首次将现成 LLM 与蒙特卡洛树搜索（MCTS）耦合，把微架构领域知识注入搜索过程，实现有限仿真预算下的多目标微架构设计空间探索（DSE）。\n\n2. **主要方法**\n   框架由四部分组成：\n\n   - **LLM 驱动的进化算子**：用 LLM 生成/变异候选设计配置，替代盲目随机搜索；\n   - **Pareto 感知的树策略**：在 MCTS 节点选择中同时权衡 Pareto 前沿贡献度与解的多样性；\n   - **主动知识积累机制**：从迭代搜索中抽取优化经验（insights）并复用；\n   - **状态感知指令（state-aware directives）**：在线自适应调整搜索行为。\n\n   优化目标为 PPA（性能/功耗/面积）多目标权衡。\n\n3. **结论/性能**\n   相比 NSGA-II，Pareto 前沿质量最高提升 **36.2%**，搜索效率提高 **10.6 倍**；在复杂的工业级处理器核上验证了良好的可扩展性。代码已开源（GEAR-SEU/MicroEvo-ICCAD-26）。\n\n> 一点补充：摘要只给出了与 NSGA-II 的对比，未提及与其他基于贝叶斯优化/主动学习的 DSE 方法的比较，实际优势幅度需看正文实验部分。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-07 13:03:10"
+}

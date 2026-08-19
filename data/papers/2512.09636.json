@@ -1,0 +1,13 @@
+{
+ "id": "2512.09636",
+ "title": "MentraSuite: Post-Training Large Language Models for Mental Health Reasoning and Assessment",
+ "authors": "Mengxi Xiao, Kailai Yang, Pengde Zhao, Enze Zhang, Ziyan Kuang, Zhiwei Liu, Weiguang Han, Shu Liao, Lianting Huang, Jinpeng Hu, Min Peng, Qianqian Xie, Sophia Ananiadou",
+ "date": "2025-12-10",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.09636v1",
+ "abstract": "Mental health disorders affect hundreds of millions globally, and the Web now serves as a primary medium for accessing support, information, and assessment. Large language models (LLMs) offer scalable and accessible assistance, yet their deployment in mental-health settings remains risky when their reasoning is incomplete, inconsistent, or ungrounded. Existing psychological LLMs emphasize emotional understanding or knowledge recall but overlook the step-wise, clinically aligned reasoning required for appraisal, diagnosis, intervention planning, abstraction, and verification. To address these issues, we introduce MentraSuite, a unified framework for advancing reliable mental-health reasoning. We propose MentraBench, a comprehensive benchmark spanning five core reasoning aspects, six tasks, and 13 datasets, evaluating both task performance and reasoning quality across five dimensions: conciseness, coherence, hallucination avoidance, task understanding, and internal consistency. We further present Mindora, a post-trained model optimized through a hybrid SFT-RL framework with an inconsistency-detection reward to enforce faithful and coherent reasoning. To support training, we construct high-quality trajectories using a novel reasoning trajectory generation strategy, that strategically filters difficult samples and applies a structured, consistency-oriented rewriting process to produce concise, readable, and well-balanced trajectories. Across 20 evaluated LLMs, Mindora achieves the highest average performance on MentraBench and shows remarkable performances in reasoning reliability, demonstrating its effectiveness for complex mental-health scenarios.",
+ "summary": "- 核心创新点（1 句话）\n  提出 MentraSuite，将 MentraBench 的多维评测与 Mindora 的混合 SFT-RL 后训练结合，构建面向心理健康场景的可可靠推理框架。\n\n- 主要方法\n  - MentraBench：设计覆盖五大核心推理维度的基准，含六项任务和13组数据集，用于评估任务性能与推理质量（包括简洁性、连贯性、避免幻觉、任务理解与内部一致性）。\n  - Mindora：通过混合监督微调（SFT）与强化学习（RL）的后训练框架，并引入不一致检测奖励，以强化可信且连贯的推理过程。\n  - 推理轨迹生成：提出新的轨迹生成策略，筛选困难样本并进行结构化、以一致性为导向的改写，生成简明、可读且平衡的推理轨迹。\n  - 评估范围：在 20 种被评测的大语言模型上进行对比评估。\n\n- 结论/性能\n  Mindora 在 MentraBench 上获得最高的平均性能，在复杂心理健康场景中展现出显著的推理可靠性提升，且在减少幻觉、提高一致性等方面表现突出，优于其他模型。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-11 14:03:32"
+}

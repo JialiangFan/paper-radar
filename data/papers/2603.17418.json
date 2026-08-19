@@ -1,0 +1,13 @@
+{
+ "id": "2603.17418",
+ "title": "PowerDAG: Reliable Agentic AI System for Automating Distribution Grid Analysis",
+ "authors": "Emmanuel O. Badmus, Amritanshu Pandey",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17418v1",
+ "abstract": "This paper introduces PowerDAG, an agentic AI system for automating complex distribution-grid analysis. We address the reliability challenges of state-of-the-art agentic systems in automating complex engineering workflows by introducing two innovative active mechanisms: (i) \\textbf{adaptive retrieval}, which uses a similarity-decay cutoff algorithm to dynamically select the most relevant annotated exemplars as context, and (ii) \\textbf{just-in-time (JIT) supervision}, which actively intercepts and corrects tool-usage violations during execution. On a benchmark of unseen distribution grid analysis queries, PowerDAG achieves a 100\\% success rate with GPT-5.2 and 94.4--96.7\\% with smaller open-source models, outperforming base ReAct (41--88\\%), LangChain (30--90\\%), and CrewAI (9--41\\%) baselines by margins of 6--50 percentage points.",
+ "summary": "1. 核心创新点：提出 PowerDAG，一种结合自适应检索与就时监督的代理式 AI 系统，用以提升在分布式电网分析等复杂工程任务中的可靠性。\n\n2. 主要方法：\n- 自适应检索（adaptive retrieval）：使用相似度衰减截止算法动态选择与当前任务最相关、带注释的示例作为上下文。\n- 就时监督（just-in-time, JIT supervision）：在执行过程中主动拦截并纠正工具使用违规，保障执行过程的正确性。\n- 综合应用于复杂分布网分析查询的代理式 AI 框架，评估采用 GPT-5.2 与较小的开源模型，并与 ReAct、LangChain、CrewAI 等基线进行对比。\n\n3. 结论/性能：\n- 在未见的分布网分析查询基准上，PowerDAG 对 GPT-5.2 达到 100% 成功率，且对较小的开源模型实现 94.4–96.7% 的成功率。\n- 相较于基线 ReAct（41–88%）、LangChain（30–90%）和 CrewAI（9–41%），提升幅度为 6–50 个百分点。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-19 13:06:47"
+}

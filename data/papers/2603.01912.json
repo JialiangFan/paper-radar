@@ -1,0 +1,13 @@
+{
+ "id": "2603.01912",
+ "title": "Demonstrating ViviDoc: Generating Interactive Documents through Human-Agent Collaboration",
+ "authors": "Yinghao Tang, Yupeng Xie, Yingchaojie Feng, Tingfeng Lan, Wei Chen",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.01912v1",
+ "abstract": "Interactive articles help readers engage with complex ideas through exploration, yet creating them remains costly, requiring both domain expertise and web development skills. Recent LLM-based agents can automate content creation, but naively applying them yields uncontrollable and unverifiable outputs. We present ViviDoc, a human-agent collaborative system that generates interactive educational documents from a single topic input. ViviDoc introduces a multi-agent pipeline (Planner, Executor, Evaluator) and the Document Specification (DocSpec), a human-readable intermediate representation that decomposes each interactive visualization into State, Render, Transition, and Constraint components. The DocSpec enables educators to review and refine generation plans before code is produced, bridging the gap between pedagogical intent and executable output. Expert evaluation and a user study show that ViviDoc substantially outperforms naive agentic generation and provides an intuitive editing experience. Our project homepage is available at https://vividoc-homepage.vercel.app/.",
+ "summary": "1) 核心创新点\n通过人机协作的多代理工作流（Planner、Executor、Evaluator）和可供教师审阅的中间表示 DocSpec，将单一主题输入生成可交互的教育文档，从而实现生成过程的可控性与可验证性。\n\n2) 主要方法\n- 构建一个多代理管线：Planner、Executor、Evaluator 协同工作来规划、执行和评估生成内容。  \n- 引入 DocSpec，作为可读的中间表示，将每个交互式可视化拆解为状态（State）、渲染（Render）、过渡（Transition）和约束（Constraint）四个要素。  \n- 在生成前提供可编辑的计划阶段，教师可审阅并修改 DocSpec，进行 pedagogical intent 与可执行输出之间的桥接。  \n- 通过人机交互使生成的教育文档从计划到代码的过程可追溯、可调整，并以专家评估和用户研究作为验证。\n\n3) 结论/性能\n专家评估和用户研究表明，ViviDoc 比直接的代理生成显著更具优势，并提供更直观的编辑体验，显示出在生成高质量、可控的交互性教育文档方面的有效性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:02:53"
+}

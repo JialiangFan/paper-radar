@@ -1,0 +1,13 @@
+{
+ "id": "2511.21591",
+ "title": "On the Limits of Innate Planning in Large Language Models",
+ "authors": "Charles Schepanowski, Charles Ling",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21591v1",
+ "abstract": "Large language models (LLMs) achieve impressive results on many benchmarks, yet their capacity for planning and stateful reasoning remains unclear. We study these abilities directly, without code execution or other tools, using the 8-puzzle: a classic task that requires state tracking and goal-directed planning while allowing precise, step-by-step evaluation. Four models are tested under common prompting conditions (Zero-Shot, Chain-of-Thought, Algorithm-of-Thought) and with tiered corrective feedback. Feedback improves success rates for some model-prompt combinations, but many successful runs are long, computationally expensive, and indirect. We then examine the models with an external move validator that provides only valid moves. Despite this level of assistance, none of the models solve any puzzles in this setting. Qualitative analysis reveals two dominant deficits across all models: (1) brittle internal state representations, leading to frequent invalid moves, and (2) weak heuristic planning, with models entering loops or selecting actions that do not reduce the distance to the goal state. These findings indicate that, in the absence of external tools such as code interpreters, current LLMs have substantial limitations in planning and that further progress may require mechanisms for maintaining explicit state and performing structured search.",
+ "summary": "- 核心创新点：在不使用代码执行或其他外部工具的条件下，系统性评估大语言模型在8-puzzle中的规划与状态推理能力，揭示其内部状态表示的脆弱性与启发式规划的不足，强调需要显式状态维护与结构化搜索来实现真正的计划能力。\n\n- 主要方法：在8-puzzle任务上比较四种模型在零样本、Chain-of-Thought、Algorithm-of-Thought等提示条件下的表现，结合分层纠错反馈；引入仅提供有效移动的外部移动校验器以限制动作；并进行定性分析以评估内部状态表示和搜索策略的不足。\n\n- 结论/性能：纠错反馈在部分模型-提示组合中提升了成功率，但多数情况耗时长且结果不直接；即使有外部校验器，仍未能解决谜题；总体发现包括内部状态表示脆弱和启发式规划薄弱，容易进入循环或采取不降低距离的行动，表明缺乏外部工具时，LLMs的计划能力存在显著局限，需引入显式状态维护与结构化搜索等机制。",
+ "keyword": "PDDL planning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:10:47"
+}

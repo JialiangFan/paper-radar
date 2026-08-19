@@ -1,0 +1,13 @@
+{
+ "id": "2603.15599",
+ "title": "SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval",
+ "authors": "Jesper Derehag, Carlos Calva, Timmy Ghiurau",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15599v1",
+ "abstract": "Recent conversational memory systems invest heavily in LLM-based structuring at ingestion time and learned retrieval policies at query time. We show that neither is necessary. SmartSearch retrieves from raw, unstructured conversation history using a fully deterministic pipeline: NER-weighted substring matching for recall, rule-based entity discovery for multi-hop expansion, and a CrossEncoder+ColBERT rank fusion stage -- the only learned component -- running on CPU in ~650ms. Oracle analysis on two benchmarks identifies a compilation bottleneck: retrieval recall reaches 98.6%, but without intelligent ranking only 22.5% of gold evidence survives truncation to the token budget. With score-adaptive truncation and no per-dataset tuning, SmartSearch achieves 93.5% on LoCoMo and 88.4% on LongMemEval-S, exceeding all known memory systems under the same evaluation protocol on both benchmarks while using 8.5x fewer tokens than full-context baselines.",
+ "summary": "- 核心创新点：提出一个完全确定性的对话记忆检索流水线，从原始、非结构化的对话历史中直接检索信息，不依赖LLM结构化或学习型检索策略，通过NER权重的子字符串匹配、规则驱动的多跳实体扩展，以及唯一的学习组件CrossEncoder+ColBERT的排序融合，实现高效且强鲁棒的记忆检索。\n\n- 主要方法：\n  - NER权重的子字符串匹配用于 Recall，从原始对话历史中提取相关片段\n  - 规则化实体发现用于实现多跳扩展\n  - CrossEncoder+ColBERT 的排序融合阶段（唯一的可学习组件）\n  - 该流程在 CPU 上约 650ms 完成\n  - 引入分数自适应截断，并在无需对数据集调参的条件下运作\n\n- 结论/性能：\n  - 先验分析显示检索召回率可达 98.6%，但若缺少智能排序，金证据在令牌预算截断后仅剩 22.5%\n  - 在分数自适应截断且无数据集特定调参的情况下，LoCoMo 获得 93.5%，LongMemEval-S 获得 88.4%\n  - 在相同评测协议下超过所有已知记忆系统，同时使用的令牌量比全上下文基线少 8.5 倍",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-17 13:01:16"
+}

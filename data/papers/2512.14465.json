@@ -1,0 +1,13 @@
+{
+ "id": "2512.14465",
+ "title": "Context-Picker: Dynamic context selection using multi-stage reinforcement learning",
+ "authors": "Siyuan Zhu, Chengdong Xu, Kaiqiang Ke, Chao Yu",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14465v1",
+ "abstract": "In long-context question answering (LCQA), determining the optimal amount of context for a given query is a significant challenge. Including too few passages may omit critical information, while including too many can introduce noise and reduce the quality of the answer. Traditional approaches, such as fixed Top-$K$ retrieval and single-stage reranking, face the dilemma of selecting the right number of passages. This problem is particularly pronounced for factoid questions, which often require only a few specific pieces of evidence. To address this issue, we introduce \\emph{Context-Picker}, a reasoning-aware framework that shifts the paradigm from similarity-based ranking to minimal sufficient subset selection. Context-Picker treats context selection as a decision-making process optimized via a human-inspired, two-stage reinforcement learning schedule: a \\emph{recall-oriented} stage that prioritizes the coverage of reasoning chains, followed by a \\emph{precision-oriented} stage that aggressively prunes redundancy to distill a compact evidence set. To resolve reward sparsity, we propose an offline evidence distillation pipeline that mines \"minimal sufficient sets\" via a Leave-One-Out (LOO) procedure, providing dense, task-aligned supervision. Experiments on five long-context and multi-hop QA benchmarks demonstrate that Context-Picker significantly outperforms strong RAG baselines, achieving superior answer accuracy with comparable or reduced context lengths. Ablation studies indicate that the coarse-to-fine optimization schedule, the redundancy-aware reward shaping, and the rationale-guided format all contribute substantially to these gains.",
+ "summary": "1) 核心创新点：提出 Context-Picker，通过两阶段强化学习将上下文选择从单纯相似性排序转化为最小充足子集的决策，以实现动态、推理驱动的长上下文筛选。 \n\n2) 主要方法：将上下文选择建模为决策过程，采用 recall-oriented 阶段实现对推理链的覆盖、以及 precision-oriented 阶段对冗余进行剪枝；为缓解奖励稀疏，提出离线证据蒸馏管道，使用 Leave-One-Out 机制挖掘“最小充足集合”提供密集的监督，并结合 rationale-guided 格式提升可解释性。 \n\n3) 结论/性能：在五个长上下文与多跳问答基准上显著优于强力的 RAG 基线，同时实现更高的答案准确性且上下文长度相当或更短；消融实验表明粗细-协同优化、冗余感知奖励和 rationale-guided 形式等因素均对性能有显著贡献。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:03:34"
+}

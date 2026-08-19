@@ -1,0 +1,13 @@
+{
+ "id": "2601.17920",
+ "title": "Agentic AI for Self-Driving Laboratories in Soft Matter: Taxonomy, Benchmarks,and Open Challenges",
+ "authors": "Xuanzhou Chen, Audrey Wang, Stanley Yin, Hanyang Jiang, Dong Zhang",
+ "date": "2026-01-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.17920v1",
+ "abstract": "Self-driving laboratories (SDLs) close the loop between experiment design, automated execution, and data-driven decision making, and they provide a demanding testbed for agentic AI under expensive actions, noisy and delayed feedback, strict feasibility and safety constraints, and non-stationarity. This survey uses soft matter as a representative setting but focuses on the AI questions that arise in real laboratories. We frame SDL autonomy as an agent environment interaction problem with explicit observations, actions, costs, and constraints, and we use this formulation to connect common SDL pipelines to established AI principles. We review the main method families that enable closed loop experimentation, including Bayesian optimization and active learning for sample efficient experiment selection, planning and reinforcement learning for long horizon protocol optimization, and tool using agents that orchestrate heterogeneous instruments and software. We emphasize verifiable and provenance aware policies that support debugging, reproducibility, and safe operation. We then propose a capability driven taxonomy that organizes systems by decision horizon, uncertainty modeling, action parameterization, constraint handling, failure recovery, and human involvement. To enable meaningful comparison, we synthesize benchmark task templates and evaluation metrics that prioritize cost aware performance, robustness to drift, constraint violation behavior, and reproducibility. Finally, we distill lessons from deployed SDLs and outline open challenges in multi-modal representation, calibrated uncertainty, safe exploration, and shared benchmark infrastructure.",
+ "summary": "1) 核心创新点：提出面向软物质自驱动实验室的代理智能框架与能力驱动分类法，系统化将闭环实验设计-执行-数据驱动决策连接起来，并给出可验证、可溯源的策略、基准任务与评估指标，同时指明未来在多模态表示、鲁棒性与安全探索等方面的开放挑战。\n\n2) 主要方法：\n- 将自驱动实验室（SDL）建模为观测-动作-成本-约束的代理环境，便于与现有AI原理对齐。\n- 使用贝叶斯优化与主动学习实现样本高效的实验选择。\n- 采用规划和强化学习进行长时程协议优化。\n- 通过工具使用型代理协调多种仪器和软件，实现异构系统的协同。\n- 强调可验证性与溯源性，支持调试、可重复性与安全操作。\n- 提出以能力为驱动的分类法，覆盖决策视野、不确定性建模、动作参数化、约束处理、故障恢复与人机参与等维度，并结合可比较的基准任务模板与评估指标。\n\n3) 结论/性能：\n- 提出了面向SDL的可比基准任务模板和评价指标，聚焦成本感知性能、对漂移的鲁棒性、约束违规行为以及可重复性等方面的评估。\n- 总结了已部署 SDL 的经验教训，并指出在多模态表示、已校准的不确定性、可控安全探索以及共享基准基础设施等方面的关键开放挑战与研究方向。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:22:30"
+}

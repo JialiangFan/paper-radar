@@ -1,0 +1,13 @@
+{
+ "id": "2608.00934",
+ "title": "Unified remnant models for aligned-spin, precessing, and eccentric binary black hole mergers",
+ "authors": "Tousif Islam, Digvijay Wadekar, Gaurav Khanna",
+ "date": "2026-08-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.00934v1",
+ "abstract": "Using approximately $5000$ numerical-relativity (NR) simulations spanning mass ratios up to $q=128$ and $1200$ black-hole-perturbation-theory (BHPT) simulations extending to $q=1000$, we present fully analytic models for the remnant properties of quasi-circular binary black hole mergers. The models gwModelRemS (for final mass, final spin, peak luminosity, and recoil kick) and gwModelRemP (for final mass, final spin, and peak luminosity) describe nonprecessing and precessing binaries, respectively. Our approach combines analytic insights from post-Newtonian theory and point-particle limits with a data-driven fitting framework which also includes validation-guided AI-agent-assisted optimization. The resulting fits outperform existing analytic models and achieve accuracies comparable to data-driven models within their domains of validity. We also construct gwModelRemP\\_flow, a normalizing-flow model for recoil kicks from precessing binaries, marginalized over the in-plane spin orientations. This model additionally utilizes an enlarged low-fidelity training set, beyond the available NR and BHPT simulations, constructed through a waveform-based data-augmentation procedure. We also include simple eccentric extensions through leading-order dependence on eccentricity and orbital anomaly. The models span the equal-mass to extreme-mass-ratio regimes and are publicly available through the gwModels package for applications in gravitational-wave astronomy, astrophysical population studies, and cosmology.",
+ "summary": "## 论文摘要总结\n\n**标题**：《面向共旋、进动与偏心双黑洞并合的统一遗迹模型》\n\n### 1. 核心创新点\n提出一套**统一的全解析双黑洞并合遗迹（remnant）模型**，首次将质量比覆盖范围从等质量一路延伸到极端质量比（q=1000），并同时支持非进动、进动与偏心三类系统。\n\n### 2. 主要方法\n- **数据基础**：约 5000 个数值相对论（NR）模拟（质量比至 q=128）+ 1200 个黑洞微扰论（BHPT）模拟（至 q=1000）。\n- **建模策略**：将后牛顿理论与点粒子极限的解析结构，与数据驱动的拟合框架相结合，并引入\"验证引导的 AI 智能体辅助优化\"来搜索拟合形式。\n- **模型family**：\n  - `gwModelRemS`——非进动系统，给出末态质量、末态自旋、峰值光度、反冲踢速（kick）；\n  - `gwModelRemP`——进动系统，给出末态质量、末态自旋、峰值光度；\n  - `gwModelRemP_flow`——用**归一化流（normalizing flow）**建模进动系统的反冲踢速（对面内自旋取向做边缘化），并通过基于波形的数据增强构造了超出现有 NR/BHPT 数据的低保真训练集。\n- **偏心扩展**：以偏心率和轨道近点角的领头阶依赖做简单推广。\n\n### 3. 结论/性能\n拟合精度**优于现有解析模型**，在各自适用域内可与数据驱动模型相当，且适用范围横跨等质量到极端质量比区间。模型已通过 `gwModels` 软件包公开发布，可用于引力波天文学、天体物理族群统计与宇宙学研究。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-04 13:02:34"
+}

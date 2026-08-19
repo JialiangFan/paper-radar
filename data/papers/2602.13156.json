@@ -1,0 +1,13 @@
+{
+ "id": "2602.13156",
+ "title": "In-Context Autonomous Network Incident Response: An End-to-End Large Language Model Agent Approach",
+ "authors": "Yiran Gao, Kim Hammar, Tao Li",
+ "date": "2026-02-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.13156v1",
+ "abstract": "Rapidly evolving cyberattacks demand incident response systems that can autonomously learn and adapt to changing threats. Prior work has extensively explored the reinforcement learning approach, which involves learning response strategies through extensive simulation of the incident. While this approach can be effective, it requires handcrafted modeling of the simulator and suppresses useful semantics from raw system logs and alerts. To address these limitations, we propose to leverage large language models' (LLM) pre-trained security knowledge and in-context learning to create an end-to-end agentic solution for incident response planning. Specifically, our agent integrates four functionalities, perception, reasoning, planning, and action, into one lightweight LLM (14b model). Through fine-tuning and chain-of-thought reasoning, our LLM agent is capable of processing system logs and inferring the underlying network state (perception), updating its conjecture of attack models (reasoning), simulating consequences under different response strategies (planning), and generating an effective response (action). By comparing LLM-simulated outcomes with actual observations, the LLM agent repeatedly refines its attack conjecture and corresponding response, thereby demonstrating in-context adaptation. Our agentic approach is free of modeling and can run on commodity hardware. When evaluated on incident logs reported in the literature, our agent achieves recovery up to 23% faster than those of frontier LLMs.",
+ "summary": "- 核心创新点：提出一个端到端的基于大语言模型的代理式网络事件响应系统，整合感知、推理、规划、行动四大能力，通过在-context学习实现自适应，无需显式建模即可在普通硬件上运行。\n\n- 主要方法：\n  - 使用一个轻量级的14B大语言模型，嵌入感知、推理、规划、执行四大功能。\n  - 通过微调和链式推理（chain-of-thought）处理系统日志以推断网络状态（感知）、更新攻击模型猜想（推理）。\n  - 对不同响应策略的后果进行仿真（规划），生成实际可执行的响应（行动）。\n  - 将仿真结果与实际观测对比，循环自我修正攻击猜想和应对策略，体现 in-context 适应；无需手工建模，且可在 commodity 硬件上运行。\n\n- 结论/性能：在文献报道的事故日志上评估，该代理实现的恢复速度比前沿LLMs快最多约23%。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-16 14:01:50"
+}

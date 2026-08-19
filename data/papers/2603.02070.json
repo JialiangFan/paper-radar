@@ -1,0 +1,13 @@
+{
+ "id": "2603.02070",
+ "title": "Exploring Plan Space through Conversation: An Agentic Framework for LLM-Mediated Explanations in Planning",
+ "authors": "Guilhem Fouilhé, Rebecca Eifler, Antonin Poché, Sylvie Thiébaux, Nicholas Asher",
+ "date": "2026-03-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02070v1",
+ "abstract": "When automating plan generation for a real-world sequential decision problem, the goal is often not to replace the human planner, but to facilitate an iterative reasoning and elicitation process, where the human's role is to guide the AI planner according to their preferences and expertise. In this context, explanations that respond to users' questions are crucial to improve their understanding of potential solutions and increase their trust in the system. To enable natural interaction with such a system, we present a multi-agent Large Language Model (LLM) architecture that is agnostic to the explanation framework and enables user- and context-dependent interactive explanations. We also describe an instantiation of this framework for goal-conflict explanations, which we use to conduct a user study comparing the LLM-powered interaction with a baseline template-based explanation interface.",
+ "summary": "- 核心创新点：提出一个与解释框架无关的多代理LLM架构，通过对话实现计划空间的交互探查与个性化解释（以目标冲突解释为实例）。\n\n- 主要方法：采用多代理的大语言模型（LLM）架构，支持基于用户与情境的交互式解释生成；解释框架对该架构保持“无框架依赖”特性；对目标冲突等场景进行实例化，并通过用户研究比较LLM驱动的互动解释与基线模板式解释界面。\n\n- 结论/性能：进行了用户研究，比较两种解释界面以评估理解和信任等维度的提升潜力；摘要中未给出具体的量化结果。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:02:35"
+}

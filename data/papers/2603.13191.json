@@ -1,0 +1,13 @@
+{
+ "id": "2603.13191",
+ "title": "From Experiments to Expertise: Scientific Knowledge Consolidation for AI-Driven Computational Research",
+ "authors": "Haonan Huang",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13191v1",
+ "abstract": "While large language models (LLMs) have transformed AI agents into proficient executors of computational materials science, performing a hundred simulations does not make a researcher. What distinguishes research from routine execution is the progressive accumulation of knowledge -- learning which approaches fail, recognizing patterns across systems, and applying understanding to new problems. However, the prevailing paradigm in AI-driven computational science treats each execution in isolation, largely discarding hard-won insights between runs. Here we present QMatSuite, an open-source platform closing this gap. Agents record findings with full provenance, retrieve knowledge before new calculations, and in dedicated reflection sessions correct erroneous findings and synthesize observations into cross-compound patterns. In benchmarks on a six-step quantum-mechanical simulation workflow, accumulated knowledge reduces reasoning overhead by 67% and improves accuracy from 47% to 3% deviation from literature -- and when transferred to an unfamiliar material, achieves 1% deviation with zero pipeline failures.",
+ "summary": "1. 核心创新点：提出并开源 QMatSuite 平台，通过可追溯的知识积累、在新计算前的知识检索以及专门的反思性整合，实现跨化合物的知识迁移与持续优化，提升 AI 驱动计算材料科学的研究深度与可靠性。\n\n2. 主要方法：\n- 构建开放源代码的 QMatSuite 平台，代理记录带完整溯源的研究发现；\n- 在进行新计算前进行知识检索，避免重复尝试；\n- 设置专门的反思（reflection）会话，纠正错误发现并将观察综合成跨化合物的模式；\n- 在六步量子力学仿真工作流上进行基准测试与评估。\n\n3. 结论/性能：\n- 使推理开销降低约 67%；\n- 与文献的偏差从 47% 降至 3%；\n- 迁移到陌生材料时，偏差降至 1%且实现零管线失败。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-16 13:01:01"
+}

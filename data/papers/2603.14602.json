@@ -1,0 +1,13 @@
+{
+ "id": "2603.14602",
+ "title": "$PA^3$: $\\textbf{P}$olicy-$\\textbf{A}$ware $\\textbf{A}$gent $\\textbf{A}$lignment through Chain-of-Thought",
+ "authors": "Shubhashis Roy Dipta, Daniel Bis, Kun Zhou, Lichao Wang, Benjamin Z. Yao, Chenlei Guo, Ruhi Sarikaya",
+ "date": "2026-03-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.14602v1",
+ "abstract": "Conversational assistants powered by large language models (LLMs) excel at tool-use tasks but struggle with adhering to complex, business-specific rules. While models can reason over business rules provided in context, including all policies for every query introduces high latency and wastes compute. Furthermore, these lengthy prompts lead to long contexts, harming overall performance due to the \"needle-in-the-haystack\" problem. To address these challenges, we propose a multi-stage alignment method that teaches models to recall and apply relevant business policies during chain-of-thought reasoning at inference time, without including the full business policy in-context. Furthermore, we introduce a novel PolicyRecall reward based on the Jaccard score and a Hallucination Penalty for GRPO training. Altogether, our best model outperforms the baseline by 16 points and surpasses comparable in-context baselines of similar model size by 3 points, while using 40% fewer words.",
+ "summary": "- 核心创新点（1句总结）：提出一种多阶段对齐方法，使模型在推理过程中能够回忆并在链式思考中应用相关的业务政策，而无需在上下文中直接包含完整的政策文本。\n- 主要方法：\n  - 引入多阶段对齐框架，让模型在推理时记忆并应用相关政策（chain-of-thought）而不把整份政策放入上下文。\n  - 设计 PolicyRecall 奖励（基于 Jaccard 相似度）用于鼓励 recalling 出相关的政策片段。\n  - 在 GRPO 训练中加入 Hallucination Penalty，抑制生成与政策不符或虚假的信息。\n  - 效率方面，通过上述机制在降低上下文长度的同时提升性能，约减少 40% 的词量。\n- 结论/性能：\n  - 最佳模型比基线提升约 16 点；相比同等模型规模的在-context 基线提升约 3 点；且使用的词量减少约 40%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-17 13:02:31"
+}

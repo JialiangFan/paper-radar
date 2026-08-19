@@ -1,0 +1,13 @@
+{
+ "id": "2604.02154",
+ "title": "Designing Transformational Games to Support Socio-ethical Reasoning about Generative AI",
+ "authors": "Jaemarie Solyst, Ruth Karen Nakigozi, Chloe Fong, R. Benjamin Shapiro",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02154v1",
+ "abstract": "There is an increasing need for young people to become critically AI literate, understanding not only how AI works but also its limitations and ethical nuances. Yet, designing learning experiences that make such complex, serious topics engaging remains a challenge. This paper explores transformational games as a promising approach for supporting youth learning about generative AI (GenAI) and ethics. We designed and implemented two games, Diversity Duel and Secret Agent, that integrate GenAI tools with gameplay elements. This work investigates how the games' elements: (1) peer evaluation, (2) constraint-based creativity, and (3) social deduction supported socio-ethical reasoning about GenAI. Participants recognized and debated bias in GenAI outputs, connected these patterns to real-world inequities, and developed nuanced understandings of bias. Participants further came to see how prompt design shapes AI behavior. Our findings suggest that group-based games with these elements can support fostering critical AI literacy.",
+ "summary": "- **核心创新点**：通过设计两款变革性教育游戏并将生成式AI工具融入玩法，利用同伴评估、约束性创造和社会推理等机制，促进青少年在社会伦理层面对GenAI进行批判性学习。\n\n- **主要方法**：设计并实现两款教育游戏 Diversity Duel 与 Secret Agent，将GenAI工具与游戏玩法深度整合；以同伴评估、基于约束的创造性任务、以及社会推理元素为核心设计要素，开展面向青少年的小组研究，评估这些机制在识别GenAI偏见、理解偏见与现实不平等的关联、以及提示设计对AI行为影响方面的作用。\n\n- **结论/性能**：研究结果表明，参与者能够识别并辩论GenAI输出中的偏见，将偏见与现实不平等联系起来，形成对偏见的更细致理解，并认识到提示设计能够影响AI行为；总体上支持以小组为单位的变革性游戏在提升青少年批判性AI素养方面的潜力。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-03 13:02:43"
+}

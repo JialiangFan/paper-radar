@@ -1,0 +1,30 @@
+{
+ "id": "2601.18692",
+ "title": "A Pragmatic VLA Foundation Model",
+ "authors": "LingBot-VLA authors",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2601.18692",
+ "abstract": "",
+ "summary": "Large real-world VLA foundation model with a GM-100 real-robot benchmark.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "benchmark",
+  "real-robot-data",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-foundation-model"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2026_LingBot_VLA.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2026_LingBot_VLA.pdf",
+ "code": "https://github.com/robbyant/lingbot-vla",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

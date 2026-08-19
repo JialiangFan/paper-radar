@@ -1,0 +1,13 @@
+{
+ "id": "2511.21663",
+ "title": "Attention-Guided Patch-Wise Sparse Adversarial Attacks on Vision-Language-Action Models",
+ "authors": "Naifu Zhang, Wei Tao, Xi Xiao, Qianpu Sun, Yuxin Zheng, Wentao Mo, Peiqiang Wang, Nan Zhang",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21663v1",
+ "abstract": "In recent years, Vision-Language-Action (VLA) models in embodied intelligence have developed rapidly. However, existing adversarial attack methods require costly end-to-end training and often generate noticeable perturbation patches. To address these limitations, we propose ADVLA, a framework that directly applies adversarial perturbations on features projected from the visual encoder into the textual feature space. ADVLA efficiently disrupts downstream action predictions under low-amplitude constraints, and attention guidance allows the perturbations to be both focused and sparse. We introduce three strategies that enhance sensitivity, enforce sparsity, and concentrate perturbations. Experiments demonstrate that under an $L_{\\infty}=4/255$ constraint, ADVLA combined with Top-K masking modifies less than 10% of the patches while achieving an attack success rate of nearly 100%. The perturbations are concentrated on critical regions, remain almost imperceptible in the overall image, and a single-step iteration takes only about 0.06 seconds, significantly outperforming conventional patch-based attacks. In summary, ADVLA effectively weakens downstream action predictions of VLA models under low-amplitude and locally sparse conditions, avoiding the high training costs and conspicuous perturbations of traditional patch attacks, and demonstrates unique effectiveness and practical value for attacking VLA feature spaces.",
+ "summary": "- 核心创新点：提出 ADVLA 框架，直接在视觉编码器投影到文本特征空间的特征上施加注意力引导、局部稀疏的对抗扰动，以在低幅度约束下高效攻击视觉-语言-行动（VLA）模型的下游行动预测。\n- 主要方法：在 VLA 模型的视觉→文本特征空间中直接添加对抗扰动，结合三大策略（提升对攻击敏感性、强制实现稀疏性、集中扰动到关键区域），并通过注意力导向和 Top-K 掩码实现局部聚焦与高效单步迭代（约 0.06s），无需端到端重新训练。\n- 结论/性能：在 L∞=4/255 条件下，扰动影响少于 10% 的补丁即可实现几乎 100% 的攻击成功率，扰动集中在关键区域、整体图像几乎不可察觉，与传统基于补丁的攻击相比速度更快、效果更强，显示出在低幅度、局部稀疏条件下对 VLA 特征空间进行有效攻击的实用性与价值。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-11-30 06:04:41"
+}

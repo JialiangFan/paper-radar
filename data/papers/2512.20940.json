@@ -1,0 +1,13 @@
+{
+ "id": "2512.20940",
+ "title": "ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments",
+ "authors": "Shuhao Ye, Sitong Mao, Yuxiang Cui, Xuan Yu, Shichao Zhai, Wen Chen, Shunbo Zhou, Rong Xiong, Yue Wang",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20940v1",
+ "abstract": "Vision-Language Navigation in Continuous Environments (VLN-CE) requires an embodied agent to navigate towards target in continuous environments, following natural language instructions. While current graph-based methods offer an efficient, structured approach by abstracting the environment into a topological map and simplifying the action space to waypoint selection, they lag behind methods based on Large Vision-Language Models (LVLMs) in leveraging large-scale data and advanced training paradigms. In this paper, we try to bridge this gap by introducing ETP-R1, a framework that applies the paradigm of scaling up data and Reinforcement Fine-Tuning (RFT) to a graph-based VLN-CE model. To build a strong foundation, we first construct a high-quality, large-scale pretraining dataset using the Gemini API. This dataset consists of diverse, low-hallucination instructions for topological trajectories, providing rich supervision for our graph-based policy to map language to topological paths. This foundation is further strengthened by unifying data from both R2R and RxR tasks for joint pretraining. Building on this, we introduce a three-stage training paradigm, which culminates in the first application of closed-loop, online RFT to a graph-based VLN-CE model, powered by the Group Relative Policy Optimization (GRPO) algorithm. Extensive experiments demonstrate that our approach is highly effective, establishing new state-of-the-art performance across all major metrics on both the R2R-CE and RxR-CE benchmarks. Our code is available at https://github.com/Cepillar/ETP-R1.",
+ "summary": "以下为简要中文摘要：\n\n1) 核心创新点（1句概括）\n- 提出 ETP-R1 框架：在图基VLN-CE模型中首次引入闭环、在线强化微调（RFT），结合大规模跨任务预训练和 GRPO 优化，显著提升语言到拓扑路径的导航性能并实现SOTA。\n\n2) 主要方法\n- 构建大规模、低幻觉的拓扑轨迹指令数据集，使用 Gemini API 进行预训练数据扩增，为图基策略提供丰富监督。\n- 将 R2R 与 RxR 数据进行联合预训练，形成更强的跨任务基础。\n- 实现三阶段训练范式，逐步提升模型能力，最终完成首次将闭环在线RFT应用于图基VLN-CE模型的训练。\n- 引入 Group Relative Policy Optimization (GRPO) 作为核心优化算法，支撑在线强化微调过程。\n- 以图形化的拓扑地图进行语言到拓扑路径的映射与 waypoint 级别的路径选择，提升在连续环境中的导航能力。\n- 强调以顶层拓扑规划为核心，结合强化学习信号来优化策略。\n\n3) 结论/性能\n- 在 R2R-CE 与 RxR-CE 基准上，取得所有主要指标的新SOTA，显著优于现有方法。\n- 代码公开可用，便于复现实践（GitHub 链接在文中给出）。\n\n如需，我可以把以上要点整理成更简短的三栏摘要版本。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-25 03:00:31"
+}

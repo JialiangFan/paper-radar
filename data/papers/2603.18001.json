@@ -1,0 +1,13 @@
+{
+ "id": "2603.18001",
+ "title": "EchoGen: Cycle-Consistent Learning for Unified Layout-Image Generation and Understanding",
+ "authors": "Kai Zou, Hongbo Liu, Dian Zheng, Jianxiong Gao, Zhiwei Zhao, Bin Liu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18001v1",
+ "abstract": "In this work, we present EchoGen, a unified framework for layout-to-image generation and image grounding, capable of generating images with accurate layouts and high fidelity to text descriptions (e.g., spatial relationships), while grounding the image robustly at the same time. We believe that image grounding possesses strong text and layout understanding abilities, which can compensate for the corresponding limitations in layout-to-image generation. At the same time, images generated from layouts exhibit high diversity in content, thereby enhancing the robustness of image grounding. Jointly training both tasks within a unified model can promote performance improvements for each. However, we identify that this joint training paradigm encounters several optimization challenges and results in restricted performance. To address these issues, we propose progressive training strategies. First, the Parallel Multi-Task Pre-training (PMTP) stage equips the model with basic abilities for both tasks, leveraging shared tokens to accelerate training. Next, the Dual Joint Optimization (DJO) stage exploits task duality to sequentially integrate the two tasks, enabling unified optimization. Finally, the Cycle RL stage eliminates reliance on visual supervision by using consistency constraints as rewards, significantly enhancing the model's unified capabilities via the GRPO strategy. Extensive experiments demonstrate state-of-the-art results on both layout-to-image generation and image grounding benchmarks, and reveal clear synergistic gains from optimizing the two tasks together.",
+ "summary": "- 核心创新点：提出一个统一的 EchoGen 框架，通过分阶段的循环一致性学习实现布局到图像生成与图像定位（grounding）之间的互补与协同，从而同时提升两项任务的保真度、鲁棒性与统一能力。\n\n- 主要方法：\n  - 架构与目标：一个统一模型同时完成布局到图像生成和图像 grounding 两项任务，利用布局信息和文本描述实现高保真且具空间关系的图像生成，并对图像进行稳健定位/理解。\n  - PMTP（Parallel Multi-Task Pre-training）：并行多任务预训练，使用共享的 token 提升两任务的初步能力并加速训练。\n  - DJO（Dual Joint Optimization）：利用任务对偶性，分阶段将两任务整合到一个统一优化过程中，促进互相提升。\n  - Cycle RL（循环强化学习，GRPO 策略）：在不依赖视觉监督的情况下，通过循环一致性约束作为奖励来训练，显著增强模型的统一能力与鲁棒性。\n  \n- 结论/性能：\n  - 在布局到图像生成和图像 grounding 的基准测试上达到或接近最新的（state-of-the-art）水平。\n  - 展现强烈的任务协同效应，联合优化优于单任务训练带来的提升。\n  - 通过渐进式训练和循环一致性提升，模型在两项任务上的统一能力显著增强，同时提升了对文本和布局关系的理解与生成一致性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-19 13:03:15"
+}

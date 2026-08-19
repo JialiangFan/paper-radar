@@ -1,0 +1,30 @@
+{
+ "id": "2512.22539",
+ "title": "VLA-Arena: An Open-Source Framework for Benchmarking Vision-Language-Action Models",
+ "authors": "VLA-Arena authors",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2512.22539",
+ "abstract": "",
+ "summary": "Adds an open framework for systematic VLA benchmarking.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Foundation and Benchmarks",
+ "tags": [
+  "benchmark",
+  "open-source",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-evaluation"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Foundation_and_Benchmarks/2025_VLA_Arena.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Foundation_and_Benchmarks/2025_VLA_Arena.pdf",
+ "code": "https://github.com/PKU-Alignment/VLA-Arena",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

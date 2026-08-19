@@ -1,0 +1,13 @@
+{
+ "id": "2605.30666",
+ "title": "The Tutoring Effectiveness Index: Predicting LLM Math Tutor Quality from Four Conversation Signals",
+ "authors": "Shim Jaechang, Unggi Lee",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30666v1",
+ "abstract": "Aligning large language models (LLMs) as math tutors typically demands costly reinforcement-learning (RL) training and external LLM judges. We ask whether a frozen model's internal reasoning signals can replace both. We propose the Tutoring Effectiveness Index (TEI), a training-free, judge-free four-signal index that combines a Schoenfeld-Verify keyword ratio, a math-step density, an ends-question rate, and a deep-reasoning gate from the Deep-Thinking Ratio (DTR) probe. Selecting from $N$ candidates with TEI (the TEI@$N$ rule) raises the improvement rate on pre-incorrect scenarios from $59.0\\%$ to $81.9\\%$ at $N{=}8$ on a frozen DeepSeek-R1-8B base, with no training and no external judge. We also measure the alignment tax of pedagogical GRPO. Thinking length drops from $1{,}764$ to $119$ words per turn ($-93\\%$), Content-Knowledge and Pedagogical-Knowledge accuracy fall by $-71\\%$ and $-80\\%$ relative, and the student's $Δ$ Solve Rate crosses from $+0.180$ to $-0.012$. To anchor the behavioural reading, we reproduce an 82-code educational codebook on $119{,}009$ tutor sentences with a one-shot structural classifier. Together, these results offer a cost-effective recipe for building math-tutoring LLMs without RL training or external judges.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出一种无需训练、无需外部 LLM 评判的\"辅导有效性指数\"（TEI），仅用冻结模型的四个内部对话信号即可预测并筛选出高质量的数学辅导回复。\n\n**2. 主要方法**\n- 构建 TEI 指数，融合四个信号：Schoenfeld-Verify 关键词比率、数学步骤密度、以提问结尾的比率、以及来自 Deep-Thinking Ratio (DTR) 探针的深度推理门控。\n- 采用 TEI@N 选择策略：从 N 个候选回复中按 TEI 分数挑选最优。\n- 基于冻结的 DeepSeek-R1-8B 模型实验；并用 one-shot 结构化分类器在 119,009 条辅导句子上复现 82 类教育编码本以验证行为解读。\n- 同时对比测量了\"教学型 GRPO\"强化学习带来的对齐代价（alignment tax）。\n\n**3. 结论/性能**\n- 在 N=8 时，TEI@N 将先前错误场景的改进率从 **59.0% 提升至 81.9%**，全程无训练、无外部评判。\n- 揭示了 GRPO 微调的严重副作用：思考长度下降 93%（1764 → 119 词）、内容知识与教学知识准确率分别相对下降 71% 和 80%，学生解题率提升从 +0.180 跌至 −0.012。\n- 整体提供了一条无需 RL 训练和外部评判的低成本数学辅导 LLM 构建方案。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-01 13:00:58"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "2605.02900",
+ "title": "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses",
+ "authors": "Li, et al.",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2605.02900",
+ "abstract": "",
+ "summary": "This survey provides a broad taxonomy of embodied AI risks, attacks, and defenses across perception, cognition, planning, action, interaction, and agent systems.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Embodied AI Safety",
+ "tags": [
+  "action-shielding",
+  "attacks-defenses",
+  "embodied-ai-safety",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "survey"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Embodied_AI_Safety/2026_Li_EmbodiedAISafetySurvey.md",
+ "pdf_path": "PDFs/Embodied_AI_Safety/2026_Li_EmbodiedAISafetySurvey.pdf",
+ "code": "https://github.com/x-zheng16/Awesome-Embodied-AI-Safety",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

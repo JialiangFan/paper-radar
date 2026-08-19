@@ -1,0 +1,13 @@
+{
+ "id": "2603.06561",
+ "title": "EgoReasoner: Learning Egocentric 4D Reasoning via Task-Adaptive Structured Thinking",
+ "authors": "Fangrui Zhu, Yunfeng Xi, Jianmo Ni, Mu Cai, Boqing Gong, Long Zhao, Chen Qu, Ian Miao, Yi Li, Cheng Zhong, Huaizu Jiang, Shwetak Patel",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.06561v1",
+ "abstract": "Egocentric video understanding is inherently complex due to the dynamic 4D nature of the environment, where camera motion and object displacements necessitate a continuous re-evaluation of spatial relations. In this work, we target a suite of under-explored egocentric 4D reasoning tasks, including fixture interaction counting, viewpoint-relative fixture location, object movement itinerary tracking, and stationary object localization, that require fundamentally different cognitive operations: spatial anchoring, temporal tracking, and duration reasoning. We observe that these structural differences make task-agnostic approaches insufficient: generic Chain-of-Thought methods lack task-appropriate reasoning primitives, and uniform reinforcement learning actively destabilizes performance on spatial tasks. To address this, we propose EgoReasoner, a two-stage framework that aligns both the reasoning scaffold and the reward signal to each task's cognitive structure. In the first stage, Task-Adaptive Thinking Templates guide the synthesis of structured CoT traces that teach the model to reason adaptively across task types via supervised fine-tuning. In the second stage, task-aware reward functions verify entity grounding, temporal alignment, and task-adaptive logical consistency, selectively strengthening each reasoning pathway via reinforcement fine-tuning with GRPO. Our 3B-parameter model, trained on only 16K samples, achieves 37.5% average accuracy on the challenging HD-EPIC benchmark, surpassing Qwen2.5-VL-7B (25.7%) by over 10 points.",
+ "summary": "1) 核心创新点（1句话）\n提出一个两阶段、任务自适应的 egocentric 4D 推理框架 EgoReasoner，通过结构化推理轨迹和任务感知奖励实现对不同推理任务的自适应与可控推理。\n\n2) 主要方法\n- 两阶段框架：阶段1 采用 Task-Adaptive Thinking Templates 指导生成结构化的链式推理轨迹，通过有监督微调实现跨任务自适应推理；阶段2 设计任务感知奖励函数，验证实体定位、时间对齐与逻辑一致性，并结合 GRPO 进行强化微调以强化各推理路径。\n- 技术要点：3B 参数模型，训练仅用 16K 样本，面向面向 egocentric 4D 推理任务（如夹具互动计数、视点相对定位、对象移动轨迹跟踪、静态对象定位）。\n  \n3) 结论/性能\n在 HD-EPIC 基准上达到 37.5% 的平均准确率，优于对比模型 Qwen2.5-VL-7B 的 25.7%（提升约 10 个点左右）。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-09 13:03:36"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.12249",
+ "title": "SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning",
+ "authors": "Ziyu Chen, Yilun Zhao, Chengye Wang, Rilyn Han, Manasi Patwardhan, Arman Cohan",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12249v1",
+ "abstract": "Constructing scientific multimodal document reasoning datasets for foundation model training involves an inherent trade-off among scale, faithfulness, and realism. To address this challenge, we introduce the synthesize-and-reground framework, a two-stage pipeline comprising: (1) Claim-Centric QA Synthesis, which generates faithful, isolated QA pairs and reasoning on focused segments, and (2) Document-Scale Regrounding, which programmatically re-embeds these pairs into full-document tasks to ensure realistic complexity. Using this framework, we construct SciMDR, a large-scale training dataset for cross-modal comprehension, comprising 300K QA pairs with explicit reasoning chains across 20K scientific papers. We further construct SciMDR-Eval, an expert-annotated benchmark to evaluate multimodal comprehension within full-length scientific workflows. Experiments demonstrate that models fine-tuned on SciMDR achieve significant improvements across multiple scientific QA benchmarks, particularly in those tasks requiring complex document-level reasoning.",
+ "summary": "1. 核心创新点：提出合成-再定位（synthesize-and-reground）框架，通过在聚焦段落生成可信问答与推理，并将其再嵌入到全篇文档中，实现在规模、可信度和现实感之间的平衡，从而构建大规模跨模态科学文献推理数据集。\n\n2. 主要方法：两阶段流程。第一阶段是 Claim-Centric QA Synthesis，在聚焦段落上生成可信的问答对及推理；第二阶段是 Document-Scale Regrounding，将这些问答对嵌入到完整文档任务中以模拟真实的复杂性。同时构建 SciMDR（约30万对 QA，覆盖2万篇论文）和专家注释的 SciMDR-Eval 基准，并用于跨模态理解的模型微调与评估。\n\n3. 结论/性能：在 SciMDR 上微调的模型在多项科学问答基准上实现显著提升，尤其是在需要复杂文档级推理的任务。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-15 13:02:29"
+}

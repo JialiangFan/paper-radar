@@ -1,0 +1,13 @@
+{
+ "id": "2608.04633",
+ "title": "Mind-VLA: Instruction-Aware Spatial Representation Alignment for Vision-Language-Action Models",
+ "authors": "Xingyu Ding, Yuzhong Zhao, Yang Wu, Chaoyang Zhao, Chunhai Zhao, Yifan Zhang, Jian Cheng",
+ "date": "2026-08-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.04633v1",
+ "abstract": "Recent Vision-Language-Action (VLA) methods improve generalization by aligning their representations with 3D scene geometry. However, these methods are fundamentally instruction-agnostic: the representations align the entire scene uniformly, neglecting the 3D geometry of the specific target object designated by the language instruction. This causes failures on fine-grained manipulation and target occlusion tasks, where success depends on accurate 3D understanding of the target object rather than the entire scene. To address this, we present Mind-VLA, an instruction-aware spatial representation alignment method for VLA models. Specifically, Mind-VLA first obtains the target object specified by the language instruction, then prepares its target-object tri-view and extracts the corresponding VAE and VGGT features. Finally, the latent representation of the VLA model is aligned with these features to enable instruction-aware 3D understanding. Mind-VLA reaches 93.9% on LIBERO and 4.47 on CALVIN with a compact 345M-parameter backbone. On real-robot tasks with target occlusion, Mind-VLA reaches 54% average success, outperforming the best-performing instruction-agnostic method in real-robot comparison by 32 percentage points. Code will be publicly available.",
+ "summary": "## Mind-VLA 论文总结\n\n**1. 核心创新点**\n将视觉-语言-动作（VLA）模型的空间表征对齐从\"整场景无差别对齐\"改进为\"指令感知\"的对齐——只聚焦于语言指令所指定的目标物体的 3D 几何。\n\n**2. 主要方法**\n- 先根据语言指令定位出目标物体；\n- 为该目标物体构造**三视图（tri-view）**表示；\n- 用 **VAE** 和 **VGGT** 分别提取对应的特征；\n- 将 VLA 模型的隐层表征与这些特征对齐，从而获得指令感知的 3D 理解能力。\n\n**3. 结论/性能**\n- 仅用 **345M 参数**的轻量骨干网络，在 **LIBERO** 上达到 **93.9%**，在 **CALVIN** 上达到 **4.47**；\n- 在存在**目标遮挡**的真实机器人任务上平均成功率 **54%**，比对比中表现最好的\"指令无关\"方法高出 **32 个百分点**；\n- 代码将开源。\n\n**一句话点评**：作者指出现有 3D 对齐类 VLA 方法的盲点是\"指令无关\"，在精细操作和目标遮挡场景下会失效，而把对齐目标收窄到指令指定物体这一改动，用很小的模型就换来了显著的真机性能提升。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-09 13:04:09"
+}

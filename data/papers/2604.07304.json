@@ -1,0 +1,13 @@
+{
+ "id": "2604.07304",
+ "title": "Chatbot-Based Assessment of Code Understanding in Automated Programming Assessment Systems",
+ "authors": "Eduard Frankford, Erik Cikalleshi, Ruth Breu",
+ "date": "2026-04-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.07304v1",
+ "abstract": "Large Language Models (LLMs) challenge conventional automated programming assessment because students can now produce functionally correct code without demonstrating corresponding understanding. This paper makes two contributions. First, it reports a saturation-based scoping review of conversational assessment approaches in programming education. The review identifies three dominant architectural families: rule-based or template-driven systems, LLM-based systems, and hybrid systems. Across the literature, conversational agents appear promising for scalable feedback and deeper probing of code understanding, but important limitations remain around hallucinations, over-reliance, privacy, integrity, and deployment constraints. Second, the paper synthesizes these findings into a Hybrid Socratic Framework for integrating conversational verification into Automated Programming Assessment Systems (APASs). The framework combines deterministic code analysis with a dual-agent conversational layer, knowledge tracking, scaffolded questioning, and guardrails that tie prompts to runtime facts. The paper also discusses practical safeguards against LLM-generated explanations, including proctored deployment modes, randomized trace questions, stepwise reasoning tied to concrete execution states, and local-model deployment options for privacy-sensitive settings. Rather than replacing conventional testing, the framework is intended as a complementary layer for verifying whether students understand the code they submit.",
+ "summary": "- 核心创新点：提出混合苏格拉底框架，将确定性代码分析与双代理对话、知识追踪和分层提问结合，用于在自动化编程评测系统中对学生对代码理解进行对话式验证（作为对传统测试的补充，而非替代）。\n\n- 主要方法：\n  - 进行饱和式范围回顾，识别对话式评估的三大架构族：规则/模板驱动、LLM-based、混合系统。\n  - 构建 Hybrid Socratic Framework：将确定性代码分析与双代理对话层、知识追踪、分层提问和与运行时事实绑定的守则整合进 APAS。\n  - 实现对 LLM 解释的实用保护措施：受控/监考部署模式、随机化追踪问题、基于具体执行状态的逐步推理，以及在隐私敏感场景下的本地模型部署选择。\n\n- 结论/性能：\n  - 提供了一套可部署的对话式验证层，用以提升对学生是否真正理解所提交代码的可验证性，强调对话评估作为对传统测试的补充而非替代；并提出了若干实用的安全与隐私保护措施来应对幻觉、过度依赖、部署限制等挑战。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-09 13:01:21"
+}

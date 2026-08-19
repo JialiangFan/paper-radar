@@ -1,0 +1,13 @@
+{
+ "id": "2604.18567",
+ "title": "Latent Phase-Shift Rollback: Inference-Time Error Correction via Residual Stream Monitoring and KV-Cache Steering",
+ "authors": "Manan Gupta, Dhruv Kumar",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18567v1",
+ "abstract": "Large language models frequently commit unrecoverable reasoning errors mid-generation: once a wrong step is taken, subsequent tokens compound the mistake rather than correct it. We introduce $\\textbf{Latent Phase-Shift Rollback}$ (LPSR): at each generation step, we monitor the residual stream at a critical layer lcrit, detect abrupt directional reversals (phase shifts) via a cosine-similarity $+$ entropy dual gate, and respond by rolling back the KV-cache and injecting a pre-computed steering vector. No fine-tuning, gradient computation, or additional forward passes are required. LPSR achieves $\\mathbf{44.0\\%}$ on MATH-500 with an 8B model versus $28.8\\%$ for standard AR ($+15.2$ pp; McNemar $χ^2 = 66.96$, $p < 10^{-15}$). Critically, prompted self-correction, the most natural inference-time baseline, scores only $19.8\\%$, below standard AR; LPSR exceeds it by $+24.2$ pp ($χ^2 = 89.4$, $p \\approx 0$). LPSR also outperforms Best-of-16 ($+7.8$ pp) at $5.4\\times$ lower token cost, and surpasses a standard 70B model ($35.2\\%$) with $8.75\\times$ fewer parameters at ${\\sim}3\\times$ the token budget. A 32-layer sweep reveals a novel \\textbf{detection-correction dissociation}: error-detection AUC peaks at layer~14 ($0.718$) but task accuracy peaks at layer~16 ($44.0\\%$ vs.\\ $29.2\\%$), demonstrating that optimal monitoring depth differs for detection and correction.",
+ "summary": "1. 核心创新点：提出 Latent Phase-Shift Rollback（LPSR），在推断阶段通过对关键层残差流的监控，检测相位转折并回滚 KV-cache、注入预计算的引导向量来纠错，无需微调、梯度或额外前向计算。\n\n2. 主要方法：在每一步生成时对关键层 lcrit 的残差流进行实时监控；利用余弦相似度 + 熵的双门控检测“相位转变”/方向性突变；触发回滚 KV-cache 并注入预先计算的 steering 向量以纠错；不需要额外前向传播或梯度计算；与多种基线（标准自回归、提示自我纠错、Best-of-16、70B 等）进行对比。\n\n3. 结论/性能：在 MATH-500 的 8B 模型上达到 44.0%，显著高于标准自回归的 28.8%（提升 15.2 个点，McNemar p<1e-15），提示自我纠错基线仅 19.8% 而 LPSR 提升约 24.2 个点；在成本方面比 Best-of-16 高度竞争且 token 代价低 5.4 倍；相较于标准的 70B 模型，达到 35.2% 的结果但参数少 8.75 倍且 token 预算约为原来 3 倍；32 层 sweep 还揭示检测与纠错的“感知-纠错 dissociation”：检测的 AUC 在层 14 达到 0.718，而任务准确度在层 16 达到 44.0%（对比 29.2%），表明监控深度和纠错深度并非同一层次。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-21 13:04:10"
+}

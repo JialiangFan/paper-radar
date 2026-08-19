@@ -1,0 +1,13 @@
+{
+ "id": "2603.19030",
+ "title": "LLMs Aren't Human: A Critical Perspective on LLM Personality",
+ "authors": "Kim Zierahn, Cristina Cachero, Anna Korhonen, Nuria Oliver",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19030v1",
+ "abstract": "A growing body of research examines personality traits in Large Language Models (LLMs), particularly in human-agent collaboration. Prior work has frequently applied the Big Five inventory to assess LLM behavior analogous to human personality, without questioning the underlying assumptions. This paper critically evaluates whether LLM responses to personality tests satisfy six defining characteristics of personality. We find that none are fully met, indicating that such assessments do not measure a construct equivalent to human personality. We propose a research agenda for shifting from anthropomorphic trait attribution toward functional evaluations, clarifying what personality tests actually capture in LLMs and developing LLM-specific frameworks for characterizing stable, intrinsic behavior.",
+ "summary": "- 核心创新点：首次对将大语言模型（LLM）人格测试等同于人类人格的做法进行系统性批判，发现现有评估未能满足六大定义特征，提出转向功能性评估和LLM特定框架的研究方向。\n\n- 主要方法：对现有将“大五”人格应用于LLM的研究进行理论分析与文献综述，基于六项人格定义特征对LLM对人格测试的回应进行批判性评估，未公开实验新模型。\n\n- 结论/性能：发现当前方法未能满足任何一个或全部六项特征，无法等同于人类人格；提出将评估从拟人化特质转向功能性评估、明确测试所捕捉的含义，并开发面向LLM的稳定、内在行为的专门框架的研究议程。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-22 13:01:04"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.20192",
+ "title": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation",
+ "authors": "Jiazheng Xing, Fei Du, Hangjie Yuan, Pengwei Liu, Hongbin Xu, Hai Ci, Ruigang Niu, Weihua Chen, Fan Wang, Yong Liu",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20192v1",
+ "abstract": "Recent advances in diffusion models have significantly improved text-to-video generation, enabling personalized content creation with fine-grained control over both foreground and background elements. However, precise face-attribute alignment across subjects remains challenging, as existing methods lack explicit mechanisms to ensure intra-group consistency. Addressing this gap requires both explicit modeling strategies and face-attribute-aware data resources. We therefore propose LumosX, a framework that advances both data and model design. On the data side, a tailored collection pipeline orchestrates captions and visual cues from independent videos, while multimodal large language models (MLLMs) infer and assign subject-specific dependencies. These extracted relational priors impose a finer-grained structure that amplifies the expressive control of personalized video generation and enables the construction of a comprehensive benchmark. On the modeling side, Relational Self-Attention and Relational Cross-Attention intertwine position-aware embeddings with refined attention dynamics to inscribe explicit subject-attribute dependencies, enforcing disciplined intra-group cohesion and amplifying the separation between distinct subject clusters. Comprehensive evaluations on our benchmark demonstrate that LumosX achieves state-of-the-art performance in fine-grained, identity-consistent, and semantically aligned personalized multi-subject video generation. Code and models are available at https://jiazheng-xing.github.io/lumosx-home/.",
+ "summary": "- 核心创新点：通过在数据侧建立身份-属性关系的先验并在模型侧引入 Relational Self-Attention 与 Relational Cross-Attention，将身份与属性的依赖显式化嵌入扩散式视频生成中，以实现多主体个性化视频的高一致性与可控性。\n\n- 主要方法：  \n  - 数据侧：使用定制化的视频字幕和视觉线索收集管线，借助多模态大语言模型（MLLMs）推断并分配 subject-specific dependencies，构建细粒度的关系先验并提供一个可用于评测的基准。  \n  - 模型侧：引入 Relational Self-Attention 与 Relational Cross-Attention，将位置感知嵌入与改进的注意力机制结合，显式刻画身份-属性依赖，提升 intra-group 洁度和跨主体分离。\n\n- 结论/性能：在所构建的基准上，LumosX 达到细粒度、身份一致性和语义对齐方面的最新性能（state-of-the-art），显著提升多主体个性化视频生成的质量与可控性，且公开了代码和模型。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-23 13:06:44"
+}

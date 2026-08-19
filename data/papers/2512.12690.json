@@ -1,0 +1,13 @@
+{
+ "id": "2512.12690",
+ "title": "Reassessing the Role of Supervised Fine-Tuning: An Empirical Study in VLM Reasoning",
+ "authors": "Yongcan Yu, Lingxiao He, Shuo Lu, Lijun Sheng, Yinuo Xu, Yanbo Wang, Kuangpu Guo, Jianjie Cheng, Meng Wang, Qianlong Xie, Xingxing Wang, Dapeng Hu, Jian Liang",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12690v1",
+ "abstract": "Recent advances in vision-language models (VLMs) reasoning have been largely attributed to the rise of reinforcement Learning (RL), which has shifted the community's focus away from the supervised fine-tuning (SFT) paradigm. Many studies suggest that introducing the SFT stage not only fails to improve reasoning ability but may also negatively impact model training. In this study, we revisit this RL-centric belief through a systematic and controlled comparison of SFT and RL on VLM Reasoning. Using identical data sources, we find that the relative effectiveness of SFT and RL is conditional and strongly influenced by model capacity, data scale, and data distribution. Contrary to common assumptions, our findings show that SFT plays a crucial role across several scenarios: (1) Effectiveness for weaker models. SFT more reliably elicits reasoning capabilities in smaller or weaker VLMs. (2) Data efficiency. SFT with only 2K achieves comparable or better reasoning performance to RL with 20K. (3) Cross-modal transferability. SFT demonstrates stronger generalization across modalities. Moreover, we identify a pervasive issue of deceptive rewards, where higher rewards fail to correlate with better reasoning accuracy in RL. These results challenge the prevailing \"RL over SFT\" narrative. They highlight that the role of SFT may have been underestimated and support a more balanced post-training pipeline in which SFT and RL function as complementary components.",
+ "summary": "- **核心创新点**：首次在相同数据源条件下系统对比SFT与RL在VLM推理中的效果，揭示SFT在弱模型、数据规模有限和跨模态泛化方面的优势，并发现RL存在奖励欺骗问题，因此提出SFT与RL应互补的后训练策略。\n\n- **主要方法**：通过严格的对照实验，在同源数据条件下分别训练与评估VLM的SFT与RL，控制模型容量、数据规模与数据分布，比较数据效率（如2K数据的SFT与20K数据的RL），分析跨模态传递和奖励设计对推理性能的影响。\n\n- **结论/性能**：结果显示：1) 对于较弱/容量受限的模型，SFT更稳定地提升推理能力；2) 数据效率方面，2K数据的SFT可达到或超过20K数据的RL的表现；3) SFT在跨模态泛化上更强；4) RL存在奖励欺骗问题，即更高的奖励不一定提升推理正确性；因此应将SFT与RL视为互补的后训练策略，而不是单纯偏向RL。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-16 02:04:01"
+}

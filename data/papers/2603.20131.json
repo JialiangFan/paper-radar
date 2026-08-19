@@ -1,0 +1,13 @@
+{
+ "id": "2603.20131",
+ "title": "An Agentic Multi-Agent Architecture for Cybersecurity Risk Management",
+ "authors": "Ravish Gupta, Saket Kumar, Shreeya Sharma, Maulik Dang, Abhishek Aggarwal",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20131v1",
+ "abstract": "Getting a real cybersecurity risk assessment for a small organization is expensive -- a NIST CSF-aligned engagement runs $15,000 on the low end, takes weeks, and depends on practitioners who are genuinely scarce. Most small companies skip it entirely. We built a six-agent AI system where each agent handles one analytical stage: profiling the organization, mapping assets, analyzing threats, evaluating controls, scoring risks, and generating recommendations. Agents share a persistent context that grows as the assessment proceeds, so later agents build on what earlier ones concluded -- the mechanism that distinguishes this from standard sequential agent pipelines. We tested it on a 15-person HIPAA-covered healthcare company and compared outputs to independent assessments by three CISSP practitioners -- the system agreed with them 85% of the time on severity classifications, covered 92% of identified risks, and finished in under 15 minutes. We then ran 30 repeated single-agent assessments across five synthetic but sector-realistic organizational profiles in healthcare, fintech, manufacturing, retail, and SaaS, comparing a general-purpose Mistral-7B against a domain fine-tuned model. Both completed every run. The fine-tuned model flagged threats the baseline could not see at all: PHI exposure in healthcare, OT/IIoT vulnerabilities in manufacturing, platform-specific risks in retail. The full multi-agent pipeline, however, failed every one of 30 attempts on a Tesla T4 with its 4,096-token default context window -- context capacity, not model quality, turned out to be the binding constraint.",
+ "summary": "1) 核心创新点\n- 提出一个六智能体协同 AI 系统，六个代理分别处理分析的不同阶段，并通过持续增长的共用上下文让后续代理基于前序结论进行推理，从而实现高效、端到端的风险评估。\n\n2) 主要方法\n- 架构与任务分工：六个代理分别处理机构 Profiling、资产映射、威胁分析、控制评估、风险评分和生成建议。\n- 持久上下文机制：代理间共享并持续扩展的上下文信息，后续代理在前序结论基础上工作，与传统的线性代理管线不同。\n- 模型与对比：在通用 Mistral-7B 与域微调模型之间进行对比，探究领域微调对发现特定威胁的影响。\n- 实验设计：对一个15人、符合 HIPAA 的医疗机构进行评估并与3位 CISSP 实践者独立评估对比；再对5个行业情景（医疗、金融、制造、零售、SaaS）进行30次重复的单代理评估。\n- 评估指标与硬件：与人类评估的一致性（严重性分类一致性、风险覆盖率、耗时等）进行比较；在 Tesla T4（4,096-token 上下文窗口）上测试全流程多代理管线的可行性。\n\n3) 结论/性能\n- 在真实医疗案例中，与三位 CISSP 实践者的评估相比：严重性分类一致性约85%，覆盖了约92%的识别风险，完成时间＜15分钟，显示出高效且具可比性的性能。\n- 在合成行业情景下，通用 Mistral-7B 与域微调模型均能完成所有30次评估，域微调模型还能发现通用模型未察觉的新威胁（如医疗的 PHI 暴露、制造的 OT/IIoT 漏洞、零售的特定平台风险）。\n- 但全流程的六代理管线在 Tesla T4 的上下文窗口受限（4,096 token）时，30次全失败，表明瓶颈在于上下文容量而非模型质量，提示需要更大上下文或分段/上下文管理优化来实现端到端部署。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-23 13:05:23"
+}

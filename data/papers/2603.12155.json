@@ -1,0 +1,13 @@
+{
+ "id": "2603.12155",
+ "title": "GlyphBanana: Advancing Precise Text Rendering Through Agentic Workflows",
+ "authors": "Zexuan Yan, Jiarui Jin, Yue Ma, Shijian Wang, Jiahui Hu, Wenxiang Jiao, Yuan Lu, Linfeng Zhang",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12155v1",
+ "abstract": "Despite recent advances in generative models driving significant progress in text rendering, accurately generating complex text and mathematical formulas remains a formidable challenge. This difficulty primarily stems from the limited instruction-following capabilities of current models when encountering out-of-distribution prompts. To address this, we introduce GlyphBanana, alongside a corresponding benchmark specifically designed for rendering complex characters and formulas. GlyphBanana employs an agentic workflow that integrates auxiliary tools to inject glyph templates into both the latent space and attention maps, facilitating the iterative refinement of generated images. Notably, our training-free approach can be seamlessly applied to various Text-to-Image (T2I) models, achieving superior precision compared to existing baselines. Extensive experiments demonstrate the effectiveness of our proposed workflow. Associated code is publicly available at https://github.com/yuriYanZeXuan/GlyphBanana.",
+ "summary": "**核心创新点**：通过一个代理式工作流，将外部字形模板注入潜在空间与注意力图，进行迭代精 refinement，实现对复杂字符和公式的高精度渲染，且无需对模型再训练即可适用于多种文本到图像模型。\n\n**主要方法**：提出 GlyphBanana 的 agentic workflow，结合辅助工具把字形模板注入到潜在空间和注意力图中并进行迭代细化；建立专门的渲染复杂字符与公式的基准，且该方法训练无关、可直接应用于现有T2I模型。\n\n**结论/性能**：大量实验表明该工作流在渲染复杂字符和公式方面显著优于现有基线，达到更高的渲染精度，代码公开。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-15 13:02:57"
+}

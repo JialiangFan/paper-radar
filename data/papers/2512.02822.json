@@ -1,0 +1,13 @@
+{
+ "id": "2512.02822",
+ "title": "Decryption thorough polynomial ambiguity: noise-enhanced high-memory convolutional codes for post-quantum cryptography",
+ "authors": "Meir Ariel",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.02822v1",
+ "abstract": "We present a novel approach to post-quantum cryptography that employs directed-graph decryption of noise-enhanced high-memory convolutional codes. The proposed construction generates random-like generator matrices that effectively conceal algebraic structure and resist known structural attacks. Security is further reinforced by the deliberate injection of strong noise during decryption, arising from polynomial division: while legitimate recipients retain polynomial-time decoding, adversaries face exponential-time complexity. As a result, the scheme achieves cryptanalytic security margins surpassing those of Classic McEliece by factors exceeding 2^(200). Beyond its enhanced security, the method offers greater design flexibility, supporting arbitrary plaintext lengths with linear-time decryption and uniform per-bit computational cost, enabling seamless scalability to long messages. Practical deployment is facilitated by parallel arrays of directed-graph decoders, which identify the correct plaintext through polynomial ambiguity while allowing efficient hardware and software implementations. Altogether, the scheme represents a compelling candidate for robust, scalable, and quantum-resistant public-key cryptography.",
+ "summary": "1) 核心创新点\n- 提出一种基于有向图解密的噪声增强高记忆卷积码方案，通过随机化生成矩阵与解密阶段的强噪声注入，显著提升对量子攻击和结构攻击的安全边际，超越 Classic McEliece，边际规模超过 2^200。\n\n2) 主要方法\n- 使用高记忆卷积码构建随机化生成矩阵以隐藏代数结构；\n- 在解密阶段通过多项式除法引入强噪声，提升解密难度；\n- 采用并行的有向图解码器阵列，在多项式模糊性下正确识别明文，实现线性时间解密、对每比特的计算成本统一；\n- 方案具有设计灵活性，支持任意长度明文并具备良好的硬件/软件实现潜力。\n\n3) 结论/性能\n- 安全性方面的 cryptanalytic 边际超过 Classic McEliece，达到超 2^200 的提升；\n- 在性能与可扩展性方面，实现任意长度明文的线性时间解密、统一比特成本，且具备高效并行实现的硬件/软件适应性，成为一个鲁棒、可扩展且量子抗性的公钥密码候选方案。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-03 14:01:03"
+}

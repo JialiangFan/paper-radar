@@ -1,0 +1,13 @@
+{
+ "id": "2604.02145",
+ "title": "MTI: A Behavior-Based Temperament Profiling System for AI Agents",
+ "authors": "Jihoon Jeong",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02145v1",
+ "abstract": "AI models of equivalent capability can exhibit fundamentally different behavioral patterns, yet no standardized instrument exists to measure these dispositional differences. Existing approaches either borrow human personality dimensions and rely on self-report (which diverges from actual behavior in LLMs) or treat behavioral variation as a defect rather than a trait.\n  We introduce the Model Temperament Index (MTI), a behavior-based profiling system that measures AI agent temperament across four axes: Reactivity (environmental sensitivity), Compliance (instruction-behavior alignment), Sociality (relational resource allocation), and Resilience (stress resistance). Grounded in the Four Shell Model from Model Medicine, MTI measures what agents do, not what they say about themselves, using structured examination protocols with a two-stage design that separates capability from disposition.\n  We profile 10 small language models (1.7B-9B parameters, 6 organizations, 3 training paradigms) and report five principal findings: (1) the four axes are largely independent among instruction-tuned models (all |r| < 0.42); (2) within-axis facet dissociations are empirically confirmed -- Compliance decomposes into fully independent formal and stance facets (r = 0.002), while Resilience decomposes into inversely related cognitive and adversarial facets; (3) a Compliance-Resilience paradox reveals that opinion-yielding and fact-vulnerability operate through independent channels; (4) RLHF reshapes temperament not only by shifting axis scores but by creating within-axis facet differentiation absent in the unaligned base model; and (5) temperament is independent of model size (1.7B-9B), confirming that MTI measures disposition rather than capability.",
+ "summary": "核心创新点：\n- 提出并实现 Model Temperament Index (MTI)，一种基于行为的四维气质测量框架，通过两阶段考试区分能力与气质，对AI代理在反应性、顺从性、社交性与韧性四个维度进行系统描绘。\n\n主要方法：\n- 基于 Model Medicine 的 Four Shell Model，开发结构化的 examination protocols，聚焦代理实际行为（测量“所做的事”而非自述）。\n- 采用两阶段设计分离 capability 与 disposition，并对10个小型语言模型（1.7B–9B 参数、6家机构、3种训练范式）进行纵向 Profiling，量化四轴及其子维度的关系。\n\n结论/性能：\n- 四个轴在指令调优模型中大体独立（|r|<0.42）。\n- 轴内子维度存在分离性：Compliance 拆解为 Formal 与 Stance 两个完全独立的维度（r≈0.002），Resilience 拆解为认知与对抗性两者的相反关系。\n- Compliance-Resilience 悖论：意见表达与事实易受性通过独立通道作用。\n- RLHF 不仅改变轴分数，还在轴内形成未在未对齐基模型中出现的子维度分化，重塑气质。\n- 气质与模型规模无关（1.7B–9B），MTI 测量的是气质/ disposition 而非能力。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:06:41"
+}

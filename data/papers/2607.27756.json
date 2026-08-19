@@ -1,0 +1,13 @@
+{
+ "id": "2607.27756",
+ "title": "Cocktail-Talker: Multi-Speaker Dialog Modeling in Noisy Social Environments with Turn Action GRPO",
+ "authors": "Xilin Jiang, Riki Shimizu, Sukru Samet Dindar, Junkai Wu, Zhongweiyang Xu, Nima Mesgarani",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27756v1",
+ "abstract": "Spoken dialog systems are typically designed for clean, dyadic interactions in which a single user and an assistant take turns speaking. Real-world social conversations, however, are often more ambiguous: multiple speakers may participate in the same conversation amid irrelevant speech and background noise. Each utterance may be directed to the assistant, addressed to another speaker, or completely irrelevant. In such settings, the assistant must decide not only what to say, but also whether to speak at all. In this paper, we introduce Cocktail-Talker, a speech LLM framework for multi-speaker spoken dialog modeling in noisy social environments. We model the assistant's behavior with three action tokens: <|respond|>, <|listen|>, and <|ignore|>, placed before a response or silence. Cocktail-Talker is trained via supervised finetuning and reinforcement learning to generate the appropriate action token and, only in <|respond|> mode, a speech response. To prepare the training data, we develop Cocktail-DialogGen, an LLM-based data pipeline that simulates realistic multi-speaker dialogs with speaker roles across diverse social settings. Together, these components take a step toward spoken dialog systems that interact more naturally and selectively in complex social environments.",
+ "summary": "## Cocktail-Talker 论文摘要总结\n\n**1. 核心创新点**\n提出 Cocktail-Talker——一个面向嘈杂多人社交场景的语音对话框架，让助手不仅决定\"说什么\"，更先决定\"要不要说\"。\n\n**2. 主要方法**\n- 基于 **Speech LLM**，引入三个动作 token：`<|respond|>`（回应）、`<|listen|>`（倾听）、`<|ignore|>`（忽略），置于回复或静默之前，只有在 `respond` 模式下才生成语音回复。\n- 训练采用 **监督微调（SFT）+ 强化学习（标题中的 Turn Action GRPO）** 两阶段。\n- 配套提出 **Cocktail-DialogGen** 数据流水线：用 LLM 模拟带说话人角色、覆盖多种社交场景的真实多人对话，以解决训练数据缺失问题。\n\n**3. 结论/性能**\n摘要中未给出具体指标，作者的结论性表述是：该框架使语音对话系统能在复杂社交环境中更自然、更有选择性地参与交互，向真实场景下的多人对话建模迈出了一步。\n\n**补充观察**：标题强调的 \"Turn Action GRPO\"（回合动作强化学习）在摘要里只被含糊表述为 \"reinforcement learning\"，具体奖励设计需看正文；同时摘要缺少任何量化结果和基线对比，属于偏\"框架提出型\"的写法。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-07-31 13:00:39"
+}

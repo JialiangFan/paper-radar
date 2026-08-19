@@ -1,0 +1,13 @@
+{
+ "id": "2604.24698",
+ "title": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models",
+ "authors": "Yunze Xiao, Vivienne J. Zhang, Chenghao Yang, Ningshan Ma, Weihao Xuan, Jen-tse Huang",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24698v1",
+ "abstract": "Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile nonetheless converge into a narrow behavioral mode, producing a homogeneous simulated population. To quantify persona collapse, we propose a framework that measures how much of the persona space a population occupies (Coverage), how evenly agents spread across it (Uniformity), and how rich the resulting behavioral patterns are (Complexity). Evaluating ten LLMs on personality simulation (BFI-44), moral reasoning, and self-introduction, we observe persona collapse along two axes: (1) Dimensions: a model can appear diverse on one axis yet structurally degenerate on another, and (2) Domains: the same model may collapse the most in personality yet be the most diverse in moral reasoning. Furthermore, item-level diagnostics reveal that behavioral variation tracks coarse demographic stereotypes rather than the fine-grained individual differences specified in each persona. Counter-intuitively, \\textbf{the models achieving the highest per-persona fidelity consistently produce the most stereotyped populations}. We release our toolkit and data to support population-level evaluation of LLMs.",
+ "summary": "以下为简要中文总结：\n\n- 核心创新点：提出并命名“Persona Collapse”现象，提出一个用于评估多代理仿真中人口多样性的量化框架（覆盖 Coverage、均匀性 Uniformity、复杂度 Complexity），以揭示高个人拟合度模型往往导致群体高度同质化的系统性问题。\n\n- 主要方法：\n  - 对十种大型语言模型在人格仿真（BFI-44）、道德推理与自我介绍等任务上进行评估。\n  - 引入并量化 persona 空间的覆盖度、分布均匀性与行为模式的复杂度，构建 Coverage、Uniformity、Complexity 等指标。\n  - 进行项级诊断，分析行为变异与粗粒度人口统计刻板印象之间的关系。\n  - 发布工具箱和数据，供进行人口层面的 LLMs 评估。\n\n- 结论/性能：\n  - 发现普遍存在“Persona Collapse”现象：不同个体画像的代理趋于窄化的行为模式，导致仿真人口高度同质化。\n  - 崩塌呈现两条轴向特征：维度（在某一维度看似多样，在另一维度却结构性退化）与领域（同一模型在人格上崩塌最严重，但在道德推理上可能更丰富）。\n  - 行为变异更多跟随粗粒度的人口统计刻板印象，而非对每个 Persona 的细粒度差异。\n  - 与直觉相反，达到最高每个 Persona 拟合度的模型往往产生最具刻板化的群体。\n  - 提供了可复用的工具箱和数据，支持对 LLMs 的人口层面评估。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-28 13:05:39"
+}

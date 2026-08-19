@@ -1,0 +1,13 @@
+{
+ "id": "2512.22860",
+ "title": "Adaptive Trust Consensus for Blockchain IoT: Comparing RL, DRL, and MARL Against Naive, Collusive, Adaptive, Byzantine, and Sleeper Attacks",
+ "authors": "Soham Padia, Dhananjay Vaidya, Ramchandra Mangrulkar",
+ "date": "2025-12-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22860v1",
+ "abstract": "Securing blockchain-enabled IoT networks against sophisticated adversarial attacks remains a critical challenge. This paper presents a trust-based delegated consensus framework integrating Fully Homomorphic Encryption (FHE) with Attribute-Based Access Control (ABAC) for privacy-preserving policy evaluation, combined with learning-based defense mechanisms. We systematically compare three reinforcement learning approaches -- tabular Q-learning (RL), Deep RL with Dueling Double DQN (DRL), and Multi-Agent RL (MARL) -- against five distinct attack families: Naive Malicious Attack (NMA), Collusive Rumor Attack (CRA), Adaptive Adversarial Attack (AAA), Byzantine Fault Injection (BFI), and Time-Delayed Poisoning (TDP). Experimental results on a 16-node simulated IoT network reveal significant performance variations: MARL achieves superior detection under collusive attacks (F1=0.85 vs. DRL's 0.68 and RL's 0.50), while DRL and MARL both attain perfect detection (F1=1.00) against adaptive attacks where RL fails (F1=0.50). All agents successfully defend against Byzantine attacks (F1=1.00). Most critically, the Time-Delayed Poisoning attack proves catastrophic for all agents, with F1 scores dropping to 0.11-0.16 after sleeper activation, demonstrating the severe threat posed by trust-building adversaries. Our findings indicate that coordinated multi-agent learning provides measurable advantages for defending against sophisticated trust manipulation attacks in blockchain IoT environments.",
+ "summary": "- 核心创新点：在区块链物联网中提出一个信任基的委托共识框架，结合全同态加密（FHE）与基于属性的访问控制（ABAC）实现隐私保护的策略评估，并系统比较RL、DRL、MARL在多种信任攻击中的防御效果，证明多智能体学习在协同信任操控攻击中的防御优势。\n\n- 主要方法：构建基于信任的委托共识框架，集成FHE与ABAC进行隐私保护的策略评估，比较三种学习策略的防御能力：RL（Q-learning）、DRL（Dueling Double DQN）和MARL，在16节点的模拟IoT网络中对NMA、CRA、AAA、BFI、TDP等五类攻击进行评估。\n\n- 结论/性能：在协同行动的攻击下，MARL检测性能最好（对CRA的F1=0.85，优于DRL的0.68和RL的0.50）；在自适应攻击下，DRL和MARL均实现完美检测（F1=1.00），而RL仅0.50；对BFI攻击三者均实现F1=1.00；Time-Delayed Poisoning对所有代理都极具破坏性，Sleeper激活后F1降至0.11–0.16；总体而言，协同多智能体学习在对抗复杂信任操控攻击方面具有显著优势。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-30 02:31:17"
+}

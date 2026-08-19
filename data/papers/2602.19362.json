@@ -1,0 +1,13 @@
+{
+ "id": "2602.19362",
+ "title": "LLMs Can Learn to Reason Via Off-Policy RL",
+ "authors": "Daniel Ritter, Owen Oertell, Bradley Guo, Jonathan Chang, Kianté Brantley, Wen Sun",
+ "date": "2026-02-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.19362v1",
+ "abstract": "Reinforcement learning (RL) approaches for Large Language Models (LLMs) frequently use on-policy algorithms, such as PPO or GRPO. However, policy lag from distributed training architectures and differences between the training and inference policies break this assumption, making the data off-policy by design. To rectify this, prior work has focused on making this off-policy data appear more on-policy, either via importance sampling (IS), or by more closely aligning the training and inference policies by explicitly modifying the inference engine. In this work, we embrace off-policyness and propose a novel off-policy RL algorithm that does not require these modifications: Optimal Advantage-based Policy Optimization with Lagged Inference policy (OAPL). We show that OAPL outperforms GRPO with importance sampling on competition math benchmarks, and can match the performance of a publicly available coding model, DeepCoder, on LiveCodeBench, while using 3x fewer generations during training. We further empirically demonstrate that models trained via OAPL have improved test time scaling under the Pass@k metric. OAPL allows for efficient, effective post-training even with lags of more than 400 gradient steps between the training and inference policies, 100x more off-policy than prior approaches.",
+ "summary": "以下是对论文标题与摘要的中文简要总结：\n\n1) 核心创新点（一句话）\n- 提出一种面向大语言模型的离策略强化学习算法 OAPL（Optimal Advantage-based Policy Optimization with Lagged Inference policy），在训练和推理策略存在长达400步以上滞后的情况下也能高效学习且无需修改推理引擎或使用重要性采样来对齐。\n\n2) 主要方法（简述技术/模型）\n- 采用基于最优优势的策略优化框架，结合滞后推理策略（Lagged Inference policy），形成 OAPL；直接在离策略数据上进行学习，不依赖将数据“变得更像 on-policy”的方法，也不需要对推理引擎做显式改动或进行重要性采样对齐。\n- 与 GRPO+IS 等基线对比，展示在离策略场景下的优势。\n\n3) 结论/性能（取得的效果）\n- 在竞争性数学题基准上优于 GRPO+IS。\n- 在 LiveCodeBench 上可达到 DeepCoder 的性能，同时训练代数减少约 3 倍（3x fewer generations）。\n- 在 Pass@k 指标下显示更好的测试时刻缩放性能。\n- 即使训练与推理策略之间存在超过 400 步的梯度滞后，也能实现高效、有效的后训练，且相较于以往方法具备极大程度的离策略性（约 100x 之多）。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-24 14:04:19"
+}

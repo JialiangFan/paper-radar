@@ -1,0 +1,13 @@
+{
+ "id": "2602.08995",
+ "title": "When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents",
+ "authors": "Yuting Ning, Jaylen Jones, Zhehao Zhang, Chentao Ye, Weitong Ruan, Junyi Li, Rahul Gupta, Huan Sun",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08995v1",
+ "abstract": "Computer-use agents (CUAs) have made tremendous progress in the past year, yet they still frequently produce misaligned actions that deviate from the user's original intent. Such misaligned actions may arise from external attacks (e.g., indirect prompt injection) or from internal limitations (e.g., erroneous reasoning). They not only expose CUAs to safety risks, but also degrade task efficiency and reliability. This work makes the first effort to define and study misaligned action detection in CUAs, with comprehensive coverage of both externally induced and internally arising misaligned actions. We further identify three common categories in real-world CUA deployment and construct MisActBench, a benchmark of realistic trajectories with human-annotated, action-level alignment labels. Moreover, we propose DeAction, a practical and universal guardrail that detects misaligned actions before execution and iteratively corrects them through structured feedback. DeAction outperforms all existing baselines across offline and online evaluations with moderate latency overhead: (1) On MisActBench, it outperforms baselines by over 15% absolute in F1 score; (2) In online evaluation, it reduces attack success rate by over 90% under adversarial settings while preserving or even improving task success rate in benign environments.",
+ "summary": "- 核心创新点：首次系统定义并研究计算机使用代理（CUAs）中的“错位/不对齐行动”检测，提出一个执行前即可检测并通过结构化反馈迭代纠错的通用防护框架 DeAction，覆盖外部诱发与内部原因。\n\n- 主要方法：提出 MisActBench 数据集，包含现实情境下的行动轨迹与人工标注的行动级对齐标签；设计 DeAction 防护框架，在行动执行前进行不对齐检测，并通过结构化反馈实现迭代纠错，适用于离线与在线评估。\n\n- 结论/性能：在 MisActBench 上相较基线实现超过 15 个百分点的 F1 提升；在线评估中，在对抗设置下将攻击成功率降低超过 90%，同时在良性环境中保持或提升任务成功率。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-10 14:02:08"
+}

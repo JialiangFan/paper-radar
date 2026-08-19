@@ -1,0 +1,13 @@
+{
+ "id": "2605.21800",
+ "title": "stable-worldmodel: A Platform for Reproducible World Modeling Research and Evaluation",
+ "authors": "Lucas Maes, Quentin Le Lidec, Luiz Facury, Nassim Massaudi, Ayush Chaurasia, Francesco Capuano, Richard Gao, Taj Gillin, Dan Haramati, Damien Scieur, Yann LeCun, Randall Balestriero",
+ "date": "2026-05-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.21800v1",
+ "abstract": "World models are central to building agents that can reason, plan, and generalize beyond their training data. However, research on world models is currently fragmented, with disparate codebases, data pipelines, and evaluation protocols hindering reproducibility and fair comparison. Current practice is further limited by three key bottlenecks: fragile one-off codebases, slow video data loading, and the lack of standardized generalization benchmarks. We present stable-worldmodel (swm), an open-source platform for standardized and reproducible world modeling research and evaluation. It delivers (1) a high-performance Lance-based data layer with native support and conversion tools for MP4, HDF5, and LeRobot datasets, (2) clean, well-tested implementations of modern world model baselines and planning solvers, and (3) a broad suite of environments and tasks extended with controllable visual, geometric, and physical factors of variation for systematic in-silico evaluation of dynamics understanding, control performance, representation quality, and out-of-distribution generalization. By unifying the full pipeline under a single, scalable framework, \\texttt{swm} dramatically reduces research overhead and accelerates trustworthy progress toward reliable world models.",
+ "summary": "# stable-worldmodel 论文总结\n\n1. **核心创新点**：提出 `stable-worldmodel (swm)`——一个统一的开源平台，用于解决世界模型研究中代码分散、数据加载慢、缺乏标准化泛化基准的问题，实现可复现的研究与评估。\n\n2. **主要方法**：\n   - **数据层**：基于 Lance 构建高性能数据层，原生支持并可转换 MP4、HDF5、LeRobot 数据集。\n   - **模型与求解器**：提供现代世界模型基线和规划求解器的简洁、经过测试的实现。\n   - **评估套件**：扩展了一系列环境与任务，加入可控的视觉、几何、物理变化因子，支持对动力学理解、控制性能、表征质量及分布外（OOD）泛化能力进行系统性的 in-silico 评估。\n\n3. **结论/性能**：将世界模型研究的全流程整合进单一可扩展框架，显著降低了研究开销，加速了对可靠世界模型的可信进展。（论文未给出具体数值性能指标，主要贡献为平台/基础设施层面。）",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-23 13:03:37"
+}

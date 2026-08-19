@@ -1,0 +1,13 @@
+{
+ "id": "2606.05885",
+ "title": "When Denser Credit Is Not Enough: Evidence-Calibrated Policy Optimization for Long-Horizon LLM Agent Training",
+ "authors": "Yuanfan Li, Qi Zhou, Wenjing Duan, Lu Chen",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05885v1",
+ "abstract": "Long-horizon LLM agents require reinforcement learning methods that can assign credit to intermediate decisions under sparse and delayed rewards. Recent group-based methods such as GiGPO improve over GRPO by constructing step-level advantages at repeated anchor states. However, we show that such dense credit can be statistically unreliable: under limited rollouts, rare but lucky actions may receive overly large advantages, producing divergent anchor bias and late-stage training oscillation. We propose Evidence-Calibrated Policy Optimization (ECPO), a critic-free policy optimization algorithm that calibrates step-level credit before policy updates. ECPO combines Evidence-Calibrated Action Advantage, which groups rollouts by canonical actions and shrinks low-count estimates, with Variance-Gated Credit Weighting, which suppresses anchor states dominated by within-action noise. Experiments on ALFWorld and WebShop with Qwen2.5-1.5B/7B show that ECPO consistently outperforms strong baselines, improving GiGPO by +5.2/+7.3 success points on ALFWorld/WebShop with Qwen2.5-1.5B while adding only 0.1% additional advantage-computation overhead.",
+ "summary": "# ECPO 论文总结\n\n**1. 核心创新点**\n针对长程 LLM 智能体训练中\"密集信用分配反而因小样本统计噪声导致偏差和震荡\"的问题，提出\"证据校准\"机制，对步级优势进行可靠性加权后再更新策略。\n\n**2. 主要方法**\n提出 **Evidence-Calibrated Policy Optimization (ECPO)**，一种无 critic 的策略优化算法，包含两个组件：\n- **Evidence-Calibrated Action Advantage**：按规范化动作对 rollout 分组，对低样本数估计进行收缩（shrinkage），抑制\"偶然好运\"动作被高估。\n- **Variance-Gated Credit Weighting**：对锚点状态内方差过大（噪声主导）的情况进行抑制。\n\n**3. 结论/性能**\n在 ALFWorld 和 WebShop 两个基准上、使用 Qwen2.5-1.5B/7B 模型，ECPO 一致优于 GRPO、GiGPO 等强基线：在 Qwen2.5-1.5B 上分别比 GiGPO 提升 +5.2 / +7.3 个成功率点，而额外计算开销仅 0.1%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-07 13:01:27"
+}

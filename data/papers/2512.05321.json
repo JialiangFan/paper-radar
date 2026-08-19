@@ -1,0 +1,13 @@
+{
+ "id": "2512.05321",
+ "title": "A Practical Honeypot-Based Threat Intelligence Framework for Cyber Defence in the Cloud",
+ "authors": "Darren Malvern Chin, Bilal Isfaq, Simon Yusuf Enoch",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05321v1",
+ "abstract": "In cloud environments, conventional firewalls rely on predefined rules and manual configurations, limiting their ability to respond effectively to evolving or zero-day threats. As organizations increasingly adopt platforms such as Microsoft Azure, this static defense model exposes cloud assets to zero-day exploits, botnets, and advanced persistent threats. In this paper, we introduce an automated defense framework that leverages medium- to high-interaction honeypot telemetry to dynamically update firewall rules in real time. The framework integrates deception sensors (Cowrie), Azure-native automation tools (Monitor, Sentinel, Logic Apps), and MITRE ATT&CK-aligned detection within a closed-loop feedback mechanism. We developed a testbed to automatically observe adversary tactics, classify them using the MITRE ATT&CK framework, and mitigate network-level threats automatically with minimal human intervention.\n  To assess the framework's effectiveness, we defined and applied a set of attack- and defense-oriented security metrics. Building on existing adaptive defense strategies, our solution extends automated capabilities into cloud-native environments. The experimental results show an average Mean Time to Block of 0.86 seconds - significantly faster than benchmark systems - while accurately classifying over 12,000 SSH attempts across multiple MITRE ATT&CK tactics. These findings demonstrate that integrating deception telemetry with Azure-native automation reduces attacker dwell time, enhances SOC visibility, and provides a scalable, actionable defense model for modern cloud infrastructures.",
+ "summary": "- 核心创新点：基于中/高交互蜜罐观测数据，结合云原生自动化工具，构建一个实时、闭环的威胁情报框架，动态更新云防火墙规则以实现自动化防御。\n\n- 主要方法：采用 Cowrie 蜜罐获取欺骗性遥测，结合 Azure Monitor、Sentinel、Logic Apps 进行自动化编排与检测，按 MITRE ATT&CK 对战术进行对齐与分类，建立观测-分类-自动缓解的闭环；并在测试床上自动观测、分类并执行防护。\n\n- 结论/性能：平均 Mean Time to Block 为 0.86 秒，显著快于基准系统；能够在多种 MITRE ATT&CK 策略下准确分类超过 12,000 次 SSH 尝试，提升 SOC 可视性和云环境防御的可扩展性与可操作性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-08 14:01:12"
+}

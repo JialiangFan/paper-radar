@@ -1,0 +1,13 @@
+{
+ "id": "2512.21648",
+ "title": "Variance-Aware Prior-Based Tree Policies for Monte Carlo Tree Search",
+ "authors": "Maximilian Weichart",
+ "date": "2025-12-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21648v1",
+ "abstract": "Monte Carlo Tree Search (MCTS) has profoundly influenced reinforcement learning (RL) by integrating planning and learning in tasks requiring long-horizon reasoning, exemplified by the AlphaZero family of algorithms. Central to MCTS is the search strategy, governed by a tree policy based on an upper confidence bound (UCB) applied to trees (UCT). A key factor in the success of AlphaZero is the introduction of a prior term in the UCB1-based tree policy PUCT, which improves exploration efficiency and thus accelerates training. While many alternative UCBs with stronger theoretical guarantees than UCB1 exist, extending them to prior-based UCTs has been challenging, since PUCT was derived empirically rather than from first principles. Recent work retrospectively justified PUCT by framing MCTS as a regularized policy optimization (RPO) problem. Building on this perspective, we introduce Inverse-RPO, a general methodology that systematically derives prior-based UCTs from any prior-free UCB. Applying this method to the variance-aware UCB-V, we obtain two new prior-based tree policies that incorporate variance estimates into the search. Experiments indicate that these variance-aware prior-based UCTs outperform PUCT across multiple benchmarks without incurring additional computational cost. We also provide an extension of the mctx library supporting variance-aware UCTs, showing that the required code changes are minimal and intended to facilitate further research on principled prior-based UCTs. Code: github.com/Max-We/inverse-rpo.",
+ "summary": "1. 核心创新点\n- 提出一个通用方法Inverse-RPO，可以从任意无先验的UCB导出带先验的UCT，并将方差感知的UCB-V应用其中，得到两种新的方差感知先验树策略，且在实验中优于PUCT且不增加计算成本。\n\n2. 主要方法\n- 基于对MCTS的正则化策略优化（RPO）的逆向框架，构建Inverse-RPO 将无先验UCB转化为带先验的UCT；以方差感知的UCB-V为起点，推导出两种包含方差估计的先验树策略；并扩展mctx库以支持方差感知的UCT，代码改动极小，便于进一步研究。\n\n3. 结论/性能\n- 在多项基准实验中，这些方差感知的先验UCT超过了PUCT且不增加计算成本；并提供了可用的代码实现（GitHub 链接）。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-29 02:54:28"
+}

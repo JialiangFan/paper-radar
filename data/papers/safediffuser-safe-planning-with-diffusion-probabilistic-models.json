@@ -1,0 +1,27 @@
+{
+ "id": "safediffuser-safe-planning-with-diffusion-probabilistic-models",
+ "title": "SafeDiffuser: Safe Planning with Diffusion Probabilistic Models",
+ "authors": "Multiple",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Diffusion-based planners/policies 生成的轨迹不保证满足安全约束。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/SafeDiffuser.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

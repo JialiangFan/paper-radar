@@ -1,0 +1,13 @@
+{
+ "id": "2605.27314",
+ "title": "Riding the Shifting Potential: When Reactive Control Suffices for Multi-Goal Behavior",
+ "authors": "Vito Mengers, Oliver Brock",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27314v1",
+ "abstract": "Reactive control is often considered insufficient for multi-objective tasks because conflicting objectives give rise to local minima. We argue this limitation is not inherent but arises from static encodings that fail to reflect how objectives currently interact. We exploit the interaction structure encoded in a graph-based world model by extending it with nullspace projections: conflicts are resolved where they arise by projecting lower-priority gradients into the nullspace of higher-priority ones, with priorities determined continuously from the current state. We demonstrate this in two domains where conflicts between objectives are central: navigation around non-convex obstacles, where static potential fields fundamentally fail, and planar pushing of non-convex objects, where our method achieves $100\\%$ success across one-hundred configurations versus $0\\%$ for the steepest-descent baseline and ${\\sim}55\\%$ for diffusion policy, without demonstrations or retraining. The same formulation transfers directly to a real robot with additional perceptual and kinematic constraints, accommodating them through the same mechanism.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n通过在基于图的世界模型中引入\"零空间投影\"（nullspace projections）和状态相关的动态优先级，使纯反应式（reactive）控制能够胜任传统上被认为必须依赖规划的多目标冲突任务。\n\n**2. 主要方法**\n- 利用图结构世界模型来编码目标之间的交互关系；\n- 将低优先级目标的梯度投影到高优先级目标梯度的零空间，从而在冲突发生处局部消解冲突；\n- 优先级根据当前状态连续动态确定，而非静态预设；\n- 无需示教数据或重新训练，可直接迁移到真实机器人，并支持额外的感知与运动学约束。\n\n**3. 结论/性能**\n- 在非凸障碍物导航任务中，克服了静态势场法的根本性失败；\n- 在非凸物体平面推动任务中，100 个配置上取得 **100% 成功率**，而最速下降基线为 **0%**，扩散策略（diffusion policy）约为 **55%**；\n- 同一套方法直接迁移到真实机器人上仍然有效。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-31 13:04:17"
+}

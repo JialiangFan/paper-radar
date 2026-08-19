@@ -1,0 +1,13 @@
+{
+ "id": "2608.13333",
+ "title": "LLM-Guided Graph Generation for Structure-Based Local Improvement Methods",
+ "authors": "Hai Xia, Vaidyanathan Peruvemba Ramaswamy, Stefan Szeider",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13333v1",
+ "abstract": "Large neighborhood search normally selects a random subset of decision variables for iterative optimization. For efficiently solving different problems, researchers tend to design variable selection strategies by taking into account structural features from different domains. In this paper, we build an automatic pipeline that is problem-agnostic to all problems in the MiniZinc format. By prompting an LLM with our semantic guidelines, we guide the LLM to produce a graph generator that maps any instance of a problem type to a uniform weighted graph, where nodes represent decision variables and edges represent constraint relationships. These problem-agnostic graphs guide our structure-based local improvement framework (SLIM) in variable selection. Meanwhile, the weighted graph enables all problem instances to share the same generic graph representation, from which the same graph features can be extracted and used for configuration selection. We evaluated our pipeline on instances across 20 MiniZinc competition problems, finding that algorithm selection achieves a 39.5% average problem-weighted win rate against a one-shot Gurobi baseline, more than doubling the best single configuration (19.3%). Configuration and feature ablation boost the performance further to 44.0%, demonstrating that LLM-based semantic generation enables effective automated structure extraction and feature extraction for constraint optimization.",
+ "summary": "## 论文摘要总结\n\n**标题**：LLM-Guided Graph Generation for Structure-Based Local Improvement Methods（面向基于结构的局部改进方法的 LLM 引导图生成）\n\n---\n\n### 1. 核心创新点\n\n用 LLM 自动为任意 MiniZinc 问题生成\"图生成器\"，把问题实例统一转化为加权图，从而实现**问题无关（problem-agnostic）**的大邻域搜索变量选择与算法配置选择。\n\n### 2. 主要方法\n\n- **痛点**：传统大邻域搜索（LNS）随机选取决策变量子集，而人工设计的变量选择策略依赖特定领域的结构特征，无法跨问题复用。\n- **做法**：通过**语义化提示词（semantic guidelines）**引导 LLM 生成一段图生成器代码，将某一问题类型的任意实例映射为统一的**加权图**——节点表示决策变量，边表示约束关系。\n- **用途一（变量选择）**：该图驱动作者提出的基于结构的局部改进框架 **SLIM**，指导邻域中变量子集的选取。\n- **用途二（配置/算法选择）**：由于所有实例共享同一通用图表示，可从中抽取同构的图特征，用于自动的配置选择与算法选择。\n- **实验平台**：20 个 MiniZinc 竞赛问题的实例集，基线为 one-shot Gurobi。\n\n### 3. 结论 / 性能\n\n- 算法选择相对 Gurobi 基线取得 **39.5%** 的平均问题加权胜率，是最佳单一固定配置（**19.3%**）的两倍以上。\n- 加入配置消融与特征消融后进一步提升至 **44.0%**。\n- 结论：基于 LLM 的语义化生成能够为约束优化问题实现有效的**自动结构抽取与特征抽取**。\n\n---\n\n**一句话点评**：亮点在于把\"领域专家手工设计结构特征\"这一环节交给 LLM 自动完成，并用统一图表示同时服务于变量选择和算法选择两个层面；不过评测采用的是相对 Gurobi 的\"胜率\"指标而非最优间隙（optimality gap），实际求解质量的绝对水平需看正文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-14 13:02:15"
+}

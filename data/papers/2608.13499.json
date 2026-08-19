@@ -1,0 +1,13 @@
+{
+ "id": "2608.13499",
+ "title": "OpScale: Operator-level Provisioning and Autoscaling for LLM Serving",
+ "authors": "Xingqi Cui, Chieh-Jan Mike Liang, Ziang Tang, Jiarong Xing, Haoran Qiu",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13499v1",
+ "abstract": "Achieving cost efficiency while meeting strict user-facing SLOs (e.g., time-to-first-token) remains a fundamental challenge for cloud GPU clusters serving large language models (LLMs). Autoscaling is the key mechanism for cluster resource management, yet a basic system design question is open for serving LLMs: what should be the unit of scaling? Existing approaches primarily treat the entire model as a monolithic scaling unit--simple but unable to capture the fine-grained dynamics of inference workloads. As a result, such coarse-grained scaling often leads to either SLO violations under bursty demand or significant GPU under-utilization.\n  Our characterization reveals substantial operator heterogeneity, exposing operator-level elasticity as a viable scaling primitive. We present OpScale, a practical operator-level orchestration framework of profiling, provisioning, placement, and runtime serving. OpScale is designed to tackle the high complexity and the space explosion problem, arising from operating at this finer granularity. Evaluated with production traces on up to 40 A100s and 24 GB200s, OpScale attains SLOs with up to 36.3% fewer GPUs and 28% less power, or achieves 44% higher throughput under fixed cost budgets.",
+ "summary": "**OpScale：面向 LLM 服务的算子级资源供给与自动扩缩容**\n\n1. **核心创新点**\n   把自动扩缩容的基本单位从\"整个模型\"下沉到\"单个算子（operator）\"，利用算子级弹性作为新的扩缩容原语。\n\n2. **主要方法**\n   作者先通过特征刻画（characterization）发现 LLM 推理中存在显著的**算子异构性**，进而提出 OpScale 编排框架，覆盖四个环节：性能剖析（profiling）→ 资源供给（provisioning）→ 放置（placement）→ 运行时服务（runtime serving）。框架的核心设计目标是解决细粒度带来的**高复杂度与搜索空间爆炸**问题。\n\n3. **结论/性能**\n   在生产环境 trace 上、最多 40 张 A100 与 24 张 GB200 的集群上评测：在满足 SLO（如 TTFT）的前提下最多**减少 36.3% GPU 用量**和 **28% 功耗**；或在固定成本预算下取得 **44% 更高吞吐**。\n\n> 一句话背景：现有方案以整模型为扩缩单位，粗粒度导致突发负载下违反 SLO、平峰时 GPU 严重闲置——OpScale 正是针对这一取舍。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-14 13:00:57"
+}

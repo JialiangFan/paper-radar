@@ -1,0 +1,13 @@
+{
+ "id": "2604.11796",
+ "title": "C-ReD: A Comprehensive Chinese Benchmark for AI-Generated Text Detection Derived from Real-World Prompts",
+ "authors": "Chenxi Qing, Junxi Wu, Zheng Liu, Yixiang Qiu, Hongyao Yu, Bin Chen, Hao Wu, Shu-Tao Xia",
+ "date": "2026-04-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.11796v1",
+ "abstract": "Recently, large language models (LLMs) are capable of generating highly fluent textual content. While they offer significant convenience to humans, they also introduce various risks, like phishing and academic dishonesty. Numerous research efforts have been dedicated to developing algorithms for detecting AI-generated text and constructing relevant datasets. However, in the domain of Chinese corpora, challenges remain, including limited model diversity and data homogeneity. To address these issues, we propose C-ReD: a comprehensive Chinese Real-prompt AI-generated Detection benchmark. Experiments demonstrate that C-ReD not only enables reliable in-domain detection but also supports strong generalization to unseen LLMs and external Chinese datasets-addressing critical gaps in model diversity, domain coverage, and prompt realism that have limited prior Chinese detection benchmarks. We release our resources at https://github.com/HeraldofLight/C-ReD.",
+ "summary": "- 核心创新点：提出面向真实世界提示的综合中文AI生成文本检测基准C-ReD，解决中文检测数据在模型多样性、领域覆盖与提示真实性方面的不足。\n\n- 主要方法：构建包含多源、真实提示的中文生成文本数据集，覆盖多领域与多种模型输出，建立系统化的检测评估框架以测试在同域及跨模型/跨数据集上的性能与泛化能力。\n\n- 结论/性能：实验表明C-ReD在同域检测上具有可靠性，并对未见的LLMs和外部中文数据集具备较强的泛化能力，弥补了以往中文检测基准在模型多样性、领域覆盖与提示真实性方面的不足。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-14 13:01:13"
+}

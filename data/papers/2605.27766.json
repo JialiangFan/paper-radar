@@ -1,0 +1,13 @@
+{
+ "id": "2605.27766",
+ "title": "Got a Secret? LLM Agents Can't Keep It: Evaluating Privacy in Multi-Agent Systems",
+ "authors": "Aman Priyanshu, Supriti Vijay, Esha Pahwa",
+ "date": "2026-05-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.27766v1",
+ "abstract": "LLM safety evaluations predominantly test models in isolation, yet deployed AI agents increasingly operate within persistent social environments alongside other agents. We introduce a Moltbook-style simulation platform where thousands of LLM agents interact across communities over a simulated month, and use it to evaluate privacy as a downstream safety concern under varying degrees of social pressure. We find that shifting from single turn to multi turn social evaluation amplifies privacy violations (CIMemories 19.95% to Ours 45.30% across OpenAI models), that leakage is socially contagious, with agents 8 times more likely to disclose sensitive information after observing a peer do so, and that explicit privacy instructions reduce but do not eliminate this effect, leaving leakage rates above 37.8% even with safeguards. Our findings suggest that static chat based safety benchmarks systematically underestimate risks in agentic deployment, and that social context alone is sufficient to elicit sensitive disclosures that single turn evaluations would never surface.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：首次在多智能体持续社交环境中评估 LLM 的隐私泄露风险，揭示静态单轮基准严重低估了智能体部署中的真实隐私风险。\n\n**2. 主要方法**：构建了一个 Moltbook 风格的仿真平台，让数千个 LLM 智能体在模拟的社区中持续交互一个月，并在不同社交压力下测量隐私泄露行为，对比单轮与多轮场景，并测试显式隐私指令的缓解效果。\n\n**3. 结论/性能**：\n- 从单轮切换到多轮社交评估后，OpenAI 模型的隐私违规率从 19.95%（CIMemories）飙升至 45.30%；\n- 泄露具有\"社交传染性\"——智能体在观察到同伴泄露后，自身泄露概率提高 **8 倍**；\n- 即使加入显式隐私指令，泄露率仍高于 **37.8%**，无法被根除；\n- 表明仅靠社交语境即可诱发单轮评估中无法显现的敏感信息披露，现有静态安全基准不足以反映智能体部署中的真实风险。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:01:53"
+}

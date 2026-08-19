@@ -1,0 +1,13 @@
+{
+ "id": "2602.22983",
+ "title": "Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-Inspired Search",
+ "authors": "Xun Huang, Simeng Qin, Xiaoshuang Jia, Ranjie Duan, Huanqian Yan, Zhitao Zeng, Fei Yang, Yang Liu, Xiaojun Jia",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22983v1",
+ "abstract": "As Large Language Models (LLMs) are increasingly used, their security risks have drawn increasing attention. Existing research reveals that LLMs are highly susceptible to jailbreak attacks, with effectiveness varying across language contexts. This paper investigates the role of classical Chinese in jailbreak attacks. Owing to its conciseness and obscurity, classical Chinese can partially bypass existing safety constraints, exposing notable vulnerabilities in LLMs. Based on this observation, this paper proposes a framework, CC-BOS, for the automatic generation of classical Chinese adversarial prompts based on multi-dimensional fruit fly optimization, facilitating efficient and automated jailbreak attacks in black-box settings. Prompts are encoded into eight policy dimensions-covering role, behavior, mechanism, metaphor, expression, knowledge, trigger pattern and context; and iteratively refined via smell search, visual search, and cauchy mutation. This design enables efficient exploration of the search space, thereby enhancing the effectiveness of black-box jailbreak attacks. To enhance readability and evaluation accuracy, we further design a classical Chinese to English translation module. Extensive experiments demonstrate that effectiveness of the proposed CC-BOS, consistently outperforming state-of-the-art jailbreak attack methods.",
+ "summary": "**核心创新点**：提出基于生物启发搜索的 CC-BOS 框架，利用经典汉语的隐匿性自动生成对抗性提示，在黑箱环境下高效发现大型语言模型的安全漏洞。\n\n**主要方法**：将对抗提示编码为八个策略维度（角色、行为、机制、隐喻、表达、知识、触发模式、情境）并通过多阶段进化搜索（嗅探搜索、可视化搜索、柯西变异）迭代优化，另设计一个经典汉语到英文的翻译模块以提升可读性与评估准确性。\n\n**结论/性能**：大量实验表明 CC-BOS 的对抗效果显著优于当前最先进的对抗方法，具有更高的自动化水平和攻击效率。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-27 14:01:07"
+}

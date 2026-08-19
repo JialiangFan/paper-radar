@@ -1,0 +1,13 @@
+{
+ "id": "2603.19931",
+ "title": "SAGE: Sustainable Agent-Guided Expert-tuning for Culturally Attuned Translation in Low-Resource Southeast Asia",
+ "authors": "Zhixiang Lu, Chong Zhang, Yulong Li, Angelos Stefanidis, Anh Nguyen, Imran Razzak, Jionglong Su, Zhengyong Jiang",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19931v1",
+ "abstract": "The vision of an inclusive World Wide Web is impeded by a severe linguistic divide, particularly for communities in low-resource regions of Southeast Asia. While large language models (LLMs) offer a potential solution for translation, their deployment in data-poor contexts faces a dual challenge: the scarcity of high-quality, culturally relevant data and the prohibitive energy costs of training on massive, noisy web corpora. To resolve the tension between digital inclusion and environmental sustainability, we introduce Sustainable Agent-Guided Expert-tuning (SAGE). This framework pioneers an energy-aware paradigm that prioritizes the \"right data\" over \"big data\". Instead of carbon-intensive training on unfiltered datasets, SAGE employs a reinforcement learning (RL) agent, optimized via Group Relative Policy Optimization (GRPO), to autonomously curate a compact training set. The agent utilizes a semantic reward signal derived from a small, expert-constructed set of community dialogues to filter out noise and cultural misalignment. We then efficiently fine-tune open-source LLMs on this curated data using Low-Rank Adaptation (LoRA). We applied SAGE to translation tasks between English and seven low-resource languages (LRLs) in Southeast Asia. Our approach establishes new state-of-the-art performance on BLEU-4 and COMET-22 metrics, effectively capturing local linguistic nuances. Crucially, SAGE surpasses baselines trained on full datasets while reducing data usage by 97.1% and training energy consumption by 95.2%. By delivering high-performance models with a minimal environmental footprint, SAGE offers a scalable and responsible pathway to bridge the digital divide in the Global South.",
+ "summary": "- 核心创新点：提出可持续的代理引导专家微调（SAGE），通过强化学习代理在语义奖励信号驱动下自动筛选高质量、文化对齐的少量训练数据，并以LoRA对开源大语言模型进行高效微调，从而在更少数据与更低能耗下实现高质量翻译。\n- 主要方法：\n  - 采用基于 GRPO 的强化学习代理进行数据集筛选。\n  - 使用来自专家构建的社区对话的小集作为语义奖励，过滤噪声与文化不匹配。\n  - 对选定数据进行 Low-Rank Adaptation（LoRA）微调开源LLMs。\n  - 任务覆盖英语与七种 Southeast Asia 的低资源语言的翻译。\n- 结论/性能：\n  - 在 BLEU-4 和 COMET-22 指标上达到新的状态最先进水平，更好地捕捉本地语言特征。\n  - 相较于用全量数据的基线，数据使用量减少97.1%，培训能耗降低95.2%。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-23 13:05:39"
+}

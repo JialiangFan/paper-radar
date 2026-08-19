@@ -1,0 +1,13 @@
+{
+ "id": "2607.03942",
+ "title": "ThermoForce: A Physics-Structured Interventional World Model for Building HVAC Control",
+ "authors": "Yifan Wang",
+ "date": "2026-07-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.03942v1",
+ "abstract": "Model predictive control (MPC) of building HVAC systems needs thermal models that answer a causal question: what indoor temperature, energy use, and comfort will result if a control action is applied? Time-series foundation models (TSFMs) can forecast passive building trajectories with strong zero-shot skill, but high factual accuracy does not imply valid response to control interventions. We show that an observational grey-box model with the best passive accuracy predicts cooling effects with the wrong sign, and that adding control and weather covariates to a TSFM does not fix intervention response. We introduce ThermoForce, a control-ready interventional thermal world model that keeps a TSFM frozen as a passive free-response prior and learns a compact, physics-structured forced-response operator for the causal effect of HVAC actuation. The operator is monotone in the control input by construction, is identified from one to three days of control excitation, and composes with the free response into a counterfactual-capable world model. Across paired EnergyPlus heating and cooling interventions, ThermoForce attains the lowest intervention-effect error and correct effect sign where covariate-TSFM, observational grey-box, and distillation baselines fail. Embedded in MPC on the BOPTEST benchmark, it reduces thermal discomfort by 33--84\\% relative to the native controller across three two-week windows while simultaneously reducing energy, using a frozen backbone, 195 trainable parameters, and CPU-only computation. ThermoForce reframes foundation models for building control: passive prediction and forced intervention response must be structurally separated for a model to be control-ready.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-07 13:03:55"
+}

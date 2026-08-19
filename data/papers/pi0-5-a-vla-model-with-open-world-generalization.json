@@ -1,0 +1,27 @@
+{
+ "id": "pi0-5-a-vla-model-with-open-world-generalization",
+ "title": "Pi0.5: A VLA Model with Open-World Generalization",
+ "authors": "Kevin Black, Noah Brown, James Darpinian, Karan Dhabalia, Danny Driess, Adnan Esmail, Michael Equi, Chelsea Finn, Niccolo Fusai, Manuel Y. Galliker, Dibya Ghosh, Lachy Groom, Karol Hausman, Brian Ichter, Szymon Jakubczak, Tim Jones, Liyiming Ke, Devin LeBlanc, Sergey Levine, Adrian Li-Bell, Mohith Mothukuri, Suraj Nair, Karl Pertsch, Allen Z. Ren, Lucy Xiaoyang Shi, Laura Smith, Jost Tobias Springenberg, Kyle Stachowicz, James Tanner, Quan Vuong, Homer Walke, Anna Walling, Haohuan Wang, Lili Yu, Ury Zhilinsky",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-language-action (VLA) 模型在端到端机器人控制方面取得了显著进展，但其泛化能力主要局限于与训练数据高度匹配的环境。开放世界泛化（即在从未见过的真实家庭中执行复杂、长时间操作任务）仍是物理智能领域的核心挑战。Physical Intelligence 团队基于其前代模型 pi0，提出了 pi0.5，旨在通过异构数据源的c...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2504.16054)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/Pi0.5 - A VLA Model with Open-World Generalization.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

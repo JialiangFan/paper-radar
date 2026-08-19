@@ -1,0 +1,13 @@
+{
+ "id": "2512.21514",
+ "title": "DiverseGRPO: Mitigating Mode Collapse in Image Generation via Diversity-Aware GRPO",
+ "authors": "Henglin Liu, Huijuan Huang, Jing Wang, Chang Liu, Xiu Li, Xiangyang Ji",
+ "date": "2025-12-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21514v1",
+ "abstract": "Reinforcement learning (RL), particularly GRPO, improves image generation quality significantly by comparing the relative performance of images generated within the same group. However, in the later stages of training, the model tends to produce homogenized outputs, lacking creativity and visual diversity, which restricts its application scenarios. This issue can be analyzed from both reward modeling and generation dynamics perspectives. First, traditional GRPO relies on single-sample quality as the reward signal, driving the model to converge toward a few high-reward generation modes while neglecting distribution-level diversity. Second, conventional GRPO regularization neglects the dominant role of early-stage denoising in preserving diversity, causing a misaligned regularization budget that limits the achievable quality--diversity trade-off. Motivated by these insights, we revisit the diversity degradation problem from both reward modeling and generation dynamics. At the reward level, we propose a distributional creativity bonus based on semantic grouping. Specifically, we construct a distribution-level representation via spectral clustering over samples generated from the same caption, and adaptively allocate exploratory rewards according to group sizes to encourage the discovery of novel visual modes. At the generation level, we introduce a structure-aware regularization, which enforces stronger early-stage constraints to preserve diversity without compromising reward optimization efficiency. Experiments demonstrate that our method achieves a 13\\%--18\\% improvement in semantic diversity under matched quality scores, establishing a new Pareto frontier between image quality and diversity for GRPO-based image generation.",
+ "summary": "- 核心创新点：提出在 GRPO 框架下通过分布层面的创造力奖励与结构感知的正则化来缓解模式崩溃，实现图像质量与语义多样性的双提升。\n\n- 主要方法： \n  - 奖励层面：对同一字幕生成的样本进行谱聚类，得到分布级别的分组表示；依据分组大小自适应分配探索奖励，鼓励发现新的视觉模态。\n  - 生成层面：引入结构感知的正则化，在早期去噪阶段施加强约束以维持多样性，同时不削弱奖励优化的效率。\n  - 将上述方法应用于 GRPO，综合解决奖励建模与生成动力学中的多样性问题。\n\n- 结论/性能：在匹配质量分数下，语义多样性提升约13%–18%；在 GRPO 基于图像生成的质量-多样性之间建立了新的帕累托前沿。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-29 02:29:01"
+}

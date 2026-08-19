@@ -1,0 +1,13 @@
+{
+ "id": "2606.17046",
+ "title": "Geometric Action Model for Robot Policy Learning",
+ "authors": "Jisang Han, Seonghu Jeon, Jaewoo Jung, René Zurbrügg, Honggyu An, Tifanny Portela, Marco Hutter, Marc Pollefeys, Seungryong Kim, Sunghwan Hong",
+ "date": "2026-06-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.17046v1",
+ "abstract": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines.",
+ "summary": "## 论文总结：Geometric Action Model for Robot Policy Learning（几何动作模型）\n\n1. **核心创新点**：将预训练的\"几何基础模型（GFM）\"直接复用为统一骨干，同时承担感知、时序预测和动作解码，从而把显式的 3D 几何先验引入语言条件下的机器人操作策略。\n\n2. **主要方法**：在 GFM 的中间层\"切开\"——浅层作为观测编码器；在切分处插入一个**因果未来预测器**，以语言、本体感觉（proprioception）和动作历史为条件，预测未来的隐空间 token；预测出的未来 token 再经过 GFM 剩余模块进行特征传播与解码，由单一骨干同时输出未来几何与动作。该设计仅需极小的结构改动，即可在保留几何先验的同时获得语言条件的时序世界建模能力。\n\n3. **结论/性能**：在大量仿真与真实机器人操作基准上，GAM 相比当前基础模型规模的基线**更准确、更鲁棒、更快、更轻量**。\n\n---\n补充：相比现有的 VLA（视觉-语言-动作模型）和 WAM（视频世界-动作模型）主要在 2D 图像帧或 2D 衍生隐空间上操作、3D 几何只是隐式存在的局限，GAM 的主要差异化在于直接以几何基础模型作为共享底座来显式处理接触密集型操作所需的 3D 几何。\n\n需要的话，我可以用 `/paper-review` 生成更完整的中英文综述并存入你的 Obsidian vault。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-16 13:04:49"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.14074",
+ "title": "Mandato: Protocol-Level Enforcement of Digitally Signed Mandates on AI Agent Actions with Cryptographically Chained Audit Trails",
+ "authors": "Giovanni Racioppi",
+ "date": "2026-08-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.14074v1",
+ "abstract": "AI agents increasingly act on external systems through standardized tool-calling protocols such as the Model Context Protocol (MCP), yet no infrastructure layer constrains their actions to what a principal has verifiably authorized: authorization logic lives in application code, is neither signed nor independently auditable, and the resulting logs lack evidentiary value. We present Mandato, a governance proxy that enforces digitally signed mandates on agent actions at the protocol level. A mandate is a machine-readable, cryptographically signed authorization artifact specifying which tools an agent may invoke, under which parameter constraints and contextual conditions, for how long, and on whose behalf; the proxy evaluates every tool call against the applicable mandate chain, blocks non-conforming calls in line, and records every decision -- permit, deny, and the evidence for each -- in an append-only, hash-chained audit log designed for evidentiary use and periodically anchored via qualified timestamps. The mandate is deliberately modeled on the civil-law institution of delegation of authority, making the artifact legible to lawyers and auditors, not only to engineers. We give the mandate model and its decision semantics, the reference architecture as an MCP-transparent proxy with separated decision and enforcement points, and a mapping of the mechanism onto EU AI Act Articles 12 and 14, GDPR accountability, NIS2, and eIDAS 2, including a roadmap to qualified attestation through Qualified Trust Service Providers (QTSPs). We describe the implementation status of the reference system and a quantitative evaluation plan covering enforcement overhead, audit completeness, and tamper-evidence verification cost.",
+ "summary": "## Mandato 论文摘要总结\n\n**1. 核心创新点**\n提出 Mandato——一个在协议层（MCP）强制执行「数字签名授权书（mandate）」的治理代理，把 AI Agent 的工具调用限制在委托人可验证授权的范围内，并生成具证据效力的密码学链式审计日志。\n\n**2. 主要方法**\n- **Mandate 模型**：机器可读、密码学签名的授权凭证，规定 Agent 可调用哪些工具、参数约束、上下文条件、有效期以及代表谁行事；其设计刻意对标大陆法系的「代理权授予」制度，使律师和审计人员也能读懂。\n- **参考架构**：对 MCP 透明的代理网关，决策点（PDP）与执行点（PEP）分离，逐笔校验工具调用是否符合适用的 mandate 链，不合规调用在线拦截。\n- **审计层**：所有 permit/deny 决策及其证据写入只追加的哈希链日志，并定期用合格时间戳锚定；给出通往合格信任服务提供商（QTSP）合格认证的路线图。\n- **合规映射**：将该机制对应到欧盟 AI 法案第 12、14 条、GDPR 问责制、NIS2 与 eIDAS 2。\n\n**3. 结论/性能**\n摘要中**未报告实测结果**。文章给出的是 mandate 模型与决策语义、参考架构以及参考系统的实现状态；关于强制执行开销、审计完备性、防篡改验证成本的定量评估仅为**计划中的方案**。因此这更接近一篇系统设计/立场论文，其有效性有待后续实验证实。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-17 13:00:30"
+}

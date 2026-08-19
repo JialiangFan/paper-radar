@@ -1,0 +1,13 @@
+{
+ "id": "2602.24235",
+ "title": "SafeGen-LLM: Enhancing Safety Generalization in Task Planning for Robotic Systems",
+ "authors": "Jialiang Fan, Weizhe Xu, Mengyu Liu, Oleg Sokolsky, Insup Lee, Fangxin Kong",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.24235v1",
+ "abstract": "Safety-critical task planning in robotic systems remains challenging: classical planners suffer from poor scalability, Reinforcement Learning (RL)-based methods generalize poorly, and base Large Language Models (LLMs) cannot guarantee safety. To address this gap, we propose safety-generalizable large language models, named SafeGen-LLM. SafeGen-LLM can not only enhance the safety satisfaction of task plans but also generalize well to novel safety properties in various domains. We first construct a multi-domain Planning Domain Definition Language 3 (PDDL3) benchmark with explicit safety constraints. Then, we introduce a two-stage post-training framework: Supervised Fine-Tuning (SFT) on a constraint-compliant planning dataset to learn planning syntax and semantics, and Group Relative Policy Optimization (GRPO) guided by fine-grained reward machines derived from formal verification to enforce safety alignment and by curriculum learning to better handle complex tasks. Extensive experiments show that SafeGen-LLM achieves strong safety generalization and outperforms frontier proprietary baselines across multi-domain planning tasks and multiple input formats (e.g., PDDLs and natural language).",
+ "summary": "- 核心创新点：提出一种可在多域规划中实现安全性泛化的语言模型 SafeGen-LLM，通过形式化安全约束驱动的两阶段后训练和基于奖励机器的策略优化，显著提升任务规划的安全性与泛化能力。\n\n- 主要方法：\n  - 构建包含显式安全约束的多域 PDDL3 基准测试集。\n  - 两阶段后训练框架：1) 在符合约束的规划数据集上进行监督微调（SFT），以学习规划的语法与语义；2) 引入基于群体相对策略优化的 GRPO，在来自形式化验证的细粒度奖励机器的指导下实现安全对齐，并结合课程学习以处理复杂任务。\n  - 支持多种输入格式（PDDL 与自然语言），以提升对不同场景的适应性。\n\n- 结论/性能：实验表明 SafeGen-LLM 在安全性泛化方面表现突出，在多域规划任务和多输入格式下，显著优于前沿的专有基线。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-02 14:01:52"
+}

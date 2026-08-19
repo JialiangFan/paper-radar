@@ -1,0 +1,13 @@
+{
+ "id": "2604.01676",
+ "title": "GPA: Learning GUI Process Automation from Demonstrations",
+ "authors": "Zirui Zhao, Jun Hao Liew, Yan Yang, Wenzhuo Yang, Ziyang Luo, Doyen Sahoo, Silvio Savarese, Junnan Li",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01676v1",
+ "abstract": "GUI Process Automation (GPA) is a lightweight but general vision-based Robotic Process Automation (RPA), which enables fast and stable process replay with only a single demo. Addressing the fragility of traditional RPA and the non-deterministic risks of current vision language model-based GUI agents, GPA introduces three core benefits: (1) Robustness via Sequential Monte Carlo-based localization to handle rescaling and detection uncertainty; (2) Deterministic and Reliability safeguarded by readiness calibration; and (3) Privacy through fast, fully local execution. This approach delivers the adaptability, robustness, and security required for enterprise workflows. It can also be used as an MCP/CLI tool by other agents with coding capabilities so that the agent only reasons and orchestrates while GPA handles the GUI execution. We conducted a pilot experiment to compare GPA with Gemini 3 Pro (with CUA tools) and found that GPA achieves higher success rate with 10 times faster execution speed in finishing long-horizon GUI tasks.",
+ "summary": "- 核心创新点（1句话）：\n  通过序列蒙特卡洛定位、就绪性校准与全本地化执行的组合，实现单次演示驱动的鲁棒、确定性且私有化的 GUI 过程自动化。\n\n- 主要方法：\n  - 基于视觉的 GUI 自动化，核心采用序列蒙特卡洛（Sequential Monte Carlo）定位来应对缩放和检测不确定性；\n  - 引入就绪性校准以提供确定性与可靠性保障；\n  - 全本地执行以确保隐私安全，并可作为具编码能力的代理的 MCP/CLI 工具进行解耦式协作，让 GPA 负责 GUI 执行，代理只负责推理与编排。\n\n- 结论/性能：\n  - 在初步对比实验中，GPA 相对于 Gemini 3 Pro（CUA 工具）在完成长时程 GUI 任务上具有更高的成功率，且执行速度快十倍。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-03 13:05:53"
+}

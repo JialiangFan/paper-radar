@@ -1,0 +1,13 @@
+{
+ "id": "2512.14329",
+ "title": "A data-physics hybrid generative model for patient-specific post-stroke motor rehabilitation using wearable sensor data",
+ "authors": "Yanning Dai, Chenyu Tang, Ruizhi Zhang, Wenyu Yang, Yilan Zhang, Yuhui Wang, Junliang Chen, Xuhang Chen, Ruimou Xie, Yangyue Cao, Qiaoying Li, Jin Cao, Tao Li, Hubin Zhao, Yu Pan, Arokia Nathan, Xin Gao, Peter Smielewski, Shuo Gao",
+ "date": "2025-12-16",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.14329v1",
+ "abstract": "Dynamic prediction of locomotor capacity after stroke is crucial for tailoring rehabilitation, yet current assessments provide only static impairment scores and do not indicate whether patients can safely perform specific tasks such as slope walking or stair climbing. Here, we develop a data-physics hybrid generative framework that reconstructs an individual stroke survivor's neuromuscular control from a single 20 m level-ground walking trial and predicts task-conditioned locomotion across rehabilitation scenarios. The system combines wearable-sensor kinematics, a proportional-derivative physics controller, a population Healthy Motion Atlas, and goal-conditioned deep reinforcement learning with behaviour cloning and generative adversarial imitation learning to generate physically plausible, patient-specific gait simulations for slopes and stairs. In 11 stroke survivors, the personalized controllers preserved idiosyncratic gait patterns while improving joint-angle and endpoint fidelity by 4.73% and 12.10%, respectively, and reducing training time to 25.56% relative to a physics-only baseline. In a multicentre pilot involving 21 inpatients, clinicians who used our locomotion predictions to guide task selection and difficulty obtained larger gains in Fugl-Meyer lower-extremity scores over 28 days of standard rehabilitation than control clinicians (mean change 6.0 versus 3.7 points). These findings indicate that our generative, task-predictive framework can augment clinical decision-making in post-stroke gait rehabilitation and provide a template for dynamically personalized motor recovery strategies.",
+ "summary": "- 核心创新点：提出一种数据-物理混合的生成框架，能够以单次20 m平地步态试验重建个体中风患者的神经肌肉控制，并对坡道与楼梯等任务进行任务条件化预测，实现动态、个性化的康复路径。\n\n- 主要方法：将穿戴传感器的运动学数据与一个比例-导数物理控制器、一个健康运动图谱（Healthy Motion Atlas）以及基于目标条件的深度强化学习（包含行为克隆和生成对抗模仿学习）整合，构建数据-物理混合生成框架，以生成物理可信且患者特异的坡道/楼梯步态仿真并重建神经肌肉控制。\n\n- 结论/性能：在11名中风幸存者中，个性化控制器保持原有步态特征的同时，关节角度拟合度提升约4.73%，端点拟合度提升约12.10%，训练时间仅相当于物理-仅基线的25.56%；在涉及21名住院患者的多中心试点中，使用预测来指导任务选择与难度的临床医生，28天康复后下肢Fugl-Meyer评分平均提升为6.0分，比对照组的3.7分更高，显示该框架可增强临床决策并为动态个性化运动康复提供模板。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:01:33"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.11020",
+ "title": "When Fusion Helps and When It Breaks: View-Aligned Robustness in Same-Source Financial Imaging",
+ "authors": "Rui Ma",
+ "date": "2026-02-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11020v1",
+ "abstract": "We study same-source multi-view learning and adversarial robustness for next-day direction prediction with financial image representations. On Shanghai Gold Exchange (SGE) spot gold data (2005-2025), we construct two window-aligned views from each rolling window: an OHLCV-rendered price/volume chart and a technical-indicator matrix. To ensure reliable evaluation, we adopt leakage-resistant time-block splits with embargo and use Matthews correlation coefficient (MCC). We find that results depend strongly on the label-noise regime: we apply an ex-post minimum-movement filter that discards samples with realized next-day absolute return below tau to define evaluation subsets with reduced near-zero label ambiguity. This induces a non-monotonic data-noise trade-off that can reveal predictive signal but eventually increases variance as sample size shrinks; the filter is used for offline benchmark construction rather than an inference-time decision rule. In the stabilized subsets, fusion is regime dependent: early fusion by channel stacking can exhibit negative transfer, whereas late fusion with dual encoders and a fusion head provides the dominant clean-performance gains; cross-view consistency regularization has secondary, backbone-dependent effects. We further evaluate test-time L-infinity perturbations using FGSM and PGD under two threat scenarios: view-constrained attacks that perturb one view and joint attacks that perturb both. We observe severe vulnerability at tiny budgets with strong view asymmetry. Late fusion consistently improves robustness under view-constrained attacks, but joint attacks remain challenging and can still cause substantial worst-case degradation.",
+ "summary": "- 核心创新点：在同源多视图金融影像任务中系统比较早期融合与晚期融合对鲁棒性的影响，并引入基于最小移动阈值的离线评测子集以研究数据噪声-信号的非单调关系，同时评估两视图在对抗扰动下的鲁棒性。\n\n- 主要方法：构造两种窗口对齐视图（OHLCV 图像和技术指标矩阵），使用 leakage-resistant 的时间块划分与 embargo，采用 Matthews相关系数 MCC 进行评估；引入 ex-post 最小移动过滤器筛除低波动样本形成稳定子集用于离线基准；采用双编码器+融合头的晚期融合并辅以跨视图一致性正则化，与早期通过通道堆叠的融合进行对比；在测试阶段对 FGSM/PGD 做两种威胁情景的 L∞ 攻击评估（仅扰动一个视图 vs 同时扰动两视图）。\n\n- 结论/性能：在稳定子集上，晚期融合相比早期融合表现出更强的清晰信号与性能提升，且对视图受限的攻击鲁棒性显著优于早期融合；对两视图同时被扰动的联合攻击仍具挑战性，可能造成显著的 worst-case 降低；跨视图一致性正则化的效果依赖于 backbone 设置，通常次于主干和融合头设计。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-12 14:01:17"
+}

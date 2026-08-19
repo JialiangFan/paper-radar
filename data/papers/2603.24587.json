@@ -1,0 +1,13 @@
+{
+ "id": "2603.24587",
+ "title": "DreamerAD: Efficient Reinforcement Learning via Latent World Model for Autonomous Driving",
+ "authors": "Pengxuan Yang, Yupeng Zheng, Deheng Qian, Zebin Xing, Qichao Zhang, Linbo Wang, Yichen Zhang, Shaoyu Guo, Zhongpu Xia, Qiang Chen, Junyu Han, Lingyun Xu, Yifeng Pan, Dongbin Zhao",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24587v1",
+ "abstract": "We introduce DreamerAD, the first latent world model framework that enables efficient reinforcement learning for autonomous driving by compressing diffusion sampling from 100 steps to 1 - achieving 80x speedup while maintaining visual interpretability. Training RL policies on real-world driving data incurs prohibitive costs and safety risks. While existing pixel-level diffusion world models enable safe imagination-based training, they suffer from multi-step diffusion inference latency (2s/frame) that prevents high-frequency RL interaction. Our approach leverages denoised latent features from video generation models through three key mechanisms: (1) shortcut forcing that reduces sampling complexity via recursive multi-resolution step compression, (2) an autoregressive dense reward model operating directly on latent representations for fine-grained credit assignment, and (3) Gaussian vocabulary sampling for GRPO that constrains exploration to physically plausible trajectories. DreamerAD achieves 87.7 EPDMS on NavSim v2, establishing state-of-the-art performance and demonstrating that latent-space RL is effective for autonomous driving.",
+ "summary": "以下为中文简要总结：\n\n1) 核心创新点\n- 提出 DreamerAD，一种基于潜在世界模型的高效强化学习框架，通过将扩散采样从100步压缩到1步，实现约80×加速，同时保持可视化可解释性。\n\n2) 主要方法\n- 利用来自视频生成模型的去噪潜在特征，并通过三大机制实现高效学习：\n  - shortcut forcing：通过递归的多分辨率步压缩，降低扩散采样的复杂度；\n  - 自回归的密集奖励模型，在潜在表示上进行细粒度信用分配；\n  - 针对 GRPO 的高斯词汇采样，将探索限制在物理上可行的轨迹上；\n- 整合潜在空间的强化学习（类似 Dreamer 的潜在世界模型框架）用于自主驾驶场景。\n  \n3) 结论/性能\n- 在 NavSim v2 上达到 87.7 EPDMS，达到SOTA水平；\n- 实现了扩散采样的显著加速（80×）且保持视觉可解释性，验证潜在空间 RL 在自动驾驶中的有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-26 13:03:18"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.08656",
+ "title": "From Player to Master: Enhancing Test-Time Learning of LLM Agents via Reinforcement Learning over Memory",
+ "authors": "Yishuo Cai, Xingyu Guo, Xuancheng Huang, Jinhua Du, Can Huang, Wenxuan Huang, Wenhan Ma, Yuyang Hu, Aohan Zeng, Jie Tang, Xu Sun",
+ "date": "2026-06-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08656v1",
+ "abstract": "Large language model (LLM) agents are increasingly deployed in long-running settings where improving through experience at test time becomes important. A common approach is to update an explicit memory after each interaction to guide future decisions. However, most existing methods rely on hand-designed prompting rules, making it difficult to align memory updates with downstream objectives over multi-step horizons consistently. We propose MemoPilot, a plug-in memory copilot that explicitly trains the memory update process to improve a frozen LLM's performance across sequential interactions. We formulate memory updating as a multi-turn decision problem and optimize it end-to-end with multi-turn GRPO. Our training recipe introduces (i) a turn-wise reward signal and (ii) a context-independent, turn-level advantage estimation across rollouts, enabling finer-grained credit assignment and more stable training in multi-turn settings. We evaluate MemoPilot on two testbeds: multi-round Rock-Paper-Scissors (RPS) and Limit Texas Hold'em (LHE). Across both environments, MemoPilot substantially improves test-time learning of a frozen player over strong baselines, ranking first in Elo ratings on both games (1762 on LHE and 1590 on RPS) and outperforming all baseline memory methods and proprietary models, including DeepSeek-V3.2.",
+ "summary": "# 论文总结\n\n1. **核心创新点**：提出 **MemoPilot**，一个可插拔的\"记忆副驾驶\"，通过强化学习显式训练记忆更新过程，让冻结的 LLM 智能体在测试时通过经验持续提升表现。\n\n2. **主要方法**：将记忆更新建模为**多轮决策问题**，使用**多轮 GRPO**进行端到端优化；引入两项关键技术：(i) **逐轮奖励信号**，(ii) **上下文无关的轮级优势估计**，实现更细粒度的信用分配和更稳定的多轮训练。\n\n3. **结论/性能**：在**石头剪刀布 (RPS)** 和**限注德州扑克 (LHE)** 两个测试平台上，MemoPilot 显著优于所有基线记忆方法和专有模型（包括 DeepSeek-V3.2），Elo 评分均排名第一（LHE 1762，RPS 1590）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-09 13:01:07"
+}

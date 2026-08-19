@@ -1,0 +1,13 @@
+{
+ "id": "2608.05695",
+ "title": "DreamGuard: Efficient Runtime Guardrail for LLM Agents via Risk-Aware World Model",
+ "authors": "Wenhao Lin, Chenyu Yu, Xingwei Lin, Sicong Cao, Xiang Chen, Lei Xue, Le Yu, Letian Sha, Chunming Wu",
+ "date": "2026-08-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.05695v1",
+ "abstract": "As large language model (LLM) agents increasingly invoke external tools and interact with real-world systems, unsafe actions may cause irreversible consequences on external states, user data, and downstream services. Recent runtime guardrails mitigate such risks by checking proposed actions before execution, but many remain reactive: they primarily assess the apparent safety of the current action, lacking an explicit model of how risk evolves across the trajectory. This limitation creates a critical blind spot for long-horizon risks, where individually benign-looking actions can gradually drift the agent toward hazardous states. In response, we propose DreamGuard, a proactive guardrail for LLM agents built around a risk-aware world model. The world model maintains a compact recurrent latent state over the trajectory and predicts future latent states from which DreamGuard derives immediate-hazard and prefix-risk evidence. It then fuses these multi-horizon signals into intervention decisions before execution. Experiments across four benchmarks and an online guardrail evaluation show that DreamGuard outperforms generic, reactive, and proactive guardrail baselines, achieves the best safety-utility trade-off among evaluated guardrails, and maintains an average end-to-end latency of 25 ms per call.",
+ "summary": "## DreamGuard 论文摘要总结\n\n**1. 核心创新点**\n提出 DreamGuard——一种基于「风险感知世界模型」的主动式 LLM 智能体运行时护栏，通过预测未来状态来捕捉现有反应式护栏看不见的长程累积风险。\n\n**2. 主要方法**\n- 构建一个**风险感知世界模型**，在轨迹上维护紧凑的**循环隐状态（recurrent latent state）**；\n- 由该隐状态**预测未来的潜在状态**，并从中导出两类证据：**即时危害（immediate-hazard）**与**前缀风险（prefix-risk）**；\n- 将这些**多时间尺度信号融合**成干预决策，在动作真正执行**之前**完成拦截判断。\n\n**3. 结论/性能**\n- 在 **4 个基准测试 + 1 个在线护栏评测**中，优于通用型、反应式和主动式护栏基线；\n- 在所评估的护栏中取得**最佳的安全性—可用性权衡（safety-utility trade-off）**；\n- 端到端平均延迟仅 **25 ms/次调用**，开销极低，适合实际部署。\n\n**一句话总结**：把「世界模型 + 想象未来」的思路引入智能体安全护栏，用极小的延迟代价换取对长程渐进式风险的提前预警。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-07 13:04:04"
+}

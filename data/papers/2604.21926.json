@@ -1,0 +1,13 @@
+{
+ "id": "2604.21926",
+ "title": "Seeing Without Eyes: 4D Human-Scene Understanding from Wearable IMUs",
+ "authors": "Hao-Yu Hsu, Tianhang Cheng, Jing Wen, Alexander G. Schwing, Shenlong Wang",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21926v1",
+ "abstract": "Understanding human activities and their surrounding environments typically relies on visual perception, yet cameras pose persistent challenges in privacy, safety, energy efficiency, and scalability. We explore an alternative: 4D perception without vision. Its goal is to reconstruct human motion and 3D scene layouts purely from everyday wearable sensors. For this we introduce IMU-to-4D, a framework that repurposes large language models for non-visual spatiotemporal understanding of human-scene dynamics. IMU-to-4D uses data from a few inertial sensors from earbuds, watches, or smartphones and predicts detailed 4D human motion together with coarse scene structure. Experiments across diverse human-scene datasets show that IMU-to-4D yields more coherent and temporally stable results than SoTA cascaded pipelines, suggesting wearable motion sensors alone can support rich 4D understanding.",
+ "summary": "1) 核心创新点：通过将大型语言模型用于非视觉的时空推理，结合可穿戴IMU传感器数据，实现无需摄像头的4D人‑场景理解。\n\n2) 主要方法：提出 IMU-to-4D 框架，使用来自耳塞、手表或智能手机的少量惯性传感器数据输入，改造并利用大型语言模型进行跨模态时空理解，从而预测详细的4D人体运动与粗略场景结构。\n\n3) 结论/性能：在多样化的人‑场景数据集上，该方法比现有最先进的级联管线更具连贯性和时间稳定性，表明可穿戴传感器单独就能实现丰富的4D理解。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-24 13:02:34"
+}

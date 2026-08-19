@@ -1,0 +1,13 @@
+{
+ "id": "2512.04082",
+ "title": "PosterCopilot: Toward Layout Reasoning and Controllable Editing for Professional Graphic Design",
+ "authors": "Jiazhe Wei, Ken Li, Tianyu Lao, Haofan Wang, Liang Wang, Caifeng Shan, Chenyang Si",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04082v1",
+ "abstract": "Graphic design forms the cornerstone of modern visual communication, serving as a vital medium for promoting cultural and commercial events. Recent advances have explored automating this process using Large Multimodal Models (LMMs), yet existing methods often produce geometrically inaccurate layouts and lack the iterative, layer-specific editing required in professional workflows. To address these limitations, we present PosterCopilot, a framework that advances layout reasoning and controllable editing for professional graphic design. Specifically, we introduce a progressive three-stage training strategy that equips LMMs with geometric understanding and aesthetic reasoning for layout design, consisting of Perturbed Supervised Fine-Tuning, Reinforcement Learning for Visual-Reality Alignment, and Reinforcement Learning from Aesthetic Feedback. Furthermore, we develop a complete workflow that couples the trained LMM-based design model with generative models, enabling layer-controllable, iterative editing for precise element refinement while maintaining global visual consistency. Extensive experiments demonstrate that PosterCopilot achieves geometrically accurate and aesthetically superior layouts, offering unprecedented controllability for professional iterative design.",
+ "summary": "- 核心创新点：提出 PosterCopilot，通过三阶段训练与与生成模型耦合，实现大模型的布局推理、几何理解与分层可控编辑，达到几何准确且美学优越的专业排版。\n\n- 主要方法：\n  - 三阶段训练策略：Perturbed Supervised Fine-Tuning、Reinforcement Learning for Visual-Reality Alignment、Reinforcement Learning from Aesthetic Feedback，赋予模型几何理解和美学推理能力。\n  - 将基于大模型的设计模型与生成模型结合，实现层级可控、迭代编辑，用以对元素进行精确 refinement，同时保持全局视觉一致性。\n\n- 结论/性能：大量实验表明 PosterCopilot 能产出几何上准确且在美学上更优的布局，且提供前所未有的可控性，显著提升专业迭代设计的可操作性与效率。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:04:06"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.22722",
+ "title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+ "authors": "Rajinder Sandhu, Di Mu, Cheng Chang, Md Shahriar Tasjid, Himanshu Rai, Maksims Volkovs, Ga Wu",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22722v1",
+ "abstract": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base. Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+ "summary": "1) 核心创新点（一句话概括）\n提出 Utility-Aligned Embeddings (UAE) 框架，通过 Utility-Modulated InfoNCE 蒸馏将来自 LLM 生成效用的分布信号直接注入嵌入空间，使检索获得与生成效用对齐的向量表示，而无需测试时的昂贵 LLM 推理。\n\n2) 主要方法（技术要点）\n- 将检索问题视为分布匹配，训练一个双编码器（bi-encoder）来模仿来自 perplexity 降低的实用性分布；  \n- 使用 Utility-Modulated InfoNCE 目标，将 graded 的实用性信号引入嵌入学习中，进行知识蒸馏式对齐；  \n- 该方法在训练阶段即可实现对 LLM 生成效用的对齐，无需在测试时进行 LLM 推理。\n\n3) 结论/性能（取得的效果）\n- 在 QASPER 基准上，相比强基线 BGE-Base，UAE 在 Recall@1 提升 30.59%、MAP 提升 30.16%、Token F1 提升 17.3%；  \n- 速度方面，UAE 超过现有高效的 LLM 重排序方法约 180 倍，且保持具有竞争力的检索性能。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-27 13:01:36"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.26379",
+ "title": "When Does LeJEPA Learn a World Model?",
+ "authors": "David Klindt, Yann LeCun, Randall Balestriero",
+ "date": "2026-05-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.26379v1",
+ "abstract": "A representation that scrambles the true degrees of freedom of the world cannot support reliable planning or compositional generalization. We prove that LeJEPA (alignment plus Gaussian regularization) linearly recovers the world's latent variables from nonlinear observations, a property known as linear identifiability, in a broad class of worlds where latents evolve under stationary, additive-noise transitions. Our main result is that among all such worlds, the Gaussian is the unique latent distribution for which this guarantee holds. The forward direction rests on a spectral decomposition in which each degree of nonlinearity is strictly penalized by alignment, making the linear map the optimum; the converse rules out every non-Gaussian alternative. We further prove an approximate identifiability result where the guarantee degrades gracefully, and show that linear, orthogonal identifiability enables optimal latent-space planning. We validate the theory with experiments ranging from 2D examples to 1024-dimensional latents, including distributional ablations and pixel-based robotic control. Our theory turns an empirically successful recipe into a mathematical guarantee, providing the foundation for building World Models that provably recover the structure of the world.",
+ "summary": "## 论文总结：When Does LeJEPA Learn a World Model?\n\n**1. 核心创新点**\n首次从理论上证明了 LeJEPA（对齐 + 高斯正则化）能够从非线性观测中线性恢复世界的潜变量，并指出高斯分布是唯一能保证这一性质的潜变量分布。\n\n**2. 主要方法**\n基于谱分解的数学框架，对 LeJEPA 的\"对齐 + 高斯正则化\"机制进行严格分析：在潜变量服从平稳加性噪声转移的世界中，证明对齐项会严格惩罚任何非线性映射，使线性映射成为唯一最优解；反向证明则排除了所有非高斯分布的可能性。还给出了近似可辨识性结果（性能优雅退化），并将理论扩展到潜空间最优规划。\n\n**3. 结论/性能**\n理论上把 LeJEPA 这一经验上有效的方法升级为带数学保证的\"线性可辨识性\"结论；实验涵盖从 2D 玩具示例到 1024 维潜空间，包括分布消融实验和基于像素的机器人控制任务，均验证了理论的正确性，为构建可证明地恢复世界结构的世界模型奠定了基础。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:03:51"
+}

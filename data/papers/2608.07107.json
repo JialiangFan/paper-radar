@@ -1,0 +1,13 @@
+{
+ "id": "2608.07107",
+ "title": "MemWM: Memory-Augmented Text-Based World Model",
+ "authors": "Yujun Wang, Tao Zhang, Jinhe Bi, Aniri, Wenxuan Ye, Boliang Liu, Sikuan Yan, Shuning Wang, Xuebing Zhou, Sören Pirk, Hinrich Schütze, Yunpu Ma",
+ "date": "2026-08-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.07107v1",
+ "abstract": "World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions. Yet fluent next-state predictions can still omit task-critical facts, corrupt product attributes, or apply incorrect transition rules. To address such systematic prediction errors, we introduce MemWM, a memory-augmented text-based world model. MemWM uses world memory, a curated memory bank of transition rules, state caches, and hard-to-predict facts, to condition next-state imagination. We evaluate factual state preservation with Structured State Fidelity (SSF), which scores predicted states through benchmark-specific facts and fields. Compared with SFT, memory-augmented training improves SSF by up to 206.3%. In the full planning setting, we keep the policy model frozen and provide policy-side world skill: retrieved task-level skills and step-wise corrective guidance for action selection. Across ALFWorld, WebShop, and ScienceWorld, memory-augmented agents improve downstream success over an SFT-trained world-model agent, with up to a 65.4% relative gain. Sensitivity analyses further show that retrieved memory improves task success and efficiency under different memory and action-budget settings.",
+ "summary": "## MemWM: Memory-Augmented Text-Based World Model\n\n**1. 核心创新点**\n提出 MemWM——一个记忆增强的文本世界模型，通过外部\"世界记忆\"库来纠正下一状态预测中的系统性事实错误（遗漏关键事实、篡改商品属性、误用状态转移规则）。\n\n**2. 主要方法**\n- **世界记忆（world memory）**：一个经过整理的记忆库，包含三类内容——状态转移规则、状态缓存（state caches）、以及难以预测的事实；用它来条件化（condition）世界模型对下一状态的\"想象\"。\n- **评估指标 SSF（Structured State Fidelity）**：针对各基准的特定事实与字段，对预测状态的事实保真度打分。\n- **规划阶段的策略侧世界技能（world skill）**：冻结策略模型不做训练，只在推理时注入检索到的任务级技能和逐步纠错指导来辅助动作选择。\n\n**3. 结论/性能**\n- 相比 SFT 基线，记忆增强训练使 SSF 最高提升 **206.3%**。\n- 在 ALFWorld、WebShop、ScienceWorld 三个环境的完整规划任务中，相比基于 SFT 世界模型的智能体，下游任务成功率最高获得 **65.4% 的相对提升**。\n- 敏感性分析表明，在不同记忆规模和动作预算设置下，检索式记忆都能同时改善任务成功率与执行效率。\n\n> 说明：本次只按你给的三段式格式做了简要总结；若需要完整的文献综述式解析（背景／问题／贡献／方法论）并自动写入 Obsidian vault，可以让我走 `/paper-review` 流程。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-10 13:04:08"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.18563",
+ "title": "Dual Alignment Between Language Model Layers and Human Sentence Processing",
+ "authors": "Tatsuki Kuribayashi, Alex Warstadt, Yohei Oseki, Ethan Gotlieb Wilcox",
+ "date": "2026-04-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.18563v1",
+ "abstract": "A recent study (Kuribayashi et al., 2025) has shown that human sentence processing behavior, typically measured on syntactically unchallenging constructions, can be effectively modeled using surprisal from early layers of large language models (LLMs). This raises the question of whether such advantages of internal layers extend to more syntactically challenging constructions, where surprisal has been reported to underestimate human cognitive effort. In this paper, we begin by exploring internal layers that better estimate human cognitive effort observed in syntactic ambiguity processing in English. Our experiments show that, in contrast to naturalistic reading, later layers better estimate such a cognitive effort, but still underestimate the human data. This dual alignment sheds light on different modes of sentence processing in humans and LMs: naturalistic reading employs a somewhat weak prediction akin to earlier layers of LMs, while syntactically challenging processing requires more fully-contextualized representations, better modeled by later layers of LMs. Motivated by these findings, we also explore several probability-update measures using shallow and deep layers of LMs, showing a complementary advantage to single-layer's surprisal in reading time modeling.",
+ "summary": "- 核心创新点：提出并验证大语言模型（LLM）不同层次的内部表征在预测人类自然阅读与语法歧义处理的认知努力上存在双重对齐，晚层更适合处理语法困难情景，而早层更适合自然阅读，并提出层级结合的概率更新策略以提升阅读时间建模。\n\n- 主要方法：通过对LLM不同层的 surprisal 值在英文句法歧义处理与自然阅读数据上的比较，评估早层与晚层对人类认知努力的拟合程度；并引入浅层与深层层次的概率更新量度，评估其对阅读时间建模的互补作用。\n\n- 结论/性能：晚层更能较好地估计语法歧义处理的认知努力，但仍低估人类数据；自然阅读与早层表现相近，存在双重对齐；将浅层与深层的概率更新结合后的模型在阅读时间建模上比单层 surprisal 具有显著的互补优势。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-21 13:04:23"
+}

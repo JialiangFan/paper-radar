@@ -1,0 +1,13 @@
+{
+ "id": "2604.19485",
+ "title": "EVPO: Explained Variance Policy Optimization for Adaptive Critic Utilization in LLM Post-Training",
+ "authors": "Chengjun Pan, Shichun Liu, Jiahang Lin, Dingwei Zhu, Jiazheng Zhang, Shihan Dou, Songyang Gao, Zhenhua Han, Binghai Wang, Rui Zheng, Xuanjing Huang, Tao Gui, Yansong Feng",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19485v1",
+ "abstract": "Reinforcement learning (RL) for LLM post-training faces a fundamental design choice: whether to use a learned critic as a baseline for policy optimization. Classical theory favors critic-based methods such as PPO for variance reduction, yet critic-free alternatives like GRPO have gained widespread adoption due to their simplicity and competitive performance. We show that in sparse-reward settings, a learned critic can inject estimation noise that exceeds the state signal it captures, increasing rather than reducing advantage variance. By casting baseline selection as a Kalman filtering problem, we unify PPO and GRPO as two extremes of the Kalman gain and prove that explained variance (EV), computable from a single training batch, identifies the exact boundary: positive EV indicates the critic reduces variance, while zero or negative EV signals that it inflates variance. Building on this insight, we propose Explained Variance Policy Optimization (EVPO), which monitors batch-level EV at each training step and adaptively switches between critic-based and batch-mean advantage estimation, provably achieving no greater variance than the better of the two at every step. Across four tasks spanning classical control, agentic interaction, and mathematical reasoning, EVPO consistently outperforms both PPO and GRPO regardless of which fixed baseline is stronger on a given task. Further analysis confirms that the adaptive gating tracks critic maturation over training and that the theoretically derived zero threshold is empirically optimal.",
+ "summary": "- 核心创新点：提出 EVPO（Explained Variance Policy Optimization），通过解释方差 EV 在卡尔曼滤波框架下自适应切换是否使用学习的评论家基线，以在每一步实现对策略方差的最优控制并统一了 PPO 与 GRPO 的极端。\n\n- 主要方法：将基线选择问题建模为卡尔曼滤波问题，将 PPO 与 GRPO 视为卡尔曼增益的两端；在每个训练批次计算解释方差 EV，根据 EV 的符号决定使用 critic-based 还是批量均值的优势估计，提出自适应的 EVPO 算法。\n\n- 结论/性能：在四类任务（包括经典控制、代理人交互和数学推理等）上，EVPO 在所有任务中均优于固定的 PPO 与 GRPO，无论哪一个基线更强；理论的零阈值在实验中也被证实为最优，且自适应门控随 critic 演化而同步。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-22 13:02:42"
+}

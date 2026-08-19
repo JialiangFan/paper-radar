@@ -1,0 +1,13 @@
+{
+ "id": "2512.22560",
+ "title": "RollArt: Scaling Agentic RL Training via Disaggregated Infrastructure",
+ "authors": "Wei Gao, Yuheng Zhao, Tianyuan Wu, Shaopan Xiong, Weixun Wang, Dakai An, Lunxi Cao, Dilxat Muhtar, Zichen Liu, Haizhou Zhao, Ju Huang, Siran Yang, Yongbin Li, Wenbo Su, Jiamang Wang, Lin Qu, Bo Zheng, Wei Wang",
+ "date": "2025-12-27",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22560v1",
+ "abstract": "Agentic Reinforcement Learning (RL) enables Large Language Models (LLMs) to perform autonomous decision-making and long-term planning. Unlike standard LLM post-training, agentic RL workloads are highly heterogeneous, combining compute-intensive prefill phases, bandwidth-bound decoding, and stateful, CPU-heavy environment simulations. We argue that efficient agentic RL training requires disaggregated infrastructure to leverage specialized, best-fit hardware. However, naive disaggregation introduces substantial synchronization overhead and resource underutilization due to the complex dependencies between stages.\n  We present RollArc, a distributed system designed to maximize throughput for multi-task agentic RL on disaggregated infrastructure. RollArc is built on three core principles: (1) hardware-affinity workload mapping, which routes compute-bound and bandwidth-bound tasks to bestfit GPU devices, (2) fine-grained asynchrony, which manages execution at the trajectory level to mitigate resource bubbles, and (3) statefulness-aware computation, which offloads stateless components (e.g., reward models) to serverless infrastructure for elastic scaling. Our results demonstrate that RollArc effectively improves training throughput and achieves 1.35-2.05\\(\\times\\) end-to-end training time reduction compared to monolithic and synchronous baselines. We also evaluate RollArc by training a hundreds-of-billions-parameter MoE model for Qoder product on an Alibaba cluster with more than 3,000 GPUs, further demonstrating RollArc scalability and robustness. The code is available at https://github.com/alibaba/ROLL.",
+ "summary": "- 核心创新点（1句话概括）\n  在分离式异构基础设施上进行 agentic RL 训练，通过硬件亲和性负载映射、轨迹级细粒度异步和有状态组件的无服务器化外包来显著提升训练吞吐量。\n\n- 主要方法（简述使用的技术/模型）\n  - 硬件亲和性负载映射：将计算密集型和带宽受限的任务分配给最合适的GPU设备以提高利用率。\n  - 轨迹级细粒度异步：在轨迹级别进行任务调度与执行，减小资源“泡沫”造成的阻塞。\n  - 有状态组件的无服务器化外包：将无状态部分（如奖励模型等）卸载到 serverless 基础设施以实现弹性扩展。\n  - 面向多任务的 agentic RL 训练框架，并在大规模集群上进行评估（ Alibaba 集群 > 3000 GPUs），包括对数百亿级 MoE 模型的实验验证。\n\n- 结论/性能（取得的效果）\n  - 相较于单体化和同步基线，RollArc 可实现端到端训练时间降低约 1.35–2.05 倍，显著提升训练吞吐量。\n  - 在阿里云超过 3000 GPUs 的集群上对数百亿级参数的 MoE 模型进行评估，进一步证明其可扩展性和鲁棒性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:56:33"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.18955",
+ "title": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos",
+ "authors": "Runze Xu, Yiluo Zhang, Jian Wang, Yu Wang, Jincheng Yu",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18955v1",
+ "abstract": "Training generalist Vision-Language-Action(VLA) models typically requires massive, diverse robotic datasets with high-fidelity action annotations. While egocentric human manipulation videos are abundant and capture significant environmental diversity, the absence of action labels makes them difficult to use in conventional training paradigms. To address this, we propose a latent-action-based framework designed to extract general action priors from unlabeled human videos. The architecture features a Hybrid Disentangled VQ-VAE that decouples motion dynamics from environmental backgrounds through physical masks, enabling the construction of a cross-embodiment action codebook. By pre-training on human videos with the codebook, the VLM backbone learns deep representations of action intent. For adaptation to specific embodiments, we introduce an intent-perception decoupling strategy where the VLM predicts the action intent while a separate frozen visual encoder provides state-specific features to the action expert, thereby reducing action hallucinations. Results in simulation and real-world environments show that our method, pre-trained exclusively on unlabeled human videos, performs competitively with state-of-the-art VLA models trained on massive annotated datasets, requiring only 50 trajectories for downstream adaptation.",
+ "summary": "## 论文总结\n\n**标题**：Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos（基于运动聚焦潜在动作的跨载体 VLA 训练，利用人类第一视角视频）\n\n1. **核心创新点**：提出一种潜在动作（latent action）框架，从**无动作标注的人类第一视角视频**中提取通用动作先验，从而训练通用的视觉-语言-动作（VLA）模型，摆脱对海量带标注机器人数据的依赖。\n\n2. **主要方法**：\n   - **Hybrid Disentangled VQ-VAE**：借助物理掩码（physical masks）将\"运动动态\"与\"环境背景\"解耦，构建跨载体（cross-embodiment）的动作码本（codebook）。\n   - 用该码本在人类视频上预训练 VLM 主干，使其学到深层的\"动作意图\"表征。\n   - **意图-感知解耦策略**：下游适配时，由 VLM 预测动作意图，另用一个冻结的视觉编码器为动作专家提供状态相关特征，以减少\"动作幻觉\"。\n\n3. **结论/性能**：仅用无标注人类视频预训练，在仿真和真实环境中的表现可与那些依赖海量标注数据训练的 SOTA VLA 模型相媲美，且下游适配**仅需 50 条轨迹**。\n\n---\n\n如需更深入的文献综述式分析（主题、背景、贡献、方法论拆解，并自动输出中英文双语版本到 Obsidian），可以使用 `/paper-review` 技能。需要我调用吗？",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-06-18 13:05:02"
+}

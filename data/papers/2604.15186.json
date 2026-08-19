@@ -1,0 +1,13 @@
+{
+ "id": "2604.15186",
+ "title": "Scepsy: Serving Agentic Workflows Using Aggregate LLM Pipelines",
+ "authors": "Marcel Wagenländer, Otto White, Britannio Jarrett, Pedro Silvestre, Yanda Tao, Guo Li, Huanzhou Zhu, Llúis Vilanova, Peter Pietzuch",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15186v1",
+ "abstract": "Agentic workflows carry out complex tasks by orchestrating multiple large language models (LLMs) and tools. Serving such workflows at a target throughput with low latency is challenging because they can be defined using arbitrary agentic frameworks and exhibit unpredictable execution times: execution may branch, fan-out, or recur in data-dependent ways. Since LLMs in workflows often outnumber available GPUs, their execution also leads to GPU oversubscription.\n  We describe Scepsy, a new agentic serving system that efficiently schedules arbitrary multi-LLM agentic workflows onto a GPU cluster. Scepsy exploits the insight that, while agentic workflows have unpredictable end-to-end latencies, the shares of each LLM's total execution times are comparatively stable across executions. Scepsy decides on GPU allocations based on these aggregate shares: first, it profiles the LLMs under different parallelism degrees. It then uses these statistics to construct an Aggregate LLM Pipeline, which is a lightweight latency/throughput predictor for allocations. To find a GPU allocation that minimizes latency while achieving a target throughput, Scepsy uses the Aggregate LLM Pipeline to explore a search space over fractional GPU shares, tensor parallelism degrees, and replica counts. It uses a hierarchical heuristic to place the best allocation onto the GPU cluster, minimizing fragmentation, while respecting network topology constraints. Our evaluation on realistic agentic workflows shows that Scepsy achieves up to 2.4x higher throughput and 27x lower latency compared to systems that optimize LLMs independently or rely on user-specified allocations.",
+ "summary": "- 核心创新点：通过建模多LLM代理工作流中各LLM总执行时间份额的稳定性，提出 Aggregate LLM Pipeline，用以预测性能并在 GPU 集群上高效调度任意工作流。\n\n- 主要方法：对每个LLM在不同并行度下进行性能 profiling，构建轻量的 Aggregate LLM Pipeline 作为延迟/吞吐预测器；在目标吞吐量下利用该预测器在分数 GPU 份额、张量并行度和副本数等维度的搜索空间中查找最优分配，并通过分层启发式把最佳分配落地到集群，兼顾网络拓扑与最小化碎片化。\n\n- 结论/性能：在真实的代理工作流上评估显示，Scepsy 相比独立优化单个LLM或使用用户指定分配的系统，吞吐量最高提升约 2.4 倍，延迟降低约 27 倍。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-17 13:05:17"
+}

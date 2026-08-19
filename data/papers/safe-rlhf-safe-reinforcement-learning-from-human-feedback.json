@@ -1,0 +1,27 @@
+{
+ "id": "safe-rlhf-safe-reinforcement-learning-from-human-feedback",
+ "title": "Safe RLHF: Safe Reinforcement Learning from Human Feedback",
+ "authors": "Josef Dai et al. (PKU-Alignment, Peking University)",
+ "date": null,
+ "year": 2024,
+ "url": "",
+ "abstract": "",
+ "summary": "标准 RLHF 将 helpfulness 和 harmlessness 混在一个 reward 中，导致安全和能力的 trade-off 不可控。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Safe-RLHF.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

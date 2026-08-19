@@ -1,0 +1,13 @@
+{
+ "id": "2603.18003",
+ "title": "Universal Skeleton Understanding via Differentiable Rendering and MLLMs",
+ "authors": "Ziyi Wang, Peiming Li, Xinshun Wang, Yang Tang, Kai-Kuang Ma, Mengyuan Liu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18003v1",
+ "abstract": "Multimodal large language models (MLLMs) exhibit strong visual-language reasoning, yet remain confined to their native modalities and cannot directly process structured, non-visual data such as human skeletons. Existing methods either compress skeleton dynamics into lossy feature vectors for text alignment, or quantize motion into discrete tokens that generalize poorly across heterogeneous skeleton formats. We present SkeletonLLM, which achieves universal skeleton understanding by translating arbitrary skeleton sequences into the MLLM's native visual modality. At its core is DrAction, a differentiable, format-agnostic renderer that converts skeletal kinematics into compact image sequences. Because the pipeline is end-to-end differentiable, MLLM gradients can directly guide the rendering to produce task-informative visual tokens. To further enhance reasoning capabilities, we introduce a cooperative training strategy: Causal Reasoning Distillation transfers structured, step-by-step reasoning from a teacher model, while Discriminative Finetuning sharpens decision boundaries between confusable actions. SkeletonLLM demonstrates strong generalization on diverse tasks including recognition, captioning, reasoning, and cross-format transfer -- suggesting a viable path for applying MLLMs to non-native modalities. Code will be released upon acceptance.",
+ "summary": "以下是对论文标题与摘要的中文简要总结：\n\n- 核心创新点（一句话概括）\n  通过可微分渲染器 DrAction 将任意骨架序列转译为与视觉模态兼容的紧凑图像序列，使多模态大语言模型（MLLMs）能够在原生视觉模态下对骨架数据进行通用理解，并通过协同训练提升推理与判别能力。\n\n- 主要方法（技术/模型要点）\n  - DrAction：可微分、格式无关的渲染器，将骨架运动学转化为紧凑的图像序列。\n  - 端到端可微分流程：MLLM 的梯度直接引导渲染，输出对任务信息有用的视觉 token。\n  - 协同训练策略：\n    - Causal Reasoning Distillation：从教师模型蒸馏出结构化的逐步推理。\n    - Discriminative Finetuning：增强对易混淆动作的决策边界。\n  - 任务涉及：动作识别、图文描述、推理以及跨骨架格式的跨格式转移等。\n\n- 结论/性能（取得的效果）\n  - 展现对多样任务的强泛化能力，包括识别、描述、推理和跨格式转移。\n  - 提示将 MLLMs 应用于非原生模态数据的可行路径。\n  - 代码将在论文接受后公开。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-19 13:04:47"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.05311",
+ "title": "Formal Synthesis of Certifiably Robust Neural Lyapunov-Barrier Certificates",
+ "authors": "Chengxiao Wang, Haoze Wu, Gagandeep Singh",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05311v1",
+ "abstract": "Neural Lyapunov and barrier certificates have recently been used as powerful tools for verifying the safety and stability properties of deep reinforcement learning (RL) controllers. However, existing methods offer guarantees only under fixed ideal unperturbed dynamics, limiting their reliability in real-world applications where dynamics may deviate due to uncertainties. In this work, we study the problem of synthesizing \\emph{robust neural Lyapunov barrier certificates} that maintain their guarantees under perturbations in system dynamics. We formally define a robust Lyapunov barrier function and specify sufficient conditions based on Lipschitz continuity that ensure robustness against bounded perturbations. We propose practical training objectives that enforce these conditions via adversarial training, Lipschitz neighborhood bound, and global Lipschitz regularization. We validate our approach in two practically relevant environments, Inverted Pendulum and 2D Docking. The former is a widely studied benchmark, while the latter is a safety-critical task in autonomous systems. We show that our methods significantly improve both certified robustness bounds (up to $4.6$ times) and empirical success rates under strong perturbations (up to $2.4$ times) compared to the baseline. Our results demonstrate effectiveness of training robust neural certificates for safe RL under perturbations in dynamics.",
+ "summary": "- 核心创新点：提出正式定义的鲁棒神经Lyapunov-Barrier证书，并给出基于 Lipschitz 连续性的充分条件以在有界系统扰动下保持安全性与稳定性的保证，结合对抗训练实现可训练性。\n\n- 主要方法：使用神经Lyapunov-Barrier证书框架，基于 Lipschitz 条件构建鲁棒性约束，并通过对抗训练、Lipschitz 邻域界限和全局 Lipschitz 正则化等训练目标来强化这些条件；在 Inverted Pendulum 和 2D Docking 两个任务上进行验证。\n\n- 结论/性能：在两项任务中，鲁棒证书的认证鲁棒性提升最多约4.6倍，强扰动下的经验成功率提升约2.4倍，相较基线表现显著改善，证明鲁棒神经证书在动力学扰动下的有效性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-06 14:01:05"
+}

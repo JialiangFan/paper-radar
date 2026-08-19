@@ -1,0 +1,13 @@
+{
+ "id": "2605.30335",
+ "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
+ "authors": "Anany Kotawala",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30335v1",
+ "abstract": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is locally coherent. We formalise this locally coherent, globally incoherent failure via the compositional residual eps*, the L2 distance from the composed quote to the joint coherent polytope, computable at runtime from system output and the declared cross-component coupling constraints. A product-structure dichotomy characterises when local coherence suffices, and a Rayleigh-quotient prediction matches the observed residual within 7% on three of four relation classes. A hierarchical Boyle-Dykstra projection repairs the composition deterministically; an anytime-valid e-process gives sequential coherence monitoring. Across 1,876 ensemble cliques on a four-LLM mid-tier panel (frontier-panel rerun in Section 5.5), eps* > 0 on 33-94% of cliques, translating to +0.115 nats per bet of regret on 1,770 resolved bets under the proportional allocation rule (the gain collapses to +0.006 under bettors that themselves coherentise). Three intuitive LLM-side mitigations(retrieval, partition-aware prompting, aggregator-LLM) each fail or regress.",
+ "summary": "**核心创新点**：提出用\"组合残差 ε*\"来量化多组件 LLM 智能体的\"局部一致、全局不一致\"现象——即每个组件各自看到联合问题的一部分、各自概率自洽，但拼装后的整体却违反基本概率公理。\n\n**主要方法**：\n- 将 ε* 定义为组合输出到\"联合一致多面体\"的 L2 距离，可在运行时根据系统输出和声明的跨组件耦合约束直接计算。\n- 用\"积结构二分定理\"刻画局部一致何时足以保证全局一致，并用瑞利商（Rayleigh-quotient）预测残差大小。\n- 提出分层 Boyle-Dykstra 投影来确定性地\"修复\"组合结果，并用 anytime-valid 的 e-process 做序贯一致性监控。\n\n**结论/性能**：\n- 在四个中端 LLM 组成面板的 1,876 个集合团（clique）上，33%–94% 的团出现 ε* > 0；瑞利商预测在四类关系中的三类上误差在 7% 以内。\n- 这种不一致在 1,770 次已结算下注中、按比例分配规则下造成每注 +0.115 nats 的遗憾（regret）；但若下注方自身会做一致化，收益骤降到 +0.006。\n- 三种直觉性的 LLM 侧缓解手段（检索、分区感知提示、聚合器 LLM）均失败或反而变差——说明问题需靠投影式修复而非提示工程解决。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-29 13:02:06"
+}

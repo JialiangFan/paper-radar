@@ -1,0 +1,13 @@
+{
+ "id": "2601.21590",
+ "title": "Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening",
+ "authors": "Xiaotong Ji, Rasul Tutunov, Matthieu Zimmer, Haitham Bou Ammar",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21590v1",
+ "abstract": "Reinforcement learning (RL) post-training is a dominant approach for improving the reasoning performance of large language models (LLMs), yet growing evidence suggests that its gains arise primarily from distribution sharpening rather than the acquisition of new capabilities. Recent work has shown that sampling from the power distribution of LLMs using Markov chain Monte Carlo (MCMC) can recover performance comparable to RL post-training without relying on external rewards; however, the high computational cost of MCMC makes such approaches impractical for widespread adoption. In this work, we propose a theoretically grounded alternative that eliminates the need for iterative MCMC. We derive a novel formulation showing that the global power distribution can be approximated by a token-level scaled low-temperature one, where the scaling factor captures future trajectory quality. Leveraging this insight, we introduce a training-free and verifier-free algorithm that sharpens the base model's generative distribution autoregressively. Empirically, we evaluate our method on math, QA, and code tasks across four LLMs, and show that our method matches or surpasses one-shot GRPO without relying on any external rewards, while reducing inference latency by over 10x compared to MCMC-based sampling.",
+ "summary": "- 核心创新点：提出一个训练-free、 verifier-free 的分布锐化框架，通过将全局幂分布近似为 token-level 的低温缩放分布来实现推理性能提升，避免迭代 MCMC。\n- 主要方法：基于理论推导将全局分布近似为 token-level 的缩放低温分布，提出一个自回归的分布锐化算法，在基模型上直接进行推理时的分布调整，无需额外训练或外部奖励信号；在 math、QA、code 任务上的四个 LLM 上进行评估。\n- 结论/性能：在不使用外部奖励的情况下，达到或超越单次 GRPO 的效果，并且推理延迟比基于 MCMC 的采样低超过 10 倍。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-01-30 14:04:51"
+}

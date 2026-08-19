@@ -1,0 +1,13 @@
+{
+ "id": "2606.13380",
+ "title": "An LLM System for Autonomous Variational Quantum Circuit Design",
+ "authors": "Kenya Sakka, Wataru Mizukami, Kosuke Mitarai",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13380v1",
+ "abstract": "The design of high performing quantum circuits remains largely dependent on human expertise. We introduce an autonomous agentic framework that employs large language models (LLMs) to conduct iterative quantum circuit designs under explicit design constraints. Our system integrates seven components: Exploration, Generation, Discussion, Validation, Storage, Evaluation, and Review. These components form a closed-loop workflow that combines web-based knowledge acquisition, literature-grounded critique, executable code generation, and experimental feedback. We evaluate the framework on two tasks: quantum feature map construction for quantum machine learning and ansatz generation for variational quantum eigensolver applications in quantum chemistry. In image classification benchmarks, the best generated feature map outperforms representative quantum feature maps and, when scaled to larger qubit counts, surpasses the classical radial basis function kernel. In molecular ground state estimation across seven molecules, the generated ansatz attains competitive accuracy with widely used chemically inspired and hardware-efficient constructions while satisfying the imposed scaling constraints. These results establish LLM driven agentic system as a viable paradigm for automated quantum circuit design and illustrate how AI systems can participate in iterative scientific optimization workflows across scientific domains.",
+ "summary": "## 论文总结\n\n**1. 核心创新点：**\n提出了一个由大语言模型（LLM）驱动的自主智能体框架，能够在明确的设计约束下自动迭代设计高性能量子电路，无需依赖人类专家。\n\n**2. 主要方法：**\n系统由七个组件构成闭环工作流——探索（Exploration）、生成（Generation）、讨论（Discussion）、验证（Validation）、存储（Storage）、评估（Evaluation）和审查（Review）。该流程整合了基于网络的知识获取、以文献为依据的批判性讨论、可执行代码生成以及实验反馈。框架在两类任务上进行了验证：用于量子机器学习的量子特征映射（feature map）构建，以及用于量子化学变分量子本征求解器（VQE）的拟设（ansatz）生成。\n\n**3. 结论/性能：**\n- **图像分类**：生成的最佳特征映射优于代表性的量子特征映射；扩展到更多量子比特时，性能超越经典的径向基函数（RBF）核。\n- **分子基态估计**（7 种分子）：生成的拟设在满足规模约束的前提下，达到了与广泛使用的化学启发式构造和硬件高效构造相当的精度。\n\n总体表明，LLM 驱动的智能体系统是自动化量子电路设计的可行范式，并展示了 AI 参与迭代式科学优化工作流的潜力。\n\n---\n如果需要更深入的文献综述式分析（含中英双语并输出到 Obsidian），可以使用 `/paper-review`。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-12 13:02:38"
+}

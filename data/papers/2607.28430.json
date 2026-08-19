@@ -1,0 +1,13 @@
+{
+ "id": "2607.28430",
+ "title": "AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration",
+ "authors": "Xinxing Ren, Qianbo Zang, Ziyan Wang, Caelum Forder, Suman Deb, Peter Carroll, Zekun Guo",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.28430v1",
+ "abstract": "Understanding large codebases is a long-horizon task for Large Language Model (LLM) agents: answering a single question can require building and running the software, tracing execution across files, and synthesizing evidence over tens of minutes. On SWE-Atlas QnA, a benchmark of long-horizon questions over production repositories, a single Claude Code agent (Opus 4.6) resolves only 32.3% of tasks. Dividing the work among agents with clean contexts mitigates this limitation. However, the subtasks of code comprehension are interdependent. One agent's findings can rewrite another's task, so agents must coordinate during execution, not only at phase boundaries. Existing multi-agent systems support such exchange only between phases, through staged handoffs or synchronized rounds. Communication and work remain mutually exclusive. A discovery made mid-execution cannot be shared until the next boundary. We present AgentRadio, an asynchronous message-passing layer that equips coding-agent harnesses with three primitives: threads, messages, and waiting for mentions. The last runs as a background task, surfacing teammates' messages without interrupting foreground work, so each agent remains passively aware of its peers and folds new findings into its ongoing task. Under a five-phase protocol of division of labor and negotiation, four agents organized by AgentRadio resolve 62.1% of tasks, 29.8 points above a single agent and above Claude Code with the newer Opus 4.8 (57.2%). Rubric-level analysis shows the gain growing with task difficulty, consistent with mid-course correction as the underlying mechanism. Our code is available at https://github.com/Coral-Protocol/AgentRadio.",
+ "summary": "## 论文总结：AgentRadio\n\n**1. 核心创新点**\n提出一种异步消息传递层，让多个编码智能体在执行任务的过程中（而非仅在阶段边界）实时交换发现、被动感知彼此进展，从而解决长周期代码库理解任务。\n\n**2. 主要方法**\n为编码智能体框架（harness）引入三个原语：**线程（threads）**、**消息（messages）** 和 **等待@提及（waiting for mentions）**。其中\"等待提及\"作为后台任务运行，可在不打断前台工作的情况下呈现队友消息，使智能体保持\"被动感知\"并将新发现折入正在进行的任务。整体采用一套包含分工与协商的**五阶段协议**，组织 4 个智能体协作。\n\n**3. 结论/性能**\n在 SWE-Atlas QnA 基准上，4 智能体方案解决率达 **62.1%**，比单个 Claude Code 智能体（Opus 4.6，32.3%）高出 **29.8 个百分点**，也超过使用更新模型 Opus 4.8 的 Claude Code（57.2%）。细粒度评分分析显示，任务难度越高增益越大，佐证了\"中途纠偏\"是其起效机制。代码已开源。\n\n> 一点旁注：论文中作为基线的模型代号（Opus 4.6 / 4.8）并非我所知的实际发布型号，摘要中的这部分信息我无法核实。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-02 13:01:45"
+}

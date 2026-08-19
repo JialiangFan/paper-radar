@@ -1,0 +1,13 @@
+{
+ "id": "2607.25124",
+ "title": "UrbanTrace: LLM-Assisted Discovery and Semantics-Aware Integration of Spatial Data",
+ "authors": "Sonia Castelo, Eden Wu, Joao Rulff, Harish Doraiswamy, Juliana Freire, Claudio Silva",
+ "date": "2026-07-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.25124v1",
+ "abstract": "Urban decision-making requires integrating heterogeneous spatial data. While current GIS tools handle geometric computation efficiently, they lack the semantic reasoning to guide complex workflows. Analysts manually manage data discovery, spatial boundaries, and measurement semantics, risking aggregation errors. We present UrbanTrace, a visual analytics system that transforms manual spatial data-wrangling into a transparent, node-based collaborative workflow with context-aware AI agents. Using an offline profiler to extract semantic and geometric metadata, UrbanTrace grounds LLMs in real-world data distributions. This enables specialized agents to retrieve datasets based on high-level goals and automatically enforce valid spatial aggregations. To make harmonization explicit, three interactive views: an Integration Provenance Graph, Multivariate Priority Map, and Spatial Delta Map, allow users to explore how conclusions shift across spatial configurations. We evaluate UrbanTrace on 28 urban scenarios spanning 112 datasets. Quantitative ablations show our profiling significantly outperforms baseline LLMs in data discovery, achieving 100% semantic and 87% geometric validity in spatial mapping. Through real-world case studies and expert interviews, we demonstrate that UrbanTrace turns spatial aggregation sensitivity from a methodological burden into an exploratory visual asset.",
+ "summary": "## UrbanTrace 论文摘要总结\n\n**1. 核心创新点**\n提出 UrbanTrace——一套将手工的城市空间数据整合流程转化为\"节点式可视化工作流 + 上下文感知 LLM 智能体\"的可视分析系统，把空间聚合的敏感性从方法论负担变成可探索的可视化资产。\n\n**2. 主要方法**\n- **离线剖析器（offline profiler）**：预先抽取数据集的语义与几何元数据，用真实数据分布为 LLM 提供\"接地\"（grounding），避免模型凭空臆测。\n- **专用智能体**：基于高层分析目标自动检索数据集，并自动强制执行合法的空间聚合规则（校验边界与度量语义，防止聚合错误）。\n- **三个交互视图**：整合溯源图（Integration Provenance Graph）、多变量优先级地图（Multivariate Priority Map）、空间差分地图（Spatial Delta Map），用于显式呈现数据协调过程，并让用户观察结论如何随空间划分方案改变。\n\n**3. 结论/性能**\n- 在 **28 个城市场景、112 个数据集** 上评估。\n- 消融实验显示，其剖析机制在数据发现任务上显著优于基线 LLM；空间映射达到 **100% 语义有效性** 与 **87% 几何有效性**。\n- 真实案例研究与专家访谈进一步验证了系统在实际城市决策分析中的可用性与价值。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-01 13:01:29"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.22661",
+ "title": "Can QPP Choose the Right Query Variant? Evaluating Query Variant Selection for RAG Pipelines",
+ "authors": "Negar Arabzadeh, Andrew Drozdov, Michael Bendersky, Matei Zaharia",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22661v1",
+ "abstract": "Large Language Models (LLMs) have made query reformulation ubiquitous in modern retrieval and Retrieval-Augmented Generation (RAG) pipelines, enabling the generation of multiple semantically equivalent query variants. However, executing the full pipeline for every reformulation is computationally expensive, motivating selective execution: can we identify the best query variant before incurring downstream retrieval and generation costs? We investigate Query Performance Prediction (QPP) as a mechanism for variant selection across ad-hoc retrieval and end-to-end RAG. Unlike traditional QPP, which estimates query difficulty across topics, we study intra-topic discrimination - selecting the optimal reformulation among competing variants of the same information need. Through large-scale experiments on TREC-RAG using both sparse and dense retrievers, we evaluate pre- and post-retrieval predictors under correlation- and decision-based metrics. Our results reveal a systematic divergence between retrieval and generation objectives: variants that maximize ranking metrics such as nDCG often fail to produce the best generated answers, exposing a \"utility gap\" between retrieval relevance and generation fidelity. Nevertheless, QPP can reliably identify variants that improve end-to-end quality over the original query. Notably, lightweight pre-retrieval predictors frequently match or outperform more expensive post-retrieval methods, offering a latency-efficient approach to robust RAG.",
+ "summary": "- 核心创新点：在同一信息需求的多种查询变体中，使用查询性能预测（QPP）进行变体选择，研究同题内辨别，并揭示检索指标与生成质量之间的效用差距，同时提出轻量化的前检索QPP以实现低延迟的鲁棒RAG。\n\n- 主要方法：在TREC-RAG上进行大规模实验，覆盖稀疏与密集检索，比较前检索与后检索预测器（QPP）在相关性指标与端到端生成质量上的表现，聚焦变体在同题下的最佳选择。\n\n- 结论/性能：QPP能可靠地识别能提升端到端质量的查询变体；前检索预测器往往与甚至优于更昂贵的后检索方法，提供低延迟的鲁棒RAG方案；但最大化检索排名指标的变体不一定提高生成答案质量，存在检索与生成之间的“效用差距”。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-27 13:03:55"
+}

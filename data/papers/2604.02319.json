@@ -1,0 +1,13 @@
+{
+ "id": "2604.02319",
+ "title": "No Single Best Model for Diversity: Learning a Router for Sample Diversity",
+ "authors": "Yuhan Liu, Fangyuan Xu, Vishakh Padmakumar, Daphne Ippolito, Eunsol Choi",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02319v1",
+ "abstract": "When posed with prompts that permit a large number of valid answers, comprehensively generating them is the first step towards satisfying a wide range of users. In this paper, we study methods to elicit a comprehensive set of valid responses. To evaluate this, we introduce \\textbf{diversity coverage}, a metric that measures the total quality scores assigned to each \\textbf{unique} answer in the predicted answer set relative to the best possible answer set with the same number of answers. Using this metric, we evaluate 18 LLMs, finding no single model dominates at generating diverse responses to a wide range of open-ended prompts. Yet, per each prompt, there exists a model that outperforms all other models significantly at generating a diverse answer set. Motivated by this finding, we introduce a router that predicts the best model for each query. On NB-Wildchat, our trained router outperforms the single best model baseline (26.3% vs $23.8%). We further show generalization to an out-of-domain dataset (NB-Curated) as well as different answer-generation prompting strategies. Our work lays foundation for studying generating comprehensive answers when we have access to a suite of models.",
+ "summary": "**核心创新点**  \n提出一个对每条查询预测最优模型的路由器，以实现跨多模型的答案多样性覆盖，并引入 diversity coverage 评价指标来衡量综合答案的覆盖效果。\n\n**主要方法**  \n- 定义并使用 diversity coverage 作为评估度量，比较 18 个大型语言模型在开放式提示下的输出多样性。  \n- 发现没有单一模型在广泛提示上具备优势，但对每个提示存在“最佳模型”可以显著优于他者。  \n- 基于此构建并训练一个路由器，预测每条查询应使用的最佳模型。  \n- 在 NB-Wildchat 上评估路由器相对于单一最佳模型基线的性能，并验证对 NB-Curated 等不同数据集和不同回答生成提示策略的泛化能力。\n\n**结论/性能**  \n- 路由器在 NB-Wildchat 上相较单一最佳模型基线提升显著（26.3% 对 23.8%，约提升2.5个百分点）。  \n- 具有对出域数据 NB-Curated 的泛化能力，以及对多种回答生成提示策略的鲁棒性，为在多模型系统中生成全面答案奠定基础。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:01:00"
+}

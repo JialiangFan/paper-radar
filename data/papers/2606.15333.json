@@ -1,0 +1,13 @@
+{
+ "id": "2606.15333",
+ "title": "Replay What Matters: Off-Policy Replay for Efficient LLM Reinforcement Unlearning",
+ "authors": "Zirui Pang, Chenlong Zhang, Haosheng Tan, Zhuoran Jin, Jiaheng Wei, Zixin Zhong",
+ "date": "2026-06-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.15333v1",
+ "abstract": "LLM unlearning has emerged as a cost-effective alternative to full retraining for removing hazardous knowledge from pretrained models while preserving general utility. Recent RL-based methods such as RULE reformulate unlearning as learning a refusal behavior, but their on-policy optimization repeatedly samples from the same forget and retain/boundary prompts throughout training. We identify a critical inefficiency in this process: easy cases quickly converge and provide little useful gradient signal, while hard cases near the forget/retain boundary continue to produce low-reward rollouts that are discarded after a single use. To address this issue, we propose ReRULE, an off-policy replay enhancement for reinforcement unlearning. ReRULE stores low-reward hard-case rollout groups in a replay buffer during early GRPO training and reuses them in later stages through importance-sampled off-policy updates, redirecting computation toward boundary cases that still require learning. Theoretically, we show that ReRULE yields a tighter hard-case convergence bound than pure on-policy RULE. Empirically, ReRULE improves MUSE-Books Retain Quality from 46.3 to 56.2 while adding only 5--11% training time across benchmarks. Its limited improvement on the simpler TOFU setting further supports the intended conditional behavior: replay is most beneficial when the hard/easy disparity is pronounced.",
+ "summary": "**论文总结：ReRULE — 面向高效 LLM 强化遗忘的离线策略经验回放**\n\n1. **核心创新点**：将\"难例\"低奖励的离线策略经验回放引入强化遗忘（RL unlearning），把算力集中到仍需学习的遗忘/保留边界样本上，从而提升训练效率。\n\n2. **主要方法**：在 RULE（把遗忘重构为学习\"拒答行为\"的 RL 方法）基础上，于 GRPO 训练早期将低奖励的难例 rollout 分组存入回放缓冲区，后期通过重要性采样（importance sampling）的离线策略更新复用这些样本；并在理论上证明其难例收敛界比纯在线策略的 RULE 更紧。\n\n3. **结论/性能**：在 MUSE-Books 上将 Retain Quality 从 46.3 提升到 56.2，仅增加 5–11% 训练时间；而在更简单的 TOFU 设定上提升有限，印证了其\"条件性优势\"——当难易样本差异显著时回放收益最大。\n\n---\n另外提示：仓库里有个 `/paper-review` 技能，可以以文献综述专家视角生成更完整的中英文总结并自动输出到 Obsidian。需要的话我可以用它跑一遍。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-16 13:02:44"
+}

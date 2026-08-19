@@ -1,0 +1,31 @@
+{
+ "id": "2510.01642",
+ "title": "FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models",
+ "authors": "Peng, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2510.01642",
+ "abstract": "",
+ "summary": "FailSafe targets failure detection and recovery for VLA manipulation policies rather than only offline evaluation.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Safety",
+ "tags": [
+  "failure-recovery",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Safety/2025_Peng_FailSafeVLA.md",
+ "pdf_path": "PDFs/VLA_Safety/2025_Peng_FailSafeVLA.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

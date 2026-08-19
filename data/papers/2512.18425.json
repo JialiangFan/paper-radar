@@ -1,0 +1,13 @@
+{
+ "id": "2512.18425",
+ "title": "MoE Pathfinder: Trajectory-driven Expert Pruning",
+ "authors": "Xican Yang, Yuanhe Tian, Yan Song",
+ "date": "2025-12-20",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18425v1",
+ "abstract": "Mixture-of-experts (MoE) architectures used in large language models (LLMs) achieve state-of-the-art performance across diverse tasks yet face practical challenges such as deployment complexity and low activation efficiency. Expert pruning has thus emerged as a promising solution to reduce computational overhead and simplify the deployment of MoE models. However, existing expert pruning approaches conventionally rely on local importance metrics and often apply uniform layer-wise pruning, leveraging only partial evaluation signals and overlooking the heterogeneous contributions of experts across layers. To address these limitations, we propose an expert pruning approach based on the trajectory of activated experts across layers, which treats MoE as a weighted computation graph and casts expert selection as a global optimal path planning problem. Within this framework, we integrate complementary importance signals from reconstruction error, routing probabilities, and activation strength at the trajectory level, which naturally yields non-uniform expert retention across layers. Experiments show that our approach achieves superior pruning performance on nearly all tasks compared with most existing approaches.",
+ "summary": "- 核心创新点：将 Mixture-of-Experts (MoE) 视为加权计算图，将专家选择问题转化为跨层的全局最优路径规划，并在轨迹层面融合多信号实现非均匀的专家裁剪。\n- 主要方法：提出轨迹驱动的专家裁剪方法：把 MoE 的专家选择看作跨层的全局最优路径问题，结合重构误差、路由概率和激活强度等轨迹级重要性信号，进行跨层非均匀的专家保留与裁剪。\n- 结论/性能：实验结果显示在几乎所有任务上，该方法在裁剪性能上优于大多数现有方法。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:48:18"
+}

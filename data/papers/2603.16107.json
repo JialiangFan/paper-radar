@@ -1,0 +1,13 @@
+{
+ "id": "2603.16107",
+ "title": "RepoReviewer: A Local-First Multi-Agent Architecture for Repository-Level Code Review",
+ "authors": "Peng Zhang",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16107v1",
+ "abstract": "Repository-level code review requires reasoning over project structure, repository context, and file-level implementation details. Existing automated review workflows often collapse these tasks into a single pass, which can reduce relevance, increase duplication, and weaken prioritization. We present RepoReviewer, a local-first multi-agent system for automated GitHub repository review with a Python CLI, FastAPI API, LangGraph orchestration layer, and Next.js user interface. RepoReviewer decomposes review into repository acquisition, context synthesis, file-level analysis, finding prioritization, and summary generation. We describe the system design, implementation tradeoffs, developer-facing interfaces, and practical failure modes. Rather than claiming benchmark superiority, we frame RepoReviewer as a technical systems contribution: a pragmatic architecture for repository-level automated review, accompanied by reusable evaluation and reporting infrastructure for future empirical study.",
+ "summary": "- 核心创新点：提出一个本地优先的多代理系统 RepoReviewer，用于仓库级自动化代码审查，通过分层任务分解与 LangGraph 编排，结合前后端一体化接口，构建可复用的评审与报告基础设施。\n- 主要方法：采用 Python CLI、FastAPI API、LangGraph 编排层和 Next.js 用户界面；将审查任务分解为仓库获取、上下文合成、文件级分析、发现优先级排序和摘要生成等模块，形成一个协同工作的系统架构。\n- 结论/性能：并未声称在基准测试上优于现有方法；作为技术系统贡献，提供一个可部署的仓库级自动化审查架构及可复用的评估与报告基础设施，便于未来的经验研究，并讨论了设计权衡、开发者接口和实际失效模式。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-18 13:08:37"
+}

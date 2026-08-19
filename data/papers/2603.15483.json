@@ -1,0 +1,13 @@
+{
+ "id": "2603.15483",
+ "title": "Talk, Evaluate, Diagnose: User-aware Agent Evaluation with Automated Error Analysis",
+ "authors": "Penny Chong, Harshavardhan Abichandani, Jiyuan Shen, Atin Ghosh, Min Pyae Moe, Yifan Mai, Daniel Dahlmeier",
+ "date": "2026-03-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.15483v1",
+ "abstract": "Agent applications are increasingly adopted to automate workflows across diverse tasks. However, due to the heterogeneous domains they operate in, it is challenging to create a scalable evaluation framework. Prior works each employ their own methods to determine task success, such as database lookups, regex match, etc., adding complexity to the development of a unified agent evaluation approach. Moreover, they do not systematically account for the user's role nor expertise in the interaction, providing incomplete insights into the agent's performance. We argue that effective agent evaluation goes beyond correctness alone, incorporating conversation quality, efficiency and systematic diagnosis of agent errors. To address this, we introduce the TED framework (Talk, Evaluate, Diagnose). (1) Talk: We leverage reusable, generic expert and non-expert user persona templates for user-agent interaction. (2) Evaluate: We adapt existing datasets by representing subgoals-such as tool signatures, and responses-as natural language grading notes, evaluated automatically with LLM-as-a-judge. We propose new metrics that capture both turn efficiency and intermediate progress of the agent complementing the user-aware setup. (3) Diagnose: We introduce an automated error analysis tool that analyzes the inconsistencies of the judge and agents, uncovering common errors, and providing actionable feedback for agent improvement. We show that our TED framework reveals new insights regarding agent performance across models and user expertise levels. We also demonstrate potential gains in agent performance with peaks of 8-10% on our proposed metrics after incorporating the identified error remedies into the agent's design.",
+ "summary": "- 核心创新点（1句概括）\n  提出 TED 框架（Talk、Evaluate、Diagnose），在用户画像的驱动下，结合自动化错误分析和大语言模型评审，系统性评估和改进面向多任务的代理对话性能。\n\n- 主要方法\n  - Talk：使用可重复的专家与非专家用户画像模板来驱动人机互动，覆盖不同用户角色与专业水平。\n  - Evaluate：将子目标表示为工具签名，回答表示为自然语言评级笔记，利用大型语言模型作为 juge 自动评估，并提出兼顾轮次效率与中间进展的新评价指标。\n  - Diagnose：引入自动化错误分析工具，分析评审者与代理之间的不一致，揭示常见错误并给出可操作的改进反馈。\n\n- 结论/性能\n  - TED 框架揭示了不同模型与用户专业水平下的代理表现新洞见。\n  - 将识别出的错误修正融入代理设计后，相关指标在目标任务上达到8–10%的提升。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-17 13:04:23"
+}

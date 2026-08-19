@@ -1,0 +1,13 @@
+{
+ "id": "2602.03584",
+ "title": "$V_0$: A Generalist Value Model for Any Policy at State Zero",
+ "authors": "Yi-Kai Zhang, Zhiyuan Yao, Hongyan Hao, Yueqing Sun, Qi Gu, Hui Su, Xunliang Cai, De-Chuan Zhan, Han-Jia Ye",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03584v1",
+ "abstract": "Policy gradient methods rely on a baseline to measure the relative advantage of an action, ensuring the model reinforces behaviors that outperform its current average capability. In the training of Large Language Models (LLMs) using Actor-Critic methods (e.g., PPO), this baseline is typically estimated by a Value Model (Critic) often as large as the policy model itself. However, as the policy continuously evolves, the value model requires expensive, synchronous incremental training to accurately track the shifting capabilities of the policy. To avoid this overhead, Group Relative Policy Optimization (GRPO) eliminates the coupled value model by using the average reward of a group of rollouts as the baseline; yet, this approach necessitates extensive sampling to maintain estimation stability. In this paper, we propose $V_0$, a Generalist Value Model capable of estimating the expected performance of any model on unseen prompts without requiring parameter updates. We reframe value estimation by treating the policy's dynamic capability as an explicit context input; specifically, we leverage a history of instruction-performance pairs to dynamically profile the model, departing from the traditional paradigm that relies on parameter fitting to perceive capability shifts. Focusing on value estimation at State Zero (i.e., the initial prompt, hence $V_0$), our model serves as a critical resource scheduler. During GRPO training, $V_0$ predicts success rates prior to rollout, allowing for efficient sampling budget allocation; during deployment, it functions as a router, dispatching instructions to the most cost-effective and suitable model. Empirical results demonstrate that $V_0$ significantly outperforms heuristic budget allocation and achieves a Pareto-optimal trade-off between performance and cost in LLM routing tasks.",
+ "summary": "- 核心创新点：提出一个通用的 Generalist Value Model V0，能够在状态零对任意模型在未见提示上的潜在性能进行无参数更新的估计，将模型能力视为显式上下文并用指令-性能历史进行动态建模，用于资源调度与路由。\n- 主要方法：将策略的动态能力作为上下文输入，基于指令-性能对的历史数据动态画像模型能力，不依赖参数拟合来捕捉能力漂移；专注于 State Zero 的价值估计；在 GRPO 训练阶段由 V0 预测 rollout 之前的成功率以优化采样预算分配；在部署阶段作为路由器，将指令分发给成本最低且最合适的模型。\n- 结论/性能：在 LLM 路由任务中，V0 显著优于基于启发式预算分配，并实现性能与成本的 Pareto 最优折中；还能对未见提示进行有效估计且无需更新参数。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-04 14:04:20"
+}

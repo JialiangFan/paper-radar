@@ -1,0 +1,13 @@
+{
+ "id": "2603.00507",
+ "title": "Optimal-Horizon Social Robot Navigation in Heterogeneous Crowds",
+ "authors": "Jiamin Shi, Haolin Zhang, Yuchen Yan, Shitao Chen, Jingmin Xin, Nanning Zheng",
+ "date": "2026-02-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.00507v1",
+ "abstract": "Navigating social robots in dense, dynamic crowds is challenging due to environmental uncertainty and complex human-robot interactions. While Model Predictive Control (MPC) offers strong real-time performance, its reliance on a fixed prediction horizon limits adaptability to changing environments and social dynamics. Furthermore, most MPC approaches treat pedestrians as homogeneous obstacles, ignoring social heterogeneity and cooperative or adversarial interactions, which often causes the Frozen Robot Problem in partially observable real-world environments. In this paper, we identify the planning horizon as a socially conditioned decision variable rather than a fixed design choice. Building on this insight, we propose an optimal-horizon social navigation framework that optimizes MPC foresight online according to inferred social context. A spatio-temporal Transformer infers pedestrian cooperation attributes from local trajectory observations, which serve as social priors for a reinforcement learning policy that optimally selects the prediction horizon under a task-driven objective. The resulting horizon-aware MPC incorporates socially conditioned safety constraints to balance navigation efficiency and interaction safety. Extensive simulations and real-world robot experiments demonstrate that optimal foresight selection is critical for robust social navigation in partially observable crowds. Compared to state-of-the-art baselines, the proposed approach achieves a 6.8\\% improvement in success rate, reduces collisions by 50\\%, and shortens navigation time by 19\\%, with a low timeout rate of 0.8\\%, validating the necessity of socially optimal planning horizons for efficient and safe robot navigation in crowded environments. Code and videos are available at Under Review.",
+ "summary": "- 核心创新点（一句话概括）：\n  将预测 horizon 视为社会条件化的决策变量，通过在线优化实现最优预测视界，从而在异质人群中实现高效、安全的社交机器人导航。\n\n- 主要方法（简述使用的技术/模型）：\n  - 将固定的预测视界改为可在社会上下文中在线优化的变量，并由任务驱动目标指导视界选择。\n  - 提出一个时空 Transformer，用于从局部轨迹观测中推断行人之间的合作属性，作为社会先验信息。\n  - 以社会先验为输入的强化学习策略，学会在不同情境下选取最优的预测视界。\n  - 基于预测视界的并行化模型预测控制（MPC）框架，引入社会条件下的安全约束，权衡导航效率与交互安全。\n  - 在大量仿真和真实机器人实验中验证该“最优视界感知”的重要性，适用于部分可观测的拥挤环境。\n\n- 结论/性能（取得的效果）：\n  - 相较于前沿基线，成功率提升约6.8%，碰撞降低约50%，导航时间缩短约19%，超时率仅约0.8%。\n  - 结果表明在拥挤、部分可观测的场景中，选择社会最优的预测视界对鲁棒导航至关重要。\n  - 代码与视频在论文审稿阶段提供（Under Review）。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-03 14:01:13"
+}

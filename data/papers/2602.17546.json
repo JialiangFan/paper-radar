@@ -1,0 +1,13 @@
+{
+ "id": "2602.17546",
+ "title": "Learning to Stay Safe: Adaptive Regularization Against Safety Degradation during Fine-Tuning",
+ "authors": "Jyotin Goel, Souvik Maji, Pratik Mazumder",
+ "date": "2026-02-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.17546v1",
+ "abstract": "Instruction-following language models are trained to be helpful and safe, yet their safety behavior can deteriorate under benign fine-tuning and worsen under adversarial updates. Existing defenses often offer limited protection or force a trade-off between safety and utility. We introduce a training framework that adapts regularization in response to safety risk, enabling models to remain aligned throughout fine-tuning. To estimate safety risk at training time, we explore two distinct approaches: a judge-based Safety Critic that assigns high-level harm scores to training batches, and an activation-based risk predictor built with a lightweight classifier trained on intermediate model activations to estimate harmful intent. Each approach provides a risk signal that is used to constrain updates deemed higher risk to remain close to a safe reference policy, while lower-risk updates proceed with standard training. We empirically verify that harmful intent signals are predictable from pre-generation activations and that judge scores provide effective high-recall safety guidance. Across multiple model families and attack scenarios, adaptive regularization with either risk estimation approach consistently lowers attack success rate compared to standard fine-tuning, preserves downstream performance, and adds no inference-time cost. This work demonstrates a principled mechanism for maintaining safety without sacrificing utility.",
+ "summary": "核心创新点：提出在微调过程中自适应地根据安全风险调整正则化强度的训练框架，以在保持安全性的同时不显著损害模型的实用性。\n\n主要方法：\n- 引入两种安全风险信号源：一是基于评判的 Safety Critic，为训练批次分配高层次的伤害分数；二是基于激活的风险预测器，通过在中间层激活上训练轻量级分类器来估计潜在的有害意图。\n- 利用风险信号对更新进行约束：对高风险的更新使其保持接近安全参考策略，从而实现更保守的更新；对低风险的更新则按常规训练进行。\n- 关键发现与证据：有证据表明有害意图信号可以从预生生成前的激活中预测，且评估分数具有高召回的安全指导作用。\n- 实验覆盖：在多种模型家族和攻击场景中，使用任意一种风险估计方法的自适应正则化均能降低攻击成功率，同时保持下游性能且不增加推理时成本。\n\n结论/性能：\n- 与标准微调相比，该框架在多模型和多场景下稳定降低攻击成功率，显著提升安全性。\n- 维持了下游任务性能，且不增加推理时成本， demonstrating 在不牺牲实用性的前提下保持安全性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-20 14:00:59"
+}

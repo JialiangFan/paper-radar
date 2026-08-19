@@ -1,0 +1,13 @@
+{
+ "id": "2606.10044",
+ "title": "Business World Model",
+ "authors": "Cecil Pang, Hiroki Sayama",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.10044v1",
+ "abstract": "Businesses are increasingly adopting AI-enabled tools to improve productivity, reduce costs, and enhance products and services. However, the transformative potential of AI extends beyond automating predefined tasks: it lies in enabling intelligent systems to plan, optimize, and execute business initiatives from high-level strategic objectives. This paper introduces the concept and architecture of a business world model (BWM), a world model specialized for business and organizational environments. Inspired by world models in artificial intelligence, cognitive science, and control theory, a BWM encodes business states, dynamics, constraints, objectives, and feasible action space to support autonomous decision-making. We propose a business-semantics-centric formulation in which business states, dynamics and actions are linked to key business entities. Within this framework, agents can simulate alternative action sequences, estimate their effects on future business outcomes, and evaluate trade-offs under uncertainty. The proposed architecture integrates semantic data representations, probabilistic machine learning models, deterministic business rules, and explicit action space into a coherent structure for planning and counterfactual reasoning. Although its individual components are not new, the contribution of BWM lies in organizing them as an executable internal simulator for business initiatives. This work establishes a conceptual foundation for autonomous business systems capable of moving from instruction-based execution toward goal-driven planning and execution.",
+ "summary": "# Business World Model 论文总结\n\n1. **核心创新点**：提出\"商业世界模型\"（BWM）的概念与架构，将AI世界模型的思想迁移到商业组织环境中，使智能系统能够从高层战略目标出发自主进行规划、优化和执行，而不只是执行预定义任务。\n\n2. **主要方法**：采用以商业语义为中心的建模方式，将业务状态、动态、约束、目标和可行动作空间与关键业务实体关联；架构上融合了语义数据表示、概率机器学习模型、确定性业务规则和显式动作空间，构建一个可执行的内部模拟器，用于模拟替代行动序列、估计对未来业务结果的影响并在不确定性下评估权衡。\n\n3. **结论/性能**：本文是概念性/架构性论文，其贡献不在于提出新组件，而在于将现有方法组织成一个面向商业战略的可执行内部模拟器，为自主商业系统从\"指令驱动执行\"迈向\"目标驱动规划与执行\"奠定了概念基础。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-10 13:02:35"
+}

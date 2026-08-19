@@ -1,0 +1,13 @@
+{
+ "id": "2603.11461",
+ "title": "CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using Large Language Models for Manufacturing",
+ "authors": "Jiabao Zhao, Jonghan Lim, Hongliang Li, Ilya Kovalenko",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11461v1",
+ "abstract": "With increasing demand for mass customization, traditional manufacturing robots that rely on rule-based operations lack the flexibility to accommodate customized or new product variants. Human-Robot Collaboration (HRC) has demonstrated potential to improve system adaptability by leveraging human versatility and decision-making capabilities. However, existing HRC frame- works typically depend on predefined perception-manipulation pipelines, limiting their ability to autonomously generate task plans for new product assembly. In this work, we propose CoViLLM, an adaptive human-robot collaborative assembly frame- work that supports the assembly of customized and previously unseen products. CoViLLM combines depth-camera-based localization for object position estimation, human operator classification for identifying new components, and an Large Language Model (LLM) for assembly task planning based on natural language instructions. The framework is validated on the NIST Assembly Task Board for known, customized, and new product cases. Experimental results show that the proposed framework enables flexible collaborative assembly by extending HRC beyond predefined product and task settings.",
+ "summary": "- 核心创新点（1句概括）\n  把深度相机定位、人类操作者分类与大型语言模型（LLM）基于自然语言指令的装配任务规划三者结合，形成一个自适应的人机协作装配框架，能够应对定制化和未见的新产品。\n\n- 主要方法\n  - 使用深度相机进行对象位置信息的定位与估计\n  - 针对新组件进行人类操作者分类以识别变化\n  - 采用大型语言模型进行基于自然语言指令的装配任务规划\n  - 在 NIST Assembly Task Board 上对已知、定制化和新产品情形进行验证\n\n- 结论/性能\n  - 实验表明该框架实现了更灵活的协作装配，超过了仅依赖预定义产品和任务设置的HRC能力\n  - 在已知、定制和新产品案例中得到验证，展示了对定制化和未知产品的适应性提升",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:02:14"
+}

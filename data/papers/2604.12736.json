@@ -1,0 +1,13 @@
+{
+ "id": "2604.12736",
+ "title": "Token-Level Policy Optimization: Linking Group-Level Rewards to Token-Level Aggregation via Sequence-Level Likelihood",
+ "authors": "Xingyu Lin, Yilin Wen, Du Su, Jinchang Hou, En Wang, Wenbin Liu, Chenfu Bao, Zhonghou Lv",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12736v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) has significantly advanced the reasoning ability of large language models (LLMs), particularly in their mathemat ical reasoning performance. However, GRPO and related entropy regularization methods still struggle with token-level sparse-rewards, which is an inherent chal lenge in chain-of-thought (CoT) reasoning. These approaches often rely on undifferen tiated token-level entropy regularization, which easily leads to entropy collapse or model degradation under sparse token rewards. In this work, we propose TEPO, a novel token-level framework that (1) leverages sequence-level likelihood to link group-level rewards with individual tokens via token-level aggregation, and (2) introduces a token-level KL-Divergence mask constraint that targets tokens with positive advantages and decreasing entropy to mitigate abrupt policy updates. Experiments demonstrate that TEPO not only achieves state-of-the-art performance on mathematical reasoning benchmarks but also markedly enhances training stability, reducing convergence time by 50% compared with GRPO/DAPO.",
+ "summary": "- 核心创新点：提出 TEPO（Token-Level Policy Optimization）框架，通过序列级似然将组级奖励与单个 token 进行聚合对齐，并引入 token-level KL-Divergence 掩码以稳定训练、缓解稀疏奖励下的熵崩塌。\n\n- 主要方法：在 GRPO 的基础上，利用序列级似然实现组级奖励到 token 级的聚合映射；引入面向正优势且熵下降的 token 的 KL-Divergence 掩码约束，控制 token 级策略更新的剧烈性。\n\n- 结论/性能：在数学推理基准上达到当前最优表现，并显著提升训练稳定性，将收敛时间相比 GRPO/DAPO降低约 50%。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-15 13:08:59"
+}

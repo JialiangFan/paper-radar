@@ -1,0 +1,13 @@
+{
+ "id": "2606.08555",
+ "title": "FAWAM: Force-Aware World Action Models for Closed-Loop Contact-Rich Manipulation",
+ "authors": "Haotian He, Zeyu Yan, Qipeng Liu, Ning Guo, Wenzhao Lian",
+ "date": "2026-06-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08555v1",
+ "abstract": "Force signals provide critical interaction cues for contact-rich robotic manipulation. However, existing methods mostly use force as an additional observation modality, without fully exploiting its role in modeling future interaction dynamics or guiding execution-time feedback correction. In this paper, we propose FAWAM, a force-aware world action model that incorporates force information at three levels: perception, prediction, and closed-loop execution. FAWAM first encodes historical 6-axis force/torque signals to modulate action generation, then jointly predicts future actions and end-effector wrenches to explicitly model contact evolution. It further introduces a residual correction module that uses the predicted wrench trajectory as an execution-time reference to refine actions online based on real-time force feedback. Real-world experiments across multiple contact-rich tasks show that FAWAM improves the average success rate by 36.25% over vision-only baselines and 21.25% over existing force-aware baselines, demonstrating the effectiveness of our force-aware framework for robust contact-rich manipulation.",
+ "summary": "# FAWAM 论文总结\n\n1. **核心创新点**：提出一种力感知的\"世界-动作\"模型，将力信号深度融入感知、预测和闭环执行三个层次，实现接触密集型机器人操作的鲁棒控制。\n\n2. **主要方法**：编码历史6轴力/力矩信号来调制动作生成；联合预测未来动作和末端执行器力旋量以建模接触演化；引入残差校正模块，以预测的力旋量轨迹为参考，根据实时力反馈在线优化动作。\n\n3. **结论/性能**：在多项真实世界接触密集型任务中，平均成功率较纯视觉基线提升 36.25%，较现有力感知基线提升 21.25%。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-09 13:02:41"
+}

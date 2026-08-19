@@ -1,0 +1,13 @@
+{
+ "id": "2601.20843",
+ "title": "Deep Researcher with Sequential Plan Reflection and Candidates Crossover (Deep Researcher Reflect Evolve)",
+ "authors": "Saurav Prateek",
+ "date": "2026-01-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.20843v1",
+ "abstract": "This paper introduces a novel Deep Researcher architecture designed to generate detailed research reports on complex PhD level topics by addressing the inherent limitations of the Parallel Scaling paradigm. Our system utilizes two key innovations: Sequential Research Plan Refinement via Reflection and a Candidates Crossover algorithm. The sequential refinement process is demonstrated as an efficient method that allows the agent to maintain a centralized Global Research Context, enabling it to look back at current progress, reason about the research plan, and intelligently make changes at runtime. This dynamic adaptation contrasts with parallel approaches, which often suffer from siloed knowledge. The Candidates Crossover algorithm further enhances search efficiency by deploying multiple LLM candidates with varied parameters to explore a larger search space, with their findings synthesized to curate a comprehensive final research response. The process concludes with One Shot Report Generation, ensuring the final document is informed by a unified narrative and high fact density. Powered by the Gemini 2.5 Pro model, our Deep Researcher was evaluated on the DeepResearch Bench, a globally recognized benchmark of 100 doctoral level research tasks. Our architecture achieved an overall score of 46.21, demonstrating superior performance by surpassing leading deep research agents such as Claude Researcher, Nvidia AIQ Research Assistant, Perplexity Research, Kimi Researcher and Grok Deeper Search present on the DeepResearch Bench actively running leaderboard. This performance marginally exceeds our previous work, Static DRA, and reinforces the finding that sequential scaling consistently outperforms the parallel self consistency paradigm.",
+ "summary": "1. 核心创新点\n- 通过引入顺序式研究计划反思与候选者交叉算法，建立全局研究上下文并在运行时动态调整研究计划，显著提升深度研究任务的搜索效率和报告质量。\n\n2. 主要方法\n- 顺序研究计划反思（Sequential Plan Refinement via Reflection）与全局研究上下文管理，实现对当前进展的回顾、推理与计划修改。\n- 候选者交叉（Candidates Crossover）算法，使用多组变参数的LLM候选并行探索，综合其发现以扩展搜索空间。\n- 一次性报告生成（One Shot Report Generation），以统一叙事和高事实密度产出最终研究报告。\n- 基于 Gemini 2.5 Pro 模型实现，并在 DeepResearch Bench 上评估。\n\n3. 结论/性能\n- 在 DeepResearch Bench 的 100 项博士级任务基准中取得总分 46.21，显著优于 Claude Researcher、Nvidia AIQ Research Assistant、Perplexity Research、Kimi Researcher、Grok Deeper Search 等同行，且略优于前代 Static DRA；结果支持“顺序扩展”优于“并行自一致性”的结论。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:23:45"
+}

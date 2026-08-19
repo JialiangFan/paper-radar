@@ -1,0 +1,13 @@
+{
+ "id": "2512.10624",
+ "title": "AgriGPT-Omni: A Unified Speech-Vision-Text Framework for Multilingual Agricultural Intelligence",
+ "authors": "Bo Yang, Lanfei Feng, Yunkui Chen, Yu Zhang, Jianyu Zhang, Xiao Xu, Nueraili Aierken, Shijian Li",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10624v1",
+ "abstract": "Despite rapid advances in multimodal large language models, agricultural applications remain constrained by the lack of multilingual speech data, unified multimodal architectures, and comprehensive evaluation benchmarks. To address these challenges, we present AgriGPT-Omni, an agricultural omni-framework that integrates speech, vision, and text in a unified framework. First, we construct a scalable data synthesis and collection pipeline that converts agricultural texts and images into training data, resulting in the largest agricultural speech dataset to date, including 492K synthetic and 1.4K real speech samples across six languages. Second, based on this, we train the first agricultural omni-model via a three-stage paradigm: textual knowledge injection, progressive multimodal alignment, and GRPO-based reinforcement learning, enabling unified reasoning across languages and modalities. Third, we propose AgriBench-Omni-2K, the first tri-modal benchmark for agriculture, covering diverse speech-vision-text tasks and multilingual slices, with standardized protocols and reproducible tools. Experiments show that AgriGPT-Omni significantly outperforms general-purpose baselines on multilingual and multimodal reasoning as well as real-world speech understanding. All models, data, benchmarks, and code will be released to promote reproducible research, inclusive agricultural intelligence, and sustainable AI development for low-resource regions.",
+ "summary": "1) 核心创新点：提出一个统一的语音-视觉-文本多模态框架 AgriGPT-Omni，通过数据合成、三阶段训练和专属基准，实现面向多语言的农业智能端到端推理。\n\n2) 主要方法：\n- 构建可扩展的数据合成与采集管线，将农业文本和图像转化为训练数据，生成最大规模的农业语音数据集（492K 合成样本 + 1.4K 实际样本，涵盖六种语言）。\n- 训练首个农业领域的 omni-model，采用三阶段范式：文本知识注入、渐进式多模态对齐、以及基于 GRPO 的强化学习，实现跨语言、跨模态的统一推理。\n- 提出 AgriBench-Omni-2K，首个三模态农业基准，覆盖多样的语音-视觉-文本任务和 multilingual 分片，配套标准化协议与可复现工具。\n\n3) 结论/性能：实验表明 AgriGPT-Omni 在多语言与多模态推理以及真实世界语音理解方面显著优于通用基线，并计划公开模型、数据、基准与代码以促进可重复研究与低资源地区的包容性农业智能与可持续 AI 发展。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:04:59"
+}

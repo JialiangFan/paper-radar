@@ -1,0 +1,13 @@
+{
+ "id": "2511.21037",
+ "title": "LOOM: Personalized Learning Informed by Daily LLM Conversations Toward Long-Term Mastery via a Dynamic Learner Memory Graph",
+ "authors": "Justin Cui, Kevin Pu, Tovi Grossman",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21037v1",
+ "abstract": "Foundation models are increasingly used to personalize learning, yet many systems still assume fixed curricula or coarse progress signals, limiting alignment with learners' day-to-day needs. At the other extreme, lightweight incidental systems offer flexible, in-the-moment content but rarely guide learners toward mastery. Prior work privileges either continuity (maintaining a plan across sessions) or initiative (reacting to the moment), not both, leaving learners to navigate the trade-off between recency and trajectory-immediate relevance versus cumulative, goal-aligned progress. We present LOOM, an agentic pipeline that infers evolving learner needs from recent LLM conversations and a dynamic learner memory graph, then assembles coherent learning materials personalized to the learner's current needs, priorities, and understanding. These materials link adjacent concepts and surface gaps as tightly scoped modules that cumulatively advance broader goals, providing guidance and sustained progress while remaining responsive to new interests. We describe LOOM's end-to-end architecture and working prototype, including conversation summarization, topic planning, course generation, and graph-based progress tracking. In a formative study with ten participants, users reported that LOOM's generated lessons felt relevant to their recent activities and helped them recognize knowledge gaps, though they also highlighted needs for greater consistency and control. We conclude with design implications for more robust, mixed-initiative learning pipelines that integrate structured learner modelling with everyday LLM interactions.",
+ "summary": "核心创新点：将最近的LLM对话信息与动态的学习者记忆图相结合，形成一个能在持续性目标导向与对新兴趣的即时响应之间取得平衡的个性化学习流水线。\n\n主要方法：\n- 构建一个 agentic 流程，利用对话摘要、主题规划、课程生成和基于图的进度追踪等模块；\n- 通过对最近对话的摘要与主题推断动态更新学习者记忆图，连结相关概念并将知识点打散为紧凑的、能共同推进目标的学习模块；\n- 端到端架构包括对话摘要、主题规划、课程生成，以及基于图的进度追踪。\n\n结论/性能：\n- 在十名参与者的形成性研究中，用户认为 LOOM 生成的课程与最近活动相关，且有助于发现知识空缺，但也指出需要提高一致性与可控性；研究对将结构化的 learner 模型与日常 LLM 交互融合的混合主动学习流水线提出设计启示。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-11-30 06:06:18"
+}

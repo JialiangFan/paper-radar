@@ -1,0 +1,13 @@
+{
+ "id": "2511.23407",
+ "title": "From CAD to POMDP: Probabilistic Planning for Robotic Disassembly of End-of-Life Products",
+ "authors": "Jan Baumgärtner, Malte Hansjosten, David Hald, Adrian Hauptmannl, Alexander Puchta, Jürgen Fleischer",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.23407v1",
+ "abstract": "To support the circular economy, robotic systems must not only assemble new products but also disassemble end-of-life (EOL) ones for reuse, recycling, or safe disposal. Existing approaches to disassembly sequence planning often assume deterministic and fully observable product models, yet real EOL products frequently deviate from their initial designs due to wear, corrosion, or undocumented repairs. We argue that disassembly should therefore be formulated as a Partially Observable Markov Decision Process (POMDP), which naturally captures uncertainty about the product's internal state. We present a mathematical formulation of disassembly as a POMDP, in which hidden variables represent uncertain structural or physical properties. Building on this formulation, we propose a task and motion planning framework that automatically derives specific POMDP models from CAD data, robot capabilities, and inspection results. To obtain tractable policies, we approximate this formulation with a reinforcement-learning approach that operates on stochastic action outcomes informed by inspection priors, while a Bayesian filter continuously maintains beliefs over latent EOL conditions during execution. Using three products on two robotic systems, we demonstrate that this probabilistic planning framework outperforms deterministic baselines in terms of average disassembly time and variance, generalizes across different robot setups, and successfully adapts to deviations from the CAD model, such as missing or stuck parts.",
+ "summary": "- 核心创新点：将端‑/EOL 产品的拆解序列规划从确定性模型转为基于部分可观测马尔可夫决策过程（POMDP）的概率规划，并从 CAD 数据自动派生 POMDP、结合强化学习与贝叶斯滤波实现鲁棒策略，能应对内部状态的不确定性和设计偏离。\n\n- 主要方法：\n  - 将拆解问题建模为 POMDP，使用隐藏变量表示不确定的结构或物理属性。\n  - 构建一个从 CAD 数据、机器人能力和检验结果自动派生 POMDP 的任务与运动规划框架。\n  - 为获得可行策略，采用基于强化学习的近似方法，利用带检验先验的随机动作结果来学习策略。\n  - 在执行过程中通过贝叶斯滤波持续更新对潜在 EOL 条件的信念。\n\n- 结论/性能：\n  - 相较确定性基线，在平均拆解时间和时间方差方面实现改进（更短且波动更小）。\n  - 对不同机器人配置具有较好的泛化能力，且能适应 CAD 模型的偏离（如部件缺失或卡死）。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-01 14:01:04"
+}

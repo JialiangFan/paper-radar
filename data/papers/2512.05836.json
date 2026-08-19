@@ -1,0 +1,13 @@
+{
+ "id": "2512.05836",
+ "title": "Using Large Language Models to Create Personalized Networks From Therapy Sessions",
+ "authors": "Clarissa W. Ong, Hiba Arnaout, Kate Sheehan, Estella Fox, Eugen Owtscharow, Iryna Gurevych",
+ "date": "2025-12-05",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05836v1",
+ "abstract": "Recent advances in psychotherapy have focused on treatment personalization, such as by selecting treatment modules based on personalized networks. However, estimating personalized networks typically requires intensive longitudinal data, which is not always feasible. A solution to facilitate scalability of network-driven treatment personalization is leveraging LLMs. In this study, we present an end-to-end pipeline for automatically generating client networks from 77 therapy transcripts to support case conceptualization and treatment planning. We annotated 3364 psychological processes and their corresponding dimensions in therapy transcripts. Using these data, we applied in-context learning to jointly identify psychological processes and their dimensions. The method achieved high performance even with a few training examples. To organize the processes into networks, we introduced a two-step method that grouped them into clinically meaningful clusters. We then generated explanation-augmented relationships between clusters. Experts found that networks produced by our multi-step approach outperformed those built with direct prompting for clinical utility and interpretability, with up to 90% preferring our approach. In addition, the networks were rated favorably by experts, with scores for clinical relevance, novelty, and usefulness ranging from 72-75%. Our findings provide a proof of concept for using LLMs to create clinically relevant networks from therapy transcripts. Advantages of our approach include bottom-up case conceptualization from client utterances in therapy sessions and identification of latent themes. Networks generated from our pipeline may be used in clinical settings and supervision and training. Future research should examine whether these networks improve treatment outcomes relative to other methods of treatment personalization, including statistically estimated networks.",
+ "summary": "核心创新点：通过大型语言模型从治疗会话文本自动生成可用于个体化治疗的可解释网络，实现从患者话语到网络构建的端到端自动化。\n\n主要方法：构建端到端流水线，基于77份治疗文本标注3364个心理过程及其维度；使用在-context learning（在上下文中学习）联合识别心理过程及维度；再通过两步法将过程聚类为临床有意义的群组，并生成带有解释的群组关系网络；对比评估显示多步骤方法优于直接提示法。\n\n结论/性能：专家评价显示所生成的网络在临床实用性和可解释性方面优于直接提示法，最多有90%的专家偏好该方法，临床相关性、创新性和有用性评分约在72–75%之间；这是一个概念验证，未来需评估是否提升治疗结果并与其他个性化方法比较。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-08 14:01:26"
+}

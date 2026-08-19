@@ -1,0 +1,13 @@
+{
+ "id": "2603.25733",
+ "title": "SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding",
+ "authors": "Jiwook Han, Geo Ahn, Youngrae Kim, Jinwoo Choi",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25733v1",
+ "abstract": "Multimodal Large Language Models (MLLMs) have shown strong performance on Video Temporal Grounding (VTG). However, their coarse recognition capabilities are insufficient for fine-grained temporal understanding, making task-specific fine-tuning indispensable. This fine-tuning causes models to memorize dataset-specific shortcuts rather than faithfully grounding in the actual visual content, leading to poor Out-of-Domain (OOD) generalization. Object-centric learning offers a promising remedy by decomposing scenes into entity-level representations, but existing approaches require re-running the entire multi-stage training pipeline from scratch. We propose SlotVTG, a framework that steers MLLMs toward object-centric, input-grounded visual reasoning at minimal cost. SlotVTG introduces a lightweight slot adapter that decomposes visual tokens into abstract slots via slot attention and reconstructs the original sequence, where objectness priors from a self-supervised vision model encourage semantically coherent slot formation. Cross-domain evaluation on standard VTG benchmarks demonstrates that our approach significantly improves OOD robustness while maintaining competitive In-Domain (ID) performance with minimal overhead.",
+ "summary": "- 核心创新点：提出一个轻量级的对象中心槽适配器 SlotVTG，通过将视觉信息分解为语义化的槽并结合对象性先验，在不大幅修改模型的前提下显著提升视频时序定位的跨域鲁棒性。\n- 主要方法：引入一个轻量级槽适配器，将视觉 token 通过 Slot Attention 分解成抽象的槽并重建原始序列，同时利用自监督视觉模型的对象性先验引导槽的语义一致性，与多模态大模型结合使用，避免重新训练整个管线。\n- 结论/性能：在标准 VTG 基准的跨域评测中，显著提升了 OOD 鲁棒性，同时以极低开销保持了较具竞争力的 In-Domain 性能。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:07"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.13224",
+ "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+ "authors": "Ziyu Liu, Shengyuan Ding, Xinyu Fang, Xuanlang Dai, Penghui Yang, Jianze Liang, Jiaqi Wang, Kai Chen, Dahua Lin, Yuhang Zang",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13224v1",
+ "abstract": "Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity.",
+ "summary": "以下是简要中文总结：\n\n- **核心创新点**：提出 Visual-ERM，这是一种多模态生成式奖励模型，在渲染的视觉空间直接对 vision-to-code 任务提供细粒度、可解释且任务无关的奖励反馈，从而显著改善强化学习的对齐效果。\n\n- **主要方法**：使用 Visual-ERM 作为奖励信号的生成模型，并将其嵌入强化学习以提升图表/表格/SVG 的解析质量；还提出 VisualCritic-RewardBench (VC-RewardBench) 作为评测细粒度图像到图像在结构化数据上的差异的基准。同时通过反思与修订等机制强化测试时的推理能力。\n\n- **结论/性能**：将 Visual-ERM 集成到 Qwen3-VL-8B-Instruct 后，在 chart-to-code 任务上提升 +8.4；在 table 和 SVG 解析上平均提升 +2.7 和 +4.1；在 VC-RewardBench 上，8B 规模的 Visual-ERM 明显优于 Qwen3-VL-235B-Instruct，并接近领先的闭源模型，证明细粒度视觉奖励监督对 vision-to-code RL 是必要且充分的。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-16 13:03:31"
+}

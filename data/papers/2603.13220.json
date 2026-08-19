@@ -1,0 +1,13 @@
+{
+ "id": "2603.13220",
+ "title": "A Generative Model of Conspicuous Consumption and Status Signaling",
+ "authors": "Logan Cross, Jordi Grau-Moya, William A. Cunningham, Alexander Sasha Vezhnevets, Joel Z. Leibo",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13220v1",
+ "abstract": "Status signaling drives human behavior and the allocation of scarce resources such as mating opportunities, yet the generative mechanisms governing how specific goods, signals, or behaviors acquire prestige remain a puzzle. Classical frameworks, such as Costly Signaling Theory, treat preferences as fixed and struggle to explain how semiotic meaning changes based on context or drifts dynamically over time, occasionally reaching tipping points. In this work, we propose a computational theory of status grounded in the theory of appropriateness, positing that status symbols emerge endogenously through a feedback loop of social observation and predictive pattern completion. We validate this theory using simulations of groups of Large Language Model (LLM)-based agents in the Concordia framework. By experimentally manipulating social visibility within naturalistic agent daily routines, we demonstrate that social interactions transform functional demand into status-seeking behavior. We observe the emergence of price run-ups and positive price elasticity (Veblen effects) for both real-world luxury items and procedurally generated synthetic goods, ruling out pretraining bias as the sole driver. Furthermore, we demonstrate that \"influencer\" agents can drive the endogenous formation of distinct subcultures through targeted sanctioning, and find that similar social influence effects generalize to non-monetary signaling behaviors. This work provides a generative bridge between micro-level cognition and macro-level economic and sociological phenomena, offering a new methodology for forecasting how cultural conventions emerge from interaction.",
+ "summary": "- 核心创新点：提出一个以“适宜性理论”为基础、通过社会观察与预测模式完成的内生性地位符号生成模型，并在包含大量LLM代理的Concordia仿真中得到验证。\n\n- 主要方法：在 Concordia 框架中使用大型语言模型代理进行分组仿真，系统性操控社会可见性，观察功能需求如何转化为地位追求，并分析现实奢侈品与合成品的价格走向与正向价格弹性；引入“网红”代理通过定向制裁驱动物种/子文化的形成，同时验证非货币性信号的影响扩展。\n\n- 结论/性能：证实地位符号可通过社会观察-预测完成的反馈回路自发涌现，出现价格上涨与正价格弹性；网红代理能驱动明确的子文化形成，且效应一般化到非货币 signaling 行为；提供了将微观认知与宏观经济/社会现象连接的生成性预测方法，用以预测文化惯例如何在互动中形成。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-16 13:00:32"
+}

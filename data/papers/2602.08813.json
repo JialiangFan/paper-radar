@@ -1,0 +1,13 @@
+{
+ "id": "2602.08813",
+ "title": "Robust Policy Optimization to Prevent Catastrophic Forgetting",
+ "authors": "Mahdi Sabbaghi, George Pappas, Adel Javanmard, Hamed Hassani",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08813v1",
+ "abstract": "Large language models are commonly trained through multi-stage post-training: first via RLHF, then fine-tuned for other downstream objectives. Yet even small downstream updates can compromise earlier learned behaviors (e.g., safety), exposing a brittleness known as catastrophic forgetting. This suggests standard RLHF objectives do not guarantee robustness to future adaptation. To address it, most prior work designs downstream-time methods to preserve previously learned behaviors. We argue that preventing this requires pre-finetuning robustness: the base policy should avoid brittle high-reward solutions whose reward drops sharply under standard fine-tuning.\n  We propose Fine-tuning Robust Policy Optimization (FRPO), a robust RLHF framework that optimizes reward not only at the current policy, but across a KL-bounded neighborhood of policies reachable by downstream adaptation. The key idea is to ensure reward stability under policy shifts via a max-min formulation. By modifying GRPO, we develop an algorithm with no extra computation, and empirically show it substantially reduces safety degradation across multiple base models and downstream fine-tuning regimes (SFT and RL) while preserving downstream task performance. We further study a math-focused RL setting, demonstrating that FRPO preserves accuracy under subsequent fine-tuning.",
+ "summary": "- 核心创新点：提出 FRPO（Fine-tuning Robust Policy Optimization），在下游微调可能导致策略偏移的前提下，通过对奖励在 KL 有界的策略邻域内进行最大-最小鲁棒优化，从而提前确保奖励的稳定性，防止灾难性遗忘；且实现上无需额外计算。\n- 主要方法：在 GRPO 的基础上加入对 KL 限制下的策略集合的对抗性鲁棒优化，形成一个 max-min 的目标，确保当前策略及其下游可达到策略的奖励在鲁棒意义上的稳定性，适用于 RLHF 的训练流程，且对计算成本无额外增加，应用于多种下游场景（SFT 和 RL）。\n- 结论/性能：实验证明 FRPO 能显著减少多种基础模型在下游微调（包括 SFT 与 RL）中的安全性下降，同时保持下游任务性能；在一个数学化的 RL 设置中也证明 FRPO 能在后续微调中维持准确性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-10 14:06:02"
+}

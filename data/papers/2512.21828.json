@@ -1,0 +1,13 @@
+{
+ "id": "2512.21828",
+ "title": "Contextual Biasing for LLM-Based ASR with Hotword Retrieval and Reinforcement Learning",
+ "authors": "YuXiang Kong, JunFeng Hou, Jian Tang, Bingqing Zhu, Jicheng Zhang, Shaofei Xue",
+ "date": "2025-12-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21828v1",
+ "abstract": "Large language model (LLM)-based automatic speech recognition (ASR) has recently achieved strong performance across diverse tasks, yet contextual biasing for named entities and hotwords under large vocabularies remains challenging. In this work, we propose a scalable two-stage framework that integrates hotword retrieval with LLM-ASR adaptation. First, we extend the Global-Local Contrastive Language-Audio pre-trained model (GLCLAP) to retrieve a compact top-k set of hotword candidates from a large vocabulary via robustness-aware data augmentation and fuzzy matching. Second, we inject the retrieved candidates as textual prompts into an LLM-ASR model and fine-tune it with Generative Rejection-Based Policy Optimization (GRPO), using a task-driven reward that jointly optimizes hotword recognition and overall transcription accuracy. Experiments on hotword-focused test sets show substantial keyword error rate (KER) reductions while maintaining sentence accuracy on general ASR benchmarks, demonstrating the effectiveness of the proposed framework for large-vocabulary contextual biasing.",
+ "summary": "- 核心创新点：提出一个两阶段的热词检索与LLM-ASR微调框架，通过从大词汇中检索紧凑的 top-k 热词候选并以 Generative Rejection-Based Policy Optimization (GRPO) 对 LLM‑ASR 进行文本提示微调，以实现大词汇场景下的情境偏置与热词识别提升。\n\n- 主要方法：\n  - 阶段1：扩展 GLCLAP，通过鲁棒性数据增强和模糊匹配，在大词汇中检索出紧凑的 top-k 热词候选。\n  - 阶段2：将检索到的候选作为文本提示注入到 LLM‑ASR 模型，并用 GRPO 进行微调，采用任务驱动奖励同时优化热词识别和整体转录准确性。\n\n- 结论/性能：在热词聚焦的测试集上显著降低关键词错误率（KER），同时在通用 ASR 基准上保持句子级准确性，证明该框架在大词汇情境偏置方面的有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-29 02:28:48"
+}

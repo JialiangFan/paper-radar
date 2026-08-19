@@ -1,0 +1,13 @@
+{
+ "id": "2607.13911",
+ "title": "How to Guide LLM Generation: Dual-Surrogate Guided Search for Automated Heuristic Design",
+ "authors": "Yuhan Wang, Chaoda Peng, Xingyu Wu, Sheng-Hao Wu, Zhi-Hui Zhan",
+ "date": "2026-07-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.13911v1",
+ "abstract": "Large language models (LLMs) have made automated heuristic design (AHD) increasingly practical by generating executable heuristic code from task descriptions and evaluator feedback. Yet under a limited query and evaluation budget, search efficiency depends critically on a pre-generation decision. Before each LLM query and black-box evaluation, the system must choose which archived heuristics to reuse as parents and which generation operator should transform them. Existing methods typically choose such actions with predefined rules, leaving the expected outcome of each concrete operator-parent action only indirectly modeled. Therefore, we propose \\emph{\\fullmethod{}} (\\method{}), a surrogate-guided action-selection module for operator-parent selection in LLM-based AHD. \\method{} guides the LLM code-generation process by scoring pre-generation actions with two complementary surrogates. Specifically, a transition surrogate is proposed to predict the latent distribution of the child representation induced by an operator-parent action, while an instance-conditioned utility surrogate is proposed to estimate the expected performance of sampled child latents. Moreover, we propose an uncertainty-aware acquisition rule that combines predicted utility, utility uncertainty, and transition uncertainty to select the next LLM generation action. Across a diverse heuristic-design suite, \\method{} is competitive with strong LLM-AHD baselines, and ablation and action-selection analyses suggest that its behavior goes beyond simple archive ranking or fixed operator preferences.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-16 13:02:27"
+}

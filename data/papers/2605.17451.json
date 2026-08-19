@@ -1,0 +1,13 @@
+{
+ "id": "2605.17451",
+ "title": "DeTrack: A Benchmark and Altitude-Aware Dual World Model for Drone-embodied Tracking",
+ "authors": "Guyue Hu, Haoming Liu, Siyuan Song, Chenglong Li, Feng Chen, Jin Tang",
+ "date": "2026-05-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.17451v1",
+ "abstract": "Aerial object tracking has broad applications in public safety, emergency rescue, wildlife monitoring, and related fields. However, existing aerial tracking benchmarks are mainly based on passive 2D video sequences captured from fixed camera locations or predefined flight paths, where drones are treated as passive cameras rather than embodied agents that actively perceive, interact, and control their motion in dynamic 3D scenes. In this paper, we define a new drone-embodied tracking task, termed DeTrack, which requires a drone to track a target in interactive 3D environments using online egocentric observations and active flight control in a closed loop. We build a large-scale benchmark containing 11,368 target trajectories across diverse scenes, rendering conditions, semantic regions, and moving distractors, together with evaluation metrics for target visibility, tracking accuracy, and trajectory success. We further propose AaDWorlds, an altitude-aware dual world model framework for drone-embodied tracking. AaDWorlds consists of an altitude-aware perception module and dual world models that imagine future states under both high- and low-altitude regimes. By combining pseudo altitude-aware observations and imagined future states, AaDWorlds alleviates the intrinsic altitude-mediated contradiction between target visibility and flight safety. Experiments on the DeTrack benchmark demonstrate that AaDWorlds improves closed-loop tracking performance across all evaluation metrics.",
+ "summary": "## 论文总结：DeTrack\n\n**1. 核心创新点**\n将无人机空中目标跟踪从\"被动视频序列\"重新定义为\"具身智能体在 3D 环境中主动感知与闭环飞行控制\"的新任务（DeTrack），并提出兼顾目标可见性与飞行安全的高度感知双世界模型。\n\n**2. 主要方法**\n- **基准（Benchmark）**：构建大规模数据集，包含 11,368 条目标轨迹，覆盖多样场景、渲染条件、语义区域和移动干扰物，并给出可见性、跟踪精度和轨迹成功率等评估指标。\n- **模型（AaDWorlds）**：由\"高度感知感知模块\"+\"双世界模型\"组成；双世界模型分别在**高空**与**低空**两种模式下想象未来状态，结合伪高度感知观测和未来状态预测，缓解高度对\"目标可见性 vs. 飞行安全\"的内在矛盾。\n\n**3. 结论 / 性能**\n在 DeTrack 基准上的实验显示，AaDWorlds 在**所有评估指标**上均提升了闭环跟踪性能。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-20 13:05:52"
+}

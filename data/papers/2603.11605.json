@@ -1,0 +1,13 @@
+{
+ "id": "2603.11605",
+ "title": "LaMoGen: Language to Motion Generation Through LLM-Guided Symbolic Inference",
+ "authors": "Junkun Jiang, Ho Yin Au, Jingyu Xiang, Jie Chen",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11605v1",
+ "abstract": "Human motion is highly expressive and naturally aligned with language, yet prevailing methods relying heavily on joint text-motion embeddings struggle to synthesize temporally accurate, detailed motions and often lack explainability. To address these limitations, we introduce LabanLite, a motion representation developed by adapting and extending the Labanotation system. Unlike black-box text-motion embeddings, LabanLite encodes each atomic body-part action (e.g., a single left-foot step) as a discrete Laban symbol paired with a textual template. This abstraction decomposes complex motions into interpretable symbol sequences and body-part instructions, establishing a symbolic link between high-level language and low-level motion trajectories. Building on LabanLite, we present LaMoGen, a Text-to-LabanLite-to-Motion Generation framework that enables large language models (LLMs) to compose motion sequences through symbolic reasoning. The LLM interprets motion patterns, relates them to textual descriptions, and recombines symbols into executable plans, producing motions that are both interpretable and linguistically grounded. To support rigorous evaluation, we introduce a Labanotation-based benchmark with structured description-motion pairs and three metrics that jointly measure text-motion alignment across symbolic, temporal, and harmony dimensions. Experiments demonstrate that LaMoGen establishes a new baseline for both interpretability and controllability, outperforming prior methods on our benchmark and two public datasets. These results highlight the advantages of symbolic reasoning and agent-based design for language-driven motion synthesis.",
+ "summary": "- 核心创新点：通过引入 LabanLite 的符号化动作表示，并结合大语言模型的符号推理，构建一个语言-符号-运动可解释、可控的生成框架 LaMoGen。\n\n- 主要方法： \n  - 提出 LabanLite，将每个原子肢体动作编码为离散的 Laban 符号并配套文本模板，建立高层语言与低层运动轨迹之间的符号联系。 \n  - 构建 LaMoGen（Text-to-LabanLite-to-Motion），利用大语言模型通过符号推理来解释动作模式、映射到文本描述、再将符号重组为可执行的运动计划。 \n  - 建立基于 Labanotation 的评测基准，提供结构化的描述-运动对并用三项指标评估文本与运动在符号、时序、和谐性等维度的对齐。\n\n- 结论/性能：在可解释性与可控性方面确立新基线，实验结果在所提出的基准和两个公开数据集上均优于前人方法，验证了符号推理与基于代理的设计在语言驱动的运动合成中的优势。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:01:55"
+}

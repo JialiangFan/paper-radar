@@ -1,0 +1,13 @@
+{
+ "id": "2604.20733",
+ "title": "Near-Future Policy Optimization",
+ "authors": "Chuanyu Qin, Chenxu Yang, Qingyi Si, Naibin Gu, Dingyu Yao, Zheng Lin, Peng Fu, Nan Duan, Jiaqi Wang",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20733v1",
+ "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a core post-training recipe. Introducing suitable off-policy trajectories into on-policy exploration accelerates RLVR convergence and raises the performance ceiling, yet finding a source of such trajectories remains the key challenge. Existing mixed-policy methods either import trajectories from external teachers (high-quality but distributionally far) or replay past training trajectories (close but capped in quality), and neither simultaneously satisfies the strong enough (higher $Q$ , more new knowledge to learn) and close enough (lower $V$ , more readily absorbed) conditions required to maximize the effective learning signal $\\mathcal{S} = Q/V$. We propose \\textbf{N}ear-Future \\textbf{P}olicy \\textbf{O}ptimization (\\textbf{NPO}), a simple mixed-policy scheme that learns from a policy's own near-future self: a later checkpoint from the same training run is a natural source of auxiliary trajectories that is both stronger than the current policy and closer than any external source, directly balancing trajectory quality against variance cost. We validate NPO through two manual interventions, early-stage bootstrapping and late-stage plateau breakthrough, and further propose \\textbf{AutoNPO},an adaptive variant that automatically triggers interventions from online training signals and selects the guide checkpoint that maximizes $S$. On Qwen3-VL-8B-Instruct with GRPO, NPO improves average performance from 57.88 to 62.84, and AutoNPO pushes it to 63.15, raising the final performance ceiling while accelerating convergence.",
+ "summary": "- 核心创新点：提出 Near-Future Policy Optimization (NPO)，利用同一训练过程中的近未来检查点作为辅助轨迹，在高质量与低方差之间取得平衡，从而提升 RLVR 的学习效率与性能上限，并衍生出自适应版本 AutoNPO。\n\n- 主要方法：在训练中引入近未来自我轨迹作为辅助来源，构建混合策略；通过两种手动干预（早期引导/bootstrap 与后期突破 plateau）验证效果；并提出 AutoNPO，在在线训练信号驱动下自动触发干预并选择使学习信号 S = Q/V 最大化的引导检查点；在 Qwen3-VL-8B-Instruct + GRPO 上进行评估。\n\n- 结论/性能：NPO 将平均性能从 57.88 提升到 62.84，AutoNPO 提升至 63.15，显著提高最终性能上限并加速收敛。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-23 13:02:17"
+}

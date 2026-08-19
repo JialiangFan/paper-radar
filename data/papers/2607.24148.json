@@ -1,0 +1,13 @@
+{
+ "id": "2607.24148",
+ "title": "A Motion-Aware Vector Quantization Framework with Centroid Reuse for Efficient VLA Inference",
+ "authors": "Zhuoran Song, Haozhe Jiang, Chunyu Qi, Minnan Pei, Gang Li, Xiaoyao Liang, Haibing Guan",
+ "date": "2026-07-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.24148v1",
+ "abstract": "Vision-Language-Action (VLA) models have demonstrated strong potential for embodied AI, yet their high inference latency on GPUs limits real-time deployment. Existing accelerators, such as Dadu-Corki, improve efficiency but treat VLA models as full-precision workloads, leaving substantial redundancy in both memory and computation underexploited.\n  In this paper, we propose VQVLA, an algorithm-hardware co-design framework that accelerates VLA inference by exploiting weight similarity and execution dynamics. We first introduce MotionVQ, a motion-aware vector quantization scheme that dynamically adjusts quantization precision based on the robot's execution state, reducing memory access while preserving task success rate. We then propose a merged-centroid vectorized GEMM paradigm that operates on the codebook-index representation, eliminating redundant multiplications through spatial aggregation and temporal reuse of centroids. To realize these optimizations, we design an accelerator that efficiently supports dynamic precision selection and centroid-reuse computation. Experimental results show that VQVLA achieves 6.5x, 2.8x, 1.9x, 3.3x, and 4.3x speedup over the A100 GPU, Dadu-Corki, LUT-DLA, CodeGEMM, and ShiftAddLLM, respectively, with negligible accuracy degradation.",
+ "summary": "**VQVLA 论文摘要总结**\n\n1. **核心创新点**\n提出 VQVLA——一个\"算法-硬件协同设计\"框架，通过感知机器人运动状态的动态向量量化与质心复用，大幅加速视觉-语言-动作（VLA）模型的推理。\n\n2. **主要方法**\n- **MotionVQ**：一种运动感知的向量量化方案，根据机器人当前执行状态动态调整量化精度，从而减少访存量同时保住任务成功率。\n- **融合质心的向量化 GEMM 范式**：直接在\"码本索引\"表示上做计算，通过质心的空间聚合与时间复用消除冗余乘法。\n- **专用加速器**：硬件层面支持动态精度选择与质心复用计算这两项优化。\n\n3. **结论/性能**\n相比 A100 GPU、Dadu-Corki、LUT-DLA、CodeGEMM、ShiftAddLLM，分别取得 6.5×、2.8×、1.9×、3.3×、4.3× 的加速，且精度损失可忽略。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-01 13:05:28"
+}

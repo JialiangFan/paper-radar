@@ -1,0 +1,13 @@
+{
+ "id": "2603.06729",
+ "title": "Don't Freeze, Don't Crash: Extending the Safe Operating Range of Neural Navigation in Dense Crowds",
+ "authors": "Jiefu Zhang, Yang Xu, Vaneet Aggarwal",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.06729v1",
+ "abstract": "Navigating safely through dense crowds requires collision avoidance that generalizes beyond the densities seen during training. Learning-based crowd navigation can break under out-of-distribution crowd sizes due to density-sensitive observation normalization and social-cost scaling, while analytical solvers often remain safe but freeze in tight interactions. We propose a reinforcement learning approach for dense, variable-density navigation that attains zero-shot density generalization using a density-invariant observation encoding with density-randomized training and physics-informed proxemic reward shaping with density-adaptive scaling. The encoding represents the distance-sorted $K$ nearest pedestrians plus bounded crowd summaries, keeping input statistics stable as crowd size grows. Trained with $N\\!\\in\\![11,16]$ pedestrians in a $3\\mathrm{m}\\times3\\mathrm{m}$ arena and evaluated up to $N\\!=\\!21$ pedestrians ($1.3\\times$ denser), our policy reaches the goal in $>99\\%$ of episodes and achieves $86\\%$ collision-free success in random crowds, with markedly less freezing than analytical methods and a $>\\!60$-point collision-free margin over learning-based benchmark methods. Codes are available at \\href{https://github.com/jznmsl/PSS-Social}{https://github.com/jznmsl/PSS-Social}.",
+ "summary": "- 核心创新点：提出密度不变的观测编码结合密度随机化训练和物理信息驱动的近接奖励，实现神经导航在密集拥挤场景中的零样本密度泛化并显著减少冻结现象。\n\n- 主要方法：在强化学习框架中设计密度不变的观测编码（距离排序的最近K个行人+受限的拥挤汇总）、进行密度随机化训练，并引入物理启发的 proxemic 奖励与密度自适应尺度。\n\n- 结论/性能：在训练仅用11–16名行人、3m×3m场景下扩展到21名（约1.3倍密度）时，策略在≥99%的回合达成目标，随机拥挤场景下碰撞-free成功率达86%；相较于分析法显著减少冻结，且超越学习基线超过60点碰撞自由边际；代码公开。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-10 13:01:00"
+}

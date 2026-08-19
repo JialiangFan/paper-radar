@@ -1,0 +1,13 @@
+{
+ "id": "2608.01381",
+ "title": "DreamTrajectory: Trajectory-Guided Action Generation with World Model Alignment for Mobile Manipulation",
+ "authors": "Zheng Yang, Wenjie Zhang, Xiangyu Chen, Wenxuan Song, Xianpeng Wang, Yihang Kang, Wen Chen, Lujia Wang, Renjing Xu, Xiaowen Chu",
+ "date": "2026-08-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.01381v1",
+ "abstract": "Mobile manipulation requires a robot to coordinate base and arm motion under continuously changing viewpoints and contact conditions, within an action space far larger than that of fixed-base manipulation. Existing Vision-Language-Action (VLA) policies are limited in two respects. (i)They map observations directly to whole-body action chunks, searching this large action space without an explicit task-space motion plan, which makes coordinated base--arm prediction imprecise. (ii)They execute the predicted chunk open-loop, without checking whether the actions can realize the motion the policy intended, so control errors and unmodeled contacts accumulate into a gap between planned and realized motion. We present DreamTrajectory, a trajectory-guided framework for language-conditioned mobile manipulation that introduces one component for each limitation. Addressing(i), DreamTrajectory jointly predicts an intention-level end-effector trajectory and a whole-body action chunk in a single action expert, so that the trajectory explicitly guides base--arm action generation instead of remaining implicit. Addressing(ii), a lightweight trajectory world model predicts the trajectory that a candidate action chunk would induce, and a test-time search--predict--score procedure selects the candidate best aligned with the planned trajectory. On MS-HAB, trajectory guidance raises average success from 32.3% to 47.5% and test-time refinement further to 54.8%, with the largest gains on contact-rich articulated-object tasks. On three real-world mobile manipulation tasks, the corresponding average success rates are 63.3%, 81.7%, and 90.0%.",
+ "summary": "## DreamTrajectory 论文摘要总结\n\n**1. 核心创新点**\n提出「轨迹引导 + 世界模型对齐」框架，把显式的末端执行器轨迹作为中间表征来引导移动操作的全身动作生成，并在测试时校验动作是否真能实现预期运动。\n\n**2. 主要方法**\n针对现有 VLA 策略的两个缺陷各设计一个组件：\n- **轨迹引导**：在单一 action expert 中**联合预测**「意图级末端执行器轨迹」与「全身动作块（whole-body action chunk）」，让任务空间的运动规划显式化，从而协调底盘与机械臂的动作预测（而非在巨大动作空间中盲搜）。\n- **测试时优化**：引入一个轻量级**轨迹世界模型**，预测候选动作块实际会诱发的轨迹，再通过「搜索—预测—打分」流程选出与规划轨迹最对齐的候选，解决开环执行下误差与未建模接触的累积问题。\n\n**3. 结论/性能**\n- **仿真（MS-HAB）**：平均成功率从 32.3% → 47.5%（加轨迹引导）→ 54.8%（再加测试时优化），在富接触的铰接物体任务上提升最明显。\n- **真机**：三个真实移动操作任务上，对应平均成功率为 63.3% → 81.7% → 90.0%，验证了两个组件的逐级增益。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-05 13:04:28"
+}

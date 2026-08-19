@@ -1,0 +1,13 @@
+{
+ "id": "2605.22089",
+ "title": "LVDrive: Latent Visual Representation Enhanced Vision-Language-Action Autonomous Driving Model",
+ "authors": "Xiaodong Mei, Diankun Zhang, Hongwei Xie, Guang Chen, Hangjun Ye, Dan Xu",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22089v1",
+ "abstract": "Vision-Language-Action (VLA) models have emerged as a promising framework for end-to-end autonomous driving. However, existing VLAs typically rely on sparse action supervision, which underutilizes their powerful scene understanding and reasoning capabilities. Recent attempts to incorporate dense visual supervision via world modeling often overemphasize pixel-level image reconstruction, neglecting semantically meaningful scene representation learning. In this work, we propose LVDrive, a Latent Visual representation enhanced VLA framework for autonomous driving. LVDrive introduces a future scene prediction task into the VLA paradigm, where future representations are learned entirely in a high-level latent space under auxiliary supervision from a pretrained vision backbone. Departing from inefficient autoregressive generation, we jointly model future scene and motion prediction within a unified embedding space, processed in a single forward pass to conduct the future-aware reasoning. We further design a two-stage trajectory decoding strategy that explicitly leverages the learned latent future representations to refine trajectory generation. Extensive experiments on the challenging Bench2Drive benchmark demonstrate that LVDrive achieves significant improvements in closed-loop driving performance, outperforming both action supervised methods and image-reconstruction-based world model approaches.",
+ "summary": "# LVDrive 论文总结\n\n**1. 核心创新点**\n提出在 VLA（视觉-语言-动作）自动驾驶模型中引入\"高层潜在空间的未来场景预测\"作为辅助监督，避免像素级重建的低效，强化场景语义理解与轨迹生成。\n\n**2. 主要方法**\n- 在预训练视觉骨干网络提供的潜在特征空间中进行未来场景表征学习，而非自回归像素重建。\n- 将未来场景预测与运动预测统一到同一嵌入空间，单次前向传播完成\"未来感知推理\"。\n- 设计两阶段轨迹解码策略，利用学到的潜在未来表征对轨迹进行细化。\n\n**3. 结论/性能**\n在 Bench2Drive 闭环驾驶基准上取得显著提升，优于纯动作监督方法以及基于图像重建的世界模型方法。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-22 13:03:51"
+}

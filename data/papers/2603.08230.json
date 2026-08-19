@@ -1,0 +1,13 @@
+{
+ "id": "2603.08230",
+ "title": "Disentangling Reasoning in Large Audio-Language Models for Ambiguous Emotion Prediction",
+ "authors": "Xiaofeng Yu, Jiaheng Dong, Jean Honorio, Abhirup Ghosh, Hong Jia, Ting Dang",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.08230v1",
+ "abstract": "Speech emotion recognition plays an important role in various applications. However, most existing approaches predict a single emotion label, oversimplifying the inherently ambiguous nature of human emotional expression. Recent large audio-language models show promise in generating richer outputs, but their reasoning ability for ambiguous emotional understanding remains limited. In this work, we reformulate ambiguous emotion recognition as a distributional reasoning problem and present the first systematic study of ambiguity-aware reasoning in LALMs. Our framework comprises two complementary components: an ambiguity-aware objective that aligns predictions with human perceptual distributions, and a structured ambiguity-aware chain-of-thought supervision that guides reasoning over emotional cues. Experiments on IEMOCAP and CREMA-D demonstrate consistent improvements across SFT, DPO, and GRPO training strategies.",
+ "summary": "- 核心创新点：将模糊/不确定的情感识别重新建模为分布式推理问题，首次在大型音频-语言模型中系统研究并提出模糊情感推理框架。\n\n- 主要方法：提出两大互补组件——1) ambiguity-aware objective，使模型输出的情感分布与人类感知分布对齐；2) 结构化的 ambiguity-aware chain-of-thought 监督，指引模型在情感线索上进行有组织的推理。基于大规模音频-语言模型，结合 SFT、DPO、GRPO 等训练策略，在 IEMOCAP 与 CREMA-D 数据集上进行验证。\n\n- 结论/性能：在 IEMOCAP 与 CREMA-D 上实现对模糊情感推理的一致性提升，且对齐人类感知分布和结构化推理能力均得到改善，方法在多种训练策略（SFT、DPO、GRPO）下均表现出显著提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-10 13:04:05"
+}

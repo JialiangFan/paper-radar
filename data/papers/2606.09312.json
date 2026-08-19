@@ -1,0 +1,13 @@
+{
+ "id": "2606.09312",
+ "title": "Toward Compiler World Models: Learning Latent Dynamics for Efficient Tensor Program Search",
+ "authors": "Haolin Pan, Lianghong Huang, Xvlin Zhou, Mingjie Xing, Yanjun Wu",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.09312v1",
+ "abstract": "Tensor program optimization is essential for modern machine learning systems, but its search space is enormous. Existing auto-schedulers reduce measurement cost with learned cost models, yet they usually evaluate each candidate as a static code snapshot, ignoring the schedule trajectory that produced it. This makes them insensitive to action dependencies and vulnerable to superficial code variations. We propose a \\emph{world-model-inspired} evaluator that models schedule evaluation as action-conditioned latent dynamics over program states. Starting from the initial program, it rolls out scheduling actions in a continuous latent space with a lightweight transition model, avoiding expensive AST mutation and repeated code encoding. The final dynamic representation is combined with action and hardware features to rank candidates. Implemented in TVM AutoScheduler, our method improves representative-subgraph latency over Ansor by 1.37$\\times$ on GPU and 1.54$\\times$ on CPU under the same 64-trial budget. It also matches Ansor-10K within 2.2% geometric mean using 10$\\times$ fewer measurements, and accelerates full-model inference over PyTorch/PyTorch-opt(cuDNN) by 4.61$\\times$/3.67$\\times$ geometric mean.",
+ "summary": "# 论文总结：面向编译器世界模型的张量程序搜索\n\n## 1. 核心创新点\n将张量程序的调度评估建模为**动作条件下的潜在动态过程**（受\"世界模型\"启发），从而捕捉调度轨迹中的动作依赖关系，而非仅评估静态代码快照。\n\n## 2. 主要方法\n- 从初始程序出发，在**连续潜在空间**中通过一个轻量级转移模型（transition model）\"推演\"调度动作（rollout）。\n- 避免了昂贵的 AST 变换和重复代码编码。\n- 最终将动态表示与动作特征、硬件特征结合，对候选方案进行排序。\n- 在 TVM AutoScheduler 中实现。\n\n## 3. 结论 / 性能\n- 在相同 **64 次试验预算**下，相比 Ansor，代表性子图延迟在 GPU 上提升 **1.37×**、CPU 上提升 **1.54×**。\n- 仅用 **1/10 的测量次数**即可匹敌 Ansor-10K（几何均值差距在 2.2% 以内）。\n- 完整模型推理相比 PyTorch / PyTorch-opt(cuDNN) 分别加速 **4.61× / 3.67×**（几何均值）。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-10 13:04:15"
+}

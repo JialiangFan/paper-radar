@@ -1,0 +1,32 @@
+{
+ "id": "benchmarking-safe-exploration-in-deep-reinforcement-learning",
+ "title": "Benchmarking Safe Exploration in Deep Reinforcement Learning",
+ "authors": "Alex Ray, Joshua Achiam, Dario Amodei",
+ "date": null,
+ "year": 2019,
+ "url": "https://openai.com/index/benchmarking-safe-exploration-in-deep-reinforcement-learning/",
+ "abstract": "",
+ "summary": "Safety Gym helped standardize constrained RL evaluation for safe exploration.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "OpenAI report",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "robotics",
+  "safe-exploration",
+  "safe-rl",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2019_Ray_SafetyGym.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2019_Ray_SafetyGym.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.23825",
+ "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+ "authors": "Stuart Bladon, Brinnae Bent",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23825v1",
+ "abstract": "It has generally been assumed that geopolitical bias in language models originates from the training data used during the pre-training phase. We tested seven open-weight LLM pairs consisting of the base model (pre-training only) and the chat model (pre-training and post-training) from seven labs on a paired-scenario forced-choice probe over 28 country pairs in English, French, and Chinese, and found that geopolitical bias originates in post-training rather than in pre-training. Across seven AI labs, six showed shifts in the direction associated with the country or region of the model developer after post-training. This shift is strongest in Alibaba's Qwen 2.5: while the base is neutral on China-favourability (-0.15 log-odds, p=0.15), the post-trained chat variant is at +2.91 (p<10^-4), an 18x shift in odds. We also observe shifts in biases toward other countries across all models. Additionally, the magnitude of this shift depends on the language used to prompt the model: the French-made Mistral becomes pro-France only under French prompting (FR-EN shift +1.91, p<10^-4). These findings suggest that geopolitical preferences in language models are not simply inherited from large-scale internet data but are actively shaped during post-training, highlighting the need for greater transparency, auditing, and oversight of alignment processes that influence how models represent nations, cultures, and political perspectives.",
+ "summary": "## 论文摘要总结\n\n**1. 核心创新点**：\n该研究颠覆了\"LLM 地缘政治偏见源于预训练数据\"的普遍假设，证明此类偏见实际上是在**后训练阶段**产生的，并且会被**提示语言**进一步放大。\n\n**2. 主要方法**：\n对来自 7 个实验室的 7 对开源模型（基础模型 vs. 聊天模型）进行对照实验，使用涵盖 28 个国家对的\"配对场景强制选择\"探针，分别用英语、法语、中文进行提示，比较 base 模型与 chat 模型在地缘政治倾向上的对数几率（log-odds）差异。\n\n**3. 结论/性能**：\n- 7 个实验室中有 6 个的模型在后训练后表现出**偏向开发者所在国家/地区**的倾向。\n- 阿里巴巴 Qwen 2.5 偏移最显著：base 模型对华态度中性（-0.15），chat 模型则升至 +2.91（p<10⁻⁴），几率扩大约 **18 倍**。\n- 法国 Mistral 仅在**法语提示**下显著偏向法国（FR-EN 偏移 +1.91），表明提示语言会调制偏见强度。\n- 结论：地缘政治偏好并非来自互联网语料的被动继承，而是在对齐过程中被主动塑造，亟需对后训练流程进行更高的透明度与审计监督。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-25 13:07:01"
+}

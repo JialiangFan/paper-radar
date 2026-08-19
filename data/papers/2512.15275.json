@@ -1,0 +1,13 @@
+{
+ "id": "2512.15275",
+ "title": "Bounty Hunter: Autonomous, Comprehensive Emulation of Multi-Faceted Adversaries",
+ "authors": "Louis Hackländer-Jansen, Rafael Uetz, Martin Henze",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15275v1",
+ "abstract": "Adversary emulation is an essential procedure for cybersecurity assessments such as evaluating an organization's security posture or facilitating structured training and research in dedicated environments. To allow for systematic and time-efficient assessments, several approaches from academia and industry have worked towards the automation of adversarial actions. However, they exhibit significant limitations regarding autonomy, tactics coverage, and real-world applicability. Consequently, adversary emulation remains a predominantly manual task requiring substantial human effort and security expertise - even amidst the rise of Large Language Models. In this paper, we present Bounty Hunter, an automated adversary emulation method, designed and implemented as an open-source plugin for the popular adversary emulation platform Caldera, that enables autonomous emulation of adversaries with multi-faceted behavior while providing a wide coverage of tactics. To this end, it realizes diverse adversarial behavior, such as different levels of detectability and varying attack paths across repeated emulations. By autonomously compromising a simulated enterprise network, Bounty Hunter showcases its ability to achieve given objectives without prior knowledge of its target, including pre-compromise, initial compromise, and post-compromise attack tactics. Overall, Bounty Hunter facilitates autonomous, comprehensive, and multi-faceted adversary emulation to help researchers and practitioners in performing realistic and time-efficient security assessments, training exercises, and intrusion detection research.",
+ "summary": "- 核心创新点：提出并实现一个自治、全面且多维度的对手仿真工具Bounty Hunter，作为Caldera的开源插件，能够在无需事先了解目标信息的情况下自律地仿真多策略、不同可探测性等级和多条攻击路径的对手行为。\n\n- 主要方法：在Caldera框架内实现的开源插件，结合自动化的攻击行动序列、可控的隐蔽性等级与多路径变体，能够在一个仿真企业网络中自主执行从前置条件、初始侵入到后期控制的完整攻击链，并实现对多战术的覆盖与重复仿真。\n\n- 结论/性能：证明其具备在不依赖目标知识的情况下实现给定目标的能力，完成从前置/初始侵入到后期渗透的多战术仿真，具备自治性、全面性和多维覆盖性，提升安全评估、培训与入侵检测研究的现实性与时效性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-18 02:06:44"
+}

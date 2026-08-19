@@ -1,0 +1,13 @@
+{
+ "id": "2512.13874",
+ "title": "SAGE: Training Smart Any-Horizon Agents for Long Video Reasoning with Reinforcement Learning",
+ "authors": "Jitesh Jain, Jialuo Li, Zixian Ma, Jieyu Zhang, Chris Dongjoo Kim, Sangho Lee, Rohun Tripathi, Tanmay Gupta, Christopher Clark, Humphrey Shi",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13874v1",
+ "abstract": "As humans, we are natural any-horizon reasoners, i.e., we can decide whether to iteratively skim long videos or watch short ones in full when necessary for a given task. With this in mind, one would expect video reasoning models to reason flexibly across different durations. However, SOTA models are still trained to predict answers in a single turn while processing a large number of frames, akin to watching an entire long video, requiring significant resources. This raises the question: Is it possible to develop performant any-horizon video reasoning systems? Inspired by human behavior, we first propose SAGE, an agent system that performs multi-turn reasoning on long videos while handling simpler problems in a single turn. Secondly, we introduce an easy synthetic data generation pipeline using Gemini-2.5-Flash to train the orchestrator, SAGE-MM, which lies at the core of SAGE. We further propose an effective RL post-training recipe essential for instilling any-horizon reasoning ability in SAGE-MM. Thirdly, we curate SAGE-Bench with an average duration of greater than 700 seconds for evaluating video reasoning ability in real-world entertainment use cases. Lastly, we empirically validate the effectiveness of our system, data, and RL recipe, observing notable improvements of up to 6.1% on open-ended video reasoning tasks, as well as an impressive 8.2% improvement on videos longer than 10 minutes.",
+ "summary": "- 核心创新点（一句话概括）\n  提出 SAGE——一个能够在长视频上进行多回合推理、对简单任务采用单回合解决的任意时域视频推理系统，结合基于合成数据的调度器训练和强化学习后训练以提升推理灵活性与效率。\n\n- 主要方法\n  - SAGE-MM：核心调度器（调度代理）/ orchestrator，用于在不同时间尺度选取推理步骤，支持长视频的多回合推理和短任务的单回合处理。\n  - 合成数据管线：使用 Gemini-2.5-Flash 生成易于训练的合成数据来训练 SAGE-MM。\n  - 强化学习后训练（RL post-training）：关键步骤，用以灌输和强化任意时域推理能力。\n  - 评测基准：提出 SAGE-Bench，平均视频时长超过700秒，用于评估真实世界娱乐场景中的视频推理能力。\n\n- 结论/性能\n  - 在开放式视频推理任务上，系统性能提升多达 6.1%。\n  - 对于时长超过10分钟的视频，提升达到 8.2%。\n  - 实验验证了系统、数据与 RL 训练策略的协同效应在真实长视频推理中的显著收益。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-17 02:04:18"
+}

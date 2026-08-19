@@ -1,0 +1,33 @@
+{
+ "id": "2307.01928",
+ "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+ "authors": "Allen Z. Ren, Anushri Dixit, Alexandra Bodrova, Sumeet Singh, Stephen Tu, Noah Brown, Peng Xu, Leila Takayama, Fei Xia, Jake Varley, Zhenjia Xu, Dorsa Sadigh, Andy Zeng, Anirudha Majumdar",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2307.01928",
+ "abstract": "",
+ "summary": "KnowNo uses conformal prediction to calibrate when an LLM-based robot planner should ask for human help under ambiguity.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Human in the Loop",
+ "tags": [
+  "conformal-prediction",
+  "human-in-the-loop",
+  "human-in-the-loop-safety",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "uncertainty"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Human_in_the_Loop/2023_Ren_KnowNo.md",
+ "pdf_path": "PDFs/Human_in_the_Loop/2023_Ren_KnowNo.pdf",
+ "code": "",
+ "project": "https://robot-help.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

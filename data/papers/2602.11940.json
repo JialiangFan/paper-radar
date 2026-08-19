@@ -1,0 +1,13 @@
+{
+ "id": "2602.11940",
+ "title": "Temporally Unified Adversarial Perturbations for Time Series Forecasting",
+ "authors": "Ruixian Su, Yukun Bao, Xinze Zhang",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11940v1",
+ "abstract": "While deep learning models have achieved remarkable success in time series forecasting, their vulnerability to adversarial examples remains a critical security concern. However, existing attack methods in the forecasting field typically ignore the temporal consistency inherent in time series data, leading to divergent and contradictory perturbation values for the same timestamp across overlapping samples. This temporally inconsistent perturbations problem renders adversarial attacks impractical for real-world data manipulation. To address this, we introduce Temporally Unified Adversarial Perturbations (TUAPs), which enforce a temporal unification constraint to ensure identical perturbations for each timestamp across all overlapping samples. Moreover, we propose a novel Timestamp-wise Gradient Accumulation Method (TGAM) that provides a modular and efficient approach to effectively generate TUAPs by aggregating local gradient information from overlapping samples. By integrating TGAM with momentum-based attack algorithms, we ensure strict temporal consistency while fully utilizing series-level gradient information to explore the adversarial perturbation space. Comprehensive experiments on three benchmark datasets and four representative state-of-the-art models demonstrate that our proposed method significantly outperforms baselines in both white-box and black-box transfer attack scenarios under TUAP constraints. Moreover, our method also exhibits superior transfer attack performance even without TUAP constraints, demonstrating its effectiveness and superiority in generating adversarial perturbations for time series forecasting models.",
+ "summary": "- 核心创新点：提出 Temporally Unified Adversarial Perturbations (TUAPs)，通过时间戳级一致性约束确保同一时间戳在所有重叠样本中的扰动相同，并结合 Timestamp-wise Gradient Accumulation Method (TGAM) 与动量式攻击算法高效生成 TUAPs，以实现时间序列预测中的严格时间一致性对抗扰动。\n\n- 主要方法：\n  - 设计 TUAPs：在时间序列预测中对同一时间戳的扰动实现全样本的一致性约束，解决以往扰动在重叠样本间不一致的问题。\n  - 提出 TGAM：一种模块化、高效的梯度累积方法，聚合来自重叠样本的局部梯度信息，辅助生成符合 TUAP 的全局扰动。\n  - 将 TGAM 与动量基攻击算法结合，确保扰动的时间一致性，同时充分利用整条序列的梯度信息来探索对抗扰动空间。\n  - 实验设计：在三个基准数据集和四个代表性模型上评估，覆盖白盒与黑盒传递攻击场景，比较与基线方法的性能。\n\n- 结论/性能：\n  - 在有 TUAP 约束的情况下，方法在白盒与黑盒传递攻击场景中显著优于基线。\n  - 即使在没有 TUAP 约束时，也表现出优越的传递攻击性能，显示该方法在时间序列预测模型对抗扰动方面的有效性与鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-13 14:01:17"
+}

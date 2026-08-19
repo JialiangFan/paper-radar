@@ -1,0 +1,13 @@
+{
+ "id": "2512.03317",
+ "title": "NavMapFusion: Diffusion-based Fusion of Navigation Maps for Online Vectorized HD Map Construction",
+ "authors": "Thomas Monninger, Zihan Zhang, Steffen Staab, Sihao Ding",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03317v1",
+ "abstract": "Accurate environmental representations are essential for autonomous driving, providing the foundation for safe and efficient navigation. Traditionally, high-definition (HD) maps are providing this representation of the static road infrastructure to the autonomous system a priori. However, because the real world is constantly changing, such maps must be constructed online from on-board sensor data. Navigation-grade standard-definition (SD) maps are widely available, but their resolution is insufficient for direct deployment. Instead, they can be used as coarse prior to guide the online map construction process. We propose NavMapFusion, a diffusion-based framework that performs iterative denoising conditioned on high-fidelity sensor data and on low-fidelity navigation maps. This paper strives to answer: (1) How can coarse, potentially outdated navigation maps guide online map construction? (2) What advantages do diffusion models offer for map fusion? We demonstrate that diffusion-based map construction provides a robust framework for map fusion. Our key insight is that discrepancies between the prior map and online perception naturally correspond to noise within the diffusion process; consistent regions reinforce the map construction, whereas outdated segments are suppressed. On the nuScenes benchmark, NavMapFusion conditioned on coarse road lines from OpenStreetMap data reaches a 21.4% relative improvement on 100 m, and even stronger improvements on larger perception ranges, while maintaining real-time capabilities. By fusing low-fidelity priors with high-fidelity sensor data, the proposed method generates accurate and up-to-date environment representations, guiding towards safer and more reliable autonomous driving. The code is available at https://github.com/tmonnin/navmapfusion",
+ "summary": "- 核心创新点（一句话概括）：提出一种基于扩散模型的在线地图融合框架，通过对高保真传感数据与低保真导航地图进行条件去噪，将二者信息融合用于实时向量化HD地图构建，自动纠偏过时信息并强化一致区域。\n\n- 主要方法：采用扩散模型的迭代去噪机制，在传感数据和低保真导航地图上进行条件化融合；将导航地图与感知的差异视作噪声，利用扩散过程增强一致区域、抑制过时段；使用来自OpenStreetMap的粗线等先验进行引导，在nuScenes等数据集上实现在线、向量化HD地图的构建。\n\n- 结论/性能：在nuScenes基准测试中，使用OpenStreetMap粗线作为条件时，100 m 感知距离实现相对提升约21.4%，在更大感知距离上提升更显著，同时保持实时性；代码可公开获取。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:01:48"
+}

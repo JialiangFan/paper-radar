@@ -1,0 +1,13 @@
+{
+ "id": "2512.07661",
+ "title": "Optimization-Guided Diffusion for Interactive Scene Generation",
+ "authors": "Shiaho Li, Naisheng Ye, Tianyu Li, Kashyap Chitta, Tuo An, Peng Su, Boyang Wang, Haiou Liu, Chen Lv, Hongyang Li",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07661v1",
+ "abstract": "Realistic and diverse multi-agent driving scenes are crucial for evaluating autonomous vehicles, but safety-critical events which are essential for this task are rare and underrepresented in driving datasets. Data-driven scene generation offers a low-cost alternative by synthesizing complex traffic behaviors from existing driving logs. However, existing models often lack controllability or yield samples that violate physical or social constraints, limiting their usability. We present OMEGA, an optimization-guided, training-free framework that enforces structural consistency and interaction awareness during diffusion-based sampling from a scene generation model. OMEGA re-anchors each reverse diffusion step via constrained optimization, steering the generation towards physically plausible and behaviorally coherent trajectories. Building on this framework, we formulate ego-attacker interactions as a game-theoretic optimization in the distribution space, approximating Nash equilibria to generate realistic, safety-critical adversarial scenarios. Experiments on nuPlan and Waymo show that OMEGA improves generation realism, consistency, and controllability, increasing the ratio of physically and behaviorally valid scenes from 32.35% to 72.27% for free exploration capabilities, and from 11% to 80% for controllability-focused generation. Our approach can also generate $5\\times$ more near-collision frames with a time-to-collision under three seconds while maintaining the overall scene realism.",
+ "summary": "- 核心创新点：提出一个无需额外训练的优化引导扩散框架 OMEGA，在每一步反向扩散中通过约束优化重新锚定以保障结构一致性和交互意识，并把 ego-attacker 的交互建模为分布空间的博弈优化，近似纳什均衡以生成真实且具安全关键性的场景。\n\n- 主要方法：1) 通过受约束的优化在扩散采样的每个反向步骤中重新锚定，从而实现物理可行性和行为一致性；2) 将自我攻击者交互建模为分布空间的游戏优化，求解近似纳什均衡来生成具有对抗性且安全关键的场景。\n\n- 结论/性能：在 nuPlan 和 Waymo 上显著提升场景有效性与可控性：自由探索能力下物理/行为有效场景比例从 32.35% 提升至 72.27%，可控性导向生成从 11% 提升至 80%；还能生成约 5 倍的近碰帧，且时间到碰（TTC）<3秒，同时保持整体场景的真实感。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-09 14:02:10"
+}

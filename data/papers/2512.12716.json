@@ -1,0 +1,13 @@
+{
+ "id": "2512.12716",
+ "title": "CoDA: A Context-Decoupled Hierarchical Agent with Reinforcement Learning",
+ "authors": "Xuanzhang Liu, Jianglun Feng, Zhuoran Zhuang, Junzhe Zhao, Maofei Que, Jieting Li, Dianlei Wang, Hao Tong, Ye Chen, Pan Li",
+ "date": "2025-12-14",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.12716v1",
+ "abstract": "Large Language Model (LLM) agents trained with reinforcement learning (RL) show great promise for solving complex, multi-step tasks. However, their performance is often crippled by \"Context Explosion\", where the accumulation of long text outputs overwhelms the model's context window and leads to reasoning failures. To address this, we introduce CoDA, a Context-Decoupled hierarchical Agent, a simple but effective reinforcement learning framework that decouples high-level planning from low-level execution. It employs a single, shared LLM backbone that learns to operate in two distinct, contextually isolated roles: a high-level Planner that decomposes tasks within a concise strategic context, and a low-level Executor that handles tool interactions in an ephemeral, isolated workspace. We train this unified agent end-to-end using PECO (Planner-Executor Co-Optimization), a reinforcement learning methodology that applies a trajectory-level reward to jointly optimize both roles, fostering seamless collaboration through context-dependent policy updates. Extensive experiments demonstrate that CoDA achieves significant performance improvements over state-of-the-art baselines on complex multi-hop question-answering benchmarks, and it exhibits strong robustness in long-context scenarios, maintaining stable performance while all other baselines suffer severe degradation, thus further validating the effectiveness of our hierarchical design in mitigating context overload.",
+ "summary": "- 核心创新点：提出一个上下文解耦的分层智能体 CoDA，在同一 LLM 骨干上分离为高层 Planner 与低层 Executor，通过轨迹级奖励的 PECO 联合优化来缓解“上下文爆炸”问题。\n- 主要方法：使用单一的 LLM 骨干构建两种上下文隔离的角色（高层 Planner 在紧凑策略上下文中分解任务；低层 Executor 在临时、独立工作区执行工具交互），并通过 PECO（Planner-Executor Co-Optimization）端到端 RL 训练，实现两者的协作与上下文感知的策略更新。\n- 结论/性能：在复杂的多跳问答基准上显著超越最先进基线，并在长上下文场景中表现出强鲁棒性，其他方法普遍退化，验证了分层设计对缓解上下文爆炸的有效性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-16 02:02:59"
+}

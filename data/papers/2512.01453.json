@@ -1,0 +1,13 @@
+{
+ "id": "2512.01453",
+ "title": "Reinventing Clinical Dialogue: Agentic Paradigms for LLM Enabled Healthcare Communication",
+ "authors": "Xiaoquan Zhi, Hongke Zhao, Likang Wu, Chuang Zhao, Hengshu Zhu",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01453v1",
+ "abstract": "Clinical dialogue represents a complex duality requiring both the empathetic fluency of natural conversation and the rigorous precision of evidence-based medicine. While Large Language Models possess unprecedented linguistic capabilities, their architectural reliance on reactive and stateless processing often favors probabilistic plausibility over factual veracity. This structural limitation has catalyzed a paradigm shift in medical AI from generative text prediction to agentic autonomy, where the model functions as a central reasoning engine capable of deliberate planning and persistent memory. Moving beyond existing reviews that primarily catalog downstream applications, this survey provides a first-principles analysis of the cognitive architecture underpinning this shift. We introduce a novel taxonomy structured along the orthogonal axes of knowledge source and agency objective to delineate the provenance of clinical knowledge against the system's operational scope. This framework facilitates a systematic analysis of the intrinsic trade-offs between creativity and reliability by categorizing methods into four archetypes: \\textit{Latent Space Clinicians}, \\textit{Emergent Planners}, \\textit{Grounded Synthesizers}, and \\textit{Verifiable Workflow Automators}. For each paradigm, we deconstruct the technical realization across the entire cognitive pipeline, encompassing strategic planning, memory management, action execution, collaboration, and evolution to reveal how distinct architectural choices balance the tension between autonomy and safety.",
+ "summary": "- 核心创新点：提出将大语言模型在临床对话中的应用从被动生成转向“代理性自治”的认知架构，并以知识源与代理目标为正交轴，建立四大范式的系统分类，用以分析创造性与可靠性之间的权衡。\n\n- 主要方法：通过首原理分析构建新的 taxonomy；将 LLM 应用划分为四类范式：Latent Space Clinicians、Emergent Planners、Grounded Synthesizers、Verifiable Workflow Automators，并对每一范式在策略规划、记忆管理、执行动作、协作与进化等认知管线的技术实现、优缺点和适用场景进行全面解构与对比。\n\n- 结论/性能：提供一个结构化框架，帮助评估和设计在临床对话中提高可靠性、可验证性与安全性的代理型系统；明确不同范式在创造性与安全性之间的权衡，为从生成文本向具备规划、记忆与执行能力的系统转变提供指导与路径。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:03:00"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.24404",
+ "title": "Lifting Vision: Ground to Aerial Localization with Reasoning Guided Planning",
+ "authors": "Soham Pahari, M. Srinivas",
+ "date": "2025-12-30",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24404v1",
+ "abstract": "Multimodal intelligence development recently show strong progress in visual understanding and high level reasoning. Though, most reasoning system still reply on textual information as the main medium for inference. This limit their effectiveness in spatial tasks such as visual navigation and geo-localization. This work discuss about the potential scope of this field and eventually propose an idea visual reasoning paradigm Geo-Consistent Visual Planning, our introduced framework called Visual Reasoning for Localization, or ViReLoc, which performs planning and localization using only visual representations. The proposed framework learns spatial dependencies and geometric relations that text based reasoning often suffer to understand. By encoding step by step inference in the visual domain and optimizing with reinforcement based objectives, ViReLoc plans routes between two given ground images. The system also integrates contrastive learning and adaptive feature interaction to align cross view perspectives and reduce viewpoint differences. Experiments across diverse navigation and localization scenarios show consistent improvements in spatial reasoning accuracy and cross view retrieval performance. These results establish visual reasoning as a strong complementary approach for navigation and localization, and show that such tasks can be performed without real time global positioning system data, leading to more secure navigation solutions.",
+ "summary": "- 核心创新点：提出一个基于视觉推理的定位框架 ViReLoc，通过视觉域的逐步推理与强化学习，在地面图像之间进行跨视角的规划与定位，且无需文本信息或实时 GPS。\n\n- 主要方法：建立 Geo-Consistent Visual Planning 的 ViReLoc 框架，在视觉域进行按步推理并用强化学习目标优化路径规划；并结合对比学习与自适应特征交互以对齐跨视角、降低视点差异，从而提升跨视图的检索与定位性能。\n\n- 结论/性能：在多样化的导航与定位场景中实现了对空间推理准确性和跨视图检索性能的持续提升，证明视觉推理是导航与定位的有效补充方法，并且可以在不依赖实时 GPS 的情况下实现更安全的导航。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:51:47"
+}

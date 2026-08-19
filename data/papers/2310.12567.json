@@ -1,0 +1,33 @@
+{
+ "id": "2310.12567",
+ "title": "Safety-Gymnasium: A Unified Safe Reinforcement Learning Benchmark",
+ "authors": "Ji, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2310.12567",
+ "abstract": "",
+ "summary": "Safety-Gymnasium standardizes SafeRL tasks, constraints, and algorithms for evaluating reward-constraint trade-offs.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "NeurIPS Datasets and Benchmarks 2023",
+ "category": "Benchmarks Evaluation",
+ "tags": [
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "constraints",
+  "low-level-robot-safety",
+  "robotics",
+  "safe-rl",
+  "safe-vla",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Benchmarks_Evaluation/2023_Ji_SafetyGymnasium.md",
+ "pdf_path": "PDFs/Benchmarks_Evaluation/2023_Ji_SafetyGymnasium.pdf",
+ "code": "https://github.com/PKU-Alignment/safety-gymnasium",
+ "project": "https://sites.google.com/view/safety-gymnasium",
+ "is_core": true,
+ "is_supplemental": false
+}

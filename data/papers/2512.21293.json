@@ -1,0 +1,13 @@
+{
+ "id": "2512.21293",
+ "title": "Quadrupped-Legged Robot Movement Plan Generation using Large Language Model",
+ "authors": "Muhtadin, Vincentius Gusti Putu A. B. M., Ahmad Zaini, Mauridhi Hery Purnomo, I Ketut Eddy Purnama, Chastine Fatichah",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21293v1",
+ "abstract": "Traditional control interfaces for quadruped robots often impose a high barrier to entry, requiring specialized technical knowledge for effective operation. To address this, this paper presents a novel control framework that integrates Large Language Models (LLMs) to enable intuitive, natural language-based navigation. We propose a distributed architecture where high-level instruction processing is offloaded to an external server to overcome the onboard computational constraints of the DeepRobotics Jueying Lite 3 platform. The system grounds LLM-generated plans into executable ROS navigation commands using real-time sensor fusion (LiDAR, IMU, and Odometry). Experimental validation was conducted in a structured indoor environment across four distinct scenarios, ranging from single-room tasks to complex cross-zone navigation. The results demonstrate the system's robustness, achieving an aggregate success rate of over 90\\% across all scenarios, validating the feasibility of offloaded LLM-based planning for autonomous quadruped deployment in real-world settings.",
+ "summary": "- 核心创新点：在算力受限的四足机器人上，利用大语言模型生成导航计划，并通过分布式架构将高层计划在外部服务器处理，随后落地为可执行的ROS导航指令，以实现自然语言控制的室内导航。\n\n- 主要方法：采用外部服务器运行LLM进行高层指令/计划生成，结合实时传感器融合（LiDAR、IMU、里程计）将LLM输出转化为可执行的ROS导航命令，形成端到端的离线/在线分布式规划与执行框架。\n\n- 结论/性能：在四个室内场景的实验中，系统实现了超过90%的总体成功率，验证了基于LLM的离线规划在现实世界四足机器人部署中的可行性与鲁棒性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:52:28"
+}

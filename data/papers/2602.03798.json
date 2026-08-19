@@ -1,0 +1,13 @@
+{
+ "id": "2602.03798",
+ "title": "FullStack-Agent: Enhancing Agentic Full-Stack Web Coding via Development-Oriented Testing and Repository Back-Translation",
+ "authors": "Zimu Lu, Houxing Ren, Yunqiao Yang, Ke Wang, Zhuofan Zong, Mingjie Zhan, Hongsheng Li",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03798v1",
+ "abstract": "Assisting non-expert users to develop complex interactive websites has become a popular task for LLM-powered code agents. However, existing code agents tend to only generate frontend web pages, masking the lack of real full-stack data processing and storage with fancy visual effects. Notably, constructing production-level full-stack web applications is far more challenging than only generating frontend web pages, demanding careful control of data flow, comprehensive understanding of constantly updating packages and dependencies, and accurate localization of obscure bugs in the codebase. To address these difficulties, we introduce FullStack-Agent, a unified agent system for full-stack agentic coding that consists of three parts: (1) FullStack-Dev, a multi-agent framework with strong planning, code editing, codebase navigation, and bug localization abilities. (2) FullStack-Learn, an innovative data-scaling and self-improving method that back-translates crawled and synthesized website repositories to improve the backbone LLM of FullStack-Dev. (3) FullStack-Bench, a comprehensive benchmark that systematically tests the frontend, backend and database functionalities of the generated website. Our FullStack-Dev outperforms the previous state-of-the-art method by 8.7%, 38.2%, and 15.9% on the frontend, backend, and database test cases respectively. Additionally, FullStack-Learn raises the performance of a 30B model by 9.7%, 9.5%, and 2.8% on the three sets of test cases through self-improvement, demonstrating the effectiveness of our approach. The code is released at https://github.com/mnluzimu/FullStack-Agent.",
+ "summary": "- 核心创新点：提出一个三部曲的全栈代码代理体系，通过开发导向的测试与仓库回译数据增强，实现端到端的全栈编码与自我提升。\n\n- 主要方法：  \n  - FullStack-Dev：基于强计划、代码编辑、代码库导航和缺陷定位能力的多智能体框架。  \n  - FullStack-Learn：通过对抓取与合成的网站仓库进行回译的数据扩增，持续提升基础大模型（Backbone LLM）的能力。  \n  - FullStack-Bench：覆盖前端、后端和数据库功能的综合基准测试，系统评估生成网站的全栈能力。\n\n- 结论/性能：相对于先前的最先进方法，FullStack-Dev在前端/后端/数据库测试用例上分别提升8.7%、38.2%、15.9%；将 FullStack-Learn 应用于一个30B模型，三组测试分别提升9.7%、9.5%、2.8%。代码已开源，链接为 https://github.com/mnluzimu/FullStack-Agent。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-04 14:02:43"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2511.22872",
+ "title": "FedAU2: Attribute Unlearning for User-Level Federated Recommender Systems with Adaptive and Robust Adversarial Training",
+ "authors": "Yuyuan Li, Junjie Fang, Fengyuan Yu, Xichun Sheng, Tianyu Du, Xuyang Teng, Shaowei Jiang, Linbo Jiang, Jianan Lin, Chaochao Chen",
+ "date": "2025-11-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.22872v1",
+ "abstract": "Federated Recommender Systems (FedRecs) leverage federated learning to protect user privacy by retaining data locally. However, user embeddings in FedRecs often encode sensitive attribute information, rendering them vulnerable to attribute inference attacks. Attribute unlearning has emerged as a promising approach to mitigate this issue. In this paper, we focus on user-level FedRecs, which is a more practical yet challenging setting compared to group-level FedRecs. Adversarial training emerges as the most feasible approach within this context. We identify two key challenges in implementing adversarial training-based attribute unlearning for user-level FedRecs: i) mitigating training instability caused by user data heterogeneity, and ii) preventing attribute information leakage through gradients. To address these challenges, we propose FedAU2, an attribute unlearning method for user-level FedRecs. For CH1, we propose an adaptive adversarial training strategy, where the training dynamics are adjusted in response to local optimization behavior. For CH2, we propose a dual-stochastic variational autoencoder to perturb the adversarial model, effectively preventing gradient-based information leakage. Extensive experiments on three real-world datasets demonstrate that our proposed FedAU2 achieves superior performance in unlearning effectiveness and recommendation performance compared to existing baselines.",
+ "summary": "以下为中文简要总结：\n\n- 核心创新点（1句话）\n  在用户级联邦推荐系统中，提出 FedAU2，通过自适应对抗训练结合双随机变分自编码器的扰动来实现属性去学习，解决数据异质性导致的训练不稳定与梯度泄露问题。\n\n- 主要方法\n  - 自适应对抗训练：根据本地优化行为动态调整对抗训练强度，以应对用户数据异质性带来的训练不稳定。\n  - 双随机变分自编码器（dual-stochastic VAE）：对抗模型进行扰动，防止通过梯度信息泄露属性信息，增强隐私保护。\n\n- 结论/性能\n  在三个真实数据集上，FedAU2 在属性去学习的有效性与推荐性能方面都显著优于现有基线方法。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-01 14:02:15"
+}

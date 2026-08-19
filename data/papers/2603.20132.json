@@ -1,0 +1,13 @@
+{
+ "id": "2603.20132",
+ "title": "Revisiting Gene Ontology Knowledge Discovery with Hierarchical Feature Selection and Virtual Study Group of AI Agents",
+ "authors": "Cen Wan, Alex A. Freitas",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20132v1",
+ "abstract": "Large language models have achieved great success in multiple challenging tasks, and their capacity can be further boosted by the emerging agentic AI techniques. This new computing paradigm has already started revolutionising the traditional scientific discovery pipelines. In this work, we propose a novel agentic AI-based knowledge discovery-oriented virtual study group that aims to extract meaningful ageing-related biological knowledge considering highly ageing-related Gene Ontology terms that are selected by hierarchical feature selection methods. We investigate the performance of the proposed agentic AI framework by considering four different model organisms' ageing-related Gene Ontology terms and validate the biological findings by reviewing existing research articles. It is found that the majority of the AI agent-generated scientific claims can be supported by existing literatures and the proposed internal mechanisms of the virtual study group also play an important role in the designed agentic AI-based knowledge discovery framework.",
+ "summary": "- 核心创新点：提出以代理式AI的虚拟研究组为核心的知识发现框架，利用层级特征选择筛选衰老相关的 Gene Ontology 术语，以驱动衰老相关生物知识的自动化提取与发现。\n\n- 主要方法：采用代理型AI构建的虚拟研究组，结合层级特征选择方法筛选衰老相关的 GO 术语，并对四种模式生物进行分析，通过文献回顾来验证AI生成的科学主张。\n\n- 结论/性能：大多数由AI代理生成的科学主张可被现有文献支持，虚拟研究组的内部机制在知识发现框架中发挥了重要作用，显示出该框架的可行性与有效性。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-23 13:05:11"
+}

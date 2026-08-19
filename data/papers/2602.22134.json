@@ -1,0 +1,13 @@
+{
+ "id": "2602.22134",
+ "title": "Secure Semantic Communications via AI Defenses: Fundamentals, Solutions, and Future Directions",
+ "authors": "Lan Zhang, Chengsi Liang, Zeming Zhuang, Yao Sun, Fang Fang, Xiaoyong Yuan, Dusit Niyato",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22134v1",
+ "abstract": "Semantic communication (SemCom) redefines wireless communication from reproducing symbols to transmitting task-relevant semantics. However, this AI-native architecture also introduces new vulnerabilities, as semantic failures may arise from adversarial perturbations to models, corrupted training data, desynchronized priors, or misaligned inference even when lower-layer transmission reliability and cryptographic protection remain intact. This survey provides a defense-centered and system-oriented synthesis of security in SemCom via AI defense. We analyze AI-centric threat models by consolidating existing studies and organizing attack surfaces across model-level, channel-realizable, knowledge-based, and networked inference vectors. Building on this foundation, we present a structured taxonomy of defense strategies organized by where semantic integrity can be compromised in SemCom systems despite correct symbol delivery, spanning semantic encoding, wireless transmission, knowledge integrity, and coordination among multiple agents. These categories correspond to distinct security failure modes, including representation fragility, channel-realizable manipulation, semantic prior poisoning or desynchronization, and adversarial propagation through distributed inference. We also examine security utility operating envelopes that capture tradeoffs among semantic fidelity, robustness, latency, and energy under realistic constraints, survey evaluation frameworks and representative applications, and identify open challenges in cross-layer composition and deployment-time certification. Overall, this survey offers a unified system-level perspective that enables readers to understand major threat and defense mechanisms in AI-native SemCom systems and to leverage emerging security techniques in the design and deployment of robust SemCom architectures for next-generation intelligent networks.",
+ "summary": "以下是中文简要总结：\n\n1) 核心创新点（一句话）\n- 提出以AI防御为中心的系统级SemCom安全综述，建立从模型级、信道可实现性、知识基础到网络推理等四个向量的威胁与防御分层分类，并给出跨层安全效用分析与未来方向。\n\n2) 主要方法（简述使用的技术/模型）\n- 通过系统梳理现有研究，构建Semantic Communications的威胁模型，覆盖模型级、信道可实现性、知识基础、网络推理等向量；提出对应的防御策略分层分类，涵盖语义编码、无线传输、知识完整性、以及多智能体之间的协同推理等防护机制；分析安全效用边界、评估框架与应用场景，并讨论跨层组合与部署时的认证挑战。\n\n3) 结论/性能（取得的效果）\n- 提供了一个统一的系统级视角，梳理和归纳了关键威胁与防御机制，给出跨层设计的路线图和安全效用分析框架，并指出跨层集成与部署时的认证等开放挑战与未来研究方向。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-26 14:01:11"
+}

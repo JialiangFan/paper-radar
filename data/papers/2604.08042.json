@@ -1,0 +1,13 @@
+{
+ "id": "2604.08042",
+ "title": "3DrawAgent: Teaching LLM to Draw in 3D with Early Contrastive Experience",
+ "authors": "Hongcan Xiao, Xinyue Xiao, Yilin Wang, Yue Zhang, Yonggang Qi",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08042v1",
+ "abstract": "Sketching in 3D space enables expressive reasoning about shape, structure, and spatial relationships, yet generating 3D sketches through natural language remains a major challenge. In this work, we introduce 3DrawAgent, a training-free, language-driven framework for 3D sketch generation that leverages large language models (LLMs) to sequentially draw 3D Bezier curves under geometric feedback. Unlike prior 2D sketch agents, our method introduces a relative experience optimization strategy that adapts the recently proposed Group Reward Policy Optimization (GRPO) paradigm. Instead of relying on explicit ground-truth supervision, we construct pairwise comparisons among generated sketches, with each pair consisting of a relatively better and a worse result based on CLIP-based perceptual rewards and LLM-based fine-grained qualitative assessment. These experiences are then used to iteratively refine the prior knowledge of 3D drawing, enabling black-box reinforcement of the model's 3D awareness. This design allows our model to self-improve its spatial understanding and drawing quality without parameter updates. Experiments show that 3DrawAgent can generate complex and coherent 3D Bezier sketches from diverse textual prompts, exhibit emergent geometric reasoning, and generalize to novel shapes, establishing a new paradigm for advancing the field of training-free 3D sketch intelligence.",
+ "summary": "1) 核心创新点：在不更新模型参数的前提下，利用相对经验优化和对比学习，将LLM转变为一个能用3D Bezier曲线逐步绘制高质量3D草图的训练-free代理。\n\n2) 主要方法：采用训练-free、语言驱动框架，让LLM按序绘制3D Bezier曲线；引入相对经验优化并改造 GRPO，通过构建“更好 vs 更差”的成对样本，基于 CLIP 感知奖励和LLM的细粒度定性评估进行学习信号，所有经验用于无参数更新的黑箱强化，提升对3D空间的认知与绘画质量。\n\n3) 结论/性能：能够从多样文本提示生成复杂且连贯的3D Bezier草图，展现出 emergent 的几何推理能力，并能对新形状进行泛化，提出了训练-free 3D草图智能的新范式。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-10 13:03:04"
+}

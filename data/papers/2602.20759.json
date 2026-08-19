@@ -1,0 +1,13 @@
+{
+ "id": "2602.20759",
+ "title": "Overton Pluralistic Reinforcement Learning for Large Language Models",
+ "authors": "Yu Fu, Seongho Son, Ilija Bogunovic",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20759v1",
+ "abstract": "Existing alignment paradigms remain limited in capturing the pluralistic nature of human values. Overton Pluralism addresses this gap by generating responses with diverse perspectives from a single query. This paper introduces OP-GRPO (Overton Pluralistic Group Relative Policy Optimization), a reinforcement learning framework for implicit Overton Pluralism that enables a single large language model to produce pluralistic responses without explicit prompting or modular orchestration. Our workflow consists of two main steps. First, similarity estimator training fine-tunes a Sentence Transformer for Overton Pluralism tasks to provide more accurate coverage evaluation of generated responses. Second, OP-GRPO training incorporates this similarity estimator into a dual-reward system designed to ensure both broad coverage of genuine human perspectives and the uniqueness of each perspective, thereby promoting diversity. Empirical results demonstrate a \"small models, big perspective coverage\" effect. The trained Qwen2.5-3B-Instruct model surpasses a 20B GPT-OSS baseline with a 37.4 percent relative accuracy gain on a Natural Language Inference benchmark, and also outperforms a modular architecture baseline with a 19.1 percent relative improvement. Additional evaluations using GPT-4.1 as a large language model judge further confirm the robustness of the approach.",
+ "summary": "- 核心创新点：提出 OP-GRPO，通过在单一大语言模型中实现隐式的 Overton Pluralism，利用双重奖励机制生成多元观点的回答，无需显式提示或模块化编排。\n\n- 主要方法：  \n  - 训练一个句子变换器的相似度估计器，用于更准确地评估生成回答的观点覆盖度（Overton Pluralism 任务）。  \n  - 将该相似度估计嵌入到 OP-GRPO 的双奖制中，兼顾覆盖广泛真实人类视角与每个视角的独特性，以促进回答的多样性。  \n  - 基于 Qwen2.5-3B-Instruct 进行模型训练与评估，并与 20B GPT-OSS 基线、模块化架构基线比较，另通过 GPT-4.1 进行鲁棒性验证。\n\n- 结论/性能：  \n  - 在自然语言推理（NLI）基准上，Qwen2.5-3B-Instruct 相对 20B GPT-OSS 基线实现 37.4% 的相对准确性提升；相比模块化基线达到 19.1% 的相对提升。  \n  - 使用 GPT-4.1 进行的额外评估也支持该方法的鲁棒性，体现出“少量模型承载大视角覆盖”的效果。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-25 14:04:06"
+}

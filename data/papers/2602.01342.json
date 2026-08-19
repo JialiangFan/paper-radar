@@ -1,0 +1,13 @@
+{
+ "id": "2602.01342",
+ "title": "Adaptive Quantum-Safe Cryptography for 6G Vehicular Networks via Context-Aware Optimization",
+ "authors": "Poushali Sengupta, Mayank Raikwar, Sabita Maharjan, Frank Eliassen, Yan Zhang",
+ "date": "2026-02-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01342v1",
+ "abstract": "Powerful quantum computers in the future may be able to break the security used for communication between vehicles and other devices (Vehicle-to-Everything, or V2X). New security methods called post-quantum cryptography can help protect these systems, but they often require more computing power and can slow down communication, posing a challenge for fast 6G vehicle networks. In this paper, we propose an adaptive post-quantum cryptography (PQC) framework that predicts short-term mobility and channel variations and dynamically selects suitable lattice-, code-, or hash-based PQC configurations using a predictive multi-objective evolutionary algorithm (APMOEA) to meet vehicular latency and security constraints.However, frequent cryptographic reconfiguration in dynamic vehicular environments introduces new attack surfaces during algorithm transitions. A secure monotonic-upgrade protocol prevents downgrade, replay, and desynchronization attacks during transitions. Theoretical results show decision stability under bounded prediction error, latency boundedness under mobility drift, and correctness under small forecast noise. These results demonstrate a practical path toward quantum-safe cryptography in future 6G vehicular networks. Through extensive experiments based on realistic mobility (LuST), weather (ERA5), and NR-V2X channel traces, we show that the proposed framework reduces end-to-end latency by up to 27\\%, lowers communication overhead by up to 65\\%, and effectively stabilizes cryptographic switching behavior using reinforcement learning. Moreover, under the evaluated adversarial scenarios, the monotonic-upgrade protocol successfully prevents downgrade, replay, and desynchronization attacks.",
+ "summary": "核心创新点：提出一种基于情境感知的自适应后量子密码学框架，利用对短期移动性与信道变化的预测，在格、码、哈希等 PQC 配置之间动态优化选择，并配备安全的单调升级协议以防止切换过程中的降级、重放与不同步攻击，提升 6G 车联网的安全性与实时性。\n\n主要方法：\n- 采用预测性多目标进化算法（APMOEA）根据短期移动性与信道预测结果在格基、码基、哈希基 PQC 中动态配置选择，以同时满足延迟和安全约束。\n- 引入安全的单调升级协议，防止切换过程中的降级、重放和不同步攻击。\n- 通过强化学习进一步提升 cryptographic switching 的稳定性，并给出在有界预测误差、移动漂移和预测噪声下的理论分析（决策稳定性、时延有界性、正确性）。\n- 基于 LuST（移动性）、ERA5（天气）及 NR-V2X 信道数据的现实化实验，验证框架的有效性。\n\n结论/性能：\n- 实验表明端到端时延最多降低约 27%，通信开销最多降低约 65%。\n- 通过强化学习实现对切换行为的稳定控制，提升系统鲁棒性。\n- 在评估的对手场景中，单调升级协议能够有效防止降级、重放与不同步攻击，确保量子安全配置的安全切换。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:01:44"
+}

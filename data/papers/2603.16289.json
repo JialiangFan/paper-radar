@@ -1,0 +1,13 @@
+{
+ "id": "2603.16289",
+ "title": "VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+ "authors": "Zhengbo Zhang, Jinbo Su, Zhaowen Zhou, Changtao Miao, Yuhan Hong, Qimeng Wu, Yumeng Liu, Feier Wu, Yihe Tian, Yuhao Liang, Zitong Shan, Wanke Xia, Yi-Fan Zhang, Bo Zhang, Zhe Li, Shiming Xiang, Ying Yan",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16289v1",
+ "abstract": "The rapid advancement of Multimodal Large Language Models (MLLMs) has enabled browsing agents to acquire and reason over multimodal information in the real world. But existing benchmarks suffer from two limitations: insufficient evaluation of visual reasoning ability and the neglect of native visual information of web pages in the reasoning chains. To address these challenges, we introduce a new benchmark for visual-native search, VisBrowse-Bench. It contains 169 VQA instances covering multiple domains and evaluates the models' visual reasoning capabilities during the search process through multimodal evidence cross-validation via text-image retrieval and joint reasoning. These data were constructed by human experts using a multi-stage pipeline and underwent rigorous manual verification. We additionally propose an agent workflow that can effectively drive the browsing agent to actively collect and reason over visual information during the search process. We comprehensively evaluated both open-source and closed-source models in this workflow. Experimental results show that even the best-performing model, Claude-4.6-Opus only achieves an accuracy of 47.6%, while the proprietary Deep Research model, o3-deep-research only achieves an accuracy of 41.1%. The code and data can be accessed at: https://github.com/ZhengboZhang/VisBrowse-Bench",
+ "summary": "1) 核心创新点（一句话概括）\n提出 VisBrowse-Bench，这一用于评估视觉本地信息在多模态网页浏览中的推理与证据跨验证能力的基准，同时给出驱动浏览代理主动收集和推理视觉信息的完整工作流。\n\n2) 主要方法\n- 构建包含 169 个跨领域 VQA 题目的基准，评估在检索过程中的视觉推理能力\n- 通过文本-图像检索与联合推理进行多模态证据跨验证\n- 数据由人类专家通过多阶段流程构建并人工验证\n- 提出一个面向检索过程的代理工作流，驱动浏览代理主动收集与推理网页中的视觉信息\n- 在该工作流中对开源与闭源模型进行全面评估\n\n3) 结论/性能\n在该工作流下的实验中，最强模型 Claude-4.6-Opus 的准确率为 47.6%，专有模型 o3-deep-research 的准确率为 41.1%，表明视觉本地推理能力仍有显著提升空间。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-18 13:08:14"
+}

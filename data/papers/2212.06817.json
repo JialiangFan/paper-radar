@@ -1,0 +1,32 @@
+{
+ "id": "2212.06817",
+ "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+ "authors": "Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Joseph Dabis, Chelsea Finn, Keerthana Gopalakrishnan, Karol Hausman, Alex Herzog, Jasmine Hsu, Julian Ibarz, Brian Ichter, Alex Irpan, Tomas Jackson, Sally Jesmonth, Nikhil J Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Kuang-Huei Lee, Sergey Levine, Yao Lu, Utsav Malla, Deeksha Manjunath, Igor Mordatch, Ofir Nachum, Carolina Parada, Jodilyn Peralta, Emily Perez, Karl Pertsch, Jornell Quiambao, Kanishka Rao, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Kevin Sayed, Jaspiar Singh, Sumedh Sontakke, Austin Stone, Clayton Tan, Huong Tran, Vincent Vanhoucke, Steve Vega, Quan Vuong, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich",
+ "date": null,
+ "year": 2022,
+ "url": "https://arxiv.org/abs/2212.06817",
+ "abstract": "",
+ "summary": "RT-1 scales language-conditioned real-robot behavior cloning with a transformer policy over tokenized actions.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "behavior-cloning",
+  "benchmarks-and-evaluation",
+  "robotics",
+  "robotics-transformer",
+  "safe-vla",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2022_Brohan_RT1.md",
+ "pdf_path": "PDFs/VLA_Models/2022_Brohan_RT1.pdf",
+ "code": "",
+ "project": "https://robotics-transformer1.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

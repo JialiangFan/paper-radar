@@ -1,0 +1,13 @@
+{
+ "id": "2603.21872",
+ "title": "Manifold-Aware Exploration for Reinforcement Learning in Video Generation",
+ "authors": "Mingzhe Zheng, Weijie Kong, Yue Wu, Dengyang Jiang, Yue Ma, Xuanhua He, Bin Lin, Kaixiong Gong, Zhao Zhong, Liefeng Bo, Qifeng Chen, Harry Yang",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.21872v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) methods for video generation like FlowGRPO remain far less reliable than their counterparts for language models and images. This gap arises because video generation has a complex solution space, and the ODE-to-SDE conversion used for exploration can inject excess noise, lowering rollout quality and making reward estimates less reliable, which destabilizes post-training alignment. To address this problem, we view the pre-trained model as defining a valid video data manifold and formulate the core problem as constraining exploration within the vicinity of this manifold, ensuring that rollout quality is preserved and reward estimates remain reliable. We propose SAGE-GRPO (Stable Alignment via Exploration), which applies constraints at both micro and macro levels. At the micro level, we derive a precise manifold-aware SDE with a logarithmic curvature correction and introduce a gradient norm equalizer to stabilize sampling and updates across timesteps. At the macro level, we use a dual trust region with a periodic moving anchor and stepwise constraints so that the trust region tracks checkpoints that are closer to the manifold and limits long-horizon drift. We evaluate SAGE-GRPO on HunyuanVideo1.5 using the original VideoAlign as the reward model and observe consistent gains over previous methods in VQ, MQ, TA, and visual metrics (CLIPScore, PickScore), demonstrating superior performance in both reward maximization and overall video quality. The code and visual gallery are available at https://dungeonmassster.github.io/SAGE-GRPO-Page/.",
+ "summary": "- 核心创新点：提出 SAGE-GRPO，将探索限制在由预训练模型定义的视频数据流形内，结合微观层面的流形感知SDE（对数曲率修正与梯度范数等化器）和宏观层面的双信任域（周期移动锚点与逐步约束），实现稳定对齐与更可靠的奖励估计。\n\n- 主要方法：在数据流形框架下进行探索—1) 微观层面建立流形感知的SDE并引入对数曲率修正和梯度范数等化器以稳定采样和更新；2) 宏观层面采用双信任域机制，结合周期性移动锚点与逐步约束，使信任域聚焦于更接近流形的检查点、抑制长期漂移；3) 将原始视频模型视为流形边界，评估时以 VideoAlign 作为奖励模型，在 HunyuanVideo1.5 上进行 VQ、MQ、TA 及 CLIPScore、PickScore 等多指标验证。\n\n- 结论/性能：相较于先前方法，在 VQ、MQ、TA 以及视觉指标（CLIPScore、PickScore）上获得持续提升，证明在奖励最大化和整体视频质量方面具有更优的性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-24 13:04:45"
+}

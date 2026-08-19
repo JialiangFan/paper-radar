@@ -1,0 +1,13 @@
+{
+ "id": "2605.31314",
+ "title": "AR Forcing: Towards Long-Horizon Robot Navigation World Model",
+ "authors": "Yifei Yang, Zehua Fan, Huan Li, Aoqi Wang, Lida Huang, Haibao Yu, Haiyan Liu, Xuanyao Mao, Jason Bao, Liang Xu, Bingchuan Sun, Yan Wang",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.31314v1",
+ "abstract": "The diffusion based robot navigation world models are typically trained using parallel supervision, while autoregressive inference is employed during path planning. This results in a distribution shift between training and inference, which destabilizes the performance over long-horizon prediction. We propose AR Forcing, an autoregressive training strategy, which integrates the standard diffusion loss into the autoregressive training loop. At each step, the model uses its own predictions to update the context and optimize the single step noise prediction objective, thereby explicitly exposing the model to the inference state distribution during training. Our method does not require additional discriminators or distribution-matching losses, retains the original diffusion framework and sampler, and is easy to integrate. Experiments on multi-domain navigation datasets (RECON, SCAND, HuRoN, TartanDrive) show that compared with strong baselines, AR Forcing improved the consistency of generated images during long-horizon navigation and the accuracy of predicted trajectories, enhancing robustness of the model in complex known and unknown environments. We will release the code soon.",
+ "summary": "# AR Forcing 论文总结\n\n## 1. 核心创新点\n提出 **AR Forcing**——一种自回归训练策略，将扩散损失嵌入自回归循环，消除机器人导航世界模型在\"并行训练 / 自回归推理\"之间的分布偏移问题。\n\n## 2. 主要方法\n- 基于 **diffusion-based 导航世界模型**。\n- 训练时让模型使用 **自己的预测结果** 更新上下文，再在该状态上优化 **单步噪声预测目标**（标准扩散损失）。\n- 无需额外判别器或分布匹配损失，保留原有扩散框架与采样器，**即插即用**。\n\n## 3. 结论 / 性能\n在多域导航数据集（**RECON、SCAND、HuRoN、TartanDrive**）上相较强基线：\n- **长时序生成图像一致性** 显著提升；\n- **预测轨迹精度** 提升；\n- 在已知与未知复杂环境中 **鲁棒性增强**。代码即将开源。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-01 13:08:10"
+}

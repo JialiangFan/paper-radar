@@ -1,0 +1,13 @@
+{
+ "id": "2602.01601",
+ "title": "Adaptive Rollout Allocation for Online Reinforcement Learning with Verifiable Rewards",
+ "authors": "Hieu Trung Nguyen, Bao Nguyen, Wenao Ma, Yuzhi Zhao, Ruifeng She, Viet Anh Nguyen",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.01601v1",
+ "abstract": "Sampling efficiency is a key bottleneck in reinforcement learning with verifiable rewards. Existing group-based policy optimization methods, such as GRPO, allocate a fixed number of rollouts for all training prompts. This uniform allocation implicitly treats all prompts as equally informative, and could lead to inefficient computational budget usage and impede training progress. We introduce \\Ours, a Variance-Informed Predictive allocation strategy that allocates a given rollout budget to the prompts in the incumbent batch to minimize the expected gradient variance of the policy update. At each iteration, \\Ours~uses a lightweight Gaussian process model to predict per-prompt success probabilities based on recent rollouts. These probability predictions are translated into variance estimates, which are then fed into a convex optimization problem to determine the optimal rollout allocations under a hard compute budget constraint. Empirical results show that \\Ours~consistently improves sampling efficiency and achieves higher performance than uniform or heuristic allocation strategies in multiple benchmarks. Our code will be available at https://github.com/HieuNT91/VIP.",
+ "summary": "- 核心创新点（1句概括）：提出一种基于方差信息的自适应回合分配策略，在有限算力下通过预测每个提示的成功概率并将其转化为梯度方差，再通过凸优化分配回合数，从而提高在线强化学习在可验证奖励设置中的采样效率。\n\n- 主要方法：使用一个轻量级高斯过程模型来基于最近的回合数据预测每个提示的成功概率，将预测转化为对应的梯度方差估计；在严格的计算预算约束下，将这些方差信息输入一个凸优化问题，求解最优的回合分配方案，形成一个名为“VAR-信息驱动分配”的策略。\n\n- 结论/性能：实验表明，与均匀分配或启发式分配策略相比，该方法在多类基准任务中显著提升采样效率并获得更高的性能；代码亦公开。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-03 14:05:53"
+}

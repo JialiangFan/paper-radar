@@ -1,0 +1,13 @@
+{
+ "id": "2605.29156",
+ "title": "RUBRIC-ARROW: Alternating Pointwise Rubric Reward Modeling for LLM Post-training in Non-verifiable Domains",
+ "authors": "Haoxiang Jiang, Zihan Dong, Tianci Liu, Wanying Wang, Ran Xu, Tony Yu, Linjun Zhang, Haoyu Wang",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.29156v1",
+ "abstract": "Pointwise reward modeling offers critical signals for LLM post-training, yet struggles with absolute scoring in subjective, non-verifiable settings. Rubric-based methods address this by decomposing evaluation into explicit criteria, but existing approaches typically depend on frontier LLMs and suffer from ties caused by hard Boolean aggregation. We present RUBRIC-ARROW, an alternating framework that jointly trains a rubric generator and a rubric-conditioned judge, with its RL stage using only pairwise preference data. Our method couples a probability-based scoring rule that reduces ties with phase-specific preference-based rewards and an alternating GRPO scheme that together train the pointwise evaluator. Extensive experiments show that RUBRIC-ARROW achieves competitive reward-modeling accuracy and yields consistent gains for downstream policy post-training.",
+ "summary": "# RUBRIC-ARROW 论文总结\n\n**1. 核心创新点：**\n提出一个\"交替训练\"框架，让\"评分标准生成器\"和\"基于标准的评判器\"联合训练，仅用成对偏好数据即可训练出一个适用于主观、不可验证场景的逐点（pointwise）奖励模型。\n\n**2. 主要方法：**\n- **交替框架**：同时训练 rubric 生成器（产生评估标准）和 rubric-conditioned judge（依据标准打分）两个组件。\n- **概率化评分规则**：用基于概率的打分替代传统硬性布尔聚合，从而缓解打分\"平局/打平\"（ties）问题。\n- **交替式 GRPO 强化学习**：RL 阶段仅使用成对偏好数据，配合分阶段（phase-specific）的偏好奖励来训练逐点评估器。\n\n**3. 结论/性能：**\n在大量实验中，RUBRIC-ARROW 达到了有竞争力的奖励建模准确率，并在下游策略后训练（policy post-training）中带来了稳定一致的性能提升。\n\n---\n补充说明：该方法主要解决了现有 rubric 方法的两大痛点——① 过度依赖前沿大模型（frontier LLMs），② 硬布尔聚合导致大量平局。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-29 13:01:46"
+}

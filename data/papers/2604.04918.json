@@ -1,0 +1,13 @@
+{
+ "id": "2604.04918",
+ "title": "Comparing Human Oversight Strategies for Computer-Use Agents",
+ "authors": "Chaoran Chen, Zhiping Zhang, Zeya Chen, Eryue Xu, Yinuo Yang, Ibrahim Khalilov, Simret A Gebreegziabher, Yanfang Ye, Ziang Xiao, Yaxing Yao, Tianshi Li, Toby Jia-Jun Li",
+ "date": "2026-04-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.04918v1",
+ "abstract": "LLM-powered computer-use agents (CUAs) are shifting users from direct manipulation to supervisory coordination. Existing oversight mechanisms, however, have largely been studied as isolated interface features, making broader oversight strategies difficult to compare. We conceptualize CUA oversight as a structural coordination problem defined by delegation structure and engagement level, and use this lens to compare four oversight strategies in a mixed-methods study with 48 participants in a live web environment. Our results show that oversight strategy more reliably shaped users' exposure to problematic actions than their ability to correct them once visible. Plan-based strategies were associated with lower rates of agent problematic-action occurrence, but not equally strong gains in runtime intervention success once such actions became visible. On subjective measures, no single strategy was uniformly best, and the clearest context-sensitive differences appeared in trust. Qualitative findings further suggest that intervention depended not only on what controls users retained, but on whether risky moments became legible as requiring judgment during execution. These findings suggest that effective CUA oversight is not achieved by maximizing human involvement alone. Instead, it depends on how supervision is structured to surface decision-critical moments and support their recognition in time for meaningful intervention.",
+ "summary": "1) 核心创新点\n将 CUA（基于大模型的计算机使用代理）监督视为由委托结构和参与水平构成的结构性协调问题，首次系统性比较四种监督策略在真实网页环境中的影响。\n\n2) 主要方法\n- 采用混合方法研究，招募48名参与者，在真实网络环境中对四种监督策略进行对比。\n- 以计划型等四种策略为变量，结合定量指标（对有问题行动的暴露程度、实时干预的成功率等）和定性分析（信任、可辨识性、判断时刻等），探讨监督结构如何影响干预效果。\n\n3) 结论/性能\n- 监督策略比仅提升人类纠错能力更能影响用户对有问题行动的暴露程度。\n- 计划型策略能降低代理有问题行动的发生率，但在行动变得可见后，对运行时干预成功的提升不一定显著。\n- 在主观评估上没有哪个策略能普遍最好，信任的差异具有明显的情境敏感性。\n- 定性结果显示，干预取决于用户保留的控制权以及在执行过程中是否能将风险时刻明确为需要判断的情形。\n- 结论：有效的CUA监督并非通过最大化人类参与来实现，而在于怎样结构化监督以揭示关键决策时刻并在执行中及时帮助识别以便干预。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-07 13:01:09"
+}

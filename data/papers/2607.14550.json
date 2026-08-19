@@ -1,0 +1,13 @@
+{
+ "id": "2607.14550",
+ "title": "World-Model-Aware Responsibility Allocation in Heterogeneous Logistics Systems",
+ "authors": "Artan Markaj, Niklas Jobs, Felix Gehlhoff",
+ "date": "2026-07-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.14550v1",
+ "abstract": "Logistics systems increasingly mix \\emph{autonomous logistic equipment} (ALE) with non-autonomous machinery under a central control system (CS), where the best decision-maker depends on who holds the most current world model, yet authority is fixed at design time. When an ALE's local model and the CS global model diverge, both act on incompatible beliefs and produce deadlocks that resource-based handling neither explains nor prevents. We propose the World-Model-Aware Responsibility Framework (WMARF), which assigns authority dynamically from CS world-model quality and equipment automation level, and classifies deadlocks by the state of authority -- none, in transition, or divergent. In a discrete-event simulation of two ALE converging on a semi-automated transfer point, reproduced over the VDA~5050 interface, a divergence deadlock under static control is prevented by a proximity-triggered handoff. Because authority follows information quality rather than a shared protocol, the scheme stays valid as autonomy grows.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-17 13:04:08"
+}

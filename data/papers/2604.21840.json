@@ -1,0 +1,13 @@
+{
+ "id": "2604.21840",
+ "title": "TraceScope: Interactive URL Triage via Decoupled Checklist Adjudication",
+ "authors": "Haolin Zhang, William Reber, Yuxuan Zhang, Guofei Gu, Jeff Huang",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21840v1",
+ "abstract": "Modern phishing campaigns increasingly evade snapshot-based URL classifiers using interaction gates (e.g., checkbox/slider challenges), delayed content rendering, and logo-less credential harvesters. This shifts URL triage from static classification toward an interactive forensics task: an analyst must actively navigate the page while isolating themselves from potential runtime exploits.\n  We present TraceScope, a decoupled triage pipeline that operationalizes this workflow at scale. To prevent the observer effect and ensure safety, a sandboxed operator agent drives a real GUI browser guided by visual motivation to elicit page behavior, freezing the session into an immutable evidence bundle. Separately, an adjudicator agent circumvents LLM context limitations by querying evidence on demand to verify a MITRE ATT&CK checklist, and generates an audit-ready report with extracted indicators of compromise (IOCs) and a final verdict.\n  Evaluated on 708 reachable URLs from existing dataset (241 verified phishing from PhishTank and 467 benign from Tranco-derived crawling), TraceScope achieves 0.94 precision and 0.78 recall, substantially improving recall over three prior visual/reference-based classifiers while producing reproducible, analyst-grade evidence suitable for review. More importantly, we manually curated a dataset of real-world phishing emails to evaluate our system in a practical setting. Our evaluation reveals that TraceScope demonstrates superior performance in a real-world scenario as well, successfully detecting sophisticated phishing attempts that current state-of-the-art defenses fail to identify.",
+ "summary": "1) 核心创新点（1 句话）\n- 提出 TraceScope，一种解耦的可交互取证管线：通过沙箱化的操作员代理驱动真实 GUI 浏览器收集不可变的证据包，并由对裁定者代理按需核验 MITRE ATT&CK 清单以产出审计友好的报告和最终判定。\n\n2) 主要方法\n- 沙箱化操作员代理驱动真实 GUI 浏览器，基于“视觉动机”引导页面行为，并将会话冻结为不可变的证据包，避免观察效应和运行时利用风险。\n- 对裁定者代理按需查询证据，验证对 MITRE ATT&CK 清单的对照与完成情况，生成可审计的报告。\n- 提取指标性事件（IOCs），输出最终判断，形成可复现的分析结果。\n- 在公开数据集上评估：708 个可访问 URL（241 份 PhishTank 骗鱼样本 + 467 份 Tranco 采集的正常站点）。\n- 同时在真实世界场景中使用人工整理的钓鱼邮件数据集进行实践评估。\n\n3) 结论/性能\n- 精确率0.94，召回率0.78，显著提升了相较于三种基于视觉/参考的早期分类器的召回性能，并提供可重复、分析师级别的证据链。\n- 在真实场景中也表现出色，能够检测到当前前沿防御难以识别的复杂钓鱼活动。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-24 13:03:32"
+}

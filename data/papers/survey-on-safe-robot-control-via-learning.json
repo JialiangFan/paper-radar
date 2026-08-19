@@ -1,0 +1,27 @@
+{
+ "id": "survey-on-safe-robot-control-via-learning",
+ "title": "Survey on Safe Robot Control via Learning",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "现代社会高度依赖机器人系统，涉及航空航天、汽车、能源、医疗等众多行业。当控制目标涉及安全时，必须防止系统进入违反安全约束的状态。经典控制理论和Deep RL分别代表了控制方法谱系的两端。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Survey on Safe Robot Control via Learning.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.06019",
+ "title": "CritBench: A Framework for Evaluating Cybersecurity Capabilities of Large Language Models in IEC 61850 Digital Substation Environments",
+ "authors": "Gustav Keppler, Moritz Gstür, Veit Hagenmeyer",
+ "date": "2026-04-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.06019v1",
+ "abstract": "The advancement of Large Language Models (LLMs) has raised concerns regarding their dual-use potential in cybersecurity. Existing evaluation frameworks overwhelmingly focus on Information Technology (IT) environments, failing to capture the constraints, and specialized protocols of Operational Technology (OT). To address this gap, we introduce CritBench, a novel framework designed to evaluate the cybersecurity capabilities of LLM agents within IEC 61850 Digital Substation environments. We assess five state-of-the-art models, including OpenAI's GPT-5 suite and open-weight models, across a corpus of 81 domain-specific tasks spanning static configuration analysis, network traffic reconnaissance, and live virtual machine interaction. To facilitate industrial protocol interaction, we develop a domain-specific tool scaffold. Our empirical results show that agents reliably execute static structured-file analysis and single-tool network enumeration, but their performance degrades on dynamic tasks. Despite demonstrating explicit, internalized knowledge of the IEC 61850 standards terminology, current models struggle with the persistent sequential reasoning and state tracking required to manipulate live systems without specialized tools. Equipping agents with our domain-specific tool scaffold significantly mitigates this operational bottleneck. Code and evaluation scripts are available at: https://github.com/GKeppler/CritBench",
+ "summary": "1) 核心创新点\n- 提出 CritBench 框架，用于在 IEC 61850 数字变电站等 OT 环境中评估大型语言模型的网络与安全能力，并附带域专用工具脚手架以促进对工业协议的交互。\n\n2) 主要方法\n- 评估对象：五种前沿模型（包括 OpenAI 的 GPT-5 系列与开源权重模型）。\n- 任务集：81 项域内任务，覆盖静态配置分析、网络流量侦察，以及对虚拟机的实时交互等动态任务。\n- 工具与实现：开发域专用工具脚手架以支持对 IEC 61850 等工业协议的交互；搭建 CritBench 评测框架并给出代码和评测脚本（公开在 GitHub）。\n- 评估维度：比较模型在静态结构化文件分析、单工具网络枚举等方面的能力，以及在需要持续序列推理和状态追踪的动态任务中的表现。\n\n3) 结论/性能\n- 在静态结构化文件分析和单工具网络枚举等任务上，模型表现较为可靠。\n- 动态任务的性能显著下降，且受限于持续的序列推理与状态追踪以操作实时系统。\n- 域专用工具脚手架显著缓解这类操作瓶颈，提升对工业协议交互的能力。代码与评测脚本可在 GitHub 获取。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-08 13:09:44"
+}

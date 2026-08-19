@@ -1,0 +1,13 @@
+{
+ "id": "2602.08808",
+ "title": "How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs",
+ "authors": "Yapei Chang, Kyle Lo, Mohit Iyyer, Luca Soldaini",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08808v1",
+ "abstract": "Generating step-by-step \"how-to\" procedures is a key LLM capability: how-to advice is commonly requested in chatbots, and step-by-step planning is critical for reasoning over complex tasks. Yet, measuring and improving procedural validity at scale on real-world tasks remains challenging and understudied. To address this, we introduce How2Everything, a scalable framework to evaluate and improve goal-conditioned procedure generation. Our framework includes How2Mine, which mines 351K procedures from 980K web pages across 14 topics and readily scales to larger corpora. From this pool we build How2Bench, a 7K-example evaluation set balanced across topics. To reliably score model outputs, we develop How2Score, an evaluation protocol that uses an LLM judge to detect whether a generation contains any critical failure that would prevent achieving the goal. For low-cost, reproducible evaluation, we distill a frontier model into an open 8B model, achieving 80.5% agreement with human annotators. How2Bench reveals clear scaling trends across model sizes and training stages, providing signal early in pretraining. Finally, RL using How2Score as a reward improves performance on How2Bench by >10 points across three models without systematic regressions on standard benchmarks, with gains robust to superficial source-document memorization or format compliance. Taken together, How2Everything shows how pretraining web data can support a closed loop of capability evaluation and improvement at scale.",
+ "summary": "- **核心创新点（一句话概括）**：提出 How2Everything，一个可扩展的网页挖掘-评测-改进闭环框架，用以评估和提升目标条件的分步“how-to”程序生成能力。\n\n- **主要方法**：包括 How2Mine、How2Bench、How2Score 三大组件，并辅以模型蒸馏与强化学习：\n  - How2Mine：从网页中大规模挖掘并整理出约351K 条分步骤过程，覆盖14个主题（来自980K个网页）。\n  - How2Bench：基于上述挖掘结果构建一个7K样本的评测集，主题均衡，便于系统比较。\n  - How2Score：设计一种利用大型语言模型作为评审者的评估协议，判定生成内容是否包含任何关键性失败，从而判断是否能达成目标。\n  - 模型方面：将前沿模型蒸馏成开源8B模型，达到与人类标注80.5%的对齐率；并以 How2Score 作为奖励对三种模型进行强化学习，显著提升在 How2Bench 上的分数（>10点），且对标准基准无系统性回归，且对表面记忆或格式遵从具鲁棒性。\n\n- **结论/性能**：How2Bench 展现了随模型规模与训练阶段的明显提升趋势，能在较早阶段就提供信号；通过以 How2Score 为奖励的强化学习，在不损害标准基准的前提下提升了三种模型在 How2Bench 上的表现超过10点，并且蒸馏出的公开8B模型与人类评注的对齐度达到约80.5%；总体上证明了利用网页数据支撑的能力评估与改进闭环在大模型能力提升中的可行性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:04:08"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.16842",
+ "title": "Sketch Then Paint: Hierarchical Reinforcement Learning for Diffusion Multi-Modal Large Language Models",
+ "authors": "Siqi Luo, Jianghan Shen, Yi Xin, Huayu Zheng, Haoxing Chen, Yan Tai, Yue Li, Junjun He, Yihao Liu, Guangtao Zhai, Yuewen Cao, Xiaohong Liu",
+ "date": "2026-05-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.16842v1",
+ "abstract": "Diffusion Multi-Modal Large Language Models (dMLLMs) are powerful for image generation, but optimizing them through reinforcement learning (RL) remains a major challenge. One primary difficulty is that a single image can be generated through many different unmasking sequences, which makes calculating importance ratios often intractable. Additionally, existing methods tend to ignore the hierarchical generation process of dMLLMs, where early tokens define the global layout and later tokens focus on local details. By assigning uniform rewards to all tokens, these current methods fail to reflect the actual contribution of each token to the final image. To address these issues, we propose Hierarchical Token GRPO (HT-GRPO), which integrates this hierarchy directly into the policy optimization process. Our approach features a Sketch-Then-Paint training scheme that organizes updates into three distinct stages: global, structure, and refinement. We also use a prompt-conditioned estimator to calculate importance ratios starting from a fully masked state. Furthermore, we introduce a Hierarchical Credit Assignment mechanism that prioritizes key structural tokens to ensure accurate reward propagation. Experiments using two popular dMLLM backbones, MMaDA and Lumina-DiMOO, demonstrate that HT-GRPO achieves substantial gains on the GenEval and DPG benchmarks. Evaluations across six additional metrics confirm significant improvements in image quality, aesthetics, and human preference.",
+ "summary": "1) 核心创新点\n把 diffusion 多模态大模型的生成过程分层纳入强化学习的奖励与优化，通过 Sketch-Then-Paint 的三阶段训练和层级信用分配，解决单一解对应的奖励难以分配及层级生成对奖励传递的影响问题。\n\n2) 主要方法\n- 提出 HT-GRPO（Hierarchical Token GRPO），将层级结构直接融入策略优化。  \n- 设计 Sketch-Then-Paint 训练方案，将更新分为全球(global)、结构(structure)、细化(refinement)三个阶段。  \n- 引入以提示为条件的估计器，从全遮罩状态计算重要性比率，提升奖励的计算稳定性与准确性。  \n- 采用层级信用分配机制，优先聚焦关键结构令牌以确保奖励在层级间的正确传播。  \n- 在两种常用 backbones（MMaDA、Lumina-DiMOO）上验证，作为对比对象进行评估。\n\n3) 结论/性能\n在 GenEval 与 DPG 基准上取得显著提升，并在额外的六项评估指标中显著改善图像质量、美感与人类偏好。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-05-19 12:33:39"
+}

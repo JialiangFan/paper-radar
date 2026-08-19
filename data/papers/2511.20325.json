@@ -1,0 +1,13 @@
+{
+ "id": "2511.20325",
+ "title": "AD-R1: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving with Impartial World Models",
+ "authors": "Tianyi Yan, Tao Tang, Xingtai Gui, Yongkang Li, Jiasen Zhesng, Weiyao Huang, Lingdong Kong, Wencheng Han, Xia Zhou, Xueyang Zhang, Yifei Zhan, Kun Zhan, Cheng-zhong Xu, Jianbing Shen",
+ "date": "2025-11-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.20325v1",
+ "abstract": "End-to-end models for autonomous driving hold the promise of learning complex behaviors directly from sensor data, but face critical challenges in safety and handling long-tail events. Reinforcement Learning (RL) offers a promising path to overcome these limitations, yet its success in autonomous driving has been elusive. We identify a fundamental flaw hindering this progress: a deep seated optimistic bias in the world models used for RL. To address this, we introduce a framework for post-training policy refinement built around an Impartial World Model. Our primary contribution is to teach this model to be honest about danger. We achieve this with a novel data synthesis pipeline, Counterfactual Synthesis, which systematically generates a rich curriculum of plausible collisions and off-road events. This transforms the model from a passive scene completer into a veridical forecaster that remains faithful to the causal link between actions and outcomes. We then integrate this Impartial World Model into our closed-loop RL framework, where it serves as an internal critic. During refinement, the agent queries the critic to ``dream\" of the outcomes for candidate actions. We demonstrate through extensive experiments, including on a new Risk Foreseeing Benchmark, that our model significantly outperforms baselines in predicting failures. Consequently, when used as a critic, it enables a substantial reduction in safety violations in challenging simulations, proving that teaching a model to dream of danger is a critical step towards building truly safe and intelligent autonomous agents.",
+ "summary": "- 核心创新点：提出一个 Impartial World Model，并通过 Counterfactual Synthesis 将其训练成对危险诚实的“ veridical forecaster”，在闭环强化学习中充当内部评审者，从而显著提升端到端自动驾驶的安全性。\n\n- 主要方法：在后训练阶段引入 Impartial World Model，用作内部 critic；通过 Counterfactual Synthesis 生成丰富的可行撞车和越野等事件，构建对行动-结果因果关系的真实预测课程；策略优化时让代理“梦到”候选动作的后果来进行 refinement，形成一个闭环 RL 框架并在 Risk Foreseeing Benchmark 等场景中评估。\n\n- 结论/性能：实验表明该模型在预测失败方面显著优于基线；作为 critic 使用时，在高难度仿真中显著降低安全违规行为，证明“让模型梦见危险”是实现更安全、更聪明的端到端自驾的关键步骤。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:35:58"
+}

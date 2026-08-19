@@ -1,0 +1,13 @@
+{
+ "id": "2603.19044",
+ "title": "MoRI: Learning Motivation-Grounded Reasoning for Scientific Ideation in Large Language Models",
+ "authors": "Chenyang Gu, Jiahao Cheng, Meicong Zhang, Pujun Zheng, Jinquan Zheng, Guoxiu He",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19044v1",
+ "abstract": "Scientific ideation aims to propose novel solutions within a given scientific context. Existing LLM-based agentic approaches emulate human research workflows, yet inadequately model scientific reasoning, resulting in surface-level conceptual recombinations that lack technical depth and scientific grounding. To address this issue, we propose \\textbf{MoRI} (\\textbf{Mo}tivation-grounded \\textbf{R}easoning for Scientific \\textbf{I}deation), a framework that enables LLMs to explicitly learn the reasoning process from research motivations to methodologies. The base LLM is initialized via supervised fine-tuning to generate a research motivation from a given context, and is subsequently trained under a composite reinforcement learning reward that approximates scientific rigor: (1) entropy-aware information gain encourages the model to uncover and elaborate high-complexity technical details grounded in ground-truth methodologies, and (2) contrastive semantic gain constrains the reasoning trajectory to maintain conceptually aligned with scientifically valid solutions. Empirical results show that MoRI significantly outperforms strong commercial LLMs and complex agentic baselines across multiple dimensions, including novelty, technical rigor, and feasibility. The code will be made available on \\href{https://github.com/ECNU-Text-Computing/IdeaGeneration}{GitHub}.",
+ "summary": "- 核心创新点（1句）：提出 MoRI 框架，通过显式将“研究动机到方法”的推理过程嵌入学习，并用基于信息增益和对比语义增益的强化学习来提升科学性、技术深度与可行性。\n\n- 主要方法：基于大语言模型，先通过监督微调使模型能够从给定情境生成研究动机；随后在复合强化学习 reward 下训练，包括（1）熵感知的信息增益，鼓励揭示并细化与真实方法相关的高复杂度技术细节；（2）对比语义增益，约束推理轨迹以保持与科学有效解的概念一致性。\n\n- 结论/性能：MoRI 在新颖性、技术严谨性和可行性等维度显著优于强势商业 LLM 与复杂代理基线，取得更高水平的科学 Ideation 表现；代码将发布在 GitHub。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-20 13:06:26"
+}

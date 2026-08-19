@@ -1,0 +1,13 @@
+{
+ "id": "2512.16918",
+ "title": "AdaTooler-V: Adaptive Tool-Use for Images and Videos",
+ "authors": "Chaoyang Wang, Kaituo Feng, Dongyang Chen, Zhongyu Wang, Zhixun Li, Sicheng Gao, Meng Meng, Xu Zhou, Manyuan Zhang, Yuzhang Shang, Xiangyu Yue",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16918v1",
+ "abstract": "Recent advances have shown that multimodal large language models (MLLMs) benefit from multimodal interleaved chain-of-thought (CoT) with vision tool interactions. However, existing open-source models often exhibit blind tool-use reasoning patterns, invoking vision tools even when they are unnecessary, which significantly increases inference overhead and degrades model performance. To this end, we propose AdaTooler-V, an MLLM that performs adaptive tool-use by determining whether a visual problem truly requires tools. First, we introduce AT-GRPO, a reinforcement learning algorithm that adaptively adjusts reward scales based on the Tool Benefit Score of each sample, encouraging the model to invoke tools only when they provide genuine improvements. Moreover, we construct two datasets to support training: AdaTooler-V-CoT-100k for SFT cold start and AdaTooler-V-300k for RL with verifiable rewards across single-image, multi-image, and video data. Experiments across twelve benchmarks demonstrate the strong reasoning capability of AdaTooler-V, outperforming existing methods in diverse visual reasoning tasks. Notably, AdaTooler-V-7B achieves an accuracy of 89.8\\% on the high-resolution benchmark V*, surpassing the commercial proprietary model GPT-4o and Gemini 1.5 Pro. All code, models, and data are released.",
+ "summary": "- 核心创新点（一句话概括）\n  AdaTooler-V 通过自适应工具使用策略，仅在视觉问题确实需要工具时才调用工具，从而降低推理开销并提升性能。\n\n- 主要方法\n  - 提出 AT-GRPO 强化学习算法，基于 Tool Benefit Score 自适应调整奖励尺度，鼓励模型在工具带来真实收益时才使用工具。\n  - 构建两套训练数据集：AdaTooler-V-CoT-100k（SFT 冷启动）和 AdaTooler-V-300k（可核验奖励的 RL），覆盖单图、多图和视频数据。\n  - 将视觉多模态大语言模型与视觉工具结合，采用互相穿插的点-推理（CoT）流程实现自适应工具调用。\n  - 在十二个基准任务上进行实验，验证其在多类视觉推理任务中的强大推理能力。\n\n- 结论/性能\n  - AdaTooler-V-7B 在高分辨率基准 V* 上达到 89.8% 的准确率，超过商用专有模型 GPT-4o 与 Gemini 1.5 Pro。\n  - 在 twelve benchmarks 上总体优于现有方法，且代码、模型与数据均已开源。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-19 03:46:24"
+}

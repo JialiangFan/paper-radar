@@ -1,0 +1,27 @@
+{
+ "id": "selp-safe-and-efficient-task-plans-for-robot-agents-with-llms",
+ "title": "SELP: Safe and Efficient Task Plans for Robot Agents with LLMs",
+ "authors": "Yi Wu, Zikang Xiong, Yiran Hu, Shreyas Iyengar, Nan Jiang, Aniket Bera, Lin Tan, Suresh Jagannathan",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "LLM planners 无法保证生成的计划满足安全的时序约束（如 \"先关火再离开厨房\"）。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/SELP.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

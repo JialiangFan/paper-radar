@@ -1,0 +1,13 @@
+{
+ "id": "2602.08377",
+ "title": "Reinforcement Learning with Backtracking Feedback",
+ "authors": "Bilgehan Sel, Vaishakh Keshava, Phillip Wallis, Lukas Rutishauser, Ming Jin, Dingcheng Li",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08377v1",
+ "abstract": "Addressing the critical need for robust safety in Large Language Models (LLMs), particularly against adversarial attacks and in-distribution errors, we introduce Reinforcement Learning with Backtracking Feedback (RLBF). This framework advances upon prior methods, such as BSAFE, by primarily leveraging a Reinforcement Learning (RL) stage where models learn to dynamically correct their own generation errors. Through RL with critic feedback on the model's live outputs, LLMs are trained to identify and recover from their actual, emergent safety violations by emitting an efficient \"backtrack by x tokens\" signal, then continuing generation autoregressively. This RL process is crucial for instilling resilience against sophisticated adversarial strategies, including middle filling, Greedy Coordinate Gradient (GCG) attacks, and decoding parameter manipulations. To further support the acquisition of this backtracking capability, we also propose an enhanced Supervised Fine-Tuning (SFT) data generation strategy (BSAFE+). This method improves upon previous data creation techniques by injecting violations into coherent, originally safe text, providing more effective initial training for the backtracking mechanism. Comprehensive empirical evaluations demonstrate that RLBF significantly reduces attack success rates across diverse benchmarks and model scales, achieving superior safety outcomes while critically preserving foundational model utility.",
+ "summary": "- 核心创新点：提出一种基于回溯反馈的强化学习框架（RLBF），让大语言模型在生成过程中能够自我纠错并通过“回退若干 token”信号继续生成，从而提升对对抗攻击与分布内错误的鲁棒性。\n- 主要方法：在强化学习阶段利用对模型实时输出的 critic 反馈进行训练，模型学习识别并纠正实际出现的安全违规，触发“backtrack by x tokens”后回退再自回归继续生成；并结合改进的 SFT 数据生成策略 BSAFE+，将违规注入原本安全的连贯文本，以更有效地初始化回溯机制。\n- 结论/性能：在多项基准和模型规模上，RLBF 显著降低攻击成功率，提升安全性，同时尽量保持模型的基础实用性与能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:01:52"
+}

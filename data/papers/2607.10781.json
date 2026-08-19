@@ -1,0 +1,13 @@
+{
+ "id": "2607.10781",
+ "title": "Is Energy Guidance All You Need? Training-Free Norm Injection for Driving World Models",
+ "authors": "Xiyan Su, Frank Diermeyer, Markus Lienkamp",
+ "date": "2026-07-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.10781v1",
+ "abstract": "Driving world models built on large video-diffusion backbones generate realistic scenes but are hard to control: enforcing a traffic norm typically means retraining the backbone or conditioning it on hand-built layouts. We ask whether controllability requires training at all. Our experiment shows that a rectified-flow driving world model, which jointly generates future video and a planned ego trajectory, can have its planned trajectory steered entirely at sampling time by differentiable energy functions that encode driving norms, without knowledge-specific retraining of the diffusion backbone. Concretely, we demonstrate that a world model built on Open-Sora 2.0 MM-DiT backbone can be steered to brake at a counterfactual target by injecting energy guidance at sampling time. However, we find that the generated video does not yet follow the steered trajectory through the backbone's joint self-attention and identify the cross-stream coupling as a crucial requirement for end-to-end-controllable rollouts.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-07-16 13:05:28"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.06511",
+ "title": "Evolutionary Generation of Multi-Agent Systems",
+ "authors": "Yuntong Hu, Matthew Trager, Yuting Zhang, Yi Zhang, Shuo Yang, Wei Xia, Stefano Soatto",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06511v1",
+ "abstract": "Large language model (LLM)-based multi-agent systems (MAS) show strong promise for complex reasoning, planning, and tool-augmented tasks, but designing effective MAS architectures remains labor-intensive, brittle, and hard to generalize. Existing automatic MAS generation methods either rely on code generation, which often leads to executability and robustness failures, or impose rigid architectural templates that limit expressiveness and adaptability. We propose Evolutionary Generation of Multi-Agent Systems (EvoMAS), which formulates MAS generation as structured configuration generation. EvoMAS performs evolutionary generation in configuration space. Specifically, EvoMAS selects initial configurations from a pool, applies feedback-conditioned mutation and crossover guided by execution traces, and iteratively refines both the candidate pool and an experience memory. We evaluate EvoMAS on diverse benchmarks, including BBEH, SWE-Bench, and WorkBench, covering reasoning, software engineering, and tool-use tasks. EvoMAS consistently improves task performance over both human-designed MAS and prior automatic MAS generation methods, while producing generated systems with higher executability and runtime robustness. EvoMAS outperforms the agent evolution method EvoAgent by +10.5 points on BBEH reasoning and +7.1 points on WorkBench. With Claude-4.5-Sonnet, EvoMAS also reaches 79.1% on SWE-Bench-Verified, matching the top of the leaderboard.",
+ "summary": "1) 核心创新点：将多智能体系统（MAS）生成问题转化为结构化的配置空间进化搜索，通过从候选池选取初始配置、在执行轨迹反馈下进行条件化变异与交叉，以及利用经验记忆持续改进，生成具高可执行性与鲁棒性的 MAS。\n\n2) 主要方法：在配置空间进行进化生成，核心机制包括候选池选择、基于执行轨迹的反馈条件化变异与交叉、执行过程驱动的迭代更新，以及经验记忆的不断完善；在 BBEH、SWE-Bench、WorkBench 等基准上评估并与人类设计及前代自动方法比较。\n\n3) 结论/性能：EvoMAS 在多项任务上显著提升性能并提升可执行性与运行时鲁棒性；在 BBEH 推理上比 EvoAgent 提升 10.5 分，在 WorkBench 上提升 7.1 分；在 SWE-Bench-Verified 达到 79.1%，达到排行榜顶端水平。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-09 14:03:03"
+}

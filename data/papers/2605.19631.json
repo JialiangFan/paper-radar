@@ -1,0 +1,13 @@
+{
+ "id": "2605.19631",
+ "title": "HEAT: Heterogeneous End-to-End Autonomous Driving via Trajectory-Guided World Models",
+ "authors": "Hoonhee Cho, Giwon Lee, Jae-Young Kang, Hyemin Yang, Heejun Park, Kuk-Jin Yoon",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19631v1",
+ "abstract": "End-to-end autonomous driving has emerged as a compelling alternative to traditional modular pipelines by directly mapping raw sensor data to driving actions. While recent approaches achieve strong performance on single-domain datasets, their performance degrades significantly when trained jointly across multiple heterogeneous domains. In practice, however, autonomous systems must operate across diverse environments with heterogeneous distributions, including different cities, sensor configurations, and traffic patterns, without domain-specific retraining. This gap highlights a key challenge in multi-domain learning: domain-specific variations across heterogeneous domains introduce conflicting learning signals, driving models toward compromised solutions that are suboptimal across domains. To address this, we propose a trajectory-driven learning paradigm that organizes training around planning trajectories, enabling the model to capture domain-invariant representations of driving intent. Furthermore, we incorporate a world model that predicts future latent features conditioned on ego actions, improving feature consistency and mitigating domain-induced biases. We evaluate our approach on three benchmarks, nuScenes, NAVSIM, and the Waymo end-to-end dataset, and show substantial improvements over existing methods across all domains. Our results demonstrate that a single unified model can be trained on heterogeneous datasets while maintaining strong performance within each domain, highlighting a step toward scalable real-world deployment. We will make our code publicly available.",
+ "summary": "# HEAT 论文摘要\n\n**1. 核心创新点**\n提出一种基于轨迹引导的世界模型框架（HEAT），解决端到端自动驾驶在跨异构域（不同城市、传感器配置、交通模式）联合训练时性能下降的问题，实现单一统一模型在多域上的稳健表现。\n\n**2. 主要方法**\n- **轨迹驱动学习范式**：以规划轨迹（driving intent）为中心组织训练，学习与域无关的驾驶意图表征。\n- **世界模型模块**：以自车动作（ego actions）为条件预测未来潜在特征，提升特征一致性并缓解域偏置。\n- 整体形成\"轨迹引导 + 世界模型预测\"的端到端架构，从原始传感器数据直接映射到驾驶决策。\n\n**3. 结论 / 性能**\n在 nuScenes、NAVSIM 和 Waymo 端到端三大基准上联合训练并评估，相较现有方法在所有域上均取得显著提升，证明单个统一模型可在异构数据集上训练而不牺牲各域内表现，朝可扩展的真实世界部署迈进一步。代码将开源。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-24 13:04:06"
+}

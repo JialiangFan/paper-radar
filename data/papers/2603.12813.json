@@ -1,0 +1,13 @@
+{
+ "id": "2603.12813",
+ "title": "Context is all you need: Towards autonomous model-based process design using agentic AI in flowsheet simulations",
+ "authors": "Pascal Schäfer, Lukas J. Krinke, Martin Wlotzka, Norbert Asprion",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12813v1",
+ "abstract": "Agentic AI systems integrating large language models (LLMs) with reasoning and tooluse capabilities are transforming various domains - in particular, software development. In contrast, their application in chemical process flowsheet modelling remains largely unexplored. In this work, we present an agentic AI framework that delivers assistance in an industrial flowsheet simulation environment. To this end, we show the capabilities of GitHub Copilot (GitHub, Inc., 2026), when using state-of-the-art LLMs, such as Claude Opus 4.6 (Anthropic, PBC, 2026), to generate valid syntax for our in-house process modelling tool Chemasim using the technical documentation and a few commented examples as context. Based on this, we develop a multi-agent system that decomposes process development tasks with one agent solving the abstract problem using engineering knowledge and another agent implementing the solution as Chemasim code. We demonstrate the effectiveness of our framework for typical flowsheet modelling examples, including (i) a reaction/separation process, (ii) a pressure-swing distillation, and (iii) a heteroazeotropic distillation including entrainer selection. Along these lines, we discuss current limitations of the framework and outline future research directions to further enhance its capabilities.",
+ "summary": "- **核心创新点**：提出一个将代理式AI与大语言模型结合的框架，用于在工业流路仿真中实现自主的过程设计并自动生成 Chemasim 代码。\n\n- **主要方法**：通过将最新的LLMs（如 Claude Opus 4.6）与 GitHub Copilot 集成，利用技术文档和带注释的示例作为上下文，生成 Chemasim 的有效语法；构建一个多代理系统，其中一个代理解决抽象工程问题，另一个代理将解决方案实现为 Chemasim 代码；在典型的流程建模任务中进行验证，涵盖反应/分离、压力摆动蒸馏，以及异共沸蒸馏及 entrainer 选择。\n\n- **结论/性能**：在多个典型的流路建模场景中验证了框架的有效性，能够自动生成并实现 Chemasim 代码以完成相应的工艺模建，并讨论了当前的局限性与未来的研究方向以进一步提升能力。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-16 13:02:10"
+}

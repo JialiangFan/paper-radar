@@ -1,0 +1,31 @@
+{
+ "id": "2511.05982",
+ "title": "Runtime Safety Monitoring of Deep Neural Networks for Perception: A Survey",
+ "authors": "Schotschneider, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2511.05982",
+ "abstract": "",
+ "summary": "This survey categorizes runtime monitors for DNN perception by monitoring inputs, internal representations, and outputs.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Runtime Monitoring Assurance",
+ "tags": [
+  "perception",
+  "robotics",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "survey"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Runtime_Monitoring_Assurance/2025_Schotschneider_RuntimePerceptionSurvey.md",
+ "pdf_path": "PDFs/Runtime_Monitoring_Assurance/2025_Schotschneider_RuntimePerceptionSurvey.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

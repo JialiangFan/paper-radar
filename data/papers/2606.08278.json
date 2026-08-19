@@ -1,0 +1,13 @@
+{
+ "id": "2606.08278",
+ "title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
+ "authors": "Songlin Wei, Zhenhao Ni, Jie Liu, Zhenyu Zhao, Junjie Ye, Hongyi Jing, Junkai Xia, Xiawei Liu, Michael Leong, Liang Heng, Di Huang, Yue Wang",
+ "date": "2026-06-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.08278v1",
+ "abstract": "Humanoid foundation models are advancing faster than we can evaluate them. While real-world testing is expensive and difficult to reproduce, existing simulation benchmarks focus primarily on table-top or wheeled robots. A scalable and reproducible benchmark for whole-body humanoid loco-manipulation remains an open problem. To this end, we present SIMPLE, a unified simulation testbed for humanoid policy learning and evaluation. SIMPLE couples the accurate contact-rich dynamics of MuJoCo with the photorealistic rendering of IsaacSim. It provides a large-scale environment comprising 60 diverse whole-body tasks, 50 indoor scenes, and over 1,000 object assets. To facilitate scalable data collection, the framework integrates two data generation pipelines: automated trajectory generation via motion planning and a low-latency VR teleoperation interface. We further integrate and benchmark mainstream humanoid policies at scale in SIMPLE, including lightweight imitation networks, large vision-language-action (VLA) models, and recent world action models (WAMs). Our experiments reveal a strong correlation between policy performance in simulation and the real world. Furthermore, we demonstrate that policies trained on data collected in SIMPLE can be transferred zero-shot to physical humanoid robots under similar settings, providing a robust and reproducible foundation for humanoid robotics research.",
+ "summary": "# SIMPLE 论文总结\n\n1. **核心创新点**：提出了首个面向人形机器人全身\"运动-操作\"（loco-manipulation）的大规模、可复现仿真测评平台 SIMPLE，填补了现有仿真基准只聚焦桌面或轮式机器人的空白。\n\n2. **主要方法**：将 MuJoCo 的精确接触动力学与 IsaacSim 的逼真渲染相结合，构建了包含 60 个全身任务、50 个室内场景、1000+ 物体资产的环境；集成两条数据生成管线（基于运动规划的自动轨迹生成 + 低延迟 VR 遥操作）；并在平台上大规模评测了主流人形策略，包括轻量级模仿学习网络、大型视觉-语言-动作（VLA）模型和近期的世界动作模型（WAM）。\n\n3. **结论/性能**：实验表明策略在仿真中的表现与真实世界高度相关；在 SIMPLE 中采集数据训练出的策略可在相似设定下零样本（zero-shot）迁移到真实人形机器人，为人形机器人研究提供了稳健、可复现的基础平台。\n\n---\n\n提示：你的环境里有一个 `paper-review` 技能，可以按文献综述专家视角做更深入的中英文双语总结并自动输出到 Obsidian。如果需要更详尽的分析，告诉我即可调用。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-13 13:03:29"
+}

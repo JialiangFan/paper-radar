@@ -1,0 +1,13 @@
+{
+ "id": "2606.09551",
+ "title": "FuseFSS: Efficient Secure LLM Inference with Function Secret Sharing",
+ "authors": "Yuhan Ma, Yong Li, Stefan Schmid",
+ "date": "2026-06-08",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.09551v1",
+ "abstract": "Two-server secure inference allows a client to query a hosted large language model (LLM) without revealing prompts or embeddings. Recent GPU systems based on function secret sharing (FSS) make linear layers efficient, but fixed-point nonlinearities and helper operations remain a bottleneck because each operator is typically implemented as a bespoke protocol with its own comparisons, wrap-around corrections, and preprocessing material. We present FuseFSS, a compiler that replaces per-operator protocol design with a single compilation pipeline. For each scalar fixed-point operator, a compact specification lists its interval partition, low-degree arithmetic pieces, and required predicate bits. The compiler emits two batched FSS evaluations on the public masked value: one packed comparison that returns all predicate bits, and one vector interval lookup that returns the active coefficients and constants. Compared to the current state-of-the-art FSS-based GPU secure inference, FuseFSS preserves accuracy while achieving a $1.24\\times$--$1.50\\times$ end-to-end speedup and reducing online communication by $9\\%$--$16\\%$ on BERT and GPT-style models; preprocessing is also lighter, with $14\\%$--$23\\%$ lower key-generation time and $20\\%$--$24\\%$ smaller keys.",
+ "summary": "# FuseFSS 论文总结\n\n1. **核心创新点**：提出一个统一的编译器框架，用单一编译流水线替代传统\"为每个非线性算子定制 FSS 协议\"的做法，从而加速基于函数秘密共享（FSS）的安全 LLM 推理。\n\n2. **主要方法**：将每个定点标量算子抽象为一份紧凑规范（包含区间划分、低次多项式分段、所需谓词位）；编译器据此生成两次批量化 FSS 评估——一次打包比较返回所有谓词位，一次向量区间查找返回激活的系数与常数，从而把分散的比较、回绕修正和预处理统一起来。\n\n3. **结论/性能**：在 BERT 和 GPT 系列模型上，相比当前最优的基于 FSS 的 GPU 安全推理方案，FuseFSS 在保持精度不变的前提下实现端到端 **1.24×–1.50× 加速**，在线通信量降低 **9%–16%**；同时预处理更轻量，密钥生成时间减少 **14%–23%**，密钥体积缩小 **20%–24%**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-09 13:01:57"
+}

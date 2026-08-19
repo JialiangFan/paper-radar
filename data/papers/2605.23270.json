@@ -1,0 +1,13 @@
+{
+ "id": "2605.23270",
+ "title": "ChainFlow-VLA: Causal Flow Planning with Vision-Language Models",
+ "authors": "Xiyang Wang, Xinlin Wang, Tingguang Zhou, Gong Chen, Xingtai Gui, Zhi Xu, Xiaolei Wu, Feiyang Tan, Hangning Zhou, Mu Yang",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23270v1",
+ "abstract": "Current end-to-end autonomous driving systems are fundamentally limited by a mismatch between temporal causal reasoning and global trajectory consistency. Autoregressive (AR) models capture interaction-aware temporal dependencies via causal factorization, but their step-wise decoding leads to error accumulation and suboptimal global structure. In contrast, diffusion models optimize trajectories globally but lack explicit causal constraints, making them unreliable in interactive and safety-critical scenarios. This dichotomy reveals a deeper issue: existing methods treat causal modeling and global optimization as separate paradigms, without a principled way to unify them within a single trajectory distribution. To address this, we propose ChainFlow-VLA, which unifies causal generation and global refinement within a unified probabilistic framework. We formulate planning as a mixture over AR-induced modes and learn Vision-Language Model (VLM)-conditioned residual distributions over these modes. An autoregressive generator (Chain) produces a discrete set of causal trajectory modes, followed by a diffusion-based refiner (Flow) that leverages VLM hidden states as semantic priors to perform mode-conditioned correction in residual space while preserving causal structure. This straightforward conditioning seamlessly injects high-level scene understanding into fine-grained trajectory adjustments. Experiments demonstrate that ChainFlow-VLA achieves robust planning in ambiguous and long-tail scenarios, achieving a state-of-the-art score of 94.85 on the NAVSIM v1 leaderboard, matching human-level performance (94.8). Code will be available at https://github.com/AFARI-Research/ChainFlow-VLA.",
+ "summary": "# ChainFlow-VLA 论文总结\n\n**1. 核心创新点**\n将自回归（AR）的因果推理与扩散模型的全局优化首次统一到单一概率框架中，解决了端到端自动驾驶中\"时序因果推理\"与\"全局轨迹一致性\"难以兼顾的根本矛盾。\n\n**2. 主要方法**\n- 将规划建模为 AR 诱导模式上的混合分布，并学习以视觉-语言模型（VLM）为条件的残差分布。\n- **Chain（链）**：自回归生成器产生一组离散的因果轨迹模式。\n- **Flow（流）**：基于扩散的精化器利用 VLM 的隐藏状态作为语义先验，在残差空间中对模式进行条件化修正，同时保留因果结构。\n- 通过这种条件注入机制，将高层场景理解融入细粒度轨迹调整。\n\n**3. 结论/性能**\n在 NAVSIM v1 排行榜上取得 **94.85** 的 SOTA 成绩，达到与人类水平（94.8）相当的表现，并在模糊场景和长尾场景下展现出鲁棒的规划能力。代码将开源。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-25 13:11:13"
+}

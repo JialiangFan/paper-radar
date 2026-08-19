@@ -1,0 +1,27 @@
+{
+ "id": "dppo-diffusion-policy-policy-optimization",
+ "title": "DPPO: Diffusion Policy Policy Optimization",
+ "authors": "Allen Z. Ren et al. (Princeton)",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "预训练的 diffusion policy 如何通过 RL 继续优化？Diffusion 的多步 denoising 使标准 PPO 不直接适用。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/DPPO.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

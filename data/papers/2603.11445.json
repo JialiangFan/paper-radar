@@ -1,0 +1,13 @@
+{
+ "id": "2603.11445",
+ "title": "Verified Multi-Agent Orchestration: A Plan-Execute-Verify-Replan Framework for Complex Query Resolution",
+ "authors": "Xing Zhang, Yanwei Cui, Guanghui Wang, Qucy Wei Qiu, Ziyuan Li, Fangwei Han, Yajing Huang, Hengzhi Qiu, Bin Zhu, Peiyang He",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11445v1",
+ "abstract": "We present Verified Multi-Agent Orchestration (VMAO), a framework that coordinates specialized LLM-based agents through a verification-driven iterative loop. Given a complex query, our system decomposes it into a directed acyclic graph (DAG) of sub-questions, executes them through domain-specific agents in parallel, verifies result completeness via LLM-based evaluation, and adaptively replans to address gaps. The key contributions are: (1) dependency-aware parallel execution over a DAG of sub-questions with automatic context propagation, (2) verification-driven adaptive replanning that uses an LLM-based verifier as an orchestration-level coordination signal, and (3) configurable stop conditions that balance answer quality against resource usage. On 25 expert-curated market research queries, VMAO improves answer completeness from 3.1 to 4.2 and source quality from 2.6 to 4.1 (1-5 scale) compared to a single-agent baseline, demonstrating that orchestration-level verification is an effective mechanism for multi-agent quality assurance.",
+ "summary": "- 核心创新点：通过一个验证驱动的多代理编排框架 VMAO，将复杂查询分解为 DAG，进行依赖感知的并行执行，并以 LLM 级别的验证器进行结果评估与自适应重规划，从而提升多代理系统的回答完整性与来源质量。\n\n- 主要方法：采用 Plan-Execute-Verify-Replan 循环，利用 DAG 将子问题分解并在域专用代理间并行执行，自动进行上下文传递；引入基于大语言模型的验证器作为编排信号进行结果完整性评估并驱动重规划；设定可配置的停止条件以在质量与资源之间做权衡。\n\n- 结论/性能：在 25 个专家筛选的市场研究查询上，与单代理基线相比，回答完整性从 3.1 提升至 4.2，来源质量从 2.6 提升至 4.1（均为 1-5 量表），证明编排级验证是多代理质量保障的有效机制。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:02:26"
+}

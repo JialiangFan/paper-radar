@@ -1,0 +1,13 @@
+{
+ "id": "2605.22720",
+ "title": "Can AI Make Conflicts Worse? An Alignment Failure in LLM Deployment Across Conflict Contexts",
+ "authors": "Andrii Kryshtal",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22720v1",
+ "abstract": "AI models are already deployed in societies affected by armed conflict, and journalists, humanitarian workers, governments and ordinary citizens rely on them for information or for their work processes. No established practice exists for checking whether their outputs can make those conflicts worse. We tested nine model configurations from four providers (OpenAI, Anthropic, DeepSeek, xAI) on 90 multi-turn scenarios designed to surface misaligned behaviour in conflict contexts: false equivalence between documented atrocities, denial of genocide, and failure to recognise ethnic slurs, among others. When such outputs feed into journalism, humanitarian reporting, or public debate, they can deepen divisions in fragile societies. Failure rates span 6\\% to 47\\% between the best and worst performing models, which makes model choice a safety question in its own right and when users pushed for ``balance'' in cases where international courts have already assigned responsibility, five of nine configurations failed 80 to 100 percent of the time. We release the first evaluation framework for this domain and propose adding it to alignment evaluation portfolios.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**：首次提出针对\"武装冲突场景\"的 LLM 对齐评估框架，揭示主流模型在冲突相关输出上存在严重的安全失准问题。\n\n**2. 主要方法**：构建 90 个多轮对话场景，覆盖\"对已记录暴行的虚假等同\"\"否认种族灭绝\"\"未能识别族群侮辱性词汇\"等失准行为；在来自 OpenAI、Anthropic、DeepSeek、xAI 四家厂商的 9 种模型配置上进行系统化测试。\n\n**3. 结论/性能**：不同模型失败率介于 6%–47%，差距显著，说明模型选择本身就是安全问题；当用户对国际法庭已判定责任的案件施压要求\"保持平衡\"时，9 个配置中有 5 个的失败率达 80%–100%。作者发布了该领域首个评估框架，并建议将其纳入主流对齐评估体系。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:02:12"
+}

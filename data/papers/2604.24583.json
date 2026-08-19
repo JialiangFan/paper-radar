@@ -1,0 +1,13 @@
+{
+ "id": "2604.24583",
+ "title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+ "authors": "Yingqian Min, Kun Zhou, Yifan Li, Yuhuan Wu, Han Peng, Yifan Du, Wayne Xin Zhao, Min Yang, Ji-Rong Wen",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24583v1",
+ "abstract": "Recent advancements in reinforcement learning with verifiable rewards (RLVR) have significantly improved the complex reasoning ability of vision-language models (VLMs). However, its outcome-level supervision is too coarse to diagnose and correct errors within the reasoning chain. To this end, we propose Perceval, a process reward model (PRM) that enables token-level error grounding, which can extract image-related claims from the response and compare them one by one with the visual evidence in the image, ultimately returning claims that contain perceptual errors. Perceval is trained with perception-intensive supervised training data. We then integrate Perceval into the RL training process to train the policy models. Specifically, compared to traditional GRPO, which applies sequence-level advantages, we apply token-level advantages by targeting penalties on hallucinated spans identified by Perceval, thus enabling fine-grained supervision signals. In addition to augmenting the training process, Perceval can also assist VLMs during the inference stage. Using Perceval, we can truncate the erroneous portions of the model's response, and then either have the model regenerate the response directly or induce the model to reflect on its previous output. This process can be repeated multiple times to achieve test-time scaling. Experiments show significant improvements on benchmarks from various domains across multiple reasoning VLMs trained with RL, highlighting the promise of perception-centric supervision as a general-purpose strategy. For test-time scaling, it also demonstrates consistent performance gains over other strategies, such as major voting. Our code and data will be publicly released at https://github.com/RUCAIBox/Perceval.",
+ "summary": "1) 核心创新点\n- 提出 Perceval，一种感知为中心的过程奖励模型（PRM），实现对回答中逐 token 的感知错误定位与纠错，将图像证据逐条对比回答中的断言，从而诊断和修正推理链中的错误。\n\n2) 主要方法\n- 构建并用感知密集的监督数据训练 Perceval，使其能够对回答中的逐-token断言进行证据 grounding。\n- 将 Perceval 集成进 RLVR 的策略训练，采用 token-level 优势对 Perceval 指认的幻觉片段实施惩罚，提供更细粒度的监督信号（相较传统的序列级优势 GRPO）。\n- 在推理阶段应用 Perceval 截断错误部分、再生成或促使模型反思前输出，且可多轮重复以实现测试时的扩展（test-time scaling）。\n\n3) 结论/性能\n- 在跨领域的多种推理 VLMs 上的 RL 训练中实现显著提升，表明感知中心的监督具有通用性。\n- 测试时扩展对比如 major voting 等策略仍显示稳定的性能提升。\n- 代码与数据将公开发布。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-28 13:07:33"
+}

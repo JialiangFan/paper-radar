@@ -1,0 +1,13 @@
+{
+ "id": "2602.10007",
+ "title": "A Collaborative Safety Shield for Safe and Efficient CAV Lane Changes in Congested On-Ramp Merging",
+ "authors": "Bharathkumar Hegde, Melanie Bouroche",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.10007v1",
+ "abstract": "Lane changing in dense traffic is a significant challenge for Connected and Autonomous Vehicles (CAVs). Existing lane change controllers primarily either ensure safety or collaboratively improve traffic efficiency, but do not consider these conflicting objectives together. To address this, we propose the Multi-Agent Safety Shield (MASS), designed using Control Barrier Functions (CBFs) to enable safe and collaborative lane changes. The MASS enables collaboration by capturing multi-agent interactions among CAVs through interaction topologies constructed as a graph using a simple algorithm. Further, a state-of-the-art Multi-Agent Reinforcement Learning (MARL) lane change controller is extended by integrating MASS to ensure safety and defining a customised reward function to prioritise efficiency improvements. As a result, we propose a lane change controller, known as MARL-MASS, and evaluate it in a congested on-ramp merging simulation. The results demonstrate that MASS enables collaborative lane changes with safety guarantees by strictly respecting the safety constraints. Moreover, the proposed custom reward function improves the stability of MARL policies trained with a safety shield. Overall, by encouraging the exploration of a collaborative lane change policy while respecting safety constraints, MARL-MASS effectively balances the trade-off between ensuring safety and improving traffic efficiency in congested traffic. The code for MARL-MASS is available with an open-source licence at https://github.com/hkbharath/MARL-MASS",
+ "summary": "1. 核心创新点（一句话概括）\n提出基于控制屏障函数的多智能体安全盾 MASS，结合图结构协作与改进的 MARL，使拥堵场景下的并线实现安全、协同且更高效。\n\n2. 主要方法（使用的技术/模型）\n- 采用控制屏障函数（CBF）构建安全约束盾，确保并线安全性。 \n- 通过简单算法构建的图结构互动拓扑来捕捉多智能体（CAV）之间的相互作用。 \n- 将 MASS 集成到一个前沿的多智能体强化学习（MARL）并线控制器中，并设计自定义奖励以优先提升效率。 \n- 在拥堵的匝道汇入仿真中评估 MARL-MASS，代码对外开源。\n\n3. 结论/性能（取得的效果）\n- MASS 能在严格遵守安全约束的前提下实现协同并线，提供安全保证。 \n- 自定义奖励提高了在安全盾条件下训练的 MARL 策略的稳定性。 \n- MARL-MASS 在拥堵交通中有效平衡安全与效率，促进协同并线策略的探索与应用。  \n- 相关实现开放源代码（GitHub）。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-11 14:00:48"
+}

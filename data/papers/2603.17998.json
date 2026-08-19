@@ -1,0 +1,13 @@
+{
+ "id": "2603.17998",
+ "title": "The Unreasonable Effectiveness of Text Embedding Interpolation for Continuous Image Steering",
+ "authors": "Yigit Ekin, Yossi Gandelsman",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17998v1",
+ "abstract": "We present a training-free framework for continuous and controllable image editing at test time for text-conditioned generative models. In contrast to prior approaches that rely on additional training or manual user intervention, we find that a simple steering in the text-embedding space is sufficient to produce smooth edit control. Given a target concept (e.g., enhancing photorealism or changing facial expression), we use a large language model to automatically construct a small set of debiased contrastive prompt pairs, from which we compute a steering vector in the generator's text-encoder space. We then add this vector directly to the input prompt representation to control generation along the desired semantic axis. To obtain a continuous control, we propose an elastic range search procedure that automatically identifies an effective interval of steering magnitudes, avoiding both under-steering (no-edit) and over-steering (changing other attributes). Adding the scaled versions of the same vector within this interval yields smooth and continuous edits. Since our method modifies only textual representations, it naturally generalizes across text-conditioned modalities, including image and video generation. To quantify the steering continuity, we introduce a new evaluation metric that measures the uniformity of semantic change across edit strengths. We compare the continuous editing behavior across methods and find that, despite its simplicity and lightweight design, our approach is comparable to training-based alternatives, outperforming other training-free methods.",
+ "summary": "1. 核心创新点：在无需额外训练的前提下，通过对文本嵌入空间的 steer，以及大语言模型自动生成的去偏见对比提示对，结合弹性区间搜索，实现连续、可控的图像编辑，并可自然泛化到图像/视频等文本条件生成。\n\n2. 主要方法：仅修改文本表示，在生成器的文本编码层将计算得到的 steer 向量直接加入输入提示；利用大语言模型自动构造一组对比提示对来得到 steering 向量；通过弹性区间搜索自动识别有效的 steering幅度区间，对该区间内的向量进行放缩以实现平滑、连续的编辑；并提出新的评估指标来衡量编辑强度的语义变化均匀性，方法本身可跨模态应用。\n\n3. 结论/性能：在连续编辑任务上与需要训练的方法相当，甚至优于其他训练-free 方法；并且提出的新评估指标显示语义变化的均匀性良好，具备跨模态泛化能力（适用于图像、视频等文本条件生成）。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-19 13:05:17"
+}

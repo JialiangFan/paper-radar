@@ -1,0 +1,13 @@
+{
+ "id": "2602.22426",
+ "title": "SimpleOCR: Rendering Visualized Questions to Teach MLLMs to Read",
+ "authors": "Yibo Peng, Peng Xia, Ding Zhong, Kaide Zeng, Siwei Han, Yiyang Zhou, Jiaqi Liu, Ruiyi Zhang, Huaxiu Yao",
+ "date": "2026-02-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22426v1",
+ "abstract": "Despite the rapid advancements in Multimodal Large Language Models (MLLMs), a critical question regarding their visual grounding mechanism remains unanswered: do these models genuinely ``read'' text embedded in images, or do they merely rely on parametric shortcuts in the text prompt? In this work, we diagnose this issue by introducing the Visualized-Question (VQ) setting, where text queries are rendered directly onto images to structurally mandate visual engagement. Our diagnostic experiments on Qwen2.5-VL reveal a startling capability-utilization gap: despite possessing strong OCR capabilities, models suffer a performance degradation of up to 12.7% in the VQ setting, exposing a deep-seated ``modality laziness.'' To bridge this gap, we propose SimpleOCR, a plug-and-play training strategy that imposes a structural constraint on the learning process. By transforming training samples into the VQ format with randomized styles, SimpleOCR effectively invalidates text-based shortcuts, compelling the model to activate and optimize its visual text extraction pathways. Empirically, SimpleOCR yields robust gains without architectural modifications. On four representative OOD benchmarks, it surpasses the base model by 5.4% and GRPO based on original images by 2.7%, while exhibiting extreme data efficiency, achieving superior performance with 30x fewer samples (8.5K) than recent RL-based methods. Furthermore, its plug-and-play nature allows seamless integration with advanced RL strategies like NoisyRollout to yield complementary improvements. Code is available at https://github.com/aiming-lab/SimpleOCR.",
+ "summary": "- 核心创新点（1 句话）\n  通过将查询文本直接渲染到图像上形成 Visualized-Question (VQ) 诊断设定，并提出一个 plug-and-play 的 SimpleOCR 训练策略，以打破基于文本提示的捷径、强制模型学习视觉文本读取能力。\n\n- 主要方法\n  - Visualized-Question (VQ) 诊断框架：将文本查询直接渲染到图像上，结构性强制模型进行视觉参与。\n  - SimpleOCR：一种无架构修改的训练策略，将训练样本改造成 VQ 格式、引入随机化样式以抵消文本捷径，推动模型激活并优化视觉文本提取路径；并且可与 NoisyRollout 等强化学习方法无缝结合。\n\n- 结论/性能\n  - 在四个代表性 OOD 基准上，相较基础模型提升约 5.4%，相较原始图像的 GRPO 提升约 2.7%；\n  - 数据效率极高，仅需 8.5K 样本（比近端 RL 方法少约 30 倍）即可获得更优的性能；\n  - 插件式设计可与更先进的 RL 策略如 NoisyRollout 互补提升；\n  - 代码公开可获取。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-27 14:03:21"
+}

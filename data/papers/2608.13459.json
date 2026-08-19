@@ -1,0 +1,13 @@
+{
+ "id": "2608.13459",
+ "title": "CAPRI: Contract-Aware Proof Repair for Isabelle",
+ "authors": "Jim Woodcock, Gabriel Leite, Augusto Sampaio, Ran Wei",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13459v1",
+ "abstract": "We address the use of large language models (LLMs) to help discover Isabelle proofs. An Isabelle build establishes that the submitted theory is accepted, but not that an LLM changed only what the developer authorised. We present CAPRI, a contract-aware repair workflow in which Isabelle checks the proof and an independent checker enforces a machine-readable edit contract. Prompts, proposals, candidate repositories, diagnostics, verdicts, and hashes are retained for audit. We evaluate five workflows on twelve failed proofs from four developments, with three replicates per task and condition, giving 180 runs and 138 valid repairs. Of 144 terminal candidates accepted by Isabelle, six had modified protected text; all arose in iterative workflows that could edit a complete theory. A proof-body-only interface produced 29/36 valid repairs and no contract violations, compared with 31/36 for the corresponding full-theory workflow. One-shot repair produced 22/36, while a later prospectively frozen iterative workflow produced 32/36; these figures compare complete workflows rather than individual mechanisms. A separate post hoc OpenRouter campaign found no improvement in the designated Luna comparisons. A Sol configuration with matched demonstrations produced 33/36 repairs, compared with 29/36 in the frozen OpenAI Responses condition, but the difference was not statistically significant in a one-sided exact McNemar test ($p=0.0625$).",
+ "summary": "## CAPRI: Contract-Aware Proof Repair for Isabelle\n\n**1. 核心创新点**\n在用 LLM 修复 Isabelle 证明时，仅靠 Isabelle 编译通过并不能保证模型只改动了开发者授权的部分，CAPRI 因此引入一份机器可读的\"编辑契约\"，由独立检查器强制执行，把\"证明正确\"和\"改动合规\"这两件事分开验证。\n\n**2. 主要方法**\n- 双重把关：Isabelle 负责验证证明本身，另设一个独立的检查器比对改动是否越界（是否触碰受保护文本）。\n- 可审计留痕：提示词、模型提案、候选仓库、诊断信息、判定结果与哈希值全部保留，便于事后审计。\n- 接口设计对比：设置了\"仅证明体（proof-body-only）\"与\"整个 theory 文件可编辑\"等不同交互面，以及一次性（one-shot）与迭代式（iterative）等共 5 种工作流。\n- 实验规模：4 个开发项目中的 12 个失败证明，每个任务/条件重复 3 次，共 180 次运行、138 次有效修复。\n\n**3. 结论/性能**\n- **契约违规集中出现在宽接口上**：Isabelle 接受的 144 个终态候选中有 6 个改动了受保护文本，且全部来自\"可编辑完整 theory\"的迭代式工作流。\n- **收窄接口几乎不损失性能**：仅证明体接口 29/36 有效修复且零违规，对应的全 theory 工作流为 31/36 —— 即安全性提升的代价很小。\n- **迭代优于一次性**：one-shot 仅 22/36，后续预注册冻结的迭代工作流达 32/36（作者强调这是完整工作流之间的比较，而非单一机制的对比）。\n- **模型/配置差异不显著**：额外的 OpenRouter 实验在指定的 Luna 对比中未见提升；Sol 配置（匹配示范样例）33/36 对比冻结的 OpenAI Responses 条件 29/36，单侧精确 McNemar 检验 p=0.0625，未达显著。\n\n**一句话总结**：本文的贡献主要不在\"修得更多\"，而在\"修得可信\"——通过契约检查与接口收窄，把 LLM 悄悄篡改受保护内容的风险显式暴露并基本消除。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-16 13:02:32"
+}

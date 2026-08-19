@@ -1,0 +1,13 @@
+{
+ "id": "2512.11944",
+ "title": "A Review of Learning-Based Motion Planning: Toward a Data-Driven Optimal Control Approach",
+ "authors": "Jia Hu, Yang Chang, Haoran Wang",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11944v1",
+ "abstract": "Motion planning for high-level autonomous driving is constrained by a fundamental trade-off between the transparent, yet brittle, nature of pipeline methods and the adaptive, yet opaque, \"black-box\" characteristics of modern learning-based systems. This paper critically synthesizes the evolution of the field -- from pipeline methods through imitation learning, reinforcement learning, and generative AI -- to demonstrate how this persistent dilemma has hindered the development of truly trustworthy systems. To resolve this impasse, we conduct a comprehensive review of learning-based motion planning methods. Based on this review, we outline a data-driven optimal control paradigm as a unifying framework that synergistically integrates the verifiable structure of classical control with the adaptive capacity of machine learning, leveraging real-world data to continuously refine key components such as system dynamics, cost functions, and safety constraints. We explore this framework's potential to enable three critical next-generation capabilities: \"Human-Centric\" customization, \"Platform-Adaptive\" dynamics adaptation, and \"System Self-Optimization\" via self-tuning. We conclude by proposing future research directions based on this paradigm, aimed at developing intelligent transportation systems that are simultaneously safe, interpretable, and capable of human-like autonomy.",
+ "summary": "- 核心创新点：提出数据驱动的最优控制范式，作为学习驱动运动规划的统一框架，将经典控制的可验证结构与机器学习的自适应能力有机融合，以实现更可信的高层自动驾驶运动规划。\n\n- 主要方法：通过对从流水线式方法、模仿学习、强化学习、生成式AI等的发展进行综合性评述，提出以数据驱动的最优控制为核心的统一框架，强调利用真实世界数据持续优化系统动力学、代价函数和安全约束，并探讨在该框架下实现“以人”为中心的自定义、平台自适应动力学以及自我优化（自调优）的能力。\n\n- 结论/性能：未给出具体实验性能指标，作为综述与方法学提议，提出了未来研究方向和潜在能力，目标是使运动规划系统更安全、可解释，并具备更接近人类水平的自治能力。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-16 02:01:42"
+}

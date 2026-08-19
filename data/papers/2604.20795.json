@@ -1,0 +1,13 @@
+{
+ "id": "2604.20795",
+ "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+ "authors": "Pavel Salovskii, Iuliia Gorshkova",
+ "date": "2026-04-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.20795v1",
+ "abstract": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning.\n  The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs. The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates. During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction.\n  Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems. In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.\n  The proposed architecture addresses key limitations of current LLM-based systems, including lack of long-term memory, weak structural understanding, and limited reasoning capabilities. It provides a foundation for building agent-based systems, robotics applications, and enterprise AI solutions that require persistent knowledge, explainability, and reliable decision-making.",
+ "summary": "- 核心创新点：在大语言模型（LLMs）之上建立一个外部本体记忆层，通过使用 RDF/OWL 构建、验证并持续更新的知识图，实现持久、可验证且语义化的推理的混合智能系统。\n- 主要方法：自动化本体构建管线（来自文档、API、对话日志等多源；包含实体识别、关系抽取、归一化、三元组生成），并使用 SHACL/OWL 约束进行校验与持续更新；推理阶段将向量检索与基于图的推理、外部工具交互结合，形成生成-验证-纠错的流程；在 Tower of Hanoi 等规划任务上进行实验评估，比较与基线LLMs。\n- 结论/性能：与仅使用基线LLMs的系统相比，添加本体层在多步推理任务上表现更好，并实现对生成输出的 formally 验证，提升可解释性和决策可靠性，适用于需要持久记忆、结构化理解与可靠推理的应用（如智能代理、机器人、企业AI）。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-23 13:01:18"
+}

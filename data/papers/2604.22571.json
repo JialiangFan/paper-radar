@@ -1,0 +1,13 @@
+{
+ "id": "2604.22571",
+ "title": "LARA: Validation-Driven Agentic Supercomputer Workflows for Atomistic Modeling",
+ "authors": "William Dawson, Louis Beal, Yoann Curé, Giuseppe Fisicaro, Dorian Rolland, Luigi Genovese",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22571v1",
+ "abstract": "Large language models (LLMs) and agentic systems have recently demonstrated potential for automating scientific workflows, including atomistic simulations. However, their deployment in high-performance computing (HPC) environments remains limited by the lack of mechanisms ensuring correctness, reproducibility, and safe interaction with computational resources. Generated workflows suffer from inconsistencies, incorrect API usage, or invalid physical configurations - leading to failed or unreliable simulations. In this work, we introduce LARA-HPC, a validation-driven agentic framework to enable reliable workflow generation for atomistic modeling on HPC systems. Our approach is based on three key components: (i) a controlled execution layer that mediates all interactions with HPC resources; (ii) simulation-native validation through dry-run capabilities, enabling execution-level verification without incurring resource cost; and (iii) a multi-phase agentic pipeline combining retrieval-augmented generation and iterative refinement. We demonstrate the effectiveness of this approach performing an end-to-end atomistic simulation workflow on HPC by applying LARA-HPC to Density Functional Theory simulations. The results show that validation-driven generation significantly improves robustness and enables iterative correction of both syntactic and physical inconsistencies. More broadly, this work advocates for a shift from generation-first to validation-first paradigms in Artificial Intelligence (AI) assisted scientific computing. We argue that the future task of the computational physics community is to develop domain specific agentic systems based on structured tooling to realize an HPC enabled co-piloted research ecosystem.",
+ "summary": "- 核心创新点：提出一种验证驱动的代理式高性能计算工作流框架 LARA-HPC，通过受控执行、干运行验证和多阶段检索增强生成的迭代流程，显著提升在 HPC 上的原子尺度建模正确性与鲁棒性。\n\n- 主要方法：构建包含受控执行层、面向仿真的 dry-run 验证，以及结合检索增强生成（RAG）与迭代 refinement 的多阶段代理式流水线，并在高性能计算环境中对密度泛函理论（DFT）仿真进行端到端应用与验证。\n\n- 结论/性能：验证驱动的生成显著提升了鲁棒性，并能够迭代纠正语法与物理配置等不一致性；实验演示表明可在 HPC 上完成端到端的原子尺度仿真工作流，推动 AI 辅助科学计算由“生成优先”向“验证优先”的范式转变。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-27 13:02:34"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.17993",
+ "title": "Turbo Connection: Reasoning as Information Flow from Higher to Lower Layers",
+ "authors": "Mohan Tang, Sidi Lu",
+ "date": "2026-02-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.17993v1",
+ "abstract": "Complex problems, whether in math, logic, or planning, are solved by humans through a sequence of steps where the result of one step informs the next. In this work, we adopt the perspective that the reasoning power of Transformers is fundamentally limited by a fixed maximum number of steps along any latent path of computation. To address this, we introduce Turbo Connection (TurboConn), a novel architecture that overcomes the fixed-depth constraint by routing multiple residual connections from the higher-layer hidden states of each token $t$ to the lower layers of token $t+1$. Fine-tuning pre-trained LLMs with our method not only yields accuracy gains of 0.9% to over 10% on benchmarks like GSM8K, Parity, and multi-step arithmetic, but also demonstrates that the density of these backward connections is critical; our dense interaction significantly outperforms \"sparse\" alternatives that only pass a single hidden state or vector. Notably, TurboConn can be integrated into pre-trained LLMs to overcome task-specific plateaus: while a fine-tuned Qwen-3-1.7B achieves only 53.78% on Parity, adding our architectural modification enables the model to reach 100% accuracy, all without the necessity to retrain the full model from scratch or sophisticated curriculum learning. Our results provide strong empirical evidence that the depth of the computational path is a key factor in reasoning ability, also offering a new mechanism to enhance LLMs without significantly affecting generation latency.",
+ "summary": "- 核心创新点：提出 TurboConn，通过在高层到低层之间路由多条残差连接，打破 Transformer 固定深度的推理瓶颈，提升推理能力。\n\n- 主要方法：在每个 token t 的高层隐藏状态向 token t+1 的低层传递多条残差连接，形成密集的信息流，显著高于仅传递单一向量的稀疏方案；在预训练语言模型上进行微调（fine-tuning），实现对现有模型的嵌入式改造，无需从头重新训练或复杂的课程学习，同时比较了不同连接密度对性能的影响。\n\n- 结论/性能：在 GSM8K、Parity、以及多步算术等基准上实现 0.9% 到超过 10% 的准确率提升；密集回传连接显著优于稀疏方案；以 Qwen-3-1.7B 为例，Parity 从 53.78% 提升到 100%；且在不显著增加生成延迟的前提下实现对任务停滞的突破。该工作为推理能力与计算路径深度的关系提供实证证据。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-23 14:02:04"
+}

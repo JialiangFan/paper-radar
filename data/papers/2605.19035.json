@@ -1,0 +1,32 @@
+{
+ "id": "2605.19035",
+ "title": "Trustworthy Agent Network: Trust in Agent Networks Must Be Baked In, Not Bolted On",
+ "authors": "Yixiang Yao, Yuhang Yao, Xinyi Fan, Jiechao Gao, Jie Wang, Minjia Zhang, Srivatsan Ravi, Carlee Joe-Wong",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2605.19035",
+ "abstract": "",
+ "summary": "This vision paper argues that trust in agent-to-agent networks must be embedded into the coordination architecture itself, because local guardrails, voting, sandboxing, and post...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental Agent Safety Benchmarks",
+ "tags": [
+  "agent-safety",
+  "multi-agent-systems",
+  "runtime-monitoring",
+  "safe-vla",
+  "semantic-safety",
+  "supplemental-recent",
+  "trustworthy-agents"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Agent_Safety_Benchmarks/2026_Yao_TAN.md",
+ "pdf_path": "PDFs/Supplemental_Agent_Safety_Benchmarks/2026_Yao_TAN.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.22747",
+ "title": "Code for All: Educational Applications of the \"Vibe Coding\" Hackathon in Programming Education across All Skill Levels",
+ "authors": "Ashley J. Chen, Yijia Cao, Minghao Shao, Ramesh Karri, Muhammad Shafique",
+ "date": "2026-04-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.22747v1",
+ "abstract": "The emergence of large language models has enabled vibe coding, a natural language approach to programming in which users describe intent and AI generates or revises code, potentially broadening access to programming while preserving meaningful learning outcomes. We investigate its educational value through a month-long online hackathon that welcomed participants from multiple countries, ranging from complete beginners to experienced developers. The hackathon offered three tracks with increasing technical demands. Spark emphasized basic frontend functionality and dynamic features such as buttons, forms, and API calls. Build required backend or database integration. Launch targeted production ready web applications, including deployment. Participants were required to develop projects using only LLM generated code without manual edits and submitted complete chat histories, source code, demo videos, and functionality reports. We assessed educational effectiveness with a mixed methods design that combined standardized project evaluations across functionality, user interface and user experience design, impact, prompt quality, and code readability, along with post-hackathon surveys of perceived learning outcomes and thematic analysis of open-ended feedback. Our findings describe how participants with different backgrounds engage with vibe coding as task complexity increases, how the no manual editing constraint shapes prompting and debugging practices, and what these patterns imply for integrating AI assisted development into programming education and competitive learning environments.",
+ "summary": "- 核心创新点：以“大语言模型驱动的Vibe Coding”为核心，通过跨技能水平的竞赛化学习与“禁止人工编辑”的严格约束，系统评估AI辅助编码在教育场景中的价值与影响。\n\n- 主要方法：使用LLM生成/修正代码，参与者不得手动编辑；提交包括聊天记录、源代码、演示视频和功能报告；设定三个难度等级的赛道（Spark、Build、Launch）覆盖前端、后端与生产部署；采用混合方法评估：定量指标覆盖功能性、UI/UX、影响、提示质量、代码可读性；定性通过赛后问卷与开放式反馈的主题分析。\n\n- 结论/性能：揭示不同背景的参与者在任务复杂性提升时的参与方式差异，以及无人工编辑约束如何影响提示策略与调试实践；为在编程教育与竞争性学习环境中集成AI辅助开发提供教育应用路径与实践洞见。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-27 13:01:24"
+}

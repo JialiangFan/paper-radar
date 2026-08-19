@@ -1,0 +1,13 @@
+{
+ "id": "2603.06243",
+ "title": "MLLMRec-R1: Incentivizing Reasoning Capability in Large Language Models for Multimodal Sequential Recommendation",
+ "authors": "Yu Wang, Yonghui Yang, Le Wu, Jiancan Wu, Hefei Xu, Hui Lin",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.06243v1",
+ "abstract": "Group relative policy optimization (GRPO) has become a standard post-training paradigm for improving reasoning and preference alignment in large language models (LLMs), and has recently shown strong effectiveness in LLM-based recommender systems. However, extending GRPO-based reasoning pipelines to multimodal sequential recommendation (MSR) with multimodal large language models (MLLMs) faces fundamental obstacles. First, MSR requires jointly encoding visual content for both historical interactions and multiple candidate items, causing visual tokens to dominate the input and making the cost of group-based rollout scale with history length and candidate set size, which renders GRPO-based training prohibitively expensive. Second, existing Chain-of-Thought (CoT) supervision suffers from reward inflation in recommendation scenarios, where higher training rewards do not reliably translate into improved ranking performance and may induce shortcut learning. To address these challenges, we propose MLLMRec-R1, an efficient and stable GRPO-based reasoning framework for multimodal sequential recommendation. MLLMRec-R1 textualizes visual signals offline to eliminate expensive visual tokens while preserving multimodal semantics, and constructs high-quality multimodal CoT supervision through refinement and confidence-aware assessment. Furthermore, a mixed-grained data augmentation strategy selectively injects reliable CoT samples while retaining standard training data, mitigating reward inflation and improving generalization stability. Extensive experiments on three benchmark datasets demonstrate that MLLMRec-R1 consistently outperforms state-of-the-art methods, establishing a practical and effective GRPO-based reasoning pipeline for multimodal sequential recommendation. The code is available at https://github.com/wangyu0627/MLLMRec-R1.",
+ "summary": "- 核心创新点：提出一个高效且稳定的 GRPO 基于推理框架 MLLMRec-R1，通过离线文本化视觉信号、精炼且带置信度评估的多模态 CoT 监督，以及混合粒度数据增强，解决多模态序列推荐中的计算开销与奖励膨胀问题。\n\n- 主要方法：结合 GRPO 的推理框架与多模态大语言模型（MLLM），将视觉信号离线文本化以避免大量视觉 token 的计算开销，同时保留多模态语义；构建高质量的多模态 CoT 监督并进行置信度评估；引入混合粒度数据增强策略，在训练中有选择地注入可靠的 CoT 样本并保留标准训练数据，以提升泛化与稳定性。\n\n- 结论/性能：在三个基准数据集上持续优于现有最先进方法，证明所提出的框架在多模态序列推荐中的可行性与有效性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-09 13:04:07"
+}

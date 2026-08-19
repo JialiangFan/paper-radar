@@ -1,0 +1,13 @@
+{
+ "id": "2606.15768",
+ "title": "LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies",
+ "authors": "Jialei Chen, Kai Wang, Kang Chen, Shuaihang Chen, Feng Gao, Wenhao Tang, Zhiyuan Li, Weilin Liu, Zhuyu Yao, Boxun Li, Yuanbo Xu, Chao Yu",
+ "date": "2026-06-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.15768v1",
+ "abstract": "Vision-Language-Action models (VLAs) leverage large-scale vision-language pretraining for semantic robot control, but often lack explicit foresight into how robot actions change the scene. World-Action Models (WAMs) address this limitation by conditioning policies on predicted futures, yet existing approaches typically rely on computationally expensive video generation with substantial pixel-level redundancy. We present LaWAM, a Latent World Action Model that exposes predictive dynamics to robot policies through compact latent visual subgoals instead of reconstructed future video. At the core of LaWAM is a latent-action-conditioned Latent World Model (LaWM). We obtain LaWM by training a latent action model in the latent space of a pretrained vision foundation model and repurposing its forward decoder to predict future observation features for scene evolution. LaWAM then conditions action generation on these predicted latent visual subgoals to enable dynamics-aware robot control. LaWAM achieves state-of-the-art or competitive success rates (SRs) across LIBERO (98.6% SR), RoboTwin (91.22% SR), and real-world manipulation tasks while retaining low-latency inference. LaWAM runs in 187 ms per action-chunk prediction and achieves up to 24x lower wall-clock latency than pixel-space WAMs.",
+ "summary": "根据论文标题和摘要，总结如下：\n\n## LaWAM：面向高效动力学感知机器人策略的潜在世界-动作模型\n\n### 1. 核心创新点\n用**紧凑的潜在视觉子目标**替代昂贵的像素级未来视频生成，让机器人策略在保持低延迟的同时具备对场景动态演化的预见能力。\n\n### 2. 主要方法\n- 在预训练视觉基础模型的**潜在空间**中训练一个潜在动作模型，构建**潜在世界模型（LaWM）**；\n- 复用其前向解码器来**预测未来观测特征**（而非重建未来视频画面），刻画场景演化；\n- 机器人策略以这些预测出的**潜在视觉子目标**为条件来生成动作，实现动力学感知控制。\n\n### 3. 结论/性能\n- 在多个基准上达到 SOTA 或有竞争力的成功率：**LIBERO 98.6%**、**RoboTwin 91.22%**，以及真实世界操作任务；\n- 推理高效：每个动作块预测仅 **187 ms**，相比像素空间的世界-动作模型实现最高 **24 倍**的墙钟延迟降低。\n\n---\n顺带一提：你有一个 `/paper-review` 技能，能以文献综述视角做更完整的中英双语总结并自动归档到 Obsidian。如果需要更深入的版本，告诉我即可。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-16 13:03:14"
+}

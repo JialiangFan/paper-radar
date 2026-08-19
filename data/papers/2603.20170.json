@@ -1,0 +1,13 @@
+{
+ "id": "2603.20170",
+ "title": "Learning Dynamic Belief Graphs for Theory-of-mind Reasoning",
+ "authors": "Ruxiao Chen, Xilei Zhao, Thomas J. Cova, Frank A. Drews, Susu Xu",
+ "date": "2026-03-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.20170v1",
+ "abstract": "Theory of Mind (ToM) reasoning with Large Language Models (LLMs) requires inferring how people's implicit, evolving beliefs shape what they seek and how they act under uncertainty -- especially in high-stakes settings such as disaster response, emergency medicine, and human-in-the-loop autonomy. Prior approaches either prompt LLMs directly or use latent-state models that treat beliefs as static and independent, often producing incoherent mental models over time and weak reasoning in dynamic contexts. We introduce a structured cognitive trajectory model for LLM-based ToM that represents mental state as a dynamic belief graph, jointly inferring latent beliefs, learning their time-varying dependencies, and linking belief evolution to information seeking and decisions. Our model contributes (i) a novel projection from textualized probabilistic statements to consistent probabilistic graphical model updates, (ii) an energy-based factor graph representation of belief interdependencies, and (iii) an ELBO-based objective that captures belief accumulation and delayed decisions. Across multiple real-world disaster evacuation datasets, our model significantly improves action prediction and recovers interpretable belief trajectories consistent with human reasoning, providing a principled module for augmenting LLMs with ToM in high-uncertainty environment. https://anonymous.4open.science/r/ICML_submission-6373/",
+ "summary": "- 核心创新点（一句话概括）  \n  提出一种将动态信念作为图结构的结构化认知轨迹模型，用于在时序中对推理中的隐性信念进行联合推断、学习其时变依赖，并将信念演化与信息获取和决策相连接，从而增强基于大语言模型的 Theory-of-Mind 推理。\n\n- 主要方法  \n  - 将心理状态表示为动态信念图（Belief Graph），并在时间维度上学习信念的依赖关系与演化。  \n  - 将文本化的概率陈述投影为一致的概率图模型更新机制（文本到图的投影）。  \n  - 使用基于能量的因子图来表达信念之间的相互依赖。  \n  - 以变分推断中的 ELBO 作为优化目标，捕捉信念的累积过程和延迟决策。  \n  - 将上述结构与大语言模型结合，构建用于高不确定性场景（如灾情撤离）的 ToM 推理与行动预测模块。\n\n- 结论/性能  \n  - 在多组真实灾难撤离数据集上显著提升了行动预测的准确性。  \n  - 能恢复出与人类推理一致且可解释的信念轨迹。  \n  - 提供了一个将 ToM 能力系统化嵌入到 LLM 的 principled 模块，适用于高不确定环境中的推理任务。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-23 13:07:12"
+}

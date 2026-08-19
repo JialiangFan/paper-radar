@@ -1,0 +1,13 @@
+{
+ "id": "2603.13189",
+ "title": "LLM Constitutional Multi-Agent Governance",
+ "authors": "J. de Curtò, I. de Zarzà",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.13189v1",
+ "abstract": "Large Language Models (LLMs) can generate persuasive influence strategies that shift cooperative behavior in multi-agent populations, but a critical question remains: does the resulting cooperation reflect genuine prosocial alignment, or does it mask erosion of agent autonomy, epistemic integrity, and distributional fairness? We introduce Constitutional Multi-Agent Governance (CMAG), a two-stage framework that interposes between an LLM policy compiler and a networked agent population, combining hard constraint filtering with soft penalized-utility optimization that balances cooperation potential against manipulation risk and autonomy pressure. We propose the Ethical Cooperation Score (ECS), a multiplicative composite of cooperation, autonomy, integrity, and fairness that penalizes cooperation achieved through manipulative means. In experiments on scale-free networks of 80 agents under adversarial conditions (70% violating candidates), we benchmark three regimes: full CMAG, naive filtering, and unconstrained optimization. While unconstrained optimization achieves the highest raw cooperation (0.873), it yields the lowest ECS (0.645) due to severe autonomy erosion (0.867) and fairness degradation (0.888). CMAG attains an ECS of 0.741, a 14.9% improvement, while preserving autonomy at 0.985 and integrity at 0.995, with only modest cooperation reduction to 0.770. The naive ablation (ECS = 0.733) confirms that hard constraints alone are insufficient. Pareto analysis shows CMAG dominates the cooperation-autonomy trade-off space, and governance reduces hub-periphery exposure disparities by over 60%. These findings establish that cooperation is not inherently desirable without governance: constitutional constraints are necessary to ensure that LLM-mediated influence produces ethically stable outcomes rather than manipulative equilibria.",
+ "summary": "- 核心创新点：提出并实现一个两阶段的治理框架（CMAG）和一个综合性评估指标（ECS），在 LLM 策略编译器与多代理网络之间加入硬约束过滤与软惩罚性效用优化，确保通过 LLM 促成的合作具有自治、完整性与公平性，而非被操控的次级结果。\n\n- 主要方法：使用 CMAG 将硬性约束过滤与软性惩罚性优化相结合；引入多维的伦理合作分数 ECS（合作、自治、完整性、公平性）作为优化目标的乘法型综合指标；在80个节点、尺度无尺度网络、对抗条件（70% 候选人违规）下对比三种策略：全 CMAG、朴素过滤、无约束优化，并进行 Pareto 分析以评估合作与自治的权衡及 hub-Periphery 曝光差异。\n\n- 结论/性能：无约束优化获得最高原始合作度（0.873），但 ECS 最低（0.645），自治与公平显著下降；CMAG 的 ECS 为 0.741，较无约束提升约 14.9%，同时保持高自治（0.985）与完整性（0.995），合作度降至 0.770；朴素约束（仅硬约束）下的 ECS 为 0.733，证实硬约束不足以确保良性结果；Pareto 分析显示 CMAG 在合作-自治权衡上占优，并将 hub-Periphery 曝光差异降低超过 60%。表明在 LLM 引导的影响下，治理/宪法性约束是确保伦理稳定协作的必要条件。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-16 13:01:15"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.03641",
+ "title": "A Descriptive Model for Modelling Attacker Decision-Making in Cyber-Deception",
+ "authors": "B. R. Turner, O. Guidetti, N. M. Karie, R. Ryan, Y. Yan",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03641v1",
+ "abstract": "Cyber-deception is an increasingly important defensive strategy, shaping adversarial decision making through controlled misinformation, uncertainty, and misdirection. Although game-theoretic, Bayesian, Markov decision process, and reinforcement learning models offer insight into deceptive interactions, they typically assume an attacker has already chosen to engage. Such approaches overlook cognitive and perceptual factors that influence an attacker's initial decision to engage or withdraw. This paper presents a descriptive model that incorporates the psychological and strategic elements shaping this decision. The model defines five components, belief (B), scepticism (S), deception fidelity (D), reconnaissance (R), and experience (E), which interact to capture how adversaries interpret deceptive cues and assess whether continued engagement is worthwhile. The framework provides a structured method for analysing engagement decisions in cyber-deception scenarios. A series of experiments has been designed to evaluate this model through Capture the Flag activities incorporating varying levels of deception, supported by behavioural and biometric observations. These experiments have not yet been conducted, and no experimental findings are presented in this paper. These experiments will combine behavioural observations with biometric indicators to produce a multidimensional view of adversarial responses. Findings will improve understanding of the factors influencing engagement decisions and refine the model's relevance to real-world cyber-deception settings. By addressing the gap in existing models that presume engagement, this work supports more cognitively realistic and strategically effective cyber-deception practices.",
+ "summary": "- 核心创新点：提出一个描述性模型，将信念（B）、怀疑（S）、欺骗保真度（D）、侦察（R）和经验（E）五要素整合，用以描述攻击者在网络欺骗情境中的初始参与或退出决策，弥补以往假设已参与的模型空缺。\n\n- 主要方法：构建一个以五要素及其交互为核心的框架来描述决策过程，并设计通过“Capture the Flag”任务、结合行为观测与生物特征（生物识别）的多模态数据来评估该模型的实验方案；目前实验尚未实施，也无实验结果。\n\n- 结论/性能：尚无实验结果；预计该框架将提高对影响参与决策的因素的理解，提升模型在真实网络欺骗情境中的相关性和实际效用，并支持更具认知现实性的网络欺骗实践。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-04 14:02:30"
+}

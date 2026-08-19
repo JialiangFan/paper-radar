@@ -1,0 +1,13 @@
+{
+ "id": "2606.20254",
+ "title": "Quantization as a Malicious Task: Removing Quantization-Conditioned Backdoors via Task Arithmetic",
+ "authors": "Kaihsun Yang, Min-Yan Tsai, Chia-Mu Yu",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20254v1",
+ "abstract": "Model quantization is widely adopted to reduce memory usage and inference cost when deploying deep neural networks on resource-constrained devices. However, recent studies have revealed a new security threat known as Quantization-Conditioned Backdoors (QCBs), where a model behaves normally in full precision but activates malicious behavior only after quantization. Existing defenses typically modify quantization procedures or correct activation statistics, often introducing additional computational overhead or relying on specific quantization settings. Here, we present QVec, a parameter-space perspective for defending against QCBs. We observe that the weight difference between a full-precision model and its quantized counterpart encodes a structured behavioral shift, which can be interpreted as a malicious task vector rather than random quantization noise. Based on this insight, QVec counteracts this malicious direction through controlled parameter correction prior to deployment. QVec requires no retraining, no trigger samples, and only a single quantization pass to estimate the parameter shift, together with a lightweight hyperparameter search. Extensive experiments across image classification benchmarks and multiple Large Language Model (LLM) attack scenarios demonstrate that QVec consistently suppresses backdoor activation while preserving clean performance.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-22 13:00:44"
+}

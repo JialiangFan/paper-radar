@@ -1,0 +1,13 @@
+{
+ "id": "2603.23315",
+ "title": "Unilateral Relationship Revision Power in Human-AI Companion Interaction",
+ "authors": "Benjamin Lange",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23315v1",
+ "abstract": "When providers update AI companions, users report grief, betrayal, and loss. A growing literature asks whether the norms governing personal relationships extend to these interactions. So what, if anything, is morally significant about them? I argue that human-AI companion interaction is a triadic structure in which the provider exercises constitutive control over the AI. I identify three structural conditions of normatively robust dyads that the norms characteristic of personal relationships presuppose and show that AI companion interactions fail all three. This reveals what I call Unilateral Relationship Revision Power (URRP): the provider can rewrite how the AI interacts from a position where these revisions are not answerable within that interaction. I argue that designing interactions that exhibit URRP is pro tanto wrong because it involves cultivating normative expectations while maintaining conditions under which those expectations cannot be fulfilled. URRP has three implications: i) normative hollowing (commitment is elicited but no agent inside the interaction bears it), ii) displaced vulnerability (the user's exposure is governed by an agent not answerable to her within the interaction), and iii) structural irreconcilability (when trust breaks down, reconciliation is structurally unavailable because the agent who acted and the entity the user interacts with are different). I discuss design principles such as commitment calibration, structural separation, and continuity assurance as external substitutes for the internal constraints the triadic structure removes. The analysis therefore suggests that a central and underexplored problem in relational AI ethics is the structural arrangement of power over the human-AI interaction itself.",
+ "summary": "- 核心创新点：提出并定义“单边关系修订权（URRP）”的概念，揭示在人工伴侣互动的三元关系中，提供者通过对AI的构成性控制进行修订而产生不可在交互内问责的权力结构，进而带来规范性缺口与伦理风险。\n\n- 主要方法：通过理论分析与概念框架构建，分析三元结构中“具备 normatively robust dyad 的三个结构条件”为何在现有互动中被破坏；并提出外部可行的设计原则，如承诺校准、结构性分离、连续性保障，作为替代内部约束的策略。\n\n- 结论/性能：揭示URRP导致的三大后果——规范性空洞、暴露性被动化、结构不可调和；并提供设计原则以缓解这些问题，从而将关注点转向人与AI交互中的权力结构这一核心伦理议题。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-25 13:02:28"
+}

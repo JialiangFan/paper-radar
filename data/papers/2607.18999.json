@@ -1,0 +1,13 @@
+{
+ "id": "2607.18999",
+ "title": "MedDDC-Eval: Diagnosis-Decoupled Evaluation of Multi-Turn Medical Consultation Agents",
+ "authors": "Guofeng Zhang, Yizeng Quan, Huaiyi Fang, Jianwei Lv, Jinyao Liu, Xunxu Duan, Lening An, Yu Ouyang, Junfeng Wang",
+ "date": "2026-07-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.18999v2",
+ "abstract": "Evaluating multi-turn medical consultation agents requires judging the diagnostic support provided by the histories they elicit through interaction. Yet coupled evaluation lets each policy both elicit the history and generate the terminal diagnosis, so a diagnosis score confounds the elicited history with the policy's own terminal diagnosis generator. We introduce MedDDC-Eval, a diagnosis-decoupled evaluation testbed over held-out cases derived from medical records and online consultations. It applies the same frozen shared diagnostic reader to every policy-elicited history, holding terminal diagnosis generation fixed across policies and enabling comparison under the shared diagnostic reader. It reports diagnostic support, information-acquisition coverage, and efficiency. LLM-assisted semantic matching followed by deterministic one-to-one assignment makes the diagnosis-trajectory-efficiency (D/T/E) scores auditable. In a fixed-history audit across eight policies, replacing each policy's own generator with the shared diagnostic reader shifts diagnosis F1 by 2.2-19.0 points and reverses 18% and 36% of pairwise orderings on the Record and Dialogue splits. To examine downstream utility, we use standard Group Relative Policy Optimization (GRPO) with a separate training-time reward that targets the same diagnosis and trajectory dimensions. Relative to its Qwen3-32B initialization, the trained policy gains 9.6 and 4.6 aggregate-score points on the held-out Record and Dialogue splits, respectively, and ablating either feedback signal reduces the aggregate score on both. Together, MedDDC-Eval supports comparison under a shared diagnostic reader and evaluation-informed policy development, while complementing end-to-end evaluation when terminal diagnosis generation is also part of the target capability.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-28 13:04:45"
+}

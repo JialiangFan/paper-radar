@@ -1,0 +1,13 @@
+{
+ "id": "2602.02137",
+ "title": "DCoPilot: Generative AI-Empowered Policy Adaptation for Dynamic Data Center Operations",
+ "authors": "Minghao Li, Ruihang Wang, Rui Tan, Yonggang Wen",
+ "date": "2026-02-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.02137v1",
+ "abstract": "Modern data centers (DCs) hosting artificial intelligence (AI)-dedicated devices operate at high power densities with rapidly varying workloads, making minute-level adaptation essential for safe and energy-efficient operation. However, manually designing piecewise deep reinforcement learning (DRL) agents cannot keep pace with frequent dynamics shifts and service-level agreement (SLA) changes of an evolving DC. This specification-to-policy lag causes a lack of timely, effective control policies, which may lead to service outages. To bridge the gap, we present DCoPilot, a hybrid framework for generative control policies in dynamic DC operation. DCoPilot synergizes two distinct generative paradigms, i.e., a large language model (LLM) that performs symbolic generation of structured reward forms, and a hypernetwork that conducts parametric generation of policy weights. DCoPilot operates through three coordinated phases: (i) simulation scale-up, which stress-tests reward candidates across diverse simulation-ready (SimReady) scenes; (ii) meta policy distillation, where a hypernetwork is trained to output policy weights conditioned on SLA and scene embeddings; and (iii) online adaptation, enabling zero-shot policy generation in response to updated specifications. Evaluated across five control task families spanning diverse DC components, DCoPilot achieves near-zero constraint violations and outperforms all baselines across specification variations. Ablation studies validate the effectiveness of LLM-based unified reward generation in enabling stable hypernetwork convergence.",
+ "summary": "核心创新点：将大语言模型（LLM）与超网络结合，构建面向动态数据中心的生成式策略自适应框架，能够在规格更新时实现零样本策略生成与快速适配。\n\n主要方法：\n- 使用LLM进行结构化奖励形式的符号化生成；\n- 采用超网络根据SLA和场景嵌入输出策略权重（参数化生成）；\n- 三阶段流程：1) 仿真扩展（对多场景进行reward候选的压力测试），2) 元策略蒸馏（训练超网络以产出条件化策略权重），3) 在线自适应（实现对更新规格的零-shot策略生成）；\n- 在五类控制任务中对不同DC组件进行评估。\n\n结论/性能：\n- 在规格变化下实现接近零的约束违反，并总体超越所有基线方法；\n- 消融研究表明，基于LLM的统一奖励生成对实现稳定的超网络收敛性具有关键作用。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-03 14:00:36"
+}

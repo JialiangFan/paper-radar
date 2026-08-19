@@ -1,0 +1,13 @@
+{
+ "id": "2512.23573",
+ "title": "ProGuard: Towards Proactive Multimodal Safeguard",
+ "authors": "Shaohan Yu, Lijun Li, Chenyang Si, Lu Sheng, Jing Shao",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23573v1",
+ "abstract": "The rapid evolution of generative models has led to a continuous emergence of multimodal safety risks, exposing the limitations of existing defense methods. To address these challenges, we propose ProGuard, a vision-language proactive guard that identifies and describes out-of-distribution (OOD) safety risks without the need for model adjustments required by traditional reactive approaches. We first construct a modality-balanced dataset of 87K samples, each annotated with both binary safety labels and risk categories under a hierarchical multimodal safety taxonomy, effectively mitigating modality bias and ensuring consistent moderation across text, image, and text-image inputs. Based on this dataset, we train our vision-language base model purely through reinforcement learning (RL) to achieve efficient and concise reasoning. To approximate proactive safety scenarios in a controlled setting, we further introduce an OOD safety category inference task and augment the RL objective with a synonym-bank-based similarity reward that encourages the model to generate concise descriptions for unseen unsafe categories. Experimental results show that ProGuard achieves performance comparable to closed-source large models on binary safety classification, substantially outperforms existing open-source guard models on unsafe content categorization. Most notably, ProGuard delivers a strong proactive moderation ability, improving OOD risk detection by 52.6% and OOD risk description by 64.8%.",
+ "summary": "- 核心创新点（1句话）：提出 ProGuard，一种基于视觉-语言的主动型多模态安全守护方法，通过强化学习训练在不改变模型结构的前提下，对未见风险进行检测与简洁描述，实现主动防护。\n\n- 主要方法：\n  - 构建了一个模态平衡的87K样本数据集，包含二元安全标签和层次化多模态安全分类，覆盖文本、图像、文本-图像输入，降低模态偏差并实现一致的安全 Moderation。\n  - 基于该数据集，使用纯强化学习训练视觉-语言基础模型，以实现高效且简洁的推理。\n  - 引入“OOD 安全类别推理”任务，并在 RL 目标中加入基于同义词库的相似性奖励，促使模型对未见的危险类别生成简明描述。\n\n- 结论/性能：\n  - 在二元安全分类任务上，性能接近闭源大模型。\n  - 在不安全内容分类方面，显著优于现有开源守护模型。\n  - 在主动规制能力上表现突出：OOD 风险检测提升 52.6%，OOD 风险描述提升 64.8%。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 03:49:51"
+}

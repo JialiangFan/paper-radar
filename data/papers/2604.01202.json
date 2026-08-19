@@ -1,0 +1,13 @@
+{
+ "id": "2604.01202",
+ "title": "Therefore I am. I Think",
+ "authors": "Esakkivel Esakkiraja, Sai Rajeswar, Denis Akhiyarov, Rajagopal Venkatesaramani",
+ "date": "2026-04-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01202v1",
+ "abstract": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
+ "summary": "- 核心创新点：提出并证明推理模型在开始文本推理前就已经编码了行动决策（如工具调用），并且这些早期决策可通过线性探针从预生成激活中高置信度解码，同时通过激活定向干预能在因果上改变推理过程和结果。\n\n- 主要方法：使用简单的线性探针从生成前阶段的激活中解码工具调用等决策；通过激活 steering（激活定向干预）来因果地干预模型的决策方向；并进行行为分析和多模型/基准评估来观察干预对链式思维的影响。\n\n- 结论/性能：线性探针在预生阶段就能高置信解码工具调用决策，甚至在没有产生任何推理标记前即可判断；激活干预能导致 Deliberation 增强与行为翻转（7-79% 依模型与基准而定）；当 steering 改变决策时，链式推理往往为该翻转辩解而非抵抗，表明推理过程中就已编码行动选择。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-02 13:03:21"
+}

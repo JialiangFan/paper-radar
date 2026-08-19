@@ -1,0 +1,13 @@
+{
+ "id": "2605.19779",
+ "title": "Distribution-Free Uncertainty Quantification for Continuous AI Agent Evaluation",
+ "authors": "Yuxuan Gao, Megan Wang, Yi Ling Yu",
+ "date": "2026-05-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.19779v1",
+ "abstract": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+ "summary": "# 论文总结：面向连续 AI 智能体评估的免分布不确定性量化\n\n1. **核心创新点**：首次将分裂式共形预测（split conformal prediction）和自适应共形推断（ACI）适配到连续型 AI 智能体评估场景，为预测的质量分数提供免分布的覆盖率保证。\n\n2. **主要方法**：\n   - 基于 split conformal prediction 与 ACI 构建预测区间；\n   - 为多智能体流水线设计组合式不确定性界（通过 ρ∈[-0.5, 0.9] 的阶段间相关性仿真验证）；\n   - 引入用于成对排序的共形弃权规则（控制错误排序率），并采用 FDR 校正处理排行榜规模的多重假设检验；\n   - 在 50 个智能体、18 个小时级实时信号上进行实证。\n\n3. **结论/性能**：\n   - 24 小时预测区间的校准误差低于 0.02；\n   - 智能体发布后 ACI 区间自动扩宽约 35% 并随后收敛；\n   - 每个智能体的条件覆盖率均值 80.4%，90% 的智能体落在 [72%, 90%] 内；\n   - 跨源情感分歧能够预测排名不稳定性（r=0.64, p<0.01）；\n   - 排除循环依赖的验证显示框架捕获了超越基准的信号（ρ_s=0.52, p<0.01, n=35）。代码与数据以 CC BY 4.0 开源。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-21 13:01:10"
+}

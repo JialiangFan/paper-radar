@@ -1,0 +1,13 @@
+{
+ "id": "2604.02317",
+ "title": "A Simple Baseline for Streaming Video Understanding",
+ "authors": "Yujiao Shen, Shulin Tian, Jingkang Yang, Ziwei Liu",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.02317v1",
+ "abstract": "Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handle long video streams. We challenge this trend with a simple finding: a sliding-window baseline that feeds only the most recent N frames to an off-the-shelf VLM already matches or surpasses published streaming models. We formalize this baseline as SimpleStream and evaluate it against 13 major offline and online video LLM baselines on OVO-Bench and StreamingBench. Despite its simplicity, SimpleStream delivers consistently strong performance. With only 4 recent frames, it reaches 67.7% average accuracy on OVO-Bench and 80.59% on StreamingBench. Controlled ablations further show that the value of longer context is backbone-dependent rather than uniformly increasing with model scale, and reveal a consistent perception-memory trade-off: adding more historical context can improve recall, but often weakens real-time perception. This suggests that stronger memory, retrieval, or compression modules should not be taken as evidence of progress unless they clearly outperform SimpleStream under the same protocol. We therefore argue that future streaming benchmarks should separate recent-scene perception from long-range memory, so that performance improvements from added complexity can be evaluated more clearly.",
+ "summary": "- 核心创新点：提出一个极简的滑动窗口基线 SimpleStream，仅用最近N帧输入给开箱即用的视觉-语言模型，就能达到甚至超过现有的流视频理解模型，从而质疑对复杂记忆机制的依赖。\n\n- 主要方法：将最近的N帧组成滑动窗口作为输入喂给一个现成的视觉-语言模型（VLM），形成 SimpleStream 基线；在 OVO-Bench 与 StreamingBench 上对比了 13 个离线/在线视频语言模型基线，并通过消融实验评估上下文长度、骨干网络等因素以及感知与记忆的权衡。\n\n- 结论/性能：在仅使用4帧时，达到 67.7% 的 OVO-Bench 平均准确率和 80.59% 的 StreamingBench 平均准确率；结果表明更长的上下文并不对所有骨干网络都普遍有效，增加历史信息可能提升召回但削弱实时感知，且提出应在基准中分离最近场景感知与长程记忆以便更清晰评估进展。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-03 13:01:23"
+}

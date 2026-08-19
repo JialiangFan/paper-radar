@@ -1,0 +1,13 @@
+{
+ "id": "2607.18718",
+ "title": "Summary of DCASE 2026 Task 5: Audio-Dependent Question Answering",
+ "authors": "Haolin He, Renhe Sun, Zheqi Dai, Xingjian Du, Chunyat Wu, Zining Liang, Zhengxi Liu, Jiahe Lei, Runbang Wang, Jiayi Zhou, Mingru Yang, Xiquan Li, Yun Chen, Xie Chen, Zhiyao Duan, Weiqiang Wang, Mark D. Plumbley, Jian Liu, Qiuqiang Kong",
+ "date": "2026-07-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.18718v1",
+ "abstract": "DCASE~2026 Task~5 introduces Audio-Dependent Question Answering (ADQA), which tests whether large audio-language models answer from the audio rather than from textual priors. An Audio-Dependency Filtering (ADF) pipeline combines silent-audio probing, per-option perplexity, a large language model (LLM) commonsense check, and human review to remove items solvable from text alone. The 3000 items that pass form the ADQA-Bench evaluation set, spanning music, speech, and environmental audio. The inaugural edition draws 14 teams and 36 submissions across two tracks defined by total parameter count (up to 100B and under 10B). A Chung-Ang University ensemble of MOSS-Audio-8B-Thinking and Qwen3-Omni-30B reaches the top overall accuracy at \\pct{58.33}, and a MOSS-only configuration from the same team leads the sub-10B track at \\pct{57.30}. Across the 30 submissions with a comparable development score, evaluation accuracy falls by 11.91 percentage points (pp) on average (median 10.91\\,pp) on the hidden evaluation split, which is designed to be harder than the development split. The most common building blocks are: the MOSS-Audio-8B-Thinking backbone (13 of 36 submissions), Low-Rank Adaptation (LoRA) fine-tuning on AudioMCQ-StrongAC, and preference or reinforcement-learning objectives -- Group Relative Policy Optimization (GRPO) in five teams, Group reward-Decoupled Normalization Policy Optimization (GDPO) in two. At test time, prompt engineering is near-universal, and majority or choice-permutation voting is common. Every system misses the same set of 233 evaluation items.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-23 13:02:31"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.21850",
+ "title": "OptiMat Alloys: A FAIR End-to-End Agent with Living Database for Computational Multi-Principal Alloy Exploration",
+ "authors": "Yang Hu, Vladyslav Turlo",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21850v1",
+ "abstract": "The FAIR principles have transformed how computational data and workflows are shared in materials research, yet existing repositories can only serve pre-computed entries -- broad coverage is perpetually incomplete and cannot adapt to new questions on demand. To address these challenges, we present OptiMat Alloys, a large language model-powered conversational agent for multi-principal element alloy exploration built on three pillars: a living database that stores every calculation with provenance, low-barrier accessibility through a web interface requiring zero programming expertise, and built-in uncertainty quantification via cross-potential and cross-configuration validation (see demo here https://youtu.be/lQzuorkzPMc). Coupling foundational machine learning interatomic potentials covering near-all periodic table of elements with natural-language interaction, OptiMat Alloys enables targeted, on-demand computation guided by the user's domain knowledge-extending FAIR from pre-computed repositories to on-demand knowledge generation and making computational alloy screening accessible to any materials scientist.",
+ "summary": "1) 核心创新点：提出一个基于大语言模型的端对端探究代理 OptiMat Alloys，具备可持续更新的活数据库、零编程网页入口以及跨势能/跨配置的不确定性量化，从而实现对多主元合金的按需、可溯源知识生成与计算。\n\n2) 主要方法：结合大语言模型驱动的对话代理、一个带 provenance 的 living database、以及零编程的网页接口；通过覆盖近全元素的基础机器学习原子势来支撑计算，并在跨势能与跨配置层面进行不确定性量化与验证，实现对用户领域知识的引导式按需计算。\n\n3) 结论/性能：实现了面向多主元合金的定向、按需计算与知识生成，扩展 FAIR 从仅有的预计算条目到可用的按需知识获取与不确定性评估，降低门槛并使材料筛选更易被广泛的材料科学家使用。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-24 13:03:21"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.23729",
+ "title": "From Static Benchmarks to Dynamic Protocol: Agent-Centric Text Anomaly Detection for Evaluating LLM Reasoning",
+ "authors": "Seungdong Yoa, Sanghyu Yoon, Suhee Yoon, Dongmin Kim, Ye Seul Sim, Junhyun Lee, Woohyung Lim",
+ "date": "2026-02-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.23729v1",
+ "abstract": "The evaluation of large language models (LLMs) has predominantly relied on static datasets, which offer limited scalability and fail to capture the evolving reasoning capabilities of recent models. To overcome these limitations, we propose an agent-centric benchmarking paradigm that moves beyond static datasets by introducing a dynamic protocol in which autonomous agents iteratively generate, validate, and solve problems. Within this protocol, a teacher agent generates candidate problems, an orchestrator agent rigorously verifies their validity and guards against adversarial attacks, and a student agent attempts to solve the validated problems. An invalid problem is revised by the teacher agent until it passes validation. If the student correctly solves the problem, the orchestrator prompts the teacher to generate more challenging variants. Consequently, the benchmark scales in difficulty automatically as more capable agents are substituted into any role, enabling progressive evaluation of large language models without manually curated datasets. Adopting text anomaly detection as our primary evaluation format, which demands cross-sentence logical inference and resists pattern-matching shortcuts, we demonstrate that this protocol systematically exposes corner-case reasoning errors that conventional benchmarks fail to reveal. We further advocate evaluating systems along several complementary axes including cross-model pairwise performance and progress between the initial and orchestrator-finalized problems. By shifting the focus from fixed datasets to dynamic protocols, our approach offers a sustainable direction for evaluating ever-evolving language models and introduces a research agenda centered on the co-evolution of agent-centric benchmarks.",
+ "summary": "- 核心创新点：提出一个 agent-centric 的动态基准评测框架，通过教师-协调者-学生三方的自适应循环来自动升级难度，以文本异常检测为核心评测任务，系统暴露现有基准难以发现的边缘推理错误。\n\n- 主要方法：将评测过程分成三类代理协同工作：教师生成候选题，协调者验证有效性并防御对抗攻击，学生尝试解答；若题目无效则由教师修订直至通过验证；学生正确解答后促使教师生成更具挑战性的变体，评测通过跨句推理的文本异常检测来进行，并从跨模型对比、以及初始与最终问题的进展等多维指标进行评估。\n\n- 结论/性能：该协议能系统性暴露传统基准难以揭示的边缘推理错误，且难度可随代理能力提升自动增加，提供一个可持续的评估方向，并提出了“代理端基准共同进化”的研究议程。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-02 14:01:16"
+}

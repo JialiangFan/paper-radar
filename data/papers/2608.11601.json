@@ -1,0 +1,13 @@
+{
+ "id": "2608.11601",
+ "title": "How Can Driving World Models Do Counterfactual Prediction?",
+ "authors": "Jiaru Zhang, Can Cui, Yi Xu, Xin Ye, Ruqi Zhang, Ziran Wang",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.11601v1",
+ "abstract": "Driving world models are often interpreted as counterfactual simulators for observed driving episodes: given a factual driving log, they are asked what would have happened under an alternative ego action. In this paper, we identify a fundamental mismatch between this goal and direct action-conditioned prediction. The direct prediction uses the shared history and the alternative action but not the factual continuation observed after that history. It can therefore generate a plausible future without preserving what actually happened in this episode. We formalize this gap using the causal recipe of abduction, action, and prediction and study it in a setting with a short time horizon, where the alternative ego action does not alter how surrounding agents evolve. To make the gap measurable, we construct a controlled simulation benchmark with factual outcomes and matched counterfactual outcomes. Across two representative world models, direct predictions fail to match the counterfactual ground truth, supporting our analysis. As a constructive check of this analysis, we introduce a deliberately simple, training-free pipeline that moves observed evidence into the counterfactual view and lets the frozen model complete what remains unknown. Even this simple construction raises the overall recovered fraction substantially and reduces perceptual distance to the matched counterfactual on both models. We hope this work draws attention to this gap and motivates better counterfactual prediction methods for driving world models.",
+ "summary": "## 论文总结\n\n**标题**：How Can Driving World Models Do Counterfactual Prediction?（驾驶世界模型如何做反事实预测？）\n\n### 1. 核心创新点\n指出\"直接的动作条件预测\"并不等于真正的反事实预测——它丢弃了事实轨迹中已观测到的后续证据，因此只能生成\"看似合理\"的未来，而非忠实于该具体事件的反事实结果。\n\n### 2. 主要方法\n- **理论层面**：用因果推断的经典三步范式——**溯因（abduction）→ 干预（action）→ 预测（prediction）**——形式化刻画这一差距；研究设定为**短时域**场景，即自车的替代动作不改变周围交通参与者的演化方式。\n- **评测层面**：构建了一个**受控仿真基准**，同时提供事实结果与配对的反事实真值（matched counterfactual ground truth），使该差距可被量化测量。\n- **方法层面**：提出一个刻意保持简单、**无需训练（training-free）**的流水线：把已观测到的证据迁移／注入到反事实视角中，再让**冻结的世界模型**补全其余未知部分。\n\n### 3. 结论/性能\n在两个代表性驾驶世界模型上，直接预测均无法匹配反事实真值，验证了作者的分析。而所提出的简易无训练流水线在两个模型上都**显著提升了整体恢复比例（recovered fraction）**，并**降低了与配对反事实结果之间的感知距离（perceptual distance）**。作者希望以此引起社区对该差距的关注，推动更好的驾驶世界模型反事实预测方法。\n\n> 注：项目中有 `/paper-review` 技能（可输出中英双语并写入 Obsidian vault），如需完整的文献综述式笔记可以调用它。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-16 13:03:25"
+}

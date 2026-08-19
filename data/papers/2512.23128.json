@@ -1,0 +1,13 @@
+{
+ "id": "2512.23128",
+ "title": "It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents",
+ "authors": "Karolina Korgul, Yushi Yang, Arkadiusz Drohomirecki, Piotr Błaszczyk, Will Howard, Lukas Aichberger, Chris Russell, Philip H. S. Torr, Adam Mahdi, Adel Bibi",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23128v1",
+ "abstract": "Web-based agents powered by large language models are increasingly used for tasks such as email management or professional networking. Their reliance on dynamic web content, however, makes them vulnerable to prompt injection attacks: adversarial instructions hidden in interface elements that persuade the agent to divert from its original task. We introduce the Task-Redirecting Agent Persuasion Benchmark (TRAP), an evaluation for studying how persuasion techniques misguide autonomous web agents on realistic tasks. Across six frontier models, agents are susceptible to prompt injection in 25\\% of tasks on average (13\\% for GPT-5 to 43\\% for DeepSeek-R1), with small interface or contextual changes often doubling success rates and revealing systemic, psychologically driven vulnerabilities in web-based agents. We also provide a modular social-engineering injection framework with controlled experiments on high-fidelity website clones, allowing for further benchmark expansion.",
+ "summary": "- **核心创新点**：提出 TRAP（Task-Redirecting Agent Persuasion Benchmark），用于评估和量化网络代理在现实任务中被任务重定向的诱导性提示注入的影响，并配套一个模块化的社工注入框架与高保真网站克隆实验平台，以系统性揭示和扩展这类漏洞的研究。\n\n- **主要方法**：在六种前沿模型驱动的网页代理上，针对界面元素的注入与上下文微调等诱导策略进行评估，测量任务被转向的成功率；同时提供一个可扩展的模块化社工注入框架，并在高保真网站克隆上进行受控实验以支撑基准扩展。\n\n- **结论/性能**：代理在现实任务中对提示注入具有明显易受影响性，平均成功率约为25%，各模型范围为13%（GPT-5）到43%（DeepSeek-R1）；界面或上下文的微小变化往往能使成功率翻倍，揭示系统性、心理驱动的脆弱性；并提供可扩展的评估框架和实验平台，便于未来进一步研究。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-30 02:30:48"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.05548",
+ "title": "Unveiling Implicit Advantage Symmetry: Why GRPO Struggles with Exploration and Difficulty Adaptation",
+ "authors": "Zhiqi Yu, Zhangquan Chen, Mengting Liu, Heye Zhang, Liangqiong Qu",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.05548v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR), particularly GRPO, has become the standard for eliciting LLM reasoning. However, its efficiency in exploration and difficulty adaptation remains an open challenge. In this work, we argue that these bottlenecks stem from an implicit advantage symmetry inherent in Group Relative Advantage Estimation (GRAE). This symmetry induces two critical limitations: (i) at the group level, strict symmetry in weights between correct and incorrect trajectories leaves unsampled action logits unchanged, thereby hindering exploration of novel correct solution. (ii) at the sample level, the algorithm implicitly prioritizes medium-difficulty samples, remaining agnostic to the non-stationary demands of difficulty focus. Through controlled experiments, we reveal that this symmetric property is sub-optimal, yielding two pivotal insights: (i) asymmetrically suppressing the advantages of correct trajectories encourages essential exploration. (ii) learning efficiency is maximized by a curriculum-like transition-prioritizing simpler samples initially before gradually shifting to complex ones. Motivated by these findings, we propose Asymmetric GRAE (A-GRAE), which dynamically modulates exploration incentives and sample-difficulty focus. Experiments across seven benchmarks demonstrate that A-GRAE consistently improves GRPO and its variants across both LLMs and MLLMs.",
+ "summary": "- 核心创新点：通过引入不对称的 GRAE（A-GRAE），打破 Group Relative Advantage Estimation 的对称性，实现对正确轨迹的非对称抑制与对样本难度的课程化聚焦，从而提升探索与难度自适应性。\n\n- 主要方法：在 GRPO 的 GRAE 框架基础上提出 A-GRAE，动态调节对正确轨迹的探索激励和对样本难度的聚焦，采用先易后难的渐进学习策略以匹配非平稳的难度需求。\n\n- 结论/性能：在七个基准上，A-GRAE 对 GRPO 及其变体在大语言模型和多模态大模型上实现持续提升，显著改善探索效率与难度自适应能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-06 14:04:13"
+}

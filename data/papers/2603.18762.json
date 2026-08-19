@@ -1,0 +1,13 @@
+{
+ "id": "2603.18762",
+ "title": "ClawTrap: A MITM-Based Red-Teaming Framework for Real-World OpenClaw Security Evaluation",
+ "authors": "Haochen Zhao, Shaoyang Cui",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18762v1",
+ "abstract": "Autonomous web agents such as \\textbf{OpenClaw} are rapidly moving into high-impact real-world workflows, but their security robustness under live network threats remains insufficiently evaluated. Existing benchmarks mainly focus on static sandbox settings and content-level prompt attacks, which leaves a practical gap for network-layer security testing. In this paper, we present \\textbf{ClawTrap}, a \\textbf{MITM-based red-teaming framework for real-world OpenClaw security evaluation}. ClawTrap supports diverse and customizable attack forms, including \\textit{Static HTML Replacement}, \\textit{Iframe Popup Injection}, and \\textit{Dynamic Content Modification}, and provides a reproducible pipeline for rule-driven interception, transformation, and auditing. This design lays the foundation for future research to construct richer, customizable MITM attacks and to perform systematic security testing across agent frameworks and model backbones. Our empirical study shows clear model stratification: weaker models are more likely to trust tampered observations and produce unsafe outputs, while stronger models demonstrate better anomaly attribution and safer fallback strategies. These findings indicate that reliable OpenClaw security evaluation should explicitly incorporate dynamic real-world MITM conditions rather than relying only on static sandbox protocols.",
+ "summary": "- 核心创新点：提出一个基于中间人攻击（MITM）的红队框架 ClawTrap，用于对 OpenClaw 在真实网络条件下进行全面且可重复的安全评估，支持可定制的 MITM 攻击与拦截/变换/审计流水线。\n\n- 主要方法：利用 MITM 技术实现对网络内容的拦截与改写，提供 Static HTML Replacement、Iframe Popup Injection、Dynamic Content Modification 等攻击形式；构建规则驱动的拦截、变换和审计的可重复管线，便于跨代理框架和模型骨干的系统性安全测试。\n\n- 结论/性能：实验揭示模型存在分层现象：弱模型更易在被篡改的观测下产生不安全输出；强模型则具备更好的异常归因能力和更安全的回落策略；因此应在 OpenClaw 安全评估中显式纳入动态现实世界的 MITM 条件，而非仅依赖静态沙箱测试，ClawTrap 为未来更丰富的 MITM 攻击与跨框架评估奠定基础。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-20 13:07:16"
+}

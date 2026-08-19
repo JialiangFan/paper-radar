@@ -1,0 +1,13 @@
+{
+ "id": "2512.08645",
+ "title": "Chain-of-Image Generation: Toward Monitorable and Controllable Image Generation",
+ "authors": "Young Kyung Kim, Oded Schlesinger, Yuzhou Zhao, J. Matias Di Martino, Guillermo Sapiro",
+ "date": "2025-12-09",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.08645v1",
+ "abstract": "While state-of-the-art image generation models achieve remarkable visual quality, their internal generative processes remain a \"black box.\" This opacity limits human observation and intervention, and poses a barrier to ensuring model reliability, safety, and control. Furthermore, their non-human-like workflows make them difficult for human observers to interpret. To address this, we introduce the Chain-of-Image Generation (CoIG) framework, which reframes image generation as a sequential, semantic process analogous to how humans create art. Similar to the advantages in monitorability and performance that Chain-of-Thought (CoT) brought to large language models (LLMs), CoIG can produce equivalent benefits in text-to-image generation. CoIG utilizes an LLM to decompose a complex prompt into a sequence of simple, step-by-step instructions. The image generation model then executes this plan by progressively generating and editing the image. Each step focuses on a single semantic entity, enabling direct monitoring. We formally assess this property using two novel metrics: CoIG Readability, which evaluates the clarity of each intermediate step via its corresponding output; and Causal Relevance, which quantifies the impact of each procedural step on the final generated image. We further show that our framework mitigates entity collapse by decomposing the complex generation task into simple subproblems, analogous to the procedural reasoning employed by CoT. Our experimental results indicate that CoIG substantially enhances quantitative monitorability while achieving competitive compositional robustness compared to established baseline models. The framework is model-agnostic and can be integrated with any image generation model.",
+ "summary": "- 核心创新点：将图像生成改造为可监控的链式分解流程，由大语言模型将复杂提示分解为逐步的语义操作，并由图像生成模型按步骤执行以实现可观测、可控的生成过程。\n\n- 主要方法：利用大语言模型把复杂提示分解成一系列单步指令；图像生成模型按序执行并对图像进行逐步生成与编辑；每一步聚焦一个语义实体以便直接监控；提出两项新指标CoIG Readability与Causal Relevance来评估中间步骤的可读性与对最终图像的因果影响；框架与具体图像生成模型无关，具备缓解实体坍塌的效果。\n\n- 结论/性能：实验表明CoIG显著提升量化的监控性/可观测性，同时在组装/组合鲁棒性方面与基线模型具有竞争力，且框架可无缝集成到任意图像生成模型。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-10 14:02:48"
+}

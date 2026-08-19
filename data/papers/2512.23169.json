@@ -1,0 +1,13 @@
+{
+ "id": "2512.23169",
+ "title": "REVEALER: Reinforcement-Guided Visual Reasoning for Element-Level Text-Image Alignment Evaluation",
+ "authors": "Fulin Shi, Wenyi Xiao, Bin Chen, Liang Din, Leilei Gan",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23169v1",
+ "abstract": "Evaluating the alignment between textual prompts and generated images is critical for ensuring the reliability and usability of text-to-image (T2I) models. However, most existing evaluation methods rely on coarse-grained metrics or static QA pipelines, which lack fine-grained interpretability and struggle to reflect human preferences. To address this, we propose REVEALER, a unified framework for element-level alignment evaluation based on reinforcement-guided visual reasoning. Adopting a structured \"grounding-reasoning-conclusion\" paradigm, our method enables Multimodal Large Language Models (MLLMs) to explicitly localize semantic elements and derive interpretable alignment judgments. We optimize the model via Group Relative Policy Optimization(GRPO) using a composite reward function that incorporates structural format, grounding accuracy, and alignment fidelity. Extensive experiments across four benchmarks-EvalMuse-40K, RichHF, MHaluBench, and GenAI-Bench-demonstrate that REVEALER achieves state-of-the-art performance. Our approach consistently outperforms both strong proprietary models and supervised baselines while demonstrating superior inference efficiency compared to existing iterative visual reasoning methods.",
+ "summary": "- 核心创新点：提出 REVEALER，一种基于强化引导的视觉推理的元素级文本-图像对齐评估框架，通过 grounding–reasoning–conclusion 的分层结构实现对语义元素的显式定位与可解释对齐判断。\n\n- 主要方法：采用结构化的 grounding-reasoning-conclusion 范式，利用多模态大语言模型（MLLMs）对语义元素进行显式定位并推导对齐结论；并通过 Group Relative Policy Optimization（GRPO）进行优化，使用由结构化格式、 grounding准确度与对齐保真度组成的综合奖励函数来驱动学习。\n\n- 结论/性能：在 EvalMuse-40K、RichHF、MHaluBench、GenAI-Bench 等四个基准上达到同行业的最优性能，持续优于强势的专有模型和监督基线，同时在推理效率方面优于现有的迭代视觉推理方法。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 02:29:22"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.03119",
+ "title": "Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR",
+ "authors": "Yongshi Ye, Liang Zhang, Yidong Chen, Xiaodong Shi, Biao Fu",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03119v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) improves LLM reasoning but typically relies on ground-truth (GT) answers, limiting scalability. Voting-based label-free RLVR replace gold supervision with answer-level consensus from model samples. However, collapse arises when the same answer-level signal is used both to estimate rewards and to drive token-level policy optimization, encouraging the model to directly reinforce answer tokens rather than improve reasoning. We propose OM-GRPO, a label-free RLVR framework that decouples reward estimation from policy optimization. OM-GRPO masks gradients on the answer span while retaining answer-level rewards through a soft consensus signal, shifting optimization pressure away from answer tokens. We further introduce Contrast-Augmented Reward, which refines reward estimation via low-cost pairwise comparisons over existing trajectories without additional rollouts. Across diverse reasoning benchmarks and three LLM backbones, OM-GRPO consistently outperforms existing label-free RLVR methods and matches supervised GT-reward training with stable optimization. This stability is particularly beneficial in the Test-Time Training setting, where OM-GRPO surpasses majority voting by 4.24 points.",
+ "summary": "## 论文摘要总结\n\n**标题**：Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR（别偷看答案：面向无标签 RLVR 的结果掩码组相对策略优化）\n\n### 1. 核心创新点\n提出 **OM-GRPO**，通过**将奖励估计与策略优化解耦**——保留答案层面的奖励信号，但屏蔽答案 token 上的梯度——解决无标签 RLVR 中\"模型直接强化答案 token 而非改进推理\"导致的训练坍缩问题。\n\n### 2. 主要方法\n- **背景**：RLVR（可验证奖励强化学习）通常依赖真实答案（GT），可扩展性受限；基于投票的无标签方法用模型自采样的答案共识替代金标准监督，但同一答案信号既用于估计奖励又用于驱动 token 级优化，会引发坍缩。\n- **结果掩码（Outcome Masking）**：在答案片段上屏蔽梯度，同时通过**软共识信号（soft consensus）**保留答案层面的奖励，把优化压力从答案 token 转移到推理过程上。\n- **对比增强奖励（Contrast-Augmented Reward）**：在已有轨迹上做低成本的成对比较来精化奖励估计，**无需额外 rollout**。\n\n### 3. 结论/性能\n- 在多个推理基准和 **3 种 LLM 主干**上，OM-GRPO 稳定优于现有无标签 RLVR 方法；\n- 性能可**匹敌使用真实答案奖励的监督训练**，且优化过程稳定；\n- 在**测试时训练（Test-Time Training）**场景中优势尤为明显，比多数投票（majority voting）**高出 4.24 分**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-09 13:00:25"
+}

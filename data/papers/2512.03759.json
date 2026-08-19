@@ -1,0 +1,13 @@
+{
+ "id": "2512.03759",
+ "title": "Principled RL for Diffusion LLMs Emerges from a Sequence-Level Perspective",
+ "authors": "Jingyang Ou, Jiaqi Han, Minkai Xu, Shaoxuan Xu, Jianwen Xie, Stefano Ermon, Yi Wu, Chongxuan Li",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03759v1",
+ "abstract": "Reinforcement Learning (RL) has proven highly effective for autoregressive language models, but adapting these methods to diffusion large language models (dLLMs) presents fundamental challenges. The core difficulty lies in likelihood approximation: while autoregressive models naturally provide token-level conditional probabilities essential for token-level RL objectives (e.g., GRPO), dLLMs generate sequences through iterative non-autoregressive denoising steps that lack this factorization. To address this fundamental mismatch, we propose ELBO-based Sequence-level Policy Optimization (ESPO), a principled RL framework that treats entire sequence generation as a single action and uses the ELBO as a tractable sequence-level likelihood proxy. Our method incorporates per-token normalization of importance ratios and robust KL-divergence estimation to ensure stable large-scale training. Extensive experiments on mathematical reasoning, coding, and planning tasks demonstrate that ESPO significantly outperforms token-level baselines, achieving dramatic improvements of 20-40 points on the Countdown task, while maintaining consistent gains on math and coding benchmarks. Our approach establishes sequence-level optimization as a principled and empirically effective paradigm for RL in dLLMs. Our code is available at https://github.com/ML-GSAI/ESPO.",
+ "summary": "- 核心创新点：提出 ESPO（ELBO-based Sequence-level Policy Optimization），将扩散型大语言模型的序列生成视为一个整体动作，并以 ELBO 作为可行的序列级似然代理，从而实现面向 dLLMs 的序列级 RL 优化。\n\n- 主要方法：引入 ELBO 基于的序列级策略优化框架，将整个序列生成作为单一行动；使用 ELBO 作为序列级似然代理，结合每个 token 的重要性比率归一化和鲁棒的 KL 散度估计，强化大规模训练的稳定性。\n\n- 结论/性能：在数学推理、编码和规划等任务上显著优于 token-level 基线；在 Countdown 任务实现 20-40 点的显著提升，并在其他基准上保持持续提升，证明序列级优化是对 dLLMs RL 的一个 principled、有效范式（代码公开）。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-04 14:03:21"
+}

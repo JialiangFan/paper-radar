@@ -1,0 +1,13 @@
+{
+ "id": "2602.09598",
+ "title": "Learning from the Irrecoverable: Error-Localized Policy Optimization for Tool-Integrated LLM Reasoning",
+ "authors": "Qiao Liang, Yuke Zhu, Chao Ge, Lei Yang, Ying Shen, Bo Zheng, Sheng Guo",
+ "date": "2026-02-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.09598v1",
+ "abstract": "Tool-integrated reasoning (TIR) enables LLM agents to solve tasks through planning, tool use, and iterative revision, but outcome-only reinforcement learning in this setting suffers from sparse, delayed rewards and weak step-level credit assignment. In long-horizon TIR trajectories, an early irrecoverable mistake can determine success or failure, making it crucial to localize the first irrecoverable step and leverage it for fine-grained credit assignment. We propose Error-Localized Policy Optimization (ELPO), which localizes the first irrecoverable step via binary-search rollout trees under a fixed rollout budget, converts the resulting tree into stable learning signals through hierarchical advantage attribution, and applies error-localized adaptive clipping to strengthen corrective updates on the critical step and its suffix. Across TIR benchmarks in math, science QA, and code execution, ELPO consistently outperforms strong Agentic RL baselines under comparable sampling budgets, with additional gains in Pass@K and Major@K scaling, rollout ranking quality, and tool-call efficiency. Our code will be publicly released soon.",
+ "summary": "- 核心创新点：提出 Error-Localized Policy Optimization (ELPO)，在工具集成推理中通过定位首个不可恢复的错误步骤来进行细粒度的信用分配与更新。\n\n- 主要方法：使用固定预算下的二分搜索回放树来定位首个不可恢复步骤；将得到的回放树转化为稳定的学习信号，采用分层优势归因进行信号传递；对关键步骤及其后缀实施误差局部自适应裁剪以强化修正更新。\n\n- 结论/性能：在数学、科学问答和代码执行等TIR基准上，ELPO在可比较采样预算下持续优于强的 Agentic RL 基线，并在 Pass@K、Major@K 的扩展、回合排序质量以及工具调用效率等方面获得额外提升；代码将公开发布。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-11 14:03:14"
+}

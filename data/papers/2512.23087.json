@@ -1,0 +1,13 @@
+{
+ "id": "2512.23087",
+ "title": "Taming the Tail: Stable LLM Reinforcement Learning via Dynamic Vocabulary Pruning",
+ "authors": "Yingru Li, Jiawei Xu, Jiacai Liu, Yuxuan Tong, Ziniu Li, Tianle Cai, Ge Zhang, Qian Liu, Baoxiang Wang",
+ "date": "2025-12-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23087v1",
+ "abstract": "Reinforcement learning for large language models (LLMs) faces a fundamental tension: high-throughput inference engines and numerically-precise training systems produce different probability distributions from the same parameters, creating a training-inference mismatch. We prove this mismatch has an asymmetric effect: the bound on log-probability mismatch scales as $(1-p)$ where $p$ is the token probability. For high-probability tokens, this bound vanishes, contributing negligibly to sequence-level mismatch. For low-probability tokens in the tail, the bound remains large, and moreover, when sampled, these tokens exhibit systematically biased mismatches that accumulate over sequences, destabilizing gradient estimation. Rather than applying post-hoc corrections, we propose constraining the RL objective to a dynamically-pruned ``safe'' vocabulary that excludes the extreme tail. By pruning such tokens, we trade large, systematically biased mismatches for a small, bounded optimization bias. Empirically, our method achieves stable training; theoretically, we bound the optimization bias introduced by vocabulary pruning.",
+ "summary": "- 核心创新点：提出通过动态裁剪“安全”词汇表来限制 RL 目标，仅在排除极尾低概率 token 的情况下进行优化，从而在训练中实现稳定性并控制词汇表剪裁引起的偏差。\n\n- 主要方法：在大型语言模型的强化学习框架中，进行概率分布与训练推理不一致的理论分析，证明错配对低概率尾部影响更大；引入动态的 vocabulary pruning 策略，约束 RL 目标在被剪裁的安全词汇表内进行优化，并给出剪裁所带来的优化偏差的理论界限。\n\n- 结论/性能：实证结果显示该方法实现了稳定的训练；理论上对因词汇表剪裁引入的优化偏差给出界限。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:51:48"
+}

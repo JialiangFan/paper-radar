@@ -1,0 +1,13 @@
+{
+ "id": "2605.13046",
+ "title": "An Agentic LLM-Based Framework for Population-Scale Mental Health Screening",
+ "authors": "Giuliano Lorenzoni, Paulo Alencar, Donald Cowan",
+ "date": "2026-05-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.13046v1",
+ "abstract": "Mental health disorders affect millions worldwide, and healthcare systems are increasingly overwhelmed by the volume of clinical data generated from electronic records, telemedicine platforms, and population-level screening programs. At the same time, the emergence of novel AI-based approaches in healthcare calls for intelligent frameworks capable of processing domain-specific unstructured clinical information while adapting to patient-specific needs. This paper proposes an agentic framework for building robust LLM-based pipelines, where each stage is encapsulated as a LangChain agent governed by explicit policies and proxy-guided evaluation. Stages are incrementally locked once validated, ensuring that later adaptations cannot overwrite configurations without demonstrated improvement. The proposed framework evolves from feature-level exploration, through proxy-based tuning and freeze/rollback mechanisms, to full orchestration by an Orchestrator Agent that coordinates preprocessing, retrieval, selection, diversity, threshold optimization, and decoding. A proof-of-concept in transcript-based depression detection demonstrates that the framework converges to stable configurations, such as cosine similarity, dynamic Top-k, and threshold 0.75, while controlling evaluation costs and avoiding regressions. These results highlight the potential of agentic AI to enable population-level mental health screening over large clinical datasets, addressing critical challenges in trustworthiness, reproducibility, and adaptability required in healthcare environments.",
+ "summary": "1) 核心创新点（一句话）\n提出一个基于代理驱动的 LLm 工作流框架，将各阶段封装为 LangChain 代理，并通过显式策略、代理引导评估与阶段锁定机制实现可控、可追溯的群体规模精神健康筛查。\n\n2) 主要方法\n- 基于 LangChain 的多阶段代理框架，每个阶段作为独立代理，受明确的策略约束与代理级评估。  \n- 引入代理引导评估（proxy-guided evaluation）和阶段性锁定，确保验证通过后不能随意覆盖配置。  \n- 框架自特征层探索逐步扩展到代理调优、冻结/回滚，最终由一个 Orchestrator Agent 统一调度处理流程。  \n- 覆盖预处理、信息检索、筛选、结果多样性、阈值优化与解码等环节的协同工作。  \n- 在抄本基的抑郁检测任务上给出原型验证，展示稳定配置的收敛过程（如 cosine 相似度、动态 Top-k、阈值 0.75），并控制评估成本、避免回归。\n\n3) 结论/性能\n- 框架在抄本抑郁检测的原型中收敛到稳定的配置（如 cosine 相似度、动态 Top-k、阈值 0.75），并有效控制评估成本、避免性能回退。  \n- 证明了代理驱动 AI 在大规模临床数据上的群体级精神健康筛查潜力，提升了信任性、可重复性与环境适应性。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-05-19 12:33:23"
+}

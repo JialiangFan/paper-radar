@@ -1,0 +1,30 @@
+{
+ "id": "2602.10503",
+ "title": "Towards Long-Lived Robots: Continual Learning VLA Models via Reinforcement Fine-Tuning",
+ "authors": "Yuan Liu, Haoran Li, Shuai Tian, Yuxing Qin, Yuhui Chen, Yupeng Zheng, Yongzhen Huang, Dongbin Zhao",
+ "date": null,
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2602.10503",
+ "abstract": "",
+ "summary": "Directly supports continual VLA improvement with reinforcement fine-tuning.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "continual-learning",
+  "reinforcement-fine-tuning",
+  "safe-vla",
+  "supplemental-recent",
+  "vla-post-training"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/2026_LifeLong_RFT.md",
+ "pdf_path": "PDFs/Supplemental_VLA_Post_Training/2026_LifeLong_RFT.pdf",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,32 @@
+{
+ "id": "2509.12833",
+ "title": "Safe Reinforcement Learning using Action Projection: Safeguard the Policy or the Environment?",
+ "authors": "Markgraf, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2509.12833",
+ "abstract": "",
+ "summary": "This paper analyzes projection-based safety filters and clarifies when to treat projection as part of the policy or the environment.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Action Shielding Safety Filters",
+ "tags": [
+  "action-projection",
+  "action-shielding",
+  "robotics",
+  "safe-rl",
+  "safe-vla",
+  "safety-filter",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Action_Shielding_Safety_Filters/2025_Markgraf_ActionProjection.md",
+ "pdf_path": "PDFs/Action_Shielding_Safety_Filters/2025_Markgraf_ActionProjection.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

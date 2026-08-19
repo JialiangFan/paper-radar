@@ -1,0 +1,13 @@
+{
+ "id": "2607.21534",
+ "title": "Generative AI Availability, Grades, and Student Satisfaction at a Large University",
+ "authors": "James M. Zumel Dumlao, Meng Wang, Zhonghan Xie, Junyao Hu, Ivan Bar, George Chaney, Henry Gold, Misha Teplitskiy",
+ "date": "2026-07-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.21534v1",
+ "abstract": "The spread of generative AI (GenAI) in higher education has raised concerns that students offload cognitive effort to AI, earning high grades without learning. If this \"GenAI substitution hypothesis\" is true, grades should rise disproportionately in GenAI-susceptible courses--those relying more on assessments like take-home problem sets and essays rather than in-class exams. Substitution could also affect student satisfaction, measured here as self-reported understanding and interest in the subject, which prior research links to assessments. We test the substitution hypothesis using syllabus and administrative data from a large U.S. university (2015-2025; 156,135 students; 87,936 course offerings). We measure courses' GenAI susceptibility using a human-validated LLM pipeline to extract assessment types from syllabi, and use a differences-in-differences design comparing outcomes across courses before and after ChatGPT's release, while modeling COVID-19 pandemic effects as either persistent or transient. We find no significant differential effect of GenAI availability on grades overall or among previously lower-performing students. Effects on self-reported understanding are likewise insignificant; effects on interest are significant only assuming transient pandemic effects. Our findings temper concerns that GenAI inflates grades and reduces students' satisfaction.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-26 13:01:10"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.16201",
+ "title": "Visual Alignment of Medical Vision-Language Models for Grounded Radiology Report Generation",
+ "authors": "Sarosij Bose, Ravi K. Rajendran, Biplob Debnath, Konstantinos Karydis, Amit K. Roy-Chowdhury, Srimat Chakradhar",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16201v1",
+ "abstract": "Radiology Report Generation (RRG) is a critical step toward automating healthcare workflows, facilitating accurate patient assessments, and reducing the workload of medical professionals. Despite recent progress in Large Medical Vision-Language Models (Med-VLMs), generating radiology reports that are both visually grounded and clinically accurate remains a significant challenge. Existing approaches often rely on large labeled corpora for pre-training, costly task-specific preference data, or retrieval-based methods. However, these strategies do not adequately mitigate hallucinations arising from poor cross-modal alignment between visual and linguistic representations. To address these limitations, we propose VALOR:Visual Alignment of Medical Vision-Language Models for GrOunded Radiology Report Generation. Our method introduces a reinforcement learning-based post-alignment framework utilizing Group-Relative Proximal Optimization (GRPO). The training proceeds in two stages: (1) improving the Med-VLM with textual rewards to encourage clinically precise terminology, and (2) aligning the vision projection module of the textually grounded model with disease findings, thereby guiding attention toward image re gions most relevant to the diagnostic task. Extensive experiments on multiple benchmarks demonstrate that VALOR substantially improves factual accuracy and visual grounding, achieving significant performance gains over state-of-the-art report generation methods.",
+ "summary": "- 核心创新点：提出 VALOR 框架，通过基于强化学习的后对齐与 GRPO（Group-Relative Proximal Optimization）两阶段训练，联合提升医学视觉-语言模型在临床用语准确性与影像区域对齐的能力，从而实现更可定位、更可靠的放射科报告生成，减少跨模态幻觉。\n\n- 主要方法：采用基于强化学习的后对齐框架 VALOR，核心技术为 GRPO。训练分为两阶段：1) 使用文本奖励对医学视觉-语言模型进行微调，强化临床术语的准确性；2) 将文本对齐后的模型的视觉投影模块与疾病发现对齐，引导注意力聚焦于与诊断任务相关的图像区域。\n\n- 结论/性能：在多个基准数据集上，VALOR 显著提升事实准确性和视觉 grounding，取得相对于现有最先进方法的显著性能增益。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-19 02:47:40"
+}

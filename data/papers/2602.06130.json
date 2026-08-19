@@ -1,0 +1,13 @@
+{
+ "id": "2602.06130",
+ "title": "Self-Improving World Modelling with Latent Actions",
+ "authors": "Yifu Qiu, Zheng Zhao, Waylon Li, Yftah Ziser, Anna Korhonen, Shay B. Cohen, Edoardo M. Ponti",
+ "date": "2026-02-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06130v1",
+ "abstract": "Internal modelling of the world -- predicting transitions between previous states $X$ and next states $Y$ under actions $Z$ -- is essential to reasoning and planning for LLMs and VLMs. Learning such models typically requires costly action-labelled trajectories. We propose SWIRL, a self-improvement framework that learns from state-only sequences by treating actions as a latent variable and alternating between Forward World Modelling (FWM) $P_θ(Y|X,Z)$ and an Inverse Dynamics Modelling (IDM) $Q_φ(Z|X,Y)$. SWIRL iterates two phases: (1) Variational Information Maximisation, which updates the FWM to generate next states that maximise conditional mutual information with latent actions given prior states, encouraging identifiable consistency; and (2) ELBO Maximisation, which updates the IDM to explain observed transitions, effectively performing coordinate ascent. Both models are trained with reinforcement learning (specifically, GRPO) with the opposite frozen model's log-probability as a reward signal. We provide theoretical learnability guarantees for both updates, and evaluate SWIRL on LLMs and VLMs across multiple environments: single-turn and multi-turn open-world visual dynamics and synthetic textual environments for physics, web, and tool calling. SWIRL achieves gains of 16% on AURORABench, 28% on ByteMorph, 16% on WorldPredictionBench, and 14% on StableToolBench.",
+ "summary": "1) 核心创新点\n- 提出 SWIRL：在仅有状态序列的条件下，将动作视为潜在变量，通过交替优化前向世界建模与逆向动力学建模，并结合变分信息最大化与 ELBO 最大化，实现自我提升的世界建模，同时给出理论可学习性保障。\n\n2) 主要方法\n- 模型框架：前向世界建模 FWM Pθ(Y|X,Z) 与逆向动力学 IDM Qφ(Z|X,Y)，其中动作 Z 作为潜在变量。\n- 训练机制：两阶段交替\n  - 变分信息最大化阶段，优化 FWM 以产生与潜在动作在给定前序状态下具有最大条件互信息的下一个状态，提升可辨识的一致性。\n  - ELBO 最大化阶段，优化 IDM 以解释观测的转移，从而实现对齐与坐标提升。\n- 优化与评估：使用强化学习（GRPO）进行训练，奖励信号来自对方冻结模型的对数概率；给出理论可学习性保证。\n- 评估对象：在 LLMs 与 VLMs 上的单-turn/多-turn 开放世界视觉动力学和文本化的物理、Web、工具调用等合成环境中进行测试。\n\n3) 结论/性能\n- 在多个基准上呈现性能提升：AURORABench 提升约16%，ByteMorph 提升约28%，WorldPredictionBench 提升约16%，StableToolBench 提升约14%。并展示了在单 Turn 与多 Turn 的开放世界视觉动力学，以及文本化物理、Web、工具调用环境中的有效性与稳健性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-09 14:03:16"
+}

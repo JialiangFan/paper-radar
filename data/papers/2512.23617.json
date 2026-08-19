@@ -1,0 +1,13 @@
+{
+ "id": "2512.23617",
+ "title": "Le Cam Distortion: A Decision-Theoretic Framework for Robust Transfer Learning",
+ "authors": "Deniz Akdemir",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23617v1",
+ "abstract": "Distribution shift is the defining challenge of real-world machine learning. The dominant paradigm--Unsupervised Domain Adaptation (UDA)--enforces feature invariance, aligning source and target representations via symmetric divergence minimization [Ganin et al., 2016]. We demonstrate that this approach is fundamentally flawed: when domains are unequally informative (e.g., high-quality vs degraded sensors), strict invariance necessitates information destruction, causing \"negative transfer\" that can be catastrophic in safety-critical applications [Wang et al., 2019].\n  We propose a decision-theoretic framework grounded in Le Cam's theory of statistical experiments [Le Cam, 1986], using constructive approximations to replace symmetric invariance with directional simulability. We introduce Le Cam Distortion, quantified by the Deficiency Distance $δ(E_1, E_2)$, as a rigorous upper bound for transfer risk conditional on simulability. Our framework enables transfer without source degradation by learning a kernel that simulates the target from the source. Across five experiments (genomics, vision, reinforcement learning), Le Cam Distortion achieves: (1) near-perfect frequency estimation in HLA genomics (correlation $r=0.999$, matching classical methods), (2) zero source utility loss in CIFAR-10 image classification (81.2% accuracy preserved vs 34.7% drop for CycleGAN), and (3) safe policy transfer in RL control where invariance-based methods suffer catastrophic collapse. Le Cam Distortion provides the first principled framework for risk-controlled transfer learning in domains where negative transfer is unacceptable: medical imaging, autonomous systems, and precision medicine.",
+ "summary": "- 核心创新点（一句话概括）\n  将对称不变性替代为有方向的可模拟性，基于 Le Cam 的统计实验理论提出 Le Cam Distortion，通过 Deficiency Distance 作为传输风险的界限，从而实现风险可控的跨域传输，避免负迁移。\n\n- 主要方法\n  基于 Le Cam 理论，提出 Directional Simulability 概念并定义 Deficiency Distance δ(E1,E2) 作为传输风险的上界；通过构造性近似替代对称不变性，学习一个从源到目标的核（kernel），实现“用源模拟目标”以完成传输，而无需对源信息进行失效性削弱；在基因组、视觉、强化学习等五个领域进行验证。\n\n- 结论/性能\n  - HLA 基因组：频率估计的相关系数 r=0.999，接近经典方法。  \n  - CIFAR-10：保持81.2%的准确率（零源效用损失），相比 CycleGAN 的34.7%下降显著优越。  \n  - 强化学习控制：实现安全的策略迁移，避免基于不变性的方法导致的灾难性崩溃。  \n  总体上，该框架为在高风险场景（如医疗成像、自动系统、精准医学）实现有理论界限的风险可控跨域传输提供了首个原理性框架。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-30 03:51:57"
+}

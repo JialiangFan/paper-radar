@@ -1,0 +1,13 @@
+{
+ "id": "2607.14026",
+ "title": "From Forecasts to Auditable Reports: Evidence Contracts for LLM-Assisted Housing-Guarantee Risk Monitoring",
+ "authors": "Hyeongcheol Kim, Yoontae Hwang",
+ "date": "2026-07-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.14026v1",
+ "abstract": "Translating next-month housing-guarantee risk forecasts into auditable operational reports is essential yet challenging because upper-tail events are sparse, source records are confidential, and generated narratives can distort the underlying evidence. Using monthly South Korean \\textit{jeonse} deposit guarantee data from September 2015 to December 2025, we introduce an evidence-constrained reporting pipeline that prioritizes upper-tail monitoring, retrieves historical precedents aligned with the forecasting rationale, organizes admissible information into typed evidence contracts, and verifies generated claims before analyst review. We train and select the forecasting backbone on the original panel, whereas the reporting experiments use synthetic aggregate scenarios calibrated to its empirical ranges and temporal structure. The selected forecasting model substantially improves high-risk detection while retaining competitive average error. Across eight LLMs, structured evidence consistently increases report quality, numerical fidelity, and claim-level grounding. A practitioner evaluation involving 51 analysts and related domain professionals further indicates that the reports support real-world review and decision-making: most participants rated them as practically useful and endorsed an operational pilot. These findings demonstrate that reliable LLM-assisted reporting requires predictive models to be coupled with structured evidence, explicit verification, and analyst oversight.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-16 13:01:56"
+}

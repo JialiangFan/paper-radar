@@ -1,0 +1,13 @@
+{
+ "id": "2512.03001",
+ "title": "Invasive Context Engineering to Control Large Language Models",
+ "authors": "Thomas Rivasseau",
+ "date": "2025-12-02",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03001v1",
+ "abstract": "Current research on operator control of Large Language Models improves model robustness against adversarial attacks and misbehavior by training on preference examples, prompting, and input/output filtering. Despite good results, LLMs remain susceptible to abuse, and jailbreak probability increases with context length. There is a need for robust LLM security guarantees in long-context situations. We propose control sentences inserted into the LLM context as invasive context engineering to partially solve the problem. We suggest this technique can be generalized to the Chain-of-Thought process to prevent scheming. Invasive Context Engineering does not rely on LLM training, avoiding data shortage pitfalls which arise in training models for long context situations.",
+ "summary": "- **核心创新点**：通过在大语言模型的上下文中插入“控制句”形成侵入式上下文工程，在不对模型再训练的前提下，部分解决长上下文中的滥用与越权问题，并可推广到链式推理以防止 scheming。\n- **主要方法**：采用侵入式上下文工程，在输入上下文中嵌入控制句来引导和约束模型输出，不依赖模型训练，且思路可扩展至 Chain-of-Thought 推理过程。\n- **结论/性能**：在长上下文情境下对滥用与越权提供部分防护能力，且无需重新训练即可实现安全保障，具备可扩展性并可与现有方法互补。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-03 14:00:28"
+}

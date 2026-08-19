@@ -1,0 +1,13 @@
+{
+ "id": "2602.18304",
+ "title": "FeatureBleed: Inferring Private Enriched Attributes From Sparsity-Optimized AI Accelerators",
+ "authors": "Darsh Asher, Farshad Dizani, Joshua Kalyanapu, Rosario Cammarota, Aydin Aysu, Samira Mirbagher Ajorpaz",
+ "date": "2026-02-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.18304v1",
+ "abstract": "Backend enrichment is now widely deployed in sensitive domains such as product recommendation pipelines, healthcare, and finance, where models are trained on confidential data and retrieve private features whose values influence inference behavior while remaining hidden from the API caller. This paper presents the first hardware-level backend retrieval data-stealing attack, showing that accelerator optimizations designed for performance can directly undermine data confidentiality and bypass state-of-the-art privacy defenses.\n  Our attack, FEATUREBLEED, exploits zero-skipping in AI accelerators to infer private backend-retrieved features solely through end-to-end timing, without relying on power analysis, DVFS manipulation, or shared-cache side channels. We evaluate FEATUREBLEED on three datasets spanning medical and non-medical domains: Texas-100X (clinical records), OrganAMNIST (medical imaging), and Census-19 (socioeconomic data). We further evaluate FEATUREBLEED across three hardware backends (Intel AVX, Intel AMX, and NVIDIA A100) and three model architectures (DNNs, CNNs, and hybrid CNN-MLP pipelines), demonstrating that the leakage generalizes across CPU and GPU accelerators, data modalities, and application domains, with an adversarial advantage of up to 98.87 percentage points.\n  Finally, we identify the root cause of the leakage as sparsity-driven zero-skipping in modern hardware. We quantify the privacy-performance-power trade-off: disabling zero-skipping increases Intel AMX per-operation energy by up to 25 percent and incurs 100 percent performance overhead. We propose a padding-based defense that masks timing leakage by equalizing responses to the worst-case execution time, achieving protection with only 7.24 percent average performance overhead and no additional power cost.",
+ "summary": "- 核心创新点：首次揭示在 AI 加速器中的稀疏性导致的零跳过会通过端到端时延实现对后端私有检索特征的硬件级数据窃取攻击，能够绕过现有隐私防护。\n\n- 主要方法：利用对 AI 加速器中零跳过现象的时间侧信道分析来推断私有后端检索特征，不依赖功耗分析、DVFS 操作或共享缓存等侧信道；在三类数据集、三类硬件后端和三种模型架构上进行跨域评估。\n\n- 结论/性能：攻击在 Texas-100X、OrganAMNIST、Census-19 等数据集及 Intel AVX/AMX、NVIDIA A100 的 DNN/CNN/混合 CNN-MLP 上普遍可行， adversarial advantage 最高达到 98.87 个百分点；根本原因是稀疏性驱动的零跳过。关闭零跳过会显著增加能耗和性能开销（能耗↑最高 25%，性能↑成本约 100%）；提出基于填充的防御，通过对响应做时长对齐实现时序防护，平均性能开销约 7.24%，无额外功耗成本。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-23 14:00:56"
+}

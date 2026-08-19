@@ -1,0 +1,13 @@
+{
+ "id": "2512.17250",
+ "title": "Accelerating Multi-modal LLM Gaming Performance via Input Prediction and Mishit Correction",
+ "authors": "Ziyang Lin, Zixuan Sun, Sanhorn Chen, Xiaoyang Chen, Roy Zhao",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17250v1",
+ "abstract": "Real-time sequential control agents are often bottlenecked by inference latency. Even modest per-step planning delays can destabilize control and degrade overall performance. We propose a speculation-and-correction framework that adapts the predict-then-verify philosophy of speculative execution to model-based control with TD-MPC2. At each step, a pretrained world model and latent-space MPC planner generate a short-horizon action queue together with predicted latent rollouts, allowing the agent to execute multiple planned actions without immediate replanning. When a new observation arrives, the system measures the mismatch between the encoded real latent state and the queued predicted latent. For small to moderate mismatch, a lightweight learned corrector applies a residual update to the speculative action, distilled offline from a replanning teacher. For large mismatch, the agent safely falls back to full replanning and clears stale action queues. We study both a gated two-tower MLP corrector and a temporal Transformer corrector to address local errors and systematic drift. Experiments on the DMC Humanoid-Walk task show that our method reduces the number of planning inferences from 500 to 282, improves end-to-end step latency by 25 percent, and maintains strong control performance with only a 7.1 percent return reduction. Ablation results demonstrate that speculative execution without correction is unreliable over longer horizons, highlighting the necessity of mismatch-aware correction for robust latency reduction.",
+ "summary": "- 核心创新点：提出一个预测-验证（speculation-and-correction）框架，将短期世界模型预测与潜在状态滚动结合，结合错配自适应纠正/回退，实现低延迟的多步执行同时保持控制性能。\n\n- 主要方法：\n  - 基于 TD-MPC2 的模型预测控制，使用预训练世界模型和潜在空间 MPC 规划器生成短期行动队列及预测潜在状态。\n  - 观测到新数据时对真实潜在状态与队列中预测的潜在状态进行错配检测；对小到中等错配，使用轻量级学习纠正器进行残差更新（离线自 replanning 教师蒸馏而来）。\n  - 对大错配，回退到全重新规划并清空队列。\n  - 探索两类纠正器：门控两塔 MLP 与时序 Transformer，用以处理局部误差与系统性漂移。\n\n- 结论/性能：\n  - 实验在 DMC Humanoid-Walk 任务中把需要的规划推理次数从 500 次降至 282 次，端到端一步延迟提升约 25%，且控制性能仅下降 7.1% 的回报。\n  - 消融实验表明单纯的 speculate 执行在较长 horizon 下不可靠，强调错配感知纠正对实现稳定低延迟的重要性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:48:12"
+}

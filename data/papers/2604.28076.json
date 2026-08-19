@@ -1,0 +1,13 @@
+{
+ "id": "2604.28076",
+ "title": "TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering",
+ "authors": "An-Yang Ji, Jun-Peng Jiang, De-Chuan Zhan, Han-Jia Ye",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28076v1",
+ "abstract": "Large Language Models (LLMs) have advanced Table Question Answering, where most queries can be answered by extracting information or simple aggregation. However, a common class of real-world queries is implicitly predictive, requiring the inference of unobserved answers from historical patterns rather than mere retrieval. These queries introduce two challenges: recognizing latent intent and reliable predictive reasoning over massive tables. To assess LLMs in such Tabular questiOn answering with implicit Prediction tasks, we introduce TopBench, a benchmark consisting of 779 samples across four sub-tasks, ranging from single-point prediction to decision making, treatment effect analysis, and complex filtering, requiring models to generate outputs spanning reasoning text and structured tables. We evaluate diverse models under both text-based and agentic workflows. Experiments reveal that current models often struggle with intent recognition, defaulting to just lookups. Deeper analysis identifies that accurate intent disambiguation serves as the prerequisite for leading these predictive behaviors. Furthermore, elevating the upper bound of prediction precision requires the integration of more sophisticated modeling or reasoning capabilities.",
+ "summary": "1) 核心创新点\n- 提出 TopBench 这一面向隐式预测与推理的表格问答基准，涵盖 779 条样本、四个子任务（从单点预测到决策分析、治疗效应分析、复杂筛选），输出包括推理文本与结构化表格，用以评估模型在隐式预测场景中的识别意图与推理能力。\n\n2) 主要方法\n- 在文本流和代理式（agentic）工作流两种设定下，对多种模型进行评测，任务设计包含从历史模式推断未观测答案的能力。\n- 任务覆盖四个子任务：单点预测、决策分析、治疗效应分析、复杂筛选，要求模型输出推理过程与结构化表格。\n- 通过实验与分析聚焦意图识别对预测行为的关键作用，以及需要更高级的建模/推理能力来提升预测精度。\n\n3) 结论/性能\n- 现有模型在意图识别上普遍表现欠佳，倾向于简单检索而非真正的预测推理。\n- 准确的意图消解被证明是触发预测性推理的前提条件。\n- 要提升预测精度，需要引入更为复杂的建模或推理能力来提升隐式预测的效果。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-05-02 13:02:43"
+}

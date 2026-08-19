@@ -1,0 +1,13 @@
+{
+ "id": "2512.15422",
+ "title": "Can AI Generate more Comprehensive Test Scenarios? Review on Automated Driving Systems Test Scenario Generation Methods",
+ "authors": "Ji Zhou, Yongqi Zhao, Yixian Hu, Hexuan Li, Zhengguo Gu, Nan Xu, Arno Eichberger",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15422v1",
+ "abstract": "Ensuring the safety and reliability of Automated Driving Systems (ADS) remains a critical challenge, as traditional verification methods such as large-scale on-road testing are prohibitively costly and time-consuming.To address this,scenario-based testing has emerged as a scalable and efficient alternative,yet existing surveys provide only partial coverage of recent methodological and technological advances.This review systematically analyzes 31 primary studies,and 10 surveys identified through a comprehensive search spanning 2015~2025;however,the in-depth methodological synthesis and comparative evaluation focus primarily on recent frameworks(2023~2025),reflecting the surge of Artificial Intelligent(AI)-assisted and multimodal approaches in this period.Traditional approaches rely on expert knowledge,ontologies,and naturalistic driving or accident data,while recent developments leverage generative models,including large language models,generative adversarial networks,diffusion models,and reinforcement learning frameworks,to synthesize diverse and safety-critical scenarios.Our synthesis identifies three persistent gaps:the absence of standardized evaluation metrics,limited integration of ethical and human factors,and insufficient coverage of multimodal and Operational Design Domain (ODD)-specific scenarios.To address these challenges,this review contributes a refined taxonomy that incorporates multimodal extensions,an ethical and safety checklist for responsible scenario design,and an ODD coverage map with a scenario-difficulty schema to enable transparent benchmarking.Collectively,these contributions provide methodological clarity for researchers and practical guidance for industry,supporting reproducible evaluation and accelerating the safe deployment of higher-level ADS.",
+ "summary": "- 核心创新点（1句概括）：\n  对近年基于AI的自动驾驶场景生成研究进行系统综述，提出一个包含多模态扩展、伦理与安全清单、ODD覆盖图及场景难度分级的新型情景生成评估框架，以提升可重复评估性和安全部署能力。\n\n- 主要方法：\n  对2015–2025年的31项原始研究和10项综述进行系统分析与比较，聚焦2023–2025年的框架，区分传统基于专家知识/本体/自然驾驶数据的方法与使用生成模型（大型语言模型、生成对抗网络、扩散模型、强化学习等）来合成场景的方法；并提出 refined taxonomy、伦理与安全检查清单、ODD覆盖图与场景难度架构等工具。\n\n- 结论/性能：\n  指出当前存在的主要缺口（缺乏统一评估指标、伦理与人因纳入不足、对多模态及ODD特定场景覆盖不足），并通过提出的分类体系、清单与覆盖图为研究与产业提供可重复评估的框架，帮助提升高等级自动驾驶系统的安全评估与加速落地。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-18 02:06:11"
+}

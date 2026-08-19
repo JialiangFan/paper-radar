@@ -1,0 +1,13 @@
+{
+ "id": "2603.03205",
+ "title": "Learning When to Act or Refuse: Guarding Agentic Reasoning Models for Safe Multi-Step Tool Use",
+ "authors": "Aradhye Agarwal, Gurdit Siyan, Yash Pandya, Joykirat Singh, Akshay Nambi, Ahmed Awadallah",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.03205v1",
+ "abstract": "Agentic language models operate in a fundamentally different safety regime than chat models: they must plan, call tools, and execute long-horizon actions where a single misstep, such as accessing files or entering credentials, can cause irreversible harm. Existing alignment methods, largely optimized for static generation and task completion, break down in these settings due to sequential decision-making, adversarial tool feedback, and overconfident intermediate reasoning. We introduce MOSAIC, a post-training framework that aligns agents for safe multi-step tool use by making safety decisions explicit and learnable. MOSAIC structures inference as a plan, check, then act or refuse loop, with explicit safety reasoning and refusal as first-class actions. To train without trajectory-level labels, we use preference-based reinforcement learning with pairwise trajectory comparisons, which captures safety distinctions often missed by scalar rewards. We evaluate MOSAIC zero-shot across three model families, Qwen2.5-7B, Qwen3-4B-Thinking, and Phi-4, and across out-of-distribution benchmarks spanning harmful tasks, prompt injection, benign tool use, and cross-domain privacy leakage. MOSAIC reduces harmful behavior by up to 50%, increases harmful-task refusal by over 20% on injection attacks, cuts privacy leakage, and preserves or improves benign task performance, demonstrating robust generalization across models, domains, and agentic settings.",
+ "summary": "1. 核心创新点：提出 MOSAIC 这一后训练对齐框架，通过将安全决策显式化为计划-检查-行动/拒绝循环中的一等公民决策，提升多步骤工具使用中的代理安全性。\n\n2. 主要方法：采用偏好型强化学习（基于对轨迹对的对比进行训练，不依赖轨迹级标签），将推理过程设计为计划-检查-行动/拒绝的循环，并在推理中显式包含安全推理和拒绝动作；在三大模型家族（Qwen2.5-7B、Qwen3-4B-Thinking、Phi-4）上进行零-shot评估，覆盖有害任务、提示注入、良性工具使用、跨域隐私泄露等场景。\n\n3. 结论/性能：在零-shot评估中有害行为最多降低约50%，对注入攻击中的有害任务的拒绝率提升超过20%，降低隐私泄露，同时保持或提升对良性任务的性能，展现出对模型、领域与代理设定的鲁棒泛化。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:00:28"
+}

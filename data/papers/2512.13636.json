@@ -1,0 +1,13 @@
+{
+ "id": "2512.13636",
+ "title": "MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning",
+ "authors": "Haoyu Fu, Diankun Zhang, Zongchuang Zhao, Jianfeng Cui, Hongwei Xie, Bing Wang, Guang Chen, Dingkang Liang, Xiang Bai",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13636v1",
+ "abstract": "Current Vision-Language-Action (VLA) paradigms in autonomous driving primarily rely on Imitation Learning (IL), which introduces inherent challenges such as distribution shift and causal confusion. Online Reinforcement Learning offers a promising pathway to address these issues through trial-and-error learning. However, applying online reinforcement learning to VLA models in autonomous driving is hindered by inefficient exploration in continuous action spaces. To overcome this limitation, we propose MindDrive, a VLA framework comprising a large language model (LLM) with two distinct sets of LoRA parameters. The one LLM serves as a Decision Expert for scenario reasoning and driving decision-making, while the other acts as an Action Expert that dynamically maps linguistic decisions into feasible trajectories. By feeding trajectory-level rewards back into the reasoning space, MindDrive enables trial-and-error learning over a finite set of discrete linguistic driving decisions, instead of operating directly in a continuous action space. This approach effectively balances optimal decision-making in complex scenarios, human-like driving behavior, and efficient exploration in online reinforcement learning. MindDrive achieves strong closed-loop performance on the challenging Bench2Drive benchmark, with a Driving Score (DS) of 78.04 and a Success Rate (SR) of 55.09%. To the best of our knowledge, this is the first work to demonstrate the effectiveness of online reinforcement learning for the VLA model in autonomous driving.",
+ "summary": "- 核心创新点（一句话概括）：通过在一个视觉-语言-行动框架中使用两组独立的LoRA化LLM（Decision Expert 与 Action Expert），将在线强化学习的探索从连续动作空间转向离散的语言决策空间，并通过轨迹级奖励回传来优化决策，以实现高效的在线RL在自动驾驶VLA中的应用。\n\n- 主要方法：提出 MindDrive 框架，使用一个包含两组 LoRA 参数的大语言模型：Decision Expert 负责情景推理与驾驶决策，Action Expert 将语言决策映射为可行轨迹；在在线强化学习循环中，通过轨迹级奖励回传到推理空间，离散化语言决策以避免直接在连续动作空间的探索，从而实现高效学习；在 Bench2Drive 基准上进行评估。\n\n- 结论/性能：在 Bench2Drive 上实现强的闭环性能，Driving Score 为 78.04、Success Rate 为 55.09%，并被称为首个证明在线RL在自动驾驶VLA模型中有效性的工作。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-16 03:04:09"
+}

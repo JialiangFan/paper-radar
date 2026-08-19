@@ -1,0 +1,13 @@
+{
+ "id": "2603.23485",
+ "title": "Failure of contextual invariance in gender inference with large language models",
+ "authors": "Sagar Kumar, Ariel Flint, Luca Maria Aiello, Andrea Baronchelli",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23485v1",
+ "abstract": "Standard evaluation practices assume that large language model (LLM) outputs are stable under contextually equivalent formulations of a task. Here, we test this assumption in the setting of gender inference. Using a controlled pronoun selection task, we introduce minimal, theoretically uninformative discourse context and find that this induces large, systematic shifts in model outputs. Correlations with cultural gender stereotypes, present in decontextualized settings, weaken or disappear once context is introduced, while theoretically irrelevant features, such as the gender of a pronoun for an unrelated referent, become the most informative predictors of model behaviour. A Contextuality-by-Default analysis reveals that, in 19--52\\% of cases across models, this dependence persists after accounting for all marginal effects of context on individual outputs and cannot be attributed to simple pronoun repetition. These findings show that LLM outputs violate contextual invariance even under near-identical syntactic formulations, with implications for bias benchmarking and deployment in high-stakes settings.",
+ "summary": "以下是对论文标题与摘要的中文概括，按要求分三点给出。\n\n1) 核心创新点（1句话）\n首次在近似等同的句法表述下，通过极简、理论上无信息量的语境来检验大型语言模型在性别推断任务中的上下文不变性，揭示输出会因语境而发生系统性偏差，挑战偏见评估的稳健性。\n\n2) 主要方法\n- 构造受控的代词选择任务，加入极简且理论上无信息量的 discourse 上下文。\n- 测试多种大型语言模型的输出，评估其在性别推断任务中的上下文敏感性与偏向。\n- 使用 Contextuality-by-Default 分析，量化在排除单个输出的边际上下文效应和简单代词重复后，输出是否仍对上下文依赖，以及依赖的强度。\n\n3) 结论/性能\n- 结论显示即使在近似相同的句法形式下，LLM 输出也违反上下文不变性，且语境能引发大规模的系统性偏差；在有上下文时，与文化性别刻板印象相关的相关性减弱或消失，而与任务无关的特征（如未相关 referent 的代词性别）反而成为更具信息量的预测因子。\n- 通过 CB-分析，在19–52%的病例中，这种上下文依赖在控制所有边际效应后仍然存在，且不能仅归因于简单的代词重复；对偏见基准测试和高风险部署提出重要警示。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-25 13:00:44"
+}

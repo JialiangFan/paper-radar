@@ -1,0 +1,13 @@
+{
+ "id": "2604.08491",
+ "title": "Figures as Interfaces: Toward LLM-Native Artifacts for Scientific Discovery",
+ "authors": "Yifang Wang, Rui Sheng, Erzhuo Shao, Yifan Qian, Haotian Li, Nan Cao, Dashun Wang",
+ "date": "2026-04-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.08491v1",
+ "abstract": "Large language models (LLMs) are transforming scientific workflows, not only through their generative capabilities but also through their emerging ability to use tools, reason about data, and coordinate complex analytical tasks. Yet in most human-AI collaborations, the primary outputs, figures, are still treated as static visual summaries: once rendered, they are handled by both humans and multimodal LLMs as images to be re-interpreted from pixels or captions. The emergent capabilities of LLMs open an opportunity to fundamentally rethink this paradigm. In this paper, we introduce the concept of LLM-native figures: data-driven artifacts that are simultaneously human-legible and machine-addressable. Unlike traditional plots, each artifact embeds complete provenance: the data subset, analytical operations and code, and visualization specification used to generate it. As a result, an LLM can \"see through\" the figure--tracing selections back to their sources, generating code to extend analyses, and orchestrating new visualizations through natural-language instructions or direct manipulation. We implement this concept through a hybrid language-visual interface that integrates LLM agents with a bidirectional mapping between figures and underlying data. Using the science of science domain as a testbed, we demonstrate that LLM-native figures can accelerate discovery, improve reproducibility, and make reasoning transparent across agents and users. More broadly, this work establishes a general framework for embedding provenance, interactivity, and explainability into the artifacts of modern research, redefining the figure not as an end product, but as an interface for discovery. For more details, please refer to the demo video available at www.llm-native-figure.com.",
+ "summary": "**核心创新点**  \n提出“LLM-native figures”概念，将图形从静态摘要转变为具备可追溯来源、可操作性和机器可读性的交互界面，图形内嵌完整溯源信息。\n\n**主要方法**  \n通过混合语言-可视界面实现：将LLM代理与图形和底层数据之间建立双向映射，使图形中嵌入数据子集、分析操作、相关代码和可视化规范等溯源信息；LLM可通过自然语言或直接操作来追踪来源、生成扩展分析的代码、并协同生成新的可视化。以科学研究中的“science of science”领域为测试床进行验证。\n\n**结论/性能**  \n证明该方法可加速科学发现、提升结果可重复性，并使跨代理与用户的推理过程更加透明；为将溯源、交互性与可解释性嵌入现代科研产物提供一个通用框架，将图形重新定义为探索的接口。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-10 13:02:11"
+}

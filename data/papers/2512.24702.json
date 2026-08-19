@@ -1,0 +1,13 @@
+{
+ "id": "2512.24702",
+ "title": "Evolving, Not Training: Zero-Shot Reasoning Segmentation via Evolutionary Prompting",
+ "authors": "Kai Ye, Xiaotong You, Jianghang Lin, Jiayi Ji, Pingyang Dai, Liujuan Cao",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24702v1",
+ "abstract": "Reasoning Segmentation requires models to interpret complex, context-dependent linguistic queries to achieve pixel-level localization. Current dominant approaches rely heavily on Supervised Fine-Tuning (SFT) or Reinforcement Learning (RL). However, SFT suffers from catastrophic forgetting and domain dependency, while RL is often hindered by training instability and rigid reliance on predefined reward functions. Although recent training-free methods circumvent these training burdens, they are fundamentally limited by a static inference paradigm. These methods typically rely on a single-pass \"generate-then-segment\" chain, which suffers from insufficient reasoning depth and lacks the capability to self-correct linguistic hallucinations or spatial misinterpretations. In this paper, we challenge these limitations and propose EVOL-SAM3, a novel zero-shot framework that reformulates reasoning segmentation as an inference-time evolutionary search process. Instead of relying on a fixed prompt, EVOL-SAM3 maintains a population of prompt hypotheses and iteratively refines them through a \"Generate-Evaluate-Evolve\" loop. We introduce a Visual Arena to assess prompt fitness via reference-free pairwise tournaments, and a Semantic Mutation operator to inject diversity and correct semantic errors. Furthermore, a Heterogeneous Arena module integrates geometric priors with semantic reasoning to ensure robust final selection. Extensive experiments demonstrate that EVOL-SAM3 not only substantially outperforms static baselines but also significantly surpasses fully supervised state-of-the-art methods on the challenging ReasonSeg benchmark in a zero-shot setting. The code is available at https://github.com/AHideoKuzeA/Evol-SAM3.",
+ "summary": "- 核心创新点：将推理分割转化为推理时的进化搜索，通过维护一个提示族群并在生成-评估-进化循环中自我优化，实现零-shot 下的像素级分割。\n\n- 主要方法：\n  - EVOL-SAM3：在推理阶段保持一个提示候选池，通过 Generate-Evaluate-Evolve 循环不断改进提示。 \n  - Visual Arena：采用无参考的对战式评估（逐对比较）来评估提示适应度，避免依赖外部参考。\n  - Semantic Mutation：引入语义扰动/变异，提升多样性并纠正语义层面的错误。\n  - Heterogeneous Arena：将几何先验与语义推理相结合，增强最终选择的鲁棒性。\n\n- 结论/性能：在 ReasonSeg 基准的零-shot 设置下，EVOL-SAM3 显著优于静态基线，并显著超过当前最强的全监督方法，代码已公开（GitHub 链接在论文中给出）。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-01 02:51:14"
+}

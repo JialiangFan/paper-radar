@@ -1,0 +1,13 @@
+{
+ "id": "2604.25895",
+ "title": "Three Models of RLHF Annotation: Extension, Evidence, and Authority",
+ "authors": "Steve Coyne",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25895v1",
+ "abstract": "Preference-based alignment methods, most prominently Reinforcement Learning with Human Feedback (RLHF), use the judgments of human annotators to shape large language model behaviour. However, the normative role of these judgments is rarely made explicit. I distinguish three conceptual models of that role. The first is extension: annotators extend the system designers' own judgments about what outputs should be. The second is evidence: annotators provide independent evidence about some facts, whether moral, social or otherwise. The third is authority: annotators have some independent authority (as representatives of the broader population) to determine system outputs. I argue that these models have implications for how RLHF pipelines should solicit, validate and aggregate annotations. I survey landmark papers in the literature on RLHF and related methods to illustrate how they implicitly draw on these models, describe failure modes that come from unintentionally or intentionally conflating them, and offer normative criteria for choosing among them. My central recommendation is that RLHF pipeline designers should decompose annotation into separable dimensions and tailor each pipeline to the model most appropriate for that dimension, rather than seeking a single unified pipeline.",
+ "summary": "1. 核心创新点：提出将 RLHF 注释的 normative 角色分为扩展、证据、权威三种模型，并主张将注释分解成可分离的维度，针对不同维度设计并选择最合适的流水线。\n\n2. 主要方法：基于理论分析与文献综述，系统区分三种注释模型，分析它们对采集、验证、聚合的影响，描述潜在的失败模式，提出针对不同维度的设计标准和选择原则。\n\n3. 结论/性能：没有实际实验，给出规范性结论，即 RLHF 流水线应分解注释维度、分别设计并针对相应模型优化；提供在设计阶段选择合适模型的准则，以避免将三者混用导致的问题。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-29 13:04:38"
+}

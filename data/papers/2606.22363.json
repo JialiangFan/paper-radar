@@ -1,0 +1,13 @@
+{
+ "id": "2606.22363",
+ "title": "Reference-Free Assessment of Physical Consistency in World Model-based Video Generation",
+ "authors": "Yun Oh, Sukmin Yun",
+ "date": "2026-06-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.22363v1",
+ "abstract": "We introduce reference-free measures for evaluating the physical consistency of generated videos, combining relative and absolute approaches to assess fidelity. Although tools like WorldGym or WorldEval enable robotic simulation via video generation, physical fidelity gaps often prevent these environments from accurately reproducing real-world task success rates of VLA models. Unlike existing evaluation methods, which require costly human voting (Elo) or unavailable ground-truth references (FVD), our approach utilizes DROID-SLAM and SEA-RAFT to quantify physical inconsistencies, motivated by WorldScore. Videos filtered using our relative consistency assessment show an improvement in task success rates of over 8%, effectively narrowing the simulation-to-reality gap. Furthermore, our absolute assessment enables spatio-temporal localization, providing visualization of when and where physical artifacts occur.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-23 13:03:21"
+}

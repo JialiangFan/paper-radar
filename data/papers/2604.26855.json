@@ -1,0 +1,13 @@
+{
+ "id": "2604.26855",
+ "title": "Cognitive Atrophy and Systemic Collapse in AI-Dependent Software Engineering",
+ "authors": "Frank Ginac",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26855v1",
+ "abstract": "The integration of Large Language Models (LLMs) into the software development lifecycle (SDLC) masks a critical socio-technical failure: Cognitive-Systemic Collapse. This paper introduces \"Epistemological Debt,\" the hidden carrying cost incurred when engineers substitute logical derivation with passive AI verification. This debt erodes the mental models essential for root-cause analysis, widening the gap between system complexity and human comprehension. Furthermore, recursive training on synthetic code threatens to homogenize the global software reservoir, diminishing the variance required for robust engineering. Using the 2026 Amazon outages as a case study, this research illustrates how \"mechanized convergence\" leads to systemic fragility. To preserve long-term resilience, engineering leaders must move beyond prompt-based development to implement rigorous human-in-the-loop pedagogical standards. This framework balances AI-driven productivity with the epistemic sovereignty necessary to manage increasingly opaque software ecosystems.",
+ "summary": "- **核心创新点**：提出“知识论债务”（Epistemological Debt）与“认知-系统性崩溃”概念，揭示AI辅助开发中的隐性认知成本与系统脆弱性，以及递归训练合成代码所造成的多样性下降。\n\n- **主要方法**：基于理论框架分析与案例研究相结合，运用 Epistemological Debt 视角评估AI在软件开发生命周期中的影响，讨论“机械化趋同”的风险，并以2026年亚马逊停摆事件为实证背景，提出以人为环路的教育与治理标准来实现平衡。\n\n- **结论/性能**：证实仅依赖AI自动化验证会带来认知系统性崩溃的风险，强调需要引入人机协同的培训与治理框架，以提升长期韧性与 epistemic sovereignty，推动超越单纯提示工程的开发模式。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-30 13:04:55"
+}

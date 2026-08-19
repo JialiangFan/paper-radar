@@ -1,0 +1,13 @@
+{
+ "id": "2603.16827",
+ "title": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+ "authors": "Maksim Eren, Eric Michalak, Brian Cook, Johnny Seales",
+ "date": "2026-03-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.16827v1",
+ "abstract": "Culture shapes reasoning, values, prioritization, and strategic decision-making, yet large language models (LLMs) often exhibit cultural biases that misalign with target populations. As LLMs are increasingly used for strategic decision-making, policy support, and document engineering tasks such as summarization, categorization, and compliance-oriented auditing, improving cultural alignment is important for ensuring that downstream analyses and recommendations reflect target-population value profiles rather than default model priors. Previous work introduced a survey-grounded cultural alignment framework and showed that culture-specific prompting can reduce misalignment, but it primarily evaluated proprietary models and relied on manual prompt engineering. In this paper, we validate and extend that framework by reproducing its social sciences survey based projection and distance metrics on open-weight LLMs, testing whether the same cultural skew and benefits of culture conditioning persist outside closed LLM systems. Building on this foundation, we introduce use of prompt programming with DSPy for this problem-treating prompts as modular, optimizable programs-to systematically tune cultural conditioning by optimizing against cultural-distance objectives. In our experiments, we show that prompt optimization often improves upon cultural prompt engineering, suggesting prompt compilation with DSPy can provide a more stable and transferable route to culturally aligned LLM responses.",
+ "summary": "- 核心创新点：提出基于 DSPy 的提示编程框架，将文化条件化视为可模块化、可优化的程序，并在开源权重的大语言模型上验证其对文化对齐的可迁移性与优越性。\n\n- 主要方法：在开源权重的 LLM 上复现实验中的社会科学调查型投影与文化距离度量，引入提示编程，将问题处理的提示视为可模块化的程序进行优化，并以文化距离为目标进行优化，与传统的文化提示工程进行对比。\n\n- 结论/性能：实验表明提示优化往往优于直接的文化提示工程，使用 DSPy 进行提示编译可提供更稳定、可转移的文化对齐效果。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-18 13:01:26"
+}

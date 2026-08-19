@@ -1,0 +1,13 @@
+{
+ "id": "2603.25741",
+ "title": "Vega: Learning to Drive with Natural Language Instructions",
+ "authors": "Sicheng Zuo, Yuxuan Li, Wenzhao Zheng, Zheng Zhu, Jie Zhou, Jiwen Lu",
+ "date": "2026-03-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.25741v1",
+ "abstract": "Vision-language-action models have reshaped autonomous driving to incorporate languages into the decision-making process. However, most existing pipelines only utilize the language modality for scene descriptions or reasoning and lack the flexibility to follow diverse user instructions for personalized driving. To address this, we first construct a large-scale driving dataset (InstructScene) containing around 100,000 scenes annotated with diverse driving instructions with the corresponding trajectories. We then propose a unified Vision-Language-World-Action model, Vega, for instruction-based generation and planning. We employ the autoregressive paradigm to process visual inputs (vision) and language instructions (language) and the diffusion paradigm to generate future predictions (world modeling) and trajectories (action). We perform joint attention to enable interactions between the modalities and use individual projection layers for different modalities for more capabilities. Extensive experiments demonstrate that our method not only achieves superior planning performance but also exhibits strong instruction-following abilities, paving the way for more intelligent and personalized driving systems.",
+ "summary": "- 核心创新点：提出一个统一的 Vision-Language-World-Action（Vega）模型，能够基于自然语言指令实现指令驱动的生成与规划，克服以往只用于描述或推理而缺乏指令跟随的局限。\n\n- 主要方法：构建包含约10万条场景及相应轨迹的 InstructScene 数据集；在 Vega 中同时采用自回归（处理视觉输入与语言指令）和扩散（生成未来预测/世界建模与轨迹）两大范式，通过跨模态联合注意力和为各模态设定的独立投影层实现多模态协同。\n\n- 结论/性能：在大量实验中实现了更优的规划性能并具备强指令跟随能力，推动更智能、个性化的驾驶系统的发展。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-28 13:02:00"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.07222",
+ "title": "Pay Less Attention to Function Words for Free Robustness of Vision-Language Models",
+ "authors": "Qiwei Tian, Chenhao Lin, Zhengyu Zhao, Chao Shen",
+ "date": "2025-12-08",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.07222v1",
+ "abstract": "To address the trade-off between robustness and performance for robust VLM, we observe that function words could incur vulnerability of VLMs against cross-modal adversarial attacks, and propose Function-word De-Attention (FDA) accordingly to mitigate the impact of function words. Similar to differential amplifiers, our FDA calculates the original and the function-word cross-attention within attention heads, and differentially subtracts the latter from the former for more aligned and robust VLMs. Comprehensive experiments include 2 SOTA baselines under 6 different attacks on 2 downstream tasks, 3 datasets, and 3 models. Overall, our FDA yields an average 18/13/53% ASR drop with only 0.2/0.3/0.6% performance drops on the 3 tested models on retrieval, and a 90% ASR drop with a 0.3% performance gain on visual grounding. We demonstrate the scalability, generalization, and zero-shot performance of FDA experimentally, as well as in-depth ablation studies and analysis. Code will be made publicly at https://github.com/michaeltian108/FDA.",
+ "summary": "- 核心创新点：提出 Function-word De-Attention（FDA），通过对跨模态注意力中原始注意力与功能词相关注意力进行差分去偏，使视觉-语言模型对跨模态对抗更鲁棒且对齐性更好。\n\n- 主要方法：在 Vision-Language Transformer 的注意力头内，分别计算原始跨模态注意力和功能词跨模态注意力并进行差分（去偏），形成可插拔的 FDA 模块，提升对功能词导致的脆弱性抵抗力；在两项任务、六种攻击、三数据集、三种模型上进行广泛评估。\n\n- 结论/性能：在检索任务上，平均降低攻击成功率（ASR）约18%、13%、53%，且三模型性能只降0.2%、0.3%、0.6%；在视觉定位任务上，ASR下降约90%，且性能提升约0.3%。并展示了FDA的可扩展性、泛化性和零-shot性能，附带消融研究和公开代码。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-09 14:02:45"
+}

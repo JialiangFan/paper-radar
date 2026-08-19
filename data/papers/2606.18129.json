@@ -1,0 +1,13 @@
+{
+ "id": "2606.18129",
+ "title": "Towards Understanding and Measuring COGNITIVE ATROPHY in LLM Behaviour",
+ "authors": "Abeer Badawi, Moyosoreoluwa Olatosi, Negin Baghbanzadeh, Laleh Seyyed-Kalantari, Frank Rudzicz, R. Shayna Rosenbaum, Sara Pishdadian, Elham Dolatabadi",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18129v1",
+ "abstract": "Recent incidents involving LLMs used for mental-health support reveal a critical evaluation gap: surface-level safety scores do not capture how models behave across realistic, emotionally sensitive interactions over time. Existing benchmarks measure knowledge, safety, or static response quality, but miss whether LLM interactions help users keep reflecting, coping, and making decisions themselves. We formalize this missing dimension as COGNITIVE ATROPHY, a process-level behavioural measure in AI-mediated mental-health support distinct from safety and helpfulness. To measure it, we introduce COGNITIVE ATROPHY BENCH, a clinically grounded benchmark built from 1,576 fully human-generated counseling conversations, 15,680 turns, and 42,230 responses from five LLMs. Three clinical and neuropsychology experts developed a 20-attribute schema spanning user context, response behaviour, and global risk flags; six trained clinical reviewers applied it with span-grounded evidence, producing 5,324 reviewer judgments. We further introduce the User-Input Risk Index (UIRI), the Cognitive Atrophy Risk Index (ARI), and trajectory summaries. Across five LLMs, models show a consistent moderate-to-high level of atrophy-aligned behaviour across single and multi-turn settings. While models generally respond to overt safety cues, they adapt less reliably when users seek solutions or decisions. The dominant recurring patterns are directive advice, problem-solving, recommendation responses, topic shifts, and forms of validation that may reinforce dependence rather than reflection. Our work makes COGNITIVE ATROPHY measurable and provides a foundation for auditing model behaviour in sensitive LLM conversations.",
+ "summary": "**核心创新点**：首次将\"认知萎缩\"（Cognitive Atrophy）形式化为 AI 心理健康支持中一个独立于\"安全性\"和\"有用性\"的过程性行为指标——衡量 LLM 的交互是否让用户持续保持自我反思、自我应对与自主决策。\n\n**主要方法**：构建了临床基础的 **Cognitive Atrophy Bench** 基准——基于 1,576 段全人工生成的咨询对话（15,680 轮、来自 5 个 LLM 的 42,230 条回复）；由 3 名临床/神经心理学专家设计 20 属性评估框架（涵盖用户情境、回复行为、全局风险标记），6 名受训临床评审员以\"证据片段定位\"方式打出 5,324 条判断；并提出三项指标：用户输入风险指数（UIRI）、认知萎缩风险指数（ARI）和轨迹摘要。\n\n**结论/性能**：在 5 个 LLM 上，无论单轮还是多轮，模型都表现出**中到高程度**的\"认知萎缩倾向\"行为。模型对明显的安全信号反应较好，但当用户寻求解决方案或决策时适应较差。最常见的问题模式是：指令式建议、代为解决问题、直接推荐、转移话题，以及可能强化依赖而非反思的\"安慰式认可\"。该工作使\"认知萎缩\"变得可测量，为审计敏感对话中的模型行为提供了基础。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-17 13:02:41"
+}

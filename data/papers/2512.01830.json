@@ -1,0 +1,13 @@
+{
+ "id": "2512.01830",
+ "title": "OpenREAD: Reinforced Open-Ended Reasoing for End-to-End Autonomous Driving with LLM-as-Critic",
+ "authors": "Songyan Zhang, Wenhui Huang, Zhan Chen, Chua Jiahao Collister, Qihang Huang, Chen Lv",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01830v1",
+ "abstract": "Recently, two-stage fine-tuning strategies, e.g., acquiring essential driving knowledge through supervised fine-tuning (SFT) and further enhancing decision-making and planning via reinforcement fine-tuning (RFT), have shown strong potential in advancing the knowledge-driven autonomous driving (AD) paradigm. However, the learning nature of SFT still limits the generalization of reasoning, thereby constraining the full potential of driving performance. Meanwhile, current RFT approaches are primarily applied to downstream tasks, since scene understanding is an open-ended problem where corresponding rewards are difficult to quantify. To address these limitations, we propose OpenREAD, an OPEN-ended REasoning reinforced vision-language model (VLM)-based autonomous driving (AD) framework that enables end-to-end RFT across the full spectrum from high-level reasoning to low-level trajectory planning. Specifically, we begin by constructing large-scale Chain-of-Thought (CoT) annotations on open-source driving-related knowledge datasets, and employ the powerful Qwen3 large language model (LLM) as the critic in RFT to quantify reasoning quality for open-ended questions during reward modeling. Extensive experiments confirm that joint end-to-end RFT yields substantial improvements in both upstream and downstream tasks, enabling OpenREAD to achieve state-of-the-art performance on reasoning and planning benchmarks.",
+ "summary": "- 核心创新点：将开放式推理融入端到端强化学习的视觉-语言驱动自动驾驶框架，以大型语言模型（Qwen3）作为 critic 对开放式推理进行奖励建模，并实现从高层推理到低层轨迹规划的端到端 RFT。\n\n- 主要方法：构建大规模 Chain-of-Thought 注释的驱动相关知识数据集；在 RFT 中使用 Qwen3 作为 critic 量化推理质量进行奖励建模；实现端到端的强化微调，将推理与规划整合在同一框架，覆盖从高层推理到低层轨迹规划的全过程。\n\n- 结论/性能：端到端的联合 RFT 显著提升了上游（推理/知识理解）与下游（决策/轨迹规划）任务的性能，在推理和规划基准上达到当前的 state-of-the-art。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:02:23"
+}

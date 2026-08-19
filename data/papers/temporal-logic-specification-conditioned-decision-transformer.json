@@ -1,0 +1,27 @@
+{
+ "id": "temporal-logic-specification-conditioned-decision-transformer",
+ "title": "Temporal Logic Specification-Conditioned Decision Transformer",
+ "authors": "Multiple",
+ "date": null,
+ "year": 2024,
+ "url": "",
+ "abstract": "",
+ "summary": "如何在 offline RL 中指定和满足复杂的时序安全约束（如 \"在 t1 之前到达 A，且全程避开区域 B\"）？",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/STL-Decision-Transformer.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

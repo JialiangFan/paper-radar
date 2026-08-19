@@ -1,0 +1,13 @@
+{
+ "id": "2608.03076",
+ "title": "AI Agent Economics: Can Autonomous Economic Behavior Emerge among AI Agents under Minimal External Conditions?",
+ "authors": "Lingyun Zhang, Shang Shang",
+ "date": "2026-08-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.03076v1",
+ "abstract": "Multi-agent studies commonly place AI agents in predefined games, markets, or roles, making it difficult to distinguish endogenous economic organization from behavior inherited from the scenario. We ask whether economic relations emerge when agents receive executable mechanisms for work, transfer, elections, and allocation but no prescribed social or economic strategy. We define AI Agent Economics as systems of production, allocation, consumption, exchange, and institutions that alter agents' future feasible actions. We develop a two-stage framework comprising a no-production boundary test and 24 independent six-agent worlds across GPT and DeepSeek. Without productive tasks, agents communicate and govern resource provision but show no substantive inter-agent transfer activity. With verified work and scarce task access, transfers, loans, access promises, vote-for-access exchanges, and allocation strategies emerge. Holding the election interface fixed, executable allocation authority increases differentiation while reducing failed allocation and prolonged exclusion. When energy becomes symbolic, continuation support disappears, yet competition over task access persists. These findings show that organization follows executable rights and resource consequences rather than role labels or prompt language, and motivate governance audits of the mechanisms that actually constrain agents' future actions.",
+ "summary": "## 论文速览\n\n**1. 核心创新点**\n不预设博弈、市场或角色，只给智能体可执行的底层机制（劳动、转移、选举、分配），检验经济关系能否在最小外部条件下**内生涌现**，从而把\"自发组织\"与\"从场景中继承的行为\"区分开。\n\n**2. 主要方法**\n- 提出 **AI Agent Economics** 的定义：由生产、分配、消费、交换与制度构成，且能够改变智能体**未来可行动作集**的系统。\n- 采用**两阶段框架**：先做\"无生产\"的边界测试，再运行 **24 个相互独立的六智能体世界**，模型覆盖 GPT 与 DeepSeek 两个系列。\n- 通过变量操控做对照：是否存在可验证的劳动与稀缺的任务访问权；固定选举界面而只改变\"分配权是否可执行\"；把能量从有实际后果改为纯符号。\n\n**3. 结论/性能**\n- **无生产任务**时，智能体仅停留在沟通和资源供给的治理层面，几乎没有实质性的跨智能体转移。\n- **引入可验证劳动 + 稀缺任务访问**后，自发出现转移、借贷、访问权承诺、\"投票换访问\"式交换以及分配策略。\n- 在选举界面不变的前提下，赋予**可执行的分配权**会加剧角色分化，同时降低分配失败率与长期被排斥的情况。\n- 能量变为**符号性**后，持续性支持行为消失，但对任务访问权的竞争依然存在。\n- 总结论：组织形态取决于**可执行的权利与真实的资源后果**，而非角色标签或提示词措辞；因此治理审计应针对真正约束智能体未来行动的机制。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-05 13:00:33"
+}

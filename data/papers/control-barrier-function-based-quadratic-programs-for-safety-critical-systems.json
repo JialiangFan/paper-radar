@@ -1,0 +1,32 @@
+{
+ "id": "control-barrier-function-based-quadratic-programs-for-safety-critical-systems",
+ "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
+ "authors": "Aaron D. Ames, Xu, Grizzle, Tabuada",
+ "date": null,
+ "year": 2017,
+ "url": "https://ieeexplore.ieee.org/document/7782377",
+ "abstract": "",
+ "summary": "This is the core CBF-QP formulation for enforcing forward invariance of safe sets while staying close to a nominal controller.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "IEEE TAC",
+ "category": "CBF Reachability",
+ "tags": [
+  "action-shielding",
+  "control-barrier-functions",
+  "controller-safety",
+  "robotics",
+  "safe-vla",
+  "safety-filter",
+  "state-space-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2017_Ames_CBF_QP.md",
+ "pdf_path": "PDFs/CBF_Reachability/2017_Ames_CBF_QP.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

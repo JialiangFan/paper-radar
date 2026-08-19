@@ -1,0 +1,13 @@
+{
+ "id": "2603.24221",
+ "title": "Environment-Grounded Multi-Agent Workflow for Autonomous Penetration Testing",
+ "authors": "Michael Somma, Markus Großpointner, Paul Zabalegui, Eppu Heilimo, Branka Stojanović",
+ "date": "2026-03-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.24221v1",
+ "abstract": "The increasing complexity and interconnectivity of digital infrastructures make scalable and reliable security assessment methods essential. Robotic systems represent a particularly important class of operational technology, as modern robots are highly networked cyber-physical systems deployed in domains such as industrial automation, logistics, and autonomous services. This paper explores the use of large language models for automated penetration testing in robotic environments. We propose an environment-grounded multi-agent architecture tailored to Robotics-based systems. The approach dynamically constructs a shared graph-based memory during execution that captures the observable system state, including network topology, communication channels, vulnerabilities, and attempted exploits. This enables structured automation while maintaining traceability and effective context management throughout the testing process. Evaluated across multiple iterations within a specialized robotics Capture-the-Flag scenario (ROS/ROS2), the system demonstrated high reliability, successfully completing the challenge in 100\\% of test runs (n=5). This performance significantly exceeds literature benchmarks while maintaining the traceability and human oversight required by frameworks like the EU AI Act.",
+ "summary": "- 核心创新点：提出一个环境地基的多智能体工作流，结合大语言模型，在机器人系统中通过动态构建共享的图形记忆实现可追溯的自动化渗透测试。\n\n- 主要方法：采用大语言模型驱动的多智能体协作框架；在执行过程中动态构建并维护一个共享的图记忆，记录可观测的系统状态（网络拓扑、通信通道、漏洞、尝试利用等）以实现结构化自动化、可追溯性与上下文管理；在 ROS/ROS2 的实验场景中进行评估。\n\n- 结论/性能：在多轮迭代的机器人 Capture-the-Flag 场景中，测试全部成功（n=5，100%通过），性能显著优于现有文献基准，同时保持良好的可追溯性与人类监管，符合 EU AI Act 的要求。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-26 13:06:00"
+}

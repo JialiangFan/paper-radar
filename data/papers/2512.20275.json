@@ -1,0 +1,13 @@
+{
+ "id": "2512.20275",
+ "title": "Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks",
+ "authors": "Divya Vijay, Vignesh Ethiraj",
+ "date": "2025-12-23",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.20275v1",
+ "abstract": "As networks evolve toward 5G Standalone and 6G, operators face orchestration challenges that exceed the limits of static automation and Deep Reinforcement Learning. Although Large Language Model (LLM) agents offer a path toward intent-based networking, they introduce stochastic risks, including topology hallucinations and policy non-compliance. To mitigate this, we propose Graph-Symbolic Policy Enforcement and Control (G-SPEC), a neuro-symbolic framework that constrains probabilistic planning with deterministic verification. The architecture relies on a Governance Triad - a telecom-adapted agent (TSLAM-4B), a Network Knowledge Graph (NKG), and SHACL constraints. We evaluated G-SPEC on a simulated 450-node 5G Core, achieving zero safety violations and a 94.1% remediation success rate, significantly outperforming the 82.4% baseline. Ablation analysis indicates that NKG validation drives the majority of safety gains (68%), followed by SHACL policies (24%). Scalability tests on topologies ranging from 10K to 100K nodes demonstrate that validation latency scales as $O(k^{1.2})$ where $k$ is subgraph size. With a processing overhead of 142ms, G-SPEC is viable for SMO-layer operations.",
+ "summary": "1) 核心创新点（1 句话）\n- 提出 Graph-Symbolic Policy Enforcement and Control（G-SPEC）这一神经-符号混合框架，通过确定性验证对概率规划进行约束，构建面向5G/6G自治网络的安全代理式AI治理体系。\n\n2) 主要方法\n- 架构组成：治理三元组，包括面向电信的代理（TSLAM-4B）、网络知识图（NKG）和 SHACL 约束，用以实现对策略的可验证约束与执行。\n- 技术要素：将概率规划（神经/大语言模型等产生的计划）置于同一框架下，由 NKG 进行知识驱动的验证，并通过 SHACL 规则进行符号化策略的强制约束，实现“图-符号”的策略执行与控制。\n- 实验设置：在仿真 450 节点的5G Core 上评估，比较不同组件对安全性的贡献，进行消融分析与可扩展性测试。\n\n3) 结论/性能\n- 关键成果：实现零安全违规， remediation 成功率 94.1%，显著高于基线 82.4%。\n- 消融分析：NKG 验证贡献最大，约占安全提升的 68%，SHACL 策略贡献约 24%。\n- 可扩展性与时延：在拓扑规模从 10K 到 100K 节点的测试中，验证延迟随子图大小 k 的增长呈 O(k^1.2) 级别；单次处理开销约 142 毫秒，适合用于 SMO 层的运维/编排场景。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-24 02:47:33"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.05830",
+ "title": "OpenHEART: Opening Heterogeneous Articulated Objects with a Legged Manipulator",
+ "authors": "Seonghyeon Lim, Hyeonwoo Lee, Seunghyun Lee, I Made Aswin Nahrendra, Hyun Myung",
+ "date": "2026-03-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.05830v1",
+ "abstract": "Legged manipulators offer high mobility and versatile manipulation. However, robust interaction with heterogeneous articulated objects, such as doors, drawers, and cabinets, remains challenging because of the diverse articulation types of the objects and the complex dynamics of the legged robot. Existing reinforcement learning (RL)-based approaches often rely on high-dimensional sensory inputs, leading to sample inefficiency. In this paper, we propose a robust and sample-efficient framework for opening heterogeneous articulated objects with a legged manipulator. In particular, we propose Sampling-based Abstracted Feature Extraction (SAFE), which encodes handle and panel geometry into a compact low-dimensional representation, improving cross-domain generalization. Additionally, Articulation Information Estimator (ArtIEst) is introduced to adaptively mix proprioception with exteroception to estimate opening direction and range of motion for each object. The proposed framework was deployed to manipulate various heterogeneous articulated objects in simulation and real-world robot systems. Videos can be found on the project website: https://openheart-icra.github.io/OpenHEART/",
+ "summary": "- 核心创新点（1句概括）\n  通过 SAFE 将把手和面板几何编码为低维特征，并结合 ArtIEst 的自适应感知融合，实现在腿式操控器上对异构关节对象的鲁棒、样本高效开启。\n\n- 主要方法（用到的技术/模型）\n  - SAFE（Sampling-based Abstracted Feature Extraction）：将把手与面板几何编码为紧凑的低维表示，提升跨域泛化能力。\n  - ArtIEst（Articulation Information Estimator）：自适应混合本体感知与外部感知，估计每个对象的开启方向和运动范围。\n  - 将上述模块应用于仿真与真实机器人系统的腿式操控，进行对多种异构关节对象的操作验证。\n\n- 结论/性能（取得的效果）\n  在仿真和现实机器人系统中实现对多种异构关节对象的鲁棒开启，显示出良好的跨域泛化和样本效率提升。 对象类型包括门、抽屉、橱柜等，验证了框架的普适性和实用性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-09 13:01:00"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.21255",
+ "title": "When Agents Look the Same: Quantifying Distillation-Induced Similarity in Tool-Use Behaviors",
+ "authors": "Chenghao Yang, Yuning Zhang, Zhoufutu Wen, Tao Gong, Jiaheng Liu, Qi Chu, Nenghai Yu",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21255v1",
+ "abstract": "Model distillation is a primary driver behind the rapid progress of LLM agents, yet it often leads to behavioral homogenization. Many emerging agents share nearly identical reasoning steps and failure modes, suggesting they may be distilled echoes of a few dominant teachers. Existing metrics, however, fail to distinguish mandatory behaviors required for task success from non-mandatory patterns that reflect a model's autonomous preferences. We propose two complementary metrics to isolate non-mandatory behavioral patterns: \\textbf{Response Pattern Similarity (RPS)} for verbal alignment and \\textbf{Action Graph Similarity (AGS)} for tool-use habits modeled as directed graphs. Evaluating 18 models from 8 providers on $τ$-Bench and $τ^2$-Bench against Claude Sonnet 4.5 (thinking), we find that within-family model pairs score 5.9 pp higher in AGS than cross-family pairs, and that Kimi-K2 (thinking) reaches 82.6\\% $S_{\\text{node}}$ and 94.7\\% $S_{\\text{dep}}$, exceeding Anthropic's own Opus 4.1. A controlled distillation experiment further confirms that AGS distinguishes teacher-specific convergence from general improvement. RPS and AGS capture distinct behavioral dimensions (Pearson $r$ = 0.491), providing complementary diagnostic signals for behavioral convergence in the agent ecosystem. Our code is available at https://github.com/Syuchin/AgentEcho.",
+ "summary": "- 核心创新点（1句）：\n  提出两项互补的非强制行为度量：回应模式相似性（RPS）用于口头表达的对齐，行为图相似性（AGS）将工具使用习惯建模为有向图，以揭示蒸馏引起的行为同质化中的非必需模式。\n\n- 主要方法：\n  - 定义并实现两项指标：RPS（口头层面的相似性/对齐）和 AGS（工具使用习惯的有向图结构相似性）。\n  - 在来自8个提供商的18个模型上，基于 τ-Bench 与 τ^2-Bench 对 Claude Sonnet 4.5（thinking）进行评测，比较同族模型对之间的 AGS 与跨族模型之间的差异。\n  - 进行受控蒸馏实验，以区分“教师特定的收敛”与“一般改进”对 AGS 的影响。\n  - 结果分析显示 RPS 与 AGS 捕获不同维度的行为特征，二者相关性较低（Pearson r = 0.491），提供互补的诊断信号。\n  - 将结果与公开代码一起提供（GitHub）。\n\n- 结论/性能：\n  - 同族模型在 AGS 方面的得分比跨族对高出约 5.9 个百分点。\n  - Kimi-K2（thinking）达到 82.6% 的 S_node 和 94.7% 的 S_dep，超越 Anthropic 的 Opus 4.1。\n  - 实验表明 AGS 能区分教师特定的收敛与一般改进，RPS 与 AGS 捕获的行为维度互补，适合作为代理生态系统中行为收敛的诊断信号。\n  - 研究提供的代码可在 GitHub 获取。",
+ "keyword": "opus",
+ "source": "auto",
+ "created_at": "2026-04-28 19:53:42"
+}

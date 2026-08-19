@@ -1,0 +1,13 @@
+{
+ "id": "2605.16637",
+ "title": "HexAGenT: Efficient Agentic LLM Serving via Workflow- and Heterogeneity-Aware Scheduling",
+ "authors": "You Peng, Youhe Jiang, Wenshuang Li, Xu Xu, Ke Zhou, Jiawei Jiang, Chen Wang, Binhang Yuan",
+ "date": "2026-05-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.16637v1",
+ "abstract": "Agentic LLM applications increasingly execute user requests as multi-step workflows involving planning, tool use, branching, refinement, and synthesis. In such settings, users experience the end-to-end latency of an entire workflow, not the latency of any single LLM call. In this paper, we study how to schedule online agentic workflows across heterogeneous prefill-decode disaggregated LLM serving clusters to efficiently meet workflow-level latency objectives. The problem is challenging because workflow dependencies are revealed incrementally at runtime, calls have heterogeneous prompts, outputs, and KV-cache requirements, and the prefill and decode stages impose different compute, memory, and transfer constraints across heterogeneous GPUs. To solve this problem, we present HexAGenT, a workflow-aware scheduler for a heterogeneous prefill-decode inference service. HexAGenT models each request as an online-revealed DAG, maintains a running estimate of the workflow's standalone completion horizon, prioritizes ready calls by projected risk of missing that horizon, and jointly selects prefill placement, decode placement, and local queue priority while accounting for KV-cache capacity and cross-stage transfer latency. Across representative agentic workloads and heterogeneous A100/H100/H200 clusters, HexAGenT reduces the SLO scale required for timely workflow completion by an average of 20.1% at 95% attainment and 33.0% at 99% attainment, with maximum reductions of 45.0% and 80.5%, respectively.",
+ "summary": "- 核心创新点：提出面向异构预填充-解码推理服务的工作流感知在线调度器 HexAGenT，通过对请求在线揭示的有向无环图（DAG）建模并动态估计工作流完成时界，联合优化预填放置、解码放置与本地队列优先级以满足工作流端到端延迟目标。\n\n- 主要方法：\n  - 将每个请求建模为在线揭示的 DAG，实时跟踪工作流依赖。\n  - 运行估计工作流的独立完成时界（standalone completion horizon）。\n  - 根据所需完成时界的风险预测对就绪调用进行优先级排序。\n  - 联合选择预填放置、解码放置和本地队列优先级的决策，且考虑 KV-cache 容量与跨阶段传输延迟。\n  - 针对异构 GPU（A100/H100/H200）集群进行调度。\n\n- 结论/性能：\n  - 在代表性的 agentic 工作负载与异构 GPU 集群（A100/H100/H200）上，HexAGenT 将为工作流端到端及时完成所需的 SLO 的规模平均降低 20.1%（95% 达成）与 33.0%（99% 达成），最大降幅分别达到 45.0% 与 80.5%。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-05-19 12:33:12"
+}

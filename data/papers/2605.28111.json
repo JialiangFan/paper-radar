@@ -1,0 +1,13 @@
+{
+ "id": "2605.28111",
+ "title": "Chreode: A Cell World Model for One-Step Temporal Dynamics and Perturbation Prediction",
+ "authors": "Mufan Qiu, Genhui Zheng, Yinuo Xu, Ruichen Zhang, Ying Ding, Qi Long, Tianlong Chen",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28111v1",
+ "abstract": "Predicting how a cell will change its transcriptional state under a developmental signal or a genetic perturbation is the computational core of in-silico biology and the AI Virtual Cell program. Existing approaches either fit static control-to-treated maps that discard time, or solve multi-step ODE / Schrödinger-bridge problems on each dataset independently. We introduce Chreode, a one-step cell world model that predicts action-conditioned cell-state transitions through a structured residual transition operator. It shifts distributional evolution from inference time to training time, enabling single-pass generation while preserving a Waddington-inspired decomposition into downhill landscape flow, rotational in-tangent dynamics, and stochastic spread. The model is pretrained with a shared scVI encoder and a DiT-based dynamics backbone on a 2.4M-cell mouse embryonic atlas spanning 7 datasets. As a fine-tuning initialization, Chreode improves per-target Sinkhorn distance on Weinreb hematopoiesis and Veres islet differentiation over matched scratch models, PI-SDE, and PRESCIENT. As a transferable gene-state embedding for GEARS, the pretrained dynamics representation reduces shared-vocabulary DE20 mean squared error on Norman Perturb-seq from 0.2121 to 0.1858, a 12.4% relative improvement, without changing the GEARS training procedure. We interpret this transfer to perturbation prediction as evidence that pretrained developmental-trajectory dynamics encode differentiation primitives transferable to CRISPR-induced state shifts, since both involve cell-state transitions in a shared latent geometry. The pretrained backbone additionally produces zero-shot clonal fate scores on Weinreb that are competitive with strong dynamic-OT baselines.",
+ "summary": "# Chreode 论文总结\n\n**1. 核心创新点**\n提出了一种**一步式细胞世界模型 Chreode**，通过结构化残差转移算子直接预测动作条件下的细胞状态转变，将分布演化从推理阶段前移至训练阶段，避免了传统多步 ODE / 薛定谔桥方法在每个数据集上独立求解的高成本。\n\n**2. 主要方法**\n- 架构：共享 scVI 编码器 + DiT（Diffusion Transformer）动力学骨干网络。\n- 受 Waddington 景观启发，将动力学分解为**下坡景观流、切向旋转动力学、随机扩散**三部分。\n- 在涵盖 7 个数据集、240 万细胞的小鼠胚胎图谱上进行预训练，再迁移到下游任务。\n\n**3. 结论/性能**\n- 在 Weinreb 造血与 Veres 胰岛分化数据上，微调后比从零训练模型、PI-SDE、PRESCIENT 取得更优的 Sinkhorn 距离。\n- 作为 GEARS 的可迁移基因状态嵌入，在 Norman Perturb-seq 上将 DE20 MSE 从 0.2121 降至 0.1858（**相对提升 12.4%**），且无需修改 GEARS 训练流程。\n- 在 Weinreb 零样本克隆命运打分上与强动态最优传输基线相当，表明发育轨迹动力学的预训练表征可迁移至 CRISPR 扰动预测任务。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-30 13:02:52"
+}

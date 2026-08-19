@@ -1,0 +1,13 @@
+{
+ "id": "2512.24564",
+ "title": "CPR: Causal Physiological Representation Learning for Robust ECG Analysis under Distribution Shifts",
+ "authors": "Shunbo Jia, Caizhi Liao",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24564v1",
+ "abstract": "Deep learning models for Electrocardiogram (ECG) diagnosis have achieved remarkable accuracy but exhibit fragility against adversarial perturbations, particularly Smooth Adversarial Perturbations (SAP) that mimic biological morphology. Existing defenses face a critical dilemma: Adversarial Training (AT) provides robustness but incurs a prohibitive computational burden, while certified methods like Randomized Smoothing (RS) introduce significant inference latency, rendering them impractical for real-time clinical monitoring. We posit that this vulnerability stems from the models' reliance on non-robust spurious correlations rather than invariant pathological features. To address this, we propose Causal Physiological Representation Learning (CPR). Unlike standard denoising approaches that operate without semantic constraints, CPR incorporates a Physiological Structural Prior within a causal disentanglement framework. By modeling ECG generation via a Structural Causal Model (SCM), CPR enforces a structural intervention that strictly separates invariant pathological morphology (P-QRS-T complex) from non-causal artifacts. Empirical results on PTB-XL demonstrate that CPR significantly outperforms standard clinical preprocessing methods. Specifically, under SAP attacks, CPR achieves an F1 score of 0.632, surpassing Median Smoothing (0.541 F1) by 9.1%. Crucially, CPR matches the certified robustness of Randomized Smoothing while maintaining single-pass inference efficiency, offering a superior trade-off between robustness, efficiency, and clinical interpretability.",
+ "summary": "- **核心创新点**：通过引入 Physiological Structural Prior 的结构性因果表示学习，将 ECG 生成过程建模为结构性因果模型（SCM），强制在病理形态（P-QRS-T）与非因性伪相关之间进行干预性分离，从而实现对鲁棒性和可解释性的共同提升。\n\n- **主要方法**：提出 CPR，在因果分解框架中嵌入生理结构先验，对 ECG 的生成过程进行结构化干预（SCM 层级），实现对 invariant 病理形态与非因果噪声的分离；相比简单去噪，注入语义约束；在 PTB-XL 数据集上进行评估，具备单-pass 推断效率。\n\n- **结论/性能**：在 Smooth Adversarial Perturbations (SAP) 攻击下，CPR 的 F1 score 达到 0.632，比 Median Smoothing 的 0.541 提升 9.1%；且达到与 Randomized Smoothing 相当的认证鲁棒性，同时保持单 Pass 推理效率，优于传统临床预处理方法，并实现鲁棒性、效率与可解释性的更优权衡。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-01 02:32:13"
+}

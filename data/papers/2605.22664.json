@@ -1,0 +1,13 @@
+{
+ "id": "2605.22664",
+ "title": "WorkstreamBench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance",
+ "authors": "Thomson Yen, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Siri Du, Haoyang Liu, Daniel Guetta, Hongseok Namkoong",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22664v1",
+ "abstract": "LLM agents are increasingly expected to carry out end-to-end workflows, producing complete artifacts from high-level user instructions. To meet enterprise needs, frontier AI labs have developed agents that can construct entire spreadsheets from scratch. This is especially relevant in finance, where core workflows such as financial modeling, forecasting, and scenario analysis are commonly conducted through spreadsheets. Yet, existing spreadsheet benchmarks do not measure this advanced capability, focusing instead on question-answering or single-formula edits. To address this gap, we provide one of the first evaluations of agents on end-to-end spreadsheet tasks, focusing on economically critical financial workflows such as modeling and scenario analysis. Since deliverables therein are routinely reviewed and revised by multiple stakeholders, judging their quality necessarily involves high-level criteria such as readability or ease of modification. To reflect the multidimensional nature of solution quality, we develop an evaluation taxonomy comprising three dimensions: Accuracy, Formula, and Format, each comprising fine-grained criteria that reflect professional standards. The Claude family leads the benchmark and produces the most professional-looking outputs in our qualitative review, but even the strongest agents frequently fall short of professional finance standards and degrade sharply as the difficulty increases beyond a few chained calculations. This suggests that current agents are not yet able to reliably produce professional-quality spreadsheets at the level of complexity real-world workflows demand.",
+ "summary": "# WorkstreamBench 论文总结\n\n**1. 核心创新点**\n首个针对 LLM 智能体**端到端金融电子表格任务**（如财务建模、情景分析）的评测基准，填补了现有基准仅关注问答或单公式编辑的空白。\n\n**2. 主要方法**\n- 聚焦金融领域中由智能体从零构建完整电子表格的真实工作流。\n- 构建了一套三维评估分类体系：**Accuracy（准确性）、Formula（公式）、Format（格式）**，每个维度下设贴合专业标准的细粒度指标，以反映多干系人审阅场景下的可读性与可修改性等高层质量要求。\n\n**3. 结论/性能**\n- **Claude 系列模型**在基准测试中领先，定性评审中产出最接近专业水准的成果。\n- 但即便是最强的智能体，在面对超出几步链式计算的复杂任务时性能急剧下降，仍**无法稳定达到专业金融标准**，说明当前智能体尚不足以胜任真实复杂度的电子表格工作流。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-22 13:02:41"
+}

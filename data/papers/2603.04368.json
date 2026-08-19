@@ -1,0 +1,13 @@
+{
+ "id": "2603.04368",
+ "title": "LLM-supported 3D Modeling Tool for Radio Radiance Field Reconstruction",
+ "authors": "Chengling Xu, Huiwen Zhang, Haijian Sun, Feng Ye",
+ "date": "2026-03-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04368v1",
+ "abstract": "Accurate channel estimation is essential for massive multiple-input multiple-output (MIMO) technologies in next-generation wireless communications. Recently, the radio radiance field (RRF) has emerged as a promising approach for wireless channel modeling, offering a comprehensive spatial representation of channels based on environmental geometry. State-of-the-art RRF reconstruction methods, such as RF-3DGS, can render channel parameters, including gain, angle of arrival, angle of departure, and delay, within milliseconds. However, creating the required 3D environment typically demands precise measurements and advanced computer vision techniques, limiting accessibility. This paper introduces a locally deployable tool that simplifies 3D environment creation for RRF reconstruction. The system combines finetuned language models, generative 3D modeling frameworks, and Blender integration to enable intuitive, chat-based scene design. Specifically, T5-mini is finetuned for parsing user commands, while all-MiniLM-L6-v2 supports semantic retrieval from a local object library. For model generation, LLaMA-Mesh provides fast mesh creation, and Shap-E delivers high-quality outputs. A custom Blender export plugin ensures compatibility with the RF-3DGS pipeline. We demonstrate the tool by constructing 3D models of the NIST lobby and the UW-Madison wireless lab, followed by corresponding RRF reconstructions. This approach significantly reduces modeling complexity, enhancing the usability of RRF for wireless research and spectrum planning.",
+ "summary": "**核心创新点**  \n提出一个本地可部署、基于对话的3D场景设计工具，结合微调语言模型与生成式3D建模框架，直接输出可用于 RF-3DGS 的环境模型，从而显著简化RRF重建的环境建模过程。\n\n**主要方法**  \n- 聊天驱动的场景设计：T5-mini 微调用于解析用户指令；all-MiniLM-L6-v2 负责本地对象库的语义检索。  \n- 生成与建模：使用 LLaMA-Mesh 快速生成网格，Shap-E 输出高质量模型。  \n- 工具链与对接：自定义 Blender 导出插件实现与 RF-3DGS 流程的无缝对接。  \n- 验证与示例：在本地构建 NIST大堂和 UW-Madison 无线实验室的3D模型，并完成相应的RRF重建。\n\n**结论/性能**  \n- 显著降低建模复杂性，提升RRF在无线研究与频谱规划中的可用性与易用性。  \n- Demonstrated 对应场景的3D模型与RRF重建，证明该工具可在实际研究中提升工作流效率和可访问性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-06 14:02:02"
+}

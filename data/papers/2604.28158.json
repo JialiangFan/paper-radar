@@ -1,0 +1,13 @@
+{
+ "id": "2604.28158",
+ "title": "Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists",
+ "authors": "Yujun Wu, Dongxu Zhang, Xinchen Li, Jinhang Xu, Yiling Duan, Yumou Liu, Jiabao Pan, Xuanhe Zhou, Jingxuan Wei, Siyuan Li, Jintao Chen, Conghui He, Cheng Tan",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.28158v1",
+ "abstract": "Existing research infrastructure is fundamentally document-centric, providing citation links between papers but lacking explicit representations of methodological evolution. In particular, it does not capture the structured relationships that explain how and why research methods emerge, adapt, and build upon one another. With the rise of AI-driven research agents as a new class of consumers of scientific knowledge, this limitation becomes increasingly consequential, as such agents cannot reliably reconstruct method evolution topologies from unstructured text. We introduce Intern-Atlas, a methodological evolution graph that automatically identifies method-level entities, infers lineage relationships among methodologies, and captures the bottlenecks that drive transitions between successive innovations. Built from 1,030,314 papers spanning AI conferences, journals, and arXiv preprints, the resulting graph comprises 9,410,201 semantically typed edges, each grounded in verbatim source evidence, forming a queryable causal network of methodological development. To operationalize this structure, we further propose a self-guided temporal tree search algorithm for constructing evolution chains that trace the progression of methods over time. We evaluate the quality of the resulting graph against expert-curated ground-truth evolution chains and observe strong alignment. In addition, we demonstrate that Intern-Atlas enables downstream applications in idea evaluation and automated idea generation. We position methodological evolution graphs as a foundational data layer for the emerging automated scientific discovery.",
+ "summary": "1) 核心创新点：提出并实现一个方法论演化图（Intern-Atlas），能够从海量论文中自动识别方法级实体、推断方法之间的血统关系，并捕捉推动创新的瓶颈，形成可查询的因果网络，作为自动化科学发现的基础数据层。\n\n2) 主要方法：\n- 构建大规模的方法论演化图：从1,030,314篇论文中识别方法级实体和血统关系，生成9,410,201条语义化边，并以逐字证据支撑。\n- 提出自引导的时序树搜索算法，用于构建方法演化链并追踪其随时间的演进。\n- 通过与专家人工整理的真实演化链进行对比评估，并演示在思路评估和自动化idea生成等下游任务中的应用。\n\n3) 结论/性能：所构建的图具有强对齐专家-ground-truth的演化链、可查询的因果网络特性，能够有效用于 idea 评估与自动化 idea 生成等下游应用，成为自动化科学发现的基础数据层。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-01 13:02:21"
+}

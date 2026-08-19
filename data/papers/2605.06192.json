@@ -1,0 +1,13 @@
+{
+ "id": "2605.06192",
+ "title": "EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields",
+ "authors": "Zhaoyang Yang, Yurun Jin, Lizhe Qi, Cong Huang, Kai Chen",
+ "date": "2026-05-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.06192v1",
+ "abstract": "Pretrained video diffusion models provide powerful spatiotemporal generative priors, making them a natural foundation for robotic world models. While recent world-action models jointly optimize future videos and actions, they predominantly treat video generation as an auxiliary representation for policy learning. Consequently, they insufficiently explore the inverse problem: leveraging action signals to guide video synthesis, thereby often failing to preserve precise robot spatial geometry and fine-grained robot-object interaction dynamics in the generated rollouts. To bridge this gap, we present EA-WM, an Event-Aware Generative World Model that effectively closes the loop between kinematic control and visual perception. Rather than injecting joint or end-effector actions as abstract, low-dimensional tokens, EA-WM projects actions and kinematic states directly into the target camera view as Structured Kinematic-to-Visual Action Fields. To fully exploit this geometrically grounded representation, we introduce event-aware bidirectional fusion blocks that modulate cross-branch attention, capturing object state changes and interaction dynamics. Evaluated on the comprehensive WorldArena benchmark, EA-WM achieves state-of-the-art performance, outperforming existing baselines by a significant margin.",
+ "summary": "**核心创新点**：将机器人的运动学动作和状态直接投影到目标相机视角下，形成\"结构化运动学到视觉动作场\"，从而用动作信号反向引导视频生成，保持精确的空间几何与机器人-物体交互动态。\n\n**主要方法**：基于预训练视频扩散模型构建事件感知生成式世界模型（EA-WM）；不再将关节/末端执行器动作作为低维抽象 token 注入，而是把动作投影为几何对齐的视觉动作场；并引入事件感知的双向融合模块（event-aware bidirectional fusion blocks），通过跨分支注意力调制来捕捉物体状态变化与交互动态。\n\n**结论/性能**：在 WorldArena 基准上取得 SOTA，显著超过现有基线方法。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-05-19 13:24:54"
+}

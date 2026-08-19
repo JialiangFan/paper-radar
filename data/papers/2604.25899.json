@@ -1,0 +1,13 @@
+{
+ "id": "2604.25899",
+ "title": "Pythia: Toward Predictability-Driven Agent-Native LLM Serving",
+ "authors": "Shan Yu, Junyi Shu, Yuanjiang Ni, Kun Qian, Xue Li, Yang Wang, Jinyuan Zhang, Ziyi Xu, Shuo Yang, Lingjun Zhu, Ennan Zhai, Qingda Lu, Jiarong Xing, Youyou Lu, Xin Jin, Xuanzhe Liu, Harry Xu",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25899v1",
+ "abstract": "As LLM applications grow more complex, developers are increasingly adopting multi-agent architectures to decompose workflows into specialized, collaborative components, introducing structure that constrains agent behavior and exposes useful semantic predictability. Unlike traditional LLM serving, which operates under highly dynamic and uncertain conditions, this structured topology enables opportunities to reduce runtime uncertainty -- yet existing systems fail to exploit it, treating agentic workloads as generic traffic and incurring significant inefficiencies. Our analysis of production traces from an agent-serving platform and an internal coding assistant reveals key bottlenecks, including low prefix cache hit rates, severe resource contention from long-context requests, and substantial queuing delays due to suboptimal scaling. To address these challenges, we propose Pythia, a multi-agent serving system that captures workflow semantics through a simple interface at the serving layer, unlocking new optimization opportunities and substantially improving throughput and job completion time over state-of-the-art baselines.",
+ "summary": "- 核心创新点：在服务层引入一个简单接口，显式捕获多代理工作流的语义，从而实现预测性驱动的 agent-native LLM 服务；相比传统的通用流量处理，显著提升多代理协作的效率与可预测性。\n\n- 主要方法：提出 Pythia 这一多代理服务系统，通过在 Serving 层的工作流语义接口解耦代理协作，结合对生产追踪的分析定位并缓解瓶颈（如低前缀缓存命中、长上下文请求的资源争用、以及扩展性导致的排队延时），并在真实生产数据与内部编码助手场景中与现有基线对比评估。\n\n- 结论/性能：在吞吐量和作业完成时间方面对比最先进基线实现显著提升，且有效缓解前述瓶颈，展现出更强的可预测性和效率。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-29 13:01:11"
+}

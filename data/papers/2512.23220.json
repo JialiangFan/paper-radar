@@ -1,0 +1,13 @@
+{
+ "id": "2512.23220",
+ "title": "A Human-Oriented Cooperative Driving Approach: Integrating Driving Intention, State, and Conflict",
+ "authors": "Qin Wang, Shanmin Pang, Jianwu Fang, Shengye Dong, Fuhao Liu, Jianru Xue, Chen Lv",
+ "date": "2025-12-29",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23220v1",
+ "abstract": "Human-vehicle cooperative driving serves as a vital bridge to fully autonomous driving by improving driving flexibility and gradually building driver trust and acceptance of autonomous technology. To establish more natural and effective human-vehicle interaction, we propose a Human-Oriented Cooperative Driving (HOCD) approach that primarily minimizes human-machine conflict by prioritizing driver intention and state. In implementation, we take both tactical and operational levels into account to ensure seamless human-vehicle cooperation. At the tactical level, we design an intention-aware trajectory planning method, using intention consistency cost as the core metric to evaluate the trajectory and align it with driver intention. At the operational level, we develop a control authority allocation strategy based on reinforcement learning, optimizing the policy through a designed reward function to achieve consistency between driver state and authority allocation. The results of simulation and human-in-the-loop experiments demonstrate that our proposed approach not only aligns with driver intention in trajectory planning but also ensures a reasonable authority allocation. Compared to other cooperative driving approaches, the proposed HOCD approach significantly enhances driving performance and mitigates human-machine conflict.The code is available at https://github.com/i-Qin/HOCD.",
+ "summary": "核心创新点：提出一种以驾驶员意图与状态为核心的人机协同驾驶框架（HOCD），通过意图一致性成本的轨迹规划和基于强化学习的授权分配来最小化人机冲突。\n\n主要方法：在战术层面采用意图感知的轨迹规划，以意图一致性成本作为核心度量来使轨迹与驾驶员意图对齐；在运营层面提出基于强化学习的控制权分配策略，通过设计奖励函数来优化策略，使驾驶员状态与授权分配保持一致，并通过仿真与人机试验进行验证。\n\n结论/性能：在仿真和人机循环实验中，该方法不仅能实现轨迹与驾驶员意图的一致性，还能实现合理的授权分配，相较于其他协同驾驶方法显著提升驾驶性能并缓解人机冲突。代码公开可获得。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-30 02:50:13"
+}

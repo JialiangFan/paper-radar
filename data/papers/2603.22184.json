@@ -1,0 +1,13 @@
+{
+ "id": "2603.22184",
+ "title": "Revisiting Quantum Code Generation: Where Should Domain Knowledge Live?",
+ "authors": "Oscar Novo, Oscar Bastidas-Jossa, Alberto Calvo, Antonio Peris, Carlos Kuchkovsky",
+ "date": "2026-03-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.22184v1",
+ "abstract": "Recent advances in large language models (LLMs) have enabled the automation of an increasing number of programming tasks, including code generation for scientific and engineering domains. In rapidly evolving software ecosystems such as quantum software development, where frameworks expose complex abstractions, a central question is how best to incorporate domain knowledge into LLM-based assistants while preserving maintainability as libraries evolve.\n  In this work, we study specialization strategies for Qiskit code generation using the Qiskit-HumanEval benchmark. We compare a parameter-specialized fine-tuned baseline introduced in prior work against a range of recent general-purpose LLMs enhanced with retrieval-augmented generation (RAG) and agent-based inference with execution feedback.\n  Our results show that modern general-purpose LLMs consistently outperform the parameter-specialized baseline. While the fine-tuned model achieves approximately 47% pass@1 on Qiskit-HumanEval, recent general-purpose models reach 60-65% under zero-shot and retrieval-augmented settings, and up to 85% for the strongest evaluated model when combined with iterative execution-feedback agents -representing an improvement of more than 20% over zero-shot general-purpose performance and more than 35% over the parameter-specialized baseline.\n  Agentic execution feedback yields the most consistent improvements, albeit at increased runtime cost, while RAG provides modest and model-dependent gains. These findings indicate that performance gains can be achieved without domain-specific fine-tuning, instead relying on inference-time augmentation, thereby enabling a more flexible and maintainable approach to LLM-assisted quantum software development.",
+ "summary": "- 核心创新点：在量子代码生成任务中，证明通过通用大模型结合检索增强与执行反馈的代理推理（无需域专门微调）即可显著超越参数化微调基线，提升代码生成性能并实现更灵活、可维护的量子软件开发。\n\n- 主要方法：\n  - 以 Qiskit-HumanEval 作为基准进行评测，比较三类方法：参数专门化微调的基线、现代通用大模型（零样本/无域微调下）以及在此基础上加入检索增强生成（RAG）和带执行反馈的代理推理。\n  - 研究设置包括零-shot、RAG 支持、以及迭代的执行反馈代理推理等，并评估对量子框架（如 Qiskit）的代码生成效果。\n\n- 结论/性能：\n  - 微调的参数化基线约达到 47% 的 pass@1；  \n  - 通用大模型在零-shot+RAG 条件下达到 60–65%；  \n  - 与迭代执行反馈代理结合时，最强模型达到约 85% 的 performance；相比于零-shot 通用模型提升 >20%，相较于参数专门化基线提升 >35%。\n  - 代理执行反馈带来最稳健的提升，但成本更高；RAG 的增益较小且依模型而异。\n  - 结论指出可以通过推理时的增强方法获得性能提升，而无需域内微调，从而实现更灵活、可维护的量子软件开发支持。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-24 13:10:04"
+}

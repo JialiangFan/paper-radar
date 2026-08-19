@@ -1,0 +1,13 @@
+{
+ "id": "2606.07127",
+ "title": "Learning Explicit Behavioral Models with Adaptive Questions and World-Model Probes",
+ "authors": "Hikaru Shindo, Yu Deng, Teng Cao, Quentin Delfosse, Christopher Tauchmann, Jannis Blüml, Gopika Sudhakaran, Kristian Kersting",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07127v1",
+ "abstract": "Interactive agents trained only against task return can achieve high scores while failing to represent the mechanisms that make their actions succeed. This makes brittle behavior difficult to diagnose and limits adaptation when environment dynamics change. Existing LLM reflection and policy-code repair can revise behavior from failed trajectories, but questions and world-understanding tests are usually used only after training. We introduce an Explicit Symbolic Behavioral Model (ESBM), a trainable behavioral model that couples task performance with evidence-grounded question answering and executable mechanism prediction. An ESBM represents behavior through typed predicates, weighted rules, bounded options and mechanism memory; the mechanism layer predicts symbolic events, object changes, rewards and terminal consequences under action interventions. After each rollout, adaptive questions and active world-model probes convert score failures, QA errors and transition-prediction errors into constraints for local ESBM edits. Candidate models are selected by a multi-criterion rule that jointly evaluates task score, answerability and active world-model consistency. Under the tested Atari-style protocols, ESBM learns high-scoring policies while producing explicit answers and executable mechanism predictions, indicating that adaptive questions can serve as both training pressure and reusable benchmarks for mechanistic policy learning in this setting.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**：提出 ESBM（显式符号行为模型），将任务回报、证据支撑的问答与可执行机制预测三者耦合训练，使智能体不仅得分高，还能显式解释自身行为机制。\n\n**2. 主要方法**：用类型化谓词、加权规则、有界选项和机制记忆来表示行为；机制层在动作干预下预测符号事件、对象变化、奖励和终止后果。每次 rollout 后，通过自适应问题和主动世界模型探针，把得分失败、QA 错误和转移预测错误转化为约束，对 ESBM 进行局部编辑；候选模型由任务分数、可回答性和世界模型一致性的多准则规则联合筛选。\n\n**3. 结论/性能**：在 Atari 风格协议下，ESBM 学到了高分策略，同时能给出显式答案和可执行的机制预测，证明自适应问题既可作为训练压力，也可作为可复用的机制式策略学习基准。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-08 13:02:29"
+}

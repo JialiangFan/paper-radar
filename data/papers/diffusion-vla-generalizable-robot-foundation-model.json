@@ -1,0 +1,27 @@
+{
+ "id": "diffusion-vla-generalizable-robot-foundation-model",
+ "title": "Diffusion-VLA: Generalizable Robot Foundation Model",
+ "authors": "Junjie Wen, Yichen Zhu, Minjie Zhu, Jinming Li, Zhiyuan Xu, Zhengping Che, Chaomin Shen, Yaxin Peng, Dong Li, Feifei Feng, Jian Tang",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-Language-Action (VLA) 模型已成为机器人策略学习的主流方向，其中autoregressive VLA（如RT-2、OpenVLA）通过next-token prediction生成动作，而diffusion-based策略（如Diffusion Policy）通过噪声去噪过程建模多模态动作分布。然而，autoregre...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "ICML 2025 (PMLR 267)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/Diffusion-VLA - Generalizable Robot Foundation Model.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

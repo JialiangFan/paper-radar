@@ -1,0 +1,13 @@
+{
+ "id": "2511.21686",
+ "title": "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework",
+ "authors": "Dong Wang, Yang Li, Ansong Ni, Ching-Feng Yeh, Youssef Emad, Xinjie Lei, Liam Robbins, Karthik Padthe, Hu Xu, Xian Li, Asli Celikyilmaz, Ramya Raghavendra, Lifei Huang, Carole-Jean Wu, Shang-Wen Li",
+ "date": "2025-11-26",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2511.21686v1",
+ "abstract": "Synthetic data has become increasingly important for training large language models, especially when real data is scarce, expensive, or privacy-sensitive. Many such generation tasks require coordinated multi-agent workflows, where specialized agents collaborate to produce data that is higher quality, more diverse, and structurally richer. However, existing frameworks for multi-agent synthesis often depend on a centralized orchestrator, creating scalability bottlenecks, or are hardcoded for specific domains, limiting flexibility. We present \\textbf{Matrix}, a decentralized framework that represents both control and data flow as serialized messages passed through distributed queues. This peer-to-peer design eliminates the central orchestrator. Each task progresses independently through lightweight agents, while compute-intensive operations, such as LLM inference or containerized environments, are handled by distributed services. Built on Ray, Matrix scales to tens of thousands of concurrent agentic workflows and provides a modular, configurable design that enables easy adaptation to a wide range of data generation workflows. We evaluate Matrix across diverse synthesis scenarios, such as multi-agent collaborative dialogue, web-based reasoning data extraction, and tool-use trajectory generation in customer service environments. In all cases, Matrix achieves $2$--$15\\times$ higher data generation throughput under identical hardware resources, without compromising output quality.",
+ "summary": "1) 核心创新点\n- 提出一个去中心化的点对点多代理合成数据框架 Matrix，通过分布式队列传递控制与数据的序列化消息，完全去除中央编排者。\n\n2) 主要方法\n- 去中心化架构：不依赖集中编排，任务通过点对点消息流独立推进。\n- 分布式队列与序列化消息传递：控制和数据在网络中以序列化消息形式传递。\n- 轻量级代理与分布式服务协作：每个任务由轻量代理执行，计算密集型操作（如LLM推理、容器化环境）由分布式服务处理。\n- 基于 Ray 实现：支持数万级并发的代理工作流，模块化、可配置，便于适配多种数据生成任务。\n- 多场景评估：涵盖多代理协作对话、网页推理数据抽取、客户服务场景的工具使用轨迹生成等。\n\n3) 结论/性能\n- 在相同硬件资源下，Matrix在上述场景实现2×到15×的吞吐提升，且输出质量未下降，且可扩展到数万级并发工作流。",
+ "keyword": "LLM reasoning",
+ "source": "auto",
+ "created_at": "2025-11-29 22:21:56"
+}

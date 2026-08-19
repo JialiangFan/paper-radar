@@ -1,0 +1,13 @@
+{
+ "id": "2602.11588",
+ "title": "A Large Language Model for Disaster Structural Reconnaissance Summarization",
+ "authors": "Yuqing Gao, Guanren Zhou, Khalid M. Mosalam",
+ "date": "2026-02-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.11588v1",
+ "abstract": "Artificial Intelligence (AI)-aided vision-based Structural Health Monitoring (SHM) has emerged as an effective approach for monitoring and assessing structural condition by analyzing image and video data. By integrating Computer Vision (CV) and Deep Learning (DL), vision-based SHM can automatically identify and localize visual patterns associated with structural damage. However, previous works typically generate only discrete outputs, such as damage class labels and damage region coordinates, requiring engineers to further reorganize and analyze these results for evaluation and decision-making. In late 2022, Large Language Models (LLMs) became popular across multiple fields, providing new insights into AI-aided vision-based SHM. In this study, a novel LLM-based Disaster Reconnaissance Summarization (LLM-DRS) framework is proposed. It introduces a standard reconnaissance plan in which the collection of vision data and corresponding metadata follows a well-designed on-site investigation process. Text-based metadata and image-based vision data are then processed and integrated into a unified format, where well-trained Deep Convolutional Neural Networks extract key attributes, including damage state, material type, and damage level. Finally, all data are fed into an LLM with carefully designed prompts, enabling the LLM-DRS to generate summary reports for individual structures or affected regions based on aggregated attributes and metadata. Results show that integrating LLMs into vision-based SHM, particularly for rapid post-disaster reconnaissance, demonstrates promising potential for improving resilience of the built environment through effective reconnaissance.",
+ "summary": "1) 核心创新点：提出一个将大型语言模型与基于视觉的结构健康监测相结合的灾情勘察摘要框架（LLM-DRS），通过标准化现场勘查流程整合文本元数据与图像数据，利用CNN提取损伤属性，再以设计好的提示驱动LLM生成面向单个结构或区域的摘要报告。\n\n2) 主要方法：\n- 建立标准化现场勘查计划，收集 vision 数据及文本元数据；\n- 将文本元数据和图像数据统一格式化成一个整合输入；\n- 使用深度卷积神经网络提取关键属性（如损伤状态、材质类型、损伤等级等）；\n- 通过精心设计的提示，将所有数据输入LLM，生成结构或区域的综合摘要报告。\n\n3) 结论/性能：\n- 证明将LLMs融入视觉基于SHM，尤其用于快速灾后勘察，具有提升勘察效率、信息汇总与决策支持能力的潜力，从而有助于提升建筑韧性。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-13 14:02:56"
+}

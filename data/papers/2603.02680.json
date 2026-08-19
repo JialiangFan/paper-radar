@@ -1,0 +1,13 @@
+{
+ "id": "2603.02680",
+ "title": "LLMs for High-Frequency Decision-Making: Normalized Action Reward-Guided Consistency Policy Optimization",
+ "authors": "Yang Zhao, Zihao Li, Zhiyu Jiang, Dandan Ma, Ganchao Liu, Wenzhe Zhao",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02680v1",
+ "abstract": "While Large Language Models (LLMs) form the cornerstone of sequential decision-making agent development, they have inherent limitations in high-frequency decision tasks. Existing research mainly focuses on discrete embodied decision scenarios with low-frequency and significant semantic differences in state space (e.g., household planning). These methods suffer from limited performance in high-frequency decision-making tasks, since high-precision numerical state information in such tasks undergoes frequent updates with minimal fluctuations, and exhibiting policy misalignment between the learned sub-tasks and composite tasks. To address these issues, this paper proposes Normalized Action Reward guided Consistency Policy Optimization (NAR-CP). 1) Our method first acquires predefined dense rewards from environmental feedback of candidate actions via reward functions, then completes reward shaping through normalization, and theoretically verifies action reward normalization does not impair optimal policy. 2) To reduce policy misalignment in composite tasks, we use LLMs to infer sub-observation candidate actions and generate joint policies, with consistency loss ensuring precise alignment between global semantic policies and sub-semantic policies. Experiments on UAV pursuit, a typical high-frequency task, show our method delivers superior performance on independent and composite tasks with excellent generalization to unseen tasks.",
+ "summary": "**核心创新点（一句话概括）**  \n提出归一化动作奖励引导的一致性策略优化（NAR-CP）框架，通过对动作奖励归一化并引入全局与子策略的一致性损失，以及利用大模型（LLMs）推断子观测候选动作来生成联合策略，从而提升高频决策任务的性能与对 unseen 任务的泛化。\n\n**主要方法（技术/模型要点）**  \n- 先从环境反馈的候选动作中获得预定义的密集奖励，通过奖励函数进行归一化并进行奖励 shaping，同时给出理论证明，奖励归一化不会削弱最优策略。  \n- 利用大模型（LLMs）推断子观测的候选动作，生成子策略并组合成联合策略；引入一致性损失，确保全局语义策略与子语义策略之间的精准对齐，缓解在复合任务中的策略错位。  \n- 以高频任务场景（无人机追逐）为评估对象，验证独立任务和组合任务中的性能提升及对未见任务的泛化能力。\n\n**结论/性能（取得的效果）**  \n在高频任务无人机追逐的实验中，NAR-CP 相较基线在独立任务和组合任务上均表现出更优的性能，并对未见任务具有良好泛化能力。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:03:21"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.19317",
+ "title": "SafeMed-R1: Adversarial Reinforcement Learning for Generalizable and Robust Medical Reasoning in Vision-Language Models",
+ "authors": "A. A. Gde Yogi Pramana, Jason Ray, Anthony Jaya, Michael Wijaya",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19317v1",
+ "abstract": "Vision--Language Models (VLMs) show significant promise for Medical Visual Question Answering (VQA), yet their deployment in clinical settings is hindered by severe vulnerability to adversarial attacks. Standard adversarial training, while effective for simpler tasks, often degrades both generalization performance and the quality of generated clinical reasoning. We introduce SafeMed-R1, a hybrid defense framework that ensures robust performance while preserving high-quality, interpretable medical reasoning. SafeMed-R1 employs a two-stage approach: at training time, we integrate Adversarial Training with Group Relative Policy Optimization (AT-GRPO) to explicitly robustify the reasoning process against worst-case perturbations; at inference time, we augment the model with Randomized Smoothing to provide certified $L_2$-norm robustness guarantees. We evaluate SafeMed-R1 on the OmniMedVQA benchmark across eight medical imaging modalities comprising over 88,000 samples. Our experiments reveal that standard fine-tuned VLMs, despite achieving 95\\% accuracy on clean inputs, collapse to approximately 25\\% under PGD attacks. In contrast, SafeMed-R1 maintains 84.45\\% accuracy under the same adversarial conditions, representing a 59 percentage point improvement in robustness. Furthermore, we demonstrate that models trained with explicit chain-of-thought reasoning exhibit superior adversarial robustness compared to instruction-only variants, suggesting a synergy between interpretability and security in medical AI systems.",
+ "summary": "1. 核心创新点：将对抗强化学习与随机平滑相结合的两阶段防御框架 SafeMed-R1，用以提升医疗视觉-语言推理的鲁棒性与可解释性，在训练阶段提高推理对 Worst-case 扰动的鲁棒性，推断阶段提供 L2 认证鲁棒性。\n\n2. 主要方法：在训练阶段使用 Adversarial Training with Group Relative Policy Optimization (AT-GRPO) 来显式鲁棒化推理过程；在推断阶段引入 Randomized Smoothing 以获得认证的 L2 鲁棒性；基于 Vision-Language Models 在 OmniMed-VQA 基准上评估，比较包含显式 chain-of-thought 推理的变体与仅指令式变体。\n\n3. 结论/性能：在同等 PGD 对抗条件下，常规模型在清洗输入下达到约95%准确率，但降至约25%（鲁棒性极差）；SafeMed-R1 能达到84.45%准确率，鲁棒性提升约59个百分点；且显式链式推理比仅指令式更具对抗鲁棒性，显示可解释性与安全性存在协同效应。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 03:50:18"
+}

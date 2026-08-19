@@ -1,0 +1,13 @@
+{
+ "id": "2512.22953",
+ "title": "APO: Alpha-Divergence Preference Optimization",
+ "authors": "Wang Zixian",
+ "date": "2025-12-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.22953v1",
+ "abstract": "Two divergence regimes dominate modern alignment practice. Supervised fine-tuning and many distillation-style objectives implicitly minimize the forward KL divergence KL(q || pi_theta), yielding stable mode-covering updates but often under-exploiting high-reward modes. In contrast, PPO-style online reinforcement learning from human feedback behaves closer to reverse KL divergence KL(pi_theta || q), enabling mode-seeking improvements but risking mode collapse. Recent anchored methods, such as ADPO, show that performing the projection in anchored coordinates can substantially improve stability, yet they typically commit to a single divergence. We introduce Alpha-Divergence Preference Optimization (APO), an anchored framework that uses Csiszar alpha-divergence to continuously interpolate between forward and reverse KL behavior within the same anchored geometry. We derive unified gradient dynamics parameterized by alpha, analyze gradient variance properties, and propose a practical reward-and-confidence-guarded alpha schedule that transitions from coverage to exploitation only when the policy is both improving and confidently calibrated. Experiments on Qwen3-1.7B with math-level3 demonstrate that APO achieves competitive performance with GRPO and GSPO baselines while maintaining training stability.",
+ "summary": "- **核心创新点**：在相同锚定几何中，提出基于 Csiszar alpha-散度的 APO 框架，通过连续插值前向 KL 与后向 KL，实现从覆盖到开发的可控优化。\n\n- **主要方法**：构建锚定坐标系下的统一梯度动态，利用 alpha-散度参数化梯度更新，分析梯度方差，并提出“基于奖励与置信度”的 alpha 调度策略，使策略在改善且置信校准时从覆盖过渡到开发；在 Qwen3-1.7B 的 math-level3 任务上与 GRPO、GSPO 基线进行对比。\n\n- **结论/性能**：在所比对的基线中达到竞争性性能，同时保持训练过程的稳定性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 02:29:54"
+}

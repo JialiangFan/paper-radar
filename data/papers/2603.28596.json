@@ -1,0 +1,13 @@
+{
+ "id": "2603.28596",
+ "title": "Moving Beyond Review: Applying Language Models to Planning and Translation in Reflection",
+ "authors": "Seyed Parsa Neshaei, Richard Lee Davis, Tanja Käser",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28596v1",
+ "abstract": "Reflective writing is known to support the development of students' metacognitive skills, yet learners often struggle to engage in deep reflection, limiting learning gains. Although large language models (LLMs) have been shown to improve writing skills, their use as conversational agents for reflective writing has produced mixed results and has largely focused on providing feedback on reflective texts, rather than support during planning and organizing. In this paper, inspired by the Cognitive Process Theory of writing (CPT), we propose the first application of LLMs to the planning and translation steps of reflective writing. We introduce Pensée, a tool to explore the effects of explicit AI support during these stages by scaffolding structured reflection planning using a conversational agent, and supporting translation by automatically extracting key concepts. We evaluate Pensée in a controlled between-subjects experiment (N=93), manipulating AI support across writing phases. Results show significantly greater reflection depth and structural quality when learners receive support during planning and translation stages of CPT, though these effects reduce in a delayed post-test. Analyses of learner behavior and perceptions further illustrate how CPT-aligned conversational support shapes reflection processes and learner experience, contributing empirical evidence for theory-driven uses of LLMs in AI-supported reflective writing.",
+ "summary": "以下是对论文标题与摘要的中文简要总结：\n\n1) 核心创新点\n- 首次将大语言模型（LLMs）应用于反思性写作的规划与翻译阶段，基于认知过程理论（CPT）提供结构化规划的对话式支持与自动要点提取的翻译支持，推进理论驱动的AI辅助反思写作。\n\n2) 主要方法\n- 开发 Pensée 工具：通过对话代理对反思写作进行规划并提供结构化提示；在翻译阶段自动提取关键概念以支持转译。\n- 研究设计：在一项对照实验（对照组/实验组，N=93，跨组设计）中，操控写作各阶段的AI支持，评估其对反思过程的影响。\n- 评估指标：测量反思深度、结构质量，以及学习者的行为与体验等。\n\n3) 结论/性能\n- 在规划与翻译阶段提供AI支持可显著提升反思深度和结构质量，但在延迟后测中效果减弱。\n- 对学习者行为与感知的分析显示，符合 CPT 的对话式支持会影响反思过程与学习体验，为将LLMs用于AI辅助的理论驱动反思写作提供了实证证据。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-31 13:03:16"
+}

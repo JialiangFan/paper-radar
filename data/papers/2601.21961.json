@@ -1,0 +1,13 @@
+{
+ "id": "2601.21961",
+ "title": "How do Visual Attributes Influence Web Agents? A Comprehensive Evaluation of User Interface Design Factors",
+ "authors": "Kuai Yu, Naicheng Yu, Han Wang, Rui Yang, Huan Zhang",
+ "date": "2026-01-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.21961v1",
+ "abstract": "Web agents have demonstrated strong performance on a wide range of web-based tasks. However, existing research on the effect of environmental variation has mostly focused on robustness to adversarial attacks, with less attention to agents' preferences in benign scenarios. Although early studies have examined how textual attributes influence agent behavior, a systematic understanding of how visual attributes shape agent decision-making remains limited. To address this, we introduce VAF, a controlled evaluation pipeline for quantifying how webpage Visual Attribute Factors influence web-agent decision-making. Specifically, VAF consists of three stages: (i) variant generation, which ensures the variants share identical semantics as the original item while only differ in visual attributes; (ii) browsing interaction, where agents navigate the page via scrolling and clicking the interested item, mirroring how human users browse online; (iii) validating through both click action and reasoning from agents, which we use the Target Click Rate and Target Mention Rate to jointly evaluate the effect of visual attributes. By quantitatively measuring the decision-making difference between the original and variant, we identify which visual attributes influence agents' behavior most. Extensive experiments, across 8 variant families (48 variants total), 5 real-world websites (including shopping, travel, and news browsing), and 4 representative web agents, show that background color contrast, item size, position, and card clarity have a strong influence on agents' actions, whereas font styling, text color, and item image clarity exhibit minor effects.",
+ "summary": "- 核心创新点：提出 VAF（Visual Attribute Factor）可控评估管线，用以系统量化网页视觉属性对网页代理决策与偏好的影响。\n\n- 主要方法：构建三阶段评估流程（变体生成、浏览交互、基于点击与推理的验证）。在变体生成阶段确保与原始语义相同但视觉属性不同；在浏览交互阶段让代理通过滚动和点击目标项进行浏览；在验证阶段综合点击行为与代理推理，使用 Target Click Rate 与 Target Mention Rate 共同评估视觉属性对决策的影响。实验覆盖8种变体族/48个变体、5个真实网站、4个代理。\n\n- 结论/性能：实验表明背景色对比、项体尺寸、位置和卡片清晰度对代理行为有较强影响；字体风格、文本颜色和项图片清晰度影响较小，能够明确识别出对决策影响最大的视觉属性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-01-30 14:01:34"
+}

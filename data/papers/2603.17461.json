@@ -1,0 +1,13 @@
+{
+ "id": "2603.17461",
+ "title": "AR-CoPO: Align Autoregressive Video Generation with Contrastive Policy Optimization",
+ "authors": "Dailan He, Guanlin Feng, Xingtong Ge, Yi Zhang, Bingqi Ma, Guanglu Song, Yu Liu, Hongsheng Li",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17461v1",
+ "abstract": "Streaming autoregressive (AR) video generators combined with few-step distillation achieve low-latency, high-quality synthesis, yet remain difficult to align via reinforcement learning from human feedback (RLHF). Existing SDE-based GRPO methods face challenges in this setting: few-step ODEs and consistency model samplers deviate from standard flow-matching ODEs, and their short, low-stochasticity trajectories are highly sensitive to initialization noise, rendering intermediate SDE exploration ineffective. We propose AR-CoPO (AutoRegressive Contrastive Policy Optimization), a framework that adapts the Neighbor GRPO contrastive perspective to streaming AR generation. AR-CoPO introduces chunk-level alignment via a forking mechanism that constructs neighborhood candidates at a randomly selected chunk, assigns sequence-level rewards, and performs localized GRPO updates. We further propose a semi-on-policy training strategy that complements on-policy exploration with exploitation over a replay buffer of reference rollouts, improving generation quality across domains. Experiments on Self-Forcing demonstrate that AR-CoPO improves both out-of-domain generalization and in-domain human preference alignment over the baseline, providing evidence of genuine alignment rather than reward hacking.",
+ "summary": "**核心创新点**：将邻域GRPO的对比策略优化思想应用于流式自回归视频生成，通过分块分叉构建邻域候选、分配序列级奖励并进行局部GRPO更新，同时结合半on-policy训练实现跨域的真实对齐。\n\n**主要方法**：\n- 设计 AR-CoPO 框架，将对比策略优化引入到流式自回归视频生成任务中。\n- 引入分块级对齐的分叉机制：在随机选取的分块处构造邻域候选，分配序列级奖励，执行局部的 GRPO 更新。\n- 提出半 on-policy 训练策略：在策略探索基础上，结合回放缓冲中的参考滚动进行经验利用，提升跨域生成质量。\n\n**结论/性能**：\n- 在 Self-Forcing 实验中，AR-CoPO 相对基线在域外泛化和域内的人类偏好对齐方面均有提升，提供了真实对齐的证据，而非奖励黑箱现象。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-03-19 13:03:57"
+}

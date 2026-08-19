@@ -1,0 +1,27 @@
+{
+ "id": "probabilistic-shielding-for-safe-reinforcement-learning",
+ "title": "Probabilistic Shielding for Safe Reinforcement Learning",
+ "authors": "Court, le, Belardinelli, Goodall",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "如何在 RL 训练和部署中提供严格的概率安全保证？",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Prob-Shielding.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

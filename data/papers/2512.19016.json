@@ -1,0 +1,13 @@
+{
+ "id": "2512.19016",
+ "title": "DREAM: Dynamic Red-teaming across Environments for AI Models",
+ "authors": "Liming Lu, Xiang Gu, Junyu Huang, Jiawei Du, Yunhuai Liu, Yongbin Zhou, Shuchao Pang",
+ "date": "2025-12-22",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.19016v1",
+ "abstract": "Large Language Models (LLMs) are increasingly used in agentic systems, where their interactions with diverse tools and environments create complex, multi-stage safety challenges. However, existing benchmarks mostly rely on static, single-turn assessments that miss vulnerabilities from adaptive, long-chain attacks. To fill this gap, we introduce DREAM, a framework for systematic evaluation of LLM agents against dynamic, multi-stage attacks. At its core, DREAM uses a Cross-Environment Adversarial Knowledge Graph (CE-AKG) to maintain stateful, cross-domain understanding of vulnerabilities. This graph guides a Contextualized Guided Policy Search (C-GPS) algorithm that dynamically constructs attack chains from a knowledge base of 1,986 atomic actions across 349 distinct digital environments. Our evaluation of 12 leading LLM agents reveals a critical vulnerability: these attack chains succeed in over 70% of cases for most models, showing the power of stateful, cross-environment exploits. Through analysis of these failures, we identify two key weaknesses in current agents: contextual fragility, where safety behaviors fail to transfer across environments, and an inability to track long-term malicious intent. Our findings also show that traditional safety measures, such as initial defense prompts, are largely ineffective against attacks that build context over multiple interactions. To advance agent safety research, we release DREAM as a tool for evaluating vulnerabilities and developing more robust defenses.",
+ "summary": "1) 核心创新点：提出一个面向 AI 模型的跨环境动态红队框架 DREAM，结合跨环境对抗性知识图 CE-AKG 与上下文化引导策略搜索（C-GPS），能在多个环境中动态构建并执行长期攻击链以系统评估脆弱性。\n\n2) 主要方法：\n- 构建跨环境对抗性知识图 CE-AKG，保持跨域的状态化漏洞信息。\n- 设计 Contextualized Guided Policy Search（C-GPS）算法，利用包含 1,986 个原子动作、覆盖 349 个数字环境的知识库，动态生成攻击链。\n- 对 12 个领先的 LLM 代理进行评估，分析攻击效果及失败原因。\n\n3) 结论/性能：\n- 在大多数模型中，攻击链的成功率超过 70%，显示跨环境、状态化利用的威力。\n- 发现两大弱点：上下文脆弱性（跨环境转移安全行为困难）与难以跟踪长期恶意意图。\n- 传统安全措施如初始防御提示对多轮积累上下文的攻击基本无效。\n- DREAM 作为评估漏洞和开发更鲁棒防御的工具获得应用与推广。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-23 03:55:45"
+}

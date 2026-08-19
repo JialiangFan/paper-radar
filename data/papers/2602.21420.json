@@ -1,0 +1,13 @@
+{
+ "id": "2602.21420",
+ "title": "Overconfident Errors Need Stronger Correction: Asymmetric Confidence Penalties for Reinforcement Learning",
+ "authors": "Yuanda Xu, Hejian Sang, Zhengze Zhou, Ran He, Zhipeng Wang",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21420v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become the leading paradigm for enhancing reasoning in Large Language Models (LLMs). However, standard RLVR algorithms suffer from a well-documented pathology: while they improve Pass@1 accuracy through sharpened sampling, they simultaneously narrow the model's reasoning boundary and reduce generation diversity. We identify a root cause that existing methods overlook: the uniform penalization of errors. Current approaches -- whether data-filtering methods that select prompts by difficulty, or advantage normalization schemes -- treat all incorrect rollouts within a group identically. We show that this uniformity allows overconfident errors (incorrect reasoning paths that the RL process has spuriously reinforced) to persist and monopolize probability mass, ultimately suppressing valid exploratory trajectories. To address this, we propose the Asymmetric Confidence-aware Error Penalty (ACE). ACE introduces a per-rollout confidence shift metric, c_i = log(pi_theta(y_i|x) / pi_ref(y_i|x)), to dynamically modulate negative advantages. Theoretically, we demonstrate that ACE's gradient can be decomposed into the gradient of a selective regularizer restricted to overconfident errors, plus a well-characterized residual that partially moderates the regularizer's strength. We conduct extensive experiments fine-tuning Qwen2.5-Math-7B, Qwen3-8B-Base, and Llama-3.1-8B-Instruct on the DAPO-Math-17K dataset using GRPO and DAPO within the VERL framework. Evaluated on MATH-500 and AIME 2025, ACE composes seamlessly with existing methods and consistently improves the full Pass@k spectrum across all three model families and benchmarks.",
+ "summary": "- 核心创新点：提出 Asymmetric Confidence-aware Error Penalty（ACE），对每个回合样本依据置信度实施不对称的错误惩罚，专门抑制过度自信的错误以纠正统一惩罚带来的探索性不足。\n\n- 主要方法：在 VERL 框架下引入 ACE，计算 c_i = log(pi_theta(y_i|x) / pi_ref(y_i|x)) 动态调节负优势；理论上将梯度分解为对过信错误的选择性正则项的梯度与一个残差项；与现有方法 GRPO、DAPO 兼容地对 Qwen2.5-Math-7B、Qwen3-8B-Base、Llama-3.1-8B-Instruct 进行微调，数据使用 DAPO-Math-17K，评测在 MATH-500、AIME 2025。\n\n- 结论/性能：ACE 能与现有方法无缝组合，在三类模型家族和基准上持续提升全量 Pass@k 表现，并在 MATH-500 和 AIME 2025 上取得显著改进，提升对过度自信错误的校正效果同时保持探索性与多样性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-26 14:03:45"
+}

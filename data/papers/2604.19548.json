@@ -1,0 +1,13 @@
+{
+ "id": "2604.19548",
+ "title": "Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment",
+ "authors": "Bobo Li, Rui Wu, Zibo Ji, Meishan Zhang, Hao Fei, Min Zhang, Mong-Li Lee, Wynne Hsu",
+ "date": "2026-04-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.19548v1",
+ "abstract": "Large Language Model agents have rapidly evolved from static text generators into dynamic systems capable of executing complex autonomous workflows. To enhance reliability, multi-agent frameworks assigning specialized roles are increasingly adopted to enable self-reflection and mutual auditing. While such role-playing effectively leverages domain expert knowledge, we find it simultaneously induces a human-like cognitive bias known as Actor-Observer Asymmetry (AOA). Specifically, an agent acting as an actor (during self-reflection) tends to attribute failures to external factors, whereas an observer (during mutual auditing) attributes the same errors to internal faults. We quantify this using our new Ambiguous Failure Benchmark, which reveals that simply swapping perspectives triggers the AOA effect in over 20% of cases for most models. To tame this bias, we introduce ReTAS (Reasoning via Thesis-Antithesis-Synthesis), a model trained through dialectical alignment to enforce perspective-invariant reasoning. By integrating dialectical chain-of-thought with Group Relative Policy Optimization, ReTAS guides agents to synthesize conflicting viewpoints into an objective consensus. Experiments demonstrate that ReTAS effectively mitigates attribution inconsistency and significantly improves fault resolution rates in ambiguous scenarios.",
+ "summary": "- 核心创新点：提出 ReTAS 框架，通过辩证对齐消除多智能体系统中的演员-观察者偏差（Actor-Observer Asymmetry），实现跨视角的一致推理。\n\n- 主要方法：引入 Ambiguous Failure Benchmark 量化 AOA；在 ReTAS 中综合 Thesis–Antithesis–Synthesis 的辩证链路思考和 Group Relative Policy Optimization，促使代理将对立观点综合成客观共识。\n\n- 结论/性能：实验表明 ReTAS 能有效缓解归因不一致，并在模糊/含糊情境下显著提升故障解决率。补充：在 Ambiguous Failure Benchmark 上，仅通过切换 actor 与 observer 的视角就能触发 AOA，超过 20% 的 case 中出现此偏差。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-22 13:03:49"
+}

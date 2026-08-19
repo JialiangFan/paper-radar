@@ -1,0 +1,13 @@
+{
+ "id": "2512.01945",
+ "title": "Agentic Policy Optimization via Instruction-Policy Co-Evolution",
+ "authors": "Han Zhou, Xingchen Wan, Ivan Vulić, Anna Korhonen",
+ "date": "2025-12-01",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.01945v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has advanced the reasoning capability of large language models (LLMs), enabling autonomous agents that can conduct effective multi-turn and tool-integrated reasoning. While instructions serve as the primary protocol for defining agents, RLVR typically relies on static and manually designed instructions. However, those instructions may be suboptimal for the base model, and the optimal instruction may change as the agent's policy improves and explores the interaction with the environment. To bridge the gap, we introduce INSPO, a novel Instruction-Policy co-evolution framework that integrates instruction optimization as a dynamic component of the reinforcement learning (RL) loop. INSPO maintains a dynamic population of instruction candidates that are sampled with questions, where reward signals in RL loops are automatically attributed to each instruction, and low performers are periodically pruned. New instructions are generated and verified through an on-policy reflection mechanism, where an LLM-based optimizer analyzes past experience from a replay buffer and evolves more effective strategies given the current policy. We conduct extensive experiments on multi-turn retrieval and reasoning tasks, demonstrating that INSPO substantially outperforms strong baselines relying on static instructions. INSPO discovers innovative instructions that guide the agent toward more strategic reasoning paths, achieving substantial performance gains with only a marginal increase in computational overhead.",
+ "summary": "1. 核心创新点：将指令优化作为动态共进化的 RL 过程的一部分，通过维护指令群体、对指令进行奖励归因并淘汰低效指令，以及利用基于大语言模型的自我反思机制持续生成更优指令，从而实现 Instruction-Policy 的协同进化。\n\n2. 主要方法：\n- INSPO 框架：Instruction-Policy 共进化的强化学习循环。\n- 动态指令群体：与问题一起抽样形成候选指令集，在 RL 循环中对每条指令分配奖励并定期淘汰表现差的指令。\n- On-policy 反思机制：基于Replay Buffer 的 LLM 端优化器分析历史经验，进化出更有效的指令策略。\n- 基础模型与任务：建立在 RLVR 的多轮检索与推理任务上进行实验。\n\n3. 结论/性能：\n- 在多轮检索与推理任务上显著优于依赖静态指令的强基线。\n- INSPO 能发现并采用创新性指令，引导代理走向更具策略性的推理路径。\n- 取得了实质性的性能提升，同时计算开销只带来边际增加。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-02 14:03:53"
+}

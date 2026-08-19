@@ -1,0 +1,27 @@
+{
+ "id": "reinforcement-fine-tuning-of-flow-matching-policies-for-vision-language-action-m",
+ "title": "Reinforcement Fine-Tuning of Flow-Matching Policies for Vision-Language-Action Models",
+ "authors": "Mingyang Lyu, Yinqian Sun, Erliang Lin, Huangrui Li, Ruolin Chen, Feifei Zhao, Yi Zeng",
+ "date": null,
+ "year": 2025,
+ "url": "",
+ "abstract": "",
+ "summary": "Vision-Language-Action (VLA) 模型（如OpenVLA、Octo、π₀）通过大规模行为克隆预训练获得了广泛的语义理解和任务执行能力，但其性能受限于离线demonstration数据的质量与覆盖范围。Reinforcement Learning (RL) 为通过在线交互突破imitation learning上限提供了有前景的路...",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv preprint (arXiv:2510.09976)",
+ "category": "Supplemental VLA Post-Training",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_VLA_Post_Training/Flow Policy Optimization for VLA Models.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

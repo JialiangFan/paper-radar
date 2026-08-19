@@ -1,0 +1,13 @@
+{
+ "id": "2512.03720",
+ "title": "Context-Aware Hierarchical Learning: A Two-Step Paradigm towards Safer LLMs",
+ "authors": "Tengyun Ma, Jiaqi Yao, Daojing He, Shihao Peng, Yu Li, Shaohui Liu, Zhuotao Tian",
+ "date": "2025-12-03",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.03720v1",
+ "abstract": "Large Language Models (LLMs) have emerged as powerful tools for diverse applications. However, their uniform token processing paradigm introduces critical vulnerabilities in instruction handling, particularly when exposed to adversarial scenarios. In this work, we identify and propose a novel class of vulnerabilities, termed Tool-Completion Attack (TCA), which exploits function-calling mechanisms to subvert model behavior. To evaluate LLM robustness against such threats, we introduce the Tool-Completion benchmark, a comprehensive security assessment framework, which reveals that even state-of-the-art models remain susceptible to TCA, with surprisingly high attack success rates. To address these vulnerabilities, we introduce Context-Aware Hierarchical Learning (CAHL), a sophisticated mechanism that dynamically balances semantic comprehension with role-specific instruction constraints. CAHL leverages the contextual correlations between different instruction segments to establish a robust, context-aware instruction hierarchy. Extensive experiments demonstrate that CAHL significantly enhances LLM robustness against both conventional attacks and the proposed TCA, exhibiting strong generalization capabilities in zero-shot evaluations while still preserving model performance on generic tasks. Our code is available at https://github.com/S2AILab/CAHL.",
+ "summary": "- 核心创新点（1句）：提出 Tool-Completion Attack（TCA）及对应的 Tool-Completion 基准，并给出 Context-Aware Hierarchical Learning（CAHL）两步式范式，通过动态构建上下文感知的指令层次来提升大型语言模型对该类攻击的鲁棒性。\n\n- 主要方法：在技术层面，提出 CAHL 框架，结合语义理解与面向角色的指令约束，利用不同指令段之间的上下文相关性，建立鲁棒的上下文感知指令层次结构；通过对抗 TCA 与常规攻击进行评估，展示 CAHL 的强泛化能力（在零-shot 下也表现良好）并在保持通用任务性能的同时提升鲁棒性。\n\n- 结论/性能：实验结果表明 CAHL 显著提升了对传统攻击和 TCA 的鲁棒性，具备较强的零-shot 泛化能力，且不牺牲对普通任务的性能；代码已公开（GitHub 链接）。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-04 14:02:19"
+}

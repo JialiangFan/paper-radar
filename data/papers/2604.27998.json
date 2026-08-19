@@ -1,0 +1,13 @@
+{
+ "id": "2604.27998",
+ "title": "Latent-GRPO: Group Relative Policy Optimization for Latent Reasoning",
+ "authors": "Jingcheng Deng, Zihao Wei, Liang Pang, Junhong Wu, Shicheng Xu, Zenghao Duan, Huawei Shen",
+ "date": "2026-04-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.27998v1",
+ "abstract": "Latent reasoning offers a more efficient alternative to explicit reasoning by compressing intermediate reasoning into continuous representations and substantially shortening reasoning chains. However, existing latent reasoning methods mainly focus on supervised learning, and reinforcement learning in latent space remains highly unstable. We study this problem through the lens of Group Relative Policy Optimization (GRPO), and show that directly adapting GRPO to latent reasoning is fundamentally non-trivial: latent reasoning changes both the probability density and the sampling mechanism, causing three coupled bottlenecks: absence of intrinsic latent manifolds, where unconstrained exploration pushes rollouts off the valid latent manifold; exploration-optimization misalignment, where trajectory-level rewards can induce incorrect token-level updates; and latent mixture non-closure, where jointly reinforcing multiple correct latent paths can produce an invalid averaged state. To address them, we propose \\textbf{Latent-GRPO}, which combines invalid-sample advantage masking, one-sided noise sampling, and optimal correct-path first-token selection. Across four low-difficulty benchmarks (e.g., GSM8K-Aug) and four high-difficulty benchmarks (e.g., AIME), Latent-GRPO improves over its latent initialization by 7.86 Pass@1 points on low-difficulty tasks and surpasses explicit GRPO by 4.27 points on high-difficulty tasks while using 3--4$\\times$ shorter reasoning chains. It also achieves stronger pass@$k$ performance under Gumbel sampling. These results establish Latent-GRPO as an effective approach for stable and efficient latent reasoning.",
+ "summary": "- 核心创新点：将 Group Relative Policy Optimization（GRPO）引入潜在推理，并提出专门策略解决潜在空间的分布与采样瓶颈，从而实现更稳定且更短链路的潜在推理。\n\n- 主要方法：在潜在表示上的强化学习框架中扩展 GRPO，提出 Latent-GRPO，核心技术包括无效样本优势掩码、单边噪声采样和最优正确路径的首 Token 选择，解决潜在空间缺乏内生流形、轨迹级奖励与令牌级更新错配、以及多条正确潜在路径联合导致的无效均值状态等问题。\n\n- 结论/性能：在四个低难度任务（如 GSM8K-Aug）和四个高难度任务（如 AIME）上，Latent-GRPO 相较潜在初始化提升了 7.86 个 Pass@1 点，在高难度任务上超越显式 GRPO 4.27 点，同时将推理链长度缩短约 3–4 倍，并在 Gumbel 采样下实现更强的 pass@k 性能。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-05-02 13:02:06"
+}

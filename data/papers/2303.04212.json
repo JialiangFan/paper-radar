@@ -1,0 +1,32 @@
+{
+ "id": "2303.04212",
+ "title": "ConBaT: Control Barrier Transformer for Safe Policy Learning",
+ "authors": "Yuan, et al.",
+ "date": null,
+ "year": 2023,
+ "url": "https://arxiv.org/abs/2303.04212",
+ "abstract": "",
+ "summary": "ConBaT brings CBF-inspired safety into transformer policy learning.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "CBF Reachability",
+ "tags": [
+  "control-barrier-functions",
+  "robotics",
+  "safe-policy-learning",
+  "safe-vla",
+  "state-space-safety",
+  "transformer",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2023_Yuan_ConBaT.md",
+ "pdf_path": "PDFs/CBF_Reachability/2023_Yuan_ConBaT.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

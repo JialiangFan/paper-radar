@@ -1,0 +1,13 @@
+{
+ "id": "2512.05557",
+ "title": "2K-Characters-10K-Stories: A Quality-Gated Stylized Narrative Dataset with Disentangled Control and Sequence Consistency",
+ "authors": "Xingxi Yin, Yicheng Li, Gong Yan, Chenglin Li, Jian Zhao, Cong Huang, Yue Deng, Yin Zhang",
+ "date": "2025-12-05",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.05557v1",
+ "abstract": "Sequential identity consistency under precise transient attribute control remains a long-standing challenge in controllable visual storytelling. Existing datasets lack sufficient fidelity and fail to disentangle stable identities from transient attributes, limiting structured control over pose, expression, and scene composition and thus constraining reliable sequential synthesis. To address this gap, we introduce \\textbf{2K-Characters-10K-Stories}, a multi-modal stylized narrative dataset of \\textbf{2{,}000} uniquely stylized characters appearing across \\textbf{10{,}000} illustration stories. It is the first dataset that pairs large-scale unique identities with explicit, decoupled control signals for sequential identity consistency. We introduce a \\textbf{Human-in-the-Loop pipeline (HiL)} that leverages expert-verified character templates and LLM-guided narrative planning to generate highly-aligned structured data. A \\textbf{decoupled control} scheme separates persistent identity from transient attributes -- pose and expression -- while a \\textbf{Quality-Gated loop} integrating MMLM evaluation, Auto-Prompt Tuning, and Local Image Editing enforces pixel-level consistency. Extensive experiments demonstrate that models fine-tuned on our dataset achieves performance comparable to closed-source models in generating visual narratives.",
+ "summary": "- 核心创新点：提出了2K-Characters-10K-Stories数据集，首次将大规模唯一身份与显式解耦的序列控制信号结合，并通过人机协同生成与质量门控循环，实现高保真且具有序列身份一致性的视觉叙事数据与生成流程。\n\n- 主要方法：\n  - 数据与流程：Human-in-the-Loop（HiL）流程，利用专家验证的角色模板和LLM驱动的叙事规划来生成结构化、对齐的数据。\n  - 控制解耦：引入解耦控制，将持久身份与瞬时属性（姿态、表情）分离，以实现稳定的序列身份一致性。\n  - 质量与一致性保障：建立Quality-Gated循环，结合MMLM评估、Auto-Prompt Tuning和局部图像编辑，确保像素级的一致性。\n\n- 结论/性能：在该数据集上微调的模型在生成视觉叙事任务上的表现达到接近闭源模型的水平，证明数据与方法对提升序列一致性和质量有显著作用。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-08 14:02:00"
+}

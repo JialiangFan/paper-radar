@@ -1,0 +1,13 @@
+{
+ "id": "2604.26703",
+ "title": "A self-evolving agent for explainable diagnosis of DFT-experiment band-gap mismatch",
+ "authors": "Yue Li, Bijun Tang",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26703v1",
+ "abstract": "Standard density functional theory (DFT) routinely misclassifies the electronic ground state of correlated and structurally complex compounds, predicting metallic behaviour for materials that experiments report as semiconductors. Each such mismatch encodes a specific non-ideality -- magnetic ordering, electron correlation, an alternative polymorph, or a defect -- that the calculation excluded, but extracting that signal at scale has remained a manual exercise. Here we introduce XDFT, a closed-loop agent that diagnoses the mismatch automatically: it draws candidate hypotheses from a curated catalogue, executes the corresponding first-principles tests, and updates a global Bayesian posterior over hypothesis usefulness from each verdict. On a verified benchmark of 124 materials, XDFT identifies a resolving mechanism for 70 of 90 mismatch cases (78\\%), an order of magnitude above a uniform-random baseline (19\\%) and a static LLM ordering (20\\%). The internal posterior aligns with empirical performance over the benchmark timeline, and resolved cases collapse into a tri-partite element-class taxonomy that we distil into a four-line static rule. Each diagnosed material is returned with a corrected protocol and a mechanistic attribution; failed cases are flagged as evidence-backed targets for experimental re-examination.",
+ "summary": "1) 核心创新点：提出一个自进化的闭环代理XDFT，能够自动从候选假设中执行第一性原理测试，并通过贝叶斯后验持续更新来实现对DFT-实验带隙错配的可解释诊断与纠错。\n\n2) 主要方法：构建带有候选假设的 catalogue、执行相应的第一性原理测试、基于每次结果更新全局贝叶斯后验以评估假设有用性、形成可解释的机制归因与规则；通过自我进化和三层元素-类别分类，提炼出四线静态规则，并对每个材料输出纠错协议与机制归因。\n\n3) 结论/性能：在124材料基准上，对90例错配中识别出70例的解决机制（78%），显著优于随机基线（19%）和静态LLM排序（20%），内部后验与实验性能相符，已解决的材料给出明确的纠错协议和机制归因，未解决的则作为需进一步实验复核的靶标。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-30 13:05:57"
+}

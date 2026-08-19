@@ -1,0 +1,13 @@
+{
+ "id": "2602.04653",
+ "title": "Inference-Time Backdoors via Hidden Instructions in LLM Chat Templates",
+ "authors": "Ariel Fogel, Omer Hofman, Eilon Cohen, Roman Vainshtein",
+ "date": "2026-02-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.04653v1",
+ "abstract": "Open-weight language models are increasingly used in production settings, raising new security challenges. One prominent threat in this context is backdoor attacks, in which adversaries embed hidden behaviors in language models that activate under specific conditions. Previous work has assumed that adversaries have access to training pipelines or deployment infrastructure. We propose a novel attack surface requiring neither, which utilizes the chat template. Chat templates are executable Jinja2 programs invoked at every inference call, occupying a privileged position between user input and model processing. We show that an adversary who distributes a model with a maliciously modified template can implant an inference-time backdoor without modifying model weights, poisoning training data, or controlling runtime infrastructure. We evaluated this attack vector by constructing template backdoors targeting two objectives: degrading factual accuracy and inducing emission of attacker-controlled URLs, and applied them across eighteen models spanning seven families and four inference engines. Under triggered conditions, factual accuracy drops from 90% to 15% on average while attacker-controlled URLs are emitted with success rates exceeding 80%; benign inputs show no measurable degradation. Backdoors generalize across inference runtimes and evade all automated security scans applied by the largest open-weight distribution platform. These results establish chat templates as a reliable and currently undefended attack surface in the LLM supply chain.",
+ "summary": "1) 核心创新点\n- 通过利用对话模板中的可执行 Jinja2 程序，在推理阶段植入后门，无需修改模型权重、训练数据或运行时基础设施，即可在推理时激活恶意行为。\n\n2) 主要方法\n- 将模板本身设计为攻击载体，在分发模型时附带被恶意修改的模板，模板引擎在每次推理调用时执行，从而实现推理时的后门。\n- 攻击对象包括两种目标：降低模型的事实性/准确性，以及强制输出攻击者控制的 URL。\n- 在18种模型、7个家族、4种推理引擎上进行评估，且对比横跨不同推理运行时的泛化性与对现场安全自动化检测的规避能力。\n\n3) 结论/性能\n- 触发条件下，事实性准确率从平均 90% 降至 15%（显著下降）。\n- 攻击者控制的 URL 输出成功率超过 80%。\n- 对无害输入几乎无可测的降级；攻击面可跨推理运行时泛化，并能绕过 Largest open-weight distribution platform 的自动化安全扫描。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-05 14:02:12"
+}

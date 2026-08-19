@@ -1,0 +1,13 @@
+{
+ "id": "2606.12217",
+ "title": "Making Foresight Actionable: Repurposing Representation Alignment in World Action Models",
+ "authors": "Lu Qiu, Yizhuo Li, Yi Chen, Yuying Ge, Yixiao Ge, Xihui Liu",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12217v1",
+ "abstract": "World Action Models (WAMs) offer a promising route for robot manipulation by using video generation models to model future scene evolution before producing control actions. However, our empirical observations reveal a phenomenon: generating plausible visual futures does not always guarantee the extraction of accurate actions. To diagnose this failure, we conduct action-head attention analysis and causal interventions. We find that the action decoder fails to focus on task-relevant interaction regions and remains sensitive to perturbations in task-irrelevant areas. This reveals a representation mismatch: hidden states optimized for visual reconstruction are not inherently organized in a form useful for low-level action control. In this paper, we propose AGRA, an Action-Grounded Representation Alignment objective that regularizes the world-action interface by aligning intermediate video diffusion features with spatially coherent semantic representations from a foundation visual encoder. We evaluate AGRA on real-world manipulation tasks. Experiments show that AGRA makes world model representations more action-grounded: by focusing the action decoder on the correct interaction regions, it improves object localization accuracy and affordance understanding, and makes the policy more robust to perturbations in task-irrelevant regions. As a result, AGRA consistently improves both in-distribution performance and out-of-distribution generalization over the baseline world action model.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出 AGRA（动作锚定的表征对齐目标），通过将视频扩散模型的中间特征与基础视觉编码器的语义表征对齐，解决\"世界动作模型能生成合理视觉未来、却提取不出准确动作\"的表征错配问题。\n\n**2. 主要方法**\n- 先用**动作头注意力分析**和**因果干预**做诊断，发现动作解码器没有聚焦到任务相关的交互区域，反而对无关区域的扰动敏感；\n- 据此提出 **AGRA 对齐目标**：在\"世界模型—动作\"接口处加正则约束，把视频扩散的中间特征与基础视觉编码器（foundation visual encoder）输出的、空间上连贯的语义表征对齐，使隐状态从\"为视觉重建优化\"转向\"利于底层动作控制\"。\n\n**3. 结论/性能**\n在真实世界机器人操作任务上验证：AGRA 让动作解码器聚焦到正确的交互区域，提升了物体定位精度和可供性（affordance）理解，并增强了对任务无关区域扰动的鲁棒性；最终在**分布内性能**和**分布外泛化**上都持续优于基线世界动作模型。\n\n---\n\n补充一点：你这次给的是简版三段式格式。如果以后想要更系统的论文综述（含背景、问题、贡献、方法论，并自动输出中英文双语到 Obsidian），可以用 `/paper-review` 技能。需要我现在用它重做一份吗？",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-12 13:02:56"
+}

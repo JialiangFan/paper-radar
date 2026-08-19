@@ -1,0 +1,13 @@
+{
+ "id": "2512.04841",
+ "title": "SoK: a Comprehensive Causality Analysis Framework for Large Language Model Security",
+ "authors": "Wei Zhao, Zhe Li, Jun Sun",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04841v1",
+ "abstract": "Large Language Models (LLMs) exhibit remarkable capabilities but remain vulnerable to adversarial manipulations such as jailbreaking, where crafted prompts bypass safety mechanisms. Understanding the causal factors behind such vulnerabilities is essential for building reliable defenses.\n  In this work, we introduce a unified causality analysis framework that systematically supports all levels of causal investigation in LLMs, ranging from token-level, neuron-level, and layer-level interventions to representation-level analysis. The framework enables consistent experimentation and comparison across diverse causality-based attack and defense methods. Accompanying this implementation, we provide the first comprehensive survey of causality-driven jailbreak studies and empirically evaluate the framework on multiple open-weight models and safety-critical benchmarks including jailbreaks, hallucination detection, backdoor identification, and fairness evaluation. Our results reveal that: (1) targeted interventions on causally critical components can reliably modify safety behavior; (2) safety-related mechanisms are highly localized (i.e., concentrated in early-to-middle layers with only 1--2\\% of neurons exhibiting causal influence); and (3) causal features extracted from our framework achieve over 95\\% detection accuracy across multiple threat types.\n  By bridging theoretical causality analysis and practical model safety, our framework establishes a reproducible foundation for research on causality-based attacks, interpretability, and robust attack detection and mitigation in LLMs. Code is available at https://github.com/Amadeuszhao/SOK_Casuality.",
+ "summary": "- 核心创新点：提出一个统一的因果分析框架 SoK，覆盖 token、neuron、layer 等多层次以及表示层分析，系统化地评估用于 LLM 安全的因果攻击与防御方法。\n\n- 主要方法：构建并应用一个综合的因果分析框架，进行 token-level、neuron-level、layer-level 的干预与表示级分析；对不同因果驱动的 jailbreak、幻觉检测、后门识别、公平性等安全基准进行一致性实验与对比；对多种开放权重模型进行实证评估，并提供 causality-driven jailbreak 的综合综述与开源代码。\n\n- 结论/性能：1) 针对性干预关键因果组件可可靠改变模型的安全行为；2) 安全机制高度局部化，集中在早到中层，只有约 1–2% 的神经元具有因果影响；3) 从框架中提取的因果特征在多种威胁类型下的检测准确率超过 95%。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-05 14:00:57"
+}

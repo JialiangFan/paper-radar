@@ -1,0 +1,13 @@
+{
+ "id": "2607.29613",
+ "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+ "authors": "Senyu Fei, Xiaopeng Yu, Siyin Wang, Xianzhong Zhao, Jingjing Gong, Xipeng Qiu",
+ "date": "2026-07-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.29613v1",
+ "abstract": "Reinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation. Among RL methods, critic-based approaches rely on a value estimator that predominantly operates on single-frame observations or single-frame VLM backbone latents, which is a fundamental mismatch with the partially observable nature of robot control. A naive approach to incorporate observation history into the critic incurs exponential complexity with high-dimensional visual space, and still fails because pure scalar-return regression provides insufficient supervision for learning cross-temporal dynamics. We identify the root cause as a state approximation problem: without an explicit world modeling objective, the critic's representation cannot capture the temporal structure needed for accurate value estimation. To address this, we propose the World Critic Model (WCM), built on a lightweight LeJEPA architecture; WCM jointly predicts future latent state and estimates values, such that the critic's representation is explicitly trained to capture temporal dynamics rather than merely regress scalar returns. WCM integrates seamlessly into both on-policy and off-policy training pipelines and is compatible with state-of-the-art VLA backbones including Pi0, Pi0.5, and OpenVLA-OFT. Extensive experiments on 149 tasks across four benchmarks demonstrate that WCM consistently achieves state-of-the-art performance in both in-distribution and out-of-distribution settings, with particularly strong generalization gains. We further validate WCM on seven real-world manipulation tasks using OpenVLA-OFT and Pi0.5 with off-policy RL, confirming stable deployment across diverse settings.",
+ "summary": "## WCM 论文摘要总结\n\n**1. 核心创新点**\n针对 VLA 强化学习中 critic 只看单帧、无法应对机器人控制部分可观测性的问题，提出把\"世界模型预测\"目标显式注入 critic，让价值网络的表征学会时序动态，而非只回归标量回报。\n\n**2. 主要方法**\n提出 World Critic Model (WCM)，基于轻量级 LeJEPA 架构，让 critic 同时做两件事：预测未来的隐空间状态 + 估计价值（多任务联合训练）。作者将根因归结为\"状态近似问题\"——单纯用标量回报回归监督信号太弱，且直接把观测历史塞进 critic 会因高维视觉空间导致复杂度爆炸。WCM 可无缝接入 on-policy 与 off-policy 训练流程，兼容 Pi0、Pi0.5、OpenVLA-OFT 等主流 VLA 骨干。\n\n**3. 结论/性能**\n在 4 个基准、149 个任务上达到 SOTA，分布内与分布外场景均有提升，其中**泛化性增益尤为显著**；并在 7 个真实机器人操作任务上（OpenVLA-OFT 与 Pi0.5 + off-policy RL）验证了部署的稳定性。\n\n---\n一句话点评：本质是用\"自监督世界模型\"给 critic 补充监督信号，属于把 JEPA 类表征学习与 RL 价值估计耦合的思路，工程上的卖点是\"即插即用、不换骨干\"。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-03 13:04:40"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.21231",
+ "title": "MiST: Understanding the Role of Mid-Stage Scientific Training in Developing Chemical Reasoning Models",
+ "authors": "Andres M Bran, Tong Xie, Shai Pranesh, Jeffrey Meng, Xuan Vu Nguyen, Jeremy Goumaz, David Ming Segura, Ruizhi Xu, Dongzhan Zhou, Wenjie Zhang, Bram Hoex, Philippe Schwaller",
+ "date": "2025-12-24",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21231v1",
+ "abstract": "Large Language Models can develop reasoning capabilities through online fine-tuning with rule-based rewards. However, recent studies reveal a critical constraint: reinforcement learning succeeds only when the base model already assigns non-negligible probability to correct answers -- a property we term 'latent solvability'. This work investigates the emergence of chemical reasoning capabilities and what these prerequisites mean for chemistry. We identify two necessary conditions for RL-based chemical reasoning: 1) Symbolic competence, and 2) Latent chemical knowledge. We propose mid-stage scientific training (MiST): a set of mid-stage training techniques to satisfy these, including data-mixing with SMILES/CIF-aware pre-processing, continued pre-training on 2.9B tokens, and supervised fine-tuning on 1B tokens. These steps raise the latent-solvability score on 3B and 7B models by up to 1.8x, and enable RL to lift top-1 accuracy from 10.9 to 63.9% on organic reaction naming, and from 40.6 to 67.4% on inorganic material generation. Similar results are observed for other challenging chemical tasks, while producing interpretable reasoning traces. Our results define clear prerequisites for chemical reasoning training and highlight the broader role of mid-stage training in unlocking reasoning capabilities.",
+ "summary": "- 核心创新点：提出中阶段科学训练（MiST）框架，通过数据混合、SMILES/CIF感知预处理、持续预训练与监督微调等步骤，提升模型的符号能力与潜在化学知识，从而使强化学习在化学推理任务中可行并产生可解释的推理轨迹。\n\n- 主要方法：\n  - 引入 MiST，包括数据混合与对 SMILES/CIF 的感知性预处理\n  - 在 3B 与 7B 模型上进行持续预训练（约 2.9B tokens）与 1B tokens 的监督微调\n  - 将上述训练与强化学习结合，验证在化学推理任务中的效果（如有机反应命名、无机材料生成等）\n\n- 结论/性能：\n  - 潜在可解性分数提升至多 1.8 倍\n  - 强化学习使有机反应命名的 top-1 准确率从 10.9% 提升至 63.9%，无机材料生成从 40.6% 提升至 67.4%\n  - 在其他化学任务上也观察到类似的提升，并出现可解释的推理轨迹\n  - 结果明确给出化学推理训练的前提条件，凸显中阶段训练在开启推理能力中的作用。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-25 02:51:30"
+}

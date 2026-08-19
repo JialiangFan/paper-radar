@@ -1,0 +1,13 @@
+{
+ "id": "2606.19771",
+ "title": "Beyond Entropy: Learning from Token-Level Distributional Deviations for LLM Reasoning",
+ "authors": "Xuanzhi Feng, Zhengyang Li, Zeyu Liu, Haoxi Li, Yuming Jiang, Bing Guo, Jingcai Guo, Jie Zhang, Song Guo",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19771v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced Large Language Model (LLM) reasoning; however, it faces a fundamental optimization instability: uniform token updates precipitate entropy collapse, leading to premature convergence to suboptimal strategies, whereas excessive Shannon Entropy maximization can cause entropy explosion, driving blind exploration toward incoherent reasoning chains. To resolve this dichotomy, we introduce the Independent Combinatorial Tokens (ICT) framework, which shifts the optimization focus from scalar uncertainty to the distributional properties of token logits. By leveraging the Jensen-Shannon (JS) divergence between token logits distributions, ICT identifies tokens with distinctive distributional patterns as critical branching points for guiding effective exploration in LLM reasoning. Our theoretical analysis, grounded in both Shannon and second-order Rényi entropy, proves that selectively updating on these tokens regulates policy concentration: it reduces the overall distribution uncertainty measured by Shannon entropy, while controlling probability concentration captured by second-order Rényi entropy. This dual effect prevents over-concentrated token generation from weakening exploration and effectively stabilizes the training landscape. Empirical results demonstrate that updating only the top 10% of unique tokens on Qwen2.5 (0.5B/1.5B/7B) models yields an average pass@4 improvement of 4.58%, with a maximum gain of 14.9%, over GRPO, 20-Entropy, and STAPO baselines across seven benchmarks spanning math, commonsense, and Olympiad-level problems.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n提出 ICT（Independent Combinatorial Tokens）框架，将 RLVR 训练的优化焦点从\"标量不确定性（熵）\"转向\"token logits 的分布特性\"，通过识别具有独特分布模式的关键\"分支点\"token 来引导探索，从而解决熵坍缩与熵爆炸的两难困境。\n\n**2. 主要方法**\n- 利用 token logits 分布之间的 **Jensen-Shannon（JS）散度** 来定位分布模式独特的关键 token；\n- 仅对这些 token（实验中为 top 10% 的 unique token）进行选择性策略更新；\n- 以 **Shannon 熵和二阶 Rényi 熵** 为基础进行理论分析，证明该选择性更新能同时降低整体分布不确定性（Shannon 熵）并控制概率集中度（二阶 Rényi 熵），起到双重正则化、稳定训练的作用。\n\n**3. 结论/性能**\n在 Qwen2.5（0.5B/1.5B/7B）模型、横跨数学、常识和奥赛级难题的 **7 个基准** 上，相较 GRPO、20-Entropy、STAPO 等基线，**pass@4 平均提升 4.58%，最高提升达 14.9%**，验证了方法在稳定训练和提升推理能力上的有效性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-19 13:01:09"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2607.02342",
+ "title": "The VLA-COSMOS 3 GHz Large Project: Polarised source counts and catalogue",
+ "authors": "S. Ranchod, S. A. Mao, R. P. Deane, V. Smolčić, J. D. Wagenveld, M. Bondi, K. Mooley, E. Schinnerer",
+ "date": "2026-07-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.02342v1",
+ "abstract": "The exploration of the faint polarised radio source population is essential for interpreting the nature and evolution of magnetic fields in galaxies. While recent studies have provided insight into source counts for the $μ$Jy polarised source population at 1.4 GHz, higher frequency surveys may be more sensitive to new populations that are depolarised at lower frequencies (i.e. due to internal or external depolarisation effects). We present the deepest polarised source counts at 3 GHz to date, at an angular resolution of $1.5''$. With these relatively higher frequency observations, we aim to probe the faint polarised star-forming galaxy (SFG) population. Furthermore, through spectral modelling, we aim to provide further insight into the frequency evolution of polarised source counts. We processed the polarisation data of the VLA-COSMOS 3 GHz Large Project, one of the deepest high-resolution radio continuum surveys. We produced Stokes Q and U mosaicked channel maps. After selecting known sources in total intensity, we performed 3D rotation measure synthesis and searched for polarised emission using an empirically determined threshold. With a sensitivity of 2.6 $μ$Jy/beam in Faraday depth, we detect 65 polarised sources (51 deg$^{-2}$) above our threshold. We find that our cumulative and Euclidean-normalised source counts at 3 GHz are consistent with those in the literature at 1.4 GHz, which we attribute to the combined effect of spectral index and depolarisation in the detected sources. We detect no SFGs in our sample and derive a 2$σ$ upper limit on the density of polarised SFGs of $<2.0~\\mathrm{deg}^{-2}$. This implies that significantly deeper observations will be required to readily detect this population in the SKA-era.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-07-06 13:03:40"
+}

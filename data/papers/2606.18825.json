@@ -1,0 +1,13 @@
+{
+ "id": "2606.18825",
+ "title": "DreamReg: Belief-Driven World Model for 2D-3D Ultrasound Registration",
+ "authors": "Luoyao Kang, Yuelin Zhang, Jiwei Shan, Haifan Gong, Qingpeng Ding, Shing Shin Cheng",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18825v1",
+ "abstract": "Ultrasound (US) is widely used for surgical navigation, yet real-time registration between intraoperative 2D slices and preoperative 3D volumes remains challenging due to partial observability, speckle noise, and the action-dependent US acquisition. Existing methods are one-shot or short-horizon, making it hard for them to gather evidence over time or capture how surgeons adjust probe motion based on on-screen feedback. We propose DreamReg, a belief-driven world-model framework that formulates 2D-3D registration as belief updating over rigid transformations. DreamReg maintains a latent belief state that summarizes past observations and poses information, and continuously refines the transformation through learned dynamics as new slices arrive. During training, DreamReg is exposed to probe-motion trajectories that mimic clinical scanning behavior and learns to update its belief by conditioning pose refinement on the current US observation. During inference, DreamReg refines registration via internal imagination: it rolls out the learned world model to simulate candidate probe motions and their predicted observations, and integrates these imagined outcomes to converge to an accurate rigid transformation. Experiments on CAMUS and u-RegPro datasets demonstrate improved robustness and competitive registration accuracy for real-time guidance compared with state-of-the-art methods.",
+ "summary": "**DreamReg：基于信念驱动世界模型的 2D-3D 超声配准**\n\n1. **核心创新点**：将术中 2D 超声切片与术前 3D 体数据的实时配准，重新建模为对刚性变换的\"信念更新\"过程，并借助世界模型的内部\"想象\"来逐步收敛。\n\n2. **主要方法**：提出信念驱动的世界模型框架 DreamReg。它维护一个潜在信念状态（latent belief state），汇总历史观测与位姿信息，随新切片到来通过学习到的动力学模型持续精化变换。训练时让模型接触模拟临床扫查行为的探头运动轨迹，学会基于当前超声观测来更新信念、精化位姿；推理时通过\"内部想象\"滚动展开世界模型，模拟候选探头运动及其预测观测，整合这些想象结果以收敛到精确的刚性变换。\n\n3. **结论/性能**：在 CAMUS 和 u-RegPro 数据集上的实验表明，相比现有最先进方法，DreamReg 在实时引导场景下具有更强的鲁棒性和有竞争力的配准精度。\n\n---\n\n补充一点：相较以往\"一次性\"或\"短时程\"的方法，本文的关键差异在于能够**随时间累积证据**，并显式建模医生根据屏幕反馈调整探头运动的行为——这正是其应对部分可观测性、散斑噪声和动作依赖式采集等难点的核心思路。\n\n如需更系统的中英双语综述（含主题、背景、贡献、方法论结构化梳理并输出到 Obsidian），可以让我调用 `/paper-review` 处理。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-18 13:03:11"
+}

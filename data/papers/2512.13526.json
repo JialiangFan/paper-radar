@@ -1,0 +1,13 @@
+{
+ "id": "2512.13526",
+ "title": "Async Control: Stress-testing Asynchronous Control Measures for LLM Agents",
+ "authors": "Asa Cooper Stickland, Jan Michelfeit, Arathi Mani, Charlie Griffin, Ollie Matthews, Tomek Korbak, Rogan Inglis, Oliver Makins, Alan Cooney",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13526v1",
+ "abstract": "LLM-based software engineering agents are increasingly used in real-world development tasks, often with access to sensitive data or security-critical codebases. Such agents could intentionally sabotage these codebases if they were misaligned. We investigate asynchronous monitoring, in which a monitoring system reviews agent actions after the fact. Unlike synchronous monitoring, this approach does not impose runtime latency, while still attempting to disrupt attacks before irreversible harm occurs. We treat monitor development as an adversarial game between a blue team (who design monitors) and a red team (who create sabotaging agents). We attempt to set the game rules such that they upper bound the sabotage potential of an agent based on Claude 4.1 Opus. To ground this game in a realistic, high-stakes deployment scenario, we develop a suite of 5 diverse software engineering environments that simulate tasks that an agent might perform within an AI developer's internal infrastructure. Over the course of the game, we develop an ensemble monitor that achieves a 6% false negative rate at 1% false positive rate on a held out test environment. Then, we estimate risk of sabotage at deployment time by extrapolating from our monitor's false negative rate. We describe one simple model for this extrapolation, present a sensitivity analysis, and describe situations in which the model would be invalid. Code is available at: https://github.com/UKGovernmentBEIS/async-control.",
+ "summary": "- 核心创新点：提出一种异步监控框架，通过事后行为审查并结合对抗性博弈来上限定LLM代理的潜在人为破坏风险，同时避免增加运行时延迟。\n\n- 主要方法：采用异步监控（事后回顾代理行为）并以蓝队（监控设计者）对红队（破坏代理）的对抗性博弈形式进行设定；以 Claude 4.1 Opus 作为基线，对5个多样化的软件工程环境进行仿真与评估，构建一个集成监控器（ensemble monitor），在保留集上实现6%假阴性率、1%假阳性率；提出一个简单的外推模型用于在部署时估计破坏风险，并进行灵敏度分析，指出模型的失效情形。代码公开可用。\n\n- 结论/性能：在 held-out 测试环境中，集成监控器达到6% FN/1% FP的性能，能够基于监控的 FN 率对部署时的破坏风险进行外推估计，并给出相关的敏感性分析与使用限制。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-16 03:02:51"
+}

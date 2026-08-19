@@ -1,0 +1,13 @@
+{
+ "id": "2603.04323",
+ "title": "PTOPOFL: Privacy-Preserving Personalised Federated Learning via Persistent Homology",
+ "authors": "Kelly L Vomo-Donfack, Adryel Hoszu, Grégory Ginot, Ian Morilla",
+ "date": "2026-03-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.04323v1",
+ "abstract": "Federated learning (FL) faces two structural tensions: gradient sharing enables data-reconstruction attacks, while non-IID client distributions degrade aggregation quality. We introduce PTOPOFL, a framework that addresses both challenges simultaneously by replacing gradient communication with topological descriptors derived from persistent homology (PH). Clients transmit only 48-dimensional PH feature vectors-compact shape summaries whose many-to-one structure makes inversion provably ill-posed-rather than model gradients. The server performs topology-guided personalised aggregation: clients are clustered by Wasserstein similarity between their PH diagrams, intra-cluster models are topology-weighted,and clusters are blended with a global consensus. We prove an information-contraction theorem showing that PH descriptors leak strictly less mutual information per sample than gradients under strongly convex loss functions, and we establish linear convergence of the Wasserstein-weighted aggregation scheme with an error floor strictly smaller than FedAvg. Evaluated against FedAvg, FedProx, SCAFFOLD, and pFedMe on a non-IID healthcare scenario (8 hospitals, 2 adversarial) and a pathological benchmark (10 clients), PTOPOFL achieves AUC 0.841 and 0.910 respectively-the highest in both settings-while reducing reconstruction risk by a factor of 4.5 relative to gradient sharing. Code is publicly available at https://github.com/MorillaLab/TopoFederatedL and data at https://doi.org/10.5281/zenodo.18827595.",
+ "summary": "1) 核心创新点：通过用持久同调（PH）拓扑特征替代梯度通信来实现隐私保护的个性化联邦学习，即 PTOPOFL，且利用PH描述符的不可逆性与拓扑加权聚合提升鲁棒性和个性化效果。\n\n2) 主要方法：\n- 客户端仅发送48维PH特征向量（紧凑的拓扑摘要），避免直接传输梯度，降低重建风险。\n- 服务器基于PH图的Wasserstein相似性进行客户端聚类；簇内采用拓扑加权的模型聚合，簇间再与全局共识融合实现全局与局部的结合。\n- 给出信息收敛性分析，证明PH描述符在强凸损失下泄露的信息量严格小于梯度；并证明基于Wasserstein加权的聚合具线性收敛性，且误差上界低于 FedAvg。\n\n3) 结论/性能：\n- 在非IID的医疗场景（8家医院、2个对手）和一个病理基准场景（10个客户端）上，PTOPOFL 的AUC分别达到0.841和0.910，均为两场景中的最高值；同时相比梯度共享，将重建风险降低约4.5倍。\n- 与 FedAvg、FedProx、SCAFFOLD、pFedMe 对比，取得最优或接近最优的性能提升，且代码与数据公开可获取。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-03-05 14:01:55"
+}

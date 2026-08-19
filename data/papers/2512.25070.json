@@ -1,0 +1,13 @@
+{
+ "id": "2512.25070",
+ "title": "Scaling Open-Ended Reasoning to Predict the Future",
+ "authors": "Nikhil Chandak, Shashwat Goel, Ameya Prabhu, Moritz Hardt, Jonas Geiping",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.25070v1",
+ "abstract": "High-stakes decision making involves reasoning under uncertainty about the future. In this work, we train language models to make predictions on open-ended forecasting questions. To scale up training data, we synthesize novel forecasting questions from global events reported in daily news, using a fully automated, careful curation recipe. We train the Qwen3 thinking models on our dataset, OpenForesight. To prevent leakage of future information during training and evaluation, we use an offline news corpus, both for data generation and retrieval in our forecasting system. Guided by a small validation set, we show the benefits of retrieval, and an improved reward function for reinforcement learning (RL). Once we obtain our final forecasting system, we perform held-out testing between May to August 2025. Our specialized model, OpenForecaster 8B, matches much larger proprietary models, with our training improving the accuracy, calibration, and consistency of predictions. We find calibration improvements from forecasting training generalize across popular benchmarks. We open-source all our models, code, and data to make research on language model forecasting broadly accessible.",
+ "summary": "- 核心创新点：通过自动化合成的开放式预测数据集 OpenForesight，并结合离线新闻检索和改进的强化学习奖励函数，实现用较小模型进行大规模开放式未来预测的可校准性和性能提升，达到与更大模型接近的效果并开源。 \n\n- 主要方法：使用自动化从全球新闻事件生成开放式预测问题的数据集 OpenForesight，训练 Qwen3 thinking 模型；采用离线新闻语料用于数据生成与检索，防止未来信息泄露；在小验证集引导下引入检索机制和改进的 RL 奖励函数进行模型优化；最终在 OpenForecaster 8B 上进行评估。\n\n- 结论/性能：OpenForecaster 8B 能与多数更大规模的专有模型相媲美，训练提升了预测的准确性、校准性和一致性，并且校准改进可在多个基准上泛化；并将模型、代码和数据开源，推动该领域研究。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-01 03:51:13"
+}

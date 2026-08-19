@@ -1,0 +1,13 @@
+{
+ "id": "2608.07419",
+ "title": "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration",
+ "authors": "Ruochen Jin, Zhanliang Wang, Zongyu Dai, Jiancong Xiao, Bojian Hou",
+ "date": "2026-08-07",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.07419v1",
+ "abstract": "Preference alignment often makes large language models (LLMs) overconfident and poorly calibrated. Traditional post-hoc temperature scaling is inherently domain-dependent: a temperature fitted on one domain does not generalize across domains. This motivates us to modify model parameters during training to improve calibration. We propose maximizing the entropy of predictive distributions as the calibration objective, which directly targets overconfidence by discouraging overly concentrated predictions. Inspired by temperature scaling, we realize this through a bilevel optimization formulation, where the lower level trains the model under a parametric loss and the upper level selects loss hyperparameters to maximize entropy. To make the framework practical at LLM scale, we adopt an efficient first-order approximation that avoids explicit second-order computation. Across both multiple-choice and open-ended generative question answering, experiments demonstrate that our method yields well-calibrated LLMs with particular advantages in out-of-domain generalization.",
+ "summary": "**核心创新点**：把校准从事后温度缩放（post-hoc temperature scaling）改为训练期直接优化模型参数，用\"最大化预测分布熵\"作为校准目标，解决温度参数跨领域不可迁移的问题。\n\n**主要方法**：受温度缩放启发，构造双层优化（bilevel optimization）框架——下层用带参数的损失函数训练模型，上层调整该损失的超参数以最大化预测熵；为适配 LLM 规模，采用高效的一阶近似，避免显式二阶（Hessian）计算。\n\n**结论/性能**：在多项选择题和开放式生成式问答两类任务上，该方法都能得到校准良好的 LLM，其中在**分布外（out-of-domain）泛化**上优势尤为明显。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-10 13:01:59"
+}

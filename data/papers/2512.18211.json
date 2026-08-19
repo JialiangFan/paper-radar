@@ -1,0 +1,13 @@
+{
+ "id": "2512.18211",
+ "title": "LLaViDA: A Large Language Vision Driving Assistant for Explicit Reasoning and Enhanced Trajectory Planning",
+ "authors": "Yudong Liu, Spencer Hallyburton, Jiwoo Kim, Yueqian Lin, Yiming Li, Qinsi Wang, Hui Ye, Jingwei Sun, Miroslav Pajic, Yiran Chen, Hai Li",
+ "date": "2025-12-20",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18211v1",
+ "abstract": "Trajectory planning is a fundamental yet challenging component of autonomous driving. End-to-end planners frequently falter under adverse weather, unpredictable human behavior, or complex road layouts, primarily because they lack strong generalization or few-shot capabilities beyond their training data. We propose LLaViDA, a Large Language Vision Driving Assistant that leverages a Vision-Language Model (VLM) for object motion prediction, semantic grounding, and chain-of-thought reasoning for trajectory planning in autonomous driving. A two-stage training pipeline--supervised fine-tuning followed by Trajectory Preference Optimization (TPO)--enhances scene understanding and trajectory planning by injecting regression-based supervision, produces a powerful \"VLM Trajectory Planner for Autonomous Driving.\" On the NuScenes benchmark, LLaViDA surpasses state-of-the-art end-to-end and other recent VLM/LLM-based baselines in open-loop trajectory planning task, achieving an average L2 trajectory error of 0.31 m and a collision rate of 0.10% on the NuScenes test set. The code for this paper is available at GitHub.",
+ "summary": "核心创新点：将视觉-语言模型用于自动驾驶的显式链式推理与轨迹规划，通过两阶段训练（监督微调 + Trajectory Preference Optimization）提升场景理解和规划能力，显著提升开环轨迹规划性能与安全性。\n\n主要方法：基于视觉-语言模型（VLM）进行对象运动预测、语义对齐/grounding，并引入链式推理（chain-of-thought）用于轨迹规划；采用两阶段训练流程：1) 监督微调，注入回归监督；2) Trajectory Preference Optimization（TPO）对轨迹偏好进行优化，形成“VLM Trajectory Planner for Autonomous Driving”。\n\n结论/性能：在 NuScenes 基准的开环轨迹规划任务中，超越现有端到端方法与其他基于VLM/LLM的基线，达到平均L2轨迹误差0.31 m，碰撞率0.10%（测试集），代码公开在 GitHub。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:48:38"
+}

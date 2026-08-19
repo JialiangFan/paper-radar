@@ -1,0 +1,13 @@
+{
+ "id": "2607.27205",
+ "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+ "authors": "Hengyi Xie, Chenfei Yao, Xianjin Wu, Xuanyang Xi, Yiping Tang, Di Xu, Yingying Zhu, Dingkang Liang, Xiang Bai, Han Ding",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27205v1",
+ "abstract": "Vision-language-action (VLA) models commonly adopt an LLM-centric $V \\to L \\to A$ pathway, where visual observations are projected into the representation space of a large language model before being decoded into robot actions. Although effective, this design incurs substantial computation and memory overhead at every policy invocation. In this work, we introduce TurboVLA, a new VLA paradigm that reformulates the conventional $V \\to L \\to A$ pathway as a direct $V + L \\to A$ mapping. Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder. This simple design constructs task-conditioned representations directly from visual and linguistic features, significantly reducing the computational and memory costs of VLA inference. On LIBERO, TurboVLA achieves 97.7% average success with only 0.2B parameters, 31.2 ms inference latency, and 0.9 GB inference VRAM on a consumer-grade RTX 4090, matching or outperforming substantially larger VLA policies. These results establish TurboVLA as a simple and effective alternative to the prevailing LLM-centric VLA paradigm, offering a new perspective on how vision, language, and action can be connected for efficient robotic manipulation. Code is available at https://github.com/H-EmbodVis/TurboVLA.",
+ "summary": "## TurboVLA 论文摘要总结\n\n**1. 核心创新点**\n将视觉-语言-动作模型中主流的「视觉→语言模型→动作」（V→L→A）串行范式，重构为不依赖大语言模型作为中枢的「视觉+语言→动作」（V+L→A）直接映射，大幅降低推理开销。\n\n**2. 主要方法**\n- 视觉观测与语言指令由各自的编码器**独立编码**，不再把视觉特征投影进 LLM 的表示空间；\n- 两者之间通过**轻量级双向视觉-语言交互模块**直接交换信息，构建任务条件化表征；\n- 最后由一个**紧凑解码器**直接预测连续动作块（action chunk）。\n\n**3. 结论/性能**\n在 LIBERO 基准上取得 **97.7% 平均成功率**，仅用 **0.2B 参数**、**31.2 ms 推理延迟**（约 32 Hz）和 **0.9 GB 显存**，在消费级 RTX 4090 上即可实时运行，性能持平甚至超过参数量大得多的 VLA 策略，说明 LLM 中枢并非 VLA 的必要设计。代码已开源（github.com/H-EmbodVis/TurboVLA）。\n\n> 补充一句判断：论文的效率数据很亮眼，但结论目前只在 LIBERO 仿真基准上验证，缺少真机实验与跨本体泛化的证据，而「去掉 LLM」最可能牺牲的恰恰是开放语义指令的泛化能力——这一点摘要中未涉及。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-02 13:05:23"
+}

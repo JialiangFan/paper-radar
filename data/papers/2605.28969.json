@@ -1,0 +1,13 @@
+{
+ "id": "2605.28969",
+ "title": "Beyond Recall: Behavioral Specification as an Interpretive Layer for AI Personalization",
+ "authors": "Aarik Gulaya",
+ "date": "2026-05-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.28969v1",
+ "abstract": "If an AI agent makes decisions on a person's behalf, those decisions must align with its user. We introduce representational accuracy to measure how faithfully a system captures a person's interpretation. An interpretive layer is operationalized as a Behavioral Specification. Our reference implementation aggressively compresses a person's data into interpretive patterns, served as context to a language model. We evaluate the Specification on a prototype benchmark of held-out behavioral predictions scored by a calibrated 5-judge LLM panel. We test it independently and in composition with a range of context conditions: full raw corpus, full extracted facts, and four commercial memory systems (Mem0, Letta, Supermemory, Zep).\n  Across 14 public-domain autobiographical corpora, the Specification lifts representational accuracy in aggregate and nearly eliminates model hedging. It recovers most of what the raw corpus delivers, at ~25x less context cost. The Specification lifts subjects toward a common predictive level regardless of pretraining baseline; the lift in absolute points is therefore largest where the baseline is lowest, suggesting the population of relevance is anyone not adequately represented in pretraining. Lift is greatest on interpretation-required questions, where providing an interpretive layer enables model behavior that extracted facts or raw corpus do not. Conversely, on recall-required questions, this layer can interfere rather than help.\n  We conclude that representational accuracy is distinct from recall and that human-AI alignment is dependent on how accurately the user is represented. Representational accuracy makes that alignment testable.",
+ "summary": "# 论文总结\n\n**1. 核心创新点：**\n提出\"表征准确度\"(representational accuracy)这一新指标——衡量 AI 是否忠实捕捉了用户的*解读方式*（而非仅记住事实），并以\"行为规范\"(Behavioral Specification)作为可测试的解释层来实现 AI 个性化对齐。\n\n**2. 主要方法：**\n将用户数据高度压缩成\"解释性模式\"，作为上下文喂给语言模型；在 14 份公开自传语料上构建留出式行为预测基准，由经过校准的 5 个 LLM 评委组成的评审团打分；并将该方法单独评估，以及与多种上下文条件（完整原始语料、完整抽取事实、四个商业记忆系统 Mem0/Letta/Supermemory/Zep）组合对比。\n\n**3. 结论/性能：**\n- 行为规范显著提升整体表征准确度，几乎消除模型的\"模棱两可\"(hedging)；\n- 仅用约 1/25 的上下文成本，就能恢复原始语料带来的大部分效果；\n- 对预训练中代表性不足的用户提升最大，能把不同基线的用户拉到相近的预测水平；\n- 在\"需要解读\"的问题上增益最强，但在\"需要事实回忆\"的问题上反而可能起干扰作用；\n- 结论：表征准确度区别于单纯的记忆/回忆，人机对齐取决于用户被表征的准确程度，而该指标使这种对齐变得可测试。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-05-29 13:01:11"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.17636",
+ "title": "Trust-Region Adaptive Policy Optimization",
+ "authors": "Mingyu Su, Jian Guan, Yuxian Gu, Minlie Huang, Hongning Wang",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17636v1",
+ "abstract": "Post-training methods, especially Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL), play an important role in improving large language models' (LLMs) complex reasoning abilities. However, the dominant two-stage pipeline (SFT then RL) suffers from a key inconsistency: SFT enforces rigid imitation that suppresses exploration and induces forgetting, limiting RL's potential for improvements. We address this inefficiency with TRAPO (\\textbf{T}rust-\\textbf{R}egion \\textbf{A}daptive \\textbf{P}olicy \\textbf{O}ptimization), a hybrid framework that interleaves SFT and RL within each training instance by optimizing SFT loss on expert prefixes and RL loss on the model's own completions, unifying external supervision and self-exploration. To stabilize training, we introduce Trust-Region SFT (TrSFT), which minimizes forward KL divergence inside a trust region but attenuates optimization outside, effectively shifting toward reverse KL and yielding stable, mode-seeking updates favorable for RL. An adaptive prefix-selection mechanism further allocates expert guidance based on measured utility. Experiments on five mathematical reasoning benchmarks show that TRAPO consistently surpasses standard SFT, RL, and SFT-then-RL pipelines, as well as recent state-of-the-art approaches, establishing a strong new paradigm for reasoning-enhanced LLMs.",
+ "summary": "核心创新点：TRAPO 提出在每个训练样本内交错优化 SFT 与 RL 的混合框架，并通过信任域 SFT 与自适应前缀选择实现对外部监督与自我探索的统一，从而提升推理能力。\n\n主要方法：\n- 在每个训练实例中同时进行 SFT 与 RL 的损失优化：对专家前缀进行 SFT 优化，对模型自我完成进行 RL 优化，融合外部监督与自我探索。\n- 引入 TrSFT（信任域 SFT）：在信任域内最小化正向 KL 发散，超出信任域的优化被削弱，实质转向更稳定、偏向模式/高效探索的反向 KL 风格更新，提升训练稳定性。\n- 引入自适应前缀选择机制：根据测量的效用动态分配专家指导。\n- 实验设定：在五个数学推理基准上进行评测对比。\n\n结论/性能：TRAPO 在这五个数学推理基准上持续超越标准 SFT、RL、SFT-then-RL 以及最新的 SOTA 方法，确立了一个更强的、基于推理增强的 LLMs 的新范式。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:48:41"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.18426",
+ "title": "VEGA: Learning Navigation VLAs from In-the-Wild Egocentric Video with Geometric Trajectory Supervision",
+ "authors": "Gershom Seneviratne, Yohan Abeysinghe, Jianyu An, Vaibhav Shende, Dinesh Manocha",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18426v1",
+ "abstract": "We introduce VEGA, an approach for training navigation VisionLanguage-Action (VLA) models from unlabeled egocentric navigation videos. Internet-scale egocentric videos provide a scalable source of navigation-relevant visual observations, capturing cluttered scenes, close-range obstacles, and natural human motion through real-world spaces. However, these videos are not directly usable for policy learning because they do not provide obstacle-aware trajectories conditioned on explicit navigation goals in the robot's coordinate frame. VEGA addresses this gap by reconstructing local scene geometry from monocular video, sampling navigation goals (represented as text, image, or spatial waypoints) and generating obstacle-aware trajectories using the constructed geometry. The resulting trajectory distribution is then used to train a flow-matching VLA navigation policy. By using geometry exclusively during training, VEGA distills obstacle-aware planning directly into a vision-based policy. Furthermore, we introduce VEGA-Bench, a benchmark containing 250k scenes and approximately 5 million navigation goals paired with scene geometry, designed to evaluate goal progress, collision avoidance, and obstacle clearance of VLAs. Our evaluation shows that VEGA achieves competitive goal progress while reducing collisions by 33.0% and improving obstacle clearance by 17.9% over the strongest baseline on VEGABench, while improving success by at least 150.0%, reducing collisions by at least 66.7%, and improving obstacle clearance by at least 60.0% in real-world trials. Ultimately, we demonstrate that video-derived geometric supervision provides a scalable and effective signal for training obstacle-aware navigation VLAs. The code and benchmark will be released at the time of publication.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-21 13:03:59"
+}

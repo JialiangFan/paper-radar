@@ -1,0 +1,13 @@
+{
+ "id": "2606.01095",
+ "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA",
+ "authors": "Hung Mai, Bin Zhu, Tuan Do",
+ "date": "2026-05-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01095v1",
+ "abstract": "Vision-language-action (VLA) policies and World-Action Models (WAM) represent two increasingly important paradigms for robotic manipulation. However, it remains unclear whether future prediction in WAMs leads to behaviorally meaningful improvements beyond final task success. In this paper, we ask whether WAMs merely add future prediction, or whether they change robot behavior and internal representations in ways that are actionable for control. We introduce a model-agnostic diagnostic framework that compares WAMs and VLAs through two complementary lenses: behavioral rollout analysis and sparse-autoencoder-based feature analysis. The behavioral protocol measures action dynamics consistency, target-object progress, distractor disturbance, and runtime cost. The feature-space protocol characterizes internal representations as memorized, reactive, or predictive, revealing whether models encode future-oriented structure. Across LIBERO and RoboTwin2.0, we evaluate 7 policies spanning direct VLAs and joint, sequential, and auxiliary WAMs. Our results show that success alone hides key differences: WAMs often improve object-level behavior and target selectivity, but their gains depend on architecture and incur higher inference cost. Sequential WAMs show the clearest predictive structure, while auxiliary and joint WAMs respectively compress or entangle future information. These findings suggest future directions for WAMs design to preserve behaviorally actionable future representations for efficient manipulation.",
+ "summary": "# 论文总结\n\n## 1. 核心创新点\n提出一个**模型无关的诊断框架**，从行为和内部表征两个互补维度评估视觉-语言-动作模型（VLA）与世界-动作模型（WAM），揭示\"任务成功率\"之外被掩盖的本质差异。\n\n## 2. 主要方法\n- **行为 rollout 分析**：测量动作动态一致性、目标物体进展、干扰物扰动以及运行时开销。\n- **基于稀疏自编码器（SAE）的特征分析**：将内部表征刻画为\"记忆型/反应型/预测型\"，判断模型是否真正编码了面向未来的结构。\n- 在 **LIBERO** 和 **RoboTwin2.0** 基准上评估 7 种策略，涵盖直接 VLA 及联合式、序列式、辅助式三类 WAM。\n\n## 3. 结论/性能\n- 仅看成功率会掩盖关键差异：WAM 通常能改善物体级行为与目标选择性，但收益依赖架构且推理成本更高。\n- **序列式 WAM** 展现出最清晰的预测性结构；**辅助式 WAM** 倾向于压缩未来信息；**联合式 WAM** 则会将未来信息纠缠在一起。\n- 为未来 WAM 设计指明方向：应保留**行为可执行的未来表征**，以实现高效操作。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-02 13:03:07"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.12644",
+ "title": "Uncovering Security Threats and Architecting Defenses in Autonomous Agents: A Case Study of OpenClaw",
+ "authors": "Zonghao Ying, Xiao Yang, Siyang Wu, Yumeng Song, Yang Qu, Hainan Li, Tianlin Li, Jiakai Wang, Aishan Liu, Xianglong Liu",
+ "date": "2026-03-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.12644v1",
+ "abstract": "The rapid evolution of Large Language Models (LLMs) into autonomous, tool-calling agents has fundamentally altered the cybersecurity landscape. Frameworks like OpenClaw grant AI systems operating-system-level permissions and the autonomy to execute complex workflows. This level of access creates unprecedented security challenges. Consequently, traditional content-filtering defenses have become obsolete. This report presents a comprehensive security analysis of the OpenClaw ecosystem. We systematically investigate its current threat landscape, highlighting critical vulnerabilities such as prompt injection-driven Remote Code Execution (RCE), sequential tool attack chains, context amnesia, and supply chain contamination. To systematically contextualize these threats, we propose a novel tri-layered risk taxonomy for autonomous Agents, categorizing vulnerabilities across AI Cognitive, Software Execution, and Information System dimensions. To address these systemic architectural flaws, we introduce the Full-Lifecycle Agent Security Architecture (FASA). This theoretical defense blueprint advocates for zero-trust agentic execution, dynamic intent verification, and cross-layer reasoning-action correlation. Building on this framework, we present Project ClawGuard, our ongoing engineering initiative. This project aims to implement the FASA paradigm and transition autonomous agents from high-risk experimental utilities into trustworthy systems. Our code and dataset are available at https://github.com/NY1024/ClawGuard.",
+ "summary": "1) 核心创新点（1句话）\n提出面向自主代理的三层风险分类（AI认知、软件执行、信息系统）与全生命周期安全架构 FASA，形成可落地的零信任执行与跨层推理-行动关联的防御蓝图，用以应对如 OpenClaw 等系统带来的新型安全威胁。\n\n2) 主要方法\n- 对 OpenClaw 生态进行系统性安全分析，识别关键漏洞：提示注入引发的远程代码执行、串联工具攻击链、上下文遗忘、供应链污染等。\n- 提出三层风险分类框架，并设计 Full-Lifecycle Agent Security Architecture (FASA)。\n- 在 FASA 基础上提出核心防御原则：零信任代理执行、动态意图验证、跨层推理-行动关联。\n- 启动 Project ClawGuard，推进将框架落地的工程化实现，并公开代码与数据集以支持实践与评估。\n\n3) 结论/性能\n- 提供了可操作的安全蓝图与工程化路线图，目标是将自治代理从高风险实验工具转变为可信系统。\n- 同时给出开源资源（GitHub 链接），以促进后续实现、评估与社区协作。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-03-16 13:03:57"
+}

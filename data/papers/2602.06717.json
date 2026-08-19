@@ -1,0 +1,13 @@
+{
+ "id": "2602.06717",
+ "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+ "authors": "Daniil Plyusov, Alexey Gorbatovski, Boris Shaposhnikov, Viacheslav Sinii, Alexey Malakhov, Daniil Gavrilov",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06717v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimate advantages and stabilize policy updates. In practice, large group sizes are not feasible due to computational limits, which biases learning toward trajectories that are already likely. Smaller groups often miss rare-correct trajectories while still containing mixed rewards, concentrating probability on common solutions. We derive the probability that updates miss rare-correct modes as a function of group size, showing non-monotonic behavior, and characterize how updates redistribute mass within the correct set, revealing that unsampled-correct mass can shrink even as total correct mass grows. Motivated by this analysis, we propose a difficulty-aware advantage scaling coefficient, inspired by Focal loss, that down-weights updates on high-success prompts. The lightweight modification can be directly integrated into any group-relative RLVR algorithm such as GRPO, DAPO, and CISPO. On Qwen2.5-7B across in-domain and out-of-domain benchmarks, our method improves pass@256 from 64.1 $\\rightarrow$ 70.3 (GRPO), 69.3 $\\rightarrow$ 72.5 (DAPO), and 73.2 $\\rightarrow$ 76.8 (CISPO), while preserving or improving pass@1, without increasing group size or computational cost.",
+ "summary": "- 核心创新点：提出一种受难度感知的优势缩放系数（类似 Focal Loss），用以在组采样的 RLVR 更新中对高成功提示进行降权，从而避免模型只学会“显而易见的常见解”，保留罕见正确轨迹。\n\n- 主要方法：在基于组相对更新的 RLVR 框架中，先分析组大小与对罕见正确模式的覆盖关系的非单调性；然后提出一个轻量级、可直接整合到 GRPO、DAPO、CISPO 等算法中的难度感知优势缩放系数，既不增加组大小也不增加计算成本。\n\n- 结论/性能：在 Qwen2.5-7B 上的内域与域外基准中，pass@256 分别从 64.1 提升至 70.3（GRPO）、从 69.3 提升至 72.5（DAPO）、从 73.2 提升至 76.8（CISPO），同时保持或提升 pass@1。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-09 14:03:44"
+}

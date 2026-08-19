@@ -1,0 +1,13 @@
+{
+ "id": "2606.07410",
+ "title": "A Comprehensive Anatomy of Human and DeepSeek-R1 LLM Mathematical Reasoning",
+ "authors": "Yuxiang Chen, Jun Wang",
+ "date": "2026-06-05",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.07410v1",
+ "abstract": "The emergence of \"Aha moments\" in large language models, particularly DeepSeek-R1-0120, has raised the question of whether these systems genuinely reason or merely imitate the appearance of reasoning. We conduct a comprehensive empirical comparison between model and human reasoning across all 30 problems from AIME 2025, exhaustively annotating 10,247 reasoning steps into five functional categories: Analysis, Inference, Branch, Backtrace, and Reflection. We find a clear structural difference. Human solutions maintain a compact alternation between analysis and deduction, whereas DeepSeek-R1 frequently revisits intermediate results, performs shallow and often unnecessary verification, and loops through local checks without meaningful logical progress. We describe this as topological mimicry: reproducing the surface form of reasoning without its functional role. Despite this, we identify two signals of genuine reasoning. First, successful traces exhibit stable use of branching and backtracking, while failed traces either underuse or overuse exploratory actions. Second, reflection is only effective when placed within deductive inference; reflections trapped in analysis loops focus on local numerical details while missing global logical errors. These findings suggest that current long-CoT models may be rewarded more for the appearance of reasoning than for genuine deductive progress. We discuss directions for improving evaluation and training, including measuring cross-trace stability, penalising \"spinning-wheel\" traces, encouraging deeper logical correction, and reallocating inference-time compute toward deduction and backtracking. Overall, reasoning quality depends not simply on how much reflection occurs, but on whether reflection appears consistently and at the appropriate logical scale.",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n通过对人类与 DeepSeek-R1 在 AIME 2025 全部 30 道题上的推理过程进行细粒度对比标注，揭示当前长链式推理（long-CoT）模型存在\"拓扑模仿\"现象——形似推理但缺乏真正的演绎进展。\n\n**2. 主要方法**\n对人类解题与 DeepSeek-R1-0120 的 10,247 个推理步骤进行人工标注，将每一步归入五种功能类别：分析（Analysis）、推断（Inference）、分支（Branch）、回溯（Backtrace）、反思（Reflection），并比较两者在结构与功能上的差异。\n\n**3. 结论/性能**\n- **结构差异**：人类推理在\"分析—演绎\"间紧凑交替；R1 则频繁重访中间结果、执行浅层冗余验证、陷入局部循环（\"空转\"）。\n- **真实推理信号**：\n  - 成功轨迹对分支/回溯使用稳定，失败轨迹要么探索不足、要么过度。\n  - 反思只有嵌入演绎推断时才有效；困在分析循环中的反思只盯局部数字，错过全局逻辑错误。\n- **启示**：现有模型可能更多被\"推理的外观\"而非真正的演绎进展所奖励；建议通过跨轨迹稳定性度量、惩罚空转轨迹、鼓励更深层逻辑修正、将推理算力重新分配给演绎与回溯来改进评估与训练。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-08 13:00:42"
+}

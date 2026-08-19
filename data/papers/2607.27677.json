@@ -1,0 +1,13 @@
+{
+ "id": "2607.27677",
+ "title": "Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness",
+ "authors": "Fouad Bousetouane",
+ "date": "2026-07-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27677v1",
+ "abstract": "AI agents are moving into production workflows where they retrieve information, call tools, maintain state, and act on behalf of users or organizations, but many release decisions still rely on capability signals, demos, or behavioral tests that do not show whether an agent is ready to operate under production constraints. Capability is therefore not production readiness. This paper introduces the ProofAgent Index (PAI), a governance readiness index for AI agents. PAI combines four dimensions of deployment evidence: Evaluation, Context, Compliance, and Governance. Evaluation measures observed behavior, Context measures the operating environment that shapes that behavior, Compliance measures alignment with applicable rules and controls, and Governance measures whether the organization can authorize, monitor, audit, and control the agent during operation. PAI is implemented inside ProofAgent Harness, an open source infrastructure for auditable AI agent evaluation and governance. Validation across two heavily regulated domains, healthcare and finance, shows that PAI carries held out readiness signal and separates higher risk from lower risk configurations. The results show that context engineering strongly changes reliability, capability improves behavior but does not determine readiness, and governance evidence must remain visible rather than averaged away. PAI reframes agent release from a faith based deployment decision into an auditable readiness decision.",
+ "summary": "## 论文摘要总结\n\n**标题**：《别再凭信念部署 AI 智能体：能力不等于生产就绪》\n\n### 1. 核心创新点\n提出 **ProofAgent Index (PAI)** ——一个面向 AI 智能体的\"治理就绪度\"评估指数，将智能体的发布决策从\"凭信心上线\"转变为\"可审计的就绪度判断\"。\n\n### 2. 主要方法\nPAI 由四个部署证据维度构成：\n- **Evaluation（评测）**：衡量可观测的实际行为；\n- **Context（上下文）**：衡量塑造该行为的运行环境；\n- **Compliance（合规）**：衡量与适用规则和管控要求的对齐程度；\n- **Governance（治理）**：衡量组织在运行期间授权、监控、审计和管控智能体的能力。\n\n该指数落地于开源基础设施 **ProofAgent Harness**（用于可审计的智能体评测与治理），并在**医疗**与**金融**两个强监管领域进行了验证。\n\n### 3. 结论/性能\n- PAI 具备 **held-out（留出验证）就绪度信号**，能有效区分高风险与低风险配置；\n- **上下文工程**对可靠性影响显著；\n- **能力提升可改善行为表现，但并不决定是否生产就绪**；\n- **治理证据必须保持独立可见**，不能被加权平均所掩盖。\n\n> 一句话：这是一篇偏治理/评测框架的立场兼方法论文，主张用多维证据取代单一能力指标来做智能体上线决策。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-31 13:01:11"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.20562",
+ "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory",
+ "authors": "Sizhe Yang, Juncheng Mu, Tianming Wei, Chenhao Lu, Xiaofan Li, Linning Xu, Zhengrong Xue, Zhecheng Yuan, Dahua Lin, Jiangmiao Pang, Huazhe Xu",
+ "date": "2026-06-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.20562v1",
+ "abstract": "Robust robotic manipulation in the real world requires not only an understanding of the current observation, but also memory and dynamics modeling. World action models (WAMs) possess these capabilities by jointly modeling visual foresight and actions conditioned on both current and historical observations, making them a promising paradigm for robotic manipulation. However, existing WAMs face a fundamental trade-off: methods with efficient inference typically condition only on a bounded window of recent observations and therefore struggle in non-Markovian environments, whereas methods that preserve long histories incur time and space costs that grow substantially with sequence length. To address this challenge, we introduce MemoryWAM, a world action model with efficient persistent memory. MemoryWAM uses a hybrid memory design that combines recent frames, event-boundary anchor frames, and compact gist tokens that summarize long-range history. A tailored attention mechanism enables retrieval of both detailed short-term context and compressed long-term context, supporting memory-dependent decision-making with reduced inference latency and GPU memory usage. Across long-horizon, memory-dependent manipulation tasks in both simulation and the real world, MemoryWAM outperforms strong vision-language-action (VLA) and WAM baselines while maintaining favorable computational efficiency.",
+ "summary": "以下是该论文的中文摘要总结：\n\n## MemoryWAM：基于持久记忆的高效世界动作建模\n\n**1. 核心创新点**\n提出一种带有\"持久记忆\"机制的世界动作模型（WAM），在保证长程记忆能力的同时大幅降低推理延迟和显存开销，破解了现有方法在\"推理效率\"与\"长历史保留\"之间的两难权衡。\n\n**2. 主要方法**\n采用**混合记忆设计**，融合三类信息：近期帧（细节短期上下文）、事件边界锚点帧（关键节点）、以及压缩长程历史的紧凑\"要点令牌\"（gist tokens）。配合一种专门设计的**注意力机制**，可同时检索细粒度的短期上下文和压缩的长期上下文，从而支持依赖记忆的决策。\n\n**3. 结论/性能**\n在仿真和真实世界的长时序、记忆依赖型机器人操作任务中，MemoryWAM 的表现优于强基线的视觉-语言-动作模型（VLA）和现有 WAM 方法，同时保持了良好的计算效率（更低的推理时延与 GPU 显存占用）。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-06-19 13:04:33"
+}

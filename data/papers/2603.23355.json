@@ -1,0 +1,13 @@
+{
+ "id": "2603.23355",
+ "title": "Off-Policy Value-Based Reinforcement Learning for Large Language Models",
+ "authors": "Peng-Yuan Wang, Ziniu Li, Tian Xu, Bohan Yang, Tian-Shuo Liu, ChenYang Wang, Xiong-Hui Chen, Yi-Chen Li, Tianyun Yang, Congliang Chen, Yang Yu",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23355v1",
+ "abstract": "Improving data utilization efficiency is critical for scaling reinforcement learning (RL) for long-horizon tasks where generating trajectories is expensive. However, the dominant RL methods for LLMs are largely on-policy: they update each batch of data only once, discard it, and then collect fresh samples, resulting in poor sample efficiency. In this work, we explore an alternative value-based RL framework for LLMs that naturally enables off-policy learning. We propose ReVal, a Bellman-update-based method that combines stepwise signals capturing internal consistency with trajectory-level signals derived from outcome verification. ReVal naturally supports replay-buffer-based training, allowing efficient reuse of past trajectories. Experiments on standard mathematical reasoning benchmarks show that ReVal not only converges faster but also outperforms GRPO in final performance. On DeepSeek-R1-Distill-1.5B, ReVal improves training efficiency and achieves improvement of 2.7% in AIME24 and 4.5% in out-of-domain benchmark GPQA over GRPO. These results suggest that value-based RL is a practical alternative to policy-based methods for LLM training.",
+ "summary": "- 核心创新点：提出 ReVal，一种基于 Bellman 更新的离策略值基强化学习框架，结合步进信号捕捉内部一致性与轨迹级信号（来自结果验证），天然支持回放缓冲以高效复用历史轨迹。\n\n- 主要方法：采用 ReVal 实现离策略学习，使用回放缓冲区进行历史轨迹重用；通过 Bellman 更新实现步进信号与内部一致性，同时结合轨迹级的结果验证信号来引导学习，应用于大语言模型的强化学习训练，并与 GRPO 等方法对比。\n\n- 结论/性能：在标准数学推理基准上，ReVal 既更快收敛又有更好最终表现；在 DeepSeek-R1-Distill-1.5B 上，相较 GRPO 提升训练效率，并在 AIME24 与 GPQA（跨域基准）分别达到 2.7% 和 4.5% 的提升。总体结论：值基强化学习是大语言模型训练中的一个可行替代策略。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-03-25 13:07:48"
+}

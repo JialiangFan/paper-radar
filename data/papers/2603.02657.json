@@ -1,0 +1,13 @@
+{
+ "id": "2603.02657",
+ "title": "Watch Your Step: Learning Semantically-Guided Locomotion in Cluttered Environment",
+ "authors": "Denan Liang, Yuan Zhu, Ruimeng Liu, Thien-Minh Nguyen, Shenghai Yuan, Lihua Xie",
+ "date": "2026-03-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.02657v1",
+ "abstract": "Although legged robots demonstrate impressive mobility on rough terrain, using them safely in cluttered environments remains a challenge. A key issue is their inability to avoid stepping on low-lying objects, such as high-cost small devices or cables on flat ground. This limitation arises from a disconnection between high-level semantic understanding and low-level control, combined with errors in elevation maps during real-world operation. To address this, we introduce SemLoco, a Reinforcement Learning (RL) framework designed to avoid obstacles precisely in densely cluttered environments. SemLoco uses a two-stage RL approach that combines both soft and hard constraints and performs pixel-wise foothold safety inference, enabling more accurate foot placement. Additionally, SemLoco integrates a semantic map to assign traversability costs rather than relying solely on geometric data. SemLoco significantly reduces collisions and improves safety around sensitive objects, enabling reliable navigation in situations where traditional controllers would likely cause damage. Experimental results further demonstrate that SemLoco can be effectively applied to more complex, unstructured real-world environments.",
+ "summary": "- 核心创新点（1句）：\n  提出 SemLoco，一种将语义信息融入的两阶段强化学习框架，并结合像素级落脚点安全推断与软/硬约束，显著提升在密集杂乱环境中的落脚和避障安全性。\n\n- 主要方法（技术要点）：\n  - 两阶段强化学习框架，结合软约束与硬约束来引导控制。\n  - 像素级的落脚点安全推断，提高落脚点选取的精度与安全性。\n  - 引入语义地图，用遍历成本来表达可通行性，而不仅仅依赖几何信息，缓解地形高低误差的影响。\n  - 将语义感知与低/高层控制耦合，解决现实操作中的高程图误差问题，提升在复杂未结构化现实环境中的鲁棒性。\n\n- 结论/性能（效果概述）：\n  - 显著减少碰撞，提升对敏感对象周围的安全性，避免踩踏低高成本物体、设备或缆线等。\n  - 实验与现实环境测试表明，SemLoco 能在更复杂、未结构化的真实场景中实现可靠导航与应用迁移。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-04 14:00:41"
+}

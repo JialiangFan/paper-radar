@@ -1,0 +1,13 @@
+{
+ "id": "2606.03190",
+ "title": "Focused on the User, Overlooking the Risks: Security and Privacy Understandings, Practices and Challenges of Independent Chinese AI Agent Developers",
+ "authors": "Shuning Zhang, Mingyao Xu, Zhixin Huang, Yutong Jiang, Rongjun Ma, Yuting Yang, Xin Yi, Kanye Ye Wang, Hewu Li",
+ "date": "2026-06-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.03190v1",
+ "abstract": "The proliferation of AI agents empowers independent developers, defined as individual or small groups who self-initiate projects rather than fulfill client-based contracts, to create sophisticated autonomous systems, but also introduces novel security and privacy (S&P) challenges beyond traditional corporate structures. We conducted an interview study (N=28) with Chinese developers, whose extensive use of global LLM services offer valuable insights into this population. We investigate their understandings, practices and challenges of S&P challenges in their developed AI agent products. We revealed that independent developers frequently think and act from their users' perspective. They focused on user-facing safety risks such as harmful content while exhibiting low awareness of security vulnerabilities. Consequently, developers rely almost exclusively on ad-hoc, manually crafted safeguards and informal communication, with an absence of formal tools or processes for S&P practices. We found these actions are driven by various inhibitors, primarily a lack of formal training on S&P related skills, accessible security tools and actionable guidance from platforms. Our work contributed the first exploration of independent AI agent developers' S&P understanding, outlining opportunities for tailored security tooling.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**：首次针对中国独立 AI Agent 开发者群体，系统性揭示其在安全与隐私（S&P）方面\"重用户体验、轻安全风险\"的认知偏差与实践空白。\n\n**2. 主要方法**：对 28 名中国独立开发者（个人或小团队、自发立项而非接受客户委托）进行半结构化访谈研究（N=28），调查他们在所开发 AI Agent 产品中对 S&P 问题的理解、实践方式与所面临的挑战。\n\n**3. 结论/性能**：\n- 开发者倾向从用户视角思考，主要关注有害内容等面向用户的安全风险，而对底层安全漏洞认知不足；\n- 防护手段几乎完全依赖临时性、手工编写的措施和非正式沟通，缺乏正规工具与流程；\n- 主要障碍包括：缺乏正式的 S&P 技能培训、缺少易用的安全工具、平台未提供可操作的指导；\n- 该研究为面向独立开发者的定制化安全工具设计指明了方向。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-04 13:00:43"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.01027",
+ "title": "$τ_0$-WM: A Unified Video-Action World Model for Robotic Manipulation",
+ "authors": "Pengfei Zhou, Shengcong Chen, Di Chen, Jiaxu Wang, Rongjun Jin, Bingwen Zhu, Yike Pan, Songen Gu, Kuanning Wang, Shufeng Nan, Xingyu Qiu, Chenhao Qiu, Pu Yang, Yunuo Cai, Jianxiong Gao, Yifan Li, Yanwei Fu, Xiangyu Yue, Zhi Chen, Jianlan Luo",
+ "date": "2026-05-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.01027v1",
+ "abstract": "Robotic manipulation requires models that generate executable actions while anticipating and evaluating their future consequences before physical execution. We present $τ_0$-World Model ($τ_0$-WM), a unified video-action world model that integrates policy learning, video prediction, and action evaluation within a single future-predictive framework. Built on a shared video diffusion backbone, $τ_0$-WM provides two complementary interfaces. First, a video action model jointly predicts future visual latents and continuous action chunks from multi-view observations, language instructions, and robot state. Second, an action-conditioned video simulator rolls out candidate action chunks into multi-view futures and predicts dense task-progress scores. The model is trained on approximately $27{,}300$ hours of real-robot teleoperation, UMI-style interaction, egocentric human videos, and rollout or failure trajectories using modality-specific supervision masks. At inference time, $τ_0$-WM uses test-time computation to sample action candidates, rank them with re-denoising consistency, and invoke simulator-based rectification for low-quality candidates. On challenging long-horizon and fine-grained robotic manipulation tasks, $τ_0$-WM shows superior performance over other relevant baselines.",
+ "summary": "# τ₀-WM 论文总结\n\n1. **核心创新点**：提出统一的视频-动作世界模型，将策略学习、视频预测和动作评估整合到单一的未来预测框架中，使机器人在执行动作前能预见并评估其后果。\n\n2. **主要方法**：基于共享视频扩散主干网络构建两个互补接口——视频动作模型（联合预测未来视觉潜变量与连续动作块）和动作条件视频模拟器（推演候选动作并预测任务进度分数）；在约 27,300 小时的真实机器人遥操作、UMI 交互、第一人称人类视频及失败轨迹数据上，使用模态特定的监督掩码训练；推理时通过测试时计算采样候选动作，用去噪一致性重排序，并对低质量候选触发模拟器修正。\n\n3. **结论/性能**：在长时程与精细操作的机器人任务上，相较其他相关基线取得了更优的性能表现。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-02 13:02:45"
+}

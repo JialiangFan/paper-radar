@@ -1,0 +1,13 @@
+{
+ "id": "2604.15270",
+ "title": "Enhancing Large Language Models with Retrieval Augmented Generation for Software Testing and Inspection Automation",
+ "authors": "Zoe Fingleton, Nazanin Siavash, Armin Moin",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15270v1",
+ "abstract": "In this paper, we focus on automating two of the widely used Verification and Validation (V&V) activities in the Software Development Lifecycle (SDLC): Software testing and software inspection (also known as review). Concerning the former, we concentrate on automated test case generation using Large Language Models (LLMs). For the latter, we enable inspection of the source code by LLMs. To address the known LLM hallucination problem, in which LLMs confidently produce incorrect outputs, we implement a Retrieval Augmented Generation (RAG) pipeline to integrate supplementary knowledge sources and provide additional context to the LLM. Our experimental results indicate that incorporating external context via the RAG pipeline has a generally positive impact on both test case generation and code inspection. This novel approach reduces the total project cost by saving human testers'/inspectors' time. It also improves the effectiveness and efficiency of these V&V activities, as evidenced by our experimental study.",
+ "summary": "1) 核心创新点：将检索增强生成（RAG）引入大语言模型，整合外部知识源以提升软件测试用例生成与代码审查的准确性与效率，并缓解LLM幻觉问题。\n\n2) 主要方法：使用大型语言模型进行自动化测试用例生成与代码审查，构建RAG管线，将检索到的外部知识作为上下文输入LLM，提供额外背景信息。\n\n3) 结论/性能：实验结果表明，引入RAG的外部上下文对测试用例生成和代码审查均有正向影响，显著降低总项目成本、节省人力时间，并提升V&V活动的有效性与效率。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-17 13:01:49"
+}

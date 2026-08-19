@@ -1,0 +1,13 @@
+{
+ "id": "2604.26946",
+ "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+ "authors": "Wanrong Zheng, Yunhao Ge, Laurent Itti",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26946v1",
+ "abstract": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs). These models can plan a sequence of motions by evaluating the current view at each time step against the task and goal given to the agent. However, current zero-shot Vision-and-Language Navigation (VLN) agents powered by MLLMs still tend to drift off course, halt prematurely, and achieve low overall success rates. We propose Three-Step Nav to counteract these failures with a three-view protocol: First, \"look forward\" to extract global landmarks and sketch a coarse plan. Then, \"look now\" to align the current visual observation with the next sub-goal for fine-grained guidance. Finally, \"look backward\" audits the entire trajectory to correct accumulated drift before stopping. Requiring no gradient updates or task-specific fine-tuning, our planner drops into existing VLN pipelines with minimal overhead. Three-Step Nav achieves state-of-the-art zero-shot performance on the R2R-CE and RxR-CE dataset. Our code is available at https://github.com/ZoeyZheng0/3-step-Nav.",
+ "summary": "1) 核心创新点：提出一个三步式全局-局部规划器 Three-Step Nav，通过“向前看/现在看/回头看”的三视角导航策略，在零样本 VLN 场景中显式纠偏，减少漂移和早停且无需梯度更新。\n\n2) 主要方法：利用多模态大语言模型（MLLMs）进行逐步评估与规划；第一步“向前看”提取全局地标并绘制粗略计划；第二步“现在看”将当前观测与下一个子目标对齐，执行细粒度导航；第三步“回头看”回顾并修正整条轨迹的漂移；可无缝接入现有 VLN 管线，开销小且无需任务特定微调，代码开源。\n\n3) 结论/性能：在 R2R-CE 与 RxR-CE 数据集上达到零样本（zero-shot）最优性能（state-of-the-art zero-shot performance）。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-30 13:04:40"
+}

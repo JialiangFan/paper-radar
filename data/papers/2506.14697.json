@@ -1,0 +1,33 @@
+{
+ "id": "2506.14697",
+ "title": "AGENTSAFE: Benchmarking the Safety of Embodied Agents on Hazardous Instructions",
+ "authors": "Zonghao Ying, Le Wang, Yisong Xiao, Jiakai Wang, Yuqing Ma, Jinyang Guo, Zhenfei Yin, Mingchuan Zhang, Aishan Liu, Xianglong Liu",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2506.14697",
+ "abstract": "",
+ "summary": "AGENTSAFE benchmarks whether embodied VLM agents comply with or refuse hazardous instructions across perception, planning, and execution.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Embodied AI Safety",
+ "tags": [
+  "benchmark",
+  "benchmarks-and-evaluation",
+  "embodied-ai-safety",
+  "hazardous-instructions",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Embodied_AI_Safety/2025_Ying_AGENTSAFE.md",
+ "pdf_path": "PDFs/Embodied_AI_Safety/2025_Ying_AGENTSAFE.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

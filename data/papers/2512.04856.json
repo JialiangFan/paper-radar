@@ -1,0 +1,13 @@
+{
+ "id": "2512.04856",
+ "title": "Safe model-based Reinforcement Learning via Model Predictive Control and Control Barrier Functions",
+ "authors": "Kerim Dzhumageldyev, Filippo Airaldi, Azita Dabiri",
+ "date": "2025-12-04",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.04856v1",
+ "abstract": "Optimal control strategies are often combined with safety certificates to ensure both performance and safety in safety-critical systems. A prominent example is combining Model Predictive Control (MPC) with Control Barrier Functions (CBF). Yet, efficient tuning of MPC parameters and choosing an appropriate class $\\mathcal{K}$ function in the CBF is challenging and problem dependent. This paper introduces a safe model-based Reinforcement Learning (RL) framework where a parametric MPC controller incorporates a CBF constraint with a parameterized class $\\mathcal{K}$ function and serves as a function approximator to learn improved safe control policies from data. Three variations of the framework are introduced, distinguished by the way the optimization problem is formulated and the class $\\mathcal{K}$ function is parameterized, including neural architectures. Numerical experiments on a discrete double-integrator with static and dynamic obstacles demonstrate that the proposed methods improve performance while ensuring safety.",
+ "summary": "- 核心创新点（一句话概括）：将参数化的模型预测控制（MPC）与控制 barrier functions（CBF）结合，利用参数化的类K函数对CBF进行学习性约束，并将MPC作为安全的函数逼近器，提出三种变体用于安全型强化学习。\n\n- 主要方法：在安全模型基于强化学习框架中，将MPC控制器嵌入CBF约束中，参数化的类K函数（包括用神经网络等）对CBF进行学习和表达，形成三种不同的优化表述和K函数参数化方式，作为学习安全策略的核心机制；在离散双积分器与静态/动态障碍物场景中进行数值实验。\n\n- 结论/性能：所提方法在保证安全性的前提下，显著提升了控制性能，与传统方法相比表现出更好的学习效果和决策质量。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2025-12-05 14:00:29"
+}

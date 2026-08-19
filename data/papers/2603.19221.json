@@ -1,0 +1,13 @@
+{
+ "id": "2603.19221",
+ "title": "Online Learning and Equilibrium Computation with Ranking Feedback",
+ "authors": "Mingyang Liu, Yongshan Chen, Zhiyuan Fan, Gabriele Farina, Asuman Ozdaglar, Kaiqing Zhang",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19221v1",
+ "abstract": "Online learning in arbitrary, and possibly adversarial, environments has been extensively studied in sequential decision-making, and it is closely connected to equilibrium computation in game theory. Most existing online learning algorithms rely on \\emph{numeric} utility feedback from the environment, which may be unavailable in human-in-the-loop applications and/or may be restricted by privacy concerns. In this paper, we study an online learning model in which the learner only observes a \\emph{ranking} over a set of proposed actions at each timestep. We consider two ranking mechanisms: rankings induced by the \\emph{instantaneous} utility at the current timestep, and rankings induced by the \\emph{time-average} utility up to the current timestep, under both \\emph{full-information} and \\emph{bandit} feedback settings. Using the standard external-regret metric, we show that sublinear regret is impossible with instantaneous-utility ranking feedback in general. Moreover, when the ranking model is relatively deterministic, \\emph{i.e.}, under the Plackett-Luce model with a temperature that is sufficiently small, sublinear regret is also impossible with time-average utility ranking feedback. We then develop new algorithms that achieve sublinear regret under the additional assumption that the utility sequence has sublinear total variation. Notably, for full-information time-average utility ranking feedback, this additional assumption can be removed. As a consequence, when all players in a normal-form game follow our algorithms, repeated play yields an approximate coarse correlated equilibrium. We also demonstrate the effectiveness of our algorithms in an online large-language-model routing task.",
+ "summary": "- 核心创新点：提出一个仅依赖排序反馈的在线学习框架，系统分析两种 ranking 反馈（即时效用排序与时间平均效用排序）在全信息与带带信息设置下的极限，并给出在总变差约束下实现子线性 regret 的新算法；在全信息时间平均排序下可去除该约束，从而在多方博弈中获得近似粗相关均衡。\n\n- 主要方法：在无数值效用信息的条件下，分别研究即时效用排序与时间平均效用排序的在线学习，区分全信息和带带反馈场景，给出不可实现子线性 regret 的理论界限；提出在效用序列具有子线性总变差的前提下的子线性 regret 算法，并在全信息时间平均排序情形下去除了该前提。并将所得结果应用到正常形游戏的重复博弈中，得到近似粗相关均衡，且在在线大语言模型路由任务上进行实验验证。\n\n- 结论/性能：在一般情形下，瞬时效用排序反馈不可实现子线性 regret；在相对确定性的排序模型（如低温的 Plackett-Luce）下，时间平均排序的子线性 regret 也不可行；通过引入总变差约束可实现子线性 regret，且在全信息时间平均排序下可以去除该约束；多玩家采取该算法后可实现近似粗相关均衡；并在实际的在线大语言模型路由任务中证明了方法的有效性。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-20 13:06:01"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.23568",
+ "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+ "authors": "Ziyan Feng, Yulong Fu, Zheng Li, Yuxin He, Jieji Ren, Lujia Wang, Jinni Zhou, Yudong Zhong, Qiang Nie",
+ "date": "2026-05-22",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.23568v1",
+ "abstract": "Manipulating fragile deformable containers, such as disposable plastic cups filled with liquid, demands real-time grip-force adaptation within an extremely narrow force margin: insufficient force causes slip, while excessive force irreversibly deforms the thin wall. Existing approaches struggle to achieve such force-sensitive manipulation tasks. We propose a noise-statistics-based calibration-driven reflex control paradigm with vision-based tactile sensing: by analyzing the sensor's intrinsic noise characteristics (via a brief static-hold-and-unload protocol), we directly derive all controller thresholds, eliminating external force calibration, trial-and-error manual tuning, or material-specific physical models. Instantiating this paradigm, we present TactileReflex, a three-channel closed-loop controller that extracts three image-level proxies, shear intensity ($S_y$), contact intensity ($F_n$), and center of pressure ($C$), from dual visuo-tactile sensors and drives prioritized reflex channels at ~12 Hz for slip suppression, weight-adaptive release, and force protection. Each channel closes the loop directly on its proxy via noise-derived thresholds. Ablation demonstrates that only the full three-channel system is able to prevent irreversible container deformation (5/5 success vs. at most 1/5 for partial configurations). In a dynamic pouring task, fixed-effort baselines fail in all 10 attempts due to pose drift, while TactileReflex achieves 9/10 success across two water volumes. As a self-contained and interpretable controller, TactileReflex can serve as a plug-and-play safety layer beneath high-level manipulation pipelines, including haptic-free VR teleoperation and vision-language-action (VLA) policies.",
+ "summary": "## TactileReflex 论文总结\n\n**1. 核心创新点**\n提出一种基于传感器固有噪声统计的视觉-触觉反射控制范式，无需外部力标定或材料物理模型，即可实现对易碎可变形容器（如装液塑料杯）的力敏感操作。\n\n**2. 主要方法**\n- 通过简短的\"静态保持-卸载\"协议分析视觉触觉传感器的内在噪声特性，直接推导出所有控制器阈值。\n- 构建三通道闭环控制器 TactileReflex：从双视觉触觉传感器中提取三个图像级代理量——剪切强度（$S_y$）、接触强度（$F_n$）和压力中心（$C$）。\n- 以约 12 Hz 频率驱动优先级反射通道，分别负责防滑、自适应重量释放与力保护。\n\n**3. 结论/性能**\n- 消融实验显示，仅完整三通道系统能完全避免容器不可逆变形（5/5 成功，部分配置最多 1/5）。\n- 在动态倒水任务中，固定力度基线 10 次全部失败（因姿态漂移），而 TactileReflex 在两种水量下达到 9/10 成功率。\n- 该控制器可作为即插即用的安全层，配合 VR 遥操作或视觉-语言-动作（VLA）策略使用。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-05-25 13:12:09"
+}

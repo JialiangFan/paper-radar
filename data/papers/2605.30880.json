@@ -1,0 +1,13 @@
+{
+ "id": "2605.30880",
+ "title": "PatchWorld: Gradient-Free Optimization of Executable World Models",
+ "authors": "Jiaxin Bai, Yue Guo, Yifei Dong, Jiaxuan Xiong, Tianshi Zheng, Yixia Li, Tianqing Fang, Yufei Li, Yisen Gao, Haoyu Huang, Zhongwei Xie, Hong Ting Tsang, Zihao Wang, Lihui Liu, Jeff Pan, Yangqiu Song",
+ "date": "2026-05-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30880v1",
+ "abstract": "Text-agent environments are typically modeled as partially observable Markov decision processes (POMDPs), assuming that the simulator's latent state and transition dynamics are hidden from the agent. Yet little work has examined whether executable code can be induced to serve as a world model for prediction and planning under partial observability. We introduce PatchWorld, a gradient-free framework that turns offline trajectories into executable Python world models through counterexample-guided code repair. Instead of predicting the next observation with a black-box model, PatchWorld induces symbolic belief-state programs whose action updates can be inspected, replayed, and locally patched. Across seven AgentGym environments, PatchWorld-Simple achieves the highest code-based planning score among evaluated methods, reaching 76.4\\% macro success in live one-step lookahead while invoking no LLM calls inside the world-model prediction module itself. We further find that a human-specified residual-memory bias improves surface observation fidelity but weakens decision utility. This exposes a tradeoff in executable world models, since improving observation fidelity can come at the expense of action-discriminative dynamics, and vice versa. Code is available at https://github.com/HKBU-KnowComp/PatchWorld.",
+ "summary": "## PatchWorld 论文摘要\n\n**1. 核心创新点**\n提出一种无梯度框架，将离线轨迹转化为**可执行的 Python 代码作为世界模型**，用于部分可观察环境下的预测与规划，让世界模型变得可检视、可重放、可局部修补。\n\n**2. 主要方法**\n- 基于 POMDP 设定，针对文本智能体环境。\n- 采用**反例引导的代码修复（counterexample-guided code repair）**机制，归纳出符号化的\"信念状态程序（belief-state programs）\"。\n- 与黑盒模型预测下一观测不同，PatchWorld 通过显式的符号程序进行动作更新，预测模块内部**完全不调用 LLM**。\n\n**3. 结论/性能**\n- 在 AgentGym 的 7 个环境上评测，PatchWorld-Simple 在基于代码的规划评分中取得最高成绩，**单步前瞻宏平均成功率达 76.4%**。\n- 发现一个关键权衡：人工指定的残差记忆偏置（residual-memory bias）虽然提升了观测保真度，却削弱了动作区分性的动力学建模能力——**观测保真度与决策效用之间存在 trade-off**。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-01 13:08:31"
+}

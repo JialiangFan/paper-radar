@@ -1,0 +1,13 @@
+{
+ "id": "2606.12072",
+ "title": "World Model Self-Distillation: Training World Models to Solve General Tasks",
+ "authors": "Sebastian Stapf, Pablo Acuaviva Huertos, Aram Davtyan, Paolo Favaro",
+ "date": "2026-06-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.12072v1",
+ "abstract": "Pretrained video generators are promising visual world models that exhibit emergent task-solving abilities; however, their reliance on detailed textual descriptions limits their direct use for planning and decision-making. Existing approaches either outsource this reasoning to language or vision-language models, or rely on supervised fine-tuning with paired task-execution videos, which are costly to collect and difficult to scale. We propose a scalable framework that elicits task-solving ability in such models by combining self-distillation with reinforcement learning. Given an unlabeled scene image, a vision-language model generates a candidate task and a detailed step-by-step solution. The solution conditions a pretrained video diffusion model, the Demonstrator; we distill its behavior into an Executor conditioned only on the image and a short task prompt. This transfers execution knowledge from caption-guided generation to instruction-conditioned task solving without curated task-video supervision. We further improve the Executor with reinforcement learning from VLM feedback, exploiting the asymmetry between judging whether a sampled video satisfies a task and generating the solution. Experiments on our proposed WorldTasks-Benchmark and the DreamGen robotics benchmark show that the Executor surpasses the Demonstrator under our VLM-based evaluation protocol and transfers competitively to robotic tasks.",
+ "summary": "**核心创新点**：提出\"世界模型自蒸馏\"框架，让预训练视频生成模型无需配对的任务执行视频监督，即可直接根据图像和简短指令完成任务规划与执行。\n\n**主要方法**：\n- 对一张无标注场景图，用视觉-语言模型(VLM)生成候选任务及详细的分步解决方案；\n- 该方案作为条件驱动预训练视频扩散模型（称为 **Demonstrator/示范者**）生成执行视频；\n- 通过自蒸馏，把示范者的行为蒸馏到只依赖\"图像+简短任务提示\"的 **Executor/执行者** 中，从而把\"字幕引导生成\"的执行知识迁移为\"指令条件下的任务求解\"；\n- 进一步利用 VLM 反馈做强化学习——利用\"判断视频是否完成任务\"比\"生成解决方案\"更容易这一不对称性来优化执行者。\n\n**结论/性能**：在自建的 WorldTasks-Benchmark 和 DreamGen 机器人基准上，执行者在基于 VLM 的评测协议下超越了示范者，并能较好地迁移到机器人任务，且整个流程可扩展、无需昂贵的人工标注任务视频。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-12 13:03:37"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.17254",
+ "title": "Practical Framework for Privacy-Preserving and Byzantine-robust Federated Learning",
+ "authors": "Baolei Zhang, Minghong Fang, Zhuqing Liu, Biao Yi, Peizhao Zhou, Yuan Wang, Tong Li, Zheli Liu",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17254v1",
+ "abstract": "Federated Learning (FL) allows multiple clients to collaboratively train a model without sharing their private data. However, FL is vulnerable to Byzantine attacks, where adversaries manipulate client models to compromise the federated model, and privacy inference attacks, where adversaries exploit client models to infer private data. Existing defenses against both backdoor and privacy inference attacks introduce significant computational and communication overhead, creating a gap between theory and practice. To address this, we propose ABBR, a practical framework for Byzantine-robust and privacy-preserving FL. We are the first to utilize dimensionality reduction to speed up the private computation of complex filtering rules in privacy-preserving FL. Additionally, we analyze the accuracy loss of vector-wise filtering in low-dimensional space and introduce an adaptive tuning strategy to minimize the impact of malicious models that bypass filtering on the global model. We implement ABBR with state-of-the-art Byzantine-robust aggregation rules and evaluate it on public datasets, showing that it runs significantly faster, has minimal communication overhead, and maintains nearly the same Byzantine-resilience as the baselines.",
+ "summary": "- 核心创新点（一句话）：\n  在隐私保护的联邦学习中首次提出 ABBR 框架，结合降维来加速私有计算的复杂筛选规则，并通过自适应调参与低维向量筛选误差分析，提高对 Byzantine 攻击与隐私推断的鲁棒性，同时保持接近最先进聚合规则的性能。\n\n- 主要方法：\n  - 提出 ABBR 框架，使用降维技术加速隐私保护下的复杂筛选规则的私有计算。\n  - 在低维空间进行向量级筛选，并分析其准确度损失。\n  - 引入自适应调参策略，减少被恶意模型绕过筛选对全局模型的影响。\n  - 将该框架与最先进的 Byzantine-鲁棒聚合规则耦合实现鲁棒聚合。\n  - 在公开数据集上进行评估，比较运行时间、通信开销和鲁棒性。\n\n- 结论 / 性能：\n  - 运行显著更快，通信开销最小化。\n  - 几乎保持与基线相同的 Byzantine 鲁棒性。\n  - 在公开数据集上验证，证明在实践中实现了更高的效率与相近的鲁棒性。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-22 02:47:18"
+}

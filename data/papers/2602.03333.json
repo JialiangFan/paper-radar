@@ -1,0 +1,13 @@
+{
+ "id": "2602.03333",
+ "title": "PWAVEP: Purifying Imperceptible Adversarial Perturbations in 3D Point Clouds via Spectral Graph Wavelets",
+ "authors": "Haoran Li, Renyang Liu, Hongjia Liu, Chen Wang, Long Yin, Jian Xu",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03333v1",
+ "abstract": "Recent progress in adversarial attacks on 3D point clouds, particularly in achieving spatial imperceptibility and high attack performance, presents significant challenges for defenders. Current defensive approaches remain cumbersome, often requiring invasive model modifications, expensive training procedures or auxiliary data access. To address these threats, in this paper, we propose a plug-and-play and non-invasive defense mechanism in the spectral domain, grounded in a theoretical and empirical analysis of the relationship between imperceptible perturbations and high-frequency spectral components. Building upon these insights, we introduce a novel purification framework, termed PWAVEP, which begins by computing a spectral graph wavelet domain saliency score and local sparsity score for each point. Guided by these values, PWAVEP adopts a hierarchical strategy, it eliminates the most salient points, which are identified as hardly recoverable adversarial outliers. Simultaneously, it applies a spectral filtering process to a broader set of moderately salient points. This process leverages a graph wavelet transform to attenuate high-frequency coefficients associated with the targeted points, thereby effectively suppressing adversarial noise. Extensive evaluations demonstrate that the proposed PWAVEP achieves superior accuracy and robustness compared to existing approaches, advancing the state-of-the-art in 3D point cloud purification. Code and datasets are available at https://github.com/a772316182/pwavep",
+ "summary": "- 核心创新点：提出一种基于谱图小波的无侵入式3D点云对抗扰动净化框架 PWAVEP，通过在谱域对每个点计算显著性和局部稀疏性分数，分层剔除高度可恢复的对抗离群点并对中等显著点进行谱小波滤波以抑制高频噪声。\n\n- 主要方法：使用谱图小波变换提取点云的谱域信息，计算点级的谱域显著性分数和局部稀疏性分数；基于这些分数实施分层净化策略：删除最显著且几乎不可恢复的对抗离群点；对一组中等显著点进行谱域滤波以抑制高频系数中的对抗噪声，从而实现 plug-and-play、非侵入式防御。\n\n- 结论/性能：广泛评估表明 PWAVEP 在准确性和鲁棒性方面优于现有防御方法，推动3D点云净化的状态-of-the-art，且代码和数据集公开可获取。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-04 14:01:42"
+}

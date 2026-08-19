@@ -1,0 +1,13 @@
+{
+ "id": "2604.14609",
+ "title": "El Agente Forjador: Task-Driven Agent Generation for Quantum Simulation",
+ "authors": "Zijian Zhang, Aiwei Yin, Amaan Baweja, Jiaru Bai, Ignacio Gustin, Varinia Bernales, Alán Aspuru-Guzik",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.14609v1",
+ "abstract": "AI for science promises to accelerate the discovery process. The advent of large language models (LLMs) and agentic workflows enables the expediting of a growing range of scientific tasks. However, most of the current generation of agentic systems depend on static, hand-curated toolsets that hinder adaptation to new domains and evolving libraries. We present El Agente Forjador, a multi-agent framework in which universal coding agents autonomously forge, validate, and reuse computational tools through a four-stage workflow of tool analysis, tool generation, task execution, and iterative solution evaluation. Evaluated across 24 tasks spanning quantum chemistry and quantum dynamics on five coding agent setups, we compare three operating modes: zero-shot generation of tools per task, reuse of a curriculum-built toolset, and direct problem-solving with the coding agents as the baseline. We find that our tool generation and reuse framework consistently improves accuracy over the baseline. We also show that reusing a toolset built by a stronger coding agent can reduce API cost and substantially raises the solution quality for weaker coding agents. Case studies further demonstrate that tools forged for different domains can be combined to solve hybrid tasks. Taken together, these results show that LLM-based agents can use their scientific knowledge and coding capabilities to autonomously build reusable scientific tools, pointing toward a paradigm in which agent capabilities are defined by the tasks they are designed to solve rather than by explicitly engineered implementations.",
+ "summary": "1) 核心创新点：提出一个面向任务驱动的多代理框架 El Agente Forjador，使通用编码代理能够自治地设计、验证并复用计算工具来解决量子模拟相关任务。\n\n2) 主要方法：基于大型语言模型的多代理系统，采用四阶段工作流（工具分析、工具生成、任务执行、迭代解决评估）来生成与验证工具并实现重复使用；对比零样本生成工具、课程化工具集复用、直接问题求解三种模式，在24个量子化学与量子动力学任务、5种代理设定上评估。\n\n3) 结论/性能：工具生成与复用框架在各模式下均优于基线，提升准确性；用更强代理生成的工具集进行复用可降低 API 成本并显著提升较弱代理的解题质量；案例显示不同领域的工具可组合解决混合任务，表明以任务为中心的自动化工具生成是实现科学工具可复用性的有效范式。",
+ "keyword": "Agentic Workflow",
+ "source": "auto",
+ "created_at": "2026-04-17 13:06:21"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.15044",
+ "title": "CoGrid & the Multi-User Gymnasium: A Framework for Multi-Agent Experimentation",
+ "authors": "Chase McDonald, Cleotilde Gonzalez",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15044v1",
+ "abstract": "The increasing integration of artificial intelligence (AI) in everyday life brings with it new challenges and questions for regarding how humans interact with autonomous agents. Multi-agent experiments, where humans and AI act together, can offer important opportunities to study social decision making, but there is a lack of accessible tooling available to researchers to run such experiments. We introduce two tools designed to reduce these barriers. The first, CoGrid, is a multi-agent grid-based simulation library with dual NumPy and JAX backends. The second, Multi-User Gymnasium (MUG), translates such simulation environments directly into interactive web-based experiments. MUG supports interactions with arbitrary numbers of humans and AI, utilizing either server-authoritative or peer-to-peer networking with rollback netcode to account for latency. Together, these tools can enable researchers to deploy studies of human-AI interaction, facilitating inquiry into core questions of psychology, cognition, and decision making and their relationship to human-AI interaction. Both tools are open source and available to the broader research community. Documentation and source code is available at {cogrid, multi-user-gymnasium}.readthedocs.io. This paper details the functionality of these tools and presents several case studies to illustrate their utility in human-AI multi-agent experimentation.",
+ "summary": "- 核心创新点：提出并实现两款开源工具 CoGrid 与 Multi-User Gymnasium（MUG），提供可扩展的网格化多智能体仿真与直接支持网页化的人机多体互动实验平台，结合双后端（NumPy/JAX）与回滚网络码以降低时延影响，显著降低人机协作研究的门槛。\n\n- 主要方法：\n  - CoGrid：网格化的多智能体仿真库，具备 NumPy 与 JAX 双后端。\n  - Multi-User Gymnasium（MUG）：将上述仿真环境直接转化为可交互的网页实验，支持任意数量的真人与 AI；提供服务器端权威或对等网络模式，并采用回滚网络码来应对时延。\n\n- 结论/性能：通过若干案例研究展示了在开展人机多智能体实验中的实用性和潜力，支持研究者部署相关实验；工具开源，文档与源码可在官方文档站点获取。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-17 13:03:10"
+}

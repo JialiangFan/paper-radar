@@ -1,0 +1,13 @@
+{
+ "id": "2603.29791",
+ "title": "Reasoning-Driven Synthetic Data Generation and Evaluation",
+ "authors": "Tim R. Davidson, Benoit Seguin, Enrico Bacis, Cesar Ilharco, Hamza Harkous",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29791v1",
+ "abstract": "Although many AI applications of interest require specialized multi-modal models, relevant data to train such models is inherently scarce or inaccessible. Filling these gaps with human annotators is prohibitively expensive, error-prone, and time-consuming, leading model builders to increasingly consider synthetic data as a scalable alternative. However, existing synthetic data generation methods often rely on manual prompts, evolutionary algorithms, or extensive seed data from the target distribution - limiting their scalability, explainability, and control. In this paper, we introduce Simula: a novel reasoning-driven framework for data generation and evaluation. It employs a seedless, agentic approach to generate synthetic datasets at scale, allowing users to define desired dataset characteristics through an explainable and controllable process that enables fine-grained resource allocation. We show the efficacy of our approach on a variety of datasets, rigorously testing both intrinsic and downstream properties. Our work (1) offers guidelines for synthetic data mechanism design, (2) provides insights into generating and evaluating synthetic data at scale, and (3) unlocks new opportunities for developing and deploying AI in domains where data scarcity or privacy concerns are paramount.",
+ "summary": "核心创新点：提出 Simula，一种基于 seedless、代理式、以推理驱动的合成数据生成与评估框架，具可解释、可控的数据特征设定与细粒度资源分配能力。\n\n主要方法：采用自我推理/代理机制来无种子样本地生成大规模合成数据；通过一个可解释的流程让用户设定数据集特征并分配计算资源；对生成数据从内在属性和下游任务性能两方面进行严格评估，并给出合成数据设计的原则与实现流程。\n\n结论/性能：在多种数据集上验证其有效性，显示对数据内在属性和下游任务性能的可控性与提升潜力，提供规模化合成数据设计与评估的实用指南，并为数据稀缺或隐私敏感领域的 AI 应用打开新机会。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-01 13:01:57"
+}

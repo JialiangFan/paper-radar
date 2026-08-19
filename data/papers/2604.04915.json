@@ -1,0 +1,13 @@
+{
+ "id": "2604.04915",
+ "title": "Exploring Expert Perspectives on Wearable-Triggered LLM Conversational Support for Daily Stress Management",
+ "authors": "Poorvesh Dongre, Sameer Neupane, Priyanka Jadhav, Nikitha Donekal Chandrashekar, Christian Webb, Denis Gračanin",
+ "date": "2026-04-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.04915v1",
+ "abstract": "Wearable devices increasingly support stress detection, while LLMs enable conversational mental health support. However, designing systems that meaningfully connect wearable-triggered stress events with generative dialogue remains underexplored, particularly from a design perspective. We present EmBot, a functional mobile application that combines wearable-triggered stress detection with LLM-based conversational support for daily stress management. We used EmBot as a design probe in semi-structured interviews with 15 mental health experts to examine their perspectives and surface early design tensions and considerations that arise from wearable-triggered conversational support, informing the future design of such systems for daily stress management and mental health support.",
+ "summary": "- 核心创新点：通过 EmBot 将穿戴设备的压力触发与基于大语言模型的对话式支持整合到一个功能性移动应用中，作为设计探针揭示日常压力管理系统的专家视角与潜在设计挑战。\n\n- 主要方法：开发并使用功能性移动应用 EmBot，将穿戴式压力检测与 LLM 对话式支持相结合；以该应用为设计探针，对 15 位心理健康专家进行半结构化访谈，进行定性分析以提炼早期设计矛盾与考量。\n\n- 结论/性能：未给出量化指标，但通过专家访谈揭示了可穿戴触发的对话式心理健康支持系统设计中的关键设计矛盾与考量，为未来在日常压力管理与心理健康支持系统的设计提供指导与要点。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-07 13:01:23"
+}

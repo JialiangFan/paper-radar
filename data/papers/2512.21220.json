@@ -1,0 +1,32 @@
+{
+ "id": "2512.21220",
+ "title": "RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic",
+ "authors": "Zhang, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2512.21220",
+ "abstract": "",
+ "summary": "RoboSafe proposes executable safety logic and predictive reasoning for embodied agents facing hazardous instructions.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Embodied AI Safety",
+ "tags": [
+  "embodied-ai-safety",
+  "robotics",
+  "runtime-assurance",
+  "runtime-monitoring",
+  "safe-vla",
+  "safety-logic",
+  "semantic-safety"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Embodied_AI_Safety/2025_Zhang_RoboSafe.md",
+ "pdf_path": "PDFs/Embodied_AI_Safety/2025_Zhang_RoboSafe.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

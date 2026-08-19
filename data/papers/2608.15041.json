@@ -1,0 +1,13 @@
+{
+ "id": "2608.15041",
+ "title": "LLM-Based Hierarchical Coordinated Control with Continuation-Aware Policy Learning",
+ "authors": "Changhong He, Jinda Gao, Xinkuan Liu, Le Zhang, Xizi Luo, Yu Mei",
+ "date": "2026-08-15",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.15041v1",
+ "abstract": "Coordinating multiple interacting units in complex engineering systems is challenging when system interactions are difficult to model, operational information is heterogeneous, and low-level actions must satisfy strict constraints. We propose an LLM-based hierarchical framework in which the LLM coordinates interacting units based on heterogeneous operational context, while task-specific controllers or optimizers generate executable and constraint-aware actions. We further introduce Continuation-Aware GRPO to capture the consequences of coordination decisions over subsequent control intervals. Rather than judging a decision only by its immediate outcome, the method also evaluates how the system evolves afterward under the current policy. We validate the framework on multi-ramp traffic control and virtual power plant (VPP) energy management, using simplified system models for training and more realistic simulators for evaluation. Across both tasks, the proposed method consistently outperforms direct task-specific control and optimization, end-to-end reinforcement learning, rule-based and RL-based hierarchical coordination, and prompting-only LLM coordinators, demonstrating the value of heterogeneous-context reasoning, hierarchical execution, and continuation-aware policy learning.",
+ "summary": "1. **核心创新点**：提出一个\"LLM 做高层协调、专用控制器/优化器做底层执行\"的分层框架，并配套 Continuation-Aware GRPO，让协调决策的评价不只看即时结果，还看系统在当前策略下的后续演化。\n\n2. **主要方法**：\n   - **上层**：LLM 读取异构运行上下文（难以建模的交互、多源运行信息），对多个相互影响的单元下达协调指令。\n   - **下层**：任务专用控制器或优化器把协调指令翻译成满足硬约束的可执行动作。\n   - **训练**：在 GRPO 基础上引入\"延续感知\"回报——除当前控制区间的即时收益外，还评估随后若干控制区间内系统的演化情况。\n   - **实验设置**：训练用简化系统模型，评估用更贴近现实的仿真器（sim-to-sim 迁移），验证任务为多匝道交通控制与虚拟电厂（VPP）能量管理。\n\n3. **结论/性能**：在两个任务上均稳定优于五类基线——直接的专用控制/优化、端到端强化学习、基于规则的分层协调、基于 RL 的分层协调，以及仅靠提示词的 LLM 协调器。结果表明异构上下文推理、分层执行、延续感知的策略学习三者各自都有贡献。\n\n> 摘要未给出具体数值指标，仅表述为\"consistently outperforms\"，因此性能提升幅度无法从摘要判断。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-18 13:02:06"
+}

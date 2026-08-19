@@ -1,0 +1,13 @@
+{
+ "id": "2604.26866",
+ "title": "MoRFI: Monotonic Sparse Autoencoder Feature Identification",
+ "authors": "Dimitris Dimakopoulos, Shay B. Cohen, Ioannis Konstas",
+ "date": "2026-04-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.26866v1",
+ "abstract": "Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, and find latent directions that causally contribute to hallucinations. Specifically, we fine-tune Llama 3.1 8B, Gemma 2 9B and Mistral 7B v03 on seven distinct single QA datasets, controlling for the percentage of new knowledge and number of training epochs. By measuring performance on the test set, we validate that incrementally introducing new knowledge increases hallucinations, with the effect being more pronounced with prolonged training. We leverage pre-trained sparse autoencoders (SAEs) to analyze residual stream activations across various checkpoints for each model and propose Monotonic Relationship Feature Identification (MoRFI) for capturing causally relevant latents. MoRFI filters SAE features that respond monotonically to controlled fine-tuning data mixtures of a target property. Our findings show that exposure to unknown facts disrupts the model's ability to retrieve stored knowledge along a set of directions in the residual stream. Our pipeline reliably discovers them across distinct models, recovering knowledge through single-latent interventions.",
+ "summary": "- 核心创新点：提出 MoRFI（Monotonic Relationship Feature Identification），利用稀疏自编码器分析残差流，发现对控件微调中新知识导致幻觉具有因果作用的单潜在方向，并能通过单潜在干预恢复知识。\n\n- 主要方法：\n  - 在 Llama 3.1 8B、Gemma 2 9B、Mistral 7B v03 上进行七个单一问答数据集的受控微调，系统控制新知识比例与训练轮次。\n  - 使用预训练的稀疏自编码器分析各检查点的残差流激活。\n  - 提出 MoRFI，筛选对目标数据混合呈单调响应的 SAE 特征，定位与因果相关的潜在变量。\n  - 通过单潜在干预来恢复知识，验证在不同模型上的可泛化性。\n\n- 结论/性能：\n  - 增增新知识会提高幻觉现象，且长期训练放大这一效应。\n  - MoRFI 能在不同模型中可靠发现导致幻觉的因果潜在方向，并通过单潜在变量干预实现知识恢复，具有跨模型的可迁移性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-30 13:01:33"
+}

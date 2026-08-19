@@ -1,0 +1,13 @@
+{
+ "id": "2512.08366",
+ "title": "Reflecting with Two Voices: A Co-Adaptive Dual-Strategy Framework for LLM-Based Agent Decision Making",
+ "authors": "Wentao Zhang, Qunbo Wang, Tao Zhang, Junsheng Wu, Hongping Gan, Yang Liu, Ling Dai, Shizhuang Deng, Shuntong Sun",
+ "date": "2025-12-09",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.08366v1",
+ "abstract": "Large language model (LLM) agents often rely on external demonstrations or retrieval-augmented planning, leading to brittleness, poor generalization, and high computational overhead. Inspired by human problem-solving, we propose DuSAR (Dual-Strategy Agent with Reflecting) - a demonstration-free framework that enables a single frozen LLM to perform co-adaptive reasoning via two complementary strategies: a high-level holistic plan and a context-grounded local policy. These strategies interact through a lightweight reflection mechanism, where the agent continuously assesses progress via a Strategy Fitness Score and dynamically revises its global plan when stuck or refines it upon meaningful advancement, mimicking human metacognitive behavior. On ALFWorld and Mind2Web, DuSAR achieves state-of-the-art performance with open-source LLMs (7B-70B), reaching 37.1% success on ALFWorld (Llama3.1-70B) - more than doubling the best prior result (13.0%) - and 4.02% on Mind2Web, also more than doubling the strongest baseline. Remarkably, it reduces per-step token consumption by 3-9X while maintaining strong performance. Ablation studies confirm the necessity of dual-strategy coordination. Moreover, optional integration of expert demonstrations further boosts results, highlighting DuSAR's flexibility and compatibility with external knowledge.",
+ "summary": "- **核心创新点**：提出 DuSAR（Dual-Strategy Agent with Reflecting），在一个冻结的大语言模型中通过两种互补策略（高层全局计划与上下文本地策略）进行共适应推理，并通过轻量化的反思机制实现元认知式决策，无需演示示例即可提升鲁棒性与效率。\n\n- **主要方法**：采用一个冻结的 LLM，设计两种互补的推理策略（全局计划与局部策略）并通过一个轻量化的反思机制（Strategy Fitness Score）进行交互：达到停滞时修订全局计划，取得进展时 refinement；属于演示-free 框架，可与 7B–70B 的开源模型搭配，且可选引入专家演示以进一步提升。\n\n- **结论/性能**：在 ALFWorld 与 Mind2Web 评估中达到SOTA水平：ALFWorld 使用 Llama3.1-70B 达到 37.1% 的成功率，较之前最佳 13.0% 提升近2倍；Mind2Web 达到 4.02% 的成功率，同样显著超过 strongest baseline；同时每步 token 消耗降低 3–9 倍，且消融研究证实双策略协同的必要性；可选引入专家演示可进一步提升效果。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-10 14:03:22"
+}

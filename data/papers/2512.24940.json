@@ -1,0 +1,13 @@
+{
+ "id": "2512.24940",
+ "title": "Iterative Deployment Improves Planning Skills in LLMs",
+ "authors": "Augusto B. Corrêa, Yoav Gelberg, Luckeciano C. Melo, Ilia Shumailov, André G. Pereira, Yarin Gal",
+ "date": "2025-12-31",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.24940v1",
+ "abstract": "We show that iterative deployment of large language models (LLMs), each fine-tuned on data carefully curated by users from the previous models' deployment, can significantly change the properties of the resultant models. By testing this mechanism on various planning domains, we observe substantial improvements in planning skills, with later models displaying emergent generalization by discovering much longer plans than the initial models. We then provide theoretical analysis showing that iterative deployment effectively implements reinforcement learning (RL) training in the outer-loop (i.e. not as part of intentional model training), with an implicit reward function. The connection to RL has two important implications: first, for the field of AI safety, as the reward function entailed by repeated deployment is not defined explicitly, and could have unexpected implications to the properties of future model deployments. Second, the mechanism highlighted here can be viewed as an alternative training regime to explicit RL, relying on data curation rather than explicit rewards.",
+ "summary": "- 核心创新点：通过在外环进行迭代部署，每轮以上一轮模型部署中由用户筛选的数据对模型进行微调，形成一种类似强化学习的训练机制，从而显著提升 LLM 的规划能力并实现更长计划的 emergent 泛化。\n- 主要方法：实行逐轮部署与数据驱动微调（数据来自用户对前一轮输出的筛选/标注），在多种规划任务中评估并理论分析其等效于外环的强化学习，含隐含奖励函数的机制。\n- 结论/性能：在多种规划任务中，后续模型显著提升规划技能，能产生比初始模型更长的计划并展现 emergent generalization；理论上将迭代部署视为外环 RL 的实现，强调了隐含奖励及数据筛选在训练中的作用，以及对 AI 安全与无显式奖励训练范式的影响。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-01-01 03:26:58"
+}

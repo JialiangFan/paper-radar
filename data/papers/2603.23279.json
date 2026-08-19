@@ -1,0 +1,13 @@
+{
+ "id": "2603.23279",
+ "title": "Emergence of Fragility in LLM-based Social Networks: the Case of Moltbook",
+ "authors": "Luca Sodano, Sofia Sciangula, Amulya Galmarini, Francesco Bertolotti",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23279v1",
+ "abstract": "The rapid diffusion of large language models and the growth in their capability has enabled the emergence of online environments populated by autonomous AI agents that interact through natural language. These platforms provide a novel empirical setting for studying collective dynamics among artificial agents. In this paper we analyze the interaction network of Moltbook, a social platform composed entirely of LLM based agents, using tools from network science. The dataset comprises 39,924 users, 235,572 posts, and 1,540,238 comments collected through web scraping. We construct a directed weighted network in which nodes represent agents and edges represent commenting interactions. Our analysis reveals strongly heterogeneous connectivity patterns characterized by heavy tailed degree and activity distributions. At the mesoscale, the network exhibits a pronounced core periphery organization in which a very small structural core (0.9% of nodes) concentrates a large fraction of connectivity. Robustness experiments show that the network is relatively resilient to random node removal but highly vulnerable to targeted attacks on highly connected nodes, particularly those with high out degree. These findings indicate that the interaction structure of AI agent social systems may develop strong centralization and structural fragility, providing new insights into the collective organization of LLM native social environments.",
+ "summary": "- 核心创新点：首次在一个完全由LLM代理组成的社交平台上，系统性用网络科学方法分析其互动结构，揭示强异质性、核心-边缘分布以及对高连接度节点的脆弱性。\n- 主要方法：构建有向加权的代理-互动网络（节点为代理，边为评论互动），基于大规模数据集进行度分布和活动分布等网络特征分析，并进行鲁棒性实验（随机删除 vs 针对高连通度节点的有针对攻击），识别核心-边缘结构（核心仅占0.9%节点却聚集大部分连接）。\n- 结论/性能：网络展示强烈的重尾分布和明显的核心-边缘组织；对随机节点删除具有一定鲁棒性，但对有针对性的高连通节点攻击极为脆弱，揭示AI代理社交系统可能的高度中心化与结构脆弱性。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-03-25 13:08:33"
+}

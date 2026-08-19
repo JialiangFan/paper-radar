@@ -1,0 +1,27 @@
+{
+ "id": "security-considerations-in-ai-robotics",
+ "title": "Security Considerations in AI-Robotics",
+ "authors": "",
+ "date": null,
+ "year": null,
+ "url": "",
+ "abstract": "",
+ "summary": "AI-Robotics系统已深入交通、制造、医疗、农业等行业，但AI的集成也带来严重安全问题。对抗攻击、数据泄露、系统操纵可能导致事故、财产损失甚至危及人命。2020年研究者通过细微改变路边限速标志即操纵Tesla加速50英里/小时。",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "",
+ "category": "Supplemental Safety Post-Training and Formal",
+ "tags": [
+  "imported-from-previous-vault",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Supplemental_Safety_Post_Training_and_Formal/Security Considerations in AI-Robotics - A Survey.md",
+ "pdf_path": "",
+ "code": "",
+ "project": "",
+ "is_core": false,
+ "is_supplemental": true
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.23090",
+ "title": "Benchmark Success, Clinical Failure: When Reinforcement Learning Optimizes for Benchmarks, Not Patients",
+ "authors": "Armin Berger, Manuela Bergau, Helen Schneider, Saad Ahmad, Tom Anglim Lagones, Gianluca Brugnara, Martha Foltyn-Dumitru, Kai Schlamp, Philipp Vollmuth, Rafet Sifa",
+ "date": "2025-12-28",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.23090v1",
+ "abstract": "Recent Reinforcement Learning (RL) advances for Large Language Models (LLMs) have improved reasoning tasks, yet their resource-constrained application to medical imaging remains underexplored. We introduce ChexReason, a vision-language model trained via R1-style methodology (SFT followed by GRPO) using only 2,000 SFT samples, 1,000 RL samples, and a single A100 GPU. Evaluations on CheXpert and NIH benchmarks reveal a fundamental tension: GRPO recovers in-distribution performance (23% improvement on CheXpert, macro-F1 = 0.346) but degrades cross-dataset transferability (19% drop on NIH). This mirrors high-resource models like NV-Reason-CXR-3B, suggesting the issue stems from the RL paradigm rather than scale. We identify a generalization paradox where the SFT checkpoint uniquely improves on NIH before optimization, indicating teacher-guided reasoning captures more institution-agnostic features. Furthermore, cross-model comparisons show structured reasoning scaffolds benefit general-purpose VLMs but offer minimal gain for medically pre-trained models. Consequently, curated supervised fine-tuning may outperform aggressive RL for clinical deployment requiring robustness across diverse populations.",
+ "summary": "以下为对论文标题与摘要的简要中文总结：\n\n- 核心创新点（1 句）：\n  在极小数据和单卡 GPU 条件下，提出并评估 ChexReason 的 R1 风格训练（SFT+GRPO），系统揭示强化学习在医学视觉-语言模型中仅优化基准性能而削弱跨数据临床鲁棒性的现象。\n\n- 主要方法：\n  - 构建 ChexReason 这类视觉-语言模型，采用 R1 风格训练流程：先进行监督微调（SFT），再进行基于奖励的策略优化（GRPO）。\n  - 训练资源极为有限：仅 2,000 条 SFT 样本、1,000 条 RL 样本，使用单张 A100 GPU。\n  - 评估对象为 CheXpert 与 NIH 数据集，并与跨模型的结构化推理方法进行对比，分析跨数据泛化与领域无关特征的关系。\n\n- 结论/性能：\n  - GRPO 在就地分布内性能显著提升（CheXpert 上约 23% 提升，宏 F1 = 0.346），但跨数据迁移能力下降（NIH 降 19%）。\n  - SFT 检查点在优化前对 NIH 的泛化表现更好，表明教师引导的推理更容易捕捉领域无关特征。\n  - 跨模型比较显示结构化推理对通用 VLM 有益，但对医学预训练模型收益有限。\n  - 因此，在需要对多样人群具有鲁棒性的临床部署场景中，经过精心筛选的监督微调可能优于激进的强化学习方法。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-30 02:29:42"
+}

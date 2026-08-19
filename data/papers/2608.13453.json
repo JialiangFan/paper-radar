@@ -1,0 +1,13 @@
+{
+ "id": "2608.13453",
+ "title": "UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models",
+ "authors": "Yukun Dai, Mingzhe Dai, Tianshi Wang, Fengling Li, Jingjing Li, Lei Zhu",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13453v1",
+ "abstract": "Vision-Language-Action (VLA) models have emerged as generalist robotic policies capable of following diverse language instructions and performing a wide range of manipulation tasks. However, their direct control over embodied agents also exposes them to adversarial interference that may cause unsafe physical behaviors. Existing attacks on robotic policies are typically optimized for a single task or instruction, leaving the cross-task vulnerabilities of multitask VLAs largely unexplored. We introduce UniTexture, a cross-task universal adversarial texture attack that uses a single textured 3D object to induce targeted deviations in VLA action predictions across multiple tasks. UniTexture backpropagates gradients from the policy's action outputs to surface texture parameters through a differentiable renderer. It jointly optimizes the shared texture over a distribution of tasks, instructions, states, and viewpoints using a targeted action-space objective, steering predicted actions toward attacker-defined targets without optimizing a separate texture for each task. We evaluate UniTexture on OpenVLA and $π_{0.5}$ across diverse manipulation tasks and multiple evaluation settings. UniTexture reduces the mean task success rate from 90.0% under benign conditions to 48.4% under attack, induces target-aligned action shifts, and further exhibits cross-suite and cross-model transfer without re-optimization. Together, these findings reveal shared cross-task vulnerabilities in multitask VLAs that can be systematically exploited through a single adversarial surface texture.",
+ "summary": "## UniTexture 论文摘要总结\n\n**1. 核心创新点**\n提出首个「跨任务通用对抗纹理」攻击——用一个带纹理的 3D 物体，就能同时干扰视觉-语言-动作（VLA）模型在多种操作任务中的动作预测，无需为每个任务单独优化。\n\n**2. 主要方法**\n- 借助**可微渲染器**，将 VLA 策略动作输出端的梯度反向传播到物体表面的纹理参数上。\n- 在**任务、指令、状态、视角**的联合分布上优化同一张共享纹理。\n- 采用**面向目标的动作空间损失（targeted action-space objective）**，把模型预测的动作推向攻击者指定的目标方向。\n\n**3. 结论/性能**\n- 在 OpenVLA 和 π₀.₅ 两个模型、多种操作任务上验证：平均任务成功率从良性条件下的 **90.0% 降至 48.4%**。\n- 能诱导出与攻击目标一致的动作偏移。\n- 无需重新优化即具备**跨任务套件（cross-suite）和跨模型（cross-model）的迁移能力**。\n- 结论：多任务 VLA 存在可被单一对抗表面纹理系统性利用的**共享跨任务脆弱性**，凸显具身智能体的物理安全风险。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-16 13:03:42"
+}

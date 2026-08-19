@@ -1,0 +1,13 @@
+{
+ "id": "2512.18745",
+ "title": "InSight-o3: Empowering Multimodal Foundation Models with Generalized Visual Search",
+ "authors": "Kaican Li, Lewei Yao, Jiannan Wu, Tiezheng Yu, Jierun Chen, Haoli Bai, Lu Hou, Lanqing Hong, Wei Zhang, Nevin L. Zhang",
+ "date": "2025-12-21",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18745v1",
+ "abstract": "The ability for AI agents to \"think with images\" requires a sophisticated blend of reasoning and perception. However, current open multimodal agents still largely fall short on the reasoning aspect crucial for real-world tasks like analyzing documents with dense charts/diagrams and navigating maps. To address this gap, we introduce O3-Bench, a new benchmark designed to evaluate multimodal reasoning with interleaved attention to visual details. O3-Bench features challenging problems that require agents to piece together subtle visual information from distinct image areas through multi-step reasoning. The problems are highly challenging even for frontier systems like OpenAI o3, which only obtains 40.8% accuracy on O3-Bench. To make progress, we propose InSight-o3, a multi-agent framework consisting of a visual reasoning agent (vReasoner) and a visual search agent (vSearcher) for which we introduce the task of generalized visual search -- locating relational, fuzzy, or conceptual regions described in free-form language, beyond just simple objects or figures in natural images. We then present a multimodal LLM purpose-trained for this task via reinforcement learning. As a plug-and-play agent, our vSearcher empowers frontier multimodal models (as vReasoners), significantly improving their performance on a wide range of benchmarks. This marks a concrete step towards powerful o3-like open systems. Our code and dataset can be found at https://github.com/m-Just/InSight-o3 .",
+ "summary": "- 核心创新点：提出 InSight-o3 的双代理框架与通用视觉搜索任务，利用可插拔的视觉搜索代理显著提升开放式多模态系统的推理能力。\n\n- 主要方法：\n  - 构建 O3-Bench 作为多模态推理基准，强调需要对视觉细节进行多步、跨区域的推理。\n  - 提出 generalized visual search 任务：基于自由文本描述定位关系性、模糊或概念性区域，而不仅仅是简单的对象。\n  - 设计两大代理：视觉推理代理（vReasoner）与视觉搜索代理（vSearcher），并通过强化学习对多模态大模型进行目的导向训练。\n  - vSearcher 作为可插拔组件接入前沿多模态模型，显著提升其在多项基准上的表现。\n\n- 结论/性能：\n  - O3-Bench 对现有前沿系统仍具高难度，如 OpenAI 的 o3 在该基准上的准确率仅为 40.8%。\n  - 引入 InSight-o3 的 vSearcher 可以显著提升基于该框架的模型在广泛基准上的表现，向更强的 o3-类开放系统迈进；代码与数据集已公开。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-23 02:49:54"
+}

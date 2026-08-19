@@ -1,0 +1,13 @@
+{
+ "id": "2603.03741",
+ "title": "HALyPO: Heterogeneous-Agent Lyapunov Policy Optimization for Human-Robot Collaboration",
+ "authors": "Hao Zhang, Yaru Niu, Yikai Wang, Ding Zhao, H. Eric Tseng",
+ "date": "2026-03-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.03741v1",
+ "abstract": "To improve generalization and resilience in human-robot collaboration (HRC), robots must handle the combinatorial diversity of human behaviors and contexts, motivating multi-agent reinforcement learning (MARL). However, inherent heterogeneity between robots and humans creates a rationality gap (RG) in the learning process-a variational mismatch between decentralized best-response dynamics and centralized cooperative ascent. The resulting learning problem is a general-sum differentiable game, so independent policy-gradient updates can oscillate or diverge without added structure. We propose heterogeneous-agent Lyapunov policy optimization (HALyPO), which establishes formal stability directly in the policy-parameter space by enforcing a per-step Lyapunov decrease condition on a parameter-space disagreement metric. Unlike Lyapunov-based safe RL, which targets state/trajectory constraints in constrained Markov decision processes, HALyPO uses Lyapunov certification to stabilize decentralized policy learning. HALyPO rectifies decentralized gradients via optimal quadratic projections, ensuring monotonic contraction of RG and enabling effective exploration of open-ended interaction spaces. Extensive simulations and real-world humanoid-robot experiments show that this certified stability improves generalization and robustness in collaborative corner cases.",
+ "summary": "- 核心创新点：在策略参数空间直接对去中心化学习建立Lyapunov认证的稳定性，通过对参数空间分歧度量设定逐步Lyapunov下降条件，并结合最优二次投影纠正梯度，从而在异质代理的人机协作多智能体学习中实现稳定、可泛化的学习过程。\n\n- 主要方法：\n  - 提出 HALyPO，在人机协作的多智能体可微分博弈中，将Lyapunov稳定性直接引入策略参数空间，约束去中心化策略更新。\n  - 通过对参数空间的不一致度量设定逐步Lyapunov下降条件，确保学习过程的收敛性与鲁棒性。\n  - 使用最优二次投影对去中心化梯度进行纠正，实现理性差距（RG）的单调收缩与更有效的探索。\n  - 与Lyapunov基于安全RL 的区别在于不以状态/轨迹约束为目标，而是通过Lyapunov认证稳定化策略学习。\n\n- 结论/性能：\n  - 大量仿真和真实世界的人形机器人实验表明，认证的稳定性提升了泛化性和鲁棒性，尤其在协作边界场景中表现更稳健，降低了梯度振荡或发散的风险。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-03-05 14:00:51"
+}

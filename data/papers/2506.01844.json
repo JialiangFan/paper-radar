@@ -1,0 +1,32 @@
+{
+ "id": "2506.01844",
+ "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+ "authors": "Shukor, et al.",
+ "date": null,
+ "year": 2025,
+ "url": "https://arxiv.org/abs/2506.01844",
+ "abstract": "",
+ "summary": "SmolVLA explores smaller, efficient VLA models trained on community robotics data.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "VLA Models",
+ "tags": [
+  "efficient-models",
+  "low-level-robot-safety",
+  "open-source",
+  "robotics",
+  "safe-vla",
+  "vision-language-action-models",
+  "vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/VLA_Models/2025_Shukor_SmolVLA.md",
+ "pdf_path": "PDFs/VLA_Models/2025_Shukor_SmolVLA.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

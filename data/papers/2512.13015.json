@@ -1,0 +1,13 @@
+{
+ "id": "2512.13015",
+ "title": "What Happens Next? Next Scene Prediction with a Unified Video Model",
+ "authors": "Xinjie Li, Zhimin Chen, Rui Zhao, Florian Schiffers, Zhenyu Liao, Vimal Bhat",
+ "date": "2025-12-15",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.13015v1",
+ "abstract": "Recent unified models for joint understanding and generation have significantly advanced visual generation capabilities. However, their focus on conventional tasks like text-to-video generation has left the temporal reasoning potential of unified models largely underexplored. To address this gap, we introduce Next Scene Prediction (NSP), a new task that pushes unified video models toward temporal and causal reasoning. Unlike text-to-video generation, NSP requires predicting plausible futures from preceding context, demanding deeper understanding and reasoning. To tackle this task, we propose a unified framework combining Qwen-VL for comprehension and LTX for synthesis, bridged by a latent query embedding and a connector module. This model is trained in three stages on our newly curated, large-scale NSP dataset: text-to-video pre-training, supervised fine-tuning, and reinforcement learning (via GRPO) with our proposed causal consistency reward. Experiments demonstrate our model achieves state-of-the-art performance on our benchmark, advancing the capability of generalist multimodal systems to anticipate what happens next.",
+ "summary": "- 核心创新点：提出 Next Scene Prediction（NSP）任务，利用统一视频模型在前文基础上进行时序与因果推理的未来场景预测。\n\n- 主要方法：\n  - 构建统一框架：用 Qwen-VL 进行场景理解、用 LTX 进行场景合成/预测，二者通过潜在查询嵌入与连接模块衔接。\n  - 三阶段训练：文本到视频预训练、监督微调、基于 GRPO 的强化学习，结合提出的因果一致性奖励。\n  - 数据与目标：在大规模 NSP 数据集上进行训练与评估。\n\n- 结论/性能：在 NSP 基准上达到最新的 state-of-the-art，显示通用多模态系统在预测未来情景方面的能力显著提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-16 03:05:22"
+}

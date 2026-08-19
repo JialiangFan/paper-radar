@@ -1,0 +1,13 @@
+{
+ "id": "2604.01600",
+ "title": "MM-ReCoder: Advancing Chart-to-Code Generation with Reinforcement Learning and Self-Correction",
+ "authors": "Zitian Tang, Xu Zhang, Jianbo Yuan, Yang Zou, Varad Gunjal, Songyao Jiang, Davide Modolo",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01600v1",
+ "abstract": "Multimodal Large Language Models (MLLMs) have recently demonstrated promising capabilities in multimodal coding tasks such as chart-to-code generation. However, existing methods primarily rely on supervised fine-tuning (SFT), which requires the model to learn code patterns through chart-code pairs but does not expose the model to a code execution environment. Moreover, while self-correction through execution feedback offers a potential route to improve coding quality, even state-of-the-art MLLMs have been shown to struggle with effective self-correction. In this work, we introduce MM-ReCoder, a chart-to-code generation model trained with reinforcement learning (RL) and equipped with self-correction ability. We propose a two-stage multi-turn self-correction RL strategy based on Group Relative Policy Optimization (GRPO). The first stage enhances the model's self-correction ability via rolling out a shared first turn, while the second stage improves the coding capability with full-trajectory optimization. MM-ReCoder learns to produce more accurate and executable code through the interaction with the environment and by iteratively correcting its own outputs. Our results on three chart-to-code benchmarks demonstrate the state-of-the-art performance of MM-ReCoder.",
+ "summary": "**核心创新点**：通过将强化学习与自我纠错结合，提出基于GRPO的两阶段多轮自纠RL策略，显著提升图表到代码生成的可执行性与准确性，达到当前SOTA。\n\n**主要方法**：采用多模态大语言模型（MLLM）用于chart-to-code任务，使用强化学习训练并具备自纠错能力；提出两阶段的自纠RL策略（基于Group Relative Policy Optimization，GRPO）：阶段1通过滚动共用第一轮回放强化自纠错能力，阶段2进行全轨迹优化以提升编码能力；通过与执行环境交互、迭代纠错来产出更准确、可执行的代码。\n\n**结论/性能**：在三个chart-to-code基准上达到或接近状态最优，显示出在准确性和代码可执行性方面的显著提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-03 13:03:42"
+}

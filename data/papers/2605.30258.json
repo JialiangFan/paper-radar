@@ -1,0 +1,13 @@
+{
+ "id": "2605.30258",
+ "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
+ "authors": "Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30258v1",
+ "abstract": "LLMs are increasingly deployed to simulate social interactions, yet many of the existing simulators remain ad hoc and monolithic. This lack of architectural standardization prevents reproducible research and complicates downstream evaluation. We advance a rigorous science of LLM-based multi-agent simulation by modularizing core components into Environments, Agents, Simulation engines, and Evaluation metrics (EASE). We demonstrate the utility of EASE configuration by wrapping it in an experimental study schema for orchestrating workflows centered around answering explicit research questions in generated scenarios. We contribute SiliSocS, an open-source, research-ready Silicon Society Sandbox implementing a study-structured EASE configuration to enable highly configurable and reproducible LLM-based social simulations. Using SiliSocS and EASE, we present three case studies, showcasing the system's comprehensive assessment of existing questions, ability to dive deeper into complex questions, and elaboration of existing studies, respectively. Together, these case studies highlight the limitations of current modeling approaches and isolate the impacts of design choices on key results.",
+ "summary": "# 论文总结\n\n## 1. 核心创新点\n提出 **EASE** 模块化配置框架（Environments / Agents / Simulation engines / Evaluation metrics），为基于 LLM 的社会模拟建立可复现、可标准化的科学研究范式。\n\n## 2. 主要方法\n- 将 LLM 多智能体模拟拆分为四大核心组件（环境、智能体、模拟引擎、评估指标），打破现有模拟器\"临时拼凑、整体耦合\"的现状。\n- 在 EASE 之上包装了一个**实验研究范式（study schema）**，以明确的研究问题为中心来编排工作流。\n- 贡献开源沙盒 **SiliSocS（Silicon Society Sandbox）**，作为 EASE 配置的可直接用于研究的实现。\n\n## 3. 结论/性能\n通过三个案例研究验证了系统价值：\n- **案例一**：对已有问题进行全面评估；\n- **案例二**：对复杂问题进行更深入剖析；\n- **案例三**：在已有研究基础上做扩展与精化。\n\n这些案例共同揭示了当前建模方法的局限，并清晰地**隔离出不同设计选择对关键结论的影响**，证明 EASE+SiliSocS 能有效推动 LLM 社会模拟研究的可复现性与可比性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-30 13:01:01"
+}

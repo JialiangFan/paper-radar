@@ -1,0 +1,13 @@
+{
+ "id": "2604.13034",
+ "title": "DySkew: Dynamic Data Redistribution for Skew-Resilient Snowpark UDF Execution",
+ "authors": "Chenwei Xie, Urjeet Shrestha, Corbin McElhanney, Lukas Lorimer, Gopal V, Zihao Ye, Yi Pan, Nic Crouch, Elliott Brossard, Florian Funke, Yuxiong He",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.13034v1",
+ "abstract": "Snowflake revolutionized data warehousing with an elastic architecture that decouples compute and storage, enabling scalable solutions for diverse data analytics needs. Building on this foundation, Snowflake has advanced its AI Data Cloud vision by introducing Snowpark, a managed turnkey solution that supports data engineering and AI/ML workloads using Python and other programming languages. While Snowpark's User-Defined Function (UDF) execution model offers high throughput, it is highly vulnerable to performance degradation from data skew, where uneven data partitioning causes straggler tasks and unpredictable latency. The non-uniform computational cost of arbitrary user code further exacerbates this classic challenge. This paper presents DySkew, a novel, data-skew-aware execution strategy for Snowpark UDFs. Built upon Snowflake's new generalized skew handling solution, an adaptive data distribution mechanism utilizing per-link state machines. DySkew addresses the unique challenges of user-defined logic with goals of fine-grained per-row mitigation, dynamic runtime adaptation, and low-overhead, cost-aware redistribution. Specifically, for Snowpark, we introduce crucial optimizations, including an eager redistribution strategy and a Row Size Model to dynamically manage overhead for extremely large rows. This dynamic approach replaces the limitations of the previous static round-robin method. We detail the architecture of this framework and showcase its effectiveness through performance evaluations and real-world case studies, demonstrating significant improvements in the execution time and resource utilization for large-scale Snowpark UDF workloads.",
+ "summary": "- 核心创新点：提出 DySkew，一种面向 Snowpark UDF 的动态、倾斜鲁棒的数据再分布框架，利用基于链路的状态机实现自适应分布和逐行粒度缓解。\n- 主要方法：\n  - 基于 Snowflake 的通用倾斜处理方案，构建按链路的状态机驱动的自适应数据分布机制。\n  - 针对用户自定义逻辑的挑战，实现细粒度逐行缓解、动态运行时自适应以及低开销、成本感知的再分布。\n  - 针对 Snowpark 引入关键优化：提前再分布策略（eager redistribution）与行大小模型（Row Size Model），动态管理极大行的开销，替代静态轮询/轮转。\n  - 给出框架架构并通过性能评估与真实场景案例验证效果。\n- 结论/性能：在大规模 Snowpark UDF 工作负载上，显著提升执行时间和资源利用率，减小数据倾斜引发的慢任务与资源浪费，并通过实验与真实案例得到验证。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-04-15 13:06:41"
+}

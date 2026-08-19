@@ -1,0 +1,13 @@
+{
+ "id": "2607.23207",
+ "title": "Accountable yet Anonymous AI Agents - Split-Knowledge Binding in National Agent-Identity Layer in China",
+ "authors": "Yifan He, Zhiguang Shan, Le Luo, Wei Wang",
+ "date": "2026-07-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.23207v1",
+ "abstract": "The emerging infrastructure for AI-agent identity has converged, in industry practice and research proposals alike, on a single resolution of the tension between accountability and privacy: make every agent identifiable. We document a national system in China -- built as national infrastructure and scheduled for public launch in Q3 2026 -- that occupies a different and underexplored point in the same design space: an agent is associated with a verified legal principal without that principal being disclosed to any business-layer participant. Re-identification is possible only to a legal authority acting through due process, by separately compelling two distinct government agencies, neither of which can re-identify alone. We name the mechanism split-knowledge binding and are candid that it is conditional: the separation is structural and procedural, not cryptographic, and a state empowered to compel both agencies can re-identify. The paper makes five contributions: (1) split-knowledge binding, an institutional rather than cryptographic separation for escrowed accountability; (2) the ex-post attribution thesis, the argued claim that only attribution-based accountability carries legal force for AI agent actions with legal consequences; (3) the accountability surface, a design concept identifying which agent actions leave identity-bearing traces; (4) a proportionality framework for identity escrow, a decision structure selecting among three trust architectures; and (5) the reflexive jurisdiction method, an evaluative standard administered to the paper's own deployment. The system is evidence of feasibility at national scale; the framework is the instrument by which any deployment -- including this one -- should be judged.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-29 13:02:26"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2606.13376",
+ "title": "MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold",
+ "authors": "Yang Zhou, Ziheng Wang, Yuqin Lu, Haofeng Liu, Jun Liang, Shengfeng He, Jing Li",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13376v1",
+ "abstract": "We present MoVerse, a real-time video world model that creates an interactively navigable scene from a single narrow-field-of-view image. This setting is challenging because the input observes only a small fraction of the environment, while interactive roaming requires a complete surrounding world, persistent geometry, controllable camera motion, and temporally coherent high-fidelity observations. MoVerse addresses this problem by separating world construction from observation rendering. It first expands the input into a gravity-aligned 360$^\\circ$ panorama with topology-aware diffusion, closing the missing field of view before 3D reasoning. It then lifts the panorama into a persistent 3D Gaussian scaffold using panoramic geometry-aware residual prediction, yielding a dense and directly renderable spatial memory. Finally, a Gaussian-conditioned video renderer translates scaffold renderings along user-specified camera trajectories into photorealistic video. To make this renderer practical for interaction, we train a bidirectional diffusion teacher for high-quality conditional rendering and distill it into a causal autoregressive student for bounded-latency streaming. This design combines the controllability and long-range consistency of explicit 3D representations with the perceptual quality of generative video models. MoVerse supports real-time scene roaming at 8~FPS on a single NVIDIA RTX~4090 GPU, demonstrating a practical path toward single-image world creation with interactive video output.",
+ "summary": "# MoVerse 论文总结\n\n1. **核心创新点**：从单张窄视角图像出发，构建可实时交互漫游的视频世界模型——通过\"全景高斯支架\"将世界构建与观测渲染解耦。\n\n2. **主要方法**：\n   - **补全视野**：用拓扑感知扩散模型把输入图像扩展为重力对齐的 360° 全景图，先补全缺失视野再做 3D 推理；\n   - **持久化几何**：通过全景几何感知的残差预测，将全景图提升为持久的 3D 高斯支架，作为可直接渲染的密集空间记忆；\n   - **视频渲染**：用高斯条件视频渲染器沿用户指定的相机轨迹生成逼真视频；先训练一个双向扩散\"教师\"模型做高质量条件渲染，再蒸馏为因果自回归\"学生\"模型，实现有界延迟的流式输出。\n\n3. **结论/性能**：兼具显式 3D 表示的可控性与长程一致性，以及生成式视频模型的感知质量；在单张 NVIDIA RTX 4090 上实现 **8 FPS 的实时场景漫游**，验证了\"单图生成可交互世界\"的可行路径。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-13 13:04:42"
+}

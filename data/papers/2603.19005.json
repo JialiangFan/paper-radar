@@ -1,0 +1,13 @@
+{
+ "id": "2603.19005",
+ "title": "AgentDS Technical Report: Benchmarking the Future of Human-AI Collaboration in Domain-Specific Data Science",
+ "authors": "An Luo, Jin Du, Xun Xian, Robert Specht, Fangqiao Tian, Ganghua Wang, Xuan Bi, Charles Fleming, Ashish Kundu, Jayanth Srinivasa, Mingyi Hong, Rui Zhang, Tianxi Li, Galin Jones, Jie Ding",
+ "date": "2026-03-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.19005v1",
+ "abstract": "Data science plays a critical role in transforming complex data into actionable insights across numerous domains. Recent developments in large language models (LLMs) and artificial intelligence (AI) agents have significantly automated data science workflow. However, it remains unclear to what extent AI agents can match the performance of human experts on domain-specific data science tasks, and in which aspects human expertise continues to provide advantages. We introduce AgentDS, a benchmark and competition designed to evaluate both AI agents and human-AI collaboration performance in domain-specific data science. AgentDS consists of 17 challenges across six industries: commerce, food production, healthcare, insurance, manufacturing, and retail banking. We conducted an open competition involving 29 teams and 80 participants, enabling systematic comparison between human-AI collaborative approaches and AI-only baselines. Our results show that current AI agents struggle with domain-specific reasoning. AI-only baselines perform near or below the median of competition participants, while the strongest solutions arise from human-AI collaboration. These findings challenge the narrative of complete automation by AI and underscore the enduring importance of human expertise in data science, while illuminating directions for the next generation of AI. Visit the AgentDS website here: https://agentds.org/ and open source datasets here: https://huggingface.co/datasets/lainmn/AgentDS .",
+ "summary": "- 核心创新点（一句话）\n  提出 AgentDS 作为一个面向领域特定数据科学的基准与竞赛框架，用以系统评估 AI 代理与人机协作在六大行业的17道挑战中的表现。\n\n- 主要方法\n  - 设计并发布涵盖六大行业的 17 道领域特定任务的 AgentDS 基准。  \n  - 举办公开竞赛，汇集 29 支团队、80 名参与者，比较 AI-only、AI 代理以及人-机协作方案的表现。  \n  - 使用开源数据集（如 HuggingFace 上的 AgentDS 数据集）和统一评估指标，对不同方法进行对比分析。\n\n- 结论/性能\n  - 目前的 AI 代理在领域特定推理方面仍存在明显不足。  \n  - AI-only 基线的表现接近中位水平，甚至低于部分参赛者。  \n  - 最强的解决方案来自人机协作，表明完全自动化还难以实现，强调人类专业知识在数据科学中的持续重要性，并指向未来改进的方向。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-03-20 13:04:01"
+}

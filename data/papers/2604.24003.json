@@ -1,0 +1,13 @@
+{
+ "id": "2604.24003",
+ "title": "Stabilizing Efficient Reasoning with Step-Level Advantage Selection",
+ "authors": "Han Wang, Xiaodong Yu, Jialian Wu, Jiang Liu, Ximeng Sun, Mohit Bansal, Zicheng Liu",
+ "date": "2026-04-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.24003v1",
+ "abstract": "Large language models (LLMs) achieve strong reasoning performance by allocating substantial computation at inference time, often generating long and verbose reasoning traces. While recent work on efficient reasoning reduces this overhead through length-based rewards or pruning, many approaches are post-trained under a much shorter context window than base-model training, a factor whose effect has not been systematically isolated. We first show that short-context post-training alone, using standard GRPO without any length-aware objective, already induces substantial reasoning compression-but at the cost of increasingly unstable training dynamics and accuracy degradation. To address this, we propose Step-level Advantage Selection (SAS), which operates at the reasoning-step level and assigns a zero advantage to low-confidence steps in correct rollouts and to high-confidence steps in verifier-failed rollouts, where failures often arise from truncation or verifier issues rather than incorrect reasoning. Across diverse mathematical and general reasoning benchmarks, SAS improves average Pass@1 accuracy by 0.86 points over the strongest length-aware baseline while reducing average reasoning length by 16.3%, yielding a better accuracy-efficiency trade-off.",
+ "summary": "1) 核心创新点：提出 Step-level Advantage Selection（SAS），在推理步骤层面分配优势，针对正确回放中的低置信度步骤和 verifier 失败中的高置信度步骤赋零优势，从而稳定高效的推理并缓解截断/ verifier 问题的影响。\n\n2) 主要方法：在推理步骤层面实现 SAS，通过对每一步的置信度与 verifier 反馈进行区分处理，避免将因截断或 verifier 失败引发的问题错误地提升为优势；结合短上下文后训练场景，评估在数学与一般推理基准上的效果。\n\n3) 结论/性能：在多种基准上，SAS 相比最强的长度感知基线，平均 Pass@1 提升 0.86 点，同时将平均推理长度降低 16.3%，实现更好的准确性-效率权衡。",
+ "keyword": "grpo",
+ "source": "auto",
+ "created_at": "2026-04-28 13:07:54"
+}

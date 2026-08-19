@@ -1,0 +1,13 @@
+{
+ "id": "2602.20132",
+ "title": "LAD: Learning Advantage Distribution for Reasoning",
+ "authors": "Wendi Li, Sharon Li",
+ "date": "2026-02-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.20132v1",
+ "abstract": "Current reinforcement learning objectives for large-model reasoning primarily focus on maximizing expected rewards. This paradigm can lead to overfitting to dominant reward signals, while neglecting alternative yet valid reasoning trajectories, thereby limiting diversity and exploration. To address this issue, we introduce Learning Advantage Distributions (LAD), a distribution-matching framework that replaces advantage maximization with learning the advantage-induced distribution. By establishing the equivalence between the optimal policy update and an advantage-based target distribution, we derive a practical LAD objective formulated as minimizing an $f$-divergence between the policy-induced and advantage-induced distributions. This yields a gradient update that increases likelihood for high-advantage responses while suppressing over-confident probability growth, preventing collapse without requiring auxiliary entropy regularization. LAD incurs no extra training cost compared to GRPO and scales naturally to LLM post-training. In a controlled bandit setting, LAD faithfully recovers the multimodal advantage distribution, validating the theoretical formulation. Experiments on math and code reasoning tasks across several LLM backbones show that LAD reliably improves both accuracy and generative diversity.",
+ "summary": "- 核心创新点（一句话概括）\n  提出 Learning Advantage Distributions（LAD），通过学习并对齐优势诱导的分布与策略分布的分布匹配来替代传统的优势最大化，从而提升推理的多样性与探索性，同时避免模型崩溃且不增加额外训练成本。\n\n- 主要方法\n  - 将最优策略更新等价于一个基于优势的目标分布，并以此建立学习框架。\n  - 以在策略诱导分布与优势诱导分布之间最小化 f- 散度的形式实现 LAD 目标，得到一个实际的梯度更新规则。\n  - 梯度更新倾向于提高高优势响应的概率，同时抑制过度自信导致的概率膨胀，无需额外的熵正则化。\n  - 与 GRPO 相比，LAD 不增加额外训练成本，并且能够自然扩展到大语言模型的后训练阶段。\n  - 在受控带宽/带权 Bandit 场景中验证，LAD 能可靠回收多模态的优势分布。\n\n- 结论/性能\n  - 在数学与代码推理等任务上，跨多种大模型骨架的实验中，LAD 可靠地提升了准确性与生成多样性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-02-24 14:03:31"
+}

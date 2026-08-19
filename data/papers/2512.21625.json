@@ -1,0 +1,13 @@
+{
+ "id": "2512.21625",
+ "title": "Rethinking Sample Polarity in Reinforcement Learning with Verifiable Rewards",
+ "authors": "Xinyu Tang, Yuliang Zhan, Zhixun Li, Wayne Xin Zhao, Zhenduo Zhang, Zujie Wen, Zhiqiang Zhang, Jun Zhou",
+ "date": "2025-12-25",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.21625v1",
+ "abstract": "Large reasoning models (LRMs) are typically trained using reinforcement learning with verifiable reward (RLVR) to enhance their reasoning abilities. In this paradigm, policies are updated using both positive and negative self-generated rollouts, which correspond to distinct sample polarities. In this paper, we provide a systematic investigation into how these sample polarities affect RLVR training dynamics and behaviors. We find that positive samples sharpen existing correct reasoning patterns, while negative samples encourage exploration of new reasoning paths. We further explore how adjusting the advantage values of positive and negative samples at both the sample level and the token level affects RLVR training. Based on these insights, we propose an Adaptive and Asymmetric token-level Advantage shaping method for Policy Optimization, namely A3PO, that more precisely allocates advantage signals to key tokens across different polarities. Experiments across five reasoning benchmarks demonstrate the effectiveness of our approach.",
+ "summary": "- 核心创新点：提出一种自适应且非对称的 token 级优势塑形方法 A3PO，在 RLVR 框架中更精准地在正负自生成样本之间分配优势信号，从而提升推理能力。\n\n- 主要方法：在强化学习可验证奖励（RLVR）中系统分析正负样本极性对训练的影响，研究样本级和 token 级的优势值调整，提出 A3PO（Adaptive and Asymmetric token-level Advantage shaping for Policy Optimization），通过对关键 token 在不同极性下分配优势信号来实现策略优化。\n\n- 结论/性能：在五个推理基准上实验，验证了该方法的有效性，显示正样本强化正确推理模式、负样本促进探索新推理路径，并因此提升了模型的推理能力与训练效果。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-29 02:54:36"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.02365",
+ "title": "Faster-WAM: Do World Action Models Need Deep Action Modules?",
+ "authors": "Liheng Ma, Rui Heng Yang, Zhanguang Zhang, Mateo Clemente, Ziwen Hu, Tongtong Cao, Yingxue Zhang",
+ "date": "2026-08-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.02365v1",
+ "abstract": "World Action Models (WAMs) couple robot action prediction with video world models. Existing WAMs with shared-backbone and Mixture-of-Transformers designs generally tie the depth of the action module to that of the video backbone, resulting in substantial computational overhead and high inference latency. To address this limitation, we introduce Dock of Transformer (DoT), a video-centric design principle that treats a pretrained video Transformer as a representation hub and connects lightweight output-heads through docking interfaces. This enables flexible output-head design while providing direct access to representations from all layers of the backbone. We then introduce \\textbf{Faster-WAM}, an instantiation of DoT for WAMs, which docks a single-layer action head onto a 30-layer video backbone. The docking interface fuses keys and values from all video layers and applies RoPE realignment. Without additional embodied pretraining, Faster-WAM achieves competitive performance on LIBERO and RoboTwin 2.0 while demonstrating strong out-of-distribution generalization on LIBERO-Plus. Faster-WAM also achieves the lowest end-to-end latency in our controlled comparison, requiring only 66.5 ms per inference --- a \\(3.2\\times\\) speedup over Fast-WAM. Overall, these results demonstrate that the video-centric DoT architecture supports flexible task-specific head design while delivering low inference latency, strong action-prediction performance, and robust generalization.",
+ "summary": "## Faster-WAM: 世界动作模型真的需要\"深\"动作模块吗？\n\n**1. 核心创新点**\n提出\"视频为中心\"的 Dock of Transformer (DoT) 设计范式——把预训练视频 Transformer 当作表征中枢，只在其上\"停靠\"一个轻量输出头，从而打破以往 WAM 中动作模块必须与视频主干等深的假设。\n\n**2. 主要方法**\n- 针对现有共享主干 / Mixture-of-Transformers 类 WAM 把动作模块深度绑定到视频主干、导致算力开销与推理延迟居高不下的问题；\n- DoT 通过\"停靠接口\"(docking interface) 连接轻量输出头，使输出头能直接访问主干**所有层**的表征，同时保留灵活的头部设计空间；\n- Faster-WAM 是 DoT 在 WAM 上的具体实例：在 **30 层视频主干**上只挂 **单层动作头**；停靠接口负责融合所有视频层的 key/value，并做 **RoPE 重对齐**；\n- 无需额外的具身预训练 (embodied pretraining)。\n\n**3. 结论 / 性能**\n- 在 LIBERO 与 RoboTwin 2.0 上取得有竞争力的性能，并在 LIBERO-Plus 上展现出较强的分布外泛化能力；\n- 在受控对比中端到端延迟最低：单次推理仅 **66.5 ms**，相比 Fast-WAM 提速 **3.2×**；\n- 结论：视频为中心的 DoT 架构可以在保持动作预测性能与鲁棒泛化的同时，兼顾任务特定头部的设计灵活性与低推理延迟。\n\n（说明：以上仅基于标题与摘要，未涉及正文的实验细节与消融。若需要按 `/paper-review` 的完整文献综述格式输出并存入 Obsidian，可以告诉我。）",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-05 13:05:23"
+}

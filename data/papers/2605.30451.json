@@ -1,0 +1,13 @@
+{
+ "id": "2605.30451",
+ "title": "VeriGate: Verifier-Gated Step-Level Supervision for GRPO",
+ "authors": "Aakriti Agrawal, Minghui Liu, Furong Huang",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30451v1",
+ "abstract": "Group Relative Policy Optimization (GRPO) is an effective recipe for training reasoning models with verifier-based outcome rewards, but its supervision is sparse: when all sampled trajectories for a prompt receive the same verifier reward, the group-relative advantage collapses to zero and learning stalls. Outcome-only rewards also provide no step-level credit assignment, limiting exploration and making it harder to learn robust reasoning. We present VeriGate (Verifier-Gated Step-Level GRPO), a verifier-gated extension of GRPO that addresses these limitations with three design choices. First, VeriGate keeps the verifier in charge whenever verifier rewards induce a meaningful preference among sampled trajectories, and uses process supervision only when verifier rewards are degenerate. Second, instead of collapsing Process Reward Model (PRM) step scores into a single trajectory reward, VeriGate converts them into future-cumulated rewards to assign continuation-aware credit. Third, VeriGate transforms these rewards into group-normalized token-level advantages, restoring informative gradients and fine-grained credit assignment while remaining less susceptible to reward hacking than methods that optimize aggregated PRM scores. Empirically, training on MATH with 1.5B and 7B Qwen2.5-Instruct models and evaluating on six reasoning benchmarks, VeriGate improves average accuracy by about 20% and 12% for 1.5B and 7B models respectively, substantially reduces zero-gradient failures, decreases reward-hacking behavior, and improves reasoning quality relative to outcome-only GRPO and PRM-as-outcome baselines.",
+ "summary": "## VeriGate 论文总结\n\n1. **核心创新点**：提出\"验证器门控\"机制，仅在验证器奖励退化（所有采样轨迹得分相同导致梯度消失）时才启用过程级监督，从而解决 GRPO 中稀疏奖励和缺乏步级信用分配的问题。\n\n2. **主要方法**：在 GRPO 基础上引入三项设计——(1) 验证器主导，PRM 仅在验证器奖励无区分度时介入；(2) 将 PRM 的步级分数转换为\"未来累积奖励\"以实现延续感知的信用分配；(3) 将奖励转化为组归一化的 token 级优势，以恢复有效梯度并降低奖励黑客（reward hacking）风险。\n\n3. **结论/性能**：在 MATH 数据集上训练 Qwen2.5-Instruct 1.5B 和 7B 模型，并在六个推理基准上评测，相比仅基于结果奖励的 GRPO 和 PRM-as-outcome 基线，平均准确率分别提升约 **20%** 和 **12%**，同时显著减少零梯度失败、降低奖励黑客行为，并提升推理质量。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-06-01 13:02:03"
+}

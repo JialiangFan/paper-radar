@@ -1,0 +1,13 @@
+{
+ "id": "2602.22942",
+ "title": "ClawMobile: Rethinking Smartphone-Native Agentic Systems",
+ "authors": "Hongchao Du, Shangyu Wu, Qiao Li, Riwei Pan, Jinheng Li, Youcheng Sun, Chun Jason Xue",
+ "date": "2026-02-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.22942v1",
+ "abstract": "Smartphones represent a uniquely challenging environment for agentic systems. Unlike cloud or desktop settings, mobile devices combine constrained execution contexts, fragmented control interfaces, and rapidly changing application states. As large language models (LLMs) evolve from conversational assistants to action-oriented agents, achieving reliable smartphone-native autonomy requires rethinking how reasoning and control are composed.\n  We introduce ClawMobile as a concrete exploration of this design space. ClawMobile adopts a hierarchical architecture that separates high-level language reasoning from structured, deterministic control pathways, improving execution stability and reproducibility on real devices. Using ClawMobile as a case study, we distill the design principles for mobile LLM runtimes and identify key challenges in efficiency, adaptability, and stability. We argue that building robust smartphone-native agentic systems demands principled coordination between probabilistic planning and deterministic system interfaces. The implementation is open-sourced~\\footnote{https://github.com/ClawMobile/ClawMobile} to facilitate future exploration.",
+ "summary": "- 核心创新点：提出一种分层架构，将高层语言推理与结构化、确定性控制路径分离，从而在真实手机设备上提升代理系统的执行稳定性与可重复性。\n\n- 主要方法：采用高层语言推理与确定性控制的分层解耦；结合概率性规划与确定性系统接口的协同设计；以真实设备上的实现和案例研究为基础，总结移动端 LLM 运行时的设计原则；实现开源以便后续探索。\n\n- 结论/性能：在真实设备上证明了执行稳定性和可重复性的提升，并提出关于效率、适应性、稳定性等关键挑战与设计原则，提供开源实现以促进未来研究。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-27 14:01:49"
+}

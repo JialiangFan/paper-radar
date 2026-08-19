@@ -1,0 +1,13 @@
+{
+ "id": "2604.01591",
+ "title": "ThinkTwice: Jointly Optimizing Large Language Models for Reasoning and Self-Refinement",
+ "authors": "Difan Jiao, Qianfeng Wen, Blair Yang, Zhenwei Tang, Ashton Anderson",
+ "date": "2026-04-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.01591v1",
+ "abstract": "We introduce ThinkTwice, a simple two-phase framework that jointly optimizes LLMs to solve reasoning problems and refine the answers, based on Group Relative Policy Optimization (GRPO). In each pair of training steps, ThinkTwice first optimizes the model on solving reasoning problems, then optimizes it on refining its own solutions to the same problems, using the same binary correctness reward in both phases without correctness signals or critique annotations. Across five mathematical reasoning benchmarks and two model families including Qwen3-4B and Olmo3-7B, ThinkTwice substantially improves both reasoning and refinement performance over competitive online policy optimization baselines. Specifically, on Qwen3-4B, ThinkTwice outperforms GRPO on AIME by 5 percentage points before refinement and by 11.5 points after one self-refinement step, measured by pass@4. Analysis of the training dynamics of ThinkTwice reveals an implicit rectify-then-fortify curriculum: refinement predominantly corrects errors early in training and naturally shifts toward preserving already-correct solutions as the model improves, yielding a more rectified reward signal. Our work establishes joint training of reasoning and self-refinement as a principled and effective methodology for RLVR.",
+ "summary": "下面是对论文标题与摘要的中文要点概括。\n\n1) 核心创新点\n- 提出 ThinkTwice：一个两阶段的联合训练框架，基于 Group Relative Policy Optimization (GRPO)，在同一训练循环中同时优化模型的推理解题能力与对自己解答的自我 refinement，且无需额外的正确性信号或评析注释。\n\n2) 主要方法\n- 使用两阶段训练循环：阶段一让模型解决推理问题，阶段二让模型对同一问题的解进行自我 refinement。\n- 两阶段都以同一二元正确性奖励驱动，不依赖额外的正确性标注或评语。\n- 基于 GRPO 进行策略优化，覆盖五个数学推理基准和两种模型家族（Qwen3-4B 和 Olmo3-7B）。\n\n3) 结论/性能\n- 在五个基准和两种模型上，ThinkTwice 相对于竞争性在线策略优化基线显著提升推理与自我 refinement 性能。\n- 在 Qwen3-4B 的 AIME 任务上，未 refinement 时领先 GRPO 5 个百分点，经过一次自我 refinement 后领先 11.5 个百分点（以 pass@4 衡量）。\n- 训练分析揭示一个隐式的“先纠错、再强化”的课程安排，使 reward 信号更有效，因而提高了整体效果。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-03 13:03:56"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.17436",
+ "title": "Xiaomi MiMo-VL-Miloco Technical Report",
+ "authors": "Jiaze Li, Jingyang Chen, Yuxun Qu, Jianzhong Ju, Zhenbo Luo, Jian Luan, Shijie Xu, Zhenru Lin, Junyou Zhu, Boshen Xu, Wenhui Tan, Pei Fu",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17436v1",
+ "abstract": "We open-source \\textbf{MiMo-VL-Miloco-7B} and its quantized variant \\textbf{MiMo-VL-Miloco-7B-GGUF}, a pair of home-centric vision-language models that achieve strong performance on both home-scenario understanding and general multimodal reasoning. Built on the MiMo-VL-7B backbone, MiMo-VL-Miloco-7B is specialized for smart-home environments, attaining leading F1 scores on gesture recognition and common home-scenario understanding, while also delivering consistent gains across video benchmarks such as Video-MME, Video-MMMU, and Charades-STA, as well as language understanding benchmarks including MMMU-Pro and MMLU-Pro. In our experiments, MiMo-VL-Miloco-7B outperforms strong closed-source and open-source baselines on home-scenario understanding and several multimodal reasoning benchmarks. To balance specialization and generality, we design a two-stage training pipeline that combines supervised fine-tuning with reinforcement learning based on Group Relative Policy Optimization, leveraging efficient multi-domain data. We further incorporate chain-of-thought supervision and token-budget-aware reasoning, enabling the model to learn knowledge in a data-efficient manner while also performing reasoning efficiently. Our analysis shows that targeted home-scenario training not only enhances activity and gesture understanding, but also improves text-only reasoning with only modest trade-offs on document-centric tasks. Model checkpoints, quantized GGUF weights, and our home-scenario evaluation toolkit are publicly available at \\href{https://github.com/XiaoMi/xiaomi-mimo-vl-miloco}{https://github.com/XiaoMi/xiaomi-mimo-vl-miloco} to support research and deployment in real-world smart-home applications.",
+ "summary": "1) 核心创新点：在 MiMo-VL-Miloco-7B 的基础上，提出面向智能家居场景的双阶段训练框架，结合基于组相对策略优化的强化学习、链式推理监督与记忆/令牌预算感知推理，实现高效的家居场景理解与跨模态推理，并提供量化版本以便部署。\n\n2) 主要方法：基于 MiMo-VL-7B 架构构建 MiMo-VL-Miloco-7B（以及量化版 MiMo-VL-Miloco-7B-GGUF），采用两阶段训练（监督微调 + 强化学习，基于 Group Relative Policy Optimization）以及链式思考监督与 token-budget-aware 推理，利用多领域数据实现数据高效学习与家居场景专项能力的提升。\n\n3) 结论/性能：在手势识别与常见家庭场景理解等任务上达到领先的 F1 分数，并在 Video-MME、Video-MMMU、Charades-STA 等视频基准及 MMMU-Pro、MMLU-Pro 等语言理解基准上获得稳定提升；并实现强基线对比中的优越表现，提供公开权重和评测工具供研究与实际部署使用。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2025-12-22 02:48:50"
+}

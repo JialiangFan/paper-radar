@@ -1,0 +1,13 @@
+{
+ "id": "2607.27002",
+ "title": "IMFuse: Instance-Aware Multi-Layer Fusion for LLM-Enhanced Sequential Recommendation",
+ "authors": "Yuheng Zheng, Yu Cui, Bin Wu, Jian Zhang, Ye Feng, Can Wang, Jiawei Chen",
+ "date": "2026-07-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.27002v1",
+ "abstract": "Recent advancements in Large Language Models (LLMs) have significantly enhanced sequential recommendation by encoding rich item textual information into semantic representations. However, existing methods typically rely on the final-layer hidden states of LLMs, overlooking potentially useful semantic signals encoded in other layers. Through empirical analysis, we reveal the limitations of this practice: final-layer representations often suffer from dimensional collapse, whereas intermediate layers preserve complementary, coarse-to-fine semantic knowledge. Furthermore, we observe that different items exhibit heterogeneous layer-wise representation evolution, making a uniform layer selection sub-optimal. To bridge this gap, we propose IMFuse, an instance-aware multi-layer fusion strategy designed for LLM-enhanced recommendation. Instead of relying on a single layer, IMFuse adaptively aggregates multi-layer semantic information by learning global dimension-wise layer preferences to capture general semantic contributions. To address item-level heterogeneity, IMFuse introduces an instance-aware expert modulation mechanism that dynamically adjusts these global preferences, generating personalized, item-specific semantic representations. Extensive experiments across four real-world datasets demonstrate the effectiveness of IMFuse. It consistently outperforms state-of-the-art baselines with an average relative improvement of 6.72%, while introducing limited parameter and computational overhead.",
+ "summary": "1. **核心创新点**：不再只用 LLM 最后一层的表示做推荐，而是按物品自适应地融合 LLM 多层语义信息。\n\n2. **主要方法**：作者先通过实证分析发现两个问题——最后一层表示存在**维度坍缩**（dimensional collapse），而中间层保留了由粗到细的互补语义；且不同物品的层间表示演化路径各异，统一选层并非最优。据此提出 **IMFuse**：先学习一组**全局的、按维度划分的层偏好权重**来刻画各层的普遍语义贡献，再用**实例感知的专家调制机制**（instance-aware expert modulation）动态调整这些全局权重，为每个物品生成个性化的语义表示。\n\n3. **结论/性能**：在 4 个真实数据集上均优于当前最优基线，平均相对提升 **6.72%**，且只引入有限的参数量和计算开销。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-07-30 13:03:04"
+}

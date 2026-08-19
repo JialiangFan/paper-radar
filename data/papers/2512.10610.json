@@ -1,0 +1,13 @@
+{
+ "id": "2512.10610",
+ "title": "Thinking While Driving: A Concurrent Framework for Real-Time, LLM-Based Adaptive Routing",
+ "authors": "Xiaopei Tan, Muyang Fan",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10610v1",
+ "abstract": "We present Thinking While Driving, a concurrent routing framework that integrates LLMs into a graph-based traffic environment. Unlike approaches that require agents to stop and deliberate, our system enables LLM-based route planning while agents are moving, significantly reducing intersection wait times. Under high traffic, agents average just 0.75 seconds of decision latency. To coordinate many agents in real-time, we implement a non-blocking asynchronous architecture using Unity coroutines and a dedicated request manager. The environment is a weighted undirected graph with live congestion metrics, updated continuously by the agents to enable shared perception. Our results show LLM-driven agents can dynamically adapt to traffic, reroute around congestion, and exhibit behaviors beyond static pathfinding, all while maintaining real-time performance. This work provides a reproducible framework for future research in adaptive routing and multi-agent cooperation.",
+ "summary": "1) 核心创新点：在车辆行驶过程中并发地使用大语言模型进行实时自适应路由规划，并通过非阻塞异步架构实现多智能体的实时协作与快速决策，显著降低等待时间。\n\n2) 主要方法：将LLM嵌入带权无向图的实时交通环境，利用持续更新的拥堵指标实现共享感知；采用 Unity 协程的非阻塞异步框架和专用请求管理器来协调大量智能体的实时决策。\n\n3) 结论/性能：LLM驱动的智能体能够动态适应交通、绕开拥堵、展现超越静态路径规划的行为，同时保持实时性能，在高交通下决策平均延迟约0.75秒，且显著降低交叉口等待时间，提供可重复实现的自适应路由与多智能体协作框架。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:02:38"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.22721",
+ "title": "Self-Evolving Multi-Agent Systems via Decentralized Memory",
+ "authors": "Guangya Hao, Yunbo Long, Zhuokai Zhao",
+ "date": "2026-05-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.22721v1",
+ "abstract": "Self-evolving multi-agent systems (MAS) have emerged as a promising route to LLM agents that continually improve from experience, with persistent memory at their foundation. However, existing designs almost exclusively adopt a centralized repository shared across agents, incurring communication and coordination overhead, raising privacy concerns, and collapsing agent diversity. We propose DecentMem, a decentralized memory framework in which each agent maintains its own dual-pool memory -- an exploitation pool of consolidated past trajectories and an exploration pool of LLM-generated candidates for unseen contexts. The two pools are reweighted online based on stage-wise feedback from an LLM-as-a-judge. Theoretically, we prove that this design guarantees global reachability of the solution space and achieves $O(\\log T)$ cumulative regret, matching the stochastic bandit lower bound up to constants. In practice, across three MAS frameworks (AutoGen, DyLAN, AgentNet), three Qwen3 backbones (4B/8B/14B), two Gemma4 backbones (E2B/E4B) and five benchmarks spanning math, code, QA, and embodied tasks, DecentMem improves average accuracy by up to 23.8% over the strongest centralized memory baseline and by up to 52.5% over the no-memory baseline, while reducing token usage by up to 49%.",
+ "summary": "# 论文总结：DecentMem - 基于去中心化记忆的自演化多智能体系统\n\n## 1. 核心创新点\n提出 **DecentMem**——一个去中心化的多智能体记忆框架，让每个智能体维护自己的双池记忆（利用池 + 探索池），取代传统的中心化共享记忆库，从而解决通信开销、隐私和智能体多样性坍塌等问题。\n\n## 2. 主要方法\n- **双池记忆结构**：每个智能体独立维护两个记忆池\n  - **利用池（Exploitation Pool）**：存储已巩固的历史轨迹\n  - **探索池（Exploration Pool）**：由 LLM 生成的候选记忆，用于应对未见情境\n- **在线重加权机制**：基于\"LLM-as-a-judge\"的分阶段反馈，对两池进行动态重加权\n- **理论保证**：证明该设计可实现解空间的全局可达性，并达到 $O(\\log T)$ 累积遗憾界，匹配随机老虎机问题的下界\n\n## 3. 结论/性能\n在 3 个 MAS 框架（AutoGen、DyLAN、AgentNet）、5 个 Qwen3/Gemma4 主干模型、5 个基准测试（涵盖数学、代码、问答、具身任务）上验证：\n- 相比最强中心化记忆基线，平均准确率提升 **最高 23.8%**\n- 相比无记忆基线，提升 **最高 52.5%**\n- Token 使用量 **降低最高 49%**",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-24 13:02:12"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.11275",
+ "title": "Towards Logic-Aware Manipulation: A Knowledge Primitive for VLM-Based Assistants in Smart Manufacturing",
+ "authors": "Suchang Chen, Daqiang Guo",
+ "date": "2025-12-12",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.11275v1",
+ "abstract": "Existing pipelines for vision-language models (VLMs) in robotic manipulation prioritize broad semantic generalization from images and language, but typically omit execution-critical parameters required for contact-rich actions in manufacturing cells. We formalize an object-centric manipulation-logic schema, serialized as an eight-field tuple τ, which exposes object, interface, trajectory, tolerance, and force/impedance information as a first-class knowledge signal between human operators, VLM-based assistants, and robot controllers. We instantiate τ and a small knowledge base (KB) on a 3D-printer spool-removal task in a collaborative cell, and analyze τ-conditioned VLM planning using plan-quality metrics adapted from recent VLM/LLM planning benchmarks, while demonstrating how the same schema supports taxonomy-tagged data augmentation at training time and logic-aware retrieval-augmented prompting at test time as a building block for assistant systems in smart manufacturing enterprises.",
+ "summary": "- 核心创新点：提出一种面向执行参数的对象中心化操纵逻辑模式 τ（八字段元组），将对象、接口、轨迹、容忍度、力/阻抗等信息作为第一类知识信号，在人-基于VLM的助手与机器人控制器之间实现逻辑感知的协同。\n\n- 主要方法：\n  - 设计并实例化八字段的 τ 操作逻辑与一个小型知识库（KB），并在协作单元的3D打印机线轴移除任务上进行实现。\n  - 基于 τ 条件的VLM规划分析，使用来自VLM/LLM规划基准的计划质量指标进行评估。\n  - 训练阶段通过基于 taxonomy 的数据增强来扩展知识与场景覆盖。\n  - 测试阶段采用逻辑感知的检索增强提示（RAG）进行引导，展示将该知识结构作为智能制造助手系统的构件。\n\n- 结论/性能：在具体任务的实例化与评估中展示了 τ 及 KB 作为可行的逻辑感知操纵原语，能够支持 τ 条件化的VLM规划，并证明该模式在训练时的数据增强与测试时的逻辑感知检索提示方面具有潜在应用价值，构成智能制造企业助手系统的有力组成部分。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-15 14:02:43"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.12776",
+ "title": "EvoSpark: Endogenous Interactive Agent Societies for Unified Long-Horizon Narrative Evolution",
+ "authors": "Shiyu He, Minchi Kuang, Mengxian Wang, Bin Hu, Tingxiang Gu",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12776v1",
+ "abstract": "Realizing endogenous narrative evolution in LLM-based multi-agent systems is hindered by the inherent stochasticity of generative emergence. In particular, long-horizon simulations suffer from social memory stacking, where conflicting relational states accumulate without resolution, and narrative-spatial dissonance, where spatial logic detaches from the evolving plot. To bridge this gap, we propose EvoSpark, a framework specifically designed to sustain logically coherent long-horizon narratives within Endogenous Interactive Agent Societies. To ensure consistency, the Stratified Narrative Memory employs a Role Socio-Evolutionary Base as living cognition, dynamically metabolizing experiences to resolve historical conflicts. Complementarily, Generative Mise-en-Scène mechanism enforces Role-Location-Plot alignment, synchronizing character presence with the narrative flow. Underpinning these is the Unified Narrative Operation Engine, which integrates an Emergent Character Grounding Protocol to transform stochastic sparking into persistent characters. This engine establishes a substrate that expands a minimal premise into an open-ended, evolving story world. Experiments demonstrate that EvoSpark significantly outperforms baselines across diverse paradigms, enabling the sustained generation of expressive and coherent narrative experiences.",
+ "summary": "**核心创新点**：提出 EvoSpark 框架，通过分层叙事记忆、生成化场景编排与统一叙事运算引擎，实现多代理社会中的长时程逻辑连贯叙事演化，解决长期叙事中的记忆堆叠与时空错位问题。\n\n**主要方法**：\n- 借助 Stratified Narrative Memory，结合 Role Socio-Evolutionary Base 作为“活生 cognition”，动态代谢经验以解决历史冲突。\n- 引入 Generative Mise-en-Scène 机制，强化 Role-Location-Plot 的对齐，确保人物出场与叙事进展同步。\n- 依托 Unified Narrative Operation Engine，整合 Emergent Character Grounding Protocol，将随机性触发转化为可持续的角色实体，由最小前提出发生成开放、演化的故事世界。\n\n**结论/性能**：实验表明 EvoSpark 在多种范式下显著优于基线，能够持续生成富表达性且高度连贯的叙事体验。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-15 13:11:00"
+}

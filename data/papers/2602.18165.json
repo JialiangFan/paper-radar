@@ -1,0 +1,13 @@
+{
+ "id": "2602.18165",
+ "title": "Uncertainty-Aware Jamming Mitigation with Active RIS: A Robust Stackelberg Game Approach",
+ "authors": "Xiao Tang, Zhen Ma, Limeng Dong, Yichen Wang, Qinghe Du, Dusit Niyato, Zhu Han",
+ "date": "2026-02-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.18165v1",
+ "abstract": "Malicious jamming presents a pervasive threat to the secure communications, where the challenge becomes increasingly severe due to the growing capability of the jammer allowing the adaptation to legitimate transmissions. This paper investigates the jamming mitigation by leveraging an active reconfigurable intelligent surface (ARIS), where the channel uncertainties are particularly addressed for robust anti-jamming design. Towards this issue, we adopt the Stackelberg game formulation to model the strategic interaction between the legitimate side and the adversary, acting as the leader and follower, respectively. We prove the existence of the game equilibrium and adopt the backward induction method for equilibrium analysis. We first derive the optimal jamming policy as the follower's best response, which is then incorporated into the legitimate-side optimization for robust anti-jamming design. We address the uncertainty issue and reformulate the legitimate-side problem by exploiting the error bounds to combat the worst-case jamming attacks. The problem is decomposed within a block successive upper bound minimization (BSUM) framework to tackle the power allocation, transceiving beamforming, and active reflection, respectively, which are iterated towards the robust jamming mitigation scheme. Simulation results are provided to demonstrate the effectiveness of the proposed scheme in protecting the legitimate transmissions under uncertainties, and the superior performance in terms of jamming mitigation as compared with the baselines.",
+ "summary": "1) 核心创新点（一句话）  \n在信道不确定性条件下，提出以主动 RIS 为核心的鲁棒抗干扰框架，结合鲁棒 Stackelberg 博弈、误差界约束和 BSUM 分解实现对功率、波束和有源反射的鲁棒优化以抵御干扰。\n\n2) 主要方法  \n- 采用主动 RIS（ARIS）辅助的通信系统以提升抗干扰能力。  \n- 构建合法端（领导者）与对手干扰方（跟随者）的 Stackelberg 博弈，证明存在均衡并采用向后归纳法进行均衡分析。  \n- 先推导干扰方（跟随者）的最优响应作为对手的最优干扰策略，再将其纳入合法端的鲁棒优化。  \n- 针对信道不确定性，通过误差界限的最坏情况 reformulation 实现鲁棒设计。  \n- 将问题在 BSUM 框架下分解为功率分配、发射/接收波束成形以及有源反射系数的子问题，并迭代求解以得到鲁棒抗干扰方案。\n\n3) 结论/性能  \n通过仿真验证，在存在不确定性的条件下，该鲁棒抗干扰方案能有效保护合法传输，并在抗干扰性能方面优于基线方案，显示出对最坏情景的优越鲁棒性与改进的干扰抑制效果。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2026-02-23 14:01:24"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2512.18215",
+ "title": "Stable and Efficient Single-Rollout RL for Multimodal Reasoning",
+ "authors": "Rui Liu, Dian Yu, Lei Ke, Haolin Liu, Yujun Zhou, Zhenwen Liang, Haitao Mi, Pratap Tokekar, Dong Yu",
+ "date": "2025-12-20",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.18215v1",
+ "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become a key paradigm to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, prevalent group-based algorithms such as GRPO require multi-rollout sampling for each prompt. While more efficient single-rollout variants have recently been explored in text-only settings, we find that they suffer from severe instability in multimodal contexts, often leading to training collapse. To address this training efficiency-stability trade-off, we introduce $\\textbf{MSSR}$ (Multimodal Stabilized Single-Rollout), a group-free RLVR framework that achieves both stable optimization and effective multimodal reasoning performance. MSSR achieves this via an entropy-based advantage-shaping mechanism that adaptively regularizes advantage magnitudes, preventing collapse and maintaining training stability. While such mechanisms have been used in group-based RLVR, we show that in the multimodal single-rollout setting they are not merely beneficial but essential for stability. In in-distribution evaluations, MSSR demonstrates superior training compute efficiency, achieving similar validation accuracy to the group-based baseline with half the training steps. When trained for the same number of steps, MSSR's performance surpasses the group-based baseline and shows consistent generalization improvements across five diverse reasoning-intensive benchmarks. Together, these results demonstrate that MSSR enables stable, compute-efficient, and effective RLVR for complex multimodal reasoning tasks.",
+ "summary": "1. 核心创新点\n- 提出 MSSR（Multimodal Stabilized Single-Rollout），一种面向多模态推理的无分组单轮采样 RLVR 框架，通过基于熵的优势塑形实现训练稳定性与高效性。\n\n2. 主要方法\n- 采用无分组（单轮）RLVR 进行多模态推理训练，避免多轮采样带来的成本与不稳定性。\n- 引入基于熵的优势塑形机制，动态正则化优势大小，防止训练崩溃并维持稳定优化。\n- 与群体式基线（如 GRPO）对比，证明在多模态单轮设置下该稳定机制的必要性。\n\n3. 结论/性能\n- 在分布内评估中，MSSR 以约一半的训练步数达到与群基线相同的验证准确率，具备更高的计算效率。\n- 在相同步数训练时，MSSR 的性能超出群基线，并在五个多模态推理基准上表现出更显著的泛化提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-23 02:50:42"
+}

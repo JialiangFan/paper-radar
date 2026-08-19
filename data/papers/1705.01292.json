@@ -1,0 +1,32 @@
+{
+ "id": "1705.01292",
+ "title": "A General Safety Framework for Learning-Based Control in Uncertain Robotic Systems",
+ "authors": "Fisac, et al.",
+ "date": null,
+ "year": 2017,
+ "url": "https://arxiv.org/abs/1705.01292",
+ "abstract": "",
+ "summary": "Fisac et al. provide a foundational HJ reachability safety framework that supervises arbitrary learning controllers with least-restrictive intervention.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "IEEE TAC",
+ "category": "CBF Reachability",
+ "tags": [
+  "action-shielding",
+  "reachability",
+  "reachability-analysis",
+  "robotics",
+  "runtime-assurance",
+  "safe-learning",
+  "safe-vla"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/CBF_Reachability/2017_Fisac_GeneralSafetyFramework.md",
+ "pdf_path": "PDFs/CBF_Reachability/2017_Fisac_GeneralSafetyFramework.pdf",
+ "code": "",
+ "project": "",
+ "is_core": true,
+ "is_supplemental": false
+}

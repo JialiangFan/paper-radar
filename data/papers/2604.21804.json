@@ -1,0 +1,13 @@
+{
+ "id": "2604.21804",
+ "title": "Phenomenological Detector Design and Optimization in Vertically-Integrated Differentiable Full Simulations with Agentic-AI",
+ "authors": "Wonyong Chung, Qibin Liu, Liangyu Wu, Julia Gonski",
+ "date": "2026-04-23",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.21804v1",
+ "abstract": "We present the first implementation of AI agents into the design and optimization of detectors in high-energy physics experiments via a bilevel optimization framework that vertically integrates detector geometry, front-end digitization, and high-level reconstruction algorithm parameters in differentiable full simulations. Using the example of a dual-readout, segmented crystal EM calorimeter with a baseline resolution of $3\\%/\\sqrt{E}$, we investigate the capabilities and value propositions of AI agents in the identification and reduction of key detector parameters and in the nonlinear traversal of a given detector design's full parameter space. We find that LLM-based reasoning models today, without being given additional experiment-specific context, are able to effectively execute complex workflows and proactively suggest generic but relevant avenues for further study or improvement. Here, we demonstrate an AI agent's ability to use the workflow to simultaneously optimize a representative subset of vertically integrated detector parameters: crystal granularity and length, number of ADC bits and sampling rate, and center-of-gravity hit-clustering radius. We find that effective integration of agents into the complex workflows of frontier areas of research not only significantly reduces labor and compute, but opens up efficient avenues for computational validation of first-principles design choices. While the ability to make autonomous leaps of physics-motivated judgment or insight is not demonstrated in this work, this study defines the current frontier of experimental design methods in high-energy physics.",
+ "summary": "- 核心创新点：首次在高能物理探测器设计与优化中，将 AI 代理嵌入垂直集成的可微分全仿真双层优化框架，实现探测器参数的自动化探索与设计迭代。\n\n- 主要方法：\n  - 采用垂直整合的双层优化框架，将探测器几何、前端数字化和高层重建算法参数整合进可微分的全仿真中。\n  - 基于一个双读出、分段晶体能量沉积计量器的示例（基线分辨率3%/√E）进行评估。\n  - 使用基于大模型的 AI 代理（LLM 推理模型）来执行复杂工作流，主动提出与改进相关的通用路径，且在不提供额外实验上下文的情况下可应用。\n  - 让 AI 代理在工作流内同时优化晶体粒度与长度、ADC 位数与采样率、以及中心-重心命中聚类半径等代表性参数。\n  - 通过代理融入前沿研究工作流，显著降低人力与计算成本，并实现对第一性设计选择的计算验证。\n\n- 结论/性能：\n  - 结果表明，LLM 推理模型在无需额外特定上下文时，能够有效执行复杂工作流并主动给出潜在改进方向。\n  - 将代理有效整合入前沿研究工作流，显著降低劳动与计算量，提升对设计选择的计算验证效率。\n  - 在可微分全仿真框架下，成功对代表性参数子集（晶体粒度/长度、ADC 位数/采样率、聚类半径）进行联合优化，展示了代理驱动设计优化的可行性与潜力。\n  - 但尚未演示在物理洞察方面的自主跳跃性结论。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-24 13:01:33"
+}

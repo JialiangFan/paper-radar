@@ -1,0 +1,13 @@
+{
+ "id": "2512.17213",
+ "title": "CheXPO-v2: Preference Optimization for Chest X-ray VLMs with Knowledge Graph Consistency",
+ "authors": "Xiao Liang, Yuxuan An, Di Wang, Jiawei Hu, Zhicheng Jiao, Bin Jing, Quan Wang",
+ "date": "2025-12-19",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.17213v1",
+ "abstract": "Medical Vision-Language Models (VLMs) are prone to hallucinations, compromising clinical reliability. While reinforcement learning methods like Group Relative Policy Optimization (GRPO) offer a low-cost alignment solution, their reliance on sparse, outcome-based rewards inadvertently encourages models to \"overthink\" -- generating verbose, convoluted, and unverifiable Chain-of-Thought reasoning to justify answers. This focus on outcomes obscures factual errors and poses significant safety risks. To address this, we propose CheXPO-v2, a novel alignment framework that shifts from outcome to process supervision. Our core innovation is a Knowledge Graph Consistency Reward mechanism driven by Entity-Relation Matching. By explicitly parsing reasoning steps into structured \"Disease, Relation, Anatomy\" triplets, we provide fine-grained supervision that penalizes incoherent logic and hallucinations at the atomic level. Integrating this with a hard-example mining strategy, our approach significantly outperforms GRPO and state-of-the-art models on benchmarks like MIMIC-CXR-VQA. Crucially, CheXPO-v2 achieves new state-of-the-art accuracy using only 5k samples, demonstrating exceptional data efficiency while producing clinically sound and verifiable reasoning. The project source code is publicly available at: https://github.com/ecoxial2007/CheX-Phi4MM.",
+ "summary": "- 核心创新点：将对齐从以结果为导向转为以推理过程为监督，提出基于知识图谱一致性的奖励机制，通过疾病-关系-解剖（Disease-Relation-Anatomy）三元组的粒度化匹配来抑制幻觉和不一致推理。\n\n- 主要方法：构建 CheXPO-v2 的知识图谱一致性奖励，对推理步骤进行实体-关系匹配并解析为三元组；结合硬样本挖掘策略进行高效对齐，结合胸部X-ray 医学VLMs，在MIMIC-CXR-VQA等基准上实现对齐优化。\n\n- 结论/性能：在仅用5k样本的情况下达到新的SOTA准确性，显著优于GRPO及其他方法，并具备更高的数据效率和可验证的临床可解释推理能力。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2025-12-22 02:49:28"
+}

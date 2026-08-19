@@ -1,0 +1,13 @@
+{
+ "id": "2603.23501",
+ "title": "MedObvious: Exposing the Medical Moravec's Paradox in VLMs via Clinical Triage",
+ "authors": "Ufaq Khan, Umair Nawaz, L D M S S Teja, Numaan Saeed, Muhammad Bilal, Yutong Xie, Mohammad Yaqub, Muhammad Haris Khan",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23501v1",
+ "abstract": "Vision Language Models (VLMs) are increasingly used for tasks like medical report generation and visual question answering. However, fluent diagnostic text does not guarantee safe visual understanding. In clinical practice, interpretation begins with pre-diagnostic sanity checks: verifying that the input is valid to read (correct modality and anatomy, plausible viewpoint and orientation, and no obvious integrity violations). Existing benchmarks largely assume this step is solved, and therefore miss a critical failure mode: a model can produce plausible narratives even when the input is inconsistent or invalid. We introduce MedObvious, a 1,880-task benchmark that isolates input validation as a set-level consistency capability over small multi-panel image sets: the model must identify whether any panel violates expected coherence. MedObvious spans five progressive tiers, from basic orientation/modality mismatches to clinically motivated anatomy/viewpoint verification and triage-style cues, and includes five evaluation formats to test robustness across interfaces. Evaluating 17 different VLMs, we find that sanity checking remains unreliable: several models hallucinate anomalies on normal (negative-control) inputs, performance degrades when scaling to larger image sets, and measured accuracy varies substantially between multiple-choice and open-ended settings. These results show that pre-diagnostic verification remains unsolved for medical VLMs and should be treated as a distinct, safety-critical capability before deployment.",
+ "summary": "- 核心创新点：提出 MedObvious 基准（1,880 任务），将输入有效性/一致性检查（前诊断的 sanity check）作为独立的、安全关键能力来评估医疗视觉-语言模型，在多面板图像集上暴露 Moravec 潜在悖论。\n\n- 主要方法：构建覆盖五个层级的输入一致性任务，聚焦从模态/方向错配到解剖部位、视点核验及分诊式线索等；包含五种评测格式，评估对象为17种不同的 VLMs，测试其在跨接口和不同场景下的鲁棒性。\n\n- 结论/性能：发现大多数模型在正常输入上也会产生异常幻觉，随着图像集规模增大，性能下降，且多项选择与开放式回答等评测形式的准确率差异显著，说明医疗 VLM 的前诊断验证能力仍未解决，需作为部署前的独立、安全关键能力来评估。",
+ "keyword": "Large Language Models",
+ "source": "auto",
+ "created_at": "2026-03-25 13:06:16"
+}

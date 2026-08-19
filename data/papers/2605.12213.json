@@ -1,0 +1,13 @@
+{
+ "id": "2605.12213",
+ "title": "Goal-Oriented Reasoning for RAG-based Memory in Conversational Agentic LLM Systems",
+ "authors": "Jiazhou Liang, Armin Toroghi, Yifan Simon Liu, Faeze Moradi Kalarde, Liam Gallagher, Scott Sanner",
+ "date": "2026-05-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.12213v1",
+ "abstract": "LLM-based conversational AI agents struggle to maintain coherent behavior over long horizons due to limited context. While RAG-based approaches are increasingly adopted to overcome this limitation by storing interactions in external memory modules and performing retrieval from them, their effectiveness in answering challenging questions (e.g., multi-hop, commonsense) ultimately depends on the agent's ability to reason over the retrieved information. However, existing methods typically retrieve memory based on semantic similarity to the raw user utterance, which lacks explicit reasoning about missing intermediate facts and often returns evidence that is irrelevant or insufficient for grounded reasoning. In this work, we introduce Goal-Mem, a goal-oriented reasoning framework for RAG-based agentic memory that performs explicit backward chaining from the user's utterance as a goal. Rather than progressively expanding from retrieved context, Goal-Mem decomposes each goal into atomic subgoals, performs targeted memory retrieval to satisfy each subgoal, and iteratively identifies what information from memory should be retrieved when intermediate goals cannot be resolved. We formalize this process in Natural Language Logic, a logical system that combines the verifiability of reasoning provided by FOL with the expressivity of natural language. Through extensive experiments on two datasets and comparing to nine strong memory baselines, we show that Goal-Mem consistently improves performance, particularly on tasks requiring multi-hop reasoning and implicit inference.",
+ "summary": "核心创新点：提出 Goal-Mem，一种面向目标的推理框架，通过对用户话语作为目标进行显式的逆向链式分解与定向内存检索，提升基于RAG的记忆在多跳及隐式推理任务中的能力。\n\n主要方法：- 将目标分解为原子子目标；- 针对每个子目标进行定向的内存检索以满足子目标；- 当中间目标无法解决时，迭代识别需要从记忆中检索的额外信息；- 将整个推理过程形式化为 Natural Language Logic（自然语言逻辑），结合可验证性的第一阶逻辑推理与自然语言表达。\n\n结论/性能：在两个数据集上与九个强基线相比，Goal-Mem 表现出一致的性能提升，尤其在需要多跳推理和隐式推理的任务上提升显著。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-05-19 12:33:30"
+}

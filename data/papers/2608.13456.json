@@ -1,0 +1,13 @@
+{
+ "id": "2608.13456",
+ "title": "A Unifying Perspective on Causal World Models: From Observations to Representations to Structure",
+ "authors": "Avinash Kori, Fabrizio Russo",
+ "date": "2026-08-13",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.13456v1",
+ "abstract": "World Models (WM) are increasingly seen as a foundation for intelligent agents that can predict, plan, and act beyond their training distribution. In this paper, we study WMs from a causal perspective across multiple levels of abstraction, ranging from perceptual observations to building a conceptual representation of the structure governing the environment dynamics. We argue that useful WMs must go beyond generative capabilities alone: they should also capture entity properties, entity-to-entity interactions, and entity-to-environment interactions that determine and explain the dynamics of a system. We provide a formal definition of Causal WMs (CWMs) grounded in the tasks they are intended to support, connecting world modelling with existing work in causal representation learning, object-centric learning, causal discovery, structural causal models, and model-based decision-making. Finally, we relate CWMs to the literature on identifiability, clarifying when the components of a WM can be recovered from data and up to which equivalence. With this, we ground WMs in representations and structures that support causal reasoning and informed decision-making.",
+ "summary": "## 论文总结\n\n**核心创新点**\n从因果视角统一定义\"因果世界模型\"（Causal World Models, CWMs），主张世界模型不能只满足于生成/预测能力，还必须显式刻画支配环境动态的因果结构。\n\n**主要方法**\n这是一篇理论/综述性质的立场论文，而非实验工作：\n\n- 按**抽象层级**（从感知观测 → 概念表征 → 环境动态的结构）来剖析世界模型；\n- 给出 CWM 的**形式化定义**，并以\"模型要支持的下游任务\"作为定义的落脚点；\n- 将其与已有研究线索打通：因果表征学习、以对象为中心的学习（object-centric learning）、因果发现、结构因果模型（SCM）、基于模型的决策；\n- 要求模型捕捉三类要素：实体属性、实体—实体交互、实体—环境交互；\n- 最后接入**可辨识性（identifiability）**理论，讨论世界模型的各个组件在什么条件下可从数据中恢复、以及恢复到何种等价类（up to which equivalence）。\n\n**结论/性能**\n无量化性能指标。其贡献在于提供了一个统一的概念框架：把\"世界模型\"从单纯的生成模型重新锚定到支持因果推理与知情决策的表征与结构上，并厘清了这些结构何时可被辨识——为后续构建可泛化到训练分布之外的智能体提供理论基础与研究议程。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-16 13:04:30"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.17962",
+ "title": "ConGA: Guidelines for Contextual Gender Annotation. A Framework for Annotating Gender in Machine Translation",
+ "authors": "Argentina Anna Rescigno, Eva Vanmassenhove, Johanna Monti",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.17962v1",
+ "abstract": "Handling gender across languages remains a persistent challenge for Machine Translation (MT) and Large Language Models (LLMs), especially when translating from gender-neutral languages into morphologically gendered ones, such as English to Italian. English largely omits grammatical gender, while Italian requires explicit agreement across multiple grammatical categories. This asymmetry often leads MT systems to default to masculine forms, reinforcing bias and reducing translation accuracy. To address this issue, we present the Contextual Gender Annotation (ConGA) framework, a linguistically grounded set of guidelines for word-level gender annotation. The scheme distinguishes between semantic gender in English through three tags, Masculine (M), Feminine (F), and Ambiguous (A), and grammatical gender realisation in Italian (Masculine (M), Feminine (F)), combined with entity-level identifiers for cross-sentence tracking. We apply ConGA to the gENder-IT dataset, creating a gold-standard resource for evaluating gender bias in translation. Our results reveal systematic masculine overuse and inconsistent feminine realisation, highlighting persistent limitations of current MT systems. By combining fine-grained linguistic annotation with quantitative evaluation, this work offers both a methodology and a benchmark for building more gender-aware and multilingual NLP systems.",
+ "summary": "1. 核心创新点：提出 Contextual Gender Annotation (ConGA) 框架，基于语言学原理的逐词性别标注指南，区分英语的语义性别与意大利语的语法性别，并通过跨句实体标识实现跟踪，构建性别偏见评估的金标准资源。\n\n2. 主要方法：设计并应用 ConGA 指南进行词级性别标注，区分英语的 M/F/A（语义性别）与意大利语的 M/F（语法实现），引入跨句实体标识以便追踪；将标注应用于 gENder-IT 数据集，生成 gold-standard 数据集，并进行定量评估以分析 MT/LLMs 的性别偏见。\n\n3. 结论/性能：发现存在系统性的男性形式过度使用、女性实现不一致的问题，揭示当前 MT 系统在性别处理上的局限性；同时提供一种可用于评估与改进性别敏感多语言 NLP 的方法论与基准数据集。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-19 13:01:10"
+}

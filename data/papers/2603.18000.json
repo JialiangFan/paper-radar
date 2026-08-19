@@ -1,0 +1,13 @@
+{
+ "id": "2603.18000",
+ "title": "AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse",
+ "authors": "Zhang Zhang, Shuqi Lu, Hongjin Qian, Di He, Zheng Liu",
+ "date": "2026-03-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.18000v1",
+ "abstract": "Building LLM-based agents has become increasingly important. Recent works on LLM-based agent self-evolution primarily record successful experiences as textual prompts or reflections, which cannot reliably guarantee efficient task re-execution in complex scenarios. We propose AgentFactory, a new self-evolution paradigm that preserves successful task solutions as executable subagent code rather than textual experience. Crucially, these subagents are continuously refined based on execution feedback, becoming increasingly robust and efficient as more tasks are encountered. Saved subagents are pure Python code with standardized documentation, enabling portability across any Python-capable system. We demonstrate that AgentFactory enables continuous capability accumulation: its library of executable subagents grows and improves over time, progressively reducing the effort required for similar tasks without manual intervention. Our implementation is open-sourced at https://github.com/zzatpku/AgentFactory, and our demonstration video is available at https://youtu.be/iKSsuAXJHW0.",
+ "summary": "以下是对论文标题与摘要的要点式中文总结：\n\n- 核心创新点（1 句概括）\n  通过将成功的任务解决方案以可执行的子代理代码进行积累、再利用，并基于执行反馈持续迭代改进，从而实现自我进化的能力库，且可跨环境移植。\n\n- 主要方法\n  - 将成功的任务解决方案保存为纯 Python 代码形式的子代理（subagents），并附带标准化文档，确保可移植性。\n  - 通过对执行结果的反馈循环，对子代理进行持续 refinements，使其在越来越多的任务场景中变得更鲁棒、效率更高。\n  - 构建并维护一个可执行子代理库，实现能力的持续积累与重用，减少对新任务的人工干预。\n\n- 结论/性能\n  - 实现持续的能力积累：子代理库规模与质量随时间增长，降低处理相似任务的投入成本。\n  - 提高可移植性与可重复性，能在任意 Python 环境中重用和再利用已有的解决方案。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-19 13:00:35"
+}

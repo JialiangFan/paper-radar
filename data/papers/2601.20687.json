@@ -1,0 +1,13 @@
+{
+ "id": "2601.20687",
+ "title": "Positive-Unlabeled Reinforcement Learning Distillation for On-Premise Small Models",
+ "authors": "Zhiqiang Kou, Junyang Chen, Xin-Qiang Cai, Xiaobo Xia, Ming-Kun Xie, Dong-Dong Wu, Biao Liu, Yuheng Jia, Xin Geng, Masashi Sugiyama, Tat-Seng Chua",
+ "date": "2026-01-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2601.20687v1",
+ "abstract": "Due to constraints on privacy, cost, and latency, on-premise deployment of small models is increasingly common. However, most practical pipelines stop at supervised fine-tuning (SFT) and fail to reach the reinforcement learning (RL) alignment stage. The main reason is that RL alignment typically requires either expensive human preference annotation or heavy reliance on high-quality reward models with large-scale API usage and ongoing engineering maintenance, both of which are ill-suited to on-premise settings. To bridge this gap, we propose a positive-unlabeled (PU) RL distillation method for on-premise small-model deployment. Without human-labeled preferences or a reward model, our method distills the teacher's preference-optimization capability from black-box generations into a locally trainable student. For each prompt, we query the teacher once to obtain an anchor response, locally sample multiple student candidates, and perform anchor-conditioned self-ranking to induce pairwise or listwise preferences, enabling a fully local training loop via direct preference optimization or group relative policy optimization. Theoretical analysis justifies that the induced preference signal by our method is order-consistent and concentrates on near-optimal candidates, supporting its stability for preference optimization. Experiments demonstrate that our method achieves consistently strong performance under a low-cost setting.",
+ "summary": "1) 核心创新点：提出面向本地小模型的正样本-未标注强化学习蒸馏（PU RL Distillation），在无需人类偏好标注或奖励模型的前提下，通过从教师生成中提取锚点偏好信号并进行锚点条件自排序，实现本地化RL对齐。\n\n2) 主要方法：\n- 以教师为黑箱，仅对每个提示查询一次获得锚点响应，避免额外的人类标注或外部奖励模型。\n- 在本地对学生候选答案进行多样化采样，并基于锚点条件进行自排序，产生对比对的成对或列表偏好信号。\n- 通过直接偏好优化或分组相对策略优化，在本地完成完整的训练循环。\n- 提供理论分析，证明所诱导的偏好信号具备有序一致性并聚焦于近似最优候选，提升稳定性。\n\n3) 结论/性能：\n- 实验表明在低成本、本地部署环境下，该方法能够持续取得较强的对齐效果，显著降低对人类标注和高成本奖励模型的依赖，表现出稳定且优越的性能。",
+ "keyword": "reinforcement learning reasoning",
+ "source": "auto",
+ "created_at": "2026-01-29 03:25:11"
+}

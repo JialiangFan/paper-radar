@@ -1,0 +1,13 @@
+{
+ "id": "2607.03423",
+ "title": "Securing Multi-Tool AI Agent Chains With Dynamic, Real-Time Compositional Policies",
+ "authors": "Chris Schneider, Kriti Faujdar, Philipp Schoenegger, Ben Bariach",
+ "date": "2026-07-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2607.03423v1",
+ "abstract": "Modern AI agent implementations such as frontier coding agents chain multiple tools at runtime that create a security surface that per-tool guardrails are unable to address, as individually permitted tools can violate organizational policies when composed. We propose the Dynamic Security Control Compositor (DSCC), a two-phase approach to compositional security for multi-tool agent chains. In Phase 1, at session checkout, a Most Restrictive Set (MRS) algorithm composes per-tool security policies into a single effective policy with a formal monotonicity invariant that extending a chain can only tighten the result, blocking incompatible combinations before any tool executes. Outputs of any tool call propagate their classification constraints into a session-level taint state, so subsequent invocations must satisfy the most restrictive constraints seen so far. In Phase 2, at runtime, the system tracks the sensitivity of data the agent touches through a monotonic taint state and revokes the session if the accumulated exposure would make a subsequent tool call a policy violation. Together, these phases provide defense in depth, where static composition prevents unsafe chains from starting, and runtime taint tracking catches violations that emerge from the specific data used. We provide a reference implementation on 32 tools governed by 16 NIST SP 800-53 aligned policies and evaluate it under two composition modes. In the default clearance mode, permitted combinations are partitioned into classification-level clusters, blocking 79.2% of policy pairs and 95.5% of triples. The alternative taint mode admits mixed-classification chains within the exfiltration boundary, blocking 42.5% and 60.5% respectively. We discuss the governance implications for organizations deploying multi-tool agents, including the utility-security tradeoff and the changes needed to operationalize chain-aware policies.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-07-07 13:00:58"
+}

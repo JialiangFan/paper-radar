@@ -1,0 +1,13 @@
+{
+ "id": "2604.25596",
+ "title": "Volitional Multiagent Atomic Transactions: Describing People and their Machines",
+ "authors": "Andy Lewis-Pye, Ehud Shapiro",
+ "date": "2026-04-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.25596v1",
+ "abstract": "Formal models for concurrent and distributed systems describe machines; the people who operate them are either ignored or treated as external environment. Yet key distributed systems -- notably grassroots platforms -- include people operating their personal machines (smartphones), and their faithful description must include the states of both people and machines and how they jointly effect system behaviour.\n  Here, we propose volitional multiagent atomic transactions -- executed atomically by machines and guarded by their people's volitions -- as a novel mathematical foundation for specifying systems consisting of people operating machines. Each agent's state consists of a volitional state and machine state; a transaction is enabled when the machine precondition holds and the guarding persons are willing. For example, befriending two people is guarded by both; unfriending, by either; voluntary swap of coins and bonds is guarded by both parties, while a payment is guarded by the payer.\n  We develop the mathematical machinery to express safety and liveness of platforms specified in this framework, and provide example specifications of two grassroots platforms: social networks, and coins and bonds. These specifications are then used by AI to derive working implementations. %\nWe employ here a novel and simpler definition of `grassroots' that better captures the informal notion -- multiple instances can form and operate independently, yet may coalesce -- and show that the platforms specified here, as well as those hitherto proven grassroots under the original definition, are grassroots under the new definition.",
+ "summary": "- 核心创新点（一句话概括）\n  提出一种带有人意志 guarding 的原子多代理事务模型，将人和机器作为一个整体来描述和执行并发分布式系统中的事务，从而同时描述人机协作的状态及其对系统行为的影响。\n\n- 主要方法\n  - 将每个代理的状态定义为意志状态与机器状态的组合；交易在机器前提成立且守约人同意时原子执行。\n  - 构建用于表达系统安全性（safety）与活性（liveness）的系统性数学工具。\n  - 给出两个草根平台的形式化规格示例（社交网络、币与债券交易），并展示如何用 AI 从这些规格推导出可工作的实现。\n  - 引入并采用一种更简化的“草根”定义，并证明所给平台在新定义下及以往定义下都是草根。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-04-29 13:02:33"
+}

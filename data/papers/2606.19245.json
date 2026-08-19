@@ -1,0 +1,13 @@
+{
+ "id": "2606.19245",
+ "title": "TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology",
+ "authors": "Hannah Le, Ramesh Ramasamy, Alex Urrutia, Mahsa Yazdani, Tim Proctor, Kenny Workman",
+ "date": "2026-06-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.19245v1",
+ "abstract": "Artificial intelligence (AI) agents promise to accelerate drug discovery by compressing interpretation and decision-making loops, but practical deployment requires trusted evaluation on realistic program decisions. We introduce TherapeuticsBench Preclinical Pharmacology (TxBench-PP), a verifiable benchmark for small-molecule preclinical pharmacology and the first focused slice of a broader TherapeuticsBench effort across drug-discovery stages and therapeutic modalities. TxBench-PP tests whether agents can recover accurate conclusions from real-world assay data rather than memorized facts from literature. The benchmark contains 100 evaluations indexed by program stage, assay type, and task structure, spanning mechanism-of-action (MoA) and pharmacodynamic (PD) reasoning, compound-target engagement, causal target validation, developability and safety, and translational efficacy. Agents receive realistic workflow snapshots, inspect files in a coding environment, and return structured answers graded deterministically. Across 16 model-harness configurations, comprising 11 models and 4,800 trajectories, no system reliably recovered preclinical pharmacology decisions. The strongest configuration, Claude Opus 4.8 / Pi, passed 59.3\\% of endpoint attempts (178/300; 95\\% CI, 51.1-67.6), followed by GPT-5.5 / Pi at 55.3\\% (166/300; 47.0-63.6).",
+ "summary": "## TxBench-PP 论文摘要总结\n\n1. **核心创新点**：提出首个针对小分子临床前药理学的可验证 AI 智能体评测基准（TxBench-PP），用于检验 AI 智能体能否从真实实验数据中还原正确的药物研发决策，而非依赖文献中记忆的事实。\n\n2. **主要方法**：构建包含 100 项评测的基准，按项目阶段、实验类型和任务结构索引，覆盖作用机制（MoA）与药效动力学（PD）推理、化合物-靶点结合、因果靶点验证、成药性与安全性、转化疗效等维度。智能体在编程环境中查看真实工作流快照、检查文件并返回结构化答案，由系统确定性评分。共测试 16 种\"模型-框架\"配置（11 个模型、4800 条轨迹）。\n\n3. **结论/性能**：所有系统均未能可靠还原临床前药理学决策。表现最强的 Claude Opus 4.8 / Pi 通过率为 59.3%（178/300，95% CI 51.1–67.6），其次为 GPT-5.5 / Pi 的 55.3%（166/300）——表明当前 AI 智能体在真实药理学决策任务上仍有显著不足。\n\n---\n注：若需要更完整的文献综述式分析（含中英双版本输出到 Obsidian），可使用 `/paper-review` 技能。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-06-18 13:00:45"
+}

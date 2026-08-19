@@ -1,0 +1,13 @@
+{
+ "id": "2604.12896",
+ "title": "Don't Show Pixels, Show Cues: Unlocking Visual Tool Reasoning in Language Models via Perception Programs",
+ "authors": "Muhammad Kamran Janjua, Hugo Silva, Di Niu, Bahador Rashidi",
+ "date": "2026-04-14",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.12896v1",
+ "abstract": "Multimodal language models (MLLMs) are increasingly paired with vision tools (e.g., depth, flow, correspondence) to enhance visual reasoning. However, despite access to these tool-generated visual cues, MLLMs often fail to benefit from them. Existing approaches typically feed raw tool outputs into the model, but these dense, pixel-level representations are misaligned with the language-native reasoning strengths of LLMs, leading to weak perception and reliance on language priors. We argue that, in problems where vision tools can provide the necessary visual cues, the bottleneck is not more tool calls or larger MLLMs, it is how tool outputs are represented. We introduce Perception Programs (P$^2$), a training-free, model-agnostic method that rewrites tool outputs into compact, structured, language-native summaries that MLLMs can directly parse and reason over. Across six perception-centric tasks in BLINK, P$^2$ consistently yields large improvements over base models and raw tool-augmented baselines. With GPT-5 Mini as the base model, P$^2$ raises its accuracy from 41.35\\% to 86.47\\% on multi-view reasoning, from 52.42\\% to 81.45\\% on relative depth, and achieves a 22\\% average gain across tasks, setting new state-of-the-art results. Even on smaller MLLMs, e.g., InternVL3.5-4B and Qwen3VL-4B, we observe 15-40\\% absolute gains from P$^2$, surpassing prior agentic, supervised, and RL-based tool-use methods-without any training or model modifications.",
+ "summary": "**核心创新点**：提出 Perception Programs (P^2)，一种训练-free、模型无关的方法，将视觉工具输出转写为紧凑、结构化、语言原生的摘要，使大语言模型能够直接解析与推理，从而有效利用视觉工具提供的线索。\n\n**主要方法**：在不改变模型参数或进行训练的前提下，使用 P^2 将来自深度、光流、对应关系等视觉工具的输出改写成语言化的、可直接推理的摘要形式，提升语言模型对视觉信息的理解与推理能力，适用于六项感知为主的任务（BLINK 任务集合）。\n\n**结论/性能**：在以 GPT-5 Mini 为基础模型的设置下，P^2 将多视角推理准确率从 41.35% 提升到 86.47%，相对深度从 52.42% 提升到 81.45%，跨任务平均提升约 22%；即使在较小的模型（如 InternVL3.5-4B、Qwen3VL-4B）上也实现了 15-40% 的绝对增益，显著超越此前的基于代理、监督和 RL 的工具使用方法，且无需训练或模型修改，达到新的状态最优。",
+ "keyword": "agentic LLM",
+ "source": "auto",
+ "created_at": "2026-04-15 13:10:44"
+}

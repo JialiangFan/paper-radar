@@ -1,0 +1,13 @@
+{
+ "id": "2603.28680",
+ "title": "A Techno-Economic Framework for Cost Modeling and Revenue Opportunities in Open and Programmable AI-RAN",
+ "authors": "Gabriele Gemmi, Michele Polese, Tommaso Melodia",
+ "date": "2026-03-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.28680v1",
+ "abstract": "The large-scale deployment of 5G networks has not delivered the expected return on investment for mobile network operators, raising concerns about the economic viability of future 6G rollouts. At the same time, surging demand for Artificial Intelligence (AI) inference and training workloads is straining global compute capacity. AI-RAN architectures, in which Radio Access Network (RAN) platforms accelerated on Graphics Processing Unit (GPU) share idle capacity with AI workloads during off-peak periods, offer a potential path to improved capital efficiency. However, the economic case for such systems remains unsubstantiated. In this paper, we present a techno-economic analysis of AI-RAN deployments by combining publicly available benchmarks of 5G Layer-1 processing on heterogeneous platforms -- from x86 servers with accelerators for channel coding to modern GPUs -- with realistic traffic models and AI service demand profiles for Large Language Model (LLM) inference. We construct a joint cost and revenue model that quantifies the surplus compute capacity available in GPU-based RAN deployments and evaluates the returns from leasing it to AI tenants. Our results show that, across a range of scenarios encompassing token depreciation, varying demand dynamics, and diverse GPU serving densities, the additional capital and operational expenditures of GPU-heavy deployments are offset by AI-on-RAN revenue, yielding a return on investment of up to 8x. These findings strengthen the long-term economic case for accelerator-based RAN architectures and future 6G deployments.",
+ "summary": "- 核心创新点：提出一个面向 AI‑RAN 的技术经济分析框架，结合公开的5G Layer‑1 基准、异构平台性能以及现实流量与LLM推理需求，量化GPU‑RAN闲置算力对AI租户的租赁收益与投资回报。\n- 主要方法：利用公开的5G Layer‑1 在 x86/带加速器/GPU 等异构平台上的基准数据，辅以现实流量模型和LLM推理需求，构建联合的成本-收益模型，评估GPU驱动的RAN部署的资本与运营成本与AI租赁收益。\n- 结论/性能：在多种场景下（考虑代币折旧、需求动态、GPU密度等因素），AI‑on‑RAN 的收入能够抵消额外成本，投资回报率最高可达8倍，强化了加速器型RAN架构与未来6G部署的经济可行性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-31 13:01:09"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.11594",
+ "title": "Leveraging Large Language Models and Survival Analysis for Early Prediction of Chemotherapy Outcomes",
+ "authors": "Muhammad Faisal Shahid, Asad Afzal, Abdullah Faiz, Muhammad Siddiqui, Arbaz Khan Shehzad, Fatima Aftab, Muhammad Usamah Shahid, Muddassar Farooq",
+ "date": "2026-03-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.11594v1",
+ "abstract": "Chemotherapy for cancer treatment is costly and accompanied by severe side effects, highlighting the critical need for early prediction of treatment outcomes to improve patient management and informed decision-making. Predictive models for chemotherapy outcomes using real-world data face challenges, including the absence of explicit phenotypes and treatment outcome labels such as cancer progression and toxicity. This study addresses these challenges by employing Large Language Models (LLMs) and ontology-based techniques for phenotypes and outcome label extraction from patient notes. We focused on one of the most frequently occurring cancers, breast cancer, due to its high prevalence and significant variability in patient response to treatment, making it a critical area for improving predictive modeling. The dataset included features such as vitals, demographics, staging, biomarkers, and performance scales. Drug regimens and their combinations were extracted from the chemotherapy plans in the EMR data and shortlisted based on NCCN guidelines, verified with NIH standards, and analyzed through survival modeling. The proposed approach significantly reduced phenotypes sparsity and improved predictive accuracy. Random Survival Forest was used to predict time-to-failure, achieving a C-index of 73%, and utilized as a classifier at a specific time point to predict treatment outcomes, with accuracy and F1 scores above 70%. The outcome probabilities were validated for reliability by calibration curves. We extended our approach to four other cancer types. This research highlights the potential of early prediction of treatment outcomes using LLM-based clinical data extraction enabling personalized treatment plans with better patient outcomes.",
+ "summary": "- 核心创新点：将大型语言模型（LLMs）与本体驱动的表型与结局标签提取相结合，解决真实世界数据中缺乏明确表型及治疗结局标签的问题，实现化疗结果的早期预测以支持个性化治疗。\n\n- 主要方法：使用LLMs从患者笔记中提取表型和结局标签，辅以本体论技术；从EMR中提取化疗方案及组合并基于NCCN指南筛选、经NIH标准验证；基于提取特征进行生存分析，采用随机生存森林（Random Survival Forest）预测时间到失败，并在特定时间点将其用作分类器，获得较高的准确率与F1值，且通过标定曲线验证概率的可靠性；并将方法扩展到另外四种癌种。\n\n- 结论/性能：时间到失败的C-index达到73%；作为分类器在特定时间点的准确率与F1均超过70%；结果通过标定曲线证明概率估计的可靠性；并展现对四种其他癌种的推广潜力，体现LLM驱动的临床数据提取在早期预测中的应用前景。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-13 13:02:04"
+}

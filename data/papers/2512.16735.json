@@ -1,0 +1,13 @@
+{
+ "id": "2512.16735",
+ "title": "Misspecified Crame-Rao Bound for AoA Estimation at a ULA under a Spoofing Attack",
+ "authors": "Sotiris Skaperas, Arsenia Chorti",
+ "date": "2025-12-18",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.16735v1",
+ "abstract": "A framework is presented for analyzing the impact of active attacks to location-based physical layer authentication (PLA) using the machinery of misspecified Cramér--Rao bound (MCRB). In this work, we focus on the MCRB in the angle-of-arrival (AoA) based authentication of a single antenna user when the verifier posseses an $M$ antenna element uniform linear array (ULA), assuming deterministic pilot signals; in our system model the presence of a spoofing adversary with an arbitrary number $L$ of antenna elements is assumed. We obtain a closed-form expression for the MCRB and demonstrate that the attack introduces in it a penalty term compared to the classic CRB, which does not depend on the signal-to-noise ratio (SNR) but on the adversary's location, the array geometry and the attacker precoding vector.",
+ "summary": "- 核心创新点：提出在基于 AoA 的位置认证中，利用错配的 Cramér–Rao 下界（MCRB）框架来量化主动攻击的影响，给出该场景的闭式 MCRB 表达式，并揭示攻击引入的惩罚项及其对对手位置、阵列几何和攻击者预编码向量的依赖。\n\n- 主要方法：在验端为 M 元素均匀线阵 ULA、用户为单天线、导频确定的前提下，考虑拥有 L 个天线的欺骗对手，推导并给出 MCRB 的闭式形式，分析模型错配对 Fisher 信息的影响，得到与信噪比无关的惩罚项。\n\n- 结论/性能：证明在存在 spoofing 攻击时，MCRB 相较经典 CRB 增加一个惩罚项，该项不依赖于 SNR，而是取决于攻击者的位置、阵列几何和攻击者的预编码向量，从而定量体现攻击对 AoA 基于 PLA 的性能的降损，即使在高 SNR 下也会受损。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-19 02:44:26"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.06599",
+ "title": "Sample-Efficient Policy Space Response Oracles with Joint Experience Best Response",
+ "authors": "Ariyan Bighashdel, Thiago D. Simão, Frans A. Oliehoek",
+ "date": "2026-02-06",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.06599v1",
+ "abstract": "Multi-agent reinforcement learning (MARL) offers a scalable alternative to exact game-theoretic analysis but suffers from non-stationarity and the need to maintain diverse populations of strategies that capture non-transitive interactions. Policy Space Response Oracles (PSRO) address these issues by iteratively expanding a restricted game with approximate best responses (BRs), yet per-agent BR training makes it prohibitively expensive in many-agent or simulator-expensive settings. We introduce Joint Experience Best Response (JBR), a drop-in modification to PSRO that collects trajectories once under the current meta-strategy profile and reuses this joint dataset to compute BRs for all agents simultaneously. This amortizes environment interaction and improves the sample efficiency of best-response computation. Because JBR converts BR computation into an offline RL problem, we propose three remedies for distribution-shift bias: (i) Conservative JBR with safe policy improvement, (ii) Exploration-Augmented JBR that perturbs data collection and admits theoretical guarantees, and (iii) Hybrid BR that interleaves JBR with periodic independent BR updates. Across benchmark multi-agent environments, Exploration-Augmented JBR achieves the best accuracy-efficiency trade-off, while Hybrid BR attains near-PSRO performance at a fraction of the sample cost. Overall, JBR makes PSRO substantially more practical for large-scale strategic learning while preserving equilibrium robustness.",
+ "summary": "- 核心创新点：在 PSRO 框架中引入联合经验最佳响应（Joint Experience Best Response, JBR），通过一次性在当前元策略下收集联合轨迹并并行重用来计算所有智能体的最佳响应，将 BR 计算转化为离线强化学习，从而显著提升样本利用效率。\n\n- 主要方法：\n  - JBR：作为对 PSRO 的可插拔修改，利用一个联合数据集同时为所有智能体计算最佳响应，达到环境交互的摊销和离线化。\n  - 离线 RL 视角：将 BR 计算转化为离线强化学习问题并进行求解。\n  - 三种偏差缓解策略：Conservative JBR（安全策略改进）、Exploration-Augmented JBR（通过数据采集扰动并具备理论保证）、Hybrid BR（与定期独立 BR 更新交错）。\n  \n- 结论/性能：\n  - 在多智能体基准环境中，Exploration-Augmented JBR 取得最佳的精度—效率折中。\n  - Hybrid BR 在接近 PSRO 的性能下，显著降低了样本成本。\n  - 总体而言，JBR 使 PSRO 更加实用，适用于大规模策略学习，同时保留对均衡鲁棒性的特性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-09 14:00:29"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2603.23483",
+ "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
+ "authors": "Haoyu Huang, Jinfa Huang, Zhongwei Wan, Xiawu Zheng, Rongrong Ji, Jiebo Luo",
+ "date": "2026-03-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.23483v1",
+ "abstract": "Agentic multimodal large language models (MLLMs) (e.g., OpenAI o3 and Gemini Agentic Vision) achieve remarkable reasoning capabilities through iterative visual tool invocation. However, the cascaded perception, reasoning, and tool-calling loops introduce significant sequential overhead. This overhead, termed agentic depth, incurs prohibitive latency and seriously limits system-level concurrency. To this end, we propose SpecEyes, an agentic-level speculative acceleration framework that breaks this sequential bottleneck. Our key insight is that a lightweight, tool-free MLLM can serve as a speculative planner to predict the execution trajectory, enabling early termination of expensive tool chains without sacrificing accuracy. To regulate this speculative planning, we introduce a cognitive gating mechanism based on answer separability, which quantifies the model's confidence for self-verification without requiring oracle labels. Furthermore, we design a heterogeneous parallel funnel that exploits the stateless concurrency of the small model to mask the stateful serial execution of the large model, maximizing system throughput. Extensive experiments on V* Bench, HR-Bench, and POPE demonstrate that SpecEyes achieves 1.1-3.35x speedup over the agentic baseline while preserving or even improving accuracy (up to +6.7%), thereby boosting serving throughput under concurrent workloads.",
+ "summary": "- 核心创新点：提出 SpecEyes，通过一个轻量级、无需工具的大模型作为 speculate planner，结合基于 answer separability 的认知门控和异构并行漏斗设计，打破代理式多模态大语言模型的串行感知-推理-工具调用循环，实现预测性规划和提前终止工具链，从而显著提升吞吐与并行性能，同时保持或提升准确性。\n\n- 主要方法：\n  - 让一个小型、无工具依赖的模型作为 speculate planner，预测执行轨迹并提前终止昂贵的工具链。\n  - 引入基于 answer separability 的认知门控，用于自我验证的置信度评估，无需真实标签（oracle）。\n  - 设计异构并行漏斗，利用小模型的无状态并发来掩盖大模型的状态性串行执行，提升系统吞吐。\n\n- 结论/性能：\n  - 相较基线实现 1.1×–3.35× 的加速。\n  - 在不降低甚至提高准确性的情况下，准确性提升可达 最高约 6.7%。\n  - 在并发工作负载下显著提升服务吞吐量，验证于 V* Bench、HR-Bench、POPE 等数据集。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-03-25 13:00:56"
+}

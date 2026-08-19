@@ -1,0 +1,13 @@
+{
+ "id": "2603.29492",
+ "title": "Calibrated Confidence Expression for Radiology Report Generation",
+ "authors": "David Bani-Harouni, Chantal Pellegrini, Julian Lüers, Su Hwan Kim, Markus Baalmann, Benedikt Wiestler, Rickmer Braren, Nassir Navab, Matthias Keicher",
+ "date": "2026-03-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.29492v1",
+ "abstract": "Safe deployment of Large Vision-Language Models (LVLMs) in radiology report generation requires not only accurate predictions but also clinically interpretable indicators of when outputs should be thoroughly reviewed, enabling selective radiologist verification and reducing the risk of hallucinated findings influencing clinical decisions. One intuitive approach to this is verbalized confidence, where the model explicitly states its certainty. However, current state-of-the-art language models are often overconfident, and research on calibration in multimodal settings such as radiology report generation is limited. To address this gap, we introduce ConRad (Confidence Calibration for Radiology Reports), a reinforcement learning framework for fine-tuning medical LVLMs to produce calibrated verbalized confidence estimates alongside radiology reports. We study two settings: a single report-level confidence score and a sentence-level variant assigning a confidence to each claim. Both are trained using the GRPO algorithm with reward functions based on the logarithmic scoring rule, which incentivizes truthful self-assessment by penalizing miscalibration and guarantees optimal calibration under reward maximization. Experimentally, ConRad substantially improves calibration and outperforms competing methods. In a clinical evaluation we show that ConRad's report level scores are well aligned with clinicians' judgment. By highlighting full reports or low-confidence statements for targeted review, ConRad can support safer clinical integration of AI-assistance for report generation.",
+ "summary": "- **核心创新点**：提出 ConRad，一种用于医疗 LVLM 的信心校准表达的强化学习框架，使输出的置信度可解释且可用于选择性复核，从而提升临床安全性。\n\n- **主要方法**：在两种设定下对 LVLM 进行微调以输出校准后的置信度（报告级别与句子级别），采用 GRPO 算法并基于对数得分规则的奖励函数，鼓励模型进行真实且可校准的自我评估。\n\n- **结论/性能**：显著提升置信度校准性，优于竞争方法；在临床评估中，报告级置信度与医生判断高度对齐，且可通过标注高/低置信文本实现针对性复核，提升 AI 辅助报告生成的安全性。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-04-01 13:02:44"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.10107",
+ "title": "4D-WAM: 4D Consistent World Modeling for Autonomous Driving",
+ "authors": "Jiacheng Fu, Yibo Yuan, Meng Tian, Yue Li, Jiangtong Zhu, Jianhua Han, Yueyi Zhang, Jianwu Fang, Jianru Xue, Hang Xu, Zhiwei Xiong",
+ "date": "2026-08-10",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.10107v1",
+ "abstract": "Emerging World-Action Models (WAMs) have demonstrated promising performance in autonomous driving by jointly modeling future driving scene evolution and trajectory planning. However, existing WAMs are typically trained with video data, which is only 2D projections of the underlying 4D driving scene. Consequently, WAMs fail to understand and capture the structure of 4D scenes and thus generate visually plausible yet 4D inconsistent future predictions that mislead downstream planning. To alleviate this issue, we present 4D-WAM, a model that leverages geometric foundation models for training-time supervision to enable 4D consistent world modeling. Specifically, we feed WAM-predicted future frames into a geometric foundation model, and use 4D-aware responses to define a 4D consistency loss. This loss encourages the model to understand, represent, and predict physically consistent 4D scenes during training, without additional inference cost. Moreover, we identify an early-decision phenomenon in WAMs and propose a decision-oriented timestep sampling strategy that emphasizes supervision at early, high-noise stages, where driving decisions are primarily formed. By propagating 4D supervision to this critical decision-formation phase, the proposed strategy further improves trajectory planning. Extensive experiments demonstrate that 4D-WAM effectively models 4D consistent scene evolution and achieves state-of-the-art performance on challenging NAVSIM-v1 and NAVSIM-v2 benchmarks.",
+ "summary": "## 4D-WAM：面向自动驾驶的 4D 一致性世界建模\n\n**1. 核心创新点**\n针对现有世界-动作模型（WAM）仅用 2D 视频训练、导致预测\"看着合理但 4D 几何不一致\"的问题，本文引入几何基础模型作为训练期监督，实现 4D 一致的世界建模，且不增加任何推理开销。\n\n**2. 主要方法**\n- **4D 一致性损失**：将 WAM 预测的未来帧送入几何基础模型（geometric foundation model），利用其 4D 感知响应构造一致性损失，迫使模型在训练中理解并预测物理上一致的 4D 场景结构。\n- **决策导向的时间步采样**：作者发现 WAM 存在\"早决策（early-decision）\"现象——驾驶决策主要在扩散去噪的早期高噪声阶段形成，因此设计采样策略将监督重点放在这些早期时间步，把 4D 监督信号传播到关键的决策形成阶段，从而提升轨迹规划质量。\n\n**3. 结论/性能**\n实验证明该方法能有效建模 4D 一致的场景演化，并在 NAVSIM-v1 与 NAVSIM-v2 两个高难度基准上取得 SOTA 性能；由于 4D 监督仅作用于训练阶段，推理成本与原始 WAM 持平。\n\n> 一句话定位：用几何基础模型给视频世界模型\"补上\"3D+时间维度的监督，再把这份监督精准投放到决策形成的时刻。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-12 13:05:56"
+}

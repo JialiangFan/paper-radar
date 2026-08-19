@@ -1,0 +1,13 @@
+{
+ "id": "2512.15387",
+ "title": "Talking to the Airgap: Exploiting Radio-Less Embedded Devices as Radio Receivers",
+ "authors": "Paul Staat, Daniel Davidovich, Christof Paar",
+ "date": "2025-12-17",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.15387v1",
+ "abstract": "Intelligent electronics are deeply embedded in critical infrastructures and must remain reliable, particularly against deliberate attacks. To minimize risks and impede remote compromise, sensitive systems can be physically isolated from external networks, forming an airgap. Yet, airgaps can still be infiltrated by capable adversaries gaining code execution. Prior research has shown that attackers can then attempt to wirelessly exfiltrate data across the airgap by exploiting unintended radio emissions. In this work, we demonstrate reversal of this link: malicious code execution on embedded devices can enable wireless infiltration of airgapped systems without any hardware modification. In contrast to previous infiltration methods that depend on dedicated sensors (e.g., microphones, LEDs, or temperature sensors) or require strict line-of-sight, we show that unmodified, sensor-less embedded devices can inadvertently act as radio receivers. This phenomenon stems from parasitic RF sensitivity in PCB traces and on-chip analog-to-digital converters (ADCs), allowing external transmissions to be received and decoded entirely in software.\n  Across twelve commercially available embedded devices and two custom prototypes, we observe repeatable reception in the 300-1000 MHz range, with detectable signal power as low as 1 mW. To this end, we propose a systematic methodology to identify device configurations that foster such radio sensitivities and comprehensively evaluate their feasibility for wireless data reception. Exploiting these sensitivities, we demonstrate successful data reception over tens of meters, even in non-line-of-sight conditions and show that the reception sensitivities accommodate data rates of up to 100 kbps. Our findings reveal a previously unexplored command-and-control vector for air-gapped systems while challenging assumptions about their inherent isolation. [shortened]",
+ "summary": "- 核心创新点：在未修改硬件且无传感器依赖的前提下，嵌入式设备的寄生射频敏感性会使其意外成为无线接收器，从而实现对空气隔离系统的无线渗透与数据接收。\n\n- 主要方法：通过对12款商用嵌入式设备与2个定制原型的实验，系统性地识别导致寄生RF敏感性的设备配置，利用PCB走线和片上ADC的寄生接收能力，在300–1000 MHz范围内进行无线信号接收并用软件解码；无需硬件改造，评估其作为无线接收端的可行性与数据吞吐。\n\n- 结论/性能：可在数十米距离、非视距条件下接收数据，信号功率可检测至约1 mW，数据速率高达约100 kbps，揭示了空气隔离系统的新型指挥控制向量。",
+ "keyword": "adversarial attack",
+ "source": "auto",
+ "created_at": "2025-12-18 02:06:32"
+}

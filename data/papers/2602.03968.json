@@ -1,0 +1,13 @@
+{
+ "id": "2602.03968",
+ "title": "Safety-Critical Reinforcement Learning with Viability-Based Action Shielding for Hypersonic Longitudinal Flight",
+ "authors": "Hossein Rastgoftar",
+ "date": "2026-02-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.03968v1",
+ "abstract": "This paper presents a safety-critical reinforcement learning framework for nonlinear dynamical systems with continuous state and input spaces operating under explicit physical constraints. Hard safety constraints are enforced independently of the reward through action shielding and reachability-based admissible action sets, ensuring that unsafe behaviors are never intentionally selected during learning or execution. To capture nominal operation and recovery behavior within a single control architecture, the state space is partitioned into safe and unsafe regions based on membership in a safety box, and a mode-dependent reward is used to promote accurate tracking inside the safe region and recovery toward it when operating outside. To enable online tabular learning on continuous dynamics, a finite-state abstraction is constructed via state aggregation, and action selection and value updates are consistently restricted to admissible actions. The framework is demonstrated on a longitudinal point-mass hypersonic vehicle model with aerodynamic and propulsion couplings, using angle of attack and throttle as control inputs.",
+ "summary": "- 核心创新点：提出一个基于可行性（viability）与行动屏蔽的安全强化学习框架，在学习与执行阶段通过屏蔽不安全动作和基于可达性的可选动作集合，确保硬性安全不依赖奖励而被强制遵守。\n\n- 主要方法：利用行动屏蔽和可达性约束的可选动作集合实现硬性安全；将状态空间划分为安全/不安全区域并设计模式依赖的奖励；通过状态聚合构建离散的有限状态抽象，使在线学习中的动作选择与价值更新仅限于可接受动作；在纵向点质量高超声速飞行模型（攻角和油门为控制输入）上进行验证。\n\n- 结论/性能：在高超声速纵向飞行模型上验证了该框架，确保学习与执行全过程不产生不安全行为，同时实现对安全区域内的精确跟踪和离开安全区域时的恢复能力，并证明了可在连续动力学系统上进行在线表格学习的可行性与有效性。",
+ "keyword": "safe reinforcement learning",
+ "source": "auto",
+ "created_at": "2026-02-05 14:01:09"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2605.30288",
+ "title": "MIRA: Mid-training Rubric Anchoring for Source-Aware Data Selection",
+ "authors": "Haowen Wang, Yaxin Du, Jian Yang, Jiajun Wu, Shukai Liu, Yuxuan Zhang, Pingjie Wang, Siheng Chen, Tuney Zheng, Ming Zhou, Xianglong Liu",
+ "date": "2026-05-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2605.30288v1",
+ "abstract": "Mid-training has become an important stage in modern LLM development, using large-scale curated mixtures to strengthen capabilities before final post-training. Its data selection problem is distinct: the data are optimized under a pretraining-style objective at near-pretraining scale, but are curated toward downstream capabilities and drawn from heterogeneous sources with different formats and training roles. As a result, effective selection requires both scalability and source-adaptive semantic criteria. Existing model-based methods scale well, but provide only implicit quality signals. Semantic selection methods offer stronger judgments, but usually assume fixed rubrics or standardized data formats. To address this mismatch, we propose MIRA, a source-aware filtering framework based on self-anchored rubric discovery. The key idea is to make rubric construction part of data selection: MIRA first discovers what should be evaluated for each source group, then distills those judgments into scalable student scorers for full-corpus filtering. On code-oriented mid-training with 21 sources and 5 source groups, MIRA outperforms selection baselines across nine code benchmarks and matches the full-corpus run while using only half the tokens.",
+ "summary": "# MIRA 论文总结\n\n**1. 核心创新点**\n提出一种\"自锚定评分标准发现\"的中训练数据筛选框架，让评分标准（rubric）的构建本身成为数据选择流程的一部分，从而适配异构来源数据。\n\n**2. 主要方法**\nMIRA 是一个源感知（source-aware）过滤框架：先针对每个来源组自动发现该评估什么（即生成专属 rubric），再将这些判断蒸馏到可扩展的学生评分器（student scorer）中，用于全语料过滤，兼顾语义判断质量与大规模可扩展性。\n\n**3. 结论/性能**\n在面向代码的中训练任务上（21 个来源、5 个来源组），MIRA 在 9 个代码基准上超越各类选择基线，并且仅使用一半 token 就达到了全语料训练的效果。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-05-31 13:01:44"
+}

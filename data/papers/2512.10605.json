@@ -1,0 +1,13 @@
+{
+ "id": "2512.10605",
+ "title": "LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator",
+ "authors": "Lihuang Chen, Xiangyu Luo, Jun Meng",
+ "date": "2025-12-11",
+ "year": 2025,
+ "url": "http://arxiv.org/abs/2512.10605v1",
+ "abstract": "We propose LEO-RobotAgent, a general-purpose language-driven intelligent agent framework for robots. Under this framework, LLMs can operate different types of robots to complete unpredictable complex tasks across various scenarios. This framework features strong generalization, robustness, and efficiency. The application-level system built around it can fully enhance bidirectional human-robot intent understanding and lower the threshold for human-robot interaction. Regarding robot task planning, the vast majority of existing studies focus on the application of large models in single-task scenarios and for single robot types. These algorithms often have complex structures and lack generalizability. Thus, the proposed LEO-RobotAgent framework is designed with a streamlined structure as much as possible, enabling large models to independently think, plan, and act within this clear framework. We provide a modular and easily registrable toolset, allowing large models to flexibly call various tools to meet different requirements. Meanwhile, the framework incorporates a human-robot interaction mechanism, enabling the algorithm to collaborate with humans like a partner. Experiments have verified that this framework can be easily adapted to mainstream robot platforms including unmanned aerial vehicles (UAVs), robotic arms, and wheeled robot, and efficiently execute a variety of carefully designed tasks with different complexity levels. Our code is available at https://github.com/LegendLeoChen/LEO-RobotAgent.",
+ "summary": "核心创新点：提出一个通用、语言驱动的机器人智能代理框架LEO-RobotAgent，使大语言模型能够跨多种机器人平台独立思考、规划与执行任务，并通过模块化工具集与人机协作机制提升鲁棒性、效率与交互体验。\n\n主要方法：\n- 基于大语言模型的任务思考、规划与执行的代理框架设计。\n- 模块化、可注册的工具集，允许大模型灵活调取不同工具以满足多样化需求。\n- 明确的框架结构，支持跨任务、跨机器人类型的一致性实现。\n- 引入人机交互机制，实现双向意图理解与协作，仿佛与人类伙伴共事。\n- 兼容主流机器人平台（如无人机、机器人手臂、轮式机器人），并在多种设计的任务上进行验证。\n\n结论/性能：\n- 实验结果表明该框架可轻松适配主流机器人平台（UAV、机械臂、轮式机器人），并高效执行多种不同复杂度的任务，具备良好的泛化性、鲁棒性与效率。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2025-12-12 14:02:54"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2604.15272",
+ "title": "Prism: Symbolic Superoptimization of Tensor Programs",
+ "authors": "Mengdi Wu, Xiaoyu Jiang, Oded Padon, Zhihao Jia",
+ "date": "2026-04-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2604.15272v1",
+ "abstract": "This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large classes of tensor programs by symbolically representing some execution parameters. Prism organizes optimization as a two-level search: it constructs symbolic graphs that represent families of programs, and then instantiates them into concrete implementations. This formulation enables structured pruning of provably suboptimal regions of the search space using symbolic reasoning over operator semantics, algebraic identities, and hardware constraints.\n  We develop techniques for efficient symbolic graph generation, equivalence verification via e-graph rewriting, and parameter instantiation through auto-tuning. Together, these components allow Prism to bridge the rigor of exhaustive search with the scalability required for modern ML workloads. Evaluation on five commonly used LLM workloads shows that Prism achieves up to $2.2\\times$ speedup over best superoptimizers and $4.9\\times$ over best compiler-based approaches, while reducing end-to-end optimization time by up to $3.4\\times$.",
+ "summary": "1. 核心创新点：Prism是首个面向张量程序的符号超优化器，提出符号化的分层表示sGraph并通过两级搜索在符号图中生成程序家族再实例化成具体实现，从而对搜索空间进行结构化裁剪。\n\n2. 主要方法：利用sGraph进行符号化的分层表示；两级搜索先构建覆盖大类程序的符号图再实例化为实现；通过对算子语义、代数恒等和硬件约束的符号推理进行裁剪；实现高效的符号图生成、通过e-graph重写进行等价性验证，以及通过自动调优进行参数实例化。\n\n3. 结论/性能：在五个常用的LLM工作负载上，Prism对最佳超优化器提升至约2.2倍，对最佳编译器方法提升至约4.9倍，同时端到端优化时间最多可降低约3.4倍。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-04-17 13:01:36"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "2209.07753",
+ "title": "Code as Policies: Language Model Programs for Embodied Control",
+ "authors": "Liang, et al.",
+ "date": null,
+ "year": 2022,
+ "url": "https://arxiv.org/abs/2209.07753",
+ "abstract": "",
+ "summary": "Code as Policies shows that LLM-generated programs can compose perception and control APIs for embodied tasks.",
+ "keyword": "",
+ "created_at": null,
+ "source": "curated",
+ "venue": "arXiv",
+ "category": "Language Specified Constraints",
+ "tags": [
+  "constraint-grounding",
+  "language-grounding",
+  "llm-robotics",
+  "programmatic-policies",
+  "robotics",
+  "safe-vla",
+  "semantic-safety",
+  "vision-language-action-models"
+ ],
+ "status": "unread",
+ "priority": "medium",
+ "note_path": "Notes/Language_Specified_Constraints/2022_Liang_CodeAsPolicies.md",
+ "pdf_path": "PDFs/Language_Specified_Constraints/2022_Liang_CodeAsPolicies.pdf",
+ "code": "",
+ "project": "https://code-as-policies.github.io/",
+ "is_core": true,
+ "is_supplemental": false
+}

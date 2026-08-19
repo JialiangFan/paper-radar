@@ -1,0 +1,13 @@
+{
+ "id": "2606.18468",
+ "title": "Short-Duration Gamma-ray Burst and Afterglow Rates in the Rubin and Roman Era",
+ "authors": "Tzvetelina Dimitrova, Nathaniel Butler",
+ "date": "2026-06-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.18468v1",
+ "abstract": "Short-duration gamma-ray burst (sGRB) afterglows that follow BNS-gravitational wave (GW) events are essential for understanding the tension between the observed sGRB rate and BNS merger rate, heightened by the recent conclusion of aLIGO O4 with no new confirmed BNS detections. Using a probabilistic sGRB world model derived from a source BNS merger population, we simulate afterglow emission with AfterglowPy to investigate detection prospects of afterglows in the new era of optical surveys, and probe their multi-messenger implications. The predicted sGRB/BNS association is strongly dependent on sGRB beaming, which may be constrained by orphan afterglows (OA) - that arise from events with no prompt $γ$-ray detection. We conclude that the Vera C. Rubin Observatory's Large Synoptic Survey Telescope (LSST) may detect an afterglow sample sufficient in constraining sGRB jetting, with an estimated $0.9^{+0.5}_{-0.3}$ on-axis afterglow and $1.3^{+0.9}_{-0.5}$ OA detections per year; while the deep sensitivity of the Roman Space Telescope appears promising for probing the faint end of afterglow events in targeted follow-up strategies. The detection of afterglows in upcoming LIGO runs is possible but challenging, as we predict less than one LSST or Roman discoverable event per year within the projected aLIGO O5 BNS range across all considered jet models and observing scenarios. We update previous sGRB-BNS rate predictions, finding that continued non-detection of a BNS in O5 would require revisiting key assumptions underlying sGRB-BNS models.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-20 13:04:11"
+}

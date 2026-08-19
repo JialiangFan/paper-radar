@@ -1,0 +1,13 @@
+{
+ "id": "2602.08537",
+ "title": "UniPlan: Vision-Language Task Planning for Mobile Manipulation with Unified PDDL Formulation",
+ "authors": "Haoming Ye, Yunxiao Xiao, Cewu Lu, Panpan Cai",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08537v1",
+ "abstract": "Integration of VLM reasoning with symbolic planning has proven to be a promising approach to real-world robot task planning. Existing work like UniDomain effectively learns symbolic manipulation domains from real-world demonstrations, described in Planning Domain Definition Language (PDDL), and has successfully applied them to real-world tasks. These domains, however, are restricted to tabletop manipulation. We propose UniPlan, a vision-language task planning system for long-horizon mobile-manipulation in large-scale indoor environments, that unifies scene topology, visuals, and robot capabilities into a holistic PDDL representation. UniPlan programmatically extends learned tabletop domains from UniDomain to support navigation, door traversal, and bimanual coordination. It operates on a visual-topological map, comprising navigation landmarks anchored with scene images. Given a language instruction, UniPlan retrieves task-relevant nodes from the map and uses a VLM to ground the anchored image into task-relevant objects and their PDDL states; next, it reconnects these nodes to a compressed, densely-connected topological map, also represented in PDDL, with connectivity and costs derived from the original map; Finally, a mobile-manipulation plan is generated using off-the-shelf PDDL solvers. Evaluated on human-raised tasks in a large-scale map with real-world imagery, UniPlan significantly outperforms VLM and LLM+PDDL planning in success rate, plan quality, and computational efficiency.",
+ "summary": "- 核心创新点：在统一的PDDL表示下，将视觉-语言推理与符号规划深度融合，扩展到大尺度室内环境的长时程移动-操作任务，统一场景拓扑、视觉信息与机器人能力，并通过视觉-拓扑地图实现从指令到可执行计划的端到端规划。\n\n- 主要方法：\n  - 以 UniDomain 的桌面域为基础，扩展至导航、门穿越和双手协同等能力。\n  - 构建视觉-拓扑地图，节点为导航标点并锚定场景图像。\n  - 给定语言指令，利用视觉语言模型（VLM）对锚定图像进行 grounding，映射为任务相关对象及其PDDL状态。\n  - 将节点重新连接为密集、连通的拓扑地图，并以PDDL表示，连通性和代价由原始地图派生。\n  - 使用现成的PDDL求解器生成移动-操作的执行计划。\n\n- 结论/性能：在大尺度地图和真实世界图像的任务评测中，UniPlan在成功率、计划质量和计算效率方面显著优于仅使用VLM以及LLM+PDDL规划的方法。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:04:44"
+}

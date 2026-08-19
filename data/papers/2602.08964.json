@@ -1,0 +1,13 @@
+{
+ "id": "2602.08964",
+ "title": "A Behavioural and Representational Evaluation of Goal-Directedness in Language Model Agents",
+ "authors": "Raghu Arghal, Fade Chen, Niall Dalton, Evgenii Kortukov, Calum McNamara, Angelos Nalmpantis, Moksh Nirvaan, Gabriele Sarti, Mario Giulianelli",
+ "date": "2026-02-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.08964v1",
+ "abstract": "Understanding an agent's goals helps explain and predict its behaviour, yet there is no established methodology for reliably attributing goals to agentic systems. We propose a framework for evaluating goal-directedness that integrates behavioural evaluation with interpretability-based analyses of models' internal representations. As a case study, we examine an LLM agent navigating a 2D grid world toward a goal state. Behaviourally, we evaluate the agent against an optimal policy across varying grid sizes, obstacle densities, and goal structures, finding that performance scales with task difficulty while remaining robust to difficulty-preserving transformations and complex goal structures. We then use probing methods to decode the agent's internal representations of the environment state and its multi-step action plans. We find that the LLM agent non-linearly encodes a coarse spatial map of the environment, preserving approximate task-relevant cues about its position and the goal location; that its actions are broadly consistent with these internal representations; and that reasoning reorganises them, shifting from broader environment structural cues toward information supporting immediate action selection. Our findings support the view that introspective examination is required beyond behavioural evaluations to characterise how agents represent and pursue their objectives.",
+ "summary": "- 核心创新点：提出一个将行为评估与基于可解释性的内部表征分析相结合的综合框架，用以评估和理解语言模型代理的目标导向性。\n\n- 主要方法：\n  - 在一个2D网格世界的案例研究中，让LLM代理向目标前进，并与最优策略对比，覆盖不同网格大小、障碍密度和目标结构，评估行为表现及对难度的鲁棒性。\n  - 结合探测（probing）方法对代理的内部表征进行解码，分析环境状态和多步行动计划的编码。\n  - 发现：代理非线性地编码一个粗糙的环境空间地图，保留对位置和目标的近似线索；其行动总体与内部表征一致；推理过程将表征重组为更支持即时行动的信息。\n\n- 结论/性能：\n  - 性能随任务难度变化，并对难度保持变换与复杂目标结构表现出鲁棒性。\n  - 内部表示显示存在粗略的空间地图，行动与表征基本一致，推理过程将表示从环境结构线索转向支持即时行动的信息。\n  - 结论强调需要进行自省性分析，超越仅有行为评估，以全面理解代理的目标表示与追求。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-10 14:03:49"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2602.21161",
+ "title": "ActionReasoning: Robot Action Reasoning in 3D Space with LLM for Robotic Brick Stacking",
+ "authors": "Guangming Wang, Qizhen Ying, Yixiong Jing, Olaf Wysocki, Brian Sheil",
+ "date": "2026-02-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2602.21161v1",
+ "abstract": "Classical robotic systems typically rely on custom planners designed for constrained environments. While effective in restricted settings, these systems lack generalization capabilities, limiting the scalability of embodied AI and general-purpose robots. Recent data-driven Vision-Language-Action (VLA) approaches aim to learn policies from large-scale simulation and real-world data. However, the continuous action space of the physical world significantly exceeds the representational capacity of linguistic tokens, making it unclear if scaling data alone can yield general robotic intelligence. To address this gap, we propose ActionReasoning, an LLM-driven framework that performs explicit action reasoning to produce physics-consistent, prior-guided decisions for robotic manipulation. ActionReasoning leverages the physical priors and real-world knowledge already encoded in Large Language Models (LLMs) and structures them within a multi-agent architecture. We instantiate this framework on a tractable case study of brick stacking, where the environment states are assumed to be already accurately measured. The environmental states are then serialized and passed to a multi-agent LLM framework that generates physics-aware action plans. The experiments demonstrate that the proposed multi-agent LLM framework enables stable brick placement while shifting effort from low-level domain-specific coding to high-level tool invocation and prompting, highlighting its potential for broader generalization. This work introduces a promising approach to bridging perception and execution in robotic manipulation by integrating physical reasoning with LLMs.",
+ "summary": "- 核心创新点：将物理先验和现实世界知识嵌入大型语言模型，并通过多代理架构进行显式的物理一致性动作推理，以在3D空间实现机器人动作的通用规划（以砖块堆叠为案例）。\n\n- 主要方法：提出 ActionReasoning 框架，利用多代理LLM处理已测量并序列化的环境状态，结合物理推理与现实知识输出物理可执行的行动计划，并通过高层提示与工具调用替代低层域知识编码。\n\n- 结论/性能：实验表明该多代理LLM框架能实现稳定的砖块放置，降低对低级域编码的需求，展现出更好的泛化潜力。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-02-25 14:02:48"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.12273",
+ "title": "Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents",
+ "authors": "Junliang Liu, Ruoyu Li, Wenxin Tang, Jingyu Xiao, Zhenyu Liu, Jingheng Xu, Laizhong Cui",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.12273v1",
+ "abstract": "LLM agents increasingly rely on third-party skills, using natural-language descriptions for selection and instruction bodies for planning. This progressive-disclosure design exposes two sequential control points to untrusted publishers: a static skill may steer an otherwise correct task onto an unnecessarily costly trajectory. Prior work studies selection manipulation, malicious skill instructions, and tool-chain resource amplification largely separately, leaving their end-to-end composition unclear. We introduce Convergent Detour Hijacking (CDH), a text-only, runtime-independent attack that couples these stages. Under shared semantic cover, a description establishes relevance during selection, while an aligned body reuses that rationale to fabricate plausible dependencies during planning. CDH attracts an attacker-controlled coordinator alongside legitimate skills, recruits unnecessary benign skills into a bounded detour, and then re-enters the original route to preserve task completion. We evaluate it across multiple LLM backends and 491 held-out tasks under single-task and multi-turn conditions. On DeepSeek-V4-Pro, the matched coordinator is selected in 80.02% of tasks; among coordinator-hit runs that complete tasks, token consumption and end-to-end execution time increase by 66.91% and 92.45%, respectively, while aggregate task completion remains comparable. Thus, correct outcomes do not guarantee trajectory integrity or cost safety.",
+ "summary": "## 论文简要总结\n\n**标题**：Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents（收敛式绕路劫持：基于技能的 LLM 智能体中保持任务完成的资源放大攻击）\n\n### 1. 核心创新点\n提出 **Convergent Detour Hijacking (CDH)**——一种纯文本、不依赖具体运行时的攻击，首次把\"技能选择阶段的诱导\"与\"技能指令阶段的规划操纵\"耦合成端到端链路，在**不破坏任务正确完成**的前提下大幅推高智能体的资源消耗。\n\n### 2. 主要方法\n- 利用技能生态的**渐进式披露（progressive disclosure）**设计所暴露的两个连续控制点：用于选择的自然语言描述，和用于规划的指令正文。\n- 在**共享语义伪装**下：描述文本先在选择阶段建立\"相关性\"，使攻击者控制的 coordinator 技能与合法技能一同被选中；正文再复用同一套理由，在规划阶段**编造看似合理的依赖关系**。\n- 由此把若干本不必要的良性技能拉入一段**有界的绕路（bounded detour）**，随后再**回归原有正确路径**，从而保住最终任务结果，使攻击难以从产出上被发现。\n- 评估覆盖多个 LLM 后端、491 个 held-out 任务，包含单轮与多轮两种设定。\n\n### 3. 结论 / 性能\n- 在 DeepSeek-V4-Pro 上，攻击者的匹配 coordinator 在 **80.02%** 的任务中被成功选中。\n- 在 coordinator 命中且任务完成的运行中，**token 消耗提升 66.91%，端到端执行时间提升 92.45%**，而整体任务完成率与正常情况相当。\n- 核心结论：**结果正确并不等于轨迹完整或成本安全**——现有以\"任务是否完成\"为准的评估无法发现此类攻击，智能体安全需要引入轨迹与成本层面的审计。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-13 13:02:47"
+}

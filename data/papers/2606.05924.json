@@ -1,0 +1,13 @@
+{
+ "id": "2606.05924",
+ "title": "Better Literary Translation: A Multi-Aspect Data Generation and LLM Training Approach",
+ "authors": "Zhihao Lin, Ziqi Zhu, Hao Huang, Guanghui Wang, Peiyang He",
+ "date": "2026-06-04",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.05924v1",
+ "abstract": "Literary translation poses unique challenges due to the scarcity of high-quality annotated data and the need to balance expression fluency with literary effect. We present a multi-aspect iterative refinement framework that generates high-quality translation references and preference data through specialized LLM translators, each targeting a distinct quality dimension. We leverage the generated data for supervised fine-tuning and reinforcement learning. Experiments show that our generated references outperform the original ground truth for SFT by 8.65 CEA100 points. For reinforcement learning, we find that DPO leads to performance degradation in this setting, while leveraging an explicit reward model for GRPO yields an additional 1.51 point improvement. We attribute this to the stability of two-stage training and GRPO's online exploration capability. Our resulting models, LitMT-8B and LitMT-14B, achieve 67.25 and 69.07 CEA100 respectively on the MetaphorTrans English-to-Chinese literary translation benchmark, competitive with Claude Sonnet 4.5 at 68.43, and demonstrate strong generalization to out-of-domain literary work (i.e., O. Henry).",
+ "summary": "# 论文总结\n\n**1. 核心创新点**\n提出一个多维度迭代精炼框架，通过专门化的 LLM 翻译器分别针对不同质量维度生成高质量文学翻译参考译文与偏好数据，用于训练文学翻译模型。\n\n**2. 主要方法**\n- **数据生成**：用多个专门化 LLM 翻译器（每个针对一种质量维度）迭代精炼，产出参考译文和偏好数据。\n- **模型训练**：先用生成的参考做 SFT；强化学习阶段对比 DPO 与 GRPO，最终采用带显式奖励模型的 GRPO（两阶段训练 + 在线探索）。\n- 发现 DPO 在此场景下反而导致性能下降。\n\n**3. 结论 / 性能**\n- 生成的参考译文用于 SFT，比原始 ground truth 高 **8.65 CEA100**；GRPO 再提升 **1.51 分**。\n- 最终模型 **LitMT-8B / LitMT-14B** 在 MetaphorTrans 英译中文学翻译基准上达 **67.25 / 69.07 CEA100**，与 Claude Sonnet 4.5（68.43）相当。\n- 对域外文学作品（如 O. Henry）展现出良好泛化能力。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-06-07 13:01:16"
+}

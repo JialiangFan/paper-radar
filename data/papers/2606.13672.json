@@ -1,0 +1,13 @@
+{
+ "id": "2606.13672",
+ "title": "$\\texttt{WEAVER}$, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+ "authors": "Arnav Kumar Jain, Yilin Wu, Jesse Farebrother, Gokul Swamy, Andrea Bajcsy",
+ "date": "2026-06-11",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2606.13672v1",
+ "abstract": "The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching -- policy evaluation, policy improvement, and test-time planning -- all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: $\\textit{(i)}$ fidelity (i.e., producing simulated trajectories that correlate with reality), $\\textit{(ii)}$ consistency (i.e., producing simulated trajectories that are coherent over long horizons), and $\\textit{(iii)}$ efficiency (i.e., producing simulated trajectories quickly). We propose $\\texttt{WEAVER}$ (World Estimation Across Views for Embodied Reasoning): a WM architecture that simultaneously achieves all three desiderata, providing state-of-the-art results on robotic manipulation tasks. $\\texttt{WEAVER}$ is a multi-view WM trained to predict future latents and reward values via a flow-matching loss. We distill the key design decisions across model architecture, memory, and prediction objectives required to unlock the kinds of long-horizon dynamic manipulation tasks that have confounded prior world modeling approaches. We apply $\\texttt{WEAVER}$ in robotic hardware, demonstrating its effectiveness at policy evaluation ($ρ$=0.870 correlation with real-world success rate), policy improvement (real-world success rate improvement of $38\\%$ on top of the $π_{0.5}$ robot foundation model), and test-time planning (real-world success rate improvement of $14\\%$ with a $5-10\\times$ speedup over prior WMs). $\\texttt{WEAVER}$ also demonstrates better performance than prior WMs when evaluated on out-of-distribution scenarios. Code, models, and videos at: https://arnavkj1995.github.io/WEAVER/ .",
+ "summary": "**WEAVER: 面向机器人操作的高效世界模型**\n\n1. **核心创新点**：提出 WEAVER 这一多视角世界模型，首次在机器人操作任务中同时满足保真度、长程一致性、推理效率三大要求。\n\n2. **主要方法**：采用多视角架构，通过 **flow-matching（流匹配）损失**联合预测未来潜变量（latents）和奖励值；论文系统性地提炼了在模型架构、记忆机制、预测目标三方面的关键设计，以攻克过往世界模型难以处理的长程动态操作任务。\n\n3. **结论/性能**：在真实机器人硬件上取得 SOTA——策略评估与真实成功率相关性 ρ=0.870；在 π₀.₅ 机器人基础模型之上实现策略改进 **+38%**；测试时规划成功率 **+14%**，并较以往世界模型提速 **5–10 倍**；在分布外（OOD）场景下也优于现有方法。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-06-12 13:03:25"
+}

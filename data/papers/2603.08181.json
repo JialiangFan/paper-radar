@@ -1,0 +1,13 @@
+{
+ "id": "2603.08181",
+ "title": "AutoAdapt: An Automated Domain Adaptation Framework for LLMs",
+ "authors": "Sidharth Sinha, Anson Bastos, Xuchao Zhang, Akshay Nambi, Chetan Bansal, Saravan Rajmohan",
+ "date": "2026-03-09",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2603.08181v1",
+ "abstract": "Large language models (LLMs) excel in open domains but struggle in specialized settings with limited data and evolving knowledge. Existing domain adaptation practices rely heavily on manual trial-and-error processes, incur significant hyperparameter complexity, and are highly sensitive to data and user preferences, all under the high cost of LLM training. Moreover, the interactions and transferability of hyperparameter choices across models/domains remain poorly understood, making adaptation gains uncertain even with substantial effort. To solve these challenges, we present AutoAdapt, a novel end-to-end automated framework for efficient and reliable LLM domain adaptation. AutoAdapt leverages curated knowledge bases from literature and open-source resources to reduce expert intervention. To narrow the search space, we design a novel multi-agent debating system in which proposal and critic agents iteratively interact to align user intent and incorporate data signals and best practices into the planning process. To optimize hyperparameters under tight budgets, we propose AutoRefine, a novel LLM-based surrogate that replaces costly black-box search. Across 10 tasks, AutoAdapt achieves a 25% average relative accuracy improvement over state-of-the-art Automated Machine Learning baselines with minimal overhead.",
+ "summary": "- 核心创新点：提出一个端到端的自动化域适应框架 AutoAdapt，通过多代理辩论与基于LLM的超参优化，在有限预算下实现高效、可靠的领域自适应。\n\n- 主要方法：\n  - 利用文献与开源资源构建 curated 知识库，降低对专家的干预。\n  - 设计多代理辩论系统（ proposal 与 critic 代理）迭代交互，对齐用户意图并将数据信号与最佳实践融入计划中。\n  - 提出 AutoRefine，一种基于 LLM 的代理，用以替代成本高昂的黑箱搜索进行超参数优化。\n  - 作为一个端到端框架实现对域的自适应。\n\n- 结论/性能：在10项任务上，AutoAdapt 相比最先进的 Automated Machine Learning 基线实现约25%的平均相对准确率提升，且开销很小。",
+ "keyword": "LLM planning",
+ "source": "auto",
+ "created_at": "2026-03-10 13:03:39"
+}
