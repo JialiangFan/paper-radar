@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（1句）\n将空间智能作为跨车、机器人与无人机等多种具身系统的通用支架，提出 Scaffold-Specialize-Reconcile 与数据无合并策略，以及 GRPO，构建统一的多模态大语言模型 ACE-Brain-0 实现跨域通用能力。\n\n2) 主要方法\n- 采用多模态大语言模型（MLLM），将空间推理/三维心智模型作为共享底座，支撑不同具身任务。 \n- 提出 Scaffold-Specialize-Reconcile（SSR）范式：先建立共享的空间基础，再培养领域专精的专家，最后通过数据无对合并进行协调与融合。 \n- 引入数据-free model merging 实现专家之间的无数据合并与协同。 \n- 采用 Group Relative Policy Optimization（GRPO）来增强模型的综合能力与跨域适应性。 \n- 在24项与空间及具身相关的基准上进行广泛实验，验证跨域通用性与领域专精能力。\n\n3) 结论/性能\n在24项空间和具身相关基准上，ACE-Brain-0 展现出具有竞争力甚至接近/SOTA 的性能，证明了以空间智能为共用基础的跨域通用与领域专精能力的有效性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-04 14:03:35"
+ "created_at": "2026-03-04 14:03:35",
+ "topics": [
+  "vla-models",
+  "embodied-benchmarks"
+ ]
 }

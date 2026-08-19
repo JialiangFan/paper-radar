@@ -9,5 +9,9 @@
  "summary": "核心创新点：提出两阶段 ViLaCD-R1 框架，通过先经 SFT/RL 微调的多图推理 VLM 产出粗糙的双时相变化掩模，再由掩模引导的解码器将其细化成高精度的像素级二值变化图，从而显著提升语义变化识别与定位的鲁棒性与准确性。\n\n主要方法：\n- 构建两段式架构：Multi-Image Reasoner（MIR）与 Mask-Guided Decoder（MGD）。\n- VLM 在块级双时相推理任务上进行监督微调（SFT）与强化学习（RL），输入双时相图像块，输出粗糙变化掩模。\n- MGD 将双时相图像特征与粗糙掩模进行融合，预测精确的二值变化图，改善边界细化与定位效果。\n\n结论/性能：\n- 在多组 RSCD 基准上，显著提升对“语义变化”的识别与定位能力，能鲁棒地抑制非语义变化，达到当前在复杂真实场景中的最先进准确性。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-30 02:50:05"
+ "created_at": "2025-12-30 02:50:05",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

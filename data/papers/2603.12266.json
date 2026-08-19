@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出可核验且可扩展的视觉支撑深层组合推理基准 MM-CondChain，并通过代理式合成流水线（Planner、VPIR、Composer）逐层生成与核验条件，评估多层嵌套条件推理的能力。\n- 主要方法：使用多模态大语言模型在一个层级化推理链中逐层处理条件；引入 Planner 来指挥条件生成、Verifiable Programmatic Intermediate Representation (VPIR) 保障每层条件可机械核验、Composer 将验证后的层整合成完整指令；数据覆盖自然图像、数据图和 GUI 轨迹三大视觉域。\n- 结论/性能：在多种模型上，最强模型也仅达到 53.33 Path F1；对难负样本、深度或谓词复杂度提升时性能明显下降，表明深层组合推理仍是一个基本挑战。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-15 13:02:05"
+ "created_at": "2026-03-15 13:02:05",
+ "topics": [
+  "agent-benchmarks",
+  "llm-agents"
+ ]
 }

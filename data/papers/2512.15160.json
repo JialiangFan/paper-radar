@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（1 句）  \n在严格的 token 预算下，提出一个双阶段的空间认知框架：先用 SPF-DPP 进行语义与几何感知的关键帧筛选实现宏观全局感知，再通过 BEV-grounded 的姿态验证与强化学习构建可追溯的证据链，从而显著提升开放源模型的空间理解能力与证据可解释性。\n\n2) 主要方法  \n- 宏观阶段：设计 semantics-perspective-fusion determinantal point process（SPF-DPP），从长视频中筛选兼具几何与语义信息的紧凑关键帧，符合固定的 token 预算。  \n- 微观验证阶段：将空间 CoT 表述为 BEV-grounded 的姿态查询，代理在 BEV 平面迭代预测姿态并检索最近的真实帧进行验证。  \n- 训练策略：仅使用强化学习，并引入空间性 grounded reward，衡量预测姿态与观测视图之间的一致性，从而形成可追溯的证据链。  \n- 目标与优势：明确将 3D 假设与视频帧关联，提升全局空间感知在证据可追溯性与概率规划上的表现。\n\n3) 结论/性能  \n在 VSI-Bench 上达到开源 Vision-Language 模型中的 state-of-the-art，展现出强健且具通用性的空间理解能力与可验证的证据链。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-18 02:08:44"
+ "created_at": "2025-12-18 02:08:44",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

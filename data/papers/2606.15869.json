@@ -9,5 +9,9 @@
  "summary": "没有可用的 Obsidian MCP 工具（vault 未连接），因此无法自动写入笔记。下面按你指定的格式给出中文总结：\n\n# Metis：面向自动驾驶与城市导航的通用高效世界-动作模型\n\n**1. 核心创新点**\n将\"视频生成\"与\"动作预测\"解耦，让动作模型在推理时无需先预测未来观测画面，从而在保持规划性能的同时大幅降低延迟。\n\n**2. 主要方法**\n- 采用 **Mixture-of-Transformers（MoT）** 架构，为视频生成和动作预测分别设置专属专家，避免两类任务的表征互相干扰。\n- 设计**非对称注意力掩码（asymmetric attention mask）**：训练时两个专家联合训练，推理时动作模型可绕过显式视频生成，保证训练-推理一致性并降低计算成本。\n- 端到端框架，在 NAVSIM（navhard/navtest）和 CityWalker 导航基准上评测，并进行真实机器人部署验证。\n\n**3. 结论/性能**\n在 NAVSIM navhard、navtest 及 CityWalker 三个基准上取得 SOTA，验证了跨任务的通用性与高效性；真实机器人部署进一步证明了方法的实用可行性。\n\n---\n若你希望写入 Obsidian，需要先连接 obsidian MCP 服务，连上后我可以再生成中英文双版本笔记。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-16 13:04:32"
+ "created_at": "2026-06-16 13:04:32",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
 }

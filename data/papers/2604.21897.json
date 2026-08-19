@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出一个可扩展且具通用性的计算框架，将历时风格分析、情境主题建模与发言语义聚类相结合，以多维度揭示议会话语中的说法方式、议题走向与发言人关系。\n- 主要方法：使用日序风格分析（diachronic stylometric analysis）、上下文/情境主题建模（contextual topic modeling）和发言人的语义聚类（semantic clustering of deputies' speeches），构建一个面向大规模文本的分析框架，应用于2003–2025年超过45万篇 Brazilian Chamber of Deputies 演讲文本。\n- 结论/性能：发现长期风格向更短更直接的演讲转变；立法议程在国家危机时显著重新取向；构建出对话语对齐的细粒度地图，显示区域身份和性别身份 often 比正式党派对话语更为 salient；该框架为将议会话语作为多维现象进行分析提供了稳健的方法，可与传统基于投票的分析互补。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-24 13:02:51"
+ "created_at": "2026-04-24 13:02:51",
+ "topics": [
+  "applications"
+ ]
 }

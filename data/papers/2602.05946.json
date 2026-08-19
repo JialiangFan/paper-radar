@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句）\n基于f-散度的变分表示，提出一个通用对齐框架，并在此框架内给出对齐专用的on-policy算法f-GRPO与混合策略对齐损失f-HAL，用于一般LLM对齐（覆盖可验证奖励的RLVR与偏好对齐），并给出理论保证与实证优势。\n\n- 主要方法\n  - f-GRPO：一种基于f-散度变分表示的on-policy强化学习方法（Group Relative Policy Optimization），用于在对齐过程中直接优化策略以提升环境奖励。\n  - f-HAL：f-Hybrid Alignment Loss，一种混合的on/off策略对齐目标，结合两种数据信号通过f-散度框架进行对齐优化。\n  - 理论与框架：给出理论保证，证明这些目标在对齐后可提升平均奖励。\n  - 实证设置：在RLVR（可验证奖励的数学推理任务）和PA（偏好对齐，Safety Alignment）任务上验证，显示出优越的性能和更强的灵活性。\n\n- 结论/性能\n  在对齐后实现了更高的平均奖励，且在Math Reasoning的RLVR和Safety Alignment的PA任务中，相较于现有方法展示出更好的性能和灵活性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-06 14:03:21"
+ "created_at": "2026-02-06 14:03:21",
+ "topics": [
+  "rl-post-training"
+ ]
 }

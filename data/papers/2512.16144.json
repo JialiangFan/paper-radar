@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将总参数量为106B、12B活跃参数的Mixture-of-Experts模型，与端到端强化学习基础设施深度耦合，并开源完整的训练栈与环境，实现大规模异步 RL 的高效训练与评测。\n\n- 主要方法：采用106B的MoE架构（12B活跃参数），在 GLM-4.5-Air-Base 上进行 SFT 与 RL 训练；构建并使用开源的 prime-rl 框架实现从单机到数千GPU的大规模异步 RL，支持多轮对话与工具使用；环境与评测通过 verifiers 库与 Environments Hub 提供，整个训练基础设施及环境生态也一并开源。\n\n- 结论/性能：在同等模型尺寸下于数学、代码、科学与推理等基准上达到最先进水平，且性能优于许多规模更大的前沿模型。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-19 02:47:16"
+ "created_at": "2025-12-19 02:47:16",
+ "topics": [
+  "rl-post-training"
+ ]
 }

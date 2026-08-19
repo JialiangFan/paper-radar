@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出可学习且渐进的 token-level 压缩（LP-Comp）与基于问题条件的帧级压缩（QC-Comp），在最终 LLM 层实现“每帧仅一个 token”的极致长视频理解，并通过分段局部注意力缓解位置偏置。\n\n2. 主要方法：在视觉-语言模型框架下，设计两大压缩策略：LP-Comp 进行逐帧的 token-level学习压缩，以及 QC-Comp 通过 LLM 内部注意力分数选择与查询相关的关键帧；通过将长视频分段并采用局部注意力来降低位置偏置；在 VideoChat-Flash 基础上进行数据高效的监督压缩调优，仅需 2.5% 的监督微调数据。\n\n3. 结论/性能：实现极高的压缩比，使模型能够处理 2x-4x 更多的帧并提升性能；在 LVBench 上准确率从 42.9% 提升到 46.2%，并在多个长视频基准上获得提升。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-16 13:00:28"
+ "created_at": "2026-04-16 13:00:28",
+ "topics": [
+  "multimodal-perception",
+  "efficiency-systems"
+ ]
 }

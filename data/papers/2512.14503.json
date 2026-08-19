@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话）\n提出一个 RecGPT-V2 的层次化多智能体协同框架，结合混合表示推理、元提示、约束强化学习和代理评审，实现高效、可解释且规模化的基于LLM的用户意图推理在推荐系统中的应用。\n\n2) 主要方法\n- 层次化多智能体系统（Hierarchical Multi-Agent System）与混合表示推理（Hybrid Representation Inference）：通过智能体协同与压缩用户行为上下文，降低GPU消耗并提升独占召回率（从9.39%提升到10.99%）。\n- 元提示（Meta-Prompting）框架：动态生成上下文自适应提示，显著提升解释的多样性。\n- 受约束的强化学习（Constrained Reinforcement Learning）：缓解多奖励冲突，提升标签预测和解释接受度（标签预测+24.1%，解释接受度+13.0%）。\n- 代理评审框架（Agent-as-a-Judge）：将评估拆解为多步推理，提升与人类偏好的一致性。\n\n3) 结论/性能\n- 体系级改进：GPU消耗降低约60%，独占召回率从9.39%提升至10.99%。\n- 解释与推理：解释多样性提升约7.3%；标签预测提升约24.1%，解释接受度提升约13.0%。\n- 商业化验证：在Taobao的在线A/B测试中实现 CTR +2.98%、 IPV +3.71%、 TV +2.19% 和 NER +11.46% 的显著提升，证明在规模化场景下的技术可行性与商业价值。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-17 02:03:21"
+ "created_at": "2025-12-17 02:03:21",
+ "topics": [
+  "applications",
+  "llm-agents"
+ ]
 }

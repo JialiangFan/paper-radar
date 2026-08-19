@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 Tool Attention，通过中间件层对工具进行门控注意力处理，显著降低 MCP/Tools Tax 的上下文开销，从而提升协议级效率。\n\n2) 主要方法：\n- 将自注意力思想扩展为对工具的门控注意力，结合 Intent Schema Overlap（ISO）基于句子嵌入的意图模式重叠评分；\n- 引入状态感知的门控函数，强制执行前提条件与访问范围等访问控制；\n- 设计两阶段懒加载架构：在上下文中维护紧凑的摘要池，仅对 top-k 的工具加载完整的 JSON 架构；\n- 在一个包含 120 个工具、6 台服务器的仿真基准上评估，该基准的工具调用开销与真实 MCP 部署公开审计对齐。\n\n3) 结论/性能：\n- Tool Attention 将逐轮工具相关 token 开销从 47.3k 减少到 2.4k，下降约 95%；并将有效上下文利用率（token-占比）从 24% 提升至 91%；\n- 给出端到端指标为基于测量 token 与公开部署遥测的预测值，未在真实 LLM 代理上直接测量；\n- 总体结论是：可扩展的智能系统中，协议级效率，而非单纯的上下文长度，是瓶颈所在；相关代码已开源于 https://github.com/asadani/tool-attention",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-24 13:03:44"
+ "created_at": "2026-04-24 13:03:44",
+ "topics": [
+  "llm-agents",
+  "efficiency-systems"
+ ]
 }

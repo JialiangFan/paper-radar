@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一种基于回溯反馈的强化学习框架（RLBF），让大语言模型在生成过程中能够自我纠错并通过“回退若干 token”信号继续生成，从而提升对对抗攻击与分布内错误的鲁棒性。\n- 主要方法：在强化学习阶段利用对模型实时输出的 critic 反馈进行训练，模型学习识别并纠正实际出现的安全违规，触发“backtrack by x tokens”后回退再自回归继续生成；并结合改进的 SFT 数据生成策略 BSAFE+，将违规注入原本安全的连贯文本，以更有效地初始化回溯机制。\n- 结论/性能：在多项基准和模型规模上，RLBF 显著降低攻击成功率，提升安全性，同时尽量保持模型的基础实用性与能力。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-10 14:01:52"
+ "created_at": "2026-02-10 14:01:52",
+ "topics": [
+  "rl-post-training",
+  "ai-safety-alignment"
+ ]
 }

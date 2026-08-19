@@ -9,5 +9,9 @@
  "summary": "# 论文总结：C³ache\n\n1. **核心创新点**：发现并利用了 World Action Models (WAMs) 在**跨推理块（cross-chunk）之间**存在的去噪残差冗余，提出一种免训练的缓存复用方法来加速推理。\n\n2. **主要方法**：基于实证观察——机器人执行平滑动作时，相邻推理块在同一去噪步骤上的残差高度相关。C³ache 在相同的去噪步骤上跨推理块缓存并复用这些残差，区别于以往只在单个块内部去噪轨迹中做缓存的方法。\n\n3. **结论/性能**：在 Fast-WAM 主干网络上实验，相比现有方法最高获得 **2.5× 的端到端推理墙钟时间加速**，且任务成功率几乎无损。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-09 13:02:22"
+ "created_at": "2026-06-09 13:02:22",
+ "topics": [
+  "world-model-control",
+  "efficiency-systems"
+ ]
 }

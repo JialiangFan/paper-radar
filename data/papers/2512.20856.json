@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 提出 Nemotron 3 系列，基于混合专家的 Mamba-Transformer 架构，结合 LatentMoE、MTP 层，以及多环境强化学习微调，实现在极长上下文（高达1M token）、高吞吐与强化推理能力的模型家族。\n\n2) 主要方法\n- 架构与模型：使用 Mixture-of-Experts 的混合专家 Mamba-Transformer；Super/Ultra 使用 NVFP4 训练并引入 LatentMoE；两大模型含有 MTP 层以加速文本生成。  \n- 训练与微调：全系通过多环境强化学习进行后训练，支持推理中的多步工具调用和可控的推理预算。  \n- 发布与开放策略：Nano、Super、Ultra 分阶段发布，计划公开权重、前/后训练软件、数据等。\n\n3) 结论/性能\n- Nano 在保持极高准确性的同时具备极低推理成本，优于同类模型；  \n- Super 针对协作型代理与高吞吐场景（如 IT 工单自动化）进行了优化；  \n- Ultra 提供最先进的准确性与推理性能；  \n- 整体可实现1M token的极长上下文长度，且将对外开放权重与相关工具链。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-25 02:52:00"
+ "created_at": "2025-12-25 02:52:00",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

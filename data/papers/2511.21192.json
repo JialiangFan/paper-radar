@@ -9,5 +9,9 @@
  "summary": "- **核心创新点**：提出一种统一、可在多模型之间实现跨模型转移的物理对抗贴片框架 UPA-RFAS，通过在共享特征空间学习单一贴片并结合鲁棒特征-注意力-语义的协同策略，实现跨模型、跨任务、跨现实环境的可迁移攻击。\n\n- **主要方法**：\n  - 在共享特征空间学习单一物理贴片，并结合: (i) 以 ℓ1 偏差和对比损失 InfoNCE 的特征表示偏移以提升跨模型可迁移性；(ii) 一个鲁棒性增强的两阶段 min-max 过程：内循环学习不可见的逐样扰动，外循环在 hardened 邻域上优化通用贴片；(iii) 针对 Vision-Language-Action 的专用损失：Patch Attention Dominance（主导文本到视觉的注意力）与 Patch Semantic Misalignment（在无标签条件下引发图文不匹配）。\n  - 针对多种 VLA 模型、操控套件和实际物理执行进行系统评估，验证贴片的跨模型和跨场景转移性。\n\n- **结论/性能**：实验结果显示 UPA-RFAS 能在不同 VLA 模型、任务/操控集合与现实执行中稳定实现跨模型、跨任务、跨视角的转移攻击，揭示一个实用的贴片攻击面并为未来防御研究提供有力基线。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-11-30 06:05:30"
+ "created_at": "2025-11-30 06:05:30",
+ "topics": [
+  "vla-safety",
+  "adversarial-attacks"
+ ]
 }

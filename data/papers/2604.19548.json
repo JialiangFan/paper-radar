@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 ReTAS 框架，通过辩证对齐消除多智能体系统中的演员-观察者偏差（Actor-Observer Asymmetry），实现跨视角的一致推理。\n\n- 主要方法：引入 Ambiguous Failure Benchmark 量化 AOA；在 ReTAS 中综合 Thesis–Antithesis–Synthesis 的辩证链路思考和 Group Relative Policy Optimization，促使代理将对立观点综合成客观共识。\n\n- 结论/性能：实验表明 ReTAS 能有效缓解归因不一致，并在模糊/含糊情境下显著提升故障解决率。补充：在 Ambiguous Failure Benchmark 上，仅通过切换 actor 与 observer 的视角就能触发 AOA，超过 20% 的 case 中出现此偏差。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-22 13:03:49"
+ "created_at": "2026-04-22 13:03:49",
+ "topics": [
+  "llm-agents"
+ ]
 }

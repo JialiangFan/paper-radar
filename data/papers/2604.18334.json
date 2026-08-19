@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：首次系统量化不同 AI 代理在 GitHub Actions CI/CD 工作流中的可靠性差异、影响因素及失败类型，提供面向在 CI/CD 中安全集成 AI 代理的分类框架与改进方向。\n\n- 主要方法：基于 AIDev 数据集的 PR/提交/仓库信息，通过 GitHub Actions API 获取 61,837 条来自 2,355 个仓库的工作流运行，分析五个 AI 代理（Claude、Devin、Cursor、Copilot、Codex）触发的 PR；进行代理差异性可靠性比较、仓库层面的相关性分析、对 3,067 条失败的 agent PR 构建 13 类别的分类体系，并做趋势分析（虽未达到统计显著性）。\n\n- 结论/性能：Copilot 与 Codex 的工作流成功率最高，约为 93% 和 94%；在仓库层面，代理提交频率越高与工作流成功率呈负相关；对失败 PR 的 13 类别进行了分类，并观察到从功能型向非功能型的趋势，但该趋势未显著；结果强调需要给 AI 代理在 CI/CD 的集成提供可操作的指南，并在易失败的场景加强防护措施。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-21 13:02:12"
+ "created_at": "2026-04-21 13:02:12",
+ "topics": [
+  "agent-benchmarks",
+  "applications"
+ ]
 }

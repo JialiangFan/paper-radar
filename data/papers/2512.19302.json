@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 Think2Seg-RS，一个解耦的 LVLM-SAM 框架，通过训练 LVLM 提示器以结构化几何提示控制冻结的 SAM，将语义推理转化为空间定位分割，实现零-shot 泛化的地理遥感推理分割。\n\n2) 主要方法：构建一个 LVLM 提示器来控制冻结的 Segment Anything Model（SAM），使用结构化几何提示和掩模为主的强化学习目标，使模型将抽象的语义推理映射到空间上可执行的分割动作；在 EarthReason 数据集达到当前SOTA，并能零-shot 泛化到多种 referring segmentation 基准；并给出关于分割器规模和负提示在不同场景下的分析。\n\n3) 结论/性能：在 EarthReason 取得最优性能；实现对多种 referring segmentation 基准的零-shot 泛化；发现语义级监督下紧凑型分割模型优于大型模型，且异质航空背景中负提示无效，提出语义级推理分割作为 geospatial 领域的新范式。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-23 03:50:33"
+ "created_at": "2025-12-23 03:50:33",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

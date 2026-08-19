@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出通过 Chain-of-Thought 推理来编辑知识的全新范式 CoT2Edit，结合结构化与非结构化信息生成高质量指令数据，并在 SFT+GRPO 训练与 RAG 推理下实现实时、具泛化能力的知识编辑。\n\n- 主要方法：\n  - 使用语言模型代理（agents）对结构化和非结构化的编辑数据生成 Chain-of-Thought（CoT），构建高质量的指令数据。\n  - 通过监督微调（SFT）结合 Group Relative Policy Optimization（GRPO）对模型进行训练，使其能够在推理阶段正确利用编辑后的知识。\n  - 推理时引入 Retrival-Augmented Generation（RAG），动态检索相关的编辑事实以实现实时知识编辑。\n  - 评估涵盖六种不同的知识编辑场景，使用三种开源语言模型，仅需一次训练即可获得较好泛化能力。\n\n- 结论/性能：\n  - 在六种知识编辑场景中展现出显著的泛化能力，且只需对三种开源语言模型进行一轮训练即可达到效果。\n  - 研究提供的代码可在 GitHub 获取：https://github.com/FredJDean/CoT2Edit",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-04-08 13:08:55"
+ "created_at": "2026-04-08 13:08:55",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

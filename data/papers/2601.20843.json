@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点\n- 通过引入顺序式研究计划反思与候选者交叉算法，建立全局研究上下文并在运行时动态调整研究计划，显著提升深度研究任务的搜索效率和报告质量。\n\n2. 主要方法\n- 顺序研究计划反思（Sequential Plan Refinement via Reflection）与全局研究上下文管理，实现对当前进展的回顾、推理与计划修改。\n- 候选者交叉（Candidates Crossover）算法，使用多组变参数的LLM候选并行探索，综合其发现以扩展搜索空间。\n- 一次性报告生成（One Shot Report Generation），以统一叙事和高事实密度产出最终研究报告。\n- 基于 Gemini 2.5 Pro 模型实现，并在 DeepResearch Bench 上评估。\n\n3. 结论/性能\n- 在 DeepResearch Bench 的 100 项博士级任务基准中取得总分 46.21，显著优于 Claude Researcher、Nvidia AIQ Research Assistant、Perplexity Research、Kimi Researcher、Grok Deeper Search 等同行，且略优于前代 Static DRA；结果支持“顺序扩展”优于“并行自一致性”的结论。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-01-29 03:23:45"
+ "created_at": "2026-01-29 03:23:45",
+ "topics": [
+  "llm-agents",
+  "llm-planning"
+ ]
 }

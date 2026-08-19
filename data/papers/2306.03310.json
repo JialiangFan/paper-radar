@@ -28,5 +28,8 @@
  "code": "https://github.com/Lifelong-Robot-Learning/LIBERO",
  "project": "https://libero-project.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "embodied-benchmarks"
+ ]
 }

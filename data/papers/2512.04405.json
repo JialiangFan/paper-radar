@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出6G原生AI边缘网络的新范式，将语义本性通信（SemCom）与代理智能（agentic intelligence）融合，构建面向任务的语义–智能协同网络，并给出统一的分类框架与跨层设计思路。\n\n- 主要方法：提出基于三个维度的统一 taxonomy，并结合多项技术：1) 任务导向的语义编码/解码；2) 多智能体强化学习与分布式自治；3) foundation-model 辅助的 RAN 智能体与基于知识图谱的推理用于跨层感知与决策；4) 将 RAN 控制放置在 PHY/MAC、near-real-time RIC、non-real-time RIC 等不同层次，覆盖 symbol/feature/intent/knowledge 等语义抽象层级，以及 single/multi/hierarchical-agent 的自治粒度。并以 XR、V2X、工业数字孪生等场景进行分析。\n\n- 结论/性能：给出概念性框架、技术路径与应用潜力，强调在概念层面的语义-代理协同对提升任务成功率与传输效率的潜在价值；尚未给出具体实验结果，且需解决标准化、可扩展可信协同、O-RAN 互操作性与能源高效部署等挑战。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-05 14:04:05"
+ "created_at": "2025-12-05 14:04:05",
+ "topics": [
+  "llm-agents"
+ ]
 }

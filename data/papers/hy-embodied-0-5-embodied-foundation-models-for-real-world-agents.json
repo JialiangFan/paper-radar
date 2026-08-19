@@ -23,5 +23,9 @@
  "code": "",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "vla-models",
+  "multimodal-perception"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：在医学视觉语言模型中引入基于任务奖励的强化学习（GRPO），结合冷启动的思维能力评估对放射科报告生成与视觉定位的影响，结果显示 RL 能提升性能，而显式“思维”并不带来额外收益。\n\n- 主要方法：\n  - 基于 Qwen3-VL 构建 RadVLM，并在大规模胸部X光数据上进行广泛的监督微调（SFT）。\n  - 进行冷启动的 SFT，赋予模型基本的“思维”能力（thinking）。\n  - 使用 Group Relative Policy Optimization（GRPO）在临床相关、任务特定奖励下对报告生成和视觉定位进行强化学习，比较域内/域外的不同模型变体，以及有无思维的情形。\n\n- 结论/性能：\n  - 强 SFT 仍是高基线性能的关键，RL 能在两项任务上提供额外提升。\n  - 显式的“思维”并未带来额外性能提升。\n  - 经过 RL 优化的 RadVLM 相较基线在报告生成和视觉定位上达到或超越现有最先进水平，体现了临床对齐的 RL 作为 SFT 的有力补充。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-12 14:04:42"
+ "created_at": "2025-12-12 14:04:42",
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
 }

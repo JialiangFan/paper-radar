@@ -9,5 +9,10 @@
  "summary": "- 核心创新点：一句话概括\n  提出 AeroTherm-GPT，面向热防护系统工程的TPS专用LLM代理，通过约束闭环生成(CCLG)与约束依赖图(CDG)实现可验证、上游优先的多门约束修复迭代工艺。\n\n- 主要方法：简述用到的技术/模型\n  - 构建面向 TPS 的专用 LLM Agent（AeroTherm-GPT）。\n  - 引入 Constraint-Closed-Loop Generation (CCLG) 框架，将生成-验证-修复-执行-审计组成迭代工作流。\n  - 使用 Constraint Dependency Graph (CDG) 编码约束类别之间的经验性共解结构，并结合生命周期排序先验与共解概率引导上游修复，实现对单次行动的上游修复优先。\n  - 通过上述机制实现对多下游违反的高效修复，保持在科学推理与代码生成任务上的稳定性（防止灾难性遗忘）。\n  - 在 HyTPS-Bench 及外部基准上进行评估与对照验证。\n\n- 结论/性能：取得的效果\n  - End-to-End 总体成功率达到 88.7%（95% 置信区间 87.5–89.9%），相比匹配的非-CDG消融基线提升约 12.5 百分点。\n  - Root-Cause Fix Efficiency 达到 4.16，显著高于平面检查修复的 1.76。\n  - 在 HyTPS-Bench 与外部基准上验证有效，且对科学推理与代码生成任务未发生灾难性遗忘。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-03 13:05:44"
+ "created_at": "2026-04-03 13:05:44",
+ "topics": [
+  "llm-agents",
+  "applications",
+  "formal-methods"
+ ]
 }

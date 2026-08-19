@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出一个七维分类法，用以对基于LLM的医疗健康代理进行经验性评估与量化梳理，并对49项研究进行系统映射，揭示能力实现的不对称性与存在的结构性缺口。\n\n2) 主要方法\n- 以认知能力、知识管理、交互模式、适应与学习、安全与伦理、框架类型学、核心任务与子任务等七个维度及29个子维度为框架，对49项研究应用明确的纳入/排除标准与标签量化（Fully Implemented、Partially Implemented、Not Implemented），进行系统综述、能力分布的定量统计与能力共现模式分析。\n\n3) 结论/性能\n- 发现显著的实现不对称性：外部知识整合实现度较高（约76% Fully Implemented），事件触发激活几乎未实现（约92% Not Implemented），漂移检测与缓解几乎未实现（约98% Not Implemented）。\n- 架构层面以多代理设计为主导模式（约82% Fully Implemented），编排层多为部分实现。\n- 在核心任务方面，信息密集型能力（如医疗问答与决策支持、基准测试与仿真）表现较好；但面向行动与发现的领域如治疗规划与处方仍存在较大缺口（约59% Not Implemented）。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-05 14:03:17"
+ "created_at": "2026-02-05 14:03:17",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

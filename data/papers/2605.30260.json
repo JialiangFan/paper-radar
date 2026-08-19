@@ -9,5 +9,8 @@
  "summary": "## 论文总结\n\n**1. 核心创新点**\n首次将 LoRA 作为可控的\"记忆容量探针\"，提出了一个量化 LLM 参数化记忆能力的**参数化记忆律**（Parametric Memory Law），揭示了损失下降与有效参数量、序列长度之间的幂律关系。\n\n**2. 主要方法**\n- 利用 LoRA 在隐空间中系统性地度量精确参数记忆的容量上限。\n- 在 token 层面进行细粒度分析，发现一个确定性的**相变现象**：当预测概率 p > 0.5 时，贪心解码下即可实现逐字复现（verbatim recall）。\n- 基于上述洞察提出 **MemFT**——一种阈值引导的优化策略，将训练预算动态地重新分配到尚未越过阈值的 sub-threshold tokens 上。\n\n**3. 结论/性能**\n实证结果表明，MemFT 能够同时提升记忆的**保真度（fidelity）和效率（efficiency）**，为 LLM 持续学习与知识更新提供了可量化的理论依据和实用的优化方法。代码将在 GitHub（zjunlp/ParametricMemoryLaw）开源。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-30 13:00:44"
+ "created_at": "2026-05-30 13:00:44",
+ "topics": [
+  "rl-post-training"
+ ]
 }

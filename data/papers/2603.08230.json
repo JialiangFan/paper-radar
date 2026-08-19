@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将模糊/不确定的情感识别重新建模为分布式推理问题，首次在大型音频-语言模型中系统研究并提出模糊情感推理框架。\n\n- 主要方法：提出两大互补组件——1) ambiguity-aware objective，使模型输出的情感分布与人类感知分布对齐；2) 结构化的 ambiguity-aware chain-of-thought 监督，指引模型在情感线索上进行有组织的推理。基于大规模音频-语言模型，结合 SFT、DPO、GRPO 等训练策略，在 IEMOCAP 与 CREMA-D 数据集上进行验证。\n\n- 结论/性能：在 IEMOCAP 与 CREMA-D 上实现对模糊情感推理的一致性提升，且对齐人类感知分布和结构化推理能力均得到改善，方法在多种训练策略（SFT、DPO、GRPO）下均表现出显著提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-10 13:04:05"
+ "created_at": "2026-03-10 13:04:05",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

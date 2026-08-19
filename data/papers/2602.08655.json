@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句话）\n  提出 Geometric Pessimism：在离线强化学习的 IQL 框架中引入基于最近邻距离的状态-动作嵌入空间密度惩罚，实现对离群（OOD）动作的几何保守化，同时保持低计算开销。\n\n- 主要方法\n  在 IQL 框架上加入密度惩罚（来自状态-动作嵌入空间的 kNN 距离），通过预计算对每个状态-动作对的惩罚项来实现 O(1) 的训练开销的奖励塑形，从而注入离群保守性；方法模块化、计算高效，在 D4Rl MuJoCo 基准和 MIMIC-III Sepsis 数据集上进行评估。\n\n- 结论/性能\n  - 在 D4Rl MuJoCo 的敏感且不稳定的中等回放任务上，Geo-IQL 相对标准 IQL 提升超过 18 点，并将跨种子方差降低约 4 倍；对稳定流形没有负面影响。\n  - 在真实世界数据集 MIMIC-III Sepsis 上，Geo-IQL 能避免退化到行为克隆，且保持安全约束：相较 IQL 达到 86.4% 的终端决策与临床医生的一致性（IQL 为 75%），显示几何保守化能有效提升关键决策系统的性能与安全性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-10 14:01:12"
+ "created_at": "2026-02-10 14:01:12",
+ "topics": [
+  "safe-rl"
+ ]
 }

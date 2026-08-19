@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-20 13:03:25"
+ "created_at": "2026-06-20 13:03:25",
+ "topics": [
+  "llm-reasoning",
+  "world-model-learning"
+ ]
 }

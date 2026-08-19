@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将视频对象分割的推理过程显式分解为语义解释、时序证据选择和空间定位三步，在预训练视觉-语言模型的原生接口中进行序列化决策，并通过强化学习优化整条推理链以提升性能与可解释性。\n\n- 主要方法：\n  - 引入 ReVSeg：在预训练视觉-语言模型的接口中执行三步推理：语义解释（semantics interpretation）、时序证据选择（temporal evidence selection）、空间定位（spatial grounding）。\n  - 采用强化学习来优化多步推理链，使用基于结果的信号实现自我提升与自我纠正。\n  - 通过可解释的推理轨迹实现推理过程的透明性。\n\n- 结论/性能：\n  - 在标准视频对象分割基准上达到当前最优（state-of-the-art）水平，并且提供可解释的推理轨迹。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-03 14:03:16"
+ "created_at": "2025-12-03 14:03:16",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

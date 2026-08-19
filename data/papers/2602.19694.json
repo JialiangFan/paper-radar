@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出跨城市统一的人类移动数据生成模型 UniMob，通过 LLM 规划、高度对齐的跨城市空间表示以及扩散生成，解决低资源城市数据不足的问题，实现“所有城市”在同一框架下的数据生成。\n\n- 主要方法：  \n  - LLM-powered travel planner：利用大语言模型提取高层次、具时序感和语义含义的出行计划。  \n  - Unified spatial embedding module：把不同城市的空间区域投影到共享表示空间。  \n  - Diffusion-based mobility generator：在生成阶段依据规划引导，捕捉联合的时空特征并生成移动轨迹。\n\n- 结论/性能：在覆盖五座城市的两组真实数据集上，UniMob 相较于最新基线提升超过 30%（多项评估指标）；在零-shot与 few-shot 场景表现鲁棒，证明了对隐私友好、可用于下游任务等特性。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-24 14:02:40"
+ "created_at": "2026-02-24 14:02:40",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

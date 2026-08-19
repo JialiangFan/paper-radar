@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Progressive Prefix-token Policy Optimization (PPPO)，聚焦前缀阶段对推理的影响，通过对前缀令牌的优化来提升整轮推理的效果，解决对低回报令牌过度训练的问题。\n\n- 主要方法：在 RLVR 框架下实现 PPPO，强调前缀策略优化，并引入两大训练策略——Progressive Prefix Retention（逐步增加保留前缀令牌的比例，形成渐进学习）和 Continuation Accumulated Reward（对同一前缀序列多次采样续推并累计奖励），结合路径依赖和 Beginning Lock-in Effect 的理论基础，聚焦对前缀推理阶段的优化。\n\n- 结论/性能：在多项推理任务上优于代表性 RLVR 方法，且在仅使用约 26.17% 的训练令牌情况下，准确率提升约 18.02%。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-18 02:08:33"
+ "created_at": "2025-12-18 02:08:33",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

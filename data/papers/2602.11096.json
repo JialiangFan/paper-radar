@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将安全恢复问题视为一个满足约束的推理干预，在推理过程中仅在安全阈值被触发时，注入一个经过优化的短前缀“Wait, think safely”以引导模型走向安全完成，属于轻量级推理时防护。\n- 主要方法：提出 SafeThink，在推理过程中用安全奖励模型监控推理轨迹，条件性地插入短前缀进行纠错；将安全恢复处理为 satisficing（满足约束）而非最大化目标；在六个开源多模态大模型和四个越狱基准上进行评估。\n- 结论/性能：攻击成功率降低约30-60%（如 LlamaV-o1 在 JailbreakV-28K 从63.33%降至5.74%，R1-Onevision 在 Hades 从69.07%降至5.65%），同时保持或接近原有推理性能（MathVista 正确率从65.20%降至65.00%），并发现通常只需前1-3步干预即可实现安全纠偏。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-12 14:00:23"
+ "created_at": "2026-02-12 14:00:23",
+ "topics": [
+  "ai-safety-alignment",
+  "rl-post-training"
+ ]
 }

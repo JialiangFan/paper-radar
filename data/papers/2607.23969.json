@@ -9,5 +9,9 @@
  "summary": "## LeapBot-WA 论文摘要总结\n\n**1. 核心创新点**\n提出用\"预测式潜空间对齐\"（Predictive-Latent）范式取代主流世界动作模型（WAM）依赖的像素级视频生成，把世界建模的核心从视觉合成转向潜在语义空间中的物理动态预测。\n\n**2. 主要方法**\n- **World-Anchor**：将 JEPA（联合嵌入预测架构）作为\"世界锚\"，直接在潜在基础空间中抽取抽象物理动态，避免重建任务无关的视觉细节。\n- **ISAE（各向同性语义自编码器）**：解决预测特征呈非高斯分布与扩散模型先验之间的模态鸿沟，把锚点潜空间重塑为适合扩散建模的流形，防止 off-manifold 漂移。\n- **非对称 MoT（Mixture-of-Transformers）**：训练时由 Anchor Diffusion Transformer 作为\"特权动态专家\"指导 Action Diffusion Transformer；推理时剪掉这条重型动态分支，实现零额外开销执行。\n\n**3. 结论/性能**\n- 在 **LIBERO** 上取得预测类模型中的 SOTA；在 **RoboTwin 2.0** 上追平顶尖生成式 WAM，且**无需大规模轨迹预训练**。\n- 对未见环境展现出更强的零样本鲁棒性（抗视觉干扰），并成功迁移到真机。\n- 整体确立了一条高效、鲁棒、以潜空间为中心的可扩展机器人控制路线。代码已开源（github.com/LeapWM/leapbot-wa）。\n\n> 补充一句判断：摘要中\"匹配顶尖生成式模型\"与\"无需大规模预训练\"这两点并列是最强的卖点，但也是最需要看正文消融实验来验证的地方——尤其是 ISAE 的收益是否可以被简单的特征归一化替代。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-01 13:04:27"
+ "created_at": "2026-08-01 13:04:27",
+ "topics": [
+  "world-model-learning",
+  "robot-manipulation"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "**核心创新点**：将\"Unix 操作能力\"从\"通过终端写程序的能力\"中分离出来，提出一个程序化生成 CTF 任务的训练环境（unix-ctf），用于专门训练和评估 shell agent 的 Unix 原语使用能力。\n\n**主要方法**：采用 LLM 辅助的合成流水线生成 CTF 任务——LLM 编写\"藏 flag\"和\"找 flag\"的脚本对（容器、布局、评分框架固定），通过双向契约过滤（藏脚本不能在磁盘留下明文痕迹，找脚本必须能恢复 flag）。在此环境上使用 LoRA + GRPO 对 Qwen3-8B 进行强化学习微调。\n\n**结论/性能**：合成流水线良率达 87.5%（656/750），远超复现的 Endless Terminals 方法的 17.4%；656 个变体归并为 155 种独立技术。微调后模型在 15 技能多族留出测试集上的解题率从 11.6% 提升到 43.6%，在 InterCode-CTF 的 Forensics 类别上获得 +33pp 增益，总分达 32/100，验证了 Unix 能力是可分离、可训练且应被独立评估的。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-31 13:00:54"
+ "created_at": "2026-05-31 13:00:54",
+ "topics": [
+  "agent-benchmarks",
+  "embodied-benchmarks"
+ ]
 }

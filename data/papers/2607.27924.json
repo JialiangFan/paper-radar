@@ -9,5 +9,8 @@
  "summary": "## ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow\n\n**1. 核心创新点**\n提出 Physical-Time Flow（PT-Flow），在结构化的隐空间中学习一个以\"物理时间\"为自变量的连续隐速度场，把世界模型从离散时间步预测转变为连续时间的常微分方程（ODE）积分问题。\n\n**2. 主要方法**\n- 用 ODE 参数化序列数据的底层动力学，将其嵌入到一个良构的表示空间中；未来预测被重写为在压缩隐空间中用 ODE 求解器做时间积分。\n- 在此基础上构建 **ODEWorld**——一个连续时间的隐式世界模型：通过抽取时变特征（time-variant features），并同时对动力学表示空间和隐速度场施加 ODE 性质约束，来缓解隐式世界模型长期存在的**表示坍缩（representation collapse）**问题。\n- 连续时间的形式天然支持任意时间分辨率采样，甚至可以做**反向（回溯）预测**，这是多数离散时间模型做不到的。\n\n**3. 结论/性能**\n- 长时程预测后仍能保持高质量图像重建，缓解了表示坍缩。\n- 同时兼顾\"有利于规划的动力学抽象\"与\"视觉真实性\"这两个通常互相牺牲的目标，并能为下游策略学习提供丰富的面向规划的信息。\n- 在**视频生成**与**机器人控制**两类任务的综合实验中均表现优异。\n\n> 摘要中未给出具体数据集与量化指标，\"效果\"部分为其自述结论；如需核实实际数字，可查看项目主页 https://dstate.github.io/odeworld_website/",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-07-31 13:05:37"
+ "created_at": "2026-07-31 13:05:37",
+ "topics": [
+  "world-model-learning"
+ ]
 }

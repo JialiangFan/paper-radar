@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将文本篡改分析统一成视觉-文本协同推理的联合任务，引入跨线索的链式推理CCT和基于GRPO的多任务优化，并通过PR^2管线与RealText数据集实现高质量注释与训练，从而同时提升检测、定位与解释的性能。\n\n- 主要方法：\n  - LogicLens：一个视觉-文本协同推理框架，将检测、定位（ grounding）和解释等任务统一为一个联合目标。\n  - Cross-Cues-aware Chain of Thought（CCT）：迭代地将视觉线索与文本逻辑相互验证、强化推理过程的深度推理机制。\n  - 基于GRPO的加权多任务奖励函数：对多任务目标进行加权优化以实现跨任务协同提升。\n  - PR^2管线（Perceiver, Reasoner, Reviewer）：分层的、迭代的多智能体系统，用于生成高质量、认知对齐的注释。\n  - RealText数据集：5,397 张图像，包含文本解释、像素级分割和真实性标签等细粒度注释，用于模型训练。\n\n- 结论/性能：\n  - 在 T-IC13 的零-shot 评估中，LogicLens 在宏平均 F1 上分别超越专用框架 41.4%、超越 GPT-4o 23.4%。\n  - 在密集文本的 T-SROIE 数据集上，领先于其他基于多模态大语言模型的方法，在 mF1、CSS 和宏平均 F1 等指标上显示显著优势。\n  - 研究还将公开数据集 RealText、模型与代码。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-29 02:29:15"
+ "created_at": "2025-12-29 02:29:15",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

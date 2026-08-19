@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出一个多代理的临床层级框架（MARCH），通过 Resident、Fellow 与 Attending 三类角色的协作与迭代共识，模拟放射科部门的专业分工以提高 CT 报告生成的可信度与一致性。\n\n2. 主要方法：采用多代理系统，其中 Resident Agent 进行初稿撰写并执行多尺度 CT 特征提取；若干 Fellow Agents 负责检索增强的修订；Attending Agent 主导基于立场的共识式对话与迭代，协同解决诊断分歧；并在 RadGenome-ChestCT 数据集上进行评估。\n\n3. 结论/性能：在 RadGenome-ChestCT 数据集上显著优于现有基线，在临床保真性与语言准确性方面均取得提升，表明模仿人类组织结构可提升高风险医学领域 AI 的可靠性。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-20 13:01:45"
+ "created_at": "2026-04-20 13:01:45",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

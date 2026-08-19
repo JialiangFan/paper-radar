@@ -9,5 +9,8 @@
  "summary": "## CoRun：用 Padding 实现确定性 LLM 推理\n\n**1. 核心创新点**\n发现 GPU kernel 虽然不是\"批次无关\"(batch-invariant) 的、但却是\"位置无关\"(position-invariant) 的，因而可以纯靠**调度层面固定输入形状**来获得确定性推理，无需牺牲性能改写 kernel。\n\n**2. 主要方法**\n- **问题根源**：动态输入形状会改变 kernel 的 tiling 策略和浮点归约顺序，导致同样的种子/采样参数下输出仍不一致。\n- **CoRun 的做法**：把推理两个阶段分开处理——prefill 阶段**隔离执行**，decode 阶段用**固定形状的批处理**（即通过 padding 把 batch 形状钉死）；再配合 **CUDA Graphs** 提升执行效率并简化实现。\n- 与既有方案的区别：现有系统靠 batch-invariant kernel 强行统一归约顺序，但这限制了优化 tiling 和 split reduction，延迟涨 2 倍以上、服务吞吐最多掉 74%。\n\n**3. 结论/性能**\n在 Qwen、DeepSeek 等不同架构的模型上验证：在保证输出确定性的前提下，相比 batch-invariant 方案吞吐提升 **15%–324%**，首 token 延迟 (TTFT) 平均降低 **51.8%**，每 token 输出时间 (TPOT) 平均降低 **48.6%**。\n\n> 一句话价值：让模型评测、强化学习等对可复现性敏感的下游任务，不必再为确定性付出高昂的性能代价。\n\n如果你想要更完整的文献综述式笔记（含研究背景、贡献拆解、方法论细节，中英双语并存入 Obsidian），可以用 `/paper-review`。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-17 13:02:30"
+ "created_at": "2026-08-17 13:02:30",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

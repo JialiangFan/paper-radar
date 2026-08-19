@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（一句话）：\n  提出一个以 KV-cache 为核心的记忆管理系统 KEEP，通过静态-动态混粒度内存构建、跨记忆组的多跳重计算，以及层级平衡加载，显著提升记忆驱动的 embodied planning 的效率与鲁棒性。\n\n- 主要方法（技术/模型要点）：\n  - 静态-动态内存构建算法（Static-Dynamic Memory Construction）：通过混粒度的内存分组，减少 KV cache 的重计算。\n  - 多跳记忆重计算算法（Multi-hop Memory Re-computation）：动态识别不同内存组之间的关键跨注意力，并迭代地重构记忆交互。\n  - 层级平衡内存加载（Layer-balanced Memory Loading）：在不同层之间实现平衡的 KV cache 加载与跨注意力计算，避免不均衡带来的开销。\n\n- 结论/性能（效果与对比）：\n  - 在 ALFRED 数据集上，相比文本记忆方法实现了 2.68x 的速度提升，且准确度损失可以忽略不计。\n  - 相较于 KV 重计算方法 CacheBlend，KEEP 提升了 4.13% 的成功率，并将时至首词（TTFT）缩短 1.90 倍。\n  - 代码已公开：https://github.com/PKU-SEC-Lab/KEEP_Embodied_Memory",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-03-02 14:02:35"
+ "created_at": "2026-03-02 14:02:35",
+ "topics": [
+  "llm-planning",
+  "efficiency-systems"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "**InferScale: GPU-Native KV Injection for Personalized LLM Serving**\n\n1. **核心创新点**\n   把个性化记忆从\"每次请求重新 prefill 的文本\"变成\"可复用的 GPU 常驻 KV 状态\"，从而让 TTFT 与检索到的上下文长度解耦。\n\n2. **主要方法**\n   - 预先为每条记忆事实计算 KV 表示，与语义 embedding 一起存放在 GPU 上；服务时检索相关事实，直接把 KV 注入 vLLM 的 paged cache。\n   - **Chunked RoPE**：存储旋转前的 key，在注入时再按实际服务位置施加 RoPE，以支持动态拼装的记忆片段。\n   - **Context-Window Encoding**：编码每条事实时附带一小段前序对话上下文（但只缓存目标事实的 KV），弥补独立编码丢失的跨事实语境。\n   - 工程上通过 vLLM 的 KV-connector 接口实现，无需改引擎、也无需微调模型。\n\n3. **结论/性能**\n   在 LoCoMo 数据集、三个开源权重模型上：检索预算增大时 TTFT 基本保持恒定；k=50 时 TTFT 降低 72–79%（3.6–4.8×），并发负载下吞吐提升 3.7–4.5×；准确率 60.3%，略低于 Mem0 的 63.3%，但完全省去了服务时的重复计算。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-07-30 13:02:11"
+ "created_at": "2026-07-30 13:02:11",
+ "topics": [
+  "efficiency-systems",
+  "llm-agents"
+ ]
 }

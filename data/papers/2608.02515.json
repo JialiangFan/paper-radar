@@ -9,5 +9,9 @@
  "summary": "## LiveMem 论文摘要总结\n\n**1. 核心创新点**\n\n提出\"上下文轮替下的状态连续性\"（state continuity under context turnover）这一新问题，即让 LLM 通过一个固定容量、生命周期独立于当前上下文的记忆状态，把计算持续向前推进，而非仅仅保留对历史片段的访问权。\n\n**2. 主要方法**\n\nLiveMem 是一种**内生式记忆（intrinsic memory）**方法：在预训练的全注意力 LLM 上外加一个记忆状态，主注意力路径只保留**有界的 KV 窗口**，历史信息则被压缩进覆盖整个生命周期的记忆状态中。三项技术协同工作：\n\n- 上下文轮替与记忆状态维护机制\n- 面向记忆的后训练（memory-oriented post-training）\n- 状态感知的推理服务（state-aware serving）\n\n三者共同保证：即使产生记忆的原始 token 已被释放，该记忆状态仍然\"承重\"可用。\n\n**3. 结论/性能**\n\n- 在所评测的系统及其他内生记忆方法中取得**领先的整体性能**。\n- 在 **LongMemEval** 上，即使支撑证据已从当前上下文中移除，模型仍能依据记忆状态正确作答。\n- 证据距离（evidence-distance）分析表明，有效信息确实能留存到活动窗口之外。\n\n作者由此主张：状态连续性是持续性 LLM 推理中一个**独立且互补**的抽象层，区别于已有的上下文保留、摘要和检索方案。\n\n---\n\n补充一句判断：摘要中\"leading overall performance among evaluated systems\"这类表述较为笼统，未给出具体基线与数值，实际效果强度需看正文实验表格。如需我进一步做完整的文献综述式解读（背景、贡献、方法论细节），可以调用 `paper-review` 技能处理。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-04 13:02:54"
+ "created_at": "2026-08-04 13:02:54",
+ "topics": [
+  "llm-agents",
+  "efficiency-systems"
+ ]
 }

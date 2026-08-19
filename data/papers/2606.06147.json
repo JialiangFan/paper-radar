@@ -9,5 +9,9 @@
  "summary": "# WorldFly 论文总结\n\n1. **核心创新点**：将\"世界模型\"的未来状态想象能力引入无人机视觉-语言-动作（VLA）模型，以提升在密集城市环境中严重遮挡和剧烈视角变化下的导航鲁棒性。\n\n2. **主要方法**：提出 WorldFly 框架，采用**双分支耦合流匹配（dual-branch coupled flow matching）**机制，联合生成未来视频预测与导航动作，通过空间想象显式引导智能体策略；同时构建了\"城市峡谷穿越基准（Urban Canyon Traversal Benchmark）\"用于评估遮挡和视角剧变场景下的空间理解能力。\n\n3. **结论/性能**：在所提基准上，WorldFly 全面优于其他基线方法，尤其在未见过的环境中表现突出，验证了将世界模型融入具身空中智能体的有效性。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-07 13:02:40"
+ "created_at": "2026-06-07 13:02:40",
+ "topics": [
+  "vla-models",
+  "world-model-control"
+ ]
 }

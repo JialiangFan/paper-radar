@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出正式定义的鲁棒神经Lyapunov-Barrier证书，并给出基于 Lipschitz 连续性的充分条件以在有界系统扰动下保持安全性与稳定性的保证，结合对抗训练实现可训练性。\n\n- 主要方法：使用神经Lyapunov-Barrier证书框架，基于 Lipschitz 条件构建鲁棒性约束，并通过对抗训练、Lipschitz 邻域界限和全局 Lipschitz 正则化等训练目标来强化这些条件；在 Inverted Pendulum 和 2D Docking 两个任务上进行验证。\n\n- 结论/性能：在两项任务中，鲁棒证书的认证鲁棒性提升最多约4.6倍，强扰动下的经验成功率提升约2.4倍，相较基线表现显著改善，证明鲁棒神经证书在动力学扰动下的有效性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-06 14:01:05"
+ "created_at": "2026-02-06 14:01:05",
+ "topics": [
+  "formal-methods",
+  "safe-rl"
+ ]
 }

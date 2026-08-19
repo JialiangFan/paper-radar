@@ -9,5 +9,8 @@
  "summary": "## SLIM 论文摘要总结\n\n**1. 核心创新点**\n通过硬件级剖析证明 LLM 推理的吞吐饱和真正源自 decode 阶段注意力核几乎恒定的算术强度（随活跃上下文长度而非批量大小变化），并据此提出轻量级半解析性能模型 SLIM 及批处理配置顾问 BCA。\n\n**2. 主要方法**\n- **GPU 硬件剖析（hardware profiling）**：定位饱和发生在 decode 阶段的 attention kernel，显示 DRAM 带宽已饱和而计算吞吐远低于硬件上限。\n- **SLIM 半解析模型**：基于 Transformer 计算量与访存流量的解析公式，预测推理吞吐与延迟。\n- **BCA（Batching Configuration Advisor）**：在给定延迟约束下，搜索并推荐吞吐最高的批处理配置。\n\n**3. 结论/性能**\n- 在 OPT 系列模型上，BCA 可避免最多 **55 GB** 的 GPU 显存分配，而吞吐损失极小。\n- SLIM 在所评估场景中优于代表性性能建模基线，并能泛化到训练/标定时未见过的运行条件。\n\n> 一句话价值：把「大批量收益递减」从经验观察变成了可量化、可预测、可直接指导部署配置的模型。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-03 13:01:21"
+ "created_at": "2026-08-03 13:01:21",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

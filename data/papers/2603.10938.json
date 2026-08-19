@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 RAD 框架，用第一阶随机支配（FSD）约束替代期望成本约束，通过与参考策略的成本分布在最优传输（OT）框架下比较，实现对尾部风险和谱风险的普适控制，并引入量化加权的 FSD 以普遍控制一类谱风险度量。\n\n- 主要方法：\n  - 将目标策略的成本分布与参考策略的成本分布在 OT 框架下进行比较，并通过熵正则化和 Sinkhorn 迭代得到可微、高效的端到端优化目标。\n  - 引入量化加权的 FSD 约束，理论上证明对广义谱风险度量（SRMs）的持久控制性，从而可通过调整分位权重来调控模型的风险偏好。\n\n- 结论/性能：\n  - 相较基线，RAD 在无害性（harmlessness）方面有显著提高，同时在有用性（helpfulness）方面保持竞争力。\n  - 在分布外无害性评估上展现出更强的鲁棒性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-03-12 13:00:35"
+ "created_at": "2026-03-12 13:00:35",
+ "topics": [
+  "ai-safety-alignment",
+  "rl-post-training"
+ ]
 }

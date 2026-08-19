@@ -9,5 +9,9 @@
  "summary": "## PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud\n\n**1. 核心创新点**\n提出统一的 Physical AI 推理引擎 PhyAI，用**单一运行时**同时覆盖模型评测、云端强化学习 rollout、边缘 GPU 服务和车端/机器人端部署这四类原本各自为政的推理场景。\n\n**2. 主要方法**\n- **适配器（adapter）架构**：把各模型特有的条件注入（conditioning）、求解器、缓存和输出逻辑封装进「模型适配器」，而图执行、算子内核、显存管理和并行服务则全局共享。\n- 同一套代码库可运行 **VLA（视觉-语言-动作）模型**与 **WAM（世界-动作模型）**，支持单卡/多卡（TP 张量并行、CFG 分类器无关引导）以及 onboard / edge / cloud 三种部署形态。凭借该接口，在 MiniCPM-Robot 发布当天即完成接入。\n- 提出 **control-time Roofline** 分析工具，用于区分控制回路是「推理受限（inference-bound）」还是「环境受限（environment-bound）」。\n\n**3. 结论/性能**\n- 相对 pi0、pi0.5、GR00T N1.7、MiniCPM-Robot 官方实现取得 **1.40×–4.65× 加速**；在 Cosmos3-Nano-Policy-DROID 上用 8 张 H20（CFG=2, TP=4）把延迟从 2.46 s 降到 1.18 s（**2.08×**）。\n- 作者坦承专用运行时在部分配置下仍更快，其目标是「一个通用运行时 + 有竞争力的延迟」，而非处处最快。\n- 性能剖析揭示不同模型需要不同执行策略：Hopper GPU 上 batch=1 时 pi0.5 的 action expert 仅占 8.8% FLOPs 却吃掉 57.2% 延迟，batch=32 时降至 13.5%、吞吐约 100 samples/s；而 Cosmos3 以生成为主，batch 从 1 增到 16 吞吐仅提升 14.3%。\n- Roofline 实测显示：pi0.5 在四个 LIBERO 任务套件上均为**环境受限**，Cosmos3 则始终**推理受限**。\n- 代码与基准已开源：https://github.com/mingti-org/phyai",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-06 13:04:27"
+ "created_at": "2026-08-06 13:04:27",
+ "topics": [
+  "vla-models",
+  "efficiency-systems"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "核心创新点：\n- 提出并实现 Model Temperament Index (MTI)，一种基于行为的四维气质测量框架，通过两阶段考试区分能力与气质，对AI代理在反应性、顺从性、社交性与韧性四个维度进行系统描绘。\n\n主要方法：\n- 基于 Model Medicine 的 Four Shell Model，开发结构化的 examination protocols，聚焦代理实际行为（测量“所做的事”而非自述）。\n- 采用两阶段设计分离 capability 与 disposition，并对10个小型语言模型（1.7B–9B 参数、6家机构、3种训练范式）进行纵向 Profiling，量化四轴及其子维度的关系。\n\n结论/性能：\n- 四个轴在指令调优模型中大体独立（|r|<0.42）。\n- 轴内子维度存在分离性：Compliance 拆解为 Formal 与 Stance 两个完全独立的维度（r≈0.002），Resilience 拆解为认知与对抗性两者的相反关系。\n- Compliance-Resilience 悖论：意见表达与事实易受性通过独立通道作用。\n- RLHF 不仅改变轴分数，还在轴内形成未在未对齐基模型中出现的子维度分化，重塑气质。\n- 气质与模型规模无关（1.7B–9B），MTI 测量的是气质/ disposition 而非能力。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-03 13:06:41"
+ "created_at": "2026-04-03 13:06:41",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

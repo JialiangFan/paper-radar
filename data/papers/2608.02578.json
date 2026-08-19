@@ -9,5 +9,9 @@
  "summary": "## CoWAM 论文摘要总结\n\n**1. 核心创新点**\n提出\"协调契约\"（coordination contracts）作为一个选择性干预层，只有当替代动作满足全部协调约束且带来明确低风险改进时，才允许世界动作模型（WAM）推翻双臂机器人策略的原有动作。\n\n**2. 主要方法**\n- 将双臂协调需求形式化为三类契约：**同步性**、**角色兼容性**、**碰撞收敛性**。\n- 每个契约由三部分组成：类型化的可行性检查（typed admissibility）+ 事件条件验证（event-conditioned verification）+ 校准过的干预门控（calibrated intervention gates）。\n- 默认保留原策略动作（nominal action）；若原动作本身也不可行，则触发预定义的**弃权回退**（abstention fallback）。\n- 实验设计上，所有方法共用同一候选动作池，并在共享 oracle 打标签前先行提交决策，以此把\"选择器质量\"与\"候选生成质量\"解耦。\n\n**3. 结论/性能**\n在 8 个仿真双臂任务上：\n- 协调有效选择率比仅用契约的变体提升 **16.7 个百分点**；\n- 闭环成功率比最强的选择性基线提升 **9.6 个百分点**；\n- 同时将有害干预控制在 **1% 以下**。\n\n结论：协调契约是一种有效的接口，可在协调密集的双臂任务中，基于世界模型预测证据实现保守、安全的策略干预。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-08 13:05:34"
+ "created_at": "2026-08-08 13:05:34",
+ "topics": [
+  "world-model-control",
+  "robot-harness"
+ ]
 }

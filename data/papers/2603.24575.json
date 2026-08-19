@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（一句话概括）：提出面向复杂图形的SVG向量化视觉-语言模型VFIG，结合大规模Figure-SVG数据和从粗到细的训练路线（SFT→RL微调），实现高保真且结构化的SVG向量化。\n\n- 主要方法：简述使用的技术/模型\n  - 构建VFIG家族的Vision-Language Models，用于将 figures 转换为 SVG。\n  - 提供VFIG-DATA：66K对高质量 figure-SVG 数据，覆盖真实论文图Figure和程序生成图。\n  - 粗到细训练课程：先进行有监督微调以学习原子原语，再通过强化学习微调以优化全局保真、布局一致性和拓扑边界等。\n  - 引入VFIG-BENCH评测套件和新指标，用于衡量复杂图形的结构完整性。\n\n- 结论/性能：取得的效果\n  - 在开源模型中达到最先进水平，并与GPT-5.2相当。\n  - 在VFIG-BENCH上达到0.829的VLM-Judge分数，体现较强的结构化与保真度。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-26 13:04:36"
+ "created_at": "2026-03-26 13:04:36",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

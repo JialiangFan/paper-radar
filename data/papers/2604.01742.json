@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：通过将 SAM 与最近邻排他圆（NNEC）约束结合实现点到密集掩码的优化，并利用 GRPO 训练的 Reinforced Point Selection（RPS）在密集人群中筛选最佳点预测，从而实现高精度的密集人群实例分割与计数提升。\n\n- 主要方法：\n  - Dense Point-to-Mask Optimization（DPMO）：将 SAM 与 NNEC 约束结合，从点标注生成密集的实例分割掩码，并经人工修正得到掩码注释。\n  - Reinforced Point Selection（RPS）框架：在密集场景中对初始点预测进行采样并选取最佳点，使用 Group Relative Policy Optimization（GRPO）进行训练。\n  - 掩码监督的新损失：设计基于掩码的损失函数，提升计数和分割的协同性能。\n\n- 结论/性能：\n  - 在上海科技（ShanghaiTech）、UCF-QNRF、JHU-CROWD++、NWPU-Crowd 等数据集实现了密集人群实例分割的最新（state-of-the-art）性能。\n  - 基于掩码的损失函数提升了多种模型的计数精度，体现掩码注释对计数性能的显著作用。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-03 13:03:33"
+ "created_at": "2026-04-03 13:03:33",
+ "topics": [
+  "applications"
+ ]
 }

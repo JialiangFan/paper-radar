@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（1 句话概括）\n通过在训练阶段将技能内化为模型参数，实现零-shot 自主行为，并通过动态课程筛选逐步撤回技能上下文，消除运行时技能检索的噪声与开销。\n\n2) 主要方法\n- 提出 SKILL0 框架，采用在-context 强化学习实现技能内化。\n- 将离线按类别分组的技能与交互历史渲染成紧凑的可视化上下文，训练模型掌握工具调用与多轮任务完成能力。\n- 使用动态课程（Dynamic Curriculum）评估每个技能文件在当前策略上的有用性，按线性衰减预算保留仍然有益的技能，最终实现完全零-shot。\n\n3) 结论/性能\n- 相较于标准 RL 基线，在 ALFWorld 提升约 9.7%，在 Search-QA 提升约 6.6%。\n- 推理时上下文保持较低开销，每步上下文不到 0.5k token。\n- 代码公开可用（https://github.com/ZJU-REAL/SkillZero）。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-03 13:06:13"
+ "created_at": "2026-04-03 13:06:13",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

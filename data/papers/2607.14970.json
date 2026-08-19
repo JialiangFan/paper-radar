@@ -9,5 +9,8 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-07-19 13:01:25"
+ "created_at": "2026-07-19 13:01:25",
+ "topics": [
+  "applications"
+ ]
 }

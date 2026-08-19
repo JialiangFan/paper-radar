@@ -9,5 +9,8 @@
  "summary": "1. 核心创新点（一句话）\n在低数据条件下，AutoMetrics 将来自 MetricBank 的多种评测指标与自动生成的 LLM 评判准则相结合，通过回归学习优化它们的组合，生成与人类评价高度相关的自动评估指标。\n\n2. 主要方法\n- 采用 MetricBank 的 48 种评测指标进行检索与整合\n- 通过轻量级的人类反馈自动生成 LLM 作为评判的准则（LLM-as-a-Judge）\n- 使用回归方法将多项指标组合成单一评估指标，以最大化与人类信号的相关性（如 Kendall 系列相关性）\n- 将 AutoMetrics 作为代理奖励来替代或等同于可验证的奖励\n- 公布 AutoMetrics 工具箱与 MetricBank，推动对 LLM 应用的自适应评估\n\n3. 结论/性能\n- 在5个多样化任务上，相较于单纯使用 LLM 作为评判，Kendall 相关性提升最高达 33.4%，且所需人类反馈点数少于 100\n- AutoMetrics 可用作与可验证奖励等效的代理奖励\n- 已释放完整工具包与 MetricBank，促进自适应评估的广泛应用",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-22 02:47:58"
+ "created_at": "2025-12-22 02:47:58",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：将自主代理的认知意图与状态变更分离，基于事件溯源实现可验证、不可变的执行历史与跨代理并发扩展能力。\n\n2) 主要方法：\n- 代理仅输出结构化、经验证的 JSON 意图（agent.result、issue.report）。\n- 确定性编排器：验证、将事件写入追加日志 activity.jsonl，应用实际的文件写入效应，并生成可验证的物化视图 road map.json。\n- 边界契约与元提示：使用 AGENT_CONTRACT.yaml、PARCER 等配置实现边界和推理模板；通过 esaa verify 进行带哈希的回放验证，确保可追溯性与不可变性。\n- 支持多代理并发编排，采用多种大模型（如 Claude Sonnet、Codex GPT-5、 Gemini/Antigravity、Claude Opus 等）进行跨模型协同。\n- 通过两项案例验证：着陆页项目（9 任务、49 事件、单代理）与临床仪表盘系统（50 任务、86 事件、4 代理、8 阶段）。\n\n3) 结论/性能：\n- 两个案例都达到 run.status=success、verify_status=ok，证明架构在单代理与多代理场景下的可行性和鲁棒性。\n- 多代理并发编排与跨模型协同得到实证，展示了架构的可扩展性与可追溯性。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-27 14:01:39"
+ "created_at": "2026-02-27 14:01:39",
+ "topics": [
+  "llm-agents"
+ ]
 }

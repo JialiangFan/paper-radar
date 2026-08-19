@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：在高保真企业仿真环境 Corecraft 中，通过多任务的企业工作场景、专家评估的奖惩设计，以及 GRPO 等训练方法，实现对分布外任务的显著泛化能力。\n\n2. 主要方法：构建 EnterpriseGym 的首个环境 Corecraft（企业客服仿真，含 2,500+ 实体、14 类对象、23 种工具）；使用 GLM 4.6 模型，采用 Group Relative Policy Optimization（GRPO）与自适应裁剪进行训练；依托专家撰写的评估标准来计算奖励并在 held-out 评估及分布外基准上评估。\n\n3. 结论/性能：训练一轮后，held-out 任务通过率从 25.37% 提升至 36.76%；分布外基准取得提升：BFCL Parallel +4.5%、τ^2-Bench Retail +7.4%、Toolathlon Pass@1 +6.8%；并指出任务驱动的世界构建、专家评估奖惩与现实企业工作流是提升泛化能力的关键因素。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-19 14:04:31"
+ "created_at": "2026-02-19 14:04:31",
+ "topics": [
+  "agent-benchmarks",
+  "rl-post-training"
+ ]
 }

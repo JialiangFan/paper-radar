@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点（一句话概括）\n提出 Utility-Aligned Embeddings (UAE) 框架，通过 Utility-Modulated InfoNCE 蒸馏将来自 LLM 生成效用的分布信号直接注入嵌入空间，使检索获得与生成效用对齐的向量表示，而无需测试时的昂贵 LLM 推理。\n\n2) 主要方法（技术要点）\n- 将检索问题视为分布匹配，训练一个双编码器（bi-encoder）来模仿来自 perplexity 降低的实用性分布；  \n- 使用 Utility-Modulated InfoNCE 目标，将 graded 的实用性信号引入嵌入学习中，进行知识蒸馏式对齐；  \n- 该方法在训练阶段即可实现对 LLM 生成效用的对齐，无需在测试时进行 LLM 推理。\n\n3) 结论/性能（取得的效果）\n- 在 QASPER 基准上，相比强基线 BGE-Base，UAE 在 Recall@1 提升 30.59%、MAP 提升 30.16%、Token F1 提升 17.3%；  \n- 速度方面，UAE 超过现有高效的 LLM 重排序方法约 180 倍，且保持具有竞争力的检索性能。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-27 13:01:36"
+ "created_at": "2026-04-27 13:01:36",
+ "topics": [
+  "other"
+ ]
 }

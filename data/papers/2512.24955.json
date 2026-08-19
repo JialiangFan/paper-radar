@@ -9,5 +9,9 @@
  "summary": "以下为该论文摘要的中文简要总结：\n\n1) 核心创新点（1句话）\n在无模型强化学习中引入多步Lyapunov证书学习与指数稳定性标签，结合λ加权聚合，实现简单奖励下的指数稳定、快速收敛并具鲁棒性的可验证安全控制（MSACL）。\n\n2) 主要方法\n- 将指数稳定性理论与最大熵RL 融合，形成 MSACL 框架。  \n- 采用离策略的多步数据学习Lyapunov证书，确保满足理论稳定性条件。  \n- 引入 Exponential Stability Labels (ESL) 与 λ 加权聚合，平衡多步学习中的偏差-方差。  \n- 使用稳定性导向的优势函数引导策略优化，使策略推动Lyapunov下降。  \n- 将Lyapunov理论与离策略 Actor-Critic 框架结合，进行 verifiably safe 学习。  \n- 在六个基准任务（含稳定化和非线性跟踪）上进行评估。\n\n3) 结论/性能\n- 相较于现有的Lyapunov-based RL 方法，MSACL 表现更优。  \n- 在简单奖励下实现指数稳定和快速收敛，并对不确定性具有显著鲁棒性，能泛化到未见轨迹。  \n- 多步时域的最优尺度 n=20 被实验确认为稳健默认值。  \n- 将公开源代码与基准环境以促进复现。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-01-01 03:58:45"
+ "created_at": "2026-01-01 03:58:45",
+ "topics": [
+  "safe-rl",
+  "formal-methods"
+ ]
 }

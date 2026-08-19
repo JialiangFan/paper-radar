@@ -9,5 +9,9 @@
  "summary": "## SimWAM 论文摘要总结\n\n**1. 核心创新点**\n提出 SimWAM，把视频生成**仅作为训练期的监督信号**，训练完成后即可丢弃视频分支，得到一个无需在推理时生成未来帧的轻量端到端自动驾驶规划器。\n\n**2. 主要方法**\n- 采用**双专家（two-expert）架构**：一个预训练的视频专家 + 一个轻量的动作专家，通过**联合流匹配（joint flow matching）**协同训练。\n- 设计**隔离注意力掩码（isolated attention mask）**，保证动作预测不依赖未来帧，从而训练后可直接剥离视频分支，留下自包含的轨迹预测器。\n- 两个专家**不共享参数**，只通过统一的注意力接口交互，因此视频骨干可替换、动作专家可独立扩容，无需改动学习目标或推理流程。\n- 在模仿学习之外，进一步用**强化学习**优化一个组合式驾驶奖励（compositional driving reward）。\n\n**3. 结论/性能**\n- 在 NAVSIM 上取得 **91.5 PDMS**，超过现有 SOTA 的 WAM 类规划器，且**延迟显著更低**。\n- 可**零样本迁移**到 nuScenes。\n- 作者将其定位为一个简单而扎实的基线，能够直接受益于未来视频生成模型的进展。代码与权重已开源（GitHub: H-EmbodVis/SimWAM）。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-10 13:05:53"
+ "created_at": "2026-08-10 13:05:53",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
 }

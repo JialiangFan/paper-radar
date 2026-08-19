@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1 句概括）\n  提出 HiLL（Hint Learning for Reinforcement Learning）框架，通过在线自适应的 hinter 提示生成与 reasoner 策略联合训练，解决基于组的策略优化中的优势塌陷，加入提示依赖和转移权重以实现对无提示策略的有效迁移。\n\n- 主要方法\n  - 同时训练 hinter（提示生成器）与 reasoner（推理策略）。\n  - 对每个困难问题，hinter 根据当前 reasoner 的错误 rollout 条件化地在线生成提示，使提示能对 evolving 的错误进行自适应。\n  - 引入 hint reliance，度量正确提示轨迹对提示的依赖强度。\n  - 推导传输性结果：hint reliance 越低，提示成功向无提示策略的迁移越强。\n  - 基于上述结果定义 transfer-weighted reward，用于对 hinter 的训练进行加权，鼓励生成既能恢复有信息的 GRPO 组、又能提升无提示策略的提示。\n\n- 结论/性能\n  实验在多项基准上持续超过 GRPO 和先前的提示基线，验证了自适应且具转移感知的提示学习在强化学习中的价值（代码已开源）。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-02 13:02:54"
+ "created_at": "2026-04-02 13:02:54",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,10 @@
  "summary": "# MotuBrain 论文总结\n\n1. **核心创新点**：提出 MotuBrain——一个统一的\"世界-动作模型\"（World Action Model），在单一框架内联合建模视频与动作，同时支持策略学习、世界建模、视频生成、逆动力学等多种任务，并能跨异构多模态数据和不同机器人本体进行扩展。\n\n2. **主要方法**：基于 UniDiffuser 公式化，采用三流 Mixture-of-Transformers 架构（视频流、动作流、独立文本流），引入统一多视角建模、跨本体共享动作表示；在推理侧结合步数压缩、编译优化、FP8 量化、DiT 缓存、V2A 仅动作推理及实时分块闭环执行等技术。\n\n3. **结论/性能**：相比朴素基线推理加速 50× 以上，达到最高 11 Hz 实时推理；在 RoboTwin 2.0 上 clean/randomized 设置下分别取得 95.8% 和 96.1% 平均成功率；在 WorldArena 对比中取得最强 EWMScore；仅用 50–100 条轨迹即可适配新人形机器人本体，验证了统一世界-动作模型在通用性、预测精度和真实部署方面的可扩展性。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-22 13:04:27"
+ "created_at": "2026-05-22 13:04:27",
+ "topics": [
+  "vla-models",
+  "world-model-learning",
+  "world-model-control"
+ ]
 }

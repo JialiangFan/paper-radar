@@ -9,5 +9,9 @@
  "summary": "核心创新点：系统性比较三种基于 ResNet 的脑肿瘤 MRI 分类网络（BrainNet、BrainNeXt、DilationNet）在可迁移 FGSM/PGD 攻击下的鲁棒性，并揭示输入分辨率与数据增强策略对鲁棒性的影响及跨模型攻击的脆弱性。\n\n主要方法：以 BrainNet、BrainNeXt、DilationNet 为对象，在三种预处理配置（全尺寸增广、缩小增广、缩小非增广）下，对 FGSM 与 PGD 等梯度基对抗攻击进行评估，比较不同架构的鲁棒性与对抗样本的可转移性。\n\n结论/性能：\n- BrainNeXt 在黑盒攻击上显示最高鲁棒性，可能因其更高的容量/基数，但对抗样本的可迁移性较弱。\n- BrainNet 与 DilationNet 之间彼此更易受到对方攻击，尤在 PGD 的高迭代和高 α 情况下更明显。\n- Shrunk 与非增广数据显著降低鲁棒性，即使未被攻击的测试准确率仍然较高，揭示输入分辨率与对抗鲁棒性的权衡。\n- 强调在实际脑MRI分析部署中需同时评估分类性能和对抗鲁棒性。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-13 14:01:57"
+ "created_at": "2026-02-13 14:01:57",
+ "topics": [
+  "adversarial-attacks",
+  "applications"
+ ]
 }

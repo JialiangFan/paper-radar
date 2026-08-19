@@ -9,5 +9,9 @@
  "summary": "## SHE: Trajectory-driven Safety Harness Evolution for LLM Agents\n\n**1. 核心创新点**\n把 LLM 智能体的\"运行外壳（harness）\"从固定的部署产物变成可自我进化的对象——通过从执行轨迹中学习不断更新的安全边界，实现安全机制的持续演化。\n\n**2. 主要方法**\n- **外壳解耦**：将 harness 拆成四个职责明确的组件——系统提示词（System Prompt）、规则库（Rule Bank）、安全记忆（Safety Memory）、工具策略（Tool Policy），使安全责任可归因、可局部演化。\n- **归因引导的进化循环**：把 rollout 轨迹中的失败案例转化为结构化诊断 → 定位到具体组件 → 学习该组件的边界修正 → 通过\"安全性—有用性\"双重验证筛选出演化后的 harness。\n\n**3. 结论/性能**\n- 在 **Agent-SafetyBench** 上，相比静态 SafeHarness，攻击成功率（ASR）降低 **3.1 倍**，同时正常任务的可用性（benign utility）不降反升。\n- 泛化性良好：演化后的 harness 在未见过的 **AgentHarm** 基准上仍然有效，且无需重新演化即可迁移到不同的智能体模型上。\n\n**一句话点评**：这篇工作的价值在于指出安全不只在模型权重里，也在工程外壳里，并给出了一个可归因、可局部迭代的框架——缓解了以往\"安全责任耦合、无法定位改哪里\"的问题。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-11 13:03:05"
+ "created_at": "2026-08-11 13:03:05",
+ "topics": [
+  "ai-safety-alignment",
+  "runtime-monitoring"
+ ]
 }

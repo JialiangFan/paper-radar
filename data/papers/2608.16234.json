@@ -9,5 +9,8 @@
  "summary": "## GaussianDWM++ 论文摘要总结\n\n**1. 核心创新点**\n首个将视觉语言基础模型特征直接蒸馏进 3D 高斯基元的驾驶世界模型，在单一框架内统一了场景理解、语言引导推理、可控 4D 编辑与多模态生成。\n\n**2. 主要方法**\n- **基础特征高斯 tokenizer**：把 Qwen/SigLIP 的视觉-语言特征直接蒸馏到 3D Gaussian primitives，构建紧凑的开放词表高斯语义场，解决点云/占据栅格/BEV 表征难以与文本细粒度对齐的问题。\n- **几何感知高斯适配器**：结合\"重要性感知的分层选择\"与\"文本条件的 Perceiver 式交叉注意力\"，将稠密高斯基元聚合为紧凑的 world tokens。\n- **KL 分布对齐目标**：以 KL 散度对齐高斯 world tokens 与基础模型的图像 tokens，提升表征兼容性。\n- 在对齐表征之上支持指令可控的场景编辑，包括天气条件生成和动态车辆操控。\n\n**3. 结论/性能**\n在多个更广泛的驾驶基准上，于**场景理解、视觉定位（visual grounding）、面向规划的推理、可控 4D 生成**四类任务上均达到 SOTA。作者承诺开源代码与数据集。\n\n---\n\n一点提示：摘要中的\"state-of-the-art performance across...\"未给出具体数据集名称和量化指标，这类跨任务全面 SOTA 的表述需要看正文的实验表格才能核实。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-18 13:03:54"
+ "created_at": "2026-08-18 13:03:54",
+ "topics": [
+  "video-world-models"
+ ]
 }

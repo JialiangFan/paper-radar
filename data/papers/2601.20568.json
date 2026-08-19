@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 PURGE，在 Group Relative Policy Optimization 框架下将模型的遗忘问题建模为一个可验证的策略优化任务，通过相对分组擦除和内在奖励实现高效、可控且可验证的遗忘。\n\n- 主要方法：基于 Group Relative Policy Optimization（GRPO）框架的 PURGE 方法；设计一个内在奖励信号，惩罚模型输出中对禁用概念的表述，避免依赖外部奖励模型；通过相对分组擦除实现对敏感信息的无从训练重复删除，目标是在不从头重训的情况下实现可靠、安全、可扩展的遗忘。\n\n- 结论/性能：相较现有方法，目标 token 使用量最多降低约46倍；在基线模型上，流畅性提升约5.48%，对抗鲁棒性提升约12.02%；在 Real World Knowledge Unlearning (RWKU) 基准上达到约11%的遗忘效果，同时保留原始效用的约98%；显示将遗忘任务设为可验证目标可提升可靠性、效率与可部署性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-01-29 03:21:55"
+ "created_at": "2026-01-29 03:21:55",
+ "topics": [
+  "rl-post-training",
+  "ai-safety-alignment"
+ ]
 }

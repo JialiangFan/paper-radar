@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个基于 actor-critic 的多智能体框架 CarePilot，在医疗领域通过工具对接与长短期双记忆驱动的语义动作预测，实现长时程工作流的自我迭代学习与纠错自动化。\n\n- 主要方法：采用 Actor-Critic 的多智能体结构，Actor 将工具对接与双记忆机制（长期开记忆与短期记忆）结合，基于可视界面与系统状态预测下一步语义动作；Critic 评估每个动作、据观测效果更新记忆并决定直接执行或提供纠错反馈；通过迭代的 agentic simulation 训练以提升推理鲁棒性和长时程推理能力。并在 CareFlow 基准（涵盖医疗注释工具、DICOM 查看、EHR、LIS 等长时程工作流）上进行评估。\n\n- 结论/性能：CarePilot 取得最新的性能提升，在所提出的基准和分布外数据集上分别优于强基线（闭源和开源）约 15.26% 和 3.38%，显示在长时程医疗场景中的优势与鲁棒性。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-03-26 13:06:16"
+ "created_at": "2026-03-26 13:06:16",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

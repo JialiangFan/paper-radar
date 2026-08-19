@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：  \n提出一个统一的智能代理 CangLing-KnowFlow，通过将 Procedural Knowledge Base、动态工作流调整与进化记忆融合，实现跨遥感任务的自适应、可验证的端到端自动化流程。\n\n2) 主要方法：  \n- 构建一个包含 1008 个专家验证的工作流案例、覆盖 162 个实际遥感任务的 Procedural Knowledge Base（PKB），用于指导规划并减小幻觉。  \n- 引入 Dynamic Workflow Adjustment，在运行时对故障进行诊断并自动重新规划恢复策略。  \n- 设立 Evolutionary Memory Module，基于运行事件持续学习，迭代提升知识与性能。  \n- 在 KnowFlow-Bench（324 条真实世界工作流）上评估，覆盖 13 种不同的 LLM 后端（从开源到商业）。\n\n3) 结论/性能：  \n在所有复杂任务上，CangLing-KnowFlow 相较 Reflexion 基线，任务成功率提升至少 4%；为该领域的首次全面验证，展示了在复杂遥感挑战中作为鲁棒、高效、可扩展的自动化解决方案的潜力。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-18 02:07:41"
+ "created_at": "2025-12-18 02:07:41",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 REFINE，一种基于强化学习的训练框架，用 next-sequence prediction（NSP）替代传统的 next-token prediction（NTP）来训练快速权重（fast weight）模型，通过信息性位置选择、多-token rollouts、序列级自监督奖励，以及组相对策略优化（GRPO），显著提升长上下文建模能力。\n\n- 主要方法：采用 fast weight 架构并引入 NSP 目标；在训练中基于预测熵选取信息性 token 位置，生成多-token 的 rollouts；引入自监督的序列级奖励；用 GRPO 进行优化；适用于中后期/测试时训练；在 LaCT-760M 和 DeltaNet-1.3B 规模上验证。\n\n- 结论/性能：在 needle-in-a-haystack 检索、长上下文问答以及 LongBench 的多样任务上，REFINE 相比采用 NTP 的有监督微调具有更好的性能，且在两个数据规模上均表现出一致的优越性，提供了一个有效且通用的框架来提升 fast weight 架构的长上下文建模能力。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-19 14:04:14"
+ "created_at": "2026-02-19 14:04:14",
+ "topics": [
+  "rl-post-training"
+ ]
 }

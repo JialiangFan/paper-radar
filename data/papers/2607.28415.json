@@ -9,5 +9,8 @@
  "summary": "## QQWorld 论文摘要总结\n\n**1. 核心创新点**\n用「分位数-分位数（QQ）匹配」目标替换 LeWM 中的 Epps-Pulley 正则项，解决其在分布尾部梯度消失、无法有效约束重尾偏差的问题。\n\n**2. 主要方法**\n- 基于潜在世界模型（latent world model）框架，对潜变量做高斯正则化。\n- 将潜变量投影后的样本按秩与高斯分位数对齐（rank-matched Gaussian quantiles），保证尾部样本仍有有效的纠正梯度。\n- 提出 **cross-batch QQ**：复用前若干批次的 detached 样本来扩大排序池，并对其偏差-方差权衡做了理论刻画。\n\n**3. 结论/性能**\n在四个控制类环境上，QQWorld 提升了 LeWM 的平均规划成功率，同时潜在分布的高斯拟合度更好、尾部更轻（thinner tails）。\n\n> 一点观察：摘要只说「effectively improves」，未给出具体数值提升幅度，也未与 VAE/KL 类正则基线对比——如果需要评估其实际贡献强度，建议进一步查看正文的实验表格。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-07-31 13:04:02"
+ "created_at": "2026-07-31 13:04:02",
+ "topics": [
+  "world-model-learning"
+ ]
 }

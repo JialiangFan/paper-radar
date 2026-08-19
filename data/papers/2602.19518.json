@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句概括）：提出一个混合框架，将大语言模型的通用预测能力与关系型动态影响图语言的概率序列决策能力结合，用于在任务规划中预测潜在失败并采取对策，考虑人类能力与对象可用性，从而实现更鲁棒的协作任务规划。\n- 主要方法：将大语言模型用于任务与资源的泛化预测；使用 Relational Dynamic Influence Diagram Language 进行序列决策与规划；对任务和人类能力进行推理，预测因能力不足或缺少相关对象而导致的潜在失败，并执行行动以防止或从失败中恢复。实验在 VirtualHome 3D 仿真环境中评估并与前沿基线比较。\n- 结论/性能：在 VirtualHome 3D 环境中，与现有最先进基线相比，显示出显著的性能提升。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-24 14:03:19"
+ "created_at": "2026-02-24 14:03:19",
+ "topics": [
+  "llm-planning",
+  "robot-manipulation"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：在大语言模型链式推理的可信性研究中，首次系统比较两种偏好优化方法 GRPO 与 DPO 的效果，发现 GRPO 在较大模型上更有效地提升 CoT 的 faithfulness（真实性/忠实性）。\n- 主要方法：采用 Group Relative Policy Optimization (GRPO) 与 Direct Preference Optimization (DPO) 两种偏好优化框架，对不同规模的模型（如 Qwen2.5-14B-Instruct）进行训练与评估，聚焦提升链式思考的真实推理过程。\n- 结论/性能：GRPO 在大模型上优于 DPO，且 Qwen2.5-14B-Instruct 在所有评估指标上达到最佳；模型规模越大，性能提升越明显，但 GRPO 在小尺度时稳定性较低，整体上 GRPO 更具提升 faithfulness 的潜力。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-30 02:30:07"
+ "created_at": "2025-12-30 02:30:07",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

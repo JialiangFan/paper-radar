@@ -9,5 +9,9 @@
  "summary": "核心创新点\n- 提出基于AI代理的自动化部署框架AIPC，通过分阶段、可验证的流程和Agent Skills，将模型从PyTorch移植到Qualcomm AI Runtime的可运行推理，显著降低部署门槛和工程时间。\n\n主要方法\n- 采用AI代理驱动的 constrained 自动化部署，将部署拆分为标准化阶段并通过阶段性验证循环执行，注入部署领域知识（Agent Skills、辅助脚本）。\n- 以 Qualcomm AI Runtime 为主场景，覆盖视觉、多模态和语音模型，实现从 PyTorch 到可运行的 QNN/SNPE 推理的端到端自动化；提供执行、故障定位与受限修复能力。\n\n结论/性能\n- 在覆盖的案例中，结构较规则的视觉模型可在7–20分钟内完成从PyTorch到可运行QNN/SNPE推理的部署，API成本约0.7–10美元；对于复杂模型（操作符支持不足、动态形状、自回归解码等）完全自动化部署仍需进一步研究，但AIPC已提供实用的执行、故障定位与受限修复能力。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-17 13:06:05"
+ "created_at": "2026-04-17 13:06:05",
+ "topics": [
+  "llm-agents",
+  "efficiency-systems"
+ ]
 }

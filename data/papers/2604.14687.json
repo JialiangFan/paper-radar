@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：在多智能体MCTS中引入浅层全宽Minimax回合搜索以增强策略深度，并提出M2-PALE框架，结合过程挖掘与大语言模型生成可读的因果与远期解释。\n\n- 主要方法：\n  - 在MCTS的 rollout 阶段利用浅层、全宽的 Minimax 搜索提升策略深度。\n  - 采用过程挖掘算法（Alpha Miner、iDHM、Inductive Miner）从执行轨迹中提取行为工作流。\n  - 通过大语言模型对提取的过程模型进行综合，生成可读的因果与远期解释。\n  - 在一个小型跳棋环境中进行验证。\n\n- 结论/性能：\n  - 展示了在小型跳棋环境中的有效性，且为在更复杂领域解释混合代理提供了可扩展的基础。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-17 13:05:50"
+ "created_at": "2026-04-17 13:05:50",
+ "topics": [
+  "llm-agents",
+  "agent-benchmarks"
+ ]
 }

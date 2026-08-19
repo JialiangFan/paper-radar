@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点（1句）\n数据驱动、面向小模型的 SQL 重写框架，通过 SQL-MCTS 生成大规模训练数据并采用 SQL-GRPO 对齐学习，使小模型也能高效实现 SQL 执行优化。\n\n2) 主要方法\n- SQL-MCTS：构建大规模“复杂慢查询”数据集，采用基于 MCTS 的混合扩展策略，结合规则反模式与 LLM 突变，将结构表达丰富的种子演化为经执行验证的慢变体。\n- SQL-GRPO：提出基于 Group Relative Policy Optimization 的对齐策略，包含 Anchored Group Advantage（锚定的分组优势估计）与 Complexity-Adaptive Dynamic Rollout（按复杂度自适应分配探索预算），使小模型自主发现延迟感知的重写模式。\n- 实现与评估：在 Qwen3 系列模型上实现，显著优于规则基系统和 LLM，具备鲁棒的零-shot 泛化能力，开销低。\n\n3) 结论/性能\n- LASER 在执行效率方面显著优于规则基系统和大型语言模型，且对新场景具有良好的零-shot 转移性，且开销极低。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-09 13:03:14"
+ "created_at": "2026-04-09 13:03:14",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "# BiWM 论文总结\n\n**1. 核心创新点**\n首个面向**双向自回归范式**的开源交互式视频世界模型全栈框架，相比现有因果（causal）开源方案（如 minWM），在生成质量和长时序稳定性上实现突破。\n\n**2. 主要方法**\n- 基于预训练视频骨干（Wan2.1/2.2、HunyuanVideo-1.5、LTX-2.3 等），仅用**两阶段训练**（相机控制微调 + 少步 DMD 蒸馏）替代 minWM 的四阶段流程。\n- 引入 **GAN 损失 + mass-covering forward-KL** 目标，缓解 DMD 蒸馏的 mode-seeking 退化问题，保留场景动态。\n- 集成可插拔的历史压缩模块（FramePack / PackForcing 风格）支持长时 rollout，并提供可选的 **NVFP4 4-bit 训练/推理**流水线。\n\n**3. 结论/性能**\n- 在 8×H200 GPU 上仅需数百步即可收敛，显著降低训练成本。\n- 实现了 minWM 失效的**真实世界相机控制**能力，支持高保真长时序环境模拟。\n- 一套配方覆盖 1.3B–22B 多个模型规模，并支持对现有双向模型的二次微调，已开源以服务于资源受限的研究场景。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-10 13:04:03"
+ "created_at": "2026-06-10 13:04:03",
+ "topics": [
+  "video-world-models"
+ ]
 }

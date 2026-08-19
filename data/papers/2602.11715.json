@@ -9,5 +9,9 @@
  "summary": "**核心创新点**：通过 CuKe 高质量数据集与 BiC-RL 双阶段强化学习，利用扩散大语言模型实现端到端的 CUDA 内核生成，显著提升生成质量并树立 CUDA 内核生成的新SOTA。\n\n**主要方法**：\n- 构建并使用 CuKe 增强监督微调数据集，针对高性能 CUDA 内核进行数据优化。  \n- 提出 Bi-phase curated reinforcement learning（BiC-RL）框架，包括 CUDA 内核填充（infilling）阶段与端到端 CUDA 内核生成阶段。  \n- 设计并发布 DICE 系列扩散大语言模型，覆盖 1.7B、4B、8B 三个规模，在 KernelBench 上进行系统评测。  \n- 与同规模的自回归（AR）LLM 及扩散 LLM 进行对比，验证在 CUDA 内核生成任务中的优势。\n\n**结论/性能**：在 KernelBench 上，DICE 在同规模的自回归与扩散模型上显著超越，确立了 CUDA 内核生成的新状态点（SOTA）。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-13 14:02:33"
+ "created_at": "2026-02-13 14:02:33",
+ "topics": [
+  "llm-reasoning",
+  "efficiency-systems"
+ ]
 }

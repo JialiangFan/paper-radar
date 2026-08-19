@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 HORNet——一个轻量级、与 frozen VLM 解耦的帧选择策略，通过 Group Relative Policy Optimization (GRPO) 学习对问答最有用的帧序列，以实现高效且可迁移的视觉输入优化。\n\n2) 主要方法：使用一个不到 1 百万参数的帧选择网络 HORNet，对输入视频进行选择；在 Select Any Frames (SAF) 框架下用 GRPO 训练策略，优化“哪些帧应被 VLM 看到”；帧选择与 VLM 推理解耦，帧选择策略可跨不同 VLM 搭配使用且无需重新训练。\n\n3) 结论/性能：在六个基准、共 341,877 组 QA 和 114.2 小时视频上，HORNet 可将输入帧数最多削减 99%、VLM 推理时间削减至 93% 之内；在 MSVD-QA 上 F1 提升 1.7%；在 NExT-QA 的时序推理任务相对于均匀采样提升 7.3 点；GRPO 相较于监督与 PPO 拥有更好的跨分布泛化；与更强的 VLM 搭配还可再获得约 8.5% 相对增益。代码可在 GitHub 获取。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-20 13:05:17"
+ "created_at": "2026-03-20 13:05:17",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

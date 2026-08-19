@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：在天气仿真任务中将神经缩放规律应用于持续训练，结合极简的 Swin Transformer 架构与恒定学习率＋周期性 cooldown，揭示可预测的扩展性并用于指示高效的资源配置。\n\n- 主要方法：采用可扩展的 Swin Transformer；进行持续训练（恒定学习率＋定期 cooldown）并通过光谱损失调整提升预测；在不同模型规模、数据规模与计算预算下系统性构建 IsoFLOP 曲线以寻找计算最优训练规程，并与标准余弦学习率进行对比；并开源代码。\n\n- 结论/性能：在该最小化设置下呈现可预测的缩放趋势，且甚至优于常用的 cosine 学习率；cooldown 阶段可提升下游性能（如实现更长 horizon 的多步 rollout 与更尖锐的预测），并在更大规模下揭示潜在性能上限，表明神经缩放可作为资源分配的有效诊断工具。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-28 13:02:24"
+ "created_at": "2026-03-28 13:02:24",
+ "topics": [
+  "applications"
+ ]
 }

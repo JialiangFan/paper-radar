@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：ShapePuri 通过形状引导的净化框架，将几何结构不变量与外观扰动去偏结合，提升对抗鲁棒性，同时实现高效推理，不增加额外计算成本。\n- 主要方法：引入 Shape Encoding Module（SEM，利用 Signed Distance Functions 提供密集几何引导）和 Global Appearance Debiasing（GAD，通过随机变换缓解外观偏见），形成无需额外辅助模块或额外计算成本的对抗性净化体系。\n- 结论/性能：在 AutoAttack 下达到 84.06% 干净准确率和 81.64% 鲁棒准确率，首次在该基准上突破 80% 的鲁棒性阈值，且具备可扩展性与推理阶段的预测稳定性。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-06 14:02:18"
+ "created_at": "2026-02-06 14:02:18",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

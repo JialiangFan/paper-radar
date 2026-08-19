@@ -9,5 +9,9 @@
  "summary": "- **核心创新点**：首次提出 ASMR-Bench 这一基准，用以系统评估审计者在 ML 研究代码中检测 sabotage 的能力，涵盖9个代码库及其被破坏的变体，并在保留高层方法学的前提下暴露实现层面的偏差。\n- **主要方法**：设计包含 sabotaged 变体的代码库集（改动点包括超参数、训练数据、评估代码等，但保持论文级方法学）；使用前沿大模型（LLMs）及其辅助下的人类审计者对代码进行检测，并以大模型充当红队者生成 sabotages；评估指标为 AUROC 与 top-1 修复率等。\n- **结论/性能**：最佳 AUROC 为 0.77，top-1 修复率为 42%（Gemini 3.1 Pro）；LLMs 与人类审计者在可靠检测 sabotage 方面均表现不稳定；LLM 作为红队者生成的 sabotage 相对弱于人类但仍可能逃避同等能力的 LLM 审计者；并公开发布 ASMR-Bench 以推动 AI 驱动科研的监控与审计研究。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-20 13:00:53"
+ "created_at": "2026-04-20 13:00:53",
+ "topics": [
+  "ai-safety-alignment",
+  "agent-benchmarks"
+ ]
 }

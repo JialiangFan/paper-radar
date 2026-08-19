@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将波利亚四步解题框架嵌入到指令微调的大语言模型中，以提升数学推理的教育对齐和元认知参与。\n\n- 主要方法：在 Llama-3.1-8B 上，利用来自 GSM8K 的合成数学题解数据，按波利亚四阶段结构进行标注和微调；比较多种微调变体（通用指令、数学领域 metamath、以波利亚为导向的 pedagogy-aligned polya-v2，以及顺序式 metamath+polya-v2），并通过量化准确性与定性教学评估进行综合评估。\n\n- 结论/性能：采用波利亚框架与领域数据的微调模型呈现更均衡的推理阶段分布、较少的“过早给出答案”现象；专家评估显示在教学连贯性和元认知提示方面有所提升，但在个性化与数学严谨性方面仍存在局限，表明 pedagogy-grounded instruction tuning 能提升教育对齐与推理透明度。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-12 14:03:00"
+ "created_at": "2026-02-12 14:03:00",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

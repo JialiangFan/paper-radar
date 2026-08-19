@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：在 SFT 与 RLVR 之间引入显式的分布对齐阶段，通过基于响应级别的对抗学习（OPD）实现对齐，采用包含感知与推理专家的 Mixture-of-Experts 判别器进行黑盒纠错，不需要教师 logits。\n\n- 主要方法：构建一个三阶段管线（PRISM）：1) 以公开演示进行 SFT 初始化；2) 通过对齐阶段实现分布对齐，利用对抗游戏（策略 vs. MoE 判别器，含感知/推理专家）实现纠错信号分离；3) 进行 RLVR 微调。对齐阶段需要更高保真度的演示，额外 curate 了 113K 来自 Gemini 3 Flash 的演示，包含密集视觉定位和逐步推理。\n\n- 结论/性能：在 Qwen3-VL 的多种 RL 算法（GRPO、DAPO、GSPO）上，PRISM 提升了下游 RLVR 性能；在 4B 与 8B 模型上，平均准确率相对 SFT-to-RLVR 基线分别提升约 +4.4 和 +6.0 点。代码/数据/模型检查点公开。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-05-02 13:01:04"
+ "created_at": "2026-05-02 13:01:04",
+ "topics": [
+  "rl-post-training",
+  "vla-post-training"
+ ]
 }

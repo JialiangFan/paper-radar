@@ -28,5 +28,9 @@
  "code": "",
  "project": "https://ut-austin-rpl.github.io/sirius-runtime-monitor/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "runtime-monitoring",
+  "hri-human-in-loop"
+ ]
 }

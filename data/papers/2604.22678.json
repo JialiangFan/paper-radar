@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 BERAG/BEFT 框架，在生成阶段逐个条件化检索文档，并用贝叶斯规则在生成过程 token-by-token 更新文档后验，从而实现文档级别的概率再排序、清晰的文档贡献归因和高效并行推理。\n- 主要方法：使用贝叶斯集成的检索增强生成（BERAG）和贝叶斯集成微调（BEFT），将语言模型对每个检索文档分别进行条件化，文档后验作为集成权重进行更新，支持并行记忆、逐文档权重更新与归因、不足 grounding 的 deflection，以及通过文档剪枝实现更快解码。\n- 结论/性能：相较标准 RAG，在知识型视觉问答任务（如 Document VQA 和多模态 needle-in-a-haystack 基准）取得显著提升；缓解“lost-in-the-middle”问题；文档后验可用于检测 grounding 不充分并触发 deflection，剪枝进一步提高解码速度。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-27 13:03:45"
+ "created_at": "2026-04-27 13:03:45",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

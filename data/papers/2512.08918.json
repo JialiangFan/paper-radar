@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出基于 permuted codes conjecture 的新型伪随机错误纠错码（PRC），实现亚指数级伪随机性、对二进制最坏情况编辑的鲁棒性，以及对知晓检测密钥的对手的鲁棒性，达到对完整属性的组合保障。\n\n- 主要方法：\n  - 引入并 formalize permuted codes conjecture，作为伪随机性的理论基础。\n  - 将置换-噪声编码应用于错误纠错码，构造新的伪随机代码（PRCs）。\n  - 证明该假设与先前用于私有信息检索的 permuted puzzles conjecture 存在联系，并对广义简单 distinguisher（包括读一次分支程序）给出证据，提升对鲁棒性的理论支撑。\n\n- 结论/性能：\n  - 实现了近似亚指数级的伪随机性安全性、对最坏情况编辑在二进制字母上的鲁棒性，以及对即使对手拥有检测密钥甚至理论上无限算力的对手的鲁棒性。\n  - 通过对简单 distinguisher 的广泛证据，增强了对 permuted codes conjecture 的可信度。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-10 14:01:12"
+ "created_at": "2025-12-10 14:01:12",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

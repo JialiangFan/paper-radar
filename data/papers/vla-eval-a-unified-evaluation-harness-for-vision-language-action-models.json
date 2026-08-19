@@ -26,5 +26,8 @@
  "code": "https://github.com/allenai/vla-evaluation-harness",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "embodied-benchmarks"
+ ]
 }

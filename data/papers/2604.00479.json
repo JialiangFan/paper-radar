@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出 Multi-Group Policy Optimization (MUPO)，通过对多组策略进行优化来激励 vision-language 模型的分歧性推理，解决 GRPO 导致的多样性崩溃和局部最优问题。\n\n2. 主要方法：在对 GRPO 行为与训练 dynamics 的分析基础上，设计 MUPO：将策略分成多组并对各组施以多样性激励与差异化奖励，促使模型在推理路径上探索多种解法；在标准的视觉-语言模型评估基准上验证其有效性。\n\n3. 结论/性能：证实 MUPO 能有效提升推理的多样性，减少对少数策略的过度收敛，改善模型的鲁棒性和可扩展性，在既有基准上表现优于 GRPO。项目页面提供实现与更多细节。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-02 13:03:11"
+ "created_at": "2026-04-02 13:03:11",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将集合层级的奖励通过Shapley值分解为候选项级别的贡献信号，解决GRPO中对整集合统一奖励导致的信号噪声与探索不足的问题。\n- 主要方法：基于集合效用的置换不变性，提出Shapley增强的GRPO（ShapE-GRPO），将集体奖励分配到个体候选项，沿用Shapley值公理性并实现多项式时间计算，提升训练中的奖励信号分辨率。\n- 结论/性能：在多候选LLM训练任务上持续优于标准GRPO，且训练收敛速度更快。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-01 13:01:31"
+ "created_at": "2026-04-01 13:01:31",
+ "topics": [
+  "rl-post-training"
+ ]
 }

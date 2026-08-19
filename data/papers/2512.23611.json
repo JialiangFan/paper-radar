@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：通过自我演化的多智能体协同闭环，在无人工标注条件下仅用原始 API 规格就能自动生成、验证并迭代提升大规模工具调用数据与模型能力。\n\n2) 主要方法：构建三方代理系统（User Simulator、Tool-Calling Assistant、MCP Server）来产生多样且可验证的工具使用轨迹；使用 GRPO（Group Relative Policy Optimization）配合门控奖励进行数据驱动的模型提升，形成“合成数据→模型改进→生成更好数据”的闭环，无需人工干预。\n\n3) 结论/性能：在 Berkeley Function-Calling Leaderboard (BFCL) 上，将基线32B模型的准确率从19.8%提升到70.9%（+258%），超越规模达十倍的模型，接近 Claude-Opus 的水平，且完全来自合成数据不依赖人工标注。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-30 03:29:25"
+ "created_at": "2025-12-30 03:29:25",
+ "topics": [
+  "llm-agents"
+ ]
 }

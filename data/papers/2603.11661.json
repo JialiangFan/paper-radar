@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：引入在线强化学习的Group Relative Policy Optimization（GRPO）到文本到音频生成，并结合Flow Matching的音频模型与大型音频语言模型（LALMs）的在线奖励，在470M参数下实现TTA-Bench的新SOTA。\n\n- 主要方法：将GRPO改造用于基于Flow Matching的音频生成模型，进行在线RL训练，并引入来自大型音频语言模型的奖励信号，优于传统离线方法（如DPO）。\n\n- 结论/性能：在线GRPO显著优于离线方法，结合LALMs奖励后，在音质与语义对齐方面达到TTA-Bench的新SOTA，所提出的Resonate模型仅用470M参数即可实现。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-13 13:02:59"
+ "created_at": "2026-03-13 13:02:59",
+ "topics": [
+  "rl-post-training"
+ ]
 }

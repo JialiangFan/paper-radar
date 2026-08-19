@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1 句话）\n  通过将查询文本直接渲染到图像上形成 Visualized-Question (VQ) 诊断设定，并提出一个 plug-and-play 的 SimpleOCR 训练策略，以打破基于文本提示的捷径、强制模型学习视觉文本读取能力。\n\n- 主要方法\n  - Visualized-Question (VQ) 诊断框架：将文本查询直接渲染到图像上，结构性强制模型进行视觉参与。\n  - SimpleOCR：一种无架构修改的训练策略，将训练样本改造成 VQ 格式、引入随机化样式以抵消文本捷径，推动模型激活并优化视觉文本提取路径；并且可与 NoisyRollout 等强化学习方法无缝结合。\n\n- 结论/性能\n  - 在四个代表性 OOD 基准上，相较基础模型提升约 5.4%，相较原始图像的 GRPO 提升约 2.7%；\n  - 数据效率极高，仅需 8.5K 样本（比近端 RL 方法少约 30 倍）即可获得更优的性能；\n  - 插件式设计可与更先进的 RL 策略如 NoisyRollout 互补提升；\n  - 代码公开可获取。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-27 14:03:21"
+ "created_at": "2026-02-27 14:03:21",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "## EvoHarness-RL 论文摘要总结\n\n**1. 核心创新点**\n把长程 LLM 智能体所依赖的\"外部运行时脚手架（harness）\"——即外部状态的构建与访问策略——从人工设计的提示词/启发式规则，变成一个可通过强化学习训练出来的策略。\n\n**2. 主要方法**\n- 定义了面向策略的三类外部 harness 状态：**Belief（信念）、Progress（进度）、Experience（经验）**，合称 BPE。\n- 两阶段训练：先用**监督式 harness 微调（SFT）**让基座模型掌握 harness 的动作空间以及如何构建有用的外部状态；再用**代价感知的 GRPO** 强化学习，探索在长程交互中何时选择性地读取、更新与整合（consolidate）这些外部状态的协调策略。\n- 实验载体：ALFWorld 环境 + Qwen3-8B 模型。\n\n**3. 结论/性能**\n- 在 ALFWorld 上达到 **96.9% 的任务成功率**。\n- 观察到两个关键现象：\n  - **Harness annealing（脚手架退火）**：训练过程会把反复出现的 harness 使用模式内化进模型自身策略，智能体从频繁调用 harness 转向选择性的外部状态访问。\n  - **Harness evolution（脚手架演化）**：进度更新与经验整合会把 harness 精炼成一个紧凑、随任务自适应的状态载体。\n- 结论：对长程智能体而言，训练\"如何构建并协调外部工作区\"的策略，比单纯堆更强的工具或更大的记忆更有价值。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-07 13:01:45"
+ "created_at": "2026-08-07 13:01:45",
+ "topics": [
+  "robot-harness",
+  "llm-agents"
+ ]
 }

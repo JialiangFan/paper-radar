@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：一句话概括\n  提出一个统一的连续模态框架 UniMotion，使运动、文本和 RGB 图像在同一架构中实现理解与生成，打破仅处理子集、以及离散化符号带来的误差和时序中断。\n\n- 主要方法：简述用了什么技术/模型\n  - 引入 Cross-Modal Aligned Motion VAE（CMA-VAE）和对称的双路径嵌入器，在一个共享的大语言模型（LLM）主干上为 Motion 与 RGB 构建平行的连续路径。\n  - Dual-Posterior KL Alignment（DPA），将视觉融合编码器的更丰富后验蒸馏回运动编码器，以在推理阶段不需要外部图像就能注入视觉-语义先验。\n  - Latent Reconstruction Alignment（LRA）是一种自监督预训练策略，利用密集的运动潜在变量作为明确条件，协同校准嵌入器、主干和光流头，解决冷启动问题。\n  - 通过上述方法实现对 Motion、Text、RGB 三模态的任意到任意（any-to-any）的理解、生成与编辑能力，强调在跨模态组合任务上的优势。\n\n- 结论/性能：取得了什么效果\n  在七项跨模态任务上达到最先进（state-of-the-art）水平，覆盖任意到任意的理解、生成和编辑，尤其在跨模态组合任务上表现尤为突出。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-03-24 13:00:40"
+ "created_at": "2026-03-24 13:00:40",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

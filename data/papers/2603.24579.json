@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话）\n通过建立 Solver、Proposer、Checker 三代理的信息不对称自检机制，并以多智能体强化学习进行共同进化，显著降低LLM幻觉。\n\n2) 主要方法\n- 将检索增强生成（RAG）输出由 Solver 生成初始回答，（Proposer）将其分解为可验证的原子命题；  \n- Checker 在独立于 Solver 输出的前提下，对这些命题与检索证据进行验证，避免自我确认偏差；  \n- 以多智能体强化学习（MARL）对三个代理进行端到端训练，使其协同优化事实一致性与可靠性。\n\n3) 结论/性能\n在多项幻觉基准上，MARCH 显著降低幻觉率；在一个8B参数级别的模型上，配合 MARCH 的能力达到与强大的闭源模型相竞争的水平。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-03-26 13:01:14"
+ "created_at": "2026-03-26 13:01:14",
+ "topics": [
+  "llm-agents",
+  "ai-safety-alignment"
+ ]
 }

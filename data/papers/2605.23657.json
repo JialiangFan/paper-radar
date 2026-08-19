@@ -9,5 +9,8 @@
  "summary": "# OpenSkillEval 论文总结\n\n1. **核心创新点**：提出首个面向 LLM Agent 的\"技能生态\"自动化审计与评估框架 OpenSkillEval，用动态生成的真实任务替代静态基准来衡量 skill 的真实价值。\n\n2. **主要方法**：从五类下游应用（演示文稿、前端网页、海报、数据可视化、报告生成）中基于真实世界产物自动构造任务实例，收集并统一组织社区开源 skills，在受控设定下对不同模型与 agent 框架进行系统对比评测（600+ 任务实例 × 30 个开源 skill）。\n\n3. **结论/性能**：发现 skill 可用性并不等于能被有效利用，skill 增强效果高度依赖底层模型与 agent 框架，且许多热门开源 skill 并不能稳定优于无 skill 的基线 agent，凸显了动态、任务驱动评估的重要性。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-25 13:03:09"
+ "created_at": "2026-05-25 13:03:09",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个面向多语言的自动化环境构造框架 MEnvAgent，通过多智能体的规划–执行–验证架构结合环境重用的增量修补机制，实现可扩展的可验证软件工程任务环境生成。\n\n- 主要方法：\n  - 引入多智能体的规划-执行-验证（Planning-Execution-Verification）架构，自动解决环境构造过程中的失败。\n  - 提出环境重用机制，通过对历史环境进行增量修补来降低计算开销。\n  - 在 MEnvBench（涵盖10种语言、1000个任务）进行评估，并构建 MEnvData-SWE，成为目前最大的开源多语言可验证 Docker 环境数据集。\n  - 提供任务解轨迹，支持在广泛模型上实现稳定的性能提升。\n\n- 结论/性能：\n  - 在 MEnvBench 上，Fail-to-Pass（F2P）提升 8.6%，时间成本下降 43%。\n  - 成功构建并发布 MEnvData-SWE，成为最大规模的开源多语言可验证 Docker 环境数据集及解轨迹集合。\n  - 该方法在不同模型上均展现出持续的 SWE 任务性能提升潜力。 \n  - 相关代码、基准和数据集已开源。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-02 14:03:49"
+ "created_at": "2026-02-02 14:03:49",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

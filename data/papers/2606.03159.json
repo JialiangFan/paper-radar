@@ -9,5 +9,9 @@
  "summary": "# OmniDreams 论文总结\n\n## 核心创新点\nNVIDIA 提出 **OmniDreams**——一个基于 Cosmos 扩散模型微调的实时生成式世界模型，用于闭环自动驾驶仿真，能够自回归地生成动作条件化的逼真传感器视频。\n\n## 主要方法\n- **基础模型**：从 Cosmos 扩散模型进行中期和后期训练（mid/post-training）。\n- **训练数据**：使用 21k 小时的驾驶场景数据。\n- **生成方式**：自回归地基于过去帧、当前模拟器状态和即时驾驶动作生成视频，可合成极端天气、不可预测动态智能体等长尾场景。\n- **系统集成**：与 Alpamayo 1 策略模型和 AlpaSim 编排器组成闭环系统，模型实时响应策略动作。\n- **扩展应用**：基于 OmniDreams 后训练得到一个世界-动作模型（WAM），可作为策略架构的骨干网络。\n\n## 结论/性能\n- 提供了可扩展的闭环训练与评估方案，解决了重建式神经仿真器难以泛化到新场景的局限。\n- 后训练得到的 WAM 在 Physical AI Autonomous Vehicles NuRec 数据集上**仅用 1/5 参数量**便超过了基于 VLA 的 Alpamayo 1.5 研究策略模型，展示出世界模型作为策略骨干的潜力。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-04 13:06:40"
+ "created_at": "2026-06-04 13:06:40",
+ "topics": [
+  "video-world-models",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 APPO（Attention-guided Perception Policy Optimization），通过在不同回答中对同一关键视频帧的 token 级感知进行密集奖励，以注意力引导的策略优化提升细粒度感知能力，且无需昂贵的逐帧注释。\n- 主要方法：使用 token-level dense rewards 指导对 intra-group perception tokens 的优化，结合 Attention-guided Perception Policy Optimization 框架，提升视频推理中的感知能力，适用于不同规模的模型（3B/7B）。\n- 结论/性能：在多种视频基准和模型规模上，APPO 相较 GRPO 和 DAPO 实现稳定提升，约提升0.5%~4%，展示以推理提升感知能力的低成本高效性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-02 14:02:58"
+ "created_at": "2026-03-02 14:02:58",
+ "topics": [
+  "multimodal-perception",
+  "rl-post-training"
+ ]
 }

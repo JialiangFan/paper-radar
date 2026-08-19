@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 TATAR（Task-Aware Thinking with Asymmetric Rewards），在同一视觉-语言大模型上通过任务条件化的思考策略和不对称奖励，实现 IQA 与 IAA 的统一感知评分。\n\n- 主要方法：\n  - 共享视觉-语言骨干，并对不同任务进行后训练阶段的任务性质条件化；\n  - 快-慢两级任务特定推理：IQA 采用简洁的感知推理，IAA 采用更为 deliberative 的美学叙事；\n  - 两阶段 SFT+GRPO 学习：先建立任务感知的行为先验，再进行基于奖励的细化与优化；\n  - 不对称奖励设计：IQA 使用高斯分数塑形，IAA 采用 Thurstone 风格的完成排序。\n\n- 结论/性能：\n  - 在八个基准上，TATAR 普遍优于以往的统一基线，且与任务专用模型相比仍具竞争力；\n  - 在域内与跨域设置下均表现稳定，尤其提高了美学评估的训练稳定性；\n  - 结果表明任务条件化后训练是实现统一感知评分的 principled paradigm。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-23 13:06:07"
+ "created_at": "2026-03-23 13:06:07",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

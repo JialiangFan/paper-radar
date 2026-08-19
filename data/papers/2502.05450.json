@@ -26,5 +26,9 @@
  "code": "",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "vla-post-training",
+  "hri-human-in-loop"
+ ]
 }

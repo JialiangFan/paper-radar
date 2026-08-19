@@ -9,5 +9,8 @@
  "summary": "# TeleSWEBench 论文总结\n\n**1. 核心创新点**\n首个面向电信领域（srsRAN 5G）的提交驱动型基准测试，用于评估 LLM 驱动的软件工程代理在专业化无线协议栈中的代码修改能力。\n\n**2. 主要方法**\n- 从 srsRAN 5G 仓库挖掘真实开发者 commit，蒸馏为 734 道带可执行单元测试的结构化题目，分为 Easy/Medium/Difficult 三档难度。\n- 提出分层 \"LLM as a Judge\" 框架 **TeleJudge**，在文件级评分并整体聚合，结合上下文与语义相似度评估，缓解纯单元测试的刚性问题。\n- 在 AIDER、OpenHands、ClaudeCode 三种代理框架上，搭配 Qwen3、GPT-OSS、Gemma 4、Kimi、Qwencoder 2.5 等推理模型进行两阶段评估。\n\n**3. 结论 / 性能**\n现有模型在缺陷定位准确性与功能正确性两方面均表现不足，最强的 ASE 工具也仅能产出约 **25% 可交付（shippable）的代码修改**，揭示了通用代码基准与电信领域真实需求之间的显著评估鸿沟。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-04 13:01:16"
+ "created_at": "2026-06-04 13:01:16",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

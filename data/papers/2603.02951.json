@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个 Continual GUI Learning 框架CGL，通过以策略熵驱动的SFT比例调整以及梯度手术，动态平衡SFT与RL在GUI持续学习中的适应性与记忆保持，并提出AndroidControl-CL基准用于评估。\n\n- 主要方法：\n  - 策略熵驱动的SFT比例调整机制：在SFT与RL训练阶段之间动态分配权重，以实现快速适应与技能保留的折中。\n  - 梯度手术策略：将探索性SFT梯度投影到GRPO基锚梯度上，剪裁与GRPO冲突的SFT梯度分量，解决显式梯度干扰。\n  - 联合SFT与RL的训练框架，提升GUI任务学习的持续性能力。\n  - AndroidControl-CL 基准的提出与使用：把GUI应用分成任务组，以更有效地模拟与评估持续学习场景。\n\n- 结论/性能：\n  - 实验结果表明CGL在持续学习场景中有效提升对新任务的适应性并降低对旧任务的遗忘，相较单独的SFT或RL基线表现更优；并在AndroidControl-CL基准上展现显著优势。相关的基准、代码和模型将公开。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-04 14:03:53"
+ "created_at": "2026-03-04 14:03:53",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

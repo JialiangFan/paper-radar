@@ -9,5 +9,9 @@
  "summary": "## Faster-WAM: 世界动作模型真的需要\"深\"动作模块吗？\n\n**1. 核心创新点**\n提出\"视频为中心\"的 Dock of Transformer (DoT) 设计范式——把预训练视频 Transformer 当作表征中枢，只在其上\"停靠\"一个轻量输出头，从而打破以往 WAM 中动作模块必须与视频主干等深的假设。\n\n**2. 主要方法**\n- 针对现有共享主干 / Mixture-of-Transformers 类 WAM 把动作模块深度绑定到视频主干、导致算力开销与推理延迟居高不下的问题；\n- DoT 通过\"停靠接口\"(docking interface) 连接轻量输出头，使输出头能直接访问主干**所有层**的表征，同时保留灵活的头部设计空间；\n- Faster-WAM 是 DoT 在 WAM 上的具体实例：在 **30 层视频主干**上只挂 **单层动作头**；停靠接口负责融合所有视频层的 key/value，并做 **RoPE 重对齐**；\n- 无需额外的具身预训练 (embodied pretraining)。\n\n**3. 结论 / 性能**\n- 在 LIBERO 与 RoboTwin 2.0 上取得有竞争力的性能，并在 LIBERO-Plus 上展现出较强的分布外泛化能力；\n- 在受控对比中端到端延迟最低：单次推理仅 **66.5 ms**，相比 Fast-WAM 提速 **3.2×**；\n- 结论：视频为中心的 DoT 架构可以在保持动作预测性能与鲁棒泛化的同时，兼顾任务特定头部的设计灵活性与低推理延迟。\n\n（说明：以上仅基于标题与摘要，未涉及正文的实验细节与消融。若需要按 `/paper-review` 的完整文献综述格式输出并存入 Obsidian，可以告诉我。）",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-05 13:05:23"
+ "created_at": "2026-08-05 13:05:23",
+ "topics": [
+  "world-model-control",
+  "efficiency-systems"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：将对抗强化学习与随机平滑相结合的两阶段防御框架 SafeMed-R1，用以提升医疗视觉-语言推理的鲁棒性与可解释性，在训练阶段提高推理对 Worst-case 扰动的鲁棒性，推断阶段提供 L2 认证鲁棒性。\n\n2. 主要方法：在训练阶段使用 Adversarial Training with Group Relative Policy Optimization (AT-GRPO) 来显式鲁棒化推理过程；在推断阶段引入 Randomized Smoothing 以获得认证的 L2 鲁棒性；基于 Vision-Language Models 在 OmniMed-VQA 基准上评估，比较包含显式 chain-of-thought 推理的变体与仅指令式变体。\n\n3. 结论/性能：在同等 PGD 对抗条件下，常规模型在清洗输入下达到约95%准确率，但降至约25%（鲁棒性极差）；SafeMed-R1 能达到84.45%准确率，鲁棒性提升约59个百分点；且显式链式推理比仅指令式更具对抗鲁棒性，显示可解释性与安全性存在协同效应。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-23 03:50:18"
+ "created_at": "2025-12-23 03:50:18",
+ "topics": [
+  "adversarial-attacks",
+  "rl-post-training"
+ ]
 }

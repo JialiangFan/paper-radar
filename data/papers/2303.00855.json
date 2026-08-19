@@ -31,7 +31,6 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "llm-agents",
-  "world-model-control"
+  "llm-agents"
  ]
 }

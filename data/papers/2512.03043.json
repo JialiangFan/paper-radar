@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出一个统一的一体化推理模型 OneThinker，跨图像与视频覆盖问答、 caption、空间/时间定位、跟踪、分割等多任务，解决多模态推理的可扩展性与知识共享问题，并通过 EMA-GRPO 在多任务强化学习中平衡奖励异质性。\n\n2) 主要方法：构建 OneThinker-600k 的多任务训练语料，覆盖上述任务；利用商业模型进行 Chain-of-Thought 注释，形成 OneThinker-SFT-340k 的 SFT 冷启动数据；提出 EMA-GRPO，在多任务 RL 中通过跟踪各任务奖励标准差的移动均值实现奖励分布的平衡优化。\n\n3) 结论/性能：在 31 个基准、10 项基础视觉理解任务上展现强劲性能，具备跨任务知识转移能力及初步的零-shot 泛化能力；并已公开代码、模型与数据。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-03 14:02:50"
+ "created_at": "2025-12-03 14:02:50",
+ "topics": [
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

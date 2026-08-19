@@ -9,5 +9,9 @@
  "summary": "## NavWAM 论文总结\n\n**1. 核心创新点**\n将\"导航世界模型\"的视觉预测能力直接转化为可执行动作，提出一个无需外部规划器的目标条件视觉导航策略（NavWAM）。\n\n**2. 主要方法**\n采用**扩散-Transformer（diffusion-transformer）策略**，把未来观测、目标进度价值（goal-progress value）和动作块（action chunk）统一编码到一个共享的潜在序列中，让\"未来预测\"与\"动作/价值目标\"联合训练，从而使视觉前瞻直接服务于闭环控制。训练流程为**仿真预训练 + 真实机器人适配**。\n\n**3. 结论/性能**\n在图像目标（image-goal）导航任务上，离线基准测试与真实机器人闭环部署均优于基于规划的世界模型基线，且仅使用默认策略模式即可达成——无需 CEM 式的动作搜索（action search），降低了推理开销。\n\n---\n\n补充说明：如果你需要更深入、规范化的论文综述（按主题/背景/问题/贡献/方法论拆解，并自动输出中英文双版本到 Obsidian），可以告诉我，我会调用 `/paper-review` 技能来处理。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-12 13:04:39"
+ "created_at": "2026-06-12 13:04:39",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
 }

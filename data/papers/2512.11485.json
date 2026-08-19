@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点（1句话）\n提出 Mistake Notebook Learning (MNL)，通过批量化错误抽象构建一个持久的错误模式知识库，在不进行模型训练的情况下实现对复杂推理任务的自我改进。\n\n2) 主要方法\n- 训练-free 框架，依赖大语言模型的推理能力。  \n- 引入持续的“错误笔记本”知识库，通过批量级别的错误抽象从多次失败中提取可泛化的指导。  \n- 将洞见存储于动态笔记本，并通过留出验证筛选出相对于基线更优的指导，确保实现单调改进。  \n- 在 GSM8K、Spider、AIME、KaggleDBQA 等任务上对比其他训练-free 方法，且在 KaggleDBQA（Qwen3-8B）达到 28% 的准确率，展现出对复杂推理的竞争力。\n\n3) 结论/性能\n- GSM8K：MNL 达到 93.9%，接近 supervised fine-tuning 的 94.3%（几乎等同于 SFT）。  \n- 在 GSM8K、Spider、AIME、KaggleDBQA 等任务上优于其他训练-free 方案。  \n- KaggleDBQA（Qwen3-8B）：达到 28% 的准确率，相对提升 47%，优于 Memento 的 15.1% 和 Training-Free GRPO 的 22.1%。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-15 14:04:18"
+ "created_at": "2025-12-15 14:04:18",
+ "topics": [
+  "llm-agents"
+ ]
 }

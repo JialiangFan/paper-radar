@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Gaussian GRPO (G^2RPO) 作为新的强化学习目标，将任务间的优势分布收敛到标准正态以实现跨任务梯度公平，并结合两类任务级 shaping，构建了通用的多模态推理模型 OpenVLThinkerV2。\n\n- 主要方法：\n  - 采用 G^2RPO，利用非线性分布匹配将任意任务的优势分布强制收敛至 N(0,1)，实现跨任务梯度公平性、对极端值的鲁棒性，以及正负奖励对称更新。\n  - 引入两种任务级 shaping：1) 响应长度 shaping，促使对复杂查询进行更长的推理链条，同时通过直接输出加强视觉 grounding；2) 熵 shaping，约束探索范围，防止熵崩溃或爆炸。\n  - 基于上述训练目标和 shaping 构建 OpenVLThinkerV2，一种高度健壮的通用型多模态模型。\n\n- 结论/性能：在 18 个多域视觉基准上，OpenVLThinkerV2 超越了强大的开源模型与前沿的专有模型，展现出更优的性能与泛化能力。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-10 13:02:27"
+ "created_at": "2026-04-10 13:02:27",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

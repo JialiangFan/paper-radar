@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：通过显式注入细粒度临床标准来对齐医疗大模型，提出多维度奖励模型以区分安全约束与专业能力，并以 ProMedical-Bench 的双盲专家评测体系验证。\n\n- 主要方法：\n  - 构建 ProMedical-Preference-50k：通过人机协同，将医生评审标准融入医嘱数据中，生成高质量训练集。\n  - 提出 Explicit Criteria Injection：将安全约束与通用能力作为可显式解耦的多维奖励信号，用以训练奖励模型。\n  - 基于 ProMedical-RM 指导的 GRPO：对 Qwen3-8B 基模型进行强化学习对齐，实现更精细的合规与能力权衡。\n  - 评估与公开资源：在 ProMedical-Bench（双盲专家评审）上 rigorously 验证，并公开数据、奖励模型与基准以促进复现。\n\n- 结论/性能：\n  - 效果显著：整体准确性提升 22.3%，安全合规性提升 21.7%，达到接近前沿的性能水平。\n  - 泛化性强：对外部基准（如 UltraMedical）也显示与最新模型相近的对齐效果。\n  - 资源开放：公开数据、奖励模型和基准，促进安全导向的医学对齐研究。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-10 13:02:47"
+ "created_at": "2026-04-10 13:02:47",
+ "topics": [
+  "ai-safety-alignment",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "## 论文总结：NoiseGate\n\n**1. 核心创新点**\n将世界动作模型（WAM）中每个潜在帧的去噪时间步（timestep）从单一共享标量解耦为**可学习的\"信息门控\"策略**，让模型自适应地决定哪些未来帧对当前动作生成更可靠。\n\n**2. 主要方法**\n- 基于联合视频—动作 Mixture-of-Transformers (MoT) 主干。\n- 训练阶段：对每个潜在帧进行**独立的时间步采样**（per-latent timestep sampling），打破共享调度先验。\n- 引入轻量级 **Gating Policy Network**，在去噪过程中为每个潜在帧输出独立的时间增量。\n- 通过**任务奖励优化**（task-reward optimization）训练该调度策略，无需手工设计的形状先验。\n- 理论视角：基于 Diffusion Forcing 的\"噪声即遮蔽\"（noise-as-masking）观点——调节噪声水平等价于调制该帧 Key/Value 对动作 token 的贡献可靠性。\n\n**3. 结论/性能**\n在 RoboTwin 多样化随机场景操作任务上，NoiseGate 在联合视频—动作 MoT 主干基础上取得了**一致性的性能提升**。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-20 13:06:18"
+ "created_at": "2026-05-20 13:06:18",
+ "topics": [
+  "world-model-learning",
+  "vla-models"
+ ]
 }

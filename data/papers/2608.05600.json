@@ -9,5 +9,8 @@
  "summary": "## LC-GRPO 论文摘要总结\n\n**1. 核心创新点**\n\n针对流模型 GRPO 训练中\"随机 SDE 采样\"与\"确定性 ODE 推理\"之间的差异，提出用「ODE Euler 步 + Langevin 随机修正」替代反向 SDE 离散化，在保留探索随机性的同时让训练轨迹对齐推理采样器。\n\n**2. 主要方法**\n\n- **问题诊断**：ODE 与 SDE 在连续时间下边缘分布相同，但**有限步离散**后差异显著；探索噪声一增大，SDE rollout 就变模糊，导致强化学习所用样本与测试时 ODE 生成的样本失配。\n- **LC-GRPO 转移核**：每一步 rollout 先走一个与推理一致的 ODE Euler 步，再施加一次以该时间步边缘分布为目标的 Langevin 随机修正。\n- **工程优势**：所需 score 直接由 flow velocity 反解得到，**无需额外训练 score 模型**；且整个转移仍是各向同性高斯，似然可解析，可直接用于策略优化（GRPO 的 importance ratio 计算）。\n- **理论支撑**：证明在适当条件下，一步 Langevin 修正可降低不完美 ODE Euler 步的 Wasserstein 误差；在**randomness 水平相当**时，该转移比标准的反向 SDE Euler–Maruyama 离散更精确。\n\n**3. 结论/性能**\n\n在 SD3.5-Medium、FLUX.1-Dev 和 HunyuanVideo 上验证，覆盖文生图与文生视频两类任务：奖励优化效果稳定提升，同时保持生成质量（不出现 SDE 训练常见的模糊/质量退化），并显著缩小了随机训练 rollout 与确定性 ODE 推理之间的差距。\n\n---\n\n> 补充说明：摘要中未给出具体数值指标，上述\"性能\"部分为其定性表述。另外注意到你有 `paper-review` skill（会输出中英双语版本到 Obsidian vault），本次按你指定的格式直接输出、未调用该 skill；如需归档进 vault 可以告诉我。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-08-08 13:00:32"
+ "created_at": "2026-08-08 13:00:32",
+ "topics": [
+  "rl-post-training"
+ ]
 }

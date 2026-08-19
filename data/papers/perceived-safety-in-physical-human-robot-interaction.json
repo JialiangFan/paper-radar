@@ -23,5 +23,8 @@
  "code": "",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "hri-human-in-loop"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句）：提出 Omni Dense Captioning 任务，结合六维结构化脚本化描述和时间戳，实现连续、细粒度且具场景化结构的音视频叙事，并 accompany 新基准、评测和大模型训练范式。\n\n- 主要方法：\n  - 设计六维结构化的脚本化字幕，提供带时间轴的细粒度、场景化描述。\n  - 构建 OmniDCBench 基准和高质量人工标注数据，提出 SodaM 统一评测指标以缓解场景边界模糊。\n  - 构建 TimeChatCap-42K 训练数据集，提出 TimeChat-Captioner-7B 模型，采用监督微调（SFT）与 GRPO（带任务特定奖励的强化学习）训练。\n  - 基于多模态 Transformer 框架实现时间感知的连续音视频描述。\n\n- 结论/性能：\n  - TimeChat-Captioner-7B 达到并超过当前 SOTA，胜过 Gemini-2.5-Pro。\n  - 生成的密集描述显著提升下游能力，在音视频推理（DailyOmni、WorldSense）和时间定位（Charades-STA）等任务上表现更好。\n  - 相关数据集、模型与代码将公开。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-10 14:06:19"
+ "created_at": "2026-02-10 14:06:19",
+ "topics": [
+  "other"
+ ]
 }

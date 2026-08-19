@@ -9,5 +9,9 @@
  "summary": "## DreamFly 论文摘要总结\n\n**1. 核心创新点**\n提出 DreamFly——一个面向空中视觉语言导航（Aerial VLN）的扩散式框架，通过「因果对齐的历史记忆 + 滚动时域扩散规划 + 显式停止判定」三件套，解决现有 VLA 模型历史上下文不足、规划视野过短、隐式终止不可靠的问题。\n\n**2. 主要方法**\n- **基座模型**：构建于 Dream-VLA 之上的扩散式策略。\n- **因果对齐历史记忆（Causal Memory）**：仅用当前决策步之前的观测来增强当前视觉表征，实现时序推理的同时避免未来信息泄漏。\n- **滚动时域扩散规划（Receding-Horizon Planning）**：策略一次预测 $K$ 步动作块，但只执行第一步就重规划（plan-$K$, execute-one）。未来动作充当辅助规划目标，同时保留闭环视觉反馈。\n- **LiteStop**：在初始全掩码（all-mask）状态下直接从动作 logits 估计停止概率，把终止判定与动作生成解耦。\n\n**3. 结论/性能**\n在 OpenFly 基准上，seen 与 unseen 环境均有稳定提升：test-seen / test-unseen 的 SR 为 **32.04% / 29.46%**，SPL 为 **28.22% / 23.54%**，两项指标均优于所有对比方法，同时导航误差（NE）最低。结果验证了联合建模历史上下文、未来动作结构与显式终止对空中 VLN 的有效性。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-08-16 13:04:59"
+ "created_at": "2026-08-16 13:04:59",
+ "topics": [
+  "vla-models",
+  "world-model-control"
+ ]
 }

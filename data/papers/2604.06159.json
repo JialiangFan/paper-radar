@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将策略更新解耦为两步，先基于已评分的候选项构造目标分布 q_i ∝ p_i^{old} exp(u_i)，再用交叉熵将策略拟合到该目标，从而避免梯度更新的过冲/欠冲问题。\n\n- 主要方法：提出 Target Policy Optimization（TPO）。在给定评分后，计算 u_i（对候选项的效用/优势），构造目标分布 q_i 与 p_old_i 结合的形式 q_i ∝ p_old_i exp(u_i)，通过最小化跨熵使策略 p^θ 收敛到 q（梯度为 p^θ − q）。适用于表格带宽、Transformer 序列任务，以及亿参数级别的 LLM RLVR，与 PG、PPO、GRPO、DG 等方法在简单任务上效果相当，在稀疏奖励任务上表现显著优越。\n\n- 结论/性能：在简单任务上与现有方法持平或相近，在稀疏奖励场景下显著优于它们；覆盖了表格带宽、Transformer 序列任务以及亿参数级别的 LLM RLVR；并提供了代码实现。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-08 13:07:57"
+ "created_at": "2026-04-08 13:07:57",
+ "topics": [
+  "rl-post-training"
+ ]
 }

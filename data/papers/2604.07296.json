@@ -9,5 +9,8 @@
  "summary": "核心创新点：提出一个面向空间智能的开源数据引擎 OpenSpatial，以3D边界框为基本原语构建覆盖五大任务的数据层级，并开放 OpenSpatial-3M（3百万高保真样本）以实现高质量、可扩展、跨任务的空间推理能力。\n\n主要方法：设计并实现基于 3D 边界框的分层数据生成与标注管线，覆盖五大基础任务（Spatial Measurement、Spatial Relationship、Camera Perception、Multi-view Consistency、Scene-Aware Reasoning），在此数据引擎上 curated 出大规模数据集 OpenSpatial-3M，并在该数据集上训练评估多任务/跨任务模型，并对数据属性对空间感知的影响进行系统分析。\n\n结论/性能：在广泛的空间推理基准上达到最新（state-of-the-art）性能；最佳模型平均相对提升约 19%；并提供开源引擎与 3M 数据集，促进未来在空间智能领域的研究。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-09 13:03:26"
+ "created_at": "2026-04-09 13:03:26",
+ "topics": [
+  "other"
+ ]
 }

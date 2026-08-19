@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：通过在每个时间单位将文本时间戳令牌与视觉、音频表示交错，实现跨模态的统一时间建模，以提升显式与隐式的音视频时间感知与推理能力。\n\n- 主要方法：在 ChronusOmni 中将文本时间戳与视觉和音频表示混合编码，建立统一的跨模态时序模型；使用带定制奖励函数的强化学习强化正确的时序排序与细粒度时间推理；并构建 ChronusAV 作为 temporally-accurate、 modality-complete、cross-modal-aligned 的数据集用于训练与评估。\n\n- 结论/性能：在 ChronusAV 上达到SOTA性能，提升超过30%，并在大多数其他时间 grounding 基准上获得领先结果，显示出强跨模态时间感知能力，同时保持对视频与音频的通用理解能力。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-11 14:04:26"
+ "created_at": "2025-12-11 14:04:26",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "# 论文总结\n\n**1. 核心创新点**：\n首次将声学情感识别模型与基于LLM的多模态分析进行对比，证明在政治演讲的\"Pathos（情感诉求）\"维度分析上，LLM多模态方法显著优于传统声学情感识别（SER）模型。\n\n**2. 主要方法**：\n以德国联邦议院Felix Banaszak的演讲（51个片段，245秒）为案例，对比三种模态：\n- **emotion2vec_plus_large**：声学SER模型，通过Russell环形模型投影获得Arousal/Valence连续值；\n- **Gemini 2.5 Flash**：结合音频与文本的开放式、上下文感知LLM分析；\n- **TRUST-Pathos**：基于三智能体LLM监督集成的Pathos评分。\n采用Spearman秩相关进行比较，并用Gemini对柏林情感语音库（EMO-DB）做开放式标注质量评估。\n\n**3. 结论/性能**：\n- Gemini的Valence与TRUST-Pathos强相关（ρ=+0.664, p<0.001），而emotion2vec的Valence几乎无相关（ρ=+0.097, p=0.499）；\n- 揭示了标准SER基准语料库存在表演化语音、文化偏见和类别不兼容等问题；\n- 结论：LLM多模态分析更能捕捉语义层面的政治情感，声学特征仅在低层Arousal估计上仍有价值；未来计划扩展到包含面部表情和视线的视频分析。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-22 13:02:01"
+ "created_at": "2026-05-22 13:02:01",
+ "topics": [
+  "llm-agents"
+ ]
 }

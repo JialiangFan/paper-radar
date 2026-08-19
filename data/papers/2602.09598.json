@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Error-Localized Policy Optimization (ELPO)，在工具集成推理中通过定位首个不可恢复的错误步骤来进行细粒度的信用分配与更新。\n\n- 主要方法：使用固定预算下的二分搜索回放树来定位首个不可恢复步骤；将得到的回放树转化为稳定的学习信号，采用分层优势归因进行信号传递；对关键步骤及其后缀实施误差局部自适应裁剪以强化修正更新。\n\n- 结论/性能：在数学、科学问答和代码执行等TIR基准上，ELPO在可比较采样预算下持续优于强的 Agentic RL 基线，并在 Pass@K、Major@K 的扩展、回合排序质量以及工具调用效率等方面获得额外提升；代码将公开发布。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-11 14:03:14"
+ "created_at": "2026-02-11 14:03:14",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

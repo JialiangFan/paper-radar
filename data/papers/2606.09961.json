@@ -9,5 +9,9 @@
  "summary": "# 3SPO 论文总结\n\n1. **核心创新点**：提出一种基于状态分数监督的步级（post-step）策略优化算法，解决多轮 LLM Agent 在稀疏延迟奖励下的逐步信用分配问题。\n\n2. **主要方法**：3SPO（State-Score-Supervised Policy Optimization）在每一步根据历史成功率计算\"状态分数\"，用于动态指导步级信用分配、自适应 rollout 与策略更新，无需价值函数估计或额外辅助模型；并在 per-state bandit 抽象下给出对数级分配遗憾界与样本复杂度保证。\n\n3. **结论/性能**：在 ALFWorld 和 WebShop 上使用 Qwen2.5-1.5B/7B-Instruct，相比 GRPO 分别提升 +22.6% 和 +15.6 分，状态探索量提升 2.4×，收敛速度提升 1.8×。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-10 13:00:44"
+ "created_at": "2026-06-10 13:00:44",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

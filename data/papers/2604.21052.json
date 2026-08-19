@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 把风格迁移放在 Visual Autoregressive Modeling (VAR) 框架内，通过多尺度 VQ-VAE 将图像编码成离散码后，利用 Transformer 的条件自回归建模，并引入尺度自适应的混合跨注意力来同时对齐内容结构和风格纹理，保持自回归连续性。\n\n2) 主要方法\n- 模型与表示：将图像分解为多尺度表示并用 VQ-VAE 编码成离散 token；用 Transformer 自回归地建模目标 token 在风格和内容 token 条件下的分布。\n- 跨注意力机制：引入混合跨注意力，目标表示对历史 engages 自我关注，风格与内容作为查询来决定强调历史的哪些方面；尺度相关的混合系数在不同阶段调控风格与内容的影响。\n- 训练策略：从预训练 VAR 检点出发，分两阶段训练——先进行监督微调（SFT），使用大规模的内容-风格-目标三元组数据；再进行基于 GRPO 的强化微调，以 DreamSim 为感知奖励，并对多尺度层级进行按动作归一化以平衡 credit。\n- 评测与对比：在三类覆盖 in-/near-/out-of-distribution 的基准上，比较 AdaIN 基线，在 Style Loss、Content Loss、LPIPS、SSIM、DreamSim、CLIP 相似度等指标上实现优势；GRPO 阶段进一步提升感知奖励相关指标。\n\n3) 结论/性能\n- 定量结果：StyleVAR 在 Style Loss、Content Loss、LPIPS、SSIM、DreamSim、CLIP 相似度等多项指标上持续优于 AdaIN；经过 GRPO 的强化微调后，在感知奖励相关指标上有额外提升，尤其是对奖励对齐的评估更好。\n- 定性结果：能够在保持语义结构的同时转移纹理，尤其在风景和建筑场景表现良好。\n- 限制与展望：在互联网上图像的泛化能力存在差距，对人脸的迁移仍有困难，提示需要更丰富的内容多样性和更强的结构先验。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-24 13:02:10"
+ "created_at": "2026-04-24 13:02:10",
+ "topics": [
+  "other"
+ ]
 }

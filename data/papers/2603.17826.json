@@ -9,5 +9,9 @@
  "summary": "核心创新点：提出一个失效感知的多模态自动修复框架 FailureMem，通过混合工作流-代理、区域级视觉定位与失败记忆库实现更高效且可复用的修复探索。\n\n主要方法：\n- 基于多模态自动程序修复（MAPR），整合源代码、文本 issue 描述和 GUI 截图等信息。\n- 三大技术组件：1) 混合工作流-代理架构，兼顾结构化定位与灵活推理；2) 主动感知工具，实现 GUI 截图的区域级视觉定位/地面化（region-level grounding）；3) 失败记忆库，把以往的修复尝试转化为可重复使用的指导知识。\n\n结论/性能：在 SWE-bench Multimodal 实验中，FailureMem 相比 GUIRepair 的解决率提升了 3.7%。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-03-19 13:06:13"
+ "created_at": "2026-03-19 13:06:13",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出面向视觉语义算术的全新任务和数据集IRPD，并提出基于可验证函数与Group Relative Policy Optimization的SAri-RFT，对LVLM进行后训练以实现跨模态关系推理的显著提升。\n\n- 主要方法：在大型视觉-语言模型（LVLM）上进行Semantic Arithmetic Reinforcement Fine-Tuning（SAri-RFT），利用可验证函数构造奖励信号，并采用GRPO（Group Relative Policy Optimization）进行策略优化；同时引入两项新任务（两项“减法”与三项运算）以及Image-Relation-Pair数据集（IRPD）用于评测。\n\n- 结论/性能：在IRPD和真实场景数据集Visual7W-Telling上达到或接近SOTA，显著提升跨模态关系推理能力，从而有助于机器人在感知层面 grounding 符号推理、提升决策、工具适配、任务泛化与人机交互能力。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-22 13:02:29"
+ "created_at": "2026-04-22 13:02:29",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "1. 核心创新点：提出一个基于强化学习的自我进化框架SAGE，通过顺序滚动在一串相似任务中逐步积累并利用技能库，并引入技能整合奖励来提升技能的生成与应用。\n\n2. 主要方法：提出Skill Augmented GRPO for self-Evolution（SAGE）RL框架，核心组件包括Sequential Rollout在一组相似任务上轮流部署代理，使前任务产生的技能形成技能库并对后续任务开放，同时引入Skill-integrated Reward以辅助原有的结果导向奖励来增强技能生成与利用。\n\n3. 结论/性能：在AppWorld上的实验中，应用于带专家经验的监督微调模型的SAGE实现了Scenario Goal Completion提高8.9%，同时交互步骤减少26%、生成的tokens减少59%，在准确性与效率上显著优于现有方法。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-22 02:49:37"
+ "created_at": "2025-12-22 02:49:37",
+ "topics": [
+  "llm-agents"
+ ]
 }

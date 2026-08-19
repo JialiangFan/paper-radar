@@ -9,5 +9,9 @@
  "summary": "- **核心创新点**：在受控转移学习设置下，对 PPO、GRPO 和 DAPO 三种强化学习算法在提升大语言模型推理能力上的对比与参数调优进行系统研究，揭示不同基准下的性能差异与训练稳定性提升路径。\n\n- **主要方法**：使用 PPO、GRPO、DAPO 三种强化学习方法对大语言模型进行微调，首先在 Countdown Game 上进行专门化微调，再在一组通用推理基准上评估；开展参数分析，包括在 GRPO 与 DAPO 中增大分组大小以提升稳定性和准确性、研究 KL-penalty 系数的非单调影响，以及评估 DAPO 的 Dynamic Sampling（DS）对性能的作用，结果表明 DS 在实际中并不提升性能，最佳整体表现出现在禁用 DS 的情境。\n\n- **结论/性能**：RL 微调的模型在所有任务上优于相应基线模型，提升程度依基准而异；增加分组大小带来更稳定的训练和更高的准确性；KL-penalty 系数对性能呈非单调影响；DAPO 的 DS 不利于性能，禁用 DS 通常能得到最佳整体效果。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-09 14:05:20"
+ "created_at": "2025-12-09 14:05:20",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

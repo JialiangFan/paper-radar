@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：利用 Koopman 算子对大型推理模型的隐藏状态动力学进行线性化，并引入动态谱分散度（DSD）来量化潜在动态的异质性，从而在 ReLaX 框架中显式将潜在动态融入探索–利用的权衡，缓解熵崩溃并提升推理能力。\n\n- 主要方法：在大型推理模型的隐藏状态上应用 Koopman 运算符理论实现线性化表示，提出 Dynamic Spectral Dispersion（DSD）作为潜在动态的探索指标，并据此构建 ReLaX（Reasoning with Latent eXploration）框架来调控策略优化中的探索与利用。\n\n- 结论/性能：在多模态与文本推理基准上，ReLaX 显著缓解过早收敛，并持续达到或超过最先进的性能（state-of-the-art）。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-09 14:05:35"
+ "created_at": "2025-12-09 14:05:35",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

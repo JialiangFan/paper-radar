@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出 MSL-Minimal Sufficient Length 作为保持答案正确性的最短推理长度的理论度量并证明其极限存在，首次给出可衡量的推理链压缩下界；并在训练中实现对该最小长度的实时跟踪的 TRiMS 框架。\n\n2. 主要方法：定义基于独立采样序列的递归 MSL，并分析主流 CoT 压缩策略以提炼达到 MSL 的关键结构因素；提出 TRiMS，结合 GRPO 算法与 MSL 估计进行训练，同时通过动态批量聚合和基于批次标准差的优势估计来缓解训练不稳定。\n\n3. 结论/性能：在所有基准上实现超过 80% 的 CoT token 压缩，且准确率有微小提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-19 13:04:14"
+ "created_at": "2026-03-19 13:04:14",
+ "topics": [
+  "llm-reasoning",
+  "efficiency-systems"
+ ]
 }

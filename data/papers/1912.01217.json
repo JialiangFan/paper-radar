@@ -30,7 +30,7 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "embodied-benchmarks",
-  "safe-rl"
+  "safe-rl",
+  "embodied-benchmarks"
  ]
 }

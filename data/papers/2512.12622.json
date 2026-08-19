@@ -9,5 +9,9 @@
  "summary": "核心创新点：提出 Dynamic 3D Chain-of-Thought（3D CoT），将规划、 grounding、导航与问答统一在一个 3D-VLM/CoT 流程中，并通过“碎片化监督协同学习”（SLFS）在大量部分标注数据上实现相互强化与隐式监督。\n\n主要方法：\n- Dynamic 3D CoT：在同一个 3D-VLM 与 CoT 流程中联合完成规划、地物定位/grounding、导航和问答的推理。\n- SLFS（Synergistic Learning from Fragmented Supervision）：使用掩码自回归损失，在海量且部分标注的混合数据上进行学习，使各个 CoT 子模块能够互相监督、协同提升。\n- 数据与在线学习：构建包含 1000 万条混合样本的数据集，来自 5 千个真实场景扫描和 2 万个合成场景，支持 RL、DAgger 等在线学习方法。\n\n结论/性能：\n- 在多项基准上达到最先进水平，包括 Vision-and-Language Navigation 的 R2R-CE、REVERIE-CE、NavRAG-CE；Object-goal Navigation 的 HM3D-OVON；以及 Task-oriented Sequential Grounding and Navigation 的 SG3D 等。\n- 现实世界移动操作实验也验证了该方法的有效性。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-16 02:04:29"
+ "created_at": "2025-12-16 02:04:29",
+ "topics": [
+  "llm-agents",
+  "llm-planning"
+ ]
 }

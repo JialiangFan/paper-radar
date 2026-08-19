@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一种训练无关且可迁移的 jailbreaking 框架 VII，通过在安全参考图像中注入“视觉指令”来隐蔽地传递恶意意图，从而诱导图像到视频生成模型执行有害内容，且可跨模型迁移。\n\n- 主要方法：结合两大模块。1) Malicious Intent Reprogramming 模块：从不安全文本提示中蒸馏恶意意图，同时尽量降低静态有害性；2) Visual Instruction Grounding 模块：将蒸馏后的意图落地到安全输入图像上，通过渲染视觉指令实现与原不安全提示在语义上的一致性，以在 I2V 生成中触发有害内容。这一方法是训练-free且具备跨模型可迁移性，针对多家商用 I2V 模型进行验证。\n\n- 结论/性能：在四个前沿商用 I2V 模型（Kling-v2.5-turbo、Gemini Veo-3.1、Seedance-1.5-pro、PixVerse-V5）上，VII 的攻击成功率最高可达 83.5%，拒绝率降至接近零，显著优于现有基线方法。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-25 14:01:11"
+ "created_at": "2026-02-25 14:01:11",
+ "topics": [
+  "ai-safety-alignment",
+  "multimodal-perception"
+ ]
 }

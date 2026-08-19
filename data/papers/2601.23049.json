@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 MedMCP-Calc 基准，通过 Model Context Protocol（MCP）实现对真实医疗计算场景的端对端评估，覆盖模糊描述的自然查询、结构化 EHR 数据交互、外部参考检索及过程级评估。\n\n- 主要方法：构建包含118个场景任务、覆盖4个临床领域的基准；通过 MCP 实现与 EHR 数据库的结构化交互、迭代的 SQL 查询、外部工具/参考的调用；对23个主流模型进行评估并分析在场景化工作流中的不足；基于此开发并微调 CalcMate，结合情景规划和工具增强，达到开源模型中的最新性能。\n\n- 结论/性能：发现现有模型在端到端工作流中的关键环节（选择合适的计算器、迭代数据库交互、利用外部工具进行数值计算）存在显著瓶颈，且不同临床领域的表现差异较大；CalcMate 通过情景规划与工具增强实现了开源模型中的最优性能；基准和代码公开，便于后续研究与对比（https://github.com/SPIRAL-MED/MedMCP-Calc）。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-02 14:03:39"
+ "created_at": "2026-02-02 14:03:39",
+ "topics": [
+  "applications",
+  "agent-benchmarks"
+ ]
 }

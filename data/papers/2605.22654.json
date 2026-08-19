@@ -9,5 +9,8 @@
  "summary": "## 论文总结\n\n1. **核心创新点**：首次将多模态大模型（MLLM）应用于AI生成现代中文诗歌的检测，通过引入与诗歌内容相对应的图像，形成\"图像-文本\"互补判断机制。\n\n2. **主要方法**：提出图像语义引导的诗歌检测方法（image-semantic guided detection），利用反映诗歌内容的图像，通过示例驱动（example-driven）方式整合图像中的意境、意象与情感信息，再与诗歌文本相结合，由 LLM/MLLM 进行综合判别。\n\n3. **结论/性能**：基于该方法的 LLM 检测器优于纯文本基线，甚至超过最强传统检测器 RoBERTa；其中 Gemini 检测器取得 Macro-F1 **85.65%** 的 SOTA 成绩，并在多种 LLM 生成的数据上验证了方法的有效性。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-24 13:02:58"
+ "created_at": "2026-05-24 13:02:58",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

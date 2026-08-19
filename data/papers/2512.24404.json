@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个基于视觉推理的定位框架 ViReLoc，通过视觉域的逐步推理与强化学习，在地面图像之间进行跨视角的规划与定位，且无需文本信息或实时 GPS。\n\n- 主要方法：建立 Geo-Consistent Visual Planning 的 ViReLoc 框架，在视觉域进行按步推理并用强化学习目标优化路径规划；并结合对比学习与自适应特征交互以对齐跨视角、降低视点差异，从而提升跨视图的检索与定位性能。\n\n- 结论/性能：在多样化的导航与定位场景中实现了对空间推理准确性和跨视图检索性能的持续提升，证明视觉推理是导航与定位的有效补充方法，并且可以在不依赖实时 GPS 的情况下实现更安全的导航。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2026-01-01 02:51:47"
+ "created_at": "2026-01-01 02:51:47",
+ "topics": [
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

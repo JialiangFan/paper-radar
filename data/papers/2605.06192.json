@@ -9,5 +9,10 @@
  "summary": "**核心创新点**：将机器人的运动学动作和状态直接投影到目标相机视角下，形成\"结构化运动学到视觉动作场\"，从而用动作信号反向引导视频生成，保持精确的空间几何与机器人-物体交互动态。\n\n**主要方法**：基于预训练视频扩散模型构建事件感知生成式世界模型（EA-WM）；不再将关节/末端执行器动作作为低维抽象 token 注入，而是把动作投影为几何对齐的视觉动作场；并引入事件感知的双向融合模块（event-aware bidirectional fusion blocks），通过跨分支注意力调制来捕捉物体状态变化与交互动态。\n\n**结论/性能**：在 WorldArena 基准上取得 SOTA，显著超过现有基线方法。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-05-19 13:24:54"
+ "created_at": "2026-05-19 13:24:54",
+ "topics": [
+  "world-model-learning",
+  "world-model-control",
+  "vla-models"
+ ]
 }

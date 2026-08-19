@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出 Perceval，一种感知为中心的过程奖励模型（PRM），实现对回答中逐 token 的感知错误定位与纠错，将图像证据逐条对比回答中的断言，从而诊断和修正推理链中的错误。\n\n2) 主要方法\n- 构建并用感知密集的监督数据训练 Perceval，使其能够对回答中的逐-token断言进行证据 grounding。\n- 将 Perceval 集成进 RLVR 的策略训练，采用 token-level 优势对 Perceval 指认的幻觉片段实施惩罚，提供更细粒度的监督信号（相较传统的序列级优势 GRPO）。\n- 在推理阶段应用 Perceval 截断错误部分、再生成或促使模型反思前输出，且可多轮重复以实现测试时的扩展（test-time scaling）。\n\n3) 结论/性能\n- 在跨领域的多种推理 VLMs 上的 RL 训练中实现显著提升，表明感知中心的监督具有通用性。\n- 测试时扩展对比如 major voting 等策略仍显示稳定的性能提升。\n- 代码与数据将公开发布。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-04-28 13:07:33"
+ "created_at": "2026-04-28 13:07:33",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

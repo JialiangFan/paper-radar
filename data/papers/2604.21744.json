@@ -9,5 +9,9 @@
  "summary": "核心创新点：\n- 提出 Grounding.md 这一社区治理、领域范围的 epistemic grounding 文档，将硬性约束（Hard Constraints）与领域默认参数（Convention Parameters）嵌入到编码流程中，覆盖上下文以强制遵循科学正确性。\n\n主要方法：\n- 构建并应用 Grounding.md，编码 Hard Constraints 和 Convention Parameters，示例以 mass spectrometry-based proteomics 为域内演示；结合 agent scaffolds 的人机协同工作流，让人类开发者制定计划，agentic AI 实现执行；通过社区治理实现领域限定的规范落地。\n\n结论/性能：\n- 预计帮助非领域专家也能生成包含最佳实践的代码、工具和软件，提升产出信心；代理式 AI 更容易遵循这些指南，且有助于在民主化生成定制化软件的同时保持领域专家的参与与监督。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-24 13:01:54"
+ "created_at": "2026-04-24 13:01:54",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

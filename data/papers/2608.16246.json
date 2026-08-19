@@ -9,5 +9,9 @@
  "summary": "## CompoSkill 论文摘要总结\n\n**1. 核心创新点**\n揭示了「逐个技能扫描通过 ≠ 生态安全」这一盲区——恶意风险可以由多个各自合规的 Agent 技能**组合**而成，因而安全性是一种**路径级（path-level）**属性而非节点级属性。\n\n**2. 主要方法**\n提出 CompoSkill 框架，采用**双攻击者体系**：\n- **白盒攻击者**：已知受害者已安装的技能池，直接注入显式的 skill-id 调用序列；\n- **黑盒攻击者**：仅知角色画像（role profile），从技能市场下载该场景的热门技能，构建**技能组合图（Skill Composition Graph）**，搜索高风险调用链，且诱导提示中从不点名具体技能 ID。\n\n配套构建了 **CompoSkill-Bench**：基于长时程专业工作流，覆盖 5 类威胁 × 6 种场景，在 OpenClaw 与 Nanobot 两个平台上共 1,140 条记录。\n\n**3. 结论/性能**\n- 风险链形成率（CFR）：白盒最高 **83.3%**，黑盒最高 **80.6%**；现有技能扫描器仅能拦截其中很小一部分。\n- 发现 **\"bridge-bonus-then-hop-decay\"（桥接增益后跳数衰减）** 规律：引入桥接技能可提升攻击成功率，但当风险链超过 3 个技能后，ASR 随跳数增加而下降。\n- 结论：单技能认证机制对自主 AI Agent 存在系统性安全缺口。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-18 13:01:33"
+ "created_at": "2026-08-18 13:01:33",
+ "topics": [
+  "ai-safety-alignment",
+  "adversarial-attacks"
+ ]
 }

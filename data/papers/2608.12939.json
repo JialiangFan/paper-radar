@@ -9,5 +9,8 @@
  "summary": "## 论文总结\n\n**标题**：Diagnosing JEPA World Models with Action-Conditioned Predictive Consistency（用动作条件预测一致性诊断 JEPA 世界模型）\n\n### 1. 核心创新点\n提出 **ACPC（Action-Conditioned Predictive Consistency，动作条件预测一致性）**——一个基于互模拟（bisimulation）思想的诊断指标，用来衡量 JEPA 世界模型的潜空间表征在视觉扰动下是否仍能保持一致的动作条件预测。\n\n### 2. 主要方法\n- **理论出发点**：借用互模拟准则——两个观测只有在\"同一动作序列下的后果一致\"时才应被视为同一状态。JEPA 虽在紧凑潜空间而非像素空间预测，减轻了对无关外观的建模压力，但并不能保证对视觉扰动的鲁棒性。\n- **ACPC 指标**：将「干净历史」与其「视觉扰动版本」在**相同动作序列**下分别向前 rollout，度量两条轨迹在潜空间中的发散程度。\n- **理论保证**：证明该发散量可以**上界约束**扰动引起的多步预测误差变化与规划器代价（planner cost）变化。\n- **两个衍生度量**：\n  - **IR（Invariance Radius，不变性半径）**：刻画干净轨迹与扰动轨迹 rollout 的离散程度（不变性）。\n  - **SR（Separation Rate，可分离率）**：检验不同状态在 rollout 后是否仍可区分（避免表征坍塌）。\n  两者互补，构成一个联合诊断筛查（IR-SR screen）。\n\n### 3. 结论/性能\n- 在 **4 个视觉控制任务**上验证：成对 ACPC 能够有效预测扰动带来的预测误差与规划代价变化。\n- 在 **LeWM** 上，IR-SR 联合筛查具有**跨任务迁移能力**，且在**模糊（blur）与缩放（resize）**扰动下依然提供有效信息。\n- 在架构不同的 **PLDM** 上也观察到相似的诊断趋势，说明该指标具备一定的架构通用性。\n\n> 一句话：这不是一个新的训练方法，而是一套**有理论保证的诊断工具**，用于在部署前评估 JEPA 类世界模型表征的鲁棒性与可区分性。\n\n如需生成完整的文献综述格式笔记（含中英双语、写入 Obsidian），可以用 `/paper-review`。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-15 13:03:49"
+ "created_at": "2026-08-15 13:03:49",
+ "topics": [
+  "world-model-learning"
+ ]
 }

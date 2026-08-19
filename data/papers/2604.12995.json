@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：PolicyBench 首次提出覆盖中美跨系统的大规模政策理解基准，并结合 Bloom 分类的三维认知能力评估，进而推出面向政策领域的 Mixture-of-Experts 模型 PolicyMoE，以提升对政策相关任务的理解与应用能力。\n\n- 主要方法：\n  - 构建 PolicyBench：一个包含 21K 条案例、覆盖多政策领域的跨系统基准，基于 Bloom 的认知层级评估记忆、理解和应用三类能力。\n  - 提出 PolicyMoE：一种领域专用的 Mixture-of-Experts 模型，设有对齐到每个认知水平的专家模块，进行分层、领域化的推理与应用。\n\n- 结论/性能：\n  - PolicyMoE 在面向应用的政策任务上表现优于记忆或概念理解任务，且在结构化推理任务上达到最高准确率。\n  - 实验揭示当前大语言模型在政策理解方面的局限性，并给出朝向更可靠、聚焦政策的模型的改进方向。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-15 13:02:08"
+ "created_at": "2026-04-15 13:02:08",
+ "topics": [
+  "agent-benchmarks",
+  "applications"
+ ]
 }

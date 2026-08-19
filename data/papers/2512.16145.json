@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：在大规模医用视觉-语言模型上提出语义驱动强化学习（SRL），通过组相对策略优化（GRPO）以报告级奖励直接优化临床正确性，并引入结构化“思考报告”约束提升语义一致性。\n\n2) 主要方法： \n- 使用 SRL 框架与 GRPO 在医学报告生成任务中进行策略优化；\n- 设计报告级奖励 MCCS（基于生成与参考报告中关键放射学发现的边际对比相似度）来直接对齐临床标签与语义正确性；\n- 引入轻量级推理格式约束，生成结构化的“thinking report”输出；\n- 在 IU X-Ray 与 MIMIC-CXR 上评估，采用临床有效性（CE）指标。\n\n3) 结论/性能：\n- 达到行业领先的 CE-F1 分数：IU X-Ray 为 51.88，MIMIC-CXR 为 40.39；\n- 实验表明标签语义强化（语义级奖励）优于传统的 token-level 监督，表明在医用大视觉-语言模型训练中通过语义强化提升临床正确性。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-19 02:46:59"
+ "created_at": "2025-12-19 02:46:59",
+ "topics": [
+  "applications",
+  "rl-post-training"
+ ]
 }

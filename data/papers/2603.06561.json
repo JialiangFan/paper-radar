@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（1句话）\n提出一个两阶段、任务自适应的 egocentric 4D 推理框架 EgoReasoner，通过结构化推理轨迹和任务感知奖励实现对不同推理任务的自适应与可控推理。\n\n2) 主要方法\n- 两阶段框架：阶段1 采用 Task-Adaptive Thinking Templates 指导生成结构化的链式推理轨迹，通过有监督微调实现跨任务自适应推理；阶段2 设计任务感知奖励函数，验证实体定位、时间对齐与逻辑一致性，并结合 GRPO 进行强化微调以强化各推理路径。\n- 技术要点：3B 参数模型，训练仅用 16K 样本，面向面向 egocentric 4D 推理任务（如夹具互动计数、视点相对定位、对象移动轨迹跟踪、静态对象定位）。\n  \n3) 结论/性能\n在 HD-EPIC 基准上达到 37.5% 的平均准确率，优于对比模型 Qwen2.5-VL-7B 的 25.7%（提升约 10 个点左右）。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-09 13:03:36"
+ "created_at": "2026-03-09 13:03:36",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

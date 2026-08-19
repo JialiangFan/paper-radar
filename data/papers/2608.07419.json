@@ -9,5 +9,9 @@
  "summary": "**核心创新点**：把校准从事后温度缩放（post-hoc temperature scaling）改为训练期直接优化模型参数，用\"最大化预测分布熵\"作为校准目标，解决温度参数跨领域不可迁移的问题。\n\n**主要方法**：受温度缩放启发，构造双层优化（bilevel optimization）框架——下层用带参数的损失函数训练模型，上层调整该损失的超参数以最大化预测熵；为适配 LLM 规模，采用高效的一阶近似，避免显式二阶（Hessian）计算。\n\n**结论/性能**：在多项选择题和开放式生成式问答两类任务上，该方法都能得到校准良好的 LLM，其中在**分布外（out-of-domain）泛化**上优势尤为明显。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-10 13:01:59"
+ "created_at": "2026-08-10 13:01:59",
+ "topics": [
+  "rl-post-training",
+  "ai-safety-alignment"
+ ]
 }

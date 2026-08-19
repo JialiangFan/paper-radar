@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（1句）：\n提出 MORE-R1，通过显式的逐步推理结合强化学习，引导 LVLM 进行多模态对象-实体关系提取，获得可解释性的推理过程与性能提升。\n\n2) 主要方法：\n- 采用两阶段训练：初始为冷启动阶段的监督微调（SFT），并自动构建一个高质量、包含细粒度逐步推理的 MORE 任务专用数据集。\n- 随后进入强化学习阶段，采用 Group Relative Policy Optimization（GRPO）算法配合 Progressive Sample-Mixing 策略，稳定训练并提升在困难样本上的推理能力。\n- 通过 LVLM 架构实现对多模态信息的逐步推理，提升对象与实体关系的提取效果。\n\n3) 结论/性能：\n在 MORE 基准上达到最先进的性能，显著优于基线方法，证明了所提出的逐步推理与强化学习策略在复杂多模态关系提取中的有效性与鲁棒性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-11 13:04:53"
+ "created_at": "2026-03-11 13:04:53",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 Selective-adversarial Entropy Intervention（SaEI），通过对视觉输入进行基于采样回答熵的定向对抗扰动，并结合 token 选择性的熵计算，在不破坏事实知识的前提下提升策略熵与探索，从而提升视觉-语言模型的推理能力。\n\n- 主要方法：\n  - SaEI 框架：在强化学习微调阶段对视觉输入施加对抗扰动，扰动源自对采样回答熵的对抗目标，提升探索空间。\n  - EgAS（Entropy-guided Adversarial Sampling）：将 sampled responses 的熵设为对抗目标，产生对抗梯度以攻击视觉输入，扩大可能的答案空间。\n  - TsEC（Token-Selective Entropy Computation）：对抗过程中仅在选定的 token 上计算熵，最大化对抗效果同时避免扭曲模型的事实性知识。\n  - 将上述机制应用于 VLM 的 RL 微调，提升策略的探索性和推理能力。\n\n- 结论/性能：在内域与外域数据集上进行大量实验，表明该方法通过增强熵干预显著提升策略探索性与推理能力，提升了模型的推理效果；并且计划在论文被接受后公开代码。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-12 14:05:11"
+ "created_at": "2025-12-12 14:05:11",
+ "topics": [
+  "rl-post-training"
+ ]
 }

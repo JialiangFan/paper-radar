@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将指数移动平均（EMA）作为 RL 训练中的锚策略，并引入 Top-k KL 估计器，实现对大语言模型策略梯度的稳定与提升（EMA-PG）。\n\n- 主要方法：在 GRPO 框架下，用 EMA 锚替代固定锚以实现更稳定的策略更新；提出 Top-k KL 估计器，能够在 exact KL 与采样 KL 之间灵活插值，并在任意 k 下保持 KL 值和梯度的无偏性；两者结合形成 EMA-PG，并在数学推理任务和带检索的问答型 RL 场景中进行评估。\n\n- 结论/性能：在数学推理任务 OlympiadBench 上，R1-distilled 的 Qwen-1.5B 达到 53.9%，高于 GRPO 的 50.8%；在以 Qwen-3B 为基线的 7 个带检索的 Q&A 数据集上，EMA-PG 相对 GRPO 平均提升约 33.3%，其中 HotpotQA 从 29.7% 提升到 44.1%，2WikiMultiHopQA 从 27.4% 提升到 40.1%；总体认为 EMA-PG 是一种简单、原理性强且有效的扩展 RL 以提升 LLM 性能的方法。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-05 14:05:32"
+ "created_at": "2026-02-05 14:05:32",
+ "topics": [
+  "rl-post-training"
+ ]
 }

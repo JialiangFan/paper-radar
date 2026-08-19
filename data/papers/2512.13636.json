@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（一句话概括）：通过在一个视觉-语言-行动框架中使用两组独立的LoRA化LLM（Decision Expert 与 Action Expert），将在线强化学习的探索从连续动作空间转向离散的语言决策空间，并通过轨迹级奖励回传来优化决策，以实现高效的在线RL在自动驾驶VLA中的应用。\n\n- 主要方法：提出 MindDrive 框架，使用一个包含两组 LoRA 参数的大语言模型：Decision Expert 负责情景推理与驾驶决策，Action Expert 将语言决策映射为可行轨迹；在在线强化学习循环中，通过轨迹级奖励回传到推理空间，离散化语言决策以避免直接在连续动作空间的探索，从而实现高效学习；在 Bench2Drive 基准上进行评估。\n\n- 结论/性能：在 Bench2Drive 上实现强的闭环性能，Driving Score 为 78.04、Success Rate 为 55.09%，并被称为首个证明在线RL在自动驾驶VLA模型中有效性的工作。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-16 03:04:09"
+ "created_at": "2025-12-16 03:04:09",
+ "topics": [
+  "vla-post-training",
+  "applications"
+ ]
 }

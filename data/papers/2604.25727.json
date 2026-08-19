@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 SkillSynth 框架，通过场景中介的技能图来规模化构建终端任务，并通过图路径抽象与多代理实例化，显式控制训练中最小执行轨迹的多样性，从而实现可扩展的任务综合与轨迹控制。\n\n- 主要方法：构建大规模技能图（场景作为中间转移节点连接多样化的命令行技能），从图中采样路径作为真实工作流的抽象，再由多代理框架将这些路径实例化为可执行的任务实例；并在 Terminal-Bench 上验证效果，所生成的任务也用于训练 Hy3 Preview 以提升终端场景下的代理能力。\n\n- 结论/性能：在 Terminal-Bench 上证明了 SkillSynth 的有效性；用 SkillSynth 生成的任务实例成功用于训练 Hy3 Preview，提升了在终端任务中的代理能力。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-29 13:05:33"
+ "created_at": "2026-04-29 13:05:33",
+ "topics": [
+  "llm-agents"
+ ]
 }

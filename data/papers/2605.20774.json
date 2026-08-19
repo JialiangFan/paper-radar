@@ -9,5 +9,9 @@
  "summary": "# VLA-REPLICA 论文总结\n\n**核心创新点**：提出了一个低成本、易复制的真实世界基准测试平台，用于一致性地评估视觉-语言-动作（VLA）模型在机器人操作任务上的表现。\n\n**主要方法**：使用现成的（off-the-shelf）硬件组件搭建可在不同实验室快速复现的评估系统；配套提供多样化的操作任务集、小规模演示数据集（用于目标域适配），以及涵盖分布内（in-distribution）和分布外（out-of-distribution）场景的评估协议。\n\n**结论/性能**：在模仿学习和当前最先进的 VLA 模型上的实验揭示了各模型的优势与局限；多个独立搭建的装置之间结果一致，验证了该基准的可复现性。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-22 13:03:39"
+ "created_at": "2026-05-22 13:03:39",
+ "topics": [
+  "embodied-benchmarks",
+  "vla-models"
+ ]
 }

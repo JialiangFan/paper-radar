@@ -9,5 +9,9 @@
  "summary": "格式化摘要\n\n1) 核心创新点（1句话）\n通过引入 Tsallis q-对数损失族J_Q并结合一个与学习率无关的梯度放大系数P_{θ^{-q}}，在RLVR与潜在轨迹密度估计之间实现连续插值，从而解决冷启动时的学习阻塞，并提出两种可实现的蒙特卡洛近似 GARL 与 PAFT 来实现该损失族的后训练任务训练。\n\n2) 主要方法\n- 使用 Tsallis q-logarithm 构建从 q=0（RLVR 的 exploitation pole）到 q=1（密度估计极点）的损失族J_Q，所有样本的梯度方向相同，只由放大系数P_{θ^{-q}}进行逐样本重加权（不依赖学习率）。\n- 通过梯度的两种分解，给出两种蒙特卡洛估计实现：\n  - GARL（Gradient-Amplified RL）：从先验采样并放大 RL 梯度，方差较低，偏差为O(q/(M P_θ^{q+1}))。\n  - PAFT（Posterior-Attenuated Fine-Tuning）：从后验重要重采样并执行标准 SFT，梯度语义更一致，偏差同量级。\n- 实验对象与场景：在 FinQA、HotPotQA、MuSiQue 上评估，比较 GARL 与 PAFT 在不同 q 值下的表现，分析冷启动与暖启动情形。\n\n3) 结论/性能\n- GARL 在 q=0.75 下显著缓解冷启动，在 FinQA、HotPotQA、MuSiQue 上能在 GRPO 完全失效的情况下逃离冷启动。\n- 暖启动情形：GARL 的低 q 在 FinQA 上更稳定且占优；但在 HotPotQA 与 MuSiQue 上 GARL 训练不稳定，此时 PAFT 在 q=0.75 提供稳定梯度并实现最佳综合表现，HotPotQA 的最终结果为 47.9 maj@16，比 GRPO 提升约 14.4。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-29 13:03:15"
+ "created_at": "2026-04-29 13:03:15",
+ "topics": [
+  "llm-reasoning",
+  "rl-post-training"
+ ]
 }

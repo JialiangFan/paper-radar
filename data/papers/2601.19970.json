@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：首次在 OWASP Top 10 for LLM Applications 框架下，对多种 Llama 模型及其 Guard 变体进行系统性安全基准测试，揭示小型定制模型在安全任务中的显著优势。\n\n- 主要方法：在 FABRIC 测试平台（NVIDIA A30 GPU）上，对五种标准 Llama 模型和五种 Llama Guard 变体共十种模型，基于覆盖十类漏洞的100条对抗性提示，评估威胁检测准确率、响应安全性与计算开销；并提供开源的基准数据集（对抗性提示、威胁标签、攻击元数据）。\n\n- 结论/性能：最高检测率为76%、测试延迟0.165秒（Llama-Guard-3-1B）；部分基线模型如 Llama-3.1-8B 检测准确率为0%，推理时间更长（0.754秒）；呈现出模型规模与安全性能的反向关系，表明小型、专门化模型在安全任务上往往优于大型通用模型；同时提供可复现的开源基准数据集以支持研究。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-01-29 03:23:13"
+ "created_at": "2026-01-29 03:23:13",
+ "topics": [
+  "ai-safety-alignment",
+  "agent-benchmarks"
+ ]
 }

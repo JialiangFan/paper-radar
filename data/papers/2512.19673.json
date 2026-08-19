@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：通过对 Transformer 的残差流进行内在分解，将语言模型策略拆解为 Internal Layer Policies 与 Internal Modular Policies，并据此提出 Bottom-up Policy Optimization（BuPO），在早期训练阶段直接优化内部层策略以重建基础推理能力并提升推理性能。\n- 主要方法：将策略分解为内部层策略与内部模组策略；利用隐藏状态与未嵌入矩阵的等价性提取可采样策略，并分析各层熵与收敛模式；提出 BuPO，在低层对齐训练目标以重建底层推理能力，并在复杂推理基准上进行大量实验比较。\n- 结论/性能：BuPO 在复杂推理基准上显著提升性能，验证通过优化内部层策略可以更有效地塑造推理过程；同时揭示不同模型（如 LLama 与 Qwen 系列）在层级收敛与推理结构上的差异，代码已公开。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-23 03:49:34"
+ "created_at": "2025-12-23 03:49:34",
+ "topics": [
+  "rl-post-training"
+ ]
 }

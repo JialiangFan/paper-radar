@@ -31,6 +31,7 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "safe-rl"
+  "safe-rl",
+  "robot-harness"
  ]
 }

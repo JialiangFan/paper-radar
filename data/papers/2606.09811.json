@@ -9,5 +9,9 @@
  "summary": "# AHA-WAM 论文总结\n\n**1. 核心创新点**\n打破世界预测与动作执行同步耦合的限制，提出\"异步、视野自适应\"的世界-动作建模——让世界分支以低频做长程规划、动作分支以高频闭环执行，从而充分释放视频分支在具身控制中的潜力。\n\n**2. 主要方法**\n- 采用**双 DiT（Diffusion Transformer）架构**：视频 DiT 作为低频\"世界规划器\"，维护对历史观测的滚动 KV 记忆（rolling key-value memory），并暴露可复用的分层潜在上下文以编码长程场景演化；动作 DiT 作为高频执行器，通过**分层联合注意力（layerwise joint attention）**查询该上下文，闭环输出短动作块。\n- 为支持异步执行，引入 **horizon-adaptive offset training（视野自适应偏移训练）** 和 **OVCR（Observation-Guided Video-Context Routing，观测引导的视频上下文路由）**，使动作专家既能利用长程世界上下文，又能响应实时执行状态，而**无需重新运行视频 DiT**。\n\n**3. 结论/性能**\n在 RoboTwin 与真实世界操作任务上达到 SOTA，且**无需任何机器人数据预训练**：\n- RoboTwin 平均成功率 **92.80%**；\n- 4 个真实世界任务平均成功率 **78.3%**；\n- 闭环控制达 **24.17 Hz**，相比 Fast-WAM 提速 **4.59 倍**。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-13 13:03:16"
+ "created_at": "2026-06-13 13:03:16",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
 }

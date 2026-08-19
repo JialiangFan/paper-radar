@@ -9,5 +9,8 @@
  "summary": "## AppDeltaWorld 论文摘要总结\n\n**1. 核心创新点**\n提出\"转移约束下的增量代码世界模型\"，将 GUI 下一屏预测从生成图像/文本描述，转化为生成一次**可达的代码更新**（HTML 增量），从而保证动作—转移逻辑的一致性与生成稳定性。\n\n**2. 主要方法**\n- **检索**：在动作—转移约束下，检索特定 App 的 Level-1 HTML 结构参考；\n- **生成**：以当前屏幕、执行动作、预测的下一屏文本、检索到的结构为条件，生成 Level-2 可执行 HTML；\n- **渲染**：将生成的视觉素材填入图像插槽，再经浏览器渲染成完整界面；\n- **应用**：作为训练环境，构建经过筛选的闭环 SFT 数据训练 AppDeltaAgent，并支持基于世界模型的**测试时强化学习**（TTRL）。\n\n**3. 结论/性能**\n- 作为世界模型：在 CMGUIBench-500 的 Code2World 评测中保真度最高，结构布局与 UI 元素重建显著优于纯图像和纯代码基线；\n- 作为训练环境：AppDeltaAgent 在 AndroidLens 上达到 SOTA，在 MobileGym 与 MobileWorld 上稳定提升；\n- 测试时强化学习可在**不与真实 App 交互**的前提下进一步实现策略自适应与性能提升。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-07 13:03:49"
+ "created_at": "2026-08-07 13:03:49",
+ "topics": [
+  "world-model-learning"
+ ]
 }

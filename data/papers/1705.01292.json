@@ -30,7 +30,7 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "formal-methods",
-  "safe-rl"
+  "safe-rl",
+  "formal-methods"
  ]
 }

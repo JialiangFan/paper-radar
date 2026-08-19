@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话）  \n在长期任务中的步级策略优化里，基于历史上下文的一致性将每一步分配到多层次群组，对各组独立估计优势并自适应聚合，以实现步级优势估计的偏差-方差折中。\n\n2) 主要方法  \n- 提出 Hierarchy-of-Groups Policy Optimization (HGPO)。  \n- 在同一组回放轨迹中，依据历史上下文的一致性将每一步分配到多个层次的群组。  \n- 对每个群组内独立计算该组的优势，然后用自适应权重进行聚合，得到最终的步级优势估计。  \n- 不需要额外的模型或额外的回放数据，保持与原有计算资源的一致性。\n\n3) 结论/性能  \n在 ALFWorld 和 WebShop 两个具有挑战性的 agentic 任务上，使用 Qwen2.5-1.5B-Instruct 与 Qwen2.5-7B-Instruct 的设置，HGPO 在相同计算约束下显著优于现有的代理式 RL 方法。代码已开源。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-27 14:02:42"
+ "created_at": "2026-02-27 14:02:42",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

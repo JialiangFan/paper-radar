@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点（1句话）\n- 提出端到端的文本到 Manim 动画生成框架，通过 ManimTrainer 的 SFT+GRPO（统一的代码与视觉奖励）与 ManimAgent 的 Renderer-in-the-loop 及 RITL-DOC 推理策略，实现从文本到代码再到视频的统一优化。\n\n2. 主要方法\n- ManimTrainer：将监督微调（SFT）与基于强化学习的群体相对策略优化（GRPO）结合，使用融合代码与视觉评估信号的统一奖励进行训练。\n- ManimAgent：推出 Renderer-in-the-loop（RITL）推理管线，以及API文档增强的 RITL-DOC，提升推理阶段对渲染与外部知识的对齐。\n- 评估设计与数据集：在九种训练-推理策略组合下，对 17 种开源子 30B 规模的语言模型进行评测，基于 ManimBench 进行文本-代码-视频的统一评估。\n\n3. 结论/性能\n- 结论要点：SFT 提升代码质量；GRPO 提升视觉输出并增强在推理时对外部信号的自我纠错响应；训练与代理推理策略具有互补作用，提升整体生成质量。\n- 关键性能：以 Qwen 3 Coder 30B + GRPO + RITL-DOC 为代表，达到最高综合性能，渲染成功率（RSR）95% 左右、与参考视频的视觉相似度（VS）为 85.7%，VS 比基线 GPT-4.1 提升约 3 个百分点。\n- 额外发现：代码与视觉指标之间的相关性在经过 SFT 与 GRPO 后增强，但在引擎级推理增强时趋于弱化，强调了训练阶段与推理阶段策略的互补作用。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-21 13:03:23"
+ "created_at": "2026-04-21 13:03:23",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

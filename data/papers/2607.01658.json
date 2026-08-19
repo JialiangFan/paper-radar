@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-07-06 13:01:59"
+ "created_at": "2026-07-06 13:01:59",
+ "topics": [
+  "vla-models",
+  "vla-post-training"
+ ]
 }

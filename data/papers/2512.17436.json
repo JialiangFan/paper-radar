@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：在 MiMo-VL-Miloco-7B 的基础上，提出面向智能家居场景的双阶段训练框架，结合基于组相对策略优化的强化学习、链式推理监督与记忆/令牌预算感知推理，实现高效的家居场景理解与跨模态推理，并提供量化版本以便部署。\n\n2) 主要方法：基于 MiMo-VL-7B 架构构建 MiMo-VL-Miloco-7B（以及量化版 MiMo-VL-Miloco-7B-GGUF），采用两阶段训练（监督微调 + 强化学习，基于 Group Relative Policy Optimization）以及链式思考监督与 token-budget-aware 推理，利用多领域数据实现数据高效学习与家居场景专项能力的提升。\n\n3) 结论/性能：在手势识别与常见家庭场景理解等任务上达到领先的 F1 分数，并在 Video-MME、Video-MMMU、Charades-STA 等视频基准及 MMMU-Pro、MMLU-Pro 等语言理解基准上获得稳定提升；并实现强基线对比中的优越表现，提供公开权重和评测工具供研究与实际部署使用。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-22 02:48:50"
+ "created_at": "2025-12-22 02:48:50",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

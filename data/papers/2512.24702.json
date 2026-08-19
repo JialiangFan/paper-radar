@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将推理分割转化为推理时的进化搜索，通过维护一个提示族群并在生成-评估-进化循环中自我优化，实现零-shot 下的像素级分割。\n\n- 主要方法：\n  - EVOL-SAM3：在推理阶段保持一个提示候选池，通过 Generate-Evaluate-Evolve 循环不断改进提示。 \n  - Visual Arena：采用无参考的对战式评估（逐对比较）来评估提示适应度，避免依赖外部参考。\n  - Semantic Mutation：引入语义扰动/变异，提升多样性并纠正语义层面的错误。\n  - Heterogeneous Arena：将几何先验与语义推理相结合，增强最终选择的鲁棒性。\n\n- 结论/性能：在 ReasonSeg 基准的零-shot 设置下，EVOL-SAM3 显著优于静态基线，并显著超过当前最强的全监督方法，代码已公开（GitHub 链接在论文中给出）。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2026-01-01 02:51:14"
+ "created_at": "2026-01-01 02:51:14",
+ "topics": [
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

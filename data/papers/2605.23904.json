@@ -9,5 +9,8 @@
  "summary": "# SkillOpt 论文总结\n\n**核心创新点**：将 agent skill 视为冻结模型的\"外部状态\"进行训练，提出首个系统化、可控的文本空间 skill 优化器，使其行为像深度学习优化器一样可靠地迭代改进。\n\n**主要方法**：\n- 用一个独立的优化器模型，将打分后的 rollouts 转换为对单一 skill 文档的**有界 add/delete/replace 编辑**\n- 仅当编辑在留出验证集上**严格提升分数**时才接受\n- 引入三项稳定性机制：**文本学习率预算**、**被拒编辑缓冲区**、**epoch 级慢更新/元更新**\n- 部署时**零额外推理调用**\n\n**结论/性能**：\n- 在 6 个基准 × 7 个目标模型 × 3 个执行环境（direct chat、Codex、Claude Code）共 52 个 (模型, 基准, 环境) 单元上**全部取得最佳或并列最佳**\n- 击败 human、one-shot LLM、Trace2Skill、TextGrad、GEPA、EvoSkill 等所有对比方法\n- 在 GPT-5.5 上相对无 skill 基线分别提升：direct chat **+23.5**、Codex **+24.8**、Claude Code **+19.1** 分\n- 优化得到的 skill 具备良好**迁移性**：可跨模型规模、跨执行环境（Codex ↔ Claude Code）、迁移到相近的数学基准而无需再训练",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-25 13:03:22"
+ "created_at": "2026-05-25 13:03:22",
+ "topics": [
+  "llm-agents"
+ ]
 }

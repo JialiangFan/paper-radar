@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 OdysseyArena 这一面向长时程、主动性与归纳性交互的基准框架，正式化四种交互原语并提供两套标准化基准（OdysseyArena-Lite 与 OdysseyArena-Challenge），用于评估大语言模型的归纳效率和长时程发现能力。\n\n- 主要方法：将抽象的转移动力学转化为可操作的互动环境，设计并实现四个交互原语；构建 OdysseyArena-Lite（120 任务）用于标准化评测，以及 OdysseyArena-Challenge用于极端时域的压力测试；在 15+ 种领先的 LLMs 上进行广泛实验，并公开代码与数据。\n\n- 结论/性能：实验发现即使是前沿模型在归纳性场景也存在明显不足，尤其在长时程和自主发现能力上存在瓶颈，揭示了在复杂环境中实现稳定的自主探索与长期规划的挑战。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-06 14:02:29"
+ "created_at": "2026-02-06 14:02:29",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

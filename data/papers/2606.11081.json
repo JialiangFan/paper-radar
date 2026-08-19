@@ -9,5 +9,8 @@
  "summary": "# 论文总结\n\n**1. 核心创新点**\n提出 GASLoC——一种统一了\"局部通信（gossip 稀疏对等通信）\"与\"局部更新（多步本地优化）\"的去中心化 LLM 预训练算法，摆脱了同步 All-Reduce 的瓶颈。\n\n**2. 主要方法**\n将\"通信加速\"的思想推广到 outer optimizer（外层优化器）层面，构建了一个基于 gossip 的训练框架：兼容 Adam 等自适应优化器、支持多步局部优化、并允许稀疏随机的节点间对等通信，从而避免依赖全局同步集合通信。\n\n**3. 结论/性能**\n在多种标准 LLM 预训练任务上：\n- 在\"每次通信仅一步\"的设置下，于多种网络拓扑中超越当前 SOTA 的去中心化算法；\n- 在多步局部更新设置下，性能可与 DiLoCo 竞争（这是现有去中心化方法在 LLM 场景中难以做到的）；\n- 在带宽异构（heterogeneous bandwidth）场景下，显著优于 DiLoCo。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-10 13:01:30"
+ "created_at": "2026-06-10 13:01:30",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

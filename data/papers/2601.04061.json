@@ -27,5 +27,9 @@
  "code": "",
  "project": "https://lin-shan.com/CLAP/",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "vla-models",
+  "vla-post-training"
+ ]
 }

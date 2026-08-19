@@ -28,5 +28,9 @@
  "code": "",
  "project": "https://rdt-robotics.github.io/rdt-robotics/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-models",
+  "robot-manipulation"
+ ]
 }

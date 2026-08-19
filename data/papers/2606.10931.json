@@ -9,5 +9,9 @@
  "summary": "根据标题和摘要，总结如下：\n\n**标题**：《It Takes One to Bias Them All: Breaking Bad with One-Shot GRPO》（一个就够了：用单样本 GRPO 攻破对齐护栏）\n\n1. **核心创新点**：仅用**一个**带偏见的样本进行 GRPO 训练，就足以系统性地破坏大模型的对齐护栏，诱发可泛化的偏见行为。\n\n2. **主要方法**：采用 **GRPO（Group Relative Policy Optimization，组相对策略优化）** 这一强化学习后训练方法，在单个偏见样本上做\"单样本（one-shot）\"训练，观察其对模型的影响。\n\n3. **结论/性能**：单样本训练即可诱导出**系统性偏见**，且这种基于刻板印象的推理能**跨属性、跨类别、跨基准（benchmark）泛化**；模型的易感程度取决于其初始产生偏见输出的概率。研究揭示了后训练阶段的一个**关键漏洞——对齐可被单个样本覆盖**。\n\n---\n提示：如果你想要更完整的中英双语文献综述（含背景、问题、贡献、方法论拆解，并自动归档到 Obsidian），可以使用 `/paper-review` 技能。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-06-13 13:00:57"
+ "created_at": "2026-06-13 13:00:57",
+ "topics": [
+  "rl-post-training",
+  "ai-safety-alignment"
+ ]
 }

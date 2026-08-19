@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出基于互视信息图的自适应对抗性协同感知攻击框架 MVIG，通过学习不同防御系统暴露的脆弱性信息来实现攻击位置、时序与持续性的自适应优化。\n\n- 主要方法：构建并利用统一的 mutual view information graph（MVIG）表示，结合时序图学习生成演化的制造风险地图；采用熵感知的脆弱性搜索来定位攻击目标、时机与持续性，具备对多种防御配置的泛化能力。\n\n- 结论/性能：在 OPV2V 和 Adv-OPV2V 数据集上的评估中，MVIG 攻击使防御成功率下降最高达 62%，对持续攻击的检测率降低约 47%，实时性约为 29.9 FPS；并将发布代码。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-24 14:02:17"
+ "created_at": "2026-02-24 14:02:17",
+ "topics": [
+  "adversarial-attacks",
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "**核心创新点**：提出以教育类结构化内容为信号源，通过构建 DoraVQA 数据集并对 Qwen2/Qwen3 使用 GRPO 微调，显著提升视觉-语言模型的结构化推理能力。\n\n**主要方法**：\n- 构建 DoraVQA：来自 Dora the Explorer 的 8 季视频，共 5,344 对问答，具备精准时间戳对齐，且每集呈现 context–question–pause–answer 的自我学习结构。  \n- 模型与训练：对 Qwen2 和 Qwen3 使用 Group Relative Policy Optimization (GRPO) 进行微调，充分利用教育内容中的正确性信号与结构化推理轨迹。  \n- 数据与评估：仅使用约 38 小时儿童教育视频训练，评估包括 DoraVQA、CVBench，以及跨域转移到 Video-MME 和 NExT-QA，验证广义推理能力的提升。\n\n**结论/性能**：\n- DoraVQA 上获得 8–14 点的显著提升；  \n- CVBench 达到 86.16% 的 State-of-the-Art 水平；  \n- 对 Video-MME 与 NExT-QA 具有强迁移能力，证明从结构化教育内容中学习的推理能力可泛化到广义多模态理解；  \n- 结果表明，内容结构（教育性、脚本化结构）与数据规模同等重要，共同推动多模态推理性能提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-02 14:04:26"
+ "created_at": "2026-02-02 14:04:26",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

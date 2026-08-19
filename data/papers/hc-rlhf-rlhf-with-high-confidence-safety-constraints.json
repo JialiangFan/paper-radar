@@ -23,5 +23,9 @@
  "code": "",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "rl-post-training",
+  "safe-rl"
+ ]
 }

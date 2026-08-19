@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：首次提出面向一对多临床教学的多智能体仿真平台 ClinEdu 及其衍生的多模态 Socratic 导师 MedTutor-R1，用于在群体教学场景中自适应教学策略的训练与评估。\n\n- 主要方法：\n  - 构建 ClinEdu：多智能体 Pedagogical Simulator，包含个性化病人和多样化学生群体，用于控制化测试教学过程并大规模生成教学数据。\n  - 形成 ClinTeach：基于 ClinEdu 的大型 Socratic 教学对话数据集，覆盖群体授课的复杂情境。\n  - 训练 MedTutor-R1：首个用于一对多教学的多模态 Socratic 导师，先在 ClinTeach 上进行指令微调，再通过强化学习优化，奖励来自结构保真、分析质量、临床安全三轴评估。\n  - 评估方式：将导师重新部署回 ClinEdu 进行仿真式的在场评估，检验真实场景中的教学效果。\n\n- 结论/性能：\n  - MedTutor-R1 在平均教学评分上比基线模型提升约20%，并与 o3 水平相当；对不同数量的学生具备较高的适应性，验证了 ClinEdu 及其教学框架的有效性。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-08 14:02:41"
+ "created_at": "2025-12-08 14:02:41",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

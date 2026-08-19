@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出 Step-DeepResearch：一个以原子能力数据合成、渐进式训练和检查表式评测为支撑的成本高效端到端研究代理，显著提升长程规划、跨源验证与研究报告撰写能力，并在中文场景中展现强对比优势。\n\n2) 主要方法\n- 数据合成策略基于“原子能力”来强化规划与报告撰写能力。\n- 采用从代理能力中期训练到 SFT（监督微调）再到 RL（强化学习）的渐进式训练路径。\n- 引入检查表式评测器（Checklist-style Judger）以提升模型鲁棒性。\n- 建立 ADR-Bench，用以覆盖中文领域的现实深度研究场景评测。\n- 使用32B规模的 Step-DeepResearch，作为端到端研究代理的实现与评估对象。\n\n3) 结论/性能\n- Step-DeepResearch（32B）在 Scale AI Research Rubrics 上获得 61.4% 的评分。\n- 在 ADR-Bench 上显著优于可比模型，并与 OpenAI、Gemini DeepResearch 等 SOTA 闭源模型竞争接近。\n- 结果表明通过精细化训练，中等规模模型也能以行业领先的成本实现专家级能力。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-24 02:49:09"
+ "created_at": "2025-12-24 02:49:09",
+ "topics": [
+  "llm-agents",
+  "agent-benchmarks"
+ ]
 }

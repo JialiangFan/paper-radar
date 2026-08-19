@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 M-GRPO 框架，结合慢速更新的动量模型作为稳定训练目标和基于 IQR 的自适应过滤，以缓解大语言模型在长时程自监督强化学习中的策略崩溃并提升性能。\n\n- 主要方法：采用 Momentum-Anchored Group Relative Policy Optimization，在训练中使用逐步演化的动量模型作为稳定目标；并引入基于四分位距（IQR）的自适应过滤，裁剪低熵轨迹以保持策略多样性。\n\n- 结论/性能：在多项推理基准上实现更稳定的训练过程，避免过早收敛，且达到当前方法的最先进性能水平。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-16 03:05:13"
+ "created_at": "2025-12-16 03:05:13",
+ "topics": [
+  "rl-post-training"
+ ]
 }

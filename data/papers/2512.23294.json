@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出具备感知、记忆、推理和行动能力的 agentic AI-强化语义通信框架，构建从意图到编码、传输、解码、行动与评估的闭环，并通过源/信道知识库驱动的联合编码来提升鲁棒性和信息重建质量。\n\n- 主要方法：综合评述嵌入式代理、LLM/LVM 代理、RL 代理等 agent 类型；提出统一的 agentic AI–SemCom 框架，覆盖应用层、语义层、云‑边协作层；提出以知识库驱动的 AKB‑JSCC（源知识库由 LLM/LVM 代理构建，信道知识库由 RL 代理构建）的联合源信道编码案例；并在多场景（如多车协同感知、多机器人协作救援、intellicise 网络等）中阐释应用。\n\n- 结论/性能：AKB‑JSCC 在不同信道条件下实现了更高的信息重建质量，显示出更好的鲁棒性与性能潜力；并对未来的发展方向进行了讨论，指向可移植、可验证、可控的 agentic SemCom 研究与部署。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-30 02:49:52"
+ "created_at": "2025-12-30 02:49:52",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

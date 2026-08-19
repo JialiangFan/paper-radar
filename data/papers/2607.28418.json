@@ -9,5 +9,8 @@
  "summary": "## WIDE 论文摘要总结\n\n**1. 核心创新点**\n首个端到端可微分的 **token 级动态宽度剪枝**框架，让每个 token 自主选择所需的计算通路，把动态剪枝的粒度从「层级」细化到「神经元块级」。\n\n**2. 主要方法**\n- **动态宽度选择**：每个 token 动态挑选注意力头组（attention-head groups）和 FFN 通道组（FFN-channel groups），而非静态、输入无关的固定剪枝结构。\n- **两阶段训练流水线**：学习有效的 token 级稀疏执行模式，兼顾 prefill 与 decode 两种推理场景。\n- **剪枝—算子协同设计（kernel co-design）**：将动态稀疏加速拆解为三部分——掩码重排（mask reordering）、硬件无关的块级跳过、硬件相关的块内跳过，使细粒度动态稀疏真正落地为实际加速。\n\n**3. 结论/性能**\n- 50% 稀疏度、仅校准（calibration-only）设置下，相比 SOTA 动态**深度**剪枝方法性能提升 **55.1%**。\n- 算子层面接近理论上限的加速：prefill 最高 **1.98×**，decoding 最高 **4.95×**。\n- 端到端加速：prefill **1.68×**，decoding **1.55×**。\n- 代码已开源（EIT-NLP/LLM-Pruning）。\n\n一句话评价：其价值在于同时解决了「动态稀疏质量保持好但跑不快」这一长期矛盾——细粒度带来精度，算子协同设计把理论 FLOPs 节省兑换成了真实吞吐。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-07-31 13:02:08"
+ "created_at": "2026-07-31 13:02:08",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

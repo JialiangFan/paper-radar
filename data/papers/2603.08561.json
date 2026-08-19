@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出一个基于回顾性自我反思的在线强化学习框架 RetroAgent，通过双内在反馈（数值性与语言性）结合 SimUtil-UCB 记忆检索实现从“解决”到“进化”的学习与经验复用。\n\n2. 主要方法：\n- 引入 hindsight self-reflection 机制，产生两类 intrinsic feedback：\n  - 内在数值反馈：跟踪相对于以往尝试的子任务完成的增量，奖励具有潜力的探索。\n  - 内在语言反馈：提炼可复用的经验教训并存入记忆缓冲区。\n- 记忆检索采用 SimUtil-UCB 策略，平衡相关性、实用性与探索度，以高效利用历史经验。\n- 在两种模型家族上进行在线 RL 实验，覆盖四个具有挑战性的智能体任务，方法对比基线 GRPO，取得显著提升。\n\n3. 结论/性能：\n- 取得 state-of-the-art 成果：相较 GRPO-training 的代理，分别在 ALFWorld、WebShop、Sokoban、MineSweeper 上提升约 18.3%、15.4%、27.1%、8.9%。\n- 展现出强的测试时适应性与对分布外情景的泛化能力。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-10 13:03:52"
+ "created_at": "2026-03-10 13:03:52",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

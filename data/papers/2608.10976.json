@@ -9,5 +9,9 @@
  "summary": "## XCoT-VLA 论文摘要总结\n\n**1. 核心创新点**\n用 2–6 个紧凑的\"可执行 CoT（XCoT）token\"替代冗长的自然语言思维链，让驾驶推理直接、低开销地对接轨迹生成。\n\n**2. 主要方法**\n- **监督数据**：自动构建 Reason-Action 监督信号——用日志轨迹提供\"动作证据\"，用场景上下文提供\"因果语义\"。\n- **架构**：预测出的 XCoT 序列保留在上下文中，通过共享的多模态自注意力去条件化固定的轨迹查询（trajectory queries）。\n- **确定性 token-函数路由**：XCoT token 走 Reason FFN，轨迹查询走 Control FFN，最终以 flow matching（流匹配）生成轨迹。\n- **可选扩展**：XCoT Policy Optimization（XCPO），在同一可执行 token 空间内做策略优化式的进一步精调。\n\n**3. 结论/性能**\n- 通用分布测试集上纵向 ADE 从 1.645 降至 1.323；变道场景中横向 FDE 从 1.616 大幅降至 0.648。\n- 推理仅需 2–6 个 token，显著削减自回归解码开销，满足实时规划的时延预算。\n- 表明面向驾驶的推理可以做到\"紧凑、可执行、并与轨迹生成直接耦合\"。\n\n> 提示：本仓库里有一个 `paper-review` 技能，可按文献综述格式输出中英双语并写入 Obsidian vault。本次我按你指定的三段式格式直接作答，如需走该技能流程告诉我即可。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-08-15 13:05:21"
+ "created_at": "2026-08-15 13:05:21",
+ "topics": [
+  "vla-models",
+  "llm-reasoning"
+ ]
 }

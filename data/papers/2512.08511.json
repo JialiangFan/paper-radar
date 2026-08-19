@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出自调用链式思维 sCoT，将多模态的 iMCoT 转换为语言级推理，通过主代理分解任务并调用参数共享的虚拟子代理在独立上下文中解题，从而实现无显式跨模态交互的高效视觉推理。\n\n- 主要方法：将复杂视觉推理分解为原子子任务，由主代理调用参数共享的虚拟子代理在独立上下文中解决；整个过程为语言级的自调用 Chain-of-Thought，避免跨模态显式交互；采用 group-relative policy optimization 来强化推理行为以提升优化效果。\n\n- 结论/性能：在 HR-Bench 4K 上，sCoT 使整体推理性能提升最多约 1.9%，且训练所需的 GPU 小时约减少 75%（相较强基线）；代码公开可用。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-10 14:04:22"
+ "created_at": "2025-12-10 14:04:22",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

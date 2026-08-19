@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-21 13:03:44"
+ "created_at": "2026-06-21 13:03:44",
+ "topics": [
+  "embodied-benchmarks",
+  "world-model-learning"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：将大语言模型生成的子目标仅在初始化阶段用于对轻量级学生模型进行一次性层级规划预训练，从而在不持续查询LLM的情况下实现高效的文本环境规划。\n\n2) 主要方法：提出 SCOPE（Subgoal-Conditioned Pretraining for Efficient planning），通过从示例轨迹直接派生子目标来进行子目标条件化的预训练，训练一个轻量级的学生模型以实现层级规划，避免在训练和推理阶段反复调用LLM；相比依赖LLM的方法，提升效率。\n\n3) 结论/性能：在 TextCraft 环境中，方法达到0.56的成功率（高于0.52的ADaPT），并将推理时间从164.4秒降至3.0秒，显著提升效率，尽管子目标可能存在次优与可解释性下降的问题。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-11 14:02:44"
+ "created_at": "2025-12-11 14:02:44",
+ "topics": [
+  "llm-planning",
+  "llm-agents"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出一个轻量级且经进化优化的协调器 Trinity，通过一个约0.6B参数的语言模型和一个约10K参数的头部，在多轮对话中动态分派 Thinker/Worker/Verifier 三种角色，协同多性格基础模型完成任务，突破权重合并的架构/API限制。\n\n- 主要方法：\n  - 协调器组成与机制：采用一个紧凑的语言模型 plus 一个极小头部来实现跨模型协作，负责在多轮查询中分配任务与角色。\n  - 任务委派与多角色策略：每轮对话中由协调器决定将目标模型扮演 Thinker、Worker 或 Verifier，从而将复杂技能学习从协调器转移至基础模型。\n  - 演化优化：使用 separable Covariance Matrix Adaptation Evolution Strategy (分块/可分离 CMA-ES) 在高维隐藏状态和预算约束下进行高效的优化与自适应委派。\n  - 理论支撑：强调协调器隐藏状态对输入的丰富上下文表征作用，以及在高维、受预算限制情形下，分块可分离的 CMA-ES 相比 RL、模仿学习、随机搜索的优势。\n\n- 结论/性能：\n  - 在编码、数学、推理和领域知识等任务上， Trinity consistently 超越单个模型与现有方法，并对分布外任务具有鲁棒泛化能力。\n  - 在标准基准上达到或接近最先/最佳水平，其中 LiveCodeBench 获得 86.2% 的分数（SOTA）。\n  - 理论与经验分析指明性能提升的两大原因：一是协调器的隐藏状态表征提供丰富的输入上下文；二是在高维和预算约束下，分块 epsilon 可分离的 CMA-ES 相较于 RL/IL/随机搜索更具优势，能够利用潜在的分区可分性。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-05 14:03:41"
+ "created_at": "2025-12-05 14:03:41",
+ "topics": [
+  "llm-agents"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 提出 MCRMO-Attack，用多裁剪聚合、对齐引导的令牌路由以及跨目标扰动先验的元学习，实现在未知商用多模态大模型上的通用目标迁移对抗，提升稳定性与效果。\n\n2) 主要方法\n- 多裁剪聚合（Multi-Crop Aggregation）与注意力引导裁剪（Attention-Guided Crop）：稳定 supervision，缓解目标裁剪随机性带来的高方差。\n- 对齐性门控令牌路由（Alignability-gated Token Routing）：提高在通用性设定下的令牌级对齐可靠性。\n- 跨目标扰动先验的元学习（Meta-learned cross-target perturbation prior）：在有限源样本下实现对不同目标的更强的个别化对抗解决方案。\n- 这些组成构成 MCRMO-Attack，用于 Universal Targeted Transferable Adversarial Attacks（UTTAA） across 未知的闭源商用 MLLMs。\n\n3) 结论/性能\n- 在公开商用 MLLMs（GPT-4o、Gemini-2.0）上的无样本输入攻击中，和最强的通用基线相比，未见图像攻击成功率提升：GPT-4o 提升约 23.7 个百分点，Gemini-2.0 提升约 19.9 个百分点。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-02 14:01:46"
+ "created_at": "2026-02-02 14:01:46",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

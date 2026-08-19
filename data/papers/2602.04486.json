@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（一句话概括）：提出 Modality-aware Consistency Reasoning（MCR）框架，通过 Multi-style Reasoning Schema Injection（MRSI）将跨模态约束转化为可执行推理链，并结合 Constraint-guided Verifiable Optimization（CVO）与 Group Relative Policy Optimization（GRPO）动态对齐推理轨迹，解决 MLLMs 在 GMNER 中的模态偏见，提升跨模态推理的一致性。\n\n- 主要方法：基于端到端的多模态大语言模型（MLLMs）进行 GMNER；揭示并缓解视觉与文本两类模态偏见；提出 MCR 框架，其中 MRSI 将抽象约束转化为可执行的跨模态推理链，CVO 实现可验证的优化并借助 GRPO 动态对齐推理轨迹。\n\n- 结论/性能：实验在 GMNER 与视覺定位任务上表明，MCR 能有效降低模态偏见，显著优于现有基线，提升相关任务的性能。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-05 14:05:17"
+ "created_at": "2026-02-05 14:05:17",
+ "topics": [
+  "multimodal-perception",
+  "applications"
+ ]
 }

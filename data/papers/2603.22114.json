@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个基于大语言模型的代理 LemmaNet，能够在程序验证中离线从源代码与规范合成辅助lemmas，并在证明过程中在线 adapting 以应对不断变化的证明状态，从而实现对复杂程序的 lemma 发现与应用。\n- 主要方法：使用两阶段的 lemma 发现策略：离线分析源代码与规范进行语义层面的 lemmas 合成；将语义理解与 VC 生成的机械化编码对应起来；在证明展开中动态改编已有 lemmas 以适配证明状态，整体由一个 LLM 代理驱动；在 SV-COMP 和真实系统（Linux 内核、Contiki OS、标准 C++ 库、X.509 解析器）上进行评估。\n- 结论/性能： LemmaNet 明显优于现有最先进方法，证明了“程序理解辅助的 lemma 发现”在代理性程序验证中的重要性，并在实际和基准任务上实现了显著性能提升。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-03-24 13:10:23"
+ "created_at": "2026-03-24 13:10:23",
+ "topics": [
+  "llm-agents",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句）：\n  将推理控制与记忆整合解耦，提出 Active Thinking Decision Maker（ATDM）实现证据对齐的透明推理与时间控制，同时用 Hierarchical Progressive Semantic Integration（HPSI）构建多层记忆聚合，在有限预算下实现全局因果一致的在线视频理解。\n\n- 主要方法（简述使用的技术/模型）：\n  - ATDM：一个透明的推理控制器，通过可观测的进度指标和置信度，外显推理过程并精确对齐返回时序，使回答在首次获得足够证据时输出，同时将推理过程“流式”展示给用户。\n  - HPSI：高效的记忆模块，利用可学习的多层聚合记忆标记在剪辑之间逐步传播，构建全局认知状态，且在保持记忆质量的同时控制令牌预算。\n  - 框架实例化为模型 \\model（Thinking-QwenVL等实现），在在线视频理解任务中实现证据对齐与透明决策。\n\n- 结论/性能（取得的效果）：\n  - 在 StreamingBench 上达到 71.6% 的准确率，在 OVOBench 上达到 46.9%。\n  - 相较于先前的状态最优，在 StreamingBench 上从 67.63% 提升到 71.60%。\n  - 实验结果证实 ATDM 的推理透明性与证据对齐能力，以及 HPSI 的高效全球记忆集成。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-21 13:05:24"
+ "created_at": "2026-04-21 13:05:24",
+ "topics": [
+  "multimodal-perception",
+  "llm-agents"
+ ]
 }

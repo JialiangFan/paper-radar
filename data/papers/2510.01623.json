@@ -26,5 +26,8 @@
  "code": "https://github.com/GigaAI-research/VLA-R1",
  "project": "https://gigaai-research.github.io/VLA-R1",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "vla-post-training"
+ ]
 }

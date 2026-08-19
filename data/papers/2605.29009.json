@@ -9,5 +9,8 @@
  "summary": "## 论文总结：Label-Free Reinforcement Learning via Cross-Model Entropy\n\n**1. 核心创新点**\n提出 **Cross-Model Entropy (CME)** —— 用一个独立验证模型对生成模型输出的对数似然作为无标签强化学习的奖励信号，避免了自指信号（如多数投票、token 熵）会强化模型自身错误的问题。\n\n**2. 主要方法**\n- 将 CME 定义为「生成器响应在独立验证模型下的平均对数似然」，验证器认为\"不意外\"的回答更可能正确或高质量。\n- 该信号连续、无需训练、且因验证器独立于生成器而无法通过自一致性被钻空子（reward hacking）。\n- 直接将 CME 集成进 **GRPO** 训练循环，无需其他改动，把无标签 RL 扩展到此前难以处理的开放式指令遵循任务。\n\n**3. 结论/性能**\n在 UltraFeedback 提示集上、用 AlpacaEval 2.0 评测：\n- 在 **4 个模型家族**（Qwen、Llama、Gemma、OLMo）和 **3 种训练阶段**（预训练、SFT、指令微调）下，CME 都击败了未训练基线；\n- LLM-as-Judge 头对头比较的**胜率（tie-adjusted）介于 52.5% – 71.4%**；\n- 代码将在发表后开源。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-31 13:01:06"
+ "created_at": "2026-05-31 13:01:06",
+ "topics": [
+  "rl-post-training"
+ ]
 }

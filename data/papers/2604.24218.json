@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句概括）：\n  提出一个动态多智能体框架RefEvo，通过动态设计规划、共进化验证与规格锚定实现高效、可靠的参考模型生成，解决工作流僵化、上下文遗忘和验证偏差等挑战。\n\n- 主要方法（技术/模型要点）：\n  - 动态设计规划器（Dynamic Design Planner）：自动分解设计规格，并基于语义复杂度构建定制化执行工作流。\n  - 共进化验证机制（Co-Evolutionary Verification Mechanism）及Dialectical Arbiter：同时修正模型与验证逻辑，基于规格口訣（Spec oracle）降低假阳性。\n  - 规格锚定策略（Spec Anchoring Strategy）：实现无损的上下文压缩，缓解上下文窗口限制带来的问题。\n  - 面向多智能体的协作框架与SystemC参考模型生成，以及对规格的持续对齐与验证。\n\n- 结论/性能（效果与指标）：\n  - 在20个硬件模块基准上达到95%通过率，显著优于静态基线。\n  - 上下文优化平均降低token消耗71.04%，复杂设计每次会话节省超过70,000个token，同时保持100%规格召回。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-28 13:07:10"
+ "created_at": "2026-04-28 13:07:10",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

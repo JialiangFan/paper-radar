@@ -9,5 +9,8 @@
  "summary": "# 论文摘要\n\n**1. 核心创新点**\n提出 **Retrospective Harness Optimization (RHO)**：一种完全自监督的方法，仅利用过去的轨迹（无需真实标签验证集）来持续优化 AI Agent 的\"工具集/工作流\"（harness）。\n\n**2. 主要方法**\n- 从历史轨迹中选取一个**多样化、具挑战性的核心子集**（coreset）；\n- 并行**重新求解**这些任务，生成多条 rollout；\n- Agent 通过**自验证（self-validation）和自一致性（self-consistency）** 分析结果；\n- 生成多个候选的 harness 更新方案，并通过**成对自偏好（pairwise self-preference）** 选出最优版本。\n\n**3. 结论/性能**\n- 在软件工程、技术工作、知识工作三个领域均有效；\n- 在 **SWE-Bench Pro** 上单轮优化即将通过率从 **59% 提升至 78%**，且不依赖任何外部评分；\n- 能精准定位历史失败模式，改变 Agent 行为模式，并在**长程任务**中维持更高准确率。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-07 13:01:05"
+ "created_at": "2026-06-07 13:01:05",
+ "topics": [
+  "rl-post-training"
+ ]
 }

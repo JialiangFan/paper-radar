@@ -9,5 +9,8 @@
  "summary": "## ReCo: Reweighting GRPO Against Distributional Concentration\n\n**1. 核心创新点**\n针对 GRPO 训练后会向基础模型的高概率回答\"集中\"、从而损失推理路径多样性的问题，提出 ReCo 重加权方法，在响应级和 token 级同时纠正这种分布集中。\n\n**2. 主要方法**\n论文将集中现象归因于 GRPO 更新中的两个机制：**响应层面**——高概率回答在采样组内重复出现，从而主导组梯度；**token 层面**——重要性比率（importance ratio）会放大梯度，进一步强化在当前策略下已变得更可能的 token。ReCo 对应地做两处改动：(a) 按回答在 rollout 组内的**期望出现次数**对其贡献做归一化；(b) 用**基于方差的比率**替换 token 级重要性比率，使更新幅度更多分配给尚未饱和、备选 token 仍有合理概率的决策点。\n\n**3. 结论/性能**\n在 Qwen2.5-Math-1.5B/7B 与 Llama-3.1-8B-Instruct 三个模型、五个数学推理基准上，ReCo 在 **k 较大时的 Pass@k 上优于 GRPO**（即保留了更好的推理路径覆盖度），而在 k 较小时与 GRPO 表现相当——说明它在不牺牲单次采样准确率的前提下缓解了推理能力收窄的问题。\n\n---\n提示：本次按你给的三段格式直接总结。如果需要更完整的文献综述式笔记（含研究背景、相关工作定位、中英双语并写入 Obsidian），可以用 `/paper-review`。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-08-01 13:01:15"
+ "created_at": "2026-08-01 13:01:15",
+ "topics": [
+  "rl-post-training"
+ ]
 }

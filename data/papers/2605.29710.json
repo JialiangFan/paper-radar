@@ -9,5 +9,9 @@
  "summary": "## 论文总结：PhAIL\n\n**1. 核心创新点**\n提出一种基于\"时间-成功率累积分布函数（CDF）\"的分布式评估方法，替代传统的固定超时二元成功率，使得小样本（N≤30）下也能可靠区分相近的 VLA（视觉-语言-动作）策略性能。\n\n**2. 主要方法**\n- 在 Franka FR3 真机上构建开放基准 PhAIL，公开数据集、逐次 rollout 数据与参考实现。\n- 评分指标：**Human-Relative Throughput (HRT)**，以同夹具人类遥操作为锚，配 bootstrap 置信区间。\n- 显著性检验：**Kolmogorov-Smirnov 检验**，按物体计算后宏平均。\n\n**3. 结论/性能**\n- 在 4 个公开 VLA 上，宏平均 KS 检验在 N≤30 时即可区分 GR00T vs. ACT、OpenPI vs. ACT，而二元阈值指标无法分辨；最接近的 OpenPI vs. GR00T 在预算内仍无法区分。\n- 当前最优 VLA 的单次操作速度约比人类遥操作慢 **7 倍**（RMST 比率）。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-05-31 13:03:21"
+ "created_at": "2026-05-31 13:03:21",
+ "topics": [
+  "vla-models",
+  "embodied-benchmarks"
+ ]
 }

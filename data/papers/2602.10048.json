@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Fine-grained Group Policy Optimization (FGO)，通过对长 Chain-of-Thought 进行细粒度分组并基于长度与熵分配权重的强化学习策略，实现对CoT的高效压缩，同时作为 GRPO 的增强版本解决数据利用不足与熵崩溃问题。\n\n- 主要方法：使用强化学习算法 FGO，对分组回答进行细分并赋予权重，按长度和信息熵进行权重调节；作为 Group Relative Policy Optimization (GRPO) 的改进变体，重点解决数据利用率低和熵崩溃等局限。\n\n- 结论/性能：在多种推理大模型和基准（如 MATH500、AIME24、AMC23、Minerva）上实现高效的CoT压缩且不降低性能，同时解决了 GRPO 的关键局限。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-11 14:03:47"
+ "created_at": "2026-02-11 14:03:47",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

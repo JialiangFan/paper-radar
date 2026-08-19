@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句）：首次对开放权重视觉大模型在未定向对抗攻击（PGD）下的鲁棒性进行系统比较，揭示视觉模态可成为有效攻击向量，并指出鲁棒性与常规基准性能之间并非直接相关。\n\n- 主要方法：采用未定向PGD对视觉输入进行对抗，对LLaVA-1.5-13B和Meta的Llama 3.2 Vision-8B-2进行实验；在VQA v2子集上以VQA准确度评估攻击效果，并与各自的基线模型进行对比。\n\n- 结论/性能：结果显示，尽管Llama 3.2 Vision的基线准确度较低，但在较高扰动水平下的准确率下降小于LLaVA，表明视觉模态确实是可行的攻击向量；另外， adversarial robustness 与标准基准性能不必然相关，可能受架构和训练因素影响。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-22 02:46:28"
+ "created_at": "2025-12-22 02:46:28",
+ "topics": [
+  "adversarial-attacks",
+  "multimodal-perception"
+ ]
 }

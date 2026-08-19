@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：在对 GRPO 进行系统分析的基础上，提出一个更简化的 REINFORCE 变体 RGRA，保留分组相对优势估计，去除 PPO 风格裁剪与策略比项，以更高效地促进 LLMS 的推理能力。\n\n- 主要方法：基于对GRPO的两个关键发现（负反馈必不可少、PPO裁剪等约束非必要），设计使用 REINFORCE 框架的 RGRA，仍然采用分组相对优势估计，却取消了裁剪和策略比项，并在标准数学基准上进行对比实验。\n\n- 结论/性能：实验结果显示 RGRA 在标准数学基准上可能优于 GRPO，表明更简单的 REINFORCE 方法也能有效提升 LLM 推理能力，提供更透明、高效的替代方案。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-20 13:05:28"
+ "created_at": "2026-03-20 13:05:28",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

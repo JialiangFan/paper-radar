@@ -9,5 +9,9 @@
  "summary": "核心创新点：提出一个普适的乐观原-对偶框架及 OPD（Optimistic Primal-Dual）算法，用于安全 RLHF 的对齐问题，并能统一多种对齐方法且实现最后迭代收敛。\n\n主要方法：在原-对偶优化框架下引入对原变量和对偶变量的预测性（乐观）更新，形成 OPD 算法；覆盖并统一包括 safe-RLHF、one-shot、multi-shot 等多种对齐策略，并给出在分布域空间的精确策略优化及参数化策略下的收敛分析。\n\n结论/性能：建立了该方法的最后迭代收敛性保证，能够收敛到最优解的邻域（邻域误差由近似和偏差决定），并通过乐观更新缓解受约束对齐目标引发的振荡，弥补了约束 RL 与实际 RLHF 之间的理论空白。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-26 14:00:41"
+ "created_at": "2026-02-26 14:00:41",
+ "topics": [
+  "rl-post-training",
+  "ai-safety-alignment"
+ ]
 }

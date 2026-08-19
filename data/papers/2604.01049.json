@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：将预算受限的对抗性干扰引入 AI 驱动的 RAN 切片决策，系统量化其对 SLA 违规和 DRL 学习收敛的影响以及攻击后的恢复行为。\n\n2) 主要方法：基于深度强化学习的资源分配模型用于 RAN 切片；引入预算受限的对抗干扰来偏导/干扰切片传输，评估攻击对 SLA 违规程度及攻击后的恢复和奖励收敛特性。\n\n3) 结论/性能：预算受限的对抗性 jamming 能引起严重且与切片相关的稳态 SLA 违规；DRL 代理的奖励在经历非 negligibly 的恢复期后才回到清洁基线。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-02 13:01:53"
+ "created_at": "2026-04-02 13:01:53",
+ "topics": [
+  "adversarial-attacks",
+  "applications"
+ ]
 }

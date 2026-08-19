@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出面向 Triton 内核生成的端到端强化学习框架 KernelGYM，并结合 Turn-level Reinforce-Leave-One-Out、匹配性修正以及 Profiling-based Reward/Profiling-based Rejection Sampling 等技术，解决多轮 RL 中的奖励劫持与懒优化问题，从而训练出与先进对齐模型相竞争的 Dr.Kernel-14B。\n\n- 主要方法：在 KernelGYM 环境中进行大规模分布式 GPU 训练，支持奖励劫持检查、来自多轮交互的数据采集和长周期 RL；提出 TRLOO（Turn-level Reinforce-Leave-One-Out）实现多轮 RL 的无偏优势估计；引入训练稳定性所需的 mismatch 纠正，以及 Profiling-based Rewards (PR) 与 Profiling-based Rejection Sampling (PRS) 以缓解懒惰优化；训练得到 Dr.Kernel-14B，并在 KernelBench 进行评估。\n\n- 结论/性能：Dr.Kernel-14B 的性能在 Kernelbench 上达到与 Claude-4.5-Sonnet 相当的水平；在 KernelBench Level-2 子集上，31.6% 的生成内核实现至少 1.2x 的加速，相较于 Torch 基线、Claude-4.5-Sonnet（26.7%）和 GPT-5（28.6%）更具优势；在跨所有轮次选择最佳候选时，1.2x 加速的比例提升到 47.8%；相关资源（环境、训练代码、模型和数据集）均开源在 GitHub。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-06 14:03:34"
+ "created_at": "2026-02-06 14:03:34",
+ "topics": [
+  "rl-post-training",
+  "efficiency-systems"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "# Fast-dDrive 论文总结\n\n1. **核心创新点**：提出一种块扩散（block-diffusion）VLA 模型，在语义单元内做双向精炼、单元间严格保持\"先感知后规划\"的因果顺序，从而在自动驾驶轨迹规划中兼顾高保真度与高效推理。\n\n2. **主要方法**：\n   - 利用驾驶 VLA 输出常为结构化 JSON 的特点，将结构 token 冻结为\"section scaffold\"，并采用 section-aware 训练策略优先保障安全关键的规划部分；\n   - 提出 **Scaffold Speculative Decoding**，在保持自回归级质量的同时大幅提升吞吐；\n   - 引入低开销的 test-time scaling：基于共享前缀 KV cache 分叉出 $N$ 条随机轨迹再做平均，以极小算力代价抑制预测方差。\n\n3. **结论/性能**：\n   - 在 WOD-E2E 测试集上取得 SOTA 的 ADE@3s 与 ADE@5s，并在扩散类 VLA 中获得最高 RFS；\n   - 在 nuScenes 上将平均 L2 误差降至 0.32m（提升 22%）；\n   - 与 SGLang 集成后，相对 AR 基线获得 **12× 吞吐加速**，显著拉近高容量 VLA 与车端实时部署之间的差距。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-05-25 13:12:21"
+ "created_at": "2026-05-25 13:12:21",
+ "topics": [
+  "vla-models",
+  "applications"
+ ]
 }

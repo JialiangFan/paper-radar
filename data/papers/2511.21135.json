@@ -9,5 +9,9 @@
  "summary": "以下是对论文标题与摘要的中文简要总结：\n\n1) 核心创新点（一句话概括）\n- 提出一个具有层次化“脑-行动”架构的社会感知嵌入式导航基础模型 SocialNav，通过大规模数据集和首个面向导航的流式强化学习框架，实现对高层社会规范的理解与低层轨迹的社会合规生成。\n\n2) 主要方法（简述所用技术/模型）\n- 数据集与数据源\n  - 构建 SocNav 数据集（7百万样本），包含：\n    - Cognitive Activation Dataset：提供社会推理信号，如推理链路（chain-of-thought）和社会可通行性预测。\n    - Expert Trajectories Pyramid：汇聚来自互联网视频、仿真环境、真实机器人等的多样化导航示例。\n- 模型与训练流程\n  - 采用分层的“脑-行动”架构，先通过模仿学习注入通用导航技能与社会规范理解。\n  - 引入 SAFE-GRPO（Socially-Aware Flow Exploration GRPO），这是首个面向嵌入式导航的流式强化学习框架，专门奖励社会合规行为并进一步细化导航能力。\n\n3) 结论/性能（取得的效果）\n- 相对现有最优方法，SocialNav 在指标上提升显著：成功率提升约38%，社会合规率提升约46%。\n- 数据集规模大且多源（互联网视频、仿真、真实机器人），并通过多阶段训练实现导航能力与社会规范理解的协同提升。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2025-11-29 22:35:36"
+ "created_at": "2025-11-29 22:35:36",
+ "topics": [
+  "robot-manipulation",
+  "embodied-benchmarks"
+ ]
 }

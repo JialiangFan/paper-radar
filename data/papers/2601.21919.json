@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个多智能体强化学习框架 SCMA，通过分段（Segmentation Agent）和评分（Scoring Agent）来识别并惩罚冗余的推理片段，同时保留关键推理逻辑，实现自我压缩且不增加部署时的推理开销。\n\n- 主要方法：使用多智能体 RL 框架，其中 Segmentation Agent 将推理过程分解为逻辑片段，Scoring Agent 评估每个片段的重要性，两者共同为推理阶段引入基于重要性的加权长度惩罚，推动 Reasoning Agent 优先保留核心逻辑；在不同模型规模上进行训练与评估，并通过消融和定性分析验证 emergent 行为。\n\n- 结论/性能：在多模型规模上，SCMA 将响应长度降低约 11.1%～39.0%，同时准确性提升约 4.33%～10.02%；消融研究和定性分析表明该 MARL 框架能产生更强的语言推理模型表现。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2026-01-30 14:04:06"
+ "created_at": "2026-01-30 14:04:06",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 PRepair 框架，通过自我生成的多样化错误注入与编辑感知的奖励优化，实现更少且更精确的代码修复，避免过度编辑。\n\n- 主要方法： \n  - Self-Breaking：通过受控的错误注入和极大极小采样（min-max sampling）生成多样化的 buggy 程序。\n  - Self-Repairing：采用 Edit-Aware Group Relative Policy Optimization（EA-GRPO）进行训练，并引入编辑感知的奖励，鼓励最小且正确的修复。\n\n- 结论/性能：\n  - 修复精度在 fix_1@1 指标上最高提升至 31.4%（该指标同时考虑修复正确性与修改范围）。\n  - 与 speculative editing 结合时显著提高解码吞吐量，展示了在实现精确且实用的代码修复方面的潜力。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-04-08 13:08:21"
+ "created_at": "2026-04-08 13:08:21",
+ "topics": [
+  "rl-post-training"
+ ]
 }

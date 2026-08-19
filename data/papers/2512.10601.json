@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个统一的受约束强化学习理论与算法框架，覆盖平均成本、有限时序（ episodic）以及基于人类偏好的对齐任务，并实现了在大规模模型上的理论保证与可扩展性。\n\n- 主要方法：\n  - ACPO：Average-Constrained Policy Optimization，结合敏感性分析与信任域更新来稳定处理约束，具理论保证且达到SOTA性能。\n  - e-COP：面向 episodic CMDP 的策略优化方法，建立基于 episodic policy difference lemma 的可证明性能、简单且可扩展性强。\n  - warmPref-PS：在线学习的线性带带宽中引入后验采样，整合来自异质评审者的离线偏好数据，并对评审者能力建模以提升数据效率。\n  - PSPL：通过从成对轨迹比较中联合采样奖励模型与转移动态，提供贝叶斯简单后悔界，并鲁棒地识别最优策略。\n  - MOPO：基于多目标约束优化的迭代算法，具有闭式更新，能够扩展到数十亿参数规模的语言模型，且对对齐设置鲁棒。\n\n- 结论/性能：实现了对平均成本、 Episodic、以及偏好驱动等多种受约束RL范式的理论与实践统一，带来显著的理论保证与实证效果提升；在大规模语言模型对齐任务中，MOPO 展现出良好的可扩展性与鲁棒性，其他方法亦在安全性、数据效率和策略识别方面取得实质性提升。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2025-12-12 14:00:50"
+ "created_at": "2025-12-12 14:00:50",
+ "topics": [
+  "safe-rl",
+  "rl-post-training"
+ ]
 }

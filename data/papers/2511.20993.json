@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：通过将环境特定的子目标图与结构化实体知识融入多阶段分离的 LLM 规划流程，并引入子目标跟踪器来实现计划与执行的高对齐，从而生成可执行且可验证的子目标。\n\n2) 主要方法：提出 SG A-ACR 框架 Subgoal Graph-Augmented Actor-Critic-Refiner，核心包括：环境特定的子目标图、结构化实体知识、以及一个明确分离的多阶段 LLM 规划管线（生成、批评/评估、 refinement/修正）。同时引入子目标跟踪器用于监控执行、提供辅助奖励，并自适应更新子目标图，以保持计划与行动的一致性。基础模型采用 Actor-Critic-Refiner 的强化学习结构，应用在开放世界游戏 Crafter 的多任务上。\n\n3) 结论/性能：在 Crafter 开放世界游戏的 22 个多样任务上证明了方法的有效性，能够生成可执行且可验证的子目标，显著提升计划与执行的一致性与鲁棒性。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-11-30 06:06:28"
+ "created_at": "2025-11-30 06:06:28",
+ "topics": [
+  "llm-planning",
+  "llm-agents"
+ ]
 }

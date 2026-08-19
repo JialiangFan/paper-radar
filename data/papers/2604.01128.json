@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出 PaperRecon 框架，通过从原论文生成概览再由代理撰写完整论文，并与原文对比，系统地量化 AI 写作论文的呈现质量与幻觉风险；并引入 PaperWrite-Bench（51 篇高水平论文）用于跨领域评测。\n\n2) 主要方法：\n- PaperRecon 框架：先基于现有论文生成 overview.md；再让代理仅凭概览和最小资源撰写完整论文；随后将生成论文与原论文进行对照评估。\n- 双向评估维度：将评估分为呈现性（Presentation，按 rubrics 评分）和幻觉性（Hallucination，基于原论文来源的代理性评估）。\n- PaperWrite-Bench：建立由 51 篇 2025 年以后顶级会议论文组成的基准集，用于系统评测。\n- 实验对象：对比使用 ClaudeCode 与 Codex 等模型在同一评估框架下的表现。\n\n3) 结论/性能：\n- 两者随着模型进步而呈现质量提升，但存在权衡：ClaudeCode 在呈现质量上更高，但平均每篇论文有超过 10 处幻觉；Codex 干扰较少幻觉，但呈现质量较低。\n- 本研究是AI 写作论文评估框架的首次系统化尝试，为理解其风险提供基线。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-02 13:01:43"
+ "created_at": "2026-04-02 13:01:43",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

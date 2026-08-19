@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个两阶段的热词检索与LLM-ASR微调框架，通过从大词汇中检索紧凑的 top-k 热词候选并以 Generative Rejection-Based Policy Optimization (GRPO) 对 LLM‑ASR 进行文本提示微调，以实现大词汇场景下的情境偏置与热词识别提升。\n\n- 主要方法：\n  - 阶段1：扩展 GLCLAP，通过鲁棒性数据增强和模糊匹配，在大词汇中检索出紧凑的 top-k 热词候选。\n  - 阶段2：将检索到的候选作为文本提示注入到 LLM‑ASR 模型，并用 GRPO 进行微调，采用任务驱动奖励同时优化热词识别和整体转录准确性。\n\n- 结论/性能：在热词聚焦的测试集上显著降低关键词错误率（KER），同时在通用 ASR 基准上保持句子级准确性，证明该框架在大词汇情境偏置方面的有效性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-29 02:28:48"
+ "created_at": "2025-12-29 02:28:48",
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "# 论文总结：Learning Visual Feature-Based World Models via Residual Latent Action\n\n## 1. 核心创新点\n提出**残差潜在动作（Residual Latent Action, RLA）**——一种可从 DINO 残差中轻松学习、具有可预测性与可泛化性、并编码时间进程的新型潜在动作表示，用于构建高效的视觉特征级世界模型。\n\n## 2. 主要方法\n- 从 DINO 特征的残差中提取 RLA 表示；\n- 基于 RLA 构建 **RLA World Model (RLA-WM)**，使用 **flow matching（流匹配）** 来预测 RLA 值，避免了直接回归带来的模糊/坍塌问题，也避免了在高维特征空间做生成建模的难题；\n- 进一步衍生出两项机器人学习技术：\n  1. 基于 RLA 的极简\"世界-动作\"模型，可从**无动作标注的演示视频**中学习；\n  2. 首个完全在仅由离线视频训练的世界模型内部进行训练的**视觉强化学习框架**，使用视频对齐奖励，无需在线交互或人工设计的奖励。\n\n## 3. 结论/性能\n在仿真和真实数据集上均**超越了当前最先进的特征级世界模型与视频扩散世界模型**，同时推理速度比视频扩散方法**快几个数量级**，并能有效赋能策略学习与视觉 RL。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-05-22 13:04:39"
+ "created_at": "2026-05-22 13:04:39",
+ "topics": [
+  "world-model-learning",
+  "robot-manipulation"
+ ]
 }

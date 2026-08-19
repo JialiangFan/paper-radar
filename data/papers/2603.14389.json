@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1 句概括）：核心创新点在于将优化基底从对数概率梯度 ∇θ log πθ 转为概率梯度 ∇θ πθ，并提出带有双边解耦衰减的 DGPO，通过对边界 token 的不对称、连续衰减在稳定性与探索之间取得平衡。\n\n- 主要方法：简述使用的技术/模型\n  - 提出 Decoupled Gradient Policy Optimization（DGPO），以重要性采样比为基础实现梯度权重的解耦衰减。\n  - 对边界 token 采用非对称、连续的衰减策略，解决软裁剪在训练中的梯度稳定性与探索性冲突。\n  - 将方法应用在 DeepSeek-R1-Distill-Qwen 系列模型（1.5B/7B/14B），进行大规模实验以验证效果。\n\n- 结论/性能：取得的效果\n  - DGPO 在多项数学任务基准上持续优于强基线，展现出更稳定且具鲁棒性的 RLVR 性能。\n  - 实验证明在 1.5B/7B/14B 的 DeepSeek-R1-Distill-Qwen 模型上具有良好效果与可扩展性；代码已开源可复现。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-17 13:02:54"
+ "created_at": "2026-03-17 13:02:54",
+ "topics": [
+  "rl-post-training"
+ ]
 }

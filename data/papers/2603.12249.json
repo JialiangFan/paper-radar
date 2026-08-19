@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：提出合成-再定位（synthesize-and-reground）框架，通过在聚焦段落生成可信问答与推理，并将其再嵌入到全篇文档中，实现在规模、可信度和现实感之间的平衡，从而构建大规模跨模态科学文献推理数据集。\n\n2. 主要方法：两阶段流程。第一阶段是 Claim-Centric QA Synthesis，在聚焦段落上生成可信的问答对及推理；第二阶段是 Document-Scale Regrounding，将这些问答对嵌入到完整文档任务中以模拟真实的复杂性。同时构建 SciMDR（约30万对 QA，覆盖2万篇论文）和专家注释的 SciMDR-Eval 基准，并用于跨模态理解的模型微调与评估。\n\n3. 结论/性能：在 SciMDR 上微调的模型在多项科学问答基准上实现显著提升，尤其是在需要复杂文档级推理的任务。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-15 13:02:29"
+ "created_at": "2026-03-15 13:02:29",
+ "topics": [
+  "agent-benchmarks",
+  "multimodal-perception"
+ ]
 }

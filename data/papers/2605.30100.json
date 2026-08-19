@@ -9,5 +9,9 @@
  "summary": "# Chess-World-Model 论文总结\n\n**1. 核心创新点**：提出基于 1000 万真实国际象棋对局的大规模状态追踪基准 Chess-World-Model，用于测试模型从合法走子序列中精确预测棋盘状态的能力，并通过随机合法走子的分布外（OOD）测试集揭示规模无法掩盖的失败。\n\n**2. 主要方法**：在统一接口和训练协议下，对比了 causal Transformer、block-diagonal SLiCE、Mamba-3 以及带负特征值的 Gated DeltaNet 四类模型；数据分为真实对局的保留集和均匀随机合法走子的 OOD 分割，后者用于检验模型是否学到了转移规则而非依赖常见人类局面的捷径。\n\n**3. 结论/性能**：在 3M 和 8M 参数规模下，循环模型显著优于 Transformer；真实对局性能在 18M 参数以上趋于饱和，但 OOD 随机分割在 40M 参数仍具区分度；消融实验表明状态转移机制表达能力越弱，三种循环模型在 OOD 上的表现越差，证明该基准能暴露被模型规模所掩盖的状态追踪失败。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-05-30 13:02:40"
+ "created_at": "2026-05-30 13:02:40",
+ "topics": [
+  "world-model-learning",
+  "embodied-benchmarks"
+ ]
 }

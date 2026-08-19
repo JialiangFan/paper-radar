@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：通过两阶段、跨代的纵向评估，揭示多模态大语言模型在对抗性提示下的无害性随版本迭代显著漂移，且不同模型家族之间差异巨大。\n\n- **主要方法**：\n  - 使用固定基准的726条由26名专业红队员撰写的对抗性提示进行评估。\n  - Phase 1 评估：GPT-4o、Claude Sonnet 3.5、Pixtral 12B、Qwen VL Plus；Phase 2 评估其后续版本 GPT-5、Claude Sonnet 4.5、Pixtral Large、Qwen Omni，总计82,256个人类伤害评分。\n  - 通过攻击成功率（ASR）和跨模态（文本 vs. 其他模态）分析，比较不同模型家族和代际之间的安全性表现。\n\n- **结论/性能**：\n  - Pixtral 系列最脆弱，Claude 系列因高拒绝率而相对更安全。\n  - ASR 随代际变化：GPT 与 Claude 族群呈上升趋势；Pixtral 与 Qwen 略有下降。\n  - 模态效应随时间发生变化：Phase 1 文本提示更具攻击性；Phase 2 出现模型特异性模式，GPT-5 与 Claude 4.5 在两种模态下的脆弱性接近。\n  - 结论为多模态无害性并非稳定或统一，强调需要进行纵向、多模态的基准来持续跟踪安全行为。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-05 14:01:58"
+ "created_at": "2026-02-05 14:01:58",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

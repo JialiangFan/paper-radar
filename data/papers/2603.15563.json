@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点（一句话）\n提出一个面向决策研究的大规模两轨基准（Battling 与 Speedrunning），以宝可梦的多代理对战和扩展RPG环境为场景，覆盖部分可观测性、博弈推理和长时域规划，构建活跃的数据集、评测框架与排行榜，推动强化学习、大语言模型及人类基线的对比与进展。\n\n2. 主要方法（简述使用的技术/模型）\n- 任务与数据：提供超过2000万条对战轨迹的数据集；设立 Battling Track（部分可观测下的对战博弈推理与泛化）与 Speedrunning Track（RPG中的长时域规划与序列决策）。\n- 基线与技术路线：包含启发式方法、强化学习（RL）以及基于大模型的LLM基线，用于高水平对战和推理。\n- 工具与评测框架：开发开源的多代理编排系统，支持模块化、可重复的 harness-based LLM 比较；为 Speedrunning 提供标准化评测框架。\n- 竞赛与评估：在 NeurIPS 2025 进行比赛验证，形成面向 Battling 与 Speedrunning 的活跃排行榜和资源评估。\n\n3. 结论/性能（取得的效果）\n- 结果显示：通用型 LLM、专业化 RL 与 Elite 人类之间存在显著差距，且宝可梦对战任务对现有 LLMS 基准几乎是正交的，仍是一个未解决的研究方向。\n- 影响与资源：资源质量与社区兴趣得到验证，形成一个可持续的“living benchmark”并提供实时排行榜（Battling）与独立评测（Speedrunning），推动 RL 与 LLM 研究向前发展。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-17 13:01:45"
+ "created_at": "2026-03-17 13:01:45",
+ "topics": [
+  "agent-benchmarks",
+  "llm-agents"
+ ]
 }

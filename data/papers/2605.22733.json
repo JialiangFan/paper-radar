@@ -9,5 +9,8 @@
  "summary": "## HarnessAPI 论文总结\n\n**1. 核心创新点**\n将\"类型化技能文件夹\"作为单一事实源，从同一份代码自动生成流式 HTTP 端点和 MCP 工具，消除 LLM 工具部署中 HTTP API 与 MCP 注册的双重维护负担。\n\n**2. 主要方法**\n- 基于 Python，以 `handler.py` + Pydantic schemas 为核心定义\n- 框架自动派生三类产物：SSE 流式 HTTP 端点、交互式 OpenAPI/Swagger UI、零配置 MCP 工具，全部在单进程中运行\n- 通过\"双模式内容协商\"让同一 handler 同时服务 SSE 流式客户端和 JSON 返回客户端\n- 采用动态代码生成机制，将 Pydantic 类型注解正确传递到 FastMCP 的反射层，解决了基于闭包注册时的技术局限\n- 继承自 FastAPI，复用其中间件、依赖注入和部署生态\n\n**3. 结论/性能**\n基于 cloc 工具在 6 个代表性技能上的测量，相比手动维护的 FastAPI + FastMCP 双栈实现，HarnessAPI 将框架相关样板代码减少 **74%**。项目已开源于 GitHub，并通过 `pip install harnessapi` 在 PyPI 发布。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-24 13:01:49"
+ "created_at": "2026-05-24 13:01:49",
+ "topics": [
+  "llm-agents"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "## 论文总结：VERA - 将视频模型转化为通用机器人策略\n\n**1. 核心创新点**\n将\"视频规划\"与\"动作执行\"解耦——保持视频生成模型不变（embodiment-agnostic），仅训练一个针对特定机体的逆动力学模型（IDM）来把视频翻译成动作。\n\n**2. 主要方法**\n- 采用闭环的\"视频到动作\"策略 VERA（Video-to-Embodied Robot Action Model）。\n- 上游：无需动作标签的视频世界模型作为通用规划器。\n- 下游：基于机器人雅可比矩阵（Jacobian）设计 embodiment-specific 的 IDM，可利用 self-play 数据独立训练，具备数据高效性和对高维动作空间的可扩展性。\n- 同一个视频规划器可与不同 IDM 配对，跨机体复用。\n\n**3. 结论/性能**\n在仿真和真实环境基准上均表现强劲，包括 zero-shot Panda 机械臂操控以及 16-DoF Allegro 灵巧手立方体翻转任务，证明\"解耦视频规划 + 高保真视频到动作转换\"是实现 zero-shot、跨机体、可泛化机器人控制的可行路径。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-05-31 13:02:29"
+ "created_at": "2026-05-31 13:02:29",
+ "topics": [
+  "video-world-models",
+  "vla-models"
+ ]
 }

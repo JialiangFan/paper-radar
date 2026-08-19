@@ -9,5 +9,8 @@
  "summary": "# 论文总结：《Dreaming Of Others: Latent Teammate Modeling In World Models For Multi-Agent Reinforcement Learning》\n\n1. **核心创新点**：将队友建模为世界模型中可学习的结构化组件，使智能体能够在\"想象\"中模拟和适应不同的合作伙伴，从而解决多智能体强化学习（MARL）中队友策略不可观测带来的不确定性问题。\n\n2. **主要方法**：在 Dreamer 风格的循环状态空间模型（RSSM）基础上，将潜在状态分解为\"环境\"与\"队友\"两个组件；引入辅助的心智理论（Theory-of-Mind, ToM）头，从部分轨迹中推断队友的性格、意图和预测动作等潜在嵌入；这些队友潜变量随后作为条件输入到 actor 和 critic 中，指导决策。\n\n3. **结论/性能**：本文为立场/框架性论文，重点在于提出新视角——将世界模型从\"环境动态预测器\"扩展为\"社交行为模拟器\"，并勾勒了在部分可观测环境下实现零样本（zero-shot）与少样本（few-shot）协调的潜力，同时提出了相应的基准测试与评估协议，为通用化、人机兼容的 AI 开辟新方向（尚未报告具体实验结果）。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-01 13:08:50"
+ "created_at": "2026-06-01 13:08:50",
+ "topics": [
+  "world-model-learning"
+ ]
 }

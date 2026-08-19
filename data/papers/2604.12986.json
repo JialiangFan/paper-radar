@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Parallax 架构，通过认知-执行分离、对抗性验证、信息流控制与可回滚执行这四项原则，為具执行能力的 AI 代理建立安全执行的架构边界，超越基于提示的安全方法。\n\n- 主要方法：基于四大设计原则构建体系：Cognitive-Executive Separation（防止推理系统执行行动）、Adversarial Validation with Graduated Determinism（在推理与执行之间设独立多层校验器）、Information Flow Control（在代理工作流中传播数据敏感性标签以检测上下文相关威胁）、Reversible Execution（在关键步骤捕获可回滚的前置状态）；并给出开源实现 OpenParallax（Go），通过 Assume-Compromise Evaluation 在九大攻击类别、280 次对抗测试下评估，测试不依赖推理系统来绕过防御。\n\n- 结论/性能：在默认配置下能拦截 98.9% 的攻击且零误报；在最高安全配置下达到 100% 的拦截率；当推理系统被妥协时，基于提示的防护失效，但 Parallax 的架构边界仍然有效，提供更强的防护能力。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-15 13:07:49"
+ "created_at": "2026-04-15 13:07:49",
+ "topics": [
+  "ai-safety-alignment",
+  "runtime-monitoring"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（一句话）：\n  提出面向异构图的生成式结构操控后门框架 HeteroHBA，通过选择性附着触发器并合成多样触发特征/连接模式，同时引入 AdaIN+MMD 以提升隐蔽性与攻击效果。\n\n- 主要方法（简述技术/模型）：\n  - 采用基于显著性筛选（saliency-based screening）来选取对触发攻击最具影响力的辅助邻居用于触发器附着；\n  - 通过生成式手段合成多样化的触发特征和连接模式，使触发更贴合局部异质结构上下文；\n  - 为提高隐蔽性，结合 Adaptive Instance Normalization (AdaIN) 与最大均值差异（MMD）损失，将触发特征分布对齐到 benign 统计分布；\n  - 采用双层优化（bilevel objective）同时提高攻击成功率并保持干净准确性；\n  - 在多种真实异构图和代表性 HGNN 架构上评估，且对抗异构结构防御 CSD 仍有效。\n\n- 结论/性能（取得的效果）：\n  HeteroHBA 在实验中显著提升攻击成功率，且对清洁准确率的影响较小；且在异构结构防御 CSD 下仍保持有效，揭示了异构图学习中的现实后门风险。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-01-01 02:31:56"
+ "created_at": "2026-01-01 02:31:56",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

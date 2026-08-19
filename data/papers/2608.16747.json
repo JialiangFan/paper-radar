@@ -9,5 +9,8 @@
  "summary": "## 论文总结\n\n**标题**：Would this change your answer? Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments\n\n---\n\n### 1. 核心创新点\n提出 **CHIVE** 这一自动化 agent 流水线，通过\"反事实提示编辑\"来发现并解释真实场景中大模型的异常行为，并以**反事实可模拟性**（能否预测模型在相关反事实输入上的行为）作为衡量解释质量的标准。\n\n### 2. 主要方法\n- 构建 agentic pipeline（CHIVE, *Counterfactual Hypothesis Investigation Via Edits*）：先在真实使用数据中**自动挖掘\"意料之外\"的模型行为**，再对原始 prompt 做受控的反事实编辑，验证假设。\n- 由此规模化产出**数千条高质量解释 + 配套反事实证据**。\n- 两类应用：(a) 作为**评测基准**，考察主流 LLM 可解释性技术能否提升 agent 对反事实行为的预测能力；(b) 作为**训练数据**，训练模型预测反事实实验的结果。\n\n### 3. 结论/性能\n- **反直觉发现**：所研究的各类可解释性技术，**均未**带来预测反事实行为能力的提升（no uplift）。\n- **正面结果**：用 CHIVE 生成的反事实实验数据做训练，能够**泛化到多种分布外（OOD）场景**。\n- 总体表明 CHIVE 可自动发现真实模型行为的解释，为评估与改进 LLM 解释方法提供了可行路径。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-18 13:01:03"
+ "created_at": "2026-08-18 13:01:03",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

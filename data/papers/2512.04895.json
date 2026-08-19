@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Chameleon，一种自适应对抗代理框架，通过代理驱动的迭代优化，在生产型视觉-语言模型的降尺度阶段动态生成对抗扰动，穿透下采样漏洞以控制下游执行。\n\n- 主要方法：采用基于代理的迭代优化（agent-based optimization）机制，在目标模型的实时反馈下持续 refine 图像扰动，以确保对经过不同缩放的输入仍具欺骗性；对 Gemini 2.5 Flash 模型进行评估。\n\n- 结论/性能：在多种缩放因子下 attacks 的攻击成功率达到 84.5%，远超静态基线的 32.1%；对多步任务中的代理管线决策准确性下降超过 45%；并提出多尺度一致性检查作为潜在防御。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-05 14:00:45"
+ "created_at": "2025-12-05 14:00:45",
+ "topics": [
+  "adversarial-attacks",
+  "ai-safety-alignment"
+ ]
 }

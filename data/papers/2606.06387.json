@@ -9,5 +9,8 @@
  "summary": "# 论文摘要总结\n\n**1. 核心创新点**\n\n首次提出针对 WebMCP 协议的\"会话中工具注入\"（Mid-Session Tool Injection, MSTI）攻击，揭示了第三方脚本可在活跃会话中动态污染 LLM Agent 的工具表面这一新型安全威胁。\n\n**2. 主要方法**\n\n将 MSTI 分为两类并实现攻击验证：\n- **Tool Hijacking（工具劫持）**：利用 `AbortSignal` API 或工具注册时的竞态条件，篡改 Agent 可见的工具集合。\n- **Tool Framing（工具伪饰）**：通过操纵元数据字段（如 `name`、`description`、`readOnlyHint`、`inputSchema`）误导 Agent 对工具角色的认知。\n\n**3. 结论/性能**\n\n实验证明两类攻击均能成功破坏 WebMCP 的预期功能。作者据此提出防御方向：将工具身份绑定到来源（origin）、保证生命周期一致性、对第三方工具实施数据边界隔离，以及保留可追溯的注册与调用日志，指出工具表面本身已成为新兴的安全关注点。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-07 13:00:52"
+ "created_at": "2026-06-07 13:00:52",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

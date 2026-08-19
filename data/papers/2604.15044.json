@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出并实现两款开源工具 CoGrid 与 Multi-User Gymnasium（MUG），提供可扩展的网格化多智能体仿真与直接支持网页化的人机多体互动实验平台，结合双后端（NumPy/JAX）与回滚网络码以降低时延影响，显著降低人机协作研究的门槛。\n\n- 主要方法：\n  - CoGrid：网格化的多智能体仿真库，具备 NumPy 与 JAX 双后端。\n  - Multi-User Gymnasium（MUG）：将上述仿真环境直接转化为可交互的网页实验，支持任意数量的真人与 AI；提供服务器端权威或对等网络模式，并采用回滚网络码来应对时延。\n\n- 结论/性能：通过若干案例研究展示了在开展人机多智能体实验中的实用性和潜力，支持研究者部署相关实验；工具开源，文档与源码可在官方文档站点获取。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-17 13:03:10"
+ "created_at": "2026-04-17 13:03:10",
+ "topics": [
+  "llm-agents",
+  "agent-benchmarks"
+ ]
 }

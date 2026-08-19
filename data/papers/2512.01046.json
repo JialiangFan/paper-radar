@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Shielded Controller Units（SCUs），通过分层屏蔽与利用先验动力学实现对强化学习在远程微网中的操作约束的可解释且可保证满足。\n\n- 主要方法：采用屏蔽合成方法将环境分解为层次结构，每个 SCU 负责管理一组约束，结合对系统动力学的先验知识，构成一个可部署的、与 RL 代理协同工作的约束保障框架。\n\n- 结论/性能：在远程微网优化任务中，配备 SCUs 的 RL 在满足所有约束的前提下，燃料消耗降低约 24%，且不增加电池劣化，显著优于基线方法。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2025-12-02 14:00:25"
+ "created_at": "2025-12-02 14:00:25",
+ "topics": [
+  "safe-rl",
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将 GFlowNets 的分区函数不仅作为归一化器使用，而是作为按提示的在线准确率信号来引导训练，从而提升样本效率。\n\n- 主要方法：提出 PACED-RL（Partition Function-Guided RL），一类后训练框架，利用按提示的准确率估计来优先选择信息量高的提示进行训练，并通过准确率估计误差的优先回放来进一步提高样本效率；两部分都复用 GFlowNet 训练阶段已有的信息，降低额外计算开销。\n\n- 结论/性能：在多项基准上对比 GRPO 和以往的 GFlowNet 方法，展现出显著的性能提升，证明 PACED-RL 能实现更高的样本效率的分布匹配训练。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-16 14:02:49"
+ "created_at": "2026-02-16 14:02:49",
+ "topics": [
+  "rl-post-training"
+ ]
 }

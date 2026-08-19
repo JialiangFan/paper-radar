@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出认知控制架构（CCA），通过“意图图”(Intent Graph)的前瞻性控制与数据流完整性，以及“分层裁决器”(Tiered Adjudicator)的深度推理裁决，实现对间接提示注入攻击的全生命周期、全方位认知监督与鲁棒防护。\n\n- 主要方法：采用两大支柱：一是基于预生成的 Intent Graph 的主动式控制流与数据流完整性保护；二是 Tiered Adjudicator，在检测到偏离时进行基于多维评分的深度推理裁决，以对抗复杂条件攻击。\n\n- 结论/性能：在 AgentDojo 基准上实验表明，CCA 能有效抵御其他先进防御难以应对的复杂攻击，同时实现较高的安全性、鲁棒性与效率，兼顾安全、功能与效率的多维折中。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-09 14:04:17"
+ "created_at": "2025-12-09 14:04:17",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

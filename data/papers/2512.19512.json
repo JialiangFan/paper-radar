@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Anatomical Similarity Curriculum Learning 与 Group Diversity Question Augmentation 的组合框架，解决医学解剖推理中不同解剖结构间知识共享不足和推理路径单一的问题，以显著提升多模态大语言模型的解剖推理能力。\n- 主要方法：在基于 GRPO 的框架上，设计两大技术：1) Anatomical Similarity Curriculum Learning，通过答案选项之间的相似度控制题目难度，进行渐进式学习；2) Group Diversity Question Augmentation，对难题进行分组问句扩增，扩展模型的搜索空间，促进多样化推理。\n- 结论/性能：在 SGG-VQA 与 OmniMedVQA 数据集上实现显著提升，体现了对医学推理能力的有效增强；代码公开在 GitHub。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-23 03:51:05"
+ "created_at": "2025-12-23 03:51:05",
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "## RedFlow 论文摘要总结\n\n**1. 核心创新点**\n提出 RedFlow —— 一个细粒度离线强化学习框架，把失败经验\"重定向\"为**动作级**的纠正监督信号，用于改进 flow-matching 视觉-语言-动作（VLA）机器人策略。\n\n**2. 主要方法**\n针对 flow-matching VLA 策略在部署时因分布偏移导致的误差累积问题，设计两个核心组件：\n- **上下文感知纠正匹配（Context-Aware Corrective Matching）**：定位导致失败的具体动作，并从相似上下文的成功轨迹中检索可替代的成功动作，作为纠正目标；\n- **自适应重定向目标（Adaptive Redirection Objective）**：联合优化三件事——强化成功动作、抑制不良动作、把可挽救的失败动作朝纠正目标重定向。\n\n由此将成功与失败数据都转化为稠密监督，实现从混合质量数据中学习恢复能力。\n\n**3. 结论/性能**\n在 LIBERO 基准和 3 个真实机器人操作任务上均超越当前最优离线 RL 基线：真实场景成功率从 **56.7% → 74.7%**；性能可比肩 PPO、GRPO、DDPO 等强在线（on-policy）方法，而所需训练样本量约少**一个数量级**。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-08-01 13:04:40"
+ "created_at": "2026-08-01 13:04:40",
+ "topics": [
+  "vla-post-training",
+  "safe-rl"
+ ]
 }

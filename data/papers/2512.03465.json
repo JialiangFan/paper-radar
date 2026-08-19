@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出一种结合对抗性风格化与信息增益特征筛选的攻击框架 TraceTarnish，能够在隐藏文本作者身份的同时提供可用于检测的风格性信号。\n\n- 主要方法：利用对抗性风格化理念处理 Reddit 评论数据；通过 StyloMetrix 生成风格特征，并基于信息增益筛选出五个最具信息量的特征（L_FUNC_A、L_FUNC_T、L_CONT_A、L_CONT_T、ST_TYPE_TOKEN_RATIO_LEMMAS），以驱动攻击与分析。\n\n- 结论/性能：这五个特征在信息增益上显示显著性，成为可靠的“被入侵/被篡改”的风格线索（IoCs），可用于指示对抗性风格化攻击的存在；但在缺少原始文本时，信号的检测可能受限，需要前后对比才能显现。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-04 14:02:54"
+ "created_at": "2025-12-04 14:02:54",
+ "topics": [
+  "other"
+ ]
 }

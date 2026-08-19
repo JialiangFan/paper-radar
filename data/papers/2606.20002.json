@@ -9,5 +9,9 @@
  "summary": "**核心创新点**：提出 \"Connect the Dots\"(CoD) 框架，训练大模型获得一种\"元能力\"——长生命周期智能体在持续解任务的过程中不断探索环境、从自身经验中学习并迭代更新对环境的上下文认知，从而在后续任务上表现越来越好。\n\n**主要方法**：\n- 端到端强化学习，rollout 序列很长，把\"解任务(solve-task)\"与\"更新上下文(update-context)\"两类回合交错在一起训练；\n- 采用 GRPO 风格的 RL 算法，并做了细粒度的信用分配(credit assignment)；\n- 设计了专门激发并衡量该元能力的任务与环境(而非针对特定领域能力或传统逐任务 RL)，配套相应的训练基础设施与评测方法。\n\n**结论/性能**：概念验证实验证明了 CoD 设定下端到端 RL 训练的有效性，并展示了所习得元能力的分布外泛化潜力——包括训练域内泛化、跨域泛化，以及从 CoD 迁移到 Ralph-loop 设定的泛化。作者已在 GitHub(agentscope-ai/Trinity-RFT) 开源实现,以推动后续研究与应用。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-06-19 13:00:42"
+ "created_at": "2026-06-19 13:00:42",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

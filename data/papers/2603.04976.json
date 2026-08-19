@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将 RLVR 的可验证奖励直接扩展到视频化的 3D 场景理解，通过 GRPO 的强化微调在评测指标上直接优化，提出 3D-RFT 框架。\n\n- 主要方法：先通过 SFT 激活 3D 感知多模态大语言模型（3D-aware MLLMs），再使用 Group Relative Policy Optimization（GRPO）进行强化微调，奖励函数基于 3D IoU、F1 等任务指标实现严格可验证的信号。\n\n- 结论/性能：3D-RFT-4B 在多项视频基的 3D 场景理解任务上达到或超过 state-of-the-art，显著优于更大模型（如 VG LLM-8B）在 3D 视频检测、3D 视觉定位和空间推理基准上的表现，并展现出鲁棒性及对训练策略与数据影响的有价值洞察。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-06 14:02:29"
+ "created_at": "2026-03-06 14:02:29",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

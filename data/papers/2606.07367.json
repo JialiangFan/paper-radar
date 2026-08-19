@@ -9,5 +9,9 @@
  "summary": "# 论文总结：Q-Evolve\n\n## 1. 核心创新点\n提出 **Q-Evolve**——一个自演化框架，通过在分布内（in-distribution）强化学习范式，将**自动过程奖励标注**与**策略学习**统一起来，解决 LLM 智能体长程决策中的稀疏奖励与信用分配难题。\n\n## 2. 主要方法\n- **混合离策略数据集**：结合专家示范与智能体自生成轨迹。\n- **加权隐式 Q 学习（Implicit Q-Learning）**：训练分布内 critic，稳定稀疏奖励下的 Bellman 回传。\n- **过程奖励生成**：利用学到的价值函数通过优势估计导出步级（step-wise）密集奖励，无需环境回溯或人工标注。\n- **行为近端策略优化（behavior-proximal policy optimization）**：在用于奖励标注的同一数据上演化策略，避免分布偏移加剧，实现迭代自我改进。\n\n## 3. 结论/性能\n在 **AlfWorld、WebShop、ScienceWorld** 三个基准上，Q-Evolve 在**样本效率、鲁棒性和整体任务性能**上均超越了强基线，验证了过程级监督与策略协同演化的稳定自演化路径是可行的。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-08 13:01:02"
+ "created_at": "2026-06-08 13:01:02",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

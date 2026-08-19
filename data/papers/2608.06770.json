@@ -9,5 +9,9 @@
  "summary": "## Surg-UniWorld 论文摘要总结\n\n**1. 核心创新点**\n提出统一的手术世界模型 Surg-UniWorld，通过\"多模态控制专家\"机制解决现有方法中异构视觉条件直接融合导致的解剖结构畸变、器械外观漂移和时序不一致问题。\n\n**2. 主要方法**\n- **分层手术锚点（Hierarchical Surgical Anchor）**：由首帧外观 + 分层语义掩码构建，用于保持场景身份、解剖组织结构和交互边界的持久性。\n- **锚点相对模态专家（Anchor-Relative Modality Experts）**：相对于共享锚点分别解析边缘、深度、光流三类证据，捕获互补的边界、几何与运动信息。\n- **多模态控制专家（Multimodal Control Expert）**：对激活的模态增量做\"贡献保持\"的分阶段组合，生成控制提示（control hints）注入 **Wan2.2** 视频扩散主干网络。\n- **数据集**：基于 Cholec80 构建了可控手术视频生成基准 **Cholec80-SurgWAM**。\n\n**3. 结论/性能**\n在生成质量、时序一致性和多模态可控性三个维度上，均稳定优于现有可控视频生成方法和手术世界模型基线。\n\n---\n\n如果需要更完整的文献综述式解读（背景、问题定位、贡献拆解、方法论细节，并输出到 Obsidian），可以用 `/paper-review`。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-10 13:04:37"
+ "created_at": "2026-08-10 13:04:37",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "## 论文摘要总结\n\n**1. 核心创新点**\n在把\"应用层行动证据（AEP）\"通过完整的 RATS 验证链路端到端跑通的过程中，发现并修复了 Project Veraison TPM 参考方案中缺失挑战随机数（nonce）新鲜性校验、导致重放攻击可通过验证的安全漏洞。\n\n**2. 主要方法**\n- 以 RFC 9334（RATS 架构）为框架，把 AEP（记录行动、授权主体与结果的签名只追加日志）作为应用层 Evidence；\n- 在模拟 TPM（swtpm）上生成 EC P-256 认证密钥，将 AEP 结果摘要扩展进 PCR，生成真实 quote 并封装为 Veraison 的 `tpm-enacttrust` 格式；\n- 配置 CoRIM（信任锚 + 黄金参考值），由符合规范的 Veraison Verifier 出具签名的 EAT 认证结果（EAR）；\n- 针对发现的漏洞给出可上游合并的两部分修复，并负责任地披露。\n\n**3. 结论 / 性能**\n正常证据判定为 `affirming`；结果替换或签名单字节篡改均判定为 `contraindicated`。修复前，重放的 quote 仍被判为 `affirming`；修复后，同一份在原会话中有效的 quote 重放到新会话时正确翻转为 `contraindicated`。整条流水线完全可复现，但局限在于 Attester 为软件模拟 TPM，尚不构成硬件级安全保证。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-08-05 13:00:49"
+ "created_at": "2026-08-05 13:00:49",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

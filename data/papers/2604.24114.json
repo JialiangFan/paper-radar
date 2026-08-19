@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句）：\n  提出一个两轴跨语言数学推理框架 IRIS，结合逐步难度的监督微调与互嵌的反向课程强化学习，以提升跨语言推理的一致性与性能。\n\n- 主要方法：\n  - 纵轴：进行逐步更难的监督微调（Curriculum Learning）来提升能力。\n  - 横轴：使用 Reverse Curriculum Reinforcement Learning，减少对逐步推理的依赖。\n  - 奖励设计：构建包含正确性、逐步对齐、连续性和数值激励的复合奖励。\n  - 优化方法：通过 Group Relative Policy Optimization (GRPO) 进行优化。\n  - 数据集：发布 CL-Math 数据集（29k 道题），包含英文、印地语和马拉地语的逐步注释。\n\n- 结论/性能：\n  - 在标准基准和多语言测试集上持续提升表现，数学推理任务表现尤为突出。\n  - 在低资源和双语设置中获得显著增益；在高资源语言上也有温和提升。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-04-28 13:07:44"
+ "created_at": "2026-04-28 13:07:44",
+ "topics": [
+  "llm-reasoning",
+  "rl-post-training"
+ ]
 }

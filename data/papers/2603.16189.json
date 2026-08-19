@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 将链式推理（chain-of-thought）与多任务多奖励强化学习结合，显式暴露 SVG 生成过程，并通过结构化的多任务训练提升生成的结构一致性和视觉保真度。\n\n2) 主要方法\n- 提出 CTRL-S 框架，使用链式推理机制来揭示生成 SVG 的推理过程。\n- 构建 SVG-Sophia 数据集（约145K 样本），覆盖 SVG 代码 refinement、Text-to-SVG、Image-to-SVG 三大任务。\n- 训练模型以生成分组级的结构化 SVG 代码，提升结构协调性和视觉效果。\n- 采用 GRPO 算法，设计多奖励优化框架，奖励包括 DINO 表征、图像-文本相似性、格式规范性和代码效率等，并进行多任务联合训练。\n\n3) 结论/性能\n- 相较于现有方法，CTRL-S 在多项实验中实现更高的任务成功率、更优的 SVG 代码质量以及更出色的视觉保真度。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-18 13:03:06"
+ "created_at": "2026-03-18 13:03:06",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

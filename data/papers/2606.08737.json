@@ -9,5 +9,9 @@
  "summary": "# Dream-Tac 论文总结\n\n1. **核心创新点**：提出首个统一的\"触觉-世界动作模型\"（Tactile-World Action Model），将动作生成、未来视觉观测与触觉动力学联合建模，解决传统视觉世界模型在接触密集型机器人操作中失效的问题。\n\n2. **主要方法**：\n   - **接触门控视触融合**（contact-gated visuotactile fusion）：选择性地融入触觉信号；\n   - **接触感知注意力偏置**（contact-aware attention bias）：调节跨模态交互；\n   - **双层加速策略**：训练阶段重构接触感知偏置以保留融合注意力路径，推理阶段采用基于缓存的扩散加速。\n\n3. **结论/性能**：在 6 个接触密集型操作任务上，动作准确率平均提升 **31.7%**；训练速度提升 **2.9×**，推理速度提升 **1.8×**，验证了统一视触世界建模的有效性。代码已开源。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-09 13:03:10"
+ "created_at": "2026-06-09 13:03:10",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 VeriAgent，这是一个工具整合的多代理系统，结合可进化记忆机制，在 RTL 代码生成中实现对功耗、性能和面积（PPA）的感知与闭环优化。 \n\n- 主要方法：使用 Programmer Agent、Correctness Agent、PPA Agent 三个子代理组成的多代理框架，集成 EDA 工具进入一个闭环流程，进行功能正确性与物理指标的联合优化；引入 Evolved Memory Mechanism，将优化经验外化为结构化内存节点，通过内存管理器动态维护记忆池，并基于历史执行轨迹迭代改进策略。\n\n- 结论/性能：大量实验表明在保持较强功能正确性的同时，显著提升了 PPA 指标；该框架将 RTL 生成从一次性推理转变为持续、反馈驱动的优化过程，为在实际硬件设计流程中部署大语言模型提供了可扩展路径。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-03-19 13:06:28"
+ "created_at": "2026-03-19 13:06:28",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

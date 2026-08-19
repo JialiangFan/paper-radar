@@ -27,5 +27,9 @@
  "code": "",
  "project": "https://vlsa-aegis.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-safety",
+  "robot-harness"
+ ]
 }

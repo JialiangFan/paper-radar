@@ -9,5 +9,8 @@
  "summary": "核心创新点：提出一个基于大模型的端到端多代理架构 HabitatAgent，由 Memory、Retrieval、Generation、Validation 四大角色组成，实现可审计、可验证的住房咨询全过程。\n\n主要方法：采用四个协作代理的大模型体系：\n- Memory Agent：对用户需求进行多层次记忆管理，包括约束提取、记忆融合与验证门控更新。\n- Retrieval Agent：执行混合向量-图检索（GraphRAG）以提升检索质量。\n- Generation Agent：生成基于证据的推荐与解释，确保输出可追溯。\n- Validation Agent：进行多层次验证与定向纠偏，确保回答的正确性与一致性。\n并在端到端正确性协议下进行评估，覆盖100个真实场景（300轮问答）。\n\n结论/性能：在端到端正确性评估中，HabitatAgent 达到95%准确度，显著高于强基线 Dense+Rerank 的75%。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-02 13:03:43"
+ "created_at": "2026-04-02 13:03:43",
+ "topics": [
+  "llm-agents"
+ ]
 }

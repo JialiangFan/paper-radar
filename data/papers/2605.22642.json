@@ -9,5 +9,9 @@
  "summary": "# Spreadsheet-RL 论文总结\n\n**1. 核心创新点**\n首次提出在真实 Microsoft Excel 环境中、通过强化学习微调来训练专门的电子表格智能体的框架，突破了现有方法依赖通用 LLM 提示工程难以应对复杂多步工作流的瓶颈。\n\n**2. 主要方法**\n- **数据管线**：自动从在线论坛抓取\"起始-目标\"配对的电子表格，并构建涵盖金融、供应链等领域的 **Domain-Spreadsheet 基准数据集**。\n- **Spreadsheet Gym 环境**：基于 Python 沙箱暴露 Excel 完整功能，并设计了配套的工具集与工具路由规则，支持多轮 RL 训练。\n- **训练范式**：在该 Gym 环境中对 LLM（Qwen3-4B-Thinking-2507）进行多轮强化学习微调。\n\n**3. 结论/性能**\n- 在 **SpreadsheetBench** 上，Qwen3-4B-Thinking-2507 的 Pass@1 从 **12.0% → 23.4%**。\n- 在自建的 **Domain-Spreadsheet** 数据集上，Pass@1 从 **8.4% → 17.2%**。\n- 结果显示该方法在通用与领域特定的电子表格任务上均显著提升，具有较强的泛化能力和实际应用潜力，也为 LLM 与日常数据界面交互的研究提供了新方向。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-05-22 13:00:41"
+ "created_at": "2026-05-22 13:00:41",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出 Contextual Linear Activation Steering (CLAS)，通过对输入上下文动态自适应地调节线性激活引导强度，实现对语言模型的自适应定向定制。\n\n2) 主要方法：在传统线性激活引导的基础上引入上下文感知的强度调节机制，使每个标记的引导强度随上下文变化，从而实现可解释、可扩展的定向 steering；在11个 steering 基准和4个模型家族上进行系统评估，并与标准线性激活引导、ReFT、LoRA 等方法对比。\n\n3) 结论/性能：在上述评估中，CLAS 持续优于标准线性激活引导，在标注数据有限的情形下，其性能与 ReFT、LoRA 相当或更优，显示出良好的可扩展性、可解释性与准确性。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-28 13:05:54"
+ "created_at": "2026-04-28 13:05:54",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "## PlayWorld 论文摘要总结\n\n**1. 核心创新点**\n提出用多模态\"智能体玩家\"（Agent Players）代替固定动作序列去交互式地评测视频世界模型，从而实现对长时程目标下不同模型的公平横向比较。\n\n**2. 主要方法**\n- **评测范式**：针对每个场景给定一个长时程目标（如\"原地转身 360° 看环境是否一致\"\"走进水里看是否有真实水波纹\"），由多模态 Agent Player 自主与世界模型交互完成目标——因为不同模型达成同一目标所需的动作序列差异很大，固定 action-conditioned 评测无法跨模型比较。\n- **基准构建**：PlayWorld 基准包含 171 个带明确目标的场景。\n- **评价维度**：四个核心维度——几何一致性（geometry consistency）、交互保真度（interaction fidelity）、视野外演化（out-of-sight evolution）、视野内演化（insight evolution）；另加视频质量与可控性两项基础能力指标。\n\n**3. 结论/性能**\n在 9 个当前最先进的世界模型上做了实验，结果显示这些模型在长时程交互目标上仍不可靠，尤其在**保持空间一致性**和**状态的持续性演化**两方面表现薄弱。代码与数据已开源：https://github.com/kxding/PlayWorld\n\n> 补充：这是一篇 benchmark/评测类工作，本身不刷 SOTA 指标，主要贡献在于揭示现有世界模型的能力缺口。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-14 13:06:06"
+ "created_at": "2026-08-14 13:06:06",
+ "topics": [
+  "embodied-benchmarks",
+  "world-model-control"
+ ]
 }

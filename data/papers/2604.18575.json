@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出 ReCap，一种轻量级的跨帧一致性框架，通过 CORE（Conditional frame Referencing）将代词作为视觉锚点仅在需要时对前一帧进行条件化传播，同时在训练阶段引入 SemDrift 进行语义漂移修正，大幅提升角色身份的一致性而几乎不增加推理成本或参数。\n\n2) 主要方法：\n- 基于原有扩散骨干，新增 CORE 模块，按需对代词进行视觉锚定并以前一帧为条件进行跨帧传播，避免无条件的跨帧 conditioning。\n- 在训练阶段引入 SemDrift（Guided Semantic Drift Correction），将 denoiser 表征对齐到预训练的 DINOv3 视觉嵌入，以在语义上稳定角色身份，且推理阶段零成本。\n- 总体参数增量仅 149K，相对于内存库或大模型增强方案极其轻量。\n\n3) 结论/性能：\n- 在两大故事可视化基准 FlintstonesSV 和 PororoSV 上，分别在 Character-Accuracy 上提升 2.63% 和 5.65%，达到新的同类方法最优（state-of-the-art）的角色一致性。\n- 相较于 StoryGPT-V，ReCap 在跨帧角色一致性上取得明显改进，并且具备扩展到来自真实电影的人类叙事的能力，显示了更广的适用性与更低的开销。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-21 13:01:15"
+ "created_at": "2026-04-21 13:01:15",
+ "topics": [
+  "other"
+ ]
 }

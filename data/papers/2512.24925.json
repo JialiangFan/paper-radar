@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 提出可证明安全的生成式AI原语 Reliable Consensus Sampling（RCS），通过追踪接受概率来容忍极端对手行为，消除对 abstention 的依赖，并提供可控风险的理论保障。\n\n2) 主要方法\n- 在现有的 Consensus Sampling（CS）框架基础上提出 RCS，设计接受概率的追踪机制以提高鲁棒性，开发一个自适应的反馈算法以动态提升安全性，并给出理论保证；通过实验与 CS 对比验证鲁棒性、效用与延迟。\n\n3) 结论/性能\n- 实验表明 RCS 在鲁棒性和效用方面显著优于 CS，且延迟与 CS 相当，同时不再需要 abstention，具有可控风险阈值的理论保障，推动可证明安全的生成式AI研究。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-01-01 03:31:48"
+ "created_at": "2026-01-01 03:31:48",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

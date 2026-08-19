@@ -9,5 +9,9 @@
  "summary": "**OmniDrive / DRIVE-CHOREO 论文摘要总结**\n\n1. **核心创新点**：提出用「大语言模型编排的多智能体世界模型」，把可控的多视角自动驾驶视频生成重构为「潜空间编排（latent choreography）」，通过一种共享的符号化中间语言，在潜token层面统一对齐语言、几何与像素。\n\n2. **主要方法**：用三个 Qwen2.5-VL 智能体协同生成一段「位置感知的token序列」——Director（导演）将用户意图解析为结构化 WorldScript，Cartographer（制图者）将其落地为带空间锚点的布局token，Auditor（审核者）则把跨视角的批评反馈作为辅助监督。该序列再通过「视角-时间置换（view-time permutation）」与多视角视频联合压缩，利用 3D VAE 的卷积感受野在潜空间内强制约束相机间的几何一致性，从而解决异构控制注入和事后跨视角融合两大难题。\n\n3. **结论/性能**：在 nuScenes 数据集上取得新的 SOTA 多视角一致性和 BEV mAP（21.6），FVD 具有竞争力（45.7）；仅用其合成数据训练的检测器在真实验证集上获得 +2.4 NDS 提升，验证了下游应用价值。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-17 13:04:24"
+ "created_at": "2026-06-17 13:04:24",
+ "topics": [
+  "video-world-models",
+  "applications"
+ ]
 }

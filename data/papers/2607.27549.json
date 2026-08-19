@@ -9,5 +9,9 @@
  "summary": "## 论文总结：Cross-Embodiment Transfer via Behavior-Aligned Representations\n\n**1. 核心创新点**\n提出在视觉-语言-动作（VLA）模型中引入\"行为对齐表征\"（behavior-aligned representations）作为跨本体（cross-embodiment）数据的统一中间接口，从而提升向新机器人本体的迁移能力。\n\n**2. 主要方法**\n- 选取兼具**跨本体不变性**与**动作可预测性**的中间表征，包括物体边界框、语言化的运动描述（language motions）、以及末端执行器运动轨迹（end-effector traces）。\n- 将这些表征以不同方式嵌入 VLA 模型的训练/推理流程中。\n- 构建了一个**基于仿真的基准测试**，专门用于评估在多样化跨本体数据上训练后向全新本体的迁移效果，并在该基准上系统对比各类表征及其接入方式。\n\n**3. 结论/性能**\n- **末端执行器轨迹**是对迁移最有帮助的表征形式。\n- 表征带来的收益随**先验数据规模增大而增强**，并且能让模型从**无动作标注（action-free）数据**中获益。\n- 在 sim-to-real 场景下同样有效：基于仿真数据预训练的真实机器人策略，任务完成进度提升 **28%**。\n- 项目主页：https://ajaysridhar.com/barx/\n\n> 补充说明：摘要中未给出仿真基准上的具体数值指标，上述结论均为摘要中的定性/单点报告；如需精确的对比数据需查阅正文。\n\n另外，本仓库中有一个 `paper-review` 技能，可以生成更完整的中英双语文献综述并自动写入 Obsidian vault——如果你需要对这篇论文做深度归档，可以告诉我，我来调用它。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-08-02 13:04:26"
+ "created_at": "2026-08-02 13:04:26",
+ "topics": [
+  "vla-models",
+  "sim-to-real"
+ ]
 }

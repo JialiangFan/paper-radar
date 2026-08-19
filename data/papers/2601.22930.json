@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 MTDrive —— 一种让多模态大语言模型在环境反馈下进行跨回合迭代 refinement 的多回合交互式强化学习框架，并通过 mtGRPO 在不同回合间计算相对优势以缓解奖励稀疏问题。\n\n- 主要方法：将多模态大语言模型与强化学习结合；引入 Multi-Turn Group Relative Policy Optimization (mtGRPO) 以跨回合计算相对优势；构建基于闭环仿真的交互式轨迹理解数据集用于多回合训练；并实施系统层优化以降低高分辨率图像和多回合序列的数据传输开销，提升训练吞吐。\n\n- 结论/性能：在 NAVSIM 基准上展示优于现有方法的性能，验证多回合推理的有效性；通过系统优化实现约 2.5 倍的训练吞吐提升；相关数据/模型/代码将很快公开。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-02 14:01:13"
+ "created_at": "2026-02-02 14:01:13",
+ "topics": [
+  "applications"
+ ]
 }

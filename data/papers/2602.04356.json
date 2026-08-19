@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：提出阶段式注意力引导对抗攻击SAGA，通过逐步聚焦高注意力区域，在有限扰动预算下实现更高效且更隐蔽的对抗攻击，并在十个LVLM上达到SOTA攻击成功率。\n\n- **主要方法**：基于区域注意力分布与对抗损失敏感性的观测，设计 Stage-wise Attention-Guided Attack (SAGA) 框架，在图像的高注意力区域分阶段施加扰动，利用注意力引导和预算约束实现高效的像素利用，适用于大型视觉-语言模型。\n\n- **结论/性能**：在有限的像素扰动预算下，产生高度不可察觉的对抗样本，同时在十个LVLM上持续实现最先进的攻击成功率（SOTA）。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-05 14:02:46"
+ "created_at": "2026-02-05 14:02:46",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句）：通过在2D Vision-Language模型中引入面向3D理解的空间监督，结合全局布局重建与显式情境建模，从单目视频中实现对场景的3D推理。\n\n- 主要方法：\n  - 构建 Loc3R-VLM 框架，将2D Vision-Language模型扩展为具备3D理解能力，输入来自单目视频。\n  - 引入两大联合目标：全局布局重建以获得场景结构的整体表征；显式情境建模以锚定自我视角（egocentric perspective）。\n  - 通过直接的空间监督将感知与语言 grounding 到3D上下文。\n  - 使用来自预训练的3D基础模型得到的轻量级相机位姿先验，确保几何一致性和尺度对齐。\n\n- 结论/性能：\n  - 在语言基础定位任务中达到SOTA，并在情境化与通用3D问答基准上超越现有的2D及视频方法，证明该空间监督框架具备较强的3D理解能力。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-19 13:04:59"
+ "created_at": "2026-03-19 13:04:59",
+ "topics": [
+  "multimodal-perception"
+ ]
 }

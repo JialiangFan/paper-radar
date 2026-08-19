@@ -26,5 +26,8 @@
  "code": "https://github.com/shengyin1224/SafeAgentBench",
  "project": "",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

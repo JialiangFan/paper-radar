@@ -9,5 +9,9 @@
  "summary": "核心创新点：\n- 提出 VLA-Thinker 的 thinking-with-image 推理框架，将感知视为可动态调取的推理行动，使模型能够主动回访环境、在长时任务中进行更鲁棒的推理与行动协同。\n\n主要方法：\n- 基于 Vision-Language-Action 的模型，并引入动态的感知-推理-行动循环。\n- 两阶段训练：1) SFT 冷启动阶段，使用带视觉链式推理的数据激活结构化推理与工具使用行为；2) 基于 GRPO 的强化学习，优化并对齐完整的推理-行动轨迹以实现任务级成功。\n\n结论/性能：\n- 在 LIBERO 和 RoboTwin 2.0 上取得显著提升，LIBERO 任务达到 97.5% 的成功率，并在长时机器人任务上展现强劲性能提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-17 13:02:41"
+ "created_at": "2026-03-17 13:02:41",
+ "topics": [
+  "vla-models",
+  "llm-reasoning"
+ ]
 }

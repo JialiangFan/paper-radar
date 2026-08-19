@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：通过基于 Claude Code 的自我研究型流水线自动发现并优化对白盒对抗攻击算法，显著超越现有方法并具备跨模型泛化能力。\n\n- 主要方法：利用 autoresearch 风格的管线，由 LLM（Claude Code）从现有攻击实现（如 GCG）出发迭代生成新的对抗算法；在白盒设定下进行密集化的优化反馈；在替代模型上进行优化后直接迁移到真实模型评估，覆盖 CBRN 查询对 GPT-OSS-Safeguard-20B 的攻击与对 Meta-SecAlign-70B 的 ASR 测试，并公开全部攻击实现与评估代码。\n\n- 结论/性能：在 CBRN 查询上的攻击成功率达到约 40%（明显高于现有方法的 ≤10%），且对代理模型的优化具有良好跨模型泛化，在 Meta-SecAlign-70B 上实现 100% ASR（相比基线的 56%），显示自动化安全研究（白盒红队）具备强效与可扩展性。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-26 13:02:38"
+ "created_at": "2026-03-26 13:02:38",
+ "topics": [
+  "ai-safety-alignment",
+  "llm-agents"
+ ]
 }

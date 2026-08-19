@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：在每个小批量中仅对“关键样本”进行对抗扰动，通过有选择的对抗训练实现与全量 PGD 相当甚至更优的鲁棒性，同时显著降低计算成本。\n\n- 主要方法：提出 Selective Adversarial Training，采用两种样本选择标准对批内样本进行筛选：1) 边界距分析（margin-based sampling），优先处理接近决策边界的样本；2) 梯度匹配（gradient-matching sampling），选择梯度与当前批次最优方向一致的样本。对所选子集生成对抗样本，其余样本采用混合目标的清洁训练。\n\n- 结论/性能：在 MNIST 和 CIFAR-10 上实现与全量 PGD 训练相媲美甚至更优的鲁棒性，同时将对抗计算量降低最多约 50%，证明了信息化样本选择即可实现可扩展的对抗鲁棒性。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-29 02:29:37"
+ "created_at": "2025-12-29 02:29:37",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

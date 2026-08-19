@@ -9,5 +9,8 @@
  "summary": "以下是基于论文标题与摘要的中文要点总结：\n\n1) 核心创新点（1 句话）\n- 提出 HyLo（Hybrid Long-context Upcycling）作为一种长上下文向上的再利用方法，通过对预训练 Transformer LLM 进行架构改造并混合高效块，结合分阶段的长上下文训练与教师蒸馏，将其转换为高效的混合模型，从而极大提升长上下文能力并显著降低内存开销。\n\n2) 主要方法（简述使用的技术/模型）\n- HyLo 方案的核心是将预训练 Transformer LLM 通过架构适配与高效块融合成混合模型，具体包括：\n  - 使用多头潜在注意力（Multi-Head Latent Attention，MLA）与线性块（Mamba2 或 Gated DeltaNet）相结合；\n  - 进行分阶段的长上下文训练以稳定优化；\n  - 采用教师蒸馏（teacher-guided distillation）提升学习效果；\n  - 通过高效的后训练 upcycling 实现上下文长度的显著提升，并在 vLLM 推理栈中降低 KV-cache 内存需求；\n  - 针对 1B 与 3B 规模的 Llama- 与 Qwen 基线，提供 HyLo-Llama/Qwen 等变体。\n\n3) 结论/性能（取得的效果）\n- 上下文长度可扩展最多约 32 倍，且通过高效后训练将 KV-cache 内存降低超过 90%，实现最高可达 2M-token 的前填与解码能力（在 vLLM 推理栈中）。\n- 在 1B 与 3B 规模（Llama- 与 Qwen 基线变体）上，HyLo 在短上下文与长上下文任务上均表现稳健，显著超越现有的最先进的上采样混合基线，特别是在长上下文评测如 RULER。\n- 同等规模下，HyLo-Qwen-1.7B 使用仅 100B-级别训练数据（文中称 10B tokens，总体数据量较少）即可显著超过 JetNemotron（用 400B 训练数据）在 GSM8K、Lm-Harness 常识推理以及 RULER-64K 等任务的表现。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-28 13:00:46"
+ "created_at": "2026-04-28 13:00:46",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

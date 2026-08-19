@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出 Cascade RL（级联域-wise 强化学习）来分领域顺序训练通用推理模型 Nemotron-Cascade，替代混合跨域提示，从而降低工程复杂性并实现指令式与深度思考两种模式的高性能。\n\n2) 主要方法\n- 采用分领域、顺序进行的 Cascade RL，结合以 RLHF 作为对齐的预步，以及后续的域间 RLVR 阶段；训练的 14B 模型 Nemotron-Cascade 在多域基准上追求最先进表现，并公开训练与数据配方。\n\n3) 结论/性能\n- 在广泛的基准上达到或接近最先进水平；经过 RL 训练的 14B 模型超越其 SFT 教师（DeepSeek-R1-0528）在 LiveCodeBench v5/v6/Pro，以及在 2025 年国际信息学奥林匹克（IOI）上获得银牌，且 RLHF 提升推理能力，后续域间 RLVR 阶段对性能影响通常不降，甚至可能提升。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-16 03:04:28"
+ "created_at": "2025-12-16 03:04:28",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

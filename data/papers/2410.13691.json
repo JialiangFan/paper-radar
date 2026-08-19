@@ -29,5 +29,9 @@
  "code": "",
  "project": "https://robopair.org/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "ai-safety-alignment",
+  "vla-safety"
+ ]
 }

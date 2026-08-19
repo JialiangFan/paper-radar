@@ -28,5 +28,9 @@
  "code": "",
  "project": "https://robotics-transformer-x.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-models",
+  "embodied-benchmarks"
+ ]
 }

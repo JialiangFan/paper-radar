@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点（一句话）\n提出将视频美学分解为 Visual Aesthetics、Visual Fidelity、Visual Plausibility 三个维度的层级化评估框架，并以大规模专家标注数据和 AesRM 系列模型实现可解释、鲁棒的视频美学奖励与评估。\n\n2) 主要方法\n- 构建 AesVideo-Bench：约 2500 对视频对的专家标注，覆盖 VA、VF、VP 三个维度的15条细化标准。  \n- 提出两类视频美学奖励模型：AesRM-Base（直接预测三维度的对比偏好）和 AesRM-CoT（在 AesRM-Base 基础上生成与全部15条标准对齐的 Chain-of-Thought，提升可解释性）。  \n- 三阶段训练方案：1) Atomic Aesthetic Capability Learning（强化对基本美学概念的识别），2) Cold-Start（对齐结构化推理协议），3) GRPO（提升评估准确性）。  \n- 提升 CoT 质量的自洽性生成，以及在 GRPO 中设计基于 CoT 的过程奖励。  \n- 将 Wan2.2 对齐到 AesRM，提升整体美学收益。\n\n3) 结论/性能\n- AesRM 在多项美学基准上优于基线，鲁棒性更高、位置偏见更低。  \n- AesRM-CoT 提供更好的可解释性，CoT 质量得到提升并带来更有效的过程奖励。  \n- 将 Wan2.2 对齐到 AesRM 后，获得明显的美学提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-05-02 13:01:24"
+ "created_at": "2026-05-02 13:01:24",
+ "topics": [
+  "other"
+ ]
 }

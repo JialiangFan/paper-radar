@@ -27,5 +27,9 @@
  "code": "",
  "project": "",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "robot-harness",
+  "runtime-monitoring"
+ ]
 }

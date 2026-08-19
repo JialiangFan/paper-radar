@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 Reinforcement Learning with Relative Rewards（RLRR）框架，将奖励塑形从基于绝对分数转为相对排序，并引入面向组优化的 Ranking Reward Model，以直接生成相对排名，从而缓解信号稀疏和奖励不稳定问题。\n\n- 主要方法：构建 RLRR 框架以相对奖励信号进行策略优化；设计 Ranking Reward Model（listwise 偏好模型）来从原始评估中产生相对排序信号，转化为组内/组间的相对排名用于训练。\n\n- 结论/性能：在推理基准和开放式生成任务上，相较于标准组基线，RLRR 显示出一致的性能提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-02 14:05:00"
+ "created_at": "2026-02-02 14:05:00",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "# 论文摘要\n\n**1. 核心创新点**\n将 2D 点轨迹（point tracks）与像素预测联合建模，作为世界-动作模型中显式的运动表征，以克服纯像素预测对光照、纹理等无关视觉变化的脆弱性。\n\n**2. 主要方法**\n提出 JOPAT（JOint Pixel-And-Track World-Action Model）：在单个去噪扩散 Transformer 中联合预测潜在视觉观测、带可见性的 2D 点轨迹以及动作；点轨迹提供对遮挡和部分出框运动鲁棒的长时序动力学表征。\n\n**3. 结论/性能**\n在 LIBERO 仿真和真实世界 LeRobot 任务上均优于纯像素基线，尤其在涉及遮挡、物体交互和出画运动的长时序任务上提升最显著。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-26 13:03:59"
+ "created_at": "2026-05-26 13:03:59",
+ "topics": [
+  "world-model-learning"
+ ]
 }

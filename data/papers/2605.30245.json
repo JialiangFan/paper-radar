@@ -9,5 +9,9 @@
  "summary": "**论文：Knowing What to Solve Before How: Preplan Empowered LLM Mathematical Reasoning**\n\n1. **核心创新点**：在传统\"问题→规划→思维链\"范式之外，新增一个显式的\"问题理解\"阶段（preplan），先想清楚\"要解决什么\"（问题类型、适用工具、可预见的陷阱），再考虑\"怎么解决\"，形成\"问题→预规划→规划→思维链（CoT）\"的新范式。\n\n2. **主要方法**：提出 PPC（Preplan-Plan-CoT）框架。为保证 preplan 的概念完整性，设计了两项关键技术——其一是三阶段合成流水线，配合\"剧透分数检测器（spoiler-score detector）\"过滤掉答案泄露和剧透式失败样本，构建干净的 preplan 监督数据；其二是复合式 GRPO 奖励，强制生成的 plan 真正从 preplan 推导而来。\n\n3. **结论/性能**：在 4 个基础模型、5 个数学推理基准上测试，PPC 在 40 项指标中的 39 项取得最佳结果；相比最强基线，maj@16 提升 +2.23、pass@16 提升 +3.06，且未引入额外的推理 token 开销。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-29 13:01:22"
+ "created_at": "2026-05-29 13:01:22",
+ "topics": [
+  "llm-reasoning",
+  "llm-planning"
+ ]
 }

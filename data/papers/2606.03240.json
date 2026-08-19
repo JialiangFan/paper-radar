@@ -9,5 +9,9 @@
  "summary": "# GeoAlign 论文总结\n\n1. **核心创新点**：在 VLA 模型中引入\"状态引导的空间对齐\"机制，用机器人本体状态查询几何特征，弥补现有模型只关注语义对齐、缺乏几何感知的不足。\n\n2. **主要方法**：通过机器人领域的 RGB-D 数据对 RGB 几何分支进行后训练，得到几何增强（GEP）特征；再用机器人的本体感知状态（proprioceptive state）查询 GEP 特征网格，生成紧凑的、与任务阶段相关的几何 token，用于动作预测。\n\n3. **结论/性能**：在 LIBERO 上达到 99.0%，SimplerEnv-Fractal 三项任务平均 85.3%，真实 ALOHA 八项几何关键任务上 78.8%；消融实验验证了几何后训练和状态引导查询的有效性。",
  "keyword": "VLA",
  "source": "auto",
- "created_at": "2026-06-04 13:06:58"
+ "created_at": "2026-06-04 13:06:58",
+ "topics": [
+  "vla-models",
+  "robot-manipulation"
+ ]
 }

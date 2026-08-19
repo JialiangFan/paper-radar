@@ -9,5 +9,8 @@
  "summary": "## NetlistBench 论文摘要总结\n\n**1. 核心创新点**\n首个面向 SPICE 网表（netlist）识别与编辑的\"结构可验证\"基准测试集，把仿真器层面的网表可靠性从高层电路设计推理中单独剥离出来评估。\n\n**2. 主要方法**\n- 构建 **NetlistBench**：2,342 个测试案例，覆盖 **24 类任务族**，包括参数与连接关系的识别/修改、层次化（hierarchical）操作、等价性判定，以及长程复合编辑（long-horizon compound editing）。\n- 使用**确定性的结构感知 oracle**（deterministic structure-aware oracle）自动判分，而非文本匹配。\n- 在 **6 个 non-thinking LLM** 上测评，并额外对比开启推理（reasoning）模式后的表现。\n\n**3. 结论/性能**\n- 模型表现随操作的**结构复杂度**显著分化：简单局部编辑准确率达 **96%–100%**；器件添加降至 **41%–83%**；等价性判定仅 **49%–90%**。\n- 开启推理能明显提升较弱模型，但**无法消除结构保持（structure-preservation）类错误**，且随编辑步长增加性能仍急剧下降。\n- 结论：网表操作可靠性是 LLM 驱动电路设计自动化中一个**独立的瓶颈**，需单独优化。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-13 13:03:02"
+ "created_at": "2026-08-13 13:03:02",
+ "topics": [
+  "applications"
+ ]
 }

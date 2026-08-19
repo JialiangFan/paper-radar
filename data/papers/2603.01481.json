@@ -9,5 +9,9 @@
  "summary": "核心创新点：提出 Dual-Horizon Credit Assignment（DuCA）框架，通过 Horizon-Independent Advantage Normalization（HIAN）在时间尺度上分离归一化短期(turn-level)与长期(session-level)奖励，从而实现对策略更新的平衡梯度和解耦优化。\n\n主要方法：在多轮对话的工业销售代理中采用强化学习，设计 DuCA 框架；HIAN 对 turn-level 和 session-level 的优势分别进行归一化后再融合用于策略更新，避免单一奖励主导训练；在高保真用户仿真器上与 GRPO 基线比较评估。\n\n结论/性能：相对 GRPO 基线，转化率提升 6.82%（相对提升）；句内重复降低 82.28%；身份检测率下降 27.35%，显示在兼顾长期目标与自然语言生成方面的显著改进。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-03 14:03:56"
+ "created_at": "2026-03-03 14:03:56",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

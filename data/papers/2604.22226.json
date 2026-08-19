@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句概括）\n  提出 Chain-of-Time Reasoning (CoTR) 框架，通过锚点-观测-推理的循环实现对长时序体育视频中证据的定位、验证与组合，并以 SportsTime 基准推动时序推理监督。\n\n- 主要方法\n  - 构建 SportsTime 基准，覆盖 14K+ 开放式问答和 5万多条逐步时序证据注释，作为长时域体育视频理解的评测与监督源。\n  - 提出 CoTR 框架：在训练阶段引入 temporal-reward GRPO，鼓励模型进行时序上有证据支撑的推理；在推理阶段使用锚点-观察-推理的证据寻求循环，逐步定位、核对并组合时序证据，生成最终答案。\n  - 结合多模态大语言模型，通过证据定位与正当化的机制提升长时序推理能力。\n\n- 结论/性能\n  - 实验表明 SportsTime 作为基准具有帮助性，CoTR 相对于强基线在时序组合推理和逐步证据定位/正当化质量上实现一致提升。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-27 13:03:17"
+ "created_at": "2026-04-27 13:03:17",
+ "topics": [
+  "multimodal-perception",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个三阶段的代理驱动工作流 FACT，将图级模式发现、基于 CUTLASS 的内核实现与自动调优，以及模式组合整合，以实现从 traced PyTorch 到可部署的高性能 CUTLASS 内核的自动合成。\n\n- 主要方法：\n  - 模式发现：使用大模型（LLM）代理分析被跟踪的计算图，匹配子图到优化规则、从特定架构索引中检索 vetted 示例，输出优先级模式。\n  - 模式实现：把每个模式实现为 CUTLASS 内核、包装成 PyTorch 拓展、并通过基于 CUTLASS 层级的参数扫描进行自动调优与验证。\n  - 模式组合：将所有拓展加载到一个组合模块中，进行端到端基准测试。\n\n- 结论/性能：\n  - 在 Level 1 的三个 GEMM 任务（方阵乘法、批量矩阵乘法、较大 K 的矩阵乘法）上，自动调优的 CUTLASS 内核相较 PyTorch cuBLAS 基线提升约 1.06x–1.18x。\n  - 在 Level 3 的 MiniGPT 结构上，将融合集成的多头注意力与融合的 MLP GEMM+GELU 组合，端到端实现约 2.79x 的加速。\n  - 该工作展示了将代理驱动的图级模式发现、自动调优和动态模式表结合起来的实用路径，用以将 traced PyTorch 自动转化为可部署的高性能内核。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-30 13:05:10"
+ "created_at": "2026-04-30 13:05:10",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

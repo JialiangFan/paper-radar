@@ -9,5 +9,9 @@
  "summary": "## HounsWorld 论文摘要总结\n\n**1. 核心创新点**\n将 CT 影像智能重新表述为对「潜在患者状态」的推断问题，用一个统一的多模态世界模型同时完成状态读出（问答）、语言重建（报告生成）和条件化 CT 体数据模拟（生成）三类任务。\n\n**2. 主要方法**\n- 提出 **HounsBench** 基准：以 CT 为中心、按患者划分（patient-disjoint）的数据集，统一涵盖上述三大任务族并分别设定评测指标。\n- 提出 **HounsWorld**：一个 3B 参数的多模态世界模型，通过「联合理解—生成学习」（Joint Understanding-Generation Learning）把三维体数据和临床文本都视作同一潜在状态的观测，由共享 Transformer 形成隐式的患者状态估计。\n- 两项关键设计：**零初始化 CT 适配器**（保留预训练多模态映射能力不被破坏）、**条件显式的 HU 窗口采样**（显式暴露临床上有意义的密度信息）。\n- 生成侧支持低剂量去噪、虚拟增强（虚拟对比剂强化）以及受解剖约束的「文本+掩膜→体数据」生成。\n\n**3. 结论 / 性能**\n模型在三大任务族上均表现良好，并且通过「临床结构化的补全（生成）任务」反过来持续提升了 CT 理解能力，验证了理解与生成互促的假设。代码已开源：https://github.com/byhwhite/HounsWorld.git\n\n> 注：摘要中未给出具体数值指标或与基线的量化对比，「strong performance」「consistently improving」均为原文的定性表述。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-14 13:04:27"
+ "created_at": "2026-08-14 13:04:27",
+ "topics": [
+  "world-model-learning",
+  "applications"
+ ]
 }

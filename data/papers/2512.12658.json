@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 CogDoc 的统一粗到细思考框架，通过先进行低分辨率的快速阅读定位信息，再进行高分辨率的焦点推理，实现对长文档的可扩展性与多模态细粒度保真度的统一提升，并通过直接强化学习的后训练策略解决策略冲突问题。\n\n- 主要方法：\n  - 设计两阶段思维：Fast Reading（低分辨率、信息定位）与 Focused Thinking（高分辨率、深度推理）。\n  - 在后训练阶段比较直接强化学习（Direct RL）与带有监督微调初始化的 RL（RL+SFT）策略，发现直接 RL 更能避免策略冲突。\n  - 以一个7B参数模型在视觉丰富的文档基准上进行评估，展示在同等参数量级内达到SOTA，并显著超越更大规模的专有模型（如 GPT-4o）。\n\n- 结论/性能：\n  - 在同参数规模内达到state-of-the-art，并在具有挑战性的视觉丰富文档基准上明显超越规模更大的模型（如GPT-4o）。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-16 02:04:13"
+ "created_at": "2025-12-16 02:04:13",
+ "topics": [
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

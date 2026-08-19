@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：通过强化学习在代码大模型权重中合成一个可重复使用的求解器模板，从而对整个位集问题族提供一个可复用的求解器，而不是对每个实例都进行独立推理。\n\n- 主要方法：在 Qwen2.5-Coder-14B-Instruct 上使用 Group Relative Policy Optimization (GRPO) 进行微调，结合可行性门控奖励和轻量结构化搭建，研究并验证在 SDS 这类约束型问题上的可迁移性与可重用性；与基线 Best-of-64 进行对比，并通过编译一次的最优求解器评估可重复性与跨领域转移（Job Shop Scheduling）的证据，同时进行消融实验以探明关键设计要素。\n\n- 结论/性能：在可行的 SDS 输出中达到 99.8% 的约束感知 Simulated Annealing 模板收敛，解空间与全局最佳求解器（VBS）的差距为 5.0%，且在后续生成/搜索成本上比累计 Best-of-64 低约 91 倍；一个最优冻结求解器在各种种子下保持竞争力，且对 Job Shop Scheduling 的跨域评估给出正向转移的证据；消融结果揭示该方法对稳定化、门控和奖励归一化等设计的敏感性与局限。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-05-19 12:34:19"
+ "created_at": "2026-05-19 12:34:19",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Chat2Workflow 基准并配套一个鲁棒的 agentic 框架，能够直接从自然语言生成可执行的可视化工作流并在多轮执行中纠正错误，推动工业级自动化的实现。\n\n- 主要方法：基于大规模语言模型进行高层意图到工作流的生成；设计代理式（agentic）框架，通过多轮交互、执行回放与纠错机制提升稳定性和可执行性；数据集来自真实商业工作流，生成的工作流可直接转化部署到 Dify、Coze 等平台。\n\n- 结论/性能：实验发现尽管现有模型能抓住高层意图，但在复杂或需求变化情境下很难产出正确、稳定、可执行的工作流；引入代理框架后，解决率提升最高约 5.34%；仍存在现实世界差距，Chat2Workflow 为工业级自动化提供基础。代码已开源于 GitHub（https://github.com/zjunlp/Chat2Workflow）。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-22 13:03:33"
+ "created_at": "2026-04-22 13:03:33",
+ "topics": [
+  "agent-benchmarks",
+  "llm-agents"
+ ]
 }

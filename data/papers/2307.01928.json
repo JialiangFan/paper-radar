@@ -29,5 +29,9 @@
  "code": "",
  "project": "https://robot-help.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "llm-planning",
+  "hri-human-in-loop"
+ ]
 }

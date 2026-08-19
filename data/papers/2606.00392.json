@@ -9,5 +9,8 @@
  "summary": "## 论文总结\n\n**1. 核心创新点**\n将\"规避检测器的释义改写\"任务建模为**约束马尔可夫决策过程（CMDP）**，把语义保持作为显式约束而非加权奖励项，从而对\"规避-语义\"权衡实现精确控制。\n\n**2. 主要方法**\n提出 **DEPO（Detector Evasion Policy Optimization）**：一种拉格朗日原始-对偶强化学习算法，结合 **GRPO 风格的分组策略更新**，在训练中自适应平衡语义保持与检测规避，使策略在预设的语义保持区域内最大化攻击成功率。\n\n**3. 结论/性能**\n在 MAGE、M4、RAID 及同行评审数据集上，针对 MAGE、RoBERTa、RADAR、Binoculars、Fast-DetectGPT 等检测器进行评测，DEPO 在精确满足语义保持约束的同时取得强劲的规避效果，并展现出**跨领域、跨检测器及 prompt 层级的鲁棒性**。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-02 13:02:19"
+ "created_at": "2026-06-02 13:02:19",
+ "topics": [
+  "rl-post-training"
+ ]
 }

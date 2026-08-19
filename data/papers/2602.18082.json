@@ -9,5 +9,8 @@
  "summary": "- **核心创新点（1 句话概括）**：首次系统性研究 WebAssembly 在 Android 恶意软件中的隐匿载荷与绕检测能力，提出通过嵌入 Wasm 模块实现威胁隐藏的模型并给出可操作的 PoC。\n\n- **主要方法**：通过深入分析 Android 执行流水线中嵌入 Wasm 模块的机制，结合对混淆、反打包、隐写、投毒与规避等技术的考察，构建并验证了基于 Wasm 的恶意载荷执行 PoC，实证其能够绕过像 VirusTotal、MobSF 等主流静态分析和指纹匹配工具。\n\n- **结论/性能**：实验表明攻击者可利用 Wasm 模块隐藏并执行恶意代码，从而有效绕过工业界领先的检测工具，揭示了现实威胁并提示需要改进检测方法与防御策略。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-23 14:01:36"
+ "created_at": "2026-02-23 14:01:36",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

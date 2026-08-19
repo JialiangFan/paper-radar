@@ -28,5 +28,8 @@
  "code": "",
  "project": "https://www.physicalintelligence.company/blog/pi0",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-models"
+ ]
 }

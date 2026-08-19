@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Faithful GRPO（FGRPO），在 GRPO 基础上通过拉格朗日对偶上升将一致性和视觉 grounding 约束并入优势估计，以提升多模态语言模型的推理质量。\n\n- 主要方法：将批量级的一致性与视觉 grounding 约束作为优化约束，嵌入到优势计算中并自适应调整权重；采用 FGRPO 变体对 Qwen2.5-VL-7B 与 3B 规模模型在七个空间数据集进行评估。\n\n- 结论/性能：不一致率从 24.5% 降至 1.7%；视觉 grounding 分数提升约 13%；在最终回答准确性上也优于简单 GRPO，证明可信的推理可带来更好答案。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-10 13:02:37"
+ "created_at": "2026-04-10 13:02:37",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

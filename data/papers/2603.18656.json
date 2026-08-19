@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 SCALe，通过可调度的动态、长度无关权重对推理（<think>）与回答（<answer>）分离 supervision，并用余弦调度在训练中逐步将重点从推理转向回答，从而提升推理的简洁性和 grounding。\n\n- 主要方法：在 SFT 阶段引入 SCALe-SFT，采用对推理段与回答段的分离监督和长度独立的权重，以及一个余弦型的调度策略，逐步从关注推理转向关注回答，作为独立方法使用或与 GRPO 等强化 refinement 组合。\n\n- 结论/性能：在多项基准和架构上，SCALe 相对 vanilla SFT 提升准确性，与完整的两阶段 SFT + GRPO 的性能相当，同时训练时间仅约为其七分之一；与 GRPO 结合时可达到最优总体性能，展示了作为独立方法和强化 refinement 基线的价值。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-20 13:05:37"
+ "created_at": "2026-03-20 13:05:37",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出5B参数的轻量级统一多模态模型 DeepGen 1.0，通过堆栈通道桥接（SCB）与可学习的“think tokens”实现跨VLM层的深度对齐与结构化推理引导，在低成本条件下达到或超越更大模型的图像生成与编辑能力。\n\n- 主要方法：\n  - SCB：将来自多层VLM的层次特征进行融合，并引入可学习的 think tokens，提供给生成骨干以获得更丰富的语义理解与细粒度控制。\n  - 数据驱动的三阶段训练：1) Alignment Pre-training：在大规模图文对与编辑三元组上对齐 VLM 与 DiT 表征；2) Joint Supervised Fine-tuning：在高质量的生成、编辑与推理任务混合数据上进行联合微调；3) Reinforcement Learning with MR-GRPO：结合多种奖励与监督信号的强化学习，提升生成质量和人类偏好对齐，同时保持训练稳定性，减少伪影。\n  - 规模与数据：仅使用约50M样本进行训练。\n\n- 结论/性能：\n  - 在多项基准上实现领先表现：WISE 上超过 80B 的 HunyuanImage 28%，UniREditBench 上超过 27B 的 Qwen-Image-Edit 37%。\n  - 相较于大模型， DeepGen 1.0 在生成与编辑任务上达到竞争力甚至超越，同时显著降低参数规模与训练成本；并开源训练代码、权重与数据集，便于复现与扩展。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-13 14:03:27"
+ "created_at": "2026-02-13 14:03:27",
+ "topics": [
+  "multimodal-perception",
+  "efficiency-systems"
+ ]
 }

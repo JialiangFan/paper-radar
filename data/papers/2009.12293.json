@@ -30,8 +30,7 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "sim-to-real",
   "embodied-benchmarks",
-  "robot-manipulation"
+  "sim-to-real"
  ]
 }

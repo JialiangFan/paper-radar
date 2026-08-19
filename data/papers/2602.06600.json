@@ -9,5 +9,8 @@
  "summary": "核心创新点：提出并利用推理过程中的回声提示（Echo of Prompt, EOP）作为前置计算信号，通过回声似然差距量化成本并实现注意力重聚，从而提升大语言模型的推理性能。\n\n主要方法：\n- 将回声删除视为拒绝采样条件化，定义回声似然差距（Echo Likelihood Gap, ΔL）作为可计算代理， formalizing EOP 的成本与收益。\n- ED-SFT（Echo-Distilled SFT）：通过监督微调蒸馏“echo-then-reason”模式，灌输回声先行的推理结构。\n- EP（Echoic Prompting）：无需训练，在推理中段对模型进行再定位，引导其回归到回声-推理路径。\n- 通过长度/后缀控制的似然分析和层次注意力研究，发现 EOP 会提高中间层的答案之间前缀注意力，支持“注意力重聚”机制。\n- 在统一解码设置和预算下，评估数据集包括 GSM8K、MathQA、Hendrycks-MATH、AIME24、MATH-500。\n\n结论/性能：\n- 相对于基线，在上述多数据集上呈现一致且显著的性能提升（在相同解码设置和预算下）。\n- 实验与分析揭示 EOP 能提升中间层的答案对答案前缀注意力，符合注意力重聚的解释。\n- 研究提供了可复现的代码实现（GitHub 链接）以便复现和应用。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-09 14:02:49"
+ "created_at": "2026-02-09 14:02:49",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1 句）：提出局部充足性(local sufficiency)概念，在推理分歧点发现 LLM 的首选 token 总落在 SLM 的前 K 候选中，因此将 LLM 的生成任务转为从 SLM 候选集中进行选择，并通过 S2T-LOCAL 将这种选择逻辑蒸馏回 SLM，使其在单轨推理下也能实现接近多路径自一致性的效果。\n\n- 主要方法：提出 SELECT TO THINK（S2T）框架，将 LLM 的角色从开放式生成改为对 SLM 候选集的离散排序/选择；进一步提出 S2T-LOCAL，将选择逻辑蒸馏到 SLM，使其无需推理时的 LLM 依赖即可自主管理重排序。\n\n- 结论/性能：实验证明，1.5B 的 SLM 的前 8 个候选就能覆盖 32B LLM 的选择，命中率约 95%；在多项基准上，S2T-LOCAL 将贪心解码性能提升约 24.1%，实现与 8 路自一致性相近的效果但保持单轨推理效率。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-30 13:00:30"
+ "created_at": "2026-04-30 13:00:30",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

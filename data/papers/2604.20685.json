@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出一种几何感知的多目标优化框架 MGDA-Decoupled，在 DPO 框架内通过解耦的 MGDA 找到共享下降方向，显式考虑各目标的收敛动力学，从而实现更公平的多目标权衡。\n\n- 主要方法：在 Direct Preference Optimisation (DPO) 体系下，使用几何感知的多目标梯度下降算法（MGDA）进行优化，构建一个解耦的共享下降方向，逐目标考虑收敛动态，避免固定标量化权重对某些目标的偏置；整个过程不依赖强化学习或显式奖励模型。\n\n- 结论/性能：在 UltraFeedback 数据集上，几何感知方法，尤其是 MGDA-Decoupled，对黄金响应的胜率达到最高，整体及各目标维度均表现最好。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-23 13:03:56"
+ "created_at": "2026-04-23 13:03:56",
+ "topics": [
+  "rl-post-training"
+ ]
 }

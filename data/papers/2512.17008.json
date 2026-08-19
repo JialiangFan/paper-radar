@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 turn-PPO，一种在多轮任务中基于 turn-level MDP 的优势估计与策略优化方法，从而解决 token-level MDP 在长时序推理中的不稳定性。\n\n- 主要方法：将多轮 RL 问题改造成 turn-level MDP，比较并采用 PPO 的优势估计框架，提出专门的 turn-level 变体 turn-PPO，并在 WebShop 和 Sokoban 数据集上进行评估，覆盖有无长推理组件的情形。\n\n- 结论/性能：turn-PPO 相较于传统的 GRPO/PPO，在多轮任务中表现更稳健、效果更好，验证在 WebShop 与 Sokoban 上的有效性，适用于含长推理的场景。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-22 02:49:57"
+ "created_at": "2025-12-22 02:49:57",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

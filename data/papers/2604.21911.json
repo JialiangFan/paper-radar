@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话概括）\n提出 HalluScope 基准用于系统性分解 LVLM 幻觉的来源，并给出 HalluVL-DPO，通过偏好优化对 LVLM 进行微调以增强视觉 grounding、降低文本指令先验引发的幻觉。\n\n2) 主要方法\n- HalluScope：设计并验证一个评估基准，用以分析幻觉的主要诱因及其相对重要性，聚焦文本先验与视觉能力的关系等因素。 \n- HalluVL-DPO：对现成的 LVLM 进行微调，采用偏好优化（preference optimization）并使用自建的训练数据集，引导模型在回答时更偏向 grounded 的输出，减少幻觉。\n\n3) 结论/性能\n- 经优化的模型在针对性幻觉模式上显著缓解，同时在其他幻觉基准和视觉能力评估上保持或提高表现。\n- 研究结果支持文本指令先验是幻觉的主要来源之一，并且所提出的方法能够在不损害其他能力的前提下提升 grounding 可靠性。\n- 相关评估基准、偏好训练数据集和代码将公开发布，便于复现与后续研究。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-24 13:02:42"
+ "created_at": "2026-04-24 13:02:42",
+ "topics": [
+  "multimodal-perception",
+  "agent-benchmarks"
+ ]
 }

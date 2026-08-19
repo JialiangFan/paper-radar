@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点（一句话）\n提出 Provenanced Access Subaccount System（PASS），以 provenance 基础的访问控制取代传统私钥控制，实现可溯源的多方协作访问与内部操作的隐私保护。\n\n2) 主要方法\n- 以 provenance 控制取代单点私钥控制，允许子账户仅在能追溯到有效存放的情况下使用资产。\n- 引入 Inbox-Outbox 机制，确保所有外部动作具备可验证的 lineage；内部转移保持私密性且与普通 EOAs 无区别。\n- 在 Lean 4 中对 PASS 进行形式化并证明核心不变量（内部转移隐私、资产可访问性、provenance 完整性）。\n- 原型实现：在 AWS Nitro Enclaves 与 dstack Intel TDX 的 enclave 后端上部署，集成 WalletConnect；对钱包操作进行吞吐量基准测试。\n\n3) 结论/性能\n- 证明并实现了 provenance-based 钱包的可实现性与高效性；获得核心不变量的形式化证明。\n- 原型通过两种 enclave 后端及 WalletConnect 集成，进行了吞吐量基准测试，结果表明在实际钱包操作中具有可接受的性能水平，推动了在隐私保护前提下的可控共享 custody 的设计空间。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-04-27 13:02:25"
+ "created_at": "2026-04-27 13:02:25",
+ "topics": [
+  "other"
+ ]
 }

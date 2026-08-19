@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：提出 Resilient Federated Chain，将区块链共识中的 Pooled Mining 冗余转化为主动防御层，并结合可自适应的共识评估函数与鲁棒聚合规则，从而显著提升联邦学习在对抗性攻击下的鲁棒性。\n\n- **主要方法**：基于区块链的联邦学习框架，扩展现有的 Proof of Federated Learning 架构；将 Pooled Mining 的冗余性改造成主动防御层并与鲁棒聚合规则协同；在共识机制中引入灵活的评估函数实现对不同攻击策略的自适应防御；在图像分类任务上进行多场景对抗实验以评估鲁棒性。\n\n- **结论/性能**：实验结果表明，RFC 相较基线方法显著提升鲁棒性，在多种对抗场景下表现更强，提供了一种可行的去中心化学习环境安全解决方案。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-26 14:01:37"
+ "created_at": "2026-02-26 14:01:37",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

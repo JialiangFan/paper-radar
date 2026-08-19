@@ -9,5 +9,8 @@
  "summary": "**核心创新点**：提出 EvoSpark 框架，通过分层叙事记忆、生成化场景编排与统一叙事运算引擎，实现多代理社会中的长时程逻辑连贯叙事演化，解决长期叙事中的记忆堆叠与时空错位问题。\n\n**主要方法**：\n- 借助 Stratified Narrative Memory，结合 Role Socio-Evolutionary Base 作为“活生 cognition”，动态代谢经验以解决历史冲突。\n- 引入 Generative Mise-en-Scène 机制，强化 Role-Location-Plot 的对齐，确保人物出场与叙事进展同步。\n- 依托 Unified Narrative Operation Engine，整合 Emergent Character Grounding Protocol，将随机性触发转化为可持续的角色实体，由最小前提出发生成开放、演化的故事世界。\n\n**结论/性能**：实验表明 EvoSpark 在多种范式下显著优于基线，能够持续生成富表达性且高度连贯的叙事体验。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-15 13:11:00"
+ "created_at": "2026-04-15 13:11:00",
+ "topics": [
+  "llm-agents"
+ ]
 }

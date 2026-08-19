@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：将指令优化作为动态共进化的 RL 过程的一部分，通过维护指令群体、对指令进行奖励归因并淘汰低效指令，以及利用基于大语言模型的自我反思机制持续生成更优指令，从而实现 Instruction-Policy 的协同进化。\n\n2. 主要方法：\n- INSPO 框架：Instruction-Policy 共进化的强化学习循环。\n- 动态指令群体：与问题一起抽样形成候选指令集，在 RL 循环中对每条指令分配奖励并定期淘汰表现差的指令。\n- On-policy 反思机制：基于Replay Buffer 的 LLM 端优化器分析历史经验，进化出更有效的指令策略。\n- 基础模型与任务：建立在 RLVR 的多轮检索与推理任务上进行实验。\n\n3. 结论/性能：\n- 在多轮检索与推理任务上显著优于依赖静态指令的强基线。\n- INSPO 能发现并采用创新性指令，引导代理走向更具策略性的推理路径。\n- 取得了实质性的性能提升，同时计算开销只带来边际增加。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-02 14:03:53"
+ "created_at": "2025-12-02 14:03:53",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

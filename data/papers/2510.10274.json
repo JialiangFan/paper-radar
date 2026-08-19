@@ -26,5 +26,8 @@
  "code": "",
  "project": "https://thu-air-dream.github.io/X-VLA/",
  "is_core": false,
- "is_supplemental": true
+ "is_supplemental": true,
+ "topics": [
+  "vla-models"
+ ]
 }

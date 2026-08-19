@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句概括）\n提出一种基于显式图拉普拉斯谱先验的鲁棒深度伪造检测框架LR-GCN，通过Order-Free Temporal Graph Embedding构建自适应稀疏图，并结合双层稀疏性与谱带通机制，在不依赖严格时序的前提下对乱序、缺失、遮挡及对抗扰动的输入实现鲁棒检测。\n\n- 主要方法\n  1) OF-TGE：将逐帧CNN特征按语义亲和关系构建自适应稀疏图，且不强依赖严格时间顺序。  \n  2) 双层稀疏性：同时对图结构和节点特征施加约束，抑制无效人脸的影响。  \n  3) Graph Laplacian Spectral Prior：作为高通算子在图谱域强化结构异常与伪造线索，随后进行低通GCN聚合。  \n  4) 训练在仅使用干净数据的条件下完成，形成任务驱动的谱带通过滤效果。\n\n- 结论/性能\n在 FF++、Celeb-DFv2、DFDC 等数据集上实现了SOTA性能，并对缺失人脸、遮挡以及对抗扰动等严重扰动具有显著鲁棒性。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-09 14:02:28"
+ "created_at": "2025-12-09 14:02:28",
+ "topics": [
+  "adversarial-attacks"
+ ]
 }

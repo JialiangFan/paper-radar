@@ -28,5 +28,8 @@
  "code": "",
  "project": "https://sites.google.com/stanford.edu/sentinel",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "runtime-monitoring"
+ ]
 }

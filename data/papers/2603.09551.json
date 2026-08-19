@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话概括）\n提出 GeoSolver：通过细粒度的过程监督与树状强化学习，实现遥感推理的可验证性与测试时规模化扩展（TTS）。\n\n2) 主要方法（技术/模型简述）\n- 构建 Geo-PRM-2M 数据集：采用熵导向的蒙特卡洛树搜索（MCTS）和定向视觉幻觉注入，获得 token 级的过程监督信号。\n- 训练 token 级的过程奖励模型 GeoPRM，用于提供细粒度的可信度反馈。\n- 提出 Process-Aware Tree-GRPO 强化学习算法：将树状探索与基于信实性的奖励权重结合，精准为中间推理步骤分配 credit。\n- 基于上述组件形成 GeoSolver-9B，并实现强大的测试时推理扩展（Test-Time Scaling，TTS）。\n- 作为通用地理空间验证器，GeoPRM 能直接提升其他大模型在遥感任务上的性能，并展现跨模型的泛化能力。\n\n3) 结论/性能（取得的效果）\n- GeoSolver-9B 在多项遥感基准上达到现有方法的最新性能（SOTA）。\n- GeoPRM 实现稳健的测试时扩展能力，能够提升 GeoSolver-9B 的性能，并直接提升通用 VLMs 的地理空间推理能力，且具有良好的跨模型泛化性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-11 13:04:22"
+ "created_at": "2026-03-11 13:04:22",
+ "topics": [
+  "llm-reasoning",
+  "applications"
+ ]
 }

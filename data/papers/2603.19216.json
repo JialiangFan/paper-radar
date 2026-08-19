@@ -9,5 +9,8 @@
  "summary": "**核心创新点**：提出 DreamPartGen，利用双部件潜变量与关系语义潜变量在一个协同去噪框架中实现部件级别的几何、外观和语义的统一建模与文本对齐，从而实现可解释且文本对齐的3D生成。\n\n**主要方法**：\n- 引入 Duplex Part Latents (DPLs)，同时建模每个部件的几何与外观信息。\n- 引入 Relational Semantic Latents (RSLs)，从语言层面捕捉并编码部件之间的依赖关系。\n- 通过同步的共去噪（co-denoising）过程强制几何与语义的一致性，实现与文本描述的对齐。\n\n**结论/性能**：在多个基准上达到几何保真度与文本-形状对齐的最新最优性能（state-of-the-art）。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-03-20 13:06:14"
+ "created_at": "2026-03-20 13:06:14",
+ "topics": [
+  "other"
+ ]
 }

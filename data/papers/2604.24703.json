@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出一个轻量级、通过参数高效微调得到的缺陷检测分类器 SpecValidator，能够自动识别 LLM 代码生成中的任务描述缺陷，并具备对未见问题和真实描述中未知缺陷的泛化能力。\n\n2) 主要方法：使用小型模型经过参数高效微调得到的 SpecValidator 作为缺陷检测分类器；针对 Lexical Vagueness、Under-Specification、Syntax-Formatting 三类缺陷，在三组不同结构和复杂度的基准上进行评估，并与 GPT-5-mini、Claude Sonnet 4 等对比，采用 F1 和 MCC 作为评价指标。\n\n3) 结论/性能：在缺陷检测上达到 F1=0.804、MCC=0.745，显著优于基线（GPT-5-mini: F1=0.469、MCC=0.281；Claude Sonnet 4: F1=0.518、MCC=0.359）。 moreover，SpecValidator 能对未见问题和真实描述中的未知 Under-Specification 缺陷进行泛化检测；鲁棒性更多取决于缺陷类型与任务描述特征而非模型容量，Under-Specification 缺陷最为严重；结构化、具有丰富上下文的基准（如 LiveCodeBench）显示更强鲁棒性，强调了结构化任务描述的重要性。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-28 13:01:43"
+ "created_at": "2026-04-28 13:01:43",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "## 论文速览：When Correct Solutions Repeat: Rarity-Aware Credit Redistribution for GRPO\n\n**1. 核心创新点**\n\n指出 GRPO 在可验证奖励强化学习（RLVR）中把每条正确回答当作独立信号，会导致\"高频出现的解题结构垄断正向梯度、稀有解法几乎拿不到信用\"，并提出按**结构稀有度重分配正向优势**来纠正这一偏差。\n\n**2. 主要方法**\n\n- 形式化定义了\"**多重性诱导的结构级信用集中**\"（multiplicity-induced structure-level credit concentration）问题：正向系数质量与某类解法被采样的频次成正比。\n- 提出一条**分区条件化（partition-conditioned）规则**：先把已验证正确的 rollout 按解题结构聚类，再依据簇的稀有程度重新分配正向 advantage。\n- 具体实例化为 **Cue-GRPO**：用确定性的 **Strategy Cues（策略线索）** 在单个 rollout 组内构造局部分区，**无需额外辅助模型推理**。\n- 另设对照变体 **CR + Judge Partitions（JP）**，验证该重分配机制在由 judge 模型给出的分区上同样可用。\n\n**3. 结论/性能**\n\n- 在 **Qwen2.5-Math-7B** 和 **Llama-3.1-8B-Instruct** 上，AIME 的重复采样（repeated-sampling / pass@k 类）性能均有提升，且**采样预算越大、增益越明显**——说明主要改善的是解法多样性而非单次准确率。\n- 训练开销仅比 GRPO 增加 **6% 墙钟时间**。\n- 结论：结构级信用重分配是 RLVR 值得关注的一个新设计维度，Strategy Cues 则为竞赛数学场景提供了低开销的落地实现。代码已开源。\n\n> 一点提醒：摘要只报告了 AIME 上的重复采样指标，未给出 greedy/pass@1 等常规指标，也没说明 Strategy Cues 的具体构造方式是否依赖数学领域的先验模板——跨领域泛化性需要看正文确认。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-08-08 13:01:07"
+ "created_at": "2026-08-08 13:01:07",
+ "topics": [
+  "rl-post-training"
+ ]
 }

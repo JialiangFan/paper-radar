@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（一句话概括）：提出 SignAgent 的代理式大模型框架，通过 SignAgent Orchestrator 与 SignGraph 的协同工作，实现可扩展且 linguistically-grounded 的手语标注与数据集构建。\n\n- 主要方法：采用两大模型体系并辅以一组语言学工具来实现标注与整理任务。SignAgent Orchestrator 作为推理型 LLM，负责协调这组语言学工具并进行推理决策；SignGraph 作为知识 grounding 的 LLM，提供词汇与语言学层面的 grounding。并在两个下游任务中应用：1) Pseudo-gloss Annotation：在约束条件下结合多模态证据提取并排序合适的 gloss 标签；2) ID Glossing：通过对视觉相似性与音韵重叠的推理，检测并 refined 视觉聚类，正确识别并分组手语变体。\n\n- 结论/性能：在两个下游标注任务上展示出较强的性能，证明该代理式、语言学为导向的框架适合进行大规模、具语言学意识的手语数据标注与数据集整理。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-03-22 13:00:53"
+ "created_at": "2026-03-22 13:00:53",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

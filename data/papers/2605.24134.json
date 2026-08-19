@@ -9,5 +9,9 @@
  "summary": "# ProofAgent Harness 论文总结\n\n## 1. 核心创新点\n提出 **ProofAgent Harness**——一个开放、可扩展、可审计的对抗式 AI 智能体评估基础设施，将智能体评估从\"静态打分\"转变为\"多轮对抗式轨迹评估\"。\n\n## 2. 主要方法\n- **对抗式多轮试验**：在客服、医疗分诊、隐私安全、代码生成等场景对智能体施压并捕获完整行为轨迹。\n- **Adversarial Multi-Juror Scoring with Turn-Level Audit**（核心机制）：使用经过校准的多个陪审员（juror）人格进行事后评分，通过共识检查与回合级证据审计来解决评审分歧。\n- **开放可扩展架构**：领域、陷阱（traps）、指标、陪审员人格、评分规则与报告格式均可由开发者扩展。\n\n## 3. 结论 / 性能\n- 实验揭示强智能体存在选择性失败模式：弱指标、脆弱回合、不安全的重构（unsafe reframing）以及被操纵路径。\n- **关键发现**：一个小型量化的本地 Harness LLM 即可有效挑战由顶级大模型驱动的生产级智能体，说明评估能力来源于**整条 harness 流水线**，而非单纯依赖模型规模。\n- 最终输出可重复、有证据链支撑、可操作的评估报告，可在部署前提供安全保障。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-05-27 13:01:08"
+ "created_at": "2026-05-27 13:01:08",
+ "topics": [
+  "agent-benchmarks",
+  "ai-safety-alignment"
+ ]
 }

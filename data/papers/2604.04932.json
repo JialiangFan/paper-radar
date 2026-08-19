@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出面向四类细粒度 LLM 生成文本检测的框架 RACE，通过对创作者与编辑者的双重角色建模，结合 RST 构图的创作者逻辑与 EDU 特征的编辑风格，实现对多样化文本的高精度识别。\n- 主要方法：利用 Rhetorical Structure Theory 构建创作者基础逻辑图，同时提取 Elementary Discourse Unit（EDU）级特征来刻画编辑风格，在四类文本上进行联合分类；并与多种基线方法进行对比评估。\n- 结论/性能：实验结果显示 RACE 在识别细粒度类型方面优于 12 个基线方法，且误报率低，为 LLM 监管提供了对齐策略的解决方案。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-07 13:00:23"
+ "created_at": "2026-04-07 13:00:23",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

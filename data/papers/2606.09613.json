@@ -9,5 +9,9 @@
  "summary": "1. **核心创新点**：首个面向多轮 LLM Agent 服务（stateful 程序执行）的硬件感知模拟器，可在普通 CPU 上以程序级粒度评估调度、KV 缓存与路由策略。\n\n2. **主要方法**：由四个可组合模块构成——Program Orchestrator（保留程序身份与轮次顺序）、Tool Simulator（模拟工具调用造成的时间间隙）、Session-Aware Router（维护程序到实例的亲和性以实现缓存感知分派）、KV Residency Model（追踪 HBM / 主机 DRAM/CXL / 淘汰间的 KV 放置策略）。\n\n3. **结论/性能**：在真实部署与硬件配置下，关键性能指标的复现误差控制在 6% 以内，且完全运行于普通 CPU，无需占用昂贵加速器即可进行可控、可复现的 Agent 服务策略探索。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-09 13:01:46"
+ "created_at": "2026-06-09 13:01:46",
+ "topics": [
+  "agent-benchmarks",
+  "efficiency-systems"
+ ]
 }

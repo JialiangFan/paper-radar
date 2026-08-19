@@ -9,5 +9,8 @@
  "summary": "**核心创新点**：提出基于低分辨率输入的 LR-条件奖励模型 RefReward-SR，利用多模态大语言模型的视觉-语言先验进行推理评估，实现偏好对齐的超分辨率优化，无需 GT 监督或 NR 评估。\n\n**主要方法**：\n- 构建 RefSR-18K：第一份面向 SR 的 LR 条件偏好数据集，给出基于 LR-HR 一致性与 HR 自然性的成对排序。  \n- 以 RefReward-SR 为核心：使用 LR 作为语义锚点，利用 MLLM 的视觉-语言先验评估 HR 重建的语义一致性与 plausibility，进行奖励建模。  \n- GRPO 微调与训练整合：用 LR 条件的排序奖励对 MLLM 进行 Group Relative Policy Optimization（GRPO）微调，并将 GRPO 融入 SR 训练， RefReward-SR 作为核心奖励信号实现偏好对齐的生成。\n\n**结论/性能**：\n- 实验显示与人类判断的对齐显著提升，生成结果在语义一致性和感知自然度上优于基线。  \n- 框架不依赖 GT 监督或 NR 评估，能够更好反映人类偏好。  \n- 代码、模型与数据集计划在论文被接收后公开发布。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-26 13:03:44"
+ "created_at": "2026-03-26 13:03:44",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "# LCGuard 论文总结\n\n**1. 核心创新点**\n首次针对多智能体 LLM 系统中基于 KV 缓存的潜在通信（latent communication）提出安全防护框架，防止敏感信息通过不透明的隐空间通道在智能体之间泄露。\n\n**2. 主要方法**\n- 将共享的 KV 缓存视为潜在工作记忆，在跨智能体传输前对其进行**表示层变换**（representation-level transformation）。\n- 通过**重构（reconstruction）** 操作化定义\"敏感信息泄露\"：若对抗解码器能从共享缓存中还原出敏感输入，则视为不安全。\n- 采用**对抗训练**：对抗方学习重建敏感输入，LCGuard 学习在保留任务相关语义的同时压缩可重构信息。\n\n**3. 结论/性能**\n在多个模型家族与多智能体基准上的实验表明，LCGuard 能持续降低基于重构的信息泄露率与攻击成功率，同时任务性能与标准 KV 共享基线相当，实现了\"安全–效用\"的良好权衡。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-24 13:01:15"
+ "created_at": "2026-05-24 13:01:15",
+ "topics": [
+  "llm-agents",
+  "ai-safety-alignment"
+ ]
 }

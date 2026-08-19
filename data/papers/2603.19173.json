@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将GPU内核基准从对软件基线的相对提升转向与硬件极限（Speed-of-Light）对齐，并通过SOLAR推导的硬件边界设定固定目标，同时提供防reward-hacking的沙盒评估环境。\n\n- 主要方法：\n  - 构建 SOL-ExecBench，包含235个CUDA内核优化题目，来自124个生产与新兴AI模型，覆盖语言、扩散、视觉、音频/视频和混合体系结构，目标为NVIDIA Blackwell GPU。\n  - 以前向/反向工作负载在 BF16、FP8、NVFP4 下的表现为对象，利用SOLAR管线推导硬件层面的 SOL 边界作为固定基准。\n  - 提出 SOL Score，量化候选内核在释放基线与硬件SOL边界之间的差距收敛程度。\n  - 提供沙盒化评估体系：GPU时钟锁定、L2缓存清空、独立子进程执行、以及基于静态分析的防_reward-hacking策略。\n\n- 结论/性能：\n  - 提出并实现了一个以硬件Speed-of-Light为目标的基准框架，能够量化内核优化接近硬件极限的程度（通过SOL Score），并通过沙盒化评估提升鲁棒性，避免奖励机制被滥用。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-20 13:03:32"
+ "created_at": "2026-03-20 13:03:32",
+ "topics": [
+  "agent-benchmarks",
+  "efficiency-systems"
+ ]
 }

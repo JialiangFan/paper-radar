@@ -28,5 +28,9 @@
  "code": "https://github.com/intelligent-control-lab/GUARD",
  "project": "",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "safe-rl",
+  "embodied-benchmarks"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "# HDSL 论文总结\n\n**核心创新点**：提出一种 XML/CSS 风格的层次化领域特定语言（HDSL），将 3D 室内场景生成与编辑建模为\"结构化程序生成 + 局部程序修复\"问题，从而实现 LLM 可生成、可局部修改的中间表示。\n\n**主要方法**：\n- 用 HDSL 将房间、区域、物体、支撑面表示为带局部坐标的树形结构\n- LLM agent 递归生成 HDSL 子树，并通过有界验证（bounded verification）保证正确性\n- 多模态资产检索对非虚拟节点进行实例化（grounding）\n- 力导向布局优化（force-directed layout optimization）修复边界与碰撞错误\n- 编辑环节采用层次化检索增强生成（HRAG）：只检索并重写相关子树，再通过确定性三路合并（three-way merge）回填\n\n**结论/性能**：\n- 生成任务：在物体覆盖率、文本-场景对齐度、生成耗时上优于完整文本到场景基线，在几何指标上与最新的纯布局方案持平\n- 编辑任务：HRAG 使 token 用量减少 **5.22 倍**，运行时间减少 **6.19 倍**，8 对编辑均生成有效 DSL，并能更好地保留与编辑无关的物体",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-06-09 13:01:37"
+ "created_at": "2026-06-09 13:01:37",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

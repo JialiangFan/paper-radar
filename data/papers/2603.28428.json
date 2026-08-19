@@ -9,5 +9,8 @@
  "summary": "以下为对论文标题与摘要的中文要点总结：\n\n1) 核心创新点（1句话）\n- 提出面向 Open Agentic Web 的通用代理架构与运行时“Synergy”，使代理具备持续身份、开放协作和长期演化能力，从而成为在开放网络中工作的 Agentic Citizens。\n\n2) 主要方法\n- 架构与运行时要点：以会话本地编排（session-native orchestration）、基于仓库的工作空间（repository-backed workspaces）和社交化通信为核心，支撑持久、协作的代理行为。\n- 身份与记忆体系：通过类型化记忆、笔记、议程、技能以及持续的社交关系来构建代理的身份与社会存在感（identity and personhood）。\n- 演化机制：引入基于经验的学习（experience-centered learning），在推理阶段主动回忆并利用获得奖励的轨迹以实现性能与协作能力的长期提升。\n- 面向开放网络的协作：强调在开放的“开放代理网络”中实现代理之间的发现、任务边界协商与跨运行时的工作委托，从而达到 Agentic-Web 的协作性目标。\n\n3) 结论/性能（取得了什么效果）\n- 论文提出并描述了一种新的通用代理框架与运行时，能够在 Open Agentic Web 上实现持久性、协作性与演化性，但未给出具体的实验结果或量化性能指标；提供了实现“Agentic Citizens”的设计路径、目标以及未来的验证方向。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-31 13:03:43"
+ "created_at": "2026-03-31 13:03:43",
+ "topics": [
+  "llm-agents"
+ ]
 }

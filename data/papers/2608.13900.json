@@ -9,5 +9,9 @@
  "summary": "## 论文简评：Agentic Transaction: Towards ACID-Compliant Agent Systems\n\n**1. 核心创新点**\n首次把数据库的 ACID 事务思想迁移到 LLM 智能体，提出\"智能体事务（agentic transaction）\"概念及一套 ACID 兼容的智能体系统框架。\n\n**2. 主要方法**\n将经典 ACID 重新诠释为四条语义保证——语义原子性、语义一致性、语义隔离性、语义持久性；并据此实现了一个 ACID 兼容的数据智能体（data agent），关键技术包括：\n\n- 事务化的「探索—执行—验证」循环\n- 事务化技能库（transactional skill hub）\n- 基于置信度分歧（confidence divergence）的验证机制\n- 语义依赖感知的隔离\n- 事务感知的语义状态管理\n\n**3. 结论/性能**\n在常用基准上比包括 Claude Code 在内的当前最优智能体提升 **10.6%**，验证了在模型不确定性和动态执行环境下用事务原则提升可靠性的可行性，并为「可信、可扩展、自演化」的智能体系统架构开辟了新的研究方向。\n\n---\n\n**一句话点评**：贡献主要是概念框架的迁移与系统化落地，实验仅在数据智能体场景验证；「语义 ACID」的形式化程度、以及 10.6% 提升具体来自哪一个组件（缺少消融信息），需读正文确认。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-08-17 13:00:47"
+ "created_at": "2026-08-17 13:00:47",
+ "topics": [
+  "llm-agents",
+  "robot-harness"
+ ]
 }

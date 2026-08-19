@@ -8,6 +8,7 @@
   "world-model-learning": {"name": "世界模型学习", "desc": "世界模型架构与训练方法本身（JEPA、latent dynamics、Dreamer 类）"},
   "world-model-control": {"name": "世界模型用于控制", "desc": "用世界模型做规划、控制、model-based RL、安全预演"},
   "video-world-models": {"name": "视频世界模型", "desc": "视频生成式世界模型/世界模拟器（Sora/Genie 类）"},
+  "robot-harness": {"name": "机器人执行 Harness", "desc": "包在策略（VLA/RL/规划器）外层的执行治理框架：契约与前后置条件校验、动作门控拦截、digital twin 预演验证、安全包装器、执行监督——不改策略本身，在外面加一层可介入的骨架"},
   "safe-rl": {"name": "安全强化学习", "desc": "约束 RL、safe exploration、shielding、恢复策略"},
   "runtime-monitoring": {"name": "运行时监控", "desc": "运行时验证、异常/OOD 检测、失效预测、保障架构"},
   "formal-methods": {"name": "形式化方法", "desc": "时序逻辑（STL/LTL）、CBF、可达性分析、形式验证"},

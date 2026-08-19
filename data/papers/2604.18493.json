@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出约束性均匀Top-K采样（CUTS）与混合训练框架 Mixed-CUTS，通过结构性探索保持推理语义空间的多样性，避免强化学习在饱和数据上导致策略崩溃。\n- 主要方法：在解码阶段引入 CUTS（从受约束的高置信候选集合中均匀采样，参数无解码需求），并将其与 exploitative 与 exploratory rollouts 结合形成 Mixed-CUTS 的训练框架，用于提升 intra-group 优势的方差与跨域泛化，实验基于 Qwen3 模型进行。\n- 结论/性能：能够防止策略退化并显著提升跨域泛化能力；在 AIME25 基准上，Mixed-CUTS 相比标准 GRPO 的 Pass@1 提升最高约 15.1 个百分点，证实保持多样性对严格推理的重要性。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-21 13:03:10"
+ "created_at": "2026-04-21 13:03:10",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

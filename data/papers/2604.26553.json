@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（一句话概括）\n  提出一个基于 token 级别的策略优化框架 TLPO，通过局部干预定位错误位置、探索候选 token，并用定制化目标函数更新策略，以缓解语言混淆而不损害模型的通用能力。\n\n- 主要方法\n  引入 Token-Level Policy Optimization（TLPO）框架，在输出序列的易错 token 位置进行定位，探索替代候选 token，并对策略进行针对性的更新以抑制错误输出；与以序列为单位的 DPO、ORPO、GRPO 等方法相比，实现更细粒度的干预，保留下游任务性能。\n\n- 结论/性能\n  实验表明 TLPO 在多语言大模型上显著提升语言一致性，优于基线，并且在保持下游任务准确率方面不劣于现有方法。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-30 13:03:43"
+ "created_at": "2026-04-30 13:03:43",
+ "topics": [
+  "rl-post-training"
+ ]
 }

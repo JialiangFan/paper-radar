@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1 句话）：提出基于 Group Relative Policy Optimization 的 on-policy 强化学习框架 dUltra，通过学习逐 token 的未掩码概率与未掩码顺序，实现 MDLM 的超快速并行解码，克服以往蒸馏方法的 off-policy 限制，推动 diffusion-LM 的并行解码优势。\n\n- 主要方法：\n  - 采用 on-policy RL 框架，基于 GRPO 进行训练。\n  - 新增未掩码规划头，给出每个 token 的未掩码概率，按独立伯努力分布建模。\n  - 共同优化基础扩散语言模型与未掩码顺序规划器。\n  - 奖励信号结合可验证奖励、蒸馏奖励，以及未掩码步骤数，进行多目标优化。\n  - 适用于数学推理和代码生成等任务，目标是提升并行解码的效率与准确性。\n\n- 结论/性能：\n  - 在数学推理和代码生成等任务上，dUltra 相对于现有的启发式和蒸馏基线，在准确性-效率折中上取得改进，朝着在某些场景实现 diffusion supremacy（相较自回归模型的优势）迈进。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2025-12-29 02:29:29"
+ "created_at": "2025-12-29 02:29:29",
+ "topics": [
+  "rl-post-training",
+  "efficiency-systems"
+ ]
 }

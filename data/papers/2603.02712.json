@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 CoR-Painter，建立“从如何绘画到要绘什么”的约束推理（How-to-What Constrained Reasoning）框架，解决仅描述细节而缺乏全局结构推理导致的空间关系问题。\n\n2) 主要方法：1) 从输入提示推导出一组视觉约束，覆盖空间关系、关键属性与构图规则；2) 以这些约束导向生成详细的“What to draw”描述，为视觉合成提供结构化基础；3) 引入双目标 GRPO 策略，联合优化文本层次的约束推理与视觉投射过程，确保生成管线的整体一致性与质量。\n\n3) 结论/性能：在 T2I-CompBench、GenEval、WISE 上达到更强的性能，尤其在空间指标方面显著提升，如在 T2I-CompBench 上提升约 5.41%。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-04 14:04:23"
+ "created_at": "2026-03-04 14:04:23",
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
 }

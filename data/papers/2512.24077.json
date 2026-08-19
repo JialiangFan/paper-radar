@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将大语言模型嵌入“计划-执行-总结”认知循环的自进化搜索框架 LoongFlow，并结合混合记忆、多岛模型、MAP-Elites与自适应 Boltzmann 选择，以实现高效且具长期结构一致性的自我进化。  \n\n- 主要方法：构建 LoongFlow 作为自进化代理，利用计划-执行-总结 (PES) 的认知循环将进化搜索映射为推理过程；通过混合进化记忆维持长期架构一致性；采用多岛模型、MAP-Elites 与自适应 Boltzmann 选择来平衡探索与开发；以通用代理用于算法发现与机器学习代理用于流水线优化两种实例化实现，并在 AlphaEvolve 基准与 Kaggle 竞赛中评估。  \n\n- 结论/性能：在 AlphaEvolve 和 Kaggle 上相较于 OpenEvolve、ShinkaEvolve 等基线实现最高达约 60% 的进化效率提升，并发现更优解，同时显著降低计算成本，推动自主科学发现的进展。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-01-01 02:27:53"
+ "created_at": "2026-01-01 02:27:53",
+ "topics": [
+  "llm-agents"
+ ]
 }

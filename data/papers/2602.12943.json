@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 提出一种 inference-time 的轻量级防御 Neighborhood Blending，通过对查询样本邻域的预测进行加权平均来隐藏成员身份，无需重新训练模型且计算开销低。\n\n2) 主要方法\n- 事后（post-training）平滑模型的置信输出，基于查询样本的邻域进行预测平均。\n- 采用差分隐私采样来选择相似的训练样本作为邻居，形成一致的置信模式。\n- 引入自适应的“按用付费”失真策略，确保标签完整性（零标签损失）并尽量保持模型实用性；方法对模型是无关的，属于轻量级的推理阶段防御。\n\n3) 结论/性能\n- 在广泛数据集和模型上实验显示，显著降低 membership inference attacks 的成功率，同时保持模型性能，且在实用性方面优于 MemGuard（后验防御）和 DP-SGD（训练时防御）。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-16 14:01:37"
+ "created_at": "2026-02-16 14:01:37",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

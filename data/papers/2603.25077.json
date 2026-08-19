@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出可插拔的 Token-Reweighting（ToR）策略，动态对感知类与推理类关键 token 进行重加权，以显式建模两者的耦合关系，从而同时提升视觉 grounding 与推理连贯性。\n\n- 主要方法：在现有 RLVR 框架（如 GRPO、DAPO）之上，通过 token 级分析识别感知与推理的关键 token，并对它们进行差异化、动态权重调整，使两类 token 的作用相互促进；ToR 为 plug-and-play 模块，可无缝结合到现有方法中。\n\n- 结论/性能：在多模态推理基准上实现稳定的性能提升，叠加现有方法达到更高的视觉 grounding 与推理连贯性，达到或接近 state-of-the-art。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-28 13:01:42"
+ "created_at": "2026-03-28 13:01:42",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

@@ -31,7 +31,7 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "llm-planning",
-  "llm-agents"
+  "llm-agents",
+  "llm-planning"
  ]
 }

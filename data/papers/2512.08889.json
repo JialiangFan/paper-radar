@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一种无标签训练框架，结合大语言模型（LLM）验证器与视觉-语言模型（VLM）验证器，通过强化学习与自动难负样本挖掘在无需人工标注的情况下同时提升视觉推理和 grounding。\n\n- 主要方法：使用注释信息全无的训练流程；LLM 验证器对分解出的推理步骤进行强化学习以改进推理，VLM 验证器通过自动化难负样本挖掘强化视觉定位；利用 LLM 将空间查询分解为更易处理的子任务，并通过 VLM 评估与改进 grounding 的准确性。\n\n- 结论/性能：在多样的空间推理任务上提升视觉推理能力，超越开源和专有模型；结合改进后的视觉 grounding 模型，进一步优于最近的文本无关视觉推理方法。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-10 14:03:50"
+ "created_at": "2025-12-10 14:03:50",
+ "topics": [
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

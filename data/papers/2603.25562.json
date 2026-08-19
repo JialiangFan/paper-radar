@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（一句话）：\n  提出教师顶-K局部支撑匹配的修正策略，通过截断逆KL、top-p 回溯采样和特殊token屏蔽，解决 sampled-token OPD 在长序列场景中的不稳定性与三大失败模式。\n\n- 主要方法：\n  - 对比分析 token-level OPD 与序列级 reverse-KL 的偏差与方差权衡，揭示其在未来奖励耦合下的梯度方差增大问题\n  - 引入教师顶-K本地支撑匹配（top-K local support matching），实现截断的逆KL目标\n  - 采用 top-p 回溯采样以及特殊token屏蔽来避免标记/编码层次的失真\n  - 在单任务数学推理与多任务代理-数学训练等任务中进行验证\n\n- 结论/性能：\n  相比于传统的 sampled-token OPD，该方法带来更稳定的优化过程，并在下游任务上取得更好的性能表现。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-03-28 13:03:28"
+ "created_at": "2026-03-28 13:03:28",
+ "topics": [
+  "rl-post-training"
+ ]
 }

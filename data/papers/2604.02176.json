@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 Textual Frequency Law（TFL），主张在提示与微调大型语言模型时优先使用更高频的文本，并通过文本频率蒸馏与课程式微调来提升性能。\n\n2) 主要方法：\n- 构建三大单元：Textual Frequency Law（TFL）通过在线资源估算句子级频率，并用输入改写器将输入转化为更高频表达；Textual Frequency Distillation（TFD）通过让LLMs进行故事续写扩展句子，生成高频文本来调整初始频率估计；Curriculum Textual Frequency Training（CTFT）按句子级频率由低到高对LLMs进行增量微调。\n- 自建数据集TFPD，覆盖数学推理、机器翻译、常识推理与代理工具调用等任务，用于评估框架效果。\n\n3) 结论/性能：在TFPD数据集上的多任务实验中，该框架显著提升了模型在上述任务的表现，验证了以高频文本为导向的训练策略的有效性。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-04-03 13:06:27"
+ "created_at": "2026-04-03 13:06:27",
+ "topics": [
+  "llm-reasoning",
+  "efficiency-systems"
+ ]
 }

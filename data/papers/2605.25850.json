@@ -9,5 +9,8 @@
  "summary": "# TIAR 论文总结\n\n**1. 核心创新点**\n将 LLM 弃答（abstention）学习中的静态三元奖励，升级为基于轨迹信息的动态优势重加权机制，利用 GRPO 多轨迹一致性作为模型对查询的置信度信号。\n\n**2. 主要方法**\n- 基础框架：Group Relative Policy Optimization (GRPO)\n- 关键技术：Trajectory-Informed Advantage Reweighting (TIAR) —— 利用 GRPO 训练中生成的多条轨迹作为天然的弃答/置信度信号，动态调整弃答奖励的优势值\n- 训练目标：通过奖励信号探索模型的知识边界，鼓励回答一致性，从而决定何时该弃答\n- 评测基准：AbstentionBench（覆盖 6 个评测类别、31 个数据集）\n\n**3. 结论/性能**\n- 在 6 个评测类别中的 5 个上取得 SOTA 的弃答 F1 分数\n- 在 31 个数据集中的 17 个上优于静态三元奖励基线\n- 在提升弃答能力的同时**完全保留**了基线模型的回答准确率，未带来精度损失",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-05-27 13:01:47"
+ "created_at": "2026-05-27 13:01:47",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：通过引入硬负样本与窗口化的部分AUC（WPAUC），将 RL 基于 LLM 的推荐器的目标对齐直接指向 Top-K 性能，并给出可控的优化框架 TAWin。\n\n- 主要方法：1) 理论分析表明在二进制奖励下，用 GRPO 优化的目标等价于最大化 AUC，但与 Top-K 常不对齐；2) 将负样本从随机替换为 beam-search 负样本，使目标趋向部分 AUC；3) 提出 Windowed Partial AUC（WPAUC）定义，限定假阳性率在窗口 [α, α+d]；4) 提出 Threshold-Adjusted Windowed 重加权的 RL 方法（TAWin），实现对目标 Top-K 性能的显式控制。\n\n- 结论/性能：在四个真实数据集上的实验验证了理论结论，且方法实现持续达到并维持最优状态（SOTA），显示对 Top-K 的改进与对齐效果显著。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-27 13:02:52"
+ "created_at": "2026-04-27 13:02:52",
+ "topics": [
+  "rl-post-training"
+ ]
 }

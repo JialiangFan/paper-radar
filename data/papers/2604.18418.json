@@ -9,5 +9,9 @@
  "summary": "1. 核心创新点：以高质量临床指南作为专家级参考，首次构建面向深度证据整合的系统性基准MedProbeBench及其评估框架MedProbe-Eval，用于评估模型在多步证据整合和专家级指南生成中的能力。\n\n2. 主要方法：提出MedProbeBench及MedProbe-Eval，包含1) 基于高质量临床指南的评估参照；2) Holistic Rubrics，含超过1200条任务自适应评估标准；3) Fine-grained Evidence Verification，基于超过5130条原子级断言进行证据精确性验证；4) 对17种大模型与深度研究代理进行系统评测。\n\n3. 结论/性能：评测揭示现有模型在证据整合和指南生成方面存在显著不足，与专家级临床指南开发仍存在较大差距，显示当前能力与目标之间的距离。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-21 13:04:34"
+ "created_at": "2026-04-21 13:04:34",
+ "topics": [
+  "agent-benchmarks",
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：提出 StableOPD 框架，通过引入基于参考的分歧约束与滚动混合蒸馏，解决 OPD 过程中的长度膨胀与训练不稳定问题。\n\n- **主要方法**：在传统的 On-policy distillation 基础上，结合参考分布的 Divergence 约束和 rollout mixture distillation，通过限制学生分布与教师分布的偏离并混合不同长度/内容的滚动数据，缓解重复与长轨迹导致的训练问题。\n\n- **结论/性能**：在多组数学推理数据集上实现了避免截断崩溃、稳定训练动态的效果，平均性能提升约 7.2%。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-04-10 13:03:44"
+ "created_at": "2026-04-10 13:03:44",
+ "topics": [
+  "rl-post-training"
+ ]
 }

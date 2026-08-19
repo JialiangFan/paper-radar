@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：通过从轨迹 braid-inspired weaving 关系中提取时变的有向优先图，条件化 Stackelberg 协调，实现局部领导-跟随依赖的去中心化安全高效多智能体驾驶。\n\n- 主要方法：提出 TSC 框架，在集中训练-分散执行（CTDE）下，将密集交互分解为图局部的 Stackelberg 子博弈；基于提取的拓扑图进行领导者预测与跟随者的动作条件价值学习，以近似局部最优响应，且无需全局排序即可执行。\n\n- 结论/性能：在四个密集交通场景中优于代表性 MARL 基线，显著降低碰撞率，同时保持竞争力的交通效率与控制平滑性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-03-02 14:00:22"
+ "created_at": "2026-03-02 14:00:22",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句）：通过以任务结果为信号的强化学习，让模型自学习推理策略并用推理步骤引导工具调用与最终答案生成，实现推理与行动的协同学习，从而降低对人工推理标注的依赖并提升泛化能力。\n\n- 主要方法：提出一个以大语言模型为核心的强化学习管线，LLMs自行生成推理步骤来指导工具调用与回答生成；采用 Group Relative Policy Optimization（GRPO）进行策略优化，奖励设计围绕工具准确性和答案正确性，模型通过迭代不断 refined 推理与行动。\n\n- 结论/性能：实验结果表明该方法在提升推理质量与工具调用准确性方面有效；相较于仅进行SFT（不包含显式推理）的模型，实现1.5%的相对提升；相较于基础的Qwen3-1.7B模型，提升约40%。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-15 14:03:56"
+ "created_at": "2025-12-15 14:03:56",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

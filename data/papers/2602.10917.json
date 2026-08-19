@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：在在线 CMDP 场景中首次通过时间可变的安全边际与边际正则化的原-对偶框架（FlexDOME），实现近常数级的强约束违背、子线性强奖励悔以及非渐近的末迭收敛。\n\n- 主要方法：提出 FlexDOME 算法，结合时间变安全边际和正则化项嵌入原-对偶框架，并引入逐项渐进支配（term-wise asymptotic dominance）策略来调度安全边际以匹配优化与统计误差的衰减速率，同时通过策略-对偶 Lyapunov 分析获得非渐近的末迭收敛保证。\n\n- 结论/性能：理论上证明并实验验证在在线 CMDP 中可实现近常数级的强约束违背、子线性强奖励悔，以及非渐近的末迭收敛。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-12 14:00:39"
+ "created_at": "2026-02-12 14:00:39",
+ "topics": [
+  "safe-rl"
+ ]
 }

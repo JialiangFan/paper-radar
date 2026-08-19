@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：在安全强化学习的 Lagrangian 框架中引入主动干扰观测控制（ADRC），形成 ADRC-Lagrangian 方法，显著提升鲁棒性并降低震荡，同时将经典-Lagrangian 与 PID-Lagrangian 统一为该框架的特例。\n- 主要方法：将 ADRC 用于对系统扰动的鲁棒抑制和补偿，嵌入到约束处理的 Lagrangian 框架中，建立一个统一的 ADRC-Lagrangian 框架，并将经典与 PID-Lagrangian 作为特例加以包含。\n- 结论/性能：在复杂环境中实验显示该方法显著提升安全性，安全违规减少最多 74%，约束违规幅度减少最多 89%，平均成本降低约 67%。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-01-29 03:22:19"
+ "created_at": "2026-01-29 03:22:19",
+ "topics": [
+  "safe-rl"
+ ]
 }

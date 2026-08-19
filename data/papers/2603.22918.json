@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：\n  通过规划-before-perception 的迭代摘要-计划-行动-反思推理，实现端到端的视频代理，能够自我决策“看什么、何时看、如何看”以高效理解长视频。\n\n- 主要方法：\n  - 提出 EVA 这一高效强化学习框架，结合多模态大语言模型完成端到端的视频理解，采用计划-感知的循环推理（summary-plan-action-reflection）。\n  - 三阶段学习流程：监督微调（SFT） → Kahneman-Tversky 优化（KTO） → 广义奖励策略优化（GRPO），将监督模仿与强化学习无缝衔接。\n  - 构建面向每个阶段的高质量数据集，支撑稳定且可重复训练。\n\n- 结论/性能：\n  在六个视频理解基准上，EVA 相较通用 MLLM 基线提升约6-12%，相较前期自适应代理方法再提升约1-3%；并提供代码与模型开源。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-03-25 13:06:56"
+ "created_at": "2026-03-25 13:06:56",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

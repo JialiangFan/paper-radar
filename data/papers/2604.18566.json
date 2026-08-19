@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：首次在同一评估框架下对云端与本地开源大模型在两项系统动力学辅助任务（CLD Extraction 与互动讨论）进行系统对比分析，揭示后端实现类型对性能的影响大于量化等级，并提供面向本地模型的全面参数扫描与 Apple Silicon 上运行指南。\n\n2) 主要方法：\n- 评测对象与基准：对云端API模型与本地开源模型在两个专门基准（CLD Leaderboard、Discussion Leaderboard）上的表现进行评估。\n- 模型与后端比较：对比 reasoning 与 instruction-tuned 架构、GGUF（llama.cpp）与 MLX（mlx_lm）后端，以及不同量化等级（Q3、Q4_K_M、MLX-3bit/4bit/6bit）在相同模型家族中的效果。\n- 实验设计与数据：进行全量参数遍览（t、p、k），清洗后的时序数据，提供 671B–123B 参数模型在 Apple Silicon 的实用运行指南，并覆盖具体型号如 Kimi K2.5 GGUF Q3 的本地零-shot 评测。\n  \n3) 结论/性能：\n- CLD 提取任务：云模型总体通过率为 77–89%，本地最佳达到 77%（Kimi K2.5 GGUF Q3，零-shot），可与中等云端模型相当。\n- Discussion 任务：本地模型在模型构建步骤上取得 50–100%，在反馈解释上为 47–75%，但错误修正为 0–50%（长期上下文 prompts 暴露本地部署的内存限制）。\n- 关键发现：后端实现类型对性能的影响通常大于量化等级；mlx_lm 不强制执行 JSON 架构约束，需要显式的提示级 JSON 指令，而 llama.cpp 的语法约束采样在处理 JSON 时更稳定但对密集模型的长上下文会导致无限生成。\n- 额外产出：给出所有本地模型的参数范围扫视、清洗后的时序数据，以及面向 Apple Silicon 的落地指南与完整参数表；强调对 671B–123B 参数模型的实际运行与比较。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-21 13:01:50"
+ "created_at": "2026-04-21 13:01:50",
+ "topics": [
+  "agent-benchmarks"
+ ]
 }

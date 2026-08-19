@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（1句）：提出记忆高效的 On-policy Verbal Distillation（OVD），用教师模型给出的离散 verbal 分数（0–9）进行轨迹级对齐替代 token-level 概率匹配，从而实现 on-policy 蒸馏并释放学生对输出空间的探索，同时显著降低内存消耗。\n\n- 主要方法：通过将传统的 token-level 匹配改为轨迹级对齐，使用教师模型输出的离散 verbal 分数（0–9）作为监督信号；不需要 token-level 对齐，支持在交互环境中 on-policy 学习；设计了记忆高效的蒸馏框架以缓解强化学习中的内存瓶颈，并在 Web 问答和数学推理任务上进行验证。\n\n- 结论/性能：实验显示 OV D 相较于现有方法有显著提升：Web Q&A 的平均 EM 最多提升 12.9 个百分点；数学推理基准最高提升约 25.7%（在仅用一个随机样本训练时），同时训练效率更高、内存占用显著降低。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2026-01-30 14:03:57"
+ "created_at": "2026-01-30 14:03:57",
+ "topics": [
+  "rl-post-training"
+ ]
 }

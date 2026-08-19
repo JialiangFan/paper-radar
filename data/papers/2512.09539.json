@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：对比评估三种基于哈希的特征（SSDeep、TLSH、IMPHASH）在用K-Means进行恶意软件聚类中的表现，揭示TLSH与IMPHASH在簇的语义分离性上更优、SSDeep在广域分类上更高效。\n\n- 主要方法：提取二进制样本的结构与行为特征，基于三种哈希算法（SSDeep、TLSH、IMPHASH）构建特征，并以K-Means进行聚类，对不同恶意软件家族和特征进行系统化对比分析。\n\n- 结论/性能：TLSH和IMPHASH能够产生更明显且语义意义更强的聚类，SSDeep在广域分类任务上更高效；研究结果可用于改进威胁检测和自适应安全机制。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-11 14:01:42"
+ "created_at": "2025-12-11 14:01:42",
+ "topics": [
+  "applications"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "# MMoA 论文总结\n\n1. **核心创新点**：在 Mixture-of-Agents（MoA）框架中引入基于 LSTM 的循环门控路由器，使智能体选择能够同时依赖当前输入和历史路由决策，实现上下文感知的动态聚合。\n\n2. **主要方法**：提出递归式 MoA 架构（MMoA），用 LSTM 门控机制替代传统静态路由器，自适应调节各层中各个智能体的贡献权重，并通过动态激活更少的智能体来降低计算开销。\n\n3. **结论/性能**：在 AlpacaEval 2.0、MT-Bench、Arena-Hard 等指令跟随基准上，MMoA 取得与传统 MoA 相当的准确率（AlpacaEval 2.0 胜率 58.0% vs MoA 的 59.8%），同时运行效率最高提升 4.6%，为多智能体 LLM 系统提供了可扩展且高效的方案。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-05-21 13:00:54"
+ "created_at": "2026-05-21 13:00:54",
+ "topics": [
+  "llm-agents"
+ ]
 }

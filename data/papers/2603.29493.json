@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- MemFactory 提供首个统一、高度模块化的内存增强代理训练与推理框架，通过“乐高式”可插拔的内存生命周期组件结合多维环境奖励的组级策略优化（GRPO），实现内存管理策略的端到端优化。\n\n2) 主要方法\n- 模块化、可插拔的内存生命周期组件，构建灵活的“乐高式”架构。\n- 集成 Group Relative Policy Optimization (GRPO) 用于对内存提取、更新与检索等操作的策略进行微调，基于多维环境奖励。\n- 原生支持 Memory-R1、RMM、MemAgent 等前沿记忆驱动范式。\n- 在开源 MemAgent 架构及公开数据集上进行实证验证。\n\n3) 结论/性能\n- 在内域和跨域（out-of-distribution）评估中，MemFactory 相对于基模型实现稳定提升，最高相对提升达 14.8%。\n- 提供标准化、可扩展且易用的基础设施，显著降低进入门槛，推动记忆驱动 AI 代理的未来创新。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-01 13:02:33"
+ "created_at": "2026-04-01 13:02:33",
+ "topics": [
+  "llm-agents"
+ ]
 }

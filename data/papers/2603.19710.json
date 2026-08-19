@@ -9,5 +9,9 @@
  "summary": "- **核心创新点（1句概括）**：提出端到端生成式 HintQ 框架 AIGQ，结合会话级兴趣感知训练、列表级策略优化和离线-在线混合部署架构，提升冷启动、语义深度与结果多样性。\n\n- **主要方法**：\n  - 采用 IL-SFT（Interest-Aware List Supervised Fine-Tuning），通过会话行为聚合和兴趣引导的再排序实现列表级监督微调，更准确建模用户意图。\n  - 提出 IL-GRPO（Interest-aware List Group Relative Policy Optimization），是一种策略梯度算法，使用双分量奖励同时优化单个查询相关性和全量列表属性，并引入基于在线 CTR 排名模型的模型级奖励。\n  - 构建混合离线-在线部署架构：AIGQ-Direct 进行近线个性化的用户到查询生成；AIGQ-Think 增强推理，给出触发到查询的映射以丰富兴趣多样性。\n\n- **结论/性能**：\n  - 在 Taobao 的离线评估和大规模在线 A/B 实验中，AIGQ 在平台效果和用户参与度等关键业务指标上实现了显著提升，显示出稳定的性能优势。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-23 13:06:19"
+ "created_at": "2026-03-23 13:06:19",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

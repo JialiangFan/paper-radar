@@ -28,5 +28,9 @@
  "code": "https://github.com/robotlimp",
  "project": "https://robotlimp.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "llm-planning",
+  "formal-methods"
+ ]
 }

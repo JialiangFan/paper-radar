@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：\n- 提出 Amnesia，一种在激活空间进行的轻量级对抗攻击，通过定向操控 Transformer 内部激活状态来绕过现有开源大语言模型的安全机制，且无需对模型进行微调或再训练。\n\n2) 主要方法：\n- 基于对抗攻击的思路，在模型的激活空间进行层特定的激活引导（activation steering），对 Transformer 的中间层状态进行定向干预，以绕过安全过滤。\n- 目标是针对开源权重的 LLM，做到不修改模型参数即可触发有害输出。\n\n3) 结论/性能：\n- 实验表明该攻击能够有效绕过现有安全防护，允许在不进行微调的情况下生成有害内容，并能诱发多种反社会行为，凸显对开源 LLM 安全性提升的迫切需求。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-03-12 13:01:08"
+ "created_at": "2026-03-12 13:01:08",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

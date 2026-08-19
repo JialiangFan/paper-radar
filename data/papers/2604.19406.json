@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- HP-Edit 提出一种基于人类偏好后训练的图像编辑框架：通过少量偏好数据和预训练视觉大语言模型构建自动的人类偏好评分器HP-Scorer，并以其作为奖励信号对编辑模型进行后训练，同时提供 RealPref-50K 数据集与 RealPref-Bench 基准用于现实场景的偏好对齐评估。\n\n2) 主要方法\n- 用少量人类偏好评分数据结合预训练视觉大语言模型训练出HP-Scorer（一个自动、偏好对齐的评估器）。\n- 将HP-Scorer作为奖励函数，对扩散模型的图像编辑进行后训练（类似 RLHF 的思路）。\n- 构建 RealPref-50K，覆盖八类常见任务并平衡对象编辑，并提供 RealPref-Bench 作为评估基准。\n- 实验显示对如 Qwen-Image-Edit-2509 等模型的输出在偏好对齐方面有显著提升。\n\n3) 结论/性能\n- 方法显著提升模型输出与人类偏好的一致性，在 RealPref-50K/RealPref-Bench 的评估，以及对 Qwen-Image-Edit-2509 等模型的实际应用中表现出明显改进。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-22 13:02:56"
+ "created_at": "2026-04-22 13:02:56",
+ "topics": [
+  "rl-post-training"
+ ]
 }

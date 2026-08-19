@@ -9,5 +9,8 @@
  "summary": "## 论文摘要总结\n\n**标题**：面向 AI 智能体证据的硬件级可信证明——将 IETF RATS 与行动证据包（AEP）相结合\n\n---\n\n### 1. 核心创新点\n提出一种\"复合式证明\"方案：把仅停留在软件层的 AI 智能体行动证据包（AEP）与基于 IETF RATS 的硬件信任根证明绑定，从而不仅能回答\"智能体声称自己做了什么\"，还能回答\"这个输出是否真的由所声称的模型版本在未被篡改的硬件上产生\"。\n\n### 2. 主要方法\n- **AEP**：签名的、仅追加的记录，包含智能体的行为、授权来源与执行结果，属于软件层产物。\n- **RATS 架构（RFC 9334）+ Veraison**（机密计算联盟 / Linux 基金会的开源 RATS Verifier 实现）提供硬件度量启动与运行时状态的可信证明。\n- **验证词汇映射**：将六个验证者状态（Authorised / Unauthorised / Indeterminate / Attested / Contested / Expired）映射到 RATS 的评估结果上。\n- **输出绑定协议**：在软件 TPM（swtpm 模拟器）上，把 AEP 结果的哈希值与验证方新鲜 nonce 一并折入由证明密钥签名的 quote，同时将模型工件的度量值写入平台寄存器（PCR）。\n\n### 3. 结论 / 性能\n在最小化的 RATS Verifier 替代实现上，三种平台判定均按设计正确触发：quote 有效且新鲜时判为 **Attested**；模型度量被替换时判为 **Contested**；重放过期 quote 时判为 **Expired**；同时能够拒绝绑定在有效 quote 上的伪造 AEP 结果。作者明确指出：这只是**基于模拟硬件的可行性验证**，尚不构成真正的硬件级安全保证。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-08-04 13:00:50"
+ "created_at": "2026-08-04 13:00:50",
+ "topics": [
+  "runtime-monitoring"
+ ]
 }

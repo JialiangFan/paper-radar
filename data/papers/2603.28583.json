@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 ChartCynics，一种代理式双路径框架，通过感知-验证解耦的“怀疑式”推理，在迷惑性图表问答任务中实现鲁棒性。\n\n- 主要方法：\n  - 双路径结构：诊断视觉路径用于捕捉结构性异常（如坐标轴颠倒）通过策略性 ROI 裁剪进行感知；OCR 驱动的数据路径用于数字 grounding。\n  - Agentic Summarizer：采用两阶段协议进行跨模态对齐和推理优化：Oracle-Informed SFT 进行推理蒸馏，Deception-Aware GRPO 实现对抗性对齐。\n  - 跨模态冲突处理：通过总结器 Penalizes 视觉陷阱、强化逻辑一致性，提升对误导性信息的鲁棒性。\n\n- 结论/性能：\n  - 在两个基准上分别达到 74.43% 和 64.55% 的准确率，相对于 Qwen3-VL-8B 主干模型实现约 29% 的绝对性能提升，并超越多项商用/专有模型，显示小型开源模型也能获得更强的鲁棒性与可信的图表理解。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-03-31 13:08:24"
+ "created_at": "2026-03-31 13:08:24",
+ "topics": [
+  "llm-agents",
+  "multimodal-perception"
+ ]
 }

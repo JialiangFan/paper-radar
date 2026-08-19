@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 Mem-T 作为自治记忆代理，通过与轻量级分层记忆数据库进行动态更新与多轮检索，并用树引导的 MoT-GRPO 将稀疏奖励转化为密集、逐步监督，从而实现记忆构建与检索的端到端优化。\n\n- 主要方法：Mem-T 结合层级记忆数据库进行流式输入的动态更新与多轮检索；提出 MoT-GRPO（树引导的强化学习框架），通过 memory operation tree backpropagation 和 hindsight credit assignment，将稀疏的终极奖励转化为密集的逐步监督，联合优化记忆的构建与检索。\n\n- 结论/性能：在实验中Mem-T性能超越 A-Mem 与 Mem0，提升幅度最高达 14.92%；在准确性-效率帕累托前沿上更优，且相较于 GAM 每次查询的推理 token 数量约减少 24.45%，未牺牲性能。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-02 14:05:14"
+ "created_at": "2026-02-02 14:05:14",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

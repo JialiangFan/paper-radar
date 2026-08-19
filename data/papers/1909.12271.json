@@ -30,7 +30,6 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "embodied-benchmarks",
-  "robot-manipulation"
+  "embodied-benchmarks"
  ]
 }

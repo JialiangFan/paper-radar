@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：在蒙特卡洛树搜索（MCTS）循环中引入三位一体的专门LLM代理（Planner、Simulator、Critic），实现有引导、 Grounded（ grounding）、并具反思能力的自纠式推理，从而将搜索转化为更稳健的自我纠正推理过程。\n\n2) 主要方法：将 Planner 提出创造性下一步、Simulator 预测并 grounding 结果、Critic 通过反思给出密集奖励信号的三代理协同工作，嵌入到 MCTS 框架中进行搜索与评估；在 DailyLifeAPIs 与 HuggingFace 数据集上对比基线的 Chain-of-Thought 和其他 SOTA 代理。\n\n3) 结论/性能：在 DailyLifeAPIs 上达到 83.6% 的总体准确率，相比下一个最佳的搜索框架提升超过 16 个百分点，并且在令牌效率方面也展现优势；研究成果和数据/代码公开以促进复现。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-30 02:56:01"
+ "created_at": "2025-12-30 02:56:01",
+ "topics": [
+  "llm-planning"
+ ]
 }

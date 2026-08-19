@@ -9,5 +9,8 @@
  "summary": "# AttenA+ 论文总结\n\n**1. 核心创新点**\n针对机器人基础模型训练时\"所有动作同等重要\"的隐式假设，提出基于速度反比的动作注意力机制，让模型聚焦于低速、高精度的关键操作片段。\n\n**2. 主要方法**\n- 提出 **AttenA+**，一个架构无关（architecture-agnostic）的即插即用框架。\n- 利用 **逆速度场（inverse velocity field）** 对训练损失进行重加权：低速段（精细交互）权重高，高速段（过渡运动）权重低。\n- 无需修改模型结构或增加参数，可直接集成到现有 VLA（视觉-语言-动作）和 WAM（世界-动作模型）骨干网络中。\n\n**3. 结论/性能**\n- 在 Libero 基准上将 OpenVLA-OFT 提升至 **98.6%（+1.5%）**。\n- 在 RoboTwin 2.0 上将 FastWAM 提升至 **92.4%（+0.6%）**。\n- 在 Franka 机械臂上的真机实验验证了其鲁棒性和跨任务泛化能力，表明挖掘动作序列的内在结构先验是对标准 scaling laws 的高效物理感知补充。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-23 13:02:35"
+ "created_at": "2026-05-23 13:02:35",
+ "topics": [
+  "vla-models"
+ ]
 }

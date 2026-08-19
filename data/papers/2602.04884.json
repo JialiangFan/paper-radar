@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点  \n提出 Reinforced Attention Learning (RAL)，通过策略梯度直接优化模型内部的注意力分布，而不是输出序列，从而将优化焦点从“生成什么”转向“在哪儿进行注意”，提升多模态输入的信息分配与对齐。\n\n2) 主要方法  \n- 使用基于策略梯度的强化学习框架直接优化注意力策略；  \n- 引入 On-Policy Attention Distillation，将潜在的注意力行为进行知识蒸馏以增强跨模态对齐；  \n- 在多模态场景（图像和视频）上与 GRPO 等基线进行对比评估。\n\n3) 结论/性能  \n在多种图像与视频基准上对 GRPO 和其他基线实现一致性提升，显示注意力策略作为多模态后训练的一个 principled、通用的替代方案。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-05 14:04:48"
+ "created_at": "2026-02-05 14:04:48",
+ "topics": [
+  "rl-post-training"
+ ]
 }

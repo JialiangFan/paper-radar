@@ -9,5 +9,8 @@
  "summary": "**核心创新点**\n提出 Marvell Photonic Fabric (PF) 内存设备——用光子互连替代电气 CXL 交换机，为 LLM 推理构建可扩展的 TB 级 KV 缓存共享内存层。\n\n**主要方法**\n- 先做特征分析：在多代 GPU 系统上跑不同规模的 LLaMA 模型，量化 KV 缓存的容量与带宽需求（数十 TB + 数百 GB/s）。\n- 架构上采用光子-CXL 混合设计：以**无源光纤 shuffle**（passive fiber shuffle）取代电气交换机，构成**无交换机的全交叉开关（full-crossbar）拓扑**，让 16 台主机共享 32 TB 内存，从而绕开电气 CXL 的交换延迟、线缆距离和功耗扩展瓶颈。\n- 验证方式为硬件仿真（emulation）+ 系统模拟（simulation）相结合。\n\n**结论/性能**\n- 从主机内存取回 KV 缓存相比重算最高有 **100 倍**加速，但电气方案只能支撑数十个长上下文并发用户。\n- PF 方案相比电气 CXL 内存池，延迟降低 **50% 以上**。\n- 消除了缓存驱逐带来的性能断崖，在多轮对话负载下首 token 时间（TTFT）改善 **6.6 倍**。\n\n> 一点提示：摘要中的结果均来自仿真与模拟，而非真实硬件部署，实际收益需谨慎看待。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-07-30 13:01:03"
+ "created_at": "2026-07-30 13:01:03",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

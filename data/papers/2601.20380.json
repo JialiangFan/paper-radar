@@ -9,5 +9,8 @@
  "summary": "核心创新点：提出一个通用GUI代理模型 OmegaUse，通过自动化数据合成、两阶段训练（SFT+GRPO）与Mixture-of-Experts骨干，实现跨移动端和桌面端的自主任务执行。\n\n主要方法：\n- 数据构建：采用严格筛选的开源数据集并设计自动合成框架，结合自下而上的自主探索与自上而下的分类法引导生成，产出高保真合成数据。\n- 训练策略：两阶段训练路线——先进行监督微调（SFT）建立基本交互语法，再进行分组相对策略优化（GRPO）提升空间定位与序列规划。\n- 架构设计：采用 Mixture-of-Experts（MoE）骨干，以在计算效率与代理能力之间实现权衡。\n- 评估设计：引入 OS-Nav 基准跨终端评测，涵盖 ChiM-Nav（中文 Android 环境）与 Ubu-Nav（Ubuntu 桌面）。\n\n结论/性能：\n- 在 ScreenSpot-V2 上达到 SOTA，得分 96.3%；在 AndroidControl 上实现领先的 79.1% 步骤成功率。\n- 在 OS-Nav 评测中，ChiM-Nav 获得 74.24% 的步成功率，Ubu-Nav 的平均成功率为 55.9%。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-01-29 03:26:12"
+ "created_at": "2026-01-29 03:26:12",
+ "topics": [
+  "llm-agents"
+ ]
 }

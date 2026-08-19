@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：在 PPO 框架中引入线性时序逻辑（LTL）约束，通过 limit-deterministic Büchi 自动机（LDBA）监控违规并将其转化为罚分信号，借助拉格朗日优化实现带约束的安全强化学习。\n\n2) 主要方法：提出 PPO-LTL 框架，将LTL约束嵌入到策略优化过程；使用 LDBA 监控违规行为，采用逻辑到成本的机制将违规转化为罚分信号，结合拉格朗日方法引导策略更新；在 Zone 和 CARLA 环境中进行大量实验。\n\n3) 结论/性能：实验表明 PPO-LTL 能在持续降低安全违规的同时，保持与现有最先进方法相近的性能水平，展现出稳定的安全性提升与竞争力的任务性能（代码已开源）。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-03-03 14:00:23"
+ "created_at": "2026-03-03 14:00:23",
+ "topics": [
+  "safe-rl",
+  "formal-methods"
+ ]
 }

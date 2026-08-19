@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 ToolMol，将多目标遗传算法与具备代理能力的LLM操作符相结合，形成一个可迭代更新的进化式药物分子设计框架。\n\n2) 主要方法：\n- 使用多目标遗传算法进行药物性质的多目标优化。\n- 设计一个 agentic 的 LLM 操作符，结合 RDKit 支撑的工具箱对配体进行精确修改并迭代更新。\n- 引入 tool-calling 与链式推理（chain-of-thought）分析，提升模型执行计划的忠实性和利用化学先验知识的效率。\n\n3) 结论/性能：\n- 在多目标属性优化任务上达到 state-of-the-art，发现药物样本且具备可合成性，预测结合亲和力相比现有方法提升 >10%，在三个蛋白靶点上评估。\n- Absolute Binding Free Energy（ABFE）分数达到领先水平，相较现有方法提升 >35%。\n- 通过对思维链路的研究，表明工具调用有助于模型更准确执行计划、更高效地利用化学领域先验知识。",
  "keyword": "agentic LLM",
  "source": "auto",
- "created_at": "2026-05-19 12:34:00"
+ "created_at": "2026-05-19 12:34:00",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

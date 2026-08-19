@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出基于 argumentative memory 的检索增强辩论生成框架 R-Debater，通过检索证据与历史论点来保持立场一致并跨轮回应。\n\n2) 主要方法：构建辩论知识库用于检索案例证据与先前辩论动作，使用基于角色的代理跨轮编排连贯话语，将检索 grounding 与结构化规划相结合；在 ORCHID 数据集上构建 1000 项检索语料和一个包含七个领域的 held-out 辩论集，评估任务包括下一轮话语生成（InspireScore）和对抗性多轮仿真（Debatrix）。\n\n3) 结论/性能：相较强大 LLM 基线，在单轮和多轮任务上获得更高分；20 名有经验辩手的人工评估也证实其一致性和证据使用，表明检索 grounding + 结构化规划能使辩论更忠实、立场对齐、跨轮更连贯。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-01-01 02:26:57"
+ "created_at": "2026-01-01 02:26:57",
+ "topics": [
+  "llm-agents"
+ ]
 }

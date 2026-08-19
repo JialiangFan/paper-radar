@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个成本感知的多模态语言模型代理（ESearch-R1），将互动对话、记忆检索与物理导航统一为一个决策过程，并通过 HC-GRPO 在信息增益与多种成本（如导航时间、人工注意等）之间进行最优折中。\n\n- 主要方法：提出 HC-GRPO（异质成本感知分组相对策略优化），通过对推理轨迹进行分组采样并强化那些在信息增益与成本之间达到最佳权衡的轨迹；同时将 Ask、GetMemory、Navigate 三种能力整合到同一策略框架，并在 AI2-THOR 环境中进行评估。\n\n- 结论/性能：在 AI2-THOR 的实验中，显著优于基于 ReAct 的代理，任务成功率提升的同时总运营成本降低约 50%。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-23 02:50:21"
+ "created_at": "2025-12-23 02:50:21",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：将 Group Relative Policy Optimization（GRPO）引入潜在推理，并提出专门策略解决潜在空间的分布与采样瓶颈，从而实现更稳定且更短链路的潜在推理。\n\n- 主要方法：在潜在表示上的强化学习框架中扩展 GRPO，提出 Latent-GRPO，核心技术包括无效样本优势掩码、单边噪声采样和最优正确路径的首 Token 选择，解决潜在空间缺乏内生流形、轨迹级奖励与令牌级更新错配、以及多条正确潜在路径联合导致的无效均值状态等问题。\n\n- 结论/性能：在四个低难度任务（如 GSM8K-Aug）和四个高难度任务（如 AIME）上，Latent-GRPO 相较潜在初始化提升了 7.86 个 Pass@1 点，在高难度任务上超越显式 GRPO 4.27 点，同时将推理链长度缩短约 3–4 倍，并在 Gumbel 采样下实现更强的 pass@k 性能。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-05-02 13:02:06"
+ "created_at": "2026-05-02 13:02:06",
+ "topics": [
+  "llm-reasoning",
+  "rl-post-training"
+ ]
 }

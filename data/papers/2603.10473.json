@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出面向开放式生成式搜索的首个大语言模型 SearchLLM，通过分层多维奖励与 Gated Aggregation 策略实现对回答的事实 grounding、基本质量、格式合规以及对用户需求的鲁棒对齐。\n\n2) 主要方法：  \n- 构建开放式生成搜索框架 SearchLLM；  \n- 设计分层的多维奖励系统，将底线约束（事实 grounding、回答质量、格式合规）与行为优化目标分离；  \n- 奖励模型在查询、会话历史和检索证据集条件下，对回答进行规则检查与人类校准的 LLM 评判，输出可解释的分数向量；  \n- 提出 Gated Aggregation Strategy，将多维分数汇聚用于通过 Group Relative Policy Optimization (GRPO) 进行训练；  \n- 将 SearchLLM 部署在 RedNote 的 AI 搜索入口，完成离线评估与在线 A/B 测试。\n\n3) 结论/性能：离线评估与在线 A/B 测试显示生成质量与用户参与度提升，有效消费率提升1.03%，再搜索率下降2.81%，同时保持严格的安全与可靠性标准。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-12 13:04:12"
+ "created_at": "2026-03-12 13:04:12",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

@@ -9,5 +9,10 @@
  "summary": "- 核心创新点：提出 Perception-Exploration Policy Optimization（PEPO），在 token 级别将感知先验与探索性策略相结合，并通过平滑门控实现 token 级优化，从而提升多模态链式推理的效果。\n\n- 主要方法：基于 RLVR 框架（如 GRPO、DAPO）进行无额外监督/分支的集成；通过分析隐藏状态相似性推导感知先验，与 token 熵结合形成 token-level 优势，采用平滑门控实现感知-探索的协同优化，能够无缝嵌入现有 RLVR 系统中。\n\n- 结论/性能：在多项多模态基准上实现对强基线的持续且显著提升，覆盖几何推理、视觉定位、视觉拼图求解与小样本分类等任务，同时保持训练过程的稳定性；代码公开可用。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-03-25 13:08:12"
+ "created_at": "2026-03-25 13:08:12",
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning",
+  "multimodal-perception"
+ ]
 }

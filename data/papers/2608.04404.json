@@ -9,5 +9,9 @@
  "summary": "**Faster-WAM：面向鲁棒世界动作模型的高效推理期未来条件化**\n\n**1. 核心创新点**\n提出稀疏化的\"推理期未来条件化\"框架 Faster-WAM——只计算一次未来表征并在动作去噪过程中选择性复用，从而在保留未来信息带来的鲁棒性的同时，摆脱 Joint-WAM 昂贵的视频-动作交互开销。\n\n**2. 主要方法**\n- 先通过实证重新审视未来表征的作用，指出推理阶段保留未来条件对分布偏移下的泛化至关重要（Fast-WAM 类方法在推理时丢弃未来建模，损失了这一优势）。\n- **SparseMoT**：用少数几个紧凑网络层上的选择性视频-动作交互，替代原本逐层普遍融合的 MoT 结构。\n- **Interval KV-Fusion**：在不增加注意力复杂度的前提下，聚合来自不同深度的多层未来表征。\n- 整体为 diffusion/去噪式动作生成范式下的机器人操作模型。\n\n**3. 结论/性能**\n性能-效率权衡显著优于现有 WAM：在分布外基准 LIBERO-Plus 上成功率由 Fast-WAM 的 49.14% 提升至 73.57%，同时比 Joint-WAM 快 2.21 倍；在 LIBERO 和 RoboTwin 2.0 上达到 SOTA，并在真实机器人操作中表现出较强鲁棒性。\n\n> 提示：仓库里有个 `paper-review` skill，能生成更完整的中英文文献综述笔记并写入 Obsidian vault。需要的话可以用它重跑这篇。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-08-06 13:03:52"
+ "created_at": "2026-08-06 13:03:52",
+ "topics": [
+  "world-model-control",
+  "efficiency-systems"
+ ]
 }

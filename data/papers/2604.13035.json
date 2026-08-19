@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出 SceneCritic—a 符号化的室内场景评估器，基于 SceneOnto 结构本体对 floor-plan-level 布局进行语义、朝向与几何关系的一致性验证，降低对视角、提示等因素的敏感性。\n\n- 主要方法：构建 SceneOnto（来自 3D-FRONT、ScanNet、Visual Genome 的室内场景先验），通过遍历本体对对象级和关系级进行语义、方向和几何一致性检验，给出具体违规与正确放置的评估；并配套一个迭代 refinement 测试床，比较三种 critic 模式：规则约束（碰撞/几何约束）反馈、文本型 LLM 对布局的文本评估、图像型 VLM 对渲染观测的评估。\n\n- 结论/性能：实验显示 SceneCritic 与人类 judgments 的一致性明显高于基于 VLM 的评估；文本-only 的 LLM 在语义布局质量上甚至可超越 VLM；而基于图像的 VLM 细化在语义和朝向修正方面最为有效。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-15 13:00:55"
+ "created_at": "2026-04-15 13:00:55",
+ "topics": [
+  "multimodal-perception",
+  "embodied-benchmarks"
+ ]
 }

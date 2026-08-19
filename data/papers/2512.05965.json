@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个名为 EditThinker 的单一多模态大语言模型，通过 Think-while-Edit 的循环进行迭代推理与指令改进，从而显著提升任意图像编辑模型的指令遵循性。\n\n- 主要方法：将 EditThinker 作为推理引擎，联合输出批评分数、推理过程和 refined instructions；采用 Think-while-Edit 循环（先 critiquing results、再 refining instructions、随后重复生成，直至满意）；通过强化学习对 EditThinker 的思考与编辑目标进行对齐，以产生更具针对性的指令改进，验证于四个基准。\n\n- 结论/性能：在四个基准实验中显著提升了任意图像编辑模型的指令遵循能力，取得大幅改进；同时将公开数据构建框架、数据集与模型以惠及社区。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-08 14:02:18"
+ "created_at": "2025-12-08 14:02:18",
+ "topics": [
+  "llm-reasoning",
+  "applications"
+ ]
 }

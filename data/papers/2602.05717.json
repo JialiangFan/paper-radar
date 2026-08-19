@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：提出 Anchored Policy Optimization (APO)，以参考模型的高置信覆盖构建安全流形，替代全局 Shape Matching，从而实现对支持覆盖的梯度对齐、支持的弹性恢复，避免递归空间收缩（RSC）。\n\n- **主要方法**：在改用对支持覆盖的优化框架下，定义基于参考模型高置信区间的 Safe Manifold，允许对有效分支进行激进的 sharpening，并在误差纠正阶段有选择性地引入恢复力（Elastic Recovery），理论证明 APO 与最大化支持覆盖的梯度对齐性，并在数学基准上进行实验验证。\n\n- **结论/性能**：APO 打破了准确性与多样性之间的权衡，显著提升 Pass@1，同时恢复了 Pass@K 的多样性，优于标准策略梯度方法在该任务上的表现。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-06 14:00:32"
+ "created_at": "2026-02-06 14:00:32",
+ "topics": [
+  "rl-post-training"
+ ]
 }

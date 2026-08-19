@@ -9,5 +9,9 @@
  "summary": "以下是对论文标题和摘要的中文要点总结：\n\n- 核心创新点：PAINT 通过在自蒸馏推理中对已验证解进行部分暴露（遮罩）并在少量熵不匹配的位置进行能量空间插值，按 rollout-reference overlap 自适应地调整解的呈现与信息密度，从而提升 self-distilled reasoners 的推理能力。\n\n- 主要方法：\n  - 采用“上下文再评分”的视角，关注是否暴露特权上下文以及应如何分布这些信息。\n  - PAINT 机制：基于 rollout-reference overlap，对 verified solution 进行部分遮罩；在少量熵不匹配的 token 位置执行能量空间插值（energy-space interpolation）。\n  - 基于 on-policy self-distillation 的框架，评估并改进在三种 Qwen3 模型规模上的性能。\n\n- 结论/性能：\n  - 在竞争级数学基准测试中，PAINT 相对强基线的 on-policy self-distillation 在所有三个 Qwen3 规模均有提升。\n  - 以 Qwen3-8B 为例，macro Avg@12 提升 2.1 点（相对于该基线）和 2.9 点（相对于 GRPO）。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-04-30 13:03:31"
+ "created_at": "2026-04-30 13:03:31",
+ "topics": [
+  "llm-reasoning",
+  "rl-post-training"
+ ]
 }

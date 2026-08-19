@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：在 Vision-Language-Action 模型中，提出通过 Vision-Language Mixture-of-Transformers 框架实现视觉 foundation 与 VLA 主干的共享注意力，深层注入多层视觉特征，并结合 Action-Guided Visual Pruning，在浅层注意力下剪裁无关视觉令牌以提升操控性能。\n\n2) 主要方法：\n- 对现有 VLA 模型进行系统分析，发现动作生成时深层对视觉 token 的敏感性下降；\n- 引入 VL-MoT 框架，实现视觉基础模型与 VLA 主干之间的共享注意力，并把视觉专家的多层特征注入到 VLA 深层以增强表示；\n- 提出 AGVP（Action-Guided Visual Pruning），利用浅层注意力剪裁无关视觉 token，保留任务相关信息，降低计算开销。\n\n3) 结论/性能：\n- 在仿真实验中相比前沿方法提升约 9.0%，在真实世界任务中提升约 7.5%。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-03-17 13:00:31"
+ "created_at": "2026-03-17 13:00:31",
+ "topics": [
+  "vla-models",
+  "multimodal-perception"
+ ]
 }

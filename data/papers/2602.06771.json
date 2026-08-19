@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 AEGIS 框架，通过对抗性目标引导的策略，在不依赖保留数据的前提下同时提升 diffusion 模型的概念消除鲁棒性与无关概念的保留性。\n\n- 主要方法：提出 Adversarial Erasure with Gradient Informed Synergy (AEGIS)，结合对抗性目标和梯度信息来引导消除过程，实现 retention-data-free 的鲁棒概念消除，适用于 diffusion models，并在保持原有功能的同时抑制被再激活的风险。\n\n- 结论/性能：相较于现有方法，AEGIS 在不使用保留数据的情况下同时提升鲁棒性和保留性，能够抵御语义相关提示下对已消除概念的再激活，同时保持对无关概念的良好保留与整体模型效用。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-09 14:01:59"
+ "created_at": "2026-02-09 14:01:59",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

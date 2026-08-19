@@ -9,5 +9,8 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-07-22 13:03:13"
+ "created_at": "2026-07-22 13:03:13",
+ "topics": [
+  "world-model-learning"
+ ]
 }

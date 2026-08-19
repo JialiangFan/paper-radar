@@ -9,5 +9,9 @@
  "summary": "核心创新点：将视觉-语言模型用于自动驾驶的显式链式推理与轨迹规划，通过两阶段训练（监督微调 + Trajectory Preference Optimization）提升场景理解和规划能力，显著提升开环轨迹规划性能与安全性。\n\n主要方法：基于视觉-语言模型（VLM）进行对象运动预测、语义对齐/grounding，并引入链式推理（chain-of-thought）用于轨迹规划；采用两阶段训练流程：1) 监督微调，注入回归监督；2) Trajectory Preference Optimization（TPO）对轨迹偏好进行优化，形成“VLM Trajectory Planner for Autonomous Driving”。\n\n结论/性能：在 NuScenes 基准的开环轨迹规划任务中，超越现有端到端方法与其他基于VLM/LLM的基线，达到平均L2轨迹误差0.31 m，碰撞率0.10%（测试集），代码公开在 GitHub。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-23 02:48:38"
+ "created_at": "2025-12-23 02:48:38",
+ "topics": [
+  "llm-planning",
+  "applications"
+ ]
 }

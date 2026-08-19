@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将实时热成像活体检测与加密绑定的可追溯代币结合，提供隐私保护且对 CAPTCHA Farm 攻击具有抗性的人机验证。\n\n- 主要方法：采用实时热成像获取单帧热图，使用轻量级的 YOLOv4-tiny 模型从热图中识别人体热信号，并通过 cryptographically bound traceable tokens 防止前端转发与滥用；在低功耗服务器上实现验证。\n\n- 结论/性能：验证准确率达到 96.70%，验证延迟 73.60 ms；经全面安全评估可抵御 MITM、欺骗、对抗扰动和滥用场景；用户研究（50 名参与者含视觉受限者）显示在准确性、完成速度和可用性方面优于 reCAPTCHA v2。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-03-09 13:01:38"
+ "created_at": "2026-03-09 13:01:38",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

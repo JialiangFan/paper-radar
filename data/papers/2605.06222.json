@@ -9,5 +9,9 @@
  "summary": "# 论文总结：When to Trust Imagination: Adaptive Action Execution for World Action Models\n\n1. **核心创新点**：将世界动作模型（WAM）的执行决策建模为\"未来-现实一致性验证\"问题，让机器人根据想象与现实是否吻合，动态决定继续执行还是提前重新规划。\n\n2. **主要方法**：提出轻量级验证器 **FFDC（Future Forward Dynamics Causal Attention）**，联合推理预测的未来动作、预测的视觉动态、真实观测与语言指令，估计剩余动作序列是否仍可信任，从而实现自适应的动作块长度；同时引入 **Mixture-of-Horizon Training** 提升长时程轨迹覆盖度。\n\n3. **结论/性能**：在 RoboTwin 基准上，WAM 前向推理次数减少 **69.10%**、执行时间降低 **34.02%**，成功率较短动作块基线提升 **2.54%**；在真实世界实验中成功率提升 **35%**，实现了鲁棒性与效率的良好折衷。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-05-19 13:26:11"
+ "created_at": "2026-05-19 13:26:11",
+ "topics": [
+  "world-model-control",
+  "robot-harness"
+ ]
 }

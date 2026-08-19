@@ -9,5 +9,9 @@
  "summary": "核心创新点：将半结构化访谈视为在 predefined 主题覆盖、发现在 emergent 主题之间的最优权衡问题，并通过多代理LLM访谈者进行模拟对话滚行动作计划以实现自适应访谈。\n\n主要方法：提出 SparkMe 框架，利用多代理的LLM进行 deliberative planning，通过模拟对话滚Rollouts预测问句的期望效用并选择高效问题；在控制实验中用LLM作为受访者进行评估，并在真实用户研究中测试效果，数据、代码与评估协议开放源代码（GitHub）。\n\n结论/性能：相较于最佳基线，访谈覆盖（topic guide coverage）提升约4.7%，能引出更丰富的 emergent 洞见，并在更少的对话轮次内完成访谈；在7个职业的70名参与者用户研究中，专家评审认为 SparkMe 产出高质量的自适应访谈，能够揭示前述方法难以捕捉的专业领域洞察，相关资源开放获取。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-02-25 14:03:01"
+ "created_at": "2026-02-25 14:03:01",
+ "topics": [
+  "llm-agents",
+  "hri-human-in-loop"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "# Cosmos 3 论文总结\n\n## 1. 核心创新点\n提出了一个统一的**全模态世界模型（Omnimodal World Model）**，在单一框架内联合处理和生成语言、图像、视频、音频和动作序列，将视觉语言模型、视频生成器、世界模拟器和世界动作模型整合为一体。\n\n## 2. 主要方法\n采用**Mixture-of-Transformers（MoT，混合Transformer）架构**，支持高度灵活的输入输出配置，使模型能够在物理AI（Physical AI）所需的多种关键模态之间无缝切换，作为具身智能体（embodied agents）的通用骨干网络。\n\n## 3. 结论/性能\n- 在多种理解与生成任务上达到**SOTA水平**；\n- 经后训练的模型被 **Artificial Analysis** 评为最佳开源 Text-to-Image 与 Image-to-Video 模型；\n- 被 **RoboArena** 评为最佳策略模型；\n- 代码、模型权重、合成数据集和评测基准均以 **OpenMDW-1.1 协议**开源（GitHub 与 HuggingFace）。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-08 13:03:32"
+ "created_at": "2026-06-08 13:03:32",
+ "topics": [
+  "video-world-models",
+  "world-model-learning"
+ ]
 }

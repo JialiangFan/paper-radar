@@ -28,5 +28,8 @@
  "code": "https://github.com/huangwl18/VoxPoser",
  "project": "https://voxposer.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "llm-agents"
+ ]
 }

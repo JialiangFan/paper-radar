@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-07-17 13:03:31"
+ "created_at": "2026-07-17 13:03:31",
+ "topics": [
+  "vla-models",
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出 SPAARS，一种通过先在低维潜在空间进行安全、样本高效的探索、随后无缝切换回原始动作空间以绕开解码器瓶颈的课程式离线到在线强化学习框架。\n\n2) 主要方法\n- 基于离线数据的安全探索：通过条件变分自编码器(CVAE)将探索约束在潜在空间，并使用潜在空间的策略梯度以实现方差降低。\n- 两种实例形式：\n  - CVAE 基线版本：只需无序的 (s,a) 对，不需要轨迹分段。\n  - SPAARS-SUPE：结合 OPAL 的时间技能预训练以提供更强的探索结构，但需要轨迹块。\n- 理论与稳定性保障：给出利用 Performance Difference Lemma 的解 exploitation gap 上界；证明潜在空间策略梯度在方差上优于原始空间探索；在潜在阶段进行并行行为克隆以控制课程转换的稳定性。\n\n3) 结论/性能\n- SPAARS-SUPE 在 kitchen-mixed-v0 上达到 0.825 的归一化回报，优于 SUPE 的 0.75，样本效率提升约 5 倍。\n- 独立的 SPAARS 版本在 hopper-medium-v2 和 walker2d-medium-v2 上分别达到 92.7 和 102.9 的归一化回报，均高于 IQL 基线的 66.3 与 78.3，验证了无序对 CVAE 实例的有效性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-03-12 13:01:31"
+ "created_at": "2026-03-12 13:01:31",
+ "topics": [
+  "safe-rl",
+  "robot-manipulation"
+ ]
 }

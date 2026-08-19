@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 Optimistic TEE-Rollups（OTR），在区块链上通过混合利用TEE、乐观欺诈证明与随机零知识点检，实现对生成式AI推理的高吞吐、低延迟且可验证的架构。\n\n- 主要方法：利用 NVIDIA H100 Confidential Computing TEEs 提供子秒级临时最终性，结合乐观欺诈证明与随机的零知识点检来降低硬件侧信道风险，并提出 Proof of Efficient Attribution (PoEA) 共识，将执行轨迹与硬件 attestations 绑定，从而在理论上保障模型真实性。\n\n- 结论/性能：在仿真中达到接近中心化基线的吞吐量（约99%），每查询的附加成本约0.07美元，并对理性对手具备拜占庭容错能力，即使存在短暂硬件漏洞也能维持稳定性与性能。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2025-12-24 03:00:14"
+ "created_at": "2025-12-24 03:00:14",
+ "topics": [
+  "efficiency-systems"
+ ]
 }

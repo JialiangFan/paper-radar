@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：将长链式推理（CoT）视为梯度下降的优化过程，并提出 RePro 作为过程级奖励在后训练阶段通过 RLVR 框架纠正和优化推理行为。\n\n- **主要方法**：将 CoT 的推理过程建模为优化过程，设计一个 surrogate objective 来评估该过程，并通过双重评分（强度与稳定性）量化，汇聚成过程级奖励，嵌入到 RLVR 流程中对多种 LLM 进行后训练优化；在数学、科学和编程等任务的广泛实验中对多种 RL 算法和多种 LLM 进行评估。\n\n- **结论/性能**：RePro 在多种算法和模型上显著提升推理性能，减少过度思考和冗长推理链等子最优推理行为，表现出一致性的改善。",
  "keyword": "reinforcement learning reasoning",
  "source": "auto",
- "created_at": "2025-12-02 14:04:06"
+ "created_at": "2025-12-02 14:04:06",
+ "topics": [
+  "llm-reasoning"
+ ]
 }

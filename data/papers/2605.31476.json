@@ -9,5 +9,9 @@
  "summary": "# IDOL 论文总结\n\n**核心创新点**：将逆动力学（Inverse Dynamics）作为桥梁，把世界模型对未来场景的预测转化为可执行的轨迹优化信号，解决了\"未来预测与规划脱钩\"的问题。\n\n**主要方法**：在隐式 BEV 空间中，先用 BEV 世界模型预测多步未来潜在场景状态，再用逆动力学模型对相邻潜在未来状态进行解码，提取与规划相关的运动增量（motion deltas）用于优化轨迹；并通过轻量级闭环优化模块复用优化后的轨迹再进行一轮未来推理，提升长时序一致性。\n\n**结论/性能**：在 NAVSIM v1 和 NAVSIM v2 基准测试中，IDOL 在同类方法中取得了 SOTA 性能。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-01 13:08:39"
+ "created_at": "2026-06-01 13:08:39",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
 }

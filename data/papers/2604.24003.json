@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出 Step-level Advantage Selection（SAS），在推理步骤层面分配优势，针对正确回放中的低置信度步骤和 verifier 失败中的高置信度步骤赋零优势，从而稳定高效的推理并缓解截断/ verifier 问题的影响。\n\n2) 主要方法：在推理步骤层面实现 SAS，通过对每一步的置信度与 verifier 反馈进行区分处理，避免将因截断或 verifier 失败引发的问题错误地提升为优势；结合短上下文后训练场景，评估在数学与一般推理基准上的效果。\n\n3) 结论/性能：在多种基准上，SAS 相比最强的长度感知基线，平均 Pass@1 提升 0.86 点，同时将平均推理长度降低 16.3%，实现更好的准确性-效率权衡。",
  "keyword": "grpo",
  "source": "auto",
- "created_at": "2026-04-28 13:07:54"
+ "created_at": "2026-04-28 13:07:54",
+ "topics": [
+  "llm-reasoning",
+  "efficiency-systems"
+ ]
 }

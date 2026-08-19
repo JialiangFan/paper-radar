@@ -9,5 +9,8 @@
  "summary": "1. 核心创新点\n- 在黑箱条件下通过强化学习自动生成通用且可转移的对抗性提示后缀，并在攻击成功率与保持对 benign 任务的效用之间进行联合优化的 AutoInject 框架。\n\n2. 主要方法\n- 提出 AutoInject 强化学习框架，使用一个仅 1.5B 参数的对抗后缀生成器，在黑盒环境中进行查询优化，并实现对未见模型与任务的转移攻击，目标同时优化攻击成功与对无害任务的效用保持。\n\n3. 结论/性能\n- 在 AgentDojo 基准上成功入侵包括 GPT-5 Nano、Claude Sonnet 3.5、Gemini 2.5 Flash 等前沿系统，建立了自动化提示注入研究的更强基线。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-02-06 14:02:05"
+ "created_at": "2026-02-06 14:02:05",
+ "topics": [
+  "ai-safety-alignment"
+ ]
 }

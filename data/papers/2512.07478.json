@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点：提出将渐进式奖励塑形（PRS）与基于价值的采样策略优化（VSPO）结合，用以提升带工具推理的代理式强化学习在稀疏奖励和梯度低效问题上的学习效果。\n\n2) 主要方法：\n- Progressive Reward Shaping (PRS)：采用课程化、密集的阶段性奖励。先确保工具调用格式正确、可解析，再优化事实正确性和答案质量；短-form QA 使用长度敏感的 BLEU 评分，长-form QA 则以“LLM 作为评审”打分以防止奖励投机。\n- Value-based Sampling Policy Optimization (VSPO)：对 GRPO 的改进，替换低价值样本，利用任务价值度量在难度与不确定性之间平衡提示选择，并引入价值平滑裁剪以稳定梯度更新。\n\n3) 结论/性能：在多项短/长文 QA 基准上，PRS 优于传统二元奖励；VSPO 相较 PPO、GRPO、CISPO 和仅 SFT 基线具有更高的稳定性、更快的收敛和更高的最终性能；两者结合使基于 LLM 的 Tool-Integrated Reasoning（TIR）代理具备更强的跨领域泛化能力。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-09 14:03:17"
+ "created_at": "2025-12-09 14:03:17",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

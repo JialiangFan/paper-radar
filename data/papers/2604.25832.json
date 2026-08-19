@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出 TrialCalibre，一套全自动的多智能体因果引擎，用于 RCT 基准对比与观察性试验标定，提升自动化、可扩展性、以及可追溯性与可审计性。\n\n- 主要方法：基于 BenchExCal 的两阶段流程（基准 Benchmark、扩展 Expand、标定 Calibrate）；通过 Orchestrator、Protocol Design、Data Synthesis、Clinical Validation、Quantitative Calibration 等专用智能体协同工作，自动化执行观测拟合、与现有RCT的比较，以及对新适应症的因果效应进行标定；并引入智能体学习（如 RLHF）和知识黑板来支持自适应、可解释的因果推断。\n\n- 结论/性能：提出了一个自动化、可扩展、可审计的实现框架，旨在提升 RWE 研究的可信度与可操作性；论文未给出具体的量化性能指标，需要在实际数据中进一步评估。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-29 13:05:24"
+ "created_at": "2026-04-29 13:05:24",
+ "topics": [
+  "other"
+ ]
 }

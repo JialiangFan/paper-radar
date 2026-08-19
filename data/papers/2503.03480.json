@@ -29,5 +29,9 @@
  "code": "https://github.com/PKU-Alignment/SafeVLA",
  "project": "https://pku-safevla.github.io/",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-safety",
+  "safe-rl"
+ ]
 }

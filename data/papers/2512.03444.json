@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点（一句话概括）\n将基于大语言模型的工作空间合成与融合动作分块 Transformer 的运动策略结合，提出一个通用且高效的神经运动规划框架 PerFACT。\n\n2) 主要方法\n- MotionGeneralizer：一个由大语言模型驱动的工作空间生成方法，能够生成多样且语义可行的工作空间，用于大规模规划数据的采集与扩展。\n- MpiNetsFusion（Fusion Motion Policy Networks）：一个通用的神经运动规划器，使用融合动作分块 Transformer 来更好地编码规划信号并对多模态特征进行注意。\n- 数据与评估：在 MotionGeneralizer 的支撑下，收集约3.5百万条轨迹用于训练与评估，与现有方法比较并验证性能。\n\n3) 结论/性能\n在评估任务中，MpiNetsFusion 能实现比目标对比方法更快的规划速度，达到数倍的加速效果，并且通过大规模数据训练提升了泛化潜力。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-04 14:03:45"
+ "created_at": "2025-12-04 14:03:45",
+ "topics": [
+  "robot-manipulation",
+  "llm-agents"
+ ]
 }

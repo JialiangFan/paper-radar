@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句）：提出 Colon-Bench 的多阶段代理式工作流，在全流程结肠镜视频中实现密集且丰富的标注，形成可用于评估多模态大模型的首个大规模基准数据集。\n\n- 主要方法：结合 temporal proposals、边界框跟踪、AI 驱动的视觉确认以及人工在环审核的协同流程，完成对 528 条视频、14 类病变、超过 30 万个边界框、21.3 万个分割掩码和 13.3 万字临床描述的标注；并用于系统评估对 lesion classification、Open-Vocabulary Video Object Segmentation（OV-VOS）以及 video VQA 的多模态大模型，同时提出“colon-skill”提示策略以提升零样本性能。\n\n- 结论/性能：该基准数据集在医学领域对 MLLMs 的定位能力表现出显著优势（高于 SAM-3），并且通过 colon-skill 提示在多数模型上实现了最高约 9.7% 的零-shot 提升；数据集和代码公开，便于进一步分析与评测。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-27 13:01:57"
+ "created_at": "2026-03-27 13:01:57",
+ "topics": [
+  "applications",
+  "llm-agents"
+ ]
 }

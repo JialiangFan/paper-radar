@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出并开源的 Agent Lifecycle Toolkit (ALTK)，通过可重用的模块化中间件在代理全生命周期内系统性地检测、修复和缓解常见失败模式，从而提升鲁棒性与可维护性。\n\n- 主要方法：采用模块化中间件组件覆盖全生命周期阶段（后用户请求、预LLM提示条件、LLM输出后处理、预工具验证、后工具结果检查、预响应组装），提供一致接口以便无缝集成现有管道，并兼容低代码/无代码工具如 ContextForge MCP Gateway 与 Langflow。\n\n- 结论/性能：可显著降低构建生产就绪代理的工作量，提升代理在生产环境中的鲁棒性和合规性风险防控能力。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-03-17 13:02:05"
+ "created_at": "2026-03-17 13:02:05",
+ "topics": [
+  "runtime-monitoring",
+  "llm-agents"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点（1句话）：\n  通过序列蒙特卡洛定位、就绪性校准与全本地化执行的组合，实现单次演示驱动的鲁棒、确定性且私有化的 GUI 过程自动化。\n\n- 主要方法：\n  - 基于视觉的 GUI 自动化，核心采用序列蒙特卡洛（Sequential Monte Carlo）定位来应对缩放和检测不确定性；\n  - 引入就绪性校准以提供确定性与可靠性保障；\n  - 全本地执行以确保隐私安全，并可作为具编码能力的代理的 MCP/CLI 工具进行解耦式协作，让 GPA 负责 GUI 执行，代理只负责推理与编排。\n\n- 结论/性能：\n  - 在初步对比实验中，GPA 相对于 Gemini 3 Pro（CUA 工具）在完成长时程 GUI 任务上具有更高的成功率，且执行速度快十倍。",
  "keyword": "Agentic Workflow",
  "source": "auto",
- "created_at": "2026-04-03 13:05:53"
+ "created_at": "2026-04-03 13:05:53",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
 }

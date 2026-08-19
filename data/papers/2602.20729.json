@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点：提出 Fuz-RL，一种基于模糊测度的鲁棒框架，用模糊 Bellman 算子及 Choquet 积分估计鲁棒价值函数，并证明在 CMDP 形式下求解等价于分布鲁棒的安全 CMDP，避免直接的最小-最大优化。\n\n2) 主要方法：引入模糊 Bellman 算子和 Choquet 积分来度量不确定性并实现鲁棒价值估计；将安全强化学习问题转化为分布鲁棒的等价问题（而非直接求解 min-max），并以无模型学习方式与现有安全 RL 基线结合。\n\n3) 结论/性能：在 safe-control-gym 和 safety-gymnasium 场景中，Fuz-RL 能与现有基线无模型结合，显著提升在观测、动作和动力学不确定性下的安全性和控制性能。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-25 14:00:43"
+ "created_at": "2026-02-25 14:00:43",
+ "topics": [
+  "safe-rl"
+ ]
 }

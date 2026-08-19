@@ -28,5 +28,8 @@
  "code": "https://github.com/LiQiiiii/Awesome-VLA-Safety",
  "project": "",
  "is_core": true,
- "is_supplemental": false
+ "is_supplemental": false,
+ "topics": [
+  "vla-safety"
+ ]
 }

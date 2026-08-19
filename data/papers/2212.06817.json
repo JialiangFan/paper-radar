@@ -30,7 +30,6 @@
  "is_core": true,
  "is_supplemental": false,
  "topics": [
-  "vla-models",
-  "robot-manipulation"
+  "vla-models"
  ]
 }

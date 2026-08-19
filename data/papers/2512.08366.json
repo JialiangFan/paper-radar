@@ -9,5 +9,9 @@
  "summary": "- **核心创新点**：提出 DuSAR（Dual-Strategy Agent with Reflecting），在一个冻结的大语言模型中通过两种互补策略（高层全局计划与上下文本地策略）进行共适应推理，并通过轻量化的反思机制实现元认知式决策，无需演示示例即可提升鲁棒性与效率。\n\n- **主要方法**：采用一个冻结的 LLM，设计两种互补的推理策略（全局计划与局部策略）并通过一个轻量化的反思机制（Strategy Fitness Score）进行交互：达到停滞时修订全局计划，取得进展时 refinement；属于演示-free 框架，可与 7B–70B 的开源模型搭配，且可选引入专家演示以进一步提升。\n\n- **结论/性能**：在 ALFWorld 与 Mind2Web 评估中达到SOTA水平：ALFWorld 使用 Llama3.1-70B 达到 37.1% 的成功率，较之前最佳 13.0% 提升近2倍；Mind2Web 达到 4.02% 的成功率，同样显著超过 strongest baseline；同时每步 token 消耗降低 3–9 倍，且消融研究证实双策略协同的必要性；可选引入专家演示可进一步提升效果。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-10 14:03:22"
+ "created_at": "2025-12-10 14:03:22",
+ "topics": [
+  "llm-agents",
+  "llm-reasoning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（一句话概括）：\n  提出带界限的比率强化学习（BRRL）框架，给出正则化约束下的解析最优解并证明单调性能提升，进一步衍生出基于该解的 Bounded Policy Optimization（BPO）及其分组扩展 GBPO，用以LLM微调，理论上统一解释PPO、信任区域优化与CEM之间的关系。\n\n- 主要方法：\n  - 将策略优化建模为带正则化与约束的优化问题，推导出解析的最优解并证明其能实现单调性能提升。\n  - 提出 Bounded Policy Optimization（BPO），通过最小化优势加权的策略间散度来接近 BRRL 的解析最优解，并给出对性能的下界约束。\n  - 将框架拓展到 Group-relative BPO（GBPO），用于大语言模型的分组微调。\n  - 提供理论视角，将信任区域策略优化、CEM 与 PPO 的关系联系起来。\n\n- 结论/性能：\n  - 在 MuJoCo、Atari、以及复杂的 IsaacLab 环境（如人形机器人行走）等任务中，BPO 在稳定性与最终性能上通常与 PPO/GRPO 相当或优于它们。\n  - GBPO 在LLM微调任务中亦显示出相似或更好的稳定性与性能提升。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-21 13:00:48"
+ "created_at": "2026-04-21 13:00:48",
+ "topics": [
+  "safe-rl"
+ ]
 }

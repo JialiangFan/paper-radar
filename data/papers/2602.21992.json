@@ -9,5 +9,9 @@
  "summary": "1) 核心创新点\n- 提出面向全景场景的VQA基准PanoEnv并给出基于GRPO的强化学习后训练框架，通过两阶段课程显著提升VLM在三维空间推理上的能力。\n\n2) 主要方法\n- 构建PanoEnv：一个从合成3D环境生成的大规模VQA基准，包含14.8K道题，覆盖深度、分割、边界框等准确3D注释，评测多家VLM在三维推理上的能力。\n- GRPO（Group Relative Policy Optimization）强化学习后训练框架：以真实/真值引导的奖励，结合五种几何感知策略（如距离容忍、空间一致性等）提升三维推理。\n- 两阶段课程学习：阶段1在结构化任务（True/False、选择题）上训练，阶段2在混合的OE数据上微调，缓解灾难性遗忘。\n\n3) 结论/性能\n- 现有SOTA VLM在3D推理上表现有限，整体准确度约49.34%，OE仅8.36%。\n- 在GRPO与分阶段课程的加持下，7B模型达到新SOTA，整体准确度52.93%（提升3.59个百分点），OE准确度14.83%（显著提升），并保持结构化任务性能，语义评估分数（Q-Score 6.24、P-Score 5.95）也超过32B模型，证明PanoEnv及 curriculum-based RL框架能有效培育VLM的全景三维空间智能。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-26 14:03:09"
+ "created_at": "2026-02-26 14:03:09",
+ "topics": [
+  "multimodal-perception",
+  "embodied-benchmarks"
+ ]
 }

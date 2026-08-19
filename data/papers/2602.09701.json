@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出一个解耦的“先推理后分割”流程，利用视觉-语言模型生成结构化空间提示（每个指称对象的边界框和两个内部关键点），再由冻结的 SAM 2 将这些提示转化为高质量掩码，并通过 GRPO 对 Qwen3-VL 系列进行无需监督推理链注释的微调，在细粒度指称分割任务上显著提升性能。\n\n- 主要方法：使用一个解耦的 reason-then-segment 流程，VLM（Qwen3-VL 4B/8B）接收图像与自然语言查询进行场景推理，输出结构化空间提示（边界框+每个目标的两个 interior keypoints）；冻结的 promptable segmenter SAM 2 将提示转为掩码。训练方面采用 Group Relative Policy Optimization (GRPO) 微调 Qwen3-VL，且无需监督的推理链注释。还提出 GenSeg-R1-G，在 GRefCOCO 上带 SAM 2 in-the-loop reward 的变体，直接优化掩码质量。\n\n- 结论/性能：\n  - RefCOCOg 验证集：GenSeg-R1-8B 取得 0.7127 cIoU 和 0.7382 mIoU，显著优于对应的 Qwen3-VL Instruct 基线（分别约提升 15.3 点和 21.9 点），并比 Seg-Zero-7B 提升约 3.3 cIoU。\n  - GRefCOCO 验证集：GenSeg-R1-G 达到 76.69% 目标 mIoU，负样本（no-target）准确率 82.40%，远超缺少无目标检测能力的 Seg-R1-7B 与 Seg-Zero-7B。\n  - ReasonSeg 测试：GenSeg-R1-4B 获得 68.40% mIoU，较 Seg-Zero-7B 高 7.0 点、较 Seg-R1-7B 高 10.7 点。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-11 14:04:35"
+ "created_at": "2026-02-11 14:04:35",
+ "topics": [
+  "rl-post-training",
+  "multimodal-perception"
+ ]
 }

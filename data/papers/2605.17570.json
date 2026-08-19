@@ -9,5 +9,8 @@
  "summary": "1. 核心创新点：提出 Mu-GRPO 框架，将 GRPO 的训练改为四阶段的“大规模序列生成-优化”循环，允许更高的 rollout 滞后性，并通过 relaxed clipping 与 negative-advantage veto 稳定学习，从而在保持或提升性能的同时显著提高效率。\n\n2. 主要方法：采用四阶段的序列化生成-优化流程以实现高 rollout staleness；引入 relaxed clipping 保留有用的旧数据梯度、以及 negative-advantage veto 过滤不稳定的后缀更新，评估对象涵盖五种语言模型与多项数学推理基准。\n\n3. 结论/性能：在五种语言模型与多项数学推理基准上，Mu-GRPO 与标准 GRPO 相比表现相当或更优，同时实现约 2× 的墙钟训练时间加速，显著提升性能-效率比。",
  "keyword": "Large Language Models",
  "source": "auto",
- "created_at": "2026-05-19 12:33:52"
+ "created_at": "2026-05-19 12:33:52",
+ "topics": [
+  "rl-post-training"
+ ]
 }

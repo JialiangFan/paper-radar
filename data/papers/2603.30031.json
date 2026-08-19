@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出三元认知架构（TCA），以连续时间物理框架中的认知摩擦概念约束自主行动，将机器推理从“信息处理无边界”转为受物理与信息论约束的有界推理。\n\n- 主要方法：\n  - 将 deliberation 映射为耦合的随机控制问题，信息获取路径依赖且受物理约束。\n  - 结合非线性滤波理论、黎曼路由几何与最优控制，形式化定义 Cognitive Friction。\n  - 引入以 HJB（Hamilton–Jacobi–Bellman）为动机的停止边界，以及基于信念的信息价值的滚动近似与净效用停顿条件。\n  - 在仿真环境“Emergency Medical Diagnostic Grid（EMDG）”中进行 empirical validation。\n\n- 结论/性能：\n  - 相较贪婪基线，Triadic 策略在考虑延迟与拥塞成本时更快达成行动，缩短 time-to-action。\n  - 同时提升患者生存性（生存概率/健康结果）、且诊断准确性未降低。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-01 13:01:05"
+ "created_at": "2026-04-01 13:01:05",
+ "topics": [
+  "llm-agents",
+  "runtime-monitoring"
+ ]
 }

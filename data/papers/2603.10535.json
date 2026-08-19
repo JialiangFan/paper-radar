@@ -9,5 +9,8 @@
  "summary": "1. 核心创新点：提出 GR^3（Group Relative Reward Rescaling），将长度控制改为乘法性重缩放的分组相对奖励机制，以实现通用、连续且无损的长度抑制。\n\n2. 主要方法：提出 GR^3，将长度控制视为乘法性重缩放；结合组相对正则化（group-relative regularization）和优势感知校准（advantage-aware calibration），动态按实例难度调整长度预算并保持高质量轨迹的优势信号，在 RLHF 和 RLVR 场景中评估。\n\n3. 结论/性能：在保持与标准 GRPO 相近的训练动态和下游性能的同时，显著缓解长度膨胀，且优于现有的长度正则化方法。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-12 13:03:51"
+ "created_at": "2026-03-12 13:03:51",
+ "topics": [
+  "rl-post-training"
+ ]
 }

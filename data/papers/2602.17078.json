@@ -9,5 +9,8 @@
  "summary": "- **核心创新点**：提出将离散时间 MDP 通过基于上确界的 epigraph 重参数化转化为连续时间约束 MDP（CT-CMDP），并结合基于物理信息神经网络（PINN）的 actor-critic，在连续时间框架内实现安全多代理强化学习。\n\n- **主要方法**：采用 epigraph-based reformulation 将离散 MDP 转换为 CT-CMDP；提出基于 PINN 的 actor-critic 方法在连续时间中进行稳定高效的优化，考虑安全约束（如碰撞惩罚），并在连续时间的安全多粒子环境和安全 MuJoCo 基准上进行评估。\n\n- **结论/性能**：实现了更平滑的价值函数近似、训练更稳定，并在安全多代理任务中相较安全 MARL 基线取得性能提升，验证了方法的有效性与鲁棒性。",
  "keyword": "safe reinforcement learning",
  "source": "auto",
- "created_at": "2026-02-20 14:00:21"
+ "created_at": "2026-02-20 14:00:21",
+ "topics": [
+  "safe-rl"
+ ]
 }

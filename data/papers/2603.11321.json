@@ -9,5 +9,8 @@
  "summary": "- 核心创新点（一句话概括）：\n  在稀疏奖励下提出 Hindsight-Anchored Policy Optimization（HAPO），通过 Synthetic Success Injection（SSI）和受 Thompson 采样启发的门控机制，对教师示范进行自适应锚定，使教师信号成为临时支架，最终恢复无偏的 on-policy 梯度并实现渐进一致性。\n\n- 主要方法（技术/模型要点）：\n  - 引入 SSI 运算符：在模型遇到失败时，回溯并将优化锚定到教师演示以利用 hindsight 的成功信息。\n  - 采用 Thompson 采样启发的门控机制：自动调控教师信号的强度，形成自适应、逐步推进的课程（自-paced curriculum）。\n  - 将离策略指导作为临时支架使用，随着策略提升逐渐退场，理论上实现对无偏梯度的恢复。\n  - 理论分析：证明 HAPO 具备渐进一致性，教师信号随着策略改进自然减弱，能够回归无偏的 on-policy 梯度。\n\n- 结论/性能（取得的效果）：\n  - 理论上证明 HAPO 在策略改进过程中实现教师信号的渐进退场，从而恢复无偏的 on-policy 梯度，解决稀疏奖励下的方差与偏差问题。\n  - 通过将教师示范作为临时支架，超越了静态教师强制的局限，提供对离策略引导的稳定性与学习效率的理论保障。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-03-13 13:03:18"
+ "created_at": "2026-03-13 13:03:18",
+ "topics": [
+  "rl-post-training"
+ ]
 }

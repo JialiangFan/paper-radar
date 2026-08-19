@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将多轮代码生成视为可恢复的一步决策过程，提出在离线轨迹上进行上下文带权探索的学习方法Cobalt，融合在线RL与离线RL的优点。\n\n- 主要方法：通过参考LLM收集多轮代码生成轨迹并切分为 partial trajectories 作为上下文提示；在在线阶段进行单步的上下文带宽（contextual bandit）学习，要求模型对每个部分提示进行单步代码完成；为缓解在上下文中的奖励劫持问题，对轨迹进行扰动并对训练进行增强。\n\n- 结论/性能：相较两种在线RL基线（GRPO、VeRPO），Cobalt在 LiveCodeBench 上表现更强；对 R1-Distill 8B 与 Qwen3 8B 的绝对 Pass@1 分数提升分别达到 9.0 和 6.2；并分析了LLM的“奖励劫持”行为并通过扰动轨迹来缓解；代码与数据已在 GitHub 发布。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-02-04 14:04:06"
+ "created_at": "2026-02-04 14:04:06",
+ "topics": [
+  "rl-post-training"
+ ]
 }

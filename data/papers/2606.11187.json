@@ -9,5 +9,9 @@
  "summary": "## 论文总结：Next Forcing: Causal World Modeling with Multi-Chunk Prediction\n\n**1. 核心创新点**\n提出 Next Forcing 框架，借鉴大语言模型中的多 token 预测思路，在因果世界建模中引入**多块预测（Multi-Chunk Prediction, MCP）** 目标，让模型同时对多个未来时间尺度的视频块进行去噪，从而加速训练、提升精度并加速推理。\n\n**2. 主要方法**\n- 在主模型上挂载**轻量级辅助 MCP 模块**，分别预测 next¹、next²、next³ 等多个未来视频块。\n- 这些 MCP 模块通过融合主模型多层中间特征，形成跨预测深度的**因果链**：近期预测的结果用于指导远期预测，并反向为主模型提供**密集的多尺度时间监督**。\n- 推理阶段，MCP 模块可与当前块并行预测下一视频块，实现并行解码加速。\n\n**3. 结论 / 性能**\n- 在 50 fps 高帧率下，训练 5k 步时相对 LingBot-VA 提升 **93.1%**，收敛速度提升 **2.3 倍**。\n- 在 RoboTwin 基准上达到新 SOTA（Clean/Random 分别为 **94.1% / 93.5%**）。\n- 在物理规律评估基准 PhyWorld 上显著提升，通用视频预训练上 **FVD 降低超过 50%**。\n- 推理速度实现 **2 倍加速**。",
  "keyword": "world action models",
  "source": "auto",
- "created_at": "2026-06-10 13:03:51"
+ "created_at": "2026-06-10 13:03:51",
+ "topics": [
+  "video-world-models",
+  "world-model-learning"
+ ]
 }

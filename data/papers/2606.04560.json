@@ -9,5 +9,8 @@
  "summary": "# 论文总结\n\n**1. 核心创新点**\n提出一种**rollout 级别、按优势值优先级排序的经验回放缓冲区**，用于解决 GRPO 在 LLM 推理后训练中样本效率低、且朴素回放因策略快速漂移而失效的问题。\n\n**2. 主要方法**\n- **Rollout 级存储**：缓冲区存储和采样单条 rollout，而非整组。\n- **陈旧度控制**：通过年龄淘汰机制，移除超过 τ_max 训练步的旧 rollout。\n- **Fresh-anchored 组合**：每个 batch 保留新鲜的 on-policy rollout，再拼接从缓冲区单独采样的回放 rollout。\n- **优势值优先级**：按每条 rollout 的 |advantage| 大小优先回放，复用高优势样本。\n\n**3. 结论/性能**\n- 在 Qwen3-Base 的 3 种规模、5 个数学基准上，全面超越 GRPO 与朴素回放基线。\n- 增益随模型规模增大而增长，**4B 模型上五基准平均提升 +4.35 pp**。\n- 在联合衡量准确率与 token 效率的 AES 指标上，4B 模型相对 GRPO 的效率优势达 **+0.579**，同样为最大值。",
  "keyword": "GRPO",
  "source": "auto",
- "created_at": "2026-06-04 13:01:49"
+ "created_at": "2026-06-04 13:01:49",
+ "topics": [
+  "rl-post-training"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：将描述驱动的生成式数据增强与变形卷积-视觉变换器相结合，解决高分辨率土地覆盖分类中的样本不平衡与几何畸变问题。\n\n- 主要方法：\n  1) 生成式数据增强：利用 GPT-4o 生成场景描述，并结合超分辨的示例，通过文本引导的扩散管线合成类平衡且高保真训练图像。  \n  2) 模型架构：提出 DViT，将 DCNv4 的可变形卷积骨干与 Vision Transformer 编码器耦合，联合建模细尺度几何和全局上下文。  \n  3) 评估与解释：在八类 AID 子集上进行高性能评估，并进行跨数据集迁移性测试（SIRI-WHU 三类），另使用 GPT-4o 基于 Grad-CAM 的评分来评估注意力对水文结构的对齐性。\n\n- 结论/性能：\n  - AID 八类数据集：OA 0.9572、macro F1 0.9576、Kappa 0.9510，均高于 vanilla ViT（OA 0.9274、F1 0.9300、Kappa 0.9169）以及 ResNet50、MobileNetV2、FlashInternImage。  \n  - 跨数据集 SIRI-WHU（三类 Harbor、Pond、River）：OA 0.9333、macro F1 0.9316、Kappa 0.8989，显示良好迁移性。  \n  - 解释性结果：LLM（GPT-4o）评分的 Grad-CAM 热力图分析显示 DViT 的注意力更贴近水文意义的结构。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2025-12-01 14:04:02"
+ "created_at": "2025-12-01 14:04:02",
+ "topics": [
+  "applications"
+ ]
 }

@@ -9,5 +9,9 @@
  "summary": "- 核心创新点：提出可扩展的 RerouteGuard 防护框架，能够对 LLM 路由中的对抗性重新路由攻击实现高效检测与抑制。\n\n- 主要方法：基于威胁分类对对抗性重新路由攻击进行系统化分析，并利用可解释性方法揭示攻击通过路由边界的机制（如前置的混淆因子“confounder gadgets”），在此基础上提出动态嵌入向量检测与自适应阈值的防护框架 RerouteGuard，并在三种攻击场景、四个基准上进行评估。\n\n- 结论/性能：RerouteGuard 在对抗性重新路由攻击的检测中达到超过 99% 的准确率，对合法查询几乎无影响，提供了一个 principled、可扩展的实用解决方案来保护多模型 AI 系统。",
  "keyword": "adversarial attack",
  "source": "auto",
- "created_at": "2026-01-30 14:02:06"
+ "created_at": "2026-01-30 14:02:06",
+ "topics": [
+  "adversarial-attacks",
+  "ai-safety-alignment"
+ ]
 }

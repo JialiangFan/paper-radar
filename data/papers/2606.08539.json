@@ -9,5 +9,9 @@
  "summary": "## 论文总结：AgentTrust: A Self-Improving Trust Layer for AI-Agent Actions\n\n1. **核心创新点**：提出了一个能\"自我进化\"的 AI Agent 行为信任层 AgentTrust v2，按威胁类型（词法 vs. 语义）分而治之，让系统在使用中越用越便宜、越用越聪明。\n\n2. **主要方法**：采用双存储架构——对于\"词法威胁\"（特征固定的危险 token），由 LLM judge 自动蒸馏出确定性规则库，实现低成本拦截；对于\"语义威胁\"（意图相关、表面无害但实则恶意），构建带\"佐证守卫（corroboration guard）\"的 RAG 记忆库，避免简单 verdict-cache 因\"表面孪生\"导致的误判，并引入自学习机制持续积累判例。\n\n3. **结论/性能**：\n   - 纯规则方案在语义类别上完全无效（0pp 提升），证明规则不可解决语义威胁；\n   - 自学习 judge 将整体准确率从 48% 提升至 83.6–85.2%，跨两家模型供应商均成立；\n   - 佐证守卫使语义准确率从 70% 提升至 84%（+13pp）；\n   - 在线 replay 中，judge 调用率从 50% 降至 44%，judge 域准确率从 71% 升至 80%，4.5 万次操作中**零善意硬拦截**。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-06-09 13:00:24"
+ "created_at": "2026-06-09 13:00:24",
+ "topics": [
+  "robot-harness",
+  "ai-safety-alignment"
+ ]
 }

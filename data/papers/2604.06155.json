@@ -9,5 +9,8 @@
  "summary": "1) 核心创新点\n- 提出 Latent Semantic Enhancement MTP（LSE-MTP），在多-token预测框架中通过将预测锚定到真实隐藏状态轨迹来实现一致的世界模型，并给出对跨 token 梯度诱导偏向的理论分析以解决结构性幻觉问题。\n\n2) 主要方法\n- 理论分析：研究多-token预测（MTP）的梯度耦合如何推动内部信念状态的收敛，以及其导致结构性幻觉的原因。\n- 方法设计：提出 LSE-MTP，将预测细化锚定到真实隐藏状态轨迹，实现潜在语义增强，缓解离散 token 监督带来的非法 latent space shortcut。\n- 实验设置：在合成图和真实数据集曼哈顿出租车轨迹上进行评估。\n\n3) 结论/性能\n- LSE-MTP 能有效桥接离散 token 与连续状态表示，提升表示对齐，降低结构性幻觉，并增强对扰动的鲁棒性；在合成图和曼哈顿出租车数据集上显示出更好的一致性与鲁棒性。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-04-08 13:08:08"
+ "created_at": "2026-04-08 13:08:08",
+ "topics": [
+  "world-model-learning"
+ ]
 }

@@ -9,5 +9,8 @@
  "summary": "- 核心创新点：提出一个端到端的自动化域适应框架 AutoAdapt，通过多代理辩论与基于LLM的超参优化，在有限预算下实现高效、可靠的领域自适应。\n\n- 主要方法：\n  - 利用文献与开源资源构建 curated 知识库，降低对专家的干预。\n  - 设计多代理辩论系统（ proposal 与 critic 代理）迭代交互，对齐用户意图并将数据信号与最佳实践融入计划中。\n  - 提出 AutoRefine，一种基于 LLM 的代理，用以替代成本高昂的黑箱搜索进行超参数优化。\n  - 作为一个端到端框架实现对域的自适应。\n\n- 结论/性能：在10项任务上，AutoAdapt 相比最先进的 Automated Machine Learning 基线实现约25%的平均相对准确率提升，且开销很小。",
  "keyword": "LLM planning",
  "source": "auto",
- "created_at": "2026-03-10 13:03:39"
+ "created_at": "2026-03-10 13:03:39",
+ "topics": [
+  "rl-post-training"
+ ]
 }

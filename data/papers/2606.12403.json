@@ -9,5 +9,9 @@
  "summary": "**World Pilot: Steering Vision-Language-Action Models with World-Action Priors**\n\n1. **核心创新点**：通过引入\"世界-动作模型\"（WAM）的先验知识来增强 VLA 模型，弥补其静态图文预训练无法捕捉操作过程中接触动力学的缺陷。\n\n2. **主要方法**：在 VLA 框架中接入两条互补的注入路径——**Latent Steering**（用\"场景演化潜变量\"调控感知层，让模型\"预见\"场景将如何变化）和 **Action Steering**（向动作生成器提供一条预期轨迹作为运动先验）。值得注意的是，即使场景演化先验来自仅经过视频预训练、未做动作微调的世界模型，依然有效。\n\n3. **结论/性能**：在 LIBERO-Plus 零样本分布外（OOD）基准上取得 **84.7% 的总成功率**（SOTA）；在 4 个真实机器人操作任务的所有设置中均达到最高成功率，尤其在视角、几何形状、可变形状态和位姿变化等分布偏移场景下优势最大。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-06-12 13:03:50"
+ "created_at": "2026-06-12 13:03:50",
+ "topics": [
+  "vla-models",
+  "world-model-control"
+ ]
 }

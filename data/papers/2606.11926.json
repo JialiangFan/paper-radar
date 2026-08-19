@@ -9,5 +9,9 @@
  "summary": "根据论文标题和摘要，总结如下：\n\n**论文：《Toward Generalist Autonomous Research via Hypothesis-Tree Refinement》（通过假设树精炼迈向通用自主研究）**\n\n1. **核心创新点**：提出 Arbor 框架，用一棵持久化的\"假设树\"（Hypothesis Tree Refinement, HTR）把假设、实验产物、证据和提炼出的经验跨时间串联起来，让 AI 智能体能够长周期地自主开展科研循环（探索—实验—抽象）。\n\n2. **主要方法**：采用\"长期协调器 + 短期执行器\"的分工架构——协调器基于假设树管理全局研究策略，执行器在隔离的代码 worktree 中实现并测试单个假设；结果返回后更新树、传播可复用经验、refine 搜索前沿，并纳入经验证的改进，从而把孤立的局部尝试变成累积式研究过程。\n\n3. **结论/性能**：在自主优化（AO）设定下的 6 个真实科研任务（模型训练、harness 工程、数据合成）中，Arbor 在全部 6 个任务上取得最佳的留出集（held-out）结果，平均相对增益超过 Codex 和 Claude Code 的 2.5 倍；在 MLE-Bench Lite 上配合 GPT-5.5 达到 86.36% 的 Any Medal，为对比中的最强成绩。\n\n---\n如果需要更深入的文献综述式分析（含背景、研究问题、贡献拆解，并输出中英文双语到 Obsidian），可以使用 `/paper-review` 技能。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-06-12 13:01:15"
+ "created_at": "2026-06-12 13:01:15",
+ "topics": [
+  "llm-agents",
+  "llm-planning"
+ ]
 }
