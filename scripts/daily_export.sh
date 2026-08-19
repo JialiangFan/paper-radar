@@ -3,6 +3,7 @@
 # 把数据库里的新论文导出为 data/papers/*.json，有新增才 commit + push。
 set -euo pipefail
 cd "$(dirname "$0")/.."
+export PATH="$HOME/.local/bin:$PATH"   # droplet 的 claude CLI 在这里，cron 环境不带
 
 git pull --rebase --autostash --quiet
 
