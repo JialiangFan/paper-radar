@@ -1,0 +1,16 @@
+{
+ "id": "2608.18275",
+ "title": "The VLA and High-Frequency SETI: Expanding the Search for Life",
+ "authors": "Talon Myburgh, Noah Stiegler, Chenoa D. Tremblay, Joe S. Bright, Ross A. Donnachie",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18275v1",
+ "abstract": "The Commensal Open-Source Multimode Interferometer Cluster (COSMIC) runs software that searches for technologies elsewhere in the Universe (\"technosignatures\") using the Karl G. Jansky Very Large Array (VLA). Specifically, it searches for narrowband signals that drift in frequency over time as a result of Doppler motions. Although this is the first study of high-frequency technosignatures that has been published from the COSMIC system on the VLA, it follows closely on previous work completed by an undergraduate research intern. Within the field of view of the VLA, the software on COSMIC creates coherent beams directed toward stars that may contain exoplanets from the Gaia catalogue. The recorded results follow a real-time software pipeline and are examined for technosignatures. Using a Taylor-Tree De-Dispersion algorithm to find narrow-band drifting signals, each recorded beam (coherent and incoherent) is searched for signals with a drift-rate with magnitudes up to $\\pm$50Hz/s. All detections are stored as \"hits\" with the relevant snippet of data stored for posterity. The purpose of this work is to extend the high-frequency search by reviewing data from February 2024 to the present. Our study examines the impact of previously implemented and novel filters to find a selection of candidate signals. At the final stage of the pipeline, our objective is to study these resultant candidate signals spatially through imaging. The observations therefore probe regions of frequency and signal parameter space that have received comparatively limited coverage in previous SETI surveys.",
+ "summary": "## 论文总结：《VLA 与高频 SETI：拓展生命搜寻》\n\n**1. 核心创新点**\n首次公开发表基于 VLA 望远镜 COSMIC 系统的**高频段**技术signature（technosignature）搜寻结果，并把流程延伸到用成像手段对候选信号做空间定位验证。\n\n**2. 主要方法**\n- 利用 VLA 上的 COSMIC（共生式开源多模式干涉阵列集群）系统，在望远镜视场内对 Gaia 星表中可能拥有系外行星的恒星**合成相干波束**（coherent beams）。\n- 采用 **Taylor-Tree 去色散算法**，在每个波束（相干 + 非相干）中搜索因多普勒运动而随时间漂移的窄带信号，漂移率范围为 **±50 Hz/s**。\n- 实时软件流水线将所有检出记为 \"hits\" 并保存对应数据片段；再叠加已有滤波器与**新设计的滤波器**筛出候选，最后通过成像分析候选信号的空间分布（真实天体源应定位在波束方向上，本地射频干扰则不会）。\n- 数据范围：2024 年 2 月至今。\n\n**3. 结论/性能**\n摘要属于工作进展/方法性报告，**未给出具体的候选数量或统计上限**。其主要贡献在于：验证了滤波器组合 + 成像甄别对压制射频干扰（RFI）的作用，并使观测覆盖了以往 SETI 巡天中**较少涉及的高频段与信号参数空间**（尤其是大漂移率区间）。\n\n> 补充说明：文中提到该工作紧接一位本科生实习项目展开，可见其定位偏向\"管线扩展与验证\"，而非宣称新发现。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-20 13:05:59",
+ "topics": [
+  "other"
+ ]
+}

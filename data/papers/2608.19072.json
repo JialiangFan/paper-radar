@@ -1,0 +1,17 @@
+{
+ "id": "2608.19072",
+ "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
+ "authors": "Joy Jia Yin Lim, Xin Huang, Hao Peng, Yaxi Lu, Xin Cong, Zhong Zhang, Maosong Sun, Yankai Lin",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19072v1",
+ "abstract": "Large language model (LLM) agents can now post-train an LLM end-to-end. They can write code, launch training, evaluate checkpoints, and improve downstream performance, raising the prospect of AI-for-AI. We argue that this picture conflates two distinct capabilities: execution-level capability, iterating within a selected training strategy; and strategy-level capability, revising the high-level judgment as experimental evidence accumulates. Analyzing a large corpus of publicly released post-training trajectories, we find that across different tasks, the agent's training strategy is locked in at the very beginning, and the entire remaining budget is spent on local adjustments within the selected strategy. We then examine three natural explanations--missing experience, missing guidance, and insufficient reasoning--with escalating interventions. Extensive experiments show that (1) an experience-driven scaffold improves execution across the board (+12.6 points on GSM8K and +40.8 on HumanEval) but leaves the strategy static; (2) human guidance effectively redirects the initial strategy, yet the agent falls back into local adjustment loops once training starts; and (3) additional inference compute pays off on easier tasks but yields almost no gain on the hardest one. In conclusion, what agents lack is neither experience, guidance, nor reasoning compute, but a mechanism for spontaneously reevaluating their strategy during execution.",
+ "summary": "## 论文速览：*What is Missing from AI Post-Training AI: An Empirical Analysis*\n\n**1. 核心创新点**\n论文指出\"AI 训练 AI\"的能力被混为一谈了，实际应区分为**执行层能力**（在既定训练策略内迭代调参）与**策略层能力**（随实验证据积累修正高层判断），并通过实证发现智能体几乎完全缺失后者。\n\n**2. 主要方法**\n- **轨迹分析**：分析大量公开发布的 LLM 智能体 post-training 轨迹，观察策略是否随实验推进而改变。\n- **三种假设 + 递进式干预实验**，分别对应三种可能解释：\n  - *缺经验* → 构建经验驱动的 scaffold（脚手架）；\n  - *缺指导* → 注入人类高层指导；\n  - *推理不足* → 增加推理阶段的计算量（inference compute）。\n\n**3. 结论 / 性能**\n- 智能体的训练策略在**最开始就被锁定**，剩余全部预算都花在策略内部的局部微调上。\n- 经验型 scaffold 显著提升**执行层**表现（GSM8K **+12.6** 分，HumanEval **+40.8** 分），但策略依旧不变。\n- 人类指导能有效改变**初始**策略，可一旦训练启动，智能体又退回局部调整循环。\n- 增加推理算力仅对较简单任务有效，在最难任务上几乎无增益。\n\n**总结论**：智能体真正缺的不是经验、指导或推理算力，而是**在执行过程中自发重新评估自身策略的机制**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:02:02",
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "2608.19009",
+ "title": "Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning",
+ "authors": "Yajie Yin",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19009v1",
+ "abstract": "Large language models (LLMs) are increasingly paired with verifiers (step checkers, self-consistency filters, tool-based fact checkers, formal proof assistants) that claim to detect the model's errors. Yet the verification literature uses the word \"level\" to mean at least five different things: verification granularity, concept abstraction, risk tier, system-stack layer, and the epistemic source of the ground truth. We propose Verification Autonomy Levels (VAL), a meta-standard classifying verification schemes along a single axis: where does the verification spec come from, and what does the verdict guarantee? VAL ranges from L0 (LLM self-declaration, no deterministic anchor) through L2 (objective ground truth, correctness only) to L3/L4 (decidable systems with single-property or domain-level completeness), with L5 impossible in the unrestricted case. Central to VAL is the completeness blind spot: substitution- and sampling-based verifiers can confirm that proposed candidates hold, but cannot prove that no candidate was missed. We further identify a dichotomy the literature has not stated: completeness is reachable only for formally specifiable properties, while empirical open-world verification (fact-checking, diagnosis) caps at anchored correctness (L2). We document this across four domains (symbolic mathematics, behavior monitoring, medical diagnosis, and code generation) and in the strongest existing formal-verification baseline, whose authors note the verifier \"focuses on the correctness of each step.\" We show the levels of granularity, concept hierarchy, risk, and system stack are orthogonal to VAL, resolving a systematic conflation across 17 surveyed papers. Code and full assessment are released as supplementary material.",
+ "summary": "## 论文速览：Grading the Graders: Verification Autonomy Levels (L0–L5) for LLM Reasoning\n\n**1. 核心创新点**\n提出「验证自主等级」(Verification Autonomy Levels, VAL) 这一元标准，用**单一维度**——验证规范从何而来、判定结果能保证什么——统一分类各类 LLM 验证方案，终结文献中\"level\"一词的五重混用。\n\n**2. 主要方法**\n- 概念/分类学工作而非新模型：将验证方案沿 L0→L5 排序。L0 为 LLM 自我声明（无确定性锚点）；L2 为有客观真值锚定、但**仅保证正确性**；L3/L4 为可判定系统，分别具备单属性或领域级**完备性**；L5 在无限制场景下被论证为不可达。\n- 提出两个关键论断：一是「完备性盲区」——基于代换和采样的验证器只能确认候选解成立，无法证明没有遗漏候选解；二是「二分性」——完备性只对可形式化刻画的属性可达，而开放世界的经验性验证（事实核查、医疗诊断）上限止于 L2 的锚定正确性。\n- 在四个领域（符号数学、行为监控、医疗诊断、代码生成）以及当前最强的形式化验证基线上做了实证梳理，该基线作者自陈其验证器\"只关注每一步的正确性\"。\n\n**3. 结论/性能**\n系统审查 17 篇相关论文，指出粒度、概念层级、风险分级、系统栈层次这四种\"level\"含义与 VAL **相互正交**，从而澄清了领域内普遍存在的概念混淆；代码与完整评估结果作为补充材料公开。本文贡献是评估框架而非跑分性能。\n\n**一句话点评**：这是一篇\"给评分者打分\"的立场/分类学论文，实用价值在于给出一把尺子——判断你手上的验证器究竟是在做自我安慰(L0)、锚定纠错(L2)，还是真正的完备性保证(L3+)。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:00:46",
+ "topics": [
+  "llm-reasoning",
+  "runtime-monitoring"
+ ]
+}

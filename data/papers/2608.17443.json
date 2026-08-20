@@ -1,0 +1,16 @@
+{
+ "id": "2608.17443",
+ "title": "Structure-Internalized Rule Language Model for Faithful Knowledge Graph Reasoning",
+ "authors": "Xingrui Zhuo, Jiapu Wang, Manzong Huang, Gongqing Wu, Xindong Wu",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17443v1",
+ "abstract": "Knowledge Graph Reasoning (KGR) aims to discover latent facts by leveraging the structural evidence available in KGs, posing a challenge to the structural semantic understanding capability of KGR models. Recent studies have demonstrated that Large Language Models (LLMs) can achieve remarkable progress on KGR tasks via flexible in-context learning. However, the inherent representation inconsistency between KG structural context and LLM parametric knowledge remains inadequately addressed. This limitation prevents LLMs from effectively perceiving reasoning evidence that aligns with KG constraints, which undermines both the effectiveness and faithfulness of reasoning. We refer to this problem as reasoning evidence perception drift of LLMs over KGs. To address this problem, we propose a Structure-Internalized Rule Language Model (SIRLM), which centers on structural rule generation to couple the parametric learning of structural knowledge with the faithfulness evaluation of reasoning logic, enabling LLMs to anchor tightly to KG-grounded evidence. Specifically, we first design a Structure-Internalized Rule Generator (SIRG), which incorporates an in-context learning block augmented with a structural relation memory to coordinate structural and parametric knowledge. Furthermore, we equip SIRG with a KG tokenizer based on structural invariance learning and a neuro-symbolic reasoner based on rule-constrained message propagation. These components provide SIRG with learnable structural representations and faithful rule-execution feedback, respectively. Our SIRLM can be seamlessly integrated into standard LLM training paradigms, such as SFT and GRPO. Extensive experiments against 17 state-of-the-art KGR methods on 36 datasets demonstrate the significant superiority of SIRLM.",
+ "summary": "1. **核心创新点**：提出 SIRLM，通过让大模型「内化」知识图谱的结构信息并以结构化规则作为生成目标，解决 LLM 在 KG 推理中的「推理证据感知漂移」问题（即 KG 结构上下文与 LLM 参数化知识之间的表示不一致），从而同时提升推理的有效性与忠实性。\n\n2. **主要方法**：\n   - **结构内化规则生成器（SIRG）**：核心模块，在上下文学习（in-context learning）块中引入**结构关系记忆**，协调结构知识与参数化知识；\n   - **KG tokenizer**：基于结构不变性学习，为 LLM 提供可学习的结构化表示；\n   - **神经符号推理器**：基于规则约束的消息传播，回传忠实的「规则执行」反馈信号；\n   - 整体设计可无缝接入标准 LLM 训练范式，如 SFT 与 GRPO（强化学习）。\n\n3. **结论/性能**：在 **36 个数据集**上与 **17 个 SOTA 知识图谱推理方法**对比，SIRLM 取得显著优势。（摘要仅给出定性结论，未披露具体指标数值。）\n\n**一句话点评**：这是一条「LLM + 神经符号」的融合路线——不靠 prompt 硬塞图结构，而是把结构表示学进模型、再用符号规则执行结果做反馈闭环，实验规模（36 数据集/17 基线）在该方向上属于较充分的验证。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:03:32",
+ "topics": [
+  "llm-reasoning"
+ ]
+}

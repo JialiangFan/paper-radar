@@ -1,0 +1,17 @@
+{
+ "id": "2608.18740",
+ "title": "A Multi-Agent Platform for Automated Enterprise Analytics and Insight Generation",
+ "authors": "Manoj N M, Vijayakrishna S, Manjunath Srinivas, Rohit Pahan",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18740v1",
+ "abstract": "This paper proposes a multi-agent framework built on CrewAI [1] for conversational business intelligence. Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol (MCP) [2], and deliver actionable insights. The platform features a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for transforming conversational insights into reusable dashboard components. Evaluation across 300 end-to-end test cases spanning synthetic and production enterprise datasets demonstrates 95.3% functional accuracy, a mean response latency of 24 seconds, and a response quality score of 4.52/5.0 as assessed by an LLM-as-a-Judge framework, with a 93.0% hallucination-free rate, representing a 22.6 percentage point accuracy improvement and 20.2% quality gain over a single-agent baseline. Cross-model evaluation across four LLM backends and human expert validation confirm architectural generalizability and evaluator reliability. An ablation study confirms that the Data Analysis and Report Aggregation agents are the primary drivers of output quality.",
+ "summary": "## 论文总结\n\n**标题**：A Multi-Agent Platform for Automated Enterprise Analytics and Insight Generation（面向企业分析与洞察生成的自动化多智能体平台）\n\n### 1. 核心创新点\n提出一个基于 CrewAI 的多智能体对话式商业智能（BI）平台，用五个专职 Agent 串行协作，把自然语言提问自动转化为数据分析、可视化与可复用的仪表盘组件。\n\n### 2. 主要方法\n- **架构**：5 个专职 AI Agent 组成顺序流水线，依次完成查询理解 → 数据检索 → 数据分析 → 可视化生成 → 报告聚合。\n- **可视化**：通过 Model Context Protocol (MCP) 调用外部工具生成图表。\n- **安全性**：采用\"纵深防御\"（defense-in-depth）安全架构，实现多租户数据隔离。\n- **可复用性**：设计了查询参数化机制，把一次性的对话洞察转成可重复使用的仪表盘组件。\n- **评估**：300 个端到端测试用例（合成数据 + 真实生产企业数据），使用 LLM-as-a-Judge 打分，并做了跨 4 种 LLM 后端的交叉验证、人类专家验证以及消融实验。\n\n### 3. 结论/性能\n- 功能准确率 **95.3%**，平均响应延迟 **24 秒**，回答质量 **4.52/5.0**，无幻觉率 **93.0%**。\n- 相比单 Agent 基线，准确率提升 **22.6 个百分点**，质量提升 **20.2%**。\n- 跨模型评估与人工验证表明架构具备通用性、评估器具备可靠性；消融实验显示**数据分析 Agent 和报告聚合 Agent 是输出质量的主要贡献者**。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:02:37",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
+}

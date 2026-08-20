@@ -1,0 +1,16 @@
+{
+ "id": "2608.18531",
+ "title": "Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson",
+ "authors": "Tanay Chowdhury, Saeideh Shahrokh Esfahani",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18531v1",
+ "abstract": "Industrial explainable-recommendation systems built on LLMs incur a substantial serving cost: each request triggers an LLM generation, with latency in the hundreds of milliseconds and cost that scales linearly with traffic. We separate generation from selection: explanations are produced ahead of time as a frozen candidate pool (six prompt styles, two commodity LLMs), and a small CPU-resident selector picks one at request time. The stack needs no GPU and returns in under 100 ms.\n  Our primary benchmark is a 2,958-pair XRec Google Local subset, evaluating six offline-pool selectors (LambdaRank, PPO, GRPO, DPO, teacher-student distillation) and three KG-path selectors (random walks, edge-disjoint enumeration, MMR-reranked paths). A 300-pair MovieLens-1M split with Claude-Sonnet-4.5 references serves as an internal cross-dataset check, since no public benchmark exists for this setting. All variants use the same BERTScore-F1 protocol as XRec and G-Refer, averaged across five seeds.\n  LambdaRank reaches F1 = 0.500 on Google Local, exceeding both G-Refer and XRec, and F1 = 0.329 on the MovieLens-1M check. With seed variance below 0.003 F1, the ordering is reliable: pairwise learning-to-rank outperforms single-action RL (PPO, GRPO, DPO), which use only one labelled candidate per rollout, leaving K-1 labels unused.\n  The KG-path family targets a different objective: all three variants reach USR = 1.000 on Google Local and 0.997-1.000 on MovieLens-1M, since per-request path grounding yields a unique output per query, avoiding template-collapse failures affecting cached-LLM outputs.\n  A generator-pool study comparing Claude 3 Haiku and Claude Haiku 4.5 shows small F1 shifts (0.001-0.006) while preserving selector ranking: selector and generator can be evaluated independently, though absolute F1 depends on the generator. End-to-end build cost is near $15 on commodity hardware.",
+ "summary": "## 论文摘要总结\n\n**标题**：《成对排序在离线解释选择上优于单动作强化学习：一个实践教训》\n\n---\n\n### 1. 核心创新点\n将可解释推荐中的\"解释生成\"与\"解释选择\"解耦——用 LLM 离线预生成冻结候选池，请求时仅由一个轻量 CPU 选择器挑选，从而在无 GPU、100ms 内响应的前提下超越现有 SOTA。\n\n### 2. 主要方法\n- **候选池构建**：6 种提示风格 × 2 个通用 LLM 离线生成解释，形成固定候选池。\n- **选择器对比**：评测 6 种离线池选择器（LambdaRank 等成对 learning-to-rank，以及 PPO、GRPO、DPO 等单动作 RL、师生蒸馏），外加 3 种知识图谱路径选择器（随机游走、边不相交枚举、MMR 重排路径）。\n- **评测设置**：主基准为 XRec 的 Google Local 子集（2,958 对），并用 300 对 MovieLens-1M（以 Claude Sonnet 4.5 输出为参考）做跨数据集内部校验；统一采用与 XRec / G-Refer 相同的 BERTScore-F1 协议，5 个随机种子取平均。\n\n### 3. 结论 / 性能\n- **LambdaRank 最优**：Google Local 上 F1 = 0.500，超过 G-Refer 与 XRec；MovieLens-1M 上 F1 = 0.329。种子间方差 < 0.003，排序结论稳定。\n- **关键教训**：成对排序优于单动作 RL——因为 PPO/GRPO/DPO 每次 rollout 只用了 1 个带标签候选，浪费了其余 K−1 个标签信号。\n- **KG 路径族**：面向另一目标，唯一性指标 USR 达 1.000（MovieLens 上 0.997–1.000），因逐请求路径接地保证输出唯一，避免了缓存式 LLM 输出的\"模板坍缩\"问题。\n- **解耦性验证**：更换生成器（Claude 3 Haiku ↔ Claude Haiku 4.5）仅带来 0.001–0.006 的 F1 波动且不改变选择器排序，说明选择器与生成器可独立评估（但 F1 绝对值依赖生成器）。\n- **成本**：端到端构建成本约 15 美元，普通硬件即可完成。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:03:00",
+ "topics": [
+  "applications"
+ ]
+}

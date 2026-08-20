@@ -1,0 +1,16 @@
+{
+ "id": "2608.19066",
+ "title": "GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via Gaussian Splatting",
+ "authors": "Yechan Park, HyunJin Kim",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19066v1",
+ "abstract": "This paper proposes a lightweight, plug-and-play framework that improves robustness to viewpoint shifts in Vision-Language-Action (VLA) policies without policy retraining. To our knowledge, this is the first approach to directly leverage 3D Gaussian-based novel-view synthesis for observation-space adaptation in VLA policies. Current VLA performance relies on the implicit assumption that training and deployment camera configurations are identical. Our experiments show that even a small displacement of the camera mount can reduce the success rate on the LIBERO benchmark from about 90% to about 10% in the worst case. Prior approaches, such as large-scale fine-tuning or generative data augmentation, are computationally expensive and risk catastrophic forgetting. To address this, viewpoint shifts are reformulated as a localized novel-view synthesis problem. Under a Locality assumption, that camera perturbations remain within a small bounded region relative to the workspace, viewpoint normalization reduces to a scene- and policy-independent disocclusion task. Our work implements this idea with a 4M-parameter 3D-Gaussian canonicalizer prepended to a frozen VLA policy. Without modifying policy weights, GS-VLA improves performance across three orthogonal axes: (1) Policy architectures, (2) Unseen task suites, and (3) Perturbation scales. These results show that a lightweight visual module can recover a large fraction of the performance lost under viewpoint shift, without policy retraining.",
+ "summary": "## GS-VLA 论文摘要总结\n\n**1. 核心创新点**\n首次将 3D 高斯泼溅（Gaussian Splatting）的新视角合成能力用于 VLA 策略的\"观测空间适配\"，提出一个即插即用、无需重训策略的视角规范化（canonicalization）模块，解决相机视角偏移导致的性能崩塌问题。\n\n**2. 主要方法**\n- **问题重构**：把\"视角偏移\"重新表述为一个*局部*新视角合成问题。基于 **Locality 假设**（相机扰动幅度相对工作空间是小范围有界的），视角归一化被简化为一个与场景无关、与策略无关的**去遮挡（disocclusion）任务**。\n- **实现**：在**冻结的 VLA 策略**前面串接一个仅 **4M 参数**的 3D 高斯规范化器，把偏移视角下的观测图像\"翻译\"回训练时的标准视角，策略权重完全不动。\n- **对比基线**：相较于大规模微调或生成式数据增强等方案，避免了高计算开销与灾难性遗忘风险。\n\n**3. 结论/性能**\n- 揭示了 VLA 的脆弱性：相机支架的**微小位移**即可让 LIBERO 基准的成功率在最差情况下从约 **90% 跌至约 10%**。\n- GS-VLA 在三个正交维度上均带来提升：**(1) 不同策略架构、(2) 未见过的任务集、(3) 不同扰动尺度**，说明其泛化性来自模块本身而非对特定策略/任务的过拟合。\n- 结论：一个轻量视觉模块即可在**不重训策略**的前提下，挽回视角偏移造成的大部分性能损失。\n\n> 小提示：摘要中只给了定性描述（\"improves across three axes\"），未列出具体恢复到多少成功率，量化结果需查正文表格。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-20 13:05:35",
+ "topics": [
+  "vla-models"
+ ]
+}

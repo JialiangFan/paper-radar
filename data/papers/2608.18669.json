@@ -1,0 +1,16 @@
+{
+ "id": "2608.18669",
+ "title": "Reinforced Planning with Latent World Models",
+ "authors": "Armin Sommer, Jannik Schilling",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18669v1",
+ "abstract": "Humans solve complex problems by constructing plans and mentally simulating their outcomes with an internal model of the world. Machine learning has produced world models that similarly predict the outcomes of action sequences, but the improvement of candidate plans still isn't fully learned. Current planners are either hand-designed, distilled from a hand-designed optimizer, or learned only to inform an amortized policy rather than to revise the plan itself. We introduce the Reinforced Planning, a method based on the idea that search can be learned by reinforcing good search rules into a neural planner. Our implementation RP1 learns both how to evaluate imagined outcomes through a critic, as well as how to improve multi-step plans through an optimizer trained fully offline from imagined world-model roll-outs. To our knowledge, RP1 is the first method to fully learn how to improve multi-step plans. Furthermore, it can be trained independently of and attached to any pretrained latent world model. Across visual navigation, arm reaching, and robotic manipulation on two world-model backbones, RP1 substantially outperforms hand-designed search algorithms, reaching near-perfect success in several settings while using $1,000 \\times$ less world-model rollouts and being up to $67 \\times$ faster than the strongest alternative under concurrent planner inference.",
+ "summary": "## 论文速览：Reinforced Planning with Latent World Models (RP1)\n\n**1. 核心创新点**\n提出\"强化规划\"（Reinforced Planning）——把搜索规则通过强化学习直接内化进神经网络规划器，据作者称是首个**完全学习出\"如何改进多步计划\"**的方法，而非依赖手工设计的优化器或其蒸馏版本。\n\n**2. 主要方法**\n在预训练的**隐空间世界模型（latent world model）**之上训练两个模块：\n- **Critic**：学习评估世界模型\"想象\"出的未来结果；\n- **Optimizer**：学习迭代改进多步动作序列（计划本身），而不只是训练一个摊销策略（amortized policy）。\n\n训练**完全离线**，数据来自世界模型的想象 rollout；模块与世界模型解耦，可即插即用地挂载到任意预训练的 latent world model 上。\n\n**3. 结论/性能**\n在**视觉导航、机械臂 reaching、机器人操作**三类任务、两种世界模型骨干上，RP1 大幅超越手工设计的搜索算法：\n- 多个设置下达到**接近满分的成功率**；\n- 所需世界模型 rollout 减少约 **1000 倍**；\n- 在并发规划推理条件下，比最强对比方法快至 **67 倍**。\n\n**一句话评价**：把\"规划中的搜索过程\"本身变成可学习对象，兼顾了效果与推理效率，且对现有世界模型是低成本的可插拔增强。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-20 13:04:41",
+ "topics": [
+  "world-model-control"
+ ]
+}

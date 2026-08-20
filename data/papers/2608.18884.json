@@ -1,0 +1,16 @@
+{
+ "id": "2608.18884",
+ "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+ "authors": "Wei Yu, Suxing Liu, Minjie Yu, Jiahao Wang, Zhijian Zheng, Haocheng Deng, Bing Li",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18884v1",
+ "abstract": "Reinforcement-learning training of reasoning LLMs (e.g., GRPO) is expensive and requires a controllable environment, committing every contribution to a full training pipeline. We present EvoResearcher, a training-free, inference-time protocol that adds cost-bounded self-reflection to a single frozen LLM backbone. The protocol iterates generate -> self-critique -> revise until a maximum depth D is reached or the critique returns the CONFIRMED sentinel, an implicit early stop that lets the backbone self-verify its answer under a strict compute budget. Four self-reflective meta-reward components (correctness, efficiency, reflection depth, tool-call diversity) act as design principles instantiated as prompt-level mechanisms, so their benefits accrue with zero gradient updates. We validate the protocol on Big-Bench Hard (100 questions) and establish cross-domain behavior on GSM8K (500) and MATH (500) on the same frozen backbone, with cross-model replication on Qwen2.5-72B. All experiments use pure-reasoning benchmarks; the tool-call diversity component is validated in prompt-level form, and the environment-level and multi-agent extensions are design blueprints left to future work. On clean BBH the protocol does not raise accuracy beyond the 95% Wilson interval; its value is cost-bounded self-verification, with the CONFIRMED early stop terminating 82-88% of items at equal accuracy (about 2.1 generations per question).",
+ "summary": "## 论文摘要总结\n\n**标题**：Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models（EvoResearcher）\n\n---\n\n### 1. 核心创新点\n提出一种**无需训练**的推理阶段自反思协议，通过\"生成→自我批判→修订\"循环配合 CONFIRMED 提前停止信号，让冻结的 LLM 在严格算力预算内完成自我验证。\n\n### 2. 主要方法\n- **迭代循环**：generate → self-critique → revise，直到达到最大深度 D，或批判环节返回 `CONFIRMED` 哨兵标记（隐式提前停止）。\n- **四类自反思元奖励**：正确性、效率、反思深度、工具调用多样性——这些不是用于梯度更新的奖励函数，而是作为**设计原则在 prompt 层面实例化**，因此零梯度更新即可生效。\n- **骨干模型冻结**，对比 GRPO 等强化学习方案，省去昂贵训练管线与可控环境的要求。\n- **评测**：Big-Bench Hard（100 题）为主，GSM8K（500）、MATH（500）验证跨领域行为，并在 Qwen2.5-72B 上做跨模型复现。\n\n### 3. 结论/性能\n- 在干净的 BBH 上，**准确率提升并未超出 95% Wilson 置信区间**——即没有统计显著的精度增益。\n- 真正价值在于**成本受限的自我验证**：CONFIRMED 提前停止机制使 **82–88% 的题目提前终止**，在**准确率持平**的前提下，平均每题仅约 **2.1 次生成**。\n\n---\n\n**⚠️ 需要注意的局限（作者自述）**：全部实验均为纯推理类基准；工具调用多样性组件仅在 prompt 层面得到验证；环境级扩展与多智能体扩展仍停留在设计蓝图阶段，留作未来工作。总体而言，这更像是一篇\"效率/成本控制\"而非\"性能提升\"的工作。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:02:21",
+ "topics": [
+  "llm-reasoning"
+ ]
+}

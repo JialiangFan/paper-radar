@@ -1,0 +1,17 @@
+{
+ "id": "2608.18234",
+ "title": "GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction",
+ "authors": "Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18234v1",
+ "abstract": "Whole-body motion tracking policies turn a humanoid into a robust control interface: the teleoperator---or an upstream model---only supplies a coarse movement intent, while the low-level policy keeps the robot balanced and physically feasible. Existing trackers deliver this interface only on flat ground: trained in empty scenes, they never learn how contact with terrain and objects reshapes their dynamics, and they attempt to teach the policy to balance under any command by continually enlarging the reference-motion corpus, which stops working once feasible behaviors become environment-dependent. We present GigaBrain-WBC-0.5, the first Behavior World Model (BWM) for humanoid whole-body control. Rather than a purely reactive tracker, we train a causal Transformer to jointly predict its next action, next state, and the distribution over its next latent behavior command, so the network that acts also models how the environment shapes what it can do next. An automatic terrain-annotation pipeline recovers full 3D contact geometry from retargeted motion, enabling terrain annotation at the scale of existing motion datasets. The predicted distribution is reused at deployment to detect implausible commands online and retract them onto learned behaviors, so the robot attempts tasks in a \"best-effort\" manner. The result is a unified policy that takes real-time command, interacts with environment, and stays robust to implausible commands, falls, and disturbances. GigaBrain-WBC-0.5 achieves the highest success rate across all four regimes among three large-scale tracker baselines: 81.3% on terrain interaction (4.3x the strongest baseline), 83.1% under implausible commands, and 99.3% fall recovery (16.8x the strongest baseline). Hardware trials show robust interaction under missing supports and disturbances; the Unitree G1 checkpoint transfers to the Maker L01 robot with simple fine-tuning.",
+ "summary": "## GigaBrain-WBC-0.5：面向环境交互的人形机器人全身控制行为世界模型\n\n**1. 核心创新点**\n首次将\"行为世界模型（Behavior World Model）\"引入人形机器人全身控制——策略网络在输出动作的同时，还预测下一状态和下一步可行行为指令的分布，从而理解环境如何约束自己的能力边界，而不再是纯反应式的动作跟踪器。\n\n**2. 主要方法**\n- **因果 Transformer** 联合预测三路输出：下一动作、下一状态、下一潜在行为指令的分布；\n- **自动地形标注流水线**：从重定向后的动作数据中恢复完整 3D 接触几何，使地形标注可扩展到现有大规模动作数据集的量级；\n- **部署期指令回缩机制**：利用预测出的行为分布在线检测不可行指令，并将其\"拉回\"到已学习的可行行为上，让机器人以\"尽力而为（best-effort）\"的方式执行任务。\n\n**3. 结论/性能**\n在四类场景下均超过三个大规模跟踪器基线：地形交互成功率 **81.3%**（为最强基线的 4.3 倍）、不可行指令下 **83.1%**、跌倒恢复 **99.3%**（为最强基线的 16.8 倍）。真机实验验证了在缺失支撑面和外部扰动下的鲁棒交互；在 Unitree G1 上训练的权重经简单微调即可迁移到 Maker L01 机器人。\n\n> 一句话点评：这篇工作的关键转变是把\"不断扩充参考动作库以覆盖所有指令\"的老思路，换成了\"让策略自己建模环境决定的可行域\"——这正是平地训练无法泛化到接触丰富场景的症结所在。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-20 13:03:54",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
+}

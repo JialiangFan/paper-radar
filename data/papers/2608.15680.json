@@ -1,0 +1,17 @@
+{
+ "id": "2608.15680",
+ "title": "Robo-Dopamine 2.0: History-Conditioned and OOD-Aware Process Reward Modeling for Robotic Manipulation",
+ "authors": "Yijie Xu, Haopeng Jin, Run Zhou, Shengbang Liu, Sixiang Chen, Hongyang Cheng, Sicheng Hu, Peterson Co, Jinwen Luo, Huajie Tan, Shanghang Zhang",
+ "date": "2026-08-16",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.15680v1",
+ "abstract": "Vision-language-action (VLA) models improve robotic manipulation but remain vulnerable to compounding errors, scene changes, and off-trajectory states. Reinforcement learning can refine pretrained VLA policies, yet sparse success signals hinder exploration, while engineered dense rewards are costly and task-specific. Existing learned visual reward models often rely on static before-after observations, causing temporal ambiguity and weak discrimination between robustness-preserving variations and task-invalid failures under out-of-distribution (OOD) execution. We introduce Robo-Dopamine 2.0, a history- and OOD-aware process reward model with a pairwise prediction interface. It combines (1) history-conditioned pairwise rewards that use source-aligned reference panels for synthetic OOD queries and observed rollout history for online queries, while preserving the queried endpoints, and (2) an OOD-aware signed progress space that represents valid progress, robustness, failure, and recovery. A Signed-Hop Curriculum with transition-aware replay learns coarse execution ordering before fine-grained progress calibration. We also construct an OOD trajectory dataset and a five-family benchmark. Reference panels improve mean visual order consistency (VOC) from 0.967 to 0.986 and OOD-robust VOC from 0.906 to 0.958. With the same 400K pairwise-reward budget, Signed-Hop training with 25% replay reaches 0.9872 mean VOC, compared with 0.9858 for a matched-pool shuffled control. In downstream reinforcement learning, the full model achieves 86.8% mean RoboTwin success and 71/80 successful real-world insertions.",
+ "summary": "**Robo-Dopamine 2.0：面向机器人操作的历史条件化、OOD 感知过程奖励模型**\n\n1. **核心创新点**\n提出一种「历史条件化 + OOD（分布外）感知」的过程奖励模型，用带符号的进度空间取代传统「前后静态两帧对比」的视觉奖励，从而在离轨、场景变化等异常执行下仍能给出稠密可靠的奖励信号。\n\n2. **主要方法**\n- 采用**成对（pairwise）预测接口**：对合成 OOD 查询使用「源对齐参考面板」，对在线查询使用实际 rollout 历史作为条件，同时保留被查询的首尾端点，消除时间歧义。\n- 设计**OOD 感知的带符号进度空间**，显式区分「有效进展 / 鲁棒性变化 / 任务失败 / 错误恢复」四类状态，避免把保持鲁棒性的扰动误判为失败。\n- 训练上使用 **Signed-Hop 课程学习 + 转移感知回放（transition-aware replay）**，先学粗粒度的执行顺序，再做细粒度的进度校准。\n- 额外构建了 **OOD 轨迹数据集**和**五族任务基准**，用于评测。\n\n3. **结论/性能**\n- 视觉顺序一致性 VOC：0.967 → 0.986；OOD 鲁棒 VOC：0.906 → 0.958（参考面板带来的增益）。\n- 同为 400K 成对奖励预算下，Signed-Hop + 25% 回放达到 0.9872 平均 VOC，优于同池打乱对照组的 0.9858。\n- 下游强化学习中，完整模型在 **RoboTwin 上平均成功率 86.8%**，真实世界插入任务 **71/80 成功**。\n\n**一句话评价**：本质是把 VLA 的 RL 微调难题从「稀疏奖励 / 人工稠密奖励」转向「学得的、对 OOD 稳健的过程奖励」，增益主要来自历史条件化消除时序歧义 + 符号化区分失败与恢复；不过 Signed-Hop 课程相对对照组的提升（0.9872 vs 0.9858）幅度较小，真正的大头收益来自参考面板设计。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-20 13:06:49",
+ "topics": [
+  "vla-post-training",
+  "runtime-monitoring"
+ ]
+}

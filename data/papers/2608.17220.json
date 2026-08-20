@@ -1,0 +1,17 @@
+{
+ "id": "2608.17220",
+ "title": "PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance",
+ "authors": "Rabimba Karanjai, Yang Lu, Richard Williamson, Hemanth Hm, Prakhar Mehrotra, Lei Xu, Weidong, Shi",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17220v1",
+ "abstract": "Autonomous AI agents are emerging as interfaces for decentralized finance (DeFi) actions such as swaps, lending operations, and yield management. Because these agents rely on large language models (LLMs) to plan transactions, they inherit the LLM's susceptibility to prompt injection and lack of mechanisms to bind a verifier's approval to the exact transaction ultimately submitted on-chain. We present PACE (Policy-Attested Contract Execution), a transaction-level authorization framework that interposes between an LLM-based agent and on-chain execution. PACE introduces typed transaction intents, a deterministic policy verifier, and signed Policy Decision Records (PDRs) that cryptographically bind the approved intent, policy, and simulation report to the exact execution bytes, with replay and expiration protection. A Solidity smart account enforces PDR signatures on-chain with a measured overhead of 29,826-31,822 gas. We evaluate PACE against six baselines on 40 tasks spanning four attack categories plus benign utility (2,800 trials, 10 seeds). In our deterministic sandbox, PACE achieves a 0.00 unsafe execution rate and 0.00 false-positive rate on benign tasks, compared to 0.80 for the unguarded baseline. Ablation studies identify permissive policy settings (+57.5 pp) and the touched-contract allowlist (+12.5 pp) as the dominant safety components. To test whether the same deterministic floor holds for real model outputs, the artifact additionally provides a three-model live-LLM evaluation over the full task suite with repeated runs. A mainnet-fork harness is included for archive-RPC deployments, but fork results are reported only when the corresponding artifacts are generated. These auxiliary studies are separate from, and never substitute for, the deterministic benchmark. We frame our claims as logic-level safety within a reproducible benchmark rather than deployment-ready DeFi security.",
+ "summary": "## PACE 论文摘要总结\n\n**1. 核心创新点**\n在 LLM 智能体与链上执行之间插入一层「交易级授权」，用密码学签名把验证器的批准结果与最终上链的字节码严格绑定，从而抵御提示注入导致的不安全 DeFi 交易。\n\n**2. 主要方法**\n- **类型化交易意图（typed transaction intents）**：把 agent 的输出结构化。\n- **确定性策略验证器**：以确定性规则（而非 LLM 判断）审核意图。\n- **策略决策记录 PDR（Policy Decision Record）**：签名对象同时绑定「已批准意图 + 策略 + 模拟报告 + 精确执行字节」，并带重放保护与过期机制。\n- **Solidity 智能账户**：在链上强制校验 PDR 签名，实测额外开销约 29,826–31,822 gas。\n- **评测设置**：40 个任务（4 类攻击 + 良性效用任务）、6 条基线、2,800 次试验、10 个随机种子；另附三模型真实 LLM 实测与主网 fork 测试环境。\n\n**3. 结论/性能**\n在确定性沙箱中，PACE 的不安全执行率为 **0.00**，良性任务误报率同样为 **0.00**；而无防护基线的不安全执行率高达 **0.80**。消融实验显示安全性主要来自两个组件：策略宽松度设置（去掉后不安全率 +57.5 个百分点）和被触碰合约白名单（+12.5 个百分点）。作者明确限定其贡献为「可复现基准下的逻辑层安全性」，而非可直接部署的 DeFi 生产级安全方案。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:03:16",
+ "topics": [
+  "robot-harness",
+  "ai-safety-alignment"
+ ]
+}

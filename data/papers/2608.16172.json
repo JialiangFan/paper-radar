@@ -1,0 +1,16 @@
+{
+ "id": "2608.16172",
+ "title": "SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation",
+ "authors": "Xunyao Lei, Renjun Wu, Tianlin Huo, Xuesong Li",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16172v1",
+ "abstract": "At every re-observation point in a hierarchical Vision-Language-Action (VLA) system, two interface decisions must be made: when to terminate the current subtask and how far to execute the proposed action chunk. These decisions are mutually dependent---the optimal stopping point depends on what the executor plans to do, while the optimal execution length depends on where the subtask boundary lies---yet existing architectures evaluate them in isolation, an asymmetry neither module can overcome alone. We present SparkVLA, a stop-aware hierarchical VLA that resolves this mutual dependency by formulating both decisions as a single ranking: Stop competes against every action-prefix length in a unified candidate set, and the system selects the highest-scoring option, eliminating threshold tuning and requiring only offline ordinal preferences. An Anchor-Conditioned Context Encoding module caches a history-aware subtask anchor encoding onset-state memory and goal semantics, guiding visual-token pruning toward task-relevant regions; a Stop-Aware Action-Prefix Selection head scores all candidates via full self bnattention at chunk boundaries for efficiency. On RoboCerebra, SparkVLA achieves 47.12% success rate, surpassing the official hierarchical baseline by 30.57% and the strongest reproducible method by 26.83% Real-robot experiments on multi-step tasks further validate these gains on physical hardware.",
+ "summary": "## SparkVLA 论文摘要总结\n\n**1. 核心创新点**\n把分层 VLA 系统中\"何时终止当前子任务\"与\"执行多长的动作块\"这两个相互依赖的决策，统一建模为**单一排序问题**——让\"Stop\"选项与各种动作前缀长度在同一候选集中竞争打分，取最高分者，从而免去阈值调参。\n\n**2. 主要方法**\n- **统一候选排序**：Stop 与所有动作前缀长度放入同一候选集合，仅需**离线序数偏好（ordinal preferences）**监督即可训练，无需人工设定停止阈值。\n- **Anchor-Conditioned Context Encoding（锚点条件上下文编码）**：缓存一个包含起始状态记忆与目标语义、且具历史感知的子任务锚点表征，用它引导**视觉 token 剪枝**聚焦于任务相关区域。\n- **Stop-Aware Action-Prefix Selection 头**：仅在动作块边界处用**完整自注意力**对所有候选统一打分，兼顾精度与计算效率。\n\n**3. 结论/性能**\n- 在长程操作基准 **RoboCerebra** 上取得 **47.12% 成功率**，相比官方分层基线提升 30.57%、相比最强可复现方法提升 26.83%（摘要未明确是绝对还是相对提升，从数值看应为相对提升）。\n- 在**真实机器人**多步骤任务上的实验进一步验证了该方法在物理硬件上的有效性。\n\n> 备注：摘要中 \"full self bnattention\" 应为 \"full self-attention\" 的笔误。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-20 13:06:30",
+ "topics": [
+  "vla-models"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "2608.18647",
+ "title": "Progressive Experience Fusion for Multi-Task World Model Control in Endovascular Navigation",
+ "authors": "Harry Robertshaw, Maxence Boels, Nikola Fischer, Sebastien Ourselin, Christos Bergeles, Alejandro Granados, Thomas C Booth",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18647v1",
+ "abstract": "Autonomous endovascular navigation could support the delivery of mechanical thrombectomy to underserved areas, but controllers must navigate long, multi-stage paths across varying vascular anatomies. This study investigates Progressive Experience Fusion (PEF) to train a multi-task TD-MPC2 controller. We additionally evaluate a heuristic that changes the Model Predictive Path Integral planning horizon using residual action-sequence dispersion, and fine-tuning in a patient-specific simulation. Across five subtasks in ten known training anatomies with held-out targets, PEF achieved a mean success rate of 74%, compared with 37% for Soft Actor-Critic (p < 0.001) and 65% for base TD-MPC2 (p = 0.053). A PEF controller with adaptive-horizon planning trained on 30 vasculatures achieved a mean success rate of 90% in ten held-out vasculatures. The PEF agent successfully transferred to an unseen in vitro stroke patient vasculature under fluoroscopy, achieving a mean path ratio improvement from 63% to 80% with fine-tuning (p < 0.001), following 40x103 fine-tuning steps (corresponding to approximately 107 min of clinical inter-hospital transfer time). This work represents a proof of concept for multi-vasculature training and patient-specific adaptation, while further validation is required before clinical deployment.",
+ "summary": "## 论文摘要总结\n\n**1. 核心创新点**\n提出「渐进式经验融合」（Progressive Experience Fusion, PEF）训练范式，让单个多任务世界模型控制器能在多种血管解剖结构中完成长程、多阶段的自主血管介入导航（面向机械取栓）。\n\n**2. 主要方法**\n- 以 **TD-MPC2**（基于世界模型的强化学习）为骨干，用 PEF 方式渐进融合多任务/多血管的经验进行训练；\n- 在 **MPPI（模型预测路径积分）** 规划中引入自适应规划视野的启发式规则——依据残差动作序列的离散度动态调整 horizon；\n- 在患者特异性仿真环境中做微调（fine-tuning），并迁移到体外真实患者血管模型上、在 X 光透视下验证。\n\n**3. 结论 / 性能**\n- 10 个已知训练解剖结构、5 个子任务、目标点留出测试：PEF 平均成功率 **74%**，显著优于 SAC 的 37%（p<0.001），高于原始 TD-MPC2 的 65%（p=0.053，未达显著）；\n- 在 30 个血管上训练的「PEF + 自适应视野」控制器，在 10 个未见血管上成功率达 **90%**；\n- 迁移到未见过的体外卒中患者血管：经 4×10⁴ 步微调（约合 107 分钟，相当于院间转运时间）后，路径比（path ratio）从 63% 提升至 **80%**（p<0.001）。\n- 作者定位为多血管训练 + 患者特异性适配的**概念验证**，临床部署前仍需进一步验证。\n\n> 补充一句判断：TD-MPC2 与 base 的差距 p=0.053 未过显著性门槛，PEF 的主要增益其实体现在**规模化（30 血管）+ 自适应 horizon** 的组合上，单独看 PEF 训练范式的贡献证据偏弱。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-20 13:04:17",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
+}

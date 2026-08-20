@@ -1,0 +1,16 @@
+{
+ "id": "2608.18746",
+ "title": "Decision-Metric Alignment in Latent World Models: Diagnostics and Action-Conditioned Objectives for MPC Planning",
+ "authors": "Jiawei Wang, Ke Rui, Yushen Zuo, Yichun Feng, Minglei Li",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18746v1",
+ "abstract": "JEPA-style latent world models can use Euclidean distance to a goal latent as the cost for model-predictive control (MPC). Strong decoding of task variables, however, does not guarantee that this particular cost ranks candidate action sequences by real task progress. We call the latter property \\emph{decision-metric alignment}. We introduce Plan-Real Spearman, which measures latent--real rank agreement on random plans, and CEM-stage Spearman, which measures the same agreement as cross-entropy-method (CEM) search concentrates its proposal. We analyze sufficient conditions under which latent distance preserves real-cost rankings, identifying encoder distortion, terminal rollout error, and candidate margins as the controlling quantities. Guided by the observed empirical alignment gap, DA-LeWM augments LeWM with inverse-dynamics and demonstration-conditioned goal-action heads. Across all our experiments, DA-LeWM accelerates convergence and achieves higher online success than LeWM, while probe scores remain similar. These results show that action-conditioned objectives improve the geometry used by Euclidean-cost, CEM-based latent MPC.",
+ "summary": "**核心创新点**\n提出\"决策度量对齐\"（decision-metric alignment）这一新概念——即潜空间中到目标的欧氏距离能否真实地按任务进展对候选动作序列排序，并指出探针（probe）解码得好并不等于该代价函数适合做规划。\n\n**主要方法**\n- 诊断工具：提出两个指标——Plan-Real Spearman（在随机采样的规划上衡量潜空间代价与真实代价的秩相关）和 CEM-stage Spearman（在交叉熵方法搜索逐步收敛、提议分布集中的各阶段衡量同一相关性）。\n- 理论分析：给出潜空间距离保持真实代价排序的充分条件，指出编码器畸变（encoder distortion）、末端 rollout 误差、候选间隔（margin）是三个关键控制量。\n- 改进模型：基于 JEPA 式潜世界模型 LeWM，提出 DA-LeWM，增加逆动力学头（inverse-dynamics）和示教条件下的\"目标—动作\"头（demonstration-conditioned goal-action head），用动作条件化目标来塑造潜空间几何，服务于 MPC/CEM 规划。\n\n**结论/性能**\n实验中 DA-LeWM 相比 LeWM 收敛更快、在线任务成功率更高，而探针得分基本持平——说明性能提升并非来自表征\"信息量\"变多，而是来自动作条件目标改善了欧氏代价所依赖的潜空间几何结构，从而验证了\"表征质量 ≠ 决策度量对齐\"这一核心论点。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-20 13:05:15",
+ "topics": [
+  "world-model-control"
+ ]
+}

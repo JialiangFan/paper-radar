@@ -1,0 +1,17 @@
+{
+ "id": "2608.16697",
+ "title": "FabriMAE I Trust Myself? Self-Evaluating VLA Action Generation with Markov Attention Entropy",
+ "authors": "Aniri, Chen Yilin, Jinhe Bi, Junfei Guo, Donglai Ran, Xu Bian, Zengjie Jin, Yujun Wang, Yijun Tian, Volker Tresp, Fei Shen, Tat-Seng Chua, Yunpu Ma",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16697v1",
+ "abstract": "Vision-Language-Action models (VLAs) integrate visual perception, language instruction, and action generation into end-to-end policies across heterogeneous architectures. However, enabling VLAs to self-evaluate their action generation reliability without external supervision remains a major challenge. Existing methods either rely on expert annotations or estimate uncertainty only from output statistics, largely ignoring internal signals. In this work, we observe that internal visual modality entropy exhibits consistent distinctions between successful and failed tasks across heterogeneous VLAs. Although VLAs' architectures differ in their action generation, we show that they share a common latent action generation abstraction evolving under visual perception, language instruction, and state input, which we formulate as a Conditional Generative Markov Chain. Based on this formulation, we propose MAE (Markov Attention Entropy), a self-evaluation framework that directly converts internal attention signals into architecture-aware reliability scores, and introduce LIBERO-Reflect, a 4,000-episode benchmark combining 2,000 standard episodes and 2,000 challenging episodes across four subsets. Extensive experiments across heterogeneous VLA architectures and diverse scenarios show that MAE consistently outperforms state-of-the-art baselines on AUPR, AUROC, and FPR@95. We further instantiate FabriMAE for verifier-free test-time action selection, showing that MAE-guided multiple sampling improves PI-family robustness on LIBERO-Plus with small observed runtime overhead.",
+ "summary": "1. **核心创新点**：提出 MAE（Markov Attention Entropy），让 VLA 模型直接利用自身内部注意力熵信号来自评估动作生成的可靠性，无需外部监督或专家标注。\n\n2. **主要方法**：\n   - 观察到\"内部视觉模态熵\"在成功与失败任务间存在跨架构的一致差异。\n   - 将异构 VLA 的动作生成统一抽象为**条件生成马尔可夫链**（Conditional Generative Markov Chain），即潜在动作在视觉感知、语言指令与状态输入条件下的演化过程。\n   - 基于该建模，把内部注意力信号转换为\"架构感知\"的可靠性分数。\n   - 配套发布 **LIBERO-Reflect** 基准：4000 条 episode（2000 标准 + 2000 高难度），涵盖四个子集。\n   - 进一步实例化 **FabriMAE**，用于**无需验证器**（verifier-free）的测试时动作选择——多次采样后由 MAE 打分挑选。\n\n3. **结论/性能**：在多种异构 VLA 架构和不同场景下，MAE 在 AUPR、AUROC、FPR@95 三项指标上均稳定优于现有 SOTA 基线；在 LIBERO-Plus 上，MAE 引导的多次采样提升了 PI 系列模型的鲁棒性，且实测运行时开销很小。\n\n> 备注：标题中的 \"FabriMAE I Trust Myself?\" 疑似原文 \"Can I Trust Myself?\" 的转写错误。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-20 13:06:13",
+ "topics": [
+  "vla-models",
+  "runtime-monitoring"
+ ]
+}

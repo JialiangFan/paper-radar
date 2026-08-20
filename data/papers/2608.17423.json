@@ -1,0 +1,16 @@
+{
+ "id": "2608.17423",
+ "title": "Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups",
+ "authors": "Zeyun Deng, Yuzhe Lu, Yawei Wang, Linbo Liu, Qing Ping, Han Ding, Guande Wu, Panpan Xu, Jun Huan",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17423v1",
+ "abstract": "GRPO is increasingly used for reinforcement learning of vision-language-action (VLA) policies because, unlike PPO, it does not require training a critic. This simplification comes with a sampling cost: group-relative advantages require multiple rollouts from each scene. Under binary success rewards, groups whose rollouts all succeed or all fail have zero advantage and are discarded by dynamic sampling. These groups are especially common early in training, when most rollouts fail, wasting much of the expensive robotic rollout budget. We introduce Prism-GRPO, which augments binary outcome reward with a weighted trajectory-level execution-quality score. By splitting same-outcome groups into a quality spectrum, Prism-GRPO recovers training signal while ensuring that every success still outranks every failure. Quality scores can be derived from simulator contacts, executed actions, or visual observations, avoiding task-specific progress rewards. We prove that Prism-GRPO never increases the probability that a sampled group is discarded for having zero advantages, and derive a gradient-alignment condition under which its combined update remains a local ascent direction for task success. Across four RoboTwin tasks spanning different horizons and coordination patterns, Prism-GRPO improves success and quality at matched rollout budgets and reaches target success rates with up to 56% fewer rollouts. It also suppresses a reward-hacking shortcut, with the cleaner behavior transferring under direct deployment to a real robot. Through ablations, we show consistent gains across contact-, smoothness-, and VLM-derived quality signals.",
+ "summary": "## Prism-GRPO：通过拆分同结果组加速 VLA 策略优化\n\n**1. 核心创新点**\n在二元成功奖励之外引入轨迹级\"执行质量\"分数，把原本优势为零、会被动态采样丢弃的\"全成功/全失败\"组拆成一个质量梯度，从而回收训练信号、省下昂贵的机器人 rollout 预算。\n\n**2. 主要方法**\n- 基于 GRPO（相比 PPO 无需训练 critic）做 VLA 策略的强化学习。\n- 奖励 = 二元成功结果 + 加权的轨迹级质量分；权重设计保证**任何成功轨迹的总分仍高于任何失败轨迹**，不破坏原任务目标的排序。\n- 质量分来源通用而非任务定制：仿真器接触信息、执行动作的平滑度、或 VLM 从视觉观测中打分。\n- 理论侧给出两条结果：证明该方法不会提高\"某组因零优势被丢弃\"的概率；并推导出一个梯度对齐条件，在该条件下组合更新仍是任务成功率的局部上升方向。\n\n**3. 结论/性能**\n- 在 RoboTwin 的 4 个任务（覆盖不同任务时长与双臂协调模式）上，同等 rollout 预算下成功率与执行质量均提升；达到目标成功率所需 rollout **最多减少 56%**。\n- 抑制了一种 reward hacking 的捷径行为，且这种更\"干净\"的行为在直接部署到真实机器人时可以迁移。\n- 消融实验显示：接触类、平滑度类、VLM 类三种质量信号都带来一致增益，方法对信号来源不敏感。\n\n**一句话点评**：这是针对 GRPO 在稀疏二元奖励下\"训练早期大量组被浪费\"这一具体痛点的低成本改造——不改算法框架，只在奖励里加一个保序的连续项，属于工程上很容易复用到其他 VLA RL 场景的技巧。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-20 13:01:41",
+ "topics": [
+  "vla-post-training"
+ ]
+}

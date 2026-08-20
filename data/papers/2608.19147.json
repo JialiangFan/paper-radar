@@ -1,0 +1,16 @@
+{
+ "id": "2608.19147",
+ "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+ "authors": "Tate Berenbaum, Muthaiah Venkatachalam",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19147v1",
+ "abstract": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and passes activations to the next. Three techniques make this fast enough to be useful. First, we recover the speed of the unsplit model: a naive per-stage export runs well below monolithic inference because it misses an OpenVINO GPU optimization, and injecting a beam_idx Gather into each shard triggers that optimization (the IndirectKVCache fusion) and brings the shards to parity. Second, we leverage speculative decoding on stateful OpenVINO models. Third, the pipeline serves several users at once by interleaving their requests across the stages, each request carrying its own cache (micro-batching). Together, a two-node Llama 3.1 8B INT4 pipeline serves two concurrent users at 1.79x the single-user throughput of the unsplit model on the same hardware, and the gap widens under simulated wide-area latency. The same design scales to a 70B model that no single fleet member can hold: a four-node deployment of Lunar Lake AI PCs on Intel Tiber Cloud serves a single user at interactive speed, with output token-for-token identical to the same four-node pipeline decoding without speculation. Code, raw benchmark logs, and reproduction scripts ship as a self-contained package at https://github.com/labscommunity/pipeline-sharded-inference-paper (in the top-level reproduction/ directory).",
+ "summary": "**核心创新点**：把大模型按层切成预编译的 OpenVINO 流水线分片，让多台闲置的 Intel AI PC 通过普通网络协同推理，从而跑起单机内存装不下的大模型（如 70B）。\n\n**主要方法**：\n- **流水线并行**：模型按层切分为多个 stage 分片，每片单独预编译成 OpenVINO 图，每台机器跑一片并把激活值传给下一台。\n- **恢复分片后的速度**：朴素的分片导出会丢失 OpenVINO 的 GPU 优化，作者在每个分片中注入 `beam_idx` Gather 算子来触发 IndirectKVCache 融合，使分片性能回到与未切分模型持平。\n- **投机解码**：在 stateful 的 OpenVINO 模型上做 speculative decoding 加速。\n- **微批处理**：多个用户请求在各 stage 间交错执行，每个请求携带自己的 KV cache，实现多用户并发服务。\n\n**结论/性能**：\n- 双节点 Llama 3.1 8B INT4 流水线同时服务 2 个用户时，吞吐量达到同硬件上未切分模型单用户吞吐的 **1.79 倍**；在模拟广域网延迟下优势进一步扩大。\n- 四节点 Lunar Lake AI PC（Intel Tiber Cloud）部署可服务单机无法容纳的 **70B 模型**，达到可交互速度，且输出与不用投机解码的同款四节点流水线**逐 token 完全一致**（无精度损失）。\n- 代码、原始 benchmark 日志与复现脚本已开源打包发布。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-20 13:00:26",
+ "topics": [
+  "efficiency-systems"
+ ]
+}
