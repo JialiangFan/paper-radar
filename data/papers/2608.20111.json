@@ -1,0 +1,18 @@
+{
+ "id": "2608.20111",
+ "title": "Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms",
+ "authors": "Yanchen Guan, Xingcheng Liu, Bin Rao, Chengyue Wang, Guofa Li, Yunjian Li, Lishengsa Yue, Zhiyong Cui, Chengzhong Xu, Zhenning Li",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20111v1",
+ "abstract": "End-to-end autonomous driving has evolved from camera-to-control regression toward planning-oriented systems that use structured representations, trajectory-level outputs, and increasingly realistic evaluation protocols. This survey reviews this transition across behavior cloning, conditional imitation learning, privileged distillation, BEV and vectorized planning, unified perception-prediction-planning architectures, world-model-based planners, and vision-language-action systems. We argue that the key distinction in modern end-to-end driving is not whether intermediate representations are used, but whether they are learned, supervised, and evaluated to support safe, feasible, and route-compliant planning. To organize the literature, we synthesize existing methods along four axes: input representation, planning output, supervision signal, and evaluation protocol. We further examine the benchmark shift from open-loop trajectory matching to closed-loop simulation, non-reactive real-log evaluation, long-tail testing, and human-preference-aware metrics. Our analysis highlights that architectural progress is difficult to interpret without benchmark-consistent evaluation, and that displacement-based open-loop metrics alone provide limited evidence for safe and human-aligned driving. We conclude with open challenges in uncertainty-aware planning, learner-expert mismatch, runtime safety assurance, language-action grounding, world-model validation, and reproducible benchmarking.",
+ "summary": "## 论文总结\n\n**标题**：《面向规划的端到端自动驾驶：架构、评估与新兴范式》（综述类论文）\n\n### 1. 核心创新点\n提出端到端自动驾驶的关键区别不在于\"是否使用中间表征\"，而在于这些表征是否被**学习、监督并评估**以支撑安全、可行且符合路线约束的规划。\n\n### 2. 主要方法\n系统梳理了从\"摄像头到控制\"的回归式方法向面向规划系统的演进脉络，涵盖行为克隆、条件模仿学习、特权信息蒸馏、BEV 与矢量化规划、感知—预测—规划一体化架构、基于世界模型的规划器，以及视觉—语言—动作（VLA）系统。作者用**四个维度**组织已有文献：输入表征、规划输出、监督信号、评估协议；并同时梳理了评测基准的迁移——从开环轨迹匹配转向闭环仿真、非反应式真实日志回放、长尾场景测试和面向人类偏好的指标。\n\n### 3. 结论/性能\n本文为综述，无新模型性能数据。主要结论是：**脱离基准一致性的架构进展难以解释**，仅靠基于位移误差（如 ADE/FDE）的开环指标不足以证明驾驶行为安全且符合人类偏好。文末列出开放挑战：不确定性感知规划、学习者—专家失配、运行时安全保障、语言—动作对齐、世界模型验证，以及可复现的基准评测。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-21 13:05:42",
+ "topics": [
+  "world-model-control",
+  "llm-planning",
+  "applications"
+ ]
+}

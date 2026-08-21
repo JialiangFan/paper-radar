@@ -1,0 +1,17 @@
+{
+ "id": "2608.19661",
+ "title": "World-Model-Grounded LLM Planning for AUV and ASV Navigation Near Offshore Wind Farms",
+ "authors": "Markus Buchholz, Ignacio Carlucho, Yvan R. Petillot",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19661v1",
+ "abstract": "Large language models can turn a natural-language mission into a sequence of robot actions, but they do not have a sense of physics: they cannot judge how long a command should run, or whether it will make the robot drift into an obstacle. We proposed the use of a world model to expand the capabilities of Large Language model-based planners. Our method has three components: a physics-grounded neural world model, a three-phase gradient-based trajectory optimizer, and a Model Predictive Controller (MPC)-style closed-loop replanner with a trust-region guard. The language model decides what to do, and the world model decides how long, whether that means driving eight thrusters through 6 DOF or two differential thrusters through 3 DOF. We evaluate two marine vehicle classes operating near offshore wind infrastructure: a 6-DOF Autonomous Underwater Vehicle (AUV) and a 3-DOF differential-drive Autonomous Surface Vehicle (ASV). In five benchmark missions per platform, both vehicles reach every goal with zero predicted collisions, and both transfer to GazeboSim under ocean current, waves, and thruster dynamics, remaining collision-free and cutting GazeboSim goal-distance error versus the ungrounded baseline by 70-82% (ASV) and roughly 93% (AUV), after a residual fine-tuning pass that separately reduces surrogate rollout Root Mean Square Error (RMSE) by 60% (AUV) and 69% (ASV). For the ASV we further demonstrate a Vision language model (VLM)-assisted semantic-mapping pipeline that extracts obstacles and environmental context from satellite imagery, nautical charts, and forecast Application Programming Interface (API) instead of onboard sensors, reaching 96% navigability accuracy as a drop-in replacement for hand-specified obstacle geometry.",
+ "summary": "## 论文总结\n\n**标题**：World-Model-Grounded LLM Planning for AUV and ASV Navigation Near Offshore Wind Farms\n（面向海上风电场附近 AUV/ASV 导航的世界模型接地 LLM 规划）\n\n### 1. 核心创新点\n用一个物理接地的神经世界模型为 LLM 规划器补上\"物理直觉\"——LLM 负责决定**做什么**，世界模型负责决定**做多久、会不会撞**，从而把自然语言任务可靠地转成可执行的海洋机器人轨迹。\n\n### 2. 主要方法\n三个组件构成闭环：\n- **物理接地神经世界模型**：作为动力学代理模型（surrogate），预测指令执行后的状态演化；训练后再做一次残差微调（residual fine-tuning）。\n- **三阶段梯度轨迹优化器**：在世界模型上对动作时长/序列做可微优化。\n- **MPC 式闭环重规划器 + 信任域约束（trust-region guard）**：滚动重规划，限制单步偏离以防代理模型误差累积。\n\n覆盖两类平台：6 自由度 AUV（8 推进器）与 3 自由度差速驱动 ASV（2 推进器）。此外为 ASV 增加了 **VLM 辅助语义建图**流水线，从卫星影像、航海图和气象预报 API 中提取障碍物与环境上下文，替代船载传感器与人工标注的障碍几何。\n\n### 3. 结论 / 性能\n- 每平台 5 个基准任务，两类载具均到达全部目标，**预测轨迹零碰撞**。\n- 迁移到 GazeboSim（含洋流、波浪、推进器动力学）后仍保持无碰撞，相比\"无世界模型接地\"的基线，目标点距离误差降低 **ASV 70–82%、AUV 约 93%**。\n- 残差微调单独使代理模型 rollout 的 RMSE 降低 **AUV 60%、ASV 69%**。\n- VLM 语义建图达到 **96% 可通航性准确率**，可作为手工障碍几何的即插即用替代。\n\n> 两点值得注意：碰撞指标是**世界模型预测**下的零碰撞（Gazebo 中亦称无碰撞，但非真机验证）；每平台仅 5 个任务、且全部在仿真中评估，样本规模较小，实海况泛化能力尚待验证。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-21 13:04:01",
+ "topics": [
+  "world-model-control",
+  "llm-planning"
+ ]
+}

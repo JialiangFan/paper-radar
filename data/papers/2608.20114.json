@@ -1,0 +1,17 @@
+{
+ "id": "2608.20114",
+ "title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+ "authors": "Siyuan Ma, Boshi Zhang, Yutian Zhang, Qinglian Wu, Jiaqi Zhai, Dong Wei, Qiaojun Yu",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20114v1",
+ "abstract": "Mobile manipulation requires a robot to predict how locomotion and arm motion jointly alter future observations and control. Existing world-action models, developed largely for fixed-base platforms, do not explicitly distinguish camera ego-motion from base and arm actions. Here we introduce DECOWAM, a whole-body world-action model that separates these factors through dedicated conditional interfaces. DECOWAM freezes an adapted FastWAM backbone and trains residual adapters, an action-equivalent future bottleneck distilled from privileged observations, adversarially separated base and arm latents, and base-velocity conditioning for video prediction. We further introduce ARMDOG, a real-robot dataset that synchronizes video, whole-body state and action, and language. On a fixed replay protocol, DECOWAM improved both future-video and action prediction over FastWAM, reducing action MSE by 21.7% with 25.95M trainable adaptation parameters. Across 79 closed-loop trials per method, it achieved the highest observed whole-body coordination and base-displacement robustness among the compared systems, while task completion remained comparable to the strongest baseline. These results show that embodiment-aware factorization can support parameter-efficient joint visual prediction and whole-body control under moving viewpoints.",
+ "summary": "## DECOWAM 论文摘要总结\n\n**1. 核心创新点**\n提出一种\"解耦式\"全身世界-动作模型，把移动操作中相机自身运动、底盘运动和机械臂动作三类因素显式分离建模，从而在移动视角下同时实现视频预测与全身控制。\n\n**2. 主要方法**\n- 冻结改造后的 FastWAM 主干网络，只训练残差适配器（residual adapters），参数高效（仅 25.95M 可训练参数）；\n- 设计\"动作等价的未来瓶颈层\"（action-equivalent future bottleneck），由特权观测（privileged observations）蒸馏得到；\n- 用对抗训练分离底盘隐变量与机械臂隐变量；\n- 引入底盘速度条件（base-velocity conditioning）来指导视频预测；\n- 同时发布 ARMDOG 真机数据集，同步了视频、全身状态与动作、语言指令。\n\n**3. 结论/性能**\n- 在固定回放协议下，未来视频预测和动作预测均优于 FastWAM，动作 MSE 降低 **21.7%**；\n- 每种方法 79 次闭环实验中，DECOWAM 在全身协调性和底盘位移鲁棒性上表现最佳，任务完成率与最强基线持平；\n- 说明\"面向具身结构的因子分解\"确实能以较低参数代价，支撑动态视角下的联合视觉预测与全身控制。\n\n> 一句话评价：亮点在于**解耦 + 参数高效微调**，但任务完成率并未超过基线，主要收益体现在运动协调性与鲁棒性上。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-21 13:04:19",
+ "topics": [
+  "world-model-learning",
+  "robot-manipulation"
+ ]
+}

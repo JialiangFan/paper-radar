@@ -1,0 +1,16 @@
+{
+ "id": "2608.20202",
+ "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+ "authors": "Mengru Wang, Haozhe Luo, Zhenqian Xu, Zhixiang Cui, Haoming Xu, Qu Yang, Jizhan Fang, Junfeng Fang, Ningyu Zhang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20202v1",
+ "abstract": "Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions. However, existing memory benchmarks mainly evaluate whether information is correctly extracted, stored, and retrieved, while largely overlooking how retrieved memories reshape model reasoning and affect performance on the current task. We identify memory-induced cognitive traps: even faithfully recorded and semantically relevant memories can distort model reasoning or beliefs and degrade current task performance. To systematically evaluate these failure modes, we introduce MemTrapBench, which covers two forms of cognitive traps: Reasoning Fixation and Belief Distortion. Experiments across two model families and five representative memory frameworks show that MemTrapBench is challenging: all evaluated memory strategies underperform the no-memory setting, with even the strongest methods suffering drops of more than 10%. To mitigate these cognitive traps, we propose AdaptiveMem, a simple yet effective inference-time method that instructs LLMs to avoid memory traps. AdaptiveMem mitigates cognitive traps on MemTrapBench while preserving or improving performance on standard memory benchmarks across diverse memory frameworks.",
+ "summary": "## MemTrapBench 论文摘要总结\n\n**1. 核心创新点**\n首次提出并系统评测\"记忆诱发的认知陷阱\"——即使记忆被准确记录且语义相关，也可能扭曲模型推理、反而拖累当前任务表现。\n\n**2. 主要方法**\n构建 MemTrapBench 基准，覆盖两类陷阱：**推理固着**（Reasoning Fixation，被过往解法路径锁死）和**信念扭曲**（Belief Distortion，被旧信息带偏判断）。在 2 个模型家族 × 5 种主流记忆框架上做评测。同时提出 **AdaptiveMem**——一种无需训练的推理时方法，通过提示引导 LLM 主动识别并规避记忆陷阱。\n\n**3. 结论/性能**\n该基准极具挑战性：**所有记忆策略的表现都低于\"无记忆\"基线**，最强方法也下降超过 10%，说明现有记忆机制存在系统性缺陷。AdaptiveMem 能有效缓解认知陷阱，且在多种记忆框架下都不损害（甚至提升）标准记忆基准上的原有性能。\n\n---\n\n**一句话点评**：这篇工作把记忆评测的关注点从\"存取是否正确\"转向了\"取回之后是否有害\"，指出了当前 LLM memory 系统一个被忽视的失效模式。\n\n如果你想要更完整的文献综述式笔记（含背景、贡献、方法论，并自动存入 Obsidian），可以用 `/paper-review`。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:02:23",
+ "topics": [
+  "agent-benchmarks"
+ ]
+}

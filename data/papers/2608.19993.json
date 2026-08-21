@@ -1,0 +1,16 @@
+{
+ "id": "2608.19993",
+ "title": "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees",
+ "authors": "Yu Chen, Ruishuo Chen, Xun Wang, Zhuoran Li, Longbo Huang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19993v1",
+ "abstract": "Loading reusable skill documents into a bounded context window is now the primary way large language model (LLM) agents acquire task-specific capabilities, which makes skill selection a first-order determinant of task performance and token cost. Yet current agents score skills independently by semantic relevance and assemble the set by top-$k$ or greedy packing, with no quality guarantee or cost awareness on the selected set. As a result, redundant or poorly chosen skills waste scarce context tokens and can even degrade performance. We give the first model of how the selected skill set shapes execution outcomes and cast skill selection as an optimization problem: choose a skill set under a hard token budget to maximize a monotone submodular benefit minus context penalty. For this problem, we develop Best Prefix Selection (BPS), a polynomial-time algorithm, and prove, to our knowledge, the first performance guarantee for skill selection: a bicriteria $(1-1/e,1)$ approximation whose benefit coefficient is optimal in polynomial time. On a contamination-controlled BigCodeBench variant, BPS outperforms all the baselines, reaching $0.73$ measured task success versus $0.20$--$0.52$ for released skill routers, text retrievers, and the executor's own selection, on $28\\%$ fewer tokens than the strongest released router.",
+ "summary": "## 论文速览：Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees\n\n**1. 核心创新点**\n首次把 LLM agent 的「技能文档选择」形式化为有限上下文预算下的组合优化问题，并给出带理论保证（双标准近似）的多项式时间算法，取代现有按语义相关性独立打分再 top-k / 贪心装包的做法。\n\n**2. 主要方法**\n- 先建立一个刻画「所选技能集合如何影响执行结果」的模型（而非把技能当作彼此独立的检索项）。\n- 将选择问题写成：在硬性 token 预算约束下，最大化「单调次模（monotone submodular）收益 − 上下文惩罚项」。次模性用于刻画技能之间的冗余/边际递减，惩罚项用于刻画塞入过多文档反而拖累性能的代价。\n- 提出 **Best Prefix Selection (BPS)** 算法，多项式时间；证明其达到 $(1-1/e,\\ 1)$ 的 bicriteria 近似——即收益侧达 $1-1/e$、预算侧不超支，且作者称该收益系数在多项式时间内是最优的（$1-1/e$ 是次模最大化的经典上界）。\n\n**3. 结论 / 性能**\n在一个做了污染控制（contamination-controlled）的 BigCodeBench 变体上：\n- BPS 任务成功率 **0.73**，全面超过所有基线（已发布的 skill router、文本检索器、以及执行器 agent 自选技能）的 **0.20–0.52**；\n- 同时比最强基线 router 少用 **28%** 的 token。\n\n即：在质量和成本两个维度上同时改进，并且是该问题上（据作者所述）第一个有性能保证的方法。\n\n**一点保留**：结论目前只在单一 benchmark（BigCodeBench 变体）上验证，且理论保证依赖「收益函数是单调次模的」这一建模假设是否真实成立——实际技能之间的交互（如互相冲突、顺序依赖）未必满足次模性，这是值得进一步关注的点。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:03:18",
+ "topics": [
+  "llm-agents"
+ ]
+}

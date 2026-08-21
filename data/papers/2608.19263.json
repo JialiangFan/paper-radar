@@ -1,0 +1,17 @@
+{
+ "id": "2608.19263",
+ "title": "The Evaluation Context Protocol (ECP): A Portable Contract for AI Agent Evaluation",
+ "authors": "Aniket Wattamwar, Manav Anandani, Mrunal Kakirwar",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19263v1",
+ "abstract": "The evolution of artificial intelligence has necessitated a fundamental shift from evaluating isolated Large Language Models (LLMs) to assessing autonomous agentic architectures. This paper explores the critical methodologies for evaluating AI agents and the essential role of advanced observability infrastructure. We analyze the architectural components of agents and identify the severe limitations of current evaluation paradigms, including benchmark exploitation, the \"confidently wrong\" phenomenon, and the discrepancy between theoretical capability and operational reliability. To begin addressing the fragmentation in current evaluation infrastructure, this paper proposes the Evaluation Context Protocol (ECP), an early-stage, vendor-neutral framework intended to act as a portable evaluation contract layer for agentic systems. In its current form ECP defines a small JSON-RPC interface over which an agent exposes its user-visible output, the tool calls it made, and evaluator-safe audit context, and against which programmatic checks can be run uniformly across frameworks and continuous integration systems. We describe an open-source reference implementation that includes adapters for LangChain, LlamaIndex, CrewAI, and PydanticAI, and we situate the design against failure modes documented in the recent literature. ECP is presented as work in progress rather than a finished standard: the evaluation surface, method set, and grader families are all expected to change as the protocol is exercised against more systems, and the empirical validation required to justify adoption is outlined as future work.",
+ "summary": "## 论文总结：ECP（评估上下文协议）\n\n**1. 核心创新点**\n提出 ECP（Evaluation Context Protocol）——一个厂商中立、可移植的\"评估契约层\"，用统一接口解决当前 AI Agent 评估基础设施碎片化的问题。\n\n**2. 主要方法**\n- 先分析 Agent 的架构组成，指出现有评估范式的严重缺陷：**基准测试被刷分利用（benchmark exploitation）**、**\"自信地出错\"（confidently wrong）现象**，以及**理论能力与实际运行可靠性之间的落差**。\n- ECP 定义了一套精简的 **JSON-RPC 接口**，Agent 通过它对外暴露三类信息：面向用户的最终输出、执行过的工具调用记录、以及对评估方安全可见的审计上下文（evaluator-safe audit context）。基于该接口可以跨框架、跨 CI 系统统一运行程序化检查（programmatic checks）。\n- 提供了**开源参考实现**，已适配 LangChain、LlamaIndex、CrewAI 和 PydanticAI 四个主流框架。\n\n**3. 结论/性能**\n本文明确定位为 **work in progress，而非成熟标准**——目前只有协议设计与参考实现，尚**未给出实证评测结果**。作者承认评估面、方法集与打分器族（grader families）都会随着在更多系统上的实践而变化，**支撑其被采纳所需的实证验证被列为未来工作**。\n\n> 一句话点评：这是一篇偏\"标准提案/立场论文\"性质的工作，贡献在于接口设计和多框架适配器，若关注其实际有效性需等待后续实证。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-21 13:00:28",
+ "topics": [
+  "agent-benchmarks",
+  "llm-agents"
+ ]
+}

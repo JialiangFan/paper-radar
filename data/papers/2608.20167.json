@@ -1,0 +1,16 @@
+{
+ "id": "2608.20167",
+ "title": "BreakGuard: Towards Detecting Dependency Breaking Changes with LLM-Generated Tests",
+ "authors": "Rachna Raj, Benoit Baudry, Diego Elias Costa",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20167v1",
+ "abstract": "Open-source libraries play an important role in software development by providing reusable features that expedite the development process. As libraries evolve, they release new versions that add features, fix bugs, or apply security patches. In this process, they may break the contract established with their clients by introducing breaking changes (BCs) that alter the runtime behavior and break client applications. Client-side test suites often fail to detect these BCs because of limited library coverage that does not exercise all library methods used in the client's codebase.\n  We propose BreakGuard, an approach that generates a test suite to detect breaking changes in clients. BreakGuard statically extracts every client method (focal method) that invokes the target library method (call site), then generates tests per focal method. A test detects a BC if it passes on the pre-breaking version and fails on the breaking version. We evaluate our approach on 89 real-world breaking changes from the BUMP dataset, using 3 LLMs (GPT4o, Qwen3-coder-480B, GPT-OSS-120B) and three context levels: minimal, method, and class. Using the best-performing configuration, BreakGuard detects 30.3% of breaking changes (27 of 89) at a mean cost of roughly $0.90 USD per detected breaking change. We successfully detected BCs from different library categories (e.g., JSON libraries, logging, parsing), but we find LLM-generated tests to be more reliable for detecting crash-type breaking changes as opposed to behavioural BCs.",
+ "summary": "## BreakGuard 论文摘要总结\n\n**1. 核心创新点**\n提出 BreakGuard：通过静态分析定位客户端中调用库方法的代码，再用 LLM 为这些代码自动生成测试用例，从而检测出客户端自身测试套件漏掉的依赖库\"破坏性变更\"（Breaking Changes, BC）。\n\n**2. 主要方法**\n- **静态提取**：扫描客户端代码，找出所有调用目标库方法（call site）的\"焦点方法\"（focal method）。\n- **LLM 生成测试**：针对每个焦点方法生成测试，实验对比了 3 个模型（GPT-4o、Qwen3-coder-480B、GPT-OSS-120B）和 3 种上下文粒度（minimal / method / class）。\n- **判定准则**：测试在库的\"变更前版本\"通过、在\"破坏版本\"失败，即判定检测到一个 BC。\n- **评测集**：BUMP 数据集中的 89 个真实世界破坏性变更。\n\n**3. 结论/性能**\n- 最佳配置下检测出 **30.3%（27/89）** 的破坏性变更，平均成本约 **$0.90 美元/个**已检测 BC。\n- 覆盖 JSON、日志、解析等多种库类别。\n- 关键发现（也是局限）：LLM 生成的测试对**崩溃型（crash-type）BC** 较可靠，而对**行为型（behavioural）BC** 检测能力明显不足。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:02:38",
+ "topics": [
+  "applications"
+ ]
+}

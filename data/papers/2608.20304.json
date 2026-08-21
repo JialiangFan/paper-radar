@@ -1,0 +1,16 @@
+{
+ "id": "2608.20304",
+ "title": "Calibration-Induced Degeneracy in LLM Financial Forecasting: An Audit-Trailed Case Study on Next-Day Market Risk",
+ "authors": "Arin Mohanty",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20304v1",
+ "abstract": "Costly LLM features matter only if calibration lets them affect the forecast. We document a failure of this link in a next-day risk study of two broad-market funds. Full-history scoring preceded the 2022 calibration. Calibration then set all four LLM weights to zero. The 856 later scores therefore could not affect the evaluation. We call this calibration-induced degeneracy. Allowing signed weights reactivated all four mappings. None improved forecasts after familywise correction. By contrast, a near-zero-cost headline count reduced SPY variance-forecast loss by 0.001720 (95 percent familywise interval: [0.000719, 0.002830]). The cheap baseline is therefore a critical diagnostic. We propose a calibration-viability checkpoint. Fit the mapping, perturb the feature over prespecified calibration values, and require a meaningful forecast response before acquiring holdout features. The check uses no holdout outcomes. Here, it would have stopped the paid full-history inference phase.",
+ "summary": "## 论文摘要（中文）\n\n**1. 核心创新点**\n论文提出并记录了\"校准诱导退化\"（calibration-induced degeneracy）现象——昂贵的 LLM 特征在校准阶段被赋予零权重，导致其后续所有推理输出对预测结果完全无效，并据此提出一个在付费推理前就能拦截浪费的\"校准可行性检查点\"。\n\n**2. 主要方法**\n- 以两只宽基市场 ETF 的**次日风险（方差）预测**为案例，全流程带审计轨迹（audit-trailed）。\n- 先对全历史样本用 LLM 生成四类特征打分，再进行 2022 年的权重校准；校准结果将四个 LLM 权重全部置零，使其后 856 个打分无法进入评估。\n- 对比实验：放宽约束、允许**带符号权重**以\"重新激活\"这四个映射；同时设置一个近乎零成本的基线特征——**新闻标题计数**。\n- 统计上采用 familywise（族系错误率）校正与置信区间来判定显著性。\n- 提出的检查点做法：先拟合映射 → 在预设校准取值范围内扰动特征 → 要求预测输出有实质响应，才允许去采购/生成 holdout 期的特征；该检查**不使用任何 holdout 期的真实结果**，因此不存在数据泄露。\n\n**3. 结论 / 性能**\n- 四个 LLM 映射即使被重新激活，经 familywise 校正后**均未改善**预测。\n- 零成本的标题计数基线反而使 SPY 的方差预测损失下降 **0.001720**（95% familywise 区间 [0.000719, 0.002830]），说明廉价基线是关键的诊断工具。\n- 若事先执行所提出的校准可行性检查点，本研究中**付费的全历史 LLM 推理阶段本可被直接叫停**，从而避免无效开销。\n\n**一句话点评**：这是一篇\"负面结果 + 方法论警示\"型论文，重点不在于 LLM 能否预测风险，而在于揭示评估流水线中一个容易被忽视的结构性缺陷——特征再贵，只要校准把它归零，后续投入就全是沉没成本。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:01:15",
+ "topics": [
+  "applications"
+ ]
+}

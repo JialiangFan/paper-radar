@@ -1,0 +1,17 @@
+{
+ "id": "2608.19589",
+ "title": "OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation",
+ "authors": "Jiaqi Wang, Zhou Fang, Qiongfeng Shi, Yi Zhou",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19589v1",
+ "abstract": "Pretrained Vision-Language-Action models provide a strong foundation for robot learning, but sequentially adapting them to diverse skills can perturb the representations and velocity mappings used by previous skills, leading to catastrophic forgetting. Architecture-based approaches improve retention by isolating skills but lead to increased inference footprint. Recent subspace-constrained methods restrict parameter updates in an orthogonal subspace to minimize interference but impose a unified constraint on the entire model. We analyze the distinct roles of internal VLA components and identify two VLA-specific challenges. First, the VLM maintains broad semantic representations, making it vulnerable to capacity exhaustion, whereas the ActionHead refines semantics into localized velocity patterns that are highly sensitive to perturbations. Second, the final velocity decoder serves as a readout layer. Freezing it forms an output-stage expressivity bottleneck, while updating it risks overwriting previous velocity mappings. To this end, we propose OrthoSkillVLA, a parameter-efficient framework for continual skill learning in pretrained VLA models without demonstration replay. Given the representation heterogeneity, we impose separate subspace constraints on the VLM and ActionHead, preserving reusable semantic capacity while protecting localized velocity patterns. For the output layer, we introduce a lightweight feature-aware MoE decoder, where each skill is allocated a compact expert and a training-free router selects the expert according to feature-space affinity. Extensive simulated and real-world evaluations, together with ablations, demonstrate that OrthoSkillVLA better preserves prior skills while acquiring new ones.",
+ "summary": "## OrthoSkillVLA 论文摘要总结\n\n**1. 核心创新点**\n针对预训练 VLA 模型在连续学习新技能时的灾难性遗忘问题，提出按模型组件（VLM / ActionHead / 速度解码器）**分而治之的差异化正交子空间约束**，而非对整个模型施加统一约束。\n\n**2. 主要方法**\n- **问题诊断**：作者发现 VLA 内部各组件角色不同——VLM 维持广义语义表征，易发生「容量耗尽」；ActionHead 将语义细化为局部速度模式，对扰动极其敏感；末端速度解码器作为读出层，冻结会造成输出端表达力瓶颈，更新则会覆盖旧技能的速度映射。\n- **解决方案**：对 VLM 和 ActionHead 分别施加**独立的子空间约束**，兼顾语义容量复用与局部速度模式保护；输出层引入轻量级**特征感知 MoE 解码器**，每个技能分配一个紧凑专家，并用**免训练路由器**依据特征空间亲和度选择专家。\n- 整体为参数高效框架，**无需示范数据回放（replay-free）**。\n\n**3. 结论/性能**\n在仿真与真实机器人实验及消融研究中均验证：相比架构隔离类方法（推理开销大）和统一子空间约束类方法，OrthoSkillVLA 在学习新技能的同时更好地保留了已有技能，取得了更优的稳定性—可塑性权衡。\n\n> 注：摘要中未给出具体数值指标（成功率、遗忘率等），上述性能结论为作者的定性表述。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-21 13:06:17",
+ "topics": [
+  "vla-post-training",
+  "vla-models"
+ ]
+}

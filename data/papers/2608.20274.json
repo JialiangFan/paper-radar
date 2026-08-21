@@ -1,0 +1,16 @@
+{
+ "id": "2608.20274",
+ "title": "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents",
+ "authors": "Yiyang Feng, Biddut Sarker Bijoy, Niranjan Balasubramanian, Jiawei Zhou",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20274v1",
+ "abstract": "Large language model (LLM) agents can induce skills from completed tasks and reuse them later to grow more capable with experience. In practice, induced skills may transfer unreliably and can even harm the agent that retrieves them. When agent-induced skills transfer reliably across tasks remains an open question. We conduct a comprehensive and controlled study of how the way skills are induced shapes their transfer across tasks. Specifically, we compare task-level with subtask-level skill induction and text with code skill formats, the two axes along which existing methods differ. Task-level skills mostly reduce the agent's performance below its no-memory baseline while subtask-level skills raise it above on average, and text skills transfer better than code skills. To further understand our findings, we examine two complementary properties of the induced skills: specificity, which measures how closely a skill matches real tasks, and abstractness, which measures how evenly its relevance spreads across tasks. Neither property alone predicts task success, but their combined effect does, which we propose as a skill utility score. The score correlates consistently with task success when skills are transferred, and subtask-level and text skills score higher. Computing skill utility only needs the skills and task descriptions but not any task execution, so our score serves as a practical diagnostic of a skill memory before any new task runs.",
+ "summary": "1. **核心创新点**：首次系统性地揭示\"技能归纳的粒度与格式\"决定了 LLM 智能体跨任务技能迁移的成败——子任务级 + 文本格式的技能才可靠有用，并提出无需执行任务即可预判技能价值的\"技能效用分数\"（skill utility score）。\n\n2. **主要方法**：在受控实验中沿两个维度做对照比较——归纳粒度（任务级 vs. 子任务级）与技能表示格式（自然语言文本 vs. 代码）。随后从两个互补属性刻画所归纳的技能：**specificity**（技能与真实任务的匹配紧密程度）和 **abstractness**（技能相关性在各任务间分布的均匀程度），并将二者的联合效应构造为技能效用分数。该分数仅需技能描述与任务描述即可计算，无需实际执行任务。\n\n3. **结论/性能**：任务级技能大多把智能体性能**拉低到无记忆基线以下**，而子任务级技能平均能提升到基线以上；文本格式技能的迁移效果优于代码格式。单看 specificity 或 abstractness 都无法预测任务成功率，但二者结合而成的效用分数在技能迁移场景下与任务成功率稳定相关，且子任务级与文本技能得分更高。因此该分数可作为一种低成本的**事前诊断工具**，在新任务运行前评估技能记忆库的质量。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:01:49",
+ "topics": [
+  "llm-agents"
+ ]
+}

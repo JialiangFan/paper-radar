@@ -1,0 +1,17 @@
+{
+ "id": "2608.19709",
+ "title": "RFWM: Physics-Guided World Model for Dynamic Wireless Radiance Field Generation",
+ "authors": "Zijiu Yang, Qianqian Yang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19709v1",
+ "abstract": "Radio-frequency (RF) radiance-field modeling is essential for wireless network optimization and sensing, yet remains challenging in dynamic and unseen environments. Existing learning-based methods synthesize RF fields from sparse measurements, but most struggle to generalize to dynamic and unseen environments. To address this limitation, we propose RFWM, a physics-guided RF world model that maps multimodal physical conditions like visual dynamics and AP configurations to spatiotemporal RF fields. RFWM adopts a two-stage training strategy with physics-guided priors and constraints. In the first stage, RFWM adapts a pretrained visual diffusion backbone to RF trajectories to predict RF sequences from a few past RF inputs, while conditioning the backbone on a Friis-guided prior for coarse attenuation guidance. In the second stage, RFWM learns the physical-to-RF mapping by training a ControlNet from scratch and fine-tuning the RF-adapted backbone, while six physics-guided regularizers enforce fine-grained propagation consistency. Cross-height heads then jointly generate RF trajectories at queried receiver heights in one forward pass. We construct a new benchmark of 7,715 sequences averaging 33 frames across 115 environments for dynamic RF-field generation. Experimental results show that RFWM improves MSE by approximately 7 dB and 3 dB over the state of the art under in-distribution and out-of-distribution settings, respectively.",
+ "summary": "## RFWM 论文速览\n\n**1. 核心创新点**\n提出 RFWM——一个物理引导的射频\"世界模型\"，把视觉动态、AP 配置等多模态物理条件直接映射为时空射频辐射场，从而解决现有方法在动态场景和未见环境中难以泛化的问题。\n\n**2. 主要方法**\n采用两阶段训练：\n\n- **第一阶段**：将预训练的**视觉扩散模型骨干**迁移适配到 RF 轨迹上，用少量历史 RF 输入预测后续 RF 序列；同时以 **Friis 传输公式导出的先验**作为条件，提供粗粒度的路径衰减引导。\n- **第二阶段**：从零训练一个 **ControlNet** 分支并微调 RF 骨干，学习\"物理条件 → RF 场\"的映射；引入 **6 个物理引导正则项**约束细粒度传播一致性。\n- 另设**跨高度预测头（cross-height heads）**，一次前向即可联合生成多个查询接收高度上的 RF 轨迹。\n- 配套构建了新基准：115 个环境、7,715 条序列、平均每条 33 帧，专用于动态 RF 场生成。\n\n**3. 结论/性能**\n在新基准上，RFWM 相比此前 SOTA 的 MSE 分别提升约 **7 dB（分布内）** 和 **3 dB（分布外）**，说明其在未见环境下的泛化能力尤为突出。\n\n> 一句话总结定位：把\"视频扩散 + ControlNet + 物理约束\"的范式搬到无线电磁场预测上，兼顾生成质量与物理可解释性，可服务于网络优化与无线感知。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-21 13:03:37",
+ "topics": [
+  "world-model-learning",
+  "applications"
+ ]
+}

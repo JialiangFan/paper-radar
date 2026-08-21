@@ -1,0 +1,17 @@
+{
+ "id": "2608.19574",
+ "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
+ "authors": "Chao Xue, Chaofan Zhang, Wenxuan Ma, Guocai Yao, Shaowei Cui, Shuo Wang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19574v1",
+ "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend to the video-action context of each candidate while preventing video and action queries from attending to tactile tokens. For planning, HiTac-WAM ranks candidate action chunks using tactile forecasts and task-progress estimates. For execution, the selected tactile forecast is retained as a reference; persistent discrepancies between predicted and observed tactile states trigger corrective replanning. HiTac-WAM achieves a mean contact F1 of 0.921; under matched training budgets, the directed hierarchy reduces 3D displacement L2 error by 17.6% relative to the deformation-only predictor and improves slip AUPRC by 60.4% relative to the slip-only predictor. Across chip grasping, blackboard erasing, and USB insertion, selection guided by the hierarchical forecasts increases the average real-robot success rate from 31.1% to 61.1%, while the full system attains 72.2%.",
+ "summary": "## HiTac-WAM 论文摘要总结\n\n**1. 核心创新点**\n提出一种「分层触觉世界动作模型」，在动作执行前对每个候选动作块预测未来触觉状态序列，并把触觉预测按物理依赖关系组织成有向层级结构（而非以往那种把未来触觉笼统表示为图像或潜在流的做法）。\n\n**2. 主要方法**\n- **分层分解**：将触觉预测拆为三级——接触状态 → 3D 形变场 → 滑移风险，下游每一级都以上游的 stop-gradient 信号为条件输入，形成有向层级。\n- **有向注意力掩码**：允许触觉 query 关注各候选动作的「视频—动作」上下文，但禁止视频与动作 query 反向关注触觉 token，避免信息回流污染。\n- **规划**：结合触觉预测结果与任务进度估计，对候选动作块进行排序择优。\n- **执行**：保留被选中的触觉预测作为参考基准，当预测与实际观测的触觉状态出现持续偏差时，触发纠正性重规划（闭环）。\n\n**3. 结论/性能**\n- 接触状态预测平均 F1 达 **0.921**。\n- 同等训练预算下，有向层级结构相比仅预测形变的基线，3D 位移 L2 误差降低 **17.6%**；相比仅预测滑移的基线，滑移 AUPRC 提升 **60.4%**。\n- 真机实验（芯片抓取、黑板擦除、USB 插接三类接触密集任务）中，仅用分层预测做动作筛选就把平均成功率从 **31.1% 提升到 61.1%**，完整系统（含闭环纠正重规划）进一步达到 **72.2%**。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-21 13:04:36",
+ "topics": [
+  "world-model-learning",
+  "robot-manipulation"
+ ]
+}

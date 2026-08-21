@@ -1,0 +1,17 @@
+{
+ "id": "2608.20220",
+ "title": "InsufficiencyBench: Evaluating LLM legal advice on underspecified user queries",
+ "authors": "Samuel J. Vincent, Daniel Calloway, Fangyi Yu, Andrew M. Bean, Nabeel Seedat",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20220v1",
+ "abstract": "Legal AI systems are increasingly used to answer legal questions, yet existing benchmarks assume queries arrive fully specified. In practice, users omit facts that materially determine the legal outcome. We introduce InsufficiencyBench, the first legal benchmark targeting query-side insufficiency: whether a model recognizes when a query lacks legally material information, identifies what is missing, and refrains from premature conclusions. We formalize a taxonomy of eight canonical missing-element categories across three structural failure modes---switch, gating, and fatal prerequisite--- and construct 202 benchmark items (58 base queries, 144 deficient variants) spanning six legal domains and 24 US jurisdictions and annotated by practising attorneys. Evaluating ten frontier models, we find that no model exceeds F2 = 0.46 on missing-element identification and that the median recall is 0.44. Models either hedge indiscriminately or answer silently under fabricated presumptions. No model both identifies and qualifies responses to deficient queries while directly addressing complete ones.",
+ "summary": "## InsufficiencyBench 论文总结\n\n**1. 核心创新点**\n首个针对\"用户提问本身信息不足\"的法律 AI 基准——考察模型能否识别问题缺失了法律上关键的事实、指出缺什么，并克制住不下结论，而非默认问题已完整给出。\n\n**2. 主要方法**\n- 提出八类\"典型缺失要素\"的分类体系，归入三种结构性失效模式：**switch**（开关型，缺失项直接改变结论走向）、**gating**（门控型，缺失项决定是否进入下一步分析）、**fatal prerequisite**（致命前提型，缺失项使结论根本无法成立）。\n- 构建 202 个测试条目（58 个完整基准问题 + 144 个人为制造的\"缺失变体\"），覆盖 6 个法律领域、美国 24 个司法辖区，由执业律师标注。\n- 在该基准上评测 10 个前沿大模型，以 F2（偏重召回）和召回率衡量\"缺失要素识别\"能力。\n\n**3. 结论/性能**\n表现普遍很差：所有模型在缺失要素识别上 **F2 均未超过 0.46，召回率中位数仅 0.44**。失败模式两极分化——要么不加区分地一律模糊其辞（过度 hedging），要么在自行编造的事实前提下直接给出答案。**没有任何模型能做到：对信息不足的问题给出识别与限定，同时对完整问题给出直接回答。**\n\n> 一句话启示：当前法律 LLM 的\"提问端鲁棒性\"是明显短板，指望用户把事实说全的评测方式高估了其实际可用性。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:02:05",
+ "topics": [
+  "agent-benchmarks",
+  "applications"
+ ]
+}

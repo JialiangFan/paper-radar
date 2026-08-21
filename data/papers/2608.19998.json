@@ -1,0 +1,16 @@
+{
+ "id": "2608.19998",
+ "title": "SCoRD: Semantic-Assisted Continual Retriever-Reranker Distillation for LLM-Based Recommendation",
+ "authors": "Seunghyun Baek, Gyuseok Lee, Seunghan Lee, Wonbin Kweon, Dong Wang, SeongKu Kang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19998v1",
+ "abstract": "Recommendation systems increasingly adopt a two-stage pipeline, where an ID-based retriever retrieves candidates and an LLM-based reranker refines their rankings. To improve retrieval quality, reranker-to-retriever distillation is commonly used to transfer the reranker's knowledge to the retriever. For practical deployment, however, this pipeline must continually adapt to evolving interests and incoming interactions. A naive solution is to repeatedly update the LLM reranker and distill its latest knowledge, but this incurs prohibitive costs. Updating the retriever alone is cheaper, but its limited capacity makes adaptation from sparse data difficult. We propose SCoRD, a continual knowledge distillation framework for LLM-based reranking pipelines under a non-stationary data stream. SCoRD introduces a semantic reasoning assistant that distills the LLM's ability to infer underlying user intents into reusable intent-level guidance. It selectively distills reranker knowledge to the retriever on low-confidence sequences, guides retriever-only updates without repeated LLM inference, and feeds retriever-derived representations and intent-drift signals back to the reranker. Experiments on real-world datasets show that SCoRD enables effective and efficient retriever-reranker co-adaptation.",
+ "summary": "**SCoRD：面向 LLM 推荐系统的语义辅助持续检索器-重排器蒸馏**\n\n1. **核心创新点**\n提出一个持续知识蒸馏框架，通过\"语义推理助手\"把 LLM 重排器的用户意图推理能力固化为可复用的意图级指导，从而在数据流不断变化时，只更新轻量检索器就能实现检索器与重排器的低成本协同适应。\n\n2. **主要方法**\n- 两阶段流水线：ID-based 检索器召回候选 + LLM-based 重排器精排。\n- **语义推理助手**：把 LLM 对用户潜在意图的推断蒸馏成可复用的 intent-level guidance，避免每轮都重新调用 LLM 推理。\n- **选择性蒸馏**：只在检索器低置信度（low-confidence）的行为序列上，把重排器知识蒸馏给检索器，控制成本。\n- **反馈回路**：将检索器侧的表示和意图漂移（intent-drift）信号回传给重排器，形成双向协同更新。\n\n3. **结论/性能**\n在真实数据集上的实验表明，SCoRD 能在非平稳数据流下实现有效且高效的检索器-重排器共同适应——相比\"反复重训 LLM 重排器\"大幅降低开销，又优于\"仅靠稀疏新数据单独更新检索器\"的效果。（摘要未给出具体指标数值。）\n\n> 一句话定位：这是一篇\"如何在不频繁重跑 LLM 的前提下，让推荐流水线持续跟上用户兴趣漂移\"的工程化蒸馏工作，成本-效果权衡是其主要卖点。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-21 13:02:55",
+ "topics": [
+  "applications"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "2608.19891",
+ "title": "EXIMO: VLM Guided Exploration of VLA Policies",
+ "authors": "Bhavya Sukhija, Oliver Groth, Mohit Shridhar, Tim Hertweck, Michael Bloesch, Markus Wulfmeier, Abbas Abdolmaleki, Martin Riedmiller",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19891v1",
+ "abstract": "How to efficiently finetune robot policies to learn new tasks on the fly? State of the art robotic manipulation policies are based on behaviour cloning of large vision-language-action (VLA) models with billions of parameters on huge teleoperation datasets. While this simple approach has enabled significant advances for robotic manipulation, finetuning of VLA policies for learning new tasks still remains an open problem. In particular, collecting teleoperation datasets requires hundreds of hours of expensive human labour and the alternative, reinforcement learning (RL), can be notoriously sample-inefficient especially for long-horizon tasks. In addition, RL with VLAs imposes several challenges due to the model's size and architectural design. In this work, we propose EXIMO, an efficient algorithm for finetuning of VLA policies. EXIMO operates in three stages: explore, imitate, and optimize. During the explore phase, EXIMO equips the VLA with a vision language model (VLM) that acts as a planner. The VLM thinks and breaks down challenging long-horizon problems into shorter ones for the VLA. The VLM, together with the VLA, is used to collect an orchestrated dataset on new tasks. During the imitate phase, the VLA is finetuned with the orchestrated data. Finally, during the optimize stage, we use residual off-policy RL to further finetune the policy. In our experiments, we ablate all three stages of EXIMO and show that it outperforms existing approaches significantly in terms of sample-efficiency and final performance.",
+ "summary": "## EXIMO: VLM Guided Exploration of VLA Policies\n\n**1. 核心创新点**\n提出 EXIMO —— 用视觉语言模型（VLM）作为高层规划器来引导视觉-语言-动作（VLA）机器人策略自主探索并高效微调新任务，摆脱对昂贵人工遥操作数据的依赖。\n\n**2. 主要方法**\n分三阶段流水线：\n\n- **Explore（探索）**：给 VLA 配一个 VLM 规划器，由 VLM \"思考\"并把长时序难任务拆解成若干短子任务，VLM 与 VLA 协同在新任务上自动采集\"编排式\"（orchestrated）数据集；\n- **Imitate（模仿）**：用这批自动采集的数据对 VLA 做模仿学习微调；\n- **Optimize（优化）**：再用**残差式 off-policy 强化学习**进一步精调策略——残差结构规避了直接对数十亿参数 VLA 做 RL 带来的规模与架构难题。\n\n**3. 结论/性能**\n作者对三个阶段分别做了消融实验，验证每一阶段均有贡献；整体上 EXIMO 在**样本效率**和**最终任务成功率**两方面都显著优于现有的 VLA 微调方法（纯行为克隆 / 直接 RL）。摘要中未给出具体数值指标。\n\n---\n\n一句话点评：本质是\"**用 VLM 的语义规划能力解决 RL 在长时序任务上的探索难题**\"，再用残差 RL 绕开大模型 RL 的工程瓶颈——属于当前 VLA 后训练（post-training）方向上比较典型的组合式方案。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-21 13:05:59",
+ "topics": [
+  "vla-post-training",
+  "multimodal-perception"
+ ]
+}

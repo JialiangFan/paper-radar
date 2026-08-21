@@ -1,0 +1,17 @@
+{
+ "id": "2608.19804",
+ "title": "ADAPT: Physics-Aware Diffusion-based World Models for Adaptive Predictive Transferable HVAC Control",
+ "authors": "Xu Yang, Kailai Sun, Dianyu Zhong, Qianchuan Zhao",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19804v1",
+ "abstract": "Buildings account for roughly one-third of global energy consumption and CO$_2$ emissions. Optimizing indoor climate systems plays a critical role for urban climate mitigation aligned with UN Sustainable Development Goals 11 and 13. However, indoor delayed thermodynamic responses and partial observability severely hinder existing methods, which are primarily limited by implicit thermal inertia, occupancy dynamic prediction, and cumulative prediction errors, especially for out-of-distribution environments. In practice, these challenges are further exacerbated by the high cost and privacy burden of dense indoor sensing, forcing operators to collect only limited data in a single operating regime while expecting controllers to generalize reliably across unseen seasons and climate regions. To address this problem, we propose ADAPT, a physics-aware conditional diffusion indoor environmental world model for HVAC control. The model predicts a short-horizon held-action thermal baseline to capture the latent thermal inertia of the buildings. The diffusion backbone utilizes the robustness of generative models, while a learnable multi-zone heat-balance regularizer constrains generated trajectories to satisfy transferable building thermodynamics without requiring known building geometry or manually calibrated thermal parameters. A credit assignment is then design for the downstream reinforcement learning. Extensive experiments on SemibuildingSim and Sinergym demonstrate that ADAPT reduces HVAC energy consumption by 7.3\\% and occupant discomfort by 30.2\\% compared with state-of-the-art baselines under IID control. Under OOD control scenarios spanning unseen seasons and climate regions, ADAPT maintains robust performance with only marginal degradation relative to its IID performance, substantially outperforming existing methods in transfer robustness.",
+ "summary": "## ADAPT：面向 HVAC 控制的物理感知扩散世界模型\n\n**1. 核心创新点**\n提出 ADAPT——一种融合建筑热力学物理约束的条件扩散世界模型，用于解决 HVAC 控制中热惯性滞后、部分可观测与跨季节/气候区泛化的难题。\n\n**2. 主要方法**\n- **扩散骨干网络**：利用生成模型的鲁棒性建模室内环境动态，缓解多步预测的累积误差；\n- **短时程\"保持动作\"热基线预测**：显式捕捉建筑隐含的热惯性；\n- **可学习的多区域热平衡正则项**：约束生成轨迹满足可迁移的建筑热力学规律，且**无需已知建筑几何结构或人工标定热参数**；\n- **信用分配机制**：将世界模型对接下游强化学习控制器。\n\n**3. 结论/性能**\n在 SemibuildingSim 与 Sinergym 两个仿真平台上：\n- **同分布（IID）场景**：相比 SOTA 基线，能耗降低 **7.3%**，人员不适度降低 **30.2%**；\n- **分布外（OOD）场景**（未见过的季节与气候区）：性能仅有轻微衰减，迁移鲁棒性显著优于现有方法。\n\n**一句话点评**：本文的价值主要不在\"扩散模型用于世界建模\"这一范式本身，而在于用**免标定的热平衡正则**把物理先验注入生成过程——这正是其 OOD 迁移能力的来源，也是相比纯数据驱动 MBRL 基线的关键区分点。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-21 13:05:07",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
+}
