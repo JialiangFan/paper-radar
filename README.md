@@ -164,7 +164,7 @@ research_agent/
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=JFan5/research_agent&type=Date)](https://star-history.com/#JFan5/research_agent&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=JialiangFan/paper-radar&type=Date)](https://star-history.com/#JialiangFan/paper-radar&Date)
 
 ---
 
@@ -313,4 +313,4 @@ research_agent/
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=JFan5/research_agent&type=Date)](https://star-history.com/#JFan5/research_agent&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=JialiangFan/paper-radar&type=Date)](https://star-history.com/#JialiangFan/paper-radar&Date)
