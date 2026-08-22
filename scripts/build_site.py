@@ -152,6 +152,7 @@ function applyFilters() {
 function chipHtml(p) {
   let h = '';
   if (p.source === 'curated') h += '<span class="chip curated">精读整理</span>';
+  if (p.hf_upvotes) h += `<span class="chip">🔥 ${p.hf_upvotes}</span>`;
   for (const t of p.topics || []) h += `<span class="chip">${esc(TAX[t] || t)}</span>`;
   if (p.keyword) h += `<span class="chip">${esc(p.keyword)}</span>`;
   if (p.category) h += `<span class="chip">${esc(p.category)}</span>`;
@@ -300,7 +301,7 @@ applyFilters();
 """
 
 INDEX_FIELDS = ("id", "title", "authors", "date", "year", "url", "keyword",
-                "category", "source", "status", "topics")
+                "category", "source", "status", "topics", "hf_upvotes")
 
 
 def sort_key(p):

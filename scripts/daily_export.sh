@@ -11,6 +11,9 @@ for db in papers.db papers.dev.db; do
   [ -f "$db" ] && python3 scripts/export_papers.py --db "$db"
 done
 
+# 合并 HF daily papers（失败不阻塞导出）
+python3 scripts/fetch_hf.py || echo "⚠️ HF 抓取失败，跳过"
+
 # 给新论文打主题标签（失败不阻塞导出，漏掉的下次续跑）
 python3 scripts/tag_papers.py || echo "⚠️ 打标失败，跳过"
 
