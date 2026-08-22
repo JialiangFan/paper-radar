@@ -6,7 +6,7 @@ An AI-powered academic paper tracking system that automatically fetches papers f
 
 ## Live Demo
 
-Deploy your own instance and access it at your configured domain.
+**[zhatgpt.com](https://zhatgpt.com)** — the running dashboard, updated daily.
 
 ## Features
 
@@ -178,7 +178,7 @@ research_agent/
 
 ## 在线演示
 
-部署你自己的实例，通过配置的域名访问。
+**[zhatgpt.com](https://zhatgpt.com)** —— 每日自动更新的论文看板。
 
 ## 功能特性
 
