@@ -1,0 +1,17 @@
+{
+ "id": "2608.20126",
+ "title": "RMWorld: Task-Aware Radio World Models with Value-of-Information Guided Multi-Trial Learning for Multi-UAV Communication Control",
+ "authors": "Xiucheng Wang, Nan Cheng, Junxi Huan",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20126v1",
+ "abstract": "Reliable multi-UAV communication control depends on predicting which aerial links will serve traffic before measurements are available. Radio world models (radio WMs) make such planning tractable, but their errors are nonuniform: a globally accurate model may still fail along high-demand corridors or association boundaries where rate errors reverse control decisions. This mismatch creates a learning challenge. Link queries must reduce decision-relevant channel uncertainty, while counterfactual trials must be filtered so that biased rollouts do not corrupt the policy. Existing acquisition and model-based control treat these budgets separately, valuing uncertainty, coverage, or optimistic return rather than risk reduction. We present RMWorld, a task-aware radio-WM framework that couples value-of-information channel calibration with credibility-diversity multi-trial selection. A biased propagation formula is corrected by a Bayesian residual, and each link is valued by its exact one-label reduction in locally linearized task-integrated posterior rate variance. Counterfactual branches are selected by a task-gated log-determinant objective, followed by conflict projection and fixed-batch validation. We derive the variance-reduction identity, prove posterior task-risk equivalence and the submodular greedy guarantee, and establish a scoped first-order non-interference result. Across 100 paired 3GPP trials RMWorld reaches 0.949~bit/s/Hz task-weighted RMSE, and across 30 severe-load DeepMIMO trials it reduces median backlog by 0.967 versus Ensemble UCB at 37.5\\% more offline rollouts.",
+ "summary": "## RMWorld 论文摘要（中文）\n\n**1. 核心创新点**\n提出 RMWorld——一个「任务感知」的无线电世界模型框架，用信息价值（Value-of-Information）来指导信道测量采样与反事实推演的筛选，使模型误差的削减集中在真正会影响多无人机通信控制决策的链路上，而非追求全局精度。\n\n**2. 主要方法**\n- **有偏传播公式 + 贝叶斯残差校正**：先用解析的电波传播模型打底，再用贝叶斯残差项修正其系统性偏差。\n- **VoI 信道标定**：对每条链路计算其「新增一个标签所带来的、任务加权后验速率方差的精确下降量」（局部线性化近似），据此挑选最值得测量的链路。\n- **可信度—多样性的多轨迹筛选**：用任务门控的对数行列式（log-det）目标来挑选反事实分支，兼顾信息多样性与可信度，随后做冲突投影与固定批量验证，防止有偏 rollout 污染策略。\n- **理论支撑**：推导了方差缩减恒等式，证明了后验任务风险等价性、子模性下贪心算法的近似保证，并给出有限范围内的一阶「互不干扰」结论。\n\n**3. 结论/性能**\n- 在 100 组配对的 3GPP 仿真中，任务加权 RMSE 达到 **0.949 bit/s/Hz**。\n- 在 30 组 DeepMIMO 重载场景中，相比 Ensemble UCB 基线，中位数积压（backlog）降低 **0.967**，同时离线 rollout 数量多出 37.5%。\n\n一点说明：摘要中的性能数字缺少对比基线的绝对值（如 3GPP 上的 RMSE 只给了自身数值），且 \"reduces median backlog by 0.967\" 未标明单位或是否为相对比例，因此实际增益幅度需查看正文表格才能判断。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-22 13:04:18",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
+}

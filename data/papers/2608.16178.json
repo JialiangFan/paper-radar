@@ -1,0 +1,17 @@
+{
+ "id": "2608.16178",
+ "title": "Agent-Native Telemetry: Verifiable State-Delta Evidence for Autonomous Operations",
+ "authors": "Jun He, Deying Yu",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16178v1",
+ "abstract": "Operational telemetry is predominantly engineered for human reading: systems repeatedly serialize verbose prose, static keys, and redundant context across billions of log lines. As autonomous AI agents become primary operational consumers, feeding them traditional logs wastes scarce context capacity parsing lexical syntax rather than reasoning over system state changes -- all while lacking cryptographic guarantees of provenance or collection completeness.\n  This paper introduces agent-native telemetry, an operational evidence architecture for autonomous machine operators founded on verifiable state deltas rather than human prose. We present the Agent Telemetry Protocol (ATP) and the State-Delta Evidence Ledger, an implementation that structures operational facts into four core evidence primitives (Transitions, Observations, Relations, and State Checkpoints) governed by content-addressed schemas, while isolating uncurated text as digest-verified opaque references. Producers sign and hash-chain batches for atomic collector append. Verified records feed two parallel agent access paths: a stateless protocol decoder emitting compact positional rows, and a stateful semantic gateway serving bounded graph capsules. We prove an information-preservation lower bound and formalize a ledger-relative verified negative theorem for provable event non-occurrence. On distributed microservice benchmarks (AIOpsLab and OpenTelemetry Astronomy Shop), ATP reduces raw wire payload and modeled cloud query scan costs by 96.4% relative to OpenTelemetry JSON, reduces LLM context tokens by 88.8% and query operations by 66.2%, detects all 500 tested adversarial storage mutations, and yields zero successful prompt injections across 50 adversarial trials per ATP configuration.",
+ "summary": "1. **核心创新点**：面向自主 AI 智能体（而非人类阅读）重构运维遥测，用可验证的\"状态增量\"（state delta）证据取代冗长的文本日志，同时提供密码学层面的来源与完整性保证。\n\n2. **主要方法**：提出 Agent Telemetry Protocol (ATP) 与 State-Delta Evidence Ledger 实现——\n   - 将运维事实归纳为四类证据原语：状态转移（Transitions）、观测（Observations）、关系（Relations）、状态检查点（State Checkpoints），由内容寻址的 schema 统一治理；\n   - 未经结构化的自由文本被隔离为经摘要哈希验证的\"不透明引用\"，从而阻断提示注入路径；\n   - 生产端对批次签名并做哈希链，收集端原子追加，保证防篡改与采集完整性；\n   - 面向智能体提供两条并行访问路径：无状态协议解码器（输出紧凑的位置化行）和有状态语义网关（提供有界的图胶囊）；\n   - 理论上证明了一个信息保持下界，并形式化了\"账本相对的已验证否定\"定理，可证明某事件确实未发生。\n\n3. **结论/性能**：在分布式微服务基准（AIOpsLab、OpenTelemetry Astronomy Shop）上，相较 OpenTelemetry JSON，原始传输负载与建模的云查询扫描成本降低 96.4%，LLM 上下文 token 减少 88.8%，查询操作数减少 66.2%；对 500 次对抗性存储篡改全部检出，且每种 ATP 配置下的 50 次对抗试验中提示注入成功率为零。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:00:59",
+ "topics": [
+  "runtime-monitoring",
+  "llm-agents"
+ ]
+}

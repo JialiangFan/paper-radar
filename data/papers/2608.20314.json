@@ -1,0 +1,17 @@
+{
+ "id": "2608.20314",
+ "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+ "authors": "Fengqing Jiang, Yite Wang, Boyi Liu, Zhaoyang Wang, Canwen Xu, Zhewei Yao, Radha Poovendran, Yuxiong He",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20314v1",
+ "abstract": "Mid-training is increasingly recognized as a critical stage for shaping the capabilities of large language models. Recent work has shown that targeted mid-training can strengthen reasoning-intensive abilities such as math and science, and can also improve agentic capabilities in software-engineering settings. In this work, we study the parallel but less explored agentic capability: general tool use. We present MidTool, an open corpus construction pipeline for agentic tool-use mid-training that combines large-scale web, PDF, and code data with synthesized supervision from real-world tool APIs, MCP skills, and document-grounded workflows. MidTool is designed to teach models how to recognize tool affordances, ground arguments from context, compose tool call workflow, and recover from incomplete information. We mid-train Qwen3-4B-Base and Qwen3-8B-Base on MidTool-Mix, and then apply follow-up post-training with both supervised fine-tuning and reinforcement learning. Compared with baselines, MidTool-Mix consistently improves downstream performance under both SFT and RL on BFCL, tau2-Bench, and MCP Universe. These results suggest that general tool use, like other important LLM capabilities, benefits from dedicated mid-training rather than being left entirely to post-training.",
+ "summary": "**MidTool: 面向智能体工具使用的中期训练数据合成**\n\n1. **核心创新点**：首次将\"中期训练\"（mid-training）系统性地引入**通用工具使用**这一智能体能力，提出了一套开源的工具使用中期训练语料构建流水线 MidTool，证明工具使用能力不应完全交给后训练阶段。\n\n2. **主要方法**：\n   - **数据来源**：大规模网页、PDF、代码数据，结合来自真实世界工具 API、MCP skills 以及文档驱动工作流的合成监督信号。\n   - **能力设计**：语料专门针对四种能力设计——识别工具可供性（tool affordances）、从上下文中锚定参数（grounding arguments）、组合多步工具调用工作流、以及在信息不完整时进行恢复。\n   - **训练流程**：在 Qwen3-4B-Base 和 Qwen3-8B-Base 上用 MidTool-Mix 做中期训练，随后分别用 SFT 和 RL 做后训练。\n\n3. **结论/性能**：在 BFCL、tau2-Bench 和 MCP Universe 三个基准上，MidTool-Mix 相比基线在 **SFT 和 RL 两种后训练路径下都能稳定提升**下游性能。这表明通用工具使用与数学、科学推理等能力一样，能从专门的中期训练中获益。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:01:49",
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
+}

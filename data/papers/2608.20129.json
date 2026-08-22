@@ -1,0 +1,17 @@
+{
+ "id": "2608.20129",
+ "title": "Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving",
+ "authors": "Mehdi Azarafza, Faezeh Pasandideh, Ali Ehteshami Bejnordi, Stefan Henkler, Achim Rettberg",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20129v1",
+ "abstract": "Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is proposed. This system uses an orchestrator to coordinate PPO-trained reinforcement learning and PID control, with LLM common-sense reasoning applied throughout the framework. LLM reasoning is further employed iteratively to refine the RL reward function for dynamic driving environments. The proposed framework is evaluated in highly randomized CARLA scenarios under diverse environmental and traffic conditions. The results demonstrate the potential of integrating LLM-based reasoning with conventional autonomous driving methods while retaining structured control and safety mechanism.",
+ "summary": "## 论文总结\n\n**标题**：Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving（面向自动驾驶的、融合 LLM 常识推理能力的多智能体编排框架）\n\n### 1. 核心创新点\n提出一种混合式自动驾驶框架：用「编排器（orchestrator）」协调强化学习与传统控制器，并让 LLM 只负责常识推理与奖励函数迭代优化，而不直接控制车辆，从而在获得情境推理能力的同时规避 LLM 的时延与幻觉风险。\n\n### 2. 主要方法\n- **编排器（Orchestrator）**：作为多智能体调度中枢，在 PPO 训练的强化学习策略与 PID 控制器之间进行协调与切换。\n- **LLM 常识推理**：贯穿框架各环节，提供多模态信息理解与上下文推理（如场景理解、决策建议），但不作为底层控制器。\n- **LLM 驱动的奖励塑形**：迭代式地利用 LLM 推理来改写/精调 RL 的奖励函数，以适应动态变化的驾驶环境。\n- **实验平台**：CARLA 仿真器，构建高度随机化的场景，覆盖多样的环境条件与交通状况。\n\n### 3. 结论/性能\n实验表明，该框架能够在保留结构化控制与安全机制（RL + PID）的前提下，成功引入 LLM 的推理能力，验证了「LLM 推理 + 传统自动驾驶方法」融合路线的可行性与潜力。\n\n需要说明的是，摘要中只给出了定性结论（\"demonstrate the potential\"），未披露具体的量化指标（如成功率、碰撞率、与纯 RL 基线的对比数值），因此实际性能提升幅度需查阅正文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:02:21",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
+}

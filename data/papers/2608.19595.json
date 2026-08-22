@@ -1,0 +1,17 @@
+{
+ "id": "2608.19595",
+ "title": "SSR-GRPO: Integrating Supervision and Semantic IDs into Reinforcement Learning for Dense Retrieval in E-commerce",
+ "authors": "Guangxin Song, Xing Fang, Mingmin Jin, Jing Wang, Bokang Wang, Zhentao Song, Junjie Bai, Jianbo Zhu",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19595v1",
+ "abstract": "Embedding-based retrieval (EBR) is pivotal in e-commerce search but often struggles with complex semantics. While recent methods often fine-tune large language models (LLMs) for representation learning, they typically lack robust mechanisms for handling complex and implicit semantics. While Retrieval-GRPO (R-GRPO) recently introduced reinforcement learning to dense retrieval, it suffers from noisy top-K candidates due to limited batch sampling and biased relevance assessments caused by using similarly trained LLMs as reward models. To tackle these issues, we propose Supervised Retrieval-GRPO with Semantic Identifiers (SSR-GRPO). Specifically, our method first proposes a dual-perspective framework for relevance assessment. It leverages both Semantic Identifiers (SIDs) produced by quantization learning and dense representation vectors to generate more unbiased relevance scores. Furthermore, leveraging the hierarchical similarity relationships of the generated SIDs, we mine a set of hard negative samples that serve two purposes: (1) to design a masking function integrated into R-GRPO, effectively filtering intra-group noisy samples; and (2) to construct a Retrieval-DPO task composed of positive and negative sample pairs, enabling the model to capture fine-grained semantic distinctions from a pair-wise perspective. By integrating these optimization strategies, we propose SSR-GRPO. Extensive offline and online experiments validate SSR-GRPO's effectiveness, and it has been deployed on a large-scale e-commerce platform.",
+ "summary": "## SSR-GRPO 论文摘要总结\n\n**1. 核心创新点**\n在电商稠密检索的强化学习框架中引入语义标识符（SID）与监督信号，通过双视角相关性评估和困难负样本挖掘，解决 R-GRPO 中候选噪声大、奖励模型有偏的问题。\n\n**2. 主要方法**\n- **双视角相关性评估**：同时用量化学习产生的语义标识符（SIDs）和稠密表示向量来打相关性分，避免仅用同源训练的 LLM 作奖励模型带来的偏差。\n- **困难负样本挖掘**：利用 SID 的层次化相似关系挖掘 hard negatives，并用于两处——\n  - 设计掩码函数嵌入 R-GRPO，过滤组内噪声样本；\n  - 构建 Retrieval-DPO 任务（正负样本对），从 pair-wise 角度学习细粒度语义区分。\n- 三者结合形成最终的 SSR-GRPO 训练方案。\n\n**3. 结论/性能**\n大量离线与在线实验验证了方法有效性，并已在大规模电商平台实际部署上线。\n\n*（摘要中未给出具体数值指标，仅声明离线/在线均有提升且已落地。）*",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-22 13:00:42",
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
+}

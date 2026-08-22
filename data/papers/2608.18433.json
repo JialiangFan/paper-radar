@@ -1,0 +1,17 @@
+{
+ "id": "2608.18433",
+ "title": "The Embodiment Gap in Robot Foundation Models",
+ "authors": "Yukiyasu Domae, Keisuke Shirai, Hanbit Oh, Ryoichi Nakajo, Tomohiro Motoda, Koshi Makihara, Masaki Murooka, Takuma Yagi, Yoshiaki Bando, Ryo Hanai",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18433v1",
+ "abstract": "Robot foundation models (RFMs), including vision-language-action (VLA) policies, are often discussed through a scaling view: more data, larger models, and broader benchmarks should improve generalization. In robotics, however, a model can generalize while work still remains before it can run on a robot with a particular body. The work required differs across methods and target robots, and those differences affect practical deployment. We call the gap between reusable models, representations, or data and their use in execution on the target robot the embodiment gap. This survey examines what can be reused across robot embodiments and what must still be implemented on a new robot. We place existing methods on a two-axis map that shows the type of shared structure and the stage at which adaptation is needed for execution on the target robot. We then examine recent work through three overlapping research directions: sharing semantics and perception, sharing robot data and interfaces, and learning correspondence across embodiments. We also propose a reporting framework for adaptation work that success rate alone does not reveal. The framework identifies the work that should be checked when comparing cross-embodiment learning and highlights work that remains on a new robot and questions for future study.",
+ "summary": "## 论文速览：The Embodiment Gap in Robot Foundation Models\n\n**1. 核心创新点**\n\n提出并系统界定了\"具身差距\"（embodiment gap）这一概念——即可复用的模型/表征/数据，与真正部署到某个特定机器人本体上执行任务之间所残留的适配工作量，指出机器人基础模型（RFM）的进展不能只用\"scaling + 泛化能力\"来衡量。\n\n**2. 主要方法**\n\n这是一篇综述（survey），而非提出新模型：\n\n- **二维分类图谱**：按\"共享结构的类型\"和\"适配所需发生的阶段\"两个轴，把现有跨本体方法定位到统一坐标系中；\n- **三条研究主线梳理**：① 共享语义与感知（视觉-语言表征复用）；② 共享机器人数据与接口（跨本体数据集、统一动作接口）；③ 学习跨本体对应关系（correspondence learning）；\n- **提出一套适配工作量的报告框架（reporting framework）**：显式记录换到新机器人时还需要做哪些工作——这些是单看成功率（success rate）指标完全看不出来的。\n\n**3. 结论 / 意义**\n\n作为综述性工作，本文不报告基准性能数字，主要结论是方法论层面的：现有 VLA / 跨本体研究普遍只汇报任务成功率，掩盖了迁移到新本体时真实的工程与适配代价，导致方法间的比较不公平。作者主张用其提出的报告框架来补充评估维度，并据此列出了若干开放问题——本文的价值在于给该领域提供了一个统一的对比坐标系和更诚实的评测规范。\n\n---\n\n小提示：如果你想要更完整的文献综述式笔记（含背景、问题、贡献、方法论，中英双语并自动存入 Obsidian vault），可以用 `/paper-review`。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-22 13:05:24",
+ "topics": [
+  "vla-models",
+  "robot-harness"
+ ]
+}

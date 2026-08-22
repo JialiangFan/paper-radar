@@ -1,0 +1,17 @@
+{
+ "id": "2608.18410",
+ "title": "Role-Conditioned Sub-Token Routing for Efficient Vision-Language-Action Policies",
+ "authors": "Wei Jiang, Wei Wang",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.18410v1",
+ "abstract": "Vision-Language-Action (VLA) models process long multimodal token sequences, making inference expensive in both memory and computation. Existing efficiency methods mainly reduce visual tokens, but aggressive token pruning becomes fragile because removing a token discards its entire representation. Sub-token compression provides a complementary alternative by retaining more tokens while reducing their value width. However, directly applying sub-token compression to VLA policies is less effective because information important for perception, language understanding, and control is distributed differently across the multimodal representation.\n  We introduce Role-Conditioned Sub-Token Routing (RoleSub), which learns how to compress the value representations of retained tokens. After visual token reduction, RoleSub partitions each retained value representation into groups in an orthogonal space and uses a lightweight router to determine which groups should be preserved. The routing decision is conditioned on the token representation, a learned latent role representation, and language context. The same mechanism can also be applied to language values, allowing visual and language representations to be compressed without removing additional tokens.\n  We evaluate RoleSub on OpenVLA-OFT-7B across the four LIBERO suites. At matched visual-KV budgets, RoleSub outperforms a trained token-only control in 33 of 36 settings, with the largest gains under aggressive compression. Combining visual and language compression reduces total KV to 9.2--11.3% of the original while retaining strong control performance on most tasks. These results show that reducing the representation within retained tokens provides an effective complement to token pruning for aggressive VLA compression.",
+ "summary": "**核心创新点**：提出 RoleSub（角色条件化子词元路由），在保留词元的前提下压缩其 value 表示的\"宽度\"，为 VLA 模型提供了一条区别于单纯剪枝词元的高效压缩路径。\n\n**主要方法**：在完成视觉词元削减后，将每个保留词元的 value 表示在一个正交空间中划分为若干组，再由一个轻量级路由器决定保留哪些组。路由决策同时以三方面信息为条件——词元自身表示、可学习的隐式\"角色\"表示、以及语言上下文。同一机制也可施加于语言词元的 value，从而在不额外删除词元的情况下同时压缩视觉与语言表示。\n\n**结论/性能**：在 OpenVLA-OFT-7B 上于 LIBERO 四个任务套件评测，在视觉 KV 预算对齐的条件下，RoleSub 在 36 组设置中的 33 组优于经过训练的纯词元压缩基线，且压缩越激进优势越明显；视觉与语言压缩联合使用可将总 KV 缓存降至原始的 9.2%–11.3%，同时在多数任务上仍保持较强的控制性能，说明\"缩减保留词元内部的表示\"是对词元剪枝的有效互补手段。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-22 13:05:37",
+ "topics": [
+  "vla-models",
+  "efficiency-systems"
+ ]
+}

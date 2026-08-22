@@ -1,0 +1,17 @@
+{
+ "id": "2608.20320",
+ "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
+ "authors": "Narges Ahmadi, Yubo Jiao, Jônatas Augusto Manzolli, Jiangbo Yu, Luis Miranda-Moreno",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20320v1",
+ "abstract": "Travel behavior research increasingly combines digital data collection with predictive modeling, yet these stages are often developed and evaluated separately. This study proposes a three-agent workflow integrating conversational data collection, structured data processing, and behavioral prediction. A chatbot-administered, image-augmented stated-preference survey collected mode choices from student commuters across five predefined weather scenarios, yielding 454 respondent-scenario observations. Weather-related associations were analyzed using a multinomial logit model, while logistic regression and random forest provided machine-learning benchmarks. Nine locally deployed large language models (LLMs), ranging from 2 to 35 billion parameters, were evaluated across four zero-shot prompt-and-context conditions and extended through persona, few-shot, and vision-based configurations. Random forest achieved 69.6% five-class accuracy, while the best text-only zero-shot LLM reached 69.9% without task-specific fitting. Habitual travel information produced the most consistent gains, Expert framing generally outperformed Role-Play, and persona information was most useful when habitual travel information was unavailable. Few-shot prompting improved prediction for several models, with gains stabilizing after a small number of examples. Using the same weather images shown to respondents, the best vision-based configuration reached 71.5% five-class accuracy, indicating that visual context may provide additional predictive information for selected models. Overall, the study shows how conversational surveys, structured data processing, conventional behavioral modeling, machine learning, and multimodal LLM prediction can be coordinated within an auditable multi-agent workflow.",
+ "summary": "## 论文总结\n\n**标题**：一种用于主动数据收集、出行行为建模与天气敏感需求预测的智能体方法\n\n---\n\n### 1. 核心创新点\n将「对话式问卷数据收集 → 结构化数据处理 → 出行行为预测」三个通常割裂的环节，整合进一个可审计的三智能体（multi-agent）工作流，并验证本地部署的多模态大模型无需训练即可达到甚至超过传统机器学习的预测精度。\n\n### 2. 主要方法\n- **数据收集**：用聊天机器人administered、图像增强的陈述性偏好（SP）问卷，采集学生通勤者在 5 种预设天气情景下的方式选择，得到 454 条「受访者-情景」观测。\n- **行为建模**：多项 Logit 模型（MNL）分析天气与出行方式的关联；Logistic 回归与随机森林作为机器学习基准。\n- **LLM 预测**：评测 9 个本地部署的开源大模型（2B–35B 参数），覆盖 4 种零样本「提示 + 上下文」条件，并扩展至 persona（人设）、few-shot（少样本）与 vision（视觉）三类配置——视觉配置直接输入给受访者看过的同一批天气图片。\n\n### 3. 结论 / 性能\n- 随机森林五分类准确率 **69.6%**；最佳纯文本零样本 LLM 达 **69.9%**，且无需任务特定微调。\n- 最佳视觉配置提升至 **71.5%**，说明视觉上下文对部分模型能提供额外预测信息。\n- 提示工程规律：**习惯性出行信息**带来的增益最稳定；**Expert（专家）框架普遍优于 Role-Play（角色扮演）**；persona 信息仅在缺少习惯出行信息时最有价值；few-shot 对多个模型有效，但样例数达到较小规模后增益即趋于饱和。\n- 整体表明：对话式问卷、结构化处理、经典行为模型、机器学习与多模态 LLM 预测可在同一可审计的多智能体流程中协同运行。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:01:17",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
+}

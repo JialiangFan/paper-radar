@@ -1,0 +1,17 @@
+{
+ "id": "2608.16503",
+ "title": "NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation",
+ "authors": "Cong Zhao, Shuai Tian, Xu Zhang, Baocheng Ni, Xinguo Song, Xueying Sun, Shu Jiang, Shouchang Yang, Bo Tang, Jin Deng, Ge Zhu, YongCheng Wang, Jin Xu, Ri Yang",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16503v1",
+ "abstract": "Real-world deployment of Vision-Language-Action (VLA) models is often bottlenecked by efficiency-performance trade-offs, cross-embodiment generalization, and execution smoothness. We present NebulaVLA, an asynchronous dual-frequency architecture that decouples high-level semantic reasoning from low-level action control, optimizing computational resources and modularity. To bridge semantic gaps across heterogeneous robots, we introduce GESTURE-7, a unified language-grounded action representation. Furthermore, our Guide Action algorithm enforces kinematic continuity via mask-based smoothness constraints. Comprehensive evaluations demonstrate that NebulaVLA significantly outperforms synchronous baselines, achieving an 85.5\\% average success rate on LIBERO-Plus and accelerating action generation by \\textasciitilde 2.7$\\times$. This asynchronous design enables highly efficient and responsive control for practical robotics.",
+ "summary": "## NebulaVLA 论文总结\n\n**1. 核心创新点**\n提出一种异步「双频率」视觉-语言-动作（VLA）架构，将高层语义推理与低层动作控制解耦，同时解决机器人操作中效率-性能权衡、跨本体泛化和执行平滑性三个瓶颈。\n\n**2. 主要方法**\n- **异步双频架构**：高层语义推理模块与低频运行，低层动作控制器高频输出，二者异步协同，从而优化算力分配并提升模块化程度。\n- **GESTURE-7**：一套统一的、以语言为基础（language-grounded）的动作表示，用于弥合异构机器人之间的语义鸿沟，实现跨本体（cross-embodiment）迁移。\n- **Guide Action 算法**：通过基于掩码（mask-based）的平滑性约束来强制运动学连续性，避免动作抖动。\n\n**3. 结论/性能**\n在 LIBERO-Plus 基准上取得 **85.5%** 的平均成功率，显著优于同步式基线；动作生成速度提升约 **2.7 倍**，验证了该异步设计可支持实际机器人场景中高效、响应及时的控制。\n\n---\n\n补充一点判断：摘要中的「显著优于同步基线」未给出具体对比数值，也没有说明真机实验的规模，跨本体泛化的说法目前仅由 GESTURE-7 的设计来支撑，缺少直接的跨机器人平台实验证据。如果要评估该工作的实际价值，建议重点看正文的消融实验和真机部分。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-22 13:03:46",
+ "topics": [
+  "vla-models",
+  "robot-manipulation"
+ ]
+}

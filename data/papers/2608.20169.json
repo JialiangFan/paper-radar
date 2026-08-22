@@ -1,0 +1,17 @@
+{
+ "id": "2608.20169",
+ "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
+ "authors": "Atsuyuki Miyai, Kiyoharu Aizawa, Toshihiko Yamasaki",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20169v1",
+ "abstract": "We present a novel approach to efficient LLM agent harness optimization through adaptive validation task selection. Harness optimization iteratively rewrites the harness code based on validation performance, enabling substantial performance gains without updating the underlying model weights. Existing approaches, however, evaluate a fixed validation set in full at every iteration, incurring substantial evaluation costs even on tasks that become less discriminative as the harness evolves. We propose $\\textbf{Task-CoEvolve}$, which co-evolves the validation tasks with the harness by addressing two challenges: selecting informative tasks and estimating full-set performance from partial evaluations. Task-CoEvolve builds on the observation that tasks on which candidate harnesses disagree are more informative for distinguishing among them than tasks that are consistently solved or failed. It uses variance-weighted sampling based on past outcomes to focus evaluation on tasks near the agent's capability frontier, with the sampling distribution adapting as the harness evolves. It then estimates full-set scores from the sampled tasks by accounting for their sampling probabilities, enabling consistent comparisons across iterations despite evaluating different subsets. Experiments on online text classification and Terminal-Bench 2.1 show that Task-CoEvolve consistently outperforms fixed-subset baselines and matches the final performance of full-set search while reducing the number of evaluations during optimization by 80%. Code will be released at https://github.com/Agent4Science-UTokyo/Task-CoEvolve.",
+ "summary": "## Task-CoEvolve 论文总结\n\n**1. 核心创新点**\n让验证任务集与 harness（智能体框架代码）协同进化——只评估那些最能区分候选 harness 优劣的\"信息量高\"的任务，从而大幅降低 harness 优化过程中的评估开销。\n\n**2. 主要方法**\n- **问题背景**：harness 优化通过反复重写框架代码来提升 LLM 智能体性能（无需更新模型权重），但现有方法每轮都要在固定验证集上跑完整评估，成本高昂，且很多任务随 harness 演进已失去区分度。\n- **关键观察**：候选 harness 之间**结果不一致**（disagree）的任务，比那些\"总是做对\"或\"总是做错\"的任务更有信息量。\n- **技术手段一（选任务）**：基于历史评估结果做**方差加权采样**（variance-weighted sampling），把评估预算集中在智能体\"能力边界\"附近的任务上；采样分布随 harness 演进而自适应调整。\n- **技术手段二（估分数）**：利用采样概率对部分评估结果做校正，**无偏估计全集分数**，使得各轮虽然评估的子集不同，仍可进行一致的横向比较。\n\n**3. 结论/性能**\n在**在线文本分类**和 **Terminal-Bench 2.1** 两个任务上：\n- 持续优于固定子集（fixed-subset）基线；\n- 最终性能与\"全集搜索\"持平；\n- 优化过程中的评估次数**减少 80%**。\n- 代码将开源于 `github.com/Agent4Science-UTokyo/Task-CoEvolve`。\n\n> 一句话：用\"哪些题目最能分出高下\"来动态选题 + 概率加权还原全集分数，把 harness 优化的评估成本砍掉八成而不损失效果。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:02:05",
+ "topics": [
+  "llm-agents",
+  "robot-harness"
+ ]
+}

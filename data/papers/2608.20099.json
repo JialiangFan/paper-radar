@@ -1,0 +1,17 @@
+{
+ "id": "2608.20099",
+ "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
+ "authors": "Poomphob Suwannapichat, Boonyarit Changaival, Caesar Wu, Pascal Bouvry",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20099v1",
+ "abstract": "LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic topology design, ARG-Designer, has reframed this problem as autoregressive graph generation. However, its training objective provides no explicit incentive for the model to generate sparse and efficient topologies. We address this limitation by introducing a Reward-Guided Autoregressive Graph Generation (RGA-Designer) inspired by Reinforcement Learning from Human Feedback (RLHF). We train a reward model that jointly captures task correctness and structural compactness, and then fine-tune the pretrained graph generator using the reward model as feedback. Our method preserves task accuracy at the level of ARG-Designer while reducing token consumption by an average of 20.5%.",
+ "summary": "## 论文总结\n\n**标题**：Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design（奖励引导的自回归图生成，用于高效多智能体通信拓扑设计）\n\n---\n\n### 1. 核心创新点\n\n针对已有自回归拓扑生成方法（ARG-Designer）缺乏「稀疏化激励」的缺陷，引入 RLHF 式的奖励模型来引导图生成，从而在保持任务准确率的同时显著降低多智能体系统的 token 开销。\n\n### 2. 主要方法\n\n- **问题背景**：基于 LLM 的多智能体系统（MAS）靠多个 agent 协同解决复杂推理任务，但通信开销（token 消耗）很大。ARG-Designer 把「通信拓扑设计」建模为自回归图生成，但其训练目标只关心生成得像不像，不会主动去生成稀疏高效的拓扑。\n- **RGA-Designer 两阶段方案**：\n  1. 训练一个**奖励模型（reward model）**，同时刻画两个维度——**任务正确性**与**结构紧凑性（稀疏度）**；\n  2. 以该奖励模型作为反馈信号，对**预训练好的图生成器进行微调**（借鉴 RLHF 的思路，即先预训练、再用奖励信号对齐）。\n\n### 3. 结论 / 性能\n\n在**任务准确率与 ARG-Designer 持平**的前提下，**平均减少 20.5% 的 token 消耗**，即以近乎无损的性能换取了更高的通信效率。\n\n---\n\n**一句话点评**：本质是把 RLHF 的「预训练 + 奖励微调」范式迁移到图结构生成上，用一个兼顾「效果」和「成本」的复合奖励，把原本无约束的拓扑生成推向帕累托更优的稀疏解。\n\n如果你希望做更深入的结构化精读（研究问题、贡献点、方法论细节，并输出中英双语笔记到 Obsidian），可以让我调用 `paper-review` 技能。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:02:57",
+ "topics": [
+  "llm-agents",
+  "efficiency-systems"
+ ]
+}

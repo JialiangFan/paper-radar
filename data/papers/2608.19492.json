@@ -1,0 +1,17 @@
+{
+ "id": "2608.19492",
+ "title": "Beyond Multimodal Alignment: Certifying Physical Language through Response Substitution and Ordered Execution",
+ "authors": "Kaizhen Tan, Xin Xu, Siru Tao, Yixiao Li, Hanzhe Hong, Yang Feng, Heqing Du",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19492v1",
+ "abstract": "World models increasingly treat compact multimodal representations as interfaces between perception and physical interaction, yet existing probes do not establish whether different sensors carry the same executable meaning or whether that meaning survives a new action composition. We introduce an operational capability hierarchy and the Disjoint-Bridge Operator-Substitution Certificate (DBOSC), which asks whether independently trained modality compilers enter a frozen response chart interchangeably on evidence outside their training panels. On Cluster Haptic, audio and acceleration representations of the same unseen surface are 4.5x closer in response space than wrong-surface pairings, with the gap holding for all 19 held-out surfaces; unsealing withheld responses confirms that every branch predicts the physics better than the population chart. We then test ordered execution in a controlled elastoplastic system with complementary modality blind spots. At the pre-registered budget, the prerequisite refuses the stack because the frozen executor cannot advance even an exact chart coordinate through a held-out program. At a converged budget, the same rank-three chart executes those programs (oracle NMSE 0.18), fusion improves on both modalities, and 14 of 16 registered checks pass; the two failures arise because a diagonal restriction of the fused information matrix performs as well as the full one. Clearing the gate is a property of the executor, not the chart: an executor emitting whole programs instead of shared per-step dynamics is 38x worse than an entity-blind predictor on the same chart. A matching non-identifiability result explains why compression and fusion alone cannot determine an unseen composition law. These results separate attribute access, response substitution, fusion closure, and ordered execution into distinct, separately testable achievements.",
+ "summary": "## 论文摘要总结\n\n**标题**：《超越多模态对齐：通过响应替换与有序执行来认证物理语言》\n\n### 1. 核心创新点\n提出一套「可操作能力层级」与 DBOSC（不相交桥接算子替换证书），把\"多模态表征是否真正共享可执行的物理含义\"从笼统的对齐概念，拆解为**属性访问、响应替换、融合闭合、有序执行**四项可分别检验的能力。\n\n### 2. 主要方法\n- **DBOSC 证书**：让独立训练的各模态\"编译器\"在**训练面板之外**的证据上，互换着接入同一个**冻结的响应图（response chart）**，检验它们能否可替换地驱动下游物理预测。\n- **实验一（Cluster Haptic 触觉数据集）**：比较同一未见表面的音频表征与加速度表征在响应空间中的距离。\n- **实验二（受控弹塑性系统）**：两模态存在互补盲区，用**预注册**的检验清单（16 项）测试冻结执行器能否把精确的图坐标推进通过留出的动作程序（有序执行）；执行器采用低秩（rank-3）图 + 共享的逐步动力学。\n- 附带一个**不可辨识性（non-identifiability）理论结果**。\n\n### 3. 结论/性能\n- **响应替换成立**：同一未见表面的音频与加速度表征在响应空间中的距离比错配表面近 **4.5 倍**，且在全部 **19 个留出表面**上都成立；解封留出响应后，每个分支对物理的预测都优于总体图基线。\n- **有序执行是更高一级门槛**：在预注册预算下前置条件直接**拒绝**该模型栈（冻结执行器无法推进留出程序）；在收敛预算下同一 rank-3 图可以执行（oracle NMSE 0.18），融合优于任一单模态，**16 项检验通过 14 项**（2 项失败源于融合信息矩阵的对角近似与完整矩阵表现相当）。\n- **关键归因**：通过门槛靠的是**执行器**而非表征图——输出整段程序而非共享逐步动力学的执行器，在同一张图上比\"实体无关\"的朴素预测器还差 **38 倍**；理论结果进一步说明仅靠压缩与融合无法确定未见的组合律。\n\n**一句话评价**：这篇工作说明\"多模态表征对齐得好\"并不等于\"能执行新的动作组合\"，二者需要分开认证。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-22 13:06:04",
+ "topics": [
+  "world-model-learning",
+  "formal-methods"
+ ]
+}

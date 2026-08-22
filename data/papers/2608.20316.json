@@ -1,0 +1,17 @@
+{
+ "id": "2608.20316",
+ "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+ "authors": "Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20316v1",
+ "abstract": "Heterogeneous AI systems composed of multiple models, architectures, harnesses, or inference-time settings can improve quality and efficiency by routing queries to the specialist who can answer most effectively at the lowest cost. Routing requires estimating each specialist's expected return, but this value estimation has a cost. Cheap estimators (e.g., embedding-based predictors) are fast but noisy, while accurate estimators (e.g., fine-tuned models with access to retrieval results or partial reasoning traces) are expensive. We formalize this tradeoff as an instance of Pandora's Box, the classical problem of optimal search with costly inspection. Under a Gaussian signal model, the resulting policies have closed-form value-of-information expressions that determine, for each specialist and input, whether refining the value estimate is worth its cost. We call the centralized policy Pandora's Router. We extend this to a decentralized setting, Pandora's Bidder, where specialists independently decide whether to invest in self-assessment before accepting an offered price to claim a query. Experiments across three domains---a standard multi-LLM benchmark, retrieval-augmented specialists, and LLMs with variable inference-time reasoning---show that Pandora's Router matches the routing quality of exhaustive estimation, while querying the expensive estimator far less often. In the decentralized setting, value-of-information reasoning improves allocative efficiency when competing estimates are accurate; when competing estimates are noisy, however, it can increase the strategic specialist's utility at the expense of others.",
+ "summary": "## 论文速览：Pandora's AI Model Routing Box\n\n**1. 核心创新点**\n把「多模型路由中该花多少代价去估计每个专家模型的价值」这一问题，形式化为经典的 Pandora's Box（带检查成本的最优搜索）问题，从而给出何时值得调用昂贵评估器的最优决策规则。\n\n**2. 主要方法**\n- 场景：异构 AI 系统（不同模型 / 架构 / 推理时设置）需把 query 路由给「效果最好且成本最低」的专家。评估器分廉价噪声型（如 embedding 预测器）与昂贵精确型（如带检索结果或部分推理轨迹的微调模型）。\n- 在高斯信号模型假设下，推导出闭式的**信息价值（value of information）**表达式，判断针对每个专家和每个输入是否值得进一步细化价值估计。\n- 两套策略：**Pandora's Router**（中心化调度）与 **Pandora's Bidder**（去中心化，各专家自行决定是否投入自评估，再决定是否按给定价格接单）。\n\n**3. 结论/性能**\n在三类实验（标准多 LLM benchmark、检索增强专家、可变推理预算的 LLM）中，Pandora's Router 达到与「对所有专家做穷举精确估计」相当的路由质量，但调用昂贵评估器的次数大幅减少。去中心化设置下：当竞争者的估计较准确时，信息价值推理提升整体配置效率；但当竞争估计噪声较大时，策略性专家会以牺牲他人利益为代价提高自身收益。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-22 13:01:36",
+ "topics": [
+  "efficiency-systems",
+  "llm-agents"
+ ]
+}
