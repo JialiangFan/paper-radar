@@ -1,0 +1,17 @@
+{
+ "id": "2608.20256",
+ "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
+ "authors": "Gijs Kassenaar, Zhao Yang, Vincent François-Lavet",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20256v1",
+ "abstract": "Reasoning language models trained with reinforcement learning typically operate under a fixed token budget rather than an explicitly adaptive one, which can lead to over-computation on easy problems and insufficient computation on difficult ones. We study whether a model can learn to allocate its own reasoning effort by choosing, as the first token of its response, one of three modes: \\textsc{NoThink} (answer as quickly as possible), \\textsc{Short} (brief reasoning), or \\textsc{Long} (extended reasoning). The choice is learned inside Group Relative Policy Optimization (GRPO) with no separate router, through a shaped reward that makes each mode worthwhile at a different response length, together with hard per-mode token caps that keep the modes distinct. On a 1.5B distilled model trained on MATH, the three modes emerge without collapsing to a single choice, and the brief modes end up more accurate than \\textsc{Long}, which shows that the router sorts problems by difficulty rather than at random. Averaged over three seeds, the resulting policy stays close to the base model's accuracy on the held-out MATH500 ($0.782$ vs.\\ $0.796$) while cutting the mean response length from $4{,}796$ to $2{,}811$ tokens (a $41\\%$ reduction). Interestingly, it also transfers to other benchmarks without retraining, with the largest savings where problems are easier, with for instance 76\\% token reduction on GSM8K and at higher accuracy than the baselines at similar response length. In short, we build a reasoning model that adaptively chooses how much to reason for each problem.",
+ "summary": "**核心创新点**：让推理模型自己学会\"该想多久\"——在回答的第一个 token 就选择推理模式，从而按题目难度自适应分配测试时计算量。\n\n**主要方法**：定义三种模式 NoThink（直接答）、Short（简短推理）、Long（长推理），把模式选择直接嵌入 GRPO 强化学习训练中，不额外训练路由器。关键设计是两点：一是塑形奖励（shaped reward），使每种模式在不同的回答长度区间上收益最优；二是每种模式的硬性 token 上限，防止模式之间退化趋同。实验在 1.5B 蒸馏模型上、用 MATH 数据集训练。\n\n**结论/性能**：三种模式稳定共存而未坍缩到单一选择，且 Short/NoThink 的准确率反而高于 Long，说明路由是按难度分流而非随机。在 MATH500 上，三个随机种子平均准确率 0.782，接近基线的 0.796，但平均回答长度从 4796 降到 2811 tokens（减少 41%）。该策略无需重训即可迁移到其他基准，越简单的题目节省越多，例如 GSM8K 上 token 减少 76%，且在相同回答长度下准确率优于基线。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-23 13:02:33",
+ "topics": [
+  "llm-reasoning",
+  "efficiency-systems"
+ ]
+}

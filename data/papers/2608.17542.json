@@ -1,0 +1,16 @@
+{
+ "id": "2608.17542",
+ "title": "No Gaussian Required: Contrastive Inverse Dynamics for JEPA World Models",
+ "authors": "Jack Boylan, Chris Hokamp",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17542v1",
+ "abstract": "Joint-Embedding Predictive Architectures (JEPAs) learn world models by predicting future embeddings, but the objective admits a trivial solution of a constant encoder, so every practical system adds an anti-collapse mechanism (LeCun, 2022; Assran et al., 2023; Bardes et al., 2022; 2024). LeWorldModel (LeWM) prevents collapse with SIGReg, a regularizer that forces the latent distribution to match an isotropic Gaussian: the representation is stabilized by prescribing what it must look like, independently of the environment it models. We argue that the anti-collapse pressure can instead come from the transition data itself. Action-Contrastive Masked Transition Modeling (AC-MTM) keeps LeWM's forward latent-prediction objective and adds a training-only inverse-dynamics head trained with Action-NCE: each latent transition must identify the action that produced it among the other actions in the batch, a discrimination task that a collapsed encoder provably fails. The inverse branch is discarded after training, leaving test-time encoding, forward prediction, planning, and compute identical to LeWM. On four standard pixel-control tasks under a matched planning protocol, AC-MTM trains stably from scratch and matches SIGReg on average. On the harder multi-object OGBench Visual Scene task, results are consistent with the prescribed geometry becoming a bottleneck: AC-MTM reaches 80.0$\\pm$2.0% success versus 58.0$\\pm$2.0% for SIGReg, improving by 20-24 points in each training seed. A single 50-episode random-policy run gives a 52% baseline estimate. Contrastive inverse dynamics thus provides a distribution-free anti-collapse signal that requires no target network, stop-gradient, pretrained encoder, or reconstruction objective, and we characterize the action-space and observability assumptions under which it holds. We make our code available at https://github.com/jackboyla/action-contrastive-jepa",
+ "summary": "## 论文总结：No Gaussian Required: Contrastive Inverse Dynamics for JEPA World Models\n\n**1. 核心创新点**\n用「动作对比式逆动力学」替代对隐空间强加高斯先验的正则化，让 JEPA 世界模型的防坍缩信号直接来自转移数据本身，而非人为规定的分布几何。\n\n**2. 主要方法**\n在 LeWorldModel (LeWM) 的前向隐空间预测目标基础上，提出 **AC-MTM**（Action-Contrastive Masked Transition Modeling）：保留原有的前向预测损失，去掉 SIGReg（强制隐分布匹配各向同性高斯的正则项），改为增加一个**仅训练期使用的逆动力学头**，以 Action-NCE 损失训练——每个隐空间转移必须在 batch 内的其他动作中辨认出真正产生它的那个动作；坍缩的编码器在理论上必然无法完成该判别任务。逆动力学分支在训练后被丢弃，因此测试期的编码、前向预测、规划流程与算力开销与 LeWM 完全一致。该方法不需要 target network、stop-gradient、预训练编码器或重建目标，作者同时刻画了其成立所依赖的动作空间与可观测性假设。\n\n**3. 结论/性能**\n- 在 4 个标准像素控制任务上（统一规划协议），AC-MTM 可从零稳定训练，平均性能与 SIGReg 持平。\n- 在更难的多物体 OGBench Visual Scene 任务上显著占优：成功率 **80.0±2.0%** vs SIGReg 的 **58.0±2.0%**，且每个训练随机种子上都提升 20–24 个百分点，支持「预设几何在复杂环境中成为瓶颈」这一论点。\n- 代码已开源（github.com/jackboyla/action-contrastive-jepa）。\n\n一点值得注意的地方：论文给出的随机策略基线约为 52%（仅由单次 50 回合运行估计），这意味着 SIGReg 的 58% 其实只略高于随机水平，因此该任务上的对比更像是「SIGReg 基本失效、AC-MTM 有效」，而非两个有效方法之间的边际差距；该基线的统计强度也偏弱。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-23 13:04:46",
+ "topics": [
+  "world-model-learning"
+ ]
+}

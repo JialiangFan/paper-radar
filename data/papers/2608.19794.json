@@ -1,0 +1,17 @@
+{
+ "id": "2608.19794",
+ "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
+ "authors": "Fujiang Yuan, Xia Huang, Lusheng Wang, Jun Ding, Zhen Tian, Yuxin Wang, Shaojie Gu, Yuki Funabora, Yanhong Peng, Zebing Mao",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19794v1",
+ "abstract": "The convergence of large language models (LLMs), structured knowledge bases (KBs), and reasoning ability (RA) presents a promising trajectory toward general embodied intelligence (GEI). This paper reviews the evolution of LLM-centered intelligent systems, emphasising their integration with knowledge representation, logical reasoning, and physical embodiment. We analyse LLM architectures, pre-training methods, and inference mechanisms, along with their interaction with external knowledge sources and structured reasoning frameworks. Furthermore, we examine embodied intelligence (EI) paradigms wherein agents learn and act in physical environments. To synthesise these dimensions, we present a conceptual framework that illustrates the synergy among LLMs, KBs, RA, and embodiment, serving as a guiding model for perception, reasoning, and action rather than an implemented engineering architecture. To advance toward GEI, we identify five key challenges: efficient LLM deployment, closed-loop knowledge integration, hybrid symbolic-neural reasoning, perception-action grounding, and continual learning. This survey provides a comprehensive roadmap for developing adaptive, multimodal agents capable of operating in complex, dynamic settings.",
+ "summary": "## 论文总结\n\n**1. 核心创新点**\n这是一篇综述，提出将大语言模型（LLM）、结构化知识库（KB）与推理能力（RA）三者与\"具身性\"融合，作为通往**通用具身智能（GEI）**的技术路线，并给出一个统一的概念框架。\n\n**2. 主要方法**\n- 系统梳理以 LLM 为中心的智能系统演进：模型架构、预训练方法、推理（inference）机制；\n- 分析 LLM 与外部知识源、结构化推理框架的交互方式；\n- 考察智能体在物理环境中学习与行动的具身智能（EI）范式；\n- 综合上述维度，提出一个刻画 LLM–KB–RA–具身性协同关系的**概念框架**（作者明确说明这是\"感知—推理—行动\"的指导性模型，而非已实现的工程架构）。\n\n**3. 结论/性能**\n本文属于综述性质，无实验指标。主要产出是识别出通往 GEI 的**五大挑战**：LLM 高效部署、闭环知识集成、符号—神经混合推理、感知—动作接地（grounding）、持续学习；并据此给出面向复杂动态环境中自适应多模态智能体的研究路线图。\n\n> 注：由于是 survey 且框架未落地实现，其贡献偏向问题梳理与方向指引，缺乏可验证的性能证据。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-23 13:01:30",
+ "topics": [
+  "llm-agents",
+  "llm-reasoning"
+ ]
+}

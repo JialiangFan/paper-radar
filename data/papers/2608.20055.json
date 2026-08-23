@@ -1,0 +1,17 @@
+{
+ "id": "2608.20055",
+ "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+ "authors": "Yiting Qu, Ziqing Yang, Chi Cui, Ye Leng, Junjie Chu, Yang Zhang",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20055v1",
+ "abstract": "Hidden chain-of-thought (CoT) traces, especially those from frontier proprietary large reasoning models (LRMs), are valuable model assets. Yet whether these hidden CoTs can be directly extracted from black-box models remains largely unexplored. In this work, we systematically study whether hidden CoTs can be extracted near-verbatim from black-box LRMs through API interactions. We identify a previously overlooked reasoning replay surface between tool calls and develop EchoCoT, a multi-step attack that iteratively extracts hidden CoTs using API-returned fidelity signals. We further develop an LLM-based optimization framework that automatically searches for an effective universal injection trajectory across various datasets. We evaluate EchoCoT on three open-source and five frontier proprietary LRMs. On open-source LRMs, EchoCoT achieves up to 66.4\\% near-verbatim extraction success, with the extracted trace length within 10\\% of the target and at least 90\\% of tokens exactly matching the target CoT. The same injection trajectory also generalizes to unseen datasets, achieving up to 80\\% extraction success under the same criterion. For tested frontier proprietary LRMs, a substantial fraction of extracted CoTs closely align with provider-reported reasoning lengths and available CoT summaries. EchoCoT can also extract very long CoTs: on Gemini-2.5, it extracts 33,463 tokens from a 32,948-token target. These results establish hidden-CoT extraction as a practical security risk and highlight the need to better protect hidden CoT assets.",
+ "summary": "**EchoCoT: 从大型推理模型中提取隐藏思维链**\n\n1. **核心创新点**\n首次系统性地证明：前沿闭源推理模型（LRM）的隐藏思维链（CoT）可以通过普通 API 交互被近乎逐字地窃取出来，从而把「隐藏 CoT 提取」确立为一种现实存在的安全风险。\n\n2. **主要方法**\n- 发现了一个此前被忽视的攻击面：**工具调用之间的「推理重放」环节**（模型在多轮 tool call 之间会重新回放自己的推理内容）。\n- 基于此设计 **EchoCoT** —— 一种多步迭代攻击，利用 API 返回的**保真度信号**（如 reasoning token 数等反馈）逐步逼近并还原原始 CoT。\n- 进一步构建了一个 **基于 LLM 的自动优化框架**，跨多个数据集自动搜索出一条通用的「注入轨迹」（universal injection trajectory），无需针对每个任务重新调参。\n\n3. **结论/性能**\n- **开源 LRM**：近逐字提取成功率最高 **66.4%**（判定标准严格：提取长度与目标相差 <10%，且 ≥90% token 与目标 CoT 完全一致）。\n- **泛化性**：同一条注入轨迹迁移到未见过的数据集上，成功率最高达 **80%**。\n- **闭源前沿模型**（5 个）：相当比例的提取结果与官方公布的 reasoning 长度及 CoT 摘要高度吻合。\n- **长文本能力**：在 Gemini-2.5 上，从一段 32,948 token 的目标 CoT 中提取出 33,463 token。\n- 结论：隐藏 CoT 作为模型核心资产亟需更强的保护机制。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-23 13:00:26",
+ "topics": [
+  "llm-reasoning",
+  "ai-safety-alignment"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "2608.17600",
+ "title": "LIBERO-VIFO: Benchmarking the Capability and Safety of Visual Cue Following in Vision-Language-Action Models",
+ "authors": "Zhengyan Qian, Rui Yan, Alex Jinpeng Wang, Jinhui Tang",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17600v1",
+ "abstract": "Visual cues are increasingly adopted to guide robot learning, but whether Vision-Language-Action (VLA) models can reliably follow authorized cues while disregarding unauthorized ones remains unclear. Existing work covers only a narrow range of cue forms and focuses on final task success, providing only a coarse assessment of cue-following capability. Treating all visual cues as authorized also leaves safety risks of unauthorized following unexplored. To address these gaps, we introduce LIBERO-VIFO, a benchmark to evaluate both the capability and safety of visual cue following in VLA models. LIBERO-VIFO defines eight visual cue families spanning diverse forms. A total of four protocols in two parts are defined: Part I tests cue understanding and authorized following, while Part II evaluates unauthorized visual cue following under language-cue conflict and empty language conditions. Evaluating seven VLA models reveals that although visual cue understanding does not reliably translate into execution, current VLAs are able to execute cue-indicated tasks without language instruction, exposing an emerging risk of unauthorized visual cue following. Extended experiments on scene-instantiated cues, safety-critical settings, and real-robot deployment corroborate these findings. LIBERO-VIFO brings both the capability and safety of visual cue following into systematic evaluation, establishing visual-centric safety as a new perspective for the VLA community.",
+ "summary": "**LIBERO-VIFO 论文摘要**\n\n1. **核心创新点**\n提出 LIBERO-VIFO 基准，首次系统评估视觉-语言-动作（VLA）模型「跟随视觉提示」的**能力**与**安全性**——即模型能否遵循授权提示、同时拒绝未授权提示。\n\n2. **主要方法**\n- 定义 **8 类视觉提示族**（覆盖多样化的提示形式），弥补以往工作提示形式单一、只看最终任务成功率的粗粒度评估缺陷。\n- 设计 **两部分共 4 套评测协议**：Part I 考察提示理解与授权跟随；Part II 在「语言-视觉提示冲突」和「空语言指令」两种条件下考察未授权提示跟随。\n- 在 **7 个 VLA 模型**上评测，并补充场景实例化提示、安全关键场景以及**真实机器人部署**的扩展实验。\n\n3. **结论/性能**\n- 视觉提示的**理解能力并不能可靠地转化为执行能力**（理解 ≠ 执行）。\n- 更关键的是：现有 VLA 在**没有任何语言指令**的情况下，仍会执行视觉提示所指示的任务，暴露出「未授权视觉提示跟随」这一新兴安全风险。\n- 扩展实验（含真机）验证了上述发现，论文由此提出以**视觉为中心的安全性**作为 VLA 社区值得关注的新研究视角。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-23 13:03:54",
+ "topics": [
+  "vla-safety",
+  "embodied-benchmarks"
+ ]
+}

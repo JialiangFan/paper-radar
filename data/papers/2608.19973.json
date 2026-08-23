@@ -1,0 +1,16 @@
+{
+ "id": "2608.19973",
+ "title": "Open-Vocabulary 3D Object Detection with Co-Distillation Discovery and Dual Guidance Robust Training",
+ "authors": "Shangbo Yuan, Jie Xu, Xiaofeng Zhu, Na Zhao",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19973v1",
+ "abstract": "Recently, open-vocabulary 3D object detection (3D-OVD) has gained increasing attention for its ability to detect unseen objects in 3D scenes. Existing approaches typically adopt a two-stage pipeline that first discovers novel objects using foundation models and then trains a 3D-OVD model based on these discovered objects. Although effective, this pipeline often suffers from inaccurate localization and mismatched classification during the discovery stage, which subsequently limits the performance of the model training stage. To address these limitations, we advocate for improving both the reliability of novel object discovery and the robustness of model training, and propose an innovative framework. Specifically, for reliable discovery, our co-distillation strategy distills high-quality novel objects by applying Hungarian matching over a comprehensive score that incorporates geometric consistency, structural objectness, and semantic certainty. To enhance robust model training, we further propose a dual-guidance learning scheme, incorporating a scene-awareness-guided uncertainty regularization for the regression head and an LLM-guided hierarchical alignment for the classification head, effectively mitigating the negative effects of imprecise 3D bounding boxes and semantic ambiguity. Extensive experiments on SUN RGB-D and ScanNetV2 demonstrate that our method achieves significant performance gains over state-of-the-art approaches. Code is available at https://github.com/shangboyuan/Co-3DGT",
+ "summary": "## Open-Vocabulary 3D Object Detection with Co-Distillation Discovery and Dual Guidance Robust Training\n\n**1. 核心创新点**\n针对开放词汇 3D 检测（3D-OVD）两阶段流程中\"新物体发现不准、训练受噪声标注拖累\"的问题，提出同时提升**发现可靠性**与**训练鲁棒性**的框架 Co-3DGT。\n\n**2. 主要方法**\n- **协同蒸馏发现（Co-Distillation Discovery）**：构建融合**几何一致性、结构物体性、语义确定性**的综合评分，再用**匈牙利匹配**筛选/蒸馏出高质量的新类伪标注框。\n- **双重引导训练（Dual Guidance）**：\n  - 回归头 —— **场景感知引导的不确定性正则化**，缓解 3D 框定位不精确带来的监督噪声；\n  - 分类头 —— **LLM 引导的层次化语义对齐**，缓解开放词汇下的类别语义歧义。\n\n**3. 结论/性能**\n在 **SUN RGB-D** 和 **ScanNetV2** 两个室内基准上进行了大量实验，相比当前 SOTA 的 3D-OVD 方法取得显著性能提升；代码已开源（github.com/shangboyuan/Co-3DGT）。\n\n> 摘要中未给出具体的 mAP 数值，\"significant gains\" 为原文表述，如需确切指标需查阅正文实验表。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-23 13:00:57",
+ "topics": [
+  "multimodal-perception"
+ ]
+}

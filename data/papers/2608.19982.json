@@ -1,0 +1,16 @@
+{
+ "id": "2608.19982",
+ "title": "COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense",
+ "authors": "Roshan Sood, Onat Gungor, Tajana Rosing",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19982v1",
+ "abstract": "LLMs remain vulnerable to prompt injection attacks, where adversarial instructions embedded in user inputs or external content manipulate model behavior and bypass safeguards. Existing defenses are predominantly static, relying on fixed alignment objectives or attack-specific filtering mechanisms that require redesign as new attack strategies emerge. While recent lifelong alignment methods address shifting user preferences, they do not account for adaptive adversaries that continually evolve to exploit weaknesses in previously learned defenses. This limitation is particularly important in real-world deployments, where evolving attack distributions necessitate continual adaptation without sacrificing robustness to previously encountered threats. We present COPA, a continual preference optimization framework that treats prompt-injection defense as a lifelong learning problem. Instead of one-time alignment, COPA incrementally incorporates feedback from newly observed attacks via GRPO-based optimization and uses margin-weighted experience replay to retain defenses against prior attack classes. This enables continuous adaptation to emerging threats while mitigating catastrophic forgetting and preserving general-purpose model capabilities. Across lifelong prompt injection attack streams, COPA reduces attack success rate by up to 6.3x and 4.4x on average compared to state-of-the-art defenses. These results highlight continual preference optimization as an effective paradigm for defending LLMs against adaptive adversaries.",
+ "summary": "## COPA: 面向自适应提示注入防御的持续偏好优化\n\n**1. 核心创新点**\n把提示注入防御从\"一次性静态对齐\"重构为**终身学习问题**，让模型能持续适应不断进化的攻击者，同时不遗忘旧有防御能力。\n\n**2. 主要方法**\n- 基于 **GRPO**（组相对策略优化）的持续偏好优化框架，增量吸收新观测到的攻击样本反馈；\n- 采用 **margin-weighted experience replay（边际加权经验回放）**，按偏好间隔加权重放历史攻击样本，缓解灾难性遗忘；\n- 在\"终身攻击流\"（lifelong prompt injection attack streams）设定下评估，模拟攻击分布随时间演化的真实部署场景。\n\n**3. 结论/性能**\n相比当前最优防御方法，攻击成功率（ASR）**最高降低 6.3 倍，平均降低 4.4 倍**；同时保持了对已见攻击类别的鲁棒性和模型的通用能力，验证了持续偏好优化作为对抗自适应攻击者范式的有效性。\n\n**一句话点评**：亮点在于把\"防御 vs. 攻击\"的军备竞赛显式建模为持续学习问题——不过摘要未说明如何获取实时攻击反馈流，这在真实部署中往往是瓶颈。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-23 13:00:42",
+ "topics": [
+  "ai-safety-alignment"
+ ]
+}

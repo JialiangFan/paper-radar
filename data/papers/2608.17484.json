@@ -1,0 +1,16 @@
+{
+ "id": "2608.17484",
+ "title": "Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies",
+ "authors": "Yuhwan Jeong, Kuk-Jin Yoon",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17484v1",
+ "abstract": "Frozen vision-language-action (VLA) policies are increasingly improved at test time by sampling additional policy behaviors or introducing external demonstrations. Yet there is little guidance for deciding which intervention a deployed policy actually needs. Additional sampling is useful only when better behavior already exists within the policy's stochastic rollouts and can be identified, whereas retrieval is most useful when the relevant action prior is not reliably represented by the policy. We study this decision through two measurable factors, recoverable headroom and retrieval complementarity, which characterize how much useful behavior is already available to recover and whether an external action prior fills a measurable gap. We evaluate an episode-level retry selector under retryable or parallel execution, together with retrieval across multiple frozen VLA policies and environments. The selector consistently recovers substantial latent capability across all tested VLA backbones on LIBERO, with gains of up to 21.0 success-rate points that closely track recoverable headroom. It also transfers to a different robot and simulator and remains effective under degraded observations, while experiments with autoregressive OpenVLA illustrate the distinction between available headroom and the ability to rank candidate rollouts. Retrieval behaves differently, improving the policy with the largest measured action-prior gap and providing further gains when combined with selection. Together, these results provide an empirical basis for characterizing test-time augmentation opportunities by separating capability that can be recovered from the frozen policy from behavioral priors that may need to be introduced externally.",
+ "summary": "**论文中文摘要**\n\n**1. 核心创新点**\n提出用「可恢复余量（recoverable headroom）」和「检索互补性（retrieval complementarity）」两个可测量指标，来诊断一个冻结的 VLA 策略在测试时到底该「重采样自身行为」还是「外部检索示范」。\n\n**2. 主要方法**\n- 针对冻结的视觉-语言-动作（VLA）策略，在可重试/并行执行设定下引入一个 **episode 级重试选择器**（对多次随机 rollout 打分并挑选最优）。\n- 同时在多个 VLA 骨干与多种环境中评测**外部检索**（引入外部动作先验）的效果，并测试二者结合。\n- 用两个诊断量刻画：策略自身随机 rollout 中已存在多少可挖掘的好行为（headroom），以及外部先验是否填补了策略的真实空缺（complementarity）。\n\n**3. 结论/性能**\n- 在 LIBERO 上，选择器对所有测试的 VLA 骨干都稳定挖掘出潜在能力，成功率最高提升 **21.0 个百分点**，且增益与测得的 recoverable headroom 高度吻合。\n- 该方法可迁移到不同机器人与仿真器，在观测退化条件下仍然有效；而自回归的 OpenVLA 实验则揭示了「存在余量」与「能否正确排序候选 rollout」是两回事。\n- 检索的行为模式不同：它主要改善**动作先验缺口最大**的策略，并且与选择器结合可带来额外增益。\n- 整体上为「哪些能力能从冻结策略中恢复、哪些先验必须外部引入」提供了实证性的判据。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-23 13:04:10",
+ "topics": [
+  "vla-post-training"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "id": "2608.17951",
+ "title": "Observations of Disrupted CME Material Falling Back Into the Low Corona",
+ "authors": "Brian E. Wood, Jason E. Kooi",
+ "date": "2026-08-18",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.17951v1",
+ "abstract": "We present an empirical study of a disrupted CME, parts of which fall back to the Sun, using observations from SOHO, STEREO-A, and SDO. At UT 18:00 on 2024 August 16, a slow CME is overtaken by a faster CME. A leg of the second CME carries part of the slower CME out with it, resulting in an unusually well-defined flux rope leg for this CME. This second CME is observed in radio by the VLA, with Faraday rotation measurements showing a clear magnetic flux rope signature. A strong response is also later seen when the radio-observed line of sight enters the CME leg enriched by material from the disrupted CME. Outside this leg, the rest of the disrupted CME simply disappears and is replaced by a large number of small jet-like downflows. We see clear evidence of this plasma falling back to the low corona in EUV images from SDO, roughly 6-17 hours after the CME is disrupted, with an inferred downward velocity of V=-30 km/s. There is a clear temperature dependence, with the downflows seen first in the 211 bandpass, followed successively by responses at 193, 171, and 304. The downflows are much slower than would be expected for a ballistic descent, so we model the downflows using a kinematic drag model. In the 304 bandpass, coronal rain activity is triggered by the downflowing CME material, suggesting that downflows from the upper corona could be contributing to coronal rain more generally.",
+ "summary": "## 论文中文摘要\n\n**标题**：《观测到瓦解的日冕物质抛射（CME）物质回落至低日冕》\n\n---\n\n### 1. 核心创新点\n首次完整追踪了一次被快速 CME \"追尾撞散\"的慢速 CME，其残余物质在数小时后以小尺度喷流状下落回低日冕，并触发了日冕雨，提示上层日冕的回落物质可能是日冕雨的一种普遍来源。\n\n### 2. 主要方法\n- **多台站联合观测**：SOHO、STEREO-A、SDO 三颗卫星对 2024 年 8 月 16 日 18:00 UT 事件做协同成像。\n- **射电偏振测量**：用 VLA 观测第二个 CME，通过法拉第旋转（Faraday rotation）测量识别出清晰的磁通量绳（flux rope）特征。\n- **EUV 多波段成像**：利用 SDO 的 211、193、171、304 四个通道追踪下落等离子体的温度演化序列。\n- **动力学建模**：由于下落速度远低于纯自由落体（弹道）预期，作者采用**运动学阻力模型（kinematic drag model）**来拟合下落过程。\n\n### 3. 结论 / 性能\n- 快速 CME 的一条腿裹挟走了慢 CME 的部分物质，形成异常清晰的通量绳腿结构；当射电视线穿过这条\"被富集\"的 CME 腿时，出现显著的法拉第旋转响应。\n- 腿之外的残余 CME 物质则直接\"消失\"，转为大量小型喷流状下行流。\n- 回落发生在 CME 瓦解后约 **6–17 小时**，推算下行速度约 **V = −30 km/s**，明显慢于弹道下落，说明存在显著阻力作用。\n- 下落物质呈清晰的温度依赖性，依次在 211 → 193 → 171 → 304 波段出现（即逐步冷却）。\n- 在 304 波段中，下落的 CME 物质**触发了日冕雨活动**，据此推测来自上层日冕的回落流可能对日冕雨的形成有普遍贡献。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-23 13:03:40",
+ "topics": [
+  "other"
+ ]
+}

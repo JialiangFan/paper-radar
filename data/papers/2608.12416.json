@@ -1,0 +1,17 @@
+{
+ "id": "2608.12416",
+ "title": "RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills",
+ "authors": "Runyi Zhao, Ruixin Wu, Chengkun Li, Hongrui Zhang, Ang Li, Ruixing Jin, Yueci Deng, Yingying Guo, Lihe Ding, Shaocong Dong, Tianfan Xue, Yanjun Gao, Yudong Luo, Pascal Poupart, Simo Wu, Kui Jia, Wei-shi Zheng, Guiliang Liu",
+ "date": "2026-08-12",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.12416v1",
+ "abstract": "Achieving generalizable robotic manipulation remains a central challenge in embodied intelligence. Despite rapid advances in model architectures and learning algorithms, progress is often limited by the scarcity and narrow diversity of real-world data. The RoboSynChallenge competition introduces a unified benchmark to evaluate and advance the generalizability of manipulation policies across a spectrum of tasks, environments, and difficulty levels. To alleviate the shortage of realistic data, the challenge integrates large-scale synthetic data generation with standardized real-world robotic evaluation. Participants are encouraged to leverage synthesized state-action trials to improve general-purpose policy learning, while final assessments are conducted exclusively on unseen real-world manipulation environments. Baseline implementations, including Transformer-, Diffusion-, Vision-Language-Action, and World-Action-Model-based policies, are provided to ensure reproducibility and comparability. By coupling scalable simulation-based training with rigorous real-world validation, RoboSynChallenge aims to foster the development of broadly capable, data-efficient, and adaptable manipulation systems, thereby paving the way toward truly general robotic intelligence.",
+ "summary": "## RoboSynChallenge 论文摘要总结\n\n**1. 核心创新点**\n提出一个机器人操作竞赛基准：用大规模合成数据训练策略，但**只在未见过的真实环境中评测**，以此推动操作策略的泛化能力。\n\n**2. 主要方法**\n- 将「大规模仿真/合成数据生成」与「标准化真机评测」结合成统一流程；\n- 参赛者利用合成的 state-action 轨迹（状态-动作试验数据）训练通用策略；\n- 官方提供多类基线实现以保证可复现与可比较：Transformer 类、Diffusion（扩散策略）类、VLA（视觉-语言-动作模型）类，以及 World-Action-Model（世界模型+动作）类；\n- 任务覆盖多种任务类型、环境和难度等级。\n\n**3. 结论/性能**\n摘要中未给出具体的量化成绩或排行榜数据，属于**基准/竞赛介绍性论文**。其主要价值主张是：通过「可扩展仿真训练 + 严格真机验证」的组合，缓解真实数据稀缺与多样性不足的瓶颈，推动数据高效、适应性强的通用操作系统发展。\n\n---\n\n一点补充判断：这类论文的贡献在于评测协议而非新算法，阅读时值得关注的是它**如何界定「未见过的真实环境」**以及合成数据的生成管线细节——这两点决定了该基准衡量的到底是 sim-to-real 迁移能力还是策略架构本身的泛化性，而摘要并未说明。\n\n如果需要更完整的结构化综述（主题/背景/问题/贡献/方法论，并输出到 Obsidian），可以用 `/paper-review`。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-23 13:05:40",
+ "topics": [
+  "robot-manipulation",
+  "embodied-benchmarks"
+ ]
+}

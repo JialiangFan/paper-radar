@@ -1,0 +1,16 @@
+{
+ "id": "2608.19857",
+ "title": "Inadvertent Context Leakage in Language Models",
+ "authors": "Jaiden Fairoze, Neal Mangaokar, Kamalika Chaudhuri, Sanjam Garg, Saeed Mahloujifar",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19857v1",
+ "abstract": "For AI agents to be useful beyond simple chat, they must hold sensitive user context such as calendars, credentials, health records, and financial data. We study whether the mere presence of such secrets in a model's context window introduces hidden correlations into the model's benign outputs, allowing reconstruction even when the model correctly refuses direct extraction. We further study whether an adversary can actively engineer prompts that amplify this effect, using the model as a covert carrier to transmit secrets through seemingly innocuous text. In both cases, this limited leakage is exploited using a novel adaptive attack that assumes black-box access to the underlying model.\n  In controlled experiments across eight proprietary models, we find that 2-digit in-context secrets are reconstructed with near-perfect accuracy and 4-digit secrets at 82\\% exact match, all from outputs the model produces in response to ordinary, non-adversarial requests. We observe that more capable models leak more: stronger instruction-following amplifies sensitivity to in-context secrets, suggesting leakage is a byproduct of capability as opposed to a patchable bug. We show this leakage enables two practical attacks: (1) a trained classifier that infers semantic predicates about user memories (e.g., health conditions, financial events) from routine natural-language outputs, and (2) an RL-trained adversary that extracts full Social Security Numbers from a production-style agent.",
+ "summary": "## 论文中文摘要：《语言模型中的无意上下文泄漏》\n\n**1. 核心创新点**\n\n首次揭示：只要敏感信息存在于模型的上下文窗口中，模型在**正常、无害的输出**里就会不自觉地留下统计相关性，攻击者据此可重建这些秘密——即使模型对直接索取请求做出了正确拒绝。\n\n**2. 主要方法**\n\n- 提出一种**黑盒自适应攻击**，仅需模型的普通回复即可从中反推上下文内的秘密。\n- 两种攻击场景：**被动泄漏**（用户发出的是完全普通的请求）与**主动放大**（对手构造提示词，把模型当作隐蔽信道来\"夹带\"秘密）。\n- 两项下游实证攻击：① 训练一个分类器，从日常自然语言输出中推断关于用户记忆的语义谓词（如健康状况、财务事件）；② 用**强化学习训练的对手智能体**，从生产级 Agent 中完整提取社会安全号（SSN）。\n\n**3. 结论/性能**\n\n- 在 **8 个闭源商业模型**上验证：2 位数字秘密的重建准确率接近 100%，4 位数字秘密的精确匹配率达 **82%**，且全部来自模型对普通非对抗性请求的回复。\n- 关键发现：**能力越强的模型泄漏越严重**——更强的指令遵循能力放大了模型对上下文中秘密的敏感度，说明这种泄漏是模型能力的**副产品**，而非可以打补丁修复的 bug。\n- 实践意义：对于需要持有日历、凭证、健康与金融数据的 AI Agent，\"拒绝直接提取\"这一防线并不足以保证隐私安全。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-23 13:01:16",
+ "topics": [
+  "ai-safety-alignment"
+ ]
+}

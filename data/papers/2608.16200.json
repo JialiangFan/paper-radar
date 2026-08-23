@@ -1,0 +1,16 @@
+{
+ "id": "2608.16200",
+ "title": "A Radio-Bright Local Little Red Dot Analog",
+ "authors": "Luis F. Rodriguez, I. FElix Mirabel, Rosa A. Gonzalez-Lopezlira, Laurent Loinard",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.16200v1",
+ "abstract": "The James Webb Space Telescope revealed the existence in the early Universe ($z >$ 4) of large populations of little red dots (LRDs), compact red luminous sources that host rapidly growing supermassive black holes (SMBHs) surrounded by coeval nuclear starbursts. LRDs have defining properties, one of which is the absence of radio detections. LRDs could be radio-undetected because of their large distances. A way to investigate the radio properties of LRDs is to search for radio emission in their local analogs, the Local Little Red Dot (LLRD) galaxies at $z <$ 1 with analogous properties to LRDs. We report the radio continuum detection of the LLRD analog J204837.26${-}$002437.2 ($z$ = 0.4332, hereinafter J2048). This adds to the previous radio detection of two other LLRDs. However, with a flux density of 3.0$\\pm$0.2 mJy at 3.0 GHz, J2048 is two orders of magnitude more radio luminous than the previous detections. The spectral index of $α$ = -0.39$\\pm$0.04 is consistent with moderately optically-thick synchrotron emission. The radio luminosity of J2048 is $1.2 \\times 10^{41}~ \\mathrm{erg ~s^{-1}}$, in the lower end of the range defined by radio-loud giant elliptical galaxies and quasars of $L_R$ = $10^{41-46} ~\\mathrm{erg ~s^{-1}}$. The expected radio luminosity of the SMBH associated with J2048 is estimated to be about an order of magnitude larger, suggesting that its radio luminosity could potentially be strongly dimmed. A cosmological ($z >$ 4) LRD with radio luminosity similar to that of J2048 would be detectable using the VLA with moderately long integrations.",
+ "summary": "## 论文速览：一个射电明亮的本地\"小红点\"类似体\n\n**1. 核心创新点**\n首次在本地\"小红点类似星系\"(LLRD) 中探测到射电光度高出以往两例约两个量级的源 J2048，说明\"小红点\"(LRD) 并非本质上射电宁静，其射电缺失更可能是距离导致的探测限制。\n\n**2. 主要方法**\n以 JWST 在 z > 4 发现的 LRD（致密、红、内含快速增长超大质量黑洞并伴随核区星暴）为对象，采用\"本地类似体\"策略：在 z < 1 的 LLRD 星系中搜寻射电连续谱对应体。对 J204837.26−002437.2（z = 0.4332）测量 3.0 GHz 射电流量密度，并通过多频段拟合谱指数 α 判断辐射机制，再结合黑洞质量-射电光度关系估算理论预期射电光度。\n\n**3. 结论/性能**\n- 3.0 GHz 流量密度 3.0 ± 0.2 mJy，射电光度 L_R = 1.2 × 10⁴¹ erg s⁻¹，落在射电噪巨椭圆星系与类星体范围 (10⁴¹⁻⁴⁶ erg s⁻¹) 的低端。\n- 谱指数 α = −0.39 ± 0.04，符合中等光学厚的同步辐射。\n- 该源实测射电光度比其中心超大质量黑洞的预期值低约一个量级，暗示射电辐射可能被显著压制（dimmed）。\n- 推论：若宇宙学距离 (z > 4) 上的 LRD 具有与 J2048 相当的射电光度，用 VLA 中等长度积分即可探测到——为未来 LRD 射电搜寻给出了可行的观测判据。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-23 13:05:23",
+ "topics": [
+  "other"
+ ]
+}

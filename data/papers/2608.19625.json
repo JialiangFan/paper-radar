@@ -1,0 +1,16 @@
+{
+ "id": "2608.19625",
+ "title": "Scientific Data Skills: Enabling Agent-Ready Scientific Data Services at Scale",
+ "authors": "Xiaohan Huang, Qingqing Long, Xiaolei Du, Siyu Pu, Jiawen Xu, Haotian Chen, Chenyang Zhao, Jinbiao Liu, Xuezhi Wang, Hao Wang, Hengshu Zhu, Yuanchun Zhou",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19625v1",
+ "abstract": "Scientific data are increasingly used by AI agents, yet existing dataset representations provide limited support for autonomous discovery, interpretation, and invocation. This limitation stems from the fragmentation of scientific data across heterogeneous repositories and from dataset representations designed primarily for human use. To address this limitation, we introduce the Scientific Data Skill (SciDSK), an agent-ready representation that packages dataset-specific knowledge and operational guidance as a reusable agent skill. A SciDSK integrates dataset descriptions, scientific context, file organization, usage procedures, quality checks, and provenance information while retaining the underlying data in its original repository. We define a structured SciDSK specification and develop a systematic construction pipeline that grounds each SciDSK in authoritative dataset records and associated supporting materials. We further establish the Scientific Data Skill Bank, a unified platform that publishes SciDSK resources across six scientific disciplines and supports package access, persistent identification, and traceability to source datasets. We evaluate SciDSK through a retrieval benchmark for dataset discovery and controlled cases for dataset interpretation. The results show that SciDSK improves agent-driven dataset discovery and provides more precise and actionable support for dataset interpretation. These findings support the value of organizing dataset-specific knowledge in an agent-ready representation.",
+ "summary": "## 论文总结\n\n**标题**：Scientific Data Skills: Enabling Agent-Ready Scientific Data Services at Scale（科学数据技能：大规模实现面向智能体的科学数据服务）\n\n---\n\n### 1. 核心创新点\n\n提出 **SciDSK（Scientific Data Skill，科学数据技能）**——一种\"面向智能体（agent-ready）\"的数据集表示形式，把数据集的专属知识与操作指南打包成可复用的 agent skill，从而让 AI 智能体能够自主发现、理解并调用科学数据。\n\n### 2. 主要方法\n\n- **规范定义**：设计结构化的 SciDSK 规范，将数据集描述、科学背景、文件组织结构、使用流程、质量检查、溯源信息等整合进单一技能包；原始数据仍保留在其所属仓库中（不搬运数据，只封装知识）。\n- **构建流水线**：开发系统化的自动构建流程，以权威数据集记录及其配套材料为依据（grounding），保证每个 SciDSK 的可靠性。\n- **平台建设**：搭建 **Scientific Data Skill Bank** 统一平台，发布覆盖 **6 个学科** 的 SciDSK 资源，支持技能包访问、持久化标识符（PID）和到源数据集的可追溯性。\n- **评测设计**：用一个数据集检索基准（dataset discovery）+ 若干受控案例（dataset interpretation）进行评估。\n\n### 3. 结论/性能\n\n实验表明，SciDSK 显著**提升了智能体驱动的数据集发现效果**，并在**数据集解读**任务上提供了更精确、更具可执行性（actionable）的支持。结果验证了\"将数据集专属知识组织为面向智能体的表示形式\"这一思路的价值。\n\n---\n\n**一句话点评**：本文本质上是把 Anthropic 的 \"Agent Skills\" 范式迁移到科研数据基础设施领域，解决科学数据跨异构仓库碎片化、且元数据只面向人类可读的问题——可以理解为\"给数据集配一份写给 AI 看的 README + SOP\"。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-23 13:01:48",
+ "topics": [
+  "llm-agents"
+ ]
+}

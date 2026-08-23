@@ -1,0 +1,17 @@
+{
+ "id": "2608.20122",
+ "title": "ArmorOCR: Grounded Adversarial Visual Perception via Observation-Transferred Self-Distillation",
+ "authors": "Linhan Cao, Siyuan Li, Jun Lan, Liangbo He, Guannan Li, Xiaolei Huang, Jun Jia, Shuheng Zhou, Huijia Zhu, Weiqiang Wang, Wei Sun",
+ "date": "2026-08-20",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20122v1",
+ "abstract": "Large multimodal models (LMMs) have demonstrated strong OCR recognition capabilities, yet remain vulnerable to adversarial visual text that is readable to humans but challenging for models to localize and recognize. Existing OCR benchmarks mainly focus on natural or document-style text, while adversarial OCR evaluations remain limited in scale, task coverage, or region-aware evaluation. In this paper, we formulate adversarial OCR as a \\textbf{grounded OCR perception} task and introduce \\textbf{AdvSpot}, the first benchmark for grounded adversarial OCR evaluation. AdvSpot comprises 390 images with region-level annotations, spanning 5 primary categories and 13 fine-grained adversarial OCR types. To address this challenge, we propose \\textbf{ArmorOCR}, a two-stage training framework for robust adversarial OCR perception. ArmorOCR first acquires missing adversarial OCR perception from privileged transformed observations through On-Policy Self-Distillation (OPSD), and then refines grounded OCR perception through Group Relative Policy Optimization (GRPO) with task-conditioned rewards for localization, recognition, full spotting, and visual question answering (VQA). Experiments on our AdvSpot, other adversarial OCR benchmarks, and general OCR benchmarks demonstrate that ArmorOCR consistently improves adversarial OCR perception while preserving competitive general OCR capability.",
+ "summary": "**ArmorOCR: 基于观察迁移自蒸馏的可定位对抗性视觉感知**\n\n1. **核心创新点**\n将「对抗性 OCR」重新定义为**带区域定位的 grounded OCR 感知任务**，并同时提出首个面向该任务的评测基准 AdvSpot 与两阶段训练框架 ArmorOCR。\n\n2. **主要方法**\n- **AdvSpot 基准**：390 张带区域级标注的图像，覆盖 5 个大类、13 种细粒度对抗性 OCR 类型（人眼可读但模型难以定位/识别的文字）。\n- **ArmorOCR 两阶段训练**：\n  - 第一阶段 **OPSD（On-Policy Self-Distillation，在线策略自蒸馏）**——从「特权变换观察」（对图像做变换后更易读的版本）中，把模型自身缺失的对抗性 OCR 感知能力蒸馏回原始观察条件下的模型；\n  - 第二阶段 **GRPO（Group Relative Policy Optimization）**强化学习微调，使用**任务条件化奖励**，分别针对定位（localization）、识别（recognition）、完整文本检测识别（full spotting）和视觉问答（VQA）四类子任务进行优化。\n\n3. **结论/性能**\n在自建的 AdvSpot、其他对抗性 OCR 基准以及通用 OCR 基准上的实验表明，ArmorOCR 能够**稳定提升对抗性 OCR 感知能力**，同时**保持通用 OCR 性能不退化**（仍具竞争力），即在鲁棒性与通用能力之间取得了较好平衡。\n\n> 注：摘要未给出具体数值指标，上述性能结论为作者的定性表述。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-08-23 13:02:49",
+ "topics": [
+  "multimodal-perception",
+  "adversarial-attacks"
+ ]
+}

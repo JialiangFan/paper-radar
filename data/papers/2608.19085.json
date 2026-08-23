@@ -1,0 +1,17 @@
+{
+ "id": "2608.19085",
+ "title": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+ "authors": "Ruiguo Zhong, Benshan Ma, Xiaolong Chen, Lang Zhang, Mingyue Feng, Yaonong Wang, Pei Liu, Jun Ma",
+ "date": "2026-08-19",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.19085v2",
+ "abstract": "Anticipating how scenes evolve under ego actions is fundamental to safe autonomous driving, yet the full potential of world models for decision-making remains unrealized. The critical challenge lies in ensuring that future modeling is not merely predictive, but decision-informative: the predicted future must directly shape which trajectory is selected. Existing approaches decouple future representation learning from planning optimization, or share predicted states across trajectory candidates, thereby diluting the action-specific consequences that ought to guide selection. To bridge this gap, we propose DA-WAM, a framework that unifies predictive representation learning, action-conditioned future modeling, and trajectory scoring under a single decision-making objective. DA-WAM maintains predictive supervision throughout planner optimization via an online encoder and a stable momentum target, allowing future representations to co-evolve with the driving task. An action-conditioned predictor generates a distinct future latent state per trajectory candidate, which is then evaluated by a future-latent-conditioned factorized scorer. For the expert-matched trajectory, the predicted future latent is supervised by the observed future representation, while safety-critical hard negatives provide additional supervision near planning boundaries. Extensive experiments on NAVSIM-v1 and NAVSIM-v2 demonstrate state-of-the-art performance, while ablations and diagnostic analyses validate the key components.",
+ "summary": "## DA-WAM: Decision-Aligned Future Latents for Driving World Models\n\n**1. 核心创新点**\n把「未来预测」从旁路的表征学习变成直接服务于决策的信号——为每条候选轨迹生成各自不同的未来潜变量，让预测结果真正决定选哪条轨迹。\n\n**2. 主要方法**\n- 用**在线编码器 + 动量目标网络**（类似 BYOL/EMA 的自监督结构）在规划器训练全程保持预测性监督，使未来表征与驾驶任务协同演化，而非预训练后冻结。\n- **动作条件预测器**：以候选轨迹为条件，逐条生成专属的未来潜状态，避免现有方法在候选间共享预测状态而稀释「动作特异性后果」。\n- **未来潜变量条件化的分解式打分器**（factorized scorer）对候选轨迹评分。\n- 监督信号两路：专家匹配轨迹的预测潜变量对齐真实观测到的未来表征；同时构造**安全关键的困难负样本**，在规划决策边界附近提供额外监督。\n\n**3. 结论/性能**\n在 **NAVSIM-v1 与 NAVSIM-v2** 上均达到 SOTA；消融与诊断分析验证了各关键组件（动作条件预测、在线-动量监督、硬负样本）的有效性。\n\n一句话定位：这是把世界模型从\"预测得准\"推向\"预测得对决策有用\"的一次结构性对齐尝试。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-08-23 13:03:06",
+ "topics": [
+  "world-model-control",
+  "applications"
+ ]
+}
