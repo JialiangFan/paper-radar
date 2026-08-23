@@ -32,3 +32,6 @@ skills-sync/
 site/
 logs/
 PDFs/
+
+# 私人内容：汇总分析、未发表 idea、研究代码、面试与 agent 记忆。仓库是 public，这里的东西不外传
+Private/

@@ -1,0 +1,25 @@
+# AugVLA-3D: Depth-Driven Feature Augmentation for Vision-Language-Action Models
+
+## Topic
+Sensor-free depth augmentation for VLA
+
+## Background
+Current Vision-Language-Action (VLA) models (e.g., OpenVLA, π0, GR00T) are largely inherited from VLMs trained on 2D images and rely on purely 2D visual features. Such features offer strong semantic grounding but lack explicit 3D structural awareness, making them weak at reasoning about depth, geometry, and spatial relations. Existing 3D-enhanced approaches either require expensive large-scale 3D embodied datasets (3D-VLA, SpatialVLA) or depend on specialized sensors such as LiDAR (PointVLA), and therefore cannot reuse the abundant 2D corpora that drove VLA success.
+
+## Limitations & Research Problem
+- **Limitation:** Mainstream VLAs are confined to 2D representations and lack explicit 3D geometric reasoning, faltering on tasks needing fine-grained spatial reasoning (collision avoidance, object stacking, reachability). Meanwhile, current 3D-aware methods rely on dedicated 3D sensors (e.g., LiDAR) or large 3D datasets, limiting applicability and scalability and precluding reuse of 2D corpora.
+- **Problem:** How can reliable 3D structural features be injected into VLAs in a fully sensor-free way—while staying compatible with large-scale 2D training pipelines—to improve spatial reasoning and robustness?
+
+## Contributions
+- A **sensor-free 3D feature extraction** method: a depth estimation model (**VGGT**) converts 2D RGB images into point clouds, from which a **PointNet** derives compact geometric features to enrich the original VLA—enabling training on scalable 2D data with no 3D hardware.
+- A new **Action Assistant** module (mirroring the Action Expert but with far fewer parameters) that acts as a task-guided regularizer, constraining the learned 3D representations with action priors to keep them consistent with downstream control and to avoid the instability/degradation caused by injecting raw geometric signals directly.
+- Validation on a real dexterous hand (ROH-A001, 5 tasks) and the RoboCasa `robocasa-gr1-tabletop-tasks` simulation (24 tasks): under tight compute (a single RTX 4090, only 10% of data, 1 epoch) it consistently beats GR00T and Diffusion Policy, raising the simulation average success rate from GR00T's 50% to 54% (100 demos).
+
+## Methodology
+The backbone largely follows GR00t (Eagle-2 VLM + a diffusion-style Action Expert). The core is a "3D Feature Injection" framework with two strands:
+
+- **Depth → 3D features (sensor-free, Eq. 1):** Given N RGB observations $\{I_i\}_{i=1}^N$ (N=1 for a single view), a frozen **VGGT-1B** (state-of-the-art monocular depth estimator) predicts dense depth, which is back-projected with known camera intrinsics into a camera-centered point cloud $P$. After outlier filtering, normalization, and a sampling operator $\mathcal{S}$ down to $M'$ points ($\bar P$), a **PointNet** encodes it into a compact geometric descriptor $f_{3D}=\text{PointNet}(\bar P)\in\mathbb{R}^{M'\times C}$. The whole pipeline uses only RGB—no LiDAR/depth camera—so it can reuse and scale on existing 2D corpora.
+- **Injection into the primary Action Expert:** PointNet features and the Action Assistant's intermediate activations are injected into the corresponding layers of the main Action Expert (via Adapters into each Attention Block, Fig. 2) and fused with 2D visual tokens, achieving tight 2D-semantics / 3D-geometry multimodal fusion.
+- **Action Assistant (task-guided regularizer, Eq. 2):** An auxiliary expert structurally consistent with the main Action Expert but with markedly fewer parameters, implemented as a compact transformer-diffusion (reduced hidden dims, weights shared across denoising steps, shortened diffusion horizon). It (1) acts as a *task-guided projector* turning 3D features into action-relevant embeddings and (2) serves as an *intermediate regularizer* injecting layer-wise guidance: $\tilde h^{(l)} = h_{\text{orig}}^{(l)} + \alpha^{(l)}\cdot\mathcal{T}(h_{\text{aux}}^{(l)}, f_{3D})$, where $\alpha^{(l)}$ is a learnable scalar gate and $\mathcal{T}(\cdot)$ is a lightweight projection / cross-attention for smooth alignment. Crucially, the auxiliary actions are used **solely to compute auxiliary losses that constrain 3D-feature learning—never to update the robot's motor commands**, so the primary policy retains full control while benefiting from the regularization.
+- **When it acts:** Both the 3D augmentation and the action-guided regularization operate during the **training stage** (VLM and VGGT frozen; mainly the injection modules / Adapters / Action Assistant are trained); at inference the primary Action Expert outputs actions on its own.
+- **Intropy analysis:** Under the Intropy framework, depth-derived features inject dense, task-relevant information to raise the intelligence gain $\delta S$, while geometry-aware action-assisted regularization constrains optimization with physically meaningful structure to raise effective resistance $R$, jointly increasing Intropy ($dL=\delta S/R$) for more robust, generalizable 3D manipulation.

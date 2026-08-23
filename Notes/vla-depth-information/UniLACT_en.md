@@ -1,0 +1,27 @@
+# UniLACT: Depth-Aware RGB Latent Action Learning for Vision-Language-Action Models
+
+## Topic
+Depth-aware RGB latent action
+
+## Background
+Learning latent action representations from unlabeled videos has become a dominant paradigm for pretraining VLA models without costly robot action supervision (e.g., LAPA, Moto). However, existing latent actions are learned almost exclusively from RGB observations, capturing appearance-driven dynamics while remaining blind to explicit 3D geometric structure — which is critical for contact-rich manipulation such as precise grasping, placement, and collision avoidance.
+
+## Limitations & Research Problem
+- **Limitation:** Prior works that bring depth into VLAs (DepthVLA, QDepth-VLA, SpatialVLA, 3D-VLA, etc.) process depth at the pixel/feature level and require substantial action-labeled robot trajectories; purely RGB latent actions (Moto/LAPA) are entirely blind to 3D geometry. The closest work, UniSkill, uses RGB-D but only learns generic, embodiment-agnostic skills within a single joint latent space.
+- **Problem:** Can geometric structure be embedded *inside* the RGB latent action representation during unsupervised pretraining, so that downstream policies inherit stronger spatial priors without requiring additional labeled data and using only RGB at inference?
+
+## Contributions
+- Propose **UniLARN** (Unified Latent Action leaRNing): an IDM–FDM-based framework that uses inverse/forward dynamics to jointly learn modality-specific (RGB/depth) and unified discrete latent actions within a shared latent space, capturing both visual semantics and 3D geometry.
+- Introduce **UniLACT**: a cross-modally trained VLA that leverages UniLARN's unified + modality-specific latents as action-free pseudo-labels for pretraining, improving the policy's 3D spatial understanding.
+- Extensive simulation (CALVIN) and real-world experiments show unified latents substantially enhance geometric awareness over RGB-only latents: under OXE pretraining, avg sequence length improves by **+29.2%** over Moto, while keeping identical model size and inference latency to the RGB baseline (depth not needed at inference).
+
+## Methodology
+**Three-stage training** (depth used only during training; inference needs only RGB + instruction):
+
+1. **Stage 1 — UniLARN unified latent action learning:** For RGB and depth, each modality uses an IDM $I_m$ that maps a frame pair $(o_t^m, o_{t+H}^m)$ to a continuous latent $\tilde z_t^m$, discretized via a **VQ codebook $\mathcal C^{(s)}$ shared across both modalities** into modality-specific tokens $z_t^m$. The two modalities' codebook embeddings are **concatenated and linearly projected** into a unified continuous space, $\bar e_t^c=[e_t^r;e_t^d]\to h_t=W_f\bar e_t^c+b_f$, then discretized by a **second VQ codebook $\mathcal C^{(u)}$** into the unified latent $z_t^u$. This unified latent, together with each modality's current observation, conditions per-modality FDMs $F_m$ to reconstruct future frames $\hat o_{t+H}^m=F_m(o_t^m,z_t^u)$. This disentangled reconstruction objective forces the unified representation to carry complementary dynamics of both modalities — the core mechanism by which depth geometry is injected into the RGB latent: depth back-constrains the unified token through the IDM/FDM and shared codebook, endowing it with 3D geometric priors. IDMs use a frozen MAE-initialized ViT-L encoder + spatio-temporal transformer; FDMs use a ViT-B decoder (MSE loss); discretization uses VQ-VAE.
+
+2. **Stage 2 — Unified Latent Pretraining:** The UniLARN encoder extracts modality-specific $z_t^r, z_t^d$ and unified $z_t^u$ from RGB-D videos as action-free supervision. A GPT-2 causal transformer takes the visual observation $o_t$ (ViT-L encoded), a T5-encoded task instruction $l$, and the unified latent $z_t^u$, and autoregressively predicts target token sequences $z_{1:N}^m$ ($m\in\{r,d,u\}$, alternated across batches). This cross-modal next-token prediction internalizes complementary semantic and geometric cues while aligning modality-specific and unified spaces.
+
+3. **Stage 3 — Action Fine-Tuning:** Fine-tune on a small set of action-labeled robot trajectories. Action query tokens are appended, and a lightweight action decoder (2-layer MLP + separate linear heads) maps transformer outputs to 7-DoF end-effector actions (position deltas $\Delta p\in\mathbb R^3$, rotation deltas $\Delta r\in\mathbb R^3$, binary gripper $g$). The loss $\mathcal L_{ft}=\mathcal L_{latent}^u+\mathcal L_{action}$ keeps only the unified-latent next-token prediction (dropping RGB/depth latent prediction), with $\mathcal L_{action}=\mathcal L_{reg}(\Delta p)+\mathcal L_{reg}(\Delta r)+\mathcal L_{bce}(g)$ (L1 + BCE), preserving the pretrained latent structure while learning the policy.
+
+**On the form of depth:** depth is not fed to the policy as an extra input channel; instead it is "distilled" into the unified discrete latent action via UniLARN during pretraining. In real-world experiments where OXE data lacks depth, depth maps are generated from RGB with Depth-Anything-V2. **Quantitative gains:** on CALVIN ABC→D, OXE-pretrained avg seq len 2.40 (Moto) → 3.10 (+29.2%), in-domain ABC pretraining 2.60 → 2.86; ablation shows Unified+Modality-specific 2.859 > RGB-only 2.601 > Depth-only 2.402 > no latent 0.744; real-world average success +10%, with the largest gains on geometry-centric tasks (move slider, turn on light bulb).

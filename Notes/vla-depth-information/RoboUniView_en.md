@@ -1,0 +1,24 @@
+# RoboUniView: Visual-Language Model with Unified View Representation for Robotic Manipulation
+
+## Topic
+Unified view representation VLA
+
+## Background
+Using VLMs for robotic manipulation is a new paradigm aimed at improving generalization to novel objects and instructions. However, variations in camera specifications and mounting positions across robotic platforms cause large performance disparities for existing imitation/RL methods—models struggle to accurately understand the real physical space from images taken at different viewpoints, degrading action prediction. The authors show that merely changing camera parameters at inference drops the SOTA method RoboFlamingo's success rate from 86.3% to 80.8%.
+
+## Limitations & Research Problem
+- **Limitation:** Existing methods tightly couple visual features with camera parameters, so they fail when the camera changes. RT-X mitigates this by collecting far more data; 3D Diffusion Actor injects extra depth/point clouds—both significantly increase data-collection or hardware cost. Prior view-transform works (RVT/VIHE/BEVFormer, etc.) rely on real depth and stay within a perspective view, leaving visual features misaligned with the action space.
+- **Problem:** Can we decouple "visual feature extraction" from "action learning"—first learning, from multi-perspective images, a unified 3D view representation that is independent of camera parameters and aligned with the action space—so the model generalizes across camera configurations and supports joint cross-dataset training?
+
+## Contributions
+- Propose RoboUniView, a VLM with a unified view representation that decouples visual feature extraction from action learning, improving performance and generalization to camera parameters.
+- Propose an effective pre-training method (a 3D occupancy task) to obtain a unified view representation that better comprehends the real physical world; pre-training needs only simple RGB-D images, with no manually annotated labels (no semantic segmentation, objects, actions, etc.).
+- Extensive experiments on CALVIN achieve SOTA: success rate D→D 93.0%→96.2%, ABC→D 92.2%→94.2%; and demonstrate strong adaptability to unseen camera parameters, multi-camera-parameter datasets, and joint cross-task learning.
+
+## Methodology
+- **Overall architecture:** Vision Encoder (ViT + UVFormer) → Feature Fusion Decoder (fuses language tokens) → Policy Head outputting a 7-DoF end-effector pose + gripper state. Two-stage training.
+- **How depth/3D enters the model (core):** Depth is NOT a model input modality; it is injected as **auxiliary supervision during pre-training only**. Inspired by BEVFormer, the authors design a plug-and-play module, **UVFormer**: grid-shaped UniView Queries (spatial shape L×B×P, L=B=20; each pillar cell maps to a 0.05² m real-world region and samples P 3D points uniformly over a 0.5 m vertical range) plus camera parameters Cam. Via Spatial Cross-Attention (Deformable Attention—each query interacts only with the pixel features its P 3D points project to, through a perspective transform Proj) and Self-Attention, multi-view ViT features are converted into a unified 3D view representation UF_t (an L×B×P 3D grid). Camera parameters are thus explicitly encoded through this projection.
+- **Pre-training stage (where supervision acts):** Multi-perspective RGB-D images are collected in the CALVIN simulator; together with camera parameters they form RGB-enriched point clouds that are voxelized, yielding the Calvin_rgbd dataset. UVFormer's output passes through a minimal pure-convolution **Occupancy Decoder** predicting each grid cell's occupancy and RGB value. Loss l_pre-train = λ_rgb · L1(RGB) + CrossEntropy(occupancy). This 3D-occupancy + RGB-reconstruction auxiliary task forces the unified view representation to encode real 3D geometry, rather than literally feeding depth/point clouds into the backbone.
+- **Fine-tuning stage:** Freeze the Vision Encoder (UVFormer weights are copied and frozen); only fine-tune the Feature Fusion Decoder (Cross-Attention uses language tokens as queries, with UF_t and wrist features as keys/values) and the Policy Head (MaxPooling + LSTM + MLP). Trained via imitation learning: MSE for relative pose, BCE for gripper. Missing wrist views can be reconstructed as virtual wrist features from other perspectives.
+- **Number of training stages = 2** (pre-train on 3D occupancy → fine-tune on action data).
+- **Quantitative gains vs RGB-only VLA:** On CALVIN, D→D success 93.0%→96.2%, avg. sequence length 3.300→3.855; ABC→D 92.2%→94.2%, 3.270→3.647. Ablation (Table 3) shows the value of the unified view representation: U1 baseline 0.860 → U2 from-scratch 0.893 → U3 pre-train+fine-tune 0.912 → U4 pre-train+frozen 0.954 (task-1 success). Under unseen camera parameters (D→D_uc), it rises from baseline 0.808 to 0.956 with minimal fluctuation (<0.004 vs baseline up to 0.177).
