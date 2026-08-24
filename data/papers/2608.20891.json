@@ -1,0 +1,13 @@
+{
+ "id": "2608.20891",
+ "title": "IMU-Free Body-Frame State Estimation with Sparse Scene Flow for Quadcopters",
+ "authors": "Daniel Grønhaug, Sofie Markeset, Mathias Kolberg",
+ "date": "2026-08-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20891v1",
+ "abstract": "We present a vision-only state estimation system for X-configuration quadcopters equipped with a canonical stereo camera pair and no inertial sensors. The system operates entirely in the body frame, requiring only synchronised stereo images and motor thrust commands. A continuous-discrete extended Kalman filter on a composite manifold state $\\langle SE(3), \\mathbb{R}^3, \\ldots \\rangle$ maintains estimates of body-frame pose, velocity, angular velocity, gravity, and disturbances, using stationary scene points as implicit inertial references. Feature points are detected (FAST, Shi-Tomasi), tracked temporally (SSD, Lucas-Kanade) and matched across cameras (NCC), with search regions predicted from filter-derived pose and point uncertainty. Chi-squared gating on the normalised innovation admits only stationary points to the filter. The system also produces a sparse 3D point cloud carrying per-point position, velocity and joint covariance. These come from a 4-view (two stereo pairs at two timestamps) full bundle adjustment that jointly estimates position and velocity from stereo disparity and temporal parallax, with the filter-derived relative pose as a prior. Feature points in the EKF do not enter the solver; their information is reflected through the pose prior. Point cloud density is spatially adaptive: an external focus point directs allocation, producing dense coverage in the region of attention and sparse coverage elsewhere. The output is a body-frame state estimate, a calibrated pose change, and a sparse scene flow. It is intended as a measurement source for a downstream world model anchored in the current body frame, without dependence on GPS, IMU, or any world-frame infrastructure, though the architecture accommodates their future integration.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-24 13:04:43"
+}

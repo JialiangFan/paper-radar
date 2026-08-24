@@ -1,0 +1,13 @@
+{
+ "id": "2608.20709",
+ "title": "ResiliFlow: An Open Transport World Model for Infrastructure Perception and Disaster Resilience",
+ "authors": "Junxiang Xu, Vinayak Dixit, S. Travis Waller, Divya Jayakumar Nair, Qianwen, Guo, Sisi Jian, Xiao Wen, Ashutosh Ashutosh, Sunhyung Yoo, Julius Secadiningrat, Jingni Guo",
+ "date": "2026-08-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.20709v1",
+ "abstract": "Transport resilience work is often split across separate data preparation scripts, network models, simulation tools, image inspection systems and reports. This fragmentation makes it difficult to move from an observation to a tested and reviewable decision. We introduce ResiliFlow, an open transport world model concept and an implemented platform for infrastructure resilience, response and recovery. The platform connects two workspaces. Disaster Transport Resilience Analysis provides six map-centred functions for critical-road and critical-area identification, recovery prioritisation, disruption routing, resilience testing and scenario simulation. AI-based Transport Infrastructure Perception and Decision Support organises street-level and satellite evidence, detects visible road, footpath and kerb conditions, and prepares these observations for human-reviewed intervention planning. Both workspaces share an eight-step cycle of perception, prediction, model development, verification, execution, decision, feedback and memory. Research Validation records assumptions and checks, while a local Assistant and an optional multi-provider large language model Copilot translate user questions into bounded calls to executable tools. We document the platform architecture, representative mathematical models, interface evidence and computer-vision learning results. Examples show accurate recognition across eight visible-condition classes, while compact error analysis demonstrates how difficult cases guide continued learning. ResiliFlow shows how transport models can become an inspectable, reusable and question-led system rather than a collection of disconnected analyses. The accompanying release is intended to support research collaboration, public scrutiny and extension under institutional review.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-24 13:03:44"
+}
