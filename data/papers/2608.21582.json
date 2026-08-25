@@ -1,0 +1,13 @@
+{
+ "id": "2608.21582",
+ "title": "Reading the Room: Implicit Confusion Encoding in Recurrent World Model States",
+ "authors": "Donald Aadithiyan",
+ "date": "2026-08-21",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.21582v1",
+ "abstract": "World models built on the RSSM architecture, such as DreamerV3, keep a recurrent hidden state $h_t$ trained only to reduce prediction error. We show this state also tracks its own confusion, hiding in plain sight: nearly orthogonal to $h_t$'s directions of greatest variance, invisible to any variance-based method. It is functionally distinct from ensemble disagreement, which flags new inputs, and reconstruction error, which flags bad predictions right now. On a test holding prediction error fixed while confusion varies, a linear probe on $h_t$ finds the signal (AUROC 0.72, 5 runs), while an ensemble baseline scores below chance. A discounted count of recent high-error steps explains 80% of the probe's output ($R^2=0.80$). We confirm the signal is causally used, not merely present, by editing $h_t$ directly and watching behaviour change, including a check using real values from other trajectories instead of synthetic edits. Its geometry and closed form generalize across three control tasks; the decisive dissociation test itself holds cleanly on only one, and its practical use, deciding when to check reality instead of trusting imagination, generalizes to only two of the three tasks.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-25 13:05:13"
+}

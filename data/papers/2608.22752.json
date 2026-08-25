@@ -1,0 +1,13 @@
+{
+ "id": "2608.22752",
+ "title": "The Compaction Cliff in Long-Running AI Agent Memory",
+ "authors": "Saber Zerhoudi, Jelena Mitrovic, Michael Granitzer",
+ "date": "2026-08-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.22752v1",
+ "abstract": "A safety rule and an episodic log compete for the same tokens in an AI agent's context. When the budget overflows, both are summarized at the same rate; only the rule needs exact wording to remain enforceable. On 20 production agent configurations, Claude Code's /compact prompt on Sonnet 4.6 preserves 53\\% of safety rules after one compaction round and 10\\% after five. We name this the Compaction Cliff. We address it with Knowledge Triage, a framework that classifies each line of an agent's knowledge base by type and routes each type through its own retention policy. Three deterministic operators implement this triage across the three context-management operations: TypeCompact rewrites items in place under per-type fidelity, TypeDecompose partitions a topic too large to compact safely, replicating in-scope safety rules across partitions, and TypeRetrieve fetches items from external storage with in-scope rules pinned ahead of relevance. On five public corpora, TypeCompact preserves 2--4$\\times$ more safety rules than the strongest single-shot LLM compactor at every ratio, with 96\\% recall over five rounds. TypeDecompose reaches 0\\% locality violations against 93\\% under uniform partitioning. TypeRetrieve reaches 100\\% recall@50 against 73\\% for the best single-shot LLM retriever. On three downstream behavioral benchmarks, we outperform the production Sonnet compactor on medical compliance (paired McNemar $p < 10^{-8}$ on preservation, $N = 200$), the full-policy and hierarchical baselines on retail task pass rate ($p < 0.01$, $N = 115$), and the hierarchical compaction on the airline domain ($p = 0.024$). We release AgentArtifactCorpus (396{,}934 agent configurations from 54{,}628 public GitHub repositories), the classifier, and the reference implementation.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-25 13:00:30"
+}

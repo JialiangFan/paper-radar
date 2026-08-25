@@ -1,0 +1,14 @@
+{
+ "id": "2608.16812",
+ "title": "Unlocking the Potential of Image Editing via Concept Scaling and Dense Supervision",
+ "authors": "Long Cui, Xiaoqian Liu, Qi Qin, Yi Xin, Tao Lin, Jianguo Li, Linfeng Zhang",
+ "date": "2026-08-17",
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2608.16812",
+ "abstract": "Existing image editing frameworks predominantly follow the training paradigm of text-to-image diffusion models. However, extending this paradigm to image editing highlights two inherent discrepancies, specifically, the insufficient attention to edit concept granularity and the training inefficiency caused by sparse supervision signals. To address these issues, we establish a comprehensive hierarchical taxonomy featuring over 1,000 fine-grained edit concepts and build ConceptEdit-12M, a massive dataset of 12 million high-quality editing pairs via an improved synthesis framework. This library-driven approach effectively rectifies the distribution collapse of generated data while ensuring high data fidelity. Furthermore, we propose a dense supervision training strategy that synthesizes multiple non-interfering concepts into single image pairs. By providing richer learning signals, this strategy significantly enhances both training efficiency and overall model performance. Training results validate our strategy, significantly outperforming prior works. Finally, we present ConceptEdit-Bench, a granular evaluation suite designed to diagnose model capabilities across a vast array of real-world scenarios.",
+ "summary": null,
+ "keyword": null,
+ "source": "hf-daily",
+ "created_at": "2026-08-25T13:40:04.155219+00:00",
+ "hf_upvotes": 43
+}

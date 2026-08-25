@@ -1,0 +1,13 @@
+{
+ "id": "2608.22697",
+ "title": "Does Rank Still Matter? Position Bias When AI Agents Shop on Our Behalf",
+ "authors": "Davood Wadi, Yu Ma",
+ "date": "2026-08-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.22697v1",
+ "abstract": "Search rankings are valuable because human attention is scarce and sequential. Higher-placed alternatives are easier to find, so they are examined and bought more often. Consumers are now delegating search to AI agents that can ingest an entire results page at once. Randomizing the order of one hundred hotel listings across 5,000 AI agent sessions, we compare four large language models against human field data. AI agents search more deeply than humans and never decline to buy. Position still predicts which listings are inspected, but weakly and non-monotonically: the middle of a results page has the lowest probability of inspection, not the bottom. Position reaches the choice stage for some models and not others, a heterogeneity that tracks neither provider nor capability. All models nonetheless converge on the same undominated listing. For agentic search, the attributes displayed on a results page matter more than placement within it.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-25 13:01:15"
+}
