@@ -1,0 +1,13 @@
+{
+ "id": "2608.23863",
+ "title": "DreamLedger: Execution-Settled Credit Files for World-Model Imagination in Robot Decision Loops",
+ "authors": "Xianyao Li, Ruitong Tian, Rui Min, Fang Xu, Jing Du",
+ "date": "2026-08-24",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.23863v1",
+ "abstract": "Robots are beginning to act on world-model predictions, yet reliability is still expressed through instantaneous, model-internal signals. DreamLedger instead treats reliability as a persistent deployment object: an execution-settled credit file recording how often consumed predictions are borne out, indexed by operating condition, region, and prediction horizon, and consulted before each use. Each consumed prediction is registered as a claim; attributable outcomes are settled against arriving reality at zero labeling cost, an attribution stage excludes measurement-contaminated outcomes, and a settlement-supervised head complements sparse bins. The resulting credit gates consumption: low-credit predictions shorten the dependent horizon or trigger additional observation; every reliance event remains auditable via dependency tickets and replayable logs. We evaluate DreamLedger in three simulated domains (indoor flight, tabletop manipulation, 2D navigation), via mounts on unmodified DreamerV3, TD-MPC2, and V-JEPA 2-AC, and on a real Franka manipulator. Claim failure is dose-monotone in all 12 held-out condition-horizon cells. Credit-gated planning reduces burned imagination (consumed claims that later fail to redeem) by 62% (95% CI 43-81%) versus blind consumption, with equal success and comparable collision rates. At matched risk targets, persistent books cut verification probes from 1.00 to 0.36/episode in manipulation, at success 0.94 versus 0.98; settlement-grounded calibration retains moderate, seed-consistent operating points unlike raw instantaneous gates. The same trust layer operates across decoder-, latent-, and token-space interfaces, including V-JEPA 2-AC settled on real robot frames. On hardware, settlement remains operational under real sensing and contact noise, a deployment failure loop is re-priced online, and all 1,062 registered spends replay from the audit logs.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-26 13:04:34"
+}

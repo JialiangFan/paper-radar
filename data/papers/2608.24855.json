@@ -1,0 +1,13 @@
+{
+ "id": "2608.24855",
+ "title": "LeFlow: Generative Latent Flow Planning for World Models",
+ "authors": "Hsiang-Wei Huang, Jianxu Shangguan, Junbin Lu, Jenq-Neng Hwang",
+ "date": "2026-08-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.24855v1",
+ "abstract": "Latent world models are inherently strong encoders that transform image pixel to latent embedding, yet existing world models still rely on online trajectory optimization for action planning: for every state-goal pair, an iterative optimizer is run from scratch to search for optimal action sequences, treating the world model as a black-box simulator. This approach pays the full iterative optimization cost anew at every replanning step and reuses no planning experience across queries. In this work, we ask whether planning itself can be amortized once a latent world model has been learned. We present LeFlow, which learns a reusable latent trajectory prior operating directly in the latent dynamics space from the world model. LeFlow recasts planning as conditional latent trajectory generation: a rectified-flow model imagines a future latent path between the current and goal embeddings, an inverse dynamics decoder turns latent transitions into action chunks, and the frozen world model verifies each candidate by autoregressive rollout. Across four major goal-conditioned pixel-control benchmarks, LeFlow replaces iterative action-space optimization with amortized latent planning and fixed-budget rollout selection, achieving consistent success-rate gains with an order-of-magnitude reduction in planning time. Our results argue that latent world models should support not only prediction but reusable planning priors. Our code is available at https://github.com/hsiangwei0903/LeFlow.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-26 13:05:21"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "2608.23181",
+ "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
+ "authors": "Jian Yang, Haau-Sing Li, Shawn Guo, Zixi Zhao, Yibo Tan, Jiajun Wu, Aishan Liu, Xianglong Liu, Tianyu Zheng, Bryan Dai, Chengran Yang",
+ "date": "2026-08-24",
+ "year": 2026,
+ "url": "https://arxiv.org/abs/2608.23181",
+ "abstract": "As large language models (LLMs) continue to advance in coding capabilities, their potential in cybersecurity has drawn increasing research attention, with closed-source LLMs (e.g., Mythos) delivering advanced cybersecurity capabilities. However, existing open-source efforts remain limited: frontier open-weight models do not provide reproducible cybersecurity training solutions, open-source training solutions focus on isolated tasks and lack scalable agentic data, and scaling agentic rollouts requires strong domain priors. In this work, we introduce CyberFactory, a unified open-source framework that connects data construction, trajectory synthesis, and model training across proof-of-concept (PoC) generation, vulnerability patching, and cybersecurity question answering (CyberQA). CyberFactory transforms public vulnerability artifacts, including CVEs from the wild, into executable and verifiable task instances. It further uses a reusable vulnerability-analysis skill to guide the teacher through source inspection, problem solving with domain prior, and evidence-based validation. The resulting supervision is agentic: the model interacts with tools and target environments and revises its solutions according to execution feedback. Using these trajectories, we train and release \\modelname\\emph{Aegis is, in Greek mythology, the protective shield of Zeus and Athena; the name reflects the model's defensive, security-oriented purpose.}, which internalizes the skill-guided procedure without requiring the skill at inference time. On CyberGym, \\modelname reaches 52.4% Pass@1 under a one-hour budget, improving over its Qwen~3.5 base model by +22.8 points and outperforming the evaluated general-purpose backbones under the same scaffold.",
+ "summary": null,
+ "keyword": null,
+ "source": "hf-daily",
+ "created_at": "2026-08-26T13:40:04.359495+00:00",
+ "hf_upvotes": 26
+}
