@@ -1,0 +1,13 @@
+{
+ "id": "2608.24199",
+ "title": "NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics",
+ "authors": "Javier Gamazo Tejero, Lukas Zbinden, Keyur Sheth, Raghavendra K M, Nadim Daher, Diego Granero Maraña, Filip Binkiewicz, Patrick Thornycroft, Mahdi Azizian, Sean D. Huver",
+ "date": "2026-08-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.24199v1",
+ "abstract": "Generative simulation for surgical robotics still lacks real-time interaction. Physical-robot experiments, often involving animal or cadaver labs, are time-consuming, costly, and difficult to reproduce, while classical simulators struggle to capture photorealistic appearance and deformable-tissue dynamics. We address this gap with Cosmos-H-Dreams, an integrated real-time surgical world-model system combining an action-conditioned generative model, a teacher-to-student distillation recipe, and a deployment stack built on the NVIDIA FlashDreams streaming-inference library. Starting from Cosmos-H-Surgical-Simulator, a multi-embodiment action-conditioned surgical video world model fine-tuned on the large-scale Open-H-Embodiment corpus, we post-train this checkpoint on embodiment- and procedure-specific data. By distilling the resulting bidirectional teacher into a causal, few-step student with Self Forcing, we turn a passive video generator into a controllable surgical simulator that streams at $\\sim$160 inference FPS on a single NVIDIA RTX PRO 6000 Blackwell workstation GPU. Crucially, Cosmos-H-Dreams is controller-agnostic: any interface that emits a stream of robot kinematics can drive it. We demonstrate live control through a browser keyboard over WebRTC, a Meta Quest headset over WebXR, a commercial surgical robot console such as CMR Surgical's Versius, and learned policies operating in closed loop. To our knowledge, this is the first interactive surgical world model supporting live human and policy control. Human operators and policies alike can act inside the synthesized world and observe the consequences in real time. We release Cosmos-H-Dreams as an open surgical simulation system, providing a common foundation for surgical education, scalable synthetic data generation, and future intraoperative decision support.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-27 13:05:23"
+}

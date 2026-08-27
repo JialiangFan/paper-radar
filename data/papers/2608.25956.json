@@ -1,0 +1,13 @@
+{
+ "id": "2608.25956",
+ "title": "4DGS-WAM: Bridging Past and Future with an Object-Centric World Action Model based on 4D Gaussian Splatting",
+ "authors": "Yueen Ma, Zenglin Xu, Irwin King",
+ "date": "2026-08-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.25956v1",
+ "abstract": "Current world action models (WAMs) typically operate on 2D visual data. These models can achieve exceptional visual quality, but they lack explicit spatial structure for individual objects and repeatedly process redundant background content. Although point clouds can represent the world in 3D space, they can be difficult to align and accumulate across viewpoints. In this paper, we leverage an explicit 4D Gaussian Splatting (4DGS) representation that separately models dynamic objects and the static background of a scene. For dynamic objects, we use a policy model to predict future actor actions and a world model to predict transformations of their observed Gaussian splats. The static background need not be regenerated for future states, as much of it has already been observed in past frames. This forms an object-centric world action model, which we name 4DGS-WAM. It lifts 2D observations into a persistent 4D representation so that previously observed static content can be reused during future prediction. Future-state extrapolation can then focus on modeling the evolution of dynamic objects. Experiments on KITTI-MOT evaluate short-horizon prediction and past reconstruction.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-27 13:03:14"
+}
