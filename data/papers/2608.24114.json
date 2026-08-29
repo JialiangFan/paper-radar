@@ -1,0 +1,13 @@
+{
+ "id": "2608.24114",
+ "title": "AHEAD: Adaptive Hindsight with Environment-Augmented Distillation for Agentic RL",
+ "authors": "Xiaolong Jin, Dingmin Wang, Vijay Lingam, Varun Kumar",
+ "date": "2026-08-25",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.24114v1",
+ "abstract": "Training multi-turn LLM agents with reinforcement learning typically relies on trajectory-level rewards, which assign a uniform advantage to every step and cannot identify which decisions led to success or failure. Self-distillation methods can provide finer-grained supervision by augmenting RL with privileged information. However, existing approaches usually apply the same type of privileged information to every step in an indistinguishable manner, ignoring a key asymmetry: routine steps need little additional guidance, while critical error steps require corrective direction that environment feedback alone cannot provide. We propose AHEAD, a step-aware framework that matches different supervision sources to different step types. The teacher receives environment feedback on all steps as a grounded dense signal, and additionally receives LLM-generated corrective hints on error steps to supply the direction that environment feedback lacks. The method introduces minimal changes to the standard GRPO algorithm. Across ALFWorld, WebShop, and Search-based QA, and across three model scales, AHEAD raises task success (+13.3 points on ALFWorld and +11.0 on WebShop at 7B over GRPO), reaches a given success rate in fewer training steps, and solves tasks within tighter interaction budgets than outcome-only RL and prior self-distillation baselines.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-29 13:01:35"
+}

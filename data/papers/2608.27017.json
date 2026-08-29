@@ -1,0 +1,13 @@
+{
+ "id": "2608.27017",
+ "title": "ProRetrieval: Learning to Orchestrate Hybrid Search via Executable Program Synthesis",
+ "authors": "Chengsong You, Zhen Sun, Yunhai Hu, Junwei Zhou, Xiaoyu Cao, Binyu Li, Ziyan Zhao, Weiyao Wang, Liren Lu, Zhijie Ye, Yumo Cao, Yitao Long, Yiwei Xu, Qiyi Jiang, Xuanyi Fu, Yufan Chen, Yilun Li, Rongkang Xiong, Yiran Zou, Nan Du",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27017v1",
+ "abstract": "Real-world retrieval often composes structured constraints with semantic intents over text and images through arbitrary Boolean logic. Existing hybrid pipelines such as reciprocal rank fusion or self-querying retrievers admit only a fixed form of composition, while recent reinforcement-learning retrievers train the language model as a query generator for a single backend, leaving the orchestration of heterogeneous retrieval paths outside its action space. We propose ProRetrieval, which recasts the language model as a retrieval orchestrator: given a natural-language query, it synthesizes an executable program in a hybrid DSL interleaving SQL operators over structured fields with vector-retrieval primitives over text and images, with SQL itself providing the logical algebra that fuses heterogeneous candidate sets. We train Qwen3-4B with GRPO and DAPO under a hierarchical four-term reward, and evaluate on two new benchmarks built from Amazon products and Enron email. Our 4B model surpasses GPT-5.5 (Hit@1 0.81 vs. 0.69 on e-commerce; 0.91 vs. 0.86 on email) and Claude Opus 4.7 and a comprehensive suite of retrieval, LLM-augmented, structured-query, and graph-based baselines. Code: https://anonymous.4open.science/r/ProRetrieval/; data: https://huggingface.co/datasets/anonymous-7219/ProRetrieval.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-29 13:00:48"
+}
