@@ -1,0 +1,13 @@
+{
+ "id": "2608.27296",
+ "title": "LLMs Can Design Near-Optimal OR Algorithms",
+ "authors": "Jackie Baek",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27296v1",
+ "abstract": "We ask whether large language models (LLMs) can design effective algorithms for well-specified operations research (OR) problems. We study inventory control, queueing network control, and assortment optimization. We evaluate two levels of LLM use: at level 1, the model receives one problem instance and returns a solution for that instance; at level 2, it receives only the problem class description and broad parameter ranges, and returns an algorithm that maps instance parameters to solutions. Human input is minimal: we give one untuned prompt that describes the problem, and the model has access to a Python sandbox tool with a fixed compute budget.\n  The strongest model we test, gpt-5.6-sol, matches or outperforms the best existing method on almost all evaluated instances. This holds even at level 2, where the returned algorithm is fixed before seeing the evaluation instances. Performance also improves sharply across models released less than eight months apart, suggesting that this capability is moving quickly. Thus, for the well-specified operations problems we study, a single untuned LLM query can already produce algorithms competitive with specialized methods. These results suggest that frontier LLMs can be a serious empirical baseline for algorithm design in well-specified OR problems.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-30 13:01:36"
+}

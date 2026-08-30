@@ -1,0 +1,13 @@
+{
+ "id": "2608.26461",
+ "title": "A radio continuum view of Stephan's Quintet: age, dynamics and origin of the shock",
+ "authors": "K. Rajpurohit, E. O'Sullivan, G. Schellenberger, A. Botteon, R. J. van Weeren, U. Lisenfeld, J. M. Vrtilek, L. P. David, S. Giacintucci, W. Forman, C. Jones, C. K. Xu, A. Togi",
+ "date": "2026-08-26",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.26461v1",
+ "abstract": "We present a detailed, multi-band radio continuum study of the compact galaxy group Stephan's Quintet (HCG 92). We use a combination of new (MeerKAT, uGMRT) and archival (LOFAR, VLA) observations covering the $\\rm 120\\,MHz{-}8\\,GHz$ frequency range to examine the radio properties of the group, focusing on the famous radio ridge and surrounding diffuse emission. We find filamentary substructure and branching in the southern half of the ridge, confirm an extension of the ridge to the northwest, and identify for the first time a radio counterpart to the gas bridge linking the ridge and NGC 7319. The northern ridge, northwest extension and diffuse emission have relatively steep, curved spectra, with a high-frequency spectral index gradient running north-south along the ridge. We show that the ridge emission primarily arises from a single physical mechanism, probably strong ($\\mathcal{M}\\simeq 40-100$) shocks in cold gas, caused by the $\\rm \\sim850-1000\\,kms^{-1}$ collision between NGC 7318B and tidal gas filaments produced by past galaxy interactions. Synchrotron spectral age estimates suggest the collision began at the north end of the ridge $\\rm \\sim20\\,Myr$ ago, and finished only $\\rm \\sim5-6\\,Myr$ ago in the south, with the southern end of the shocked ridge likely still within or close to the disk of NGC 7318B. Based on this age gradient, we find that the angle between the intruder galaxy's motion and the tidal filaments was probably only about 15 degrees, and combining this with the lack of a spectral index gradient in the diffuse radio emission suggests that NGC 7318B's direction of motion is probably close to the line of sight.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-30 13:02:57"
+}

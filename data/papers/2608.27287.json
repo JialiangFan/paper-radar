@@ -1,0 +1,13 @@
+{
+ "id": "2608.27287",
+ "title": "Astar: Learning to Propose Evolution Directions for Self-Evolving Industrial AI Systems",
+ "authors": "Jinxin Hu, Hao Deng, Haibo Xing, Lingyu Mu, Muyu Zou, Weiqin Yang, Sirui Chen, Bohao Wang, Zhezheng Hao, Hao Zhang, Zulong Chen, Shizhun Wang, Yu Zhang, Xiaoyi Zeng, Jiawei Chen",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27287v1",
+ "abstract": "Modern AI systems advance through continuous iteration: a loop of proposing evolution directions, implementing code, training, and evaluation. While the latter three stages are increasingly automated, the starting point --- proposing effective evolution directions --- remains a critical bottleneck that still relies heavily on senior experts. In this work, we explore whether AI can take over this role. We find that general-purpose LLMs, even the advanced GPT-5.5, offer only generic and misaligned suggestions: the required expertise is accumulated through experience rather than explicitly codified, and thus hard to inject directly.\n  To this end, we propose Astar, a training-based approach that learns a specialized evolution-guiding model from the abundant iteration histories of industrial systems. Realizing this idea, however, raises four challenges: sparse supervision, noisy data, a vast direction space, and prohibitively expensive verification. We address them along two fronts. On the data side, we design a pipeline that turns noisy historical commits into a large, clean evolutionary corpus via pairwise sample expansion and noise filtering. On the model side, we train the model through mid-training, SFT, and RL, guiding evolution direction generation with hierarchical hints and using the reward model in RL as a fast surrogate evaluator.\n  Astar has been deployed in Alibaba's Lazada advertising system for evolution direction proposal. Astar-8B achieves a single-proposal success rate of 0.6786 in real-execution evaluation, far exceeding human experts (0.3229) and the strongest general-purpose LLM (0.3071). More importantly, Astar closes the loop and enables fully automatic iteration: it guided 20 consecutive iterations over two weeks, improving offline Hitrate@200 by 23.6%, while an online A/B test yielded relative lifts of 4.86% in GMV and 1.82% in advertising revenue.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-30 13:01:46"
+}

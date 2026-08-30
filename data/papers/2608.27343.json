@@ -1,0 +1,13 @@
+{
+ "id": "2608.27343",
+ "title": "Pair-Level Essay-Scale Republication and Reuse from Fragmented Historical Text Reuse: A Workflow Study on Eighteenth-Century Books and Newspapers",
+ "authors": "Ke Shu, Kira Hinderks, Eetu Mäkelä, Mikko Tolonen",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27343v1",
+ "abstract": "This paper addresses the recovery of essay-scale republication and reuse from fragmented text-reuse evidence, a setting whose central challenge is pair-level evidence consolidation and not fragment retrieval alone. The study focuses on a candidate set centered on essays by eighteenth-century Scottish philosopher David Hume, spanning books from ECCO (Eighteenth Century Collections Online) and historical newspapers. Because the input consists of fragmented reuse hits instead of clean document pairs, and positive coverage is inherently incomplete, we formulate the task as pair-level evidence consolidation into plausible transmission relations and compare three methodological families: a staged rule-based workflow, baselines (a decision tree and two direct LLM settings), and automated rule adaptation. On labeled ECCO--ECCO slices, pair-level feature aggregation alone already reaches 0.948 F1 on the main labeled slice, while the final workflow gives the strongest overall precision-recall trade-off among the tested rule stages. On the full ECCO--ECCO candidate universe, direct LLM baselines flag up to 14,886 pairs as reprints compared to 771 for the final workflow, behaving in this direct-prompt setup as high-recall candidate expanders rather than precision-controlled deployment classifiers. On ECCO--Newspaper, manual audit confirms all 176 predicted positives as genuine cases of republication or reuse, while issue duplication and source-side multiplicity reveal additional provenance structure. Under incomplete ground truth, auditable pair-level evidence consolidation provides a practical way to produce compact candidate spaces for historical inspection.",
+ "summary": "总结生成失败，请查看原文。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-30 13:01:27"
+}
