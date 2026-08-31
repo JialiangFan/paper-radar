@@ -1,0 +1,13 @@
+{
+ "id": "2608.28408",
+ "title": "SymboLLM-FE: LLM-Accelerated Symbolic Regression for Automated Feature Engineering on Tabular Data",
+ "authors": "Zi-Jian Cheng, Zi-Yi Jia, Zhi Zhou, Yu-Feng Li, Lan-Zhe Guo",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28408v1",
+ "abstract": "Tabular data, as a core data format in machine learning, often lacks the discriminative power needed for high-performance modeling due to insufficient feature informativeness. Automated Feature Engineering (AutoFE) overcomes this by automating feature generation and selection, ensuring both model performance and operational efficiency. However, traditional AutoFE often yield features with poor interpretability because they rely on blind mathematical transformations, while large language models (LLM)-based AutoFE faces challenges in requiring costly multi-round iterations to generate high-utility features to effectively enhance model performance, compounded by inherent risks of bias and hallucination. In this paper, we combine symbolic regression with LLMs for feature engineering (SymboLLM-FE) to solve these challenges. We extract mathematically expressive formulas strongly correlated with the target via symbolic regression, which can enhance model performance, then refine them by LLMs with rich prior knowledge to ensure interpretability. Empirical results on six real-world datasets and four Kaggle competitions demonstrate that SymboLLM-FE outperforms existing AutoFE. SymboLLM-FE also addresses the dual challenges of poor interpretability and numerous iterations by employing a statistical prior-grounded LLM refinement mechanism and single-digit LLM calls.",
+ "summary": "1. **核心创新点**：将符号回归与大语言模型结合，在提升表格数据特征有效性的同时兼顾可解释性，并显著减少 LLM 调用次数。\n\n2. **主要方法**：先通过符号回归提取与预测目标高度相关的数学公式特征，再利用具备先验知识的 LLM 对公式进行统计依据约束下的解释性优化，且仅需个位数次 LLM 调用。\n\n3. **结论/性能**：在六个真实数据集和四项 Kaggle 竞赛中优于现有自动特征工程方法，同时缓解了传统方法可解释性差及 LLM 方法迭代成本高、易产生偏差和幻觉的问题。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:01:34"
+}

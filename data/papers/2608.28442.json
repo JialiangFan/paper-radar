@@ -1,0 +1,13 @@
+{
+ "id": "2608.28442",
+ "title": "Curvature-Conditioned Multiscale Momentum with Sphere Constraints for LLM Pretraining",
+ "authors": "Shuchen Zhu, Yuxin Fang, Mingze Wang, Kun Yuan",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28442v1",
+ "abstract": "Pretraining accounts for a large fraction of the total computational cost in LLM training. However, noise-dominant gradients and the highly ill-conditioned loss landscape bring severe challenges. Although modern adaptive optimizers such as AdamW and Muon have achieved great success in large-scale pretraining, their reliance on gradient normalization offers limited mitigation of the ill-conditioned curvature. The progress along flat directions (eigen-directions of small eigenvalues), which dominates the final loss reduction, remains relatively slow. To enhance training dynamics along flat directions, we propose a curvature-conditioned multiscale momentum method with sphere constraints, delivering steady acceleration in LLM pretraining. This multiscale momentum, applied only along flat directions, pairs a slow-decay component for noise reduction with a fast-decay component for rapid curvature adaptation, harnessing their complementary strengths. Crucially, we employ a sphere constraint technique to prevent parameter inflation and excessively rapid effective learning rate decay that would otherwise arise from a naive combination. Extensive experiments show that the proposed method significantly accelerates Muon across diverse architectures (dense, MoE) and model sizes (0.12B--2.3B parameters). Theoretically, we verify the acceleration effect and provide insight into the design principles underlying the flat-direction multiscale momentum.",
+ "summary": "1. **核心创新点**：提出带球面约束的曲率感知多尺度动量机制，专门加速大模型预训练中损失曲面平坦方向的优化。\n\n2. **主要方法**：在低曲率方向结合慢衰减动量与快衰减动量，分别用于抑制梯度噪声和快速适应曲率；同时通过球面约束限制参数膨胀，避免有效学习率过快下降，并以 Muon 优化器为基础进行增强。\n\n3. **结论/性能**：在稠密模型和 MoE 等架构、参数规模为 0.12B–2.3B 的实验中，该方法均显著加速了 Muon 的预训练收敛；理论分析也验证了其加速效果，并解释了平坦方向多尺度动量的设计原理。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:01:25"
+}

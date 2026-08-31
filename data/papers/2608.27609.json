@@ -1,0 +1,13 @@
+{
+ "id": "2608.27609",
+ "title": "PHR-VLA: Planning Horizon Reasoning for Vision-Language-Action Models",
+ "authors": "Davood Soleymanzadeh, Kaidi Zhang, Zhiyuan Zhang, Bihao Zhang, Xiao Liang, Yu She, Minghui Zheng",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27609v1",
+ "abstract": "Vision-language-action models (VLAs) have shown strong promise for general-purpose robotic manipulation by mapping language instructions and vision observations directly to actions. However, most VLAs primarily condition action prediction on current observations and lack an explicit mechanism for reasoning over future task dynamics, which is particularly important for fine-grained, contact-rich manipulation. We present PHR-VLA, a framework that enables planning-horizon reasoning in VLAs through privileged latent representations of future dynamics. PHR-VLA introduces a lightweight auxiliary future head that, during training, aligns the VLA's internal representations with latent dynamics extracted from future observations. Evaluation results demonstrate that local, contact-centric, patch-level latent dynamics supervision from the wrist camera improves success rate on LIBERO from 84.1% to 88.4% and on real-world disassembly tasks from 63.3% to 82.5%. Patch-level supervision from a third-person camera also improves performance on Meta-World from 56.70% to 57.8%. These results demonstrate that privileged latent dynamics alignment provides an effective training signal for improving anticipatory reasoning in VLA policies. Project website: \\href{https://davoodsz.github.io/PHR-VLA.github.io/}{https://davoodsz.github.io/PHR-VLA.github.io/}",
+ "summary": "1. **核心创新点**：通过训练时引入未来动态的特权潜在表示，使视觉-语言-动作模型具备面向未来的规划与预判能力。\n\n2. **主要方法**：在VLA中加入轻量级辅助未来预测头，将模型内部表示与未来观测提取的潜在动态对齐，并采用腕部或第三人称相机的局部、接触中心、Patch级监督。\n\n3. **结论/性能**：LIBERO成功率由84.1%提升至88.4%，真实拆卸任务由63.3%大幅提升至82.5%，Meta-World由56.70%提升至57.8%，证明未来潜在动态对齐能有效增强VLA的预判推理能力。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-31 13:02:25"
+}

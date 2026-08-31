@@ -1,0 +1,13 @@
+{
+ "id": "2608.28490",
+ "title": "LLM-Based Agents for Software and Systems Security: Approaches, Applications, and Assessment",
+ "authors": "Jingjing Nie, Jiawei Guo, Krishna Meda, Haipeng Cai",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28490v1",
+ "abstract": "Software and systems security workflows are typically procedural: analysts inspect heterogeneous artifacts, form hypotheses, invoke tools, interpret outputs, and revise plans. Large language model (LLM)-based agents, which can plan, use tools, retain state, and revise actions across multi-step workflows, are being rapidly adopted to automate this work. Given the consequences of delegating security decisions to autonomous systems, understanding how such agents are built, used, and assessed is crucial. Yet to this date, there remains a lack of systematic understanding of what has been done and how far we are in this field: the term \"agent\" is applied inconsistently, applications differ sharply in risk, and assessment protocols are often incomparable. To gain a comprehensive and coherent view of this area hence inform relevant future research, this paper provides a systematic literature review of the (1) technical approaches, including agent architecture, perception, memory, reasoning and planning, action space, orchestration, and self-improvement, (2) applications, with respect to the security tasks served, and (3) assessment, including the datasets, outcome and trajectory metrics, safety measures, and baselines considered, over the peer-reviewed literature spanning the emergence of this area (2023--2026). Our synthesis reveals a field that has built agents able to act but not yet agents whose authority is bounded or whose behavior is auditable. In addition to knowledge systematization, we also extend our insights into the limitations of and challenges faced by current approach, application, and assessment designs, which shed light on potentially promising future research directions.",
+ "summary": "1. **核心创新点**：系统梳理了2023—2026年LLM智能体在软件与系统安全领域的技术架构、应用场景和评估体系。\n\n2. **主要方法**：通过系统性文献综述，从感知、记忆、推理规划、工具调用、多智能体编排和自我改进等技术维度，以及安全任务、数据集、评估指标、安全措施和基线等方面进行归纳分析。\n\n3. **结论/性能**：现有智能体已具备执行复杂安全任务的能力，但在权限边界、行为可审计性及统一评估标准方面仍明显不足；论文据此总结了当前局限并提出未来研究方向。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:00:57"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.27913",
+ "title": "Dense Cores in the Vicinity of an HII Region",
+ "authors": "Ruofei Zhang, Xing Lu, Jingwen Wu, Sihan Jiao, Hauyu Baobab Liu, Guang-Xing Li, Roberto Galván-Madrid, Aiyuan Yang, Siju Zhang, Shanghuo Li, Fengwei Xu, Xindi Tang, Yu Cheng, Weiyuan Zhang, Andrés E. Guzmán, Yuxin Lin, Yuhua Liu, Qizhou Zhang, Patricio Sanhueza, Ke Wang, Siyi Feng, Linjing Feng, Fangyuan Deng, Hao Ruan, Yuanzhen Xiong, Yuxiang Liu",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27913v1",
+ "abstract": "Massive stars strongly influence their surroundings through radiative and mechanical feedback, but its effects on dense gas structures at sub-pc scales remain poorly constrained. We investigate how feedback from a newly formed massive star affects dense cores in the filamentary molecular cloud IRAS 18530+0215. We analyze ALMA Band 6 observations of 1.3 mm dust continuum and DCN, N$_2$D$^+$, and $^{13}$CS line emission, together with VLA K-band continuum and NH$_3$ observations. Dense cores are identified with astrodendro, and their temperatures, masses, velocity dispersions, and virial parameters are derived. The dynamical state of the ultra-compact H II region is examined through energy and pressure estimates. The H II region has a radius of $\\sim$0.1 pc and an expansion velocity of $\\sim$2.5 km s$^{-1}$, corresponding to a shell dynamical age of $\\sim$0.06 Myr. DCN and $^{13}$CS cores are concentrated near the H II region, whereas N$_2$D$^+$ cores preferentially lie farther away. Core temperatures and velocity dispersions decrease with projected distance from the H II region. Virial parameters increase within the inner $\\sim$0.3 pc but decline sharply beyond this scale, while core masses show no significant trend with distance. Strong star formation signatures are found at $\\sim$0.2 pc, whereas more distant regions still host quiescent, cold dense cores. The compact H II region appears trapped or choked within $\\sim$0.1 pc, while its feedback extends to at least $\\sim$0.3 pc. Within this region, feedback enhances core velocity dispersions, gas temperatures, and virial parameters, with no evidence that it promotes the formation of more massive dense cores.",
+ "summary": "1. **核心创新点**：在亚秒差距尺度上揭示了超致密 H II 区反馈对邻近致密核物理与动力学性质的空间影响。\n\n2. **主要方法**：结合 ALMA 1.3 mm 连续谱及 DCN、N₂D⁺、¹³CS 分子线数据，以及 VLA 连续谱和 NH₃ 观测，利用 astrodendro 识别致密核，并计算其温度、质量、速度弥散和维里参数，同时估算 H II 区的能量与压力。\n\n3. **结论/性能**：该 H II 区虽被限制在约 0.1 pc 内，但反馈可延伸至至少 0.3 pc，使附近致密核的温度、速度弥散和维里参数升高；核心质量则未随距离显著变化，表明反馈增强了扰动和热效应，却没有促进更大质量致密核的形成。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-08-31 13:03:15"
+}

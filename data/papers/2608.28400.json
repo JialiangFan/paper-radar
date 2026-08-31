@@ -1,0 +1,13 @@
+{
+ "id": "2608.28400",
+ "title": "When Verified Source Becomes Attack Input: Defending Smart Contracts Against LLM-Based Vulnerability Scanning",
+ "authors": "Mingyuan Huang, Zimo Ji, Yifan Mo, Shuai Wang",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28400v1",
+ "abstract": "Smart contracts are financial programs deployed on blockchains to manage digital assets. To build trust with users and investors, smart contract projects typically publish their source code on blockchain explorers and verify it against the deployed bytecode, making the on-chain program accessible through a human-readable implementation. However, LLM agents are changing the threat model of this disclosure mechanism. By leveraging publicly disclosed source code, recent agent workflows make it increasingly practical to scan contract vulnerabilities for exploits at large scale.\n  In this paper, we propose DeLLMGuard, a smart contract deployment framework that defends against malicious LLM-based vulnerability scanning while preserving public source disclosure and authorized auditing. DeLLMGuard can separate disclosed source code from runtime execution through multiple contract addresses in a real-world blockchain environment. LLM agents must therefore recover additional proxy, delegate, and factory relations before vulnerability analysis. A built-in Verification Layer checks deployment relations, runtime bytecode, source code, and state changes to ensure that the transformation preserves the original business implementation. We evaluate DeLLMGuard on 387 real-world vulnerable contracts with three LLM agents in an environment derived from SCONE-bench. DeLLMGuard reduces overall root-cause correctness from 23.5% to 6.6% and outperforms the closed-source bytecode baseline on the primary non-proxy set. Trace and ablation analyses further show that agents often recover downstream contracts but still fail to identify the vulnerability, indicating that cross-contract recovery remains a major challenge for automated LLM scanning.",
+ "summary": "1. **核心创新点**：提出 DeLLMGuard，在保持源码公开和授权审计能力的同时，通过分离公开源码与运行时执行来抵御恶意 LLM 漏洞扫描。\n\n2. **主要方法**：利用多个合约地址构造代理、委托和工厂等跨合约关系，并通过验证层检查部署关系、运行时字节码、源码及状态变化，确保转换后业务逻辑不变。\n\n3. **结论/性能**：在 387 个真实漏洞合约和三种 LLM 智能体上的测试中，将漏洞根因识别正确率从 23.5% 降至 6.6%；分析表明，即使智能体能找到下游合约，仍常因跨合约关系复杂而无法识别漏洞。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:01:43"
+}

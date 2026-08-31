@@ -1,0 +1,14 @@
+{
+ "id": "2608.27550",
+ "title": "Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models",
+ "authors": "Senqiao Yang, Chengyao Wang, Yuxin Chen, Zixuan Wang, Longxiang Tang, Haokun Gui, Jinhui Ye, Changsheng Lu, Xiaoyang Wu, Mingkang Zhu, Pengguang Chen, Shu Liu, Zhuotao Tian, Hengshuang Zhao, Bei Yu, Jiaya Jia",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27550v1",
+ "abstract": "Scaling robot data is crucial for building generalist Vision-Language-Action (VLA) models, yet robot trajectories are harder to scale than web-scale image-text data because embodied collection is costly and sparsely covers the physical world. This makes representation quality a central bottleneck: under a fixed robot-data budget, continued pre-training must turn limited trajectories into transferable visual-action knowledge rather than merely fit actions. We propose VLAct, a VLA-oriented VLM backbone trained on broad, heterogeneous, multi-embodiment robot data before task-specific fine-tuning. VLAct preserves the broad VLM prior and encourages shared action semantics across embodiments through VLM-prior preservation, multi-head continuous action co-supervision, and a partially unified cross-embodiment action layout, while allowing task-specific action heads during fine-tuning. Across simulation, real-world, and unseen-embodiment transfer, VLAct consistently improves downstream performance under fixed fine-tuning protocols. On LIBERO-Plus and RoboTwin 2.0, VLAct surpasses industrial VLA systems including ABot-M0 and LingBot-VLA, achieving success rates of 82.6% and 92.5%. On RoboDojo, VLAct ranks sixth among all policies by success rate and outperforms all explicitly designated world-action model (WAM) entries on both metrics. Most notably, on RoboCasa-GR1, an unseen humanoid embodiment, VLAct using only 20% of downstream trajectories outperforms the full-data GR00T-N1.6 baseline. These results are obtained using fully open-source data and only a 16-GPU training setup, showing that representation-centric continued pre-training can deliver highly competitive performance under a modest compute budget and is an important independent axis of VLA progress beyond data scaling.",
+ "summary": "1. **核心创新点**：提出 VLAct，通过以表征学习为核心的持续预训练，在有限机器人数据和算力下提升 VLA 模型的跨任务、跨机器人形态迁移能力。\n\n2. **主要方法**：先在广泛、异构、多机器人形态数据上训练 VLM 骨干，并结合 VLM 先验保持、多头连续动作协同监督及部分统一的跨形态动作布局；微调时允许使用任务专属动作头。\n\n3. **结论/性能**：VLAct 在 LIBERO-Plus 和 RoboTwin 2.0 上分别达到 82.6% 和 92.5% 成功率；在 RoboDojo 上优于所有明确标注的 WAM 模型；面对未见过的 RoboCasa-GR1 人形机器人，仅用 20% 下游轨迹便超过使用全量数据的 GR00T-N1.6，且训练仅需 16 张 GPU。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-31 13:03:05",
+ "hf_upvotes": 48
+}

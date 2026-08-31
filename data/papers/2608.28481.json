@@ -1,0 +1,13 @@
+{
+ "id": "2608.28481",
+ "title": "NL2AGBench: Benchmarking LLM Auto-Formalization for AlphaGeometry",
+ "authors": "Samuel Xiao, Judy Song, Rory Hu, Ziliang Zong",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28481v1",
+ "abstract": "Recent advances in large language models (LLMs) have demonstrated strong capabilities in natural language understanding and mathematical reasoning. However, their ability to translate informal mathematical problems into formal representations remains underexplored. This limitation is particularly important for neuro-symbolic geometry systems such as AlphaGeometry, whose theorem-proving engine requires inputs in a specialized domain-specific language (DSL). Although AlphaGeometry achieves near-IMO gold-medalist performance, manually converting natural-language problems into its formal syntax remains a significant usability bottleneck. To address this challenge, we introduce the Natural Language to AlphaGeometry Benchmark (NL2AGBench), which evaluates LLMs in translating English geometry problems into AlphaGeometry-compatible formal representations. NL2AGBench uses execution-based verification within AlphaGeometry to assess translation quality rather than relying solely on textual similarity. We evaluate ten state-of-the-art open- and closed-source LLMs across multiple parameter scales and analyze executable translation accuracy, syntactic correctness, and error characteristics. Our experiments reveal a substantial performance gap between closed- and open-source models: leading closed-source models achieve executable translation rates above 80%, while even the largest open-source models struggle to consistently preserve geometric constraints and produce valid formalizations. We introduce an error taxonomy distinguishing syntax and logic errors and investigate mitigation strategies, including few-shot prompting, fine-tuning, and human-guided hinting, which yield measurable improvements across multiple model families.",
+ "summary": "1. **核心创新点**：提出 NL2AGBench，首个面向 AlphaGeometry 的自然语言几何题自动形式化基准，并通过实际执行验证翻译质量。\n\n2. **主要方法**：评测 10 个不同规模的开源与闭源 LLM，将英文几何题转换为 AlphaGeometry 专用语言；统计可执行率、语法正确性及错误类型，并测试少样本提示、微调和人工提示等改进策略。\n\n3. **结论/性能**：领先闭源模型的可执行翻译率超过 80%，显著优于开源模型；大型开源模型仍难以稳定保留几何约束并生成有效形式化结果，而少样本提示、微调和人工引导均能带来可测量的性能提升。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:01:16"
+}

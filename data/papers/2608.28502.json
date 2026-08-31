@@ -1,0 +1,13 @@
+{
+ "id": "2608.28502",
+ "title": "Recognition Without Enforcement: Configuration-Dependent Failures in LLM Agent Instruction Arbitration and External Control",
+ "authors": "Jun Wen Leong",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28502v1",
+ "abstract": "LLM agents arbitrate among instructions from system prompts, users, memory, and tools, but this arbitration cannot be assumed to enforce trust boundaries. We identify a recognition-enforcement gap: source-format features (role-template position, channel metadata, formatting cues) are linearly decodable from model activations, and models can explicitly identify forged authority when prompted, yet some configurations still produce the conflicting tool call. We use \"recognition\" in this specific decodable-source-format-plus-verbalized-detection sense; crossed-probe controls show it is not a unified abstract trust representation. The gap is not an immutable property of model weights. Restrictive policies and diverse prompts can eliminate execution on the same models, while permissive configurations and particular prompt-model pairs yield deterministic failures. Across a fleet evaluation (authority spoofing: 46 model endpoints across 6 vendors including open-weight; memory conflict: 48 models), average execution under diverse novel attacks is 1.21% [0.5-2.1%] (model-clustered CI over 14,294 spoofed trials from 29 models), but vulnerability is concentrated in reproducible cells and shifts across deployment windows (up to 47pp within-window per-fingerprint range). Prompt-layer defenses likewise fail to generalize across models and adaptive formulations. We therefore treat model self-arbitration as a capability rather than a security boundary and implement an external reference monitor combining authenticated source routing with capability-gated tool execution. It deterministically rejects all tested forged, tampered, replayed, and unsigned requests while preserving legitimate operations. A separate adaptive red-team found one implementation flaw (a since-patched clock-skew admission), not a cryptographic bypass. Secure agents require external enforcement, not merely better recognition.",
+ "summary": "1. **核心创新点**：揭示了 LLM 智能体在指令仲裁中的“识别—执行鸿沟”：模型能识别伪造权限，却仍可能执行恶意指令，因此自身判断不能充当安全边界。\n\n2. **主要方法**：通过跨厂商、多模型的权限伪造与记忆冲突测试，结合激活线性探针和提示泛化实验分析失败模式；进一步设计了由身份认证路由和工具能力门控组成的外部参考监控器。\n\n3. **结论/性能**：平均攻击执行率虽仅为 **1.21%**，但漏洞集中于可稳定复现且随配置和部署窗口变化的组合中；外部监控器则确定性拦截了全部已测试的伪造、篡改、重放及未签名请求，同时保持合法操作可用。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-08-31 13:00:39"
+}

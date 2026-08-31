@@ -1,0 +1,13 @@
+{
+ "id": "2608.28345",
+ "title": "AGENT-O: A Semantic Agent Card Framework for Interoperable and Governed Healthcare AI Agents",
+ "authors": "Pengze Li, Cui Tao",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28345v1",
+ "abstract": "AGENT-O is a modular ontology framework that defines a semantic Agent Card for representing health-oriented AI agent systems and supports assessment of reporting completeness in scientific publications. AGENT-O was developed as an OWL 2/RDF ontology covering runtime, models, workflow, tools, clinical use, evaluation, provenance, governance, and reporting assessment. Evaluation included ontology inventory, OWL-RL reasoning, three SHACL suites, 12 SPARQL competency queries, three cases, and model-assisted reporting-completeness assessment of 279 papers across five dimensions. The ontology contained 1,962 RDF triples and 1,922 Protege axioms, with 252 active classes, 198 active object properties, and 51 datatype properties. All SHACL suites conformed on example graphs, all competency queries returned prespecified evidence, and all 279 papers were scored. Incomplete reporting was highest for runtime/architecture (84.6%), governance/safety (82.8%), and provenance/reproducibility (78.1%), compared with evaluation (25.8%) and benchmark-process alignment (29.8%). AGENT-O supported semantic Agent Card representation and reporting assessment while revealing an evaluation-specification gap: evaluation and benchmark procedures were reported more consistently than runtime architecture, governance, and reproducibility. AGENT-O provides a reusable ontology, semantic Agent Card profile, and reporting-completeness workflow for structured reporting and gap identification, but does not assess agent quality or deployment readiness.",
+ "summary": "1. **核心创新点**：提出面向医疗 AI 智能体的模块化语义 Agent Card 本体框架 AGENT-O，用于促进系统互操作、治理信息标准化及论文报告完整性评估。\n\n2. **主要方法**：基于 OWL 2/RDF 构建覆盖运行架构、模型、工作流、工具、临床应用、评估、溯源和治理等维度的本体，并通过 OWL-RL 推理、SHACL 验证、SPARQL 查询、案例分析及模型辅助方法评估 279 篇论文。\n\n3. **结论/性能**：框架通过全部 SHACL 验证和 12 项能力查询，成功为 279 篇论文评分；结果显示运行架构、治理安全和可复现性的信息缺失率分别高达 84.6%、82.8% 和 78.1%，明显高于评估与基准流程，但该框架仅评估报告完整性，不判断智能体质量或部署就绪程度。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-08-31 13:00:28"
+}

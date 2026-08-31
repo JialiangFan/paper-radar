@@ -1,0 +1,13 @@
+{
+ "id": "2608.27508",
+ "title": "WM-R1: Training GUI Agents to Reason and leverage World Models with Reinforcement Learning",
+ "authors": "Yu Han, Tianwen Qian",
+ "date": "2026-08-27",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.27508v1",
+ "abstract": "GUI agents trained with reinforcement learning (RL) have showcased strong environment learning capabilities on mobile platforms. However, RL typically demands extensive real-environment interactions, leading to high resource costs and instability, especially in GUI scenarios. To address these, we propose WM-R1, the first reinforcement learning framework that trains mobile GUI agents with world models instead of real environments. Specifically, world models serve as the source of state transitions during all rollouts, replacing the real Android environment within the training loop. WM-R1 also embeds world models directly into the thinking process, enabling agents to reason about the consequences of candidate actions before committing to the final action. Crucially, WM-R1 eliminates the need for real-environment interaction, supports massively parallelized and step-level granularized trajectory generation grounded in world models, and introduces a multi-dimensional rule-based reward that jointly optimizes task success, trajectory efficiency, and world model utilization. For efficient training, we curate a high-quality dataset of 2000 challenging tasks. Experiments on Android mobile benchmarks demonstrate that WM-R1-trained agents significantly outperform GRPO-only baselines and inference-time simulation methods. Code is available at https://github.com/genalyu/WM-R1 .",
+ "summary": "1. **核心创新点**：提出首个完全依托世界模型、无需真实环境交互的移动端 GUI 智能体强化学习框架 WM-R1，并让智能体在决策时预判动作后果。\n\n2. **主要方法**：用世界模型替代真实 Android 环境生成状态转移和并行训练轨迹，将动作结果模拟融入推理过程；同时采用兼顾任务成功率、轨迹效率和世界模型利用率的多维规则奖励，并构建了 2000 个高难度任务用于训练。\n\n3. **结论/性能**：在 Android 移动端基准测试中，WM-R1 训练的智能体显著优于仅使用 GRPO 的基线以及只在推理阶段进行模拟的方法，同时降低了真实环境交互带来的资源成本和训练不稳定性。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-08-31 13:02:06"
+}
