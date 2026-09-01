@@ -1,0 +1,13 @@
+{
+ "id": "2608.29937",
+ "title": "AcrossWAM1.0:A Modular Latent World-Action Stack for Compact Robot Policies",
+ "authors": "Yafei Zhang, Nan Wu",
+ "date": "2026-08-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29937v1",
+ "abstract": "Latent world-action models avoid rendering future pixels by predicting an action-relevant visual subgoal in feature space. LaWAM established this formulation, but its original presentation left the world model, multimodal backbone, and deployment checkpoint tightly coupled. We introduce AcrossWAM1.0, a modularization and scaling study of this latent world-action stack. Rather than presenting latent subgoals as a new algorithm, we make the module boundary explicit: a policy adapter produces latent-action and action-generation contexts; a retained latent world decoder grounds the predicted transition in the current scene;and a flow-matching expert generates continuous action chunks. We further separate training-only teachers from the inference graph and provide a verifiable deployment export. On 2,000 paired LIBERO episodes, replacing a Qwen3-VL-2B backbone with Qwen3.5-0.8B yields 97.45% success versus 98.00% for the 2B model (a-0.55percentage-point difference; exact McNemarp=0.266). This does not prove equivalence, but it meets a prespecified two-point retention criterion. The compact, inference-reachable checkpoint contains 1,472.6M unique parameters, 42.4% fewer than the original 2B policy, while all retained tensors are bitwise identical to the source checkpoint. Cross-family execution is additionally checked with a MiniCPM-V adapter smoke test; closed-loop cross-family transfer remains an open evaluation. AcrossWAM1.0 therefore contributes an auditable software and evaluation boundary for compact latent world-action policies, distinct from LaWAM's original latent-subgoal contribution.",
+ "summary": "1. **核心创新点**：提出模块化的 AcrossWAM1.0，将潜在世界—动作策略的训练组件、推理模块和部署检查点解耦，实现紧凑且可审计的机器人策略。\n\n2. **主要方法**：采用策略适配器生成潜在动作与动作生成上下文，由保留的潜在世界解码器结合当前场景预测视觉子目标，再通过流匹配专家生成连续动作序列；同时分离仅训练阶段使用的教师模型，并支持跨视觉语言模型适配。\n\n3. **结论/性能**：在 2,000 个 LIBERO 配对回合中，Qwen3.5-0.8B 版本成功率达 97.45%，接近 2B 版本的 98.00%；可部署检查点含 14.726 亿参数，比原策略减少 42.4%，但闭环跨模型家族迁移仍待验证。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-01 13:03:12"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2608.31118",
+ "title": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
+ "authors": "Hamed Babaei Giglou, Sören Auer, Jennifer D'Souza",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.31118v1",
+ "abstract": "The effect of Large Language Model (LLM) scale on ontology learning (OL) performance remains insufficiently characterized. We present a controlled evaluation of 13 models spanning dense and Mixture-of-Experts variants from the Qwen3.5 and Qwen3.6 lineages, together with proprietary GPT release variants, using the OntoLearner retrieval-augmented generation pipeline. All models are evaluated with the same embedding model, retrieval configuration, prompt templates, decoding settings, datasets, and metrics on term typing, taxonomy discovery, and non-taxonomic relationship extraction across four biomedical and materials science and engineering ontologies. Within the dense Qwen3.5 lineage, increasing parameter count primarily improves precision rather than recall, with the largest gains occurring between 9B and 27B parameters. However, the effect of scale is neither monotonic nor uniform across tasks and domains. Dense 27B models outperform substantially larger sparse models on term typing, whereas larger Mixture-of-Experts models achieve the strongest open-weight results on taxonomy discovery. Non-taxonomic relationship extraction remains difficult across model scales, particularly for the Materials Data Science ontology. Performance differences across matched Qwen variants and proprietary GPT releases further indicate that architecture and model lineage can outweigh nominal parameter count. These findings show that model size alone is an insufficient selection criterion for OL and provide empirical guidance for reproducible LLM-assisted ontology engineering.",
+ "summary": "1. **核心创新点**：通过严格控制变量，系统评估不同规模、架构和谱系的大语言模型在本体学习任务中的表现，揭示模型越大并不一定越好。\n\n2. **主要方法**：基于 OntoLearner 检索增强生成（RAG）流程，在统一嵌入模型、检索配置、提示词和评测设置下，对 13 个稠密及混合专家（MoE）模型进行测试，覆盖术语类型识别、分类体系发现和非分类关系抽取三类任务及四个生物医学与材料科学本体。\n\n3. **结论/性能**：稠密 Qwen3.5 模型扩展规模主要提升精确率，9B 到 27B 的增益最明显；27B 稠密模型在术语类型识别上优于更大的稀疏模型，而大型 MoE 模型在分类体系发现上取得最佳开源权重结果。非分类关系抽取仍普遍困难，且性能受架构和模型谱系的影响可能大于参数量，因此不能仅凭模型规模进行选择。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-01 13:01:50"
+}

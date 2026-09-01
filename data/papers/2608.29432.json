@@ -1,0 +1,13 @@
+{
+ "id": "2608.29432",
+ "title": "SMILE: Smooth Motion for Improved Long-Horizon VLA Execution",
+ "authors": "Jongwoo Park, E-Ro Nguyen, Kanchana Ranasinghe, Cristina Mata, Xiang Li, Michael S Ryoo",
+ "date": "2026-08-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29432v1",
+ "abstract": "Vision-Language-Action (VLA) models reduce inference cost by executing multiple actions per call, but longer horizons often degrade accuracy because raw chunks contain jitter and outliers. We introduce SMILE, an architecture-preserving interface that predicts B-spline coefficients and decodes them into smooth action sequences. SMILE changes only the action representation, enabling longer fixed horizons while retaining each baseline's backbone and model scale. We apply SMILE to SmolVLA, Evo1, VPP, and DAWN, improving accuracy and amortized inference efficiency across LIBERO, CALVIN, and real-world experiments. SMILE-Evo1 reaches 98.0% with a 1.1x speedup on LIBERO, while SMILE-VPP reaches an average length of 4.42 with a 1.5x speedup on CALVIN. At a matched execution horizon of 10, SMILE-SmolVLA reduces non-boundary acceleration by 78.6% and velocity sign-change rate by 42.3%. Real-world xArm tests show higher success, fewer drops, and fewer contacts. These results establish smooth coefficient-space generation as a route to accurate, efficient long-horizon VLA execution. Project page: jongwoopark7978.github.io/smilevla",
+ "summary": "1. **核心创新点**：提出 SMILE，通过预测 B 样条系数生成平滑动作序列，在不改变 VLA 模型架构的情况下提升长时域执行的准确性与效率。\n\n2. **主要方法**：仅替换动作表示方式，让模型预测 B-spline 系数并解码为平滑动作序列；该方法适配 SmolVLA、Evo1、VPP 和 DAWN 等模型。\n\n3. **结论/性能**：SMILE-Evo1 在 LIBERO 上达到 98.0% 准确率并加速 1.1 倍，SMILE-VPP 在 CALVIN 上实现 4.42 的平均任务长度并加速 1.5 倍；在执行时域为 10 时，非边界加速度降低 78.6%，速度符号变化率降低 42.3%，真实机械臂实验中也获得更高成功率及更少掉落和碰撞。",
+ "keyword": "VLA",
+ "source": "auto",
+ "created_at": "2026-09-01 13:03:30"
+}

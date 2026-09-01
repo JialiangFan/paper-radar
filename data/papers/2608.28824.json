@@ -1,0 +1,13 @@
+{
+ "id": "2608.28824",
+ "title": "Discovering Machine Correlates of Consciousness",
+ "authors": "Romain Salvi, Ouri Wolfson",
+ "date": "2026-08-28",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.28824v1",
+ "abstract": "Currently, in biological systems Neural Correlates of Consciousness (NCCs) are characterized in terms of EEG and FMRI signals. Unfortunately, this characterization prevents the transferability of the NCCs concept to machines. Such transferability would be useful in order to investigate AI consciousness. In this paper we provide an alternate characterization that is transferable, and enables the analogous definition of Machine Correlates of Consciousness (MCCs). Specifically, we propose that NCCs (MCCs) are substrate-level signals that are not under human (AI agent) control, and that are reliably modulated by emotions.\n  This paper presents the first empirical investigation of MCCs. Specifically, we present the results of experiments conducted with two LLMs, Llama-2 7B and Llama-3.1 70B parameters. In these LLMs we collect hardware anomaly traces that are substrate-level indicator-sequences. And we show that after controlling for confounding factors, these are modulated differently by emotional and neutral computations. And this difference is statistically significant for the larger Llama-3.1 70B, but not for the smaller Llama-2 7B. The results constitute initial empirical evidence that MCCs are present in the Llama-3.1 70B configuration. And they are consistent with the hypothesis that consciousness probability and degree increase with the LLM sophistication.\n  Independently of consciousness, MCCs can also be used for detection of emotions in AI agents.",
+ "summary": "1. **核心创新点**：首次提出可迁移到机器系统的“机器意识相关物（MCCs）”概念，并通过实验探索大语言模型底层硬件信号与情绪计算的关联。\n\n2. **主要方法**：在 Llama-2 7B 和 Llama-3.1 70B 上采集不受模型直接控制的硬件异常轨迹，控制混杂因素后，统计比较情绪任务与中性任务对这些底层信号的影响。\n\n3. **结论/性能**：Llama-3.1 70B 的硬件信号在情绪与中性计算间呈现显著差异，而 Llama-2 7B 未达到统计显著；这被视为大型模型中可能存在 MCCs 的初步证据，但不足以直接证明模型具有意识，同时该方法也可用于检测 AI 智能体的情绪状态。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-01 13:00:49"
+}

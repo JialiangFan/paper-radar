@@ -1,0 +1,14 @@
+{
+ "id": "2608.30530",
+ "title": "WebWorld: The Browser as a World Model for Self-Improving Web Code",
+ "authors": "Jiajun Wu, Jian Yang, Yaxin Du, Wei Zhang, Haowen Wang, Junhang Cheng, Yuxuan Zhang, Tuney Zheng, Xianglong Liu, Ming Zhou",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.30530v1",
+ "abstract": "VLM-driven self-improvement of web code has a structural flaw: the model that proposes the repair is the model that judges it, and visual plausibility under that judge is a poor proxy for whether the page actually works. What the loop is missing is a counterparty the VLM cannot fool, and the browser already is that counterparty: a deterministic, executable simulator of how an HTML artifact behaves under user actions, and in everything but name a world model for web code. We present WebWorld, the interface that lets a VLM prior interact with this browser-as-world-model autonomously and decides which interactions become supervision. Each round, the VLM emits a critique that the planner compiles into a typed interaction contract; the browser re-executes the candidate and issues an acceptance certificate only when both target progress and preservation of every previously verified capability hold; certified transitions accumulate as a quality ratchet that is the only thing the SFT export ever sees. Under matched training, WebWorld-27B improves Raw-27B by 5.3 points on HTMLBench-400 and 14.9 points on MiniAppBench-Val, and reaches the level of strong frontier systems such as Kimi-K2.6 and GPT-5.4 on interactive HTML generation. Equal-size ablations show that browser-backed admission carries the gain: without the certificate, the matched 9B lift nearly disappears.",
+ "summary": "1. **核心创新点**：将浏览器作为不可被视觉语言模型“欺骗”的可执行世界模型，通过验证网页功能来筛选可靠的自改进训练数据。  \n2. **主要方法**：VLM 生成代码批评与修复建议，规划器将其编译为类型化交互契约；浏览器执行候选网页，只有在目标功能取得进展且所有已验证能力未退化时才签发认证，并将认证结果用于监督微调（SFT）。  \n3. **结论/性能**：WebWorld-27B 相比 Raw-27B 在 HTMLBench-400 和 MiniAppBench-Val 上分别提升 5.3 和 14.9 分，交互式 HTML 生成能力达到 Kimi-K2.6、GPT-5.4 等前沿系统水平；消融实验表明，移除浏览器认证后，9B 模型的提升几乎消失。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-01 13:02:52",
+ "hf_upvotes": 3
+}

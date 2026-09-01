@@ -1,0 +1,13 @@
+{
+ "id": "2608.30572",
+ "title": "Practical Implementation Report on Introducing Spec-Driven Development Using AI Agents in Software Development PBL",
+ "authors": "Hidetake Tanaka, Hiroshi Igaki, Kazumasa Shimari, Kiyoshi Honda, Naoki Fukuyasu",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.30572v1",
+ "abstract": "In recent years, autonomous AI agents such as GitHub Copilot and Claude Code have been rapidly gaining popularity. This study reports on the practical implementation of Spec-Driven Development, a software development methodology premised on AI agents, within a Software Development Project-Based Learning (SDPBL) course for third-year undergraduate students. We defined a workflow consisting of four phases, namely investigation, planning, implementation, and review. We also established an environment tailored for the SDPBL course where AI agents generate documentation and code during each phase. We analyzed the results from three perspectives, namely students' subjective AI usage, implementation throughput, and code comprehension. The analysis reveals that AI usage patterns varied across development phases and teams. Moreover, while AI agent utilization increased implementation throughput, it also tended to encourage students to proceed with development without fully understanding the code. This study demonstrates that regular verification of code comprehension by instructors and appropriate feedback are essential for maintaining educational effectiveness when introducing SDD into SDPBL.",
+ "summary": "1. **核心创新点**：将面向 AI 智能体的规范驱动开发（SDD）引入本科软件开发项目制学习，并系统评估其教学效果。\n\n2. **主要方法**：设计“调研—规划—实现—评审”四阶段工作流，由 GitHub Copilot、Claude Code 等 AI 智能体生成各阶段的文档与代码，并从学生的 AI 使用情况、实现吞吐量和代码理解度三个方面进行分析。\n\n3. **结论/性能**：AI 智能体提高了开发效率，但也可能导致学生在未充分理解代码的情况下推进项目；因此，教师需定期检查代码理解程度并及时反馈，以保障教学效果。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-01 13:01:27"
+}

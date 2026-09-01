@@ -1,0 +1,13 @@
+{
+ "id": "2608.30237",
+ "title": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
+ "authors": "Hongzhe Bi, Zihao Zhou, Yihang Tang, Jingrui Pang, Shuhe Huang, Haitian Liu, Runqing Wang, Shuai Huang, Yichen Wang, Yiming Cheng, Ruowen Zhao, Zhenghua Li, Hengkai Tan, Xiaolong Liu, Jinhui Wan, Jiabao Liu, Min Zhao, Fan Bao, Jun Zhu",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.30237v1",
+ "abstract": "General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.",
+ "summary": "1. **核心创新点**：提出 Motus2，将策略、世界模拟与价值评估统一在共享权重模型中，形成可持续改进操作策略的闭环自进化世界模型。\n\n2. **主要方法**：模型通过策略模块生成候选动作序列，模拟器预测动作的视觉结果，评估器判断结果价值；同时利用大规模单目/双目第一视角数据、机器人轨迹、人机对齐数据和触觉反馈进行分阶段训练与机器人域适配。\n\n3. **结论/性能**：Motus2 能同时利用专家示范和失败或次优交互来学习策略、环境动力学及价值判断，并在具备双目视觉、双臂、灵巧手和触觉感知的仿生平台上验证了其面向通用、自进化灵巧操作的潜力；摘要未提供具体量化指标。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-01 13:02:34"
+}

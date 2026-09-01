@@ -1,0 +1,13 @@
+{
+ "id": "2608.31102",
+ "title": "LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
+ "authors": "Gopi Krishnan Rajbahadur, Amir M. Ebrahimi, Boyuan Chen, Ahmed E. Hassan",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.31102v1",
+ "abstract": "Industrial post-training is a brownfield regime. Teams inherit a deployed checkpoint and must land targeted improvements under fixed compute and mixture budgets without regressing the rest. The maintained artifact is increasingly dataware: behavior governed by a curated post-training mixture, updated via bounded mixture patches rather than clean-slate retraining. From an industrial code-generation improvement effort, we offer a maintainer's perspective on why this work is hard in practice, distilling three recurring challenges, zero-sum mixture design, yield as the binding metric, and end-to-end integration under uncertainty, and arguing that progress depends less on one-off recipes than on an engineering discipline for programming dataware. In our case study, interventions that raised the conversion of teacher distillation into usable training data increased accepted supervision by 2.84 times while using the same solution teacher and four solution attempts per candidate problem. In our primary evaluation, the yield-engineered patch improved CodeForces pass@1 by +2.59 points (+3.11 pass@3) and held-out LiveCodeBench v6 pass@1 by +6.11 (+8.05 pass@3), all statistically significant across 16 stochastic evaluations of each benchmark from one fixed checkpoint per condition, with internal AIME and MATH regression suites within tolerance.",
+ "summary": "1. **核心创新点**：将大模型后训练视为对既有“数据件（dataware）”的维护工程，强调在固定算力和数据配比预算下，通过小规模数据混合补丁实现定向增强且避免能力退化。\n\n2. **主要方法**：围绕代码生成开展工业案例研究，通过零和数据配比设计、提升教师蒸馏数据的有效产出率，以及在不确定性下进行端到端集成，优化后训练数据混合方案。\n\n3. **结论/性能**：在教师模型和每题4次生成尝试不变的情况下，可用监督数据增至 **2.84倍**；CodeForces 的 pass@1/pass@3 分别提升 **2.59/3.11** 个百分点，LiveCodeBench v6 分别提升 **6.11/8.05** 个百分点，且在16次随机评测中均具统计显著性，同时 AIME 和 MATH 回归测试保持在容许范围内。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-01 13:02:10"
+}

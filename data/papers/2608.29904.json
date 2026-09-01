@@ -1,0 +1,13 @@
+{
+ "id": "2608.29904",
+ "title": "Off-Manifold Refinement: Guiding Video Generators with a Frozen World Model",
+ "authors": "Hai Nguyen-Truong, Tuan-Anh Vu, Dang Huynh",
+ "date": "2026-08-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29904v1",
+ "abstract": "Modern video generators routinely fail at physical dynamics: objects float, trajectories violate gravity, contacts vanish. Standard denoising and flow-matching objectives fit visual data distributions but do not explicitly penalize such physical violations. Existing remedies can improve physical consistency, but typically add substantial inference or training cost. Candidate-selection methods generate and score multiple videos, while gradient-based world-model guidance repeatedly decodes and re-encodes intermediate estimates. Generator-internal refinement adds perturbation and re-denoising loops, whereas post-training requires curated data and additional optimization. We propose Off-Manifold Refinement (OMR), an inference-time method that instead injects world-model feedback directly into a single sampling trajectory. During scheduled middle ODE steps, we augment the generator velocity with the gradient of an adapter-space V-JEPA 2.1 surprise energy. This external correction can move the latent away from the uncorrected sampling trajectory and toward regions ranked as more physically plausible by the frozen predictor, after which the generator continues rendering from the corrected state. A small trained latent-to-embedding adapter keeps the gradient tractable at inference, and both the video generator and the world model remain frozen. On our fixed 400-prompt VideoPhy-2 detailed subset, OMR lifts the joint Semantic-Adherence-and-Physical-Commonsense metric from 47.0% to 52.0% (+5.0pp absolute, +10.6% relative) over the base Wan2.2-T2V-A14B sampler. On a separate fixed 50-prompt efficiency subset, it requires $1.71 \\times$ the base runtime rather than the multiplicative cost of reward/search alternatives. Project page: https://itruonghai.github.io/omr.",
+ "summary": "1. **核心创新点**：提出推理时的离流形细化（OMR），将冻结世界模型的物理反馈直接注入视频生成器的单次采样轨迹，以提升生成视频的物理合理性。\n\n2. **主要方法**：在采样中段的部分 ODE 步骤中，利用轻量级潜变量到嵌入空间适配器，计算 V-JEPA 2.1“惊讶能量”的梯度，并据此修正生成器速度；视频生成器与世界模型均保持冻结，仅需训练适配器。\n\n3. **结论/性能**：在 VideoPhy-2 的固定 400 条提示子集上，语义遵循与物理常识联合指标由 47.0% 提升至 52.0%（绝对提升 5.0 个百分点、相对提升 10.6%）；在 50 条提示的效率测试中，运行时间为基础采样器的 1.71 倍。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-01 13:03:02"
+}

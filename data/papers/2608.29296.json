@@ -1,0 +1,13 @@
+{
+ "id": "2608.29296",
+ "title": "When Do Larger Batches Help Scale LLM Reinforcement Learning?",
+ "authors": "Ziniu Li, Jinbo Wang, Guanhua Huang, Feiyuan Zhang, Pengbo Li, Alex Chen",
+ "date": "2026-08-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29296v1",
+ "abstract": "Larger batches reduce the variance of stochastic gradients per update and are therefore often expected to accelerate training. Yet whether this statistical benefit translates into lower wall-clock time-to-target remains unclear, because each update consumes more samples and may take longer to execute. We study this tradeoff in reinforcement learning for large language models. We separate its algorithmic and systems effects by comparing learning and execution along their natural axes. At the algorithmic level, we compare configurations at equal cumulative sample counts while retuning batch-dependent hyperparameters. Over a bounded range of batch sizes, this procedure yields an approximately batch-size-invariant family whose members follow similar sample-indexed learning trajectories. At the systems level, we exploit the computational asymmetry between rollout generation and training: autoregressive generation is often memory-bandwidth-bound at low concurrency, whereas training work scales approximately with the number of processed tokens. Combining these two views yields a direct decision rule: a larger-batch configuration reduces time-to-target only when its throughput gain exceeds its samples-to-target penalty. Experiments with GRPO and PPO support both sides of this decomposition. At the algorithmic level, square-root learning-rate scaling with Adam produces approximately batch-size-invariant learning curves over a bounded range of batch sizes. At the systems level, larger batches improve generation throughput by up to 2.29x on fixed hardware. In GRPO, combining higher throughput with learning-rate retuning reduces time-to-target by up to 29%, whereas increasing the batch without retuning is slower despite its higher throughput.",
+ "summary": "1. **核心创新点**：将大批量对 LLM 强化学习的影响拆分为算法效率与系统吞吐，提出“大批量仅在吞吐增益超过样本效率损失时才能缩短训练时间”的判断准则。\n\n2. **主要方法**：在 GRPO 和 PPO 上按相同累计样本量比较不同批量，并重新调节批量相关超参数；采用 Adam 的平方根学习率缩放，同时分析生成与训练阶段的计算特性。\n\n3. **结论/性能**：适当调参后，不同批量在一定范围内具有近似一致的样本学习曲线；大批量可将生成吞吐提高至 **2.29 倍**，并使 GRPO 的达标时间最多缩短 **29%**，但不重新调参时反而更慢。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-01 13:01:10"
+}

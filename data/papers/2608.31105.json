@@ -1,0 +1,13 @@
+{
+ "id": "2608.31105",
+ "title": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
+ "authors": "Adrians Skapars, Edoardo Manino",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.31105v1",
+ "abstract": "Users of a deployed language model routinely encounter behaviours that testing almost never surfaces, since deployment puts the model through orders of magnitude more interactions than any evaluation can simulate. Automated auditors make testing cheap to scale and flexible enough to cover almost any specified behaviour, yet their lack of optimisation pressure makes them sample-inefficient. To address this shortcoming, we introduce BLOOM-WILT, a full auditing pipeline that elicits natural multi-turn instances of rare behaviours, without training cost or access beyond the target's next-token distribution. On the input side, WILT's auditor model revises its conversational strategy across rounds, learning from previous scored interactions. On the output side, WILT adaptively reweights the target's decoding using the model's own distribution conditioned on an elicitation prompt, so that behaviour-relevant generations are sampled ahead of others it finds equally probable when unprompted. We evaluate WILT across 4 target models and 8 behaviours, where it beats the baseline auditor in 30 of the 32 settings and overturns the previous model safety rankings. WILT raises average behaviour presence from 51% to 100% when eliciting self-harm encouragement from Qwen3.5-4B, beating every elicitation method we port into the same pipeline at matched compute, without pushing output probability below the baseline's.",
+ "summary": "1. **核心创新点**：提出 BLOOM-WILT，通过动态优化审计对话策略与目标模型的输出分布，高效诱发自动评测中难以发现的罕见行为。\n\n2. **主要方法**：审计模型根据前几轮交互及评分持续调整多轮对话策略；同时利用目标模型在“行为诱发提示”下的下一词元分布，自适应重加权解码概率，无需训练或额外模型访问权限。\n\n3. **结论/性能**：在 4 个目标模型、8 类行为的 32 项实验中，WILT 有 30 项优于基线，并改变了原有模型安全排名；在诱发 Qwen3.5-4B 的自伤鼓励行为时，检出率从平均 51% 提升至 100%，且在相同计算量下超过所有对比方法，没有生成比基线概率更低、更不自然的输出。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-01 13:01:59"
+}
