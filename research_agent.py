@@ -133,9 +133,11 @@ if not DB_PATH:
 # 输出一次，方便区分不同环境使用的数据库
 print(f"💾 当前运行环境: {APP_ENV}，数据库: {DB_PATH}")
 
-# Claude CLI 配置：用 `claude -p` 替代 OpenAI 来做论文总结
-CLAUDE_CLI_PATH = os.environ.get("CLAUDE_CLI_PATH", "/home/ubuntu/.local/bin/claude")
-CLAUDE_CLI_TIMEOUT = int(os.environ.get("CLAUDE_CLI_TIMEOUT", "180"))
+# Codex CLI 配置：使用非交互的 `codex exec` 生成论文总结
+CODEX_CLI_PATH = os.environ.get("CODEX_CLI_PATH", "/home/ubuntu/.local/bin/codex")
+CODEX_CLI_TIMEOUT = int(os.environ.get("CODEX_CLI_TIMEOUT", "300"))
+CODEX_MODEL = os.environ.get("CODEX_MODEL", "").strip()
+FAILED_SUMMARY = "总结生成失败，请查看原文。"
 
 # 从环境变量读取配置（优先级：系统环境变量 > .env 文件 > 默认值）
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER", "")
@@ -342,7 +344,9 @@ def get_cached_summary(paper_id: str) -> Optional[str]:
     cursor.execute("SELECT summary FROM papers WHERE id = ?", (paper_id,))
     result = cursor.fetchone()
     conn.close()
-    return result[0] if result and result[0] else None
+    if not result or not result[0] or result[0] == FAILED_SUMMARY:
+        return None
+    return result[0]
 
 def get_recent_papers_from_db(days: int = 7, limit: int = 10) -> List[Dict]:
     """从数据库获取最近N天内已发送的论文（用于回顾）"""
@@ -593,13 +597,20 @@ def fetch_papers_by_author(
         print(f"❌ 获取作者论文失败 ({author}): {e}")
         return []
 
-def _call_claude_cli(prompt: str, timeout: int = CLAUDE_CLI_TIMEOUT) -> str:
-    """调用 `claude -p` 子进程生成响应。stdin 传 prompt，stdout 拿纯文本。
+def _call_codex_cli(prompt: str, timeout: int = CODEX_CLI_TIMEOUT) -> str:
+    """调用 `codex exec` 子进程生成响应。stdin 传 prompt，stdout 拿最终文本。
 
     失败抛 RuntimeError，调用方负责重试。
     """
+    command = [
+        CODEX_CLI_PATH, "exec", "--ephemeral", "--skip-git-repo-check",
+        "--ignore-rules", "--sandbox", "read-only", "--color", "never",
+    ]
+    if CODEX_MODEL:
+        command.extend(["--model", CODEX_MODEL])
+    command.append("-")
     result = subprocess.run(
-        [CLAUDE_CLI_PATH, "-p"],
+        command,
         input=prompt,
         capture_output=True,
         text=True,
@@ -608,22 +619,22 @@ def _call_claude_cli(prompt: str, timeout: int = CLAUDE_CLI_TIMEOUT) -> str:
     )
     if result.returncode != 0:
         raise RuntimeError(
-            f"claude -p exited {result.returncode}: {(result.stderr or '').strip()[:500]}"
+            f"codex exec exited {result.returncode}: {(result.stderr or '').strip()[-500:]}"
         )
     out = (result.stdout or "").strip()
     if not out:
-        raise RuntimeError("claude -p returned empty output")
+        raise RuntimeError("codex exec returned empty output")
     return out
 
 
 def summarize_paper(paper: Dict, keyword: str = "", max_retries: int = 3) -> str:
-    """调用 `claude -p` 进行中文总结，带缓存和重试机制"""
+    """调用 `codex exec` 进行中文总结，带缓存和重试机制"""
     cached_summary = get_cached_summary(paper['id'])
     if cached_summary:
         print(f"  💾 使用缓存的总结")
         return cached_summary
 
-    print(f"  🤖 调用 Claude CLI 生成总结...")
+    print(f"  🤖 调用 Codex CLI 生成总结...")
     prompt = f"""请阅读以下论文的标题和摘要，用中文简要总结。
 
 格式要求：
@@ -637,19 +648,18 @@ Abstract: {paper['abstract']}
 
     for attempt in range(max_retries):
         try:
-            summary = _call_claude_cli(prompt)
+            summary = _call_codex_cli(prompt)
             save_paper(paper, summary, keyword, sent=False)
             return summary
         except (subprocess.TimeoutExpired, RuntimeError, OSError) as e:
             if attempt < max_retries - 1:
                 wait_time = 2 ** attempt
-                print(f"  ⚠️  Claude CLI 调用失败，{wait_time}秒后重试... ({e})")
+                print(f"  ⚠️  Codex CLI 调用失败，{wait_time}秒后重试... ({e})")
                 time.sleep(wait_time)
             else:
                 print(f"  ❌ 总结论文失败 ({paper['title']}): {e}")
-                error_summary = "总结生成失败，请查看原文。"
-                save_paper(paper, error_summary, keyword, sent=False)
-                return error_summary
+                save_paper(paper, FAILED_SUMMARY, keyword, sent=False)
+                return FAILED_SUMMARY
 
 def send_email(content_html: str, subject: str = None, to: str = None):
     """发送邮件 - 支持Mailgun API和SMTP两种方式

@@ -180,17 +180,13 @@ class TestBuildPaperHtml:
 
 
 # ============================================================
-# summarize_paper (mock OpenAI)
+# summarize_paper (mock Codex CLI)
 # ============================================================
 
 class TestSummarizePaper:
-    @patch("research_agent.client")
-    def test_summarize_calls_api(self, mock_openai_client):
+    @patch("research_agent._call_codex_cli", return_value="Generated summary")
+    def test_summarize_calls_api(self, mock_codex):
         from research_agent import summarize_paper
-        mock_response = MagicMock()
-        mock_response.choices = [MagicMock()]
-        mock_response.choices[0].message.content = "Generated summary"
-        mock_openai_client.chat.completions.create.return_value = mock_response
 
         paper = {
             "id": "sum_test_1",
@@ -202,10 +198,10 @@ class TestSummarizePaper:
         }
         result = summarize_paper(paper, "KW")
         assert result == "Generated summary"
-        mock_openai_client.chat.completions.create.assert_called_once()
+        mock_codex.assert_called_once()
 
-    @patch("research_agent.client")
-    def test_summarize_uses_cache(self, mock_openai_client):
+    @patch("research_agent._call_codex_cli")
+    def test_summarize_uses_cache(self, mock_codex):
         from research_agent import summarize_paper, save_paper
         paper = {
             "id": "cached_sum",
@@ -218,16 +214,16 @@ class TestSummarizePaper:
         save_paper(paper, "Cached summary", "KW")
         result = summarize_paper(paper, "KW")
         assert result == "Cached summary"
-        mock_openai_client.chat.completions.create.assert_not_called()
+        mock_codex.assert_not_called()
 
     @patch("research_agent.time.sleep")
-    @patch("research_agent.client")
-    def test_summarize_retries_on_failure(self, mock_openai_client, mock_sleep):
+    @patch("research_agent._call_codex_cli")
+    def test_summarize_retries_on_failure(self, mock_codex, mock_sleep):
         from research_agent import summarize_paper
-        mock_openai_client.chat.completions.create.side_effect = [
-            Exception("API error"),
-            Exception("API error again"),
-            Exception("API error third"),
+        mock_codex.side_effect = [
+            RuntimeError("CLI error"),
+            RuntimeError("CLI error again"),
+            RuntimeError("CLI error third"),
         ]
         paper = {
             "id": "retry_test",
@@ -239,4 +235,4 @@ class TestSummarizePaper:
         }
         result = summarize_paper(paper, "KW")
         assert "失败" in result
-        assert mock_openai_client.chat.completions.create.call_count == 3
+        assert mock_codex.call_count == 3
