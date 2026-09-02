@@ -1,0 +1,13 @@
+{
+ "id": "2609.00455",
+ "title": "Towards a Belief-Based World Model for LLM Agents",
+ "authors": "Shubham Kumar, Harshit Kumar, Narendra Ahuja, Saurabh Jha",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.00455v1",
+ "abstract": "Large language models (LLMs) are being used as policies for autonomous decision-making and planning in many domains. Despite their strong reasoning capabilities, LLMs struggle with long-horizon tasks, especially under partial observability. World models are a promising way to enhance policy performance, both during training and inference. During inference, agents currently use world models to simulate the consequences of candidate actions before committing to an action, which can improve decision-making. However, we argue that simulation alone is an incomplete interface for decision-making under partial observability: simulation doesn't adequately capture uncertainty about the current state, which agents may need for accurate decision-making. We address this limitation with Belief-Based World Models (BB-WMs), which model and maintain a belief that LLMs can query to access information on what is known and uncertain about the current state. Before developing methods to learn accurate BB-WMs, we first ask a more fundamental question: does exposing a world model's belief directly to an LLM policy improve decision-making? Our results show that giving LLM agents access to world model beliefs improves task performance under partial observability, while remaining complementary to existing simulation-based world models. Code is released at https://github.com/skumar-ml/belief-world-models.",
+ "summary": "1. **核心创新点**：提出“基于信念的世界模型”（BB-WM），让 LLM 智能体显式了解当前状态中已知与不确定的信息。\n\n2. **主要方法**：世界模型持续维护一个可供 LLM 查询的“信念状态”，并将其与预测候选动作后果的传统模拟式世界模型结合，用于部分可观测环境中的决策。\n\n3. **结论/性能**：直接向 LLM 策略提供世界模型的信念信息，可提升部分可观测任务的表现；该方法与已有的模拟式世界模型互补，结合使用仍能带来收益。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-02 13:04:03"
+}

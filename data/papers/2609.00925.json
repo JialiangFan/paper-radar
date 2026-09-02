@@ -1,0 +1,13 @@
+{
+ "id": "2609.00925",
+ "title": "Context-Grounding Gains Are Mediated by Pre-existing Machinery: Auditing GRPO, SFT, and DPO",
+ "authors": "Prakhar Gupta, Vaibhav Gupta",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.00925v1",
+ "abstract": "Language models can ignore prompt evidence when it conflicts with memorized knowledge. Post-training can make models follow such evidence more reliably, but it is unclear whether these gains require new machinery or strengthen machinery already present. We compare nine post-training arms spanning GRPO, SFT, and DPO from one starting checkpoint, with key comparisons extended across scales and families. We estimate a grounding direction from that checkpoint before training. Across five tested GRPO variants, grounding gains are small. For the two variants replicated across seeds, equivalence tests bound their effects below the conflict-SFT gain even as the rewarded metric improves. Conflict-SFT improves grounding moderately, while DPO drives grounding near ceiling on its matched distribution. Conflict-SFT and DPO largely use the same causal attention-head set as the starting model. Subtracting the starting-model direction suppresses both gains, while adding it to the starting model recovers 35% of DPO's gain at a dose passing all stated side-effect checks. After a supervised warm start makes the context answer appear in more rollouts, the same GRPO recipe adds essentially no further grounding gain. In our setting, grounding gains largely depend on machinery already present in the starting model.",
+ "summary": "1. **核心创新点**：系统对比 GRPO、SFT 和 DPO 后发现，上下文证据遵循能力的提升主要源于强化模型已有机制，而非学习出新的机制。\n\n2. **主要方法**：从同一初始模型开展九组后训练实验，涵盖五种 GRPO 变体、冲突样本 SFT 和 DPO；通过预先估计的“上下文 grounding 方向”、因果注意力头分析、方向加减干预及跨随机种子/模型规模验证来审计能力来源。\n\n3. **结论/性能**：GRPO 即使提高奖励指标，对 grounding 的增益仍很小；冲突 SFT 带来中等提升，DPO 在匹配分布上接近性能上限。SFT 和 DPO 主要复用了初始模型已有的注意力头机制；仅向初始模型注入已有 grounding 方向，就能在通过副作用检查的剂量下恢复约 **35%** 的 DPO 增益，而 SFT 预热后继续使用 GRPO 几乎不再带来提升。",
+ "keyword": "GRPO",
+ "source": "auto",
+ "created_at": "2026-09-02 13:03:19"
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2609.01457",
+ "title": "Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices",
+ "authors": "Jiaxiang Geng, Xianhao Chen, Bing Luo",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01457v1",
+ "abstract": "Large language model (LLM) fine-tuning is increasingly shifting toward data generated on edge devices, where memory, computation, bandwidth, and connectivity constraints make conventional federated learning difficult to sustain. Split federated fine-tuning (SFT) improves client-side efficiency by offloading most model parameters and computation to the server but requires step-by-step bidirectional communication loop across the split interface and forces continuous client involvement throughout training. In this paper, we present L-shaped SFT, a split fine-tuning framework that removes this bidirectional bottleneck. Our key insight is that weight tying in modern LLMs enables server-side hidden activations to be directly supervised using target embeddings, allowing the training loss to be computed on the server without returning server outputs to the client. To further eliminate the need for continuous client participation, based on L-shaped SFT, we introduce one-shot SFT, in which clients upload activations once and then go offline while the server continues optimization over cached representations. We implement our design in a real system testbed with heterogeneous edge clients, including commercial smartphones and NVIDIA developer boards. Experiments demonstrate that our schemes significantly reduce communication costs and client online time compared with existing SFT baselines.",
+ "summary": "1. **核心创新点**：利用现代 LLM 的权重绑定机制，将分割联邦微调由逐步双向通信改为单向乃至一次性通信。\n\n2. **主要方法**：提出 L-shaped SFT，使用目标词嵌入直接监督服务器端隐藏表示，使损失计算完全在服务器完成；进一步提出 one-shot SFT，让客户端仅上传一次激活表示，服务器基于缓存表示持续优化。\n\n3. **结论/性能**：在智能手机和 NVIDIA 开发板等异构边缘设备上的实验表明，该方法相比现有 SFT 基线显著降低了通信成本和客户端在线时间。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-02 13:03:09"
+}

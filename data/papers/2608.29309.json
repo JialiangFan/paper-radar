@@ -1,0 +1,13 @@
+{
+ "id": "2608.29309",
+ "title": "Evaluating LLM-based AI agents integrated with materials synthesis tools: the case of atomic layer deposition",
+ "authors": "Angel Yanguas-Gil",
+ "date": "2026-08-29",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29309v1",
+ "abstract": "This work provides an overview of the different strategies that can be used to evaluate the performance of AI models and agents based on large language models (LLMs) for materials synthesis. After providing a brief overview of the key technologies behind the current generation of AI agents based on LLMs, we summarize the different approaches to evaluating these models in the context of materials science and in particular on materials synthesis, with a specific emphasis on scenarios in which the models are directly integrated with experimental tools. We discuss evaluation strategies spanning knowledge and reasoning benchmarks, tool-use benchmarks, and closed loop benchmarks involving the interaction with experimental systems or realistic virtual tools. We use atomic layer deposition (ALD) as a case study, emphasizing how existing approaches in the literature both build from general approaches used beyond materials science and can be generalized to other materials synthesis techniques. Finally, we provide a practical evaluation framework to evaluate LLMs in the context of materials synthesis",
+ "summary": "1. **核心创新点**：以原子层沉积（ALD）为案例，提出了一套面向“LLM智能体—材料合成工具”集成系统的实用评估框架。\n\n2. **主要方法**：系统梳理知识与推理、工具使用及实验系统或高保真虚拟工具参与的闭环评测策略，并分析其在材料合成场景中的适用性与可推广性。\n\n3. **结论/性能**：形成了可用于评估材料合成LLM智能体的多层次框架；摘要未报告具体实验数据或定量性能结果。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-02 13:03:27"
+}

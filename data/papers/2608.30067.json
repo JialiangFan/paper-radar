@@ -1,0 +1,13 @@
+{
+ "id": "2608.30067",
+ "title": "How do World Models and Policies Compose in LLM Agents? A Joint Spectral and Behavioral Account",
+ "authors": "Ruize Xu, Xiao Yu, Yujin Tang, Chenming Shang, Nikhil Singh",
+ "date": "2026-08-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.30067v1",
+ "abstract": "How do LLM agents come to both understand environments they act in and master tasks set within them? Through controlled experiments combining world-model training (next-state prediction) and policy training (reward maximization), we investigate this question. We dissect the resulting models through their additive parameter updates. Geometrically, we find effective world-model updates are low-rank and share an input-feature subspace with policy updates while writing to nearly orthogonal output directions, whether trained separately or sequentially. However, we find that, in projection interventions, the sequential update induces more robustness than separate policy RL when removing the world model's leading input directions, suggesting that it has learned alternative input pathways. Behaviorally, we find the sequentially trained agent explores a wider range of states and actions. Based on this, we ask: does policy training preserve world knowledge as well as it could? We probe this with training-free merging built on the geometrically motivated input basis plus an online world-model loss during policy RL, and show both improve over the untreated baseline. Our findings suggest world knowledge and task-directed ability can be learned in geometrically complementary forms, and that future post-training pipelines should consider how best to engineer the interface between them.",
+ "summary": "1. **核心创新点**：从参数更新的谱几何与智能体行为两方面，揭示了 LLM 智能体的世界模型知识与任务策略能力如何互补组合。\n\n2. **主要方法**：通过受控实验分别或顺序进行世界模型训练（预测下一状态）和策略强化学习（最大化奖励），并利用低秩分解、子空间分析、投影干预和行为探索分析研究参数更新；此外尝试基于输入特征基的免训练模型合并，以及在策略学习中加入在线世界模型损失。\n\n3. **结论/性能**：世界模型更新呈低秩结构，与策略更新共享输入特征子空间，但输出方向近乎正交；顺序训练能学习更多替代输入路径，并探索更丰富的状态和动作。基于几何结构的模型合并和在线世界模型损失均优于未经处理的基线，说明合理设计世界知识与策略能力之间的接口可以提升智能体表现。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-02 13:05:05"
+}

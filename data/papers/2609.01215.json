@@ -1,0 +1,13 @@
+{
+ "id": "2609.01215",
+ "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
+ "authors": "Riyaaz Shaik, Chandru Venkataraman",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01215v1",
+ "abstract": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$, RT-2, RDT-1B -- are monolithic: they emit raw motor commands or short action chunks without organizing behavior into reusable abstractions, so they degrade on long-horizon tasks and resist interpretation. Existing skill-discovery methods sidestep the core question of when two action sequences are behaviorally equivalent, either clustering contrastive embeddings or delegating the judgment to a language model uncalibrated to the robot's dynamics. We introduce REFACTOR-VLA, a wake/sleep system for learning reusable skills. Its sleep phase clusters motor-program fragments under a Behavioral-Equivalence Kernel (BEK) computed from rollouts of a learned latent world model $M_φ$; its wake phase emits typed lambda terms over a Hindley--Milner-inspired vocabulary, consumed by a library-conditioned rectified-flow action decoder. Abstractions are admitted only if they pass Minimum Description Length and return-preservation gates. On LIBERO we report two findings. First, enlarging the world model from 188M to 430M parameters worsened performance on 4 of 4 suites, so capacity alone does not help. Second, the training objective matters far more: adding an auxiliary supervised contrastive (InfoNCE) loss during world-model warmup substantially improves sleep-phase clustering, giving Normalized Mutual Information at $n=3$ seeds of $0.462 \\pm 0.021$ (object), $0.867 \\pm 0.025$ (spatial), $0.915 \\pm 0.013$ (goal) and $0.754 \\pm 0.010$ (LIBERO-10), and beating the strongest published baseline on all 4 suites by a mean $Δ= +0.184$. Across providers ($n=12$) the 95% bootstrap confidence interval for mean pairwise NMI is $[0.683, 0.729]$ (mean $0.705$). The sleep phase also yields the first real-LIBERO task-language library: the decoder uses 2 of 3 admitted abstractions and rewrites all 256 sampled demonstrations.",
+ "summary": "1. **核心创新点**：提出 REFACTOR-VLA，通过学习机器人动力学下的行为等价性，自动发现可复用、可解释的类型化运动程序库，以提升长时程任务的技能抽象能力。\n\n2. **主要方法**：采用“唤醒—睡眠”框架：睡眠阶段利用潜在世界模型的 rollout 和行为等价核（BEK）聚类运动程序片段，并通过最小描述长度与回报保持条件筛选抽象；唤醒阶段生成基于 Hindley–Milner 类型系统的 lambda 项，再由程序库条件化的整流流动作解码器执行。世界模型预热时还加入了监督对比学习 InfoNCE 损失。\n\n3. **结论/性能**：单纯扩大世界模型规模反而在 LIBERO 四个套件上均降低性能，而加入 InfoNCE 显著改善技能聚类；其 NMI 在 object、spatial、goal 和 LIBERO-10 上分别达到 **0.462、0.867、0.915、0.754**，平均领先最强已发表基线 **0.184**。系统还构建了首个真实 LIBERO 任务语言程序库，并成功重写全部 256 条采样演示。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-02 13:04:22"
+}

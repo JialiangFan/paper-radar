@@ -1,0 +1,14 @@
+{
+ "id": "2609.01572",
+ "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+ "authors": "Olga Tsymboi, Dmitrii Stoianov, Ramil Latypov, Danil Taranets, Daniil Dryabin, Mikhail Gashkov, Viktor Zelenkovskiy, Aleksandr Fida, Gleb Alektorov, Nikita Gulyakov, Arthur Babkin, Aleksandr Medvedev, Pavel Gein, Anatolii Potapov",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01572v1",
+ "abstract": "Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 200 internal applications onto a single model by closing quality gaps identified through production error analysis along three axes: instruction following, function-calling, and internal task distribution. Quality is tracked by offline benchmarks stratified to production traffic and scored by deterministic verifiers or calibrated LLM judges. Rather than optimising all objectives jointly, which introduces cross-domain reward interference, we train a separate GRPO expert per axis and merge them via two-stage SLERP. Each expert's reward exposes a distinct failure mode, namely semantic collapse, over-calling, and verbosity hacking, each requiring a domain-specific fix. In non-reasoning mode the recipe surpasses a ${\\sim}7\\times$ larger by total parameters baseline on the in-house Arena with 69.6 to 65.8, instruction following with 0.85 to 0.83, and function-calling with 0.79 to 0.77, while lifting general dialogue benchmarks. The model absorbs 50% of platform traffic, 116M requests per month, at a fraction of the serving cost.",
+ "summary": "1. **核心创新点**：基于真实企业流量分析，分别优化指令遵循、函数调用和内部任务适配，再通过模型合并构建统一的自托管 LLM。\n\n2. **主要方法**：使用按生产流量分层的离线基准与确定性验证器/校准后的 LLM 裁判评估质量；针对三个能力轴分别训练 GRPO 专家模型，并通过两阶段 SLERP 合并，同时专项解决语义坍缩、过度调用和冗长奖励投机问题。\n\n3. **结论/性能**：该模型在非推理模式下超越参数量约大 7 倍的基线，在内部 Arena、指令遵循和函数调用上分别达到 69.6、0.85、0.79（基线为 65.8、0.83、0.77），同时改善通用对话能力，并以更低成本承载 50% 的平台流量，即每月约 1.16 亿次请求。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-02 13:02:22",
+ "hf_upvotes": 26
+}

@@ -1,0 +1,13 @@
+{
+ "id": "2609.01519",
+ "title": "When Guardrails Look Effective: Construct Validity Failures in LLM Agent Commerce Evaluation",
+ "authors": "Peiying Zhu, Sidi Chang",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01519v1",
+ "abstract": "Interactive simulations increasingly evaluate policies in markets populated by language-model agents. Their outputs can look economic---prices, profits, consumer surplus, and welfare---without instantiating the behavior named in the claim. We audit this risk in a multi-turn buyer--seller testbed for configurable hotel transactions. An initial implementation reported welfare gains from two marketplace guardrails of +87.4, +35.0, and +28.8 across a Qwen2.5 1.5B--14B ladder. It also gave guarded and unguarded agents different offer schemas and choice procedures. Holding the schema and buyer chooser fixed changes the paired contrasts to +7.2, -13.9, and +23.8. The four largest 14B single-generation effects averaged +229; after three generations per profile-condition, they averaged +37.6 (95% bootstrap interval [-34.2, 109.3]), while generation residuals account for 49.9% of variation in this post-hoc probe. A seller-incentive check is non-monotone: increasing profit pressure produces less profit than the default seller prompt. Scripted positive controls show why this matters. A profit-maximizing seller already attains first-best welfare, so guardrails mostly redistribute and reduce welfare; they create welfare only when the seller is explicitly programmed to force inefficient bundles. We contribute a construct-validity contract separating incentive validity, protocol isolation, stochastic stability, and welfare accounting, and returning INVALID or INCONCLUSIVE before substantive policy claims. In our case, the original estimate is INVALID under protocol isolation, while the controlled study remains INCONCLUSIVE under incentive validity and stochastic stability. The case does not show that guardrails are ineffective; it shows their apparent value is unidentified until the simulated agents and protocol pass these checks.",
+ "summary": "1. **核心创新点**：揭示大语言模型代理商业仿真中“护栏有效”的表象可能源于评估设计缺陷，并提出一套构念效度检验框架。\n\n2. **主要方法**：在酒店交易的多轮买卖仿真中，控制报价格式和买方选择流程，开展多次随机生成、卖方激励检查及脚本化正向对照；从激励有效性、协议隔离、随机稳定性和福利核算四方面审计评估。\n\n3. **结论/性能**：控制协议后，原先显著的福利增益大幅变化甚至转负；重复生成后，大效应均值由 **+229** 降至 **+37.6**，且95%置信区间跨越零。原始结果因协议混杂被判定为 **INVALID**，控制后的研究仍因激励和随机性问题属于 **INCONCLUSIVE**；论文并非证明护栏无效，而是说明其效果尚无法被可靠识别。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-02 13:02:51"
+}

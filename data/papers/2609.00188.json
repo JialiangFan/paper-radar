@@ -1,0 +1,14 @@
+{
+ "id": "2609.00188",
+ "title": "ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training",
+ "authors": "Xionghao Wu, Yijun Yang, Shiyang Zhou, Haoze Sun, Jianhui Liu, Songsong Yu, Jiyao Zhang, Wenbo Li, Bo Wang, Guoqing Ma, Lin Song, Renjie Liao, Shenghe Zheng, Wei Tang, Xiaojuan Qi, Yanwei Li, Yuan Zhang, Zhuotao Tian, Haoyang Huang, Nan Duan",
+ "date": "2026-08-31",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.00188v1",
+ "abstract": "Robotic manipulation faces a fundamental scaling challenge: robust generalization demands broad physical experience, yet action-labeled robot trajectories are expensive to collect and inherently limited in diversity. Egocentric videos offer a far more scalable source of embodied experience, capturing object interactions, contact dynamics, tool use, and long-horizon behaviors across diverse environments. The central challenge is how to convert this abundant but action-free experience into effective robot control. We introduce ZimaBlue, a scalable framework for learning generalizable World Action Models (WAMs) from large-scale video. ZimaBlue follows a three-stage training curriculum: it first performs causal embodied video pre-training on large-scale human and robot egocentric videos, then grounds the learned visual dynamics in heterogeneous robot trajectories through video-action mid-training with a unified action representation, and finally specializes the model to a target robot for deployment. To make generative WAMs practical for real-time control, ZimaBluefurther adopts an asynchronous Slow-Fast dual-system architecture, where a high-capacity Slow world model provides generalizable spatiotemporal representations and a lightweight Fast branch enables 30 Hz action prediction on NVIDIA RTX 4090. On real-robot zero-shot evaluations, scaling from target-robot data alone to over 120,000 hours of embodied video improves success from 36.1% to 77.8%. ZimaBlue further delivers strong performance across multiple benchmarks, with particularly pronounced gains on unseen tasks.",
+ "summary": "1. **核心创新点**：提出 ZimaBlue，通过大规模无动作标注的第一视角视频预训练可泛化的世界动作模型，缓解机器人操作数据昂贵且多样性不足的问题。\n\n2. **主要方法**：采用三阶段训练：先在人类与机器人第一视角视频上进行因果视频预训练，再利用统一动作表示在异构机器人轨迹上进行视频—动作对齐训练，最后适配目标机器人；同时采用异步 Slow-Fast 双系统，实现高容量世界建模与轻量级实时动作预测。\n\n3. **结论/性能**：引入超过 12 万小时视频后，真实机器人零样本任务成功率由 36.1% 提升至 77.8%；在 RTX 4090 上可实现 30 Hz 动作预测，并在多个基准尤其是未见任务上取得显著提升。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-09-02 13:03:48",
+ "hf_upvotes": 38
+}

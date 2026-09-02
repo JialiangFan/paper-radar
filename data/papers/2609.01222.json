@@ -1,0 +1,13 @@
+{
+ "id": "2609.01222",
+ "title": "What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness",
+ "authors": "Zichuan Li, Jian Cui, Ashley Chen, Xiaojing Liao, Luyi Xing",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01222v1",
+ "abstract": "Real-world, high-profile AI agent harnesses often rely on vendor-proprietary or opaque designs for context assembly, leaving the sources and underlying logic of assembled context poorly understood and the resulting security risks largely unexplored. In this paper, we present the first systematic analysis of context assembly designs in real-world AI agent harnesses. We study and uncover how an agent harness is designed to collect and assemble context from diverse sources, and identify a set of practical attack vectors arising from these designs. Our analysis brings to light two novel categories of attacks in the context assembly of real-world harnesses: (1) MessageRole Context Privilege Escalation (M-CPE), which occurs when attacker-controlled content originating from a low-privileged context is incorporated into a higher-privileged message role. (2) Cross-Scope Context Privilege Escalation (X-CPE), which occurs when attacker-controlled content persists beyond the context in which it was introduced. We performed a systemic security analysis of the CPE attacks against 12 real-world agent harnesses, including Claude Code and Codex. The resulting consequences include full agent compromise, remote code execution, denial of service, and manipulated tool or skill invocations, etc.",
+ "summary": "1. **核心创新点**：首次系统分析真实 AI Agent Harness 的上下文组装机制，并提出消息角色（M-CPE）与跨作用域（X-CPE）两类上下文权限提升攻击。\n\n2. **主要方法**：研究 12 个真实智能体系统（包括 Claude Code 和 Codex）如何从不同来源收集、组装和持久化上下文，并通过安全测试识别攻击者将低权限内容注入高权限消息、或让恶意内容跨上下文持续生效的路径。\n\n3. **结论/性能**：两类攻击在实际系统中具有可利用性，可能导致智能体被完全控制、远程代码执行、拒绝服务，以及工具或技能调用遭操纵，说明现有上下文组装设计存在严重安全风险。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-02 13:02:13"
+}
