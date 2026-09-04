@@ -14,6 +14,7 @@ from typing import List, Optional
 
 from fastapi import FastAPI, Request, HTTPException, Cookie, Response
 from fastapi.responses import HTMLResponse, StreamingResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, EmailStr
 import html as html_escape
@@ -121,9 +122,9 @@ def verify_admin(admin_token: str = None):
 # 公开页面
 # ============================================================
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/tools", response_class=HTMLResponse)
 def index(request: Request):
-    """主页"""
+    """抓取、搜索与订阅工具。"""
     keywords = load_keywords()
     papers = get_papers_from_db(limit=20)
     return templates.TemplateResponse(
@@ -928,6 +929,8 @@ def user_unsubscribe(token: str):
 # ============================================================
 # 启动入口
 # ============================================================
+
+app.mount("/", StaticFiles(directory="site", html=True), name="site")
 
 if __name__ == "__main__":
     import uvicorn
