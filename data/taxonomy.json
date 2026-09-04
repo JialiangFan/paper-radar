@@ -2,6 +2,8 @@
   "vla-models": {"name": "VLA 基础模型", "desc": "VLA 模型架构、预训练、action tokenization（OpenVLA/π0/RT 系列等）"},
   "vla-post-training": {"name": "VLA 后训练", "desc": "VLA 的微调、RL 后训练、对齐、数据高效适配"},
   "vla-safety": {"name": "VLA 安全", "desc": "针对 VLA/具身模型的攻击、防护、安全评估与失效分析"},
+  "robotics": {"name": "机器人系统", "desc": "机器人系统、运动规划、自主系统、多机器人与人机协作"},
+  "cyber-physical-systems": {"name": "信息物理系统（CPS）", "desc": "计算、通信、控制与物理过程耦合的安全关键系统"},
   "robot-manipulation": {"name": "机器人操作", "desc": "操作、抓取、任务与运动规划（TAMP），不特指 VLA"},
   "sim-to-real": {"name": "仿真与数字孪生", "desc": "sim-to-real 迁移、数字孪生、机器人仿真环境"},
   "embodied-benchmarks": {"name": "具身评估", "desc": "机器人/具身智能的 benchmark、评估协议与测试框架"},
