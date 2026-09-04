@@ -2,6 +2,7 @@
 """把 data/papers/*.json 构建成静态论文站（site/）。
 
 - site/index.html：导师地图
+- site/faculty.html：导师方向与关联论文详情
 - site/papers.html：内嵌轻量索引（无摘要），前端搜索/筛选
 - site/paper.html：每篇论文共用的结构化详情页
 - site/papers/*.json：原始数据，详情页按需 fetch
@@ -158,6 +159,8 @@ h1 { font-size:clamp(38px,6vw,72px); line-height:1.02; letter-spacing:-.055em; m
 .faculty { display:grid; grid-template-columns:60px minmax(190px,.7fr) minmax(250px,1.3fr); gap:18px; padding:22px 4px; border-bottom:1px solid var(--border); }
 .avatar { width:48px; height:48px; display:grid; place-items:center; border-radius:50%; background:var(--accent-soft); color:var(--accent); font-weight:800; }
 .identity h3 { font-size:19px; line-height:1.25; }
+.identity h3 a { color:var(--ink); text-decoration:none; }
+.identity h3 a:hover { color:var(--accent); }
 .identity p { color:var(--muted); font-size:14px; margin-top:3px; }
 .identity a { display:inline-block; color:var(--accent); text-decoration:none; margin-top:8px; font-size:14px; }
 .chips { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
@@ -226,8 +229,8 @@ for (const topic of ['', ...relevantTopics]) {
 }
 
 function papersFor(faculty) {
-  const names = [faculty.name, ...(faculty.aliases || [])].map(n => n.toLowerCase());
-  return PAPERS.filter(p => names.some(name => String(p.authors || '').toLowerCase().includes(name)));
+  const ids = new Set(faculty.paper_ids || []);
+  return PAPERS.filter(p => ids.has(p.id));
 }
 
 function render() {
@@ -246,11 +249,11 @@ function render() {
     const row = document.createElement('article');
     row.className = 'faculty';
     row.innerHTML = `<div class="avatar">${esc(f.name.split(/\\s+/).map(v=>v[0]).slice(0,2).join(''))}</div>
-      <div class="identity"><h3>${esc(f.name)}</h3><p>${esc(f.institution)} · ${esc(f.region)}</p>
+      <div class="identity"><h3><a href="faculty.html?id=${encodeURIComponent(f.id)}">${esc(f.name)}</a></h3><p>${esc(f.institution)} · ${esc(f.region)}</p>
       <a href="${esc(f.homepage)}" target="_blank" rel="noopener">导师主页 ↗</a></div>
       <div class="faculty-main"><div class="chips">${f.topics.map(t=>`<span class="chip">${esc(TAX[t]||t)}</span>`).join('')}</div>
       <p class="evidence">本站收录 ${papers.length} 篇相关论文</p>
-      <div class="paper-links">${papers.slice(0,2).map(p=>`<a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.title)} →</a>`).join('')}</div></div>`;
+      <div class="paper-links"><a href="faculty.html?id=${encodeURIComponent(f.id)}">查看方向总结与全部论文 →</a>${papers.slice(0,2).map(p=>`<a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.title)} →</a>`).join('')}</div></div>`;
     $('list').append(row);
   }
   if (!faculty.length) $('list').innerHTML = '<p class="empty">没有匹配的导师。</p>';
@@ -270,6 +273,99 @@ const saved = localStorage.getItem('theme');
 if (saved) document.documentElement.dataset.theme = saved;
 
 render();
+</script>
+</body>
+</html>
+"""
+
+FACULTY_TEMPLATE = """<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>导师 · paper-radar</title>
+<meta name="description" content="导师研究方向与本站关联论文">
+<style>
+:root { --bg:#f5f7fb; --surface:#fff; --ink:#17223b; --muted:#65708a; --accent:#2546d8; --accent-soft:#e9edff; --signal:#e14a2b; --border:#dce2ee; }
+@media (prefers-color-scheme:dark) { :root { --bg:#0c1220; --surface:#151d2f; --ink:#f3f6ff; --muted:#a9b2c7; --accent:#8ea2ff; --accent-soft:#202b52; --signal:#ff8065; --border:#293550; } }
+:root[data-theme="light"] { --bg:#f5f7fb; --surface:#fff; --ink:#17223b; --muted:#65708a; --accent:#2546d8; --accent-soft:#e9edff; --signal:#e14a2b; --border:#dce2ee; }
+:root[data-theme="dark"] { --bg:#0c1220; --surface:#151d2f; --ink:#f3f6ff; --muted:#a9b2c7; --accent:#8ea2ff; --accent-soft:#202b52; --signal:#ff8065; --border:#293550; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; }
+a { color:var(--accent); }
+.wrap { max-width:1080px; margin:auto; padding:0 24px 80px; }
+.topbar { min-height:72px; display:flex; align-items:center; gap:18px; border-bottom:1px solid var(--border); }
+.brand { font-weight:800; letter-spacing:-.02em; white-space:nowrap; }.brand span { color:var(--signal); }
+.site-nav { display:flex; gap:4px; }.site-nav a { color:var(--muted); text-decoration:none; padding:6px 10px; border-radius:8px; font-size:14px; }
+.site-nav a:hover,.site-nav a.on { color:var(--accent); background:var(--accent-soft); }
+#theme { margin-left:auto; background:var(--surface); border:1px solid var(--border); border-radius:999px; color:var(--muted); cursor:pointer; padding:4px 11px; }
+.profile { padding:42px 0 28px; border-bottom:1px solid var(--ink); }
+.back { display:inline-block; color:var(--muted); text-decoration:none; font-size:14px; margin-bottom:18px; }.back:hover { color:var(--accent); }
+.eyebrow { color:var(--signal); font-size:13px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+h1 { margin:8px 0 6px; font-size:clamp(38px,6vw,64px); line-height:1.05; letter-spacing:-.045em; }
+.affiliation { color:var(--muted); font-size:18px; }
+.chips { display:flex; flex-wrap:wrap; gap:7px; margin:20px 0 16px; }.chip { color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:4px 10px; font-size:13px; }
+.homepage { text-decoration:none; font-weight:650; }
+.summary { display:grid; grid-template-columns:180px minmax(0,1fr); gap:28px; padding:28px 0; border-bottom:1px solid var(--border); }
+.summary h2,.papers-head h2 { margin:0; font-size:13px; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; }
+.summary p { margin:0; font-size:18px; line-height:1.7; }
+.boundary { color:var(--muted); font-size:14px; border-left:3px solid var(--accent); padding-left:14px; margin-top:14px; }
+.papers-head { display:flex; justify-content:space-between; align-items:baseline; gap:20px; padding:30px 0 10px; border-bottom:1px solid var(--ink); }.papers-head span { color:var(--muted); font-size:14px; }
+.paper { display:grid; grid-template-columns:100px minmax(0,1fr); gap:22px; padding:20px 4px; border-bottom:1px solid var(--border); }
+.date { color:var(--muted); font-size:13px; padding-top:4px; }
+.paper h3 { margin:0; font-size:18px; line-height:1.4; }.paper h3 a { color:var(--ink); text-decoration:none; }.paper h3 a:hover { color:var(--accent); }
+.meta { color:var(--muted); font-size:14px; margin:5px 0 9px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.paper .chips { margin:0; }.paper .chip { padding:2px 8px; font-size:12px; }
+.links { display:flex; gap:16px; margin-top:9px; }.links a { font-size:13px; text-decoration:none; }
+.empty,.error { color:var(--muted); padding:48px 0; }.error { max-width:680px; margin:auto; text-align:center; }
+@media (max-width:720px) { .wrap{padding:0 16px 60px}.topbar{gap:8px;flex-wrap:wrap;padding:12px 0}.brand{font-size:14px}.site-nav{order:3;width:100%}.summary{grid-template-columns:1fr;gap:10px}.paper{grid-template-columns:1fr;gap:5px}.date{padding:0} }
+</style>
+</head>
+<body>
+<main class="wrap" id="page" hidden>
+  <header class="topbar"><div class="brand">paper<span>radar</span> / 导师</div><nav class="site-nav" aria-label="主导航"><a class="on" href="index.html">导师地图</a><a href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav><button id="theme" aria-label="切换深浅色">◐</button></header>
+  <section class="profile"><a class="back" href="index.html">← 返回导师地图</a><div class="eyebrow">Research direction profile</div><h1 id="name"></h1><div class="affiliation" id="affiliation"></div><div class="chips" id="topics"></div><a class="homepage" id="homepage" target="_blank" rel="noopener">导师主页 ↗</a></section>
+  <section class="summary"><h2>方向总结</h2><div><p id="summary"></p><div class="boundary">方向标签来自人工整理；论文通过作者姓名及别名与本站记录匹配，不代表完整发表列表，同名作者仍需通过原文核验。</div></div></section>
+  <section><div class="papers-head"><h2>本站关联论文</h2><span id="count"></span></div><div id="papers"></div></section>
+</main>
+<div class="error" id="error" hidden><h1>找不到这位导师</h1><p>请回到导师地图重新打开。</p><a href="index.html">返回导师地图</a></div>
+<script>
+const FACULTY = __FACULTY__;
+const PAPERS = __INDEX__;
+const TAX = __TAXONOMY__;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function paperChips(p) {
+  return (p.topics||[]).slice(0,3).map(t=>`<span class="chip">${esc(TAX[t]||t)}</span>`).join('');
+}
+function directionSummary(faculty,papers) {
+  const labels=faculty.topics.map(t=>TAX[t]||t);
+  const counts={};
+  for(const paper of papers) for(const topic of paper.topics||[]) counts[topic]=(counts[topic]||0)+1;
+  const ranked=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  const observed=ranked.length ? `在本站匹配到的论文中，出现最多的是${ranked.map(([t,n])=>`${TAX[t]||t}（${n}篇）`).join('、')}。` : '本站目前尚未匹配到其论文记录，方向描述仅依据人工整理标签。';
+  return `本站将其主要方向归纳为${labels.join('、')}。${observed}`;
+}
+function load() {
+  const id=new URLSearchParams(location.search).get('id');
+  const faculty=FACULTY.find(f=>f.id===id);
+  if(!faculty){ $('error').hidden=false; return; }
+  const ids=new Set(faculty.paper_ids||[]);
+  const papers=PAPERS.filter(p=>ids.has(p.id));
+  document.title=`${faculty.name} · paper-radar`;
+  $('name').textContent=faculty.name;
+  $('affiliation').textContent=`${faculty.institution} · ${faculty.region}`;
+  $('homepage').href=faculty.homepage;
+  $('topics').innerHTML=faculty.topics.map(t=>`<span class="chip">${esc(TAX[t]||t)}</span>`).join('');
+  $('summary').textContent=directionSummary(faculty,papers);
+  $('count').textContent=`${papers.length} 篇`;
+  $('papers').innerHTML=papers.length ? papers.map(p=>`<article class="paper"><div class="date">${esc(p.date||p.year||'日期未记录')}</div><div><h3><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.title)}</a></h3><div class="meta">${esc(p.authors||'作者未记录')}</div><div class="chips">${paperChips(p)}</div><div class="links"><a href="paper.html?id=${encodeURIComponent(p.id)}">结构化详情 →</a>${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">原文 ↗</a>`:''}</div></div></article>`).join('') : '<p class="empty">本站暂未收录可匹配的论文。</p>';
+  $('page').hidden=false;
+}
+$('theme').addEventListener('click',()=>{ const cur=document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'); const next=cur==='dark'?'light':'dark'; document.documentElement.dataset.theme=next; localStorage.setItem('theme',next); });
+const saved=localStorage.getItem('theme'); if(saved) document.documentElement.dataset.theme=saved;
+load();
 </script>
 </body>
 </html>
@@ -640,12 +736,31 @@ def main():
     taxonomy = json.loads((REPO_ROOT / "data" / "taxonomy.json").read_text(encoding="utf-8"))
     tax_names = {slug: v["name"] for slug, v in taxonomy.items()}
     reviews = {p["id"]: review for p in papers if (review := review_from_note(p))}
+    faculty = []
+    for item in FACULTY:
+        names = [item["name"], *item.get("aliases", [])]
+        paper_ids = [p["id"] for p in papers if any(
+            re.search(rf"(?<![\w]){re.escape(name)}(?![\w])",
+                      str(p.get("authors") or ""), re.I)
+            for name in names)]
+        faculty.append({**item,
+                        "id": re.sub(r"[^a-z0-9]+", "-", item["name"].lower()).strip("-"),
+                        "paper_ids": paper_ids})
+    if len({item["id"] for item in faculty}) != len(faculty):
+        raise ValueError("faculty ids must be unique")
 
     html = TEMPLATE.replace("__BUILT__", time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()))
     html = html.replace("__INDEX__", json.dumps(index, ensure_ascii=False, separators=(",", ":")))
-    html = html.replace("__FACULTY__", json.dumps(FACULTY, ensure_ascii=False, separators=(",", ":")))
+    html = html.replace("__FACULTY__", json.dumps(faculty, ensure_ascii=False, separators=(",", ":")))
     html = html.replace("__TAXONOMY__", json.dumps(tax_names, ensure_ascii=False, separators=(",", ":")))
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
+    faculty_html = FACULTY_TEMPLATE.replace(
+        "__FACULTY__", json.dumps(faculty, ensure_ascii=False, separators=(",", ":")))
+    faculty_html = faculty_html.replace(
+        "__INDEX__", json.dumps(index, ensure_ascii=False, separators=(",", ":")))
+    faculty_html = faculty_html.replace(
+        "__TAXONOMY__", json.dumps(tax_names, ensure_ascii=False, separators=(",", ":")))
+    (SITE_DIR / "faculty.html").write_text(faculty_html, encoding="utf-8")
     papers_html = PAPERS_TEMPLATE.replace("__BUILT__", time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()))
     papers_html = papers_html.replace(
         "__INDEX__", json.dumps(index, ensure_ascii=False, separators=(",", ":")))
@@ -657,7 +772,8 @@ def main():
     detail_html = detail_html.replace(
         "__TAXONOMY__", json.dumps(tax_names, ensure_ascii=False, separators=(",", ":")))
     (SITE_DIR / "paper.html").write_text(detail_html, encoding="utf-8")
-    print(f"✅ site/ 构建完成：导师地图、{len(papers)} 篇论文、{len(reviews)} 篇含精读主页内容")
+    print(f"✅ site/ 构建完成：{len(faculty)} 位导师、{len(papers)} 篇论文、"
+          f"{len(reviews)} 篇含精读主页内容")
 
 
 if __name__ == "__main__":
