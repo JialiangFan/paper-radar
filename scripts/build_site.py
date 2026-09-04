@@ -14,6 +14,7 @@ import json
 import re
 import shutil
 import time
+from datetime import date
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -378,7 +379,7 @@ h1 { font-size:clamp(38px,6vw,72px); line-height:1.02; letter-spacing:-.055em; m
 <div class="wrap">
 <header class="topbar">
   <div class="brand">paper<span>radar</span> / 导师地图</div>
-  <nav class="site-nav" aria-label="主导航"><a class="on" href="index.html">导师地图</a><a href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav>
+  <nav class="site-nav" aria-label="主导航"><a class="on" href="index.html">导师地图</a><a href="papers.html?sort=quality">精选推荐</a><a href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav>
   <span class="built">数据更新：__BUILT__</span>
   <button id="theme" title="切换深浅色">◐</button>
 </header>
@@ -520,7 +521,7 @@ h1 { margin:8px 0 6px; font-size:clamp(38px,6vw,64px); line-height:1.05; letter-
 </head>
 <body>
 <main class="wrap" id="page" hidden>
-  <header class="topbar"><div class="brand">paper<span>radar</span> / 导师</div><nav class="site-nav" aria-label="主导航"><a class="on" href="index.html">导师地图</a><a href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav><button id="theme" aria-label="切换深浅色">◐</button></header>
+  <header class="topbar"><div class="brand">paper<span>radar</span> / 导师</div><nav class="site-nav" aria-label="主导航"><a class="on" href="index.html">导师地图</a><a href="papers.html?sort=quality">精选推荐</a><a href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav><button id="theme" aria-label="切换深浅色">◐</button></header>
   <section class="profile"><a class="back" href="index.html">← 返回导师地图</a><div class="eyebrow">Research direction profile</div><h1 id="name"></h1><div class="affiliation" id="affiliation"></div><div class="chips" id="topics"></div><a class="homepage" id="homepage" target="_blank" rel="noopener">官方资料 ↗</a></section>
   <section class="summary"><h2>方向总结</h2><div><p id="summary"></p><div class="boundary">方向标签来自人工整理；论文通过作者姓名及别名与本站记录匹配，不代表完整发表列表，同名作者仍需通过原文核验。</div></div></section>
   <section><div class="papers-head"><h2>本站关联论文</h2><span id="count"></span></div><div id="papers"></div></section>
@@ -604,6 +605,7 @@ h1 { font-size:clamp(38px,6vw,68px); line-height:1.02; letter-spacing:-.055em; m
 .paper h3 { font-size:19px; line-height:1.35; }.paper h3 a { color:var(--ink); text-decoration:none; }.paper h3 a:hover { color:var(--accent); }
 .meta { color:var(--muted); font-size:14px; margin:5px 0 10px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .chips { display:flex; flex-wrap:wrap; gap:6px; }.chip { color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:3px 9px; font-size:12px; }
+.chip.score { color:var(--signal); font-weight:750; }
 .links { margin-top:10px; display:flex; gap:16px; }.links a { color:var(--accent); text-decoration:none; font-size:13px; }
 #loadmore { display:block; margin:24px auto; padding:9px 22px; color:var(--accent); background:var(--surface); border:1px solid var(--border); border-radius:9px; cursor:pointer; }
 .empty { color:var(--muted); padding:48px 0; }
@@ -614,20 +616,21 @@ h1 { font-size:clamp(38px,6vw,68px); line-height:1.02; letter-spacing:-.055em; m
 <div class="wrap">
 <header class="topbar">
   <div class="brand">paper<span>radar</span> / 论文库</div>
-  <nav class="site-nav" aria-label="主导航"><a href="index.html">导师地图</a><a class="on" href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav>
+  <nav class="site-nav" aria-label="主导航"><a href="index.html">导师地图</a><a id="nav-quality" href="papers.html?sort=quality">精选推荐</a><a id="nav-library" class="on" href="papers.html">论文库</a><a href="/tools">抓取与订阅</a></nav>
   <span class="built">数据更新：__BUILT__</span><button id="theme" aria-label="切换深浅色">◐</button>
 </header>
 <section class="intro">
-  <div><div class="kicker">RESEARCH PAPER LIBRARY</div><h1>从论文回到研究脉络。</h1></div>
-  <p class="scope">汇总每日自动抓取与人工精读记录。可按主题、来源和年份筛选，并进入每篇论文的结构化详情页。</p>
+  <div><div class="kicker" id="kicker">RESEARCH PAPER LIBRARY</div><h1 id="page-title">从论文回到研究脉络。</h1></div>
+  <p class="scope" id="scope">汇总每日自动抓取与人工精读记录。可按主题、来源和年份筛选，并进入每篇论文的结构化详情页。</p>
 </section>
 <div class="filters">
   <input id="q" type="search" placeholder="搜索标题或作者…" aria-label="搜索论文">
   <select id="f-topic"><option value="">主题：全部</option></select>
   <select id="f-source"><option value="">来源：全部</option><option value="curated">精读整理</option><option value="auto">自动抓取</option></select>
   <select id="f-year"><option value="">年份：全部</option></select>
+  <select id="f-sort"><option value="recent">排序：最新优先</option><option value="quality">排序：精选推荐</option></select>
 </div>
-<div class="result-head"><h2>论文目录</h2><span id="count"></span></div>
+<div class="result-head"><h2 id="result-title">论文目录</h2><span id="count"></span></div>
 <main id="list"></main><button id="loadmore" hidden>加载更多</button>
 </div>
 <script>
@@ -646,7 +649,8 @@ addOptions('f-year', [...new Set(PAPERS.map(p=>p.year).filter(Boolean))].sort((a
 
 function chips(p) {
   const values = [...(p.topics||[]).map(t=>TAX[t]||t), p.keyword, p.category].filter(Boolean);
-  return (p.source==='curated' ? '<span class="chip">精读整理</span>' : '') + values.map(v=>`<span class="chip">${esc(v)}</span>`).join('');
+  const quality = $('f-sort').value==='quality' && p.quality_score ? `<span class="chip score">推荐 ${p.quality_score}</span>${(p.quality_reasons||[]).map(v=>`<span class="chip">${esc(v)}</span>`).join('')}` : '';
+  return quality + (p.source==='curated' ? '<span class="chip">精读整理</span>' : '') + values.map(v=>`<span class="chip">${esc(v)}</span>`).join('');
 }
 function renderMore() {
   const frag=document.createDocumentFragment();
@@ -658,15 +662,22 @@ function renderMore() {
   shown=Math.min(shown+PAGE,filtered.length); $('list').append(frag); $('loadmore').hidden=shown>=filtered.length;
 }
 function applyFilters() {
-  const q=$('q').value.trim().toLowerCase(), topic=$('f-topic').value, source=$('f-source').value, year=$('f-year').value;
+  const q=$('q').value.trim().toLowerCase(), topic=$('f-topic').value, source=$('f-source').value, year=$('f-year').value, quality=$('f-sort').value==='quality';
   filtered=PAPERS.filter(p=>(!q||`${p.title} ${p.authors||''}`.toLowerCase().includes(q))&&(!topic||(p.topics||[]).includes(topic))&&(!source||(source==='auto'?p.source!=='curated':p.source===source))&&(!year||String(p.year)===year));
+  if (quality) filtered=filtered.filter(p=>(p.quality_score||0)>=20).sort((a,b)=>b.quality_score-a.quality_score||String(b.date||b.year||'').localeCompare(String(a.date||a.year||'')));
+  $('nav-quality').classList.toggle('on',quality); $('nav-library').classList.toggle('on',!quality);
+  $('kicker').textContent=quality?'EVIDENCE-AWARE RECOMMENDATIONS':'RESEARCH PAPER LIBRARY';
+  $('page-title').textContent=quality?'先读更值得关注的论文。':'从论文回到研究脉络。';
+  $('scope').textContent=quality?'推荐分只用于排阅读优先级，不是论文质量定论。依据人工精读、核心标记、发表 venue、HF 社区关注度和新近度；缺少证据时保守降分。':'汇总每日自动抓取与人工精读记录。可按主题、来源和年份筛选，并进入每篇论文的结构化详情页。';
+  $('result-title').textContent=quality?'精选推荐':'论文目录';
   $('count').textContent=`${filtered.length} / ${PAPERS.length} 篇`; $('list').innerHTML=''; shown=0;
   if (filtered.length) renderMore(); else $('list').innerHTML='<p class="empty">没有匹配的论文。</p>';
 }
-for (const id of ['q','f-topic','f-source','f-year']) $(id).addEventListener('input',applyFilters);
+for (const id of ['q','f-topic','f-source','f-year','f-sort']) $(id).addEventListener('input',applyFilters);
 $('loadmore').addEventListener('click',renderMore);
 $('theme').addEventListener('click',()=>{ const cur=document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'); const next=cur==='dark'?'light':'dark'; document.documentElement.dataset.theme=next; localStorage.setItem('theme',next); });
 const saved=localStorage.getItem('theme'); if(saved) document.documentElement.dataset.theme=saved;
+$('f-sort').value=new URLSearchParams(location.search).get('sort')==='quality'?'quality':'recent';
 applyFilters();
 </script>
 </body>
@@ -722,7 +733,7 @@ h1 { max-width:920px; margin:10px 0 14px; font-size:clamp(30px,5vw,58px); line-h
 </head>
 <body>
 <main class="wrap" id="page" hidden>
-  <nav class="topbar"><a class="back" href="papers.html">← 论文库</a><a href="index.html">导师地图</a><a href="/tools">抓取与订阅</a><button id="theme" aria-label="切换深浅色">◐</button></nav>
+  <nav class="topbar"><a class="back" href="papers.html">← 论文库</a><a href="papers.html?sort=quality">精选推荐</a><a href="index.html">导师地图</a><a href="/tools">抓取与订阅</a><button id="theme" aria-label="切换深浅色">◐</button></nav>
   <header>
     <div class="eyebrow" id="role"></div>
     <h1 id="title"></h1>
@@ -836,7 +847,7 @@ load().catch(() => { $('error').hidden = false; });
 """
 
 INDEX_FIELDS = ("id", "title", "authors", "date", "year", "url", "keyword",
-                "category", "source", "status", "topics", "hf_upvotes")
+                "category", "source", "status", "topics", "hf_upvotes", "venue", "is_core")
 
 
 def sections(markdown):
@@ -920,7 +931,38 @@ def main():
     papers = [json.loads(f.read_text(encoding="utf-8"))
               for f in sorted(PAPERS_DIR.glob("*.json"))]
     papers.sort(key=sort_key, reverse=True)
-    index = [{k: p.get(k) for k in INDEX_FIELDS if p.get(k)} for p in papers]
+    index = []
+    today = date.today()
+    for paper in papers:
+        score, reasons = 0, []
+        if paper.get("source") == "curated":
+            score += 35
+            reasons.append("人工精读")
+        if paper.get("is_core"):
+            score += 25
+            reasons.append("核心论文")
+        venue = str(paper.get("venue") or "").strip()
+        if venue and not re.search(r"arxiv|preprint|report", venue, re.I):
+            score += 15
+            reasons.append(venue)
+        votes = int(paper.get("hf_upvotes") or 0)
+        vote_score = 25 if votes >= 200 else 22 if votes >= 100 else 18 if votes >= 50 else 14 if votes >= 20 else 10 if votes >= 10 else 0
+        if vote_score:
+            score += vote_score
+            reasons.append(f"HF {votes} 赞")
+        if score and paper.get("date"):
+            age_days = (today - date.fromisoformat(paper["date"])).days
+            if age_days <= 30:
+                score += 10
+                reasons.append("近 30 天")
+            elif age_days <= 180:
+                score += 5
+                reasons.append("近半年")
+        record = {k: paper.get(k) for k in INDEX_FIELDS if paper.get(k)}
+        if score:
+            record["quality_score"] = min(score, 100)
+            record["quality_reasons"] = reasons
+        index.append(record)
 
     if SITE_DIR.exists():
         shutil.rmtree(SITE_DIR)
