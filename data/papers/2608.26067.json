@@ -10,5 +10,8 @@
  "keyword": "VLA",
  "source": "auto",
  "created_at": "2026-08-30 13:03:08",
- "hf_upvotes": 18
+ "hf_upvotes": 18,
+ "topics": [
+  "vla-models"
+ ]
 }

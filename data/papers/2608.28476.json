@@ -10,5 +10,9 @@
  "keyword": null,
  "source": "hf-daily",
  "created_at": "2026-08-31T13:40:03.130462+00:00",
- "hf_upvotes": 23
+ "hf_upvotes": 23,
+ "topics": [
+  "llm-agents",
+  "rl-post-training"
+ ]
 }

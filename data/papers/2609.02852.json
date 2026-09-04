@@ -1,0 +1,16 @@
+{
+ "id": "2609.02852",
+ "title": "The Implications of Linguistic Illegibility for LLM Security",
+ "authors": "James Mickens",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02852v1",
+ "abstract": "LLMs are trained to generate natural language. However, various strands of evidence indicate that an LLM's externalized linguistic outputs and mechanistically-extracted linguistic features can be an unreliable lens for understanding internal model computation. We introduce the term ``linguistic illegibility'' to broadly refer to scenarios in which an LLM's externalized or mechanistically-probed language artifacts fail to represent how the model actually thinks. We argue that the specter of linguistic illegibility is unavoidable for LLMs whose internal computations are not directly expressed via language, but rather math over activation spaces (with lossy translations between activation spaces and natural language happening at the bookends). If linguistic illegibility is always possible, then security mechanisms that rely on a model's linguistic self-reporting (e.g., chain-of-thought monitoring, constitutional self-critique, activation probing for linguistically-defined feature vectors) can never be completely sound; the model sandbox will always need isolation techniques whose guarantees do not depend on reading a model's linguistic state at all. We argue that observing a model's outputs using taint tracking is a promising approach for an effective sandbox: regardless of how a model linguistically self-reports, a taint tracking policy can define, a priori, various pieces of system state that should never be influenced by model-produced data. We also discuss several additional sandboxing mechanisms (e.g., robust virtualization, third-party auditing of sandboxing configurations) which collectively provide a critical floor beneath linguistic monitoring, and would have mitigated recent sandbox exploits by frontier models.",
+ "summary": "**核心创新点**：提出“语言不可读性”概念，指出模型语言输出或语言化探针可能无法忠实反映其内部计算，因此基于语言自述的安全机制不存在完全可靠的保证。\n\n**主要方法**：从激活空间计算与自然语言之间存在有损转换出发，分析思维链监控、宪法式自我批评和语言特征激活探针的局限，并提出对模型输出进行污点追踪，辅以稳健虚拟化和第三方沙箱配置审计。\n\n**结论/性能**：论文认为 Agent 沙箱必须具备不依赖模型语言状态的隔离保障，而预先限制模型生成数据可影响哪些系统状态的污点追踪是一条有前景的路径；摘要未报告定量实验结果。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-03 21:25:28",
+ "topics": [
+  "ai-safety-alignment"
+ ]
+}

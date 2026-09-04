@@ -1,0 +1,17 @@
+{
+ "id": "2609.02690",
+ "title": "ACLE-MCP: Attested Capability Leases for Execution-Time Trust in Remote LLM Tool Use",
+ "authors": "Zhiyang Ding, Yang Luo, Guangpu Chen, Qingni Shen, Zhonghai Wu",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02690v1",
+ "abstract": "Remote Model Context Protocol (MCP) services enable large language model agents to invoke external tools, but OAuth authorization alone does not ensure that a later tool call is executed by the provider-side workload that the relying party intended to trust. An endpoint may remain authorized even after execution shifts to a substituted workload, relies on stale appraisal state, reuses authority transferred from another sender, or traverses an undeclared downstream component. We call this problem the post-authorization execution trust gap. We present ACLE-MCP, an invocation-scoped architecture that couples delegated authorization, workload appraisal, and resource-side execution admission. For protected calls, ACLE-MCP issues a short-lived, sender-constrained capability lease that binds the expected workload, freshness requirement, operation, object and parameter bounds, downstream constraints, and receipt obligations. A provider-side Execution Gate consumes the lease immediately before protected tool logic begins. We implement a runnable prototype with Keycloak/OIDC validation, an MCP Python SDK server, and an optional vTPM quote-verification backend. Controlled security experiments and an agent tool-use extension show that weaker authorization or connect-time attestation modes leave distinct post-authorization attacks open, whereas full ACLE-MCP blocks all evaluated attack families while preserving all benign tasks. In the locally simulated agent extension, the complete design increases request-level pooled p95 latency on normal allowed calls by 25.7% relative to OAuth-only. These results indicate that invocation-time binding between call authority and current workload state is a practical complement to OAuth-protected remote tool use.",
+ "summary": "**核心创新点**：提出 ACLE-MCP，以调用级能力租约弥补远程 MCP 工具在 OAuth 授权后的执行信任缺口。\n\n**主要方法**：签发短期、发送方约束的能力租约，将工作负载身份、新鲜度、操作与参数边界、下游约束及回执要求绑定，并由提供方执行门在工具逻辑启动前核验；原型集成 Keycloak/OIDC、MCP Python SDK 和可选 vTPM 验证。\n\n**结论/性能**：完整方案阻止了实验中所有受测攻击类型，同时保留全部正常任务；在本地模拟智能体实验中，正常请求的合并 p95 延迟较仅使用 OAuth 增加 25.7%。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "ai-safety-alignment",
+  "llm-agents"
+ ]
+}

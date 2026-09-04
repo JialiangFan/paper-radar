@@ -10,5 +10,9 @@
  "keyword": "world action models",
  "source": "auto",
  "created_at": "2026-09-02 13:03:48",
- "hf_upvotes": 38
+ "hf_upvotes": 38,
+ "topics": [
+  "robot-manipulation",
+  "world-model-learning"
+ ]
 }

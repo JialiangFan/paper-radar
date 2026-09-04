@@ -1,0 +1,16 @@
+{
+ "id": "2609.02797",
+ "title": "Dutch Books for Language Models",
+ "authors": "Isaiah Andrews, Suproteem Sarkar",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02797v1",
+ "abstract": "People increasingly use language models to support life decisions. Many such decisions involve a probabilistic forecast: How likely is a major life event, a natural disaster, or an economic outcome? Users of language models may implicitly trust that these forecasts fall out of a coherent world model. In this paper, we evaluate the coherence of language model probabilistic forecasts through a procedure that builds on a theorem due to de Finetti. We elicit forecasts from language models across events generated from stock returns data. We then use linear programs to compute the largest Dutch-book profit - the profit an arbitrageur could guarantee by betting against model-generated probabilities - which we use as a measure of incoherence. Our procedure does not require outcome labels, so we can evaluate coherence even in settings where outcomes are not observed or have not yet resolved. We find substantial evidence of incoherence in language model forecasts. Such incoherence increases when there are richer logical relationships between events, and irrelevant contextual details can increase incoherence by an order of magnitude. We conclude by discussing how alternative training strategies may improve probabilistic coherence.",
+ "summary": "**核心创新点**：利用荷兰赌理论提出一种无需真实结果标签即可衡量语言模型概率预测一致性的方法。\n\n**主要方法**：从股票收益数据构造具有逻辑关系的事件，向语言模型询问概率预测，再通过线性规划计算针对这些概率可保证获得的最大荷兰赌利润，并将其作为不一致性指标。\n\n**结论/性能**：语言模型的概率预测存在显著不一致性；事件间逻辑关系越丰富，不一致性越严重，而无关上下文细节可使不一致性扩大一个数量级。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:36",
+ "topics": [
+  "other"
+ ]
+}

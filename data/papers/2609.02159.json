@@ -1,0 +1,17 @@
+{
+ "id": "2609.02159",
+ "title": "World-Coherent Decoding: Self-Verifying Test-Time Planning for World Action Models",
+ "authors": "Chuhan Zhang, Seiji Ito, Kenta Hoshino, Satoshi Ikehata, Ikuro Sato",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02159v1",
+ "abstract": "World Action Models (WAMs) aim to control robots by stochastically generating visual futures and then decoding actions, but empirical observations indicate that the results can strongly depend on which future is selected. We propose World-Coherent-Decoding (WCD), a self-verifying test-time planning framework that treats WAM rollouts as falsifiable future--action hypotheses. At each decision step, WCD samples multiple candidates from a frozen WAM and ranks them using internal generative signals: flow-based video surprisal for visual plausibility and action path effort for action-generation stability. After execution, the realized observation audits the selected imagination, yielding an imagination--reality mismatch that trains a lightweight online predictor for future candidate selection. Thus, WCD converts delayed self-verification into pre-execution reliability estimation without updating the backbone model. On RoboTwin 2.0, WCD improves Hard success under limited randomized-scene supervision from $55.80\\%$ to $60.90\\%$, with a $+16.43$ gains on Horizon-3 tasks, and shows qualitative robustness on real Franka visual-shift tests. These results highlight a simple principle: test-time scaling for WAMs depends less on sampling more futures than on selecting reliable ones.",
+ "summary": "**核心创新点**：提出 WCD，将世界动作模型生成的未来视为可证伪假设，通过自验证选择更可靠的测试时规划候选。\n\n**主要方法**：从冻结的 WAM 采样多个候选，以视频流惊异度和动作路径代价衡量视觉合理性与动作稳定性；执行后利用想象与现实的偏差在线训练轻量预测器，无需更新骨干模型。\n\n**结论/性能**：在 RoboTwin 2.0 上，有限随机场景监督下的 Hard 成功率由 55.80% 提升至 60.90%，Horizon-3 任务提升 16.43；在真实 Franka 视觉偏移测试中表现出定性鲁棒性。",
+ "keyword": "world action models",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
+}

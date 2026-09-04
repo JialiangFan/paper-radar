@@ -1,0 +1,17 @@
+{
+ "id": "2609.02191",
+ "title": "Examining the Vulnerability of Multi-Agent Medical Systems to Human Interventions for Clinical Reasoning",
+ "authors": "Benjamin C Liu, Dillon Mehta, Rishi Malhotra, Adam Zobian, Yong Ying Tan, Samir Chopra, Daniella Rand, Natalie Pang, Abhiram Gudimella, Kevin Zhu",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02191v1",
+ "abstract": "Human interventions at fault points can alter the diagnostic accuracy of multi-agent medical systems. We defined fault points as moments in AI agent conversations, in which an agent's reasoning became most vulnerable to external influence. Using the MedQA dataset, this study analyzed simulated doctor-patient conversations to measure how interventions shifted reasoning and accuracy. Correct intervention methods showed an improvement in baseline diagnostic accuracy of up to 40%, while incorrect or bias-related interventions degraded performance by up to 6% and increased diagnostic drift and uncertainty. Beyond performance changes, our analysis revealed behavioral similarities between cognitive biases in simulated agent environments and real-world clinical practice. Examples included premature closure and susceptibility to misleading cues. Overall, these findings demonstrate that identifying and guiding fault points with human interventions may provide a mechanism for improving diagnostic robustness in multi-agent medical systems.",
+ "summary": "**核心创新点**：提出识别多智能体医疗推理中的易受影响故障点，并在这些位置利用人工干预改善诊断稳健性。\n\n**主要方法**：基于 MedQA 构造模拟医患对话，将 Agent 推理最易受外部影响的时刻定义为故障点，比较正确、错误及带偏见干预对推理过程、诊断漂移和不确定性的影响。\n\n**结论/性能**：正确干预使基线诊断准确率最高提高 40%，错误或偏见相关干预则使性能最多下降 6%，并增加诊断漂移和不确定性；系统还表现出过早结束推理和易受误导线索影响等类似临床认知偏差的行为。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-03 21:25:28",
+ "topics": [
+  "applications",
+  "hri-human-in-loop"
+ ]
+}

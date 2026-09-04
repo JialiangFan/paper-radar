@@ -1,0 +1,16 @@
+{
+ "id": "2609.02745",
+ "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+ "authors": "Max Nelson, Hanoz Bhathena, Aviral Joshi, Saket Sharma",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02745v1",
+ "abstract": "Selecting a retrieval model for a production RAG system requires reliable comparative evaluation, but obtaining relevance judgments at scale is expensive and difficult to repeat as new candidate systems arrive. We study pooled LLM evaluation, in which an LLM judges the union of documents retrieved by the current set of candidate systems, and the pool is then expanded incrementally as new systems are introduced by judging only the new documents they contribute. These judgments are reused to evaluate all systems on a common basis. We validate this approach on four retrieval benchmarks with 11 systems spanning dense, sparse, and hybrid configurations, and deploy it to compare 62 retrieval configurations for a financial news QA system. Pooled LLM rankings correlate strongly with gold-standard evaluation across datasets, and 97% of pairwise system orderings are preserved once bootstrap uncertainty in the qrels is taken into account. In production, document overlap yields 65-80% judgment reuse and up to 4.9x lower evaluation cost, allowing teams to benchmark new retrieval candidates without re-judging previously assessed documents. These results suggest pooled LLM evaluation is a practical and cost-effective workflow for incremental retrieval model selection in deployed systems.",
+ "summary": "**核心创新点**：提出可增量复用相关性判断的池化 LLM 评估方法，以更低成本持续比较 RAG 检索模型。\n\n**主要方法**：让 LLM 评判候选系统检索结果的并集；新增系统时仅评判其贡献的新文档，并基于统一判断集重新评估所有系统。\n\n**结论/性能**：在四个基准、11 个检索系统上与金标准排名高度相关，考虑 bootstrap 不确定性后保留 97% 的两两排序；生产部署中判断复用率达 65%–80%，评估成本最高降低 4.9 倍。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "agent-benchmarks"
+ ]
+}

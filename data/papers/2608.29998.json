@@ -1,0 +1,17 @@
+{
+ "id": "2608.29998",
+ "title": "The Intervention Gap in Latent World Models",
+ "authors": "Donna Vakalis",
+ "date": "2026-08-30",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2608.29998v1",
+ "abstract": "Planning-time intervention fidelity is a distinct, measurable property of a learned world model: whether the model's own open-loop transitions move task variables the way matched environment interventions do. In the settings we test, it is neither revealed by reward fit nor ensured by task-anchored training. Across released TD-MPC2 checkpoint sizes, episode return falls as an operator-error diagnostic on task observables grows, while reward-prediction error stays small and nearly flat, and a self-supervised world model trained without task signal preserves the same operator substantially better than a task-anchored model on the shared task. A capture-gated matched-intervention audit then localizes what fails. On Cheetah, three LeWorldModel checkpoints capture the current task query and support decodable real intervention effects; however, their imagined five-step effects are worse than predicting no effect and worse than an environment-endpoint oracle. The failure is task-direction rotation with excess gain, not feature collapse. This severe pattern is conditional: five PreJEPA seeds retain an oracle-relative deficit without it, Finger Spin experiments extend the deficit beyond locomotion with heterogeneous severity across seeds, and shared-bank effect geometry is both candidate- and support-dependent. We also test practice-side questions. In DreamerV3 the posterior distribution, not its sample, carries the current query; ensemble disagreement ranks error only near training support; and a frozen support-aware score degrades held-out error ranking in both tested transfer directions while native disagreement remains informative in both. We conclude that intervention fidelity must be audited directly, capture-first, on the model's native interface.",
+ "summary": "**核心创新点**：提出“规划时干预保真度”这一独立可测的世界模型属性，并表明奖励拟合良好或任务锚定训练并不能保证该属性。\n\n**主要方法**：通过任务可观测量上的算子误差和捕获门控的匹配干预审计，对 TD-MPC2、LeWorldModel、PreJEPA 与 DreamerV3 等模型进行比较，分析真实干预与开放环想象转移的差异、表示捕获位置及不确定性排序能力。\n\n**结论/性能**：TD-MPC2 的任务回报随算子误差增大而下降，但奖励预测误差始终较小且近乎不变；部分自监督模型比任务锚定模型更好地保留干预算子。Cheetah 上三个 LeWorldModel 的五步想象效果甚至劣于预测“无效果”，主要表现为任务方向旋转和增益过大，而非特征坍缩；其他模型与任务也存在程度不一的缺口，因此干预保真度需在模型原生接口上直接、优先验证当前查询是否被表示后再审计。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:36",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
+}

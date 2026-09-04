@@ -10,5 +10,9 @@
  "keyword": "LLM",
  "source": "auto",
  "created_at": "2026-08-25 13:00:46",
- "hf_upvotes": 15
+ "hf_upvotes": 15,
+ "topics": [
+  "rl-post-training",
+  "llm-agents"
+ ]
 }

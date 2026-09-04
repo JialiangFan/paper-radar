@@ -9,5 +9,9 @@
  "summary": "1. **核心创新点**：提出 RoboPhys-3D，通过统一的三维重建流程，系统评估具身世界模型生成视频的三维状态一致性与动作可执行性。\n\n2. **主要方法**：基于 RoboTwin 2.0 构建覆盖 50 个操作任务、5,000 个回合和 25,000 个多视角真值视频的基准；设计四层级、18 个子维度共 50 项指标，并提出综合指标 Average Full Score 和任务对齐指标 RoboPhyscore。\n\n3. **结论/性能**：在四种代表性视频世界模型中，Cosmos 3 的 RoboPhyscore 最高，达到 0.6330（真值水平的 92.7%）；该指标与人工评价高度一致（Pearson \\(r=0.9761\\)，Spearman \\(\\rho=0.8962\\)），同时揭示了传统感知或视觉语言模型评价难以发现的状态与执行层面缺陷。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-09-01 13:02:43"
+ "created_at": "2026-09-01 13:02:43",
+ "topics": [
+  "embodied-benchmarks",
+  "world-model-learning"
+ ]
 }

@@ -1,0 +1,17 @@
+{
+ "id": "2609.02811",
+ "title": "Do Better Imagined Rollouts Mean Better Robot Control? A Controlled Study of World-Model Evaluation Under Feedback",
+ "authors": "Dharini Raghavan, Amritpal Singh",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02811v1",
+ "abstract": "Predictive models are increasingly used in robotics for state estimation, planning, control, and policy evaluation, yet they are often judged by open-loop prediction accuracy over a fixed horizon. In closed-loop operation, a robot repeatedly acts, receives new measurements, updates its state estimate, and recomputes control. We study this difference in a differential-drive path-tracking task with biased odometry and intermittent landmark sensing. Six state estimators are evaluated across 24 sensing conditions using trajectory replay, a 20-step measurement-free rollout, and closed-loop tracking. Replay position RMSE correlates more strongly with closed-loop cross-track RMSE than rollout error (Spearman rho = 0.923 vs. 0.774) and selects a different estimator from the closed-loop optimum in 5/24 conditions, compared with 18/24 for the rollout metric. We then vary rollout horizon and measurement-update interval. With H=20, rank agreement decreases from rho = 0.916 with measurements at every step to rho = 0.774 with no measurements. A horizon-update grid shows that long prediction horizons remain informative when regular corrections are retained, whereas long rollouts without correction can produce rankings that differ substantially from closed-loop behavior. We also test recurrent estimators trained on longer sensing outages. This improves the EKF-anchored models under combined sensing degradation, reducing GRU-EKF cross-track RMSE from 1.72 m to 1.06 m, but the gain is not consistent across isolated outages or estimator architectures. These results show that predictive-model evaluation in robotics should specify both prediction horizon and measurement-update schedule. For models used in feedback, offline rollouts are most informative when their sensing and correction pattern reflects closed-loop operation. Code is available at https://github.com/rdharini2001/Robot_World_Model",
+ "summary": "**核心创新点**：证明机器人世界模型的离线评估必须同时匹配闭环控制中的预测时域和测量更新节奏。\n\n**主要方法**：在带偏置里程计和间歇地标观测的差速路径跟踪任务中，对六种状态估计器、24 种感知条件进行轨迹回放、20 步无测量 rollout 与闭环跟踪比较，并系统改变 rollout 长度和测量更新间隔。\n\n**结论/性能**：回放位置 RMSE 与闭环横向误差的相关性高于 rollout 误差（Spearman ρ=0.923 对 0.774），选错最优估计器的条件数为 5/24 对 18/24；H=20 时，排名相关性从逐步测量的 0.916 降至无测量的 0.774。延长感知中断训练使组合退化下 GRU-EKF 横向 RMSE 从 1.72 m 降至 1.06 m，但该收益并不普遍。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "world-model-control",
+  "embodied-benchmarks"
+ ]
+}

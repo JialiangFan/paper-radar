@@ -1,0 +1,17 @@
+{
+ "id": "2609.01861",
+ "title": "Belief-Calibrated Optimization: An Explicit World Model for Agentic Optimization",
+ "authors": "Yuhan Chen, Zhihua Tian, Mahavir Dabas, Charith Peris, Rahul Gupta, Ming Jin, Feiyang Kang, Siyuan Zhang, Nan Wang, Ruoxi Jia",
+ "date": "2026-09-01",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.01861v1",
+ "abstract": "The performance of an LLM agent depends on the scaffold around a frozen model. A common way to improve that scaffold is to use a coding agent as an optimizer: it reads current scores and traces and iteratively edits the source, producing a new candidate each round. Each edit is chosen according to a belief about how the environment will respond: what went wrong, and which change should help. That belief is typically implicit. It lives in the coding agent's reasoning on the current call, or remains latent in its parameters, rather than as something written down. Later calls therefore see scores and traces, but they do not use that belief. We introduce Belief-Calibrated Optimization (BCO), a method that writes that belief down as a persistent in-context document and continually revises that document as new candidates are evaluated. The resulting document is a world model: the current account of how the environment responds to edits. Added to an otherwise standard loop, BCO reaches a higher train passrate than a matched control that lacks only the world model, on five benchmarks spanning memory QA, tool-use QA, code-as-action app agents, and terminal agents. The gap remains on every held-out split, which is not used to select the candidate. After a target-model swap, in which the frozen model is replaced and the scaffold is not, the selected BCO scaffold leads on the tasks we test, except where context-window overruns leave it unfinished. An offline ablation then asks whether that gap comes from what the world model says. A fresh predictor given the accumulated document forecasts how the environment will respond more accurately than predictors given either no document or a same-form copy whose content has been falsified. The comparison indicates that the document carries reusable information in its content, not only in its form.",
+ "summary": "**核心创新点**：提出 BCO，将优化智能体对环境响应的隐式信念写成持续修订的上下文世界模型，以复用跨轮次经验。\n\n**主要方法**：编码智能体每轮根据得分和轨迹修改脚手架，同时维护一份记录故障解释、修改预期及评估反馈的持久文档，并通过对照、模型替换和内容伪造消融检验其作用。\n\n**结论/性能**：在涵盖记忆问答、工具问答、代码动作应用智能体和终端智能体的五个基准上，BCO 的训练通过率均高于缺少世界模型的匹配对照，优势也保持在所有留出集上；更换冻结目标模型后，除上下文溢出导致未完成的情况外仍领先。累积文档还能比无文档或内容被伪造的同格式文档更准确地预测环境响应。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "robot-harness",
+  "world-model-control"
+ ]
+}

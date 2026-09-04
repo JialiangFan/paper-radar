@@ -10,5 +10,8 @@
  "keyword": "LLM",
  "source": "auto",
  "created_at": "2026-08-28 13:01:34",
- "hf_upvotes": 64
+ "hf_upvotes": 64,
+ "topics": [
+  "llm-agents"
+ ]
 }

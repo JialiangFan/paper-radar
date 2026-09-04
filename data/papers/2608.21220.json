@@ -9,5 +9,8 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "LLM",
  "source": "auto",
- "created_at": "2026-08-24 13:02:23"
+ "created_at": "2026-08-24 13:02:23",
+ "topics": [
+  "hri-human-in-loop"
+ ]
 }

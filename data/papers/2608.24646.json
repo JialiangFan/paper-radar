@@ -10,5 +10,9 @@
  "keyword": null,
  "source": "hf-daily",
  "created_at": "2026-08-26T13:40:04.365699+00:00",
- "hf_upvotes": 45
+ "hf_upvotes": 45,
+ "topics": [
+  "rl-post-training",
+  "world-model-learning"
+ ]
 }

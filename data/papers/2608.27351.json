@@ -10,5 +10,9 @@
  "keyword": "LLM",
  "source": "auto",
  "created_at": "2026-08-28 13:00:35",
- "hf_upvotes": 17
+ "hf_upvotes": 17,
+ "topics": [
+  "rl-post-training",
+  "llm-reasoning"
+ ]
 }

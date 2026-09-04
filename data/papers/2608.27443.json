@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "AI Agent",
  "source": "auto",
- "created_at": "2026-08-28 13:00:24"
+ "created_at": "2026-08-28 13:00:24",
+ "topics": [
+  "ai-safety-alignment",
+  "hri-human-in-loop"
+ ]
 }

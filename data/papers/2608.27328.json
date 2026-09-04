@@ -9,5 +9,9 @@
  "summary": "总结生成失败，请查看原文。",
  "keyword": "world model",
  "source": "auto",
- "created_at": "2026-08-28 13:02:51"
+ "created_at": "2026-08-28 13:02:51",
+ "topics": [
+  "embodied-benchmarks",
+  "video-world-models"
+ ]
 }

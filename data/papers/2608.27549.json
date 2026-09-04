@@ -10,5 +10,9 @@
  "keyword": null,
  "source": "hf-daily",
  "created_at": "2026-08-31T13:40:03.130070+00:00",
- "hf_upvotes": 37
+ "hf_upvotes": 37,
+ "topics": [
+  "world-model-learning",
+  "llm-reasoning"
+ ]
 }

@@ -1,0 +1,17 @@
+{
+ "id": "2609.02542",
+ "title": "World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain",
+ "authors": "Yuxi Liu, Lijun Han, Ziming Wang, Ao Zhang, Cong Yang, Wei Sui",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02542v1",
+ "abstract": "Foothold-constrained terrain is characterized by sparse, discontinuous, or geometrically restricted feasible foot contacts, as encountered on stepping stones, across gaps, and on narrow stair treads. On such terrain, a single misstep often leaves little room to recover, so policies that base foot-placement decisions primarily on the immediately visible terrain are prone to failure. We ask whether a learned predictive summary of near-future observations and rewards can provide the anticipatory information required in such settings. We present World-Model-Augmented Visual Locomotion (WM-LOCO), which jointly trains a recurrent world model and a PPO policy. Conditioned on proprioception and a single onboard depth image, the world model produces a predictive recurrent feature that guides the policy, without explicit foothold labels. In simulation, WM-LOCO succeeds on gaps and stepping stones where a matched baseline fails completely, and matches the baseline's success rate on stairs while improving stride efficiency and reducing pelvis acceleration. We deploy the same policy onboard a physical Unitree G1 humanoid using onboard proprioception and a single depth stream; it traverses all three terrain classes with an average success rate of 93.3%.",
+ "summary": "**核心创新点**：提出 WM-LOCO，利用学习到的近期观测与奖励预测特征，为受限落脚地形上的人形机器人提供前瞻式足部规划信息。\n\n**主要方法**：联合训练循环世界模型与 PPO 策略；世界模型仅根据本体感知和单路机载深度图产生预测性循环特征，无需显式落脚点标签。\n\n**结论/性能**：仿真中在基线完全失败的沟槽和踏脚石场景取得成功，并在楼梯上保持相同成功率的同时提高步态效率、降低骨盆加速度；同一策略部署至 Unitree G1 后，在三类地形上的平均成功率为 93.3%。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-03 21:26:14",
+ "topics": [
+  "world-model-control",
+  "robot-manipulation"
+ ]
+}

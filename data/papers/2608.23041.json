@@ -10,5 +10,9 @@
  "keyword": null,
  "source": "hf-daily",
  "created_at": "2026-08-26T13:40:04.365302+00:00",
- "hf_upvotes": 47
+ "hf_upvotes": 47,
+ "topics": [
+  "robot-harness",
+  "llm-agents"
+ ]
 }

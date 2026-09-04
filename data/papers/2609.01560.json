@@ -10,5 +10,9 @@
  "keyword": "world model",
  "source": "auto",
  "created_at": "2026-09-02 13:04:38",
- "hf_upvotes": 37
+ "hf_upvotes": 37,
+ "topics": [
+  "video-world-models",
+  "world-model-control"
+ ]
 }

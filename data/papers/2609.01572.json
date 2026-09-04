@@ -10,5 +10,9 @@
  "keyword": "LLM",
  "source": "auto",
  "created_at": "2026-09-02 13:02:22",
- "hf_upvotes": 28
+ "hf_upvotes": 33,
+ "topics": [
+  "rl-post-training",
+  "applications"
+ ]
 }
