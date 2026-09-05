@@ -1,0 +1,18 @@
+{
+ "id": "2609.03153",
+ "title": "VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
+ "authors": "Wenzhuo Xu, Yuchen Zhu, Chongjian Ge, Xuan Shen, Jing Shi, Jason Kuen, Yongxin Chen, Molei Tao, Christopher McComb, Noelia Grande Gutiérrez, Jiuxiang Gu",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.03153v1",
+ "abstract": "Visual fluency in generated video does not imply physical reliability, and a scalar quality score alone is incapable of indicating the obligation a clip violates or the moment it fails. We present VeriPhy, an auditable physical-verification system in which a text-only planner compiles the prompt into typed physical obligations and a statically validated execution plan before any frame is observed. During execution, observations gate and scope only declared calls to frozen low-level experts (e.g., segmentation and tracking, counting, eleven typed physical measurements over the resulting tracks, depth, OCR, and audio-event detection). Each action returns a provenance-carrying evidence record whose payload, when usable, is either a typed measurement or an explicitly tagged learned state. Typed resolvers and fixed composition map usable records to a three-valued state (supported, contradicted, or unknown, surfaced as plausible, implausible, or abstain) with full provenance, so that every verdict is traceable to the evidence that produced it. We anchor evaluation in a 1,500-clip corpus of human-annotated flaw records that localize real generation failures in prompt reference, space, and time. On a 149-clip core carrying 304 such records, VeriPhy accounts for 228, against 164 for a published question-decomposition evaluator given the same clips and the same claims. Recall alone does not separate it from prompting the same backbone monolithically, which reaches 222; what separates them is that each decision retains its evidence record and provenance, making the traces auditable one verdict at a time and usable as the interface through which a critic verdict could be written back into generation.",
+ "summary": "1. **核心创新点**：提出可审计的智能体物理验证系统 VeriPhy，将视频生成要求转化为类型化物理约束，并为每个判断保留完整证据与来源链。\n\n2. **主要方法**：文本规划器先生成经静态验证的执行计划，再按需调用冻结的分割、跟踪、计数、深度估计、OCR、音频事件检测及物理测量模块，最终通过固定规则输出“支持、矛盾或未知”三值判断。\n\n3. **结论/性能**：在含 304 条缺陷记录的 149 个核心视频上，VeriPhy 成功解释 228 条，优于问题分解评估器的 164 条；其召回率与单体提示方法的 222 条相近，但提供了后者不具备的逐项可追溯证据，并可作为反馈生成模型的接口。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-05 13:02:00",
+ "hf_upvotes": 12,
+ "topics": [
+  "world-model-control",
+  "formal-methods"
+ ]
+}

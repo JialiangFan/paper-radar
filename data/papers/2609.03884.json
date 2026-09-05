@@ -1,0 +1,17 @@
+{
+ "id": "2609.03884",
+ "title": "A Blind Trust, the Bloody Thrust: When Attacker-Controlled Hook Updates Steer AI Agent Harnesses towards Malicious Behaviors",
+ "authors": "Pengxun Li, Litian Zhang, Jianwei Hou, Shujiang Wu, Song Li, Zifeng Kang, Xi Zhang",
+ "date": "2026-09-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.03884v1",
+ "abstract": "Modern AI agent harnesses expose lifecycle hooks that bind shell commands to runtime events such as session start, tool calls, and file edits. These commands run with host privileges yet ship as lifecycle-hook configuration and may fire at times the LLM never observes. We identify the lifecycle-hook update path, which harnesses trust blindly, as a new attack surface. Under a supply-chain threat model in which an attacker controls only plugin metadata and lifecycle-hook configuration, a benign versioned plugin can be trojanized by an update that silently binds attacker-chosen commands to benign events, yielding malicious host-side behavior such as privilege escalation. We propose HookPry, an open-source and fully automated attack framework that systematically exploits this vulnerability across heterogeneous AI agent harnesses. HookPry realizes ten attack objectives; across 25 combinations of harnesses and backends in 1,000 end-to-end runs, it compromises all seven evaluated harnesses, with per-harness success rates reaching 92.5%. Representative defenses remain insufficient: Microsoft Defender has 0% recall, and the union of three static defenses misses 47.5% of malicious artifacts.",
+ "summary": "1. **核心创新点**：首次揭示 AI Agent 框架盲目信任生命周期钩子更新所形成的供应链攻击面，攻击者可借插件更新隐蔽执行恶意主机命令。\n\n2. **主要方法**：提出全自动开源攻击框架 HookPry，通过篡改插件元数据和生命周期钩子配置，将恶意命令绑定到会话启动、工具调用、文件编辑等正常事件，并实现十类攻击目标。\n\n3. **结论/性能**：在 25 种框架与后端组合的 1,000 次实验中，HookPry 成功攻破全部 7 个受测框架，单框架成功率最高达 92.5%；Microsoft Defender 检出率为 0%，三种静态防御联合后仍漏检 47.5% 的恶意样本。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-05 13:00:23",
+ "topics": [
+  "ai-safety-alignment",
+  "adversarial-attacks"
+ ]
+}

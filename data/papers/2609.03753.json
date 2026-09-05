@@ -1,0 +1,17 @@
+{
+ "id": "2609.03753",
+ "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+ "authors": "Qi Liu, Qinzheng Wang, Yiming Bie",
+ "date": "2026-09-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.03753v1",
+ "abstract": "As large language models (LLMs) become increasingly capable, the long-term value of AI systems depends not only on solving individual requests, but also on transforming experience and accumulated knowledge into durable, reusable competence. We introduce SimSkill, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory without updating the backbone model. Through autonomous exploration, it builds a reusable library spanning the traffic-simulation workflow. We evaluate SimSkill on two held-out benchmarks with three backbone LLMs and independent artifact-based verification. SimSkill improves verified completion by up to 25 percentage points, while ablations show complementary contributions from procedural and semantic memory. Its benefits remain backbone- and budget-dependent: memory does not improve every model or uniformly reduce inference cost. More broadly, SimSkill illustrates a design paradigm in which natural language preserves and composes computational capabilities, while executable tools and code provide precise and reproducible execution. All code and experimental data are publicly available at https://github.com/qiliuchn/SimSkill-V1.",
+ "summary": "1. **核心创新点**：提出 SimSkill，使 AI 智能体无需更新基础模型参数，即可通过自主探索和记忆积累持续掌握可复用的交通仿真技能。\n\n2. **主要方法**：基于 SUMO 仿真器，自动识别能力缺口、生成并解决环境相关任务，通过 action–critic 循环验证结果，再将经验沉淀为情景、程序和语义三类记忆。\n\n3. **结论/性能**：在三个骨干 LLM 和两个未见测试集上，验证任务完成率最高提升 25 个百分点；程序记忆与语义记忆具有互补作用，但收益及推理成本变化取决于具体模型和计算预算。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-05 13:00:48",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
+}

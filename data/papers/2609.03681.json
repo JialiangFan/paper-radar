@@ -1,0 +1,17 @@
+{
+ "id": "2609.03681",
+ "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
+ "authors": "Chenhao Zhang, Hanyu Zhao, Hang Cheng, Tengfei Pan, Long Zeng",
+ "date": "2026-09-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.03681v1",
+ "abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts.",
+ "summary": "1. **核心创新点**：提出 WISE，根据交互阶段选择性调度世界模型想象，以更低成本为 VLA 模型生成可靠的后训练监督信号。\n\n2. **主要方法**：在关键交互状态触发有界的多视角想象 rollout，通过任务进度和完成度评估候选未来，并依据候选动作的相对表现优化真实交互情境下的策略。\n\n3. **结论/性能**：在 π₀ 和 π₀.₅ 的多种操作任务上均取得稳定提升，相比全程想象减少约 80% 的 GPU 计算时间，并在真实世界分布偏移下显著增强鲁棒性与泛化能力。",
+ "keyword": "world model",
+ "source": "auto",
+ "created_at": "2026-09-05 13:01:49",
+ "topics": [
+  "vla-post-training",
+  "world-model-control"
+ ]
+}

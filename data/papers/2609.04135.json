@@ -1,0 +1,16 @@
+{
+ "id": "2609.04135",
+ "title": "The Natural Language Interaction Protocol and Standard for AI Agents",
+ "authors": "Luyi Xing, Rasit Onur Topaloglu, Ranjan Sinha, Abhay Ratnaparkhi, Samuel Ndichu, Christopher Nguyen, Anindita Das, Tom Sheffler, Mohamed Rahouti, Zichuan Li, Xiaojing Liao, Sanjay Aiyagari",
+ "date": "2026-09-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.04135v1",
+ "abstract": "AI agents are increasingly being developed and deployed across organizations using heterogeneous agent-development frameworks, AI models, tool interfaces, protocols, and execution environments. To realize their potential social and business impact, these agents must be able to interoperate through a common communication protocol. The Natural Language Interaction Protocol (NLIP), developed by researchers and practitioners across companies and universities and standardized by Ecma International, addresses this need by defining a standards-based application-layer protocol for AI-agent interaction. NLIP provides a lightweight semantic message envelope that can be carried over existing transports such as HTTP/HTTPS, WebSocket, and AMQP, while allowing NLIP-aware agents and gateways to adapt between clients, agents, local context stores, ontologies, tools, enterprise services, and heterogeneous underlying protocols. This paper presents the motivation and design rationale of NLIP, its message model and transport bindings, security-by-design considerations, reference implementation, representative applications, adoption signals, and relationship to emerging agent protocols such as MCP and A2A.",
+ "summary": "1. **核心创新点**：提出并标准化 NLIP，一种面向异构 AI Agent 互操作的自然语言应用层通信协议。\n\n2. **主要方法**：设计轻量级语义消息封装，可运行于 HTTP/HTTPS、WebSocket、AMQP 等传输协议之上，并通过 Agent 或网关适配上下文存储、ontology、工具、企业服务及 MCP、A2A 等协议，同时融入安全性设计。\n\n3. **结论/性能**：NLIP 可为不同框架、模型和执行环境中的 AI Agent 提供统一通信基础；论文介绍了参考实现、应用案例和初步采用情况，但摘要未报告定量性能指标。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-05 13:01:38",
+ "topics": [
+  "llm-agents"
+ ]
+}

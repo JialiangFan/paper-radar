@@ -1,0 +1,16 @@
+{
+ "id": "2609.02992",
+ "title": "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets",
+ "authors": "Federico Gatta, Manuel Naviglio, Francesco Tarantelli",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.02992v1",
+ "abstract": "Reputation is a fundamental mechanism through which markets sustain trust when service quality cannot be perfectly assessed ex ante, constituting a form of intertemporal economic capital by attracting future demand. Its effectiveness as a disciplinary mechanism depends not only on past interactions but also on the persistence of the identity to which reputation is attached. When identities can be abandoned and recreated cheaply, reputational capital may itself become an object of opportunistic exploitation.\n  This paper develops a dynamic economic framework to study when reputation is sufficient to discipline autonomous agents. We model reputation as capital attracting future economic activity. At each point, an agent chooses between operating honestly, investing in quality to preserve future gains, or executing a one-shot deviation to extract its reputation's value and restart from a penalized identity. Our analysis relates the temptation to opportunistic behavior to identity-reset costs, reputation persistence, demand sensitivity, and enforcement design, deriving comparative statics on optimal quality provision.\n  Autonomous AI-agent operating on the blockchain are a relevant application: infrastructures such as ERC-8004, ERC-8183, and x402 combine reputation, identity, and payments in permissionless markets. Nonetheless, our framework applies to any environment where reputation generates future business and identities are replaceable.",
+ "summary": "1. **核心创新点**：将声誉视为吸引未来需求的经济资本，揭示在身份可低成本重置时，AI 智能体可能通过“一次性作恶后换身份”套利。\n\n2. **主要方法**：构建动态经济模型，刻画智能体在诚信经营、投入质量维护声誉和榨取声誉价值后重启身份之间的选择，并分析身份重置成本、声誉持久性、需求敏感度及监管机制的影响。\n\n3. **结论/性能**：理论分析表明，身份重置成本越高、声誉越持久、未来需求对声誉越敏感，智能体越有动力维持高质量服务；反之，仅靠声誉可能不足以约束机会主义行为。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-05 13:00:58",
+ "topics": [
+  "llm-agents"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "2609.04017",
+ "title": "A Black Box for Agentic Processes: Blockchain-Anchored Evidence for AI Agent Communication, Human Oversight, and GRC Audits",
+ "authors": "Arslan Brömme",
+ "date": "2026-09-03",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.04017v1",
+ "abstract": "Autonomous AI agents increasingly communicate with other agents, invoke tools, exchange intermediate results, and request human approvals. These workflows create a new auditability problem: organizations must reconstruct what happened, when it happened, which agent or human was involved, which control or policy applied, and whether records were modified afterwards. Motivated by the 2026 OpenAI/Hugging Face incident, this position and architecture paper proposes a product- and vendor-neutral black-box architecture for agentic processes. The architecture creates blockchain-anchored cryptographic commitments for selected agent communications, human-in-the-loop approvals, tool calls, and process artifacts without placing sensitive content on-chain. We define an evidence model that distinguishes temporal anchoring and artifact integrity from event ordering, capture authenticity, authorized anchoring, and causal traceability. The latter properties require additional architectural controls. We then discuss practical use for Governance, Risk, and Compliance (GRC), including compliance testing, risk-based evidence selection, monitoring evidence streams, incident reconstruction, and regulatory reporting readiness under the EU AI Act, NIS2, and the Cyber Resilience Act (CRA). This position and architecture paper does not present an empirical performance or security evaluation. The approach does not prevent agent misbehavior or prove semantic truth. Rather, it strengthens the evidentiary basis for later verification of critical process traces.",
+ "summary": "1. **核心创新点**：提出一种供应商中立的“AI 智能体黑匣子”架构，利用区块链锚定关键流程证据，同时避免将敏感内容上链。\n\n2. **主要方法**：对智能体通信、人工审批、工具调用和流程产物生成密码学承诺并进行链上时间锚定，同时区分完整性与时间证明、事件排序、采集真实性、授权锚定及因果追踪等证据属性。\n\n3. **结论/性能**：该架构可增强 GRC 审计、事件重建和监管报告的证据基础，但不能阻止智能体不当行为或证明内容的语义真实性；论文未进行实证性能或安全评估。",
+ "keyword": "AI Agent",
+ "source": "auto",
+ "created_at": "2026-09-05 13:00:32",
+ "topics": [
+  "llm-agents",
+  "ai-safety-alignment"
+ ]
+}

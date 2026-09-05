@@ -1,0 +1,17 @@
+{
+ "id": "2609.03109",
+ "title": "SLIDEFORGE: An LLM Agent for Controllable Editing of Slides as Structured Artifacts",
+ "authors": "Haozhen Zheng, Fulin Wang, Tianhu Xiong, Yingjie Yu, Shengyi Qian, Hanchao Yu, Alex Schwing, Klara Nahrstedt, Mingyuan Wu",
+ "date": "2026-09-02",
+ "year": 2026,
+ "url": "http://arxiv.org/abs/2609.03109v1",
+ "abstract": "Current AI agents compellingly describe slides. However, AI-assisted slide editing requires more than understanding: the output must retain layout, style, component structure, and native editability. Towards, AI-assisted slide editing, existing agents operate on screenshots or weak document representations and often fragment coherent visual units, rasterize editable content, or break layout. In contrast, for controllable slide editing, we introduce an agentic framework, SLIDEFORGE, which builds a Deck State Graph, an executable slide state that links visual decomposition, native pptx object structure, and perceptual organization. By recovering human-referable components while retaining fine-grained editable structure, SLIDEFORGE supports theme-preserving reconstruction through slide-native operations and rendered-state verification. We further introduce an evaluation paradigm for controllable slide transformation that jointly measures component recovery, preservation, restyling consistency, visual quality, and native editability. Experiments show that SLIDEFORGE outperforms direct prompting, screenshot-based agents, and generic code-agent baselines across these dimensions. Code is available at https://github.com/UIUC-MONET/SLIDEFORGE.",
+ "summary": "1. **核心创新点**：提出 SLIDEFORGE，通过可执行的 Deck State Graph 实现可控、保留原生可编辑性的幻灯片编辑。\n\n2. **主要方法**：联合建模视觉分解、PPTX 原生对象结构和感知组织，恢复人类可指代的组件，并结合幻灯片原生操作与渲染结果验证完成主题保持式重构。\n\n3. **结论/性能**：在组件恢复、内容保留、风格一致性、视觉质量和原生可编辑性方面，均优于直接提示、基于截图的智能体及通用代码智能体基线。",
+ "keyword": "LLM",
+ "source": "auto",
+ "created_at": "2026-09-05 13:01:22",
+ "topics": [
+  "llm-agents",
+  "applications"
+ ]
+}
